@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1024px" height="400px"><style type="text/css">
+path { fill: none; stroke: rgb(51,51,51); }
+path.series { stroke: #6b63ff; }
+rect.background { fill: rgb(255,255,255); stroke: none; }
+
+text {
+	stroke-width: 0;
+	stroke: none;
+	fill: rgba(51,51,51,1.0);
+	font-size: 12.8px;
+	font-family: 'Roboto Medium', sans-serif;
+}
+</style><rect y="0" width="1024px" height="400px" class="background" rx="8" x="0" /><path stroke-width="2" class="series" d="M 58 345 L 279 303 L 323 281 L 359 260 L 396 237 L 438 215 L 475 194 L 516 171 L 555 150 L 601 128 L 651 105 L 707 84 L 772 62 L 840 41 L 924 18 L 930 17" /><path stroke-width="2" d="M 930 346 L 930.000000 15.000000" /><path stroke-width="2" d="M 930 346 L 935 346" /><text x="940" y="352">0</text><path stroke-width="2" d="M 930 309 L 935 309" /><text y="315" x="940">2800</text><path stroke-width="2" d="M 930 272 L 935 272" /><text x="940" y="278">5600</text><path stroke-width="2" d="M 930 235 L 935 235" /><text x="940" y="241">8400</text><path stroke-width="2" d="M 930 198 L 935 198" /><text y="204" x="940">11200</text><path stroke-width="2" d="M 930 162 L 935 162" /><text x="940" y="168">13900</text><path stroke-width="2" d="M 930 125 L 935 125" /><text x="940" y="131">16700</text><path stroke-width="2" d="M 930 88 L 935 88" /><text x="940" y="94">19500</text><path stroke-width="2" d="M 930 51 L 935 51" /><text y="57" x="940">22300</text><path stroke-width="2" d="M 930 16 L 935 16" /><text x="940" y="22">25000</text><text x="987" y="175" transform="rotate(90.00,987,175)">Stargazers</text><path stroke-width="2" d="M 57.000000 346.000000 L 930 346" /><path stroke-width="2" d="M 58 346 L 58 351" /><text x="25" y="368">2015-10-05</text><path stroke-width="2" d="M 155 346 L 155 351" /><text y="368" x="122">2016-12-04</text><path stroke-width="2" d="M 252 346 L 252 351" /><text x="219" y="368">2018-02-03</text><path stroke-width="2" d="M 349 346 L 349 351" /><text x="316" y="368">2019-04-05</text><path stroke-width="2" d="M 446 346 L 446 351" /><text x="413" y="368">2020-06-05</text><path stroke-width="2" d="M 543 346 L 543 351" /><text x="510" y="368">2021-08-05</text><path stroke-width="2" d="M 640 346 L 640 351" /><text x="607" y="368">2022-10-05</text><path stroke-width="2" d="M 737 346 L 737 351" /><text x="704" y="368">2023-12-05</text><path stroke-width="2" d="M 834 346 L 834 351" /><text x="801" y="368">2025-02-03</text><path stroke-width="2" d="M 930 346 L 930 351" /><text x="897" y="368">2026-04-06</text><text x="479" y="390">Time</text></svg>

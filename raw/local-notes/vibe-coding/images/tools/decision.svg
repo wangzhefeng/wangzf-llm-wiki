@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="520" viewBox="0 0 960 520">
+  <rect width="960" height="520" fill="#fffaf0"/>
+  <text x="60" y="70" font-size="30" font-family="Arial" fill="#1f2937">Tool Selection Flow</text>
+  <rect x="70" y="120" width="180" height="70" rx="12" fill="#dbeafe" stroke="#2563eb"/>
+  <text x="118" y="163" font-size="22" font-family="Arial" fill="#1e3a8a">Task Goal</text>
+  <polygon points="340,115 450,155 340,195 230,155" fill="#fde68a" stroke="#d97706"/>
+  <text x="286" y="161" font-size="20" font-family="Arial" fill="#92400e">Need stateful</text>
+  <text x="304" y="186" font-size="20" font-family="Arial" fill="#92400e">interaction?</text>
+  <rect x="540" y="85" width="190" height="70" rx="12" fill="#dcfce7" stroke="#16a34a"/>
+  <text x="589" y="128" font-size="22" font-family="Arial" fill="#166534">API / HTTP</text>
+  <rect x="540" y="200" width="190" height="70" rx="12" fill="#fee2e2" stroke="#dc2626"/>
+  <text x="573" y="243" font-size="22" font-family="Arial" fill="#991b1b">Browser Tool</text>
+  <polygon points="810,195 900,235 810,275 720,235" fill="#e0e7ff" stroke="#4f46e5"/>
+  <text x="763" y="241" font-size="20" font-family="Arial" fill="#312e81">High risk?</text>
+  <rect x="720" y="330" width="180" height="70" rx="12" fill="#fff7ed" stroke="#ea580c"/>
+  <text x="758" y="373" font-size="22" font-family="Arial" fill="#9a3412">Add approval</text>
+  <line x1="250" y1="155" x2="230" y2="155" stroke="#374151" stroke-width="0"/>
+  <line x1="250" y1="155" x2="230" y2="155" stroke="#374151" stroke-width="0"/>
+  <line x1="250" y1="155" x2="230" y2="155" stroke="#374151" stroke-width="0"/>
+  <line x1="250" y1="155" x2="340" y2="155" stroke="#374151" stroke-width="4"/>
+  <line x1="450" y1="145" x2="540" y2="120" stroke="#374151" stroke-width="4"/>
+  <line x1="450" y1="165" x2="540" y2="235" stroke="#374151" stroke-width="4"/>
+  <line x1="730" y1="235" x2="720" y2="235" stroke="#374151" stroke-width="0"/>
+  <line x1="730" y1="235" x2="720" y2="235" stroke="#374151" stroke-width="0"/>
+  <line x1="730" y1="235" x2="810" y2="235" stroke="#374151" stroke-width="4"/>
+  <line x1="810" y1="275" x2="810" y2="330" stroke="#374151" stroke-width="4"/>
+  <text x="474" y="115" font-size="18" font-family="Arial" fill="#334155">No</text>
+  <text x="473" y="210" font-size="18" font-family="Arial" fill="#334155">Yes</text>
+  <text x="825" y="315" font-size="18" font-family="Arial" fill="#334155">Yes</text>
+  <text x="60" y="460" font-size="20" font-family="Arial" fill="#475569">Choose the lightest tool that can produce verifiable output, then add guardrails for risky actions.</text>
+</svg>

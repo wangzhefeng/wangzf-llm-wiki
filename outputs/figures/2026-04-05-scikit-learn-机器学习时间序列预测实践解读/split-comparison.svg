@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720">
+  <rect width="1280" height="720" fill="#fffdf7"/>
+  <text x="80" y="90" font-family="Helvetica, Arial, sans-serif" font-size="34" font-weight="700" fill="#111827">Random Split vs Time Split</text>
+
+  <g font-family="Helvetica, Arial, sans-serif">
+    <text x="140" y="170" font-size="28" font-weight="700" fill="#991b1b">Random split</text>
+    <rect x="120" y="210" width="440" height="88" rx="18" ry="18" fill="#fecaca"/>
+    <rect x="160" y="228" width="72" height="52" rx="12" ry="12" fill="#ef4444"/>
+    <rect x="250" y="228" width="72" height="52" rx="12" ry="12" fill="#3b82f6"/>
+    <rect x="340" y="228" width="72" height="52" rx="12" ry="12" fill="#ef4444"/>
+    <rect x="430" y="228" width="72" height="52" rx="12" ry="12" fill="#3b82f6"/>
+    <text x="340" y="340" text-anchor="middle" font-size="22" fill="#7f1d1d">future structure leaks into training distribution</text>
+
+    <text x="720" y="170" font-size="28" font-weight="700" fill="#14532d">TimeSeriesSplit</text>
+    <rect x="700" y="210" width="460" height="88" rx="18" ry="18" fill="#dcfce7"/>
+    <rect x="730" y="228" width="150" height="52" rx="12" ry="12" fill="#16a34a"/>
+    <rect x="900" y="228" width="55" height="52" rx="12" ry="12" fill="#fde68a"/>
+    <rect x="975" y="228" width="145" height="52" rx="12" ry="12" fill="#2563eb"/>
+    <text x="930" y="340" text-anchor="middle" font-size="22" fill="#14532d">train / gap / test preserve deployment order</text>
+
+    <line x1="120" y1="450" x2="1160" y2="450" stroke="#cbd5e1" stroke-width="4"/>
+    <text x="120" y="500" font-size="22" fill="#475569">Example signal:</text>
+    <polyline points="240,510 300,470 360,498 420,445 480,472 540,430 600,462 660,410 720,455 780,402 840,432 900,388 960,425 1020,372 1080,418"
+      fill="none" stroke="#0f172a" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <rect x="140" y="560" width="28" height="28" rx="6" fill="#16a34a"/>
+    <text x="182" y="581" font-size="20" fill="#334155">train</text>
+    <rect x="280" y="560" width="28" height="28" rx="6" fill="#fde68a"/>
+    <text x="322" y="581" font-size="20" fill="#334155">gap</text>
+    <rect x="390" y="560" width="28" height="28" rx="6" fill="#2563eb"/>
+    <text x="432" y="581" font-size="20" fill="#334155">test</text>
+    <rect x="500" y="560" width="28" height="28" rx="6" fill="#ef4444"/>
+    <text x="542" y="581" font-size="20" fill="#334155">mixed sample blocks</text>
+  </g>
+</svg>

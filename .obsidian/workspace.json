@@ -1,0 +1,230 @@
+{
+  "main": {
+    "id": "99f572971363a506",
+    "type": "split",
+    "children": [
+      {
+        "id": "572b19278344845f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a3e14bce18d68855",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "新标签页"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "ee216a35d5d6046a",
+    "type": "split",
+    "children": [
+      {
+        "id": "98878b1cdbd9021d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "76823ef2f85cec4d",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": true
+              },
+              "icon": "lucide-folder-closed",
+              "title": "文件列表"
+            }
+          },
+          {
+            "id": "6f3b771cb69803ab",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "搜索"
+            }
+          },
+          {
+            "id": "3f80e077fac971ee",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "书签"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 226.5
+  },
+  "right": {
+    "id": "a11cbacd3d039657",
+    "type": "split",
+    "children": [
+      {
+        "id": "1d6cfd37ee864d30",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e2bdace4ecee5b88",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": true,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "反向链接"
+            }
+          },
+          {
+            "id": "ad0ef08f19fb4ed4",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links"
+            }
+          },
+          {
+            "id": "38eacfaad726918b",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "标签"
+            }
+          },
+          {
+            "id": "b31fa9face3cdba4",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "添加笔记属性"
+            }
+          },
+          {
+            "id": "7ad75407d2b9c082",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "欢迎.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "欢迎 的大纲"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false,
+      "bases:新建数据库": false
+    }
+  },
+  "active": "a3e14bce18d68855",
+  "lastOpenFiles": [
+    "raw/web/2026-04-10-PyRregular开源34个数据集基准，找不规则时序方向baseline的可以直接抄作业.md",
+    "wiki/concepts/autofix/某个总索引.md",
+    "wiki/concepts/llm/模型微调.md",
+    "wiki/concepts/reinforcementlearning/RLHF.md",
+    "wiki/concepts/llm/InstructGPT.md",
+    "wiki/indexes/knowledge-base-operations/post-主题纳管排除清单.md",
+    "wiki/log.md",
+    "wiki/indexes/power-market-trading/电力市场与时序预测应用索引.md",
+    "wiki/indexes/reinforcementlearning/强化学习索引.md",
+    "wiki/indexes/timeseries/时间序列预测深度学习论文索引.md",
+    "AGENTS.md",
+    "CLAUDE.md",
+    "README.md",
+    "TODO.md",
+    "wiki/sources/operationsresearch/2026-03-05-electricity-trading.md",
+    "wiki/sources/operationsresearch/2026-02-09-math-model.md",
+    "wiki/sources/timeseries/2026-02-07-tsf-report.md",
+    "wiki/sources/deeplearning/2026-01-29-conv1d.md",
+    "wiki/sources/timeseries/2026-01-27-feature-engine-topic.md",
+    "wiki/sources/timeseries/2026-01-18-tsf-dl-stages.md",
+    "wiki/sources/llm/2025-07-28-llm-post-training.md",
+    "wiki/sources/llm/2025-07-23-llm-flow.md",
+    "wiki/sources/timeseries/2025-07-17-ts-prob-forecasting.md",
+    "wiki/sources/llm/2025-07-05-rlhf.md",
+    "wiki/sources/llm/2025-07-05-llm-finetuning.md",
+    "wiki/sources/reinforcementlearning/2025-06-18-reinforcementlearning.md",
+    "wiki/concepts/data_structure_algorithm",
+    "wiki/indexes/data_structure_algorithm",
+    "wiki/sources/data_structure_algorithm",
+    "wiki/concepts/analysis",
+    "wiki/indexes/analysis",
+    "wiki/sources/analysis",
+    "wiki/sources/autofix",
+    "wiki/concepts/autofix",
+    "tools/fix_wikilink_network.py",
+    "tools/wiki_lint.py",
+    "assets/attachments/Image 2.webp",
+    "assets/attachments/Image 1.webp",
+    "assets/attachments/Image.webp",
+    "outputs/figures/2026-04-05-scikit-learn-机器学习时间序列预测实践解读/workflow.svg",
+    "outputs/figures/2026-04-05-scikit-learn-机器学习时间序列预测实践解读/uncertainty-band.svg",
+    "outputs/figures/2026-04-05-scikit-learn-机器学习时间序列预测实践解读/split-comparison.svg",
+    "outputs/figures/2026-04-05-scikit-learn-机器学习时间序列预测实践解读/knowledge-position.svg",
+    "assets/attachments/timeseries/statistical-forecasting/acf.png",
+    "assets/attachments/timeseries/stationarity/stationarity_test_figure.png",
+    "raw/local-notes/vibe-coding/images/tools/decision.svg",
+    "Untitled.canvas"
+  ]
+}

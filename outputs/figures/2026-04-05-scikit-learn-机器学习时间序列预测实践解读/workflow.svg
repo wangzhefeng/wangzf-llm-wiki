@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720">
+  <rect width="1280" height="720" fill="#f8fafc"/>
+  <text x="80" y="90" font-family="Helvetica, Arial, sans-serif" font-size="34" font-weight="700" fill="#0f172a">ML Time Series Workflow</text>
+  <g font-family="Helvetica, Arial, sans-serif">
+    <rect x="80" y="180" rx="24" ry="24" width="240" height="130" fill="#dbeafe" stroke="#2563eb" stroke-width="4"/>
+    <text x="200" y="235" text-anchor="middle" font-size="28" font-weight="700" fill="#1e3a8a">Sequence</text>
+    <text x="200" y="275" text-anchor="middle" font-size="22" fill="#1e3a8a">Raw time series</text>
+
+    <rect x="380" y="180" rx="24" ry="24" width="240" height="130" fill="#dcfce7" stroke="#16a34a" stroke-width="4"/>
+    <text x="500" y="235" text-anchor="middle" font-size="28" font-weight="700" fill="#14532d">Features</text>
+    <text x="500" y="275" text-anchor="middle" font-size="22" fill="#14532d">lags + rolling stats</text>
+
+    <rect x="680" y="180" rx="24" ry="24" width="240" height="130" fill="#fef3c7" stroke="#d97706" stroke-width="4"/>
+    <text x="800" y="235" text-anchor="middle" font-size="28" font-weight="700" fill="#92400e">Model</text>
+    <text x="800" y="275" text-anchor="middle" font-size="22" fill="#92400e">generic regressor</text>
+
+    <rect x="980" y="180" rx="24" ry="24" width="220" height="130" fill="#fee2e2" stroke="#dc2626" stroke-width="4"/>
+    <text x="1090" y="235" text-anchor="middle" font-size="28" font-weight="700" fill="#7f1d1d">Backtest</text>
+    <text x="1090" y="275" text-anchor="middle" font-size="22" fill="#7f1d1d">time-aware split</text>
+
+    <path d="M320 245 H370" stroke="#334155" stroke-width="8" stroke-linecap="round"/>
+    <polygon points="370,245 348,232 348,258" fill="#334155"/>
+    <path d="M620 245 H670" stroke="#334155" stroke-width="8" stroke-linecap="round"/>
+    <polygon points="670,245 648,232 648,258" fill="#334155"/>
+    <path d="M920 245 H970" stroke="#334155" stroke-width="8" stroke-linecap="round"/>
+    <polygon points="970,245 948,232 948,258" fill="#334155"/>
+  </g>
+
+  <g font-family="Helvetica, Arial, sans-serif">
+    <rect x="180" y="430" rx="28" ry="28" width="920" height="170" fill="#ffffff" stroke="#cbd5e1" stroke-width="3"/>
+    <text x="230" y="490" font-size="26" font-weight="700" fill="#0f172a">Key idea</text>
+    <text x="230" y="540" font-size="24" fill="#334155">Time series forecasting becomes a supervised learning workflow only after</text>
+    <text x="230" y="578" font-size="24" fill="#334155">you explicitly encode temporal dependency and preserve time order in evaluation.</text>
+  </g>
+</svg>

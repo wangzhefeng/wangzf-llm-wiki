@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="520" viewBox="0 0 960 520">
+  <rect width="960" height="520" fill="#fffaf0"/>
+  <text x="60" y="70" font-size="30" font-family="Arial" fill="#1f2937">Skill Lifecycle</text>
+  <circle cx="140" cy="240" r="58" fill="#dbeafe" stroke="#2563eb"/>
+  <text x="107" y="247" font-size="22" font-family="Arial" fill="#1e3a8a">Discover</text>
+  <circle cx="290" cy="160" r="58" fill="#fde68a" stroke="#d97706"/>
+  <text x="264" y="167" font-size="22" font-family="Arial" fill="#92400e">Design</text>
+  <circle cx="470" cy="140" r="58" fill="#dcfce7" stroke="#16a34a"/>
+  <text x="446" y="147" font-size="22" font-family="Arial" fill="#166534">Build</text>
+  <circle cx="650" cy="180" r="58" fill="#fee2e2" stroke="#dc2626"/>
+  <text x="620" y="187" font-size="22" font-family="Arial" fill="#991b1b">Trigger</text>
+  <circle cx="760" cy="320" r="58" fill="#e0e7ff" stroke="#4f46e5"/>
+  <text x="723" y="327" font-size="22" font-family="Arial" fill="#312e81">Evaluate</text>
+  <circle cx="520" cy="360" r="58" fill="#ecfccb" stroke="#65a30d"/>
+  <text x="486" y="367" font-size="22" font-family="Arial" fill="#365314">Iterate</text>
+  <circle cx="290" cy="350" r="58" fill="#fae8ff" stroke="#a21caf"/>
+  <text x="263" y="357" font-size="22" font-family="Arial" fill="#701a75">Retire</text>
+  <line x1="191" y1="211" x2="239" y2="189" stroke="#374151" stroke-width="4"/>
+  <line x1="348" y1="152" x2="412" y2="145" stroke="#374151" stroke-width="4"/>
+  <line x1="528" y1="151" x2="592" y2="169" stroke="#374151" stroke-width="4"/>
+  <line x1="688" y1="224" x2="724" y2="277" stroke="#374151" stroke-width="4"/>
+  <line x1="704" y1="343" x2="578" y2="350" stroke="#374151" stroke-width="4"/>
+  <line x1="462" y1="357" x2="348" y2="353" stroke="#374151" stroke-width="4"/>
+  <line x1="245" y1="313" x2="171" y2="274" stroke="#374151" stroke-width="4"/>
+  <text x="60" y="455" font-size="20" font-family="Arial" fill="#475569">Skills are living assets: they must be measured, refined, and retired when model behavior changes.</text>
+</svg>
