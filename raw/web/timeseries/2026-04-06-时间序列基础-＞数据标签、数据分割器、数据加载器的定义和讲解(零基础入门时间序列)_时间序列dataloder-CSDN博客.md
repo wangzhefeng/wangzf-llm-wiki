@@ -1,21 +1,22 @@
 ---
-source_type: web
-title: "时间序列基础-＞数据标签、数据分割器、数据加载器的定义和讲解(零基础入门时间序列)_时间序列dataloder-CSDN博客"
 author:
-  - 
-  - "[[成就一亿技术人!]]"
-  - "[[hope_wisdom 发出的红包]]"
-created_at: 2026-04-06
-topics:
-  - 时间序列
-status: inbox
-source: "https://blog.csdn.net/java1314777/article/details/134407174"
-published: 
+- null
+- '[[成就一亿技术人!]]'
+- '[[hope_wisdom 发出的红包]]'
 created: 2026-04-06
-description: "文章浏览阅读8.1k次，点赞75次，收藏103次。本文详细介绍了时间序列分析中标签的概念、窗口分割器的作用，以及如何构建数据加载器，包括数据预处理、窗口划分和使用PyTorchDataset与DataLoader。重点讲解了LSTM和GRU模型在时间序列预测中的应用。"
+created_at: 2026-04-06
+description: 文章浏览阅读8.1k次，点赞75次，收藏103次。本文详细介绍了时间序列分析中标签的概念、窗口分割器的作用，以及如何构建数据加载器，包括数据预处理、窗口划分和使用PyTorchDataset与DataLoader。重点讲解了LSTM和GRU模型在时间序列预测中的应用。
+published: null
+source: https://blog.csdn.net/java1314777/article/details/134407174
+source_type: web
+status: inbox
 tags:
-  - 
-  - "clippings"
+- null
+- clippings
+title: 时间序列基础-＞数据标签、数据分割器、数据加载器的定义和讲解(零基础入门时间序列)_时间序列dataloder-CSDN博客
+topics:
+- 时间序列
+- 深度学习
 ---
 
 ![[assets/attachments/timeseries/36bced8b7be43bce9369848b0c2bd472.gif]]

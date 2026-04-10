@@ -1,20 +1,21 @@
 ---
-source_type: web
-title: "牛津大学等提出P-sLSTM，释放LSTM在长期时间序列预测中的潜力"
 author:
-  - 
-  - "[[TSer]]"
-created_at: 2026-04-06
-topics:
-  - 时间序列
-status: inbox
-source: "https://mp.weixin.qq.com/s/0umpT9wcLzobty8JhLh3-A"
-published: 
+- null
+- '[[TSer]]'
 created: 2026-04-06
-description: 
+created_at: 2026-04-06
+description: null
+published: null
+source: https://mp.weixin.qq.com/s/0umpT9wcLzobty8JhLh3-A
+source_type: web
+status: inbox
 tags:
-  - 
-  - "clippings"
+- null
+- clippings
+title: 牛津大学等提出P-sLSTM，释放LSTM在长期时间序列预测中的潜力
+topics:
+- 时间序列
+- 深度学习
 ---
 
 TSer *2025年2月5日 20:30*

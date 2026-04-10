@@ -1,12 +1,14 @@
 ---
-title: "4  Convex Functions – S&DS 431/631 — Optimization and Computation"
-source: "https://zhuoranyang.github.io/sds431-notes/lectures/04-convex-functions.html"
-author:
-published:
+author: null
 created: 2026-04-11
-description:
+description: null
+published: null
+source: https://zhuoranyang.github.io/sds431-notes/lectures/04-convex-functions.html
 tags:
-  - "clippings"
+- clippings
+title: 4  Convex Functions – S&DS 431/631 — Optimization and Computation
+topics:
+- 运筹优化
 ---
 Having established the theory of convex sets in the previous chapter — including the convexity definition ([Equation 3.1](https://zhuoranyang.github.io/sds431-notes/lectures/03-convex-sets.html#eq-convex-set-def)) and the preservation rules in [Theorem 3.4](https://zhuoranyang.github.io/sds431-notes/lectures/03-convex-sets.html#thm-operations-convex-sets) — we now turn to the functions we optimize over them. A convex function is one whose graph “curves upward,” ensuring that there are no hidden valleys or local minima that could trap an optimization algorithm.
 

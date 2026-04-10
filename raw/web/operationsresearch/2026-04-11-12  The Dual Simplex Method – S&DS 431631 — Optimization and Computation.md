@@ -1,12 +1,14 @@
 ---
-title: "12  The Dual Simplex Method – S&DS 431/631 — Optimization and Computation"
-source: "https://zhuoranyang.github.io/sds431-notes/lectures/12-dual-simplex.html"
-author:
-published:
+author: null
 created: 2026-04-11
-description:
+description: null
+published: null
+source: https://zhuoranyang.github.io/sds431-notes/lectures/12-dual-simplex.html
 tags:
-  - "clippings"
+- clippings
+title: 12  The Dual Simplex Method – S&DS 431/631 — Optimization and Computation
+topics:
+- 运筹优化
 ---
 **This chapter is optional.** The dual simplex method is a powerful algorithmic tool used in modern LP solvers, but it is not required for the remainder of the course. It is included for students who want a deeper understanding of the primal-dual interplay and how solvers re-optimize after adding constraints.
 

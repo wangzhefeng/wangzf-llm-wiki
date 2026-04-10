@@ -1,0 +1,70 @@
+---
+author: null
+created: 2026-04-06
+created_at: 2026-04-06
+description: Handy Multi Agent Tutorial - A practical guide for developers to deeply
+  understand and practice multi-agent systems
+published: null
+source: https://datawhalechina.github.io/handy-multi-agent/#/README
+source_type: web
+status: inbox
+tags:
+- null
+- clippings
+title: Handy Multi Agent Tutorial
+topics:
+- 大语言模型
+- Vibe Coding
+---
+
+722 words | 2 min
+
+## Handy Multi Agent
+
+> 一套专为深入了解并实践多智能体系统的开发者设计的实用指南
+
+## 项目简介
+
+**Handy-Multi-Agent** 是一套专为那些期望深入了解并实践多智能体系统的开发者设计的实用指南。本教程基于国内领先的多智能体框架 [CAMEL-AI（NeruIPS'2023）](https://arxiv.org/pdf/2303.17760.pdf) ，从最基本的单个Agent开发，逐渐尝试构建复杂的Multi Agent应用。
+
+项目github链接： [https://github.com/datawhalechina/handy-multi-agent](https://github.com/datawhalechina/handy-multi-agent)
+
+> 如果你觉得这个项目有用，请给它一个 ⭐️ Star，这样可以帮助更多人发现它！
+
+### 面向人群
+
+本项目侧重点在实践和动手构建Agent应用的层面，但会将理论部分结合。适于对多智能体系统、大模型应用或人工智能领域有研究兴趣、希望通过实践了解并探索LLM在多智能体系统中应用的同学。
+
+通过这个项目，我们希望帮助开发者：
+
+1. **理解基础** ：掌握CAMEL框架的使用方法，理解Agent的基本概念，为后续的学习使用打下坚实的基础。
+2. **提升技能** ：设置一系列实践项目，涉及(RAG,Memory,Multi Agent)等，逐步提高开发者在构建和管理智能体方面的技能。
+3. **应用实践** ：鼓励开发者将所学知识应用于解决实际问题，培养他们的实践能力和创新思维。
+
+### 技术基础要求
+
+- 适合拥有 **Python编程基础**
+- 能 **尝试阅读和理解项目源代码和理论** 的学习者
+
+### 参与贡献
+
+- 如果你想参与到项目中来欢迎查看项目的 [Issue](https://github.com/datawhalechina/handy-multi-agent/issues) 查看没有被分配的任务。
+- 如果你发现了一些问题，欢迎在 [Issue](https://github.com/datawhalechina/handy-multi-agent/issues) 中进行反馈🐛。
+- 如果你对本项目感兴趣想要参与进来可以通过 [Discussion](https://github.com/datawhalechina/handy-multi-agent/discussions) 进行交流💬
+
+### 关注我们
+
+扫描下方二维码关注公众号：Datawhale
+
+![[qrcode 4.jpeg]]
+
+扫描下方二维码关注公众号：CAMEL-AI
+
+![[assets/attachments/llm/ED5GPU1dRNqBk9j.png]]
+
+## LICENSE
+
+  
+本作品采用 [知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议](http://creativecommons.org/licenses/by-nc-sa/4.0/) 进行许可。
+
+*注：默认使用CC 4.0协议，也可根据自身项目情况选用其他协议*

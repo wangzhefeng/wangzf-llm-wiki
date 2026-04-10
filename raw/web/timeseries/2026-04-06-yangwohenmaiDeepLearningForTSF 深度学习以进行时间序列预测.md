@@ -1,18 +1,20 @@
 ---
-source_type: web
-title: "yangwohenmai/DeepLearningForTSF: 深度学习以进行时间序列预测"
-author: 
-created_at: 2026-04-06
-topics:
-  - 时间序列
-status: inbox
-source: "https://github.com/yangwohenmai/DeepLearningForTSF/tree/master"
-published: 
+author: null
 created: 2026-04-06
-description: "深度学习以进行时间序列预测. Contribute to yangwohenmai/DeepLearningForTSF development by creating an account on GitHub."
+created_at: 2026-04-06
+description: 深度学习以进行时间序列预测. Contribute to yangwohenmai/DeepLearningForTSF development
+  by creating an account on GitHub.
+published: null
+source: https://github.com/yangwohenmai/DeepLearningForTSF/tree/master
+source_type: web
+status: inbox
 tags:
-  - 
-  - "clippings"
+- null
+- clippings
+title: 'yangwohenmai/DeepLearningForTSF: 深度学习以进行时间序列预测'
+topics:
+- 时间序列
+- 深度学习
 ---
 
 ## DeepLearningForTimeSeriesForecasting

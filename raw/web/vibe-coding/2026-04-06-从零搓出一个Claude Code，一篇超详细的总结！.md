@@ -1,20 +1,20 @@
 ---
-source_type: web
-title: "从零搓出一个Claude Code，一篇超详细的总结！"
 author:
-  - 
-  - "[[尤逸晖]]"
-created_at: 2026-04-06
-topics:
-  - 待分类
-status: inbox
-source: "https://mp.weixin.qq.com/s/lspwTyzxUnpbw1eHIoqluw"
-published: 
+- null
+- '[[尤逸晖]]'
 created: 2026-04-06
-description: 
+created_at: 2026-04-06
+description: null
+published: null
+source: https://mp.weixin.qq.com/s/lspwTyzxUnpbw1eHIoqluw
+source_type: web
+status: inbox
 tags:
-  - 
-  - "clippings"
+- null
+- clippings
+title: 从零搓出一个Claude Code，一篇超详细的总结！
+topics:
+- Vibe Coding
 ---
 
 原创 尤逸晖 *2026年2月12日 22:01*

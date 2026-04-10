@@ -1,12 +1,14 @@
 ---
-title: "17  Diffusion Models – S&DS 431/631 — Optimization and Computation"
-source: "https://zhuoranyang.github.io/sds431-notes/lectures/17-diffusion-models.html"
-author:
-published:
+author: null
 created: 2026-04-11
-description:
+description: null
+published: null
+source: https://zhuoranyang.github.io/sds431-notes/lectures/17-diffusion-models.html
 tags:
-  - "clippings"
+- clippings
+title: 17  Diffusion Models – S&DS 431/631 — Optimization and Computation
+topics:
+- 运筹优化
 ---
 How can we generate photorealistic images from scratch? How do systems like Stable Diffusion and DALL-E 3 produce stunning artwork from a text prompt? The answer lies in a surprisingly simple and elegant idea: learn to reverse the process of adding noise. If we gradually corrupt an image by adding Gaussian noise until it becomes indistinguishable from pure static, and then train a neural network to undo each tiny noise step, we obtain a generative model that can conjure realistic images out of random noise.
 

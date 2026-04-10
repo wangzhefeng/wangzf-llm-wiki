@@ -1,18 +1,21 @@
 ---
-source_type: web
-title: "deep-learning-pytorch-huggingface/training/fine-tune-llms-in-2025.ipynb at main"
-author: 
-created_at: 2026-04-06
-topics:
-  - 大语言模型
-status: inbox
-source: "https://github.com/philschmid/deep-learning-pytorch-huggingface/blob/main/training/fine-tune-llms-in-2025.ipynb"
-published: 
+author: null
 created: 2026-04-06
-description: "Contribute to philschmid/deep-learning-pytorch-huggingface development by creating an account on GitHub."
+created_at: 2026-04-06
+description: Contribute to philschmid/deep-learning-pytorch-huggingface development
+  by creating an account on GitHub.
+published: null
+source: https://github.com/philschmid/deep-learning-pytorch-huggingface/blob/main/training/fine-tune-llms-in-2025.ipynb
+source_type: web
+status: inbox
 tags:
-  - 
-  - "clippings"
+- null
+- clippings
+title: deep-learning-pytorch-huggingface/training/fine-tune-llms-in-2025.ipynb at
+  main
+topics:
+- 大语言模型
+- 深度学习
 ---
 
 [Open in github.dev](https://github.dev/) [Open in a new github.dev tab](https://github.dev/) [Open in codespace](https://github.com/codespaces/new/philschmid/deep-learning-pytorch-huggingface/tree/main?resume=1)

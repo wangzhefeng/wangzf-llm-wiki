@@ -1,18 +1,20 @@
 ---
-source_type: web
-title: "Nixtla/neuralforecast: Scalable and user friendly neural forecasting algorithms."
-author: 
-created_at: 2026-04-06
-topics:
-  - 时间序列
-status: inbox
-source: "https://github.com/Nixtla/neuralforecast"
-published: 
+author: null
 created: 2026-04-06
-description: "Scalable and user friendly neural :brain: forecasting algorithms. - Nixtla/neuralforecast: Scalable and user friendly neural forecasting algorithms."
+created_at: 2026-04-06
+description: 'Scalable and user friendly neural :brain: forecasting algorithms. -
+  Nixtla/neuralforecast: Scalable and user friendly neural forecasting algorithms.'
+published: null
+source: https://github.com/Nixtla/neuralforecast
+source_type: web
+status: inbox
 tags:
-  - 
-  - "clippings"
+- null
+- clippings
+title: 'Nixtla/neuralforecast: Scalable and user friendly neural forecasting algorithms.'
+topics:
+- 时间序列
+- 深度学习
 ---
 
 ## Nixtla

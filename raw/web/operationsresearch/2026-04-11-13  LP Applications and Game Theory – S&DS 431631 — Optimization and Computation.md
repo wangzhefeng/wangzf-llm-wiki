@@ -1,12 +1,14 @@
 ---
-title: "13  LP Applications and Game Theory – S&DS 431/631 — Optimization and Computation"
-source: "https://zhuoranyang.github.io/sds431-notes/lectures/13-lp-applications.html"
-author:
-published:
+author: null
 created: 2026-04-11
-description:
+description: null
+published: null
+source: https://zhuoranyang.github.io/sds431-notes/lectures/13-lp-applications.html
 tags:
-  - "clippings"
+- clippings
+title: 13  LP Applications and Game Theory – S&DS 431/631 — Optimization and Computation
+topics:
+- 运筹优化
 ---
 Linear programming is not merely an abstract mathematical framework – it is a powerful modeling tool that captures a remarkable range of optimization problems. In this chapter we explore three celebrated applications of LP duality: the **max-flow/min-cut theorem** in network optimization, **robust LP** under parameter uncertainty, and **two-player zero-sum games**.
 

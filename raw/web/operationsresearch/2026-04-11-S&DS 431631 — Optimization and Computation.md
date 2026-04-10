@@ -1,13 +1,15 @@
 ---
-title: "S&DS 431/631 — Optimization and Computation"
-source: "https://zhuoranyang.github.io/sds431-notes/"
 author:
-  - "[[Zhuoran Yang]]"
-published:
+- '[[Zhuoran Yang]]'
 created: 2026-04-11
-description:
+description: null
+published: null
+source: https://zhuoranyang.github.io/sds431-notes/
 tags:
-  - "clippings"
+- clippings
+title: S&DS 431/631 — Optimization and Computation
+topics:
+- 运筹优化
 ---
 ## Welcome
 

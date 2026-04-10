@@ -1,20 +1,21 @@
 ---
-source_type: web
-title: "基于Transform的机器翻译系统"
 author:
-  - 
-  - "[[Dong]]"
-created_at: 2026-04-06
-topics:
-  - 待分类
-status: inbox
-source: "https://zhuanlan.zhihu.com/p/144825330"
-published: 
+- null
+- '[[Dong]]'
 created: 2026-04-06
-description: "大纲一. 建立Transformer模型的直观认识二. 编码器部分（Encoder）0. 先准备好输入的数据1. positional encoding（即位置嵌入或位置编码）2. self attention（自注意力机制）3. Attention Mask4. Layer Normalizat…"
+created_at: 2026-04-06
+description: 大纲一. 建立Transformer模型的直观认识二. 编码器部分（Encoder）0. 先准备好输入的数据1. positional encoding（即位置嵌入或位置编码）2.
+  self attention（自注意力机制）3. Attention Mask4. Layer Normalizat…
+published: null
+source: https://zhuanlan.zhihu.com/p/144825330
+source_type: web
+status: inbox
 tags:
-  - 
-  - "clippings"
+- null
+- clippings
+title: 基于Transform的机器翻译系统
+topics:
+- 深度学习
 ---
 
 ## 大纲
