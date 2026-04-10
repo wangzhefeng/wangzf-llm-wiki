@@ -193,6 +193,10 @@
   },
   "active": "cacb9091cd9daa6e",
   "lastOpenFiles": [
+    "assets/attachments/pytorch/ddp-multinode-training.jpg",
+    "assets/attachments/pytorch/ddp-mingpt-training.jpg",
+    "assets/attachments/pytorch/ddp-video-tutorials.jpg",
+    "assets/attachments/pytorch",
     "raw/web/2026-04-11-Harness Engineering在硅谷爆火，一文带你搞懂！.md",
     "raw/web/2026-04-11-换掉小龙虾！Hermes全网爆火狂揽四万星，Anthropic重锤暴击OpenClaw.md",
     "raw/web/2026-04-11-重磅！Anthropic官方Harness发布了！.md",
@@ -226,7 +230,6 @@
     "wiki/sources/deeplearning/2026-01-29-conv1d.md",
     "wiki/sources/timeseries/2026-01-27-feature-engine-topic.md",
     "wiki/sources/timeseries/2026-01-18-tsf-dl-stages.md",
-    "wiki/sources/llm/2025-07-28-llm-post-training.md",
     "wiki/concepts/data_structure_algorithm",
     "wiki/indexes/data_structure_algorithm",
     "wiki/sources/data_structure_algorithm",
@@ -236,9 +239,6 @@
     "wiki/sources/autofix",
     "wiki/concepts/autofix",
     "tools/fix_wikilink_network.py",
-    "tools/wiki_lint.py",
-    "assets/attachments/Image 2.webp",
-    "assets/attachments/Image 1.webp",
     "Untitled.canvas"
   ]
 }
