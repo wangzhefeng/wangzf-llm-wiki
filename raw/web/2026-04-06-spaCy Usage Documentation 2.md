@@ -324,7 +324,7 @@ This section outlines an example use-case of implementing a **novel relation ext
 
 1. Implement a [machine learning model](https://spacy.io/usage/layers-architectures#component-rel-model) specific to this task. It will have to extract candidate relation instances from a [`Doc`](https://spacy.io/api/doc) and predict the corresponding scores for each relation label.
 2. Implement a custom [pipeline component](https://spacy.io/usage/layers-architectures#component-rel-pipe) - powered by the machine learning model from step 1 - that translates the predicted scores into annotations that are stored on the [`Doc`](https://spacy.io/api/doc) objects as they pass through the `nlp` pipeline.
-![[Image 19.jpg]]
+> 图片待补抓：当前本地附件下载失败，原位置为关系抽取示意图。
 
 #### Step 1: Implementing the Model
 

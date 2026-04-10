@@ -29,7 +29,7 @@ Prerequisites
 
 Follow along with the video below or on [youtube](https://www.youtube.com/watch/KaAJtI1T2x4).
 
-![[Image 10.jpg]]
+![[assets/attachments/pytorch/ddp-multinode-training.jpg]]
 
 Multinode training involves deploying a training job across several machines. There are two ways to do this:
 

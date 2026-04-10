@@ -191,7 +191,7 @@ Media
 Various resources connected to the book
 
 ![[media-BEE6k2_u.svg|Media]] Machine learning street talk podcast
-![[Image 22.jpg]]
+> 图片待补抓：当前本地附件下载失败，原位置为媒体/访谈分组配图。
 
 Reviews
 

@@ -29,7 +29,7 @@ Prerequisites
 
 Follow along with the video below or on [youtube](https://www.youtube.com/watch/XFsFDGKZHh4).
 
-![[Image 20.jpg]]
+![[assets/attachments/pytorch/ddp-mingpt-training.jpg]]
 
 In this video, we will review the process of training a GPT model in multinode DDP. We first clone the [minGPT repo](https://github.com/karpathy/minGPT) and refactor the Trainer to resemble the structure we have used in this series. Watch the video for details on these changes.
 

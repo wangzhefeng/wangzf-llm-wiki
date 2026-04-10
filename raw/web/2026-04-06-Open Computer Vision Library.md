@@ -77,45 +77,45 @@ The world’s largest Computer Vision library meets the world’s top-rated Face
 
 [![[arm-logo.png]]](https://www.arm.com/)
 
-[![[Image 32.svg]]](http://www.futurewei.com/)
+[赞助商 Logo 待补抓（Futurewei）](http://www.futurewei.com/)
 
-[![[Image 33.svg]]](https://summerofcode.withgoogle.com/)
+[赞助商 Logo 待补抓（Google Summer of Code）](https://summerofcode.withgoogle.com/)
 
 ### Silver
 
-[![[Image 34.svg]]](https://roboflow.com/opencv)
+[赞助商 Logo 待补抓（Roboflow）](https://roboflow.com/opencv)
 
-[![[Image 35.svg]]](https://www.orbbec.com/)
+[赞助商 Logo 待补抓（Orbbec）](https://www.orbbec.com/)
 
-[![[Image 36.svg]]](https://www.bmva.org/)
+[赞助商 Logo 待补抓（BMVA）](https://www.bmva.org/)
 
-[![[Image 37.svg]]](https://seventhsense.ai/)
+[赞助商 Logo 待补抓（Seventh Sense）](https://seventhsense.ai/)
 
 ### Bronze
 
-[![[Image 38.svg]]](https://www.jetbrains.com/?utm_source=opencv&utm_medium=referral&utm_campaign=pycharm&utm_content=logo)
+[赞助商 Logo 待补抓（JetBrains）](https://www.jetbrains.com/?utm_source=opencv&utm_medium=referral&utm_campaign=pycharm&utm_content=logo)
 
 [![[The-Embedded-AI-Vision-Alliance_logo.png]]](https://www.edge-ai-vision.com/)
 
 [![[openmv-logo.png]]](https://openmv.io/)
 
-[![[Image 39.svg]]](https://www.tangramvision.com/)
+[赞助商 Logo 待补抓（Tangram Vision）](https://www.tangramvision.com/)
 
 [![[amped-logo.png]]](https://ampedsoftware.com/)
 
-[![[Image 40.svg]]](https://www.intuitivo.ai/)
+[赞助商 Logo 待补抓（Intuitivo）](https://www.intuitivo.ai/)
 
-[![[Image 41.svg]]](https://www.rerun.io/)
+[赞助商 Logo 待补抓（Rerun）](https://www.rerun.io/)
 
-[![[Image 42.svg]]](https://www.intrinsic.ai/)
+[赞助商 Logo 待补抓（Intrinsic）](https://www.intrinsic.ai/)
 
-[![[Image 43.svg]]](https://www.bairesdev.com/sponsoring-open-source-projects/)
+[赞助商 Logo 待补抓（BairesDev）](https://www.bairesdev.com/sponsoring-open-source-projects/)
 
 [![[Big-Vision-logo.png]]](https://www.bigvision.ai/)
 
 [Become A Sponsor](https://opencv.org/membership/)
 
-![[Image 44.svg]]
+> 图片待补抓：当前本地附件下载失败，原位置为 OpenCV 20 周年活动配图。
 
 OpenCV 20 <sup>th</sup> anniversary [Learn More](https://opencv.org/anniversary/)
 
