@@ -1,6 +1,6 @@
 ---
 source_type: web
-source_path: raw/web/2026-04-06-thumlSundial About model release for Sundial A Family of Highly Capable Time Series Foundation Models (ICML 2025 Oral).md
+source_path: raw/web/timeseries/2026-04-06-thumlSundial About model release for Sundial A Family of Highly Capable Time Series Foundation Models (ICML 2025 Oral).md
 title: thuml/Sundial: About model release for \"Sundial: A Family of Highly Capable Time Series Foundation Models\" (ICML 2025 Oral)
 author: unknown
 published_at: 2026-04-06
@@ -16,7 +16,7 @@ status: summarized
 
 ## 这份材料讲了什么
 
-- 来源：`raw/web/2026-04-06-thumlSundial About model release for Sundial A Family of Highly Capable Time Series Foundation Models (ICML 2025 Oral).md`
+- 来源：`raw/web/timeseries/2026-04-06-thumlSundial About model release for Sundial A Family of Highly Capable Time Series Foundation Models (ICML 2025 Oral).md`
 - 主题：时间序列
 
 ## 价值是什么

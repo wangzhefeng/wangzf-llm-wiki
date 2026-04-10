@@ -1,7 +1,7 @@
 ---
 source_type: web
 source_url: https://mp.weixin.qq.com/s/zOAsp5uZh_JTUb4VDliC0A?click_id=1
-source_path: raw/web/2026-04-05-卡帕西引爆硅谷！公开「第二大脑」黑科技，1250万人围观.md
+source_path: raw/web/uncategorized/2026-04-05-卡帕西引爆硅谷！公开「第二大脑」黑科技，1250万人围观.md
 created_at: 2026-04-05
 topics:
   - 知识库构建

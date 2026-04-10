@@ -1,6 +1,6 @@
 ---
 source_type: web
-source_path: raw/web/2026-04-06-datawhalechinahandy-multi-agent This is a multi agent tutorial based on the CAMEL framework, aimed at understanding how to build an Agent Society from the ground up!.md
+source_path: raw/web/llm/2026-04-06-datawhalechinahandy-multi-agent This is a multi agent tutorial based on the CAMEL framework, aimed at understanding how to build an Agent Society from the ground up!.md
 title: datawhalechina/handy-multi-agent: This is a multi agent tutorial based on the CAMEL framework, aimed at understanding how to build an Agent Society from the ground up!
 author: unknown
 published_at: 2026-04-06
@@ -16,7 +16,7 @@ status: summarized
 
 ## 这份材料讲了什么
 
-- 来源：`raw/web/2026-04-06-datawhalechinahandy-multi-agent This is a multi agent tutorial based on the CAMEL framework, aimed at understanding how to build an Agent Society from the ground up!.md`
+- 来源：`raw/web/llm/2026-04-06-datawhalechinahandy-multi-agent This is a multi agent tutorial based on the CAMEL framework, aimed at understanding how to build an Agent Society from the ground up!.md`
 - 主题：大语言模型
 
 ## 价值是什么

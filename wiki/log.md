@@ -57,3 +57,10 @@ status: linked
 - Added canonical `模型微调` concept page under `llm`.
 - Merged `Function Calling` and `MCP` placeholder concepts into `Agent智能体`.
 - Redirected `QLoRA` placeholder concept to `模型微调`.
+
+## [2026-04-11] lint | 知识库健康检查
+
+- Ran `tools/wiki_lint.py` (结构/字段/相对链接一致性)：无问题。
+- Added `tools/wiki_health_check.py` (wikilink 断链 / 孤页 / raw frontmatter 缺失统计) 并运行。
+- Fixed broken wikilinks to 0 by adding 2 placeholder concept pages and correcting 1 wikilink target.
+- Logged: `outputs/logs/2026-04-11-知识库健康检查-动作记录.md`

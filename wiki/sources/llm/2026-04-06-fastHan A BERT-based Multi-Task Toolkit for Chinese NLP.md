@@ -1,6 +1,6 @@
 ---
 source_type: web
-source_path: raw/web/2026-04-06-fastHan A BERT-based Multi-Task Toolkit for Chinese NLP.md
+source_path: raw/web/uncategorized/2026-04-06-fastHan A BERT-based Multi-Task Toolkit for Chinese NLP.md
 title: fastHan: A BERT-based Multi-Task Toolkit for Chinese NLP
 author: unknown
 published_at: 2026-04-06
@@ -16,7 +16,7 @@ status: summarized
 
 ## 这份材料讲了什么
 
-- 来源：`raw/web/2026-04-06-fastHan A BERT-based Multi-Task Toolkit for Chinese NLP.md`
+- 来源：`raw/web/uncategorized/2026-04-06-fastHan A BERT-based Multi-Task Toolkit for Chinese NLP.md`
 - 主题：大语言模型
 
 ## 价值是什么

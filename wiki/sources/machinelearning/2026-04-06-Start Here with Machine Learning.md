@@ -1,6 +1,6 @@
 ---
 source_type: web
-source_path: raw/web/2026-04-06-Start Here with Machine Learning.md
+source_path: raw/web/machine-learning/2026-04-06-Start Here with Machine Learning.md
 title: Start Here with Machine Learning
 author: unknown
 published_at: 2026-04-06
@@ -16,7 +16,7 @@ status: summarized
 
 ## 这份材料讲了什么
 
-- 来源：`raw/web/2026-04-06-Start Here with Machine Learning.md`
+- 来源：`raw/web/machine-learning/2026-04-06-Start Here with Machine Learning.md`
 - 主题：机器学习
 
 ## 价值是什么

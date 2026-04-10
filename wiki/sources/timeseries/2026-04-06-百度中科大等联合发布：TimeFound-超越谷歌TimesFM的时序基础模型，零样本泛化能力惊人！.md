@@ -1,6 +1,6 @@
 ---
 source_type: web
-source_path: raw/web/2026-04-06-百度中科大等联合发布：TimeFound-超越谷歌TimesFM的时序基础模型，零样本泛化能力惊人！.md
+source_path: raw/web/timeseries/2026-04-06-百度中科大等联合发布：TimeFound-超越谷歌TimesFM的时序基础模型，零样本泛化能力惊人！.md
 title: 百度/中科大等联合发布：TimeFound-超越谷歌TimesFM的时序基础模型，零样本泛化能力惊人！
 author: unknown
 published_at: 2026-04-06
@@ -16,7 +16,7 @@ status: summarized
 
 ## 这份材料讲了什么
 
-- 来源：`raw/web/2026-04-06-百度中科大等联合发布：TimeFound-超越谷歌TimesFM的时序基础模型，零样本泛化能力惊人！.md`
+- 来源：`raw/web/timeseries/2026-04-06-百度中科大等联合发布：TimeFound-超越谷歌TimesFM的时序基础模型，零样本泛化能力惊人！.md`
 - 主题：时间序列
 
 ## 价值是什么

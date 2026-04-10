@@ -1,6 +1,6 @@
 ---
 source_type: web
-source_path: raw/web/2026-04-06-How to Develop Multi-Output Regression Models with Python.md
+source_path: raw/web/uncategorized/2026-04-06-How to Develop Multi-Output Regression Models with Python.md
 title: How to Develop Multi-Output Regression Models with Python
 author: unknown
 published_at: 2026-04-06
@@ -16,7 +16,7 @@ status: summarized
 
 ## 这份材料讲了什么
 
-- 来源：`raw/web/2026-04-06-How to Develop Multi-Output Regression Models with Python.md`
+- 来源：`raw/web/uncategorized/2026-04-06-How to Develop Multi-Output Regression Models with Python.md`
 - 主题：机器学习
 
 ## 价值是什么

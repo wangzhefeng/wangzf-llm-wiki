@@ -1,6 +1,6 @@
 ---
 source_type: web
-source_path: raw/web/2026-04-06-Neural networks and deep learning basics  大语言模型（Large Language Models）.md
+source_path: raw/web/deeplearning/2026-04-06-Neural networks and deep learning basics  大语言模型（Large Language Models）.md
 title: Neural networks and deep learning basics | 大语言模型（Large Language Models）
 author: unknown
 published_at: 2026-04-06
@@ -16,7 +16,7 @@ status: summarized
 
 ## 这份材料讲了什么
 
-- 来源：`raw/web/2026-04-06-Neural networks and deep learning basics  大语言模型（Large Language Models）.md`
+- 来源：`raw/web/deeplearning/2026-04-06-Neural networks and deep learning basics  大语言模型（Large Language Models）.md`
 - 主题：深度学习
 
 ## 价值是什么

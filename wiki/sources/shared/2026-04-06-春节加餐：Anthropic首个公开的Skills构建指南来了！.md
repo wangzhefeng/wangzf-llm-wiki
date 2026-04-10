@@ -1,6 +1,6 @@
 ---
 source_type: web
-source_path: raw/web/2026-04-06-春节加餐：Anthropic首个公开的Skills构建指南来了！.md
+source_path: raw/web/uncategorized/2026-04-06-春节加餐：Anthropic首个公开的Skills构建指南来了！.md
 title: 春节加餐：Anthropic首个公开的Skills构建指南来了！
 author: unknown
 published_at: 2026-04-06
@@ -16,7 +16,7 @@ status: summarized
 
 ## 这份材料讲了什么
 
-- 来源：`raw/web/2026-04-06-春节加餐：Anthropic首个公开的Skills构建指南来了！.md`
+- 来源：`raw/web/uncategorized/2026-04-06-春节加餐：Anthropic首个公开的Skills构建指南来了！.md`
 - 主题：待分类
 
 ## 价值是什么

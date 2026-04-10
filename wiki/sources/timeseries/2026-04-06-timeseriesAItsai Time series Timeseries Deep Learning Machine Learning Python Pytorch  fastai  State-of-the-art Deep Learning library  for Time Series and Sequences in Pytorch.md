@@ -1,6 +1,6 @@
 ---
 source_type: web
-source_path: raw/web/2026-04-06-timeseriesAItsai Time series Timeseries Deep Learning Machine Learning Python Pytorch  fastai  State-of-the-art Deep Learning library  for Time Series and Sequences in Pytorch.md
+source_path: raw/web/timeseries/2026-04-06-timeseriesAItsai Time series Timeseries Deep Learning Machine Learning Python Pytorch  fastai  State-of-the-art Deep Learning library  for Time Series and Sequences in Pytorch.md
 title: timeseriesAI/tsai: Time series Timeseries Deep Learning Machine Learning Python Pytorch  fastai | State-of-the-art Deep Learning library  for Time Series and Sequences in Pytorch
 author: unknown
 published_at: 2026-04-06
@@ -16,7 +16,7 @@ status: summarized
 
 ## 这份材料讲了什么
 
-- 来源：`raw/web/2026-04-06-timeseriesAItsai Time series Timeseries Deep Learning Machine Learning Python Pytorch  fastai  State-of-the-art Deep Learning library  for Time Series and Sequences in Pytorch.md`
+- 来源：`raw/web/timeseries/2026-04-06-timeseriesAItsai Time series Timeseries Deep Learning Machine Learning Python Pytorch  fastai  State-of-the-art Deep Learning library  for Time Series and Sequences in Pytorch.md`
 - 主题：时间序列
 
 ## 价值是什么

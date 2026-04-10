@@ -1,7 +1,7 @@
 ---
 source_type: web
 source_url: https://scikit-learn.org/stable/auto_examples/applications/plot_time_series_lagged_features.html
-source_path: raw/web/2026-04-05-scikit-learn-lagged-features.md
+source_path: raw/web/timeseries/2026-04-05-scikit-learn-lagged-features.md
 created_at: 2026-04-05
 topics:
   - 时间序列预测

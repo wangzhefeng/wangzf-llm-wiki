@@ -1,7 +1,7 @@
 ---
 source_type: web
 source_url: https://mp.weixin.qq.com/s?__biz=Mzg3MTkxMjYzOA==&mid=2247513861&idx=1&sn=59fe0da79f6b7865f6bcd8d30f4dfc61&scene=21&poc_token=HJrm0Wmjda1Zvqj9DBg_Y8STbze9Fz5RBokyAetr
-source_path: raw/web/2026-04-05-Karpathy最新硬核分享：用大模型和Obsidian打造个人本地知识库.md
+source_path: raw/web/knowledge-base/2026-04-05-Karpathy最新硬核分享：用大模型和Obsidian打造个人本地知识库.md
 created_at: 2026-04-05
 topics:
   - 知识库构建

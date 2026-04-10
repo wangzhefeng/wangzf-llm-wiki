@@ -1,6 +1,6 @@
 ---
 source_type: web
-source_path: raw/web/2026-04-06-kwukingTimeMixer ICLR 2024 Official implementation of TimeMixer Decomposable Multiscale Mixing for Time Series Forecasting.md
+source_path: raw/web/timeseries/2026-04-06-kwukingTimeMixer ICLR 2024 Official implementation of TimeMixer Decomposable Multiscale Mixing for Time Series Forecasting.md
 title: kwuking/TimeMixer: [ICLR 2024] Official implementation of \"TimeMixer: Decomposable Multiscale Mixing for Time Series Forecasting\"
 author: unknown
 published_at: 2026-04-06
@@ -16,7 +16,7 @@ status: summarized
 
 ## 这份材料讲了什么
 
-- 来源：`raw/web/2026-04-06-kwukingTimeMixer ICLR 2024 Official implementation of TimeMixer Decomposable Multiscale Mixing for Time Series Forecasting.md`
+- 来源：`raw/web/timeseries/2026-04-06-kwukingTimeMixer ICLR 2024 Official implementation of TimeMixer Decomposable Multiscale Mixing for Time Series Forecasting.md`
 - 主题：时间序列
 
 ## 价值是什么

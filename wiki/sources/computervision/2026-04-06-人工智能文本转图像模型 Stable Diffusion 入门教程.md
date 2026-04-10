@@ -1,6 +1,6 @@
 ---
 source_type: web
-source_path: raw/web/2026-04-06-人工智能文本转图像模型 Stable Diffusion 入门教程.md
+source_path: raw/web/computer-vision/2026-04-06-人工智能文本转图像模型 Stable Diffusion 入门教程.md
 title: 人工智能文本转图像模型 Stable Diffusion 入门教程
 author: unknown
 published_at: 2026-04-06
@@ -16,7 +16,7 @@ status: summarized
 
 ## 这份材料讲了什么
 
-- 来源：`raw/web/2026-04-06-人工智能文本转图像模型 Stable Diffusion 入门教程.md`
+- 来源：`raw/web/computer-vision/2026-04-06-人工智能文本转图像模型 Stable Diffusion 入门教程.md`
 - 主题：计算机视觉
 
 ## 价值是什么

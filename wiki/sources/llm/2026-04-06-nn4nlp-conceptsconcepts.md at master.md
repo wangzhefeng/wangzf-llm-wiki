@@ -1,6 +1,6 @@
 ---
 source_type: web
-source_path: raw/web/2026-04-06-nn4nlp-conceptsconcepts.md at master.md
+source_path: raw/web/uncategorized/2026-04-06-nn4nlp-conceptsconcepts.md at master.md
 title: nn4nlp-concepts/concepts.md at master
 author: unknown
 published_at: 2026-04-06
@@ -16,7 +16,7 @@ status: summarized
 
 ## 这份材料讲了什么
 
-- 来源：`raw/web/2026-04-06-nn4nlp-conceptsconcepts.md at master.md`
+- 来源：`raw/web/uncategorized/2026-04-06-nn4nlp-conceptsconcepts.md at master.md`
 - 主题：大语言模型
 
 ## 价值是什么

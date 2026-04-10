@@ -1,6 +1,6 @@
 ---
 source_type: web
-source_path: raw/web/2026-04-06-SkalskiPvlms-zero-to-hero This series will take you on a journey from the fundamentals of NLP and Computer Vision to the cutting edge of Vision-Language Models.md
+source_path: raw/web/computer-vision/2026-04-06-SkalskiPvlms-zero-to-hero This series will take you on a journey from the fundamentals of NLP and Computer Vision to the cutting edge of Vision-Language Models.md
 title: SkalskiP/vlms-zero-to-hero: This series will take you on a journey from the fundamentals of NLP and Computer Vision to the cutting edge of Vision-Language Models.
 author: unknown
 published_at: 2026-04-06
@@ -16,7 +16,7 @@ status: summarized
 
 ## 这份材料讲了什么
 
-- 来源：`raw/web/2026-04-06-SkalskiPvlms-zero-to-hero This series will take you on a journey from the fundamentals of NLP and Computer Vision to the cutting edge of Vision-Language Models.md`
+- 来源：`raw/web/computer-vision/2026-04-06-SkalskiPvlms-zero-to-hero This series will take you on a journey from the fundamentals of NLP and Computer Vision to the cutting edge of Vision-Language Models.md`
 - 主题：计算机视觉
 
 ## 价值是什么

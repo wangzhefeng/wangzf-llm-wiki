@@ -1,6 +1,6 @@
 ---
 source_type: web
-source_path: raw/web/2026-04-06-GitHub---datawhalechinaeasy-vibe-💻-vibe-coding-2026--Your-first-modern-programmi.md
+source_path: raw/web/collection/2026-04-06-GitHub---datawhalechinaeasy-vibe-💻-vibe-coding-2026--Your-first-modern-programmi.md
 title: GitHub - datawhalechina/easy-vibe: 💻 vibe coding 2026 | Your first modern programming course for beginners to master step by step. · GitHub
 author: unknown
 published_at: 2026-04-06
@@ -16,7 +16,7 @@ status: summarized
 
 ## 这份材料讲了什么
 
-- 来源：`raw/web/2026-04-06-GitHub---datawhalechinaeasy-vibe-💻-vibe-coding-2026--Your-first-modern-programmi.md`
+- 来源：`raw/web/collection/2026-04-06-GitHub---datawhalechinaeasy-vibe-💻-vibe-coding-2026--Your-first-modern-programmi.md`
 - 主题：机器学习
 
 ## 价值是什么

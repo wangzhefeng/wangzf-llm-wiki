@@ -1,7 +1,7 @@
 ---
 source_type: web
 source_url: https://mp.weixin.qq.com/s/48LCpLkzL3bWNL1MjpDFeA
-source_path: raw/web/2026-04-05-全网爆火的大模型AI知识库，保姆级教程来了.md
+source_path: raw/web/uncategorized/2026-04-05-全网爆火的大模型AI知识库，保姆级教程来了.md
 created_at: 2026-04-05
 topics:
   - 知识库构建

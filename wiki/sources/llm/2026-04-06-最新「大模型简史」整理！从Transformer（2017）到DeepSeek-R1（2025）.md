@@ -1,6 +1,6 @@
 ---
 source_type: web
-source_path: raw/web/2026-04-06-最新「大模型简史」整理！从Transformer（2017）到DeepSeek-R1（2025）.md
+source_path: raw/web/llm/2026-04-06-最新「大模型简史」整理！从Transformer（2017）到DeepSeek-R1（2025）.md
 title: 最新「大模型简史」整理！从Transformer（2017）到DeepSeek-R1（2025）
 author: unknown
 published_at: 2026-04-06
@@ -16,7 +16,7 @@ status: summarized
 
 ## 这份材料讲了什么
 
-- 来源：`raw/web/2026-04-06-最新「大模型简史」整理！从Transformer（2017）到DeepSeek-R1（2025）.md`
+- 来源：`raw/web/llm/2026-04-06-最新「大模型简史」整理！从Transformer（2017）到DeepSeek-R1（2025）.md`
 - 主题：大语言模型
 
 ## 价值是什么

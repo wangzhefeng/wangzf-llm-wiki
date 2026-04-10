@@ -1,6 +1,6 @@
 ---
 source_type: web
-source_path: raw/web/2026-04-06-Paper page - Spectrum Targeted Training on Signal to Noise Ratio.md
+source_path: raw/web/uncategorized/2026-04-06-Paper page - Spectrum Targeted Training on Signal to Noise Ratio.md
 title: Paper page - Spectrum: Targeted Training on Signal to Noise Ratio
 author: unknown
 published_at: 2026-04-06
@@ -16,7 +16,7 @@ status: summarized
 
 ## 这份材料讲了什么
 
-- 来源：`raw/web/2026-04-06-Paper page - Spectrum Targeted Training on Signal to Noise Ratio.md`
+- 来源：`raw/web/uncategorized/2026-04-06-Paper page - Spectrum Targeted Training on Signal to Noise Ratio.md`
 - 主题：待分类
 
 ## 价值是什么

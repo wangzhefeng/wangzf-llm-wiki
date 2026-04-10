@@ -1,6 +1,6 @@
 ---
 source_type: web
-source_path: raw/web/2026-04-06-如何添加 NVIDIA GPU 节点到 Kubernetes 集群.md
+source_path: raw/web/uncategorized/2026-04-06-如何添加 NVIDIA GPU 节点到 Kubernetes 集群.md
 title: 如何添加 NVIDIA GPU 节点到 Kubernetes 集群
 author: unknown
 published_at: 2026-04-06
@@ -16,7 +16,7 @@ status: summarized
 
 ## 这份材料讲了什么
 
-- 来源：`raw/web/2026-04-06-如何添加 NVIDIA GPU 节点到 Kubernetes 集群.md`
+- 来源：`raw/web/uncategorized/2026-04-06-如何添加 NVIDIA GPU 节点到 Kubernetes 集群.md`
 - 主题：待分类
 
 ## 价值是什么

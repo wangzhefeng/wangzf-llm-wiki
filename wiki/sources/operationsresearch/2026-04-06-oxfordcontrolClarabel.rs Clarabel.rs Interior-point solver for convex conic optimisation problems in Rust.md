@@ -1,6 +1,6 @@
 ---
 source_type: web
-source_path: raw/web/2026-04-06-oxfordcontrolClarabel.rs Clarabel.rs Interior-point solver for convex conic optimisation problems in Rust.md
+source_path: raw/web/uncategorized/2026-04-06-oxfordcontrolClarabel.rs Clarabel.rs Interior-point solver for convex conic optimisation problems in Rust.md
 title: oxfordcontrol/Clarabel.rs: Clarabel.rs: Interior-point solver for convex conic optimisation problems in Rust.
 author: unknown
 published_at: 2026-04-06
@@ -16,7 +16,7 @@ status: summarized
 
 ## 这份材料讲了什么
 
-- 来源：`raw/web/2026-04-06-oxfordcontrolClarabel.rs Clarabel.rs Interior-point solver for convex conic optimisation problems in Rust.md`
+- 来源：`raw/web/uncategorized/2026-04-06-oxfordcontrolClarabel.rs Clarabel.rs Interior-point solver for convex conic optimisation problems in Rust.md`
 - 主题：运筹优化
 
 ## 价值是什么

@@ -1,6 +1,6 @@
 ---
 source_type: web
-source_path: raw/web/2026-04-06-aws-samplesmulti-step-forecasting-blog-sample-code This repository is used for sample code of AWS China Blog.md
+source_path: raw/web/timeseries/2026-04-06-aws-samplesmulti-step-forecasting-blog-sample-code This repository is used for sample code of AWS China Blog.md
 title: aws-samples/multi-step-forecasting-blog-sample-code: This repository is used for sample code of AWS China Blog.
 author: unknown
 published_at: 2026-04-06
@@ -16,7 +16,7 @@ status: summarized
 
 ## 这份材料讲了什么
 
-- 来源：`raw/web/2026-04-06-aws-samplesmulti-step-forecasting-blog-sample-code This repository is used for sample code of AWS China Blog.md`
+- 来源：`raw/web/timeseries/2026-04-06-aws-samplesmulti-step-forecasting-blog-sample-code This repository is used for sample code of AWS China Blog.md`
 - 主题：时间序列
 
 ## 价值是什么

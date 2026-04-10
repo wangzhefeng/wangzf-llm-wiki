@@ -1,6 +1,6 @@
 ---
 source_type: web
-source_path: raw/web/2026-04-06-open-compassVLMEvalKit Open-source evaluation toolkit of large multi-modality models (LMMs), support 220+ LMMs, 80+ benchmarks.md
+source_path: raw/web/reinforcement-learning/2026-04-06-open-compassVLMEvalKit Open-source evaluation toolkit of large multi-modality models (LMMs), support 220+ LMMs, 80+ benchmarks.md
 title: open-compass/VLMEvalKit: Open-source evaluation toolkit of large multi-modality models (LMMs), support 220+ LMMs, 80+ benchmarks
 author: unknown
 published_at: 2026-04-06
@@ -16,7 +16,7 @@ status: summarized
 
 ## 这份材料讲了什么
 
-- 来源：`raw/web/2026-04-06-open-compassVLMEvalKit Open-source evaluation toolkit of large multi-modality models (LMMs), support 220+ LMMs, 80+ benchmarks.md`
+- 来源：`raw/web/reinforcement-learning/2026-04-06-open-compassVLMEvalKit Open-source evaluation toolkit of large multi-modality models (LMMs), support 220+ LMMs, 80+ benchmarks.md`
 - 主题：计算机视觉
 
 ## 价值是什么

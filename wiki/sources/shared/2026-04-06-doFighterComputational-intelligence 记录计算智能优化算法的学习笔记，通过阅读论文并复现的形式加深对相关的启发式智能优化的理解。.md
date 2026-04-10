@@ -1,6 +1,6 @@
 ---
 source_type: web
-source_path: raw/web/2026-04-06-doFighterComputational-intelligence 记录计算智能优化算法的学习笔记，通过阅读论文并复现的形式加深对相关的启发式智能优化的理解。.md
+source_path: raw/web/uncategorized/2026-04-06-doFighterComputational-intelligence 记录计算智能优化算法的学习笔记，通过阅读论文并复现的形式加深对相关的启发式智能优化的理解。.md
 title: doFighter/Computational-intelligence: 记录计算智能优化算法的学习笔记，通过阅读论文并复现的形式加深对相关的启发式智能优化的理解。
 author: unknown
 published_at: 2026-04-06
@@ -16,7 +16,7 @@ status: summarized
 
 ## 这份材料讲了什么
 
-- 来源：`raw/web/2026-04-06-doFighterComputational-intelligence 记录计算智能优化算法的学习笔记，通过阅读论文并复现的形式加深对相关的启发式智能优化的理解。.md`
+- 来源：`raw/web/uncategorized/2026-04-06-doFighterComputational-intelligence 记录计算智能优化算法的学习笔记，通过阅读论文并复现的形式加深对相关的启发式智能优化的理解。.md`
 - 主题：待分类
 
 ## 价值是什么

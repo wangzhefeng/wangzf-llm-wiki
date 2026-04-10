@@ -1,6 +1,6 @@
 ---
 source_type: web
-source_path: raw/web/2026-04-06-Meteor-StarsSEMixer This is code for SEMixer Semantics Enhanced MLP-Mixer for Multiscale Mixing and Long-term Time Series Forecasting (WWW 2026). SEMixer can handle longer input sequences and achieve better performance from longer inp.md
+source_path: raw/web/timeseries/2026-04-06-Meteor-StarsSEMixer This is code for SEMixer Semantics Enhanced MLP-Mixer for Multiscale Mixing and Long-term Time Series Forecasting (WWW 2026). SEMixer can handle longer input sequences and achieve better performance from longer inp.md
 title: Meteor-Stars/SEMixer: This is code for SEMixer: Semantics Enhanced MLP-Mixer for Multiscale Mixing and Long-term Time Series Forecasting (WWW 2026). SEMixer can handle longer input sequences and achieve better performance from longer inputs in long-term time series forecasting.
 author: unknown
 published_at: 2026-04-06
@@ -16,7 +16,7 @@ status: summarized
 
 ## 这份材料讲了什么
 
-- 来源：`raw/web/2026-04-06-Meteor-StarsSEMixer This is code for SEMixer Semantics Enhanced MLP-Mixer for Multiscale Mixing and Long-term Time Series Forecasting (WWW 2026). SEMixer can handle longer input sequences and achieve better performance from longer inp.md`
+- 来源：`raw/web/timeseries/2026-04-06-Meteor-StarsSEMixer This is code for SEMixer Semantics Enhanced MLP-Mixer for Multiscale Mixing and Long-term Time Series Forecasting (WWW 2026). SEMixer can handle longer input sequences and achieve better performance from longer inp.md`
 - 主题：时间序列
 
 ## 价值是什么
