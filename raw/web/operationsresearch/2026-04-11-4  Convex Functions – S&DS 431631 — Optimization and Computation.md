@@ -1,0 +1,875 @@
+---
+title: "4  Convex Functions – S&DS 431/631 — Optimization and Computation"
+source: "https://zhuoranyang.github.io/sds431-notes/lectures/04-convex-functions.html"
+author:
+published:
+created: 2026-04-11
+description:
+tags:
+  - "clippings"
+---
+Having established the theory of convex sets in the previous chapter — including the convexity definition ([Equation 3.1](https://zhuoranyang.github.io/sds431-notes/lectures/03-convex-sets.html#eq-convex-set-def)) and the preservation rules in [Theorem 3.4](https://zhuoranyang.github.io/sds431-notes/lectures/03-convex-sets.html#thm-operations-convex-sets) — we now turn to the functions we optimize over them. A convex function is one whose graph “curves upward,” ensuring that there are no hidden valleys or local minima that could trap an optimization algorithm.
+
+We develop the theory of convex functions through three equivalent characterizations — the chord inequality, the tangent-line condition, and the Hessian test — culminating in powerful preservation rules that let us establish convexity of complex objectives without resorting to direct computation. These tools will be used in every subsequent chapter of the course.
+
+TipCompanion Notebooks
+
+Hands-on Python notebooks accompany this chapter. Click a badge to open in Google Colab.
+
+- **Convex Function Properties** — visualizing epigraphs, level sets, and tangent-line characterizations
+- **3D Convex Geometry** — interactive 3D plots of convex sets, ellipsoids, convex hulls, and level sets
+
+## What Will Be Covered
+
+- Definition of convex functions via the chord inequality
+- First-order characterization: the tangent-line condition and gradient monotonicity
+- Second-order characterization: the Hessian test
+- Strong convexity and its implications
+- Restriction to a line as a proof technique
+- Operations that preserve convexity: sums, pointwise maximum, composition rules
+- Epigraphs and sublevel sets
+- Jensen’s inequality
+- Practical methods for establishing convexity, with worked examples
+
+## 4.1 Definition and the Chord Inequality
+
+The most basic way to express “curving upward” is the **chord inequality**: the function value at any mixture of two points lies below the chord connecting them. The formal definition below makes this intuition precise.
+
+**Definition 4.1 (Convex Function)** A function $f : \mathbb{R}^n \to \mathbb{R}$ is **convex** if $\text{dom}(f)$ is a convex set and for all $x, y \in \text{dom}(f)$ and $\lambda \in [0,1]$,
+
+$$
+f(\lambda x + (1-\lambda)y) \leq \lambda f(x) + (1-\lambda)f(y). \tag{4.1}
+$$
+
+Geometrically: the function value at any convex combination lies below (or on) the chord connecting $(x, f(x))$ and $(y, f(y))$.
+
+$f$ is **strictly convex** if the inequality is strict for $\lambda \in (0,1)$ and $x \neq y$.
+
+$f$ is **concave** if $-f$ is convex.
+
+The defining inequality ([Equation 4.1](https://zhuoranyang.github.io/sds431-notes/lectures/04-convex-functions.html#eq-convex-function-def)) says that the graph of a convex function always lies **below** any chord drawn between two of its points. Equivalently, a convex function “bows upward.” This simple geometric property has profound algorithmic consequences: it ensures that every local minimum is a global minimum, which is the reason convex optimization problems are tractable.
+
+Figure 4.1: A convex function in 3D: f(x₁,x₂) = x₁² + x₂². The surface lies below any chord, and every sublevel set is convex.
+
+### 4.1.1 Strictly Convex and Strongly Convex Functions
+
+The definition above allows a convex function to be “flat” along certain directions (think of an affine function, which is convex but has no curvature at all). Two stronger notions quantify how much a function “curves upward.”
+
+**Definition 4.2 (Strictly Convex Function)** A function $f : D \subseteq \mathbb{R}^n \to \mathbb{R}$ is **strictly convex** if $D$ is a convex set, and for all $x, y \in D$ with $x \neq y$ and all $\lambda \in (0,1)$:
+
+$$
+f(\lambda x + (1-\lambda) y) < \lambda \, f(x) + (1-\lambda) \, f(y).
+$$
+
+The inequality is **strict**. Geometrically, the chord between any two distinct points lies *strictly above* the graph — the function has no flat segments.
+
+Strict convexity guarantees that the minimizer, if it exists, is **unique**. However, it does not quantify *how much* the function curves. For convergence rate analysis, we need a stronger notion that provides a quantitative lower bound on curvature.
+
+**Definition 4.3 ($m$ -Strongly Convex Function)** A function $f : D \subseteq \mathbb{R}^n \to \mathbb{R}$ is **$m$ -strongly convex** (with parameter $m > 0$) if and only if the function $f(x) - \frac{m}{2}\|x\|_2^2$ is convex.
+
+In other words, $f$ is at least “as convex as” the quadratic $g(x) = \frac{m}{2}\|x\|_2^2$. The parameter $m$ measures the *minimum curvature* of $f$: the larger $m$ is, the more strongly the function curves upward. This lower bound on curvature is what gives strongly convex functions their fast (linear) convergence rates under gradient descent.
+
+**Hierarchy:** $m$ -strongly convex ($m > 0$)    $\implies$ strictly convex    $\implies$ convex. The converses are false: $f(x) = x^4$ is strictly convex but not strongly convex (its curvature vanishes at $x = 0$), and $f(x) = |x|$ is convex but not strictly convex (it is affine on $(-\infty, 0)$ and on $(0, +\infty)$).
+
+**Definition 4.4 (Concave Functions)** A function $f$ is **concave** if $(-f)$ is convex; **strictly concave** if $(-f)$ is strictly convex; **$m$ -strongly concave** if $(-f)$ is $m$ -strongly convex. Concave functions are also defined on convex domains.
+
+If $f$ is both convex and concave, then $f$ must be **affine**: $f(x) = a^\top x + b$.
+
+### 4.1.2 Examples of Convex Functions
+
+**Example 4.1 (Univariate Convex Functions ($f : \mathbb{R} \to \mathbb{R}$))** The following functions of a single variable are convex (verify by checking $f'' \geq 0$):
+
+- $e^{ax}$ for any $a \in \mathbb{R}$ (exponential)
+- $-\log x$ on $x > 0$ (negative log)
+- $x^\alpha$ on $\mathbb{R}_{++} = \{x > 0\}$ for $\alpha \geq 1$ or $\alpha \leq 0$ (power functions with sufficient curvature)
+- $-x^\alpha$ on $\mathbb{R}_{++}$ for $0 \leq \alpha \leq 1$ (e.g., $-\sqrt{x}$ is convex)
+- $|x|^\alpha$ on $\mathbb{R}$ for $\alpha \geq 1$ (e.g., $|x|$ is convex but not differentiable at $0$)
+- $x \log x$ on $\mathbb{R}_{++}$ (negative entropy — key in information theory)
+
+**Example 4.2 (Multivariate Convex Functions ($f : \mathbb{R}^n \to \mathbb{R}$))** **(i) Affine functions.** $f(x) = a^\top x + b$ is both convex and concave for any $a \in \mathbb{R}^n$, $b \in \mathbb{R}$.
+
+*Proof*. $f(\lambda x + (1-\lambda)y) = a^\top(\lambda x + (1-\lambda)y) + b = \lambda(a^\top x + b) + (1-\lambda)(a^\top y + b) = \lambda \, f(x) + (1-\lambda) \, f(y)$. Equality holds, so $f$ is both convex and concave. $\blacksquare$
+
+**(ii) Quadratic functions.** $f(x) = x^\top Q x + c^\top x + b$ where $Q$ is symmetric:
+
+- Convex    $\iff$ $Q \succeq 0$ (positive semidefinite)
+- Strictly convex    $\iff$ $Q \succ 0$ (positive definite)
+- $m$ -strongly convex    $\iff$ $Q \succeq \frac{m}{2} I_n$ (i.e., all eigenvalues of $Q$ are at least $m/2$)
+- Concave    $\iff$ $Q \preceq 0$; strictly concave    $\iff$ $Q \prec 0$; $m$ -strongly concave    $\iff$ $Q \preceq -\frac{m}{2} I_n$
+
+**(iii) Least squares.** $\mathcal{L}(x) = \|Ax - b\|_2^2$ is always convex (since $\nabla^2 \mathcal{L} = 2A^\top A \succeq 0$).
+
+**(iv) Norms.** Any function $f : D \to \mathbb{R}$ satisfying positivity ($f(x) \geq 0$, $f(x) = 0$ iff $x = 0$), homogeneity ($f(\alpha x) = |\alpha| f(x)$), and the triangle inequality ($f(x+y) \leq f(x) + f(y)$) is convex.
+
+*Proof*. $f(\lambda x + (1-\lambda)y) \leq f(\lambda x) + f((1-\lambda)y) = \lambda \, f(x) + (1-\lambda) \, f(y)$, using the triangle inequality and then homogeneity. $\blacksquare$
+
+Examples include all vector $\ell_p$ -norms ($\|x\|_\infty$, $\|x\|_1$, $\|x\|_2$) and matrix norms (operator norm $\|A\|_p$, vectorized norms $\|A\|_{\ell_p}$). The $\ell_2$ -norm is strictly convex; the $\ell_1$ - and $\ell_\infty$ -norms are convex but not strictly convex.
+
+**(v) Max function.** $f(x) = \max\{x_1, \ldots, x_n\}$ is convex.
+
+**(vi) Support function.** For any set $\mathcal{C}$ (convex or not), its support function $S_{\mathcal{C}}(x) = \sup_{y \in \mathcal{C}} x^\top y$ is convex.
+
+*Proof*. $S_{\mathcal{C}}(\lambda x + (1-\lambda)y) = \sup_{z \in \mathcal{C}} z^\top (\lambda x + (1-\lambda)y) = \sup_{z \in \mathcal{C}} \{\lambda z^\top x + (1-\lambda)z^\top y\} \leq \lambda \sup_{z_1 \in \mathcal{C}} z_1^\top x + (1-\lambda) \sup_{z_2 \in \mathcal{C}} z_2^\top y = \lambda \, S_{\mathcal{C}}(x) + (1-\lambda) \, S_{\mathcal{C}}(y)$. The inequality uses the fact that taking the supremum over a single $z$ is at most taking independent suprema. $\blacksquare$
+
+**(vii) Log-sum-exp.** $f(x) = \log\!\left(\sum_{j=1}^n e^{x_j}\right)$ is convex. This is a smooth approximation to the max function: $\max(x_1, \ldots, x_n) \leq f(x) \leq \max(x_1, \ldots, x_n) + \log n$.
+
+*Proof*. **Proof via second-order condition.** Let $z_j = e^{x_j}$ and $\mathbf{1}_n^\top z = \sum_j z_j$. The gradient is $\nabla f(x) = \frac{1}{\mathbf{1}_n^\top z} \cdot z$ (the softmax vector). The Hessian is
+
+$$
+\nabla^2 f(x) = \frac{1}{\mathbf{1}_n^\top z} \operatorname{diag}(z) - \frac{1}{(\mathbf{1}_n^\top z)^2} z z^\top.
+$$
+
+To show $\nabla^2 f \succeq 0$, compute $v^\top \nabla^2 f(x) \, v$ for any $v \in \mathbb{R}^n$:
+
+$$
+v^\top \nabla^2 f(x) \, v = \frac{\bigl(\sum_j z_j v_j^2\bigr)\bigl(\sum_j z_j\bigr) - \bigl(\sum_j z_j v_j\bigr)^2}{(\mathbf{1}_n^\top z)^2} \geq 0,
+$$
+
+where the last inequality follows from the **Cauchy–Schwarz inequality** applied to the vectors $(\sqrt{z_1} v_1, \ldots, \sqrt{z_n} v_n)$ and $(\sqrt{z_1}, \ldots, \sqrt{z_n})$. $\blacksquare$
+
+![](https://zhuoranyang.github.io/sds431-notes/lectures/figures/ch04-convex-functions-gallery.svg)
+
+Figure 4.1: Common convex and concave functions in 1D, illustrating the chord property. (a–c) For convex functions, the chord between any two points lies above the graph (shaded gap). (d) For concave log ⁡ x \\log x, the chord lies below — equivalently, − -\\log x is convex.
+
+With the definition and examples in hand, we now ask: how do we *verify* convexity in practice? The chord inequality requires checking all pairs of points, which is impractical. For differentiable functions, there is a far more useful equivalent condition involving only the gradient.
+
+## 4.2 First-Order Condition
+
+For differentiable functions, convexity is equivalent to a single elegant condition: the tangent hyperplane at any point must lie below the function everywhere. This **first-order condition** is the workhorse for proving optimality in convex optimization.
+
+**Theorem 4.1 (First-Order Condition)** Suppose $f$ is differentiable and $\text{dom}(f)$ is convex. Then $f$ is convex if and only if
+
+$$
+f(y) \geq f(x) + \nabla f(x)^\top (y - x) \quad \forall\, x, y \in \text{dom}(f). \tag{4.2}
+$$
+
+Geometrically: the tangent line (first-order Taylor approximation) at any point is a **global underestimator** of $f$.
+
+![](https://zhuoranyang.github.io/sds431-notes/lectures/figures/ch01-first-order-condition.svg)
+
+Figure 4.2: First-order condition: at every point the tangent line lies below the graph of a convex function. The gap f ( y ) − \[ x + ∇ ⊤ \] f(y) - \[f(x) + \\nabla f(x)^\\top(y-x)\] is non-negative everywhere, and equals zero only at = y = x.
+
+The first-order condition provides an equivalent characterization of convexity for differentiable functions. It says that the tangent hyperplane at any point lies entirely below the graph of $f$. This is a much stronger statement than the chord condition in the definition: it must hold globally, not just between two specific points. This property is the key reason why gradient-based methods work so well for convex functions.
+
+*Proof*. **Proof of [Theorem 4.1](https://zhuoranyang.github.io/sds431-notes/lectures/04-convex-functions.html#thm-first-order-condition).** We prove both directions of the equivalence.
+
+**($\Longrightarrow$) Convexity implies the first-order condition.** Assume $f$ is convex. Fix $x, y \in \text{dom}(f)$ and let $\lambda \in (0, 1]$. By the definition of convexity applied to the point $z_\lambda = x + \lambda(y - x) = (1-\lambda)x + \lambda y$:
+
+$$
+f(x + \lambda(y - x)) \leq (1-\lambda) \, f(x) + \lambda \, f(y) = f(x) + \lambda\bigl(f(y) - f(x)\bigr).
+$$
+
+Rearranging and dividing by $\lambda > 0$:
+
+$$
+\frac{f(x + \lambda(y - x)) - f(x)}{\lambda} \leq f(y) - f(x).
+$$
+
+The left-hand side is a difference quotient. Taking $\lambda \to 0^+$, the limit is the directional derivative of $f$ at $x$ in the direction $y - x$:
+
+$$
+\nabla f(x)^\top(y - x) = \lim_{\lambda \to 0^+} \frac{f(x + \lambda(y - x)) - f(x)}{\lambda} \leq f(y) - f(x).
+$$
+
+Rearranging gives $f(y) \geq f(x) + \nabla f(x)^\top(y - x)$.
+
+**($\Longleftarrow$) The first-order condition implies convexity.** Assume $f(y) \geq f(x) + \nabla f(x)^\top(y - x)$ for all $x, y$. Fix any $x, y \in \text{dom}(f)$, $\lambda \in [0,1]$, and let $z = \lambda x + (1-\lambda)y$. Apply the first-order condition at $z$ toward $x$ and toward $y$:
+
+$$
+f(x) \geq f(z) + \nabla f(z)^\top(x - z), \qquad f(y) \geq f(z) + \nabla f(z)^\top(y - z).
+$$
+
+Multiply the first by $\lambda$ and the second by $(1-\lambda)$ and add:
+
+$$
+\lambda \, f(x) + (1-\lambda) \, f(y) \geq f(z) + \nabla f(z)^\top\bigl(\lambda(x - z) + (1-\lambda)(y - z)\bigr).
+$$
+
+Now observe that $\lambda(x - z) + (1-\lambda)(y - z) = \lambda x + (1-\lambda)y - z = z - z = 0$. Therefore
+
+$$
+\lambda \, f(x) + (1-\lambda) \, f(y) \geq f(z) = f(\lambda x + (1-\lambda)y),
+$$
+
+which is the definition of convexity. $\blacksquare$
+
+An immediate and powerful consequence of [Equation 4.2](https://zhuoranyang.github.io/sds431-notes/lectures/04-convex-functions.html#eq-first-order-convexity) is that, for convex functions, the familiar necessary condition $\nabla f(x^*) = 0$ becomes *sufficient* for global optimality. This is the fundamental reason why convex optimization is tractable.
+
+**Corollary 4.1 (Optimality Condition for Convex Functions)** If $f$ is convex and differentiable, then $\nabla f(x^*) = 0$ implies $x^*$ is a **global** minimizer. That is, for convex functions, every local minimum is a global minimum.
+
+*Proof*. If $\nabla f(x^*) = 0$, then by [Equation 4.2](https://zhuoranyang.github.io/sds431-notes/lectures/04-convex-functions.html#eq-first-order-convexity), for every $y$ we have $f(y) \geq f(x^*) + \nabla f(x^*)^\top(y - x^*) = f(x^*) + 0 = f(x^*)$. Since this holds for all $y$, the point $x^*$ achieves the smallest possible function value. Hence we conclude the proof. $\blacksquare$
+
+### 4.2.1 Gradient Monotonicity
+
+The first-order condition has an equivalent reformulation in terms of the gradient map $x \mapsto \nabla f(x)$ that is often more convenient for proofs. Writing the first-order condition at $(x, y)$ and at $(y, x)$ and adding the two inequalities yields:
+
+**Theorem 4.2 (Gradient Monotonicity)** Suppose $f$ is differentiable and $\text{dom}(f)$ is convex. Then $f$ is convex if and only if the gradient is **monotone**:
+
+$$
+\langle \nabla f(x) - \nabla f(y), \, x - y \rangle \geq 0 \quad \forall \, x, y \in \text{dom}(f).
+$$
+
+$f$ is strictly convex if and only if the inequality is strict for $x \neq y$.
+
+*Proof*. **Proof of [Theorem 4.2](https://zhuoranyang.github.io/sds431-notes/lectures/04-convex-functions.html#thm-gradient-monotonicity).**
+
+**($\Longrightarrow$) Convexity implies gradient monotonicity.** If $f$ is convex, the first-order condition ([Equation 4.2](https://zhuoranyang.github.io/sds431-notes/lectures/04-convex-functions.html#eq-first-order-convexity)) gives two inequalities:
+
+$$
+f(y) \geq f(x) + \nabla f(x)^\top(y - x), \qquad f(x) \geq f(y) + \nabla f(y)^\top(x - y).
+$$
+
+Adding these:
+
+$$
+0 \geq \nabla f(x)^\top(y - x) + \nabla f(y)^\top(x - y) = -\langle \nabla f(x) - \nabla f(y), \, x - y \rangle,
+$$
+
+which gives $\langle \nabla f(x) - \nabla f(y), \, x - y \rangle \geq 0$.
+
+**($\Longleftarrow$) Gradient monotonicity implies convexity.** Assume $\langle \nabla f(x) - \nabla f(y), x - y \rangle \geq 0$ for all $x, y$. To show $f$ is convex, it suffices to verify the first-order condition. Fix $x, y \in \text{dom}(f)$ and define the restriction $g(t) = f(x + t(y - x))$ for $t \in [0,1]$. Then $g'(t) = \nabla f(x + t(y-x))^\top (y - x)$.
+
+For $t_1 > t_2$, set $u = x + t_1(y-x)$ and $v = x + t_2(y-x)$, so $u - v = (t_1 - t_2)(y - x)$. Gradient monotonicity gives:
+
+$$
+\langle \nabla f(u) - \nabla f(v), \, u - v \rangle = (t_1 - t_2) \cdot \bigl[\nabla f(u)^\top(y-x) - \nabla f(v)^\top(y-x)\bigr] \geq 0.
+$$
+
+Since $t_1 - t_2 > 0$, we get $g'(t_1) \geq g'(t_2)$, so $g'$ is nondecreasing and $g$ is convex. By the univariate first-order condition: $g(1) \geq g(0) + g'(0)$, which is $f(y) \geq f(x) + \nabla f(x)^\top(y - x)$. $\blacksquare$
+
+In the one-dimensional case ($n = 1$), this simply says that $f'$ is a **nondecreasing** function: if $x > y$, then $f'(x) \geq f'(y)$. This is a familiar characterization from calculus: a function is convex if and only if its derivative is nondecreasing. The theorem above is the natural generalization to $\mathbb{R}^n$.
+
+TipIntuition
+
+Monotonicity says that when you move from $y$ to $x$, the gradient “rotates toward you” — the inner product of the displacement $(x - y)$ with the gradient change $(\nabla f(x) - \nabla f(y))$ is nonnegative. For a convex bowl, the gradient always points more steeply “outward” as you move away from the minimum.
+
+For strongly convex functions, the gradient is not merely monotone — it is **strongly monotone**, meaning the inner product grows at least proportionally to the squared distance between the points. This quantitative strengthening is the key property that gives strongly convex functions their fast (linear) convergence rates.
+
+**Corollary 4.2 (Strong Monotonicity of the Gradient)** If $f$ is $m$ -strongly convex and differentiable, then
+
+$$
+\langle \nabla f(x) - \nabla f(y), \, x - y \rangle \geq m \, \|x - y\|_2^2 \quad \forall \, x, y \in \text{dom}(f). \tag{4.3}
+$$
+
+Conversely, if the gradient satisfies [Equation 4.3](https://zhuoranyang.github.io/sds431-notes/lectures/04-convex-functions.html#eq-strong-monotonicity) for some $m > 0$, then $f$ is $m$ -strongly convex.
+
+*Proof*. Since $f$ is $m$ -strongly convex, the function $\widetilde{f}(x) = f(x) - \frac{m}{2}\|x\|_2^2$ is convex. The first-order condition for $\widetilde{f}$ gives, for all $x, y$:
+
+$$
+\widetilde{f}(y) \geq \widetilde{f}(x) + \nabla \widetilde{f}(x)^\top(y - x).
+$$
+
+Substituting $\widetilde{f}(x) = f(x) - \frac{m}{2}\|x\|_2^2$ and $\nabla \widetilde{f}(x) = \nabla f(x) - m\,x$:
+
+$$
+f(y) - \tfrac{m}{2}\|y\|_2^2 \geq f(x) - \tfrac{m}{2}\|x\|_2^2 + (\nabla f(x) - mx)^\top(y - x).
+$$
+
+Rearranging:
+
+$$
+f(y) \geq f(x) + \nabla f(x)^\top(y - x) + \tfrac{m}{2}\bigl(\|y\|_2^2 - \|x\|_2^2 - 2x^\top(y - x)\bigr) = f(x) + \nabla f(x)^\top(y - x) + \tfrac{m}{2}\|y - x\|_2^2.
+$$
+
+This is the **strongly convex first-order condition**: the tangent hyperplane underestimates $f$ by at least a quadratic term. Now write this inequality at $(x, y)$ and at $(y, x)$:
+
+$$
+f(y) \geq f(x) + \nabla f(x)^\top(y - x) + \tfrac{m}{2}\|y - x\|_2^2,
+$$
+ 
+$$
+f(x) \geq f(y) + \nabla f(y)^\top(x - y) + \tfrac{m}{2}\|x - y\|_2^2.
+$$
+
+Adding the two inequalities, the $f(x)$ and $f(y)$ terms cancel:
+
+$$
+0 \geq \nabla f(x)^\top(y - x) + \nabla f(y)^\top(x - y) + m\|x - y\|_2^2 = -\langle \nabla f(x) - \nabla f(y), \, x - y\rangle + m\|x - y\|_2^2,
+$$
+
+which gives $\langle \nabla f(x) - \nabla f(y), \, x - y \rangle \geq m\|x - y\|_2^2$. $\blacksquare$
+
+**Comparison.** Gradient monotonicity ([Theorem 4.2](https://zhuoranyang.github.io/sds431-notes/lectures/04-convex-functions.html#thm-gradient-monotonicity)) says $\langle \nabla f(x) - \nabla f(y), x - y \rangle \geq 0$; strong monotonicity ([Corollary 4.2](https://zhuoranyang.github.io/sds431-notes/lectures/04-convex-functions.html#cor-strong-monotonicity)) upgrades this to $\geq m\|x - y\|_2^2$. The parameter $m$ measures the minimum curvature: larger $m$ means the gradients spread apart faster as $x$ and $y$ separate. Setting $m = 0$ recovers the ordinary monotonicity condition for convex (but not strongly convex) functions.
+
+The first-order condition characterizes convexity through the gradient, but checking it still requires verifying an inequality at every pair of points. For twice-differentiable functions, there is an even more convenient test that involves only a local computation: checking the sign of the Hessian.
+
+## 4.3 Second-Order Condition
+
+Since the Hessian captures local curvature, requiring it to be positive semidefinite everywhere is equivalent to saying the function curves upward in every direction at every point — which is exactly convexity. This gives the most computationally convenient characterization of the three.
+
+**Theorem 4.3 (Second-Order Condition)** Suppose $f$ is twice differentiable and $\text{dom}(f)$ is convex. Then:
+
+$$
+f \text{ is convex} \iff \nabla^2 f(x) \succeq 0 \quad \forall\, x \in \text{dom}(f).
+$$
+
+That is, the Hessian matrix is positive semidefinite everywhere.
+
+Furthermore, if $\nabla^2 f(x) \succ 0$ for all $x$ (Hessian is positive definite), then $f$ is **strictly convex**.
+
+*Proof*. **Proof of [Theorem 4.3](https://zhuoranyang.github.io/sds431-notes/lectures/04-convex-functions.html#thm-second-order-condition).** We prove both directions.
+
+**($\Longrightarrow$) Convexity implies $\nabla^2 f(x) \succeq 0$.** Assume $f$ is convex. Fix any $x \in \text{dom}(f)$ and any direction $v \in \mathbb{R}^n$. Define $g(t) = f(x + tv)$, which is a convex function of $t$ (by restriction to a line, [Theorem 4.4](https://zhuoranyang.github.io/sds431-notes/lectures/04-convex-functions.html#thm-restriction-to-line)). Since $g$ is a univariate convex function and is twice differentiable, $g''(0) \geq 0$. Computing:
+
+$$
+g''(0) = v^\top \nabla^2 f(x) \, v \geq 0.
+$$
+
+Since this holds for every $v \in \mathbb{R}^n$, the Hessian $\nabla^2 f(x)$ is positive semidefinite.
+
+**($\Longleftarrow$) $\nabla^2 f(x) \succeq 0$ everywhere implies convexity.** Assume $\nabla^2 f(x) \succeq 0$ for all $x$. We show the first-order condition $f(y) \geq f(x) + \nabla f(x)^\top(y - x)$ holds for all $x, y$, which implies convexity by [Theorem 4.1](https://zhuoranyang.github.io/sds431-notes/lectures/04-convex-functions.html#thm-first-order-condition).
+
+By the second-order Taylor expansion with integral remainder, for any $x, y \in \text{dom}(f)$:
+
+$$
+f(y) = f(x) + \nabla f(x)^\top(y - x) + \int_0^1 (1-t) \, (y-x)^\top \nabla^2 f\bigl(x + t(y-x)\bigr) (y-x) \, dt.
+$$
+
+Since $\nabla^2 f(x + t(y-x)) \succeq 0$ for all $t \in [0,1]$ (the line segment lies in the convex domain), the integrand $(1-t) \cdot (y-x)^\top \nabla^2 f(\cdot)(y-x) \geq 0$ for all $t$. Therefore the integral is nonnegative, giving
+
+$$
+f(y) \geq f(x) + \nabla f(x)^\top(y - x).
+$$
+
+**Strict convexity.** If $\nabla^2 f(x) \succ 0$ for all $x$, the integrand is strictly positive for $y \neq x$ (since $(y-x)^\top \nabla^2 f(\cdot)(y-x) > 0$ for $y-x \neq 0$ when the Hessian is positive definite). Hence the integral is strictly positive, giving $f(y) > f(x) + \nabla f(x)^\top(y - x)$ for $y \neq x$, which implies strict convexity. $\blacksquare$
+
+The second-order condition gives the most practical test for convexity of smooth functions: simply compute the Hessian and check whether all its eigenvalues are nonnegative. For quadratic functions the Hessian is constant, so one eigenvalue check suffices. For more general functions the Hessian varies with $x$, and one must verify positive semidefiniteness at every point in the domain.
+
+**Example 4.3 (Verifying Convexity via the Hessian)** Consider $f(x) = x^\top Q x + b^\top x + c$ where $Q \in \mathbb{R}^{n \times n}$ is symmetric.
+
+$\nabla f(x) = 2Qx + b$ and $\nabla^2 f(x) = 2Q$.
+
+Thus $f$ is convex    $\iff$ $2Q \succeq 0$    $\iff$ $Q \succeq 0$ (all eigenvalues of $Q$ are nonnegative).
+
+[Figure 4.3](https://zhuoranyang.github.io/sds431-notes/lectures/04-convex-functions.html#fig-convex-function-characterization) summarizes the three characterizations side by side: each gives a different lens on the same underlying property, and the choice among them depends on what information is available (function values, gradients, or Hessians).
+
+![](https://zhuoranyang.github.io/sds431-notes/lectures/figures/convex-function-characterization.svg)
+
+Figure 4.3: Three characterizations of convex functions: first-order (tangent line below), second-order (positive semidefinite Hessian), and epigraph (convex set above the graph).
+
+### 4.3.1 Zero-th Order Characterization: Restriction to a Line
+
+The definition of convexity involves all pairs of points in $\mathbb{R}^n$, which can be hard to check directly. A powerful simplification is that **convexity in $\mathbb{R}^n$ can be verified one line at a time**:
+
+**Theorem 4.4 (Zero-th Order Characterization)** A function $f : D \subseteq \mathbb{R}^n \to \mathbb{R}$ is (strictly) convex if and only if for every $u \in D$ and every direction $v \in \mathbb{R}^n$, the one-dimensional function
+
+$$
+g(\alpha) = f(u + \alpha \, v), \quad \text{defined on } \{\alpha : u + \alpha v \in D\},
+$$
+
+is a (strictly) convex function of the single variable $\alpha$.
+
+*Proof*. **Proof of [Theorem 4.4](https://zhuoranyang.github.io/sds431-notes/lectures/04-convex-functions.html#thm-restriction-to-line).**
+
+**($\Longrightarrow$) $f$ convex implies each restriction $g$ is convex.** Let $\alpha_1, \alpha_2$ lie in the domain of $g$ and $\lambda \in [0,1]$. Setting $x = u + \alpha_1 v$ and $y = u + \alpha_2 v$, both in $D$:
+
+$$
+g(\lambda \alpha_1 + (1-\lambda)\alpha_2) = f\bigl(u + (\lambda \alpha_1 + (1-\lambda)\alpha_2)v\bigr) = f\bigl(\lambda x + (1-\lambda)y\bigr) \leq \lambda \, f(x) + (1-\lambda) \, f(y) = \lambda \, g(\alpha_1) + (1-\lambda) \, g(\alpha_2),
+$$
+
+where the inequality uses convexity of $f$.
+
+**($\Longleftarrow$) All restrictions convex implies $f$ convex.** Let $x, y \in D$ and $\lambda \in [0,1]$. Choose $u = x$ and $v = y - x$, so $g(\alpha) = f(x + \alpha(y-x))$. Then $g(0) = f(x)$ and $g(1) = f(y)$. Since $g$ is convex:
+
+$$
+f(\lambda y + (1-\lambda) x) = g(\lambda) = g(\lambda \cdot 1 + (1-\lambda) \cdot 0) \leq \lambda \, g(1) + (1-\lambda) \, g(0) = \lambda \, f(y) + (1-\lambda) \, f(x).
+$$
+
+This is the definition of convexity for $f$. $\blacksquare$
+
+The practical value of this characterization is enormous — it lets us reduce a multivariate convexity check to a family of univariate checks, where we can use the simple criterion $g'' \geq 0$.
+
+**Example 4.4 (Example: $\log\det(X)$ is Concave)** Consider $f(X) = \log\det(X)$ on the domain $\mathbb{S}_{++}^n = \{X \in \mathbb{R}^{n \times n} : X \succ 0\}$ (positive definite matrices). To show that $f$ is concave, we restrict to an arbitrary line: for any $X \succ 0$ and any symmetric matrix $V$, define
+
+$$
+g(t) = \log\det(X + tV) = \log\det\!\bigl(X^{1/2}(I + t \, X^{-1/2}VX^{-1/2})X^{1/2}\bigr)
+$$
+
+$$
+= \log\det(X) + \log\det(I + tM), \quad \text{where } M = X^{-1/2}VX^{-1/2}.
+$$
+
+Let $\lambda_1, \ldots, \lambda_n$ be the eigenvalues of $M$. Then $g(t) = \log\det(X) + \sum_{j=1}^n \log(1 + t\lambda_j)$. Each term $h_j(t) = \log(1 + t\lambda_j)$ satisfies
+
+$$
+h_j''(t) = \frac{-\lambda_j^2}{(1 + t\lambda_j)^2} \leq 0,
+$$
+
+so $g$ is concave in $t$. Since this holds for every line through every $X \succ 0$, the function $f(X) = \log\det(X)$ is concave.
+
+**Example 4.5 (Example: $f(x, y) = x^2/y$ is Convex)** Consider $f(x, y) = x^2/y$ on the domain $\{(x, y) : y > 0\}$. The gradient is
+
+$$
+\nabla f(x, y) = \begin{pmatrix} 2x/y \\ -x^2/y^2 \end{pmatrix},
+$$
+
+and the Hessian is
+
+$$
+\nabla^2 f(x, y) = \begin{pmatrix} 2/y & -2x/y^2 \\ -2x/y^2 & 2x^2/y^3 \end{pmatrix} = \frac{2}{y^3}\begin{pmatrix} y^2 & -xy \\ -xy & x^2 \end{pmatrix} = \frac{2}{y^3}\begin{pmatrix} y \\ -x \end{pmatrix}\begin{pmatrix} y & -x \end{pmatrix} \succeq 0,
+$$
+
+since $y > 0$ implies $\frac{2}{y^3} > 0$, and any rank-one matrix $vv^\top$ is PSD. Hence $f$ is convex.
+
+**Example 4.6 (Example: Geometric Mean is Concave)** The geometric mean $f(x) = \bigl(\prod_{j=1}^n x_j\bigr)^{1/n}$ is concave on $\mathbb{R}_{++}^n = \{x : x_j > 0\}$.
+
+This can be shown by restricting to a line and using the concavity of $t \mapsto t^{1/n}$, or by the AM-GM inequality. It is an important example because it is concave but *not* convex (nor affine) — concavity of the geometric mean underpins many results in information theory and matrix analysis.
+
+### 4.3.2 Summary of Equivalent Characterizations
+
+The results above can be unified into a single equivalence theorem. This is useful to have as a reference: depending on what tools are available (function values, gradients, or Hessians), we can pick the most convenient characterization.
+
+**Theorem 4.5 (Equivalent Characterizations of Convexity)** The following are equivalent for a continuously differentiable $f$ on a convex domain:
+
+**(a)** $f$ is convex (chord inequality, [Equation 4.1](https://zhuoranyang.github.io/sds431-notes/lectures/04-convex-functions.html#eq-convex-function-def)).
+
+**(b)** $f(y) \geq f(x) + \langle \nabla f(x), \, y - x \rangle$ for all $x, y$ (first-order condition, [Equation 4.2](https://zhuoranyang.github.io/sds431-notes/lectures/04-convex-functions.html#eq-first-order-convexity)).
+
+**(c)** $\langle \nabla f(x) - \nabla f(y), \, x - y \rangle \geq 0$ for all $x, y$ (gradient monotonicity, [Theorem 4.2](https://zhuoranyang.github.io/sds431-notes/lectures/04-convex-functions.html#thm-gradient-monotonicity)).
+
+If additionally $\nabla f$ is continuously differentiable (i.e., $f$ is $C^2$):
+
+**(d)** $\nabla^2 f(x) \succeq 0$ for all $x \in \text{dom}(f)$ (Hessian PSD, [Theorem 4.3](https://zhuoranyang.github.io/sds431-notes/lectures/04-convex-functions.html#thm-second-order-condition)).
+
+In each case, replacing $\leq$ with $<$ (and $\succeq$ with $\succ$) gives the corresponding characterization of **strict** convexity.
+
+### 4.3.3 Practical Methods for Establishing Convexity
+
+In practice, there are three main strategies for showing that a function is convex:
+
+1. **Verify the definition** (chord inequality), often simplified by **restricting to a line** ([Theorem 4.4](https://zhuoranyang.github.io/sds431-notes/lectures/04-convex-functions.html#thm-restriction-to-line)). This reduces the problem to checking convexity of 1D functions.
+2. **Compute the Hessian** and verify $\nabla^2 f(x) \succeq 0$ for all $x$. This is the most direct approach for smooth functions.
+3. **Use operations that preserve convexity** (next section). Decompose the function into known convex building blocks connected by convexity-preserving operations.
+
+We now demonstrate each method on concrete functions that arise frequently in optimization and machine learning. These examples also illustrate *when* each method is most natural to apply.
+
+#### Method 1: Restriction to a Line
+
+This method is especially useful for functions on **matrix** domains, where computing and analyzing a full Hessian may be infeasible. By restricting to a line $X + tV$, we reduce the problem to checking $g''(t) \leq 0$ or $g''(t) \geq 0$.
+
+**Example 4.7 (Example: $\log\det(X)$ is Concave (via Restriction to a Line))** We already proved this in [Example 4.4](https://zhuoranyang.github.io/sds431-notes/lectures/04-convex-functions.html#exm-logdet-concave): for any $X \succ 0$ and symmetric $V$, the restriction $g(t) = \log\det(X + tV) = \text{const} + \sum_j \log(1 + t\lambda_j)$ satisfies $g''(t) = -\sum_j \lambda_j^2 / (1 + t\lambda_j)^2 \leq 0$. Since every 1D restriction is concave, $\log\det$ is concave on $\mathbb{S}_{++}^n$.
+
+This example illustrates why Method 1 is so powerful: $X$ lives in $\mathbb{R}^{n \times n}$, so the Hessian would be an $n^2 \times n^2$ matrix — extremely unwieldy. Restricting to a line bypasses this entirely and reduces the check to a simple 1D computation.
+
+#### Method 2: Hessian Analysis
+
+This is the most direct approach for smooth functions on $\mathbb{R}^n$. Compute $\nabla^2 f(x)$ and show it is PSD everywhere. Several techniques help:
+
+- If the Hessian factors as $\alpha \cdot vv^\top$ with $\alpha \geq 0$, it is rank-one PSD ([Example 4.5](https://zhuoranyang.github.io/sds431-notes/lectures/04-convex-functions.html#exm-x2-over-y)).
+- If the Hessian is diagonal, check that each diagonal entry is nonneg.
+- For general Hessians, show $v^\top \nabla^2 f(x) \, v \geq 0$ for all $v$ using inequalities like Cauchy–Schwarz.
+
+**Example 4.8 (Example: Least Squares $f(x) = \|Ax - b\|_2^2$ is Convex)** Let $A \in \mathbb{R}^{m \times n}$ and $b \in \mathbb{R}^m$. Expanding $f(x) = (Ax - b)^\top(Ax - b) = x^\top A^\top A x - 2b^\top A x + \|b\|_2^2$, the gradient and Hessian are:
+
+$$
+\nabla f(x) = 2A^\top(Ax - b), \qquad \nabla^2 f(x) = 2A^\top A.
+$$
+
+The Hessian is constant (independent of $x$), and $A^\top A \succeq 0$ because for any $v \in \mathbb{R}^n$:
+
+$$
+v^\top (A^\top A) v = \|Av\|_2^2 \geq 0.
+$$
+
+Therefore $f$ is convex. Moreover, $f$ is **strictly convex** if and only if $A$ has full column rank (i.e., $A^\top A \succ 0$), and **$m$ -strongly convex** if and only if $\lambda_{\min}(A^\top A) \geq m/2$.
+
+**Example 4.9 (Example: Negative Entropy $f(x) = \sum_{j=1}^n x_j \log x_j$ is Convex)** Let $f(x) = \sum_{j=1}^n x_j \log x_j$ on $\mathbb{R}_{++}^n = \{x : x_j > 0\}$. The gradient and Hessian are:
+
+$$
+\nabla f(x) = \begin{pmatrix} \log x_1 + 1 \\ \vdots \\ \log x_n + 1 \end{pmatrix}, \qquad \nabla^2 f(x) = \operatorname{diag}\!\left(\frac{1}{x_1}, \ldots, \frac{1}{x_n}\right).
+$$
+
+Since $x_j > 0$, every diagonal entry $1/x_j > 0$, so $\nabla^2 f(x) \succ 0$ for all $x \in \mathbb{R}_{++}^n$. Therefore $f$ is **strictly convex**. The negative entropy function is central to information theory and appears in the KL divergence $D_{\text{KL}}(p \| q) = \sum_j p_j \log(p_j / q_j)$.
+
+#### Method 3: Operations That Preserve Convexity
+
+When a function is built from simpler pieces, we can often establish convexity by decomposing it into known convex building blocks and applying preservation rules — without computing a single derivative. This is the most elegant and scalable approach.
+
+**Example 4.10 (Example: Log-Barrier Function $f(x) = -\sum_{i=1}^m \log(b_i - a_i^\top x)$)** The function $f(x) = -\sum_{i=1}^m \log(b_i - a_i^\top x)$ on the domain $\{x : a_i^\top x < b_i \;\forall\, i\}$ is convex. Here is the reasoning, purely from preservation rules:
+
+1. $h(u) = -\log u$ is convex on $u > 0$ (univariate, verify by $h''(u) = 1/u^2 > 0$).
+2. For each $i$, the map $x \mapsto b_i - a_i^\top x$ is affine, so $g_i(x) = -\log(b_i - a_i^\top x)$ is convex by **affine composition** (Rule 2).
+3. $f(x) = \sum_{i=1}^m g_i(x)$ is a sum of convex functions with unit weights, so $f$ is convex by **nonneg. weighted sum** (Rule 1).
+
+This function is the **logarithmic barrier** used in interior-point methods. The argument above requires no Hessian computation — only the convexity of $-\log$ and two preservation rules.
+
+**Example 4.11 (Example: $f(x) = \|Ax + b\|$ for Any Norm)** For any norm $\|\cdot\|$ on $\mathbb{R}^m$, any $A \in \mathbb{R}^{m \times n}$, and any $b \in \mathbb{R}^m$, the function $f(x) = \|Ax + b\|$ is convex on $\mathbb{R}^n$.
+
+1. Any norm $g(z) = \|z\|$ is convex (proved in [Example 4.2](https://zhuoranyang.github.io/sds431-notes/lectures/04-convex-functions.html#exm-common-convex-concave-functions) via triangle inequality + homogeneity).
+2. The map $x \mapsto Ax + b$ is affine.
+3. By **affine composition** (Rule 2), $f(x) = g(Ax + b) = \|Ax + b\|$ is convex.
+
+This covers $\|Ax + b\|_1$ (sparsity-promoting), $\|Ax + b\|_2$ (least absolute deviation), $\|Ax + b\|_\infty$ (Chebyshev approximation), and matrix norms $\|AX + B\|_*$ (nuclear norm for low-rank).
+
+The three strategies above — definition/restriction, Hessian, and preservation rules — give us complementary ways to verify convexity. In practice, most convexity proofs use either Method 2 (for smooth, self-contained functions) or Method 3 (for structured objectives built from simpler pieces). Method 1 is the tool of choice for functions on matrix domains.
+
+## 4.4 Operations That Preserve Convexity
+
+Just as we built complex convex sets from simpler ones ([Theorem 3.4](https://zhuoranyang.github.io/sds431-notes/lectures/03-convex-sets.html#thm-operations-convex-sets)), we can establish convexity of complicated objective functions by decomposing them into simpler convex components. The following rules are the function-level analogue of those set operations: they let us certify convexity compositionally, without ever computing a Hessian.
+
+**Theorem 4.6 (Operations Preserving Convexity of Functions)** The following six rules allow us to build convex functions from simpler ones. Together, they handle the vast majority of objectives encountered in practice.
+
+**1\. Nonnegative weighted sums.** If $f_1, \ldots, f_k$ are convex and $w_1, \ldots, w_k \geq 0$, then $\sum_{i=1}^k w_i f_i$ is convex. This is the most basic rule — it says that convex functions form a convex cone. In practice, it covers regularized objectives like $\ell(\theta) + \lambda \|\theta\|_2^2$, which is a nonnegative combination of a convex loss and a convex penalty.
+
+**2\. Composition with affine maps.** If $f$ is convex, then $g(x) = f(Ax + b)$ is convex. Affine pre-composition preserves convexity because it simply reparametrizes the domain. For example, $\|Ax - b\|_2$ is convex because the norm is convex and $x \mapsto Ax - b$ is affine.
+
+**3\. Pointwise maximum.** If $f_1, \ldots, f_k$ are convex, then $f(x) = \max_i f_i(x)$ is convex. Geometrically, the epigraph of the max is the intersection of the individual epigraphs (all convex sets), so it is convex. This rule explains why piecewise-linear convex functions arise naturally: the max of finitely many affine functions is always convex.
+
+**4\. Pointwise supremum.** More generally, if $f(x,y)$ is convex in $x$ for each $y$, then $g(x) = \sup_y f(x,y)$ is convex. This extends rule 3 from a finite maximum to a (possibly infinite) supremum. It is the key tool for proving that support functions, norms, and conjugate functions are convex.
+
+**5\. Composition rules.** Two cases preserve convexity under scalar composition $h \circ g$. If $h$ is convex and nondecreasing and $g$ is convex, then $h(g(x))$ is convex — for example, $e^{g(x)}$ is convex when $g$ is convex, since $e^t$ is convex and nondecreasing. Conversely, if $h$ is convex and nonincreasing and $g$ is concave, then $h(g(x))$ is convex — for example, $1/g(x)$ is convex when $g$ is positive and concave, since $1/t$ is convex and nonincreasing on $t > 0$.
+
+**6\. Partial minimization.** If $f(x,y)$ is jointly convex in $(x,y)$, then $g(x) = \inf_y f(x,y)$ is convex (provided the infimum is attained or handled properly). This is the “projection” rule: minimizing out a variable preserves convexity. It is dual to rule 4 (supremum preserves convexity, infimum preserves convexity of the *joint* function).
+
+The following interactive figure illustrates how these preservation rules work. Each panel shows a rule in action: starting from known convex functions and applying an operation to produce a new convex function.
+
+Figure: Operations preserving convexity of functions. (a) Nonnegative weighted sum of two convex functions is convex. (b) Pointwise maximum of affine functions produces a convex piecewise-linear function. (c) Composition of convex nondecreasing $h$ with convex $g$ is convex. (d) Affine composition: $f(Ax+b)$ preserves convexity.
+
+We now derive each rule. Rules 1–4 and 6 follow directly from the definition of convexity ([Equation 4.1](https://zhuoranyang.github.io/sds431-notes/lectures/04-convex-functions.html#eq-convex-function-def)); Rule 5 requires the chain rule and is the most instructive to work through carefully, especially in the multivariate setting.
+
+*Proof*. **Proof of [Theorem 4.6](https://zhuoranyang.github.io/sds431-notes/lectures/04-convex-functions.html#thm-operations-convex-functions).** Throughout, $x, y \in \mathbb{R}^n$ are arbitrary points in the domain and $\lambda \in [0,1]$.
+
+**Rule 1 (Nonnegative weighted sums).** Let $g(x) = \sum_{i=1}^k w_i f_i(x)$ with $w_i \geq 0$ and each $f_i : \mathbb{R}^n \to \mathbb{R}$ convex. For any $x, y \in \mathbb{R}^n$,
+
+$$
+g(\lambda x + (1{-}\lambda)y) = \sum_{i=1}^k w_i \, f_i(\lambda x + (1{-}\lambda)y) \leq \sum_{i=1}^k w_i\bigl[\lambda \, f_i(x) + (1{-}\lambda) \, f_i(y)\bigr] = \lambda\, g(x) + (1{-}\lambda)\, g(y),
+$$
+
+where the inequality applies convexity of each $f_i$ term-by-term (the direction of the inequality is preserved because $w_i \geq 0$). This extends to infinite sums and integrals: if $f(x, \alpha)$ is convex in $x$ for each $\alpha$ and $w(\alpha) \geq 0$, then $g(x) = \int f(x,\alpha)\, w(\alpha)\, d\alpha$ is convex (provided the integral exists), since integration is a limit of nonneg. weighted sums.
+
+**Rule 2 (Affine composition).** Let $g(x) = f(Ax + b)$ where $A \in \mathbb{R}^{m \times n}$, $b \in \mathbb{R}^m$, and $f : \mathbb{R}^m \to \mathbb{R}$ is convex. The key insight is that affine maps preserve the mixing structure of convex combinations:
+
+$$
+A\bigl(\lambda x + (1{-}\lambda)y\bigr) + b = \lambda(Ax + b) + (1{-}\lambda)(Ay + b).
+$$
+
+Substituting into $f$ and applying convexity of $f$:
+
+$$
+g(\lambda x + (1{-}\lambda)y) = f\bigl(\lambda(Ax{+}b) + (1{-}\lambda)(Ay{+}b)\bigr) \leq \lambda \, f(Ax{+}b) + (1{-}\lambda) \, f(Ay{+}b) = \lambda\, g(x) + (1{-}\lambda)\, g(y).
+$$
+
+This rule is powerful in the multivariate setting because $A$ can change the dimension. For instance, if $f : \mathbb{R}^m \to \mathbb{R}$ is convex and $A \in \mathbb{R}^{m \times n}$, then $g(x) = f(Ax + b)$ is a convex function on $\mathbb{R}^n$, potentially with a different dimension than the original. Common applications:
+
+- $\|Ax - b\|_2$ is convex on $\mathbb{R}^n$ (norm composed with affine map $x \mapsto Ax - b$)
+- $\log\bigl(\sum_j e^{a_j^\top x + b_j}\bigr)$ is convex (log-sum-exp composed with the affine map $x \mapsto (a_1^\top x + b_1, \ldots, a_m^\top x + b_m)$)
+
+**Rule 3 (Pointwise maximum).** Let $g(x) = \max_{i \in [k]} f_i(x)$. The proof uses two inequalities in sequence. For each index $i$:
+
+$$
+f_i(\lambda x + (1{-}\lambda)y) \leq \lambda \, f_i(x) + (1{-}\lambda) \, f_i(y) \leq \lambda \max_j f_j(x) + (1{-}\lambda)\max_j f_j(y) = \lambda\, g(x) + (1{-}\lambda)\, g(y).
+$$
+
+The first inequality is convexity of $f_i$; the second replaces $f_i(x) \leq \max_j f_j(x) = g(x)$ and similarly for $y$. Since this upper bound holds for every $i$, taking the maximum over $i$ on the left gives $g(\lambda x + (1{-}\lambda)y) \leq \lambda\, g(x) + (1{-}\lambda)\, g(y)$.
+
+*Epigraph interpretation (alternative proof).* The epigraph of the pointwise max is $\text{epi}(\max_i f_i) = \{(x,t) : f_i(x) \leq t \;\;\forall\, i\} = \bigcap_{i=1}^k \text{epi}(f_i)$. Since each $\text{epi}(f_i)$ is convex ([Theorem 4.7](https://zhuoranyang.github.io/sds431-notes/lectures/04-convex-functions.html#thm-epigraph-convex)), their intersection is convex ([Theorem 3.4](https://zhuoranyang.github.io/sds431-notes/lectures/03-convex-sets.html#thm-operations-convex-sets), Rule 1), so $\max_i f_i$ is convex.
+
+**Rule 4 (Pointwise supremum).** The same argument as Rule 3 applies with $\sup_y$ replacing $\max_i$. More precisely, let $g(x) = \sup_{y \in \mathcal{Y}} f(x, y)$ where $f(x, y)$ is convex in $x$ for each fixed $y \in \mathcal{Y}$. For any fixed $y$:
+
+$$
+f(\lambda x_1 + (1{-}\lambda)x_2, \; y) \leq \lambda \, f(x_1, y) + (1{-}\lambda) \, f(x_2, y) \leq \lambda\, g(x_1) + (1{-}\lambda)\, g(x_2),
+$$
+
+where the second inequality uses $f(x_i, y) \leq \sup_{y'} f(x_i, y') = g(x_i)$. Taking $\sup_y$ on the left yields $g(\lambda x_1 + (1{-}\lambda)x_2) \leq \lambda\, g(x_1) + (1{-}\lambda)\, g(x_2)$.
+
+**Rule 5 (Scalar composition).** This is the most delicate rule and requires separate treatment of the univariate and multivariate cases.
+
+*Univariate case ($n = 1$).* Let $f(x) = h(g(x))$ where $g : \mathbb{R} \to \mathbb{R}$ and $h : \mathbb{R} \to \mathbb{R}$ are both twice differentiable. By the chain rule:
+
+$$
+f''(x) = h''(g(x))\,\bigl[g'(x)\bigr]^2 + h'(g(x))\, g''(x).
+$$
+
+*Case (a): $h$ convex and nondecreasing, $g$ convex.* The first term is nonneg because $h'' \geq 0$ and $[g']^2 \geq 0$. The second term is nonneg because $h' \geq 0$ (nondecreasing) and $g'' \geq 0$ (convex). Hence $f'' \geq 0$ and $f$ is convex.
+
+*Case (b): $h$ convex and nonincreasing, $g$ concave.* The first term is still nonneg ($h'' \geq 0$, $[g']^2 \geq 0$). The second term is the product of $h'(g(x)) \leq 0$ (nonincreasing) and $g''(x) \leq 0$ (concave), which is nonneg. Hence $f'' \geq 0$.
+
+*Multivariate case ($n \geq 1$, scalar-valued $g$).* Now let $g : \mathbb{R}^n \to \mathbb{R}$ and $h : \mathbb{R} \to \mathbb{R}$, so $f(x) = h(g(x))$ maps $\mathbb{R}^n \to \mathbb{R}$. The multivariate chain rule gives the gradient and Hessian:
+
+$$
+\nabla f(x) = h'(g(x)) \, \nabla g(x),
+$$
+
+$$
+\nabla^2 f(x) = h''(g(x))\,\nabla g(x)\,\nabla g(x)^\top + h'(g(x))\,\nabla^2 g(x).
+$$
+
+The Hessian decomposes into two terms:
+
+- **First term:** $h''(g(x)) \cdot \nabla g(x)\,\nabla g(x)^\top$. This is a **rank-one** matrix, and $vv^\top \succeq 0$ for any vector $v$. So this term is PSD whenever $h''(g(x)) \geq 0$, i.e., when $h$ is convex.
+- **Second term:** $h'(g(x)) \cdot \nabla^2 g(x)$. This is the Hessian of $g$ scaled by $h'(g(x))$.
+
+In case (a), $h' \geq 0$ and $\nabla^2 g \succeq 0$ (since $g$ is convex), so the second term is PSD. Both terms are PSD, hence $\nabla^2 f \succeq 0$.
+
+In case (b), $h' \leq 0$ and $\nabla^2 g \preceq 0$ (since $g$ is concave), so $h' \cdot \nabla^2 g \succeq 0$ (product of two nonpositive quantities). Again both terms are PSD, so $\nabla^2 f \succeq 0$.
+
+**Two conditions that do NOT preserve convexity:** (i) $h$ convex nondecreasing with $g$ concave, and (ii) $h$ convex nonincreasing with $g$ convex. In both cases, the two terms in the Hessian have opposite signs, and one cannot conclude PSD-ness. For example, $h(t) = t^2$ (convex nondecreasing on $t \geq 0$) composed with $g(x) = -x^2 + 1$ (concave) gives $f(x) = (-x^2+1)^2 = x^4 - 2x^2 + 1$, which satisfies $f''(0) = -4 < 0$ — not convex.
+
+**Rule 6 (Partial minimization).** Let $f : \mathbb{R}^n \times \mathbb{R}^m \to \mathbb{R}$ be jointly convex in $(x, y)$ where $x \in \mathbb{R}^n$ and $y \in \mathbb{R}^m$. Define $g(x) = \inf_{y \in \mathbb{R}^m} f(x,y)$.
+
+For any $x_1, x_2 \in \mathbb{R}^n$ and $\varepsilon > 0$, choose $y_1, y_2 \in \mathbb{R}^m$ such that $f(x_1, y_1) \leq g(x_1) + \varepsilon$ and $f(x_2, y_2) \leq g(x_2) + \varepsilon$ (such $y_i$ exist by definition of infimum). Setting $\bar{y} = \lambda y_1 + (1{-}\lambda)y_2$:
+
+$$
+g(\lambda x_1 + (1{-}\lambda)x_2) \leq f(\lambda x_1 + (1{-}\lambda)x_2,\;\bar{y}) \leq \lambda \, f(x_1, y_1) + (1{-}\lambda) \, f(x_2, y_2) \leq \lambda\, g(x_1) + (1{-}\lambda)\, g(x_2) + \varepsilon.
+$$
+
+The chain of inequalities uses three facts: (1) $g(x) = \inf_y f(x,y) \leq f(x, \bar{y})$ for any particular $\bar{y}$; (2) joint convexity of $f$ in $(x,y)$; (3) the choice of $y_1, y_2$ as near-minimizers. Since $\varepsilon > 0$ is arbitrary, we conclude $g(\lambda x_1 + (1{-}\lambda)x_2) \leq \lambda\, g(x_1) + (1{-}\lambda)\, g(x_2)$.
+
+Note that $x$ and $y$ can live in different-dimensional spaces: $f(x, y)$ is jointly convex in $(x, y) \in \mathbb{R}^n \times \mathbb{R}^m$, and the resulting $g(x)$ is a convex function on $\mathbb{R}^n$. The “minimized-out” variable $y$ disappears. $\blacksquare$
+
+### 4.4.1 Additional Preservation Rules
+
+The six rules above handle most cases, but a few additional rules are worth knowing.
+
+**7\. Perspective of a convex function.** Let $f : D \subseteq \mathbb{R}^n \to \mathbb{R}$ be convex. The **perspective** of $f$ is the function $g : \mathbb{R}^{n+1} \to \mathbb{R}$ defined by
+
+$$
+g(x, t) = t \cdot f\!\left(\frac{x}{t}\right), \quad \text{dom}(g) = \{(x, t) : x/t \in D, \; t > 0\}.
+$$
+
+Then $g$ is convex. If $f$ is concave, then the perspective of $f$ is concave. The perspective operation “scales” the function by a positive variable, and it arises naturally in information theory (e.g., the KL divergence is the perspective of $-\log$).
+
+**8\. Vector composition (multivariate case).** The scalar composition rule (Rule 5) handles $h \circ g$ where $g : \mathbb{R}^n \to \mathbb{R}$ is a single function. In practice, we often compose an “outer” function $h$ with multiple “inner” functions simultaneously. Suppose $f(x) = h(g_1(x), g_2(x), \ldots, g_k(x))$ where each $g_i : \mathbb{R}^n \to \mathbb{R}$ and $h : \mathbb{R}^k \to \mathbb{R}$. Writing $g(x) = (g_1(x), \ldots, g_k(x)) \in \mathbb{R}^k$, we have $f = h \circ g$. Then:
+
+- $f$ is convex if $h$ is convex, **nondecreasing in each argument**, and each $g_i$ is convex.
+- $f$ is convex if $h$ is convex, **nonincreasing in each argument**, and each $g_i$ is concave.
+
+*Proof*. **Proof (Vector composition, multivariate Hessian analysis).** Assume all functions are twice differentiable. Let $z = g(x) \in \mathbb{R}^k$ and write the Jacobian of $g$ as $J_g(x) \in \mathbb{R}^{k \times n}$, where the $i$ -th row is $\nabla g_i(x)^\top$. By the multivariate chain rule:
+
+$$
+\nabla f(x) = J_g(x)^\top \, \nabla h(z),
+$$
+
+$$
+\nabla^2 f(x) = J_g(x)^\top \, \nabla^2 h(z) \, J_g(x) + \sum_{i=1}^k \frac{\partial h}{\partial z_i}(z) \, \nabla^2 g_i(x).
+$$
+
+The Hessian of $f$ decomposes into two parts:
+
+- **First term:** $J_g(x)^\top \, \nabla^2 h(z) \, J_g(x)$. Since $h$ is convex, $\nabla^2 h(z) \succeq 0$, so for any $v \in \mathbb{R}^n$:
+
+$$
+v^\top \bigl[J_g^\top \nabla^2 h \, J_g\bigr] v = (J_g v)^\top \nabla^2 h \, (J_g v) \geq 0.
+$$
+
+This term is always PSD when $h$ is convex, regardless of the $g_i$.
+
+- **Second term:** $\sum_{i=1}^k \frac{\partial h}{\partial z_i} \, \nabla^2 g_i(x)$. This is a weighted sum of the Hessians of the individual $g_i$ ’s. For this to be PSD, we need each weight $\frac{\partial h}{\partial z_i}$ and corresponding Hessian $\nabla^2 g_i$ to contribute nonnegatively:
+	- If $h$ is nondecreasing in argument $i$ (i.e., $\frac{\partial h}{\partial z_i} \geq 0$) and $g_i$ is convex ($\nabla^2 g_i \succeq 0$), then the $i$ -th term is PSD.
+		- If $h$ is nonincreasing in argument $i$ (i.e., $\frac{\partial h}{\partial z_i} \leq 0$) and $g_i$ is concave ($\nabla^2 g_i \preceq 0$), then the $i$ -th term is PSD (product of two non-positive quantities).
+
+In either case, the sum of PSD matrices is PSD, so $\nabla^2 f(x) \succeq 0$. $\blacksquare$
+
+TipMultivariate Composition Examples
+
+The vector composition rule handles complex multivariate objectives that Rule 5 alone cannot:
+
+- **$f(x) = \log\!\bigl(e^{g_1(x)} + e^{g_2(x)} + \cdots + e^{g_k(x)}\bigr)$** is convex when each $g_i$ is convex, because $h(z) = \text{log-sum-exp}(z)$ is convex and nondecreasing in each $z_i$ (since $\partial h / \partial z_i = e^{z_i}/\sum_j e^{z_j} > 0$).
+- **$f(x) = \bigl(\sum_{i=1}^k g_i(x)^p\bigr)^{1/p}$** for $p \geq 1$ is convex when each $g_i$ is convex and nonnegative, because $h(z) = \|z\|_p$ is convex and nondecreasing in each $z_i$ for $z_i \geq 0$.
+- **$f(x) = -\prod_{i=1}^k g_i(x)^{1/k}$** (negative geometric mean) is convex when each $g_i$ is concave and positive, because $h(z) = -(\prod z_i)^{1/k}$ is convex and nonincreasing in each $z_i$ on $\mathbb{R}_{++}^k$.
+
+### 4.4.2 Examples of Preservation Rules
+
+**Example 4.12 (Applications of Preservation Rules)** **(i) Piecewise linear functions.** $f(x) = \max_{i \in [m]}\{a_i^\top x + b_i\}$ is convex (Rule 3: max of affine functions). This is the most general form of a convex piecewise linear function.
+
+**(ii) Sum of $r$ -largest components.** For $x \in \mathbb{R}^n$, let $x_{(1)} \geq x_{(2)} \geq \cdots \geq x_{(n)}$ denote the sorted entries. Then $f(x) = x_{(1)} + x_{(2)} + \cdots + x_{(r)}$ (the sum of the $r$ largest entries) is convex, because it can be written as:
+
+$$
+f(x) = \max_{1 \leq j_1 < j_2 < \cdots < j_r \leq n} \{x_{j_1} + x_{j_2} + \cdots + x_{j_r}\},
+$$
+
+which is the pointwise maximum of $\binom{n}{r}$ linear functions (Rule 3).
+
+**(iii) Maximum eigenvalue.** For a symmetric matrix $X$, $\lambda_{\max}(X) = \sup_{v : \|v\|_2 = 1} v^\top X v$ is convex in $X$ (Rule 4: supremum of linear functions of $X$).
+
+**(iv) Distance to a convex set.** For a convex set $S \subseteq \mathbb{R}^n$ and any norm $\|\cdot\|$, the distance function $\text{dist}(x, S) = \inf_{y \in S} \|x - y\|$ is convex on $\mathbb{R}^n$ (Rule 6: partial minimization of the jointly convex function $\|x - y\|$ over $y \in S$).
+
+## 4.5 Epigraph and Connections to Convex Sets
+
+Having developed tools for building and recognizing convex functions, we now establish the deep connection between convex functions and convex sets. The **epigraph** of a function is the set of points lying “on or above” its graph, and convexity of the function is equivalent to convexity of this set. This link is powerful: it lets us translate questions about functions into questions about sets, and vice versa.
+
+**Definition 4.5 (Epigraph)** The **epigraph** of a function $f : \mathbb{R}^n \to \mathbb{R}$ is the subset of $\mathbb{R}^{n+1}$ defined as
+
+$$
+\text{epi}(f) = \{(x, t) : x \in \text{dom}(f), \; f(x) \leq t\}.
+$$
+
+Geometrically, the epigraph is the region “above the graph” of $f$ (including the graph itself).
+
+Figure: Epigraphs of a convex function (left, convex set) and a non-convex function (right, non-convex set). The shaded region above each curve is the epigraph.
+
+The fundamental connection between convex functions and convex sets is:
+
+**Theorem 4.7 (Epigraph Characterization of Convexity)** A function $f : D \subseteq \mathbb{R}^n \to \mathbb{R}$ is convex if and only if its epigraph $\text{epi}(f) \subseteq \mathbb{R}^{n+1}$ is a convex set.
+
+*Proof*. **(1) $f$ not convex $\Rightarrow$ $\text{epi}(f)$ not convex.** If $f$ is not convex, there exist $x, y \in D$ and $\lambda \in [0,1]$ such that $f(\lambda x + (1-\lambda)y) > \lambda f(x) + (1-\lambda) f(y)$. Consider the two points $(x, f(x))$ and $(y, f(y))$ in $\text{epi}(f)$. Their convex combination is $(\lambda x + (1-\lambda)y, \; \lambda f(x) + (1-\lambda)f(y))$. Since $f(\lambda x + (1-\lambda)y) > \lambda f(x) + (1-\lambda) f(y)$, this point lies *below* the graph of $f$, hence it is not in $\text{epi}(f)$. So $\text{epi}(f)$ is not convex.
+
+**(2) $\text{epi}(f)$ not convex $\Rightarrow$ $f$ not convex.** If $\text{epi}(f)$ is not convex, there exist $(x, t_x), (y, t_y) \in \text{epi}(f)$ and $\lambda \in [0,1]$ such that $(\lambda x + (1-\lambda)y, \; \lambda t_x + (1-\lambda)t_y) \notin \text{epi}(f)$. This means $f(\lambda x + (1-\lambda)y) > \lambda t_x + (1-\lambda) t_y \geq \lambda f(x) + (1-\lambda) f(y)$ (since $t_x \geq f(x)$ and $t_y \geq f(y)$). Hence $f$ is not convex. $\blacksquare$
+
+TipWhy the Epigraph Matters
+
+The epigraph characterization is more than a curiosity — it is a powerful proof technique. Many results about convex functions can be derived by applying known facts about convex sets to the epigraph. For example, Rule 3 (pointwise maximum) follows immediately: $\text{epi}(\max_i f_i) = \bigcap_i \text{epi}(f_i)$, and the intersection of convex sets is convex.
+
+## 4.6 Sublevel Sets and Quasiconvexity
+
+Sublevel sets describe the region where a function takes values at or below a given threshold — precisely the kind of set that arises as a feasible region when we impose an inequality constraint $f(x) \leq \alpha$.
+
+**Definition 4.6 (Sublevel Set)** The **$\alpha$ -sublevel set** of a function $f : \mathbb{R}^n \to \mathbb{R}$ is
+
+$$
+C_\alpha = \{x \in \text{dom}(f) : f(x) \leq \alpha\}.
+$$
+
+![](https://zhuoranyang.github.io/sds431-notes/lectures/figures/ch04-sublevel-sets.svg)
+
+Figure 4.4: Sublevel sets illustrated in one and two dimensions. (a) For f ( x ) = 1 2 f(x) = \\frac{1}{2}x^2, each sublevel set C α C\_\\alpha is a closed interval, and smaller \\alpha gives a smaller interval — the sets are nested. (b) For, + f(x\_1, x\_2) = x\_1^2 + 2x\_2^2, the sublevel sets are nested ellipses shrinking toward the minimizer ∗ x^\*.
+
+A natural and important consequence of function convexity is that cutting the graph at any height produces a convex “slice.” This means that constraints of the form $f(x) \leq \alpha$, where $f$ is convex, always yield convex feasible regions.
+
+**Theorem 4.8 (Sublevel Sets of Convex Functions Are Convex)** If $f$ is convex, then every sublevel set $C_\alpha = \{x : f(x) \leq \alpha\}$ is convex.
+
+*Proof*. Let $x, y \in C_\alpha$, so $f(x) \leq \alpha$ and $f(y) \leq \alpha$. For any $\lambda \in [0,1]$, applying the convexity definition ([Equation 4.1](https://zhuoranyang.github.io/sds431-notes/lectures/04-convex-functions.html#eq-convex-function-def)) gives the first inequality below, and the assumption $f(x), f(y) \leq \alpha$ gives the second:
+
+$$
+f(\lambda x + (1-\lambda)y) \leq \lambda f(x) + (1-\lambda)f(y) \leq \lambda\alpha + (1-\lambda)\alpha = \alpha.
+$$
+
+Hence $\lambda x + (1-\lambda)y \in C_\alpha$, so the sublevel set is convex. This completes the proof. $\blacksquare$
+
+TipRemark: Converse Does Not Hold
+
+The converse is **not** true: a function can have convex sublevel sets without being convex. For example, $f(x) = -e^{-x^2}$ has convex sublevel sets (intervals) but is not a convex function. The property of having convex sublevel sets is called **quasiconvexity**.
+
+![](https://zhuoranyang.github.io/sds431-notes/lectures/figures/ch04-quasiconvex.svg)
+
+Figure 4.5: Convexity versus quasiconvexity. (Left) A convex function always has convex sublevel sets. (Center) The function f ( x ) = 3 1 − e 2 / f(x) = 3(1-e^{-x^2/2}) is quasiconvex — its sublevel sets are convex intervals — but it is not convex, as shown by the chord lying below the curve. (Right) A non-quasiconvex function has disconnected sublevel sets at some level α \\alpha.
+
+## 4.7 Jensen’s Inequality
+
+The chord inequality defining convexity involves a convex combination of *two* points. Jensen’s inequality extends this to arbitrary **random variables**, making it one of the most widely used results connecting convexity to probability and statistics.
+
+**Theorem 4.9 (Jensen’s Inequality)** Let $X$ be a random variable taking values in the domain of a convex function $f$. Then
+
+$$
+f(\mathbb{E}[X]) \leq \mathbb{E}[f(X)].
+$$
+
+In words: the function of the mean is at most the mean of the function. If $f$ is concave, the inequality is reversed: $f(\mathbb{E}[X]) \geq \mathbb{E}[f(X)]$.
+
+*Proof*. **Proof of [Theorem 4.9](https://zhuoranyang.github.io/sds431-notes/lectures/04-convex-functions.html#thm-jensen).** We give two proofs: one for discrete random variables (by induction) and one for differentiable $f$ (via the first-order condition).
+
+**Proof 1 (Discrete case, by induction on $k$).** Suppose $X$ takes values $x_1, \ldots, x_k$ with probabilities $p_1, \ldots, p_k$ (where $p_i \geq 0$, $\sum_{i=1}^k p_i = 1$). We prove $f\!\bigl(\sum_{i=1}^k p_i x_i\bigr) \leq \sum_{i=1}^k p_i \, f(x_i)$ by induction.
+
+*Base case ($k = 2$):* This is exactly the definition of convexity with $\lambda = p_1$:
+
+$$
+f(p_1 x_1 + p_2 x_2) \leq p_1 \, f(x_1) + p_2 \, f(x_2).
+$$
+
+*Inductive step:* Assume the result holds for $k-1$ points. If $p_k = 1$, the inequality is trivially $f(x_k) \leq f(x_k)$. Otherwise $1 - p_k > 0$, and we write:
+
+$$
+\sum_{i=1}^k p_i x_i = p_k \, x_k + (1-p_k)\sum_{i=1}^{k-1} \frac{p_i}{1-p_k} x_i.
+$$
+
+Setting $\bar{x} = \sum_{i=1}^{k-1} \frac{p_i}{1-p_k} x_i$ (a convex combination of $x_1, \ldots, x_{k-1}$ since the weights sum to 1), apply the definition of convexity with $\lambda = 1-p_k$:
+
+$$
+f\!\Bigl(\sum_{i=1}^k p_i x_i\Bigr) = f\bigl(p_k x_k + (1-p_k)\bar{x}\bigr) \leq p_k \, f(x_k) + (1-p_k) \, f(\bar{x}).
+$$
+
+By the inductive hypothesis applied to $\bar{x}$:
+
+$$
+f(\bar{x}) \leq \sum_{i=1}^{k-1} \frac{p_i}{1-p_k} f(x_i).
+$$
+
+Combining: $f\!\bigl(\sum_i p_i x_i\bigr) \leq p_k f(x_k) + \sum_{i=1}^{k-1} p_i f(x_i) = \sum_{i=1}^k p_i f(x_i)$.
+
+**Proof 2 (General case, via first-order condition).** Assume $f$ is differentiable. Let $\mu = \mathbb{E}[X]$. By the first-order condition ([Equation 4.2](https://zhuoranyang.github.io/sds431-notes/lectures/04-convex-functions.html#eq-first-order-convexity)) applied at $x = \mu$:
+
+$$
+f(X) \geq f(\mu) + \nabla f(\mu)^\top(X - \mu) \quad \text{(holds for every realization of } X\text{)}.
+$$
+
+Taking expectations of both sides:
+
+$$
+\mathbb{E}[f(X)] \geq f(\mu) + \nabla f(\mu)^\top \underbrace{\mathbb{E}[X - \mu]}_{= \, 0} = f(\mu) = f(\mathbb{E}[X]).
+$$
+
+The key step is that the tangent hyperplane at $\mu$ provides a global linear lower bound, and linearity of expectation collapses the correction term to zero. $\blacksquare$
+
+**Example 4.13 (Example: Variance is Nonnegative)** Take $f(u) = u^2$, which is convex. Jensen’s inequality gives
+
+$$
+(\mathbb{E}[X])^2 \leq \mathbb{E}[X^2],
+$$
+
+which is equivalent to $\text{Var}(X) = \mathbb{E}[X^2] - (\mathbb{E}[X])^2 \geq 0$. This familiar fact is a special case of Jensen’s inequality!
+
+TipApplications of Jensen’s Inequality
+
+Jensen’s inequality appears throughout statistics and machine learning:
+
+- **Information theory:** The concavity of $\log$ gives $\log(\mathbb{E}[X]) \geq \mathbb{E}[\log X]$, which is the basis of the **evidence lower bound (ELBO)** in variational inference.
+- **EM algorithm:** The E-step relies on Jensen’s inequality applied to $\log$ to construct a lower bound on the log-likelihood.
+- **KL divergence:** The nonnegativity of KL divergence ($D_{\text{KL}}(p \| q) \geq 0$) follows from Jensen’s applied to $-\log$.
+
+## 4.8 Optimality of Convex Functions
+
+We conclude this chapter with the most important property of convex functions for optimization: **every local minimum is a global minimum**. This is the single fact that makes convex optimization tractable. We state it as a full theorem and prove all three directions of the equivalence.
+
+**Theorem 4.10 (Local Minimum    $\iff$ Stationary Point    $\iff$ Global Minimum)** Let $f : \mathbb{R}^n \to \mathbb{R}$ be a convex and continuously differentiable function. Consider the unconstrained problem $\min_{x \in \mathbb{R}^n} f(x)$. Then the following are equivalent:
+
+1. $x^*$ is a **local minimizer** of $f$.
+2. $\nabla f(x^*) = 0$ (i.e., $x^*$ is a **stationary point**).
+3. $x^*$ is a **global minimizer** of $f$.
+
+*Proof*. We prove three implications.
+
+**(1) $\Rightarrow$ (2): Local minimum implies stationary point.** Given a fixed $x^* \in \mathbb{R}^n$, define a univariate function along the negative gradient direction:
+
+$$
+g(t) = f(x^* - t \, \nabla f(x^*)).
+$$
+
+Then $g$ is differentiable on $\mathbb{R}$ with $g(0) = f(x^*)$. By the chain rule:
+
+$$
+g'(t)\big|_{t=0} = -\|\nabla f(x^*)\|_2^2 \leq 0.
+$$
+
+If $x^*$ is a local minimizer of $f$, then $t = 0$ is a local minimizer of $g$ (since $g(t) = f(x^* - t\nabla f(x^*)) \geq f(x^*) = g(0)$ for small $|t|$). By the first-order necessary condition for one-dimensional functions, $g'(0) = 0$, which gives $\|\nabla f(x^*)\|_2^2 = 0$, hence $\nabla f(x^*) = 0$.
+
+**(2) $\Rightarrow$ (3): Stationary point implies global minimum.** If $\nabla f(x^*) = 0$, then by the first-order condition for convex functions ([Equation 4.2](https://zhuoranyang.github.io/sds431-notes/lectures/04-convex-functions.html#eq-first-order-convexity)):
+
+$$
+f(y) \geq f(x^*) + \nabla f(x^*)^\top(y - x^*) = f(x^*) + 0 = f(x^*) \quad \forall \, y \in \mathbb{R}^n.
+$$
+
+So $x^*$ achieves the smallest possible function value — it is a global minimizer.
+
+**(3) $\Rightarrow$ (1): Global minimum implies local minimum.** This direction is trivial: if $f(x^*) \leq f(x)$ for all $x$, then certainly $f(x^*) \leq f(x)$ for all $x$ in any neighborhood of $x^*$. $\blacksquare$
+
+**Why this matters.** For general (nonconvex) functions, we proved in [Section 3.2.3](https://zhuoranyang.github.io/sds431-notes/lectures/03-convex-sets.html#sec-necessary-conditions) that a local minimizer must be a stationary point, but the converse fails — a stationary point could be a saddle point or a local maximum. Convexity closes this gap completely: every stationary point is automatically a global minimizer. This means that **any algorithm that finds a stationary point of a convex function has solved the optimization problem globally.** This is the theoretical foundation for the entire field of convex optimization.
+
+The function classes we have encountered — convex, strongly convex, Lipschitz continuous, and smooth — form a hierarchy of regularity conditions. Each additional property gives optimization algorithms more structure to exploit, leading to faster convergence guarantees. The diagram below summarizes the inclusion relationships among these classes and their key implications for optimization.
+
+![](https://zhuoranyang.github.io/sds431-notes/lectures/figures/ch01-function-hierarchy.svg)
+
+Figure 4.6: Hierarchy of function classes used in optimization. Stronger regularity assumptions (inner classes) yield faster convergence rates. Lipschitz continuity and smoothness control how fast a function can change; strong convexity prevents the function from being “too flat” near its minimum.
+
+## Summary
+
+- **Convex functions.** A function $f$ is convex if $f(\lambda x + (1-\lambda)y) \leq \lambda f(x) + (1-\lambda)f(y)$; equivalently, its epigraph is a convex set. Strictly convex means the inequality is strict; $m$ -strongly convex means $f - \frac{m}{2}\|x\|^2$ is convex.
+- **Four characterizations.** Chord inequality (zeroth order), tangent-line underestimator (first order), gradient monotonicity, and Hessian PSD (second order) are all equivalent for smooth convex functions.
+- **Preservation rules.** Nonnegative weighted sums, affine compositions, pointwise suprema, scalar/vector compositions, partial minimization, and perspectives all preserve convexity.
+- **Epigraph.** $f$ is convex    $\iff$ $\text{epi}(f)$ is a convex set. This links function convexity to set convexity.
+- **Key consequence.** For convex functions, local minimum    $\iff$ $\nabla f(x^*) = 0$    $\iff$ global minimum. This is why convex optimization is tractable.
+- **Jensen’s inequality.** $f(\mathbb{E}[X]) \leq \mathbb{E}[f(X)]$ for convex $f$ — the foundation of variational methods, EM, and information-theoretic arguments.
+- **Sublevel sets.** Every sublevel set $\{x : f(x) \leq \alpha\}$ of a convex function is convex (but the converse is false — that is quasiconvexity).
+
+TipLooking Ahead
+
+In the next chapter, we assemble convex sets and convex functions into the formal framework of **convex optimization problems** — standard forms, the problem hierarchy (LP $\subseteq$ QP $\subseteq$ SOCP $\subseteq$ SDP), Lagrange duality, and the KKT optimality conditions. This is where the payoff of convexity becomes fully apparent: duality provides certificates of optimality, and the KKT conditions give a complete characterization of optimal points.

@@ -1,0 +1,683 @@
+---
+title: "10  The Simplex Method – S&DS 431/631 — Optimization and Computation"
+source: "https://zhuoranyang.github.io/sds431-notes/lectures/10-simplex-method.html"
+author:
+published:
+created: 2026-04-11
+description:
+tags:
+  - "clippings"
+---
+The simplex method is the most celebrated algorithm for solving linear programs. In the [previous chapter](https://zhuoranyang.github.io/sds431-notes/lectures/09-lp-formulation-geometry.html), the Algebraic Fundamental Theorem of LP revealed that vertices of the feasible polyhedron are exactly the basic feasible solutions (BFS), and that if an optimal solution exists, it can be found at a BFS. This transforms the LP from a continuous optimization problem into a combinatorial search over at most $\binom{n+m}{m}$ candidates. Rather than enumerating all of them, the simplex method *smartly navigates* from one BFS to an adjacent one, improving the objective at every step. Each move is called a **pivot**, and the algorithm terminates when no further improvement is possible, certifying optimality.
+
+In this chapter we develop the full simplex algorithm from scratch. We begin by deriving the method from first principles: starting at a BFS, we use the algebra of the equational form to discover **reduced costs** (which tell us whether the current solution is optimal), the **pivot mechanism** (how to move to a better neighboring BFS), and the conditions for **unboundedness**. We then introduce the **simplex tableau** as a compact bookkeeping device that organizes these quantities for efficient computation. We assemble these pieces into the complete **five-step simplex algorithm**, illustrate it on a worked numerical example, and address the critical question of **initialization** – how to find a starting BFS when one is not immediately available. Finally, we discuss **pivoting rules** (Dantzig’s rule and Bland’s rule), the phenomenon of **degeneracy** and cycling, and the **oracle complexity** of the simplex method.
+
+## What Will Be Covered
+
+This chapter builds the simplex algorithm piece by piece, from first-principles derivation to practical pivoting strategies:
+
+- Deriving the simplex method: reduced costs, optimality condition, and the pivot mechanism
+- The simplex tableau: a compact bookkeeping device for efficient implementation
+- The full five-step simplex algorithm in tableau form
+- A detailed worked example tracing the simplex method through multiple iterations
+- Initialization via the Auxiliary LP (Aux-LP)
+- Pivoting rules: Dantzig’s rule and Bland’s rule
+- Degeneracy, cycling, and the guarantee of termination
+- Oracle complexity of the simplex method
+
+![](https://zhuoranyang.github.io/sds431-notes/lectures/figures/simplex-pivot.svg)
+
+Figure 10.1: The simplex method traverses vertices of the feasible polytope, improving the objective at each pivot step.
+
+## 10.1 From Canonical to Equational Form
+
+Recall from the [previous chapter](https://zhuoranyang.github.io/sds431-notes/lectures/09-lp-formulation-geometry.html) that a linear program in **canonical form** is:
+
+$$
+\min \sum_{j=1}^{n} c_j x_j \quad \text{s.t.} \quad \sum_{j=1}^{n} a_{ij} x_j \leq b_i \;\; \forall\, i \in [m], \quad x_j \geq 0 \;\; \forall\, j \in [n].
+$$
+
+We convert this to **equational form** by introducing $m$ slack variables $x_{n+1}, \ldots, x_{n+m}$:
+
+$$
+x_{n+i} = b_i - \sum_{j=1}^{n} a_{ij} x_j \geq 0, \quad \forall\, i \in [m].
+$$
+
+The equational form LP is then:
+
+$$
+\min \; c^\top x \quad \text{s.t.} \quad Ax = b, \;\; x \geq 0, \;\; x \in \mathbb{R}^{n+m},
+$$
+
+where the cost vector, constraint matrix, and right-hand side are:
+
+$$
+c = \begin{pmatrix} c_1 \\ \vdots \\ c_n \\ 0 \\ \vdots \\ 0 \end{pmatrix} \in \mathbb{R}^{n+m}, \quad A = \begin{pmatrix} a_{11} & \cdots & a_{1n} & 1 & 0 & \cdots & 0 \\ \vdots & & \vdots & 0 & 1 & \cdots & 0 \\ a_{m1} & \cdots & a_{mn} & 0 & 0 & \cdots & 1 \end{pmatrix} \in \mathbb{R}^{m \times (n+m)}.
+$$
+
+The $m$ columns corresponding to slack variables form an identity matrix, which will play a crucial role in initialization.
+
+## 10.2 Deriving the Simplex Method
+
+Before introducing the simplex tableau (a compact bookkeeping device), let us derive the simplex method from first principles. The key idea is simple: **start at a BFS and move to a neighboring BFS with a lower objective value, repeating until no improvement is possible.**
+
+### 10.2.1 Setup and Notation
+
+Let $B$ and $N$ denote the sets of **basic** and **non-basic** variable indices, respectively, with $|B| = m$. We partition:
+
+$$
+A = \begin{pmatrix} A_B & A_N \end{pmatrix}, \qquad x = \begin{pmatrix} x_B \\ x_N \end{pmatrix}, \qquad c = \begin{pmatrix} c_B \\ c_N \end{pmatrix}.
+$$
+
+The LP becomes:
+
+$$
+\min \; z = c_B^\top x_B + c_N^\top x_N \quad \text{s.t.} \quad A_B x_B + A_N x_N = b, \;\; x_B \geq 0, \; x_N \geq 0. \tag{10.1}
+$$
+
+### 10.2.2 Starting from a BFS
+
+Assume that the current basis $B$ gives a BFS. That is, $x_B^* = A_B^{-1}b \geq 0$ and $x_N^* = 0$.
+
+TipInitial BFS When $b \geq 0$
+
+If $b \geq 0$, an initial BFS is immediate: set $B = \{n+1, n+2, \ldots, n+m\}$ (the slack variables). Then $A_B = I_m$, so $x_B^* = b \geq 0$, and the original variables $x_1 = x_2 = \cdots = x_n = 0$. When $b \not\geq 0$, finding an initial BFS is itself nontrivial – we address this in [Section 10.6](https://zhuoranyang.github.io/sds431-notes/lectures/10-simplex-method.html#sec-initialization).
+
+Since $A_B$ is invertible, we can express the basic variables in terms of the non-basic ones:
+
+$$
+x_B = A_B^{-1}b - A_B^{-1}A_N x_N = x_B^* - A_B^{-1}A_N x_N. \tag{10.2}
+$$
+
+This is the key equation: it tells us exactly how the basic variables respond when we perturb the non-basic variables away from zero.
+
+### 10.2.3 Reduced Costs
+
+Substituting [Equation 10.2](https://zhuoranyang.github.io/sds431-notes/lectures/10-simplex-method.html#eq-basic-from-nonbasic) into the objective of [Equation 10.1](https://zhuoranyang.github.io/sds431-notes/lectures/10-simplex-method.html#eq-simplex-lp):
+
+$$
+z = c_B^\top(x_B^* - A_B^{-1}A_N x_N) + c_N^\top x_N = c_B^\top x_B^* + \left(c_N - (A_B^{-1}A_N)^\top c_B\right)^\top x_N.
+$$
+
+The coefficient of $x_N$ in this expression is so important that it gets its own name.
+
+**Definition 10.1 (Definition (Reduced Cost Vector))** The **reduced cost vector** for the non-basic variables is
+
+$$
+r_N = c_N - (A_B^{-1}A_N)^\top c_B = c_N - A_N^\top (A_B^{-1})^\top c_B \;\in \mathbb{R}^n.
+$$
+
+The $j$ -th component $r_j$ (for $j \in N$) represents the **rate of change of the objective** when $x_j$ increases from zero, holding other non-basic variables at zero.
+
+The objective can thus be written as:
+
+$$
+z = \underbrace{c_B^\top A_B^{-1} b}_{z^* \text{ (current value)}} + r_N^\top x_N. \tag{10.3}
+$$
+
+Since $x_N = 0$ at the current BFS, the current objective value is $z^* = c_B^\top A_B^{-1}b$.
+
+### 10.2.4 Optimality Condition
+
+From [Equation 10.3](https://zhuoranyang.github.io/sds431-notes/lectures/10-simplex-method.html#eq-objective-reduced), we can read off the optimality condition immediately.
+
+ImportantOptimality Condition
+
+If $r_N \geq 0$ (all reduced costs are nonneg), the current BFS is **optimal**. **STOP.**
+
+**Why?** Since $x_N \geq 0$ (feasibility) and $r_N \geq 0$, we have $z = z^* + r_N^\top x_N \geq z^*$ for every feasible point. The current BFS achieves the minimum.
+
+### 10.2.5 The Pivot Mechanism
+
+This is the heart of the simplex method. The reduced cost equation [Equation 10.3](https://zhuoranyang.github.io/sds431-notes/lectures/10-simplex-method.html#eq-objective-reduced) tells us $z = z^* + r_N^\top x_N$, and we want to decrease $z$. Currently all non-basic variables are zero. The entire strategy reduces to two questions.
+
+#### Question 1: Which non-basic variable should we increase?
+
+Scan the reduced cost vector $r_N$. If some component $r_q < 0$, then increasing $x_q$ from zero will decrease the objective (since the contribution is $r_q \cdot x_q < 0$). We select such a $q$ as the **entering variable**.
+
+If no such $q$ exists – that is, $r_N \geq 0$ – then increasing *any* non-basic variable can only increase or maintain the objective. **We are already at the optimum.** This is the optimality condition from [Section 10.2.4](https://zhuoranyang.github.io/sds431-notes/lectures/10-simplex-method.html#sec-optimality).
+
+#### Question 2: How far can we increase xqx\_q?
+
+We want to push $x_q$ as large as possible (to decrease $z$ as much as possible), but we must maintain feasibility: all basic variables must stay nonneg. Setting $x_q = t > 0$ and keeping all other non-basic variables at zero, [Equation 10.2](https://zhuoranyang.github.io/sds431-notes/lectures/10-simplex-method.html#eq-basic-from-nonbasic) gives:
+
+$$
+x_B = x_B^* - t \cdot d_q, \qquad \text{where } d_q = A_B^{-1} a_q \in \mathbb{R}^m
+$$
+
+is the **pivot column** ($a_q$ is the $q$ -th column of $A$). The $i$ -th entry $d_{iq}$ tells us how much basic variable $x_i$ decreases when $x_q$ increases by one unit.
+
+The feasibility requirement $x_B \geq 0$ – i.e., $x_i^* - t \cdot d_{iq} \geq 0$ for all $i \in B$ – determines how far we can go:
+
+- **If $d_{iq} \leq 0$ for all $i \in B$:** No basic variable decreases when $x_q$ grows. We can push $t \to \infty$, and the objective $z = z^* + r_q \cdot t \to -\infty$. The LP is **unbounded**.
+- **If some $d_{iq} > 0$:** These basic variables *do* decrease as $x_q$ grows. The tightest constraint determines the maximum step:
+
+$$
+t^* = \min_{i \in B : d_{iq} > 0} \frac{x_i^*}{d_{iq}}.
+$$
+
+The basic variable that hits zero first is the **leaving variable** – it exits the basis to make room for $x_q$:
+
+$$
+p = \arg\min_{i \in B : d_{iq} > 0} \frac{x_i^*}{d_{iq}}.
+$$
+
+#### The Pivot
+
+We swap $q$ into the basis and $p$ out:
+
+$$
+B' = B \cup \{q\} \setminus \{p\}, \qquad N' = N \cup \{p\} \setminus \{q\}.
+$$
+
+The new BFS has $x_q = t^* > 0$, $x_p = 0$, and the objective has strictly decreased:
+
+$$
+z_{\text{new}} = z^* + r_q \cdot t^* < z^* \quad (\text{since } r_q < 0 \text{ and } t^* > 0).
+$$
+
+NoteSummary of the Pivot Logic
+
+$$
+\boxed{r_q < 0 \text{ ?}} \;\xrightarrow{\;\text{yes}\;}\; \boxed{\text{increase } x_q} \;\xrightarrow{\;x_i^* = 0\;}\; \boxed{\text{swap } q \leftrightarrow p} \;\rightarrow\; \text{better BFS}
+$$
+
+- No $r_q < 0$ exists    $\;\Rightarrow\;$ **optimal** (stop).
+- No basic variable blocks the increase    $\;\Rightarrow\;$ **unbounded** (stop).
+
+### 10.2.6 The Simplex Algorithm
+
+Putting it all together:
+
+ImportantThe Simplex Method
+
+**Input:** An initial BFS with basis $B$, $x_B^* = A_B^{-1}b \geq 0$.
+
+**Repeat:**
+
+1. **Compute reduced costs:** $r_N = c_N - A_N^\top (A_B^{-1})^\top c_B$.
+2. **Optimality test:** If $r_N \geq 0$, **STOP** – the current BFS is optimal.
+3. **Select entering variable:** Choose $q \in N$ with $r_q < 0$.
+4. **Compute pivot column:** $d_q = A_B^{-1} a_q$.
+5. **Unboundedness test:** If $d_q \leq 0$, **STOP** – the LP is unbounded.
+6. **Compute step size and leaving variable:**
+
+$$
+t^* = \min_{i \in B : d_{iq} > 0} \frac{x_i^*}{d_{iq}}, \qquad p = \arg\min_{i \in B : d_{iq} > 0} \frac{x_i^*}{d_{iq}}.
+$$
+
+1. **Pivot:** Update $B \leftarrow B \cup \{q\} \setminus \{p\}$, $N \leftarrow N \cup \{p\} \setminus \{q\}$. Recompute $x_B^* = A_B^{-1}b$.
+
+Each iteration moves from one BFS to an **adjacent** BFS (one that differs by exactly one basic variable) while strictly decreasing the objective (assuming nondegeneracy). Since there are finitely many BFS, the algorithm terminates.
+
+### 10.2.7 Why the Simplex Method Works
+
+The correctness of the simplex method rests on three pillars:
+
+1. **Finiteness of BFS.** There are at most $\binom{n+m}{m}$ basic feasible solutions. If each pivot strictly decreases the objective (which happens when the LP is nondegenerate), the algorithm cannot revisit a BFS and must terminate.
+2. **Optimality certificate.** When $r_N \geq 0$, the current BFS is provably optimal: [Equation 10.3](https://zhuoranyang.github.io/sds431-notes/lectures/10-simplex-method.html#eq-objective-reduced) shows that $z = z^* + r_N^\top x_N \geq z^*$ for all feasible $x_N \geq 0$.
+3. **Unboundedness detection.** When $d_q \leq 0$ for some $q$ with $r_q < 0$, we can construct a feasible ray along which the objective decreases without bound.
+
+## 10.3 The Simplex Tableau
+
+The derivation in [Section 12.4](https://zhuoranyang.github.io/sds431-notes/lectures/12-dual-simplex.html#sec-derivation) gives us everything we need to run the simplex method. But look at what each iteration requires: computing $A_B^{-1}b$, $A_B^{-1}A_N$, and $r_N$ – all involving $A_B^{-1}$, which changes at every pivot. Rather than recomputing these from scratch, we organize them into a single data structure – the **simplex tableau** – that can be updated cheaply after each pivot.
+
+### 10.3.1 Tableau Quantities
+
+In [Section 10.2.3](https://zhuoranyang.github.io/sds431-notes/lectures/10-simplex-method.html#sec-reduced-costs) we derived two key equations. The **constraint equation** ([Equation 10.2](https://zhuoranyang.github.io/sds431-notes/lectures/10-simplex-method.html#eq-basic-from-nonbasic)):
+
+$$
+x_B = \underbrace{A_B^{-1}b}_{\text{current BFS}} - \underbrace{A_B^{-1}A_N}_{\text{exchange rates}} \, x_N,
+$$
+
+and the **objective equation** ([Equation 10.3](https://zhuoranyang.github.io/sds431-notes/lectures/10-simplex-method.html#eq-objective-reduced)):
+
+$$
+z = \underbrace{c_B^\top A_B^{-1}b}_{\text{current value}} + \underbrace{r_N^\top}_{\text{reduced costs}} x_N.
+$$
+
+The simplex tableau collects these quantities under a compact notation.
+
+**Definition 10.2 (Simplex Tableau Quantities)** Given a basis $B$ with BFS $x_B^* = A_B^{-1} b \geq 0$, define:
+
+| $\widetilde{b}$ | $A_B^{-1} b$ | Current BFS values | $x_B^*$ |
+| --- | --- | --- | --- |
+| $\widetilde{A}$ | $A_B^{-1} A_N$ | How basic variables respond to non-basic ones | Exchange coefficients in [Equation 10.2](https://zhuoranyang.github.io/sds431-notes/lectures/10-simplex-method.html#eq-basic-from-nonbasic) |
+| $\widetilde{c}$ | $c_N - \widetilde{A}^\top c_B$ | Cost of increasing each non-basic variable | Reduced costs $r_N$ from [Definition 10.1](https://zhuoranyang.github.io/sds431-notes/lectures/10-simplex-method.html#def-reduced-cost) |
+| $\widetilde{\zeta}$ | $c_B^\top \widetilde{b}$ | Current objective value | $z^*$ from [Equation 10.3](https://zhuoranyang.github.io/sds431-notes/lectures/10-simplex-method.html#eq-objective-reduced) |
+
+The tilde notation is simply shorthand: $\widetilde{c}$ is the reduced cost vector $r_N$, $\widetilde{b}$ is the current BFS $x_B^*$, and $\widetilde{A}$ is the matrix that tells us how the basic variables change when the non-basic variables move away from zero.
+
+### 10.3.2 The Dictionary Form
+
+Substituting the tableau quantities, the two key equations become:
+
+$$
+\zeta = \widetilde{\zeta} + \widetilde{c}^\top x_N, \qquad x_B = \widetilde{b} - \widetilde{A}\, x_N.
+$$
+
+Together, these give the LP in **dictionary form**:
+
+$$
+\min_{x_N} \; \zeta = \widetilde{\zeta} + \widetilde{c}^\top x_N \quad \text{s.t.} \quad x_B = \widetilde{b} - \widetilde{A}\, x_N, \;\; x_B, x_N \geq 0. \tag{10.4}
+$$
+
+This is equivalent to the original LP, but expressed entirely in terms of the non-basic variables $x_N$. At the current BFS, $x_N = 0$, so $x_B = \widetilde{b}$ and $\zeta = \widetilde{\zeta}$. The dictionary makes the pivot logic transparent: to improve the objective, find a non-basic variable with $\widetilde{c}_q < 0$ and increase it until some basic variable hits zero.
+
+### 10.3.3 The Tableau Layout
+
+The dictionary can be written as a single matrix equation:
+
+$$
+\begin{pmatrix} \zeta \\ x_B \end{pmatrix} = \begin{pmatrix} \widetilde{\zeta} & \widetilde{c}^\top \\ \widetilde{b} & -\widetilde{A} \end{pmatrix} \begin{pmatrix} 1 \\ x_N \end{pmatrix}. \tag{10.5}
+$$
+
+The matrix on the right is the **simplex tableau**:
+
+$$
+\text{Tableau} = \begin{pmatrix} \widetilde{\zeta} & \widetilde{c}^\top \\ \hline \widetilde{b} & -\widetilde{A} \end{pmatrix}.
+$$
+
+TipReading the Tableau
+
+- **Top-left entry** $\widetilde{\zeta}$: current objective value.
+- **Top row** $\widetilde{c}^\top$: reduced costs of non-basic variables. Negative entries signal room for improvement.
+- **Left column** $\widetilde{b}$: current values of basic variables (the BFS).
+- **Body** $-\widetilde{A}$: exchange coefficients – column $q$ tells you how $x_B$ changes when $x_q$ increases.
+- **Optimality test:** If $\widetilde{c} \geq 0$, the current BFS is optimal.
+- **Pivoting:** Choose a column $q$ with $\widetilde{c}_q < 0$ (entering) and a row $p$ via the ratio test (leaving), then swap.
+
+### 10.3.4 Pivoting in Tableau Notation
+
+The pivot mechanism from [Section 10.2.5](https://zhuoranyang.github.io/sds431-notes/lectures/10-simplex-method.html#sec-pivot-mechanism) translates directly into tableau language. In terms of the tableau quantities:
+
+- **Entering variable:** Choose $q \in N$ with $\widetilde{c}_q < 0$. The pivot column is $\widetilde{A}_q$ (column $q$ of $\widetilde{A}$), which plays the role of $d_q = A_B^{-1}a_q$ from the derivation.
+- **Ratio test:** For each row $i \in B$ with $\widetilde{A}_{iq} > 0$, compute the ratio $\widetilde{b}_i / \widetilde{A}_{iq}$. The smallest ratio determines the step size and leaving variable:
+
+**Definition 10.3 (Ratio Test (Tableau Form))** 
+$$
+t^* = \min\left\{\frac{\widetilde{b}_i}{\widetilde{A}_{iq}} : \widetilde{A}_{iq} > 0, \;\; i \in B\right\}, \qquad p = \arg\min_{i \in B}\left\{\frac{\widetilde{b}_i}{\widetilde{A}_{iq}} : \widetilde{A}_{iq} > 0\right\}. \tag{10.6}
+$$
+
+- **After the pivot:** $x_p \leftarrow 0$, $x_q \leftarrow t^* = \widetilde{b}_p / \widetilde{A}_{pq}$, and the basis updates to $B' = (B \setminus \{p\}) \cup \{q\}$.
+
+TipKey Properties of a Pivot
+
+1. **Feasibility is maintained:** The ratio test ensures $x_B \geq 0$ after the update.
+2. **The objective improves:** The change is $\Delta\zeta = \widetilde{c}_q \cdot t^* \leq 0$, since $\widetilde{c}_q < 0$ and $t^* \geq 0$.
+3. **Degeneracy warning:** If $\widetilde{b}_p = 0$, then $t^* = 0$ and the objective does not decrease. The basis changes, but the BFS point stays put. This is **degeneracy** – we return to it in [Section 10.7.2](https://zhuoranyang.github.io/sds431-notes/lectures/10-simplex-method.html#sec-degeneracy).
+
+## 10.4 The Full Simplex Algorithm (Tableau Form)
+
+The simplex method from [Section 10.2.6](https://zhuoranyang.github.io/sds431-notes/lectures/10-simplex-method.html#sec-simplex-algorithm) can now be expressed concisely as a five-step loop over the tableau:
+
+ImportantAlgorithm: The Simplex Method (5 Steps)
+
+**Input:** A basis $B$ yielding a BFS $x_B^* = A_B^{-1} b \geq 0$.
+
+**Step 1 (Compute tableau):** Compute $\widetilde{c}$, $\widetilde{A}$, $\widetilde{b}$, $\widetilde{\zeta}$ from the current basis $B$.
+
+**Step 2 (Optimality check):** If $\widetilde{c}_j \geq 0$ for all $j \in N$, **STOP** – the current BFS is **optimal**.
+
+**Step 3 (Select entering variable):** Choose $q \in N$ with $\widetilde{c}_q < 0$ (according to some pivoting rule).
+
+**Step 4 (Ratio test):** If $\widetilde{A}_{iq} \leq 0$ for all $i \in B$, **STOP** – the LP is **unbounded**. Otherwise, compute:
+
+$$
+t^* = \min_{i \in B}\left\{\frac{\widetilde{b}_i}{\widetilde{A}_{iq}} : \widetilde{A}_{iq} > 0\right\}, \quad p = \arg\min_{i \in B}\left\{\frac{\widetilde{b}_i}{\widetilde{A}_{iq}} : \widetilde{A}_{iq} > 0\right\}.
+$$
+
+**Step 5 (Pivot):** Update $B \leftarrow (B \setminus \{p\}) \cup \{q\}$, $N \leftarrow (N \setminus \{q\}) \cup \{p\}$. Go to Step 1.
+
+![](https://zhuoranyang.github.io/sds431-notes/lectures/figures/simplex-flowchart.svg)
+
+Figure 10.2: Flowchart of the simplex method. The algorithm iterates through tableau computation, optimality check, entering variable selection, ratio test, and pivoting.
+
+The five-step algorithm above is the complete specification of the simplex method. To make the mechanics concrete, we now work through a small example by hand, tracing every tableau computation and pivot decision.
+
+## 10.5 Worked Example
+
+Let us trace the simplex method on a concrete LP with $n = 2$ decision variables and $m = 2$ constraints.
+
+**Example 10.1 (Simplex Method on a 2D LP)** Consider the LP in canonical form:
+
+$$
+\min \; -x_2 \quad \text{s.t.} \quad -x_1 + x_2 \leq 1, \;\; x_1 + x_2 \leq 2, \;\; x_1, x_2 \geq 0.
+$$
+
+**Equational form.** Introduce slack variables $x_3, x_4$:
+
+$$
+\min \; -\bar{c}^\top x \quad \text{s.t.} \quad \bar{A} x = b, \;\; x \geq 0, \;\; x \in \mathbb{R}^4,
+$$
+
+where
+
+$$
+\bar{c} = \begin{pmatrix} 0 \\ -1 \\ 0 \\ 0 \end{pmatrix}, \quad \bar{A} = \begin{pmatrix} -1 & 1 & 1 & 0 \\ 1 & 1 & 0 & 1 \end{pmatrix}, \quad b = \begin{pmatrix} 1 \\ 2 \end{pmatrix}.
+$$
+
+**Enumerate all BFS.** The index set is $\{1, 2, 3, 4\}$. We choose $m = 2$ indices for $B$:
+
+| $\{1,2\}$ | $\begin{pmatrix} -1 & 1 \\ 1 & 1 \end{pmatrix}$ | $\begin{pmatrix} 0.5 \\ 1.5 \end{pmatrix}$ | $(0.5, 1.5, 0, 0)$ | Yes | $a$ |
+| --- | --- | --- | --- | --- | --- |
+| $\{1,3\}$ | $\begin{pmatrix} -1 & 1 \\ 1 & 0 \end{pmatrix}$ | $\begin{pmatrix} 2 \\ 3 \end{pmatrix}$ | $(2, 0, 3, 0)$ | Yes | $b$ |
+| $\{1,4\}$ | $\begin{pmatrix} -1 & 0 \\ 1 & 1 \end{pmatrix}$ | $\begin{pmatrix} -1 \\ 3 \end{pmatrix}$ | $(-1, 0, 0, 3)$ | **No** | – |
+| $\{2,3\}$ | $\begin{pmatrix} 1 & 1 \\ 1 & 0 \end{pmatrix}$ | $\begin{pmatrix} 2 \\ -1 \end{pmatrix}$ | $(0, 2, -1, 0)$ | **No** | – |
+| $\{2,4\}$ | $\begin{pmatrix} 1 & 0 \\ 1 & 1 \end{pmatrix}$ | $\begin{pmatrix} 1 \\ 1 \end{pmatrix}$ | $(0, 1, 0, 1)$ | Yes | $d$ |
+| $\{3,4\}$ | $\begin{pmatrix} 1 & 0 \\ 0 & 1 \end{pmatrix}$ | $\begin{pmatrix} 1 \\ 2 \end{pmatrix}$ | $(0, 0, 1, 2)$ | Yes | $e$ |
+
+There are 4 feasible BFS: $a, b, d, e$.
+
+**Simplex iterations.** We initialize with $B = \{3, 4\}$ (the slack variables), which gives the BFS $e = (0, 0, 1, 2)$ at the origin.
+
+**Initialization.** $B = \{3, 4\}$, $N = \{1, 2\}$.
+
+Compute the tableau quantities:
+
+$$
+\widetilde{A} = A_B^{-1} A_N = I \cdot \begin{pmatrix} -1 & 1 \\ 1 & 1 \end{pmatrix} = \begin{pmatrix} -1 & 1 \\ 1 & 1 \end{pmatrix}, \quad \widetilde{b} = \begin{pmatrix} 1 \\ 2 \end{pmatrix}, \quad \widetilde{c} = c_N - \widetilde{A}^\top c_B = \begin{pmatrix} 0 \\ -1 \end{pmatrix} - \begin{pmatrix} 0 \\ 0 \end{pmatrix} = \begin{pmatrix} 0 \\ -1 \end{pmatrix}.
+$$
+
+Since $\widetilde{c}_2 = -1 < 0$, the BFS is not optimal. We choose $q = 2$ (entering variable).
+
+**Ratio test:** We need $t \cdot \widetilde{A}_{iq} \leq \widetilde{b}_i$ for each $i$ with $\widetilde{A}_{iq} > 0$:
+
+$$
+t \cdot \begin{pmatrix} 1 \\ 1 \end{pmatrix} \leq \begin{pmatrix} 1 \\ 2 \end{pmatrix} \quad \Longrightarrow \quad t^* = \min\left\{\frac{1}{1}, \frac{2}{1}\right\} = 1, \quad p = 3.
+$$
+
+**Iteration 1.** Pivot $(p, q) = (3, 2)$. Update $B = \{2, 4\}$, $N = \{1, 3\}$.
+
+Compute the new tableau:
+
+$$
+\widetilde{A} = A_B^{-1} A_N = \begin{pmatrix} 1 & 0 \\ 1 & 1 \end{pmatrix}^{-1}\begin{pmatrix} -1 & 1 \\ 1 & 0 \end{pmatrix} = \begin{pmatrix} -1 & 1 \\ 2 & -1 \end{pmatrix}, \quad \widetilde{b} = \begin{pmatrix} 1 \\ 1 \end{pmatrix}, \quad \widetilde{c} = \begin{pmatrix} -1 \\ 1 \end{pmatrix}.
+$$
+
+Note: $\widetilde{c}_1 = -1 < 0$, so choose $q = 1$ (entering variable).
+
+**Ratio test:**
+
+$$
+t \cdot \begin{pmatrix} -1 \\ 2 \end{pmatrix} \leq \begin{pmatrix} 1 \\ 1 \end{pmatrix}.
+$$
+
+Only $\widetilde{A}_{2,1} = 2 > 0$ (the row for index 4), so $t^* = 1/2$, $p = 4$. Pivot $(4, 1)$.
+
+**Iteration 2.** Pivot $(p, q) = (4, 1)$. Update $B = \{1, 2\}$, $N = \{3, 4\}$.
+
+This gives BFS $a = (0.5, 1.5, 0, 0)$ with objective $\zeta = -1.5$.
+
+Computing the new relative costs: $\widetilde{c} \geq 0$ (both components nonneg). **STOP – optimal!**
+
+The simplex method found the optimal solution $x^* = (0.5, 1.5)$ with $\zeta^* = -1.5$ in two pivots, visiting BFS $e \to d \to a$.
+
+![](https://zhuoranyang.github.io/sds431-notes/lectures/figures/simplex-path.svg)
+
+Figure 10.3: The simplex method traces a path along edges of the feasible polytope. Starting from the origin (BFS e ), it pivots to BFS d, then to the optimal BFS a at ( 0.5, 1.5 ) (0.5, 1.5) with ζ ∗ = − \\zeta^\* = -1.5.
+
+![](https://zhuoranyang.github.io/sds431-notes/lectures/figures/simplex-tableau.svg)
+
+Figure 10.4: The simplex tableau at each iteration. The method starts with basis B = { 3, 4 } B=\\{3,4\\} (slack variables), pivots twice, and terminates at the optimal basis 1 2 B=\\{1,2\\} with x ∗ ( ) x^\* = (\\frac{1}{2}, \\frac{3}{2}) and f − f^\* = -\\frac{3}{2}. Red entries indicate negative reduced costs that trigger a pivot; green entries confirm optimality.
+
+The worked example above started from the slack-variable basis $B = \{3, 4\}$, which was immediately feasible because $b \geq 0$. But what happens when some right-hand-side entries are negative and the slack-variable basis is infeasible? We need a systematic method for finding an initial BFS.
+
+## 10.6 Simplex Initialization via Auxiliary LP
+
+The simplex method requires a starting BFS. When $b \geq 0$, this is easy: use the slack-variable basis $B = \{n+1, \ldots, n+m\}$, which gives $x_B^* = b \geq 0$ (as we noted in [Section 10.2.2](https://zhuoranyang.github.io/sds431-notes/lectures/10-simplex-method.html#sec-starting-bfs)). But what if some $b_i < 0$? Then $x_B^* = b$ has negative entries, so the slack-variable basis is *infeasible*. We cannot simply pick a basis and hope it works – we need a systematic method to either find a feasible BFS or certify that none exists.
+
+### 10.6.1 The Key Idea
+
+The idea is beautifully simple: **reduce the feasibility problem to an optimization problem that we already know how to solve.**
+
+We introduce an auxiliary variable $x_0 \geq 0$ that acts as a “buffer.” We subtract $x_0$ from the left-hand side of every constraint:
+
+$$
+\sum_{j=1}^{n} a_{ij} x_j - x_0 \leq b_i, \quad \forall\, i \in [m].
+$$
+
+By making $x_0$ large enough, we can satisfy *any* constraint, even those with $b_i < 0$. The question is: can we shrink $x_0$ all the way down to zero while keeping all constraints satisfied? If yes, then with $x_0 = 0$ the constraints reduce to the original ones, and we have found a feasible point for the original LP.
+
+This leads to the **Auxiliary LP**: minimize $x_0$ subject to the modified constraints.
+
+**Definition 10.4 (Auxiliary LP)** Given the original LP $\min c^\top x$ s.t. $\sum_{j=1}^n a_{ij} x_j \leq b_i$, $x_j \geq 0$, the **Auxiliary LP** is:
+
+$$
+\text{(Aux-LP)} \quad \min \; x_0 \quad \text{s.t.} \quad \sum_{j=1}^{n} a_{ij} x_j - x_0 \leq b_i \;\; \forall\, i \in [m], \quad x_j \geq 0 \;\; \forall\, j \in \{0, 1, \ldots, n\}.
+$$
+
+### 10.6.2 Why This Works
+
+The Aux-LP has three key properties:
+
+**Property 1: The Aux-LP is always feasible (and we can find a starting BFS).**
+
+Set $x_1 = \cdots = x_n = 0$. The $i$ -th constraint becomes $-x_0 \leq b_i$, i.e., $x_0 \geq -b_i$. Choosing $x_0 = \max_i(-b_i) = -\min_i b_i > 0$ satisfies all constraints. After adding slack variables $s_1, \ldots, s_m$, the equational form of the Aux-LP is:
+
+$$
+\sum_{j=1}^{n} a_{ij} x_j - x_0 + s_i = b_i, \quad s_i \geq 0.
+$$
+
+With $x_j = 0$ for $j \geq 1$ and $x_0 = -\min_i b_i$, the slack values are $s_i = b_i + x_0$. For the row $k$ where $b_k$ is most negative, $s_k = 0$. This gives an initial BFS with basis $B = \{x_0, s_1, \ldots, s_m\} \setminus \{s_k\}$ – we replace the slack $s_k$ with $x_0$ in the basis.
+
+**Property 2: The original LP is feasible    $\iff$ the optimal value of the Aux-LP is zero.**
+
+- ($\Rightarrow$) If the original LP has a feasible point $x^*$, then $(x_0, x^*) = (0, x^*)$ satisfies all Aux-LP constraints (they reduce to the original constraints when $x_0 = 0$). Since $x_0 \geq 0$, the minimum of the Aux-LP is at most 0, hence exactly 0.
+- ($\Leftarrow$) If the Aux-LP achieves $x_0^* = 0$, the accompanying $x^*$ satisfies the original constraints (plug $x_0 = 0$ back in).
+
+**Property 3: The optimal BFS of the Aux-LP provides a starting BFS for the original LP.**
+
+When $x_0^* = 0$, the Aux-LP’s optimal BFS consists of values for $x_1, \ldots, x_n$ and the slack variables $s_1, \ldots, s_m$ that satisfy $Ax + s = b$, $x, s \geq 0$. We need to extract a BFS for the original LP from this.
+
+- **Generic case ($x_0$ is non-basic):** Since non-basic variables are zero, $x_0 = 0$ is already enforced. The remaining basic variables (a subset of $x_1, \ldots, x_n, s_1, \ldots, s_m$) form a valid BFS for the original equational form. Simply drop $x_0$ from the non-basic set.
+- **Degenerate case ($x_0$ is basic with value 0):** Here $x_0$ sits in the basis at value zero. We must pivot $x_0$ out of the basis before proceeding. Choose any non-basic original variable $x_j$ (or slack $s_j$) with a nonzero entry in $x_0$ ’s row, and perform one additional pivot to swap $x_0$ out. This pivot does not change the BFS values (since $x_0 = 0$), it merely adjusts which variables are labeled basic vs. non-basic.
+
+### 10.6.3 The Initialization Algorithm
+
+ImportantAlgorithm: Simplex Initialization
+
+1. **Check** if $b \geq 0$. If so, use $B = \{n+1, \ldots, n+m\}$ (slack variables) as the initial basis. **Done.**
+2. **Formulate the Aux-LP:** Add the buffer variable $x_0$ to every constraint. The objective is $\min x_0$.
+3. **Find a starting BFS for the Aux-LP:** Set $x_j = 0$ for $j = 1, \ldots, n$ and $x_0 = -\min_i b_i$. The row with the most negative $b_i$ contributes $x_0$ to the basis in place of its slack variable.
+4. **Solve the Aux-LP** using the simplex method.
+5. **Interpret the result:**
+	- If the optimal value is **zero**: extract the BFS (dropping $x_0$) and use it to initialize simplex on the original LP.
+		- If the optimal value is **positive**: the original LP is **infeasible**.
+
+### 10.6.4 Example
+
+**Example 10.2 (Auxiliary LP Example)** Consider the LP:
+
+$$
+\min \; -x_1 + x_2 - x_3 \quad \text{s.t.} \quad 2x_1 - x_2 + 2x_3 \leq 4, \;\; 2x_1 - 3x_2 + x_3 \leq -5, \;\; -x_1 + x_2 - 2x_3 \leq -1, \;\; x_1, x_2, x_3 \geq 0.
+$$
+
+Here $b = (4, -5, -1)^\top$, so $b_2 = -5 < 0$ and $b_3 = -1 < 0$. The slack-variable basis gives $x_B = b$, which has negative entries – we cannot start simplex directly.
+
+**Construct the Aux-LP.** Subtract $x_0$ from each constraint:
+
+$$
+\min \; x_0 \quad \text{s.t.} \quad 2x_1 - x_2 + 2x_3 - x_0 \leq 4, \;\; 2x_1 - 3x_2 + x_3 - x_0 \leq -5, \;\; -x_1 + x_2 - 2x_3 - x_0 \leq -1, \;\; x_0, x_1, x_2, x_3 \geq 0.
+$$
+
+**Find a starting BFS for the Aux-LP.** Set $x_1 = x_2 = x_3 = 0$ and $x_0 = -\min_i b_i = -(-5) = 5$. Adding slack variables $s_1, s_2, s_3$:
+
+$$
+s_1 = 4 + 5 = 9, \qquad s_2 = -5 + 5 = 0, \qquad s_3 = -1 + 5 = 4.
+$$
+
+Since $s_2 = 0$, the initial basis for the Aux-LP is $B = \{x_0, s_1, s_3\}$ (we replace $s_2$ with $x_0$). This is a valid BFS: all basic variables are nonneg ($x_0 = 5, s_1 = 9, s_3 = 4$).
+
+**Solve the Aux-LP.** In equational form with slack variables, the Aux-LP constraints are:
+
+$$
+\begin{aligned}
+2x_1 - x_2 + 2x_3 - x_0 + s_1 &= 4, \\
+2x_1 - 3x_2 + x_3 - x_0 + s_2 &= -5, \\
+-x_1 + x_2 - 2x_3 - x_0 + s_3 &= -1.
+\end{aligned}
+$$
+
+The objective is $\min x_0$. Since $x_0$ is basic, we express the objective in terms of non-basic variables by using the second row (where $x_0$ entered) to eliminate $x_0$:
+
+$$
+x_0 = 2x_1 - 3x_2 + x_3 - s_2 - 5 \quad \Longrightarrow \quad z = x_0 = 5 + (2x_1 - 3x_2 + x_3 - s_2).
+$$
+
+Reading off the reduced costs: $r_{x_1} = 2$, $r_{x_2} = -3$, $r_{x_3} = 1$, $r_{s_2} = -1$. Since $r_{x_2} = -3 < 0$, variable $x_2$ should enter the basis. The simplex method proceeds from here, pivoting to decrease $x_0$ until (if possible) $x_0 = 0$.
+
+**Interpret the result.** If simplex drives $x_0^*$ to zero, the accompanying values of $(x_1, x_2, x_3, s_1, s_2, s_3)$ form a BFS for the original LP. We then switch the objective back to $\min(-x_1 + x_2 - x_3)$ and continue simplex from this starting BFS. If instead $x_0^* > 0$ at optimality, the original LP is infeasible — no assignment of $x_1, x_2, x_3 \geq 0$ can satisfy all the original constraints.
+
+NoteTwo-Phase Simplex
+
+The procedure above is often called the **two-phase simplex method**:
+
+- **Phase I:** Solve the Aux-LP to find a feasible BFS (or detect infeasibility).
+- **Phase II:** Starting from that BFS, solve the original LP.
+
+The two phases use exactly the same simplex machinery — the only difference is the objective function. Phase I minimizes the artificial variable $x_0$; Phase II minimizes the original cost $c^\top x$.
+
+With the auxiliary LP, we can now initialize the simplex method on any LP — the last remaining gap in the algorithm. The final design choice is the pivoting rule: among all non-basic variables with negative relative cost, which one should enter the basis? This choice turns out to have deep implications for whether the algorithm terminates at all.
+
+## 10.7 Pivoting Rules
+
+The simplex algorithm leaves freedom in **Step 3**: how to choose the entering variable $q$ among all non-basic variables with negative relative cost. Different choices lead to different pivoting rules, with significant implications for termination and performance.
+
+### 10.7.1 Dantzig’s Rule
+
+**Definition 10.5 (Dantzig’s Pivoting Rule)** **Entering variable:** Choose the non-basic variable with the **most negative** relative cost:
+
+$$
+q = \arg\min_{j \in N} \left\{\widetilde{c}_j : \widetilde{c}_j < 0\right\}.
+$$
+
+**Leaving variable:** Perform the ratio test ([Equation 10.6](https://zhuoranyang.github.io/sds431-notes/lectures/10-simplex-method.html#eq-ratio-test)). If there are ties, break by choosing the **smallest index**:
+
+$$
+p = \arg\min_{i \in B} \left\{\frac{\widetilde{b}_i}{\widetilde{A}_{iq}} : \widetilde{A}_{iq} > 0\right\}.
+$$
+
+Dantzig’s rule is intuitive: pick the variable that decreases the objective the fastest (per unit increase). However, it has a serious flaw.
+
+WarningDantzig’s Rule Can Cycle
+
+Unfortunately, the simplex method with Dantzig’s rule **can run forever**. In degenerate cases, it will cycle among a few extreme points with equal objective value, never terminating.
+
+### 10.7.2 Degeneracy and Cycling
+
+**Definition 10.6 (Degeneracy)** A BFS is **degenerate** if some basic variable has value zero, i.e., $\widetilde{b}_i = 0$ for some $i \in B$ (equivalently, $x_B^*$ contains a zero entry).
+
+When a BFS is degenerate, a pivot may produce $t^* = 0$, meaning the objective does not improve. The basis changes but the BFS point does not move. If a sequence of such zero-step pivots returns to a previously visited basis, the algorithm **cycles** and never terminates.
+
+**Example 10.3 (A Cycling Example)** The following LP (from Beale, adapted by Marshall) cycles under Dantzig’s rule:
+
+$$
+\max \; \zeta = 10x_1 - 57x_2 - 9x_3 - 24x_4 \quad \text{s.t.}
+$$
+ 
+$$
+0.5x_1 - 5.5x_2 - 2.5x_3 + 9x_4 \leq 0,
+$$
+ 
+$$
+0.5x_1 - 1.5x_2 - 0.5x_3 + x_4 \leq 0,
+$$
+ 
+$$
+x_1 \leq 1,
+$$
+ 
+$$
+x_1, x_2, x_3, x_4 \geq 0.
+$$
+
+The initial BFS has $\widetilde{b}_1 = \widetilde{b}_2 = 0$ (degenerate). Under Dantzig’s rule, the simplex method cycles through a sequence of bases, returning to the starting basis without improving the objective.
+
+**Theorem 10.1 (Cycling and Non-Termination)** If the simplex method fails to terminate, then it must cycle – that is, it revisits the same basis.
+
+*Proof*. The number of possible bases is finite (at most $\binom{n+m}{m}$). If the algorithm does not terminate, it must visit some basis twice. Since the simplex method is deterministic given a pivot rule, once it revisits a basis, it will repeat the same sequence of pivots indefinitely. $\blacksquare$
+
+### 10.7.3 Bland’s Rule
+
+Since Dantzig’s rule can cycle, we need a pivoting rule that guarantees termination. Bland’s rule resolves the cycling problem by using a simple, deterministic tie-breaking strategy: always choose the variable with the **smallest index**.
+
+**Definition 10.7 (Bland’s Pivoting Rule)** **Entering variable:** Choose the non-basic variable with **smallest index** among those with negative relative cost:
+
+$$
+q = \min\left\{j \in N : \widetilde{c}_j < 0\right\}.
+$$
+
+**Leaving variable:** Perform the ratio test ([Equation 10.6](https://zhuoranyang.github.io/sds431-notes/lectures/10-simplex-method.html#eq-ratio-test)). If there are ties, break by choosing the **smallest index**:
+
+$$
+p = \arg\min_{i \in B}\left\{\frac{\widetilde{b}_i}{\widetilde{A}_{iq}} : \widetilde{A}_{iq} > 0\right\}, \quad \text{with ties broken by smallest } i.
+$$
+
+**Theorem 10.2 (Bland’s Rule Guarantees Termination)** The simplex method with Bland’s rule **always terminates**.
+
+This is a remarkable result. The simple prescription “choose the smallest index” is enough to break all possible cycling patterns, regardless of how degenerate the LP is.
+
+TipBland’s Rule vs. Dantzig’s Rule
+
+| **Entering variable** | Most negative $\widetilde{c}_j$ | Smallest index with $\widetilde{c}_j < 0$ |
+| --- | --- | --- |
+| **Tie-breaking** | Smallest index | Smallest index |
+| **Termination** | Not guaranteed (can cycle) | Always terminates |
+| **Practice** | Often faster per iteration | Slower but safe |
+
+Bland’s rule resolves the termination question: the simplex method always finishes in finitely many steps. But “finite” is a weak guarantee — it says nothing about whether the algorithm is efficient. The natural next question is: how many pivots does the simplex method require as a function of the problem size?
+
+### 10.7.4 Oracle Complexity
+
+To analyze the efficiency of the simplex method, we use the **oracle computational model**.
+
+#### 10.7.4.1 The Oracle Model
+
+In the oracle model, an iterative algorithm interacts with an **oracle** that provides information for each update:
+
+- The **simplex algorithm** maintains the current basis $B$.
+- At each iteration, it queries the oracle with the basis $B$.
+- The oracle returns $\widetilde{b} = x_B^*$ (the BFS), $\widetilde{c}$ (relative costs), and $\widetilde{A}$ (transformed constraints).
+- Using this information, the algorithm decides: (a) the pivot pair $(p, q)$, (b) whether the LP is unbounded ($\widetilde{A}_{iq} \leq 0$ for all $i$), or (c) whether to check feasibility via the Aux-LP.
+
+The **oracle complexity** is the number of queries (= the number of pivots):
+
+$$
+\text{Oracle complexity} = \#\text{ queries of } \{\widetilde{b}, \widetilde{c}, \widetilde{A}\} = \#\text{ pivots } (p, q).
+$$
+
+#### 10.7.4.2 Complexity Guarantee
+
+WarningNo Polynomial Bound Known
+
+With Bland’s rule, the simplex method is guaranteed to terminate in a **finite** number of pivots. However, we do not know how the number of pivots scales as a function of $m$ and $n$.
+
+**“No guarantee beyond finiteness.”**
+
+The worst-case number of pivots can be exponential (e.g., the Klee-Minty cube requires $2^n - 1$ pivots with certain pivot rules). Whether there exists a pivot rule that guarantees a polynomial number of pivots remains one of the major open questions in optimization.
+
+Despite this worst-case behavior, the simplex method is remarkably efficient in practice. Empirically, the number of pivots is typically $O(m)$ to $O(m \log n)$ – far from the exponential worst case. This practical efficiency, combined with the method’s ability to exploit problem structure and warm-start from nearby solutions, is why simplex remains the algorithm of choice for most LP solvers.
+
+## 10.8 Simplex Method Step by Step
+
+The following visualization traces the simplex method step by step on the worked example. Use the slider to advance through iterations and observe how the entering and leaving variable selection drives the algorithm from one BFS to the next.
+
+Figure 10.4: Interactive simplex method demo. Use the slider to step through pivot iterations. The red arrow shows the direction of movement, and the highlighted vertex is the current BFS.
+
+## 10.9 Summary
+
+The simplex method is a complete algorithm for linear programming. Let us recap its key components:
+
+NoteSimplex Method: Key Takeaways
+
+1. **How to decide that an LP is feasible?** Solve the Aux-LP. The original LP is feasible if and only if the optimal value of the Aux-LP equals zero.
+2. **How to initialize the simplex method?** If $b \geq 0$, use the slack-variable basis. Otherwise, solve the Aux-LP – its optimal BFS provides the starting basis.
+3. **How to decide the entering and leaving variables?** Use a pivoting rule:
+	- **Bland’s rule**: smallest index with negative relative cost (for entering); ratio test with smallest-index tie-breaking (for leaving).
+4. **How to detect unboundedness?** During the ratio test: if $\widetilde{A}_{iq} \leq 0$ for all $i \in B$, the LP is unbounded.
+5. **Does simplex terminate?** Yes, using Bland’s rule. But with no known polynomial bound on the number of pivots – “no guarantee beyond finiteness.”
+
+TipLooking Ahead
+
+The simplex method is extraordinarily effective in practice, typically solving LPs in $O(m)$ to $O(m \log n)$ pivots. However, its worst-case exponential complexity motivates the search for algorithms with provably polynomial guarantees. In the next chapter, we study **interior point methods**, which achieve polynomial-time complexity by traversing the interior of the feasible region rather than its boundary.

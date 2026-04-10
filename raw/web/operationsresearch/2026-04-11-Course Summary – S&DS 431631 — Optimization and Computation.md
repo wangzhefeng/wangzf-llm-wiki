@@ -1,0 +1,64 @@
+---
+title: "Course Summary – S&DS 431/631 — Optimization and Computation"
+source: "https://zhuoranyang.github.io/sds431-notes/lectures/summary.html"
+author:
+published:
+created: 2026-04-11
+description:
+tags:
+  - "clippings"
+---
+This course has taken you on a journey through the core of mathematical optimization — from the foundational theory of convexity that tells us *what* an optimal solution looks like, through the first- and second-order algorithms that *find* one, to the classical theory of linear programming and the modern constrained optimization methods that power industrial solvers. Along the way, we saw how these ideas come alive in two of the most consequential applications of our time: diffusion models and transformers. The unifying theme throughout has been the interplay between structure and algorithms: convexity, smoothness, strong convexity, and constraint geometry each unlock specific algorithmic strategies with provable guarantees.
+
+## Preparation
+
+We began with the observation that optimization problems arise everywhere — in maximum likelihood estimation, regression, portfolio optimization, and neural network training — and that the common thread running through the tractable cases is **convexity**. We built the mathematical toolkit needed to recognize and exploit convex structure: norms and inner products, eigenvalues and spectral decompositions, gradients, Hessians, Taylor expansions, and the chain rule for backpropagation.
+
+## Convex Optimization Basics
+
+With the mathematical foundations in hand, we developed the theory of convex sets (polyhedra, cones, ellipsoids), convex functions (first- and second-order characterizations, operations preserving convexity), and the key consequence that every local minimum of a convex function is a global minimum. We then developed the theory of **Lagrangian duality**, which associates every constrained optimization problem with a dual problem whose optimal value bounds the original. Under Slater’s constraint qualification, this bound is tight (strong duality holds), and the **KKT conditions** provide a complete characterization of optimality. The hierarchy of convex programs — LP, QP, SOCP, SDP — gave us a taxonomy of increasingly expressive problem classes, each solvable by specialized algorithms.
+
+## First-Order Methods
+
+With the theoretical foundations in place, we turned to algorithms. **Gradient descent** — the simplest and most fundamental iterative method — follows the negative gradient to reduce the objective at each step. We proved convergence rates under smoothness and strong convexity assumptions and saw how the **condition number** $\kappa = M/m$ governs the speed of convergence. Momentum methods (Polyak’s heavy ball, **Nesterov’s accelerated gradient**) reduce the dependence on $\kappa$ from linear to a square root, while adaptive methods (**AdaGrad**, **RMSProp**, **Adam**) automatically scale the step size per coordinate. **Stochastic gradient descent** made large-scale training feasible by replacing the full gradient with a cheap, noisy estimate, and **proximal gradient methods** extended first-order optimization to composite objectives with nonsmooth regularizers like the $\ell_1$ norm. For constrained problems, **projected subgradient descent** handles nonsmooth objectives over convex sets, while the **Frank-Wolfe** (conditional gradient) method offers a projection-free alternative when linear minimization is cheap. Finally, **modern matrix optimizers** — Muon, Shampoo, and SOAP — go beyond per-coordinate adaptivity by exploiting the matrix geometry of neural network weights through spectral norms, SVD-based updates, and Kronecker-factored preconditioners.
+
+## Linear Programming
+
+Linear programming occupies a central place in optimization, both for its theoretical elegance and its enormous practical reach. We developed the **geometry of LP** — vertices, edges, and faces of polyhedra — and showed that every LP with a finite optimum has an optimal vertex. The transition to **equational form** and **basic feasible solutions** gave us the algebraic machinery behind the **simplex method**, which moves from vertex to vertex along improving edges. Despite its exponential worst-case complexity (the Klee–Minty cube), the simplex method is extraordinarily efficient in practice. **LP duality** provided a parallel problem whose optimal value matches the primal’s, and the **dual simplex method** exploits this structure for sensitivity analysis and warm-starting. We applied LP to **network flow** problems (max-flow/min-cut), and extended the framework to **robust optimization** and **game theory**, where LP duality yields the minimax theorem.
+
+## Second-Order and Interior Point Methods
+
+**Newton’s method** incorporates curvature information through the Hessian, achieving quadratic convergence near the optimum at the cost of solving a linear system at each iteration. Its affine invariance means it is immune to the ill-conditioning that plagues gradient descent. The **ellipsoid method** resolved one of the great open questions in optimization by proving that LP can be solved in polynomial time: it maintains an ellipsoid guaranteed to contain the optimum, halving its volume at each step via a separating hyperplane. Finally, **interior point methods** extend Newton’s method to inequality-constrained problems through a logarithmic barrier, following the **central path** as the barrier parameter decreases. These methods achieve polynomial complexity *and* practical efficiency, and they are the engine behind modern solvers like MOSEK, Gurobi, and CVXPY.
+
+## Modern Computation Models
+
+We concluded with two applications that illustrate how optimization underpins frontier AI systems. **Diffusion models** learn to generate photorealistic images by training a neural network to reverse a noise-corruption process — the training objective reduces to a regression problem solved by SGD and backpropagation. **Transformers**, the architecture behind GPT, Claude, and LLaMA, are built from matrix multiplications, softmax operations, and the attention mechanism, all trained end-to-end with the gradient-based methods developed throughout the course. These chapters demonstrated that the “abstract” optimization theory from earlier in the course is precisely what powers the most impactful AI systems today.
+
+## Convergence Rates at a Glance
+
+The following table summarizes the convergence guarantees for the major algorithms covered in this course. Here $k$ denotes the iteration count, $\kappa = M/m$ is the condition number, $\varepsilon$ is the target accuracy, and $n$ is the problem dimension.
+
+| GD (smooth convex) | $M$ -smooth | $O(1/k)$ | $1/M$ | $O(n)$ gradient |
+| --- | --- | --- | --- | --- |
+| GD (strongly convex) | $M$ -smooth, $m$ -strongly convex | $O(\rho^k)$, $\rho = \frac{\kappa-1}{\kappa+1}$ | $1/M$ | $O(n)$ gradient |
+| Nesterov accelerated | $M$ -smooth, $m$ -strongly convex | $O(\rho^k)$, $\rho = \frac{\sqrt{\kappa}-1}{\sqrt{\kappa}+1}$ | $1/M$ | $O(n)$ gradient + momentum |
+| SGD | Convex, bounded variance | $O(1/\sqrt{k})$ | $O(1/\sqrt{k})$ | $O(n)$ stochastic gradient |
+| Proximal GD (ISTA) | $M$ -smooth + nonsmooth | $O(1/k)$ | $1/M$ | $O(n)$ gradient + prox |
+| Projected subgradient | Convex, Lipschitz | $O(1/\sqrt{K})$ | $O(1/\sqrt{K})$ | $O(n)$ subgradient + projection |
+| Frank-Wolfe | Smooth, compact constraint | $O(1/k)$ | $2/(k+2)$ | Linear minimization oracle |
+| Newton’s method | Twice differentiable, self-concordant | Quadratic (local) | Backtracking | $O(n^3)$ Hessian solve |
+| Interior point | Convex with $m$ inequalities | $O(\sqrt{m} \log(1/\varepsilon))$ Newton steps | Barrier parameter | $O(n^3)$ Newton step |
+
+## Where to Go Next
+
+This course has given you the practical optimization toolkit: you can formulate problems as convex programs, select an appropriate algorithm, and predict its convergence behavior. But there is much more to the story. **S&DS 432/632: Advanced Optimization Techniques** develops the theoretical depth and modern research connections that build on everything covered here.
+
+Here is a preview of what the advanced course covers:
+
+- **Duality theory in depth.** Lagrangian relaxation, conjugate functions, and the beautiful duality between smoothness and strong convexity — not just as a tool for optimality conditions, but as a design principle for algorithms and a bridge between primal and dual perspectives.
+- **Second-order methods with guarantees.** Newton’s method revisited with self-concordance theory, and interior point methods analyzed through the lens of the central path — yielding polynomial-time algorithms for LP, SOCP, and SDP with provable iteration complexity $O(\sqrt{m}\log(1/\varepsilon))$.
+- **The full suite of first-order methods.** Projected gradient descent for constrained problems, subgradient methods for nonsmooth objectives, proximal gradient (ISTA/FISTA) for composite objectives with $\ell_1$ -regularization, and mirror descent with Bregman divergences that achieve dimension-free rates on structured sets like the simplex.
+- **Accelerated methods and lower bounds.** Nesterov’s accelerated gradient achieves $O(1/k^2)$ for smooth convex objectives, and information-theoretic lower bounds prove this rate *cannot be improved* by any first-order method — settling the question of what is fundamentally achievable.
+- **Implicit layers for deep learning.** Optimization problems embedded as differentiable layers inside neural networks: implicit differentiation through fixed points and KKT conditions, deep equilibrium models, and differentiable optimization layers — connecting optimization theory directly to modern neural network design.
+
+In short, this course gave you the algorithms and the intuition; the advanced course reveals *why* they work, *when* they are optimal, and *how* to push beyond their limits. The transition from practitioner to researcher begins there.

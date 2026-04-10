@@ -1,0 +1,396 @@
+---
+title: "14  Newton’s Method – S&DS 431/631 — Optimization and Computation"
+source: "https://zhuoranyang.github.io/sds431-notes/lectures/14-newton-method.html"
+author:
+published:
+created: 2026-04-11
+description:
+tags:
+  - "clippings"
+---
+In [Part 7](https://zhuoranyang.github.io/sds431-notes/lectures/06-gradient-descent.html) we introduced gradient descent and saw that it only uses first-order information — the gradient — to choose a search direction. While simple and broadly applicable, gradient descent can be frustratingly slow on ill-conditioned problems, zigzagging across narrow valleys for thousands of iterations. Newton’s method overcomes this limitation by incorporating second-order information — the Hessian matrix — to adapt each step to the local curvature of the objective function, achieving dramatically faster convergence near the optimum.
+
+TipCompanion Notebook
+
+Hands-on Python notebook accompanies this chapter. Click the badge to open in Google Colab.
+
+- **Newton’s Method** — convergence analysis, failure modes, Newton fractals, and comparison with gradient descent
+
+## What Will Be Covered
+
+- Why first-order methods struggle on ill-conditioned problems, and how second-order information helps
+- Newton’s method: definition, descent property, and quadratic approximation interpretation
+- Newton-Raphson method for root finding and its connection to Newton’s method
+- Convergence behaviors: convergence, cycling, and divergence of Newton-Raphson
+- The Newton decrement and affine invariance
+- Backtracking line search for damped Newton’s method
+- Two-phase convergence theory: linear progress followed by quadratic convergence
+- Comparison with gradient descent: cost, convergence, and condition number sensitivity
+
+## 14.1 From First-Order to Second-Order Methods
+
+Recall from [Part 7](https://zhuoranyang.github.io/sds431-notes/lectures/06-gradient-descent.html) that gradient descent updates via
+
+$$
+x^{k+1} = x^k - \alpha \cdot \nabla f(x^k).
+$$
+
+The negative gradient is the steepest descent direction under the $\ell_2$ -norm, and it guarantees decrease in $f$ for a sufficiently small step size. However, gradient descent treats all directions equally: it does not account for the fact that the function may curve sharply in some directions and gently in others.
+
+**The condition number problem.** If the Hessian satisfies $m I \preceq \nabla^2 f(x) \preceq M I$, the condition number is $\kappa = M/m$. Gradient descent needs $O(\kappa \log(1/\varepsilon))$ iterations. When $\kappa$ is large (the function has a narrow, elongated valley), the iterates oscillate across the valley and converge very slowly.
+
+**Second-order methods** fix this by using the Hessian $\nabla^2 f(x)$ to rescale the gradient. Instead of moving uniformly in all directions, Newton’s method takes a large step along directions where the curvature is small (the function is flat) and a small step along directions where the curvature is large (the function is steep). This effectively “spherifies” the problem, removing the dependence on the condition number.
+
+![](https://zhuoranyang.github.io/sds431-notes/lectures/figures/ch21-condition-number-problem.svg)
+
+Figure 14.1: Gradient descent zigzags on ill-conditioned problems while Newton’s method takes a direct path to the optimum.
+
+## 14.2 Newton’s Method
+
+We now formally define Newton’s method and establish that its search direction is always a descent direction when the Hessian is positive definite.
+
+**Definition 14.1 (Newton’s Method)** Let $f : \mathbb{R}^n \to \mathbb{R}$ be twice continuously differentiable with $\nabla^2 f(x) \succ 0$ (positive definite) at the current iterate $x^k$. The **Newton update** is:
+
+$$
+x^{k+1} = x^k - \bigl[\nabla^2 f(x^k)\bigr]^{-1} \nabla f(x^k).
+\tag{14.1}
+$$
+
+The **Newton direction** is
+
+$$
+d_{\mathrm{nt}}(x) = -\bigl[\nabla^2 f(x)\bigr]^{-1} \nabla f(x),
+\tag{14.2}
+$$
+
+and the step size is $\alpha = 1$ (the “pure” or “full” Newton step).
+
+The Newton direction can be seen as solving a linear system: we compute $d_{\mathrm{nt}}$ by solving $\nabla^2 f(x)\, d = -\nabla f(x)$. In practice, we never explicitly invert the Hessian — we solve this linear system using Cholesky factorization or other methods, which is more numerically stable.
+
+**Theorem 14.1 (Newton Direction is a Descent Direction)** Let $f$ be differentiable at $x$ with $\nabla f(x) \neq 0$, and suppose $\nabla^2 f(x) \succ 0$. Then the Newton direction $d_{\mathrm{nt}}(x) = -[\nabla^2 f(x)]^{-1}\nabla f(x)$ is a descent direction.
+
+The proof is a direct verification: substituting the Newton direction ([Equation 14.2](https://zhuoranyang.github.io/sds431-notes/lectures/14-newton-method.html#eq-newton-direction)) into the descent condition and using positive definiteness of the Hessian.
+
+*Proof*. **Proof.** We need to verify the descent condition from [Part 7](https://zhuoranyang.github.io/sds431-notes/lectures/06-gradient-descent.html): $\nabla f(x)^\top d_{\mathrm{nt}} < 0$. Substituting the definition:
+
+$$
+\nabla f(x)^\top d_{\mathrm{nt}} = -\nabla f(x)^\top \bigl[\nabla^2 f(x)\bigr]^{-1} \nabla f(x).
+$$
+
+Since $\nabla^2 f(x) \succ 0$, its inverse $[\nabla^2 f(x)]^{-1}$ is also positive definite. Therefore, for any nonzero vector $v$, we have $v^\top [\nabla^2 f(x)]^{-1} v > 0$. Setting $v = \nabla f(x) \neq 0$:
+
+$$
+\nabla f(x)^\top d_{\mathrm{nt}} = -\nabla f(x)^\top \bigl[\nabla^2 f(x)\bigr]^{-1} \nabla f(x) < 0.
+$$
+
+Hence $d_{\mathrm{nt}}$ is a descent direction. $\blacksquare$
+
+Intuitively, the Newton direction points “more directly” toward the minimum than the negative gradient does. While the negative gradient follows the steepest slope, the Newton direction accounts for curvature, so it avoids the zigzag behavior that plagues gradient descent on ill-conditioned problems.
+
+## 14.3 Quadratic Approximation Interpretation
+
+We have established that the Newton direction ([Equation 14.2](https://zhuoranyang.github.io/sds431-notes/lectures/14-newton-method.html#eq-newton-direction)) is a descent direction. The deepest insight into Newton’s method is that each Newton step minimizes a local quadratic model of the objective function — this explains why the method converges so rapidly near the optimum.
+
+**Definition 14.2 (Local Quadratic Model)** The **second-order Taylor approximation** of $f$ around a point $x$ is:
+
+$$
+\widehat{f}_x(y) = f(x) + \langle \nabla f(x),\, y - x \rangle + \frac{1}{2}(y - x)^\top \nabla^2 f(x)\, (y - x).
+\tag{14.3}
+$$
+
+When $\nabla^2 f(x) \succ 0$, $\widehat{f}_x$ is a strictly convex quadratic function of $y$.
+
+Setting the gradient of $\widehat{f}_x(y)$ ([Equation 14.3](https://zhuoranyang.github.io/sds431-notes/lectures/14-newton-method.html#eq-quadratic-model)) with respect to $y$ to zero:
+
+$$
+\nabla_y \widehat{f}_x(y) = \nabla f(x) + \nabla^2 f(x)(y - x) = 0 \implies y = x - [\nabla^2 f(x)]^{-1}\nabla f(x).
+$$
+
+This is exactly the Newton update ([Equation 14.1](https://zhuoranyang.github.io/sds431-notes/lectures/14-newton-method.html#eq-newton-update)). So the Newton step moves to the **exact minimizer** of the local quadratic approximation.
+
+TipKey Insight: One-Step Convergence for Quadratics
+
+If $f$ is an actual quadratic function, i.e., $f(x) = \frac{1}{2}x^\top P x + q^\top x + r$ with $P \succ 0$, then the quadratic approximation equals $f$ exactly. Therefore, Newton’s method converges in **exactly one iteration** from any starting point, since minimizing the quadratic model is the same as minimizing $f$ itself.
+
+This explains the remarkable speed of Newton’s method: near the optimum, any smooth function looks approximately quadratic, so Newton’s method behaves as if it were solving a quadratic problem — and on quadratic problems, it is exact.
+
+![](https://zhuoranyang.github.io/sds431-notes/lectures/figures/ch03-newton-step.svg)
+
+Figure 14.2: Newton’s method jumps to the minimizer of the local quadratic approximation f ^ x ( y ) \\widehat{f}\_x(y), using curvature information via the Hessian. The Newton direction takes a single step from the current iterate to the minimizer of the quadratic model.
+
+## 14.4 Newton-Raphson Method
+
+The Newton update ([Equation 14.1](https://zhuoranyang.github.io/sds431-notes/lectures/14-newton-method.html#eq-newton-update)) for optimization is closely related to a classical technique for solving nonlinear equations. Understanding this connection provides both a geometric picture and a useful computational tool.
+
+### 14.4.1 Root Finding with Newton-Raphson
+
+**Definition 14.3 (Newton-Raphson Method)** Given a differentiable function $F : \mathbb{R}^n \to \mathbb{R}^n$, the **Newton-Raphson method** for solving $F(x) = 0$ iterates:
+
+$$
+x^{k+1} = x^k - \bigl[J_F(x^k)\bigr]^{-1} F(x^k),
+$$
+
+where $J_F(x)$ is the **Jacobian matrix** of $F$ at $x$.
+
+![](https://zhuoranyang.github.io/sds431-notes/lectures/figures/ch21-newton-raphson-tangent.svg)
+
+Figure 14.3: Newton–Raphson finds the next iterate by following the tangent line to its x -intercept.
+
+**Connection to optimization.** Newton’s method for minimizing $f(x)$ is equivalent to applying Newton-Raphson to the equation $\nabla f(x) = 0$, since the Jacobian of $\nabla f$ is the Hessian $\nabla^2 f$.
+
+### 14.4.2 Geometric Interpretation in 1D
+
+In one dimension, $F : \mathbb{R} \to \mathbb{R}$, and the update simplifies to:
+
+$$
+x^{k+1} = x^k - \frac{F(x^k)}{F'(x^k)}.
+$$
+
+The geometric interpretation is clean: at the point $(x^k, F(x^k))$, draw the tangent line to the graph of $F$. The next iterate $x^{k+1}$ is where this tangent line crosses the $x$ -axis.
+
+![](https://zhuoranyang.github.io/sds431-notes/lectures/figures/ch03-newton-raphson-geometry.svg)
+
+Figure 14.4: Newton–Raphson for root finding: at each iterate x k x^k, draw the tangent line to F ( ) F(x) and move to its -intercept. The iterates converge rapidly to the root ∗ = 3 x^\* = 3.
+
+### 14.4.3 Example: Computing Square Roots
+
+**Example 14.1 (Computing $\sqrt{a}$ via Newton-Raphson)** To compute $\sqrt{a}$, solve $F(x) = x^2 - a = 0$. Since $F'(x) = 2x$, the Newton-Raphson update is:
+
+$$
+x^{k+1} = x^k - \frac{(x^k)^2 - a}{2x^k} = \frac{1}{2}\left(x^k + \frac{a}{x^k}\right).
+$$
+
+This is the **Babylonian method**, one of the oldest algorithms in mathematics. Starting from $x^0 = a$, it converges extremely quickly — for $a = 2$, we get:
+
+| 0 | 2.000000 | 0.586 |
+| --- | --- | --- |
+| 1 | 1.500000 | 0.086 |
+| 2 | 1.416667 | 0.00245 |
+| 3 | 1.414216 | 0.0000021 |
+| 4 | 1.414214 | $< 10^{-12}$ |
+
+## 14.5 Convergence Behaviors of Newton-Raphson
+
+Newton-Raphson does not always converge. Its behavior depends critically on the function and the starting point. We illustrate three possibilities.
+
+![](https://zhuoranyang.github.io/sds431-notes/lectures/figures/ch21-convergence-behaviors.svg)
+
+Figure 14.5: Three possible behaviors of Newton–Raphson: (i) convergence to the root, (ii) cycling between two points, (iii) divergence to infinity.
+
+### 14.5.1 1. Convergence
+
+**Example:** $F(x) = x^2 - 9$ with $x^0 > 0$. The update is $x^{k+1} = \frac{1}{2}(x^k + 9/x^k)$, and the iterates converge monotonically to the root $x = 3$.
+
+### 14.5.2 2. Cycling
+
+**Example:** $F(x) = x^3 - 2x + 2$. Starting from $x^0 = 0$:
+
+$$
+x^1 = 0 - \frac{0 - 0 + 2}{0 - 2} = 1, \qquad x^2 = 1 - \frac{1 - 2 + 2}{3 - 2} = 0.
+$$
+
+The iterates cycle between 0 and 1 forever, never reaching the root.
+
+### 14.5.3 3. Divergence
+
+**Example:** $F(x) = x^{1/3}$. The update gives $x^{k+1} = x^k - \frac{x^{1/3}}{\frac{1}{3}x^{-2/3}} = x^k - 3x^k = -2x^k$. So $|x^{k+1}| = 2|x^k|$ — the iterates diverge.
+
+WarningNewton’s Method is Sensitive to Initialization
+
+These examples illustrate that Newton’s method can converge, cycle, or diverge depending on the starting point and the function. In optimization, we mitigate this by using a **backtracking line search** (see [Section 14.7](https://zhuoranyang.github.io/sds431-notes/lectures/14-newton-method.html#sec-backtracking)) to guarantee that each step decreases the objective. But for general root-finding problems, convergence from arbitrary starting points is not guaranteed.
+
+When $F(x) = 0$ has multiple solutions, the basins of attraction for different roots can have a fractal boundary, leading to chaotic sensitivity to the initial point.
+
+With these examples in mind, the key takeaway is that Newton-Raphson convergence depends sensitively on the starting point and the function’s geometry. In optimization, we address this by combining Newton’s direction with a line search that guarantees decrease, as we will see in [Section 14.7](https://zhuoranyang.github.io/sds431-notes/lectures/14-newton-method.html#sec-backtracking).
+
+## 14.6 The Newton Decrement
+
+The Newton decrement provides a natural stopping criterion for Newton’s method that is superior to simply checking $\|\nabla f(x)\|$.
+
+**Definition 14.4 (Newton Decrement)** The **Newton decrement** at a point $x$ is defined as:
+
+$$
+\lambda(x) = \sqrt{\nabla f(x)^\top \bigl[\nabla^2 f(x)\bigr]^{-1} \nabla f(x)}.
+\tag{14.4}
+$$
+
+Equivalently, in terms of the Newton direction $d_{\mathrm{nt}}(x)$:
+
+$$
+\lambda(x) = \sqrt{d_{\mathrm{nt}}(x)^\top \nabla^2 f(x)\, d_{\mathrm{nt}}(x)}.
+$$
+
+The Newton decrement has several important properties that make it the “right” measure of proximity to the optimum.
+
+**Property 1: Rate of decrease.** Let $g(\alpha) = f(x + \alpha\, d_{\mathrm{nt}}(x))$. Then:
+
+$$
+g'(0) = \nabla f(x)^\top d_{\mathrm{nt}}(x) = -\nabla f(x)^\top [\nabla^2 f(x)]^{-1} \nabla f(x) = -\lambda(x)^2.
+$$
+
+So $\lambda(x)^2$ measures how fast $f$ decreases when we take a Newton step.
+
+**Property 2: Duality gap estimate.** The difference between $f(x)$ and the minimum of the local quadratic model is:
+
+$$
+f(x) - \inf_y \widehat{f}_x(y) = \frac{1}{2}\lambda(x)^2.
+$$
+
+This means $\frac{1}{2}\lambda(x)^2$ serves as a **surrogate for the suboptimality** $f(x) - f^*$. We can use $\frac{1}{2}\lambda(x)^2 \leq \varepsilon$ as a stopping criterion.
+
+**Property 3: Affine invariance.** Unlike the gradient norm $\|\nabla f(x)\|_2$, the Newton decrement is **invariant under affine changes of coordinates**. If $T$ is any invertible matrix and we define $\bar{f}(y) = f(Ty)$, then:
+
+$$
+\lambda_{\bar{f}}(y) = \lambda_f(Ty).
+$$
+
+TipWhy Affine Invariance Matters
+
+The gradient norm $\|\nabla f(x)\|_2$ depends on the coordinate system. If you rescale the variables (e.g., measure distance in meters vs. kilometers), the gradient norm changes, and gradient descent behaves differently. The Newton decrement — and Newton’s method itself — is invariant to such rescaling. This means Newton’s method automatically adapts to the “natural” geometry of the problem.
+
+Formally, if $\bar{f}(y) = f(Ty)$ and we run Newton’s method on $\bar{f}$, the iterates satisfy $y^{k} = T^{-1} x^k$, where $x^k$ are the Newton iterates on $f$. The trajectories are identical up to the coordinate transformation.
+
+![](https://zhuoranyang.github.io/sds431-notes/lectures/figures/ch03-affine-invariance.svg)
+
+Figure 14.6: Affine invariance of Newton’s method: applying a linear change of variables transforms the iterates but preserves the convergence trajectory. Gradient descent (left) slows down on ill-conditioned problems, while Newton’s method (right) follows the same path regardless of the coordinate system.
+
+**Property 4: Steepest descent under the Hessian norm.** Newton’s method can be interpreted as steepest descent under the local Hessian norm $\|u\|_{\nabla^2 f(x)} = \sqrt{u^\top \nabla^2 f(x)\, u}$. The Newton decrement is:
+
+$$
+\lambda(x) = \|d_{\mathrm{nt}}(x)\|_{\nabla^2 f(x)} = \|\nabla f(x)\|_{\nabla^2 f(x)^{-1}}.
+$$
+
+## 14.7 Backtracking Line Search
+
+The Newton decrement ([Equation 14.4](https://zhuoranyang.github.io/sds431-notes/lectures/14-newton-method.html#eq-newton-decrement)) tells us how close we are to optimality, but pure Newton’s method (with step size $\alpha = 1$) can fail even on convex functions when the iterate is far from the optimum. The quadratic approximation may be a poor model of $f$, causing the full Newton step to overshoot or even increase the objective value.
+
+The fix is **damped Newton’s method**: use the Newton direction but choose the step size via a backtracking line search to guarantee decrease.
+
+**Definition 14.5 (Backtracking Line Search)** Given parameters $\beta \in (0,1)$ and $c \in (0, 1/2)$, and a descent direction $d$:
+
+1. Start with $\alpha = 1$.
+2. While the **Armijo condition** is violated, i.e., while 
+	$$
+	f(x + \alpha\, d) > f(x) + c \cdot \alpha \cdot \nabla f(x)^\top d,
+	$$
+	 set $\alpha \leftarrow \beta \cdot \alpha$.
+3. Return $\alpha$.
+
+The Armijo condition ensures that $f$ decreases by at least a fraction $c$ of the decrease predicted by the linear approximation. Typical choices are $\beta = 0.5$ and $c = 0.01$.
+
+**How it works.** We try the step sizes $\alpha = 1, \beta, \beta^2, \beta^3, \ldots$ and accept the first one that provides sufficient decrease. Near the optimum, where the quadratic model is accurate, the full step $\alpha = 1$ is accepted, and we get pure Newton convergence.
+
+![](https://zhuoranyang.github.io/sds431-notes/lectures/figures/ch14-armijo-condition.svg)
+
+Figure 14.7: The Armijo condition for backtracking line search. The step size α \\alpha is acceptable when f ( x + d ) f(x + \\alpha d) (blue) lies below the Armijo line c ∇ ⊤ f(x) + c \\alpha \\nabla f(x)^\\top d (green dashed). The shaded region marks acceptable step sizes.
+
+## 14.8 Convergence Theory
+
+The following theorem establishes the remarkable two-phase convergence behavior of Newton’s method with backtracking line search. It explains why Newton’s method is slow far from the optimum but extremely fast once it gets close.
+
+### 14.8.1 Assumptions
+
+We require three regularity conditions on $f$:
+
+1. **Strong convexity:** $\nabla^2 f(x) \succeq m I$ for all $x$ (for some $m > 0$).
+2. **Smoothness:** $\nabla^2 f(x) \preceq M I$ for all $x$ (for some $M > 0$).
+3. **Lipschitz Hessian:** $\|\nabla^2 f(x) - \nabla^2 f(y)\| \leq L\|x - y\|$ for all $x, y$.
+
+The first two conditions are standard — they appeared in the convergence analysis of gradient descent. The third condition is new: it says the curvature of $f$ does not change too abruptly. This is what allows the quadratic approximation to be accurate near the optimum.
+
+**Theorem 14.2 (Two-Phase Convergence of Newton’s Method)** Under the assumptions above, there exist constants $\eta > 0$ and $\gamma > 0$ with $0 < \eta \leq m^2/L$ such that Newton’s method with backtracking line search satisfies:
+
+**Phase I (Damped Newton phase):** When $\|\nabla f(x^k)\|_2 \geq \eta$, using step size $\alpha^k$ from backtracking (which satisfies $\alpha^k \geq m/M$):
+
+$$
+f(x^{k+1}) - f(x^k) \leq -\gamma,
+$$
+
+i.e., the objective decreases by at least a fixed constant at every iteration.
+
+**Phase II (Pure Newton phase):** When $\|\nabla f(x^k)\|_2 < \eta$, the backtracking line search accepts the full step $\alpha^k = 1$, and:
+
+$$
+\frac{L}{2m^2}\|\nabla f(x^{k+1})\|_2 \leq \left(\frac{L}{2m^2}\|\nabla f(x^k)\|_2\right)^2,
+$$
+
+i.e., the (scaled) gradient norm **squares** at every iteration — quadratic convergence.
+
+![](https://zhuoranyang.github.io/sds431-notes/lectures/figures/ch21-two-phase-convergence.svg)
+
+Figure 14.8: Two-phase convergence of Newton’s method: Phase I with linear decrease, followed by Phase II with quadratic convergence.
+
+TipWhat Does Two-Phase Convergence Mean in Practice?
+
+**Phase I** (far from optimum): Each iteration makes **constant progress**, decreasing $f$ by at least $\gamma$. After at most $\frac{f(x^0) - f^*}{\gamma}$ iterations, the gradient norm drops below $\eta$ and we enter Phase II.
+
+**Phase II** (near optimum): The error **squares** at each iteration. If the scaled gradient norm is $10^{-1}$ at the start of Phase II, it becomes $10^{-2}$, then $10^{-4}$, then $10^{-8}$, then $10^{-16}$, then $10^{-32}$, then $10^{-64}$ — achieving machine precision in about **6 iterations**. This doubly-exponential decay is the hallmark of quadratic convergence.
+
+### 14.8.2 Iteration Complexity
+
+The total number of Newton iterations to achieve $\|\nabla f(x^k)\|_2 \leq \varepsilon$ is:
+
+$$
+K(\varepsilon) = \underbrace{\frac{f(x^0) - p^*}{\gamma}}_{\text{Phase I}} + \underbrace{\log_2 \log_2\!\left(\frac{2m^2}{L^2 \varepsilon}\right)}_{\text{Phase II}}.
+$$
+
+The Phase II contribution is a **double logarithm** — it grows incredibly slowly. For example, $\log_2 \log_2(10^{64}) \approx \log_2(213) \approx 8$. So Phase II takes a negligible number of iterations regardless of the target accuracy.
+
+### 14.8.3 Proof Sketch
+
+We outline the key ideas behind each phase without full details.
+
+*Proof*. **Proof sketch.**
+
+**Phase I:** When $\|\nabla f(x^k)\| \geq \eta$, the Newton direction is well-defined and provides a descent direction. The backtracking line search finds a step size $\alpha^k \geq m/M$ (this follows from the quadratic upper bound implied by $\nabla^2 f \preceq MI$). By the Armijo condition:
+
+$$
+f(x^{k+1}) \leq f(x^k) + c \cdot \alpha^k \cdot \nabla f(x^k)^\top d_{\mathrm{nt}} \leq f(x^k) - c \cdot \frac{m}{M} \cdot \frac{\|\nabla f(x^k)\|^2}{M} \leq f(x^k) - \gamma,
+$$
+
+where $\gamma = c \cdot m \cdot \eta^2 / M^2 > 0$.
+
+**Phase II:** When $\|\nabla f(x^k)\| < \eta \leq m^2/L$, the iterate is close enough to $x^*$ that the quadratic model is very accurate. By the Lipschitz Hessian condition, the error in the quadratic approximation is bounded by $\frac{L}{6}\|y - x\|^3$. This leads to:
+
+$$
+\|\nabla f(x^{k+1})\| \leq \frac{L}{2m^2}\|\nabla f(x^k)\|^2,
+$$
+
+and since $\|\nabla f(x^k)\| < \eta \leq m^2/L$, the full step $\alpha = 1$ satisfies the Armijo condition, so backtracking accepts it. $\blacksquare$
+
+The two-phase convergence analysis reveals the fundamental advantage of Newton’s method: the doubly-exponential convergence in Phase II makes the total iteration count nearly independent of the target accuracy. The price for this speed is the cubic per-iteration cost of solving the Newton system. This naturally leads to the question: when does the per-step cost pay for itself?
+
+## 14.9 Comparison with Gradient Descent
+
+| **Information used** | Gradient (first-order) | Gradient + Hessian (second-order) |
+| --- | --- | --- |
+| **Per-iteration cost** | $O(n)$ | $O(n^3)$ (solving $n \times n$ linear system) |
+| **Convergence rate** | Linear: $O(\kappa \log(1/\varepsilon))$ | Quadratic (Phase II): ~6 iters to machine precision |
+| **Condition number sensitivity** | High ($\kappa = M/m$) | Low (affine invariant) |
+| **Memory** | $O(n)$ | $O(n^2)$ (store Hessian) |
+| **Robustness** | Converges from any start (with small $\alpha$) | May need line search far from optimum |
+| **Best for** | Large-scale, low-accuracy | Moderate-scale, high-accuracy |
+
+The key tradeoff is **per-iteration cost vs. number of iterations**. Gradient descent is cheap per iteration ($O(n)$) but may need many iterations (especially when $\kappa$ is large). Newton’s method is expensive per iteration ($O(n^3)$) but needs very few iterations. In practice:
+
+- For **small to moderate** $n$ (up to a few thousand), Newton’s method is often preferred because the cubic cost is affordable and convergence is fast.
+- For **large** $n$ (millions of parameters, as in deep learning), Newton’s method is impractical. This is where first-order methods (SGD, Adam) and quasi-Newton methods (L-BFGS) dominate.
+
+![](https://zhuoranyang.github.io/sds431-notes/lectures/figures/ch03-convergence-rates.svg)
+
+Figure 14.9: Comparison of convergence rates on a log scale: sublinear convergence flattens, linear convergence is a straight line, and quadratic convergence (Newton) plummets as a double exponential — the number of correct digits roughly doubles each iteration.
+
+TipLooking Ahead
+
+Newton’s method forms the foundation for **interior point methods**, which extend second-order optimization to handle inequality constraints. In the next chapter, we will see how the barrier method reduces a constrained optimization problem to a sequence of unconstrained problems, each solved by Newton’s method. The same two-phase convergence theory carries over, making interior point methods both theoretically elegant and practically efficient.
+
+## Summary
+
+- **Second-order curvature adaptation.** Newton’s method updates via $x^{k+1} = x^k - [\nabla^2 f(x^k)]^{-1}\nabla f(x^k)$, using the Hessian to rescale the gradient according to local curvature—effectively removing the condition number dependence that plagues gradient descent.
+- **Quadratic convergence.** Near the optimum, Newton’s method converges quadratically: the error satisfies $\|x^{k+1} - x^*\| \leq C\|x^k - x^*\|^2$, meaning the number of correct digits roughly doubles each iteration.
+- **Two-phase convergence.** With backtracking line search (damped Newton), the method exhibits two phases: a damped phase where $f(x^k) - f^*$ decreases linearly by a constant per step, followed by a pure Newton phase with quadratic convergence once the iterates are close to $x^*$.
+- **Newton decrement.** The quantity $\lambda(x) = (\nabla f(x)^\top [\nabla^2 f(x)]^{-1} \nabla f(x))^{1/2}$ serves as an affine-invariant measure of proximity to optimality and a natural stopping criterion: the method has converged when $\lambda(x)^2 / 2 \leq \varepsilon$.
+
+TipLooking Ahead
+
+Newton’s method and backtracking line search form the foundation of second-order optimization. In the next chapters, we will see how these ideas extend to constrained optimization through the **ellipsoid method** and **interior-point methods**, which combine Newton steps with barrier functions to solve linear programs in polynomial time.

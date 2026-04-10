@@ -1,0 +1,628 @@
+---
+title: "17  Diffusion Models – S&DS 431/631 — Optimization and Computation"
+source: "https://zhuoranyang.github.io/sds431-notes/lectures/17-diffusion-models.html"
+author:
+published:
+created: 2026-04-11
+description:
+tags:
+  - "clippings"
+---
+How can we generate photorealistic images from scratch? How do systems like Stable Diffusion and DALL-E 3 produce stunning artwork from a text prompt? The answer lies in a surprisingly simple and elegant idea: learn to reverse the process of adding noise. If we gradually corrupt an image by adding Gaussian noise until it becomes indistinguishable from pure static, and then train a neural network to undo each tiny noise step, we obtain a generative model that can conjure realistic images out of random noise.
+
+Diffusion models represent one of the most successful applications of the optimization techniques we have developed throughout this course. Training a diffusion model reduces to a regression problem — predicting the noise that was added at each step — solved via the very stochastic gradient descent and backpropagation methods from earlier lectures. The mathematical framework connecting the forward noising process to the reverse denoising process draws on probability, variational inference, and the theory of stochastic processes. Yet the final algorithm is remarkably simple: sample noise, predict it with a neural network, and take a gradient step.
+
+TipCompanion Notebooks
+
+Hands-on Python notebooks accompany this chapter. Click a badge to open in Google Colab.
+
+- **Tiny DDPM** — training a minimal denoising diffusion model from scratch
+- **Stable Diffusion Pipeline** — end-to-end walkthrough of text-to-image generation with Stable Diffusion
+- **Stable Diffusion Encoder/Decoder** — exploring the VAE encoder and decoder components
+
+This chapter develops the full mathematical pipeline behind DDPM (Denoising Diffusion Probabilistic Models), from the variance-preserving forward process and its closed-form marginals, through the Evidence Lower Bound (ELBO) that motivates the training objective, to the noise-prediction reparameterization that makes training work in practice.
+
+## What Will Be Covered
+
+- The forward diffusion process: noise schedules and variance preservation
+- Closed-form marginal distributions $q(x_t \mid x_0)$
+- The reverse denoising process and image generation
+- The Evidence Lower Bound (ELBO) and its decomposition
+- The posterior distribution $q(x_{t-1} \mid x_t, x_0)$ and KL divergence reduction
+- Noise prediction reparameterization and the full weighted loss
+- DDPM training and sampling algorithms
+- DDIM: deterministic fast sampling
+- Latent diffusion and conditional generation
+
+## 17.1 Introduction to Diffusion Models
+
+Denoising diffusion models consist of two complementary processes that together define a generative pipeline:
+
+- **Forward diffusion process (fixed):** gradually adds Gaussian noise to input data, transforming an image into pure noise.
+- **Reverse denoising process (learned):** learns to generate data from noise by iteratively denoising, using a neural network.
+
+TipRemark: Key References
+
+- Sohl-Dickstein et al., *Deep Unsupervised Learning using Nonequilibrium Thermodynamics*, ICML 2015
+- Ho et al., *Denoising Diffusion Probabilistic Models* (DDPM), NeurIPS 2020
+- Song et al., *Score-Based Generative Modeling through Stochastic Differential Equations*, ICLR 2021
+
+![](https://zhuoranyang.github.io/sds431-notes/lectures/figures/diffusion-forward-reverse.svg)
+
+Figure 17.1: The diffusion model framework: the forward process gradually adds noise to data, while the learned reverse process denoises to generate new samples.
+
+The central design questions are:
+
+1. **How to design the forward process?** In particular, how to choose the noise schedule?
+2. **How to design the reverse process?** What is the optimization objective for training the neural network $\mu_\theta$, and what architecture to use?
+
+## 17.2 Forward Diffusion Process
+
+Starting from a data point $x_0 \sim P_{\text{data}}$, we construct a sequence $x_0, x_1, \ldots, x_T$ by adding i.i.d. Gaussian noise at each step:
+
+$$
+x_t = \sqrt{1 - \beta_t}\, x_{t-1} + \sqrt{\beta_t}\, \varepsilon_{t-1}, \qquad \varepsilon_t \overset{\text{iid}}{\sim} \mathcal{N}(0, I_d).
+$$
+
+Equivalently, the conditional density of $x_t$ given $x_{t-1}$ is:
+
+$$
+q(x_t \mid x_{t-1}) = \mathcal{N}\!\left(x_t;\; \sqrt{1-\beta_t}\, x_{t-1},\; \beta_t\, I\right).
+$$
+
+The joint distribution over the entire forward chain factorizes as a Markov chain:
+
+$$
+q(x_{1:T} \mid x_0) = \prod_{t=1}^{T} q(x_t \mid x_{t-1}).
+$$
+
+### 17.2.1 Noise Schedule
+
+The noise schedule $\{\beta_t\}_{t=1}^{T}$ controls how quickly information is destroyed:
+
+- $\beta_t$ is close to 0 when $t$ is small (gentle noise at the start).
+- $\beta_t$ grows over time so that $x_T \approx \mathcal{N}(0, I_d)$ by the end.
+- In practice (DDPM): $\beta_1 = \beta_{\min} \approx 10^{-3}$, $\beta_T = \beta_{\max} \approx 0.02$, with linear interpolation between them. The number of steps $T$ is typically 1000.
+
+![](https://zhuoranyang.github.io/sds431-notes/lectures/figures/ch17-noise-schedule.svg)
+
+Figure 17.2: Linear noise schedule β t \\beta\_t and cumulative signal retention α ˉ = ∏ ( 1 − i ) \\bar\\alpha\_t = \\prod(1-\\beta\_i). As grows, → 0 \\bar\\alpha\_t \\to 0 and the signal vanishes.
+
+### 17.2.2 Why 1−βt\\sqrt{1-\\beta\_t} and βt\\sqrt{\\beta\_t}?
+
+**Theorem 17.1 (Variance Preservation)** For any $a, b \in \mathbb{R}$, define the recursion $X_t = a\, X_{t-1} + b\, \varepsilon_{t-1}$. If we want $X_T \to \mathcal{N}(0, I_d)$ in distribution as $T \to \infty$, then we need
+
+$$
+a = \sqrt{1-\beta}, \qquad b = \sqrt{\beta} \qquad \text{for some } \beta \in (0, 1].
+$$
+
+This result explains why the diffusion coefficients take the specific form $\sqrt{1-\beta_t}$ and $\sqrt{\beta_t}$: they are the unique choice (up to parameterization) that preserves unit variance across the recursion, ensuring the process converges to standard Gaussian noise regardless of the starting distribution.
+
+The proof proceeds by unrolling the recursion to express $X_t$ directly in terms of $X_0$ and the noise terms, then imposing two convergence conditions.
+
+*Proof*. **Step 1 (Unroll the recursion).** By substituting repeatedly:
+
+$$
+X_t = a^t X_0 + b\left(\varepsilon_{t-1} + a\,\varepsilon_{t-2} + \cdots + a^{t-1}\varepsilon_0\right).
+$$
+
+**Step 2 (Compute the noise variance).** Since the $\varepsilon_i$ are independent standard Gaussians, the variance of the accumulated noise is:
+
+$$
+\operatorname{Var}(\text{noise}) = b^2 (1 + a^2 + a^4 + \cdots + a^{2(t-1)}) I = b^2 \cdot \frac{1 - a^{2t}}{1 - a^2}\, I.
+$$
+
+**Step 3 (Impose convergence conditions).** For $X_t \to \mathcal{N}(0, I)$, we need: (1) the signal component $a^t X_0$ must vanish, which requires $|a| < 1$; and (2) as $t \to \infty$, the noise variance must tend to $I$, giving $\frac{b^2}{1 - a^2} = 1$, hence $a^2 + b^2 = 1$. Setting $a = \sqrt{1-\beta}$ and $b = \sqrt{\beta}$ satisfies both conditions. $\blacksquare$
+
+TipRemark: Trigonometric Analogy
+
+The condition $a^2 + b^2 = 1$ is analogous to $\sin^2\theta + \cos^2\theta = 1$. Writing $v = \cos\theta \cdot x + \sin\theta \cdot y$ with $\operatorname{Var}(x) = 1$ preserves variance: $\operatorname{Var}(v) = 1$. The diffusion coefficients $\sqrt{1-\beta_t}$ and $\sqrt{\beta_t}$ play exactly this role.
+
+### 17.2.3 Closed-Form Distribution: q(xt∣x0)q(x\_t \\mid x\_0)
+
+A key advantage of the Gaussian forward process is that we can compute the marginal distribution of $x_t$ given $x_0$ in closed form, without iterating through all intermediate steps.
+
+**Definition 17.1 (Cumulative Noise Parameters)** Let $\alpha_t = 1 - \beta_t$ and define the cumulative product:
+
+$$
+\bar{\alpha}_t = \prod_{i=1}^{t} \alpha_i = \prod_{i=1}^{t} (1 - \beta_i).
+$$
+
+The parameter $\bar{\alpha}_t$ measures how much of the original signal survives after $t$ steps of noise addition. When $\bar{\alpha}_t \approx 1$, the data point $x_0$ is mostly preserved; when $\bar{\alpha}_t \approx 0$, the signal has been almost entirely replaced by noise.
+
+**Theorem 17.2 (Marginal Distribution of Forward Process)** The conditional distribution of $x_t$ given $x_0$ is:
+
+$$
+q(x_t \mid x_0) = \mathcal{N}\!\left(x_t;\; \sqrt{\bar{\alpha}_t}\, x_0,\; (1 - \bar{\alpha}_t)\, I_d\right).
+$$
+
+Equivalently, we can sample $x_t$ directly as:
+
+$$
+x_t = \sqrt{\bar{\alpha}_t}\, x_0 + \sqrt{1 - \bar{\alpha}_t}\, \varepsilon, \qquad \varepsilon \sim \mathcal{N}(0, I_d).
+$$
+
+This is a crucial result for practical implementation: it allows us to sample $x_t$ at any arbitrary timestep $t$ directly from $x_0$ without simulating the entire Markov chain step by step. This makes training efficient, since we can randomly sample a timestep $t$ and immediately compute the noisy input $x_t$ for the loss function.
+
+*Proof*. We derive this by recursive substitution. Starting from $x_t = \sqrt{\alpha_t}\, x_{t-1} + \sqrt{1-\alpha_t}\, \varepsilon_{t-1}$:
+
+$$
+x_t = \sqrt{\alpha_t \alpha_{t-1}}\, x_{t-2} + \sqrt{1-\alpha_t}\, \varepsilon_{t-1} + \sqrt{\alpha_t(1-\alpha_{t-1})}\, \varepsilon_{t-2}.
+$$
+
+Since $\varepsilon_{t-1}$ and $\varepsilon_{t-2}$ are independent standard Gaussians, the sum of the two independent Gaussian noise terms has variance $(1-\alpha_t) + \alpha_t(1-\alpha_{t-1}) = 1 - \alpha_t \alpha_{t-1}$. So we can write:
+
+$$
+w_{t-2} \sim \mathcal{N}(0, (1 - \alpha_t\alpha_{t-1})\, I).
+$$
+
+Applying this merging of Gaussian noise terms recursively down to $x_0$, we accumulate the product $\bar{\alpha}_t = \prod_{i=1}^t \alpha_i$ as the signal coefficient and $1 - \bar{\alpha}_t$ as the total noise variance. Hence we conclude the proof. $\blacksquare$
+
+**Summary of the Forward Process:**
+
+$$
+x_t \sim \mathcal{N}\!\left(\sqrt{\bar\alpha_t}\, x_0,\; (1-\bar\alpha_t)\, I\right).
+$$
+
+As $t \to T$, $\bar\alpha_t \to 0$, so $x_T \approx \mathcal{N}(0, I)$ — pure noise.
+
+![](https://zhuoranyang.github.io/sds431-notes/lectures/figures/ch17-forward-process.svg)
+
+Figure 17.3: The forward diffusion process in 1D. A data point x 0 x\_0 is gradually corrupted: the signal coefficient α ˉ t \\sqrt{\\bar\\alpha\_t} shrinks while the noise variance 1 − 1-\\bar\\alpha\_t grows.
+
+## 17.3 Reverse Denoising Process
+
+The **reverse process** starts from pure noise $\widetilde{x}_T \sim \mathcal{N}(0, I_d)$ and iteratively denoises using a learned neural network. The joint distribution of the reverse chain is:
+
+$$
+p_\theta(\widetilde{x}_{0:T}) = p(\widetilde{x}_T) \prod_{t=1}^{T} p_\theta(\widetilde{x}_{t-1} \mid \widetilde{x}_t),
+$$
+
+where:
+
+- $p(\widetilde{x}_T) = \mathcal{N}(\widetilde{x}_T; 0, I_d)$ is the starting distribution (pure noise).
+- Each reverse step is parameterized as a Gaussian:
+
+$$
+p_\theta(\widetilde{x}_{t-1} \mid \widetilde{x}_t) = \mathcal{N}\!\left(\widetilde{x}_{t-1};\; \mu_\theta(\widetilde{x}_t, t),\; \sigma_t^2\, I\right).
+$$
+
+Here $\mu_\theta(\cdot, \cdot)$ is a **trainable neural network** (typically a U-Net / denoising autoencoder) that takes the current noisy image $\widetilde{x}_t$ and timestep $t$ as input, and predicts the denoised mean.
+
+### 17.3.1 Generating an Image
+
+ImportantAlgorithm: Image Generation Procedure
+
+Once the network $\mu_\theta$ is trained and the variance schedule $\{\sigma_t^2\}_{t=1}^T$ is fixed:
+
+1. Sample $\widetilde{x}_T \sim \mathcal{N}(0, I_d)$.
+2. For $t = T, T-1, \ldots, 1$: sample $\widetilde{x}_{t-1} \sim \mathcal{N}\!\left(\mu_\theta(\widetilde{x}_t, t),\; \sigma_t^2 I\right)$.
+3. Output $\widetilde{x}_0$.
+
+**Goal:** The distribution of $\widetilde{x}_0$ should match $P_{\text{data}}$, so the generated images look realistic.
+
+TipRemark: Mental Picture
+
+The forward process maps data $x_0 \sim P_{\text{data}}$ through a chain $x_0 \to x_1 \to \cdots \to x_T \approx \mathcal{N}(0, I)$. The reverse process runs backwards: $\widetilde{x}_T \sim \mathcal{N}(0, I) \to \widetilde{x}_{T-1} \to \cdots \to \widetilde{x}_0$. When $T$ is sufficiently large, the forward endpoint $x_T$ and the reverse starting point $\widetilde{x}_T$ have nearly the same distribution $\mathcal{N}(0, I)$. If the reverse transitions closely match the true posterior $q(x_{t-1} \mid x_t)$, then $\widetilde{x}_0$ will be distributed like real data.
+
+The reverse process gives us a parametric generative model, but we have not yet specified how to train it. The remaining challenge is to define a loss function that can be computed efficiently and that encourages the learned reverse transitions to match the true posteriors of the forward process. This leads us to the Evidence Lower Bound.
+
+## 17.4 Evidence Lower Bound (ELBO)
+
+The key question is: *how do we train $\mu_\theta$?* There are two major approaches:
+
+1. Derive the continuous-time limit (stochastic differential equation) and then the Reverse SDE.
+2. View the forward and reverse processes as two joint distributions over $(x_0, x_1, \ldots, x_T)$ and minimize their divergence. This leads to the **Evidence Lower Bound (ELBO)**.
+
+We focus on the ELBO approach.
+
+### 17.4.1 ELBO for a Simplified Model
+
+Consider a simplified setting with just one latent variable $z$ (i.e., $T=1$):
+
+- $x \sim f_0(\cdot)$: signal with unknown parameters.
+- $q(z \mid x)$: a noisy channel that generates observation $z$ from signal $x$.
+- $p(z)$: a noise distribution, e.g., $\mathcal{N}(0, I)$.
+- $p_\theta(x \mid z)$: a neural-network-based denoising method.
+
+The marginal likelihood under our model is:
+
+$$
+p_\theta(x) = \int p(z)\, p_\theta(x \mid z)\, dz.
+$$
+
+We want to maximize $\sum_{i=1}^n \log p_\theta(x_i)$ (MLE). But the integral makes direct optimization hard.
+
+**Theorem 17.3 (Evidence Lower Bound)** For any conditional distribution $q(z \mid x)$ (called the *variational distribution*) and for all $x$:
+
+$$
+\log p_\theta(x) \geq \mathbb{E}_{z \sim q(\cdot \mid x)}\!\left[\log p_\theta(x, z) - \log q(z \mid x)\right] = \text{ELBO}(\theta).
+$$
+
+The ELBO provides a tractable lower bound on the log-likelihood, which is typically intractable to compute directly due to the integral over latent variables. By maximizing this lower bound instead of the true log-likelihood, we obtain a principled training objective. The tighter the bound (i.e., the smaller the KL gap), the closer the ELBO is to the true objective.
+
+### 17.4.2 Proof of the ELBO
+
+The proof strategy is to rewrite $\log p_\theta(x)$ by introducing the variational distribution $q(z \mid x)$ via a multiplication-by-one trick, then decompose the result into the ELBO plus a non-negative KL divergence term.
+
+*Proof*. Note that $p_\theta(x) = \int p_\theta(x, z)\, dz$ and $p_\theta(x, z) = p(z) \cdot p_\theta(x \mid z)$. Also, for any distribution $q(z \mid x)$, we have $\int q(z \mid x)\, dz = 1$. Thus:
+
+$$
+\log p_\theta(x) = \log p_\theta(x) \cdot \int q(z \mid x)\, dz = \int q(z \mid x) \cdot \log p_\theta(x)\, dz. \quad \text{(1)}
+$$
+
+Using $p_\theta(x, z) = p_\theta(x) \cdot p_\theta(z \mid x)$, we write:
+
+$$
+\log p_\theta(x) = \log p_\theta(x, z) - \log p_\theta(z \mid x). \quad \text{(2)}
+$$
+
+Substituting (2) into (1) and separating the terms involving $q(z \mid x)$:
+
+$$
+\log p_\theta(x) = \int q(z \mid x) \log \frac{p_\theta(x, z)}{q(z \mid x)}\, dz \;+\; \int q(z \mid x) \log \frac{q(z \mid x)}{p_\theta(z \mid x)}\, dz.
+$$
+
+The first term is the ELBO. The second term is $D_{\text{KL}}(q(z \mid x) \,\|\, p_\theta(z \mid x)) \geq 0$. Since $\log p_\theta(x) = \text{ELBO} + \text{KL} \geq \text{ELBO}$, we conclude the proof. $\blacksquare$
+
+TipRemark
+
+The ELBO holds for *all* choices of $q(\cdot \mid x)$. Ideally, we want $q(z \mid x) \approx p_\theta(z \mid x)$ so that the KL gap is small and the ELBO is tight. When the KL term is small, maximizing the ELBO is nearly equivalent to maximizing the log-likelihood.
+
+**Alternative proof via Jensen’s inequality** (using Jensen’s inequality from convex function theory — see [Part 3](https://zhuoranyang.github.io/sds431-notes/lectures/04-convex-functions.html))**:** Since $\log$ is concave, $\mathbb{E}[f(Z)] \leq f(\mathbb{E}[Z])$, giving directly:
+
+$$
+\log p_\theta(x) = \log \int \frac{p_\theta(x, z)}{q(z \mid x)} q(z \mid x)\, dz \geq \mathbb{E}_{z \sim q(\cdot \mid x)}\!\left[\log \frac{p_\theta(x, z)}{q(z \mid x)}\right].
+$$
+
+### 17.4.3 ELBO for Diffusion Models
+
+Now we apply the ELBO framework to the full diffusion model with $T$ steps. We have two processes:
+
+**Definition 17.2 (Forward and Reverse Joint Distributions)** **Forward process** (fixed, acts as variational distribution):
+
+$$
+q(\{x_t\}_{t=0}^T) = P_{\text{data}}(x_0) \prod_{t=1}^{T} q_t(x_t \mid x_{t-1}), \quad q_t(x' \mid x) = \mathcal{N}(x';\, \sqrt{1-\beta_t}\, x,\, \beta_t I).
+$$
+
+**Reverse process** (learned, parameterized by $\theta$):
+
+$$
+p_\theta(\{\widetilde{x}_t\}_{t=1}^T) = p(\widetilde{x}_T) \prod_{t=1}^{T} p_\theta(\widetilde{x}_{t-1} \mid \widetilde{x}_t), \quad p(\widetilde{x}_T) = \mathcal{N}(\widetilde{x}_T; 0, I_d).
+$$
+
+Each $p_\theta(\widetilde{x}_{t-1} \mid \widetilde{x}_t)$ is a neural-network-based conditional Gaussian distribution.
+
+The forward process serves as the “variational distribution” in the ELBO framework: it defines how latent variables $(x_1, \ldots, x_T)$ are generated from data $x_0$. The reverse process is the generative model we wish to train. The goal is to make the learned reverse transitions match the true posterior of the forward process as closely as possible.
+
+### 17.4.4 Building Intuition: ELBO for T=2T=2
+
+Before tackling the general case, let us derive the ELBO for $T = 2$ with variables $x_0, x_1, x_2$. This special case reveals the key algebraic trick that makes the general derivation work.
+
+The log-likelihood is:
+
+$$
+\log p_\theta(x_0) = \log \int p_\theta(x_0, x_1, x_2)\, dx_1\, dx_2.
+$$
+
+Introducing the forward distribution $q(x_1, x_2 \mid x_0)$ and applying Jensen’s inequality:
+
+$$
+\log p_\theta(x_0) = \log \int \frac{p_\theta(x_0, x_1, x_2)}{q(x_1, x_2 \mid x_0)} \cdot q(x_1, x_2 \mid x_0)\, dx_1\, dx_2 \geq \mathbb{E}_{x_1, x_2 \sim q(\cdot \mid x_0)}\!\left[\log \frac{p_\theta(x_0, x_1, x_2)}{q(x_1, x_2 \mid x_0)}\right].
+$$
+
+Now we decompose the joint distributions. For the reverse process:
+
+$$
+p_\theta(x_0, x_1, x_2) = p(x_2) \cdot p_\theta(x_1 \mid x_2) \cdot p_\theta(x_0 \mid x_1).
+$$
+
+For the forward process, the natural factorization is $q(x_1, x_2 \mid x_0) = q(x_1 \mid x_0) \cdot q(x_2 \mid x_1)$. However, this is **not** the right decomposition.
+
+WarningKey Observation
+
+We should **not** decompose the forward joint as $q(x_1 \mid x_0) \cdot q(x_2 \mid x_1)$. The problem is that we want terms like $q(x_1 \mid x_2)$ and $q(x_0 \mid x_1)$ to match against the reverse transitions $p_\theta(x_1 \mid x_2)$ and $p_\theta(x_0 \mid x_1)$. But the marginal conditional $q(x_1 \mid x_2)$ is **not Gaussian** — it involves integrating over all possible $x_0$ values.
+
+Instead, two observations guide us:
+
+1. The conditional $q(x_1 \mid x_2, x_0)$ **is Gaussian**, because $(x_1, x_2) \mid x_0$ is jointly Gaussian and conditionals of Gaussians are Gaussian.
+2. When $T$ is large, $q(x_T \mid x_0) \approx \mathcal{N}(0, I) = p(x_T)$.
+
+These observations suggest the alternative factorization:
+
+$$
+q(x_1, x_2 \mid x_0) = q(x_2 \mid x_0) \cdot q(x_1 \mid x_2, x_0).
+$$
+
+Substituting both decompositions into the ELBO and separating terms:
+
+$$
+\text{ELBO}(\theta) = \underbrace{\mathbb{E}_{x_1 \sim q(\cdot \mid x_0)}\!\left[\log p_\theta(x_0 \mid x_1)\right]}_{\text{reconstruction}} + \underbrace{\mathbb{E}_{x_2 \sim q(\cdot \mid x_0)}\!\left[\log \frac{p(x_2)}{q(x_2 \mid x_0)}\right]}_{\text{prior matching}} + \underbrace{\mathbb{E}_{x_2 \sim q(\cdot \mid x_0)}\!\left[-D_{\text{KL}}\!\left(q(x_1 \mid x_2, x_0) \,\|\, p_\theta(x_1 \mid x_2)\right)\right]}_{\text{denoising matching}}.
+$$
+
+The prior matching term equals $-D_{\text{KL}}(q(x_2 \mid x_0) \,\|\, p(x_2))$ and does not involve $\theta$, so it can be ignored during optimization. The denoising matching term is a KL divergence between two distributions: the tractable Gaussian posterior $q(x_1 \mid x_2, x_0)$ and the learned reverse transition $p_\theta(x_1 \mid x_2)$. This is the term we optimize.
+
+### 17.4.5 General ELBO Decomposition
+
+The $T=2$ result generalizes directly to arbitrary $T$. The training objective is to maximize:
+
+$$
+\text{ELBO}(\theta) = \mathbb{E}_{q}\!\left[\log \frac{p_\theta(x_{0:T})}{q(x_{1:T} \mid x_0)}\right].
+$$
+
+Using the same factorization trick at each step, the diffusion ELBO breaks into three types of terms:
+
+**Decomposition of the Diffusion ELBO.** The ELBO separates into three types of terms, each with a distinct role in the training objective:
+
+1. **Reconstruction term:** $\mathbb{E}_q[\log p_\theta(x_0 \mid x_1)]$ — how well the model reconstructs data from the first latent.
+2. **Prior matching term:** $-D_{\text{KL}}(q(x_T \mid x_0) \,\|\, p(x_T))$ — forward endpoint should match $\mathcal{N}(0, I)$. Does not depend on $\theta$.
+3. **Denoising matching terms:** $-\sum_{t=2}^{T} \mathbb{E}_{q(x_t \mid x_0)}\!\left[D_{\text{KL}}(q(x_{t-1} \mid x_t, x_0) \,\|\, p_\theta(x_{t-1} \mid x_t))\right]$ — the learned reverse step should match the true posterior at each timestep.
+
+The dominant terms are the denoising matching KL divergences. To compute them, we need two ingredients: (1) the closed-form posterior $q(x_{t-1} \mid x_t, x_0)$, and (2) a way to reduce the KL divergence to a simple loss on the neural network parameters.
+
+## 17.5 Posterior Distribution q(xt−1∣xt,x0)q(x\_{t-1} \\mid x\_t, x\_0)
+
+The denoising matching terms in the ELBO require computing $D_{\text{KL}}(q(x_{t-1} \mid x_t, x_0) \,\|\, p_\theta(x_{t-1} \mid x_t))$. A key observation is that under the forward process, $x_{t-1} \mid x_t, x_0$ is Gaussian, so this posterior has a closed-form expression.
+
+**Theorem 17.4 (Forward Process Posterior)** The distribution $q(x_{t-1} \mid x_t, x_0)$ is Gaussian:
+
+$$
+q(x_{t-1} \mid x_t, x_0) = \mathcal{N}\!\left(x_{t-1};\; \mu_q(x_t, x_0),\; \sigma_q^2(t)\, I\right),
+$$
+
+where the posterior mean and variance are:
+
+$$
+\mu_q(x_t, x_0) = \frac{(1-\bar\alpha_{t-1})\sqrt{\alpha_t}}{1-\bar\alpha_t}\, x_t + \frac{(1-\alpha_t)\sqrt{\bar\alpha_{t-1}}}{1-\bar\alpha_t}\, x_0, \qquad \sigma_q^2(t) = \frac{(1-\alpha_t)(1-\bar\alpha_{t-1})}{1-\bar\alpha_t}.
+$$
+
+The posterior mean $\mu_q(x_t, x_0)$ is a **linear combination** of $x_t$ and $x_0$, weighted by coefficients that depend on the noise schedule. Geometrically, $\mu_q$ lies on the line segment connecting $x_t$ and $x_0$.
+
+*Proof*. Since both $q(x_t \mid x_{t-1})$ and $q(x_{t-1} \mid x_0)$ are Gaussian, we apply Bayes’ rule:
+
+$$
+q(x_{t-1} \mid x_t, x_0) \propto q(x_t \mid x_{t-1}) \cdot q(x_{t-1} \mid x_0).
+$$
+
+Both factors are Gaussian in $x_{t-1}$:
+
+$$
+q(x_t \mid x_{t-1}) = \mathcal{N}(x_t;\, \sqrt{\alpha_t}\, x_{t-1},\, (1-\alpha_t)I), \qquad q(x_{t-1} \mid x_0) = \mathcal{N}(x_{t-1};\, \sqrt{\bar\alpha_{t-1}}\, x_0,\, (1-\bar\alpha_{t-1})I).
+$$
+
+Completing the square in $x_{t-1}$, the precision (inverse variance) of the posterior is:
+
+$$
+\frac{1}{\sigma_q^2} = \frac{\alpha_t}{1-\alpha_t} + \frac{1}{1-\bar\alpha_{t-1}} = \frac{\alpha_t(1-\bar\alpha_{t-1}) + (1-\alpha_t)}{(1-\alpha_t)(1-\bar\alpha_{t-1})} = \frac{1 - \bar\alpha_t}{(1-\alpha_t)(1-\bar\alpha_{t-1})},
+$$
+
+where we used $\bar\alpha_t = \alpha_t \bar\alpha_{t-1}$. The precision-weighted mean gives:
+
+$$
+\mu_q = \sigma_q^2 \!\left(\frac{\sqrt{\alpha_t}}{1-\alpha_t}\, x_t + \frac{\sqrt{\bar\alpha_{t-1}}}{1-\bar\alpha_{t-1}}\, x_0\right) = \frac{(1-\bar\alpha_{t-1})\sqrt{\alpha_t}}{1-\bar\alpha_t}\, x_t + \frac{(1-\alpha_t)\sqrt{\bar\alpha_{t-1}}}{1-\bar\alpha_t}\, x_0. \quad \blacksquare
+$$
+
+## 17.6 Training Objective and Noise Prediction
+
+### 17.6.1 From KL Divergence to Mean Matching
+
+We now derive the training loss from the ELBO. The denoising matching terms require computing $D_{\text{KL}}(q(x_{t-1} \mid x_t, x_0) \,\|\, p_\theta(x_{t-1} \mid x_t))$. We parameterize the reverse transition as a Gaussian with the **same variance** as the posterior:
+
+$$
+p_\theta(x_{t-1} \mid x_t) = \mathcal{N}\!\left(x_{t-1};\; \mu_\theta(x_t, t),\; \sigma_q^2(t)\, I\right).
+$$
+
+Since both distributions are Gaussian with equal variance $\sigma_q^2(t)\, I$, the KL divergence reduces to a squared difference of means:
+
+$$
+D_{\text{KL}}\!\left(q(x_{t-1} \mid x_t, x_0) \,\|\, p_\theta(x_{t-1} \mid x_t)\right) = \frac{1}{2\sigma_q^2(t)}\left\|\mu_q(x_t, x_0) - \mu_\theta(x_t, t)\right\|^2.
+$$
+
+This is the **mean-matching** objective: the neural network $\mu_\theta$ must learn to predict the posterior mean $\mu_q$.
+
+### 17.6.2 Noise Prediction Reparameterization
+
+Rather than training $\mu_\theta$ to predict $\mu_q$ directly, Ho et al. (2020) introduced a reparameterization that leads to better empirical performance. The key insight is that the posterior mean $\mu_q(x_t, x_0)$ depends on the unknown $x_0$, which can be expressed in terms of the noise $\varepsilon$.
+
+**Step 1.** Write the posterior mean as a linear function of $x_t$ and $x_0$:
+
+$$
+\mu_q(x_t, x_0) = \frac{(1-\bar\alpha_{t-1})\sqrt{\alpha_t}}{1-\bar\alpha_t}\, x_t + \frac{(1-\alpha_t)\sqrt{\bar\alpha_{t-1}}}{1-\bar\alpha_t}\, x_0.
+$$
+
+**Step 2.** Recall that $x_t = \sqrt{\bar\alpha_t}\, x_0 + \sqrt{1-\bar\alpha_t}\, \varepsilon$ for some $\varepsilon \sim \mathcal{N}(0, I)$. Solving for $x_0$:
+
+$$
+x_0 = \frac{1}{\sqrt{\bar\alpha_t}}\!\left(x_t - \sqrt{1-\bar\alpha_t}\, \varepsilon\right).
+$$
+
+**Step 3.** Substituting into the expression for $\mu_q$ and simplifying (using $\bar\alpha_t = \alpha_t \bar\alpha_{t-1}$):
+
+$$
+\mu_q(x_t, \varepsilon) = \frac{1}{\sqrt{\alpha_t}}\!\left(x_t - \frac{1-\alpha_t}{\sqrt{1-\bar\alpha_t}}\, \varepsilon\right).
+$$
+
+This motivates the **noise prediction** parameterization of the neural network:
+
+$$
+\mu_\theta(x_t, t) = \frac{1}{\sqrt{\alpha_t}}\!\left(x_t - \frac{1-\alpha_t}{\sqrt{1-\bar\alpha_t}}\, \epsilon_\theta(x_t, t)\right),
+$$
+
+where $\epsilon_\theta(x_t, t)$ is a neural network that predicts the noise $\varepsilon$ that was added. The known linear function of $x_t$ is shared between $\mu_q$ and $\mu_\theta$; the only learnable part is the noise estimator $\epsilon_\theta$.
+
+### 17.6.3 Full Weighted Loss
+
+Substituting the noise prediction parameterization into the mean-matching objective, the squared difference $\|\mu_q - \mu_\theta\|^2$ becomes:
+
+$$
+\left\|\mu_q - \mu_\theta\right\|^2 = \frac{(1-\alpha_t)^2}{(1-\bar\alpha_t)\, \alpha_t}\left\|\varepsilon - \epsilon_\theta(x_t, t)\right\|^2.
+$$
+
+Combining with the $1/(2\sigma_q^2)$ factor from the KL divergence, the full training loss is:
+
+**Full Weighted DDPM Loss:**
+
+$$
+\mathcal{L}(\theta) = \sum_{t=1}^{T} \mathbb{E}_{q(x_t \mid x_0)}\!\left[\frac{1}{2\sigma_q^2(t)} \cdot \frac{(1-\alpha_t)^2}{(1-\bar\alpha_t)\, \alpha_t}\left\|\epsilon_\theta(x_t, t) - \varepsilon\right\|^2\right].
+$$
+
+Ho et al. (2020) found that dropping the time-dependent weighting and using a **simplified loss** with uniform weights leads to better sample quality:
+
+**DDPM Simplified Loss:**
+
+$$
+\mathcal{L}_{\text{simple}}(\theta) = \mathbb{E}_{t, x_0, \varepsilon}\!\left[\left\|\varepsilon - \epsilon_\theta\!\left(\sqrt{\bar\alpha_t}\, x_0 + \sqrt{1-\bar\alpha_t}\, \varepsilon,\; t\right)\right\|^2\right],
+$$
+
+where $t \sim \text{Uniform}(\{1, \ldots, T\})$, $x_0 \sim P_{\text{data}}$, and $\varepsilon \sim \mathcal{N}(0, I)$.
+
+TipRemark: Why Noise Prediction Works
+
+Since $x_t = \sqrt{\bar\alpha_t}\, x_0 + \sqrt{1-\bar\alpha_t}\, \varepsilon$, predicting the noise $\varepsilon$ is equivalent to predicting $x_0$. Empirically, training the network to predict $\varepsilon$ leads to better sample quality than directly predicting $x_0$ or $\mu$. The simplified loss drops the time-dependent weighting, giving equal importance to all noise levels.
+
+[Figure 17.4](https://zhuoranyang.github.io/sds431-notes/lectures/17-diffusion-models.html#fig-training-loss-derivation) summarizes the chain of reasoning that leads from the log-likelihood objective to the simplified DDPM training loss.
+
+![](https://zhuoranyang.github.io/sds431-notes/lectures/figures/ch17-training-loss-derivation.svg)
+
+Figure 17.4: Derivation of the DDPM training loss. Starting from the log-likelihood, we apply the ELBO decomposition, identify the tractable Gaussian posterior, reduce each KL divergence to mean matching, reparameterize via noise prediction, and arrive at the simplified loss.
+
+### 17.6.4 DDPM Training Algorithm
+
+ImportantAlgorithm: DDPM Training
+
+|  | **repeat** |
+| --- | --- |
+| 1: | $\quad x_0 \sim P_{\text{data}}$ |
+| 2: | $\quad t \sim \text{Uniform}(\{1, \ldots, T\})$ |
+| 3: | $\quad \varepsilon \sim \mathcal{N}(0, I)$ |
+| 4: | $\quad x_t \leftarrow \sqrt{\bar\alpha_t}\, x_0 + \sqrt{1-\bar\alpha_t}\, \varepsilon$ |
+| 5: | $\quad$ Take gradient step on $\nabla_\theta \\|\varepsilon - \epsilon_\theta(x_t, t)\\|^2$ |
+|  | **until** converged |
+
+### 17.6.5 DDPM Sampling Algorithm
+
+ImportantAlgorithm: DDPM Sampling
+
+| 1: | $x_T \sim \mathcal{N}(0, I)$ |
+| --- | --- |
+| 2: | **for** $t = T, T{-}1, \ldots, 1$ **do** |
+| 3: | $\quad z \sim \mathcal{N}(0, I)$ if $t > 1$, else $z = 0$ |
+| 4: | $\quad x_{t-1} = \frac{1}{\sqrt{\alpha_t}}\!\left(x_t - \frac{\beta_t}{\sqrt{1-\bar\alpha_t}}\, \epsilon_\theta(x_t, t)\right) + \sigma_t z$ |
+| 5: | **end for** |
+| 6: | **return** $x_0$ |
+
+![](https://zhuoranyang.github.io/sds431-notes/lectures/figures/ch17-score-function.svg)
+
+Figure 17.5: Score function ∇ x log ⁡ q ( t ) \\nabla\_x \\log q(x\_t) for a Gaussian mixture at different noise levels. At high noise (large ), the score field is smooth and points toward the global center. At low noise (small ), it resolves individual modes.
+
+## 17.7 DDIM: Denoising Diffusion Implicit Models
+
+### 17.7.1 Challenge: Slow DDPM Sampling
+
+A major limitation of DDPM is that the reverse process requires $T$ sequential denoising steps (typically $T = 1000$), each involving a forward pass through the neural network **and** sampling fresh random noise. This makes generation slow.
+
+Recall the DDPM reverse step:
+
+$$
+x_{t-1} = \frac{1}{\sqrt{\alpha_t}}\!\left(x_t - \frac{1-\alpha_t}{\sqrt{1-\bar\alpha_t}}\, \widehat{\epsilon}_\theta(x_t)\right) + \sigma_q(t) \cdot z, \qquad z \sim \mathcal{N}(0, I).
+$$
+
+The stochastic noise $z$ is added at every step, which means: (1) we cannot skip steps, and (2) the same starting noise $x_T$ can produce different outputs.
+
+### 17.7.2 Idea: Deterministic Sampling
+
+DDIM (Song et al., 2021) proposes a **deterministic** sampler that reuses the same trained noise estimator $\widehat{\epsilon}_\theta$ but removes the stochastic component. The only source of randomness is the initial noise $x_T \sim \mathcal{N}(0, I)$.
+
+The construction proceeds in two steps. First, given the noise estimator $\widehat{\epsilon}_\theta(x_t) \approx \varepsilon$, we can approximate $x_0$ from any $x_t$:
+
+$$
+\widehat{x}_0 = \frac{1}{\sqrt{\bar\alpha_t}}\!\left(x_t - \sqrt{1-\bar\alpha_t}\, \widehat{\epsilon}_\theta(x_t)\right).
+$$
+
+Second, recall the forward process formula $x_{t-1} = \sqrt{\bar\alpha_{t-1}}\, x_0 + \sqrt{1-\bar\alpha_{t-1}}\, \varepsilon$. Substituting $x_0 \leftarrow \widehat{x}_0$ and $\varepsilon \leftarrow \widehat{\epsilon}_\theta(x_t)$:
+
+**DDIM Update Rule.** Let $\gamma_t = \bar\alpha_t$. The deterministic reverse step is:
+
+$$
+x_{t-1} = \sqrt{\gamma_{t-1}} \cdot \frac{x_t - \sqrt{1-\gamma_t}\, \widehat{\epsilon}_\theta(x_t)}{\sqrt{\gamma_t}} + \sqrt{1-\gamma_{t-1}}\, \widehat{\epsilon}_\theta(x_t).
+$$
+
+TipRemark: Properties of DDIM
+
+- **Deterministic:** Given $\widehat{\epsilon}_\theta(\cdot)$, the mapping from $x_T$ to $x_0$ is a fixed function $x_0 = F(x_T)$. The same initial noise always produces the same image.
+- **Faster inference:** Since DDIM does not rely on a Markov chain with injected noise, we can subsample timesteps (e.g., use only 50 steps out of 1000) and still obtain high-quality samples. As $T \to \infty$, $\gamma_T \to 0$ and the discretization error vanishes.
+- **Same training:** DDIM uses the exact same trained model $\widehat{\epsilon}_\theta$ as DDPM — no retraining is needed.
+
+ImportantAlgorithm: DDIM Sampling
+
+Choose a subsequence of timesteps $\tau_1, \tau_2, \ldots, \tau_S$ with $S \ll T$.
+
+| 1: | $x_T \sim \mathcal{N}(0, I)$ |
+| --- | --- |
+| 2: | **for** $i = S, S{-}1, \ldots, 1$ **do** |
+| 3: | $\quad t \leftarrow \tau_i,\quad s \leftarrow \tau_{i-1}$ |
+| 4: | $\quad \widehat{x}_0 = \frac{1}{\sqrt{\bar\alpha_t}}\!\left(x_t - \sqrt{1-\bar\alpha_t}\, \epsilon_\theta(x_t, t)\right)$ |
+| 5: | $\quad x_s = \sqrt{\bar\alpha_s}\, \widehat{x}_0 + \sqrt{1-\bar\alpha_s}\, \epsilon_\theta(x_t, t)$ |
+| 6: | **end for** |
+| 7: | **return** $x_0$ |
+
+## 17.8 Latent Diffusion and Conditional Generation
+
+### 17.8.1 From Unconditional to Conditional Generation
+
+The DDPM framework generates images from the unconditional data distribution $P_{\text{data}}$. In practice, we often want **conditional generation**: producing an image that matches a given text description. That is, we want to sample from:
+
+$$
+P(\text{image} \mid \text{text}).
+$$
+
+This is the problem solved by systems like Stable Diffusion and DALL-E.
+
+### 17.8.2 Latent Diffusion Models
+
+![](https://zhuoranyang.github.io/sds431-notes/lectures/figures/ch17-latent-diffusion-architecture.svg)
+
+Figure 17.6: Latent diffusion model architecture (Rombach et al., 2022). An image is encoded into a low-dimensional latent space by a pretrained autoencoder. The diffusion process (forward noising and learned reverse denoising) operates entirely in this latent space, conditioned on auxiliary inputs such as text embeddings. The decoder maps the denoised latent back to pixel space.
+
+Latent diffusion models (Rombach et al., 2022) combine three key ideas:
+
+1. **Latent space:** Instead of running the diffusion process in pixel space (high-dimensional), first encode the image into a lower-dimensional latent representation using a pretrained VAE encoder, run diffusion in latent space, then decode back to pixels. This dramatically reduces computational cost.
+2. **Conditional denoising:** The noise estimator is conditioned on additional information:
+
+$$
+\widehat{\epsilon}_\theta(x_t, t, c),
+$$
+
+where $c$ is a conditioning signal (e.g., a text embedding from a language model like CLIP). The network learns to denoise differently depending on the text prompt.
+
+1. **Classifier-free guidance:** At inference time, the model interpolates between conditional and unconditional predictions to strengthen the influence of the text prompt:
+
+$$
+\widehat{\epsilon} = \widehat{\epsilon}_\theta(x_t, t, \varnothing) + w \cdot \left(\widehat{\epsilon}_\theta(x_t, t, c) - \widehat{\epsilon}_\theta(x_t, t, \varnothing)\right),
+$$
+
+where $w > 1$ is the guidance scale and $\varnothing$ denotes the null (unconditional) prompt.
+
+TipRemark: The Text-to-Image Pipeline
+
+The full Stable Diffusion pipeline consists of:
+
+1. **Text encoder** (e.g., CLIP): converts the text prompt into an embedding $c$.
+2. **U-Net denoiser** $\widehat{\epsilon}_\theta(x_t, t, c)$: iteratively denoises a latent representation, conditioned on $c$ and timestep $t$.
+3. **VAE decoder**: converts the final latent $x_0$ back into a high-resolution image.
+
+All components are trained separately or jointly, and the entire system can generate photorealistic images from arbitrary text descriptions.
+
+TipRemark: Looking Ahead
+
+In the final lecture, we study the transformer architecture — attention mechanisms, positional encoding, and how optimization principles underpin training modern large language models.
+
+## Summary
+
+- **Forward diffusion process.** Starting from data $x_0 \sim q(x_0)$, the forward process adds Gaussian noise over $T$ steps via $q(x_t | x_{t-1}) = \mathcal{N}(x_t;\, \sqrt{1-\beta_t}\, x_{t-1},\, \beta_t I)$; the closed-form marginal is $q(x_t | x_0) = \mathcal{N}(x_t;\, \sqrt{\bar\alpha_t}\, x_0,\, (1-\bar\alpha_t)I)$ where $\bar\alpha_t = \prod_{s=1}^{t}(1-\beta_s)$.
+- **Reverse process and denoising.** The generative model learns a reverse Markov chain $p_\theta(x_{t-1}|x_t)$ that removes noise step-by-step; the neural network $\epsilon_\theta(x_t, t)$ predicts the noise added at each step.
+- **ELBO and training objective.** The variational lower bound decomposes into per-step KL divergences between the tractable posterior $q(x_{t-1} \mid x_t, x_0)$ and the learned reverse transition $p_\theta(x_{t-1} \mid x_t)$. Setting equal variances reduces each KL to a mean-matching objective.
+- **Posterior and noise prediction.** The posterior $q(x_{t-1} \mid x_t, x_0)$ is Gaussian with mean $\mu_q(x_t, x_0)$. Substituting $x_0 = (x_t - \sqrt{1-\bar\alpha_t}\,\varepsilon)/\sqrt{\bar\alpha_t}$ yields the noise prediction parameterization; the simplified DDPM loss is $\mathbb{E}_{t, x_0, \varepsilon}\bigl[\|\varepsilon - \epsilon_\theta(\sqrt{\bar\alpha_t}\, x_0 + \sqrt{1-\bar\alpha_t}\, \varepsilon,\, t)\|^2\bigr]$.
+- **DDIM.** Denoising Diffusion Implicit Models replace the stochastic DDPM reverse step with a deterministic update, enabling faster sampling by subsampling timesteps while reusing the same trained $\epsilon_\theta$.
+- **Latent diffusion.** Running diffusion in a learned latent space (rather than pixel space) and conditioning the denoiser on text embeddings enables text-to-image generation, as in Stable Diffusion.
+- **Score matching connection.** The score function $\nabla_{x_t} \log q(x_t)$ points toward higher-density regions; the denoising network implicitly estimates this score, linking diffusion models to score-based generative modeling.

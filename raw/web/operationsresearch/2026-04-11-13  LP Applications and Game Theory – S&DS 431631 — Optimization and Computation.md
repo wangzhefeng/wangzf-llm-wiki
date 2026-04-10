@@ -1,0 +1,940 @@
+---
+title: "13  LP Applications and Game Theory – S&DS 431/631 — Optimization and Computation"
+source: "https://zhuoranyang.github.io/sds431-notes/lectures/13-lp-applications.html"
+author:
+published:
+created: 2026-04-11
+description:
+tags:
+  - "clippings"
+---
+Linear programming is not merely an abstract mathematical framework – it is a powerful modeling tool that captures a remarkable range of optimization problems. In this chapter we explore three celebrated applications of LP duality: the **max-flow/min-cut theorem** in network optimization, **robust LP** under parameter uncertainty, and **two-player zero-sum games**.
+
+We begin with the max-flow problem, which asks how much “stuff” (goods, data, fluid) can be pushed through a capacitated network from a source to a sink. We then introduce the min-cut problem, which asks for the cheapest way to disconnect the source from the sink. These two problems appear very different – one is a continuous LP, the other a combinatorial optimization – yet LP duality reveals they have the same optimal value. The key is the theory of **integral polyhedra** and **totally unimodular matrices**, which guarantees that certain LP relaxations are automatically tight. We then turn to **robust LP**, where duality converts worst-case optimization under polyhedral uncertainty into a single larger LP, and finally show that computing Nash equilibria in **zero-sum games** reduces to solving a pair of dual LPs.
+
+## What Will Be Covered
+
+- The max-flow problem and the max-flow/min-cut theorem via LP duality
+- Totally unimodular matrices and integrality of LP solutions
+- Robust LP: handling parameter uncertainty via duality
+- Two-player zero-sum games and Nash equilibria via LP
+
+## 13.1 The Max-Flow Problem
+
+### 13.1.1 Transportation Networks
+
+Many real-world problems involve moving goods, data, or resources through a network with limited capacity. The **max-flow problem** provides a clean mathematical formulation for these scenarios.
+
+Consider a **directed graph** $G = (V, \mathcal{E})$ with the following components:
+
+- A **source** $s \in V$: where flow originates
+- A **sink** $t \in V$: where flow is absorbed
+- Each edge $e \in \mathcal{E}$ has a **capacity** $u_e \geq 0$: the maximum amount of flow that can traverse edge $e$
+
+The goal is to push as much flow as possible from $s$ to $t$ while respecting the capacity constraints and conservation of flow at every intermediate node.
+
+![](https://zhuoranyang.github.io/sds431-notes/lectures/figures/network-flow.svg)
+
+Figure 13.1: A transportation network with source s (left) and sink t (right). Edge labels show flow/capacity. Saturated edges are shown in terracotta.
+
+### 13.1.2 LP Formulation of Max-Flow
+
+We assign a **decision variable** $x_e$ to each edge $e \in \mathcal{E}$, representing the amount of flow along that edge. The max-flow problem is then a linear program:
+
+ImportantMax-Flow LP
+
+$$
+\begin{aligned}
+\max \quad & \sum_{(s,v) \in \mathcal{E}} x_{(s,v)} \\
+\text{s.t.} \quad & 0 \leq x_e \leq u_e \quad \forall\, e \in \mathcal{E} \quad &\text{(capacity constraints)} \\
+& \sum_{(u,v) \in \mathcal{E}} x_{(u,v)} = \sum_{(v,w) \in \mathcal{E}} x_{(v,w)} \quad \forall\, v \in V \setminus \{s, t\} \quad &\text{(flow conservation)}
+\end{aligned}
+\tag{13.1}
+$$
+
+The **objective** maximizes total flow leaving the source. The **capacity constraints** ensure flow on each edge is between 0 and the edge capacity. The **flow conservation constraints** require that at every intermediate node, total in-flow equals total out-flow.
+
+Note the key structural features of this LP:
+
+- **Number of decision variables:** $|\mathcal{E}|$ (one per edge)
+- **Number of inequality constraints:** $|\mathcal{E}|$ (capacity upper bounds; nonnegativity is also $|\mathcal{E}|$ constraints)
+- **Number of equality constraints:** $|V| - 2$ (flow conservation at each non-source/non-sink node)
+
+These counts will be important when we derive the dual LP and connect it to the min-cut problem.
+
+The max-flow LP has a clean structure: flow conservation constraints are equalities, and capacity constraints are inequalities. Taking the dual of this LP will lead us to a problem that looks remarkably like finding the smallest bottleneck in the network.
+
+## 13.2 The Min-Cut Problem
+
+Having formulated max-flow as an LP ([Equation 13.1](https://zhuoranyang.github.io/sds431-notes/lectures/13-lp-applications.html#eq-max-flow-lp)), we now turn to its combinatorial counterpart. Our goal is to show that these two seemingly different problems have the same optimal value — a deep fact that follows from LP duality.
+
+### 13.2.1 Cuts and Their Capacity
+
+While max-flow asks “how much can we push through?”, the min-cut problem asks “what is the cheapest bottleneck?” – the cheapest way to sever all paths from $s$ to $t$.
+
+**Definition 13.1 (Definition (Cut))** A **cut** in a directed graph $G = (V, \mathcal{E})$ with source $s$ and sink $t$ is a partition of $V$ into two sets $C$ and $\bar{C} = V \setminus C$ such that $s \in C$ and $t \in \bar{C}$.
+
+The **capacity** of a cut $C$ is the total capacity of all edges crossing from $C$ to $\bar{C}$:
+
+$$
+\text{Capacity}(C) = \sum_{\substack{(u,v) \in \mathcal{E} \\ u \in C,\; v \in \bar{C}}} u_{(u,v)}.
+$$
+
+Intuitively, low-capacity cuts are **bottlenecks** in the network. The flow from $s$ to $t$ is bounded by the capacity of any cut, because all flow must cross from the source side to the sink side.
+
+**Definition 13.2 (Definition (Min-Cut Problem))** The **min-cut problem** asks for the cut $C^*$ with minimum capacity:
+
+$$
+\min_{C \subseteq V:\; s \in C,\; t \notin C} \; \text{Capacity}(C).
+$$
+
+![](https://zhuoranyang.github.io/sds431-notes/lectures/figures/min-cut.svg)
+
+Figure 13.2: The same network with a minimum cut shown. The gold region contains the source side S = { s } S = \\{s\\}. Edges crossing the cut (dashed terracotta) have total capacity 3 + 4 7 3 + 4 = 7, which equals the max flow.
+
+### 13.2.2 Integer Programming Formulation of Min-Cut
+
+The min-cut problem can be formulated as an **integer program**. For each node $v \in V$, introduce a binary variable:
+
+$$
+z_v = \begin{cases} 1 & \text{if } v \in C \text{ (source side)} \\ 0 & \text{if } v \in \bar{C} \text{ (sink side)} \end{cases}
+$$
+
+An edge $(u,v)$ crosses the cut from $C$ to $\bar{C}$ if and only if $u \in C$ and $v \notin C$, i.e., $z_u = 1$ and $z_v = 0$. We can capture this with $\max\{0, z_u - z_v\}$. The capacity of the cut is then:
+
+$$
+\text{Capacity}(C) = \sum_{(u,v) \in \mathcal{E}} \max\{0, z_u - z_v\} \cdot u_{(u,v)}.
+$$
+
+ImportantMin-Cut as an Integer Program
+
+$$
+\begin{aligned}
+\min \quad & \sum_{(u,v) \in \mathcal{E}} \max\{0, z_u - z_v\} \cdot u_{(u,v)} \\
+\text{s.t.} \quad & z_v \in \{0, 1\} \quad \forall\, v \in V \\
+& z_s = 1, \quad z_t = 0
+\end{aligned}
+\tag{13.2}
+$$
+
+To convert this into a more standard form, we introduce auxiliary variables $b_{(u,v)} \geq 0$ for each edge, with $b_{(u,v)} \geq z_u - z_v$. Together with $b_{(u,v)} \geq 0$, this gives $b_{(u,v)} \geq \max\{0, z_u - z_v\}$:
+
+$$
+\begin{aligned}
+\min \quad & \sum_{(u,v) \in \mathcal{E}} b_{(u,v)} \cdot u_{(u,v)} \\
+\text{s.t.} \quad & b_{(u,v)} \geq z_u - z_v \quad \forall\, (u,v) \in \mathcal{E} \\
+& b_{(u,v)}, z_u, z_v \in \{0, 1\} \\
+& z_s = 1, \quad z_t = 0
+\end{aligned}
+$$
+
+## 13.3 The LP Relaxation and Duality Connection
+
+We now connect the max-flow LP ([Equation 13.1](https://zhuoranyang.github.io/sds431-notes/lectures/13-lp-applications.html#eq-max-flow-lp)) and the min-cut IP ([Equation 13.2](https://zhuoranyang.github.io/sds431-notes/lectures/13-lp-applications.html#eq-min-cut-ip)) through LP duality. The key step is to take the dual of the max-flow LP and observe that it is exactly the LP relaxation of the min-cut problem.
+
+### 13.3.1 Dual of the Max-Flow LP
+
+The dual of the max-flow LP ([Equation 13.1](https://zhuoranyang.github.io/sds431-notes/lectures/13-lp-applications.html#eq-max-flow-lp)) can be derived using the techniques from [LP duality](https://zhuoranyang.github.io/sds431-notes/lectures/11-lp-duality.html). The derivation (left as an exercise) yields:
+
+ImportantDual of Max-Flow LP (LP-Relaxed Min-Cut)
+
+$$
+\begin{aligned}
+\min \quad & \sum_{(u,v) \in \mathcal{E}} b_{(u,v)} \cdot u_{(u,v)} \\
+\text{s.t.} \quad & b_{(u,v)} + z_v - z_u \geq 0 \quad \forall\, (u,v) \in \mathcal{E} \\
+& b_{(u,v)} \geq 0 \quad \forall\, (u,v) \in \mathcal{E} \\
+& z_s = 1 \quad \text{(source)} \\
+& z_t = 0 \quad \text{(sink)}
+\end{aligned}
+\tag{13.3}
+$$
+
+Here $b_{(u,v)} \geq 0$ are the dual variables corresponding to the capacity constraints, and $z_v \in \mathbb{R}$ (unrestricted) are the dual variables corresponding to the flow conservation equality constraints at each node.
+
+### 13.3.2 Comparing the Dual LP with the Min-Cut IP
+
+Now observe the structural similarity between the dual LP ([Equation 13.3](https://zhuoranyang.github.io/sds431-notes/lectures/13-lp-applications.html#eq-dual-max-flow)) and the min-cut integer program ([Equation 13.2](https://zhuoranyang.github.io/sds431-notes/lectures/13-lp-applications.html#eq-min-cut-ip)):
+
+| Objective | $\min \sum b_{(u,v)} u_{(u,v)}$ | $\min \sum b_{(u,v)} u_{(u,v)}$ |
+| --- | --- | --- |
+| Edge variables | $b_{(u,v)} \geq z_u - z_v$, $b_{(u,v)} \geq 0$ | $b_{(u,v)} \geq z_u - z_v$, $b_{(u,v)} \geq 0$ |
+| Node variables | $z_v \in \mathbb{R}$ (unrestricted) | $z_v \in \{0, 1\}$ |
+| Source/Sink | $z_s = 1$, $z_t = 0$ | $z_s = 1$, $z_t = 0$ |
+
+These two problems share the **same objective** and **same constraint structure**, but the LP relaxation allows $z_v$ to take any real value, while the IP requires $z_v \in \{0,1\}$. Since the feasible set of the IP is contained in the feasible set of the LP:
+
+$$
+\{z : z_v \in \{0,1\}\} \subseteq \{z : z_v \in \mathbb{R}\},
+$$
+
+the LP relaxation provides a **lower bound** on the IP:
+
+$$
+\text{Optimal value of LP-Relaxed Min-Cut} \leq \text{Optimal value of Min-Cut IP}.
+$$
+
+### 13.3.3 The Chain of Inequalities
+
+We can now assemble the key relationship:
+
+$$
+\underbrace{\text{Capacity of min-cut}}_{\text{IP optimal}} \;\geq\; \underbrace{\text{LP-relaxed min-cut optimal}}_{\text{dual LP optimal}} \;=\; \underbrace{\text{Value of max-flow}}_{\text{primal LP optimal}}.
+$$
+
+The equality follows from [strong duality](https://zhuoranyang.github.io/sds431-notes/lectures/11-lp-duality.html): both the primal (max-flow) and dual (LP-relaxed min-cut) are feasible (zero flow is feasible for the primal; setting $z_s = 1$, $z_t = 0$, $z_v = 0$ for all other $v$, and $b_{(u,v)} = 1$ for all edges gives a feasible dual solution). Therefore neither problem is unbounded, strong duality applies, and the optimal values coincide.
+
+The remarkable fact is that the inequality $\geq$ is actually an **equality**. Proving this requires showing that the LP relaxation is tight – that the fractional optimum equals the integer optimum. This is the content of the celebrated Max-Flow Min-Cut Theorem, and the key tool is the theory of totally unimodular matrices.
+
+## 13.4 The Max-Flow Min-Cut Theorem
+
+![](https://zhuoranyang.github.io/sds431-notes/lectures/figures/ch18-max-flow-min-cut.svg)
+
+Figure 13.3: A network flow diagram showing a max flow with flow/capacity labels on each edge (green/gray). The dashed terracotta line indicates a minimum cut separating the source side C from the sink side ˉ \\bar{C}, with max flow equal to min cut capacity.
+
+**Theorem 13.1 (Theorem (Max-Flow Min-Cut))** In any directed network $G = (V, \mathcal{E})$ with source $s$, sink $t$, and edge capacities $u_e \geq 0$:
+
+$$
+\text{Maximum flow from } s \text{ to } t \;=\; \text{Minimum cut capacity}.
+$$
+
+This theorem is one of the cornerstones of combinatorial optimization. It says that the maximum amount of flow that can be pushed through a network is exactly equal to the capacity of the smallest bottleneck (minimum cut).
+
+### 13.4.1 Proof via LP Duality
+
+The proof has three steps: (1) use strong duality to equate max-flow with the LP-relaxed min-cut, (2) show via a clipping argument that the LP relaxation has an optimal solution in $[0,1]$, and (3) invoke the total unimodularity of the constraint matrix to obtain an integral optimal solution.
+
+*Proof*. **Proof of the Max-Flow Min-Cut Theorem.**
+
+From the chain of inequalities in [Section 13.3.3](https://zhuoranyang.github.io/sds431-notes/lectures/13-lp-applications.html#sec-chain), we already know:
+
+$$
+\text{Max flow} = \text{LP-relaxed min-cut optimal} \leq \text{Min-cut capacity (IP optimal)}.
+$$
+
+It remains to show that the LP relaxation is **tight**, i.e., that the LP-relaxed min-cut has the same optimal value as the integer min-cut. We will show this in two steps.
+
+**Step 1: Reformulating the dual LP.** In the dual LP ([Equation 13.3](https://zhuoranyang.github.io/sds431-notes/lectures/13-lp-applications.html#eq-dual-max-flow)), the constraints $b_{(u,v)} \geq z_u - z_v$ and $b_{(u,v)} \geq 0$ together imply $b_{(u,v)} \geq \max\{0, z_u - z_v\}$. At optimality, the minimization drives $b_{(u,v)}$ down to this lower bound, so the dual LP is equivalent to:
+
+$$
+\begin{aligned}
+\min \quad & \sum_{(u,v) \in \mathcal{E}} u_{(u,v)} \cdot \max\{0, z_u - z_v\} \quad &\text{(LP-3)} \\
+\text{s.t.} \quad & z \in \mathbb{R}^{|V|}, \quad z_s = 1, \quad z_t = 0.
+\end{aligned}
+$$
+
+Note that $z$ is unrestricted. We want to show that (LP-3) has an optimal solution satisfying $z_u \in [0,1]$ for all $u \in V$, and moreover that this solution is integral (i.e., $z_u \in \{0, 1\}$).
+
+**Step 2: Clipping to \[0,1\].** Given any optimal solution $z^*$ of (LP-3), define the **clipped** solution:
+
+$$
+\widetilde{z}_u = \text{clip}_{[0,1]}(z^*_u) = \max\{0, \min\{z^*_u, 1\}\} \quad \forall\, u \in V.
+$$
+
+We claim that clipping does not increase the objective. Consider any edge $(u,v) \in \mathcal{E}$:
+
+- **Case 1:** $z^*_u \leq z^*_v$. Then $\max\{0, z^*_u - z^*_v\} = 0$. Since $\text{clip}_{[0,1]}$ is monotone, $\widetilde{z}_u \leq \widetilde{z}_v$, so $\max\{0, \widetilde{z}_u - \widetilde{z}_v\} = 0$. The contribution is unchanged.
+- **Case 2:** $z^*_u > z^*_v$ and both are above 1 or both are below 0. Then $\max\{0, z^*_u - z^*_v\} > 0$, but after clipping both values are mapped to the same endpoint (both to 1 or both to 0), so $\max\{0, \widetilde{z}_u - \widetilde{z}_v\} = 0$. The contribution decreases.
+- **Case 3:** $z^*_u > 1 \geq z^*_v$. Then $z^*_u - z^*_v > 1 - z^*_v \geq \text{clip}_{[0,1]}(z^*_u) - \text{clip}_{[0,1]}(z^*_v) = 1 - \widetilde{z}_v$. The contribution decreases.
+- **Case 4:** $z^*_v < 0 \leq z^*_u$. Then $z^*_u - z^*_v > z^*_u - 0 \geq \widetilde{z}_u - \widetilde{z}_v$. The contribution decreases.
+
+In all cases, each term in the objective either stays the same or decreases. Since $\widetilde{z}_s = \text{clip}_{[0,1]}(1) = 1$ and $\widetilde{z}_t = \text{clip}_{[0,1]}(0) = 0$, the clipped solution is feasible with an objective value no larger than the original. By optimality of $z^*$, the clipped solution $\widetilde{z}$ is also optimal, with $\widetilde{z}_u \in [0,1]$ for all $u$.
+
+Therefore the dual LP (LP-3) is equivalent to:
+
+$$
+\begin{aligned}
+\min \quad & \sum_{(u,v) \in \mathcal{E}} \max\{0, z_u - z_v\} \cdot u_{(u,v)} \quad &\text{(LP-4)} \\
+\text{s.t.} \quad & 0 \leq z_u \leq 1 \quad \forall\, u \in V \\
+& z_s = 1, \quad z_t = 0
+\end{aligned}
+$$
+
+**Step 3: Integrality.** We will show in [Section 13.5.3](https://zhuoranyang.github.io/sds431-notes/lectures/13-lp-applications.html#sec-tum) that the constraint matrix of this LP is **totally unimodular** (TUM). By the Integral Polyhedron Theorem ([Theorem 13.2](https://zhuoranyang.github.io/sds431-notes/lectures/13-lp-applications.html#thm-integral-polyhedron)), every vertex of the feasible polyhedron has integer coordinates. Since the LP has an optimal solution at a vertex (by the Fundamental Theorem of LP), there exists an optimal solution with $z_u \in \{0, 1\}$ for all $u$.
+
+An integral optimal solution $z^*$ with $z^*_v \in \{0,1\}$, $z^*_s = 1$, $z^*_t = 0$ defines a valid cut $C = \{v : z^*_v = 1\}$ with capacity equal to the LP optimal value. Therefore:
+
+$$
+\text{Min-cut capacity} \leq \text{Capacity of cut } C = \text{LP-relaxed min-cut optimal} = \text{Max flow}.
+$$
+
+Combined with the earlier inequality $\text{Max flow} \leq \text{Min-cut capacity}$, we conclude:
+
+$$
+\text{Max flow} = \text{Min-cut capacity}. \quad \blacksquare
+$$
+
+## 13.5 LP Relaxation and Integral Polyhedra
+
+The proof of the Max-Flow Min-Cut Theorem relied on the LP relaxation being “tight” – the LP optimal value equaling the IP optimal value. This tightness is not always guaranteed; it is a special structural property. We now develop the general theory that explains when LP relaxations are tight, culminating in the notion of totally unimodular matrices.
+
+### 13.5.1 LP Relaxation Gap
+
+Consider a general **integer program** (IP):
+
+$$
+\min \; c^\top x \quad \text{s.t.} \quad Ax \leq b, \quad x \in \mathbb{Z}_+^n,
+$$
+
+where $\mathbb{Z}_+^n = \{x \in \mathbb{Z}^n : x \geq 0\}$ denotes the nonnegative integers. Its **LP relaxation** simply drops the integrality constraint:
+
+$$
+\min \; c^\top x \quad \text{s.t.} \quad Ax \leq b, \quad x \geq 0.
+$$
+
+Since $\{x : Ax \leq b, \; x \in \mathbb{Z}_+^n\} \subseteq \{x : Ax \leq b, \; x \geq 0\}$, the LP relaxation has a larger feasible set, and therefore:
+
+$$
+\text{Optimal value of LP relaxation} \leq \text{Optimal value of IP}.
+$$
+
+The LP relaxation always provides a **lower bound** (for minimization problems). The question is: when is this bound tight?
+
+![](https://zhuoranyang.github.io/sds431-notes/lectures/figures/lp-relaxation.svg)
+
+Figure 13.4: LP relaxation vs. integer program. Black dots are integer feasible points. The blue region is the LP feasible set. The LP optimum (star) may not be integer, creating a relaxation gap.
+
+### 13.5.2 When LP Relaxations are Tight: Integral Polyhedra
+
+The LP relaxation is tight precisely when the LP optimum happens to be an integer point. By the Fundamental Theorem of LP, the optimum is attained at a vertex of the feasible polyhedron. So the relaxation is tight for every objective $c$ if and only if every vertex of the polyhedron is integral.
+
+**Definition 13.3 (Definition (Integral Polyhedron))** A polyhedron $P = \{x : Ax \leq b, \; x \geq 0\}$ is called **integral** if every vertex (extreme point) of $P$ has integer coordinates.
+
+If $P$ is integral, then for any linear objective $c$, the LP $\min\{c^\top x : x \in P\}$ has an optimal solution that is an integer point (by the Fundamental Theorem of LP). This means the LP relaxation is tight:
+
+$$
+\min\{c^\top x : x \in P, \; x \in \mathbb{Z}^n\} = \min\{c^\top x : x \in P\}.
+$$
+
+The question becomes: how do we recognize when a polyhedron is integral?
+
+### 13.5.3 Totally Unimodular Matrices
+
+#### 13.5.3.1 Definition and Examples
+
+Having identified integral polyhedra as the key to tight LP relaxations, we now present the most powerful sufficient condition: total unimodularity of the constraint matrix.
+
+**Definition 13.4 (Definition (Totally Unimodular Matrix))** A matrix $A \in \mathbb{R}^{m \times n}$ is **totally unimodular** (TUM) if every square submatrix of $A$ has determinant in $\{-1, 0, +1\}$.
+
+Note that this condition applies to **every** square submatrix, not just the full matrix. In particular:
+
+- Every $1 \times 1$ submatrix (i.e., every entry) must be in $\{-1, 0, +1\}$
+- Every $2 \times 2$ submatrix must have determinant in $\{-1, 0, +1\}$
+- And so on, up to the largest square submatrix
+
+**Example 13.1 (Incidence Matrix of a Bipartite Graph)** Consider a bipartite graph with vertex sets $X$ and $Y$, and edges from $X$ to $Y$. The **incidence matrix** $A$ has rows indexed by vertices and columns indexed by edges, with $A_{v,e} = 1$ if vertex $v$ is an endpoint of edge $e$, and $A_{v,e} = 0$ otherwise.
+
+For example, with $X = \{a, b\}$, $Y = \{c, d, e\}$, and edges $(a,c)$, $(a,d)$, $(a,e)$, $(b,d)$, $(b,e)$:
+
+$$
+A = \begin{pmatrix} 1 & 1 & 1 & 0 & 0 \\ 0 & 0 & 0 & 1 & 1 \\ 1 & 0 & 0 & 0 & 0 \\ 0 & 1 & 0 & 1 & 0 \\ 0 & 0 & 1 & 0 & 1 \end{pmatrix}
+$$
+
+This matrix is totally unimodular. More generally, the **incidence matrix of any bipartite graph is TUM**.
+
+#### 13.5.3.2 The Integral Polyhedron Theorem
+
+The following theorem is the bridge between TUM and integral polyhedra. It is the key ingredient needed to complete the proof of the Max-Flow Min-Cut Theorem.
+
+**Theorem 13.2 (Theorem (Integral Polyhedron via TUM))** Let $A \in \mathbb{R}^{m \times n}$ be a totally unimodular matrix and $b \in \mathbb{Z}^m$ an integer vector. Then:
+
+1. $P_1 = \{x : Ax \leq b\}$ is an integral polyhedron.
+2. $P_2 = \{x : Ax \leq b, \; x \geq 0\}$ is an integral polyhedron.
+
+The proof uses Cramer’s rule: at any vertex the binding constraints form an invertible submatrix whose determinant is $\pm 1$ by TUM, so the vertex coordinates are automatically integers.
+
+*Proof*. **Proof of the Integral Polyhedron Theorem.**
+
+The strategy is to apply Cramer’s rule at each vertex: TUM ensures the basis determinant is $\pm 1$, which forces all coordinates to be integers.
+
+We prove part (2); part (1) is similar. Let $x^*$ be any vertex of $P_2$. By the definition of a vertex, there exist $n$ linearly independent binding constraints at $x^*$. Let $\widehat{A} \in \mathbb{R}^{n \times n}$ be the submatrix of the constraint matrix corresponding to these $n$ binding constraints, and let $\widehat{b} \in \mathbb{R}^n$ be the corresponding right-hand side. Then $x^*$ is the unique solution to:
+
+$$
+\widehat{A} x^* = \widehat{b}.
+$$
+
+Since the rows of $\widehat{A}$ are linearly independent, $\widehat{A}$ is invertible. By **Cramer’s rule**, the $j$ -th component of $x^*$ is:
+
+$$
+x^*_j = \frac{\det(\widehat{A}_j)}{\det(\widehat{A})},
+$$
+
+where $\widehat{A}_j$ is the matrix $\widehat{A}$ with its $j$ -th column replaced by $\widehat{b}$.
+
+Now we use the TUM property:
+
+- $\widehat{A}$ is a square submatrix of $A$ (possibly augmented with rows of $\pm I$, which preserves TUM), so $\det(\widehat{A}) \in \{-1, +1\}$ (it cannot be 0 since $\widehat{A}$ is invertible).
+- $\widehat{A}_j$ has the same rows as $\widehat{A}$ except one column is replaced by $\widehat{b} \in \mathbb{Z}^n$. Since $\det(\widehat{A}) = \pm 1$, $\widehat{A}$ is an integer matrix, and $\widehat{b}$ is an integer vector, $\det(\widehat{A}_j) \in \mathbb{Z}$.
+
+Therefore:
+
+$$
+x^*_j = \frac{\det(\widehat{A}_j)}{\pm 1} = \pm \det(\widehat{A}_j) \in \mathbb{Z}.
+$$
+
+Every component of $x^*$ is an integer, so every vertex of $P_2$ is integral. $\blacksquare$
+
+TipKey Insight
+
+The proof reveals why TUM is so powerful: at any vertex, the basis matrix has determinant $\pm 1$, which means Cramer’s rule produces integer solutions whenever the right-hand side is integral. This is a much stronger property than simply requiring $A$ to have integer entries.
+
+With the Integral Polyhedron Theorem in hand, we can now return to the Max-Flow Min-Cut Theorem and complete the proof by verifying that the relevant constraint matrix is TUM.
+
+### 13.5.4 Why the Max-Flow LP Relaxation is Tight
+
+Armed with the Integral Polyhedron Theorem ([Theorem 13.2](https://zhuoranyang.github.io/sds431-notes/lectures/13-lp-applications.html#thm-integral-polyhedron)) and the theory of TUM matrices, we can now complete the proof of the Max-Flow Min-Cut Theorem by showing that the constraint matrix of the dual LP ([Equation 13.3](https://zhuoranyang.github.io/sds431-notes/lectures/13-lp-applications.html#eq-dual-max-flow)) is totally unimodular.
+
+**Lemma 13.1 (Lemma (Node-Edge Incidence Matrix is TUM))** The constraint matrix of the LP:
+
+$$
+\begin{aligned}
+\min \quad & \sum_{(u,v) \in \mathcal{E}} b_{(u,v)} \cdot u_{(u,v)} \\
+\text{s.t.} \quad & b_{(u,v)} + z_v - z_u \geq 0 \quad \forall\, (u,v) \in \mathcal{E} \\
+& b_{(u,v)} \geq 0 \quad \forall\, (u,v) \in \mathcal{E} \\
+& z_s = 1, \quad z_t = 0
+\end{aligned}
+$$
+
+is totally unimodular.
+
+The constraint matrix arises from the **node-edge incidence matrix** of the directed graph $G = (V, \mathcal{E})$. For a directed graph, the incidence matrix $M \in \mathbb{R}^{|V| \times |\mathcal{E}|}$ is defined by:
+
+$$
+M_{v,e} = \begin{cases} +1 & \text{if edge } e \text{ enters node } v \\
+-1 & \text{if edge } e \text{ leaves node } v \\
+0 & \text{otherwise}
+\end{cases}
+$$
+
+We now prove that $M$ is TUM by showing every square submatrix has determinant in $\{0, \pm 1\}$, by induction on the submatrix size $k$.
+
+*Proof*. **Base case ($k=1$).** Every entry of $M$ is $0, +1,$ or $-1$, so every $1 \times 1$ submatrix has determinant in $\{0, \pm 1\}$.
+
+**Inductive step.** Let $B$ be a $k \times k$ submatrix of $M$. Each column of $M$ has at most one $+1$ and at most one $-1$ (and all other entries zero). So each column of $B$ inherits this property: at most two nonzero entries, one $+1$ and one $-1$. There are three cases:
+
+1. **Some column of $B$ is all zeros.** Then $\det(B) = 0$.
+2. **Some column of $B$ has exactly one nonzero entry** ($\pm 1$). Expanding $\det(B)$ along this column gives $\det(B) = \pm \det(B')$, where $B'$ is a $(k\!-\!1) \times (k\!-\!1)$ submatrix of $M$. By induction, $\det(B') \in \{0, \pm 1\}$, so $\det(B) \in \{0, \pm 1\}$.
+3. **Every column of $B$ has exactly two nonzero entries:** one $+1$ and one $-1$. Then every column of $B$ sums to zero, i.e., $\mathbf{1}^\top B = \mathbf{0}^\top$. The rows of $B$ are linearly dependent, so $\det(B) = 0$. $\blacksquare$
+
+Since $M$ is TUM, the constraint matrix of the dual LP — built from this incidence matrix with identity blocks for the $b$ variables — is also TUM (augmenting a TUM matrix with identity rows/columns preserves the TUM property).
+
+By the Integral Polyhedron Theorem ([Theorem 13.2](https://zhuoranyang.github.io/sds431-notes/lectures/13-lp-applications.html#thm-integral-polyhedron)), since the constraint matrix is TUM and the right-hand side $(0, \ldots, 0, 1, 0)$ is integral, the feasible polyhedron of the dual LP is **integral**. Therefore the LP optimal solution is an integer point, and the LP relaxation of the min-cut is tight.
+
+This completes the chain:
+
+$$
+\text{Max flow} \;=\; \text{LP-relaxed min-cut} \;=\; \text{Min-cut capacity}.
+$$
+
+![](https://zhuoranyang.github.io/sds431-notes/lectures/figures/lp-ip-comparison.svg)
+
+Figure 13.5: Comparison of LP relaxation (continuous) vs. integer program for a small min-cut instance. Left: the LP solution assigns fractional z -values to nodes. Right: the IP solution assigns binary values. For this network (with TUM structure), the optimal values coincide.
+
+The LP relaxation being tight for this problem is **not a coincidence** – it is a structural consequence of the totally unimodular property of graph incidence matrices. This same TUM structure guarantees tight LP relaxations for many other network optimization problems, including the transportation problem, shortest path, and bipartite matching.
+
+### 13.5.5 The Complete Chain
+
+The main results of the max-flow/min-cut theory form a logical chain:
+
+1. **Max-flow** is an LP; its dual is the **LP-relaxed min-cut**.
+2. By **strong duality**: max-flow value = LP-relaxed min-cut value.
+3. The LP-relaxed min-cut value $\leq$ integer min-cut value (LP relaxation is a lower bound).
+4. The constraint matrix of the LP-relaxed min-cut is the **node-edge incidence matrix** of a directed graph, which is **totally unimodular**.
+5. By the **Integral Polyhedron Theorem** (TUM + integer RHS $\Rightarrow$ integral polyhedron), the LP relaxation is tight.
+6. Therefore: **max flow = min cut**.
+
+The theory of totally unimodular matrices provides a powerful lens for identifying when LP relaxations of integer programs are tight. Whenever the constraint matrix is TUM and the right-hand side is integral, we get an integral polyhedron “for free,” and LP solvers can be used to solve the corresponding integer program exactly – with no need for branch-and-bound or other combinatorial search methods.
+
+The Max-Flow Min-Cut Theorem is just one application of LP duality in combinatorial optimization. In the remainder of this chapter, we explore two further applications – **robust LP** and **zero-sum games** – where LP duality again provides surprising structural insights.
+
+In practice, the parameters of a linear program – the cost vector $c$, the right-hand side $b$, or the constraint vectors $a_i$ – may not be known exactly. They could be estimated from noisy data, subject to modeling errors, or inherently stochastic. A natural question arises: how should we solve an LP when we are uncertain about its parameters?
+
+**Robust optimization** answers this by adopting a worst-case perspective: we optimize assuming that an adversary picks the most unfavorable parameters from a given uncertainty set. This minimax viewpoint connects LP to game theory in a profound way. When the uncertainty sets are polyhedral, the robust LP can be reformulated as a single, larger LP via [LP duality](https://zhuoranyang.github.io/sds431-notes/lectures/11-lp-duality.html) – a striking demonstration of duality’s power.
+
+This connection motivates the second half of the chapter: **two-player zero-sum matrix games**. We show that computing Nash equilibria in such games reduces to solving a pair of dual LPs, and that strong duality guarantees the existence of a game value and optimal mixed strategies for both players.
+
+## 13.6 Robust LP
+
+### 13.6.1 Motivation
+
+Consider a linear program in the following form:
+
+$$
+\min_{x} \; c^\top x \quad \text{s.t.} \quad a_i^\top x \leq b_i, \;\; i \in [m], \quad x \in \mathbb{R}^n.
+$$
+
+For simplicity, we drop the constraint $x \geq 0$ from the canonical form. (If $x \geq 0$ is present, it can be absorbed by writing it as $-I \cdot x \leq 0$.)
+
+The parameters $(c, b, \{a_i\}_{i \in [m]})$ define the LP. In practice, these parameters are sometimes **unknown** or **stochastic**. To handle such uncertainty, **robust LP** assumes that:
+
+1. The parameters are selected from some **uncertainty sets**.
+2. We want to find the optimal value for the **worst instance** in the uncertainty set.
+
+### 13.6.2 Robust LP Formulation
+
+Mathematically, let $\mathcal{U}_i$ be the uncertainty set of $a_i \in \mathbb{R}^n$ (with $\mathcal{U}_i \subseteq \mathbb{R}^n$). The robust LP is formulated as:
+
+$$
+\boxed{\text{Robust-LP:} \quad \min_{x} \; c^\top x \quad \text{s.t.} \quad a_i^\top x \leq b_i \;\; \forall \, a_i \in \mathcal{U}_i, \;\; i = 1, 2, \ldots, m.}
+\tag{13.4}
+$$
+
+For any choice $\{a_i\} \in \{\mathcal{U}_i\}$, define the feasible region:
+
+$$
+\Omega(\{a_i\}) = \{x : a_i^\top x \leq b_i, \; i \in [m]\}.
+$$
+
+Then the robust LP can equivalently be written as:
+
+$$
+\min \; c^\top x \quad \text{s.t.} \quad x \in \bigcap_{\substack{\{a_i\} \in \{\mathcal{U}_i\}}} \Omega(\{a_i\}).
+$$
+
+The feasible set of the robust LP is the intersection of **all** feasible regions $\Omega(\{a_i\})$ over every possible realization of the uncertain parameters.
+
+TipWLOG: Deterministic Objective
+
+Without loss of generality, we can assume the objective $c^\top x$ and the right-hand side $b \in \mathbb{R}^m$ are **deterministic**. The reasons are:
+
+**(a)** If $c$ is uncertain with $c \in \mathcal{U}_c$, we can introduce an auxiliary variable $\alpha$ and reformulate:
+
+$$
+\max_{x} \min_{c \in \mathcal{U}_c} c^\top x \iff \max_{x, \alpha} \; \alpha \quad \text{s.t.} \quad \alpha \leq c^\top x \;\; \forall \, c \in \mathcal{U}_c, \;\; x \in \Delta_m.
+$$
+
+This converts the uncertain objective into deterministic constraints with a deterministic objective $\alpha$.
+
+**(b)** If $b_i$ is uncertain with $b_i \in [\check{b}_i, \widehat{b}_i]$, the worst case for the optimizer is the smallest $b_i$, so we will always choose $\check{b}_i$. The binding constraint is $\{x : a_i^\top x \leq b\}_{b \in [\check{b}_i, \widehat{b}_i]}$, which is tightest at $b = \check{b}_i$.
+
+### 13.6.3 Game-Theoretic Interpretation
+
+The robust LP formulation ([Equation 13.4](https://zhuoranyang.github.io/sds431-notes/lectures/13-lp-applications.html#eq-robust-lp)) has a natural adversarial interpretation that motivates the connection to game theory developed in the second half of this chapter. We can view robust LP as a **game** between an **Optimizer** and an **Adversary**:
+
+- **Optimizer** picks $x \in \mathbb{R}^n$.
+- **Adversary** picks a feasible region $\Omega(\{a_i\})$ by choosing $\{a_i\}$ from the uncertainty sets.
+- The **cost** of the Optimizer is:
+
+$$
+\text{cost}(x, \{a_i\}) = \begin{cases} c^\top x & \text{if } x \text{ is feasible, i.e., } x \in \Omega(\{a_i\}), \\ +\infty & \text{if } x \text{ is infeasible.} \end{cases}
+$$
+
+- The Optimizer’s goal is to achieve the **smallest cost**, while the Adversary wants to jeopardize that.
+
+What should the Optimizer do? Consider the **worst-case scenario**: find the most pessimistic solution – the best reward assuming the Adversary always chooses the most challenging feasible set.
+
+- For any $x \in \mathbb{R}^n$, if there exists $\{a_i\}$ such that $\Omega(\{a_i\}) \not\ni x$, then the Adversary will choose that $\{a_i\}$, making the cost $+\infty$.
+- Thus, the Optimizer can only choose from $\{x : x \in \Omega(\{a_i\}) \;\; \forall \, a_i \in \mathcal{U}_i\}$.
+
+**Definition 13.5 (Definition (Minimax Strategy))** The Optimizer’s strategy of choosing $x$ to minimize the worst-case cost is called a **minimax strategy**. The robust LP is precisely the minimax formulation:
+
+$$
+\min_{x} \; \max_{\{a_i\} \in \{\mathcal{U}_i\}} \; \text{cost}(x, \{a_i\}).
+$$
+
+Depending on the exact form of the uncertainty set $\mathcal{U}_i$, the robust LP itself might not be an LP. In the following, we focus on a special case where the uncertainty sets are **polyhedra**.
+
+![](https://zhuoranyang.github.io/sds431-notes/lectures/figures/ch19-robust-optimization.svg)
+
+Figure 13.6: Nominal LP vs. Robust LP. Adding uncertainty sets around constraints shrinks the feasible region but guarantees feasibility for all parameter realizations.
+
+### 13.6.4 Robust LP with Polytopical Uncertainty
+
+Having established the minimax interpretation of robust LP, we now show that when the uncertainty sets are polyhedral, the robust LP can be reformulated as a single, larger LP. The key tool is [LP duality](https://zhuoranyang.github.io/sds431-notes/lectures/11-lp-duality.html).
+
+Suppose each uncertainty set is a polyhedron:
+
+$$
+\mathcal{U}_i = \{a_i \in \mathbb{R}^n : D_i a_i \leq d_i\}, \quad \forall \, i \in [m],
+$$
+
+where $D_i \in \mathbb{R}^{k_i \times n}$ and $d_i \in \mathbb{R}^{k_i}$ are given as input. Then the robust LP becomes:
+
+$$
+\min_{x} \; c^\top x \quad \text{s.t.} \quad \left[\max_{\substack{a_i \in \mathbb{R}^n \\ D_i a_i \leq d_i}} a_i^\top x \right] \leq b_i, \quad \forall \, i = 1, 2, \ldots, m. \tag{LP-in-LP-1}
+$$
+
+This is an LP with another LP in the constraint. Each constraint requires that the **maximum** of $a_i^\top x$ over the uncertainty set $\mathcal{U}_i$ is at most $b_i$.
+
+#### 13.6.4.1 Taking the Dual of the Inner LP
+
+Because we only care about the optimal value of the LP in the constraint, we can take its **dual** and apply [strong duality](https://zhuoranyang.github.io/sds431-notes/lectures/11-lp-duality.html).
+
+The inner LP for each constraint $i$ is:
+
+$$
+\max_{a_i} \; a_i^\top x \quad \text{s.t.} \quad D_i a_i \leq d_i, \quad a_i \in \mathbb{R}^n.
+$$
+
+Taking the dual (with dual variable $p_i \in \mathbb{R}^{k_i}$):
+
+$$
+\min_{p_i} \; p_i^\top d_i \quad \text{s.t.} \quad D_i^\top p_i = x, \quad p_i \geq 0, \quad p_i \in \mathbb{R}^{k_i}.
+$$
+
+By strong duality, the primal and dual have the **same optimal value** (assuming the inner LP is feasible and bounded). Substituting, the LP-in-LP becomes:
+
+$$
+\min_{x} \; c^\top x \quad \text{s.t.} \quad \left[\min_{\substack{p_i \in \mathbb{R}^{k_i} \\ D_i^\top p_i = x \\ p_i \geq 0}} p_i^\top d_i \right] \leq b_i, \quad i \in [m]. \tag{LP-in-LP-2}
+$$
+
+#### 13.6.4.2 Combining into a Single LP
+
+Now we have a **minimization inside a minimization**. Since both the outer and inner problems are minimizations over the same objective direction, we can combine them and write a single big LP:
+
+$$
+\boxed{\text{(LP-3):} \quad \min_{\substack{x \in \mathbb{R}^n \\ p_i \in \mathbb{R}^{k_i}}} \; c^\top x \quad \text{s.t.} \quad p_i^\top d_i \leq b_i, \quad D_i^\top p_i = x, \quad p_i \geq 0, \quad \forall \, i = 1, 2, \ldots, m.}
+$$
+
+This is a **single LP** in the variables $(x, p_1, \ldots, p_m)$. The robust LP with polyhedral uncertainty has been converted into a standard LP!
+
+#### 13.6.4.3 Equivalence of LP-in-LP and LP-3
+
+**Theorem 13.3 (Theorem (Equivalence of LP-in-LP-2 and LP-3))** The formulations (LP-in-LP-2) and (LP-3) have the same optimal value and the same set of optimal $x$.
+
+*Proof*. We prove that every feasible solution of one formulation can be mapped to a feasible solution of the other with the same (or better) objective value.
+
+**Direction 1: LP-in-LP-2 $\Rightarrow$ LP-3.**
+
+Suppose $x^*$ is feasible for (LP-in-LP-2). Then for each $i \in [m]$, the inner minimization
+
+$$
+\min_{p_i} \; p_i^\top d_i \quad \text{s.t.} \quad D_i^\top p_i = x^*, \quad p_i \geq 0
+$$
+
+has a solution $p_i^*$ satisfying $(p_i^*)^\top d_i \leq b_i$. This means:
+
+$$
+(p_i^*)^\top d_i \leq b_i, \quad D_i^\top p_i^* - x^* = 0, \quad p_i^* \geq 0.
+$$
+
+Therefore $(x^*, p_1^*, \ldots, p_m^*)$ is feasible for (LP-3), and the optimal value of (LP-3) $\leq c^\top x^* =$ optimal value of (LP-in-LP-2).
+
+**Direction 2: LP-3 $\Rightarrow$ LP-in-LP-2.**
+
+Suppose $(\widetilde{x}, \widetilde{p}_1, \ldots, \widetilde{p}_m)$ is feasible for (LP-3). Then for each $i$:
+
+$$
+(\widetilde{p}_i)^\top d_i \leq b_i, \quad D_i^\top \widetilde{p}_i = \widetilde{x}, \quad \widetilde{p}_i \geq 0.
+$$
+
+Thus $\widetilde{p}_i$ is feasible for the inner minimization at $x = \widetilde{x}$, and:
+
+$$
+\min_{\substack{p_i : D_i^\top p_i = \widetilde{x} \\ p_i \geq 0}} p_i^\top d_i \leq (\widetilde{p}_i)^\top d_i \leq b_i.
+$$
+
+Therefore $\widetilde{x}$ is feasible for (LP-in-LP-2), and the optimal value of (LP-in-LP-2) $\leq c^\top \widetilde{x} =$ optimal value of (LP-3).
+
+Combining both directions, the two formulations have the same optimal value. $\blacksquare$
+
+![](https://zhuoranyang.github.io/sds431-notes/lectures/figures/robust-lp.svg)
+
+Figure 13.7: Robust LP in 2D. The dashed blue region is the nominal feasible set. The solid region is the robust feasible set — the intersection over all possible constraint realizations from the uncertainty sets. The robust optimal solution is more conservative but guaranteed feasible.
+
+## 13.7 Two-Player Matrix Games
+
+The minimax structure $\max_x \min_\delta f(x, \delta)$ that appeared in robust LP ([Equation 13.4](https://zhuoranyang.github.io/sds431-notes/lectures/13-lp-applications.html#eq-robust-lp)) is not specific to uncertainty — it is the defining structure of **competitive games**. In robust LP, the “adversary” was nature perturbing the constraints; here the adversary is a strategic opponent choosing actions to oppose us. This connection is more than an analogy: we will show that finding optimal game strategies *is* solving a pair of dual LPs, and the celebrated **Minimax Theorem** of von Neumann follows directly from LP strong duality.
+
+### 13.7.1 Setup
+
+Consider a game between **Alice** and **Bob**, defined by:
+
+- Alice chooses from $m$ actions: $\mathcal{A} = \{a_1, a_2, \ldots, a_m\}$.
+- Bob chooses from $n$ actions: $\mathcal{B} = \{b_1, b_2, \ldots, b_n\}$.
+- They act **simultaneously**: Alice picks $a_i \in \mathcal{A}$, Bob picks $b_j \in \mathcal{B}$.
+- Alice receives payoff $A_{ij}$; Bob receives $B_{ij}$.
+- The matrices $A, B \in \mathbb{R}^{m \times n}$ are the **payoff matrices**.
+- Each player seeks to maximize their own payoff, without knowing the other’s choice in advance.
+
+The two-player matrix game (also called a **normal-form game**) is denoted $(A, B)$.
+
+### 13.7.2 Zero-Sum Games
+
+**Definition 13.6 (Definition (Zero-Sum Game))** A two-player matrix game $(A, B)$ is a **zero-sum game** if
+
+$$
+A + B = 0 \in \mathbb{R}^{m \times n}.
+$$
+
+That is, one player’s gain is the other player’s loss.
+
+In a zero-sum game, $B = -A$, so the entire game is characterized by the single matrix $A$:
+
+- **Alice** (the **max-player**) wants to **maximize** $A_{ij}$.
+- **Bob** (the **min-player**) wants to **minimize** $A_{ij}$.
+
+Every dollar Alice gains is a dollar Bob loses. The game is purely competitive, and the matrix $A$ contains all the information needed to analyze it.
+
+### 13.7.3 Pure and Mixed Strategies
+
+**Definition 13.7 (Definition (Pure Strategy))** A **pure strategy** is a deterministic choice of a single action: $a_i \in \mathcal{A}$ for Alice or $b_j \in \mathcal{B}$ for Bob. There are $m$ pure strategies for Alice and $n$ for Bob.
+
+**Definition 13.8 (Definition (Mixed Strategy))** A **mixed strategy** is a probability distribution over the action set. Formally, define the **probability simplex** in $\mathbb{R}^k$:
+
+$$
+\Delta_k = \left\{(p_1, \ldots, p_k) : p_\ell \geq 0 \;\; \forall \, \ell \in [k], \;\; \sum_{\ell=1}^{k} p_\ell = 1 \right\} = \left\{x \in \mathbb{R}^k : \mathbf{1}^\top x = 1, \; x \geq 0\right\}.
+$$
+
+- **Alice’s space of mixed strategies**: $\Delta_m$. A mixed strategy $x \in \Delta_m$ means Alice plays action $a_i$ with probability $x_i$.
+- **Bob’s space of mixed strategies**: $\Delta_n$. A mixed strategy $y \in \Delta_n$ means Bob plays action $b_j$ with probability $y_j$.
+
+#### 13.7.3.1 Expected Payoff
+
+When Alice plays $x \in \Delta_m$ and Bob plays $y \in \Delta_n$:
+
+- The **expected payoff** received by Alice is $x^\top A y$.
+- Bob receives payoff $-x^\top A y$ in expectation.
+
+Why? Because:
+
+$$
+x^\top A y = \sum_{i=1}^{m} \sum_{j=1}^{n} A_{ij} \cdot x_i \cdot y_j,
+$$
+
+where $A_{ij}$ is the payoff of the action pair $(a_i, b_j)$, and $x_i \cdot y_j = \mathbb{P}(\text{Alice plays } a_i \text{ and Bob plays } b_j)$.
+
+#### 13.7.3.2 Example: Rock-Paper-Scissors
+
+The classic game of Rock-Paper-Scissors is a zero-sum game with payoff matrix:
+
+$$
+A = \begin{pmatrix} 0 & -1 & 1 \\ 1 & 0 & -1 \\ -1 & 1 & 0 \end{pmatrix}, \quad \text{rows: Alice (R, P, S)}, \quad \text{columns: Bob (R, P, S)}.
+$$
+
+For example, if Alice plays Rock ($i=1$) and Bob plays Scissors ($j=3$), Alice receives $A_{13} = 1$ (a win), and Bob receives $-1$ (a loss).
+
+![](https://zhuoranyang.github.io/sds431-notes/lectures/figures/rps-matrix.svg)
+
+Figure 13.8: Payoff matrix for Rock-Paper-Scissors. Green cells indicate Alice wins ( + 1 +1 ), red cells indicate Alice loses ( − -1 ), and gray cells are draws ( 0 ).
+
+### 13.7.4 Designing Optimal Strategies via LP
+
+How should Alice choose her mixed strategy? This is where the connection to robust LP becomes precise.
+
+#### 13.7.4.1 Alice’s Perspective
+
+If Bob’s strategy $y$ were known, Alice would simply solve $\max_{x \in \Delta_m} x^\top A y$ — a linear program over the simplex. But $y$ is unknown, chosen adversarially by Bob. From Alice’s viewpoint, the “objective coefficient” $c_y = Ay$ lies in the uncertainty set $\mathcal{U}_A = \{Ay : y \in \Delta_n\}$, which is exactly a **polyhedral uncertainty set** (the image of the simplex under $A$).
+
+This is the robust LP framework from [Section 13.6](https://zhuoranyang.github.io/sds431-notes/lectures/13-lp-applications.html#sec-robust-lp) with a strategic twist: the uncertainty is not random noise but an intelligent adversary. Following the same pessimistic reasoning, Alice should optimize against the worst case:
+
+$$
+\max_{x \in \Delta_m} \min_{y \in \Delta_n} \; x^\top A y.
+\tag{13.5}
+$$
+
+#### 13.7.4.2 Bob’s Best Response is a Pure Strategy
+
+To convert [Equation 13.5](https://zhuoranyang.github.io/sds431-notes/lectures/13-lp-applications.html#eq-alice-maximin) into an LP, we need to handle the inner $\min_{y \in \Delta_n}$. The key insight is that **a linear function minimized over a simplex always attains its minimum at a vertex** — which means Bob’s optimal response to any fixed $x$ is always a pure strategy. This dramatically simplifies the problem.
+
+Following the robust LP framework from [Section 13.6](https://zhuoranyang.github.io/sds431-notes/lectures/13-lp-applications.html#sec-robust-lp):
+
+$$
+\max_{x, \alpha} \; \alpha \quad \text{s.t.} \quad \alpha \leq c^\top x \;\; \forall \, c \in \mathcal{U}_A, \quad x \in \Delta_m.
+$$
+
+This is equivalent to:
+
+$$
+\max_{x \in \mathbb{R}^m, \alpha \in \mathbb{R}} \; \alpha \quad \text{s.t.} \quad \alpha \leq \min_{\substack{y \in \Delta_n}} x^\top A y, \quad x \in \Delta_m.
+$$
+
+The key insight is that the inner minimization $\min_{y \in \Delta_n} x^\top A y$ has a **closed-form solution**.
+
+Write $A = (\alpha_1 \; \alpha_2 \; \cdots \; \alpha_n)$ where $\alpha_j \in \mathbb{R}^m$ is the $j$ -th column of $A$. Then:
+
+$$
+x^\top A y = \sum_{j=1}^{n} y_j \cdot \alpha_j^\top x.
+$$
+
+This is a linear function of $y$ being minimized over the simplex $\Delta_n$.
+
+**Proposition 13.1 (Proposition (Bob’s Best Response))** When Alice’s strategy $x \in \Delta_m$ is fixed, Bob has a best strategy which is a **pure strategy**:
+
+$$
+\min_{y \in \Delta_n} \; x^\top A y = \min_{j \in [n]} \; \alpha_j^\top x.
+$$
+
+The optimal $y^*$ is given by $y_j^* = 1$ if $j = \arg\min_{\ell \in [n]} \{\alpha_\ell^\top x\}$ and $y_j^* = 0$ otherwise.
+
+*Proof*. The inner problem $\min_{y \in \Delta_n} x^\top A y$ is equivalent to:
+
+$$
+\min_{y} \; \sum_{j=1}^{n} y_j \cdot \alpha_j^\top x \quad \text{s.t.} \quad y_j \geq 0, \quad \sum_{j=1}^{n} y_j = 1.
+$$
+
+This is a linear program over the simplex $\Delta_n$. By the Fundamental Theorem of LP, the minimum is attained at a vertex of $\Delta_n$. The vertices of $\Delta_n$ are the standard basis vectors $e_1, \ldots, e_n$, which correspond to pure strategies. Therefore:
+
+$$
+\min_{y \in \Delta_n} x^\top A y = \min_{j \in [n]} \; e_j^\top (\alpha_1^\top x, \ldots, \alpha_n^\top x)^\top = \min_{j \in [n]} \; \alpha_j^\top x. \qquad \blacksquare
+$$
+
+### 13.7.5 Alice’s LP
+
+With Bob’s best response reduced to a pure strategy, the minimax problem collapses into a standard LP. Using [Proposition 13.1](https://zhuoranyang.github.io/sds431-notes/lectures/13-lp-applications.html#prp-pure-best-response), Alice’s problem ([Equation 13.5](https://zhuoranyang.github.io/sds431-notes/lectures/13-lp-applications.html#eq-alice-maximin)) becomes:
+
+$$
+\max_{x \in \mathbb{R}^m, \alpha \in \mathbb{R}} \; \alpha \quad \text{s.t.} \quad \alpha \leq \min_{j \in [n]} \{\alpha_j^\top x\}, \quad x \in \Delta_m.
+$$
+
+The constraint $\alpha \leq \min_j \{\alpha_j^\top x\}$ is equivalent to $\alpha \leq \alpha_j^\top x$ for all $j \in [n]$, which can be written as:
+
+$$
+\alpha \cdot \mathbf{1}_n \leq A^\top x.
+$$
+
+This gives Alice’s LP:
+
+$$
+\boxed{\text{(A-LP):} \quad \max_{x, \alpha} \; \alpha \quad \text{s.t.} \quad \alpha \cdot \mathbf{1}_n - A^\top x \leq 0, \quad x^\top \mathbf{1}_m = 1, \quad x \geq 0.}
+$$
+
+In matrix form, with decision variable $(x, \alpha)^\top$:
+
+$$
+\max \; \begin{pmatrix} 0_m \\ 1 \end{pmatrix}^\top \begin{pmatrix} x \\ \alpha \end{pmatrix} \quad \text{s.t.} \quad \begin{pmatrix} -A^\top & \mathbf{1}_n \\ \mathbf{1}_m^\top & 0 \end{pmatrix} \begin{pmatrix} x \\ \alpha \end{pmatrix} \leq \begin{pmatrix} 0_n \\ 1 \end{pmatrix}, \quad x \geq 0, \; \alpha \in \mathbb{R}.
+$$
+
+This is an LP. It has an optimal solution $(x^*, \alpha^*)$ with optimal value $f^* = \alpha^*$. (The problem is bounded because $\|A\|_{\max}$ provides an upper bound on $\alpha$.)
+
+Note that $\alpha \in \mathbb{R}$ (unrestricted in sign), so the last dual constraint corresponding to $\alpha$ will be an equality.
+
+### 13.7.6 Bob’s LP
+
+Alice’s LP (A-LP) is a *primal* LP. What is its *dual*? The beautiful answer is that the dual is precisely **Bob’s optimization problem** — the LP that Bob would derive from his own minimax reasoning $\min_{y \in \Delta_n} \max_{x \in \Delta_m} x^\top A y$. The dual of (A-LP) is:
+
+$$
+\min \; \begin{pmatrix} 0_n \\ 1 \end{pmatrix}^\top \begin{pmatrix} y \\ \beta \end{pmatrix} \quad \text{s.t.} \quad \begin{pmatrix} -A & \mathbf{1}_m \\ \mathbf{1}_n^\top & 0 \end{pmatrix} \begin{pmatrix} y \\ \beta \end{pmatrix} \geq \begin{pmatrix} 0_m \\ 1 \end{pmatrix}, \quad y \geq 0, \; \beta \in \mathbb{R}.
+$$
+
+Unpacking the dual constraints and simplifying:
+
+$$
+\boxed{\text{(B-LP):} \quad \min_{y, \beta} \; \beta \quad \text{s.t.} \quad \beta \cdot \mathbf{1}_m - A y \geq 0, \quad y^\top \mathbf{1}_n = 1, \quad y \geq 0.}
+$$
+
+Equivalently: $\min_{y, \beta} \; \beta$ subject to $\beta \geq (Ay)_i$ for all $i \in [m]$, $y^\top \mathbf{1}_n = 1$, $y \geq 0$.
+
+This is precisely **Bob’s optimization problem**: minimize the worst-case payoff to Alice, over all mixed strategies $y \in \Delta_n$.
+
+![](https://zhuoranyang.github.io/sds431-notes/lectures/figures/minimax-game.svg)
+
+Figure 13.9: Two-player zero-sum game: the row player (max) chooses rows x ∈ Δ m x \\in \\Delta\_m, the column player (min) chooses columns y n y \\in \\Delta\_n. The saddle point (row 3, col 3) is both the row minimum of its row and the column maximum of its column. The Minimax Theorem guarantees such an equilibrium always exists in mixed strategies.
+
+### 13.7.7 Nash Equilibrium via Strong Duality
+
+We now have the complete picture: Alice’s maximin problem is the LP (A-LP), and Bob’s minimax problem is its dual (B-LP). The punchline is that **LP strong duality** ([Chapter 11](https://zhuoranyang.github.io/sds431-notes/lectures/11-lp-duality.html)) does all the heavy lifting — it immediately implies that Alice’s guaranteed payoff equals Bob’s guaranteed cost, and the resulting strategy pair is a Nash equilibrium.
+
+By strong duality:
+
+$$
+\alpha^* = \beta^*.
+$$
+
+This common value is called the **value of the game**.
+
+The optimal solutions $(x^*, \alpha^*)$ of (A-LP) and $(y^*, \beta^*)$ of (B-LP) give a pair of mixed strategies $(x^*, y^*)$.
+
+**Definition 13.9 (Definition (Nash Equilibrium))** A pair of mixed strategies $(\widetilde{x}, \widetilde{y})$ is a **Nash Equilibrium (NE)** of the zero-sum game if:
+
+$$
+\begin{cases} x^\top A \widetilde{y} \leq \widetilde{x}^\top A \widetilde{y} & \forall \, x \in \Delta_m, \\ \widetilde{x}^\top A \widetilde{y} \leq \widetilde{x}^\top A y & \forall \, y \in \Delta_n. \end{cases}
+$$
+
+In other words, when Alice plays $\widetilde{x}$, Bob’s optimal play is $\widetilde{y}$. And if Bob plays $\widetilde{y}$, Alice’s optimal play is $\widetilde{x}$. **Neither player can unilaterally improve their payoff by deviating.**
+
+**Theorem 13.4 (Theorem (Nash Equilibrium from LP Duality))** The pair $(x^*, y^*)$ obtained from the optimal solutions of (A-LP) and (B-LP) is a Nash Equilibrium of the zero-sum game.
+
+*Proof*. The strategy is to combine the LP feasibility constraints from (A-LP) and (B-LP) with the equality $\alpha^* = \beta^*$ from strong duality. Each LP’s constraints give one direction of the saddle-point inequality; strong duality ties them together.
+
+From the constraints of (A-LP) and (B-LP), and strong duality:
+
+**Step 1.** From the feasibility of $(x^*, \alpha^*)$ for (A-LP):
+
+$$
+\alpha^* \cdot \mathbf{1}_n \leq A^\top x^*.
+$$
+
+Multiplying both sides by any $y \in \Delta_n$ (note $\mathbf{1}_n^\top y = 1$):
+
+$$
+\alpha^* = \alpha^* (\mathbf{1}_n^\top y) \leq (x^*)^\top A y, \quad \forall \, y \in \Delta_n.
+$$
+
+**Step 2.** From the feasibility of $(y^*, \beta^*)$ for (B-LP):
+
+$$
+\beta^* \cdot \mathbf{1}_m \geq A y^*.
+$$
+
+Multiplying both sides by any $x \in \Delta_m$ (note $\mathbf{1}_m^\top x = 1$):
+
+$$
+\beta^* = \beta^* (\mathbf{1}_m^\top x) \geq x^\top A y^*, \quad \forall \, x \in \Delta_m.
+$$
+
+**Step 3.** By strong duality: $\alpha^* = \beta^*$.
+
+Combining Steps 1–3:
+
+$$
+x^\top A y^* \leq \beta^* = \alpha^* \leq (x^*)^\top A y, \quad \forall \, x \in \Delta_m, \; \forall \, y \in \Delta_n.
+$$
+
+Setting $y = y^*$ in Step 1 and $x = x^*$ in Step 2:
+
+$$
+\alpha^* \leq (x^*)^\top A y^* \leq \beta^* = \alpha^*.
+$$
+
+Therefore $(x^*)^\top A y^* = \alpha^* = \beta^*$, and:
+
+$$
+x^\top A y^* \leq (x^*)^\top A y^* \leq (x^*)^\top A y, \quad \forall \, x \in \Delta_m, \; \forall \, y \in \Delta_n.
+$$
+
+This is exactly the definition of Nash Equilibrium. $\blacksquare$
+
+NoteThe Minimax Theorem (von Neumann, 1928)
+
+The result above is a constructive proof of one of the foundational results of game theory. For every finite two-player zero-sum game with payoff matrix $A$:
+
+$$
+\underbrace{\max_{x \in \Delta_m} \min_{y \in \Delta_n} x^\top A y}_{\text{Alice's guarantee}} = \underbrace{\min_{y \in \Delta_n} \max_{x \in \Delta_m} x^\top A y}_{\text{Bob's guarantee}} = v^*.
+$$
+
+The common value $v^*$ is the **value of the game**. In words: the order of play does not matter — Alice’s best guaranteed payoff equals Bob’s best guaranteed cost. This is a direct consequence of LP strong duality applied to the primal-dual pair (A-LP)/(B-LP).
+
+![](https://zhuoranyang.github.io/sds431-notes/lectures/figures/game-strategies.svg)
+
+Figure 13.10: Optimal mixed strategies for Rock-Paper-Scissors solved via LP duality. Left: Alice’s and Bob’s optimal strategy distributions (uniform 1 / 3 1/3 each). Right: the game value α ∗ = 0 \\alpha^\* = 0 and Nash equilibrium payoff structure.
+
+![](https://zhuoranyang.github.io/sds431-notes/lectures/figures/general-game.svg)
+
+Figure 13.11: Solving a general 3 × 4 3 \\times 4 zero-sum game via LP. The bar charts show Alice’s and Bob’s optimal mixed strategies, and the heatmap shows the payoff matrix A. Game value: α ∗ = β 0.80 \\alpha^\* = \\beta^\* = 0.80.
+
+## 13.8 Summary
+
+NoteKey Takeaways
+
+**Max-Flow / Min-Cut:**
+
+1. The **max-flow problem** is an LP; its dual is the LP relaxation of the **min-cut problem**. Strong duality equates their optimal values.
+2. **Totally unimodular matrices** (TUM) guarantee that LP relaxations of integer programs are tight: every vertex of the feasible polyhedron is integral.
+3. The **Max-Flow Min-Cut Theorem** follows from TUM structure of graph incidence matrices, combined with LP strong duality.
+
+**Robust LP:**
+
+1. When LP parameters are uncertain, robust LP optimizes for the worst-case realization from the uncertainty sets.
+2. The robust LP has a natural game-theoretic interpretation: the optimizer plays a **minimax strategy** against an adversary.
+3. When the uncertainty sets are **polyhedral**, the robust LP reduces to a single LP via duality – the LP-in-LP structure collapses by taking the dual of the inner problem and applying strong duality.
+
+**Two-Player Zero-Sum Games:**
+
+1. A zero-sum game is fully characterized by a single payoff matrix $A$. Alice (max-player) and Bob (min-player) have opposing objectives.
+2. When one player’s strategy is fixed, the other player’s best response is always a **pure strategy** (a vertex of the simplex).
+3. Alice’s optimal mixed strategy is found by solving (A-LP); Bob’s by solving (B-LP), which is the dual of (A-LP).
+4. By **strong duality**, the LP solutions yield a **Nash Equilibrium** where $^\* = ^\* = $ game value, and neither player can unilaterally improve.
+
+TipLooking Ahead
+
+The three applications in this chapter – network optimization, robust LP, and game theory – all hinge on LP duality as the unifying engine. The connection between robust optimization and game theory runs especially deep: the minimax framework provides both algorithms and lower bounds in more general optimization settings.

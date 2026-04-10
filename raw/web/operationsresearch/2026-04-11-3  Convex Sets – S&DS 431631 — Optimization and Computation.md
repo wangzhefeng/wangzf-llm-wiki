@@ -1,0 +1,586 @@
+---
+title: "3  Convex Sets – S&DS 431/631 — Optimization and Computation"
+source: "https://zhuoranyang.github.io/sds431-notes/lectures/03-convex-sets.html"
+author:
+published:
+created: 2026-04-11
+description:
+tags:
+  - "clippings"
+---
+Before we can solve optimization problems, we need to agree on what a “solution” actually means. Does a minimum always exist? If it does, is it the best we can do globally or only locally? These questions are not mere formalities — they determine which algorithms are trustworthy and which guarantees we can rely on. In this chapter we pin down the fundamental vocabulary of optimization: optimal solutions, optimal values, and the critical distinction between local and global minima.
+
+With these concepts in hand, we turn to the geometric foundation of tractable optimization: **convex sets**. The feasible region of every well-behaved optimization problem — from linear programs to semidefinite programs — is built from convex sets. Understanding convexity is essential because it is the single property that makes an optimization problem “tractable”: on convex sets, local information reliably points toward global solutions. We develop the theory of convex sets here and will build on it throughout the rest of the course.
+
+## What Will Be Covered
+
+- Basics of optimization: the oracle computation model, runtime and accuracy trade-offs
+- Solution concepts: optimal solutions, optimal values, local and global minima
+- Topology: interior, boundary, compact sets, and the Weierstrass extreme value theorem
+- Convex sets: definitions, examples, and operations that preserve convexity
+- Convex combinations and convex hulls
+
+## 3.1 Basics of Optimization
+
+The general optimization problem is:
+
+$$
+\min_{x} \; f(x) \quad \text{subject to} \quad g_i(x) \leq 0, \; i=1,\ldots,m, \quad h_i(x)=0, \; i=1,\ldots,k, \quad x \in \mathcal{X} \subseteq \mathbb{R}^n.
+$$
+
+Here $f$ is the **objective function**, $x$ is the **decision variable**, $g_i$ are **inequality constraint functions**, $h_i$ are **equality constraint functions**, and $\mathcal{X}$ is the **constraint set**.
+
+We can write this more abstractly as:
+
+$$
+(\text{OPT}) \quad \min_{x \in \mathbb{R}^n} f(x) \quad \text{subject to} \quad x \in \Omega,
+$$
+
+where $\Omega = \bigcap_{i=1}^{m}\{x : g_i(x) \leq 0\} \cap \bigcap_{i=1}^{k}\{x : h_i(x)=0\} \cap \mathcal{X}$ is the **feasible set**.
+
+TipRemark: Minimization vs. Maximization
+
+$\max_{x \in \Omega} f(x) = -\min_{x \in \Omega}\{-f(x)\}$. Thus we can focus on either minimization or maximization without loss of generality.
+
+Every optimization algorithm takes an input (problem data) and produces an approximate solution $\widehat{x}$. To compare algorithms, we need to measure their performance along two axes:
+
+ImportantQ1: Accuracy
+
+How close is $\widehat{x}$ to the true optimizer $x^*$? We measure accuracy by either
+
+$$
+\|\widehat{x} - x^*\| \leq \varepsilon \qquad \text{or} \qquad f(\widehat{x}) - f(x^*) \leq \varepsilon.
+$$
+
+The first is **distance to the optimizer**; the second is **suboptimality gap** (how far the objective value is from optimal).
+
+ImportantQ2: Computational Cost
+
+How many resources does the algorithm consume to achieve $\varepsilon$ -accuracy? This includes both **time** (number of operations) and **memory** (storage for iterates, gradients, etc.).
+
+These two quantities are fundamentally **coupled**: demanding higher accuracy ($\varepsilon \to 0$) requires more computation. The central question in optimization theory is therefore:
+
+> **Given accuracy $\varepsilon$, what is the minimum computational cost to achieve it?**
+
+This is the question that complexity theory for optimization aims to answer.
+
+### 3.1.1 Oracle Computation Model
+
+Counting individual arithmetic operations ($+, -, \times, /$) is too fine-grained to be useful for comparing optimization algorithms. A gradient descent step and a Newton step both involve arithmetic, but they differ fundamentally in what **information** they use about the objective function. The right abstraction is to count the number of **information queries** an algorithm makes.
+
+We model an iterative optimization algorithm as a dialogue between an **optimizer** and an **oracle**. At each iteration $t$, the optimizer queries the oracle at a point $x_t$ and receives information about $f$ at that point. Different oracle models capture different levels of information:
+
+- **Zeroth-order oracle** $\mathcal{O}_0(x)$: returns $f(x)$ (function value only)
+- **First-order oracle** $\mathcal{O}_1(x)$: returns $f(x)$ and $\nabla f(x)$ (value + gradient)
+- **Second-order oracle** $\mathcal{O}_2(x)$: returns $f(x)$, $\nabla f(x)$, and $\nabla^2 f(x)$ (value + gradient + Hessian)
+- **Stochastic gradient oracle** $\text{SG}(x)$: returns a random vector $g$ with $\mathbb{E}[g]=\nabla f(x)$ and $\text{cov}(g) \preceq \sigma^2 I$
+
+**Definition 3.1 (Oracle Complexity (Iteration Complexity))** The **oracle complexity** of an algorithm is the number of oracle calls required to find an $\varepsilon$ -accurate solution. This is also called the **iteration complexity**, since each iteration typically makes one oracle call.
+
+This abstraction is powerful because it separates the **algorithmic strategy** (how to choose the next query point $x_{t+1}$ given past information) from the **per-query cost** (how expensive it is to evaluate $\nabla f$). The total runtime is then:
+
+$$
+\text{total cost} \;=\; \underbrace{\text{(number of iterations)}}_{\text{oracle complexity}} \;\times\; \underbrace{\text{(cost per oracle call)}}_{\text{problem-dependent}}.
+$$
+
+For example, **gradient descent** uses a first-order oracle: at each iteration, query $\nabla f(x_t)$ and update $x_{t+1} = x_t - \alpha_t \nabla f(x_t)$. The oracle complexity (how many iterations to reach $\varepsilon$ -accuracy) depends only on properties of $f$ like smoothness and strong convexity — not on how $\nabla f$ is computed. This separation lets us analyze algorithms in a unified way across different problem domains.
+
+Throughout this course, we characterize algorithm performance by: (a) **asymptotic growth** of oracle complexity as a function of problem dimension $n$ and accuracy $\varepsilon$, and (b) **worst-case** guarantees over a function class.
+
+## 3.2 Solution Concepts in Optimization
+
+### 3.2.1 Optimal Solution and Optimal Value
+
+**Definition 3.2 (Optimal Solution)** An **optimal solution** $x^*$ is defined as $\operatorname{argmin} f(x)$ subject to $x \in \Omega$. Also called the “solution” or “global solution”. $x^*$ is the point in $\Omega$ that minimizes $f$:
+
+$$
+f(x^*) \leq f(x) \quad \forall \, x \in \Omega.
+$$
+
+Two important caveats: the optimal solution $x^*$ may not exist (the infimum may not be attained), and even when it does exist, it may not be unique (multiple feasible points may achieve the same minimum value).
+
+In words, an optimal solution is a feasible point that achieves the smallest possible objective value. The two caveats – non-existence and non-uniqueness – are important to keep in mind throughout optimization theory.
+
+**Definition 3.3 (Optimal Value)** The **optimal value** $f^*$ is defined as:
+
+$$
+f^* = \inf \{y \in \mathbb{R} : \exists \, x \in \Omega \;\text{s.t.}\; y = f(x)\}.
+$$
+
+$f^*$ is the largest number satisfying $f^* \leq f(x)$ for all $x \in \Omega$.
+
+Note that $f^*$ may not exist if the problem is unbounded below ($f^* = -\infty$). It is also possible that $f^*$ exists while $x^*$ does not — for instance, when the infimum is approached but never attained.
+
+The optimal value captures the “best achievable cost” over the feasible set. Unlike the optimal solution, $f^*$ is always well-defined (possibly $\pm\infty$), so it serves as a useful benchmark even when no minimizer exists.
+
+**Example 3.1 (Various Cases)** These four scenarios illustrate the different things that can go wrong (or go right) when we look for the minimum of a function over a feasible set.
+
+1. **$x^*$ exists and is unique.** Consider $f(x) = (x - 3)^2$ on $\Omega = [0, 5]$. The function is continuous and strictly convex, and its unique minimizer $x^* = 3$ lies in the interior of $\Omega$. This is the “best case” for optimization: the solution exists, is unique, and algorithms can certify they have found it.
+2. **$x^*$ does not exist, $f^* = -\infty$.** Consider $f(x) = -x$ on $\Omega = [0, +\infty)$. As $x \to +\infty$, $f(x) = -x \to -\infty$, so the problem is **unbounded below**. No finite minimizer exists because we can always find a feasible point with a smaller objective value. Unboundedness signals a modeling error – the constraints are too loose.
+3. **$x^*$ exists but is not unique.** Consider $f(x) = \cos(x)$ on $\Omega = [-4\pi, 4\pi]$. The minimum value $f^* = -1$ is attained at $x = -3\pi, -\pi, \pi, 3\pi$, giving four distinct minimizers. Non-uniqueness is common in practice, especially for symmetric or periodic objectives. In such cases, algorithms may converge to different minimizers depending on initialization.
+4. **$f^*$ exists but $x^*$ does not.** Consider $f(x) = e^{-x}$ on $\Omega = \mathbb{R}$. As $x \to +\infty$, $f(x) \to 0$, so $f^* = \inf_{x \in \mathbb{R}} e^{-x} = 0$. But there is no finite $x^*$ at which $f(x^*) = 0$ – the infimum is never attained. This pathology arises because $\Omega$ is unbounded: any minimizing sequence $x_k \to +\infty$ “escapes” the feasible set. The Weierstrass theorem (below) rules out exactly this scenario by requiring compactness.
+
+![](https://zhuoranyang.github.io/sds431-notes/lectures/figures/ch03-solution-cases.svg)
+
+Figure 3.1: Four scenarios for optimization problems: unique optimum (top-left), unbounded (top-right), non-unique minimizers (bottom-left), and infimum not attained (bottom-right). Stars mark optimal solutions where they exist.
+
+TipRemark: Guarantee of Existence
+
+An important case where $x^*$ (and $f^*$) are guaranteed to exist: when $f$ is **continuous** and $\Omega$ is **compact** (closed and bounded). This is the **Weierstrass Theorem**.
+
+### 3.2.2 Local and Global Minima
+
+Even when an optimal solution exists, a practical algorithm typically has access only to local information – the function value and gradient at the current iterate. This raises a fundamental concern: the algorithm may find a point that looks optimal “nearby” but is far from the true global optimum. The following definitions make the distinction between local and global optimality precise.
+
+**Definition 3.4 (Local and Global Minima)** Consider the optimization problem $\min_x f(x)$ subject to $x \in \Omega$. A point $\bar{x}$ is said to be a:
+
+- **Local minimum** if $\bar{x} \in \Omega$ and there exists $\varepsilon > 0$ such that 
+	$$
+	f(\bar{x}) \leq f(x) \quad \forall \, x \in B(\bar{x}, \varepsilon) \cap \Omega,
+	$$
+	 where $B(\bar{x}, \varepsilon) = \{y : \|y - \bar{x}\|_2 \leq \varepsilon\}$.
+- **Strict local minimum** if $\bar{x} \in \Omega$ and there exists $\varepsilon > 0$ such that 
+	$$
+	f(\bar{x}) < f(x) \quad \forall \, x \in B(\bar{x}, \varepsilon) \cap \Omega, \; x \neq \bar{x}.
+	$$
+- **Global minimum** if $\bar{x} \in \Omega$ and $f(\bar{x}) \leq f(x)$ for all $x \in \Omega$.
+- **Strict global minimum** if $\bar{x} \in \Omega$ and $f(\bar{x}) < f(x)$ for all $x \in \Omega$, $x \neq \bar{x}$.
+
+Intuitively, a local minimum is “the best point in its neighborhood,” while a global minimum is “the best point overall.” The distinction matters greatly: most algorithms can only guarantee finding local minima, so a central question in optimization is when local minima are also global.
+
+These four notions form a natural hierarchy: every strict local minimum is a local minimum, and every global minimum is also a local minimum. In particular, strict global $\subseteq$ global $\subseteq$ local, and strict local $\subseteq$ local. The central goal of convex optimization is to identify conditions under which local minima are automatically global.
+
+TipRemarks on Local Minima
+
+1. $\bar{x}$ is a local minimum if we can find a neighborhood $B(\bar{x}, \varepsilon)$ such that $f(\bar{x})$ is the minimum value within $B(\bar{x}, \varepsilon)$.
+2. A strict local (global) minimum is also a local (global) minimum.
+3. A global minimum is also a local minimum.
+4. The definition of local minimum uses the $\ell_2$ -ball $B(\bar{x}, \varepsilon) = \{y : \|y - \bar{x}\|_2 \leq \varepsilon\}$, but we can use any $\ell_p$ -norm because of the **equivalence of $\ell_p$ -norms** in $\mathbb{R}^n$.
+
+![](https://zhuoranyang.github.io/sds431-notes/lectures/figures/ch03-local-global.svg)
+
+Figure 3.2: A function with multiple local minima (circles) and local maxima (diamonds). The global minimum is the deepest valley. In non-convex optimization, gradient-based methods may get trapped in any local minimum.
+
+### 3.2.3 Necessary Conditions for Local Optimality
+
+Now that we have defined local and global minima, a natural question arises: **how can we recognize a local minimum when we find one?** In practice, we cannot check every point in a neighborhood — instead, we need conditions that a local minimizer *must* satisfy. These are called **necessary conditions** for local optimality. They do not guarantee that a point is a local minimum (that would require *sufficient* conditions), but they narrow the search: any point that fails a necessary condition can be immediately ruled out.
+
+The following results apply to **unconstrained** optimization problems $\min_{x \in \mathbb{R}^n} f(x)$, where there are no constraints on $x$. This is the setting where calculus gives us the cleanest characterizations.
+
+#### 3.2.3.1 First-Order Necessary Condition
+
+**Theorem 3.1 (First-Order Necessary Condition)** Consider the unconstrained problem $\min_{x} f(x)$ where $f : \mathbb{R}^n \to \mathbb{R}$ is differentiable. If $x^*$ is a local minimizer, then
+
+$$
+\nabla f(x^*) = 0.
+$$
+
+A point satisfying $\nabla f(x^*) = 0$ is called a **stationary point**. The theorem says that every local minimizer must be a stationary point — but the converse is false. A stationary point could also be a local maximum or a saddle point.
+
+*Proof*. *Strategy.* We show that $\nabla f(x^*)$ cannot have any nonzero component. If it did, we could move in the direction $-\nabla f(x^*)$ and decrease $f$, contradicting local minimality.
+
+Consider any direction $d \in \mathbb{R}^n$ and any small $\alpha > 0$. Since $x^*$ is a local minimizer, we have
+
+$$
+f(x^* + \alpha \, d) \geq f(x^*) \quad \forall \, \alpha \in (0, \varepsilon),
+$$
+
+for some $\varepsilon > 0$. By Taylor expansion:
+
+$$
+f(x^* + \alpha \, d) = f(x^*) + \alpha \, d^\top \nabla f(x^*) + o(\alpha).
+$$
+
+Therefore $\alpha \, d^\top \nabla f(x^*) + o(\alpha) \geq 0$. Dividing by $\alpha > 0$ and taking $\alpha \to 0$:
+
+$$
+d^\top \nabla f(x^*) \geq 0.
+$$
+
+But we can also choose the direction $-d$, which by the same argument gives $-d^\top \nabla f(x^*) \geq 0$, i.e., $d^\top \nabla f(x^*) \leq 0$.
+
+Combining both inequalities: $d^\top \nabla f(x^*) = 0$ for every $d \in \mathbb{R}^n$. This is only possible if $\nabla f(x^*) = 0$. $\blacksquare$
+
+TipIntuition
+
+The gradient $\nabla f(x^*)$ points in the direction of steepest ascent. If the gradient is nonzero, we can decrease $f$ by moving in the direction $-\nabla f(x^*)$ — so $x^*$ cannot be a local minimum. Therefore, at a local minimum, the gradient must vanish: there is no direction of local descent.
+
+#### 3.2.3.2 Second-Order Necessary Condition
+
+The first-order condition $\nabla f(x^*) = 0$ eliminates points where the gradient is nonzero, but it cannot distinguish between local minima, local maxima, and saddle points — all three satisfy $\nabla f = 0$. To tell them apart, we need to examine the **curvature** of $f$ at $x^*$, which is captured by the Hessian matrix $\nabla^2 f(x^*)$.
+
+**Theorem 3.2 (Second-Order Necessary Condition)** Consider the unconstrained problem $\min_{x} f(x)$ where $f : \mathbb{R}^n \to \mathbb{R}$ is twice differentiable. If $x^*$ is a local minimizer, then
+
+$$
+\nabla f(x^*) = 0 \quad \text{and} \quad \nabla^2 f(x^*) \succeq 0.
+$$
+
+That is, the Hessian at $x^*$ must be positive semidefinite.
+
+*Proof*. From [Theorem 3.1](https://zhuoranyang.github.io/sds431-notes/lectures/03-convex-sets.html#thm-first-order-necessary), we already know $\nabla f(x^*) = 0$. It remains to show $\nabla^2 f(x^*) \succeq 0$.
+
+Consider the Taylor expansion of $f$ around $x^*$: for any direction $d \in \mathbb{R}^n$ and small $\alpha > 0$,
+
+$$
+f(x^* + \alpha \, d) = f(x^*) + \alpha \, \underbrace{\nabla f(x^*)^\top d}_{= \, 0} + \tfrac{\alpha^2}{2} \, d^\top \nabla^2 f(x^*) \, d + o(\alpha^2).
+$$
+
+Since $x^*$ is a local minimizer, $f(x^* + \alpha \, d) \geq f(x^*)$, which gives
+
+$$
+\frac{f(x^* + \alpha \, d) - f(x^*)}{\alpha^2} = \tfrac{1}{2} \, d^\top \nabla^2 f(x^*) \, d + o(1) \geq 0.
+$$
+
+Taking $\alpha \to 0$, we obtain $d^\top \nabla^2 f(x^*) \, d \geq 0$ for every $d \in \mathbb{R}^n$. By definition, this means $\nabla^2 f(x^*) \succeq 0$. $\blacksquare$
+
+**Why these conditions matter.** Most optimization algorithms — gradient descent, Newton’s method, quasi-Newton methods — are designed to find stationary points ($\nabla f = 0$). The first-order necessary condition tells us that this is the right target: every local minimizer is a stationary point. The second-order condition gives an additional test: if the Hessian at a stationary point has a negative eigenvalue, that point is *not* a local minimum (it is a saddle point), and we should keep searching.
+
+For **convex** functions, the situation is much simpler: every stationary point is automatically a global minimum. This is the key insight that makes convex optimization tractable, and we will prove it formally in the next chapter.
+
+### 3.2.4 Compact Sets and the Weierstrass Theorem
+
+To state the Weierstrass theorem – our first major existence result for optimization – we need a few topological concepts. The notions of interior, boundary, and compactness tell us about the “shape” of the feasible set and whether minimizing sequences can escape or converge to points outside it.
+
+**Definition 3.5 (Interior)** For $S \subseteq \mathbb{R}^n$, $x$ is in the **interior** of $S$ if there exists $\varepsilon > 0$ such that $B(x, \varepsilon) \subseteq S$.
+
+An interior point has “room to move” in every direction without leaving the set. This matters in optimization because at an interior point, we can explore small perturbations freely; at a boundary point, some directions may be blocked by constraints.
+
+**Definition 3.6 (Boundary)** A point $x \in \mathbb{R}^n$ is on the **boundary** of $S$ (denoted $\partial S$) if for all $\varepsilon > 0$, $B(x, \varepsilon)$ contains points in $S$ and points not in $S$. Note that $x$ itself need not belong to $S$.
+
+A boundary point is one that sits “on the edge” of the set: no matter how small a ball you draw around it, the ball always straddles the inside and outside of $S$.
+
+**Example 3.2 (Boundary Example)** $S = \{x \mid 0 < x \leq 1\}$. Then $\partial S = \{0, 1\}$.
+
+The distinction between open and closed sets matters because closed sets “contain their boundary,” which is exactly the property needed to trap minimizing sequences inside the feasible region.
+
+**Definition 3.7 (Closed Set, Open Set)** A set $S \subseteq \mathbb{R}^n$ is **closed** if it contains its entire boundary, $\partial S \subseteq S$ (e.g., $[0,1]$), and **open** if it contains none of its boundary, $S = \text{interior}(S)$ (e.g., $(0,1)$). These two properties are not exhaustive: some sets are neither open nor closed, such as $(0,1] = \{t : 0 < t \leq 1\}$, which contains one boundary point but not the other.
+
+Closedness alone is not enough to guarantee that a minimum exists – the set $[0, \infty)$ is closed but a decreasing function can still escape to infinity. We also need boundedness. The combination of both properties is called compactness.
+
+**Definition 3.8 (Bounded, Compact Set)** A set $S$ is **bounded** if it fits inside some ball, i.e., there exists $r > 0$ such that $S \subseteq B(0, r)$. A set $S \subseteq \mathbb{R}^n$ is **compact** if it is both bounded and closed. Compactness has the following sequential characterization: if $\{a_n\}_{n \geq 1} \subseteq S$ is a sequence with a limit $a^* = \lim_{n \to \infty} a_n$, and $S$ is compact, then $a^* \in S$.
+
+![](https://zhuoranyang.github.io/sds431-notes/lectures/figures/ch03-topology-concepts.svg)
+
+Figure 3.3: Left — Interior point p has an ε \\varepsilon -ball fully contained in S; boundary point q straddles inside and outside. Right — Open sets exclude their boundary (dashed), closed sets include it (solid). A set is compact if and only if it is both closed and bounded.
+
+Compactness is the key topological property that guarantees limits stay inside the set. In optimization, compact feasible sets ensure that minimizing sequences cannot “escape to infinity” (ruled out by boundedness) or converge to a boundary point outside the set (ruled out by closedness). Both failure modes appeared in [Example 3.1](https://zhuoranyang.github.io/sds431-notes/lectures/03-convex-sets.html#exm-various-cases): Case 2 showed escape to infinity on an unbounded set, and Case 4 showed a minimizing sequence whose limit lies outside the domain.
+
+With compactness in hand, we can now state the most fundamental existence result in optimization. The Weierstrass theorem answers a question that has been implicit since we introduced optimal solutions: under what conditions can we be sure that a minimizer actually exists, rather than having an infimum that is never attained?
+
+**Theorem 3.3 (Weierstrass Extreme Value Theorem)** If $S$ is a nonempty compact set and $f$ is a continuous function, then there exists $x^*$ such that
+
+$$
+f(x^*) = \inf\{f(x) : x \in S\}.
+$$
+
+That is, the infimum is attained in the set.
+
+The Weierstrass theorem provides the most fundamental existence guarantee in optimization: if you minimize a continuous function over a closed and bounded set, a minimizer must exist. This is the theoretical justification for many optimization formulations – by ensuring compactness of the feasible set, we know the problem has a solution.
+
+*Proof*. **Proof of the Weierstrass Theorem.**
+
+*Strategy.* We construct a sequence of points whose objective values approach $f^*$, use compactness to extract a convergent subsequence, and then use continuity to show that the limit point achieves $f^*$.
+
+Since $S$ is nonempty and bounded (compact = closed + bounded), and $f$ is continuous, then $f(S) = \{f(x) : x \in S\} \subseteq \mathbb{R}$ is a bounded set. Thus $f^* = \inf\{f(x) : x \in S\}$ exists.
+
+Now, for any $j = 1, 2, \ldots$, we define
+
+$$
+S_j = \{x \in S : f^* \leq f(x) \leq f^* + 2^{-j}\}.
+$$
+
+By the definition of infimum, $S_j$ is not empty. Then we can choose $x_j \in S_j \cap S$. Note that $\{x_j\}_{j \geq 1}$ is an infinite sequence in a bounded set. By the Bolzano–Weierstrass theorem, it has a convergent subsequence $\{y_k\} = \{x_{n_k}\}_{k \geq 1}$ that has a limit $\widehat{x}$.
+
+Since $\{y_k\} = \{x_{n_k}\}_{k \geq 1}$ is a convergent subsequence lying in the compact set $S$, and compact sets are closed, the limit $\widehat{x} \in S$.
+
+In the following, we show that $f(\widehat{x}) = f^*$. To see this, since
+
+$$
+f^* \leq f(y_k) = f^* + 2^{-n_k}.
+$$
+
+Since $n_k \to \infty$ as $k \to \infty$,
+
+$$
+\lim_{k \to \infty} f(y_k) = f^*. \quad \text{(1)}
+$$
+
+Meanwhile, $f$ is continuous, thus
+
+$$
+\lim_{k \to \infty} f(y_k) = f\!\left(\lim_{k \to \infty} y_k\right) = f(\widehat{x}). \quad \text{(2)}
+$$
+
+Combining (1) and (2), we observe that $f^* = f(\widehat{x})$. Since $\widehat{x} \in S$, this shows that the infimum is attained at $\widehat{x}$. Hence we conclude the proof. $\blacksquare$
+
+## 3.3 Convex Sets
+
+The Weierstrass theorem tells us *when* a minimizer exists, but it says nothing about *how hard* it is to find one. As we saw, a function can have many local minima, and a generic optimization algorithm has no way to distinguish a local minimum from the global one. This is where **convexity** changes the story entirely. When the feasible set (and later, the objective function) is convex, every local minimum is automatically a global minimum. This single property is what separates “tractable” optimization from “intractable” optimization, and it is the reason convexity occupies a central place in this course.
+
+We have seen that the feasible set of an LP in canonical form ($\min c^\top x$ s.t. $Ax \leq b$, $x \geq 0$) is an intersection of halfspaces. To understand the geometry of such feasible sets, we now develop the theory of convex sets, which will be used throughout the remainder of the course.
+
+### 3.3.1 Definition and Examples
+
+**Definition 3.9 (Convex Set)** A set $C \subseteq \mathbb{R}^n$ is **convex** if for all $x, y \in C$ and all $t \in [0, 1]$,
+
+$$
+t \, x + (1 - t) \, y \in C. \tag{3.1}
+$$
+
+In other words, the *line segment from $x$ to $y$* is entirely contained in $C$.
+
+Convexity captures the intuitive notion of a set having “no dents” or “no holes.” If you can draw a straight line between any two points in the set without leaving it, the set is convex. This property is central to optimization because it ensures that local information (such as gradients) reliably guides us toward global solutions.
+
+![](https://zhuoranyang.github.io/sds431-notes/lectures/figures/ch03-convex-sets.svg)
+
+Figure 3.4: Left — Convex sets (every line segment between two points stays inside). Right — Non-convex sets (some line segments escape the boundary).
+
+**Example 3.3 (Examples of Convex Sets)** The following sets are all convex. The first few are elementary building blocks; the later ones arise frequently in machine learning and control.
+
+1. **Empty set** $\emptyset$ and **singleton** $\{a\}$ — both are convex vacuously (there are no two distinct points to connect).
+2. **Hyperplane:** $\{x : a^\top x = b\}$, $a \in \mathbb{R}^n$, $a \neq 0$, $b \in \mathbb{R}$. A hyperplane divides $\mathbb{R}^n$ into two halfspaces and is the boundary between them.
+3. **Halfspace:** $\{x : a^\top x \leq b\}$, $a \in \mathbb{R}^n$, $a \neq 0$, $b \in \mathbb{R}$. Each linear inequality constraint in an optimization problem defines a halfspace.
+4. **Norm balls:** $\{x \in \mathbb{R}^n : \|x\| \leq r\}$ for any norm $\|\cdot\|$ is convex. This also applies to matrix norms: $\{A \in \mathbb{R}^{m \times n} : \|A\| \leq r\}$. Norm ball constraints arise in regularized optimization (e.g., $\ell_1$ -ball for sparse models, nuclear norm ball for low-rank matrices).
+5. **Positive semidefinite matrices:** $\{A : x^\top A x \geq 0 \;\; \forall \, x \in \mathbb{R}^n\}$. This is a convex cone, and it is the feasible set of semidefinite programs (SDPs).
+6. **Copositive matrices:** $\{A : x^\top A x \geq 0 \;\; \forall \, x \geq 0\}$. A larger cone than positive semidefinite matrices, but optimizing over it is NP-hard in general.
+7. **Affine subspace:** $\{x : Ax = b\}$, $A \in \mathbb{R}^{m \times n}$. Equality constraints define affine subspaces.
+8. **Polyhedron:** $\{x : Ax \leq b\}$. The feasible set of any linear program is a polyhedron – an intersection of finitely many halfspaces.
+
+![](https://zhuoranyang.github.io/sds431-notes/lectures/figures/ch03-convex-examples.svg)
+
+Figure 3.5: Common convex sets in R 2 \\mathbb{R}^2. Left — a hyperplane a ⊤ x = b a^\\top x = b divides the plane into two halfspaces. Center — the ℓ 1 \\ell\_1, \\ell\_2, and ∞ \\ell\_\\infty unit balls are all convex. Right — a polyhedron is the intersection of finitely many halfspaces.
+
+*Proof*. **Proof that Halfspaces are Convex.**
+
+For all $x, y$ satisfying $a^\top x \leq b$ and $a^\top y \leq b$, and for all $t \in [0, 1]$, we have
+
+$$
+a^\top (t \, x + (1-t) \, y) = t \cdot a^\top x + (1-t) \cdot a^\top y \leq t \cdot b + (1-t) \cdot b = b,
+$$
+
+where the inequality follows from $a^\top x \leq b$ and $a^\top y \leq b$ together with $t, (1-t) \geq 0$. Thus $t \, x + (1-t) \, y$ satisfies the halfspace inequality, so the halfspace is convex. This completes the proof. $\blacksquare$
+
+*Proof*. **Proof that Norm Balls are Convex.**
+
+Let $S = \{x : \|x\| \leq r\}$. For all $x, y \in S$ and $t \in [0,1]$:
+
+$$
+\|t \, x + (1-t) \, y\| \leq \|t \, x\| + \|(1-t) \, y\| \quad \text{(triangle inequality)}
+$$
+
+where the first step applies the triangle inequality. By homogeneity of the norm, this equals
+
+$$
+= t \cdot \|x\| + (1-t) \cdot \|y\| \quad \text{(homogeneity)}
+$$
+
+Since $\|x\| \leq r$ and $\|y\| \leq r$, we obtain
+
+$$
+\leq t \cdot r + (1-t) \cdot r = r.
+$$
+
+Therefore $t\,x + (1-t)\,y \in S$, and the norm ball is convex. This completes the proof. $\blacksquare$
+
+The proofs above share a common pattern: take two arbitrary points $x, y$ in the set, form the convex combination $tx + (1-t)y$, and verify that the defining property of the set still holds. While this direct approach works for simple sets like halfspaces and norm balls, it becomes tedious for more complex sets. The next section provides a toolkit of *operations* that preserve convexity, letting us build up complicated feasible sets from simpler pieces without repeating this argument each time.
+
+### 3.3.2 Operations That Preserve Convexity of Sets
+
+**Theorem 3.4 (Operations Preserving Convexity of Sets)** The following operations preserve convexity:
+
+1. **Intersection:** If $C_1, C_2$ are convex, then $C_1 \cap C_2$ is convex. More generally, $\bigcap_{\alpha \in A} C_\alpha$ is convex for any (possibly infinite) index set $A$.
+2. **Affine image:** If $C$ is convex and $f(x) = Ax + b$ is an affine map, then $f(C) = \{Ax + b : x \in C\}$ is convex.
+3. **Affine preimage:** If $C$ is convex and $f$ is affine, then $f^{-1}(C) = \{x : Ax + b \in C\}$ is convex.
+4. **Scaling & translation:** If $C$ is convex, then $\alpha C + \beta = \{\alpha x + \beta : x \in C\}$ is convex for any $\alpha \in \mathbb{R}, \beta \in \mathbb{R}^n$.
+5. **Cartesian product:** If $C_1, C_2$ are convex, then $C_1 \times C_2$ is convex.
+6. **Sum:** If $C_1, C_2$ are convex, then $C_1 + C_2 = \{x + y : x \in C_1, y \in C_2\}$ is convex.
+
+These rules are the building blocks for establishing that complex feasible sets are convex without going back to the definition each time. For instance, the feasible set of a linear program $\{x : Ax \leq b\}$ is convex because it is an intersection of halfspaces (rule 1), and the image of a convex set under a linear map remains convex (rule 2). By composing these rules, one can handle most constraint sets encountered in practice.
+
+*Proof*. **Proof of [Theorem 3.4](https://zhuoranyang.github.io/sds431-notes/lectures/03-convex-sets.html#thm-operations-convex-sets).** We prove each rule by taking two arbitrary points in the resulting set, forming their convex combination, and verifying the defining property. Throughout, all vectors lie in the appropriate $\mathbb{R}^n$ (or $\mathbb{R}^{n_1} \times \mathbb{R}^{n_2}$ for products) and $\lambda \in [0,1]$.
+
+**Rule 1 (Intersection).** Let $x, y \in C_1 \cap C_2$. Since $x, y \in C_1$ and $C_1$ is convex, $\lambda x + (1-\lambda)y \in C_1$. By the same reasoning, $\lambda x + (1-\lambda)y \in C_2$. Therefore $\lambda x + (1-\lambda)y \in C_1 \cap C_2$.
+
+For the general case $\bigcap_{\alpha \in A} C_\alpha$: if $x, y \in \bigcap_\alpha C_\alpha$, then $x, y \in C_\alpha$ for every $\alpha \in A$. By convexity of each $C_\alpha$, $\lambda x + (1-\lambda)y \in C_\alpha$ for every $\alpha$, hence $\lambda x + (1-\lambda)y \in \bigcap_\alpha C_\alpha$. Note that the index set $A$ can be uncountably infinite — this is why the positive semidefinite cone $\mathbb{S}_+^n = \{X : v^\top X v \geq 0 \;\forall\, v\}$ is convex: it is an intersection of infinitely many halfspaces (one for each direction $v \in \mathbb{R}^n$).
+
+**Rule 2 (Affine image).** Let $f(x) = Ax + b$ where $A \in \mathbb{R}^{m \times n}$ and $b \in \mathbb{R}^m$. We must show $f(C) = \{Ax + b : x \in C\}$ is convex. Let $u, v \in f(C)$, so there exist $x_1, x_2 \in C$ with $u = Ax_1 + b$ and $v = Ax_2 + b$. Then:
+
+$$
+\lambda u + (1-\lambda)v = \lambda(Ax_1 + b) + (1-\lambda)(Ax_2 + b) = A\bigl(\underbrace{\lambda x_1 + (1-\lambda)x_2}_{\in \, C}\bigr) + b \in f(C),
+$$
+
+where the key step uses the **linearity** of the affine map: the weights $\lambda$ and $(1-\lambda)$ pass through $A$ and $b$ collects into a single copy. Since $C$ is convex, $\lambda x_1 + (1-\lambda)x_2 \in C$, so the result lies in $f(C)$.
+
+**Rule 3 (Affine preimage).** Let $f(x) = Ax + b$ with $A \in \mathbb{R}^{m \times n}$, $b \in \mathbb{R}^m$, and $C \subseteq \mathbb{R}^m$ convex. We must show $f^{-1}(C) = \{x \in \mathbb{R}^n : Ax + b \in C\}$ is convex. Let $x_1, x_2 \in f^{-1}(C)$, so $Ax_1 + b \in C$ and $Ax_2 + b \in C$. Then:
+
+$$
+A\bigl(\lambda x_1 + (1-\lambda)x_2\bigr) + b = \lambda\underbrace{(Ax_1 + b)}_{\in \, C} + (1-\lambda)\underbrace{(Ax_2 + b)}_{\in \, C} \in C,
+$$
+
+where the membership follows from convexity of $C$. Therefore $\lambda x_1 + (1-\lambda)x_2 \in f^{-1}(C)$. This rule is particularly useful: it immediately implies that any set defined by linear equalities and inequalities is convex. For instance, the solution set $\{x : Ax = b\}$ is the preimage of $\{b\}$ (a convex singleton) under the linear map $x \mapsto Ax$, and the set $\{x : \|Ax + b\| \leq r\}$ is the preimage of a norm ball under an affine map.
+
+**Rule 4 (Scaling and translation).** This is a special case of Rule 2 with the affine map $f(x) = \alpha x + \beta$, where $\alpha \in \mathbb{R}$ and $\beta \in \mathbb{R}^n$. For completeness: let $u, v \in \alpha C + \beta$, so $u = \alpha x_1 + \beta$ and $v = \alpha x_2 + \beta$ for some $x_1, x_2 \in C$. Then:
+
+$$
+\lambda u + (1-\lambda)v = \alpha\bigl(\lambda x_1 + (1-\lambda)x_2\bigr) + \beta \in \alpha C + \beta,
+$$
+
+since $\lambda x_1 + (1-\lambda)x_2 \in C$ by convexity.
+
+**Rule 5 (Cartesian product).** Let $(x_1, y_1), (x_2, y_2) \in C_1 \times C_2$ where $C_1 \subseteq \mathbb{R}^{n_1}$ and $C_2 \subseteq \mathbb{R}^{n_2}$. The convex combination is:
+
+$$
+\lambda(x_1, y_1) + (1-\lambda)(x_2, y_2) = \bigl(\underbrace{\lambda x_1 + (1-\lambda)x_2}_{\in \, C_1}, \;\; \underbrace{\lambda y_1 + (1-\lambda)y_2}_{\in \, C_2}\bigr) \in C_1 \times C_2.
+$$
+
+The convex combination distributes component-wise, and each component stays in its respective convex set by convexity of $C_1$ and $C_2$. This extends by induction to any finite product: $C_1 \times C_2 \times \cdots \times C_k$ is convex if each $C_i$ is convex. In the multivariate setting, this is frequently used when different blocks of variables have independent constraints (e.g., $x \in [0,1]^n$ is convex because it is the product $[0,1] \times \cdots \times [0,1]$).
+
+**Rule 6 (Minkowski sum).** Let $u, v \in C_1 + C_2$, so $u = x_1 + y_1$ and $v = x_2 + y_2$ for some $x_1, x_2 \in C_1 \subseteq \mathbb{R}^n$ and $y_1, y_2 \in C_2 \subseteq \mathbb{R}^n$. Then:
+
+$$
+\lambda u + (1-\lambda)v = \underbrace{\bigl(\lambda x_1 + (1-\lambda)x_2\bigr)}_{\in \, C_1} + \underbrace{\bigl(\lambda y_1 + (1-\lambda)y_2\bigr)}_{\in \, C_2} \in C_1 + C_2.
+$$
+
+The key insight is that the convex combination of two sums can be rewritten as a sum of two convex combinations, each staying in its respective set. The Minkowski sum arises naturally in robust optimization: if the nominal constraint set is $C_1$ and the uncertainty set is $C_2$, then the “inflated” feasible region $C_1 + C_2$ remains convex. $\blacksquare$
+
+TipRemark
+
+A polyhedron $\{x : Ax \leq b\}$ is convex because it is the intersection of halfspaces, each of which is convex. This is a direct consequence of the intersection rule.
+
+The following interactive figure illustrates the most important operations. The contrast between intersection (convex) and union (not convex) is especially illuminating: convexity is preserved by “narrowing” a set (intersection) but destroyed by “widening” it (union).
+
+Figure: Operations on convex sets. (a) Intersection preserves convexity. (b) Union does NOT preserve convexity — the red segment leaves the set. (c) Affine image (rotation + scaling) of an ellipse remains convex. (d) Minkowski sum of a triangle and a disk produces a "rounded triangle," still convex.
+
+### 3.3.3 Separating Hyperplane Theorems
+
+An important geometric consequence of convexity is that disjoint convex sets can always be “pulled apart” by a flat surface. This idea — that a hyperplane can be placed between two non-overlapping convex sets — is one of the most fundamental results in convex analysis. It underpins **duality theory** (every dual variable corresponds to a separating hyperplane), **optimality conditions** (at an optimal point, the objective’s level set is separated from the feasible set), and algorithms like the **ellipsoid method** (which uses separating hyperplanes to cut the search space in half).
+
+We state two versions: a basic separation theorem that always works, and a strict separation theorem that requires an additional boundedness condition.
+
+**Theorem 3.5 (Separating Hyperplane Theorem)** Let $C, D \subseteq \mathbb{R}^n$ be two convex sets with $C \cap D = \emptyset$. Then there exists $a \in \mathbb{R}^n$ ($a \neq 0$) and $b \in \mathbb{R}$ such that
+
+$$
+a^\top x \leq b \quad \forall \, x \in C, \qquad a^\top x \geq b \quad \forall \, x \in D.
+$$
+
+In words: two disjoint convex sets can always be separated by a hyperplane $\{x : a^\top x = b\}$.
+
+![](https://zhuoranyang.github.io/sds431-notes/lectures/figures/ch01-separating-hyperplane.svg)
+
+Figure 3.6: The separating hyperplane theorem: two disjoint convex sets C and D can always be separated by a hyperplane a ⊤ x = b a^\\top x = b. The normal vector points from toward, and the hyperplane passes between the two sets.
+
+WarningStrict Separation Is Not Always Possible
+
+One might hope for **strict** separation: $a^\top x < b$ for all $x \in C$ and $a^\top x > b$ for all $x \in D$. However, this is *not* always possible, even for disjoint convex sets. Consider in $\mathbb{R}^2$:
+
+$$
+C = \{(x_1, x_2) : x_2 \leq 0\}, \qquad D = \{(x_1, x_2) : x_2 \geq 1/x_1, \; x_1 > 0\}.
+$$
+
+Both sets are convex and disjoint, but they “approach” each other asymptotically as $x_1 \to \infty$: the gap between them shrinks to zero without ever closing. No hyperplane can strictly separate them — any separating hyperplane must pass through the “asymptotic contact point.” The issue is that neither set is bounded.
+
+To guarantee strict separation, we need at least one of the sets to be bounded, which prevents this “asymptotic touching” phenomenon.
+
+**Theorem 3.6 (Strict Separating Hyperplane Theorem)** Let $C, D \subseteq \mathbb{R}^n$ be two **closed** convex sets with at least one of them **bounded** (i.e., compact). If $C \cap D = \emptyset$, then there exists $a \in \mathbb{R}^n$ ($a \neq 0$) and $b \in \mathbb{R}$ such that
+
+$$
+a^\top x < b \quad \forall \, x \in C, \qquad a^\top x > b \quad \forall \, x \in D.
+$$
+
+That is, the separating hyperplane strictly separates the two sets (no points lie on the hyperplane itself).
+
+*Proof*. **Proof of [Theorem 3.6](https://zhuoranyang.github.io/sds431-notes/lectures/03-convex-sets.html#thm-strict-separation).**
+
+*Strategy.* We find the closest pair of points between $C$ and $D$, then construct a hyperplane perpendicular to the line segment connecting them, passing through the midpoint. Compactness ensures the closest pair exists with a strictly positive gap.
+
+**Step 1: The distance is positive and attained.** Define the distance between $C$ and $D$ as
+
+$$
+\text{dist}(C, D) = \inf\{\|u - v\|_2 : u \in C, \; v \in D\}.
+$$
+
+We claim this infimum is positive and attained. Without loss of generality, suppose $C$ is compact. Define the “thickened” set $\widetilde{D} = \{v \in D : \inf_{u \in C}\|u - v\| \leq \text{dist}(C,D) + 1\}$. Then $\widetilde{D}$ is bounded (since it is within distance $\text{dist}(C,D) + 1 + \text{diam}(C)$ of any point in $C$), and $\text{dist}(C, D) = \text{dist}(C, \widetilde{D})$. Since $(u,v) \mapsto \|u - v\|$ is continuous and $C \times \widetilde{D}$ is compact, the infimum is attained: there exist $c \in C$ and $d \in D$ with $\|c - d\|_2 = \text{dist}(C, D)$.
+
+Since $C \cap D = \emptyset$ and both are closed, we have $\text{dist}(C, D) > 0$.
+
+**Step 2: Construct the separating hyperplane.** Define the hyperplane with normal vector $a = d - c$ passing through the midpoint $\tfrac{c + d}{2}$:
+
+$$
+f(x) = a^\top x - b, \quad \text{where} \quad a = d - c, \quad b = \frac{\|d\|_2^2 - \|c\|_2^2}{2}.
+$$
+
+One can verify that $f\!\left(\frac{c+d}{2}\right) = 0$, so the hyperplane passes through the midpoint.
+
+**Step 3: Verify separation.** We claim $f(x) > 0$ for all $x \in D$ and $f(x) < 0$ for all $x \in C$. The key insight is that the closest-point pair $(c, d)$ satisfies a variational inequality: for any $x \in D$, the point $d$ minimizes $\|c - v\|$ over $v \in D$, so $(d - c)^\top(x - d) \geq 0$ for all $x \in D$ (this is the first-order optimality condition for projecting $c$ onto the convex set $D$). Similarly, $(c - d)^\top(x - c) \geq 0$ for all $x \in C$. These inequalities, combined with $\|d - c\|_2 > 0$, yield the strict separation. $\blacksquare$
+
+**Summary of separating hyperplane theorems.** The key takeaway is:
+
+- **Disjoint convex sets** $\Longrightarrow$ can be separated by a hyperplane (non-strict).
+- **Disjoint, closed, one bounded** $\Longrightarrow$ can be **strictly** separated.
+
+The proof also tells us *how to construct* the separating hyperplane: find the closest pair of points between the two sets, and place the hyperplane perpendicular to the segment connecting them. This constructive insight is used in algorithms like the ellipsoid method and in proving strong duality.
+
+### 3.3.4 Convex Combination and Convex Hull
+
+The definition of a convex set requires that the line segment between any two points stays inside the set. A natural generalization asks: what about “weighted averages” of more than two points? This leads to the notion of convex combinations, which in turn lets us define the convex hull – the smallest convex set containing a given collection of points.
+
+**Definition 3.10 (Convex Combination)** Given $x_1, x_2, \ldots, x_k \in \mathbb{R}^n$, a **convex combination** of $x_1, \ldots, x_k$ is a point
+
+$$
+x = \sum_{i=1}^{k} t_i \, x_i, \quad t_i \geq 0 \;\; \forall \, i \in [k], \quad \sum_{i=1}^{k} t_i = 1.
+$$
+
+In other words, a convex combination is a weighted average where the weights are nonnegative and sum to one. When $k = 2$, this recovers the line segment $tx_1 + (1-t)x_2$ from the definition of a convex set. For $k = 3$, convex combinations trace out a filled triangle; for general $k$, they fill out a polytope. One can show by induction that a set is convex if and only if it contains all convex combinations of its points.
+
+Given a finite set of points, we often want to describe the “tightest” convex region enclosing them. This is the convex hull, which plays a central role in the geometry of linear programming – the vertices of an LP feasible region are precisely the points whose convex hull forms the polyhedron.
+
+**Definition 3.11 (Convex Hull)** The **convex hull** $\text{CH}(x_1, \ldots, x_k)$ is the set of all possible convex combinations:
+
+$$
+\text{CH}(x_1, \ldots, x_k) = \left\{\sum_{i=1}^{k} t_i \, x_i \;\middle|\; t_i \geq 0, \; \sum_{i=1}^{k} t_i = 1 \right\}.
+$$
+
+**Theorem 3.7 (Convex Hull is Convex)** The convex hull is always a convex set.
+
+The convex hull of a set of points is the smallest convex set containing all of them. Geometrically, it is the shape you get by “stretching a rubber band” around the points. This theorem confirms that forming convex combinations of convex combinations still yields a convex combination.
+
+*Proof*. *Strategy.* We take two arbitrary points in the convex hull, form their convex combination, and verify that the result is again a convex combination of the original points $x_1, \ldots, x_k$.
+
+Suppose $u, v \in \text{CH}(x_1, \ldots, x_k)$. Then we have
+
+$$
+u = \sum_{i=1}^{k} t_i \, x_i, \quad v = \sum_{i=1}^{k} s_i \, x_i,
+$$
+
+where $t_i \geq 0$, $s_i \geq 0$, $\sum t_i = 1$, $\sum s_i = 1$.
+
+For $\lambda \in [0,1]$, we have
+
+$$
+\lambda \, u + (1-\lambda) \, v = \sum_{i=1}^{k} \underbrace{(\lambda \, t_i + (1-\lambda) \, s_i)}_{w_i} \cdot x_i.
+$$
+
+We need to verify: $w_i \geq 0$ (yes, since all terms are nonnegative), and
+
+$$
+\sum_{i=1}^{k} w_i = \lambda \sum_{i=1}^{k} t_i + (1-\lambda) \sum_{i=1}^{k} s_i = \lambda + (1-\lambda) = 1.
+$$
+
+Thus $\lambda \, u + (1-\lambda) \, v$ is itself a convex combination of $x_1, \ldots, x_k$, so it belongs to $\text{CH}(x_1, \ldots, x_k)$. Hence we conclude the proof. $\blacksquare$
+
+![](https://zhuoranyang.github.io/sds431-notes/lectures/figures/ch03-convex-hull.svg)
+
+Figure 3.7: Convex hull of a set of points x 1, … 7 x\_1, \\ldots, x\_7. The convex hull (shaded polygon) is the smallest convex set containing all the points. Small dots show random convex combinations, all of which lie inside the hull.
+
+## Summary
+
+- **Solution concepts.** Feasible, locally optimal, and globally optimal solutions are distinguished; the Weierstrass theorem guarantees existence of an optimum when the feasible set is compact and the objective is continuous.
+- **Necessary conditions.** At a local minimum of a differentiable function, $\nabla f(x^*) = 0$ (first-order) and $\nabla^2 f(x^*) \succeq 0$ (second-order). These conditions narrow the search for optima to stationary points.
+- **Convex sets.** A set $C$ is convex if $\lambda x + (1-\lambda)y \in C$ for all $x,y \in C$ and $\lambda \in [0,1]$; intersections, affine images, and Minkowski sums preserve convexity.
+- **Building blocks.** Halfspaces, polyhedra, norm balls, ellipsoids, and cones are all convex. The feasible set of any linear program is a polyhedron (intersection of halfspaces).
+- **Separating hyperplanes.** Disjoint convex sets can always be separated by a hyperplane. Strict separation requires closedness and boundedness of at least one set. This result underpins duality theory and optimality conditions.
+- **Convex hulls.** The convex hull $\operatorname{conv}(S)$ is the smallest convex set containing $S$; it is itself convex and plays a central role in the geometry of linear programming.
+
+TipLooking Ahead
+
+With convex sets in hand, the next chapter introduces **convex functions** — functions whose epigraph is a convex set. We develop three equivalent characterizations (the chord inequality, the first-order condition, and the Hessian test) and a toolkit of operations that preserve convexity. The payoff: for convex functions, every local minimum is a global minimum.
