@@ -4,17 +4,31 @@
     "type": "split",
     "children": [
       {
-        "id": "572b19278344845f",
+        "id": "b5f40177ecdfc6cd",
         "type": "tabs",
         "children": [
           {
-            "id": "a3e14bce18d68855",
+            "id": "cacb9091cd9daa6e",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "raw/web/2026-04-11-换掉小龙虾！Hermes全网爆火狂揽四万星，Anthropic重锤暴击OpenClaw.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
               "icon": "lucide-file",
-              "title": "新标签页"
+              "title": "2026-04-11-换掉小龙虾！Hermes全网爆火狂揽四万星，Anthropic重锤暴击OpenClaw"
             }
           }
         ]
@@ -74,7 +88,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 226.5
+    "width": 357.5
   },
   "right": {
     "id": "a11cbacd3d039657",
@@ -177,8 +191,21 @@
       "bases:新建数据库": false
     }
   },
-  "active": "a3e14bce18d68855",
+  "active": "cacb9091cd9daa6e",
   "lastOpenFiles": [
+    "raw/web/2026-04-11-Harness Engineering在硅谷爆火，一文带你搞懂！.md",
+    "raw/web/2026-04-11-换掉小龙虾！Hermes全网爆火狂揽四万星，Anthropic重锤暴击OpenClaw.md",
+    "raw/web/2026-04-11-重磅！Anthropic官方Harness发布了！.md",
+    "assets/attachments/Image 22.svg",
+    "assets/attachments/Image 22.jpg",
+    "assets/attachments/Image 20.jpg",
+    "assets/attachments/Image 10.gif",
+    "assets/attachments/Image 10.jpg",
+    "assets/attachments/Image 5.jpg",
+    "assets/attachments/Image 5.svg",
+    "assets/attachments/Image 32.svg",
+    "raw/web/2026-04-10-算电协同技术研究报告.md",
+    "wiki/index.md",
     "raw/web/2026-04-10-PyRregular开源34个数据集基准，找不规则时序方向baseline的可以直接抄作业.md",
     "wiki/concepts/autofix/某个总索引.md",
     "wiki/concepts/llm/模型微调.md",
@@ -200,11 +227,6 @@
     "wiki/sources/timeseries/2026-01-27-feature-engine-topic.md",
     "wiki/sources/timeseries/2026-01-18-tsf-dl-stages.md",
     "wiki/sources/llm/2025-07-28-llm-post-training.md",
-    "wiki/sources/llm/2025-07-23-llm-flow.md",
-    "wiki/sources/timeseries/2025-07-17-ts-prob-forecasting.md",
-    "wiki/sources/llm/2025-07-05-rlhf.md",
-    "wiki/sources/llm/2025-07-05-llm-finetuning.md",
-    "wiki/sources/reinforcementlearning/2025-06-18-reinforcementlearning.md",
     "wiki/concepts/data_structure_algorithm",
     "wiki/indexes/data_structure_algorithm",
     "wiki/sources/data_structure_algorithm",
@@ -217,14 +239,6 @@
     "tools/wiki_lint.py",
     "assets/attachments/Image 2.webp",
     "assets/attachments/Image 1.webp",
-    "assets/attachments/Image.webp",
-    "outputs/figures/2026-04-05-scikit-learn-机器学习时间序列预测实践解读/workflow.svg",
-    "outputs/figures/2026-04-05-scikit-learn-机器学习时间序列预测实践解读/uncertainty-band.svg",
-    "outputs/figures/2026-04-05-scikit-learn-机器学习时间序列预测实践解读/split-comparison.svg",
-    "outputs/figures/2026-04-05-scikit-learn-机器学习时间序列预测实践解读/knowledge-position.svg",
-    "assets/attachments/timeseries/statistical-forecasting/acf.png",
-    "assets/attachments/timeseries/stationarity/stationarity_test_figure.png",
-    "raw/local-notes/vibe-coding/images/tools/decision.svg",
     "Untitled.canvas"
   ]
 }
