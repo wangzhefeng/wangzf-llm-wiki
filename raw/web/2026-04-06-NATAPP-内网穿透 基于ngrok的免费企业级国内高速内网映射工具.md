@@ -97,7 +97,7 @@ HK\_2型隧道
 - 我们会根据用户数,弹性及时增加服务器的配置与带宽,保证性能与稳定
 - 内部对通信协议充分优化,性能与速度更胜一筹
 
-![[52348858ace00.jpg]] ![[tls.jpg]]
+![[assets/attachments/uncategorized/52348858ace00.jpg]] ![[assets/attachments/uncategorized/tls.jpg]]
 
 ## 全程TLS数据加密传输,安全无忧
 
@@ -112,7 +112,7 @@ HK\_2型隧道
 - 本地流量监控 (WebInterface) 全面升级,重放(Replay)功能优化,让api调试更简单
 - 云端管理,图形界面,更简单,直观,且确保域名/端口不会冲突,杜绝安全隐患
 
-![[info3.jpg]] ![[image4.png]]
+![[assets/attachments/uncategorized/info3.jpg]] ![[assets/attachments/uncategorized/image4.png]]
 
 ## 便捷 可靠
 

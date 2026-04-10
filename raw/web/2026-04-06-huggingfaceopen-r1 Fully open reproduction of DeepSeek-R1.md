@@ -48,7 +48,7 @@ We will use the DeepSeek-R1 [tech report](https://github.com/deepseek-ai/DeepSee
 - Step 2: replicate the pure RL pipeline that DeepSeek used to create R1-Zero. This will likely involve curating new, large-scale datasets for math, reasoning, and code.
 - Step 3: show we can go from base model to RL-tuned via multi-stage training.
 
-[![[plan-of-attack.png]]](https://github.com/huggingface/open-r1/blob/main/assets/plan-of-attack.png)
+[![[assets/attachments/uncategorized/plan-of-attack.png]]](https://github.com/huggingface/open-r1/blob/main/assets/plan-of-attack.png)
 
 ## News 🗞️
 

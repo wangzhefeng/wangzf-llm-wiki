@@ -19,7 +19,7 @@ tags:
 
 Built on a powerful open source core, FiftyOne surfaces the data insights needed to build high-quality computer vision datasets and robust models.
 
-![[e5f53bf5142f3960cbcaa8fd84fc2a03b6089327-2560x961.png]] ![[d286d778ffac5e30c2af62755808bf566dc5d3b6-2048x1148.webp]] ![[4b11ac1529f6fd395f12053d7f1da33c43aeb416-451x524.png]] ![[3ca1b330c63e537c1217fd35d2e7cdf338c9637c-1600x1600.png]] ![[4aea181cb46420e25282c4cb8f58c590e33053ba-250x158.png]] ![[c50a1d5574718bbcec04edd8b3573e06e2e7a8f6-192x120.png|University of Michigan is a Voxel51 customer]] ![[4a8d9cb4f0bfaa910010c81385db0ce9ba38d33e-360x180.png]] ![[f5359c53fcc5a8686e2a0ce71daa9862b4825ccd-102x102.png|GM is a Voxel51 customer]] ![[13a9402984dd0a566cf65f7ea64c9164f9973970-300x90.png|Raytheon is a Voxel51 customer]] ![[174595171c0e067cdfc0a2704181a289db6e7060-702x300.png]] ![[e70d344bc09d2cd1fb85ed80e39baadccb0a7f60-270x180.png|Google is a Voxel51 partner]] ![[eb6156f36de826b6d65dbb53876c53b961530543-256x102.png|RIOS is a Voxel51 customer]] ![[0554cbeb43e083b5436bc2c99b74c30e73783fea-250x90.png|Ford is a Voxel51 customer]] ![[b11dab534591c8e12e8af89ebe588e8d5b66ef22-196x90.png|LG is a Voxel51 customer]] ![[4aea181cb46420e25282c4cb8f58c590e33053ba-250x158.png]] ![[c50a1d5574718bbcec04edd8b3573e06e2e7a8f6-192x120.png|University of Michigan is a Voxel51 customer]] ![[4a8d9cb4f0bfaa910010c81385db0ce9ba38d33e-360x180.png]] ![[f5359c53fcc5a8686e2a0ce71daa9862b4825ccd-102x102.png|GM is a Voxel51 customer]] ![[13a9402984dd0a566cf65f7ea64c9164f9973970-300x90.png|Raytheon is a Voxel51 customer]] ![[174595171c0e067cdfc0a2704181a289db6e7060-702x300.png]] ![[e70d344bc09d2cd1fb85ed80e39baadccb0a7f60-270x180.png|Google is a Voxel51 partner]] ![[eb6156f36de826b6d65dbb53876c53b961530543-256x102.png|RIOS is a Voxel51 customer]] ![[0554cbeb43e083b5436bc2c99b74c30e73783fea-250x90.png|Ford is a Voxel51 customer]] ![[b11dab534591c8e12e8af89ebe588e8d5b66ef22-196x90.png|LG is a Voxel51 customer]]
+![[assets/attachments/uncategorized/e5f53bf5142f3960cbcaa8fd84fc2a03b6089327-2560x961.png]] ![[assets/attachments/uncategorized/d286d778ffac5e30c2af62755808bf566dc5d3b6-2048x1148.webp]] ![[assets/attachments/uncategorized/4b11ac1529f6fd395f12053d7f1da33c43aeb416-451x524.png]] ![[assets/attachments/uncategorized/3ca1b330c63e537c1217fd35d2e7cdf338c9637c-1600x1600.png]] ![[assets/attachments/uncategorized/4aea181cb46420e25282c4cb8f58c590e33053ba-250x158.png]] ![[c50a1d5574718bbcec04edd8b3573e06e2e7a8f6-192x120.png|University of Michigan is a Voxel51 customer]] ![[assets/attachments/uncategorized/4a8d9cb4f0bfaa910010c81385db0ce9ba38d33e-360x180.png]] ![[f5359c53fcc5a8686e2a0ce71daa9862b4825ccd-102x102.png|GM is a Voxel51 customer]] ![[13a9402984dd0a566cf65f7ea64c9164f9973970-300x90.png|Raytheon is a Voxel51 customer]] ![[assets/attachments/uncategorized/174595171c0e067cdfc0a2704181a289db6e7060-702x300.png]] ![[e70d344bc09d2cd1fb85ed80e39baadccb0a7f60-270x180.png|Google is a Voxel51 partner]] ![[eb6156f36de826b6d65dbb53876c53b961530543-256x102.png|RIOS is a Voxel51 customer]] ![[0554cbeb43e083b5436bc2c99b74c30e73783fea-250x90.png|Ford is a Voxel51 customer]] ![[b11dab534591c8e12e8af89ebe588e8d5b66ef22-196x90.png|LG is a Voxel51 customer]] ![[assets/attachments/uncategorized/4aea181cb46420e25282c4cb8f58c590e33053ba-250x158.png]] ![[c50a1d5574718bbcec04edd8b3573e06e2e7a8f6-192x120.png|University of Michigan is a Voxel51 customer]] ![[assets/attachments/uncategorized/4a8d9cb4f0bfaa910010c81385db0ce9ba38d33e-360x180.png]] ![[f5359c53fcc5a8686e2a0ce71daa9862b4825ccd-102x102.png|GM is a Voxel51 customer]] ![[13a9402984dd0a566cf65f7ea64c9164f9973970-300x90.png|Raytheon is a Voxel51 customer]] ![[assets/attachments/uncategorized/174595171c0e067cdfc0a2704181a289db6e7060-702x300.png]] ![[e70d344bc09d2cd1fb85ed80e39baadccb0a7f60-270x180.png|Google is a Voxel51 partner]] ![[eb6156f36de826b6d65dbb53876c53b961530543-256x102.png|RIOS is a Voxel51 customer]] ![[0554cbeb43e083b5436bc2c99b74c30e73783fea-250x90.png|Ford is a Voxel51 customer]] ![[b11dab534591c8e12e8af89ebe588e8d5b66ef22-196x90.png|LG is a Voxel51 customer]]
 
 #### fiftyone overview
 
@@ -45,69 +45,69 @@ GitHub stars
 
 enterprise customers
 
-![[cd7fe79ef465aa75489f4c049ce2af346f0985b4-520x680.png]] ![[720f6702611411baf6a274b1010856c78c07235d-240x96.png]] ![[57564abbae97325ddeb3bc3b8b7b5690d61cddc5-520x680.png]] ![[be26ca6233b020b9201ddd482f7d34f53555b51d-276x90.png]]
+![[assets/attachments/uncategorized/cd7fe79ef465aa75489f4c049ce2af346f0985b4-520x680.png]] ![[assets/attachments/uncategorized/720f6702611411baf6a274b1010856c78c07235d-240x96.png]] ![[assets/attachments/uncategorized/57564abbae97325ddeb3bc3b8b7b5690d61cddc5-520x680.png]] ![[assets/attachments/uncategorized/be26ca6233b020b9201ddd482f7d34f53555b51d-276x90.png]]
 
 Maintained 99% fall detection rates for model performance.
 
-![[636eaa49ef62ea3d07ca264f7baa4fe0e494e125-520x680.png]] ![[a54f5857074a8e45684334b38c3e4f1f1528274e-520x680.png]]
+![[assets/attachments/uncategorized/636eaa49ef62ea3d07ca264f7baa4fe0e494e125-520x680.png]] ![[assets/attachments/uncategorized/a54f5857074a8e45684334b38c3e4f1f1528274e-520x680.png]]
 
-[![[e845660699edf4deed110e60425659ba8ae73e6e-520x680.png]]](https://voxel51.com/plugins/?search=florence)
+[![[assets/attachments/uncategorized/e845660699edf4deed110e60425659ba8ae73e6e-520x680.png]]](https://voxel51.com/plugins/?search=florence)
 
 [Foundation for Florence-2 VLM development](https://voxel51.com/plugins/?search=florence)
 
-![[c8be8bb13c2be64cd70dda28334501a812eb0bc1-520x676.png]] ![[8c596efcf17de5a9bc02b05b44f55474802f0abe-90x90.png]] ![[1f4c7beab6c76544152d4f3d990059bc62eb90cb-520x680.png]] ![[aee0fde76666dd2d134875eb8d5247ee75dab896-153x96.png]]
+![[assets/attachments/uncategorized/c8be8bb13c2be64cd70dda28334501a812eb0bc1-520x676.png]] ![[assets/attachments/uncategorized/8c596efcf17de5a9bc02b05b44f55474802f0abe-90x90.png]] ![[assets/attachments/uncategorized/1f4c7beab6c76544152d4f3d990059bc62eb90cb-520x680.png]] ![[assets/attachments/uncategorized/aee0fde76666dd2d134875eb8d5247ee75dab896-153x96.png]]
 
- [![[9d107edd3dcfaf321e55af64ced1ff6f0647d484-520x680.png]] ![[cb778b338fac262a1c8a9de0334b256747cfbc5b-500x261.png]]](https://voxel51.com/blog/rios-ai-powered-robotics-run-on-fiftyone-teams/)
+ [![[assets/attachments/uncategorized/9d107edd3dcfaf321e55af64ced1ff6f0647d484-520x680.png]] ![[assets/attachments/uncategorized/cb778b338fac262a1c8a9de0334b256747cfbc5b-500x261.png]]](https://voxel51.com/blog/rios-ai-powered-robotics-run-on-fiftyone-teams/)
 
 [Eliminated repetitive manual transformations on 20 TB+ of visual data](https://voxel51.com/blog/rios-ai-powered-robotics-run-on-fiftyone-teams/)
 
-![[2eed779bf08ffa8ea43cb822cb013674cc05e546-520x680.png]] ![[09890f00ed8e1cb9be4a30a0a0a52a80b2d74fee-800x1220.png]] ![[cbbc7f79176fa84b6e2d1f15eb76b27b84f216b9-393x128.png]]
+![[assets/attachments/uncategorized/2eed779bf08ffa8ea43cb822cb013674cc05e546-520x680.png]] ![[assets/attachments/uncategorized/09890f00ed8e1cb9be4a30a0a0a52a80b2d74fee-800x1220.png]] ![[assets/attachments/uncategorized/cbbc7f79176fa84b6e2d1f15eb76b27b84f216b9-393x128.png]]
 
-[![[ac0775f29416480c0d8115ac92f9088eaab372ab-3024x961.png]]](https://voxel51.com/blog/exploring-google-open-images-v7/)
+[![[assets/attachments/uncategorized/ac0775f29416480c0d8115ac92f9088eaab372ab-3024x961.png]]](https://voxel51.com/blog/exploring-google-open-images-v7/)
 
 [Official partner for visualizing Open Images Dataset V7](https://voxel51.com/blog/exploring-google-open-images-v7/)
 
-![[cd7fe79ef465aa75489f4c049ce2af346f0985b4-520x680.png]] ![[720f6702611411baf6a274b1010856c78c07235d-240x96.png]] ![[57564abbae97325ddeb3bc3b8b7b5690d61cddc5-520x680.png]] ![[be26ca6233b020b9201ddd482f7d34f53555b51d-276x90.png]]
+![[assets/attachments/uncategorized/cd7fe79ef465aa75489f4c049ce2af346f0985b4-520x680.png]] ![[assets/attachments/uncategorized/720f6702611411baf6a274b1010856c78c07235d-240x96.png]] ![[assets/attachments/uncategorized/57564abbae97325ddeb3bc3b8b7b5690d61cddc5-520x680.png]] ![[assets/attachments/uncategorized/be26ca6233b020b9201ddd482f7d34f53555b51d-276x90.png]]
 
 Maintained 99% fall detection rates for model performance.
 
-![[636eaa49ef62ea3d07ca264f7baa4fe0e494e125-520x680.png]] ![[a54f5857074a8e45684334b38c3e4f1f1528274e-520x680.png]]
+![[assets/attachments/uncategorized/636eaa49ef62ea3d07ca264f7baa4fe0e494e125-520x680.png]] ![[assets/attachments/uncategorized/a54f5857074a8e45684334b38c3e4f1f1528274e-520x680.png]]
 
-[![[e845660699edf4deed110e60425659ba8ae73e6e-520x680.png]]](https://voxel51.com/plugins/?search=florence)
+[![[assets/attachments/uncategorized/e845660699edf4deed110e60425659ba8ae73e6e-520x680.png]]](https://voxel51.com/plugins/?search=florence)
 
 [Foundation for Florence-2 VLM development](https://voxel51.com/plugins/?search=florence)
 
-![[c8be8bb13c2be64cd70dda28334501a812eb0bc1-520x676.png]] ![[8c596efcf17de5a9bc02b05b44f55474802f0abe-90x90.png]] ![[1f4c7beab6c76544152d4f3d990059bc62eb90cb-520x680.png]] ![[aee0fde76666dd2d134875eb8d5247ee75dab896-153x96.png]]
+![[assets/attachments/uncategorized/c8be8bb13c2be64cd70dda28334501a812eb0bc1-520x676.png]] ![[assets/attachments/uncategorized/8c596efcf17de5a9bc02b05b44f55474802f0abe-90x90.png]] ![[assets/attachments/uncategorized/1f4c7beab6c76544152d4f3d990059bc62eb90cb-520x680.png]] ![[assets/attachments/uncategorized/aee0fde76666dd2d134875eb8d5247ee75dab896-153x96.png]]
 
- [![[9d107edd3dcfaf321e55af64ced1ff6f0647d484-520x680.png]] ![[cb778b338fac262a1c8a9de0334b256747cfbc5b-500x261.png]]](https://voxel51.com/blog/rios-ai-powered-robotics-run-on-fiftyone-teams/)
+ [![[assets/attachments/uncategorized/9d107edd3dcfaf321e55af64ced1ff6f0647d484-520x680.png]] ![[assets/attachments/uncategorized/cb778b338fac262a1c8a9de0334b256747cfbc5b-500x261.png]]](https://voxel51.com/blog/rios-ai-powered-robotics-run-on-fiftyone-teams/)
 
 [Eliminated repetitive manual transformations on 20 TB+ of visual data](https://voxel51.com/blog/rios-ai-powered-robotics-run-on-fiftyone-teams/)
 
-![[2eed779bf08ffa8ea43cb822cb013674cc05e546-520x680.png]] ![[09890f00ed8e1cb9be4a30a0a0a52a80b2d74fee-800x1220.png]] ![[cbbc7f79176fa84b6e2d1f15eb76b27b84f216b9-393x128.png]]
+![[assets/attachments/uncategorized/2eed779bf08ffa8ea43cb822cb013674cc05e546-520x680.png]] ![[assets/attachments/uncategorized/09890f00ed8e1cb9be4a30a0a0a52a80b2d74fee-800x1220.png]] ![[assets/attachments/uncategorized/cbbc7f79176fa84b6e2d1f15eb76b27b84f216b9-393x128.png]]
 
-[![[ac0775f29416480c0d8115ac92f9088eaab372ab-3024x961.png]]](https://voxel51.com/blog/exploring-google-open-images-v7/)
+[![[assets/attachments/uncategorized/ac0775f29416480c0d8115ac92f9088eaab372ab-3024x961.png]]](https://voxel51.com/blog/exploring-google-open-images-v7/)
 
 [Official partner for visualizing Open Images Dataset V7](https://voxel51.com/blog/exploring-google-open-images-v7/)
 
-![[cd7fe79ef465aa75489f4c049ce2af346f0985b4-520x680.png]] ![[720f6702611411baf6a274b1010856c78c07235d-240x96.png]] ![[57564abbae97325ddeb3bc3b8b7b5690d61cddc5-520x680.png]] ![[be26ca6233b020b9201ddd482f7d34f53555b51d-276x90.png]]
+![[assets/attachments/uncategorized/cd7fe79ef465aa75489f4c049ce2af346f0985b4-520x680.png]] ![[assets/attachments/uncategorized/720f6702611411baf6a274b1010856c78c07235d-240x96.png]] ![[assets/attachments/uncategorized/57564abbae97325ddeb3bc3b8b7b5690d61cddc5-520x680.png]] ![[assets/attachments/uncategorized/be26ca6233b020b9201ddd482f7d34f53555b51d-276x90.png]]
 
 Maintained 99% fall detection rates for model performance.
 
-![[636eaa49ef62ea3d07ca264f7baa4fe0e494e125-520x680.png]] ![[a54f5857074a8e45684334b38c3e4f1f1528274e-520x680.png]]
+![[assets/attachments/uncategorized/636eaa49ef62ea3d07ca264f7baa4fe0e494e125-520x680.png]] ![[assets/attachments/uncategorized/a54f5857074a8e45684334b38c3e4f1f1528274e-520x680.png]]
 
-[![[e845660699edf4deed110e60425659ba8ae73e6e-520x680.png]]](https://voxel51.com/plugins/?search=florence)
+[![[assets/attachments/uncategorized/e845660699edf4deed110e60425659ba8ae73e6e-520x680.png]]](https://voxel51.com/plugins/?search=florence)
 
 [Foundation for Florence-2 VLM development](https://voxel51.com/plugins/?search=florence)
 
-![[c8be8bb13c2be64cd70dda28334501a812eb0bc1-520x676.png]] ![[8c596efcf17de5a9bc02b05b44f55474802f0abe-90x90.png]] ![[1f4c7beab6c76544152d4f3d990059bc62eb90cb-520x680.png]] ![[aee0fde76666dd2d134875eb8d5247ee75dab896-153x96.png]]
+![[assets/attachments/uncategorized/c8be8bb13c2be64cd70dda28334501a812eb0bc1-520x676.png]] ![[assets/attachments/uncategorized/8c596efcf17de5a9bc02b05b44f55474802f0abe-90x90.png]] ![[assets/attachments/uncategorized/1f4c7beab6c76544152d4f3d990059bc62eb90cb-520x680.png]] ![[assets/attachments/uncategorized/aee0fde76666dd2d134875eb8d5247ee75dab896-153x96.png]]
 
- [![[9d107edd3dcfaf321e55af64ced1ff6f0647d484-520x680.png]] ![[cb778b338fac262a1c8a9de0334b256747cfbc5b-500x261.png]]](https://voxel51.com/blog/rios-ai-powered-robotics-run-on-fiftyone-teams/)
+ [![[assets/attachments/uncategorized/9d107edd3dcfaf321e55af64ced1ff6f0647d484-520x680.png]] ![[assets/attachments/uncategorized/cb778b338fac262a1c8a9de0334b256747cfbc5b-500x261.png]]](https://voxel51.com/blog/rios-ai-powered-robotics-run-on-fiftyone-teams/)
 
 [Eliminated repetitive manual transformations on 20 TB+ of visual data](https://voxel51.com/blog/rios-ai-powered-robotics-run-on-fiftyone-teams/)
 
-![[2eed779bf08ffa8ea43cb822cb013674cc05e546-520x680.png]] ![[09890f00ed8e1cb9be4a30a0a0a52a80b2d74fee-800x1220.png]] ![[cbbc7f79176fa84b6e2d1f15eb76b27b84f216b9-393x128.png]]
+![[assets/attachments/uncategorized/2eed779bf08ffa8ea43cb822cb013674cc05e546-520x680.png]] ![[assets/attachments/uncategorized/09890f00ed8e1cb9be4a30a0a0a52a80b2d74fee-800x1220.png]] ![[assets/attachments/uncategorized/cbbc7f79176fa84b6e2d1f15eb76b27b84f216b9-393x128.png]]
 
-[![[ac0775f29416480c0d8115ac92f9088eaab372ab-3024x961.png]]](https://voxel51.com/blog/exploring-google-open-images-v7/)
+[![[assets/attachments/uncategorized/ac0775f29416480c0d8115ac92f9088eaab372ab-3024x961.png]]](https://voxel51.com/blog/exploring-google-open-images-v7/)
 
 [Official partner for visualizing Open Images Dataset V7](https://voxel51.com/blog/exploring-google-open-images-v7/)
 
@@ -121,7 +121,7 @@ Leading enterprises build using FiftyOne
 
 30% boost in team productivity[Book a demo](https://voxel51.com/sales)
 
-![[5691fe278acf8d79c2bb71f6da17f600de33675d-6048x1921.png]]
+![[assets/attachments/uncategorized/5691fe278acf8d79c2bb71f6da17f600de33675d-6048x1921.png]]
 
 #### Why FiftyOne
 
@@ -137,11 +137,11 @@ FiftyOne is built to meet the demands of the most sophisticated ML stacks.[Why F
 
 Deploy anywhere
 
-![[79fa40b25cb38d7c9c85b3f565dcda26356a4f15-1276x634.png]]
+![[assets/attachments/uncategorized/79fa40b25cb38d7c9c85b3f565dcda26356a4f15-1276x634.png]]
 
 Fully customizable and extensible
 
-![[c5d011a5d71e23096ce07385b12ddebe5e66cb42-1268x634.png]]
+![[assets/attachments/uncategorized/c5d011a5d71e23096ce07385b12ddebe5e66cb42-1268x634.png]]
 
 Support for billions of samples
 
@@ -153,7 +153,7 @@ Dataset versioning
 
 Role-based access controls
 
-![[ad606a31d0b9b15441e8528aa3d8836e307083ee-951x1152.png]]
+![[assets/attachments/uncategorized/ad606a31d0b9b15441e8528aa3d8836e307083ee-951x1152.png]]
 
 ISO 27001 certification
 
@@ -163,7 +163,7 @@ ISO 27001 certification
 
 ## Integrate with your existing ML stack[Why extensibility matters](https://voxel51.com/blog/multimodal-ai-and-data-strategy-for-enterprise)
 
-![[4262375676fd146768064041982c53f191063e6d-2560x1200.jpg]]
+![[assets/attachments/uncategorized/4262375676fd146768064041982c53f191063e6d-2560x1200.jpg]]
 
 #### ML Workflows
 
@@ -171,7 +171,7 @@ ISO 27001 certification
 
 In a world where data fuels AI innovation, FiftyOne puts data at the center of your workflow—helping you exploit its full potential to gain a competitive edge.[Read the whitepaper](https://voxel51.com/blog/the-hidden-cost-of-outsourced-data-annotation)
 
-![[a4132ca20a189c49a09bf2f22b8fd92b896bbd18-2560x1200.png]]
+![[assets/attachments/uncategorized/a4132ca20a189c49a09bf2f22b8fd92b896bbd18-2560x1200.png]]
 
 > “FiftyOne is our primary resource for machine learning research. Thanks to FiftyOne's convenient field visualizations and filtering capabilities, we can easily distinguish incorrect labels and predictions, and therefore iterate on models faster than ever. As a result, we've achieved a 77% reduction in images sent for manual verification.”
 > 
@@ -219,4 +219,4 @@ In a world where data fuels AI innovation, FiftyOne puts data at the center of y
 
 Join more than 20,000 developers and scientists around the world who are leveling up their AI skills in GenAI, Computer Vision, LLMs, MLOps, vector search, and more.[Join upcoming events](https://voxel51.com/events)
 
-![[dea067d4cded2a986cc0f4173ec818c64e0d57bc-925x444.svg]] ![[ea42e9b26f49f1cb54bb8aca31dc10e7f74fe11f-3024x960.png]]
+![[assets/attachments/uncategorized/dea067d4cded2a986cc0f4173ec818c64e0d57bc-925x444.svg]] ![[assets/attachments/uncategorized/ea42e9b26f49f1cb54bb8aca31dc10e7f74fe11f-3024x960.png]]

@@ -15,7 +15,7 @@ tags:
   - "clippings"
 ---
 
-[![[optuna-logo 1.png]]](https://raw.githubusercontent.com/optuna/optuna/master/docs/image/optuna-logo.png)
+[![[assets/attachments/operationsresearch/optuna-logo 1.png]]](https://raw.githubusercontent.com/optuna/optuna/master/docs/image/optuna-logo.png)
 
 ## Optuna: A hyperparameter optimization framework
 

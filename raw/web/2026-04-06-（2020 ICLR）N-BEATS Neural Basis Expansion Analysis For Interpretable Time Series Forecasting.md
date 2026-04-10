@@ -45,7 +45,7 @@ Interpretablity
 
 然后再说模型，模型由多个stack组成，然后每个stack又由多个block组成，如下图。下面详细介绍了两个模型架构的关键点和创新点。
 
-![[v2-52e15dc5f23f5d6bf7591067342f029c_1440w.jpg]]
+![[assets/attachments/timeseries/v2-52e15dc5f23f5d6bf7591067342f029c_1440w.jpg]]
 
 ### Doubly Residual Stacking
 
@@ -57,15 +57,15 @@ Interpretablity
 
 这个基如果设定为多项式基，就对应着 **趋势：**
 
-![[v2-5d9058c4916a0f8b0d27a31589e7cc6b_1440w.png]]
+![[assets/attachments/timeseries/v2-5d9058c4916a0f8b0d27a31589e7cc6b_1440w.png]]
 
 如果设定为傅里叶基，就对应着 **季节：**
 
-![[v2-b64596010ab050fb59e41ade240fada7_1440w.png]]
+![[assets/attachments/timeseries/v2-b64596010ab050fb59e41ade240fada7_1440w.png]]
 
 如果设定为可学习的，就对应着论文中的 **Generic architecture：**
 
-![[v2-363942d6568a32f4da9c630df9bd2a3e_1440w.png]]
+![[assets/attachments/timeseries/v2-363942d6568a32f4da9c630df9bd2a3e_1440w.png]]
 
 其中，矩阵V是可学习的，每一列代表一个基，每一行代表一个离散的时间索引。由于没有对V施加任何约束，因此学习到的基没有固定的结构，这导致了预测的不可解释性。
 

@@ -37,7 +37,7 @@ There are different ways and techniques to fine-tune a model, the most popular b
 
 Here is a quick visualization of how fine-tuning works:
 
-![[64ac796a220d3feb89bedcef_gksjp_6BS_dpO8KdfKa51eQ_BNcKLnmQlNcZRdg5MHOqfJoj7bMoUf3rJwUpk1fZh64R0zSo5jl1nMRzfeBQuiZ63R4rO8PsOvEWLNR3QrQCBdC8qvtRk6C0K5_0xd6zGc_zoy96cgqHz5_kSa-jQfw.gif]]
+![[assets/attachments/llm/64ac796a220d3feb89bedcef_gksjp_6BS_dpO8KdfKa51eQ_BNcKLnmQlNcZRdg5MHOqfJoj7bMoUf3rJwUpk1fZh64R0zSo5jl1nMRzfeBQuiZ63R4rO8PsOvEWLNR3QrQCBdC8qvtRk6C0K5_0xd6zGc_zoy96cgqHz5_kSa-jQfw.gif]]
 
 *Alammar, J (2018).* [*The Illustrated Transformer*](https://jalammar.github.io/illustrated-transformer/) *\[Blog post\].*
 
@@ -61,7 +61,7 @@ One of the biggest challenges in AI is to keep the model up to date with the lat
 
 Fine-tuning can help you to keep updating the model with the latest data without having to re-train the whole model. This makes it possible to deploy models in production without much effort and cost. This is called online learning or online training and is absolutely necessary for any model in production.
 
-![[64ac796a5f93c078881443f3_xoH3raA0kMV9Fg-sVtG84G5NI_irw72IksNhONqjeZAdDnkaME7av4Jiopt9zHumsz2bwosamV5Yzp59jsFZliX5K7RCoomps5tsED3FcZPpiiQ3RImJXRUfq3ycN54flyjmxJ5LunNLbrYFV7SiDos.jpg]]
+![[assets/attachments/llm/64ac796a5f93c078881443f3_xoH3raA0kMV9Fg-sVtG84G5NI_irw72IksNhONqjeZAdDnkaME7av4Jiopt9zHumsz2bwosamV5Yzp59jsFZliX5K7RCoomps5tsED3FcZPpiiQ3RImJXRUfq3ycN54flyjmxJ5LunNLbrYFV7SiDos.jpg]]
 
 ## What is PEFT?
 
@@ -69,7 +69,7 @@ PEFT, Parameter Efficient Fine-Tuning, is a set of techniques or methods to fine
 
 Here are some PEFT techniques:
 
-![[64ac796b64197e69fc87f670_iWe274ACYUm0_Q-aPmdQPWUSWZR4YnNs2gP7xxX2sCZh7TXPL5WWfOu4pEkJGBkNridVRNFMnkHlc3NjE9M-5SMlv9pksU1LZ_G7Jjb7OzPXNeqKpURkaGfWa5uyWL48sle16BUmXsGlTHOk8ui4xIA.jpg]]
+![[assets/attachments/llm/64ac796b64197e69fc87f670_iWe274ACYUm0_Q-aPmdQPWUSWZR4YnNs2gP7xxX2sCZh7TXPL5WWfOu4pEkJGBkNridVRNFMnkHlc3NjE9M-5SMlv9pksU1LZ_G7Jjb7OzPXNeqKpURkaGfWa5uyWL48sle16BUmXsGlTHOk8ui4xIA.jpg]]
 
 ### Why PEFT?
 
@@ -83,15 +83,15 @@ Transfer learning is when we take some of the learned parameters of a model and 
 
 Transfer learning has been a common practice in the computer vision world for a very long time now. This is because of the nature of the visual models and how they learn. In CNN models, the early layers extract more general features like edges and curves, whereas the later layers extract more complicated features like whole eyes and faces. This is because the receptive field of CNNs grows as they are stacked on top of each other.
 
-![[64ac796a1def5997ce0baa32_U46S6iJQLnVqHJ1LGxDtJRDMWHKYb37vDR9pYrfja7281G78AxIIYeiFgXDvBkDKDAYD_wUeUKfgktRaep1HHRE1_hfXshnW0gqt8_KJQa65h3mnu5W_53FUzp_zdPkrES_9KoZfQKAkmYmP30cbw_E.jpg]]
+![[assets/attachments/llm/64ac796a1def5997ce0baa32_U46S6iJQLnVqHJ1LGxDtJRDMWHKYb37vDR9pYrfja7281G78AxIIYeiFgXDvBkDKDAYD_wUeUKfgktRaep1HHRE1_hfXshnW0gqt8_KJQa65h3mnu5W_53FUzp_zdPkrES_9KoZfQKAkmYmP30cbw_E.jpg]]
 
 Let’s say for example you are trying to train a neural network to classify if a vehicle in front of you is a car or a motorbike. This is a very basic task. But let’s say you have very limited data and you don’t want to train your model too much. Here is what a basic CNN network looks like.
 
-![[64ac796a1def5997ce0baa43_jab3buYuSz0FRlKFQuxdtoFlqCDAW_Nf31qJA5Taqo42KJqoWLezsdTsA8W1klbWAAvNZ1RKnHUtLX261SKOBqQB9UDZpSOQCB1ihC4qSRZyNoIIC7Psjel7XbaoFgKanUy9SkzjmgB3rUzhrATPgSk.jpg]]
+![[assets/attachments/llm/64ac796a1def5997ce0baa43_jab3buYuSz0FRlKFQuxdtoFlqCDAW_Nf31qJA5Taqo42KJqoWLezsdTsA8W1klbWAAvNZ1RKnHUtLX261SKOBqQB9UDZpSOQCB1ihC4qSRZyNoIIC7Psjel7XbaoFgKanUy9SkzjmgB3rUzhrATPgSk.jpg]]
 
 There are 2 major parts of the network here, the CNN head and the later fully connected layers. As mentioned, CNN layers extract *representations* of the data which then are used by the fully connected network to classify the image. Here we can use any other CNN network trained on a similar classification problem and use that as the CNN head for this new problem.
 
-![[64ac796aee80430969e1b55c_bGcQDyySuDDZfgUx_IU-dsNXrx0gtRVHQXM7zLhPiiEvSdnu10727d4iV9Tg41MMDAEY0WKpM2PT5Z3iQQ73iFxBHU9VFWFwrf1Iff2Y6rSF0_AW7cFgXjpw2G2rw8h2Y9hvuRQlxhdHZIGZwTtvvko.jpg]]
+![[assets/attachments/llm/64ac796aee80430969e1b55c_bGcQDyySuDDZfgUx_IU-dsNXrx0gtRVHQXM7zLhPiiEvSdnu10727d4iV9Tg41MMDAEY0WKpM2PT5Z3iQQ73iFxBHU9VFWFwrf1Iff2Y6rSF0_AW7cFgXjpw2G2rw8h2Y9hvuRQlxhdHZIGZwTtvvko.jpg]]
 
 Here as you can see, we are using transfer learning by using the weights of a network pretrained to classify the car type. We are only *freezing* the first two layers of the CNN network, and leaving the latter two free to be updated during the training process. This makes sure that the CNN head of the model learns new features from the images which might be necessary for the new task we are training the model for.
 
@@ -101,13 +101,13 @@ Transfer learning is also often seen in NLP tasks with LLMs where people use the
 
 Adapters were one of the first parameter-efficient fine-tuning techniques released. In the [paper](https://arxiv.org/abs/1902.00751), they showed that you can add more layers to the pre-existing transformer architecture and only finetune them instead of the whole model. They showed that this technique resulted in similar performance when compared to complete fine-tuning.
 
-![[64ac796b2cf93ff7ca7a4c38_NYcHjBoLPNr0WP0Le-F7x_7sJ8PXpyQRRQ0gM-0Qi7NTL-9PY3W-E_YH7QjrjAMdjG6t9LowvUg2kSaPcIv_G2MLJNakeMu8idZCwix1pPXSj-jXDQyaF_iYXOLHSEuUHDG17ZnBvfrDIwUuLmudI20.jpg]]
+![[assets/attachments/llm/64ac796b2cf93ff7ca7a4c38_NYcHjBoLPNr0WP0Le-F7x_7sJ8PXpyQRRQ0gM-0Qi7NTL-9PY3W-E_YH7QjrjAMdjG6t9LowvUg2kSaPcIv_G2MLJNakeMu8idZCwix1pPXSj-jXDQyaF_iYXOLHSEuUHDG17ZnBvfrDIwUuLmudI20.jpg]]
 
 On the left, there is the modified transformer architecture with added adapter layers. You can see adapter layers are added after the attention stack and the feed-forward stack. And on the right, you can see the architecture of the adapter layer itself. The adapter layer comprises a bottleneck architecture, it takes the input and narrows it down to a smaller dimension representation and then passes it through a non-linear activation function, and then scales it back up to the dimension of the input. This makes sure that the next layer in the transformer stack will be able to receive the generated output from the adapter layer.
 
 In the paper, the authors show that this method of fine-tuning is comparable to complete fine-tuning while consuming much less compute resources and training time. They were able to attain 0.4% of full fine-tuning on the GLUE benchmark while adding 3.6% of the parameters.
 
-![[64ac796bb31d4755e5b9f245_6Pf3OFK7AznckqlTNxGUyXDxbjAP-ffOHAkI-C3XjwXuQAlZ-Z16akAAd4AVHLy7ha2Uu86_-sx4dJFjPa4X04SXBRyZM13JiCZS2Yx7h1M_pr6lO_FXlO7Tvluv6EoD0u_lShCh_K1fvj9Jk2twwU4.jpg]]
+![[assets/attachments/llm/64ac796bb31d4755e5b9f245_6Pf3OFK7AznckqlTNxGUyXDxbjAP-ffOHAkI-C3XjwXuQAlZ-Z16akAAd4AVHLy7ha2Uu86_-sx4dJFjPa4X04SXBRyZM13JiCZS2Yx7h1M_pr6lO_FXlO7Tvluv6EoD0u_lShCh_K1fvj9Jk2twwU4.jpg]]
 
 ## LoRA - Low-Rank Adaptation
 
@@ -117,7 +117,7 @@ Let’s explain mathematically, you can skip to the next paragraph if you are no
 
 A much simpler explanation is that during finetuning only a very few weights are updated a lot as most of the learning is done during the pretraining phase of the neural network. LoRA uses this information to reduce the number of trainable parameters.
 
-![[64ac796b52955d6d3a8e667c_mtT-qmnIZxHjHPCETS9PnUPkjyC_tQgV5suVwlyK4cRVckfUPo6zt2KXE2BGcO1rqQkfyhX5tR-jkJPwv7k8Km279JpDEopXqCNTqF20AmZhkxn2AIYTBkgfyyiWJ214hGAKtAuJ2EAOkgt8qJbCPM.jpg]]
+![[assets/attachments/llm/64ac796b52955d6d3a8e667c_mtT-qmnIZxHjHPCETS9PnUPkjyC_tQgV5suVwlyK4cRVckfUPo6zt2KXE2BGcO1rqQkfyhX5tR-jkJPwv7k8Km279JpDEopXqCNTqF20AmZhkxn2AIYTBkgfyyiWJ214hGAKtAuJ2EAOkgt8qJbCPM.jpg]]
 
 The image above gives a visual representation of what LoRA is doing. The Δ *W <sub>AxB</sub>* is the weight updation matrix, these are the changes needed to be applied to the neural network in order for it to learn a new task. This matrix can be broken down into two matrices and then we can only train them and then use them to get back our weight updation matrix. As you can see in the image, the matrix is broken down into matrices with columns and rows *r*, it can be understood as the **rank** of the weight updation matrix if it was actually trained. The bigger the rank, the more parameters will be updated during training.
 
@@ -125,7 +125,7 @@ The image above gives a visual representation of what LoRA is doing. The Δ *W <
 
 Authors in the paper show that LoRA can **outperform** full finetuning **with only 2% of total trainable parameters**.
 
-![[64ac796b33bf8099615d1cc4_RjrvdIVZHbUoDY64Rs67dN5VUb1eaXU1rb1AXuxh719N5v_o2KA_aDchDadXjzOstc-mNqeUfT1bXCvcq2Uzq5XxgArhUiXVKNizRlEQMqCoL176aV-RLeKaKRCcm-hrIyGsw1HNIN1y1joFMduSctw.jpg]]
+![[assets/attachments/llm/64ac796b33bf8099615d1cc4_RjrvdIVZHbUoDY64Rs67dN5VUb1eaXU1rb1AXuxh719N5v_o2KA_aDchDadXjzOstc-mNqeUfT1bXCvcq2Uzq5XxgArhUiXVKNizRlEQMqCoL176aV-RLeKaKRCcm-hrIyGsw1HNIN1y1joFMduSctw.jpg]]
 
 As for the number of parameters it trains, we can largely control that using the rank *r* parameter. For example, let’s say the weight updation matrix has 100,000 parameters, *A* being 200 and *B* being 500. The weight updation matrix can be decomposed into smaller matrixes of lower dimensions, *A* being *200 x 3* and *B* being *3 x 500*. This gives us *200 x 3 + 3 x 500 =* ***2100*** trainable parameters only, which is only **2.1%** of the total number of parameters. This can be further reduced as we can decide to only apply LoRA to specific layers only.
 
@@ -139,7 +139,7 @@ One of the most interesting use cases of LoRA can be shown in image generation a
 
 LoRA weights can also be combined with other LoRA weights and be used in a weighted combination to generate images that carry multiple styles. You can find a ton of LoRA adapters online and load them into your models on [CivitAI](https://civitai.com/).
 
-![[64ac796cb0b88a3f25a5aba9_2JwaTCH1vvT8nnzzzQ8pSTQi-bJSgHBfZORoGjOHs6QzmY8dMECiTpHz9mbVBNJuCEvnSeOEGNI1zBJI5XZfZ1tJYI4mpJ1hQykIkbqg_Y_fgfKU1QBS5E_Q7AFnegtmcoLQLdcxmqKczk4zGg17-TE.jpg]]
+![[assets/attachments/llm/64ac796cb0b88a3f25a5aba9_2JwaTCH1vvT8nnzzzQ8pSTQi-bJSgHBfZORoGjOHs6QzmY8dMECiTpHz9mbVBNJuCEvnSeOEGNI1zBJI5XZfZ1tJYI4mpJ1hQykIkbqg_Y_fgfKU1QBS5E_Q7AFnegtmcoLQLdcxmqKczk4zGg17-TE.jpg]]
 
 ## IA3 - Infused Adapter by Inhibiting and Amplifying Inner Activations
 
@@ -147,7 +147,7 @@ LoRA weights can also be combined with other LoRA weights and be used in a weigh
 
 IA3 works by introducing **rescaling vectors** that target the activations of the model. A total of 3 vectors are introduced, *l <sub>v</sub>, i <sub>k,</sub>* and *l <sub>ff</sub>.* These vectors target the *value, keys* in the attention layer, and the *non-linear* layer in the dense layers. These vectors are multiplied elementwise to the default values in the model. Once injected, these parameters are then learned during the training process, while the rest of the model remains frozen. These learned vectors essentially rescale or optimize the targeted pretrained model weights for the task at hand.
 
-![[64f258167f01443dc5873fd7_b1JmzItn0cZq5XLABg3j4GI3m45obrl0DtDIs1e3c1K5BsQmrZwHUxb1-G9W2GK65WEdXObzu-2NZ0TSzZWyaahY4Brhogg8mnkDCcKBXrjMEiobDqdW1PNZ3baXGXQcJ2m2H9QuytN5sE4D9fmiPxY.jpg]]
+![[assets/attachments/llm/64f258167f01443dc5873fd7_b1JmzItn0cZq5XLABg3j4GI3m45obrl0DtDIs1e3c1K5BsQmrZwHUxb1-G9W2GK65WEdXObzu-2NZ0TSzZWyaahY4Brhogg8mnkDCcKBXrjMEiobDqdW1PNZ3baXGXQcJ2m2H9QuytN5sE4D9fmiPxY.jpg]]
 
 So far this seems like a basic adapter type PEFT method. But that’s not all. The authors also use 3 loss terms to enhance the learning process. The 3 losses are *L <sub>LM</sub>, L <sub>UL,</sub>* and *L <sub>LN</sub>*. *L <sub>LM</sub>* is the standard cross-entropy loss, which increases the likelihood of generating the correct response. Then there is *L <sub>UL</sub>* which is *Unlikelihood Loss*. This loss term reduces the probability of incorrect outputs using Rank Classification. Finally, we have *L <sub>LN</sub>*, which is a length-normalized loss that applies a softmax cross-entropy loss to length-normalized log probabilities of all output choices. Multiple losses are used here to ensure faster and better learning of the model. Because we are trying learn using few-shot examples, these losses are necessary.
 
@@ -159,7 +159,7 @@ In Rank Classification a model is asked to rank a set of responses by their corr
 
 IA3 just like LoRA reduces the number of trainable parameters. But instead of using low-rank matrices, IA3 uses rescaling vectors. This reduces the trainable parameters to about 0.01%, compared to LoRA's > 0.1%, for the T0 model trained in the paper. The frozen state of the LLM also provides us with the option of having multiple adapters for multiple use cases. Also, because the authors used element-wise multiplication, it is super easy to merge the adapter to the LLM weights because of the commutative property of multiplication.
 
-![[64f2581684d2e29d3f357ee7_nh7Jp_Bv3DSHLC3rjBFirxHpQ04gjvM-T1zn7OfHpRcwtcNf9lyampebUIWUILzJ5tegpu6-8ySzmX2nohM5ODOH_ozBNMGQNr3EbV-UpVR0jbmKe_wsFehjKJqKDqJ6XaNJuAGwVmT7zNVsOMPbrgA.jpg]]
+![[assets/attachments/llm/64f2581684d2e29d3f357ee7_nh7Jp_Bv3DSHLC3rjBFirxHpQ04gjvM-T1zn7OfHpRcwtcNf9lyampebUIWUILzJ5tegpu6-8ySzmX2nohM5ODOH_ozBNMGQNr3EbV-UpVR0jbmKe_wsFehjKJqKDqJ6XaNJuAGwVmT7zNVsOMPbrgA.jpg]]
 
 The above figure shows that IA3 performs better than LoRA and barely affects the FLOPs. This makes IA3 a highly efficient and desirable technique. Also because IA3 is an additive adapter technique, just like LoRA we can target specific parts of the model and decide where to introduce the rescaling vectors. This helps us reduce the training time and even more.
 
@@ -171,13 +171,13 @@ P-Tuning works by creating a small *encoder network* for your prompt that create
 
 In short, the prompt encoder only changes the embeddings of the passed prompt to better represent the task, everything else remains unchanged.
 
-![[64ac796b04cddb42676dc685_aM4QCzgu6ql_uqxJuHdVBwnMkbaY2QzJ855KSVzwnk1_BVwpnKXBZHGqo87QZMSK1b3YvLrSdxNrYqIX6HH3n9tLXJ_HsWhxqN15LgT15jB0N2I1p7OdJ2E-1rLeMfhGpSDf2qe9rD4xw__aBwns9xY.jpg]]
+![[assets/attachments/llm/64ac796b04cddb42676dc685_aM4QCzgu6ql_uqxJuHdVBwnMkbaY2QzJ855KSVzwnk1_BVwpnKXBZHGqo87QZMSK1b3YvLrSdxNrYqIX6HH3n9tLXJ_HsWhxqN15LgT15jB0N2I1p7OdJ2E-1rLeMfhGpSDf2qe9rD4xw__aBwns9xY.jpg]]
 
 ### Efficiency of P-Tuning
 
 In terms of efficiency, P-tuning is just as good as any other method. In the paper, the authors show that P-Tuning was able to perform **better than full fine-tuning** on most of the benchmarks. It can be said that P-Tuning is comparable to the full fine-tuning of large language models.
 
-![[64ac796c5ab7e0b32071c2a9_8iTDr8NKlsgmLyo_TIIfUXrfiHR-cnm-8CkCbZRKhO7Otf9pdiOa_3sfkp_OXNGgkuBS54RRAJTqxSXlrwNMQFn4I1VwKxdHzNRjcFHx1O7MWT1OjklldGpZQZwIYvBQBR5dUhCIaOofJ1lm5Hpivvw.jpg]]
+![[assets/attachments/llm/64ac796c5ab7e0b32071c2a9_8iTDr8NKlsgmLyo_TIIfUXrfiHR-cnm-8CkCbZRKhO7Otf9pdiOa_3sfkp_OXNGgkuBS54RRAJTqxSXlrwNMQFn4I1VwKxdHzNRjcFHx1O7MWT1OjklldGpZQZwIYvBQBR5dUhCIaOofJ1lm5Hpivvw.jpg]]
 
 But there is a core issue when it comes to P-Tuning. P-Tuning is a prompt optimization technique, it optimizes the prompt that is passed to the bigger model. This means that we are still largely based on the large model in terms of capability. If a model has not been trained on sentiment classification optimizing sentiment classification prompts using P-Tuning will not do a lot of good to the model. P-Tuning is an assistive technique. It is always very important to pick a model that can do the required task out of the box “well” with some prompt engineering, and then further optimize it.
 
@@ -185,21 +185,21 @@ But there is a core issue when it comes to P-Tuning. P-Tuning is a prompt optimi
 
 Prefix tuning can be considered the next version of P-Tuning. The authors of P-Tuning published a paper on [P-Tuning V-2](https://arxiv.org/abs/2110.07602) addressing the issues of P-Tuning. In this paper, they implemented the Prefix tuning introduced in [this paper](https://arxiv.org/abs/2101.00190). Prefix tuning and P-Tuning do not have a lot of differences but can still lead to different results. Let’s dive into a deeper explanation.
 
-![[64ac796ca90f165006083da8_A_KieXmVWiCxx2HDCfnPhP7Yw67KDpTn6tqFF_8wKNMel0AfOZu3NoNHfvm23O2F8yVbjYl73WH8XLHXvlCn1MoRch5wHMlZmpEKL32wgTf9-JvVRqf8IuzuyknPLe5RWQ57I3tXFGe4dhuLu0z_Ni4.jpg]]
+![[assets/attachments/llm/64ac796ca90f165006083da8_A_KieXmVWiCxx2HDCfnPhP7Yw67KDpTn6tqFF_8wKNMel0AfOZu3NoNHfvm23O2F8yVbjYl73WH8XLHXvlCn1MoRch5wHMlZmpEKL32wgTf9-JvVRqf8IuzuyknPLe5RWQ57I3tXFGe4dhuLu0z_Ni4.jpg]]
 
 In P-Tuning, we added learnable parameters only to the input embeddings but in Prefix Tuning we add them **to all the layers of the network**. This ensures that the model itself learns more about the task it is being finetuned on. We append learnable parameters to the prompt and to every layer activation in the transformer layers. The difference from P-Tuning is that instead of completely modifying the prompt embeddings, we only add very few learnable parameters at the start of the prompt at every layer. Here’s a visual explanation:
 
-![[64ac796c5ab7e0b32071c301_LMgayME_f2cuV5YWWcSeCLRFXyU4y4mE4kbfajfq-OSTH06PnqhYgJscRCji-KLqKk8C25-ZbqR2PN15Ffr1kFT5EVGXIcF3eghgDe8A9GYeLDwXxZNZ-YhrjCYltq_qbOUrh17SmcN1BE5DczTE6KE.jpg]]
+![[assets/attachments/llm/64ac796c5ab7e0b32071c301_LMgayME_f2cuV5YWWcSeCLRFXyU4y4mE4kbfajfq-OSTH06PnqhYgJscRCji-KLqKk8C25-ZbqR2PN15Ffr1kFT5EVGXIcF3eghgDe8A9GYeLDwXxZNZ-YhrjCYltq_qbOUrh17SmcN1BE5DczTE6KE.jpg]]
 
 At every layer in the transformer, we concatenate a soft prompt with the input which has learnable parameters. These learnable parameters are tuned using a very small MLP, only 2 fully connected layers. This is done because in the paper authors note that directly updating these prompt tokens is very sensitive to learning rate and initialization. The soft prompts increase the number of trainable parameters but substantially increase the learning ability of the model too. The MLP or fully connected layers can be dropped later as we only care about the soft prompts, which will be appended to the input sequences during inference and will guide the model.
 
-![[64ac796cb31d4755e5b9f326_gxwL6634yC6BJhGonpxUj78cM0Z_hJM-wmxiJuhhsF9PiK1W-g_eLCpalPG3Z9vjAMsbBwyx-mnG_ALUC1qak9i0QRK0hlPeUI5V_15TdHDM6fWCNfOgujr4F6RYxH4g9znSx-DE4UGpKQAr2ItcOFU.jpg]]
+![[assets/attachments/llm/64ac796cb31d4755e5b9f326_gxwL6634yC6BJhGonpxUj78cM0Z_hJM-wmxiJuhhsF9PiK1W-g_eLCpalPG3Z9vjAMsbBwyx-mnG_ALUC1qak9i0QRK0hlPeUI5V_15TdHDM6fWCNfOgujr4F6RYxH4g9znSx-DE4UGpKQAr2ItcOFU.jpg]]
 
 ### Efficiency of Prefix Tuning
 
 Prefix tuning shows massive gains over P-Tuning. And as the model size increases, these gains increase too. This is perhaps because there are more trainable parameters for larger models. In the chart, you can see the authors compare the performance of P-Tuning, full finetuning, and Prefix tuning. Prefix tuning performs better than or as well as P-tuning in almost all tasks. In many cases, it performs even better than Full fine-tuning!
 
-![[64ac796c1def5997ce0bad2b_HWKJYOvpznNVd06S-B6iw8qRyrCrvv4qUwjTPN7SDhIUDvbFsNS7__2EoLWnWyM7TlwUs98vXnxnfmDORHZ6b4Rdcgyvf6roYNmFfhMZIpVxl2LmHijQgBytA9CDvJJhD-N3uteFL4f0QdXFsrCX1dA.jpg]]
+![[assets/attachments/llm/64ac796c1def5997ce0bad2b_HWKJYOvpznNVd06S-B6iw8qRyrCrvv4qUwjTPN7SDhIUDvbFsNS7__2EoLWnWyM7TlwUs98vXnxnfmDORHZ6b4Rdcgyvf6roYNmFfhMZIpVxl2LmHijQgBytA9CDvJJhD-N3uteFL4f0QdXFsrCX1dA.jpg]]
 
 One big reason why prefix tuning works really well is that the number of trainable parameters is not limited only to the input sequence. Learnable parameters are added at every layer, making the model much more flexible. Prefix tuning, unlike P-tuning, not only affects the prompt tokens but also the model itself. This allows the model to learn more. But this approach is still largely based on the prompt. It is still suggested to take a model that can perform the task and only then optimize it, as that will lead to much better results. As for the size of parameters, the number of trained parameters increase substantially, from **0.01% to 0.1 to 3% parameters**. But the size of parameters still remains small enough to be transferred and loaded easily and quickly.
 
@@ -207,7 +207,7 @@ One big reason why prefix tuning works really well is that the number of trainab
 
 Prompt tuning was one of the first papers to build upon the idea of finetuning only with soft prompts. The ideas of P-Tuning and Prefix Tuning come from this paper. Prompt tuning is a very simple and easy-to-implement idea. It involves prepending a specific prompt to the input and using virtual tokens or new trainable tokens for that specific prompt. These new virtual tokens can be finetuned during the process to learn a better representation of the prompt. This means that the model is tuned to understand the prompt better. Here is a comparison of prompt tuning with full fine-tuning from the paper:
 
-![[64ac796dcfdba29eb2c9287c_61MouOmSUGteW9qoekJTGOfmat0OhESch4gqkOztM_39O3bmE2GxvQ8OsHPpF06lSSQYY-zPGWhM2w3P6eQoD2OG_Q46WpR0RCAoAq0q0qZisLDvSbSRio-jJKcmO44MelRp1fhxAD9bm_g2tgfjH9k.jpg]]
+![[assets/attachments/llm/64ac796dcfdba29eb2c9287c_61MouOmSUGteW9qoekJTGOfmat0OhESch4gqkOztM_39O3bmE2GxvQ8OsHPpF06lSSQYY-zPGWhM2w3P6eQoD2OG_Q46WpR0RCAoAq0q0qZisLDvSbSRio-jJKcmO44MelRp1fhxAD9bm_g2tgfjH9k.jpg]]
 
 Here you can see that full model tuning requires multiple copies of the model to exist if we want to use the model for multiple tasks. But with Prompt Tuning, you only need to store the learned virtual tokens of the prompt tokens. So for example, if you use a prompt like *“Classify this tweet: {tweet}”* the goal will be to learn new better embeddings for the prompt. And during inference, only these new embeddings will be used to generate the outputs. This allows the model to tune the prompt to help itself generate better outputs during inference.
 
@@ -215,7 +215,7 @@ Here you can see that full model tuning requires multiple copies of the model to
 
 The biggest advantage of using prompt tuning is the small size of learned parameters. The files can be in **KBs.** As we can determine the dimension size and number of parameters to use for the new tokens, we can greatly control the number of parameters we are going to learn. In the paper, the authors show how even with a very small number of trainable tokens method performs really well. And the performance only goes up as bigger models are used. You can read the paper [here](https://arxiv.org/abs/2104.08691).
 
-![[64ac796d4542b678f53df34a_T0sHFW8zg2lugHlswaWtCgjGfZ_LQMcSBr8VYCOAfwwWFzwWtVXtY13ytAUPV_8tkYklYbVGWyOLcR-ehrhKgfQx5rz4D_HZF_5Fw5ASqcYxEJuAsC7cdZRFtHdyI995PtOB41OjxUKRm8JFg-gOZPg.jpg]]
+![[assets/attachments/llm/64ac796d4542b678f53df34a_T0sHFW8zg2lugHlswaWtCgjGfZ_LQMcSBr8VYCOAfwwWFzwWtVXtY13ytAUPV_8tkYklYbVGWyOLcR-ehrhKgfQx5rz4D_HZF_5Fw5ASqcYxEJuAsC7cdZRFtHdyI995PtOB41OjxUKRm8JFg-gOZPg.jpg]]
 
 Another big advantage is that we can use the same model **without any changes** for multiple tasks, as the only thing being updated are the embeddings of the prompt tokens. Meaning you can use the same model for a tweet classification task and for a language generation task without any changes to the model itself, given the model is big and sophisticated enough to perform those tasks. But a big limitation is that the model itself doesn’t learn anything new. This is purely a prompt optimization task. This means if the model has never trained on a sentiment classification dataset, prompt tuning might not be of any help. It is **very important** to note that this method optimizes the prompts, not the model. So, if you cannot handcraft a *hard* prompt that can do the task relatively well, there is no use of trying to optimize for a *soft* prompt using prompt optimization techniques.
 

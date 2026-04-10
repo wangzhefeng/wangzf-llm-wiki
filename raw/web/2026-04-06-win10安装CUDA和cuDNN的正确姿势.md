@@ -29,7 +29,7 @@ tags:
 
 桌面右键打开 [英伟达控制面板](https://zhida.zhihu.com/search?content_id=109067535&content_type=Article&match_order=1&q=%E8%8B%B1%E4%BC%9F%E8%BE%BE%E6%8E%A7%E5%88%B6%E9%9D%A2%E6%9D%BF&zhida_source=entity) ，点击帮助->系统信息->组件
 
-![[v2-ab22bdd82ecba2aa51c9e8af172ae89a_1440w.jpg]]
+![[assets/attachments/uncategorized/v2-ab22bdd82ecba2aa51c9e8af172ae89a_1440w.jpg]]
 
 可以看到本机支持的是CUDA 10.2 版本，表示是不支持更高版本的。如果你升级了驱动，可能会支持更高版本，也可能不会提升。
 
@@ -39,7 +39,7 @@ tags:
 
 CUDA下载页面： [developer.nvidia.com/cu](https://link.zhihu.com/?target=https%3A//developer.nvidia.com/cuda-downloads)
 
-![[v2-24fb4e6fa1c10c806ad06e4dd1e28040_1440w.jpg]]
+![[assets/attachments/uncategorized/v2-24fb4e6fa1c10c806ad06e4dd1e28040_1440w.jpg]]
 
 点击下载就行了，这个页面卡的一批，下载速度也十分感人。
 
@@ -53,7 +53,7 @@ cuDNN下载页面： [developer.nvidia.com/rd](https://link.zhihu.com/?target=ht
 
 注意：必须选择和你安装的CUDA匹配的版本。
 
-![[v2-8a620612bab1e9290f1541ffe838dfde_1440w.jpg]]
+![[assets/attachments/uncategorized/v2-8a620612bab1e9290f1541ffe838dfde_1440w.jpg]]
 
 这是个zip包，下载速度还行。
 
@@ -65,7 +65,7 @@ CUDA安装完成后，打开 [powershell](https://zhida.zhihu.com/search?content
 
 解压cuDNN压缩包，可以看到bin、include、lib目录
 
-![[v2-dd701f9179792aa78c7f428aa6c8555c_1440w.jpg]]
+![[assets/attachments/uncategorized/v2-dd701f9179792aa78c7f428aa6c8555c_1440w.jpg]]
 
 打开 C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA
 
@@ -77,11 +77,11 @@ CUDA安装完成后，打开 [powershell](https://zhida.zhihu.com/search?content
 
 你需要在系统环境变量的Path项下添加几个路径
 
-![[v2-3c249fa91df62d252ff8e7c3a435c9d9_1440w.jpg]]
+![[assets/attachments/uncategorized/v2-3c249fa91df62d252ff8e7c3a435c9d9_1440w.jpg]]
 
 点击 编辑 -- > 新建、浏览
 
-![[v2-2ae13a703ae409b883541fc2badcab7c_1440w.jpg]]
+![[assets/attachments/uncategorized/v2-2ae13a703ae409b883541fc2badcab7c_1440w.jpg]]
 
 需要添加下面两个路径，这就是说为什么要记住你的安装路径了，我使用的是默认的安装路径。
 
@@ -99,7 +99,7 @@ C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v10.2\\lib\\x64
 
 执行：
 
-![[v2-007cd911a0120aae71b932084f42e279_1440w.jpg]]
+![[assets/attachments/uncategorized/v2-007cd911a0120aae71b932084f42e279_1440w.jpg]]
 
 1 人已送礼物
 

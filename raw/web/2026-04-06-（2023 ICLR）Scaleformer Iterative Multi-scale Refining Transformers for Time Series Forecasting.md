@@ -43,11 +43,11 @@ Loss Function
 
 将时间序列利用不同采样率进行采样（平均池化），得到不同尺度。低级尺度具有更大的采样率，更平滑，是低频信息；高级尺度具有更小的采样率，保留更多细节信息、高频信息。先预测低级尺度的结果，再将其上采样后送入更高级尺度作为高级尺度的解码器的输入，是一种从粗到细的预测策略。
 
-![[v2-08d182a1d4d6c349910b69cf42a1b8d6_1440w.jpg]]
+![[assets/attachments/llm/v2-08d182a1d4d6c349910b69cf42a1b8d6_1440w.jpg]]
 
 逐级预测的idea的示意图
 
-![[v2-e287270597449acea84f36572a26aa4b_1440w.jpg]]
+![[assets/attachments/llm/v2-e287270597449acea84f36572a26aa4b_1440w.jpg]]
 
 具体架构
 
@@ -55,7 +55,7 @@ Loss Function
 
 编码器的输入和解码器的输入存在数据分布偏移。一方面是这两者分别来源于look-back window和horizon window，数据分布本身就存在偏移；另一方面，高级尺度的解码器输入是由低级尺度的输出上采样得到的，不同尺度分布也不一样（如下图右），这又带来了跨尺度偏移。因此，将编码器的输入和解码器的输入整体求平均后，都减掉均值，再输入到模型中。
 
-![[v2-32fad0b3bf3a731dd92a23f0f5ef14eb_1440w.jpg]]
+![[assets/attachments/llm/v2-32fad0b3bf3a731dd92a23f0f5ef14eb_1440w.jpg]]
 
 左侧是用与不用cross-scale normalization的对比，右侧是不同尺度数据的分布
 
@@ -63,7 +63,7 @@ Loss Function
 
 用新的自适应loss（别人已经提出来了）来替换MSE loss来训练模型。
 
-![[v2-1fde81ebbca1ce76fdac9f12fc742156_1440w.jpg]]
+![[assets/attachments/llm/v2-1fde81ebbca1ce76fdac9f12fc742156_1440w.jpg]]
 
 新的训练loss
 

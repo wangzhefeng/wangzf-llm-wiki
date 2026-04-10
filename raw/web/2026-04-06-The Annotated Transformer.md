@@ -17,7 +17,7 @@ tags:
 
 [Attention is All You Need](https://arxiv.org/abs/1706.03762)
 
-![[Image 30.png]]
+![[assets/attachments/llm/Image 30.png]]
 
 - *v2022: Austin Huang, Suraj Subramanian, Jonathan Sum, Khalid Almubarak, and Stella Biderman.*
 - *[Original](https://nlp.seas.harvard.edu/2018/04/03/attention.html): [Sasha Rush](http://rush-nlp.com/).*
@@ -187,7 +187,7 @@ class Generator(nn.Module):
 
 The Transformer follows this overall architecture using stacked self-attention and point-wise, fully connected layers for both the encoder and decoder, shown in the left and right halves of Figure 1, respectively.
 
-![[Image 31.png]]
+![[assets/attachments/llm/Image 31.png]]
 
 ## Encoder and Decoder Stacks
 
@@ -366,7 +366,7 @@ An attention function can be described as mapping a query and a set of key-value
 
 We call our particular attention “Scaled Dot-Product Attention”. The input consists of queries and keys of dimension $d_k$, and values of dimension $d_v$. We compute the dot products of the query with all keys, divide each by $\sqrt{d_k}$, and apply a softmax function to obtain the weights on the values.
 
-![[Image 32.png]]
+![[assets/attachments/llm/Image 32.png]]
 
 In practice, we compute the attention function on a set of queries simultaneously, packed together into a matrix $Q$. The keys and values are also packed together into matrices $K$ and $V$. We compute the matrix of outputs as:
 
@@ -391,7 +391,7 @@ The two most commonly used attention functions are additive attention [(cite)](h
 
 While for small values of $d_k$ the two mechanisms perform similarly, additive attention outperforms dot product attention without scaling for larger values of $d_k$ [(cite)](https://arxiv.org/abs/1703.03906). We suspect that for large values of $d_k$, the dot products grow large in magnitude, pushing the softmax function into regions where it has extremely small gradients (To illustrate why the dot products get large, assume that the components of $q$ and $k$ are independent random variables with mean $0$ and variance $1$. Then their dot product, $q \cdot k = \sum_{i=1}^{d_k} q_ik_i$, has mean $0$ and variance $d_k$.). To counteract this effect, we scale the dot products by $\frac{1}{\sqrt{d_k}}$.
 
-![[Image 33.png]]
+![[assets/attachments/llm/Image 33.png]]
 
 Multi-head attention allows the model to jointly attend to information from different representation subspaces at different positions. With a single attention head, averaging inhibits this.
 
@@ -1446,7 +1446,7 @@ On the WMT 2014 English-to-German translation task, the big transformer model (T
 
 On the WMT 2014 English-to-French translation task, our big model achieves a BLEU score of 41.0, outperforming all of the previously published single models, at less than 1/4 the training cost of the previous state-of-the-art model. The Transformer (big) model trained for English-to-French used dropout rate Pdrop = 0.1, instead of 0.3.
 
-![[Image 34.png]]
+![[assets/attachments/llm/Image 34.png]]
 
 > With the addtional extensions in the last section, the OpenNMT-py replication gets to 26.9 on EN-DE WMT. Here I have loaded in those parameters to our reimplemenation.
 

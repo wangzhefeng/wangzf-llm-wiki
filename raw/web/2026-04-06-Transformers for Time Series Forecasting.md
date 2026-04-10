@@ -27,7 +27,7 @@ Become a member
 
 ](https://medium.com/plans?source=upgrade_membership---post_top_nav_upsell-----------------------------------------)
 
-![[1*Z3tR8UbQ6vj4WBTyIHfoHg.jpeg]]
+![[assets/attachments/llm/1*Z3tR8UbQ6vj4WBTyIHfoHg.jpeg]]
 
 Time series forecasting has progressed from [classical models](https://medium.com/@serana.ai/time-series-modelling-arima-and-ets-cafc904b9183) like ARIMA, which perform well on short-term, linear patterns, to machine learning methods that offer greater flexibility but often require extensive manual feature engineering. [Deep learning based models](https://medium.com/@serana.ai/deep-learning-for-time-series-forecasting-a71104aa5e19), such as recurrent neural networks, can learn temporal patterns directly from raw data, but these architectures frequently struggle with long-term dependencies and suffer from sequential processing bottlenecks. Transformers marked a major turning point by replacing recurrence with attention mechanisms, enabling models to efficiently capture both short and long-range dependencies. This shift has led to more scalable and robust forecasting across a wide range of time series applications, addressing several limitations of classical and earlier deep learning approaches. In this post, we explore recent developments in Time Series Forecasting (TSF) through the lens of Transformer-based models.
 

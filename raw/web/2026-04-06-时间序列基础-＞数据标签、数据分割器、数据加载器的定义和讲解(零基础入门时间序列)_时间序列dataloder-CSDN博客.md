@@ -18,7 +18,7 @@ tags:
   - "clippings"
 ---
 
-![[36bced8b7be43bce9369848b0c2bd472.gif]]
+![[assets/attachments/timeseries/36bced8b7be43bce9369848b0c2bd472.gif]]
 
 ## 一、本文介绍
 
@@ -50,11 +50,11 @@ tags:
 
 在时间序列中 **特有的就是窗口分割器** ，利用一个滑动的窗口(类似于卷积操作)沿着数据的方向进行滑动从而产生用于训练时间序列的数据和标签。大家看上面的图片，我们的 **蓝色** 和 **粉色** 就是滑动的窗口，一个用于滑动 训练数据 一个用于滑动标签，最后滑动到数据的结尾。我们可以计算我们能够得到的训练数据的多少，其中数据为16条滑动窗口为6标签为2那么我们最后能够得到的训练加载器中的数据大小就为16 - ( 6 + 2 - 1) = 9，所以最后我们就能得到9个数据。
 
-![[dcdf89ef5dba02258b8feae8a98c0867.png]]
+![[assets/attachments/timeseries/dcdf89ef5dba02258b8feae8a98c0867.png]]
 
 **每一个数据的内容如下面的图片所示->**
 
-![[7889d374f3fc8718047923526211bdcc.png]]
+![[assets/attachments/timeseries/7889d374f3fc8718047923526211bdcc.png]]
 
 ```cobol
 import numpy as np
@@ -118,7 +118,7 @@ print(X)
 
 大家可以复制上面的代码进行运行来实际了解这一个过程，其中的create\_inout\_sequences就是数据分割器我自己定义的一个，运行以上的结果输出如下->
 
-![[2c3de2f44e81768201c236322dff1c2f.png]] 可以看上面的代码输出的X就正如我们设想的一样，输出了九条数据。
+![[assets/attachments/timeseries/2c3de2f44e81768201c236322dff1c2f.png]] 可以看上面的代码输出的X就正如我们设想的一样，输出了九条数据。
 
 ## 四、时间序列的数据加载器
 
@@ -222,7 +222,7 @@ python运行
 
 这段代码之间省略了挺多代码包括模型的定义优化器定义什么的这和本文内容无关我就不讲了， **后面会放一个完整的代码给大家测试，** 可以看到代码调用了train\_loader这就是我们前面调用的数据加载器，它会调用我们前面定义的class TimeSeriesDataset(Dataset):这个方法，从数据中随机选取一个数据进行加载，分别将训练数据赋值给seq，标签赋值给labels，其中seq会输入到模型的内部进行训练，其中的seq的维度的维度定义应该如下->
 
-![[ad883b4471b56d56d68278663e756297.png]]
+![[assets/attachments/timeseries/ad883b4471b56d56d68278663e756297.png]]
 
 可以看到其中的维度是(2,6,1)这其中的含义是\[batch\_size，window\_size，features\]，我在来描述一下第一个维度是批次大小，第二个维度是你定义的观测窗口大小，第三个维度是你数据的维度，(本次的讲解我们用的是一维的，如果你的特征数是三个那么这里就是三)。这就是一个标准的时间序列输入三个维度。
 
@@ -230,7 +230,7 @@ labels维度如下，和上面的含义是一致的我就不重复了。
 
 我们将seq输入的模型内部， **得到如下输出->**
 
-![[03c7eaab6ac168c11a0a12cffb69475c.png]]
+![[assets/attachments/timeseries/03c7eaab6ac168c11a0a12cffb69475c.png]]
 
 其和labels的形状需要一致用于损失的计算， **并用于反向传播。**
 
@@ -663,6 +663,6 @@ python运行
 
 [时间序列预测实战(十六)PyTorch实现GRU-FCN模型长期预测并可视化结果](https://blog.csdn.net/java1314777/article/details/134359127 "时间序列预测实战(十六)PyTorch实现GRU-FCN模型长期预测并可视化结果")
 
-![[d3ba088d3e531db168b497d99ff695d1.gif]]
+![[assets/attachments/timeseries/d3ba088d3e531db168b497d99ff695d1.gif]]
 
 QQ名片

@@ -17,11 +17,11 @@ tags:
   - "clippings"
 ---
 
-![[250px-Chebyshev_Polynomials_of_the_First_Kind.svg.png]]
+![[assets/attachments/uncategorized/250px-Chebyshev_Polynomials_of_the_First_Kind.svg.png]]
 
 Plot of the first five T n Chebyshev polynomials (first kind)
 
-![[250px-Chebyshev_Polynomials_of_the_Second_Kind.svg.png]]
+![[assets/attachments/uncategorized/250px-Chebyshev_Polynomials_of_the_Second_Kind.svg.png]]
 
 Plot of the first five U n Chebyshev polynomials (second kind)
 
@@ -495,7 +495,7 @@ $$
 
 ### First kind
 
-![[330px-Chebyshev_Polynomials_of_the_1st_Kind_%28n%3D0-5%2C_x%3D%28-1%2C1%29%29.svg.png]]
+![[assets/attachments/uncategorized/330px-Chebyshev_Polynomials_of_the_1st_Kind_%28n%3D0-5%2C_x%3D%28-1%2C1%29%29.svg.png]]
 
 The first few Chebyshev polynomials of the first kind in the domain −1 < x < 1: The flat T 0, 1 2 3 4 and 5.
 
@@ -506,7 +506,7 @@ $$
 
 ### Second kind
 
-![[330px-Chebyshev_Polynomials_of_the_2nd_Kind_%28n%3D0-5%2C_x%3D%28-1%2C1%29%29.svg.png]]
+![[assets/attachments/uncategorized/330px-Chebyshev_Polynomials_of_the_2nd_Kind_%28n%3D0-5%2C_x%3D%28-1%2C1%29%29.svg.png]]
 
 The first few Chebyshev polynomials of the second kind in the domain −1 < x < 1: The flat U 0, 1 2 3 4 and 5. Although not visible in the image, n (1) = + 1 (−1) = ( + 1)(−1).
 
@@ -517,7 +517,7 @@ $$
 
 ## As a basis set
 
-![[250px-ChebyshevExpansion.png]]
+![[assets/attachments/uncategorized/250px-ChebyshevExpansion.png]]
 
 The non-smooth function (top) y = − x 3 H (− ), where is the Heaviside step function, and (bottom) the 5th partial sum of its Chebyshev expansion. The 7th sum is indistinguishable from the original function at the resolution of the graph.
 

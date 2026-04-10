@@ -23,7 +23,7 @@ DeepSeek’s technical reports cover a wide swath of performance optimization te
 
 As always, a core bottleneck is matrix multiplication (aka “matmul” or “GEMM”), indicated by the yellow boxes in the diagram. As the figure shows, model weights are stored in FP8 and all matrix multiplications are performed in FP8 with FP32 accumulation. Activations and gradients are stored in BF16, and FP32 is also used for some internal computations.
 
-![[image 22.png]]
+![[assets/attachments/uncategorized/image 22.png]]
 
 Figure 6 from the DeepSeek-V3 paper, showing the variety of float precisions that are used in their Linear layer.
 
@@ -35,7 +35,7 @@ Furthermore, optimal GEMM on Hopper GPUs uses warpgroup-wide MMA instructions (W
 
 DeepSeek’s solution was to move some of the accumulation outside the Tensor Cores. Their GEMM kernel performs each series of 4 consecutive WGMMA operations inside the Tensor Cores, accumulating in the lower-precision format, but then adds the result into a separate register-backed accumulator tensor in FP32. This second addition is performed using CUDA Cores (the GPU’s standard execution unit for non-matmul FP32 arithmetic) and thus takes place in ordinary FP32 precision, mitigating the loss of accuracy. The dequantizing scaling factor is also applied to this FP32 accumulator.
 
-![[filled.png]]
+![[assets/attachments/uncategorized/filled.png]]
 
 Figure 7(b) of the paper: the mixed-precision matmul technique used during training of DeepSeek-V3, in which lower-precision WGMMA operations on Tensor Cores alternate with higher-precision accumulation in CUDA Cores.
 

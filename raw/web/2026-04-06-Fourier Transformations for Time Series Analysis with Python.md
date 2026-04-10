@@ -33,7 +33,7 @@ Climate scientists employ these techniques to analyze temperature and precipitat
 
 Fourier Transformations are useful for detecting cycles, seasonality, or repeating structures in data and filtering noise.
 
-![[1*ISTGoIxrdexDd1sTAz1eLQ.gif]]
+![[assets/attachments/timeseries/1*ISTGoIxrdexDd1sTAz1eLQ.gif]]
 
 ### Let’s build an example
 
@@ -57,7 +57,7 @@ plt.xlabel("Time")
 plt.ylabel("Amplitude")
 plt.show()
 ```
-![[1*qRuXob3BkRRhohYbFi3rTQ.png]]
+![[assets/attachments/timeseries/1*qRuXob3BkRRhohYbFi3rTQ.png]]
 
 ### Fourier Transform to Analyze Frequencies
 
@@ -78,7 +78,7 @@ plt.xlabel("Frequency (Hz)")
 plt.ylabel("Amplitude")
 plt.show()
 ```
-![[1*wyfZKq5phiQ6rG8PxjG-vA.png]]
+![[assets/attachments/timeseries/1*wyfZKq5phiQ6rG8PxjG-vA.png]]
 
 ### What Do We See?
 
@@ -121,7 +121,7 @@ plt.ylabel("Amplitude")
 plt.savefig('time_series_passanger.png')
 plt.show()
 ```
-![[1*i1h8GwnMPqgt-K6J5RMLAw.png]]
+![[assets/attachments/timeseries/1*i1h8GwnMPqgt-K6J5RMLAw.png]]
 
 ### What Does This Reveal?
 
@@ -157,7 +157,7 @@ plt.legend()
 plt.savefig('time_series_passanger_amp.png')
 plt.show()
 ```
-![[1*O-Rb8aMBFTcUsOnweUCCYw.png]]
+![[assets/attachments/timeseries/1*O-Rb8aMBFTcUsOnweUCCYw.png]]
 
 ### What Do We See?
 

@@ -34,7 +34,7 @@ tags:
 
 ## 纸质版
 
-[![[mogu 1.png]]](https://raw.githubusercontent.com/datawhalechina/easy-rl/master/docs/res/mogu.png)
+[![[assets/attachments/reinforcement-learning/mogu 1.png]]](https://raw.githubusercontent.com/datawhalechina/easy-rl/master/docs/res/mogu.png)
 
 推荐购买链接： [京东](https://item.jd.com/13075567.html) | [当当](http://product.dangdang.com/29374163.html)
 
@@ -62,7 +62,7 @@ tags:
 
 PDF版本是全书初稿，人民邮电出版社的编辑老师们对初稿进行了反复修缮，最终诞生了纸质书籍，在此向人民邮电出版社的编辑老师的认真严谨表示衷心的感谢！（附：校对样稿）
 
-[![[yanggao 1.png]]](https://raw.githubusercontent.com/datawhalechina/easy-rl/master/docs/res/yanggao.png)
+[![[assets/attachments/reinforcement-learning/yanggao 1.png]]](https://raw.githubusercontent.com/datawhalechina/easy-rl/master/docs/res/yanggao.png)
 
 ## 内容导航
 

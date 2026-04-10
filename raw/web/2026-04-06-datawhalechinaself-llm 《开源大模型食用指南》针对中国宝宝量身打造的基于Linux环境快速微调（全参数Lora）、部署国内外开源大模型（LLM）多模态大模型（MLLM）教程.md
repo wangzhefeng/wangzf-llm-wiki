@@ -15,7 +15,7 @@ tags:
   - "clippings"
 ---
 
-[![[head-img.png]]](https://github.com/datawhalechina/self-llm/blob/master/images/head-img.png)
+[![[assets/attachments/llm/head-img.png]]](https://github.com/datawhalechina/self-llm/blob/master/images/head-img.png)
 
 ## 开源大模型食用指南
 
@@ -196,6 +196,6 @@ tags:
 - 如果有任何想法可以联系我们 DataWhale 也欢迎大家多多提出 issue
 - 特别感谢以下为教程做出贡献的同学！
 
-[![[Image 26.svg]]](https://github.com/datawhalechina/self-llm/graphs/contributors)
+[![[assets/attachments/llm/Image 26.svg]]](https://github.com/datawhalechina/self-llm/graphs/contributors)
 
-[![[star-history-20251220.png]]](https://github.com/datawhalechina/self-llm/blob/master/images/star-history-20251220.png)
+[![[assets/attachments/llm/star-history-20251220.png]]](https://github.com/datawhalechina/self-llm/blob/master/images/star-history-20251220.png)

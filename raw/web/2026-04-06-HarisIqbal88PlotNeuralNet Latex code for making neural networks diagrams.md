@@ -23,15 +23,15 @@ Latex code for drawing neural networks for reports and presentation. Have a look
 
 Following are some network representations:
 
-[![[50308846-c2231880-049c-11e9-8763-3daa1024de78.png]]](https://user-images.githubusercontent.com/17570785/50308846-c2231880-049c-11e9-8763-3daa1024de78.png)
+[![[assets/attachments/uncategorized/50308846-c2231880-049c-11e9-8763-3daa1024de78.png]]](https://user-images.githubusercontent.com/17570785/50308846-c2231880-049c-11e9-8763-3daa1024de78.png)
 
 ###### FCN-8 (view on Overleaf)
 
-[![[50308873-e2eb6e00-049c-11e9-9587-9da6bdec011b.png]]](https://user-images.githubusercontent.com/17570785/50308873-e2eb6e00-049c-11e9-9587-9da6bdec011b.png)
+[![[assets/attachments/uncategorized/50308873-e2eb6e00-049c-11e9-9587-9da6bdec011b.png]]](https://user-images.githubusercontent.com/17570785/50308873-e2eb6e00-049c-11e9-9587-9da6bdec011b.png)
 
 ###### FCN-32 (view on Overleaf)
 
-[![[50308911-03b3c380-049d-11e9-92d9-ce15669017ad.png]]](https://user-images.githubusercontent.com/17570785/50308911-03b3c380-049d-11e9-92d9-ce15669017ad.png)
+[![[assets/attachments/uncategorized/50308911-03b3c380-049d-11e9-92d9-ce15669017ad.png]]](https://user-images.githubusercontent.com/17570785/50308911-03b3c380-049d-11e9-92d9-ce15669017ad.png)
 
 ###### Holistically-Nested Edge Detection (view on Overleaf)
 

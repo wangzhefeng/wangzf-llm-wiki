@@ -15,7 +15,7 @@ tags:
   - "clippings"
 ---
 
-[![[Image 28.svg]]](https://explosion.ai/)
+[![[assets/attachments/uncategorized/Image 28.svg]]](https://explosion.ai/)
 
 ## sense2vec: Contextually-keyed word vectors
 
@@ -25,7 +25,7 @@ sense2vec ([Trask et. al](https://arxiv.org/abs/1511.06388), 2015) is a nice twi
 
 ## ✨ Features
 
-[![[69330759-d3981600-0c53-11ea-8f64-e5c075f7ea10.jpg]]](https://user-images.githubusercontent.com/13643239/69330759-d3981600-0c53-11ea-8f64-e5c075f7ea10.jpg)
+[![[assets/attachments/uncategorized/69330759-d3981600-0c53-11ea-8f64-e5c075f7ea10.jpg]]](https://user-images.githubusercontent.com/13643239/69330759-d3981600-0c53-11ea-8f64-e5c075f7ea10.jpg)
 
 - Query **vectors for multi-word phrases** based on part-of-speech tags and entity labels.
 - spaCy **pipeline component** and **extension attributes**.
@@ -75,7 +75,7 @@ most_similar = doc[3:6]._.s2v_most_similar(3)
 
 ### Interactive demos
 
-[![[68093565-1bb6ea80-fe97-11e9-8192-e293acc290fe.png]]](https://user-images.githubusercontent.com/13643239/68093565-1bb6ea80-fe97-11e9-8192-e293acc290fe.png)
+[![[assets/attachments/uncategorized/68093565-1bb6ea80-fe97-11e9-8192-e293acc290fe.png]]](https://user-images.githubusercontent.com/13643239/68093565-1bb6ea80-fe97-11e9-8192-e293acc290fe.png)
 
 To try out our pretrained vectors trained on Reddit comments, check out the [interactive sense2vec demo](https://explosion.ai/demos/sense2vec).
 

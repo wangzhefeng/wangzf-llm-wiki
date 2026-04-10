@@ -19,7 +19,7 @@ tags:
 
 This is the official repository of [Sundial: A Family of Highly Capable Time Series Foundation Models](https://arxiv.org/abs/2502.00816) [\[Slides\]](https://cloud.tsinghua.edu.cn/f/8d526337afde465e87c9/) [\[Poster\]](https://cloud.tsinghua.edu.cn/f/cc2a156315e9453f99b3/) [\[Intro (CN)\]](https://mp.weixin.qq.com/s/y3sc2e2lmW1sqfnoK-ZdDA).
 
-[![[cover 1.png]]](https://github.com/thuml/Sundial/blob/main/figures/cover.png)
+[![[assets/attachments/timeseries/cover 1.png]]](https://github.com/thuml/Sundial/blob/main/figures/cover.png)
 
 ## Updates
 

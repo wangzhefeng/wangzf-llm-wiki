@@ -28,10 +28,10 @@ Jump right in and vibe together — if you can talk, you can build apps.
 [Read Online](https://datawhalechina.github.io/easy-vibe/welcome.html) · [Learning Map](#-content-navigation)  
 [开始阅读](https://datawhalechina.github.io/easy-vibe/welcome.html) · [学习地图](#-content-navigation)
 
-| [![[gif-header.png]]](https://github.com/datawhalechina/easy-vibe/blob/main/assets/gif-header.png)   **A beginner-friendly learning map**   <sub>Clear guidance from zero, so you can stop "learning and forgetting"</sub> | [![[gif-tutorial.png]]](https://github.com/datawhalechina/easy-vibe/blob/main/assets/gif-tutorial.png)   **Step-by-step visual tutorials**   <sub>Detailed walkthroughs that feel like learning with a private tutor</sub> |
+| [![[assets/attachments/uncategorized/gif-header.png]]](https://github.com/datawhalechina/easy-vibe/blob/main/assets/gif-header.png)   **A beginner-friendly learning map**   <sub>Clear guidance from zero, so you can stop "learning and forgetting"</sub> | [![[assets/attachments/uncategorized/gif-tutorial.png]]](https://github.com/datawhalechina/easy-vibe/blob/main/assets/gif-tutorial.png)   **Step-by-step visual tutorials**   <sub>Detailed walkthroughs that feel like learning with a private tutor</sub> |
 | --- | --- |
-| [![[gif-ide.gif]]](https://github.com/datawhalechina/easy-vibe/blob/main/assets/gif-ide.gif)   **Immersive simulated coding**   <sub>Virtual mouse guidance helps you quickly learn the core IDE workflow</sub> | [![[gif-diffusion.gif]]](https://github.com/datawhalechina/easy-vibe/blob/main/assets/gif-diffusion.gif)   **Visible AI principles**   <sub>Animated explanations make it easy to see how AI generates images</sub> |
-| [![[gif-rag.gif]]](https://github.com/datawhalechina/easy-vibe/blob/main/assets/gif-rag.gif)   **Learn RAG like a game**   <sub>Interactive components let you click through the full RAG data flow</sub> | ![[git-terminal.gif]]   **Visual terminal concepts**   <sub>Command-line behavior becomes intuitive when the underlying logic is visualized</sub> |
+| [![[assets/attachments/uncategorized/gif-ide.gif]]](https://github.com/datawhalechina/easy-vibe/blob/main/assets/gif-ide.gif)   **Immersive simulated coding**   <sub>Virtual mouse guidance helps you quickly learn the core IDE workflow</sub> | [![[assets/attachments/uncategorized/gif-diffusion.gif]]](https://github.com/datawhalechina/easy-vibe/blob/main/assets/gif-diffusion.gif)   **Visible AI principles**   <sub>Animated explanations make it easy to see how AI generates images</sub> |
+| [![[assets/attachments/uncategorized/gif-rag.gif]]](https://github.com/datawhalechina/easy-vibe/blob/main/assets/gif-rag.gif)   **Learn RAG like a game**   <sub>Interactive components let you click through the full RAG data flow</sub> | ![[assets/attachments/uncategorized/git-terminal.gif]]   **Visual terminal concepts**   <sub>Command-line behavior becomes intuitive when the underlying logic is visualized</sub> |
 
 ### ⭐ Star the repo here to help accelerate updates ❤️
 
@@ -261,7 +261,7 @@ Please help me run this project locally.
 - Thanks to [@Sm1les](https://github.com/Sm1les) for the help and support on this project
 - Thanks to every contributor and everyone who supported the project with feedback and stars ❤️
 
-[![[Image 22.svg]]](https://github.com/datawhalechina/easy-vibe/graphs/contributors)
+[![[assets/attachments/uncategorized/Image 22.svg]]](https://github.com/datawhalechina/easy-vibe/graphs/contributors)
 
 ## 📄 LICENSE
 

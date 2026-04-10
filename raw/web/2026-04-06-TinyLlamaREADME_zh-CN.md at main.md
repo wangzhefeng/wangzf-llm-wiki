@@ -23,7 +23,7 @@ tags:
 
 TinyLlama项目旨在在3万亿tokens上进行预训练，构建一个拥有11亿参数的Llama模型。经过精心优化，我们"仅"需16块A100-40G的GPU，便可在90天内完成这个任务🚀🚀。训练已于2023-09-01开始。
 
-[![[TinyLlama_logo.png]]](https://github.com/jzhang38/TinyLlama/blob/main/.github/TinyLlama_logo.png)
+[![[assets/attachments/uncategorized/TinyLlama_logo.png]]](https://github.com/jzhang38/TinyLlama/blob/main/.github/TinyLlama_logo.png)
 
 我们采用了与Llama 2完全相同的架构和分词器。这意味着TinyLlama可以在许多基于Llama的开源项目中即插即用。此外，TinyLlama只有1.1B的参数，体积小巧，适用于需要限制计算和内存占用的多种应用。
 

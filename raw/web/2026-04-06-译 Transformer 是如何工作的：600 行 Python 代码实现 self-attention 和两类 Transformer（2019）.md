@@ -153,7 +153,7 @@ $$
 
 用图来表示如下：
 
-![[self-attention.png]]
+![[assets/attachments/llm/self-attention.png]]
 
 self-attention 基本运算
 
@@ -178,7 +178,7 @@ self-attention 基本运算
 
 有了这两个维度的数据（特征向量）之后， **==对二者做点积==** （dot product）， 得到的就是电影属性与用户喜欢程度之间的 **==匹配程度==** ，用得分表示，
 
-![[movie-dot-product.png]]
+![[assets/attachments/llm/movie-dot-product.png]]
 
 ==电影推荐== ：电影特征向量（浪漫、动作、喜剧）与用户特性向量（喜欢浪漫、动作、喜剧的程度）做点积运算
 
@@ -209,7 +209,7 @@ self-attention 基本运算
 > 
 > 译注。
 
-![[movie-features.png]]
+![[assets/attachments/llm/movie-features.png]]
 
 从一个基本的 matrix factorization 模型学习到的前两个特征。 模型 ==只用到了“哪些用户喜欢哪些电影”== 信息，而 ==没有用到任何电影内容信息== 。 横轴：从流俗到高雅；纵轴：从小众到主流。信息来自 \[4\]。
 
@@ -322,7 +322,7 @@ y = torch.bmm(weights, x)
 
 上面的描述比较抽象，这里参考下图更直观解释一下。这个图对应 i=2，因此 会用到三次（更准确地说是 **==三种用途==** ）：
 
-![[self-attention.png]]
+![[assets/attachments/llm/self-attention.png]]
 
 图：self-attention 基本运算
 
@@ -342,7 +342,7 @@ y = torch.bmm(weights, x)
 
 这就给 self-attention layer 引入了几个 **==可控制的参数==** （controllable parameters, , , ）， 对同一份输入应用不同的线性变换，就可以得到不同角色所需的值，如下图所示，
 
-![[key-query-value.png]]
+![[assets/attachments/llm/key-query-value.png]]
 
 self-attention key/query/value transformation 的直观解释
 
@@ -393,7 +393,7 @@ Multi-head self-attention 的缺点是慢，对于 头， **==慢==** 倍。 不
 
 我们甚至只用三次 **==`k×k`==** 矩阵乘法就能实现 multi-head 功能， 唯一需要的额外操作是将生成的 output vector 重新按块排序：
 
-![[kqv-computation.png]]
+![[assets/attachments/llm/kqv-computation.png]]
 
 To compute multi-head attention efficiently, we combine the computation of the projections down to a lower dimensional representation and the computations of the keys, queries and values into three matrices.
 
@@ -401,7 +401,7 @@ To compute multi-head attention efficiently, we combine the computation of the p
 
 下图展示了的整个 multi-head self-attention 过程：
 
-![[multi-head.png]]
+![[assets/attachments/llm/multi-head.png]]
 
 4-head self-attention 的直观解释。对输入进行降维，针对 key/value/query 分别进行矩阵运算来实现。
 
@@ -436,7 +436,7 @@ To compute multi-head attention efficiently, we combine the computation of the p
 
 因此总的参数个数：， **==与 single-head self-attention 的参数数量相同==** 。
 
-![[multi-head.png]]
+![[assets/attachments/llm/multi-head.png]]
 
 4-head self-attention 的直观解释。对输入进行降维，针对 key/value/query 分别进行矩阵运算来实现。
 
@@ -492,7 +492,7 @@ def forward(self, x):
 
 这对 tensors 进行了简单 reshape，现在 tensors 增加了一个 head 维度。 对于每个 input vector，可以理解为将这个 **==`k*1`==** 矩阵变成了一个 **==`h * k//h`==** 矩阵，
 
-![[reshape.png]]
+![[assets/attachments/llm/reshape.png]]
 
 接下来计算点积。每个 head 的点积运算都是一样的，因为我们将 heads fold 到 batch dimention。 这样我们就可以使用 `torch.bmm()` （batch matrix multiplification），而 keys, queries and values 可以看做是 batch，只是 batch size 稍大了一点。
 
@@ -549,7 +549,7 @@ transformer 不仅仅是一个 self-attention layer，还是一种 **==架构==*
 
 构建基本的 transformer 有几种略微不同的方式，但大多数结构都大致如下：
 
-![[transformer-block.png]]
+![[assets/attachments/llm/transformer-block.png]]
 
 各块依次执行：
 
@@ -611,7 +611,7 @@ class TransformerBlock(nn.Module):
 
 从 sequence-to-sequence layers 构建 sequence classifier 的最常见方法是 对最终输出序列做 global average pooling，并将结果映射到 softmaxed class vector。
 
-![[classifier.png]]
+![[assets/attachments/llm/classifier.png]]
 
 Overview of a simple sequence classification transformer. The output sequence is averaged to produce a single vector representing the whole sequence. This vector is projected down to a vector with one element per class and softmaxed to produce probabilities.
 
@@ -694,14 +694,14 @@ class Transformer(nn.Module):
 
 训练方式很简单（并且在 transformer 出现之前就已经 [存在](http://karpathy.github.io/2015/05/21/rnn-effectiveness/) 很久了）。 我们给 sequence-to-sequence 模型一个序列作为输入，然后要求它预测序列中下一个位置的字符。 换句话说，目标输出是向左移动一个字符的相同序列：
 
-![[generator.png]]
+![[assets/attachments/llm/generator.png]]
 
 - 如果是 **==`RNN`==** 模型，那这就是我们所需做的所有事情， 因为它 **==不能往前看==** ，output 只依赖 inputs ~ 。
 - 而对于 **==`transformer`==** ，output 取决于 **==整个 input sequence==** ， 因此预测下一个单词就简单多了，只需从 input 中挑选。
 
 要将 self-attention 用作自回归模型，需要确保它 **==不能 look forward input 序列==** 。 在 softmax 之前对点积矩阵应用一个 **==掩码==** ，禁用矩阵对角线之上的所有元素， 就能帮我们实现这一目的。
 
-![[masked-attention.png]]
+![[assets/attachments/llm/masked-attention.png]]
 
 对 self-attention 进行 masking 操作，确保 input sequence 中只有当前位置之前的 input elements 能参与计算。 注意图中的乘法符号其实有一点点误导性：我们实际上是将右上角的元素设置为负无穷大
 
@@ -746,13 +746,13 @@ dot = F.softmax(dot, dim=2)
 
 RNN [展开（unrolled）](https://colah.github.io/posts/2015-08-Understanding-LSTMs/) 后长这样：
 
-![[recurrent-connection.png]]
+![[assets/attachments/llm/recurrent-connection.png]]
 
 RNN 最大的问题是 **==`级联`==** （recurrent connection）： 虽然它使得信息能沿着 input sequence 一路传导， 但也意味着在计算出 单元之前，无法计算出 单元的输出。
 
 与 RNN 此对比， **==一维卷积==** （1D convolution）如下：
 
-![[convolutional-connection.png]]
+![[assets/attachments/llm/convolutional-connection.png]]
 
 在这个模型中，所有输出向量都可以并行计算，因此速度非常快。但缺点是它们 在 long range dependencies 建模方面非常弱。在一个卷积层中，只有距离比 kernel size 小的单词之间才能彼此交互。对于更长的依赖，就需要堆叠许多卷积。
 
@@ -801,7 +801,7 @@ self-attention 的重大突破在于，attention 本身就是一种足够强大�
 
 当时的 sequence-to-sequence model 的标准结构是带 [teacher forcing](https://blog.keras.io/a-ten-minute-introduction-to-sequence-to-sequence-learning-in-keras.html) 的 encoder-decoder 架构，
 
-![[encoder-decoder.png]]
+![[assets/attachments/llm/encoder-decoder.png]]
 
 encoder-decoder 模型
 

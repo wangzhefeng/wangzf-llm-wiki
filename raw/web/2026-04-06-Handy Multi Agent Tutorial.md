@@ -58,7 +58,7 @@ tags:
 
 扫描下方二维码关注公众号：CAMEL-AI
 
-![[ED5GPU1dRNqBk9j.png]]
+![[assets/attachments/llm/ED5GPU1dRNqBk9j.png]]
 
 ## LICENSE
 

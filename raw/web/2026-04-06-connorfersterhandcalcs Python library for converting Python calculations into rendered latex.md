@@ -15,7 +15,7 @@ tags:
   - "clippings"
 ---
 
-[![[handcalcs.jpg]]](https://github.com/connorferster/handcalcs/blob/main/docs/images/handcalcs.jpg)  
+[![[assets/attachments/uncategorized/handcalcs.jpg]]](https://github.com/connorferster/handcalcs/blob/main/docs/images/handcalcs.jpg)  
 Covert art by [Joshua Hoiberg](https://www.copperkettlegameworks.ca/)
 
 ## handcalcs:Python calculations in Jupyter,as though you wrote them by hand.

@@ -37,7 +37,7 @@ Hierarchical Interpolation
 
 可以先了解一下 [NBEATS](https://zhida.zhihu.com/search?content_id=215511750&content_type=Article&match_order=1&q=NBEATS&zhida_source=entity) 模型：
 
-[![[v2-2e903642328d00f8e5744a096ffa1d34.png]]](https://zhuanlan.zhihu.com/p/572850227)
+[![[assets/attachments/timeseries/v2-2e903642328d00f8e5744a096ffa1d34.png]]](https://zhuanlan.zhihu.com/p/572850227)
 
 ## Key Points
 
@@ -45,13 +45,13 @@ Hierarchical Interpolation
 
 本文集中在长时间预测（预测范围比较长）任务上如何改进NBEATS。下图是论文的Motivation：
 
-![[v2-0adc058f6f1588223d3466250dfcff7e_1440w.jpg]]
+![[assets/attachments/timeseries/v2-0adc058f6f1588223d3466250dfcff7e_1440w.jpg]]
 
 （a）可以看出，随着预测长度（Horizon）的增加，NBEATS的速度变慢、参数量变多，而本文提出的 [N-HiTs](https://zhida.zhihu.com/search?content_id=215511750&content_type=Article&match_order=1&q=N-HiTs&zhida_source=entity) 则缓解了这两个问题。（b）可以看出，随着预测长度（Horizon）的增加，NBEATS的误差变大，这也很好理解，要预测很远的未来的话肯定更难预测，但本文提出的N-HiTs则缓解了这个问题。（c）是论文中的思想，即分层次采样预测后插值的思想，用来缓解上述问题的。
 
 由于有上述问题，本文就设计了几种方案，重定义了NBEATS的架构。下面分别介绍这几种方案。N-HiTs的整体架构如下，和NBEATS差不多，stack和block的结构也用的是NBEATS里面的：
 
-![[v2-c53afff25a4824f77df840d61e6504cf_1440w.jpg]]
+![[assets/attachments/timeseries/v2-c53afff25a4824f77df840d61e6504cf_1440w.jpg]]
 
 ### Multi-Rate Data Sampling
 

@@ -26,7 +26,7 @@ tags:
 
 - ch 1 audio
 - first chapter summary
-	![[yt-full-color-93170e5eb777720960367e48be95c53d.svg]]
+	![[assets/attachments/uncategorized/yt-full-color-93170e5eb777720960367e48be95c53d.svg]]
 
 ## Build a Reasoning Model (From Scratch)
 

@@ -32,13 +32,13 @@ In short, a KV cache stores intermediate key (K) and value (V) computations for 
 
 Imagine the LLM is generating some text. Concretely, suppose the LLM is given the following prompt: "Time". As you may already know, LLMs generate one word (or token) at a time, and the two following text generation steps may look as illustrated in the figure below:
 
-![[https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F4249e23e-7945-4c8f-a11f-2fd921ff0672_768x760.png]]
+![[assets/attachments/llm/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F4249e23e-7945-4c8f-a11f-2fd921ff0672_768x760.png]]
 
 The diagram illustrates how an LLM generates text one token at a time. Starting with the prompt "Time", the model generates the next token "flies." In the next step, the full sequence "Time flies" is reprocessed to generate the token "fast".
 
 Note that there is some redundancy in the generated LLM text outputs, as highlighted in the next figure:
 
-![[https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fda5df468-5b21-4b1f-9ccb-b144dfb2a293_617x618.png]]
+![[assets/attachments/llm/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fda5df468-5b21-4b1f-9ccb-b144dfb2a293_617x618.png]]
 
 This figure highlights the repeated context ("Time flies") that must be reprocessed by the LLM at each generation step. Since the LLM does not cache intermediate key/value states, it re-encodes the full sequence every time a new token (e.g., "fast") is generated.
 
@@ -54,13 +54,13 @@ The following figure shows an excerpt of an attention mechanism computation that
 
 The figure below shows an excerpt of the underlying attention score computation with the key and value vectors highlighted:
 
-![[https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F3748127c-532e-4169-8e12-1fb48e263dbd_945x445.png]]
+![[assets/attachments/llm/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F3748127c-532e-4169-8e12-1fb48e263dbd_945x445.png]]
 
 This figure illustrates how the LLM derives key ( k ) and value ( v ) vectors from token embeddings during attention computation. Each input token (e.g., "Time" and "flies") is projected using learned matrices W\_k and W\_v to obtain its corresponding key and value vectors.
 
 As mentioned earlier, LLMs generate one word (or token) at a time. Suppose the LLM generated the word "fast" so that the prompt for the next round becomes "Time flies fast". This is illustrated in the next figure below:
 
-![[https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F06c2f011-ce16-4832-a3aa-4927703fb752_1259x877.png]]
+![[assets/attachments/llm/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F06c2f011-ce16-4832-a3aa-4927703fb752_1259x877.png]]
 
 This diagram shows how the LLM recomputes key and value vectors for previously seen tokens ("Time" and "flies") during each generation step. When generating the third token ("fast"), the model recomputes the same k(1)/v(1) and k(2)/v(2) vectors again, rather than reusing them. This repeated computation highlights the inefficiency of not using a KV cache during autoregressive decoding.
 
@@ -72,7 +72,7 @@ Now, the idea of the KV cache is to implement a caching mechanism that stores th
 
 After we went over the basic concept in the previous section, let's go into a bit more detail before we look at a concrete code implementation. If we have a text generation process *without* KV cache for "Time flies fast", we can think of it as follows:
 
-![[https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F5fdd4b41-96e6-40c2-baf3-aedfeee8d1de_741x194.png]]
+![[assets/attachments/llm/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F5fdd4b41-96e6-40c2-baf3-aedfeee8d1de_741x194.png]]
 
 Notice the redundancy: tokens "Time" and "flies" are recomputed at every new generation step. The KV cache resolves this inefficiency by storing and reusing previously computed key and value vectors:
 
@@ -82,13 +82,13 @@ Notice the redundancy: tokens "Time" and "flies" are recomputed at every new gen
 
 The table below summarizes the computation and caching steps and states:
 
-![[https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F8f20643e-0942-4b5f-98ec-051d030d127a_736x202.png]]
+![[assets/attachments/llm/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F8f20643e-0942-4b5f-98ec-051d030d127a_736x202.png]]
 
 The benefits here are that `"Time"` is computed once and reused twice, and `"flies"` is computed once and reused once. (It's a short text example for simplicity, but it should be intuitive to see that the longer the text, the more we get to reuse already computed keys and values, which increases the generation speed.)n speed.)
 
 The following figure illustrates generation step 3 with and without a KV cache side by side.
 
-![[https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F78382a83-f634-4cfa-92b9-bbea30c61a60_841x926.png]]
+![[assets/attachments/llm/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F78382a83-f634-4cfa-92b9-bbea30c61a60_841x926.png]]
 
 Comparing text generation with and without a KV cache. In the top panel (without cache), key and value vectors are recomputed for each token step, which results in redundant operations. In the bottom panel (with cache), previously computed keys and values are retrieved from the KV cache to avoid recomputation for faster generation.
 
@@ -109,11 +109,11 @@ To read through the KV cache-relevant code modifications, you can either:
 
 a. Open the `gpt_with_kv_cache.py` file and look out for the `# NEW` sections that mark the new changes:
 
-![[https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F3338a3b0-c3ad-4d37-9d3f-15db18db51ff_982x881.png]]
+![[assets/attachments/llm/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F3338a3b0-c3ad-4d37-9d3f-15db18db51ff_982x881.png]]
 
 b. Check out the two code files via a file diff tool of your choice to compare the changes:
 
-![[https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fccfd3b14-df6e-4988-b986-851b4b207eae_1468x861.png]]
+![[assets/attachments/llm/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fccfd3b14-df6e-4988-b986-851b4b207eae_1468x861.png]]
 
 In additoin, to summarize the implementation details, there's a short walkthrough in the following subsections.
 
@@ -279,7 +279,7 @@ python gpt_with_kv_cache.py
 
 On a Mac Mini with M4 chip (CPU), the results are as follows:
 
-![[https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F8d75a600-22e3-4edf-b642-44700dc7a2db_743x160.png]]
+![[assets/attachments/llm/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F8d75a600-22e3-4edf-b642-44700dc7a2db_743x160.png]]
 
 So, as we can see, we already get a ~5x speed-up with a small 124 M parameter model and a short 200-token sequence length. (Note that this implementation is optimized for code readability and not optimized for CUDA or MPS runtime speed, which would require pre-allocating tensors instead of reinstating and concatenating them.)
 
@@ -341,7 +341,7 @@ You can find these optimizations in the [gpt\_with\_kv\_cache\_optimized.py](htt
 
 On a Mac Mini with an M4 chip (CPU), with a 200-token generation and a window size equal to the LLM's context length (to guarantee the same results and thus a fair comparison) below, the code runtimes compare as follows:
 
-![[https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F14878ff2-28f2-496f-a5ad-03aa2865640c_742x197.png]]
+![[assets/attachments/llm/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F14878ff2-28f2-496f-a5ad-03aa2865640c_742x197.png]]
 
 Unfortunately, the speed advantages disappear on CUDA devices as this is a tiny model, and the device transfer and communication outweigh the benefits of a KV cache for this small model.
 
@@ -366,9 +366,9 @@ The codes can be found here:
 
 And the performances are shown below.
 
-![[https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fe5d3a0bf-4a1a-439a-a83c-9046e1a57515_931x616.png]]
+![[assets/attachments/llm/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fe5d3a0bf-4a1a-439a-a83c-9046e1a57515_931x616.png]]
 
-![[https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F49ce3862-820f-4337-91b7-6b4603ec8f86_876x598.png]]
+![[assets/attachments/llm/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F49ce3862-820f-4337-91b7-6b4603ec8f86_876x598.png]]
 
 As we can see, on CPUs, the KV cache results in the most substantial speed-up. And compilation boosts that performance even further. However, on a GPU, the best performance can be achieved with the regular compiled model, which is likely because we don’t pre-allocate the tensors on the GPU, and the models are relatively small.
 

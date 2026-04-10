@@ -73,35 +73,35 @@ tags:
 
 Given that seasonal and trend components exhibit significantly different characteristics in time series, and different scales of the time series reflect different properties, with seasonal characteristics being more pronounced at a fine-grained micro-scale and trend characteristics being more pronounced at a coarse macro scale, it is, therefore, necessary to decouple seasonal and trend components at different scales.
 
-[![[motivation1.png]]](https://github.com/kwuking/TimeMixer/blob/main/figures/motivation1.png)
+[![[assets/attachments/timeseries/motivation1.png]]](https://github.com/kwuking/TimeMixer/blob/main/figures/motivation1.png)
 
 🌟 **Observation 2: Future Prediction**
 
 Different scales exhibit complementary predictive capabilities when integrating forecasts from different scales to obtain the final prediction results.
 
-[![[motivation2.png]]](https://github.com/kwuking/TimeMixer/blob/main/figures/motivation2.png)
+[![[assets/attachments/timeseries/motivation2.png]]](https://github.com/kwuking/TimeMixer/blob/main/figures/motivation2.png)
 
 ## Overall Architecture
 
 TimeMixer as a fully MLP-based architecture with **Past-Decomposable-Mixing (PDM)** and **Future-Multipredictor-Mixing (FMM)** blocks to take full advantage of disentangled multiscale series in both past extraction and future prediction phases.
 
-[![[overall.png]]](https://github.com/kwuking/TimeMixer/blob/main/figures/overall.png)
+[![[assets/attachments/timeseries/overall.png]]](https://github.com/kwuking/TimeMixer/blob/main/figures/overall.png)
 
 ### Past Decomposable Mixing
 
 we propose the **Past-Decomposable-Mixing (PDM)** block to mix the decomposed seasonal and trend components in multiple scales separately.
 
-[![[past_mixing1.png]]](https://github.com/kwuking/TimeMixer/blob/main/figures/past_mixing1.png)
+[![[assets/attachments/timeseries/past_mixing1.png]]](https://github.com/kwuking/TimeMixer/blob/main/figures/past_mixing1.png)
 
 Empowered by seasonal and trend mixing, PDM progressively aggregates the detailed seasonal information from fine to coarse and dive into the macroscopic trend information with prior knowledge from coarser scales, eventually achieving the multiscale mixing in past information extraction.
 
-[![[past_mixing2.png]]](https://github.com/kwuking/TimeMixer/blob/main/figures/past_mixing2.png)
+[![[assets/attachments/timeseries/past_mixing2.png]]](https://github.com/kwuking/TimeMixer/blob/main/figures/past_mixing2.png)
 
 ### Future Multipredictor Mixing
 
 Note that **Future Multipredictor Mixing (FMM)** is an ensemble of multiple predictors, where different predictors are based on past information from different scales, enabling FMM to integrate complementary forecasting capabilities of mixed multiscale series.
 
-[![[future_mixing.png]]](https://github.com/kwuking/TimeMixer/blob/main/figures/future_mixing.png)
+[![[assets/attachments/timeseries/future_mixing.png]]](https://github.com/kwuking/TimeMixer/blob/main/figures/future_mixing.png)
 
 ## Get Started
 
@@ -127,24 +127,24 @@ We conduct extensive experiments to evaluate the performance and efficiency of T
 
 To ensure fairness in model comparison, experiments were performed with standardized parameters, including aligned input lengths, batch sizes, and training epochs. Additionally, given that results in various studies often stem from hyperparameter optimization, we include outcomes from comprehensive parameter searches.
 
-[![[long_results.png]]](https://github.com/kwuking/TimeMixer/blob/main/figures/long_results.png)
+[![[assets/attachments/timeseries/long_results.png]]](https://github.com/kwuking/TimeMixer/blob/main/figures/long_results.png)
 
 ### Short-term Forecasting: Multivariate data
 
-[![[pems_results.png]]](https://github.com/kwuking/TimeMixer/blob/main/figures/pems_results.png)
+[![[assets/attachments/timeseries/pems_results.png]]](https://github.com/kwuking/TimeMixer/blob/main/figures/pems_results.png)
 
 ### Short-term Forecasting: Univariate data
 
-[![[m4_results.png]]](https://github.com/kwuking/TimeMixer/blob/main/figures/m4_results.png)
+[![[assets/attachments/timeseries/m4_results.png]]](https://github.com/kwuking/TimeMixer/blob/main/figures/m4_results.png)
 
 ## Model Abalations
 
 To verify the effectiveness of each component of TimeMixer, we provide the detailed ablation study on every possible design in both Past-Decomposable-Mixing and Future-Multipredictor-Mixing blocks on all 18 experiment benchmarks （see our paper for full results 😊）.
 
-[![[ablation.png]]](https://github.com/kwuking/TimeMixer/blob/main/figures/ablation.png)
+[![[assets/attachments/timeseries/ablation.png]]](https://github.com/kwuking/TimeMixer/blob/main/figures/ablation.png)
 
 ## Model Efficiency
 
 We compare the running memory and time against the latest state-of-the-art models under the training phase, where TimeMixer consistently demonstrates favorable efficiency, in terms of both GPU memory and running time, for various series lengths (ranging from 192 to 3072), in addition to the consistent state-of-the-art performances for both long-term and short-term forecasting tasks. **It is noteworthy that TimeMixer, as a deep model, demonstrates results close to those of full-linear models in terms of efficiency. This makes TimeMixer promising in a wide range of scenarios that require high model efficiency.**
 
-[![[efficiency.png]]](https://github.com/kwuking/TimeMixer/blob/main/figures/efficiency.png)
+[![[assets/attachments/timeseries/efficiency.png]]](https://github.com/kwuking/TimeMixer/blob/main/figures/efficiency.png)

@@ -29,7 +29,7 @@ This is the origin Pytorch implementation of Informer in the following paper: [I
 
 🚩 **News** (Feb 8, 2021): Our Informer paper has been awarded [AAAI'21 Best Paper \[Official\]](https://aaai.org/Conferences/AAAI-21/aaai-outstanding-and-distinguished-papers/) [\[Beihang\]](http://scse.buaa.edu.cn/info/1097/7443.htm) [\[Rutgers\]](https://www.business.rutgers.edu/news/hui-xiong-and-research-colleagues-receive-aaai-best-paper-award)! We will continue this line of research and update on this repo. Please star this repo and [cite](#citelink) our paper if you find our work is helpful for you.
 
-[![[informer.png]]](https://github.com/zhouhaoyi/Informer2020/blob/main/img/informer.png)  
+[![[assets/attachments/uncategorized/informer.png]]](https://github.com/zhouhaoyi/Informer2020/blob/main/img/informer.png)  
   
 **Figure 1.** The architecture of Informer.
 
@@ -37,7 +37,7 @@ This is the origin Pytorch implementation of Informer in the following paper: [I
 
 The self-attention scores form a long-tail distribution, where the "active" queries lie in the "head" scores and "lazy" queries lie in the "tail" area. We designed the ProbSparse Attention to select the "active" queries rather than the "lazy" queries. The ProbSparse Attention with Top-u queries forms a sparse Transformer by the probability distribution. `Why not use Top-u keys?` The self-attention layer's output is the re-represent of input. It is formulated as a weighted combination of values w.r.t. the score of dot-product pairs. The top queries with full keys encourage a complete re-represent of leading components in the input, and it is equivalent to selecting the "head" scores among all the dot-product pairs. If we choose Top-u keys, the full keys just preserve the trivial sum of values within the "long tail" scores but wreck the leading components' re-represent.
 
-[![[probsparse_intro.png]]](https://github.com/zhouhaoyi/Informer2020/blob/main/img/probsparse_intro.png)  
+[![[assets/attachments/uncategorized/probsparse_intro.png]]](https://github.com/zhouhaoyi/Informer2020/blob/main/img/probsparse_intro.png)  
   
 **Figure 2.** The illustration of ProbSparse Attention.
 
@@ -60,7 +60,7 @@ pip install -r requirements.txt
 
 The ETT dataset used in the paper can be downloaded in the repo [ETDataset](https://github.com/zhouhaoyi/ETDataset). The required data files should be put into `data/ETT/` folder. A demo slice of the ETT data is illustrated in the following figure. Note that the input of each dataset is zero-mean normalized in this implementation.
 
-[![[assets/attachments/data.png]]](https://github.com/zhouhaoyi/Informer2020/blob/main/img/data.png)  
+[![[assets/attachments/uncategorized/data.png]]](https://github.com/zhouhaoyi/Informer2020/blob/main/img/data.png)  
   
 **Figure 3.** An example of the ETT data.
 
@@ -176,11 +176,11 @@ We have updated the experiment results of all methods due to the change in data 
 
 Besides, the experiment parameters of each data set are formated in the `.sh` files in the directory `./scripts/`. You can refer to these parameters for experiments, and you can also adjust the parameters to obtain better mse and mae results or draw better prediction figures.
 
-[![[result_univariate.png]]](https://github.com/zhouhaoyi/Informer2020/blob/main/img/result_univariate.png)  
+[![[assets/attachments/uncategorized/result_univariate.png]]](https://github.com/zhouhaoyi/Informer2020/blob/main/img/result_univariate.png)  
   
 **Figure 4.** Univariate forecasting results.
 
-[![[result_multivariate.png]]](https://github.com/zhouhaoyi/Informer2020/blob/main/img/result_multivariate.png)  
+[![[assets/attachments/uncategorized/result_multivariate.png]]](https://github.com/zhouhaoyi/Informer2020/blob/main/img/result_multivariate.png)  
   
 **Figure 5.** Multivariate forecasting results.
 

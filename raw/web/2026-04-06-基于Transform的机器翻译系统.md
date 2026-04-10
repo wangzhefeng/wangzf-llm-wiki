@@ -50,7 +50,7 @@ Transformer 模型主要分为两大部分，分别是编码器Encoder和解码�
 
 **以下为一个Transformer Encoder Block结构示意图**
 
-![[v2-f7fe1892bbef2f1b6c4d1a605fce7456_1440w.jpg]]
+![[assets/attachments/uncategorized/v2-f7fe1892bbef2f1b6c4d1a605fce7456_1440w.jpg]]
 
 注意: 为方便查看, 下面各部分的内容分别对应着图中第1, 2, 3, 4个方框的序号：
 
@@ -315,9 +315,9 @@ class PositionalEncoding(nn.Module):
 
 **2\. self attention（自注意力机制）**
 
-![[v2-d6ef7986e3e8d903c927763869b92bf9_1440w.jpg]]
+![[assets/attachments/uncategorized/v2-d6ef7986e3e8d903c927763869b92bf9_1440w.jpg]]
 
-![[v2-527bf28c7ad117710939334aa7d03fc3_1440w.jpg]]
+![[assets/attachments/uncategorized/v2-527bf28c7ad117710939334aa7d03fc3_1440w.jpg]]
 
 **除以 的解释**
 
@@ -383,7 +383,7 @@ class MultiHeadedAttention(nn.Module):
 
 **3\. Attention Mask**
 
-![[v2-ee0a2281275c1bf9ce16f0f310392f0f_1440w.jpg]]
+![[assets/attachments/uncategorized/v2-ee0a2281275c1bf9ce16f0f310392f0f_1440w.jpg]]
 
 注意, 在上面self attention的计算过程中, 我们通常使用mini batch来计算, 也就是一次计算多句话, 也就是X的维度是\[batch size, sequence length\], sequence length是句长, 而一个mini batch是由多个不等长的句子组成的, 我们就需要按照这个mini batch中最大的句长对剩余的句子进行补齐长度, 我们一般用00来进行填充, 这个过程叫做padding.
 
@@ -399,7 +399,7 @@ class MultiHeadedAttention(nn.Module):
 
 注意：这里的AttentionMask 是加在 Scale 和 Softmax 之间
 
-![[v2-dec95c5f3605c47ed1990e0ba6e5faca_1440w.jpg]]
+![[assets/attachments/uncategorized/v2-dec95c5f3605c47ed1990e0ba6e5faca_1440w.jpg]]
 
 ```python
 class Batch:
@@ -578,7 +578,7 @@ class EncoderLayer(nn.Module):
 
 **三. 解码器部分（Decoder）**
 
-![[v2-e5a37aaafa4316ca04bbe8531034399d_1440w.jpg]]
+![[assets/attachments/uncategorized/v2-e5a37aaafa4316ca04bbe8531034399d_1440w.jpg]]
 
 接着来看 Decoder 部分（右半部分），它同样也是由 N 层（在论文中，仍取 N=6 ）堆叠起来。
 
@@ -655,7 +655,7 @@ def subsequent_mask(size):
 
 这里是给定一个序列长度size，生成一个下三角矩阵，在主对角线右上的都是 False，其示意图如下：
 
-![[v2-484b64d3579a733340dff351d5af902f_1440w.jpg]]
+![[assets/attachments/uncategorized/v2-484b64d3579a733340dff351d5af902f_1440w.jpg]]
 
 就是在decoder层的self-Attention中，由于生成 时， 并没有产生，所以不能有 和 的关联系数，即只有下三角矩阵有系数，即下图中 **`黄色部分`**
 
@@ -663,7 +663,7 @@ def subsequent_mask(size):
 plt.figure(figsize=(5,5))
 plt.imshow(subsequent_mask(20)[0])
 ```
-![[v2-c63829521ea1183596c8f9f879bfe44a_1440w.jpg]]
+![[assets/attachments/uncategorized/v2-c63829521ea1183596c8f9f879bfe44a_1440w.jpg]]
 
 **四. Transformer模型**
 

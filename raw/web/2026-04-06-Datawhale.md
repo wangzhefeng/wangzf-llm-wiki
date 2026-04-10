@@ -17,7 +17,7 @@ tags:
 
 ## Who we are?
 
-[![[527439418-aafd2164-cf63-4b9b-84dd-9a308d1b1b16.gif]]](https://private-user-images.githubusercontent.com/16202887/527439418-aafd2164-cf63-4b9b-84dd-9a308d1b1b16.GIF?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NzU0NjU5MDcsIm5iZiI6MTc3NTQ2NTYwNywicGF0aCI6Ii8xNjIwMjg4Ny81Mjc0Mzk0MTgtYWFmZDIxNjQtY2Y2My00YjliLTg0ZGQtOWEzMDhkMWIxYjE2LkdJRj9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNjA0MDYlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjYwNDA2VDA4NTMyN1omWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWMyMWMwOTAwYTdkYzVmMDBiYmE0ZDQ2ZDQ1ZTQ5ODBjNmY0ODQxNGY0OTExZDUzZmJmYWExMjliOTJjYmFmMGMmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.0rNl_3JfjjX9XsJLckcp--ACkFCdwlgf_X-AuaDTGA4)
+[![[assets/attachments/uncategorized/527439418-aafd2164-cf63-4b9b-84dd-9a308d1b1b16.gif]]](https://private-user-images.githubusercontent.com/16202887/527439418-aafd2164-cf63-4b9b-84dd-9a308d1b1b16.GIF?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NzU0NjU5MDcsIm5iZiI6MTc3NTQ2NTYwNywicGF0aCI6Ii8xNjIwMjg4Ny81Mjc0Mzk0MTgtYWFmZDIxNjQtY2Y2My00YjliLTg0ZGQtOWEzMDhkMWIxYjE2LkdJRj9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNjA0MDYlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjYwNDA2VDA4NTMyN1omWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWMyMWMwOTAwYTdkYzVmMDBiYmE0ZDQ2ZDQ1ZTQ5ODBjNmY0ODQxNGY0OTExZDUzZmJmYWExMjliOTJjYmFmMGMmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.0rNl_3JfjjX9XsJLckcp--ACkFCdwlgf_X-AuaDTGA4)
 
 Datawhale 是一个专注于AI领域的开源组织，成立于2018年，我们汇聚了一群有开源精神和探索精神的理想主义者，致力于分享最前沿的AI知识，改善学习环境，我们的价值观是：for the learner，和学习者一起成长。
 
@@ -33,15 +33,15 @@ Datawhale is an AI-focused open source organization founded in 2018. We bring to
 
 ## Trending
 
-| [![[Image 4.svg]]](https://github.com/datawhalechina/hello-agents) | [![[Image 5.svg]]](https://github.com/datawhalechina/happy-llm) |
+| [![[assets/attachments/uncategorized/Image 4.svg]]](https://github.com/datawhalechina/hello-agents) | [![[assets/attachments/uncategorized/Image 5.svg]]](https://github.com/datawhalechina/happy-llm) |
 | --- | --- |
-| [![[Image 6.svg]]](https://github.com/datawhalechina/all-in-rag) | [![[Image 7.svg]]](https://github.com/datawhalechina/self-llm) |
-| [![[Image 8.svg]]](https://github.com/datawhalechina/vibe-vibe) | [![[Image 9.svg]]](https://github.com/datawhalechina/easy-vibe) |
-| [![[Image 10.svg]]](https://github.com/datawhalechina/base-llm) | [![[Image 11.svg]]](https://github.com/datawhalechina/every-embodied) |
-| [![[Image 12.svg]]](https://github.com/datawhalechina/easy-vectordb) | [![[Image 13.svg]]](https://github.com/datawhalechina/handy-ollama) |
-| [![[Image 14.svg]]](https://github.com/datawhalechina/tiny-universe) | [![[Image 15.svg]]](https://github.com/datawhalechina/code-your-own-llm) |
-| [![[Image 16.svg]]](https://github.com/datawhalechina/self-dify) | [![[Image 17.svg]]](https://github.com/datawhalechina/handy-n8n) |
-| [![[Image 18.svg]]](https://github.com/datawhalechina/torch-rechub) | [![[Image 19.svg]]](https://github.com/datawhalechina/members-visualization) |
+| [![[assets/attachments/uncategorized/Image 6.svg]]](https://github.com/datawhalechina/all-in-rag) | [![[assets/attachments/uncategorized/Image 7.svg]]](https://github.com/datawhalechina/self-llm) |
+| [![[assets/attachments/uncategorized/Image 8.svg]]](https://github.com/datawhalechina/vibe-vibe) | [![[assets/attachments/uncategorized/Image 9.svg]]](https://github.com/datawhalechina/easy-vibe) |
+| [![[assets/attachments/uncategorized/Image 10.svg]]](https://github.com/datawhalechina/base-llm) | [![[assets/attachments/uncategorized/Image 11.svg]]](https://github.com/datawhalechina/every-embodied) |
+| [![[assets/attachments/uncategorized/Image 12.svg]]](https://github.com/datawhalechina/easy-vectordb) | [![[assets/attachments/uncategorized/Image 13.svg]]](https://github.com/datawhalechina/handy-ollama) |
+| [![[assets/attachments/uncategorized/Image 14.svg]]](https://github.com/datawhalechina/tiny-universe) | [![[assets/attachments/uncategorized/Image 15.svg]]](https://github.com/datawhalechina/code-your-own-llm) |
+| [![[assets/attachments/uncategorized/Image 16.svg]]](https://github.com/datawhalechina/self-dify) | [![[assets/attachments/uncategorized/Image 17.svg]]](https://github.com/datawhalechina/handy-n8n) |
+| [![[assets/attachments/uncategorized/Image 18.svg]]](https://github.com/datawhalechina/torch-rechub) | [![[assets/attachments/uncategorized/Image 19.svg]]](https://github.com/datawhalechina/members-visualization) |
 
 ## Contact us
 

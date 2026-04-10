@@ -38,7 +38,7 @@ FSDP is a type of data-parallel training, but unlike traditional data-parallel, 
 
 The figure below shows how FSDP works for 2 data-parallel processes:
 
-![[fsdp_workflow 1.png]]
+![[assets/attachments/deeplearning/fsdp_workflow 1.png]]
 
 Figure 1. FSDP workflow
 
@@ -140,9 +140,9 @@ The maximum per-GPU throughput of 159 teraFLOP/s (51% of NVIDIA A100 peak theore
 
 For the GPT 1T model, the maximum per-GPU throughput of 84 teraFLOP/s (27% of the peak teraFLOP/s) is achieved with batch size 4 and sequence length 2048 on 128 GPUs. However, further increase of the number of GPUs doesn’t affect the per-GPU throughput too much because we observed that the largest bottleneck in the 1T model training is not from communication but from the slow CUDA cache allocator when peak GPU memory is reaching the limit. The use of A100 80G GPUs with larger memory capacity will mostly resolve this issue and also help scale the batch size to achieve much larger throughput.
 
-![[175b_throught.png]]
+![[assets/attachments/deeplearning/175b_throught.png]]
 
-![[1t_thought.png]]
+![[assets/attachments/deeplearning/1t_thought.png]]
 
 ### Future Work
 

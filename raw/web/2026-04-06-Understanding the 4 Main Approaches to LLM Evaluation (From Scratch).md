@@ -44,7 +44,7 @@ But now, let’s discuss the four main LLM evaluation methods along with their f
 
 There are four common ways of evaluating trained LLMs in practice: *multiple choice*, *verifiers*, *leaderboards*, and *LLM judges*, as shown in Figure 1 below. Research papers, marketing materials, technical reports, and model cards (a term for LLM-specific technical reports) often include results from two or more of these categories.
 
-![[https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fc26764a9-6a26-4467-bb03-74b6cd1ed72b_1050x363.png]]
+![[assets/attachments/llm/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fc26764a9-6a26-4467-bb03-74b6cd1ed72b_1050x363.png]]
 
 Figure 1: An overview of the 4 different evaluations models covered in this article.
 
@@ -60,7 +60,7 @@ We begin with a benchmark‑based method: multiple‑choice question answering.
 
 Historically, one of the most widely used evaluation methods is multiple-choice benchmarks such as *MMLU* (short for Massive Multitask Language Understanding, [https://huggingface.co/datasets/cais/mmlu](https://huggingface.co/datasets/cais/mmlu)). To illustrate this approach, figure 2 shows a representative task from the MMLU dataset.
 
-![[https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F8d5f7998-21be-4144-bfc2-57b2e0a4b1c4_1040x608.png]]
+![[assets/attachments/llm/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F8d5f7998-21be-4144-bfc2-57b2e0a4b1c4_1040x608.png]]
 
 Figure 2: Evaluating an LLM on MMLU by comparing its multiple-choice prediction with the correct answer from the dataset.
 
@@ -153,7 +153,7 @@ if USE_COMPILE:
 
 In this section, we implement the simplest and perhaps most intuitive MMLU scoring method, which relies on checking whether a generated multiple-choice answer letter matches the correct answer. This is similar to what was illustrated earlier in Figure 2, which is shown below again for convenience.
 
-![[https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F8d5f7998-21be-4144-bfc2-57b2e0a4b1c4_1040x608.png]]
+![[assets/attachments/llm/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F8d5f7998-21be-4144-bfc2-57b2e0a4b1c4_1040x608.png]]
 
 Figure 3: Evaluating an LLM on MMLU by comparing its multiple-choice prediction with the correct answer from the dataset.
 
@@ -297,7 +297,7 @@ As we can see, the generated answer is incorrect (`False`) in this case.
 
 This was just one of the 270 examples from the `high_school_mathematics` subset in MMLU. The screenshot (Figure 4) below show’s the performance of the base model and reasoning variant when executed on the complete subset. The code for this is available [here on GitHub](https://github.com/rasbt/reasoning-from-scratch/blob/main/chF/02_mmlu/1_letter_matching.py).
 
-![[https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F098958b6-4a5b-4070-a350-8f318abcede2_1815x1143.png]]
+![[assets/attachments/llm/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F098958b6-4a5b-4070-a350-8f318abcede2_1815x1143.png]]
 
 Figure 4: Base and reasoning model performance on the MMLU high\_school\_mathematics subset
 
@@ -307,7 +307,7 @@ Assuming the questions have an equal answer probability, a random guesser (with 
 > 
 > Note that this section implemented a simplified version of multiple-choice evaluation for illustration purposes, where the model’s predicted answer letter is compared directly to the correct one. In practice, more widely used variations exist, such as log-probability scoring, where we measure how likely the model considers each candidate answer rather than just checking the final letter choice. (We discuss probability-based scoring in chapter 4.) For reasoning models, evaluation can also involve assessing the likelihood of generating the correct answer when it is provided as input.
 > 
-> ![[https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fe5fb712c-10f1-4240-b3e6-2cbf7ccfc356_1389x857.png]]
+> ![[assets/attachments/llm/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fe5fb712c-10f1-4240-b3e6-2cbf7ccfc356_1389x857.png]]
 > 
 > Figure 5: Other MMLU scoring methods are described and shared on GitHub here
 > 
@@ -321,7 +321,7 @@ Still, multiple-choice benchmarks remain simple and useful diagnostics: for exam
 
 Related to multiple-choice question answering discussed in the previous section, verification-based approaches quantify the LLMs capabilities via an accuracy metric. However, in contrast to multiple-choice benchmarks, verification methods allow LLMs to provide a free-form answer. We then extract the relevant answer portion and use a so-called verifier to compare the answer portion to the correct answer provided in the dataset, as illustrated in Figure 6 below.
 
-![[https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F0304413b-aa78-4488-a157-841d6399d3e6_975x986.png]]
+![[assets/attachments/llm/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F0304413b-aa78-4488-a157-841d6399d3e6_975x986.png]]
 
 Figure 6: Evaluating an LLM with a verification-based method in free-form question answering. The model generates a free-form answer (which may include multiple steps) and a final boxed answer, which is extracted and compared against the correct answer from the dataset.
 
@@ -333,7 +333,7 @@ However, because it allows us to generate an unlimited number of math problem va
 
 I wrote a comprehensive 35-page on this topic in my “Build a Reasoning Model (From Scratch)” book, so I am skipping the code implementation here. (I submitted the chapter last week. If you have the early access version, you’ll receive an email when it goes live and will be able to read it then. In the meantime, you can find the step-by-step code [here on GitHub](https://github.com/rasbt/reasoning-from-scratch/blob/main/ch03/01_main-chapter-code/ch03_main.ipynb).)
 
-![[https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F74860b8a-d12a-4781-8362-d5eb06feb389_1406x656.png]]
+![[assets/attachments/llm/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F74860b8a-d12a-4781-8362-d5eb06feb389_1406x656.png]]
 
 Figure 7: Excerpt from the verification-based evaluation approach available here on GitHub
 
@@ -341,7 +341,7 @@ Figure 7: Excerpt from the verification-based evaluation approach available here
 
 So far, we have covered two methods that offer easily quantifiable metrics such as model accuracy. However, none of the aforementioned methods evaluate LLMs in a more holistic way, including judging the style of the responses. In this section, as illustrated in Figure 8 below, we discuss a judgment-based method, namely, LLM leaderboards.
 
-![[https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F36c6779c-5eb0-4cfd-88fd-b1b68f44b227_1114x457.png]]
+![[assets/attachments/llm/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F36c6779c-5eb0-4cfd-88fd-b1b68f44b227_1114x457.png]]
 
 Figure 8: A mental model of the topics covered in this book with a focus on the judgment- and benchmark-based evaluation methods covered in this appendix. Having already covered benchmark-based approaches (multiple choice, verifiers) in the previous section, we now introduce judgment-based approaches to measure LLM performance, with this subsection focusing on leaderboards.
 
@@ -349,13 +349,13 @@ The leaderboard method described here is a judgment-based approach where models 
 
 A popular leaderboard is *[LM Arena](https://lmarena.ai/)* (formerly *Chatbot Arena*), where users compare responses from two user-selected or anonymous models and vote for the one they prefer, as shown in Figure 9.
 
-![[https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fa1a1816e-790d-421c-a364-48efe66ae622_1600x1220.png]]
+![[assets/attachments/llm/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fa1a1816e-790d-421c-a364-48efe66ae622_1600x1220.png]]
 
 Figure 9: Example of a judgment-based leaderboard interface (LM Arena). Two LLMs are given the same prompt, their responses are shown side by side, and users vote for the preferred answer.
 
 These preference votes, which are collected as shown in the figure above, are then aggregated across all users into a leaderboard that ranks different models by user preference. A current snapshot of the LM Arena leaderboard (accessed on October 3, 2025) is shown below in Figure 10.
 
-![[https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F2eb7522f-34c1-4d0a-8f54-d5276a77e740_1115x818.png]]
+![[assets/attachments/llm/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F2eb7522f-34c1-4d0a-8f54-d5276a77e740_1115x818.png]]
 
 Figure 10: Screenshot of the LM Arena leaderboard that shows the current leading LLMs based on user preferences on text tasks
 
@@ -483,7 +483,7 @@ Leaderboard approaches such as the one described above provide a more dynamic vi
 > 
 > To keep the reported scores in a familiar range, the Bradley-Terry model is fitted to produce values comparable to Elo. Even though the leaderboard no longer officially uses Elo ratings, the term “Elo” remains widely used by LLM researchers and practitioners when comparing models. A code example showing the Elo rating is available [here on GitHub](https://github.com/rasbt/reasoning-from-scratch/tree/main/chF/03_leaderboards).
 > 
-> ![[https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F57300005-93c2-4984-b099-475e4c7d6aac_1301x688.png]]
+> ![[assets/attachments/llm/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F57300005-93c2-4984-b099-475e4c7d6aac_1301x688.png]]
 > 
 > Figure 11: A comparison of Elo and Bradley-Terry rankings; the source code is available here on GitHub.
 
@@ -495,7 +495,7 @@ One solution to this problem, if we want to judge the written answer text as a w
 
 A related method is to use another LLM with a pre-defined grading *rubric* (i.e., an evaluation guide) to compare an LLM’s response to a reference response and judge the response quality based on a pre-defined rubric, as illustrated in Figure 12.
 
-![[https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F4b646f80-a08d-40f4-ae65-eb7b850c7ccd_1503x1337.png]]
+![[assets/attachments/llm/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F4b646f80-a08d-40f4-ae65-eb7b850c7ccd_1503x1337.png]]
 
 Figure F12: Example of an LLM-judge evaluation. The model to be evaluated generates an answer, which is then scored by a separate judge LLM according to a rubric and a provided reference answer.
 
@@ -588,7 +588,7 @@ In the remainder of this section, we will use the ollama API. This approach requ
 
 3\. Ollama desktop app. Opening the desktop app runs the same backend automatically and provides a graphical interface on top of it as shown in Figure 12 earlier.
 
-![[https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F475023aa-2070-4533-9776-fba77b711052_911x1313.png]]
+![[assets/attachments/llm/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F475023aa-2070-4533-9776-fba77b711052_911x1313.png]]
 
 Figure 13: Two different options to keep the Ollama server (/application) running so we can use it via the Ollama API in Python.
 
@@ -805,7 +805,7 @@ The candidate answer directly addresses the question, correctly applies the give
 
 As we can see, the answer receives the highest score, which is reasonable, as it is indeed correct. While this was a simple example stepping through the process manually, we could take this idea further and implement a for-loop that iteratively queries the model (for example, the Qwen3 model we loaded earlier) with questions from an evaluation dataset and evaluate it via gpt-oss and calculate the average score. You can find an implementation of such a script where we evaluate the Qwen3 model on the MATH-500 dataset [here on GitHub](https://github.com/rasbt/reasoning-from-scratch/tree/main/chF/04_llm-judge).
 
-![[https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F04869674-1018-4da5-b287-100920e21b9b_1332x864.png]]
+![[assets/attachments/llm/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F04869674-1018-4da5-b287-100920e21b9b_1332x864.png]]
 
 Figure 14: A comparison of the Qwen3 0.6 base and reasoning variants on the first 10 examples in MATH-500 evaluated by gpt-oss:20b as a judge. You can find the code here on GitHub.
 
@@ -851,7 +851,7 @@ That being said, you are probably wondering, “What is the best way to evaluate
 
 While I am usually not a big fan of radar plots, one can be helpful here to visualize these different evaluation areas, as shown below.
 
-![[https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Faacd21b7-bf77-4cdc-bdb4-efe254a7e1b1_1586x1317.png]]
+![[assets/attachments/llm/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Faacd21b7-bf77-4cdc-bdb4-efe254a7e1b1_1586x1317.png]]
 
 Figure 15: A radar chart showing conceptually that we ideally want to pay attention to different areas when evaluating an LLM to identify its strengths and weaknesses.
 

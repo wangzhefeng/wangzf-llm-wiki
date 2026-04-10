@@ -49,7 +49,7 @@ CUDA Toolkit Installer通常会集成了GPU driver Installer，如果你的CUDA�
 
 选择自己的操作系统、架构以及对应的安装类型。
 
-![[20481399-9178f92dc7724a8f.png]]
+![[assets/attachments/uncategorized/20481399-9178f92dc7724a8f.png]]
 
 CUDA安装(i)
 

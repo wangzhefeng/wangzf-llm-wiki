@@ -19,7 +19,7 @@ tags:
 
 本文介绍一篇ICLR 2025的高分时间序列分析文章，在openreview上获得了均分8的高分。作者团队就是ICLR 2024中稿文章TimeMixer的原班作者团队，本文也是TimeMixer的改进版本，不仅扩展了任务，性能效果也进一步升级，在所有时序任务上都取得了SOTA的性能，如下图：
 
-![[v2-828b98c7e0ed780ddb1ac6bdcb73fada_1440w.jpg]]
+![[assets/attachments/timeseries/v2-828b98c7e0ed780ddb1ac6bdcb73fada_1440w.jpg]]
 
 为了读懂这篇文章，我推荐的阅读顺序为TimesNet->TimeMixer和PDF->TimeMixer++，而且恰巧这几篇文章我都有解读过，链接如下：
 
@@ -35,7 +35,7 @@ tags:
 
 ### TimeMixer
 
-![[v2-6bbf2d74f64f70a102bf2e2a9d679309_1440w.jpg]]
+![[assets/attachments/timeseries/v2-6bbf2d74f64f70a102bf2e2a9d679309_1440w.jpg]]
 
 TimeMixer的结构如上图，用简单的话来概述就是：
 
@@ -45,7 +45,7 @@ TimeMixer的结构如上图，用简单的话来概述就是：
 
 ### TimeMixer++
 
-![[v2-45221b17790a07ab6c79ec0e99ed298b_1440w.jpg]]
+![[assets/attachments/timeseries/v2-45221b17790a07ab6c79ec0e99ed298b_1440w.jpg]]
 
 TimeMixer++的结构如上图，最核心的改动其实是 **周期趋势分解** 那部分（也就是TimeMixer中的Past Decomposable Mixing模块），从Autoformer的滑动窗口法进化到了TimesNet的二维表示法。下面我将从上图中的（a）（b）（c）（d）（e）结构来依次介绍。
 

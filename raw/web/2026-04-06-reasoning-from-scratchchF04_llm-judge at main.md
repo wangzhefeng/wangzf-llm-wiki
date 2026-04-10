@@ -19,7 +19,7 @@ tags:
 
 This bonus material implements an LLM-as-a-judge approach, where gpt-oss:20b (via the open-source Ollama library) evaluates Qwen3 0.6B base and reasoning variants on MATH-500.
 
-[![[Image 105.webp]]](https://camo.githubusercontent.com/dc6be6c6e0fab02650e1dcf824706113a6a9e8f5014bd994e0d24c95fea83b96/68747470733a2f2f73656261737469616e72617363686b612e636f6d2f696d616765732f726561736f6e696e672d66726f6d2d736372617463682d696d616765732f617070656e6469782d662f417070656e6469785f465f4630365f72617363686b612e77656270)
+[![[assets/attachments/llm/Image 105.webp]]](https://camo.githubusercontent.com/dc6be6c6e0fab02650e1dcf824706113a6a9e8f5014bd994e0d24c95fea83b96/68747470733a2f2f73656261737469616e72617363686b612e636f6d2f696d616765732f726561736f6e696e672d66726f6d2d736372617463682d696d616765732f617070656e6469782d662f417070656e6469785f465f4630365f72617363686b612e77656270)
 
 - Ollama is an open-source application to run LLMs efficiently
 - It is a wrapper around llama.cpp ([https://github.com/ggerganov/llama.cpp](https://github.com/ggerganov/llama.cpp)), which implements LLMs in pure C/C++ to maximize efficiency

@@ -21,11 +21,11 @@ tags:
 
 ## Overall Architecture
 
-[![[TimeKAN.jpg]]](https://github.com/huangst21/TimeKAN/blob/main/Figure/TimeKAN.jpg)
+[![[assets/attachments/timeseries/TimeKAN.jpg]]](https://github.com/huangst21/TimeKAN/blob/main/Figure/TimeKAN.jpg)
 
 ## Results
 
-[![[result.png]]](https://github.com/huangst21/TimeKAN/blob/main/Figure/result.png)
+[![[assets/attachments/timeseries/result.png]]](https://github.com/huangst21/TimeKAN/blob/main/Figure/result.png)
 
 ## Getting Started
 

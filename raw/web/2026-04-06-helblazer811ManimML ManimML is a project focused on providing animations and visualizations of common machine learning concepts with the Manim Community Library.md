@@ -17,13 +17,13 @@ tags:
 
 ## ManimML
 
-[![[ManimMLLogo.gif]]](https://github.com/helblazer811/ManimMachineLearning)
+[![[assets/attachments/machine-learning/ManimMLLogo.gif]]](https://github.com/helblazer811/ManimMachineLearning)
 
 ManimML is a project focused on providing animations and visualizations of common machine learning concepts with the [Manim Community Library](https://www.manim.community/). Please check out [our paper](https://arxiv.org/abs/2306.17108). We want this project to be a compilation of primitive visualizations that can be easily combined to create videos about complex machine learning concepts. Additionally, we want to provide a set of abstractions which allow users to focus on explanations instead of software engineering.
 
 *A sneak peak...*
 
-[![[convolutional_neural_network.gif]]](https://github.com/helblazer811/ManimML/blob/main/assets/readme/convolutional_neural_network.gif)
+[![[assets/attachments/machine-learning/convolutional_neural_network.gif]]](https://github.com/helblazer811/ManimML/blob/main/assets/readme/convolutional_neural_network.gif)
 
 ## Table of Contents
 
@@ -102,7 +102,7 @@ The above generates a low resolution rendering, you can improve the resolution (
 $ manim -pqh example.py
 ```
 
-[![[convolutional_neural_network.gif]]](https://github.com/helblazer811/ManimML/blob/main/assets/readme/convolutional_neural_network.gif)
+[![[assets/attachments/machine-learning/convolutional_neural_network.gif]]](https://github.com/helblazer811/ManimML/blob/main/assets/readme/convolutional_neural_network.gif)
 
 ## Guide
 
@@ -130,7 +130,7 @@ In order to render the scene we will run the following in the command line:
 $ manim -pq -l example.py
 ```
 
-[![[setting_up_a_scene.png]]](https://github.com/helblazer811/ManimML/blob/main/assets/readme/setting_up_a_scene.png)
+[![[assets/attachments/machine-learning/setting_up_a_scene.png]]](https://github.com/helblazer811/ManimML/blob/main/assets/readme/setting_up_a_scene.png)
 
 This will generate an image file in low quality (use `-h` for high quality).
 
@@ -161,7 +161,7 @@ We can now render a still frame image of the scene by running:
 $ manim -pql example.py
 ```
 
-[![[a_simple_feed_forward_neural_network.png]]](https://github.com/helblazer811/ManimML/blob/main/assets/readme/a_simple_feed_forward_neural_network.png)
+[![[assets/attachments/machine-learning/a_simple_feed_forward_neural_network.png]]](https://github.com/helblazer811/ManimML/blob/main/assets/readme/a_simple_feed_forward_neural_network.png)
 
 ### Animating the Forward Pass
 
@@ -188,7 +188,7 @@ We can now render with:
 $ manim -pql example.py
 ```
 
-[![[animating_the_forward_pass.gif]]](https://github.com/helblazer811/ManimML/blob/main/assets/readme/animating_the_forward_pass.gif)
+[![[assets/attachments/machine-learning/animating_the_forward_pass.gif]]](https://github.com/helblazer811/ManimML/blob/main/assets/readme/animating_the_forward_pass.gif)
 
 ### Convolutional Neural Networks
 
@@ -223,7 +223,7 @@ We can now render with:
 $ manim -pql example.py
 ```
 
-[![[convolutional_neural_network.gif]]](https://github.com/helblazer811/ManimML/blob/main/assets/readme/convolutional_neural_network.gif)
+[![[assets/attachments/machine-learning/convolutional_neural_network.gif]]](https://github.com/helblazer811/ManimML/blob/main/assets/readme/convolutional_neural_network.gif)
 
 And there we have it, a convolutional neural network.
 
@@ -262,7 +262,7 @@ We can now render with:
 $ manim -pql example.py
 ```
 
-[![[convolutional_neural_network_with_an_image.gif]]](https://github.com/helblazer811/ManimML/blob/main/assets/readme/convolutional_neural_network_with_an_image.gif)
+[![[assets/attachments/machine-learning/convolutional_neural_network_with_an_image.gif]]](https://github.com/helblazer811/ManimML/blob/main/assets/readme/convolutional_neural_network_with_an_image.gif)
 
 ### Max Pooling
 
@@ -294,7 +294,7 @@ We can now render with:
 $ manim -pql example.py
 ```
 
-[![[max_pooling.gif]]](https://github.com/helblazer811/ManimML/blob/main/assets/readme/max_pooling.gif)
+[![[assets/attachments/machine-learning/max_pooling.gif]]](https://github.com/helblazer811/ManimML/blob/main/assets/readme/max_pooling.gif)
 
 ### Activation Functions
 
@@ -328,7 +328,7 @@ We can now render with:
 $ manim -pql example.py
 ```
 
-[![[activation_functions.gif]]](https://github.com/helblazer811/ManimML/blob/main/assets/readme/activation_functions.gif)
+[![[assets/attachments/machine-learning/activation_functions.gif]]](https://github.com/helblazer811/ManimML/blob/main/assets/readme/activation_functions.gif)
 
 ### More Complex Animations: Neural Network Dropout
 
@@ -363,7 +363,7 @@ We can now render with:
 $ manim -pql example.py
 ```
 
-[![[dropout.gif]]](https://github.com/helblazer811/ManimML/blob/main/assets/readme/dropout.gif)
+[![[assets/attachments/machine-learning/dropout.gif]]](https://github.com/helblazer811/ManimML/blob/main/assets/readme/dropout.gif)
 
 ## Citation
 

@@ -21,7 +21,7 @@ tags:
 
 LLMBox is a comprehensive library for implementing LLMs, including **a unified training pipeline** and **comprehensive model evaluation**. LLMBox is designed to be a one-stop solution for training and utilizing LLMs. Through a practical library design, we achieve a high-level of **flexibility** and **efficiency** in both training and utilization stages.
 
-[![[llmbox.png]]](https://github.com/RUCAIBox/LLMBox/blob/main/docs/assets/llmbox.png)
+[![[assets/attachments/llm/llmbox.png]]](https://github.com/RUCAIBox/LLMBox/blob/main/docs/assets/llmbox.png)
 
 ## Key Features
 

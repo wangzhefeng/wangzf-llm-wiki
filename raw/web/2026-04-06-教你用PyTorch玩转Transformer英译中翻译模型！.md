@@ -27,7 +27,7 @@ Github地址： [github.com/hemingkx/Chi](https://link.zhihu.com/?target=https%3
 
 机器翻译（Machine Translation），又称为自动翻译，是利用计算机把一种自然源语言转变为另一种自然目标语言的过程，一般指自然语言之间句子和全文的翻译。而 **英译中的机器翻译，即指把英文句子翻译为中文句子** 。
 
-![[v2-3e066b920658e54710e539bd6b77455f_1440w.jpg]]
+![[assets/attachments/llm/v2-3e066b920658e54710e539bd6b77455f_1440w.jpg]]
 
 （手动狗头
 
@@ -56,15 +56,15 @@ Github地址： [github.com/hemingkx/Chi](https://link.zhihu.com/?target=https%3
 
 BPE(Byte Pair Encoding)最早是一种压缩算法， **基本思路是将使用最频繁的字节用一个新的字节组合代替** ，比如用字符的n-gram替换各个字符。例如，假设('A', 'B') 经常顺序出现，则用一个新的标志'AB'来代替它们。2016年，Sennrich [^2] 提出采用分词算法（word segmentation）构建BPE，并将其应用于机器翻译任务中。论文提出的基本思想是，给定语料库，初始词汇库仅包含所有的单个字符。然后，模型不断地将出现频率最高的n-gram pair作为新的n-gram加入到词汇库中，直到词汇库的大小达到我们所设定的某个目标为止。
 
-![[v2-ca72c65768150425966bf5adadca45ed_1440w.jpg]]
+![[assets/attachments/llm/v2-ca72c65768150425966bf5adadca45ed_1440w.jpg]]
 
 论文中给出的算法例子如上图所示。 **算法从所有的字符开始，首先将出现频率最高的 (e, s) 作为新的词汇加入表中，然后是(es, t)。** 以此类推，直到词汇库大小达到我们设定的值。更清晰的过程如下图所示。其中，Dictionary左列表示单词出现的频率。
 
-![[v2-e22f345e20ec52372c065e66dc1e5c59_1440w.jpg]]
+![[assets/attachments/llm/v2-e22f345e20ec52372c065e66dc1e5c59_1440w.jpg]]
 
-![[v2-e15a00ed73d4fe9b6474f47ac6148529_1440w.jpg]]
+![[assets/attachments/llm/v2-e15a00ed73d4fe9b6474f47ac6148529_1440w.jpg]]
 
-![[v2-4fdb512b61ec7a0e2945f6eb7973a217_1440w.jpg]]
+![[assets/attachments/llm/v2-4fdb512b61ec7a0e2945f6eb7973a217_1440w.jpg]]
 
 cs224n-2019 Lecture 12
 
@@ -94,7 +94,7 @@ Transformer是Google在Attention is All You Need [^1] 论文中提出的模型�
 
 同时，CNN model的卷积操作使得获取相距较远的token之间的dependency的operation和距离成正比，即难以获取相距较远的token之间的依存关系，而Attention机制使得获取dependency的operation为常数，与距离无关。由于以上特点，导致Attention模型在各个方面超过了以往的SOTA模型，并且在多个任务上达到了SOTA结果。
 
-![[v2-e09a169399782babea626d87282bf14e_1440w.jpg]]
+![[assets/attachments/llm/v2-e09a169399782babea626d87282bf14e_1440w.jpg]]
 
 和大多数seq2seq模型一样，Transformer的结构也是一个编码器-解码器模型，模型结构如上图所示。本文使用Harvard开源的 [transformer-pytorch](https://link.zhihu.com/?target=http%3A//nlp.seas.harvard.edu/2018/04/03/attention.html) 代码构建transformer模型。不得不说Harvard贡献的轮子很好用！代码结构清晰，且由于之前在 [The Annotated Transformer](https://link.zhihu.com/?target=https%3A//nlp.seas.harvard.edu/2018/04/03/attention.html) 已经具体学习过一遍，使用起来压力小很多！我们做出的修改如下：
 
@@ -113,7 +113,7 @@ Warm up是在ResNet [^4] 中提到的一种针对包括Adam和RMSProp在内的�
 
 在模型中，我们采用的参数为 ， ，对应的warm-up学习率曲线如下图所示。
 
-![[v2-f16163e57fbcb7afe345509acc2a05b8_1440w.jpg]]
+![[assets/attachments/llm/v2-f16163e57fbcb7afe345509acc2a05b8_1440w.jpg]]
 
 可以看到，transformer [^1] 在Warm Up阶段采用的策略与Facebook [^5] 近似。在Warm Up阶段之后，transformer [^1] 采用了指数的学习率递减策略。这一整体的学习率更新策略在下文中称为 [NoamOpt](https://zhida.zhihu.com/search?content_id=165254750&content_type=Article&match_order=1&q=NoamOpt&zhida_source=entity) （这是The Annotated Transformer中的称法）。
 
@@ -133,7 +133,7 @@ Warm up是在ResNet [^4] 中提到的一种针对包括Adam和RMSProp在内的�
 
 一个自然的改进想法是，每一个时间步都取条件概率最大的输出，即所谓的贪心搜索（Greedy Search），但这种方法会丢弃绝大部分的可能解，仅关注当前时间步，无法保证最终得到的序列是最优解。集束搜索（Beam Search）实际是这两者的折中，简言之，在每一个时间步，不再仅保留当前概率最高的1个输出，而是每次都保留 个输出。
 
-![[v2-646811f5b40d380f6201b97128f582a3_1440w.jpg]]
+![[assets/attachments/llm/v2-646811f5b40d380f6201b97128f582a3_1440w.jpg]]
 
 如图所示，图中的 ，也就是说每个时间步都会保留到当前步为止，条件概率最优的2个序列。
 
@@ -157,13 +157,13 @@ BLEU即Bilingual Evaluation Understudy，在机器翻译任务中，BLEU非常�
 
 如上所述，我们具体探究了NoamOpt, Label Smoothing对英译中任务的提升效果。实验结果如表所示：
 
-![[v2-b263c2af8a9959530e41c55eeb07c19f_1440w.jpg]]
+![[assets/attachments/llm/v2-b263c2af8a9959530e41c55eeb07c19f_1440w.jpg]]
 
 从表中可以看到，NoamOpt对实验效果的提升较大，在验证集上的最优Bleu分数提升了8.4%，测试集Bleu分数提升了7.9%。在本实验中，我们设置Label Smoothing的比例为0.1，其对实验效果的提升并不明显。但在之后基于fairseq的实验中，我们发现Label Smoothing确实对BLEU分数有一定的提升效果。
 
 我们实现了Beam Search并在测试集上探究了不同beam size的bleu结果，如表所示。
 
-![[v2-7dcc04b58cd2c36da53453719ccf0fd2_1440w.jpg]]
+![[assets/attachments/llm/v2-7dcc04b58cd2c36da53453719ccf0fd2_1440w.jpg]]
 
 可以看到，随着beam size增加，BLEU值也明显增加，且显著优于greedy decode的BLEU分数，提升3.5%。
 
@@ -173,15 +173,15 @@ BLEU即Bilingual Evaluation Understudy，在机器翻译任务中，BLEU非常�
 
 > 注：以下三个case都是基于Pytorch model的最优训练模型（即Model 2）的翻译结果
 
-![[v2-15837feb683703d59a208d0ca585085f_1440w.jpg]]
+![[assets/attachments/llm/v2-15837feb683703d59a208d0ca585085f_1440w.jpg]]
 
 case 1
 
-![[v2-974950b4a43391087799308465b959ca_1440w.jpg]]
+![[assets/attachments/llm/v2-974950b4a43391087799308465b959ca_1440w.jpg]]
 
 case 2
 
-![[v2-51a6df0ea9c0724fcd099a6da62667c3_1440w.jpg]]
+![[assets/attachments/llm/v2-51a6df0ea9c0724fcd099a6da62667c3_1440w.jpg]]
 
 case 3
 

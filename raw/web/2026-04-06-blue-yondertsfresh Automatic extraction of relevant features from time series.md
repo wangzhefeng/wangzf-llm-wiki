@@ -15,7 +15,7 @@ tags:
   - "clippings"
 ---
 
-[![[tsfresh_logo.svg]]](https://github.com/blue-yonder/tsfresh/blob/main/docs/images/tsfresh_logo.svg)
+[![[assets/attachments/timeseries/tsfresh_logo.svg]]](https://github.com/blue-yonder/tsfresh/blob/main/docs/images/tsfresh_logo.svg)
 
 ---
 

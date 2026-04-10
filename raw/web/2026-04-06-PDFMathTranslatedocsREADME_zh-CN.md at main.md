@@ -37,7 +37,7 @@ tags:
 
 ## 预览
 
-![[preview.gif]]
+![[assets/attachments/uncategorized/preview.gif]]
 
 ## 在线演示 🌟
 
@@ -84,7 +84,7 @@ pip install pdf2zh
 	```
 	http://localhost:7860/
 	```
-	![[gui.gif]]
+	![[assets/attachments/uncategorized/gui.gif]]
 
 有关更多详细信息，请参阅 [GUI 文档](https://github.com/PDFMathTranslate/PDFMathTranslate/blob/main/docs/README_GUI.md) 。
 
@@ -201,7 +201,7 @@ API 暂时弃用意味着：相关代码暂时不会被移除，但不会提供�
 - 布局解析： [DocLayout-YOLO](https://github.com/opendatalab/DocLayout-YOLO)
 - 文档标准： [PDF Explained](https://zxyle.github.io/PDF-Explained/) ， [PDF Cheat Sheets](https://pdfa.org/resource/pdf-cheat-sheets/)
 - 多语言字体： [Go Noto Universal](https://github.com/satbyy/go-noto-universal)
-[![[Image 50.svg]]](https://github.com/Byaidu/PDFMathTranslate/graphs/contributors)
+[![[assets/attachments/uncategorized/Image 50.svg]]](https://github.com/Byaidu/PDFMathTranslate/graphs/contributors)
 
 [![[Image 51.svg|Alt]]](https://camo.githubusercontent.com/cd596cb53913066324ad0661794e767242a44dbebea34a582f6fa29abe39d8de/68747470733a2f2f7265706f62656174732e6178696f6d2e636f2f6170692f656d6265642f646661373538336461353333326131313436386436383666626432396239323332306136613836392e737667)
 

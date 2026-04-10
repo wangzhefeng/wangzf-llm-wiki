@@ -523,19 +523,19 @@ Through this example we explored time series forecasting using lagged features. 
 
 Related examples
 
-![[sphx_glr_plot_grid_search_refit_callable_thumb.png]]
+![[assets/attachments/timeseries/sphx_glr_plot_grid_search_refit_callable_thumb.png]]
 
 [Balance model complexity and cross-validated score](https://scikit-learn.org/stable/auto_examples/model_selection/plot_grid_search_refit_callable.html)
 
 Balance model complexity and cross-validated score
 
-![[sphx_glr_plot_gradient_boosting_quantile_thumb.png]]
+![[assets/attachments/timeseries/sphx_glr_plot_gradient_boosting_quantile_thumb.png]]
 
 [Prediction Intervals for Gradient Boosting Regression](https://scikit-learn.org/stable/auto_examples/ensemble/plot_gradient_boosting_quantile.html)
 
 Prediction Intervals for Gradient Boosting Regression
 
-![[sphx_glr_plot_hgbt_regression_thumb.png]]
+![[assets/attachments/timeseries/sphx_glr_plot_hgbt_regression_thumb.png]]
 
 [Features in Histogram Gradient Boosting Trees](https://scikit-learn.org/stable/auto_examples/ensemble/plot_hgbt_regression.html)
 

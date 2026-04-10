@@ -331,4 +331,4 @@ Time-Series-Library/
 
 实验所用数据集均为公开数据，来源如下：
 
-[![[Image 56.svg]]](https://github.com/thuml/Time-Series-Library/graphs/contributors)
+[![[assets/attachments/uncategorized/Image 56.svg]]](https://github.com/thuml/Time-Series-Library/graphs/contributors)

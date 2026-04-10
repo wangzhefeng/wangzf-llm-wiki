@@ -15,7 +15,7 @@ tags:
   - "clippings"
 ---
 
-[![[tiny-universe-head2.png]]](https://github.com/datawhalechina/tiny-universe/blob/main/images/tiny-universe-head2.png)
+[![[assets/attachments/uncategorized/tiny-universe-head2.png]]](https://github.com/datawhalechina/tiny-universe/blob/main/images/tiny-universe-head2.png)
 
 ## 大模型白盒子构建指南
 
@@ -89,7 +89,7 @@ tags:
 
    ***本项目手工搭建了一个最简化版本的 GraphRAG 系统，从原理公式与架构图出发，对应到具体的图构建、检索、推理与生成代码实现，旨在帮助学习者更直观地理解 GraphRAG 的工作机制，掌握数据准备、查询处理、生成整合的完整流程。***
 
-[![[workflow.png]]](https://github.com/datawhalechina/tiny-universe/blob/main/content/TinyGraphRAG/images/workflow.png)
+[![[assets/attachments/uncategorized/workflow.png]]](https://github.com/datawhalechina/tiny-universe/blob/main/content/TinyGraphRAG/images/workflow.png)
 
 ### TinyDiffusion
 
@@ -97,7 +97,7 @@ tags:
 
    ***本项目手工搭建了一个最简化版本的DDPM模型，从论文中的公式出发，对应到具体的训练与采样过程代码实现，旨在帮助学习者更好地理解Diffusion模型的原理，熟悉训练、推理、评估的整套流程。***
 
-[![[ddpm.png]]](https://github.com/datawhalechina/tiny-universe/blob/main/content/TinyDiffusion/fig/ddpm.png)
+[![[assets/attachments/uncategorized/ddpm.png]]](https://github.com/datawhalechina/tiny-universe/blob/main/content/TinyDiffusion/fig/ddpm.png)
 
   初学者在学习LLM时，往往对庞大的代码与各种封装的功能"谈码色变"~
 
@@ -105,7 +105,7 @@ tags:
 
    ***项目内除了Model内容外，也添加了嵌入模型内部的GQA，ROPE与Attention Mask等机制的细致讲解，促进大家对LLM的全面理解！***
 
-[![[framework.jpg]]](https://github.com/datawhalechina/tiny-universe/blob/main/content/Qwen-blog/img/framework.JPG)
+[![[assets/attachments/uncategorized/framework.jpg]]](https://github.com/datawhalechina/tiny-universe/blob/main/content/Qwen-blog/img/framework.JPG)
 
   LLM会产生误导性的 “幻觉”，依赖的信息可能过时，处理特定知识时效率不高，缺乏专业领域的深度洞察，同时在推理能力上也有所欠缺。
 
@@ -117,7 +117,7 @@ tags:
 
 > *镜像地址： [https://www.codewithgpu.com/i/datawhalechina/tiny-universe/tiny-universe-tiny-rag](https://www.codewithgpu.com/i/datawhalechina/tiny-universe/tiny-universe-tiny-rag)*
 
-[![[RAG.png]]](https://github.com/datawhalechina/tiny-universe/blob/main/content/TinyRAG/images/RAG.png)
+[![[assets/attachments/uncategorized/RAG.png]]](https://github.com/datawhalechina/tiny-universe/blob/main/content/TinyRAG/images/RAG.png)
 
 ### TinyAgent(暂无录播，Datawhale视频号搜索“动手搭建一个最小Agent系统”)
 
@@ -125,13 +125,13 @@ tags:
 
    ***本项目基于 React 的方式，手动制作了一个最小的 Agent 结构（其实更多的是调用工具），通过一步一步手写 `Agent` ，让读者对 `Agent` 的构成和运作更加的了解，也让后续自由地搭建个性化的 Agent 系统成为可能。暑假的时候我们会尝试将 React 结构修改为 SOP 结构，欢迎大家一起加入进来啊~！***
 
-[![[React.png]]](https://github.com/datawhalechina/tiny-universe/blob/main/content/TinyAgent/images/React.png)
+[![[assets/attachments/uncategorized/React.png]]](https://github.com/datawhalechina/tiny-universe/blob/main/content/TinyAgent/images/React.png)
 
   随着LLM的推广，越来越多的小伙伴已经熟悉了模型sft微调流程，但是对于微调的结果，尤其是如何判断各大模型在当前数据集上的表现，仍然是一个待解决的问题。并且，对于选择式、判别式、生成式等不同的生成任务，如何才能够客观地评价模型生成质量，仍是一个需要明确的问题。
 
    ***基于上述问题，我们搭建了一个完善的评测体系介绍，让大家能够学会根据自身的任务量身定做合适的评测指标，并使用该指标进行客观评测，为模型能力提供准确可量化的数据支持！***
 
-[![[compass.png]]](https://github.com/datawhalechina/tiny-universe/blob/main/content/TinyEval/Eval/docs/compass.png)
+[![[assets/attachments/uncategorized/compass.png]]](https://github.com/datawhalechina/tiny-universe/blob/main/content/TinyEval/Eval/docs/compass.png)
 
 ### TinyLLM
 
@@ -167,13 +167,13 @@ tags:
 - 如果有任何想法可以联系我们 DataWhale 也欢迎大家多多提出 issue
 - 特别感谢以下为教程做出贡献的同学！
 
-[![[Image 27.svg]]](https://github.com/datawhalechina/tiny-universe/graphs/contributors)
+[![[assets/attachments/uncategorized/Image 27.svg]]](https://github.com/datawhalechina/tiny-universe/graphs/contributors)
 
 ## 关注我们
 
 扫描下方二维码关注公众号：Datawhale
 
-[![[qrcode 3.jpeg]]](https://github.com/datawhalechina/tiny-universe/blob/main/images/qrcode.jpeg)
+[![[assets/attachments/uncategorized/qrcode 3.jpeg]]](https://github.com/datawhalechina/tiny-universe/blob/main/images/qrcode.jpeg)
 
   Datawhale，一个专注于AI领域的学习圈子。初衷是for the learner，和学习者一起成长。目前加入学习社群的人数已经数千人，组织了机器学习，深度学习，数据分析，数据挖掘，爬虫，编程，统计学，Mysql，数据竞赛等多个领域的内容学习，微信搜索公众号Datawhale可以加入我们。
 

@@ -39,7 +39,7 @@ tags:
 
 ### Time Series Transformer 框架
 
-[![[202303182247135.png]]](https://media.xiang578.com/202303182247135.png)
+[![[assets/attachments/llm/202303182247135.png]]](https://media.xiang578.com/202303182247135.png)
 
 - `Time series decomposition` 对输入序列进行分解，后续更好预测。
 	- [Autoformer](https://blog.xiang578.com/post/autoformer.html) 在 seasonal-trend decomposition 中通过 moving average 建模 trend 趋势项。
@@ -59,7 +59,7 @@ tags:
 - 通过一层神经网对过去信息加权得到未来预测结果。
 - 不同变量间共享参数并且不对 spatial correlations 建模
 
-[![[202303182310362-LTSF-Linear.png]]](https://media.xiang578.com/202303182310362-LTSF-Linear.png)
+[![[assets/attachments/llm/202303182310362-LTSF-Linear.png]]](https://media.xiang578.com/202303182310362-LTSF-Linear.png)
 
 ### DLinear
 
@@ -72,7 +72,7 @@ tags:
 
 部分数据集的训练数据和测试数据存在分布偏移（下图中 b），无法使用训练集的均值和方差进行归一化。NLinear 将输入序列每一个值减去该序列最后一个值，然后输入序列过完线性层后加回被减去的值得到最后预测结果。
 
-[![[202303182316694-lsft-dis-shift.png]]](https://media.xiang578.com/202303182316694-lsft-dis-shift.png)
+[![[assets/attachments/llm/202303182316694-lsft-dis-shift.png]]](https://media.xiang578.com/202303182316694-lsft-dis-shift.png)
 
 ## 实验结论
 
@@ -80,14 +80,14 @@ tags:
 - NLiner 和 DLinear 的结果比 Linear 好，说明处理分布偏移和分解趋势-周期特征的重要性。
 - FEDformer 相比其他 Transformer 方法好，是因为它采用经典的时间序列分析技术，不太依赖自注意力机制。
 
-[![[202303182322387-ltsf-linear-result.png]]](https://media.xiang578.com/202303182322387-ltsf-linear-result.png)
+[![[assets/attachments/llm/202303182322387-ltsf-linear-result.png]]](https://media.xiang578.com/202303182322387-ltsf-linear-result.png)
 
 ### 定性分析
 
 - 过去 96 预测未来 336 时，下图 a 和 c，部分 Tranformer 模型根本无法预测未来数据的取值范围和偏差。
 - 在非周期数据（图b，汇率）Tranformer 模型几乎无法预测适当的趋势。
 
-[![[202303182331993-ltsf-f3-fix.png]]](https://media.xiang578.com/202303182331993-ltsf-f3-fix.png)
+[![[assets/attachments/llm/202303182331993-ltsf-f3-fix.png]]](https://media.xiang578.com/202303182331993-ltsf-f3-fix.png)
 
 ### Transformer 类模型进一步分析（灵魂七问）
 
@@ -96,7 +96,7 @@ tags:
 - 历史窗口（look-back window） 越长（输入信息越多），预测效果应该越好。
 - 下图 x 轴对应不同历史窗口长度，可以看到随着输入信息变多，LTSF-Linear 方法预测结果越来越准，但是大部分 Transformer 模型 mse 并没有太多变化，作者猜测可能模型过拟合噪音而不能获得时序信息。
 
-[![[202303192214654-ltsf-linear-f4.png]]](https://media.xiang578.com/202303192214654-ltsf-linear-f4.png)
+[![[assets/attachments/llm/202303192214654-ltsf-linear-f4.png]]](https://media.xiang578.com/202303192214654-ltsf-linear-f4.png)
 
 #### 能从长序列预测可以学到什么？
 
@@ -106,7 +106,7 @@ tags:
 		- `Far` 前 192 步到 前 97 步输入
 - fedformer 和 autoformer 在两种方法下预测效果几乎相同，说明模型只能从相邻时间序列中捕获到类似的时序信息。
 
-[![[202303192209473-ltsf-t3.png]]](https://media.xiang578.com/202303192209473-ltsf-t3.png)
+[![[assets/attachments/llm/202303192209473-ltsf-t3.png]]](https://media.xiang578.com/202303192209473-ltsf-t3.png)
 
 #### self-attention scheme 是否有效？
 
@@ -114,7 +114,7 @@ tags:
 	- `Att.-Linear` 用 linear layer 替换 self-attention layer
 		- `Embed+Linear` 再去除其他模块
 
-[![[202303192202216-ltsf-t4.png]]](https://media.xiang578.com/202303192202216-ltsf-t4.png)
+[![[assets/attachments/llm/202303192202216-ltsf-t4.png]]](https://media.xiang578.com/202303192202216-ltsf-t4.png)
 
 #### 模型可以保留时序信息吗？
 
@@ -126,7 +126,7 @@ tags:
 	- 在 Exchange 汇率数据集，三个 Tranformer 模型在这三种数据处理方式下，预测结果的 mse 基本上都都接近，可能仅保留有限的时间关系，但是最终过拟合了。Linear 模型自然建模顺序并且使用更少的参数避免过度拟合。
 		- 在 ETH1 数据集，FEDformer 建模时考虑时间序列偏差，提出了数据中明显的时间信息，所以在 shuf 组 mse 下降非常快。Informer 根本没有建模这方面信息。
 
-[![[202303190007289-ltsf-t5.png]]](https://media.xiang578.com/202303190007289-ltsf-t5.png)
+[![[assets/attachments/llm/202303190007289-ltsf-t5.png]]](https://media.xiang578.com/202303190007289-ltsf-t5.png)
 
 #### 不同 embedding 策略的作用？
 
@@ -137,7 +137,7 @@ tags:
 - Autoformer 去除时间 embedding 后效果明显变差。
 - FEDformer 通过 frequency-enhanced module 使模型有 temporal inductive bias，删除 pos 和 temp 影响不是很大。
 
-[![[202303182353101-ltsf-t6.png]]](https://media.xiang578.com/202303182353101-ltsf-t6.png)
+[![[assets/attachments/llm/202303182353101-ltsf-t6.png]]](https://media.xiang578.com/202303182353101-ltsf-t6.png)
 
 #### 训练数据大小是现在模型的限制因素？
 
@@ -146,7 +146,7 @@ tags:
 	- 基本上是训练数据小的时候，预测误差小。证明训练数据不是限制 Transformer 类模型表现的原因。
 		- 导致这种现象的原因可能是 short 对应全年数据，有更清晰的时间特征趋势。
 
-[![[202303182349885-ltsf-t7.png]]](https://media.xiang578.com/202303182349885-ltsf-t7.png)
+[![[assets/attachments/llm/202303182349885-ltsf-t7.png]]](https://media.xiang578.com/202303182349885-ltsf-t7.png)
 
 #### 性能真的是长时间预测任务中优先级最高的事情吗？
 
@@ -154,7 +154,7 @@ tags:
 - 下图可以看到大部分 Transformer 模型参数量和原始 Tranformer 没有太大区别，但是推理时间可能超过原来……
 	- 另外在通过 96 步预测 720 步任务上，原始 Tranformer 的参数 GPU 也放得下……
 
-[![[202303182345491-ltsf-t8.png]]](https://media.xiang578.com/202303182345491-ltsf-t8.png)
+[![[assets/attachments/llm/202303182345491-ltsf-t8.png]]](https://media.xiang578.com/202303182345491-ltsf-t8.png)
 
 ## 可解释性
 
