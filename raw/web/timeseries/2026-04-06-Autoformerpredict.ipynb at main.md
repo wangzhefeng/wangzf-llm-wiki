@@ -5,8 +5,6 @@ created_at: 2026-04-06
 description: 'About Code release for "Autoformer: Decomposition Transformers with
   Auto-Correlation for Long-Term Series Forecasting" (NeurIPS 2021), https://arxiv.org/abs/2106.13008
   - Autoformer/predict.ipynb at main · thuml/Autoformer'
-published: null
-source: https://github.com/thuml/Autoformer/blob/main/predict.ipynb
 source_type: web
 status: inbox
 tags:
@@ -15,6 +13,9 @@ tags:
 title: Autoformer/predict.ipynb at main
 topics:
 - 时间序列
+source_url: https://github.com/thuml/Autoformer/blob/main/predict.ipynb
+published_at: null
+related_concepts: []
 ---
 
 [Open in github.dev](https://github.dev/) [Open in a new github.dev tab](https://github.dev/) [Open in codespace](https://github.com/codespaces/new/thuml/Autoformer/tree/main?resume=1)

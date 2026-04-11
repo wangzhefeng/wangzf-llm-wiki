@@ -3,8 +3,6 @@ author: null
 created: 2026-04-06
 created_at: 2026-04-06
 description: '[IJCAI''18] Spatio-Temporal Graph Convolutional Networks - VeritasYin/STGCN_IJCAI-18'
-published: null
-source: https://github.com/VeritasYin/STGCN_IJCAI-18
 source_type: web
 status: inbox
 tags:
@@ -14,6 +12,9 @@ title: 'VeritasYin/STGCN_IJCAI-18: [IJCAI''18] Spatio-Temporal Graph Convolution
   Networks'
 topics:
 - 深度学习
+source_url: https://github.com/VeritasYin/STGCN_IJCAI-18
+published_at: null
+related_concepts: []
 ---
 
 ## Spatio-Temporal Graph Convolutional Networks: A Deep Learning Framework for Traffic Forecasting

@@ -13,6 +13,15 @@ RAW_ROOT = ROOT / "raw"
 
 DATE_RE = re.compile(r"(\d{4}-\d{2}-\d{2})")
 YAML_KEY_RE = re.compile(r"^([A-Za-z0-9_]+):\s*(.*)$")
+RAW_TYPE_MAP: list[tuple[str, str]] = [
+    ("raw/web/", "web"),
+    ("raw/papers/", "paper"),
+    ("raw/repos/", "repo"),
+    ("raw/datasets/", "dataset"),
+    ("raw/images/", "image"),
+    ("raw/local-notes/", "local_note"),
+    ("raw/codex_threads/", "local_note"),
+]
 
 
 @dataclass(frozen=True)
@@ -76,13 +85,29 @@ def infer_topics(path: Path, fm: dict[str, object]) -> list[str] | None:
             return [str(x).strip() for x in v2 if str(x).strip()][:3]
         if isinstance(v2, str) and v2.strip():
             return [v2.strip()]
-    # 最后从 raw 子目录推断（例如 raw/local-notes/analysis/... -> analysis）
+    # 最后从 raw 子目录推断：
+    # - raw/web/<topic>/... -> <topic>
+    # - raw/local-notes/<topic>/... -> <topic>
+    # - 其他 -> raw/<kind> 作为兜底
     try:
         rel = path.relative_to(RAW_ROOT).parts
     except ValueError:
         return None
     if rel:
+        if rel[0] in {"web", "local-notes"} and len(rel) >= 2 and rel[1]:
+            return [rel[1]]
         return [rel[0]]
+    return None
+
+
+def infer_source_type(path: Path, fm: dict[str, object]) -> str | None:
+    v = fm.get("source_type")
+    if isinstance(v, str) and v.strip():
+        return v.strip()
+    rel = path.relative_to(ROOT).as_posix()
+    for prefix, st in RAW_TYPE_MAP:
+        if rel.startswith(prefix):
+            return st
     return None
 
 
@@ -100,16 +125,27 @@ def ensure_min_frontmatter(path: Path, text: str) -> tuple[str, tuple[str, ...]]
         missing.append("created_at")
     if "topics" not in fm:
         missing.append("topics")
+    if "status" not in fm:
+        missing.append("status")
+
+    # 仅当 topics 已存在且 >3 时做截断（按仓库约定 topics 1~3 个）
+    topics_truncated = False
+    if "topics" in fm and isinstance(fm.get("topics"), list) and len(fm.get("topics", [])) > 3:
+        fm["topics"] = list(fm.get("topics", []))[:3]
+        topics_truncated = True
+        if "topics_truncated" not in missing:
+            missing.append("topics_truncated")
 
     if not missing:
         return None
 
     created_at = infer_created_at(path, fm)
     topics = infer_topics(path, fm)
+    source_type = infer_source_type(path, fm)
 
     insert_lines: list[str] = []
     if "source_type" in missing:
-        insert_lines.append("source_type: local_note\n")
+        insert_lines.append(f"source_type: {source_type or 'local_note'}\n")
     if "created_at" in missing:
         if not created_at:
             # 不要瞎填时间戳：无法推断则交给人工处理
@@ -119,6 +155,30 @@ def ensure_min_frontmatter(path: Path, text: str) -> tuple[str, tuple[str, ...]]
         insert_lines.append("topics:\n")
         for t in (topics or ["local_note"])[:3]:
             insert_lines.append(f"  - {t}\n")
+    if "status" in missing:
+        insert_lines.append("status: inbox\n")
+
+    # 若需要截断 topics，则在 frontmatter 内原地替换 topics block（保持其它字段不动）
+    if topics_truncated and fm_lines:
+        new_fm_lines: list[str] = []
+        i = 0
+        while i < len(fm_lines):
+            line = fm_lines[i]
+            m = YAML_KEY_RE.match(line.rstrip("\n"))
+            if m and m.group(1) == "topics":
+                # consume existing topics block
+                new_fm_lines.append("topics:\n")
+                for t in fm.get("topics", []):
+                    new_fm_lines.append(f"  - {t}\n")
+                i += 1
+                while i < len(fm_lines) and fm_lines[i].lstrip().startswith("- "):
+                    i += 1
+                continue
+            new_fm_lines.append(line if line.endswith("\n") else (line + "\n"))
+            i += 1
+        fm_lines = new_fm_lines
+        # 标记只是为了报告，不实际写入这个 key
+        missing = [k for k in missing if k != "topics_truncated"]
 
     # 若已有 frontmatter，则在末尾追加缺失字段；否则创建新的 frontmatter。
     if fm_lines:
@@ -127,10 +187,10 @@ def ensure_min_frontmatter(path: Path, text: str) -> tuple[str, tuple[str, ...]]
             new_fm_lines[-1] = new_fm_lines[-1] + "\n"
         new_fm_lines.extend(insert_lines)
         new_text = "".join(["---\n", *new_fm_lines, "---\n", *body_lines])
-        return new_text, tuple(missing)
+        return new_text, tuple([k for k in missing if k != "topics_truncated"])
 
     new_text = "".join(["---\n", *insert_lines, "---\n", *body_lines])
-    return new_text, tuple(missing)
+    return new_text, tuple([k for k in missing if k != "topics_truncated"])
 
 
 def main() -> int:

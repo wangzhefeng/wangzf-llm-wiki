@@ -5,8 +5,6 @@ author:
 created: 2026-04-06
 created_at: 2026-04-06
 description: 蚂蚁集团和清华大学联合推出纯MLP架构模型TimeMixer，在时序预测上的性能和效能全面超越Transformer模型。
-published: null
-source: https://mp.weixin.qq.com/s/d7fEnEpnyW5T8BN08XRi7g
 source_type: web
 status: inbox
 tags:
@@ -16,6 +14,9 @@ title: 时序预测双飞轮，全面超越Transformer，纯MLP模型实现性�
 topics:
 - 大语言模型
 - 计算机视觉
+source_url: https://mp.weixin.qq.com/s/d7fEnEpnyW5T8BN08XRi7g
+published_at: null
+related_concepts: []
 ---
 
 王世宇 *2024年6月25日 19:14*

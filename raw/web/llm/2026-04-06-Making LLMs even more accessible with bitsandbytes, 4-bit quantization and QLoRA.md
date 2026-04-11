@@ -12,13 +12,14 @@ created_at: 2026-04-06
 topics:
   - 大语言模型
 status: inbox
-source: "https://huggingface.co/blog/4bit-transformers-bitsandbytes"
-published: 2023-05-24
 created: 2026-04-06
 description: "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
 tags:
   - 
   - "clippings"
+source_url: "https://huggingface.co/blog/4bit-transformers-bitsandbytes"
+published_at: 2023-05-24
+related_concepts: []
 ---
 
 This article is also available in Chinese [简体中文](https://huggingface.co/blog/zh/4bit-transformers-bitsandbytes).

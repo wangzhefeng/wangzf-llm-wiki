@@ -4,8 +4,6 @@ created: 2026-04-06
 created_at: 2026-04-06
 description: Transform your complex business challenge into an optimized plan of action—powered
   by Gurobi’s world-leading solver technology.
-published: null
-source: https://www.gurobi.com/jupyter_models/?_difficulty_level=beginner
 source_type: web
 status: inbox
 tags:
@@ -14,6 +12,9 @@ tags:
 title: The Leader in Decision Intelligence Technology
 topics:
 - 运筹优化
+source_url: https://www.gurobi.com/jupyter_models/?_difficulty_level=beginner
+published_at: null
+related_concepts: []
 ---
 
 **Sign In**[Customer Login](https://portal.gurobi.com/iam/login/)

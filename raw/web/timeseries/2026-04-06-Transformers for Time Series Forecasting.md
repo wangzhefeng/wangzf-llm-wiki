@@ -7,8 +7,6 @@ created_at: 2026-04-06
 description: Transformers for Time Series Forecasting Time series forecasting has
   progressed from classical models like ARIMA, which perform well on short-term, linear
   patterns, to machine learning methods that …
-published: 2025-06-02
-source: https://medium.com/@serana.ai/transformers-for-time-series-forecasting-e5e0327e78be
 source_type: web
 status: inbox
 tags:
@@ -18,6 +16,9 @@ title: Transformers for Time Series Forecasting
 topics:
 - 大语言模型
 - 时间序列
+source_url: https://medium.com/@serana.ai/transformers-for-time-series-forecasting-e5e0327e78be
+published_at: 2025-06-02
+related_concepts: []
 ---
 
 [Sitemap](https://medium.com/sitemap/sitemap.xml)

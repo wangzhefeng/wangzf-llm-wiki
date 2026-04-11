@@ -4,8 +4,6 @@ created: 2026-04-06
 created_at: 2026-04-06
 description: A Library for Advanced Deep Time Series Models for General Time Series
   Analysis. - Time-Series-Library/models at main · thuml/Time-Series-Library
-published: null
-source: https://github.com/thuml/Time-Series-Library/tree/main/models
 source_type: web
 status: inbox
 tags:
@@ -14,6 +12,9 @@ tags:
 title: Time-Series-Library/models at main
 topics:
 - 时间序列
+source_url: https://github.com/thuml/Time-Series-Library/tree/main/models
+published_at: null
+related_concepts: []
 ---
 
 [Open in github.dev](https://github.dev/) [Open in a new github.dev tab](https://github.dev/) [Open in codespace](https://github.com/codespaces/new/thuml/Time-Series-Library/tree/main?resume=1)

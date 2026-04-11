@@ -4,8 +4,6 @@ created: 2026-04-06
 created_at: 2026-04-06
 description: Notebook-based book "Introduction to Robotics and Perception" by Frank
   Dellaert and Seth Hutchinson - gtbook/robotics
-published: null
-source: https://github.com/gtbook/robotics
 source_type: web
 status: inbox
 tags:
@@ -15,6 +13,9 @@ title: 'gtbook/robotics: Notebook-based book "Introduction to Robotics and Perce
   by Frank Dellaert and Seth Hutchinson'
 topics:
 - 运筹优化
+source_url: https://github.com/gtbook/robotics
+published_at: null
+related_concepts: []
 ---
 
 ## Introduction to Robotics and Perception Draft

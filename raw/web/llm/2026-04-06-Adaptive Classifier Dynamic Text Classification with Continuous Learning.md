@@ -5,8 +5,6 @@ author:
 created: 2026-04-06
 created_at: 2026-04-06
 description: A Blog post by Asankhaya Sharma on Hugging Face
-published: 2025-06-20
-source: https://huggingface.co/blog/codelion/adaptive-classifier
 source_type: web
 status: inbox
 tags:
@@ -15,6 +13,9 @@ tags:
 title: 'Adaptive Classifier: Dynamic Text Classification with Continuous Learning'
 topics:
 - 大语言模型
+source_url: https://huggingface.co/blog/codelion/adaptive-classifier
+published_at: 2025-06-20
+related_concepts: []
 ---
 
 ## Abstract

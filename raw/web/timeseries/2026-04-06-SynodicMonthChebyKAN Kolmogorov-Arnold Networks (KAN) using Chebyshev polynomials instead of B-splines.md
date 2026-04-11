@@ -4,8 +4,6 @@ created: 2026-04-06
 created_at: 2026-04-06
 description: Kolmogorov-Arnold Networks (KAN) using Chebyshev polynomials instead
   of B-splines. - SynodicMonth/ChebyKAN
-published: null
-source: https://github.com/SynodicMonth/ChebyKAN
 source_type: web
 status: inbox
 tags:
@@ -15,6 +13,9 @@ title: 'SynodicMonth/ChebyKAN: Kolmogorov-Arnold Networks (KAN) using Chebyshev 
   instead of B-splines.'
 topics:
 - 知识库建设
+source_url: https://github.com/SynodicMonth/ChebyKAN
+published_at: null
+related_concepts: []
 ---
 
 ## This is a VERY COARSE version and absolutely NOT FULLY TESTED! it's only intended for experiementing! Any discussion and criticism are welcome! Check the issues for more information!

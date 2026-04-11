@@ -6,8 +6,6 @@ created: 2026-04-06
 created_at: 2026-04-06
 description: OPENSSH PRIVATE KEY转换为RSA PRIVATE KEY使用命令 ssh-keygen -t rsa 生成ssh，默认是以新的格式生成，id_rsa的第一行变成了“BEGIN
   ...
-published: null
-source: https://www.mayanpeng.cn/archives/132.html
 source_type: web
 status: inbox
 tags:
@@ -16,6 +14,9 @@ tags:
 title: OPENSSH PRIVATE KEY转换为RSA PRIVATE KEY
 topics:
 - 运维工具
+source_url: https://www.mayanpeng.cn/archives/132.html
+published_at: null
+related_concepts: []
 ---
 
 使用命令 `ssh-keygen -t rsa` 生成ssh，默认是以新的格式生成，id\_rsa的第一行变成了“BEGIN OPENSSH PRIVATE KEY” 而不再是“BEGIN RSA PRIVATE KEY”，这是一种新的密钥格式， 而且很多软件对这种格式的密钥都是不支持的。此时用来msyql、MongoDB，配置ssh登陆的话，可能会报 “Resource temporarily unavailable. Authentication by key (/Users/youname/.ssh/id\_rsa) failed (Error -16). (Error #35)” 提示资源不可用，这就是id\_rsa 格式不对造成的。这时候就不得不把私钥转换成RSA – PEM格式。然而 `ssh-keygen` 并不提供这种格式转换的功能。

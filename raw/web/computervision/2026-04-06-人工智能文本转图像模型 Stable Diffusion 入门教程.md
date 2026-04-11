@@ -8,13 +8,15 @@ created_at: 2026-04-06
 topics:
   - 计算机视觉
 status: inbox
-source: "https://zhuanlan.zhihu.com/p/561112515"
 published: 
 created: 2026-04-06
 description: "Stable Diffusion 是由 CompVis、Stability AI 和 LAION 共同开发的一个文本转图像模型，它通过 LAION-5B 子集大量的 512x512 图文模型进行训练，我们只要简单的输入一段文本，Stable Diffusion 就可以迅速将其转…"
 tags:
   - 
   - "clippings"
+source_url: "https://zhuanlan.zhihu.com/p/561112515"
+published_at: null
+related_concepts: []
 ---
 
 Stable Diffusion 是由 [CompVis](https://link.zhihu.com/?target=https%3A//github.com/CompVis) 、 [Stability AI](https://link.zhihu.com/?target=https%3A//stability.ai/) 和 [LAION](https://link.zhihu.com/?target=https%3A//laion.ai/) 共同开发的一个文本转图像模型，它通过 [LAION-5B](https://link.zhihu.com/?target=https%3A//laion.ai/blog/laion-5b/) 子集大量的 512x512 图文模型进行训练，我们只要简单的输入一段文本，Stable Diffusion 就可以迅速将其转换为图像，同样我们也可以置入图片或视频，配合文本对其进行处理。先来看几个示例吧。

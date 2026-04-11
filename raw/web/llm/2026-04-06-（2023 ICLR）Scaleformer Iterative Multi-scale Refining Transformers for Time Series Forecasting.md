@@ -8,13 +8,15 @@ created_at: 2026-04-06
 topics:
   - 大语言模型
 status: inbox
-source: "https://zhuanlan.zhihu.com/p/535556231"
 published: 
 created: 2026-04-06
 description: "论文链接https://arxiv.org/pdf/2206.04038.pdf代码链接https://github.com/BorealisAI/scaleformerKey PointsMulti-scale Framework将时间序列利用不同采样率进行采样（平均池化），得到不同尺度。低级尺度具有更…"
 tags:
   - 
   - "clippings"
+source_url: "https://zhuanlan.zhihu.com/p/535556231"
+published_at: null
+related_concepts: []
 ---
 
 目录

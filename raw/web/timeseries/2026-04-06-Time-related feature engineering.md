@@ -5,8 +5,6 @@ created_at: 2026-04-06
 description: This notebook introduces different strategies to leverage time-related
   features for a bike sharing demand regression task that is highly dependent on business
   cycles (days, weeks, months) and yearl...
-published: null
-source: https://scikit-learn.org/stable/auto_examples/applications/plot_cyclical_feature_engineering.html#time-based-cross-validation
 source_type: web
 status: inbox
 tags:
@@ -15,6 +13,9 @@ tags:
 title: Time-related feature engineering
 topics:
 - 计算机视觉
+source_url: https://scikit-learn.org/stable/auto_examples/applications/plot_cyclical_feature_engineering.html#time-based-cross-validation
+published_at: null
+related_concepts: []
 ---
 
 Note

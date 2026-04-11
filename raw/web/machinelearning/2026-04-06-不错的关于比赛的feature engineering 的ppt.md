@@ -6,8 +6,6 @@ created: 2026-04-06
 created_at: 2026-04-06
 description: “More data beats clever algorithms, but better data beats more data.”——名人名言哈哈哈哈，更多的数据打败聪明的算法，更好的数据打败更多的数据。
   特征工程 •数据科学最需要创意的方面。 •像对待其他任…
-published: null
-source: https://zhuanlan.zhihu.com/p/85242628
 source_type: web
 status: inbox
 tags:
@@ -16,6 +14,9 @@ tags:
 title: 不错的关于比赛的feature engineering 的ppt
 topics:
 - 机器学习
+source_url: https://zhuanlan.zhihu.com/p/85242628
+published_at: null
+related_concepts: []
 ---
 
 ![[raw/assets/attachments/machinelearning/v2-c7aabf84f6f36752757367f82a71dd91_1440w.jpg]]

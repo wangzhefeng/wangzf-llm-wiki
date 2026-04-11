@@ -6,13 +6,15 @@ created_at: 2026-04-06
 topics:
   - 大语言模型
 status: inbox
-source: "https://nanonets.com/cookbooks/structured-llm-outputs"
 published: 
 created: 2026-04-06
 description: "A practical handbook for developers using LLMs to get structured outputs."
 tags:
   - 
   - "clippings"
+source_url: "https://nanonets.com/cookbooks/structured-llm-outputs"
+published_at: null
+related_concepts: []
 ---
 
 LLMs mostly produce syntactically valid outputs when we try generating JSON, XML, code, etc., but they can occasionally fail due to their probabilistic nature. This is a problem for developers as we use LLMs programmatically, for tasks like data extraction, code generation, tool calling, etc.

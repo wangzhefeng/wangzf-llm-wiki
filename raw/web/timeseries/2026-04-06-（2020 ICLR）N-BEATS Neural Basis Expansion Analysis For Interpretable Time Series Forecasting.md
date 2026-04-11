@@ -8,13 +8,15 @@ created_at: 2026-04-06
 topics:
   - 时间序列
 status: inbox
-source: "https://zhuanlan.zhihu.com/p/572850227"
 published: 
 created: 2026-04-06
 description: "论文链接：这篇文章中了2020 ICLR https://arxiv.org/pdf/1905.10437.pdfKey PointsMain Idea在时间序列预测方面，很多经典方法如ARIMA、ETS等都还占很重要的地位。本文希望用纯DL的方法来构建一个尽可能简单有效…"
 tags:
   - 
   - "clippings"
+source_url: "https://zhuanlan.zhihu.com/p/572850227"
+published_at: null
+related_concepts: []
 ---
 
 目录

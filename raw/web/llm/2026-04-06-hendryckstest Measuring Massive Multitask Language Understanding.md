@@ -3,8 +3,6 @@ author: null
 created: 2026-04-06
 created_at: 2026-04-06
 description: Measuring Massive Multitask Language Understanding | ICLR 2021 - hendrycks/test
-published: null
-source: https://github.com/hendrycks/test?tab=readme-ov-file
 source_type: web
 status: inbox
 tags:
@@ -13,6 +11,9 @@ tags:
 title: 'hendrycks/test: Measuring Massive Multitask Language Understanding'
 topics:
 - 大语言模型
+source_url: https://github.com/hendrycks/test?tab=readme-ov-file
+published_at: null
+related_concepts: []
 ---
 
 ## Measuring Massive Multitask Language Understanding

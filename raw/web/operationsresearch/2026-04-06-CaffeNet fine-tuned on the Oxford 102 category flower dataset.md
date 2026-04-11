@@ -3,8 +3,6 @@ author: null
 created: 2026-04-06
 created_at: 2026-04-06
 description: CaffeNet fine-tuned on the Oxford 102 category flower dataset - readme.md
-published: null
-source: https://gist.github.com/jimgoo/0179e52305ca768a601f
 source_type: web
 status: inbox
 tags:
@@ -13,6 +11,9 @@ tags:
 title: CaffeNet fine-tuned on the Oxford 102 category flower dataset
 topics:
 - 运筹优化
+source_url: https://gist.github.com/jimgoo/0179e52305ca768a601f
+published_at: null
+related_concepts: []
 ---
 
 name: CaffeNet fine-tuned on the Oxford 102 category flower dataset

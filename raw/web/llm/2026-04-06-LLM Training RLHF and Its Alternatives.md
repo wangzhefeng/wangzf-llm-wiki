@@ -9,13 +9,14 @@ created_at: 2026-04-06
 topics:
   - 大语言模型
 status: inbox
-source: "https://magazine.sebastianraschka.com/p/llm-training-rlhf-and-its-alternatives"
-published: 2023-09-10
 created: 2026-04-06
 description: "I frequently reference a process called Reinforcement Learning with Human Feedback (RLHF) when discussing LLMs, whether in the research news or tutorials."
 tags:
   - 
   - "clippings"
+source_url: "https://magazine.sebastianraschka.com/p/llm-training-rlhf-and-its-alternatives"
+published_at: 2023-09-10
+related_concepts: []
 ---
 
 I frequently reference a process called Reinforcement Learning with Human Feedback (RLHF) when discussing LLMs, whether in the research news or tutorials. RLHF is an integral part of the modern LLM training pipeline due to its ability to incorporate human preferences into the optimization landscape, which can improve the model's helpfulness and safety.

@@ -6,13 +6,15 @@ created_at: 2026-04-06
 topics:
   - 强化学习
 status: inbox
-source: "https://github.com/aburkov/theLMbook/blob/main/GRPO_From_Scratch_Multi_GPU_DataParallel_Qwen_2_5_1_5B_Instruct.ipynb"
 published: 
 created: 2026-04-06
 description: "This is the official repository for The Hundred-Page Language Models Book by Andriy Burkov - theLMbook/GRPO_From_Scratch_Multi_GPU_DataParallel_Qwen_2_5_1_5B_Instruct.ipynb at main · aburkov/theLMbook"
 tags:
   - 
   - "clippings"
+source_url: "https://github.com/aburkov/theLMbook/blob/main/GRPO_From_Scratch_Multi_GPU_DataParallel_Qwen_2_5_1_5B_Instruct.ipynb"
+published_at: null
+related_concepts: []
 ---
 
 [Open in github.dev](https://github.dev/) [Open in a new github.dev tab](https://github.dev/) [Open in codespace](https://github.com/codespaces/new/aburkov/theLMbook/tree/main?resume=1)

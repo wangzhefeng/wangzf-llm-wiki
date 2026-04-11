@@ -6,8 +6,6 @@ description: 'Neural Machine Translation (NMT) tutorial. Data preprocessing, mod
   training, evaluation, and deployment.  - ymoslem/OpenNMT-Tutorial: Neural Machine
   Translation (NMT) tutorial. Data preprocessing, model training, evaluation, and
   deployment.'
-published: null
-source: https://github.com/ymoslem/OpenNMT-Tutorial
 source_type: web
 status: inbox
 tags:
@@ -17,6 +15,9 @@ title: 'ymoslem/OpenNMT-Tutorial: Neural Machine Translation (NMT) tutorial. Dat
   preprocessing, model training, evaluation, and deployment.'
 topics:
 - 大语言模型
+source_url: https://github.com/ymoslem/OpenNMT-Tutorial
+published_at: null
+related_concepts: []
 ---
 
 ## OpenNMT-py Tutorial

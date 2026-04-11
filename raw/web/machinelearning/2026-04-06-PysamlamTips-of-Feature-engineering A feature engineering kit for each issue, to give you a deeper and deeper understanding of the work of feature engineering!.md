@@ -4,8 +4,6 @@ created: 2026-04-06
 created_at: 2026-04-06
 description: A feature engineering kit for each issue, to give you a deeper and deeper
   understanding of the work of feature engineering! - Pysamlam/Tips-of-Feature-engineering
-published: null
-source: https://github.com/Pysamlam/Tips-of-Feature-engineering#Tip22%E6%80%8E%E4%B9%88%E6%9D%A5%E7%AE%A1%E7%90%86%E6%88%91%E4%BB%AC%E7%9A%84%E5%BB%BA%E6%A8%A1%E9%A1%B9%E7%9B%AE%E6%96%87%E4%BB%B6
 source_type: web
 status: inbox
 tags:
@@ -15,6 +13,9 @@ title: 'Pysamlam/Tips-of-Feature-engineering: A feature engineering kit for each
   to give you a deeper and deeper understanding of the work of feature engineering!'
 topics:
 - 机器学习
+source_url: https://github.com/Pysamlam/Tips-of-Feature-engineering#Tip22%E6%80%8E%E4%B9%88%E6%9D%A5%E7%AE%A1%E7%90%86%E6%88%91%E4%BB%AC%E7%9A%84%E5%BB%BA%E6%A8%A1%E9%A1%B9%E7%9B%AE%E6%96%87%E4%BB%B6
+published_at: null
+related_concepts: []
 ---
 
 ## 🏆 Tips-of-Feature-engineering

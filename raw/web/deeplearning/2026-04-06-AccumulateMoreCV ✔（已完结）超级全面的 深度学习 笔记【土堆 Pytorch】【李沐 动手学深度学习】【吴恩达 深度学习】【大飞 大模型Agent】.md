@@ -4,8 +4,6 @@ created: 2026-04-06
 created_at: 2026-04-06
 description: ✔（已完结）超级全面的 深度学习 笔记【土堆 Pytorch】【李沐 动手学深度学习】【吴恩达 深度学习】【大飞 大模型Agent】 -
   AccumulateMore/CV
-published: null
-source: https://github.com/AccumulateMore/CV
 source_type: web
 status: inbox
 tags:
@@ -16,6 +14,9 @@ title: 'AccumulateMore/CV: ✔（已完结）超级全面的 深度学习 笔记
 topics:
 - 大语言模型
 - 深度学习
+source_url: https://github.com/AccumulateMore/CV
+published_at: null
+related_concepts: []
 ---
 
 ## 超级全面的 深度学习 笔记（包含CV、NLP、大模型、Agent）

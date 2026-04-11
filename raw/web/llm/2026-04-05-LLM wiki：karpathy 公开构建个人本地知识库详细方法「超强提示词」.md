@@ -9,10 +9,9 @@ source_url: https://mp.weixin.qq.com/s/q1yTW_fXaxtzvBYRdzJzyQ
 status: linked
 title: LLM wiki：karpathy 公开构建个人本地知识库详细方法「超强提示词」
 topics:
-- 知识库维护
-- 个人知识库
-- llm-knowledge-base
-- 大语言模型
+  - 知识库维护
+  - 个人知识库
+  - llm-knowledge-base
 ---
 AI寒武纪 *2026年4月5日 02:12*
 

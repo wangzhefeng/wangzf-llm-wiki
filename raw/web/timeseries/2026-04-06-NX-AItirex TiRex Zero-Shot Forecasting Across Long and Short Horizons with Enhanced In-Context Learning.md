@@ -6,13 +6,15 @@ created_at: 2026-04-06
 topics:
   - 时间序列
 status: inbox
-source: "https://github.com/NX-AI/tirex"
 published: 
 created: 2026-04-06
 description: "TiRex: Zero-Shot Forecasting Across Long and Short Horizons with Enhanced In-Context Learning - NX-AI/tirex"
 tags:
   - 
   - "clippings"
+source_url: "https://github.com/NX-AI/tirex"
+published_at: null
+related_concepts: []
 ---
 
 This repository provides the pre-trained forecasting model TiRex introduced in the paper [TiRex: Zero-Shot Forecasting across Long and Short Horizons with Enhanced In-Context Learning](https://arxiv.org/abs/2505.23719).

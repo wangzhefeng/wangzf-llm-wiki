@@ -6,13 +6,15 @@ created_at: 2026-04-06
 topics:
   - 运筹优化
 status: inbox
-source: "https://github.com/Gurobi"
 published: 
 created: 2026-04-06
 description: "Gurobi Optimization has 23 repositories available. Follow their code on GitHub."
 tags:
   - 
   - "clippings"
+source_url: "https://github.com/Gurobi"
+published_at: null
+related_concepts: []
 ---
 
 ![[gurobi-dark.png|Gurobi]]

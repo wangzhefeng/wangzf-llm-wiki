@@ -6,13 +6,15 @@ created_at: 2026-04-06
 topics:
   - 时间序列
 status: inbox
-source: "https://github.com/Meteor-Stars/SEMixer"
 published: 
 created: 2026-04-06
 description: "This is code for SEMixer: Semantics Enhanced MLP-Mixer for Multiscale Mixing and Long-term Time Series Forecasting (WWW 2026). SEMixer can handle longer input sequences and achieve better performance from longer inputs in long-term time series forecasting. - Meteor-Stars/SEMixer"
 tags:
   - 
   - "clippings"
+source_url: "https://github.com/Meteor-Stars/SEMixer"
+published_at: null
+related_concepts: []
 ---
 
 ## SEMixer: Semantics Enhanced MLP-Mixer for Multiscale Mixing and Long-term Time Series Forecasting (In ACM Web Conference 2026, WWW 2026)

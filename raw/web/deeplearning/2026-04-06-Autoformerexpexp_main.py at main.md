@@ -5,8 +5,6 @@ created_at: 2026-04-06
 description: 'About Code release for "Autoformer: Decomposition Transformers with
   Auto-Correlation for Long-Term Series Forecasting" (NeurIPS 2021), https://arxiv.org/abs/2106.13008
   - Autoformer/exp/exp_main.py at main · thuml/Autoformer'
-published: null
-source: https://github.com/thuml/Autoformer/blob/main/exp/exp_main.py#L241
 source_type: web
 status: inbox
 tags:
@@ -15,6 +13,9 @@ tags:
 title: Autoformer/exp/exp_main.py at main
 topics:
 - 深度学习
+source_url: https://github.com/thuml/Autoformer/blob/main/exp/exp_main.py#L241
+published_at: null
+related_concepts: []
 ---
 
 1

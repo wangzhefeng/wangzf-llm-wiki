@@ -9,13 +9,15 @@ created_at: 2026-04-06
 topics:
   - 时间序列
 status: inbox
-source: "https://blog.csdn.net/c9Yv2cf9I06K2A9E/article/details/125754784"
 published: 
 created: 2026-04-06
 description: "文章浏览阅读2.9k次，点赞2次，收藏17次。©作者 | Qingsong单位 | 阿里达摩院决策职能实验室论文标题：FEDformer: Frequency Enhanced Decomposed Transformer for Long-term Series Forecasting论文链接：https://arxiv.org/abs/2201.12740代码链接：https://github.com/DAMO..._fedformer代码"
 tags:
   - 
   - "clippings"
+source_url: "https://blog.csdn.net/c9Yv2cf9I06K2A9E/article/details/125754784"
+published_at: null
+related_concepts: []
 ---
 
 ![[a1ac8509ed67c68db106726901e21339.gif|74dc48571835f6a4ae234cd11affd1e8.gif]]

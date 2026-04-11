@@ -3,8 +3,6 @@ author: null
 created: 2026-04-06
 created_at: 2026-04-06
 description: 💫 Industrial-strength Natural Language Processing (NLP) in Python - explosion/spaCy
-published: null
-source: https://github.com/explosion/spaCy
 source_type: web
 status: inbox
 tags:
@@ -14,6 +12,9 @@ title: 'explosion/spaCy: 💫 Industrial-strength Natural Language Processing (N
   Python'
 topics:
 - 深度学习
+source_url: https://github.com/explosion/spaCy
+published_at: null
+related_concepts: []
 ---
 
 [![](https://camo.githubusercontent.com/06c3865d4b0ab961b11ac50a0fc1d791047cbcf4ef6b413e0587b166b38f8261/68747470733a2f2f6578706c6f73696f6e2e61692f6173736574732f696d672f6c6f676f2e737667)](https://explosion.ai/)

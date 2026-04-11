@@ -8,13 +8,15 @@ created_at: 2026-04-06
 topics:
   - 强化学习
 status: inbox
-source: "https://mp.weixin.qq.com/s/TOTza-CEhG7vYrBBtURldw"
 published: 
 created: 2026-04-06
 description: "强化学习再梳理，从PPO到GRPO到DAPO"
 tags:
   - 
   - "clippings"
+source_url: "https://mp.weixin.qq.com/s/TOTza-CEhG7vYrBBtURldw"
+published_at: null
+related_concepts: []
 ---
 
 catneverfat *2025年5月4日 22:03*

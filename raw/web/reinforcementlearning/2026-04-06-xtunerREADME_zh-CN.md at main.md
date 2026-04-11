@@ -4,8 +4,6 @@ created: 2026-04-06
 created_at: 2026-04-06
 description: A Next-Generation Training Engine Built for Ultra-Large MoE Models -
   xtuner/README_zh-CN.md at main · InternLM/xtuner
-published: null
-source: https://github.com/InternLM/xtuner/blob/main/README_zh-CN.md
 source_type: web
 status: inbox
 tags:
@@ -14,6 +12,9 @@ tags:
 title: xtuner/README_zh-CN.md at main
 topics:
 - 强化学习
+source_url: https://github.com/InternLM/xtuner/blob/main/README_zh-CN.md
+published_at: null
+related_concepts: []
 ---
 
 ## 🚀 Speed Benchmark

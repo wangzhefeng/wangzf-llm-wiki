@@ -4,8 +4,6 @@ created: 2026-04-06
 created_at: 2026-04-06
 description: A Library for Advanced Deep Time Series Models for General Time Series
   Analysis. - Time-Series-Library/README_zh.md at main · thuml/Time-Series-Library
-published: null
-source: https://github.com/thuml/Time-Series-Library/blob/main/README_zh.md
 source_type: web
 status: inbox
 tags:
@@ -14,6 +12,9 @@ tags:
 title: Time-Series-Library/README_zh.md at main
 topics:
 - 时间序列
+source_url: https://github.com/thuml/Time-Series-Library/blob/main/README_zh.md
+published_at: null
+related_concepts: []
 ---
 
 ## 时间序列库（TSLib）

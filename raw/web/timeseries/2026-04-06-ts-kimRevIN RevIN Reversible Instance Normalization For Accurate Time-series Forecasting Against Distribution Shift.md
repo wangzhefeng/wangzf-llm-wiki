@@ -6,13 +6,15 @@ created_at: 2026-04-06
 topics:
   - 时间序列
 status: inbox
-source: "https://github.com/ts-kim/RevIN"
 published: 
 created: 2026-04-06
 description: "RevIN: Reversible Instance Normalization For Accurate Time-series Forecasting Against Distribution Shift - ts-kim/RevIN"
 tags:
   - 
   - "clippings"
+source_url: "https://github.com/ts-kim/RevIN"
+published_at: null
+related_concepts: []
 ---
 
 ## RevIN (ICLR 2022) - Official PyTorch Implementation

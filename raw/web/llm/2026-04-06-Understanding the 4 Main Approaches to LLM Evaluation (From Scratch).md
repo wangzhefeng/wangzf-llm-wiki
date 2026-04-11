@@ -9,13 +9,14 @@ created_at: 2026-04-06
 topics:
   - 大语言模型
 status: inbox
-source: "https://magazine.sebastianraschka.com/p/llm-evaluation-4-approaches"
-published: 2025-10-05
 created: 2026-04-06
 description: "Multiple-Choice Benchmarks, Verifiers, Leaderboards, and LLM Judges with Code Examples"
 tags:
   - 
   - "clippings"
+source_url: "https://magazine.sebastianraschka.com/p/llm-evaluation-4-approaches"
+published_at: 2025-10-05
+related_concepts: []
 ---
 
 ### Multiple-Choice Benchmarks, Verifiers, Leaderboards, and LLM Judges with Code Examples

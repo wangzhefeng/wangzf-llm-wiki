@@ -14,8 +14,6 @@ created_at: 2026-04-06
 description: This paper introduces LoRA, a parameter-efficient method for adapting
   large language models to downstream tasks. LoRA significantly reduces the number
   of t
-published: 2021-10-17
-source: https://www.alphaxiv.org/overview/2106.09685v2
 source_type: web
 status: inbox
 tags:
@@ -24,6 +22,9 @@ tags:
 title: 'LoRA: Low-Rank Adaptation of Large Language Models'
 topics:
 - 大语言模型
+source_url: https://www.alphaxiv.org/overview/2106.09685v2
+published_at: 2021-10-17
+related_concepts: []
 ---
 
 ## Introduction

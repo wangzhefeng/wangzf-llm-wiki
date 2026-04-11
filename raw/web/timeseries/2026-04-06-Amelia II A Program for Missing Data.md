@@ -3,8 +3,6 @@ author: null
 created: 2026-04-06
 created_at: 2026-04-06
 description: null
-published: null
-source: https://gking.harvard.edu/amelia
 source_type: web
 status: inbox
 tags:
@@ -13,6 +11,9 @@ tags:
 title: 'Amelia II: A Program for Missing Data'
 topics:
 - 时间序列
+source_url: https://gking.harvard.edu/amelia
+published_at: null
+related_concepts: []
 ---
 
 ### Authors: James Honaker, Gary King, Matthew Blackwell

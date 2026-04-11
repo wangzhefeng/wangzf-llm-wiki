@@ -6,13 +6,15 @@ created_at: 2026-04-06
 topics:
   - 深度学习
 status: inbox
-source: "https://github.com/lyhue1991/torchkeras?tab=readme-ov-file"
 published: 
 created: 2026-04-06
 description: "Pytorch❤️  Keras 😋😋. Contribute to lyhue1991/torchkeras development by creating an account on GitHub."
 tags:
   - 
   - "clippings"
+source_url: "https://github.com/lyhue1991/torchkeras?tab=readme-ov-file"
+published_at: null
+related_concepts: []
 ---
 
 ## 炼丹师，这是你的梦中情炉吗?🌹🌹

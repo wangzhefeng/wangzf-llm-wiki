@@ -4,8 +4,6 @@ created: 2026-04-06
 created_at: 2026-04-06
 description: A set of examples around pytorch in Vision, Text, Reinforcement Learning,
   etc. - examples/mnist_hogwild at main · pytorch/examples
-published: null
-source: https://github.com/pytorch/examples/tree/main/mnist_hogwild
 source_type: web
 status: inbox
 tags:
@@ -14,6 +12,9 @@ tags:
 title: examples/mnist_hogwild at main
 topics:
 - 深度学习
+source_url: https://github.com/pytorch/examples/tree/main/mnist_hogwild
+published_at: null
+related_concepts: []
 ---
 
 ## MNIST Hogwild Example

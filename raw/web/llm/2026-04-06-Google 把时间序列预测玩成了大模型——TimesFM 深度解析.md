@@ -5,8 +5,6 @@ author:
 created: 2026-04-06
 created_at: 2026-04-06
 description: Google 把时间序列预测玩成了大模型——TimesFM 深度解析“时间序列预测这个领域，终于也迎来了属于自
-published: null
-source: https://mp.weixin.qq.com/s/paWOVsSfSr5Lu5yA_3d7aA
 source_type: web
 status: inbox
 tags:
@@ -16,6 +14,9 @@ title: Google 把时间序列预测玩成了大模型——TimesFM 深度解析
 topics:
 - 时间序列
 - 大语言模型
+source_url: https://mp.weixin.qq.com/s/paWOVsSfSr5Lu5yA_3d7aA
+published_at: null
+related_concepts: []
 ---
 
 ChallengeHub *2026年3月30日 21:40*

@@ -8,13 +8,15 @@ created_at: 2026-04-06
 topics:
   - 时间序列
 status: inbox
-source: "https://skforecast.org/0.14.0/introduction-forecasting/introduction-forecasting"
 published: 
 created: 2026-04-06
 description: "Python library for time series forecasting using machine learning models. It works with any regressor compatible with the scikit-learn API, including popular options like LightGBM, XGBoost, CatBoost, Keras, and many others."
 tags:
   - 
   - "clippings"
+source_url: "https://skforecast.org/0.14.0/introduction-forecasting/introduction-forecasting"
+published_at: null
+related_concepts: []
 ---
 
 ## Introduction to forecasting

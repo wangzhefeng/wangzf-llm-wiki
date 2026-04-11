@@ -5,8 +5,6 @@ author:
 created: 2026-04-06
 created_at: 2026-04-06
 description: A guide to torch.cuda, a PyTorch module to run CUDA operations
-published: 2001-01-16
-source: https://docs.pytorch.org/docs/stable/notes/cuda.html#cuda-nn-ddp-instead
 source_type: web
 status: inbox
 tags:
@@ -15,6 +13,9 @@ tags:
 title: CUDA semantics
 topics:
 - 深度学习
+source_url: https://docs.pytorch.org/docs/stable/notes/cuda.html#cuda-nn-ddp-instead
+published_at: 2001-01-16
+related_concepts: []
 ---
 
 ## CUDA semantics

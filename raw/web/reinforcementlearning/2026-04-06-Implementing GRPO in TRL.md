@@ -6,13 +6,15 @@ created_at: 2026-04-06
 topics:
   - 强化学习
 status: inbox
-source: "https://huggingface.co/learn/llm-course/en/chapter12/4?fw=pt"
 published: 
 created: 2026-04-06
 description: "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
 tags:
   - 
   - "clippings"
+source_url: "https://huggingface.co/learn/llm-course/en/chapter12/4?fw=pt"
+published_at: null
+related_concepts: []
 ---
 
 In this page, we’ll learn how to implement Group Relative Policy Optimization (GRPO) using the Transformer Reinforcement Learning (TRL) library. We’ll focus on practical implementation with minimal code.

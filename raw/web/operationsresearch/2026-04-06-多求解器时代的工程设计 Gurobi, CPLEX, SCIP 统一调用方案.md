@@ -8,13 +8,15 @@ created_at: 2026-04-06
 topics:
   - 运筹优化
 status: inbox
-source: "https://mp.weixin.qq.com/s/9z1TfR0XB58CCRAf-ccPxw"
 published: 
 created: 2026-04-06
 description: 
 tags:
   - 
   - "clippings"
+source_url: "https://mp.weixin.qq.com/s/9z1TfR0XB58CCRAf-ccPxw"
+published_at: null
+related_concepts: []
 ---
 
 原创 王源 *2026年2月27日 12:04*

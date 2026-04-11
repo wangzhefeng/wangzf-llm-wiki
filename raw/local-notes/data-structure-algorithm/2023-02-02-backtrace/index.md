@@ -11,6 +11,7 @@ source_type: local_note
 created_at: 2023-02-02
 topics:
   - computer algorithms
+status: inbox
 ---
 
 <style>

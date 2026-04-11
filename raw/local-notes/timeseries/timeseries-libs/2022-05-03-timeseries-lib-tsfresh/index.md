@@ -12,6 +12,7 @@ source_type: local_note
 created_at: 2022-05-03
 topics:
   - timeseries
+status: inbox
 ---
 
 <style>

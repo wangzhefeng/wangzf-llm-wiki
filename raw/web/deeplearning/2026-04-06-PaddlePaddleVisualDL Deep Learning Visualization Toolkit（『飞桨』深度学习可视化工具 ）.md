@@ -6,13 +6,15 @@ created_at: 2026-04-06
 topics:
   - 深度学习
 status: inbox
-source: "https://github.com/PaddlePaddle/VisualDL"
 published: 
 created: 2026-04-06
 description: "Deep Learning Visualization Toolkit（『飞桨』深度学习可视化工具 ） - PaddlePaddle/VisualDL"
 tags:
   - 
   - "clippings"
+source_url: "https://github.com/PaddlePaddle/VisualDL"
+published_at: null
+related_concepts: []
 ---
 
 [**中文**](https://github.com/PaddlePaddle/VisualDL/blob/develop/README_CN.md)

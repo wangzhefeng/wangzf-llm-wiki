@@ -4,8 +4,6 @@ created: 2026-04-06
 created_at: 2026-04-06
 description: fastai simplifies training fast and accurate neural nets using modern
   best practices
-published: null
-source: https://docs.fast.ai/
 source_type: web
 status: inbox
 tags:
@@ -14,6 +12,9 @@ tags:
 title: Welcome to fastai
 topics:
 - 深度学习
+source_url: https://docs.fast.ai/
+published_at: null
+related_concepts: []
 ---
 
 ## Installing

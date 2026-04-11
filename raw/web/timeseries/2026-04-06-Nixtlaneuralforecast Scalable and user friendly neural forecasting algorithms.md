@@ -4,8 +4,6 @@ created: 2026-04-06
 created_at: 2026-04-06
 description: 'Scalable and user friendly neural :brain: forecasting algorithms. -
   Nixtla/neuralforecast: Scalable and user friendly neural forecasting algorithms.'
-published: null
-source: https://github.com/Nixtla/neuralforecast
 source_type: web
 status: inbox
 tags:
@@ -15,6 +13,9 @@ title: 'Nixtla/neuralforecast: Scalable and user friendly neural forecasting alg
 topics:
 - 时间序列
 - 深度学习
+source_url: https://github.com/Nixtla/neuralforecast
+published_at: null
+related_concepts: []
 ---
 
 ## Nixtla

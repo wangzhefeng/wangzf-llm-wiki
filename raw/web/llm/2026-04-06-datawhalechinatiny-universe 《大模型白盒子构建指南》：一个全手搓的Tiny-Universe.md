@@ -4,8 +4,6 @@ created: 2026-04-06
 created_at: 2026-04-06
 description: 《大模型白盒子构建指南》：一个全手搓的Tiny-Universe. Contribute to datawhalechina/tiny-universe
   development by creating an account on GitHub.
-published: null
-source: https://github.com/datawhalechina/tiny-universe?tab=readme-ov-file
 source_type: web
 status: inbox
 tags:
@@ -14,6 +12,9 @@ tags:
 title: 'datawhalechina/tiny-universe: 《大模型白盒子构建指南》：一个全手搓的Tiny-Universe'
 topics:
 - 知识库建设
+source_url: https://github.com/datawhalechina/tiny-universe?tab=readme-ov-file
+published_at: null
+related_concepts: []
 ---
 
 [![](https://github.com/datawhalechina/tiny-universe/raw/main/images/tiny-universe-head2.png)](https://github.com/datawhalechina/tiny-universe/blob/main/images/tiny-universe-head2.png)

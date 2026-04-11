@@ -10,8 +10,6 @@ description: Special thanks to John Schulman for a lot of super valuable feedbac
   2021), have led to significant improvements in model performance, while raising
   many research questions. This post aims to review recent developments in how to
   effectively use test-time compute (i.e. “thinking time”) and why it helps.
-published: 2025-05-01
-source: https://lilianweng.github.io/posts/2025-05-01-thinking/
 source_type: web
 status: inbox
 tags:
@@ -20,6 +18,9 @@ tags:
 title: Why We Think
 topics:
 - 强化学习
+source_url: https://lilianweng.github.io/posts/2025-05-01-thinking/
+published_at: 2025-05-01
+related_concepts: []
 ---
 
 Special thanks to [John Schulman](https://scholar.google.com/citations?user=itSa94cAAAAJ&hl=en) for a lot of super valuable feedback and direct edits on this post.

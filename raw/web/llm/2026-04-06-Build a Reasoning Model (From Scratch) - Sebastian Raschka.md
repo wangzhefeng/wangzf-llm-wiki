@@ -29,8 +29,6 @@ description: 'Understand LLM reasoning by creating your own reasoning model–fr
   philosophy: the best way to learn how something works is to build it yourself! You’ll
   begin with a pre-trained LLM, adding and improving its reasoning capabilities in
   ways you can see, test, and understand.'
-published: null
-source: https://www.manning.com/books/build-a-reasoning-model-from-scratch?utm_source=raschka&utm_medium=affiliate&utm_campaign=book_raschka2&a_aid=raschka&a_bid=4c3c5398&chan=mm_newsletter
 source_type: web
 status: inbox
 tags:
@@ -39,6 +37,9 @@ tags:
 title: Build a Reasoning Model (From Scratch) - Sebastian Raschka
 topics:
 - 大语言模型
+source_url: https://www.manning.com/books/build-a-reasoning-model-from-scratch?utm_source=raschka&utm_medium=affiliate&utm_campaign=book_raschka2&a_aid=raschka&a_bid=4c3c5398&chan=mm_newsletter
+published_at: null
+related_concepts: []
 ---
 
 [**Manning Early Access Program (MEAP)**](https://www.manning.com/meap-program "more about MEAP") Read chapters as they are written, get the finished eBook as soon as it’s ready, and receive the pBook long before it's in bookstores.

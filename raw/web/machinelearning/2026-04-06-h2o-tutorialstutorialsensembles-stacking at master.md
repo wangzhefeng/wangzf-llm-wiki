@@ -4,8 +4,6 @@ created: 2026-04-06
 created_at: 2026-04-06
 description: Tutorials and training material for the H2O Machine Learning Platform
   - h2o-tutorials/tutorials/ensembles-stacking at master · h2oai/h2o-tutorials
-published: null
-source: https://github.com/h2oai/h2o-tutorials/tree/master/tutorials/ensembles-stacking
 source_type: web
 status: inbox
 tags:
@@ -14,6 +12,9 @@ tags:
 title: h2o-tutorials/tutorials/ensembles-stacking at master
 topics:
 - 机器学习
+source_url: https://github.com/h2oai/h2o-tutorials/tree/master/tutorials/ensembles-stacking
+published_at: null
+related_concepts: []
 ---
 
 ## Ensembles: Stacking, Super Learner

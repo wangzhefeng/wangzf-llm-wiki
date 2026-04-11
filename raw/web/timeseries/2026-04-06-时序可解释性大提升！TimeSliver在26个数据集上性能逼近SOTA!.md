@@ -8,13 +8,15 @@ created_at: 2026-04-06
 topics:
   - 时间序列
 status: inbox
-source: "https://mp.weixin.qq.com/s/_h9taHzRtUJNx-oSM5veEg"
 published: 
 created: 2026-04-06
 description: "ICLR 2026 | 时序可解释性大提升！TimeSliver在26个数据集上性能逼近SOTA"
 tags:
   - 
   - "clippings"
+source_url: "https://mp.weixin.qq.com/s/_h9taHzRtUJNx-oSM5veEg"
+published_at: null
+related_concepts: []
 ---
 
 ## ICLR 2026 | 时序可解释性大提升！TimeSliver在26个数据集上性能逼近SOTA!

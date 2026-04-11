@@ -6,13 +6,15 @@ created_at: 2026-04-06
 topics:
   - 时间序列
 status: inbox
-source: "https://github.com/thuml/Sundial"
 published: 
 created: 2026-04-06
 description: "About model release for \"Sundial: A Family of Highly Capable Time Series Foundation Models\" (ICML 2025 Oral) - thuml/Sundial"
 tags:
   - 
   - "clippings"
+source_url: "https://github.com/thuml/Sundial"
+published_at: null
+related_concepts: []
 ---
 
 ## Sundial

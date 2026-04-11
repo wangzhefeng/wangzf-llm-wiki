@@ -4,8 +4,6 @@ created: 2026-04-06
 created_at: 2026-04-06
 description: 记录计算智能优化算法的学习笔记，通过阅读论文并复现的形式加深对相关的启发式智能优化的理解。. Contribute to doFighter/Computational-intelligence
   development by creating an account on GitHub.
-published: null
-source: https://github.com/doFighter/Computational-intelligence
 source_type: web
 status: inbox
 tags:
@@ -14,6 +12,9 @@ tags:
 title: 'doFighter/Computational-intelligence: 记录计算智能优化算法的学习笔记，通过阅读论文并复现的形式加深对相关的启发式智能优化的理解。'
 topics:
 - 运筹优化
+source_url: https://github.com/doFighter/Computational-intelligence
+published_at: null
+related_concepts: []
 ---
 
 ## Computational-intelligence

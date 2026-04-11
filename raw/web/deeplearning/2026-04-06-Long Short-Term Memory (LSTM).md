@@ -4,8 +4,6 @@ created: 2026-04-06
 created_at: 2026-04-06
 description: A simple PyTorch implementation/tutorial of Long Short-Term Memory (LSTM)
   modules.
-published: null
-source: https://nn.labml.ai/lstm/index.html
 source_type: web
 status: inbox
 tags:
@@ -14,6 +12,9 @@ tags:
 title: Long Short-Term Memory (LSTM)
 topics:
 - 深度学习
+source_url: https://nn.labml.ai/lstm/index.html
+published_at: null
+related_concepts: []
 ---
 
 [#](#section-0)

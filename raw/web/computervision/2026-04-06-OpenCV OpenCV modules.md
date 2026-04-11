@@ -6,13 +6,15 @@ created_at: 2026-04-06
 topics:
   - 计算机视觉
 status: inbox
-source: "https://docs.opencv.org/4.x/index.html"
 published: 
 created: 2026-04-06
 description: 
 tags:
   - 
   - "clippings"
+source_url: "https://docs.opencv.org/4.x/index.html"
+published_at: null
+related_concepts: []
 ---
 
 | ![[opencv-logo-small.png|Logo]] | OpenCV  Open Source Computer Vision |

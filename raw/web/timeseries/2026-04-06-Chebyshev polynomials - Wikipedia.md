@@ -5,8 +5,6 @@ author:
 created: 2026-04-06
 created_at: 2026-04-06
 description: null
-published: 2003-02-18
-source: https://en.wikipedia.org/wiki/Chebyshev_polynomials
 source_type: web
 status: inbox
 tags:
@@ -15,6 +13,9 @@ tags:
 title: Chebyshev polynomials - Wikipedia
 topics:
 - 知识库建设
+source_url: https://en.wikipedia.org/wiki/Chebyshev_polynomials
+published_at: 2003-02-18
+related_concepts: []
 ---
 
 ![[raw/assets/attachments/timeseries/250px-Chebyshev_Polynomials_of_the_First_Kind.svg.png]]

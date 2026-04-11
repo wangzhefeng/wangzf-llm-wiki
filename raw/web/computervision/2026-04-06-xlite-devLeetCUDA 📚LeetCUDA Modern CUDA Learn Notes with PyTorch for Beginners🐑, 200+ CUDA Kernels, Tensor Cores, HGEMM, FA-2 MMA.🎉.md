@@ -4,8 +4,6 @@ created: 2026-04-06
 created_at: 2026-04-06
 description: '📚LeetCUDA: Modern CUDA Learn Notes with PyTorch for Beginners🐑, 200+
   CUDA Kernels, Tensor Cores, HGEMM, FA-2 MMA.🎉 - xlite-dev/LeetCUDA'
-published: null
-source: https://github.com/xlite-dev/LeetCUDA/tree/main
 source_type: web
 status: inbox
 tags:
@@ -16,6 +14,9 @@ title: 'xlite-dev/LeetCUDA: 📚LeetCUDA: Modern CUDA Learn Notes with PyTorch f
 topics:
 - 深度学习
 - 计算机视觉
+source_url: https://github.com/xlite-dev/LeetCUDA/tree/main
+published_at: null
+related_concepts: []
 ---
 
 📚 **LeetCUDA**: It includes **Tensor/CUDA Cores, TF32/F16/BF16/F8**, [📖200+ CUDA Kernels🔥](#cuda-kernel) with PyTorch, [📖100+ LLM/CUDA🔥](#my-blogs-part-1) blogs, [📖HGEMM⚡️](https://github.com/xlite-dev/LeetCUDA/blob/main/kernels/hgemm) which can achieve `98%~100%` TFLOPS of **cuBLAS**, and [📖flash-attn⚡️](https://github.com/xlite-dev/LeetCUDA/blob/main/kernels/flash-attn) using Tensor Cores with pure MMA PTX. ♥️ Please consider to leave a ⭐️ Star to support me, my bro ~ ♥️

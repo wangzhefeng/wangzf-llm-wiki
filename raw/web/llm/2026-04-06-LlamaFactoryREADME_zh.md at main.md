@@ -4,8 +4,6 @@ created: 2026-04-06
 created_at: 2026-04-06
 description: Unified Efficient Fine-Tuning of 100+ LLMs & VLMs (ACL 2024) - LlamaFactory/README_zh.md
   at main · hiyouga/LlamaFactory
-published: null
-source: https://github.com/hiyouga/LlamaFactory/blob/main/README_zh.md
 source_type: web
 status: inbox
 tags:
@@ -14,6 +12,9 @@ tags:
 title: LlamaFactory/README_zh.md at main
 topics:
 - 大语言模型
+source_url: https://github.com/hiyouga/LlamaFactory/blob/main/README_zh.md
+published_at: null
+related_concepts: []
 ---
 
 [![# LLaMA Factory](https://github.com/hiyouga/LlamaFactory/raw/main/raw/assets/logo.png)](https://github.com/hiyouga/LlamaFactory/blob/main/raw/assets/logo.png)

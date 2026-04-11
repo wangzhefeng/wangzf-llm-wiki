@@ -6,13 +6,14 @@ created_at: 2026-04-06
 topics:
   - 大语言模型
 status: inbox
-source: "https://www.mercity.ai/blog-post/using-chatgpt-to-build-synthetic-datasets/"
-published: 2023-05-19
 created: 2026-04-06
 description: "In this practical guide you'll learn how to build high quality synthetic datasets using ChatGPT."
 tags:
   - 
   - "clippings"
+source_url: "https://www.mercity.ai/blog-post/using-chatgpt-to-build-synthetic-datasets/"
+published_at: 2023-05-19
+related_concepts: []
 ---
 
 Pranav

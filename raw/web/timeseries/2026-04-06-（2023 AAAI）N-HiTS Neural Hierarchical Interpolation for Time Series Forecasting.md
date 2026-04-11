@@ -8,13 +8,15 @@ created_at: 2026-04-06
 topics:
   - 时间序列
 status: inbox
-source: "https://zhuanlan.zhihu.com/p/573203887"
 published: 
 created: 2026-04-06
 description: "论文链接：这是Nbeats作者的又一作品 https://arxiv.org/pdf/2201.12886.pdf可以先了解一下NBEATS模型： 的泼墨佛给克呢：N-BEATS: Neural Basis Expansion Analysis For Interpretable Time Series ForecastingKe…"
 tags:
   - 
   - "clippings"
+source_url: "https://zhuanlan.zhihu.com/p/573203887"
+published_at: null
+related_concepts: []
 ---
 
 目录

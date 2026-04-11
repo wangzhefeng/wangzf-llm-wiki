@@ -6,13 +6,15 @@ created_at: 2026-04-06
 topics:
   - 深度学习
 status: inbox
-source: "https://lightning.ai/docs/pytorch/stable/debug/debugging_basic.html"
 published: 
 created: 2026-04-06
 description: 
 tags:
   - 
   - "clippings"
+source_url: "https://lightning.ai/docs/pytorch/stable/debug/debugging_basic.html"
+published_at: null
+related_concepts: []
 ---
 
 ## Debug your model (basic)

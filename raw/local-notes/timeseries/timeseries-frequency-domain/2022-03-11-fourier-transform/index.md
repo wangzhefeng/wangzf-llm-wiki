@@ -11,6 +11,7 @@ source_type: local_note
 created_at: 2022-03-11
 topics:
   - statistic
+status: inbox
 ---
 
 <style>

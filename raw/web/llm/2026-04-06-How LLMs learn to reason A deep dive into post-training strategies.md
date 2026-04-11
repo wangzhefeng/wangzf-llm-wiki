@@ -8,13 +8,14 @@ created_at: 2026-04-06
 topics:
   - 大语言模型
 status: inbox
-source: "https://meghanaarakkalrajeev.substack.com/p/how-llms-learn-to-reason-a-deep-dive?continueFlag=133bb4005aa7a6b8f1f0cba82d5e243a"
-published: 2025-04-24
 created: 2026-04-06
 description: "Hi, I'm Meghana 👋, welcome to the second edition of The Next Token, my newsletter distilling AI research and decoding the tech behind the buzz."
 tags:
   - 
   - "clippings"
+source_url: "https://meghanaarakkalrajeev.substack.com/p/how-llms-learn-to-reason-a-deep-dive?continueFlag=133bb4005aa7a6b8f1f0cba82d5e243a"
+published_at: 2025-04-24
+related_concepts: []
 ---
 
 *Hi, I'm Meghana 👋, welcome to the **second edition** of **The Next Token**, my newsletter distilling AI research and decoding the tech behind the buzz. [Here’s why I started the series.](https://meghanaarakkalrajeev.substack.com/about)*

@@ -4,8 +4,6 @@ created: 2026-04-06
 created_at: 2026-04-06
 description: Draw multi-layer neural network in your browser. Contribute to cbovar/ConvNetDraw
   development by creating an account on GitHub.
-published: null
-source: https://github.com/cbovar/ConvNetDraw?tab=readme-ov-file
 source_type: web
 status: inbox
 tags:
@@ -14,6 +12,9 @@ tags:
 title: 'cbovar/ConvNetDraw: Draw multi-layer neural network in your browser'
 topics:
 - 工具
+source_url: https://github.com/cbovar/ConvNetDraw?tab=readme-ov-file
+published_at: null
+related_concepts: []
 ---
 
 [Open in github.dev](https://github.dev/) [Open in a new github.dev tab](https://github.dev/) [Open in codespace](https://github.com/codespaces/new/cbovar/ConvNetDraw?resume=1)

@@ -4,8 +4,6 @@ created: 2026-04-06
 created_at: 2026-04-06
 description: nlp in action. Contribute to nlpinaction/learning-nlp development by
   creating an account on GitHub.
-published: null
-source: https://github.com/nlpinaction/learning-nlp
 source_type: web
 status: inbox
 tags:
@@ -14,6 +12,9 @@ tags:
 title: 'nlpinaction/learning-nlp: nlp in action'
 topics:
 - 大语言模型
+source_url: https://github.com/nlpinaction/learning-nlp
+published_at: null
+related_concepts: []
 ---
 
 ## 自然语言处理算法与实战

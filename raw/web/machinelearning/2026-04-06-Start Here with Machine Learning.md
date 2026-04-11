@@ -6,13 +6,14 @@ created_at: 2026-04-06
 topics:
   - 机器学习
 status: inbox
-source: "https://machinelearningmastery.com/start-here/#process"
-published: 2014-01-26
 created: 2026-04-06
 description: "Your guide to getting started and getting good at applied machine learning with Machine Learning Mastery."
 tags:
   - 
   - "clippings"
+source_url: "https://machinelearningmastery.com/start-here/#process"
+published_at: 2014-01-26
+related_concepts: []
 ---
 
 ## Need Help Getting Started with Applied Machine Learning?

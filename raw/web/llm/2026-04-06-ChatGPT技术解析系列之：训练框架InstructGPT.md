@@ -8,13 +8,15 @@ created_at: 2026-04-06
 topics:
   - 大语言模型
 status: inbox
-source: "https://zhuanlan.zhihu.com/p/605516116"
 published: 
 created: 2026-04-06
 description: "Why hasn't the public seen programs like ChatGPT from Meta or from Google? \"Because Google and Meta both have a lot to lose by putting out systems that make stuff up\" says Meta's chi…"
 tags:
   - 
   - "clippings"
+source_url: "https://zhuanlan.zhihu.com/p/605516116"
+published_at: null
+related_concepts: []
 ---
 
 目录

@@ -6,7 +6,9 @@ status: inbox
 title: 'GitHub - huggingface/text-generation-inference: Large Language Model Text
   Generation Inference · GitHub'
 topics:
-- 大语言模型
+- 大语言模型published_at: null
+author: null
+related_concepts: []
 ---
 
 # GitHub - huggingface/text-generation-inference: Large Language Model Text Generation Inference · GitHub

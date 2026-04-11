@@ -5,8 +5,6 @@ author:
 created: 2026-04-06
 created_at: 2026-04-06
 description: null
-published: null
-source: https://mp.weixin.qq.com/s/lspwTyzxUnpbw1eHIoqluw
 source_type: web
 status: inbox
 tags:
@@ -15,6 +13,9 @@ tags:
 title: 从零搓出一个Claude Code，一篇超详细的总结！
 topics:
 - Vibe Coding
+source_url: https://mp.weixin.qq.com/s/lspwTyzxUnpbw1eHIoqluw
+published_at: null
+related_concepts: []
 ---
 
 原创 尤逸晖 *2026年2月12日 22:01*

@@ -6,13 +6,15 @@ created_at: 2026-04-06
 topics:
   - 时间序列
 status: inbox
-source: "https://github.com/autogluon/fev"
 published: 
 created: 2026-04-06
 description: "Forecast evaluation library. Contribute to autogluon/fev development by creating an account on GitHub."
 tags:
   - 
   - "clippings"
+source_url: "https://github.com/autogluon/fev"
+published_at: null
+related_concepts: []
 ---
 
 ## fev

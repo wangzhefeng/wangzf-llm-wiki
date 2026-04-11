@@ -8,13 +8,15 @@ created_at: 2026-04-06
 topics:
   - 大语言模型
 status: inbox
-source: "https://zhuanlan.zhihu.com/p/347061440"
 published: 
 created: 2026-04-06
 description: "本文分享一个基于Harvard开源的 transformer-pytorch的机器翻译模型（英译中）。在编写项目的过程中，从数据处理、模型编写、BLEU值计算到解决GPU的显存分配问题，我们都踩了不少坑，因此将心得分享给大家～Github…"
 tags:
   - 
   - "clippings"
+source_url: "https://zhuanlan.zhihu.com/p/347061440"
+published_at: null
+related_concepts: []
 ---
 
 本文分享一个基于Harvard开源的 [transformer-pytorch](https://link.zhihu.com/?target=http%3A//nlp.seas.harvard.edu/2018/04/03/attention.html) 的机器翻译模型（英译中）。在编写项目的过程中，从数据处理、模型编写、 [BLEU值](https://zhida.zhihu.com/search?content_id=165254750&content_type=Article&match_order=1&q=BLEU%E5%80%BC&zhida_source=entity) 计算到解决GPU的显存分配问题，我们都踩了不少坑，因此将心得分享给大家～

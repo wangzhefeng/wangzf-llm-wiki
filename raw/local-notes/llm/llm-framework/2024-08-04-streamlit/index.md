@@ -11,6 +11,7 @@ source_type: local_note
 created_at: 2024-08-04
 topics:
   - app
+status: inbox
 ---
 
 <style>

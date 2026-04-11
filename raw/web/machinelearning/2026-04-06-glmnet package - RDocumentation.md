@@ -7,8 +7,6 @@ description: Extremely efficient procedures for fitting the entire lasso or elas
   Poisson regression and the Cox model. Two recent additions are the multiple-response
   Gaussian, and the grouped multinomial. The algorithm uses cyclical coordinate descent
   in a path-wise fashion, as described in the paper linked to via the URL below.
-published: null
-source: https://www.rdocumentation.org/packages/glmnet/versions/2.0-5
 source_type: web
 status: inbox
 tags:
@@ -17,5 +15,8 @@ tags:
 title: glmnet package - RDocumentation
 topics:
 - 文档
+source_url: https://www.rdocumentation.org/packages/glmnet/versions/2.0-5
+published_at: null
+related_concepts: []
 ---
 

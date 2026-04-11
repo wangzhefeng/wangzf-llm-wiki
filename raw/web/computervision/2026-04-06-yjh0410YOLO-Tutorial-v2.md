@@ -6,13 +6,15 @@ created_at: 2026-04-06
 topics:
   - 计算机视觉
 status: inbox
-source: "https://github.com/yjh0410/YOLO-Tutorial-v2/tree/main"
 published: 
 created: 2026-04-06
 description: "Contribute to yjh0410/YOLO-Tutorial-v2 development by creating an account on GitHub."
 tags:
   - 
   - "clippings"
+source_url: "https://github.com/yjh0410/YOLO-Tutorial-v2/tree/main"
+published_at: null
+related_concepts: []
 ---
 
 ## 《YOLO目标检测》书籍的第二版源代码

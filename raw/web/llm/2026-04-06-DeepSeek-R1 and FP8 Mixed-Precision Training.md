@@ -9,8 +9,6 @@ description: DeepSeek has shocked the world with the release of their reasoning 
   aims to improve the quality of its replies by generating a “chain of thought” before
   responding to a prompt. The excitement around R1 stems from it achieving parity
   with o1 […]
-published: 2025-01-28
-source: https://research.colfax-intl.com/deepseek-r1-and-fp8-mixed-precision-training/?continueFlag=3871d793ea625e5585a46bad73ca9de5
 source_type: web
 status: inbox
 tags:
@@ -19,6 +17,9 @@ tags:
 title: DeepSeek-R1 and FP8 Mixed-Precision Training
 topics:
 - 大语言模型
+source_url: https://research.colfax-intl.com/deepseek-r1-and-fp8-mixed-precision-training/?continueFlag=3871d793ea625e5585a46bad73ca9de5
+published_at: 2025-01-28
+related_concepts: []
 ---
 
 [DeepSeek](https://www.deepseek.com/) has shocked the world with the release of their reasoning model [DeepSeek-R1](https://arxiv.org/abs/2501.12948). Similar to OpenAI’s o1 and Google Gemini’s Flash Thinking, the R1 model aims to improve the quality of its replies by generating a “ [chain of thought](https://arxiv.org/abs/2201.11903) ” before responding to a prompt. The excitement around R1 stems from it achieving parity with o1 on several industry-standard benchmarks, including math, coding, and English and Chinese language understanding, while also being open-source and available through the DeepSeek API at a [fraction of the cost](https://api-docs.deepseek.com/quick_start/pricing).

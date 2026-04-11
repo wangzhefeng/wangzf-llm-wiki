@@ -8,13 +8,14 @@ created_at: 2026-04-06
 topics:
   - 时间序列
 status: inbox
-source: "https://machinelearningmastery.com/xgboost-for-time-series-forecasting/"
-published: 2020-08-05
 created: 2026-04-06
 description: "XGBoost is an efficient implementation of gradient boosting for classification and regression problems. It is both fast and efficient, performing well, if not the best, on a wide range of predictive modeling tasks and is a favorite among data science competition winners, such as those on Kaggle. XGBoost can also be used for time series […]"
 tags:
   - 
   - "clippings"
+source_url: "https://machinelearningmastery.com/xgboost-for-time-series-forecasting/"
+published_at: 2020-08-05
+related_concepts: []
 ---
 
 XGBoost is an efficient implementation of gradient boosting for classification and regression problems.

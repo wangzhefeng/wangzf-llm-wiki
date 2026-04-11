@@ -4,8 +4,6 @@ created: 2026-04-06
 created_at: 2026-04-06
 description: We’re on a journey to advance and democratize artificial intelligence
   through open source and open science.
-published: 2025-12-04
-source: https://huggingface.co/amazon/chronos-t5-large
 source_type: web
 status: inbox
 tags:
@@ -14,6 +12,9 @@ tags:
 title: amazon/chronos-t5-large · Hugging Face
 topics:
 - 时间序列
+source_url: https://huggingface.co/amazon/chronos-t5-large
+published_at: 2025-12-04
+related_concepts: []
 ---
 
 [Edit model card](https://huggingface.co/amazon/chronos-t5-large/edit/main/README.md)

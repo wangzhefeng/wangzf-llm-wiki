@@ -12,6 +12,7 @@ source_type: local_note
 created_at: 2022-07-15
 topics:
   - deeplearning
+status: inbox
 ---
 
 <style>

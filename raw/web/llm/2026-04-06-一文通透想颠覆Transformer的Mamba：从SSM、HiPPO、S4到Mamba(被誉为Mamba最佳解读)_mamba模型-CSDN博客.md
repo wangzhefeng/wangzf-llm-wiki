@@ -9,13 +9,15 @@ created_at: 2026-04-06
 topics:
   - 大语言模型
 status: inbox
-source: "https://blog.csdn.net/v_JULY_v/article/details/134923301"
 published: 
 created: 2026-04-06
 description: "文章浏览阅读10w+次，点赞3.7k次，收藏7.6k次。如本文开头所说，mamba论文的一作Albert Gu多年来一直在推动SSM的发展他在SSM的基础上，通过此篇论文《》首次提出了结构化状态空间S4(这里有关于S4的更多论文)，但这篇论文的可读性比较差当然，作者在YouTube上有一个关于这篇S4论文的精彩解读，比S4论文的可读性提高很多，且本文中也应用了其中的部分PPT截图，但还可以更加通俗易懂。_mamba模型"
 tags:
   - 
   - "clippings"
+source_url: "https://blog.csdn.net/v_JULY_v/article/details/134923301"
+published_at: null
+related_concepts: []
 ---
 
 ## 前言

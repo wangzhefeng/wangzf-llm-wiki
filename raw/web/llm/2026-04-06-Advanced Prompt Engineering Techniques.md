@@ -6,13 +6,14 @@ created_at: 2026-04-06
 topics:
   - 大语言模型
 status: inbox
-source: "https://www.mercity.ai/blog-post/advanced-prompt-engineering-techniques/"
-published: 2025-04-20
 created: 2026-04-06
 description: "In this post we review advanced prompt engineering techniques like chain of thought (CoT) prompting, self consistency, ReAct, ToT, etc for production grade prompts."
 tags:
   - 
   - "clippings"
+source_url: "https://www.mercity.ai/blog-post/advanced-prompt-engineering-techniques/"
+published_at: 2025-04-20
+related_concepts: []
 ---
 
 Maithili Badhan

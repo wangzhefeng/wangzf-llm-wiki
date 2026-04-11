@@ -4,8 +4,6 @@ created: 2026-04-06
 created_at: 2026-04-06
 description: 'Official code, datasets and checkpoints for "Timer: Generative Pre-trained
   Transformers Are Large Time Series Models" (ICML 2024) and subsequent works - thuml/Large-Time-Series-Model'
-published: null
-source: https://github.com/thuml/Large-Time-Series-Model
 source_type: web
 status: inbox
 tags:
@@ -17,6 +15,9 @@ title: 'thuml/Large-Time-Series-Model: Official code, datasets and checkpoints f
 topics:
 - 大语言模型
 - 时间序列
+source_url: https://github.com/thuml/Large-Time-Series-Model
+published_at: null
+related_concepts: []
 ---
 
 ## Large Time-Series Model

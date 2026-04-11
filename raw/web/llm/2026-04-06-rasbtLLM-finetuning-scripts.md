@@ -6,13 +6,15 @@ created_at: 2026-04-06
 topics:
   - 大语言模型
 status: inbox
-source: "https://github.com/rasbt/LLM-finetuning-scripts/tree/main"
 published: 
 created: 2026-04-06
 description: "Contribute to rasbt/LLM-finetuning-scripts development by creating an account on GitHub."
 tags:
   - 
   - "clippings"
+source_url: "https://github.com/rasbt/LLM-finetuning-scripts/tree/main"
+published_at: null
+related_concepts: []
 ---
 
 [Open in github.dev](https://github.dev/) [Open in a new github.dev tab](https://github.dev/) [Open in codespace](https://github.com/codespaces/new/rasbt/LLM-finetuning-scripts/tree/main?resume=1)

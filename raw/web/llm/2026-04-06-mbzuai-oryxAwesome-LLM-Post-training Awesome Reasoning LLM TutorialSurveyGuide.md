@@ -6,13 +6,15 @@ created_at: 2026-04-06
 topics:
   - 大语言模型
 status: inbox
-source: "https://github.com/mbzuai-oryx/Awesome-LLM-Post-training"
 published: 
 created: 2026-04-06
 description: "Awesome Reasoning LLM Tutorial/Survey/Guide. Contribute to mbzuai-oryx/Awesome-LLM-Post-training development by creating an account on GitHub."
 tags:
   - 
   - "clippings"
+source_url: "https://github.com/mbzuai-oryx/Awesome-LLM-Post-training"
+published_at: null
+related_concepts: []
 ---
 
 ## LLM Post-Training: A Deep Dive into Reasoning Large Language Models

@@ -43,6 +43,14 @@ status: linked
 - 原始层文件不做语义改写，修正写入 `sources/concepts/queries`。
 - 每次关键操作（ingest/query/lint/backfill）追加到 `wiki/log.md`。
 
+### Naming Exceptions
+
+raw 层命名约定默认是“原始网页：`YYYY-MM-DD-标题.md`”。但以下类型允许例外（不强制日期前缀）：
+
+- 模板/清单类文件（例如线程总结模板、历史文档清单）。
+- 仓库来源卡：允许使用 `repo-组织名-仓库名.md`。
+- 目录式条目：`raw/local-notes/**/index.md` 保持目录结构即可。
+
 ## Frontmatter
 
 ### Layer 1 (`raw/**/*.md`) 最小字段

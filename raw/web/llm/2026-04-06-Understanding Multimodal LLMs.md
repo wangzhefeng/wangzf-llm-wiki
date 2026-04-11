@@ -9,13 +9,14 @@ created_at: 2026-04-06
 topics:
   - 大语言模型
 status: inbox
-source: "https://magazine.sebastianraschka.com/p/understanding-multimodal-llms"
-published: 2024-11-03
 created: 2026-04-06
 description: "An introduction to the main multimodal LLM techniques and latest models"
 tags:
   - 
   - "clippings"
+source_url: "https://magazine.sebastianraschka.com/p/understanding-multimodal-llms"
+published_at: 2024-11-03
+related_concepts: []
 ---
 
 ### An introduction to the main techniques and latest models

@@ -3,8 +3,6 @@ author: null
 created: 2026-04-06
 created_at: 2026-04-06
 description: Visualize dependencies and entities in your browser or in a notebook
-published: null
-source: https://spacy.io/usage/visualizers
 source_type: web
 status: inbox
 tags:
@@ -13,6 +11,9 @@ tags:
 title: spaCy Usage Documentation
 topics:
 - 深度学习
+source_url: https://spacy.io/usage/visualizers
+published_at: null
+related_concepts: []
 ---
 
 Visualizing a dependency parse or named entities in a text is not only a fun NLP demo – it can also be incredibly helpful in speeding up development and debugging your code and training process. That’s why our popular visualizers, [displaCy](https://explosion.ai/demos/displacy) and [displaCy <sup>ENT</sup>](https://explosion.ai/demos/displacy-ent) are also an official part of the core library. If you’re running a [Jupyter](https://jupyter.org/) notebook, displaCy will detect this and return the markup in a format [ready to be rendered and exported](https://spacy.io/usage/visualizers#jupyter).

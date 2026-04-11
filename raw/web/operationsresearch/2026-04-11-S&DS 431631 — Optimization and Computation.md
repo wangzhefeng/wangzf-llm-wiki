@@ -3,8 +3,6 @@ author:
 - '[[Zhuoran Yang]]'
 created: 2026-04-11
 description: null
-published: null
-source: https://zhuoranyang.github.io/sds431-notes/
 tags:
 - clippings
 title: S&DS 431/631 — Optimization and Computation
@@ -12,6 +10,10 @@ topics:
 - 运筹优化
 source_type: local_note
 created_at: 2026-04-11
+status: inbox
+source_url: https://zhuoranyang.github.io/sds431-notes/
+published_at: null
+related_concepts: []
 ---
 ## Welcome
 

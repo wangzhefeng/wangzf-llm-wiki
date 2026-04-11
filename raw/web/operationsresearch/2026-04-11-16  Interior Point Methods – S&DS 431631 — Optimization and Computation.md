@@ -2,8 +2,6 @@
 author: null
 created: 2026-04-11
 description: null
-published: null
-source: https://zhuoranyang.github.io/sds431-notes/lectures/16-interior-point-methods.html
 tags:
 - clippings
 title: 16  Interior Point Methods – S&DS 431/631 — Optimization and Computation
@@ -11,6 +9,10 @@ topics:
 - 运筹优化
 source_type: local_note
 created_at: 2026-04-11
+status: inbox
+source_url: https://zhuoranyang.github.io/sds431-notes/lectures/16-interior-point-methods.html
+published_at: null
+related_concepts: []
 ---
 Newton’s method gives us a powerful tool for unconstrained optimization, converging quadratically near a solution. But most real-world problems come with inequality constraints — budgets, capacity limits, non-negativity requirements — that Newton’s method cannot handle directly. Interior point methods extend Newton’s method to constrained problems by replacing hard inequality constraints with a smooth logarithmic penalty, then systematically tightening the penalty until the solution converges to the true optimum. These methods are the engine behind modern optimization solvers such as MOSEK, Gurobi’s barrier solver, and CVXPY’s default backend.
 

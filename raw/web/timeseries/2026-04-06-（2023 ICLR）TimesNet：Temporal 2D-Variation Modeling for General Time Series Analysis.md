@@ -8,13 +8,15 @@ created_at: 2026-04-06
 topics:
   - 时间序列
 status: inbox
-source: "https://zhuanlan.zhihu.com/p/604100426"
 published: 
 created: 2026-04-06
 description: "论文链接：TimesNet: Temporal 2D-Variation Modeling for General Time Series...本文中了2023 ICLR，是清华软院龙明盛老师组的文章，一如既往的Solid。本文的作者就是Autoformer的作者，所以本文的很多思想都延…"
 tags:
   - 
   - "clippings"
+source_url: "https://zhuanlan.zhihu.com/p/604100426"
+published_at: null
+related_concepts: []
 ---
 
 ## 论文链接：

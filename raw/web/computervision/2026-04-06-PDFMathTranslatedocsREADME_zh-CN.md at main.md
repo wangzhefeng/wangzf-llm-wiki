@@ -5,8 +5,6 @@ created_at: 2026-04-06
 description: '[EMNLP 2025 Demo] PDF scientific paper translation with preserved formats
   - 基于 AI 完整保留排版的 PDF 文档全文双语翻译，支持 Google/DeepL/Ollama/OpenAI 等服务，提供 CLI/GUI/MCP/Docker/Zotero
   - PDFMathTranslate/docs/README_zh-CN.md at main · PDFMathTranslate/PDFMathTranslate'
-published: null
-source: https://github.com/PDFMathTranslate/PDFMathTranslate/blob/main/docs/README_zh-CN.md
 source_type: web
 status: inbox
 tags:
@@ -15,6 +13,9 @@ tags:
 title: PDFMathTranslate/docs/README_zh-CN.md at main
 topics:
 - 计算机视觉
+source_url: https://github.com/PDFMathTranslate/PDFMathTranslate/blob/main/docs/README_zh-CN.md
+published_at: null
+related_concepts: []
 ---
 
 科学 PDF 文档翻译及双语对照工具

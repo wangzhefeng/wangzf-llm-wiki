@@ -12,6 +12,7 @@ source_type: local_note
 created_at: 2022-11-13
 topics:
   - machine-learning
+status: inbox
 ---
 
 <style>

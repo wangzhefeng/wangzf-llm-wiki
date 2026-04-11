@@ -3,8 +3,6 @@ author: null
 created: 2026-04-06
 created_at: 2026-04-06
 description: Python interactive dashboards for learning data science - GeostatsGuy/DataScienceInteractivePython
-published: null
-source: https://github.com/GeostatsGuy/DataScienceInteractivePython
 source_type: web
 status: inbox
 tags:
@@ -14,6 +12,9 @@ title: 'GeostatsGuy/DataScienceInteractivePython: Python interactive dashboards 
   learning data science'
 topics:
 - 机器学习
+source_url: https://github.com/GeostatsGuy/DataScienceInteractivePython
+published_at: null
+related_concepts: []
 ---
 
 ## DataScienceInteractivePython: Interactive Educational Data Science Python Dashboards Repository (0.0.1)

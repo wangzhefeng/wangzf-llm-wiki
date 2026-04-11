@@ -6,13 +6,15 @@ created_at: 2026-04-06
 topics:
   - 时间序列
 status: inbox
-source: "https://github.com/amazon-science/chronos-forecasting"
 published: 
 created: 2026-04-06
 description: "Chronos: Pretrained Models for Time Series Forecasting - amazon-science/chronos-forecasting"
 tags:
   - 
   - "clippings"
+source_url: "https://github.com/amazon-science/chronos-forecasting"
+published_at: null
+related_concepts: []
 ---
 
 ## 🚀 News

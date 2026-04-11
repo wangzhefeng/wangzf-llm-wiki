@@ -7,8 +7,6 @@ created: 2026-04-06
 created_at: 2026-04-06
 description: Distilabel is an AI Feedback (AIF) framework for building datasets with
   and for LLMs.
-published: null
-source: https://distilabel.argilla.io/latest/sections/getting_started/quickstart/
 source_type: web
 status: inbox
 tags:
@@ -17,6 +15,9 @@ tags:
 title: Quickstart - Distilabel Docs
 topics:
 - 大语言模型
+source_url: https://distilabel.argilla.io/latest/sections/getting_started/quickstart/
+published_at: null
+related_concepts: []
 ---
 
 ## Quickstart

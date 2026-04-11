@@ -8,13 +8,15 @@ created_at: 2026-04-06
 topics:
   - 深度学习
 status: inbox
-source: "https://mp.weixin.qq.com/s/uMxruIyMIpY1BpaaZdLKjA"
 published: 
 created: 2026-04-06
 description: "本文是对卷积神经网络（CNN）的简要介绍。"
 tags:
   - 
   - "clippings"
+source_url: "https://mp.weixin.qq.com/s/uMxruIyMIpY1BpaaZdLKjA"
+published_at: null
+related_concepts: []
 ---
 
 原创 磐怼怼 *2024年8月19日 18:23*

@@ -4,8 +4,6 @@ created: 2026-04-06
 created_at: 2026-04-06
 description: 'Date: 2020/11/22 Coder: CW Foreword: CW 近日在自己的机子上发现，nvcc --version 和
   nvidia-smi 显示出来的CU...'
-published: 2020-11-22
-source: https://www.jianshu.com/p/eb5335708f2a
 source_type: web
 status: inbox
 tags:
@@ -14,6 +12,9 @@ tags:
 title: 【CUDA】nvcc和nvidia-smi显示的版本不一致？
 topics:
 - 运维工具
+source_url: https://www.jianshu.com/p/eb5335708f2a
+published_at: 2020-11-22
+related_concepts: []
 ---
 
 *Date: 2020/11/22*

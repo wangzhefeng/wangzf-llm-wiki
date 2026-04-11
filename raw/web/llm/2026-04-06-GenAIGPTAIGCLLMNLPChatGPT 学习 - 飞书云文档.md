@@ -6,13 +6,15 @@ created_at: 2026-04-06
 topics:
   - 大语言模型
 status: inbox
-source: "https://gofurther.feishu.cn/docx/Enofdl25BotoVrxth8ec4rNBn5c"
 published: 
 created: 2026-04-06
 description: 
 tags:
   - 
   - "clippings"
+source_url: "https://gofurther.feishu.cn/docx/Enofdl25BotoVrxth8ec4rNBn5c"
+published_at: null
+related_concepts: []
 ---
 
 - [🧭GenAI/GPT/AIGC/LLM/NLP/ChatGPT 学习](#Enofdl25BotoVrxth8ec4rNBn5c)

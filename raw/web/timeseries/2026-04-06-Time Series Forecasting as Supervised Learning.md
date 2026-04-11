@@ -8,13 +8,14 @@ created_at: 2026-04-06
 topics:
   - 时间序列
 status: inbox
-source: "https://machinelearningmastery.com/time-series-forecasting-supervised-learning/"
-published: 2016-12-05
 created: 2026-04-06
 description: "Time series forecasting can be framed as a supervised learning problem. This re-framing of your time series data allows you access to the suite of standard linear and nonlinear machine learning algorithms on your problem. In this post, you will discover how you can re-frame your time series problem as a supervised learning problem for […]"
 tags:
   - 
   - "clippings"
+source_url: "https://machinelearningmastery.com/time-series-forecasting-supervised-learning/"
+published_at: 2016-12-05
+related_concepts: []
 ---
 
 Time series forecasting can be framed as a supervised learning problem.

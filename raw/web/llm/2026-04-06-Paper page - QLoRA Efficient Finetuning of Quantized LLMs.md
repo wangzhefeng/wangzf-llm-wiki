@@ -6,13 +6,14 @@ created_at: 2026-04-06
 topics:
   - 大语言模型
 status: inbox
-source: "https://huggingface.co/papers/2305.14314"
-published: 2023-05-24
 created: 2026-04-06
 description: "Join the discussion on this paper page"
 tags:
   - 
   - "clippings"
+source_url: "https://huggingface.co/papers/2305.14314"
+published_at: 2023-05-24
+related_concepts: []
 ---
 
 arxiv:2305.14314

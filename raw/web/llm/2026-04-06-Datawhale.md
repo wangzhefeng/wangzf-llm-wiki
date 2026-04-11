@@ -4,8 +4,6 @@ created: 2026-04-06
 created_at: 2026-04-06
 description: for the learner，和学习者一起成长. Datawhale has 194 repositories available. Follow
   their code on GitHub.
-published: null
-source: https://github.com/datawhalechina
 source_type: web
 status: inbox
 tags:
@@ -14,6 +12,9 @@ tags:
 title: Datawhale
 topics:
 - 大语言模型
+source_url: https://github.com/datawhalechina
+published_at: null
+related_concepts: []
 ---
 
 ## Who we are?

@@ -11,6 +11,7 @@ source_type: local_note
 created_at: 2024-03-22
 topics:
   - timeseries
+status: inbox
 ---
 
 <style>

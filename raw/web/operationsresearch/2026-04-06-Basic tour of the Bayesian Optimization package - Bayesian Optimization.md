@@ -6,13 +6,15 @@ created_at: 2026-04-06
 topics:
   - 运筹优化
 status: inbox
-source: "https://bayesian-optimization.github.io/BayesianOptimization/1.5.1/basic-tour.html"
 published: 
 created: 2026-04-06
 description: 
 tags:
   - 
   - "clippings"
+source_url: "https://bayesian-optimization.github.io/BayesianOptimization/1.5.1/basic-tour.html"
+published_at: null
+related_concepts: []
 ---
 
 ## Basic tour of the Bayesian Optimization package

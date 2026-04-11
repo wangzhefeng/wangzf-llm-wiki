@@ -4,8 +4,6 @@ created: 2026-04-06
 created_at: 2026-04-06
 description: 'Gallery examples: Comparing random forests and the multi-output meta
   estimator'
-published: null
-source: https://scikit-learn.org/stable/modules/generated/sklearn.multioutput.MultiOutputRegressor.html
 source_type: web
 status: inbox
 tags:
@@ -14,6 +12,9 @@ tags:
 title: MultiOutputRegressor
 topics:
 - 机器学习
+source_url: https://scikit-learn.org/stable/modules/generated/sklearn.multioutput.MultiOutputRegressor.html
+published_at: null
+related_concepts: []
 ---
 
 ## MultiOutputRegressor

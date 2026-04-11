@@ -5,8 +5,6 @@ author:
 created: 2026-04-06
 created_at: 2026-04-06
 description: 鼎鼎大名的 Bert 算法相信大部分同学都听说过，它是 Google 推出的 NLP 领域“王炸级”预训练模
-published: null
-source: https://mp.weixin.qq.com/s/IhUhAOD8HmCXxhg7CpFhUw
 source_type: web
 status: inbox
 tags:
@@ -15,6 +13,9 @@ tags:
 title: Python 教你 3 分钟用 Bert 搭建问答搜索引擎
 topics:
 - 大语言模型
+source_url: https://mp.weixin.qq.com/s/IhUhAOD8HmCXxhg7CpFhUw
+published_at: null
+related_concepts: []
 ---
 
 *2024年5月23日 13:54*

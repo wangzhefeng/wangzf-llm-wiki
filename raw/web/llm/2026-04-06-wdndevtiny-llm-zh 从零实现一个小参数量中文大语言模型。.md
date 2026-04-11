@@ -6,13 +6,15 @@ created_at: 2026-04-06
 topics:
   - 大语言模型
 status: inbox
-source: "https://github.com/wdndev/tiny-llm-zh"
 published: 
 created: 2026-04-06
 description: "从零实现一个小参数量中文大语言模型。. Contribute to wdndev/tiny-llm-zh development by creating an account on GitHub."
 tags:
   - 
   - "clippings"
+source_url: "https://github.com/wdndev/tiny-llm-zh"
+published_at: null
+related_concepts: []
 ---
 
 ## Tiny LLM zh

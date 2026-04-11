@@ -4,8 +4,6 @@ created: 2026-04-06
 created_at: 2026-04-06
 description: We’re on a journey to advance and democratize artificial intelligence
   through open source and open science.
-published: 2024-07-18
-source: https://huggingface.co/datasets/thuml/Time-Series-Library
 source_type: web
 status: inbox
 tags:
@@ -14,6 +12,9 @@ tags:
 title: Datasets at Hugging Face
 topics:
 - 时间序列
+source_url: https://huggingface.co/datasets/thuml/Time-Series-Library
+published_at: 2024-07-18
+related_concepts: []
 ---
 
 Dataset Viewer

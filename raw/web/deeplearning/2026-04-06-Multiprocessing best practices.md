@@ -6,8 +6,6 @@ created: 2026-04-06
 created_at: 2026-04-06
 description: PyTorch Documentation. Explore PyTorch, an open-source machine learning
   library that accelerates the path from research prototyping to production deployment.
-published: 2001-01-16
-source: https://docs.pytorch.org/docs/stable/notes/multiprocessing.html
 source_type: web
 status: inbox
 tags:
@@ -16,6 +14,9 @@ tags:
 title: Multiprocessing best practices
 topics:
 - 深度学习
+source_url: https://docs.pytorch.org/docs/stable/notes/multiprocessing.html
+published_at: 2001-01-16
+related_concepts: []
 ---
 
 ## Multiprocessing best practices

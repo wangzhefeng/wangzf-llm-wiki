@@ -4,8 +4,6 @@ created: 2026-04-06
 created_at: 2026-04-06
 description: The TinyLlama project is an open endeavor to pretrain a 1.1B Llama model
   on 3 trillion tokens. - TinyLlama/README_zh-CN.md at main · jzhang38/TinyLlama
-published: null
-source: https://github.com/jzhang38/TinyLlama/blob/main/README_zh-CN.md
 source_type: web
 status: inbox
 tags:
@@ -14,6 +12,9 @@ tags:
 title: TinyLlama/README_zh-CN.md at main
 topics:
 - 大语言模型
+source_url: https://github.com/jzhang38/TinyLlama/blob/main/README_zh-CN.md
+published_at: null
+related_concepts: []
 ---
 
 ## TinyLlama-1.1B

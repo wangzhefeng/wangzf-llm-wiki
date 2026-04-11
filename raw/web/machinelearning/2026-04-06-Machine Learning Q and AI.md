@@ -8,13 +8,15 @@ created_at: 2026-04-06
 topics:
   - 机器学习
 status: inbox
-source: "https://sebastianraschka.com/books/ml-q-and-ai/"
 published: 
 created: 2026-04-06
 description: "A curated book of 30 concise Q and A chapters on modern machine learning and AI, from embeddings to transformers and evaluation."
 tags:
   - 
   - "clippings"
+source_url: "https://sebastianraschka.com/books/ml-q-and-ai/"
+published_at: null
+related_concepts: []
 ---
 
 Table of contents

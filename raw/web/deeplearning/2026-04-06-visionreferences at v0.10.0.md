@@ -4,8 +4,6 @@ created: 2026-04-06
 created_at: 2026-04-06
 description: Datasets, Transforms and Models specific to Computer Vision - vision/references
   at v0.10.0 · pytorch/vision
-published: null
-source: https://github.com/pytorch/vision/tree/v0.10.0/references
 source_type: web
 status: inbox
 tags:
@@ -15,6 +13,9 @@ title: vision/references at v0.10.0
 topics:
 - 计算机视觉
 - 深度学习
+source_url: https://github.com/pytorch/vision/tree/v0.10.0/references
+published_at: null
+related_concepts: []
 ---
 
 [Open in github.dev](https://github.dev/) [Open in a new github.dev tab](https://github.dev/) [Open in codespace](https://github.com/codespaces/new/pytorch/vision/tree/v0.10.0?resume=1)

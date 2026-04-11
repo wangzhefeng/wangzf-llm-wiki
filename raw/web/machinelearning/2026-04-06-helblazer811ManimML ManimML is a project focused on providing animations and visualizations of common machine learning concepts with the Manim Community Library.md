@@ -6,13 +6,15 @@ created_at: 2026-04-06
 topics:
   - 机器学习
 status: inbox
-source: "https://github.com/helblazer811/ManimML"
 published: 
 created: 2026-04-06
 description: "ManimML is a project focused on providing animations and visualizations of common machine learning concepts with the Manim Community Library. - helblazer811/ManimML"
 tags:
   - 
   - "clippings"
+source_url: "https://github.com/helblazer811/ManimML"
+published_at: null
+related_concepts: []
 ---
 
 ## ManimML

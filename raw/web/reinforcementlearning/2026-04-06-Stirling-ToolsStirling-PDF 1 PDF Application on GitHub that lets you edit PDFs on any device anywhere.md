@@ -6,13 +6,15 @@ created_at: 2026-04-06
 topics:
   - 强化学习
 status: inbox
-source: "https://github.com/Stirling-Tools/Stirling-PDF"
 published: 
 created: 2026-04-06
 description: "#1 PDF Application on GitHub that lets you edit PDFs on any device anywhere - Stirling-Tools/Stirling-PDF"
 tags:
   - 
   - "clippings"
+source_url: "https://github.com/Stirling-Tools/Stirling-PDF"
+published_at: null
+related_concepts: []
 ---
 
 [![[stirling.png|Stirling PDF logo]]](https://raw.githubusercontent.com/Stirling-Tools/Stirling-PDF/main/docs/stirling.png)

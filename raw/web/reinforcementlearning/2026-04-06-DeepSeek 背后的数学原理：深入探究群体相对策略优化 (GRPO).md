@@ -8,13 +8,15 @@ created_at: 2026-04-06
 topics:
   - 强化学习
 status: inbox
-source: "https://mp.weixin.qq.com/s/Z-wRuqsQTF_6TeV7ao_9Yw"
 published: 
 created: 2026-04-06
 description: "DeepSeek 背后的数学原理：深入探究群体相对策略优化 (GRPO)"
 tags:
   - 
   - "clippings"
+source_url: "https://mp.weixin.qq.com/s/Z-wRuqsQTF_6TeV7ao_9Yw"
+published_at: null
+related_concepts: []
 ---
 
 致Great *2025年2月11日 18:07*

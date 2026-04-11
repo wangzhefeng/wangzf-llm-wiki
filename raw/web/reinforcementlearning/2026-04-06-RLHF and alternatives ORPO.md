@@ -8,13 +8,14 @@ created_at: 2026-04-06
 topics:
   - 强化学习
 status: inbox
-source: "https://argilla.io/blog/mantisnlp-rlhf-part-8/"
-published: 2024-04-05
 created: 2026-04-06
 description: "open-source tool for data-centric NLP"
 tags:
   - 
   - "clippings"
+source_url: "https://argilla.io/blog/mantisnlp-rlhf-part-8/"
+published_at: 2024-04-05
+related_concepts: []
 ---
 
 ## Introduction

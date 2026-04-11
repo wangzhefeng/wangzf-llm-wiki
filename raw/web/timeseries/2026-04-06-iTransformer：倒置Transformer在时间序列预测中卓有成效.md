@@ -11,8 +11,6 @@ author:
 created: 2026-04-06
 created_at: 2026-04-06
 description: iTransformer通过反转其组件操作的维度，重新定位了用于多元时间序列预测的标准Transformer架构。它将每个变量的完整时间序列视为一个标记，并在变量之间应用自注意力，从而在多个数据集上实现了最先进的性能，同时有效利用了长回溯窗口。
-published: 2024-03-14
-source: https://www.alphaxiv.org/zh/overview/2310.06625v4
 source_type: web
 status: inbox
 tags:
@@ -22,6 +20,9 @@ title: iTransformer：倒置Transformer在时间序列预测中卓有成效
 topics:
 - 大语言模型
 - 时间序列
+source_url: https://www.alphaxiv.org/zh/overview/2310.06625v4
+published_at: 2024-03-14
+related_concepts: []
 ---
 
 ## 概述

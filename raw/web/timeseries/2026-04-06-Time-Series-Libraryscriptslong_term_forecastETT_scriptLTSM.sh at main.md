@@ -6,13 +6,15 @@ created_at: 2026-04-06
 topics:
   - 时间序列
 status: inbox
-source: "https://github.com/thuml/Time-Series-Library/blob/main/scripts/long_term_forecast/ETT_script/LTSM.sh"
 published: 
 created: 2026-04-06
 description: "A Library for Advanced Deep Time Series Models for General Time Series Analysis. - Time-Series-Library/scripts/long_term_forecast/ETT_script/LTSM.sh at main · thuml/Time-Series-Library"
 tags:
   - 
   - "clippings"
+source_url: "https://github.com/thuml/Time-Series-Library/blob/main/scripts/long_term_forecast/ETT_script/LTSM.sh"
+published_at: null
+related_concepts: []
 ---
 
 1

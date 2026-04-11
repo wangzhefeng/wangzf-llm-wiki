@@ -9,8 +9,6 @@ created: 2026-04-06
 created_at: 2026-04-06
 description: 'Abstract page for arXiv paper 2009.08633: fastHan: A BERT-based Multi-Task
   Toolkit for Chinese NLP'
-published: null
-source: https://arxiv.org/abs/2009.08633
 source_type: web
 status: inbox
 tags:
@@ -19,6 +17,9 @@ tags:
 title: 'fastHan: A BERT-based Multi-Task Toolkit for Chinese NLP'
 topics:
 - 大语言模型
+source_url: https://arxiv.org/abs/2009.08633
+published_at: null
+related_concepts: []
 ---
 
 ## Title:fastHan: A BERT-based Multi-Task Toolkit for Chinese NLP

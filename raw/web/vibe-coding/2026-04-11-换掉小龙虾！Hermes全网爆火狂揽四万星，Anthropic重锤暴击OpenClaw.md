@@ -2,8 +2,6 @@
 author: null
 created: 2026-04-11
 description: 养虾时代，进入全新分水岭
-published: null
-source: https://mp.weixin.qq.com/s/cEr1Byg_0qdAS56ibq2vOQ
 tags:
 - clippings
 title: 换掉小龙虾！Hermes全网爆火狂揽四万星，Anthropic重锤暴击OpenClaw
@@ -11,6 +9,10 @@ topics:
 - Vibe Coding
 source_type: local_note
 created_at: 2026-04-11
+status: inbox
+source_url: https://mp.weixin.qq.com/s/cEr1Byg_0qdAS56ibq2vOQ
+published_at: null
+related_concepts: []
 ---
 *2026年4月10日 22:50*
 

@@ -5,8 +5,6 @@ created_at: 2026-04-06
 description: Over the past decades, there has been a global growth in datacenter capacity,
   power consumption and the associated costs. Thus, an accurate mapping of the datacenter’s
   compute resources (CPU, RAM, etc.) and hardware ty…
-published: null
-source: https://ar5iv.labs.arxiv.org/html/2103.13308?_immersive_translate_auto_translate=1
 source_type: web
 status: inbox
 tags:
@@ -15,6 +13,9 @@ tags:
 title: Power Modeling for Effective Datacenter Planning and Compute Management
 topics:
 - 机器学习
+source_url: https://ar5iv.labs.arxiv.org/html/2103.13308?_immersive_translate_auto_translate=1
+published_at: null
+related_concepts: []
 ---
 
 ## 有效数据中心规划与计算管理的功率建模

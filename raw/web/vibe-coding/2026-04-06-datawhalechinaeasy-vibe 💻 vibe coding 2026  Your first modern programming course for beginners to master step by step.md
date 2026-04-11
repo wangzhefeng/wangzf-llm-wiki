@@ -4,8 +4,6 @@ created: 2026-04-06
 created_at: 2026-04-06
 description: 💻 vibe coding 2026 | Your first modern programming course for beginners
   to master step by step. - datawhalechina/easy-vibe
-published: null
-source: https://github.com/datawhalechina/easy-vibe
 source_type: web
 status: inbox
 tags:
@@ -15,6 +13,9 @@ title: 'datawhalechina/easy-vibe: 💻 vibe coding 2026 | Your first modern prog
   course for beginners to master step by step.'
 topics:
 - Vibe Coding
+source_url: https://github.com/datawhalechina/easy-vibe
+published_at: null
+related_concepts: []
 ---
 
 [![[easy-vibe-logo-hd.svg|Easy-Vibe Logo]]](https://github.com/datawhalechina/easy-vibe/blob/main/raw/assets/easy-vibe-logo-hd.svg)

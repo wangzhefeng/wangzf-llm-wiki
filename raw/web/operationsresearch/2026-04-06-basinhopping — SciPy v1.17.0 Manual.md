@@ -3,8 +3,6 @@ author: null
 created: 2026-04-06
 created_at: 2026-04-06
 description: null
-published: null
-source: https://docs.scipy.org/doc/scipy/reference/generated/scipy.optimize.basinhopping.html
 source_type: web
 status: inbox
 tags:
@@ -13,6 +11,9 @@ tags:
 title: basinhopping — SciPy v1.17.0 Manual
 topics:
 - 运筹优化
+source_url: https://docs.scipy.org/doc/scipy/reference/generated/scipy.optimize.basinhopping.html
+published_at: null
+related_concepts: []
 ---
 
 scipy.optimize.

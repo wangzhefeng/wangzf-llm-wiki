@@ -10,7 +10,9 @@ status: inbox
 topics:
 - 时间序列预测
 - machine-learning-forecasting
-- 时间序列
+- 时间序列published_at: null
+author: null
+title: null
 ---
 
 # scikit-learn 时间序列滞后特征示例

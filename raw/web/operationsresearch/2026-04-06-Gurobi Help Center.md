@@ -3,8 +3,6 @@ author: null
 created: 2026-04-06
 created_at: 2026-04-06
 description: null
-published: null
-source: https://support.gurobi.com/hc/en-us
 source_type: web
 status: inbox
 tags:
@@ -13,6 +11,9 @@ tags:
 title: Gurobi Help Center
 topics:
 - 文档
+source_url: https://support.gurobi.com/hc/en-us
+published_at: null
+related_concepts: []
 ---
 
 Welcome to the Gurobi Help Center.

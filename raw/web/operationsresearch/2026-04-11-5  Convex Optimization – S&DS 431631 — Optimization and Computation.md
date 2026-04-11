@@ -2,8 +2,6 @@
 author: null
 created: 2026-04-11
 description: null
-published: null
-source: https://zhuoranyang.github.io/sds431-notes/lectures/05-convex-optimization.html
 tags:
 - clippings
 title: 5  Convex Optimization – S&DS 431/631 — Optimization and Computation
@@ -11,6 +9,10 @@ topics:
 - 运筹优化
 source_type: local_note
 created_at: 2026-04-11
+status: inbox
+source_url: https://zhuoranyang.github.io/sds431-notes/lectures/05-convex-optimization.html
+published_at: null
+related_concepts: []
 ---
 Optimization is hard in general — a function can have countless local minima, saddle points, and deceptive plateaus. So why is it that many of the optimization problems arising in statistics, machine learning, and engineering can be solved reliably and efficiently? The answer, more often than not, is **convexity**. When both the objective and the constraints are convex, the landscape of the problem simplifies dramatically: every local minimum is automatically a global minimum, and efficient algorithms can find it in polynomial time.
 

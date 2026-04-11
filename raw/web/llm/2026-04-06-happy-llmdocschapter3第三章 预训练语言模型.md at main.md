@@ -6,13 +6,15 @@ created_at: 2026-04-06
 topics:
   - 大语言模型
 status: inbox
-source: "https://github.com/datawhalechina/happy-llm/blob/main/docs/chapter3/%E7%AC%AC%E4%B8%89%E7%AB%A0%20%E9%A2%84%E8%AE%AD%E7%BB%83%E8%AF%AD%E8%A8%80%E6%A8%A1%E5%9E%8B.md"
 published: 
 created: 2026-04-06
 description: "📚 从零开始构建大模型. Contribute to datawhalechina/happy-llm development by creating an account on GitHub."
 tags:
   - 
   - "clippings"
+source_url: "https://github.com/datawhalechina/happy-llm/blob/main/docs/chapter3/%E7%AC%AC%E4%B8%89%E7%AB%A0%20%E9%A2%84%E8%AE%AD%E7%BB%83%E8%AF%AD%E8%A8%80%E6%A8%A1%E5%9E%8B.md"
+published_at: null
+related_concepts: []
 ---
 
 ## 第三章 预训练语言模型

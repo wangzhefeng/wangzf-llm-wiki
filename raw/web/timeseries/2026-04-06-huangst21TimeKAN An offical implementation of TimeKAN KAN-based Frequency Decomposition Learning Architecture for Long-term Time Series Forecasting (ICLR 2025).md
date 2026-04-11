@@ -6,13 +6,15 @@ created_at: 2026-04-06
 topics:
   - 时间序列
 status: inbox
-source: "https://github.com/huangst21/TimeKAN"
 published: 
 created: 2026-04-06
 description: "An offical implementation of \"TimeKAN: KAN-based Frequency Decomposition Learning Architecture for Long-term Time Series Forecasting\" (ICLR 2025) - huangst21/TimeKAN"
 tags:
   - 
   - "clippings"
+source_url: "https://github.com/huangst21/TimeKAN"
+published_at: null
+related_concepts: []
 ---
 
 ## (ICLR 2025) TimeKAN: KAN-based Frequency Decomposition Learning Architecture for Long-term Time Series Forecasting🚀

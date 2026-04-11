@@ -6,13 +6,14 @@ created_at: 2026-04-06
 topics:
   - 大语言模型
 status: inbox
-source: "https://www.mercity.ai/blog-post/fine-tuning-llms-using-peft-and-lora/#lora---low-rank-adaptation"
-published: 2023-09-01
 created: 2026-04-06
 description: "Using Low-rank adaptation (LoRA) and other PEFT techniques can help you train LLMs and other models faster and in a much cheaper way."
 tags:
   - 
   - "clippings"
+source_url: "https://www.mercity.ai/blog-post/fine-tuning-llms-using-peft-and-lora/#lora---low-rank-adaptation"
+published_at: 2023-09-01
+related_concepts: []
 ---
 
 Pranav Patel

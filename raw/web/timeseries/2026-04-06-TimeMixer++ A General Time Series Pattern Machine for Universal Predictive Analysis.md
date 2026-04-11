@@ -8,13 +8,15 @@ created_at: 2026-04-06
 topics:
   - 时间序列
 status: inbox
-source: "https://zhuanlan.zhihu.com/p/12926871013"
 published: 
 created: 2026-04-06
 description: "本文介绍一篇ICLR 2025的高分时间序列分析文章，在openreview上获得了均分8的高分。作者团队就是ICLR 2024中稿文章TimeMixer的原班作者团队，本文也是TimeMixer的改进版本，不仅扩展了任务，性能效果也进一步升级…"
 tags:
   - 
   - "clippings"
+source_url: "https://zhuanlan.zhihu.com/p/12926871013"
+published_at: null
+related_concepts: []
 ---
 
 本文介绍一篇ICLR 2025的高分时间序列分析文章，在openreview上获得了均分8的高分。作者团队就是ICLR 2024中稿文章TimeMixer的原班作者团队，本文也是TimeMixer的改进版本，不仅扩展了任务，性能效果也进一步升级，在所有时序任务上都取得了SOTA的性能，如下图：

@@ -2,8 +2,6 @@
 author: null
 created: 2026-04-11
 description: null
-published: null
-source: https://zhuoranyang.github.io/sds431-notes/lectures/18-transformers.html
 tags:
 - clippings
 title: 18  Transformers – S&DS 431/631 — Optimization and Computation
@@ -11,6 +9,10 @@ topics:
 - 深度学习
 source_type: local_note
 created_at: 2026-04-11
+status: inbox
+source_url: https://zhuoranyang.github.io/sds431-notes/lectures/18-transformers.html
+published_at: null
+related_concepts: []
 ---
 In 2017, a team at Google published a paper titled “Attention Is All You Need.” The architecture it introduced — the **Transformer** — has since become the foundation of virtually every major AI system: ChatGPT and GPT-4 (OpenAI), Claude (Anthropic), Gemini (Google), LLaMA (Meta), and many more. Beyond language, transformers power image generation (DALL-E, Stable Diffusion), protein structure prediction (AlphaFold), code completion (Copilot), and even chip design.
 

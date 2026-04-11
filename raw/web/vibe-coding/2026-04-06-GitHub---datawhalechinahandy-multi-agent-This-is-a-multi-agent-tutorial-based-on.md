@@ -7,7 +7,9 @@ title: 'GitHub - datawhalechina/handy-multi-agent: This is a multi agent tutoria
   based on the CAMEL framework, aimed at understanding how to build an Agent Society
   from the ground up! · GitHub'
 topics:
-- Vibe Coding
+- Vibe Codingpublished_at: null
+author: null
+related_concepts: []
 ---
 
 # GitHub - datawhalechina/handy-multi-agent: This is a multi agent tutorial based on the CAMEL framework, aimed at understanding how to build an Agent Society from the ground up! · GitHub

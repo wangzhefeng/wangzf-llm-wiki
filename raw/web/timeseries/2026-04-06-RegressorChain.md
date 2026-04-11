@@ -3,8 +3,6 @@ author: null
 created: 2026-04-06
 created_at: 2026-04-06
 description: null
-published: null
-source: https://scikit-learn.org/stable/modules/generated/sklearn.multioutput.RegressorChain.html#sklearn.multioutput.RegressorChain
 source_type: web
 status: inbox
 tags:
@@ -13,6 +11,9 @@ tags:
 title: RegressorChain
 topics:
 - 计算机视觉
+source_url: https://scikit-learn.org/stable/modules/generated/sklearn.multioutput.RegressorChain.html#sklearn.multioutput.RegressorChain
+published_at: null
+related_concepts: []
 ---
 
 ## RegressorChain

@@ -6,13 +6,15 @@ created_at: 2026-04-06
 topics:
   - 大语言模型
 status: inbox
-source: "https://github.com/dontriskit/awesome-ai-system-prompts"
 published: 
 created: 2026-04-06
 description: "🧠 Curated collection of system prompts for top AI tools. Perfect for AI agent builders and prompt engineers. Incuding: ChatGPT, Claude, Perplexity, Manus, Claude-Code, Loveable, v0, Grok, same new, windsurf, notion, and MetaAI.  - dontriskit/awesome-ai-system-prompts: 🧠 Curated collection of system prompts for top AI tools. Perfect for AI agent builders and prompt engineers. Incuding: ChatGPT, Claude, Perplexity, Manus, Claude-Code, Loveable, v0, Grok, same new, windsurf, notion, and MetaAI."
 tags:
   - 
   - "clippings"
+source_url: "https://github.com/dontriskit/awesome-ai-system-prompts"
+published_at: null
+related_concepts: []
 ---
 
 ## Crafting Effective Prompts for Agentic AI Systems: Patterns and Practices

@@ -4,8 +4,6 @@ created: 2026-04-06
 created_at: 2026-04-06
 description: A tool that connects everyday work into one space. It gives you and your
   teams AI tools—search, writing, note-taking—inside an all-in-one, flexible workspace.
-published: null
-source: https://sodakeyeatsmush.notion.site/Smth-Smth-GPU-Related-27bf1129214e804ba217e8d5d08fc8b5#27bf1129214e80928aeef2a9fa3c0e38
 source_type: web
 status: inbox
 tags:
@@ -14,6 +12,9 @@ tags:
 title: Smth Smth GPU Related
 topics:
 - 深度学习
+source_url: https://sodakeyeatsmush.notion.site/Smth-Smth-GPU-Related-27bf1129214e804ba217e8d5d08fc8b5#27bf1129214e80928aeef2a9fa3c0e38
+published_at: null
+related_concepts: []
 ---
 
 For quite some time, I’ve been wanting to learn about GPUs. As someone in ML, I use them a lot, but I was really curious to understand how they actually work under the hood.

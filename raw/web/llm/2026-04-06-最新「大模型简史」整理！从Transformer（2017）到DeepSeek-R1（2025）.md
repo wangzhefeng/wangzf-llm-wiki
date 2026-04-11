@@ -8,13 +8,15 @@ created_at: 2026-04-06
 topics:
   - 大语言模型
 status: inbox
-source: "https://mp.weixin.qq.com/s/s4NvK_7Z27_n9zl3RJEU4Q"
 published: 
 created: 2026-04-06
 description: "2017～2025"
 tags:
   - 
   - "clippings"
+source_url: "https://mp.weixin.qq.com/s/s4NvK_7Z27_n9zl3RJEU4Q"
+published_at: null
+related_concepts: []
 ---
 
 LM Po *2025年3月1日 23:19*

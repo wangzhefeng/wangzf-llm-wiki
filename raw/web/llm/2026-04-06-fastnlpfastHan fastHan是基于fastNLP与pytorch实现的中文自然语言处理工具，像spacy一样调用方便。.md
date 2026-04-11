@@ -3,8 +3,6 @@ author: null
 created: 2026-04-06
 created_at: 2026-04-06
 description: fastHan是基于fastNLP与pytorch实现的中文自然语言处理工具，像spacy一样调用方便。 - fastnlp/fastHan
-published: null
-source: https://github.com/fastnlp/fastHan
 source_type: web
 status: inbox
 tags:
@@ -14,6 +12,9 @@ title: 'fastnlp/fastHan: fastHan是基于fastNLP与pytorch实现的中文自然�
 topics:
 - 深度学习
 - 大语言模型
+source_url: https://github.com/fastnlp/fastHan
+published_at: null
+related_concepts: []
 ---
 
 ## fastHan

@@ -6,13 +6,15 @@ created_at: 2026-04-06
 topics:
   - 大语言模型
 status: inbox
-source: "https://github.com/kevinpdev/gpt-from-scratch/blob/main/llm-from-scratch.ipynb"
 published: 
 created: 2026-04-06
 description: "Educational implementation of a small GPT model from scratch in a single Jupyter Notebook - gpt-from-scratch/llm-from-scratch.ipynb at main · kevinpdev/gpt-from-scratch"
 tags:
   - 
   - "clippings"
+source_url: "https://github.com/kevinpdev/gpt-from-scratch/blob/main/llm-from-scratch.ipynb"
+published_at: null
+related_concepts: []
 ---
 
 [Open in github.dev](https://github.dev/) [Open in a new github.dev tab](https://github.dev/) [Open in codespace](https://github.com/codespaces/new/kevinpdev/gpt-from-scratch/tree/main?resume=1)

@@ -8,13 +8,14 @@ created_at: 2026-04-06
 topics:
   - 时间序列
 status: inbox
-source: "https://towardsdatascience.com/4-things-to-do-when-applying-cross-validation-with-time-series-c6a5674ebf3a/"
-published: 2022-12-08
 created: 2026-04-06
 description: "A few practical recommendations for getting better forecasting performance estimates"
 tags:
   - 
   - "clippings"
+source_url: "https://towardsdatascience.com/4-things-to-do-when-applying-cross-validation-with-time-series-c6a5674ebf3a/"
+published_at: 2022-12-08
+related_concepts: []
 ---
 
 ![[0hfxdSdl1MfbWG9eq-scaled.jpg|Photo by Thought Catalog on Unsplash]]

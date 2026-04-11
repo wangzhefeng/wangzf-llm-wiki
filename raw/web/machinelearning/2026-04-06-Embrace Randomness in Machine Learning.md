@@ -8,13 +8,14 @@ created_at: 2026-04-06
 topics:
   - 机器学习
 status: inbox
-source: "https://machinelearningmastery.com/randomness-in-machine-learning/"
-published: 2016-09-28
 created: 2026-04-06
 description: "Why Do You Get Different Results On Different Runs Of An Algorithm With The Same Data? Applied machine learning is a tapestry of breakthroughs and mindset shifts. Understanding the role of randomness in machine learning algorithms is one of those breakthroughs. Once you get it, you will see things differently. In a whole new light. Things like […]"
 tags:
   - 
   - "clippings"
+source_url: "https://machinelearningmastery.com/randomness-in-machine-learning/"
+published_at: 2016-09-28
+related_concepts: []
 ---
 
 ### Why Do You Get Different Results On Different Runs Of An Algorithm With The Same Data?

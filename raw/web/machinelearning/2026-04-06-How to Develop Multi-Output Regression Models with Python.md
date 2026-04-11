@@ -9,8 +9,6 @@ description: Multioutput regression are regression problems that involve predict
   a coordinate given an input, e.g. predicting x and y values. Another example would
   be multi-step time series forecasting that involves predicting multiple future time
   series of a given variable. Many machine […]
-published: 2020-03-27
-source: https://machinelearningmastery.com/multi-output-regression-models-with-python/
 source_type: web
 status: inbox
 tags:
@@ -19,6 +17,9 @@ tags:
 title: How to Develop Multi-Output Regression Models with Python
 topics:
 - 机器学习
+source_url: https://machinelearningmastery.com/multi-output-regression-models-with-python/
+published_at: 2020-03-27
+related_concepts: []
 ---
 
 Multioutput regression are regression problems that involve predicting two or more numerical values given an input example.

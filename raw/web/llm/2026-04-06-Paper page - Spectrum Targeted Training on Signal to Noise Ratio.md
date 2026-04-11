@@ -3,8 +3,6 @@ author: null
 created: 2026-04-06
 created_at: 2026-04-06
 description: Join the discussion on this paper page
-published: 2024-06-12
-source: https://huggingface.co/papers/2406.06623
 source_type: web
 status: inbox
 tags:
@@ -13,6 +11,9 @@ tags:
 title: 'Paper page - Spectrum: Targeted Training on Signal to Noise Ratio'
 topics:
 - 大语言模型
+source_url: https://huggingface.co/papers/2406.06623
+published_at: 2024-06-12
+related_concepts: []
 ---
 
 arxiv:2406.06623

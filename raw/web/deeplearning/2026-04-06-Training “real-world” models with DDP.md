@@ -6,8 +6,6 @@ created: 2026-04-06
 created_at: 2026-04-06
 description: PyTorch Documentation. Explore PyTorch, an open-source machine learning
   library that accelerates the path from research prototyping to production deployment.
-published: 2023-01-01
-source: https://docs.pytorch.org/tutorials/intermediate/ddp_series_minGPT.html
 source_type: web
 status: inbox
 tags:
@@ -17,6 +15,9 @@ title: Training “real-world” models with DDP
 topics:
 - 强化学习
 - 深度学习
+source_url: https://docs.pytorch.org/tutorials/intermediate/ddp_series_minGPT.html
+published_at: 2023-01-01
+related_concepts: []
 ---
 
 [Introduction](https://docs.pytorch.org/tutorials/beginner/ddp_series_intro.html) || [What is DDP](https://docs.pytorch.org/tutorials/beginner/ddp_series_theory.html) || [Single-Node Multi-GPU Training](https://docs.pytorch.org/tutorials/beginner/ddp_series_multigpu.html) || [Fault Tolerance](https://docs.pytorch.org/tutorials/beginner/ddp_series_fault_tolerance.html) || [Multi-Node training](https://docs.pytorch.org/tutorials/intermediate/ddp_series_multinode.html) || **minGPT Training**

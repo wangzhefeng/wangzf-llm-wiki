@@ -5,8 +5,6 @@ author:
 created: 2026-04-06
 created_at: 2026-04-06
 description: Everything You Need to Know About Parameter Efficient Fine-Tuning (PEFT)
-published: null
-source: https://substack.com/inbox/post/161399888?r=5hh66x&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true&triedRedirect=true
 source_type: web
 status: inbox
 tags:
@@ -15,6 +13,9 @@ tags:
 title: How to Fine-Tune Mistral-7B Model with LoRA (Low Rank Adaptation)
 topics:
 - 大语言模型
+source_url: https://substack.com/inbox/post/161399888?r=5hh66x&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true&triedRedirect=true
+published_at: null
+related_concepts: []
 ---
 
 [Ankita](https://ankitamungalpara.substack.com/)

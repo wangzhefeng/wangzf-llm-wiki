@@ -4,8 +4,6 @@ created: 2026-04-06
 created_at: 2026-04-06
 description: The GitHub repository for the paper "Informer" accepted by AAAI 2021.
   - zhouhaoyi/Informer2020
-published: null
-source: https://github.com/zhouhaoyi/Informer2020
 source_type: web
 status: inbox
 tags:
@@ -15,6 +13,9 @@ title: 'zhouhaoyi/Informer2020: The GitHub repository for the paper "Informer" a
   by AAAI 2021.'
 topics:
 - 深度学习
+source_url: https://github.com/zhouhaoyi/Informer2020
+published_at: null
+related_concepts: []
 ---
 
 ## Informer: Beyond Efficient Transformer for Long Sequence Time-Series Forecasting (AAAI'21 Best Paper)

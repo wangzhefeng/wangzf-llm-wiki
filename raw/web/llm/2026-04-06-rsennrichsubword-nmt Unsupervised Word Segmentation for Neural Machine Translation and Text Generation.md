@@ -4,8 +4,6 @@ created: 2026-04-06
 created_at: 2026-04-06
 description: Unsupervised Word Segmentation for Neural Machine Translation and Text
   Generation - rsennrich/subword-nmt
-published: null
-source: https://github.com/rsennrich/subword-nmt
 source_type: web
 status: inbox
 tags:
@@ -15,6 +13,9 @@ title: 'rsennrich/subword-nmt: Unsupervised Word Segmentation for Neural Machine
   and Text Generation'
 topics:
 - 大语言模型
+source_url: https://github.com/rsennrich/subword-nmt
+published_at: null
+related_concepts: []
 ---
 
 ## Subword Neural Machine Translation

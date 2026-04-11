@@ -5,8 +5,6 @@ author:
 created: 2026-04-06
 created_at: 2026-04-06
 description: 关注 AI、云原生相关技术，同时也对团队文化、经营策略感兴趣。
-published: 2023-12-28
-source: https://www.chenshaowen.com/blog/nvidia-gpu-driver-installation.html
 source_type: web
 status: inbox
 tags:
@@ -15,6 +13,9 @@ tags:
 title: 如何添加 NVIDIA GPU 节点到 Kubernetes 集群
 topics:
 - 控制算法
+source_url: https://www.chenshaowen.com/blog/nvidia-gpu-driver-installation.html
+published_at: 2023-12-28
+related_concepts: []
 ---
 
 ## 1\. 磁盘处理

@@ -5,8 +5,6 @@ author:
 created: 2026-04-06
 created_at: 2026-04-06
 description: 本文介绍了一项在 ICLR 2025 发表的最新研究成果。
-published: null
-source: https://mp.weixin.qq.com/s/c-tZqxJ-vgs3UXvr2yl2lg
 source_type: web
 status: inbox
 tags:
@@ -16,6 +14,9 @@ title: TIMEMIXER++：通用时序预测新SOTA，全面超越Transformer！
 topics:
 - 大语言模型
 - 时间序列
+source_url: https://mp.weixin.qq.com/s/c-tZqxJ-vgs3UXvr2yl2lg
+published_at: null
+related_concepts: []
 ---
 
 ## ICLR 2025 | TIMEMIXER++：通用时序预测新SOTA，全面超越Transformer！

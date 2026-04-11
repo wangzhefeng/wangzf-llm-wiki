@@ -7,8 +7,6 @@ description: Time Series Orchestra (TSorchestra) is a novel ensemble framework d
   time series foundation models. The architecture is designed to leverage the specialized
   capabilities of its constituent models to deliver SOTA performance and generalization
   across datasets. - TSorchestra/cli/eval.sh at main · DC-research/TSorchestra
-published: null
-source: https://github.com/DC-research/TSorchestra/blob/main/cli/eval.sh
 source_type: web
 status: inbox
 tags:
@@ -17,6 +15,9 @@ tags:
 title: TSorchestra/cli/eval.sh at main
 topics:
 - 时间序列
+source_url: https://github.com/DC-research/TSorchestra/blob/main/cli/eval.sh
+published_at: null
+related_concepts: []
 ---
 
 1

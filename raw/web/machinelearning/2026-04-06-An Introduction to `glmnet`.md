@@ -7,8 +7,6 @@ author:
 created: 2026-04-06
 created_at: 2026-04-06
 description: glmnet
-published: null
-source: https://glmnet.stanford.edu/articles/glmnet.html
 source_type: web
 status: inbox
 tags:
@@ -17,6 +15,9 @@ tags:
 title: An Introduction to `glmnet`
 topics:
 - 计算机视觉
+source_url: https://glmnet.stanford.edu/articles/glmnet.html
+published_at: null
+related_concepts: []
 ---
 
 ## Introduction

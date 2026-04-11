@@ -5,8 +5,6 @@ created_at: 2026-04-06
 description: Trackers gives you clean, modular re-implementations of leading multi-object
   tracking algorithms released under the permissive Apache 2.0 license. You combine
   them with any detection model you already use. - roboflow/trackers
-published: null
-source: https://github.com/roboflow/trackers
 source_type: web
 status: inbox
 tags:
@@ -17,6 +15,9 @@ title: 'roboflow/trackers: Trackers gives you clean, modular re-implementations 
   license. You combine them with any detection model you already use.'
 topics:
 - 运筹优化
+source_url: https://github.com/roboflow/trackers
+published_at: null
+related_concepts: []
 ---
 
 trackers-2.0.0-promo.mp4<video src="https://private-user-images.githubusercontent.com/26109316/436954118-eef9b00a-cfe4-40f7-a495-954550e3ef1f.mp4?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NzU0NjU0ODgsIm5iZiI6MTc3NTQ2NTE4OCwicGF0aCI6Ii8yNjEwOTMxNi80MzY5NTQxMTgtZWVmOWIwMGEtY2ZlNC00MGY3LWE0OTUtOTU0NTUwZTNlZjFmLm1wND9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNjA0MDYlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjYwNDA2VDA4NDYyOFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWM5ODk1MjYwOTNmZTIyMDAxZmZjM2E2ODg0MDc0MWQ3MTY2YjM4YjRlNTlkMWQzODAyNDBlZDkxODc0MTE0YjcmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.w0gocscKxViwSni1eVlNiYPzNeHVarIbs_k9xflMrs0" controls="controls"></video>

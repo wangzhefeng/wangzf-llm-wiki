@@ -6,13 +6,15 @@ created_at: 2026-04-06
 topics:
   - 机器学习
 status: inbox
-source: "https://github.com/abhishekkrthakur/approachingalmost"
 published: 
 created: 2026-04-06
 description: "Approaching (Almost) Any Machine Learning Problem. Contribute to abhishekkrthakur/approachingalmost development by creating an account on GitHub."
 tags:
   - 
   - "clippings"
+source_url: "https://github.com/abhishekkrthakur/approachingalmost"
+published_at: null
+related_concepts: []
 ---
 
 **If you like the book, please consider writing a review on Google/Amazon/Goodreads 🙂**

@@ -6,8 +6,6 @@ created: 2026-04-06
 created_at: 2026-04-06
 description: 在win10上安装CUDA和cuDNN总是有很多人安装失败。 软件明明安装成功了为什么还是无法运行呢？ 原因是你安装的姿势可能出了点问题（你安装的版本不对）
   正确的安装姿势： 1、查看本机的CUDA驱动适配版本桌面右键打…
-published: null
-source: https://zhuanlan.zhihu.com/p/94220564
 source_type: web
 status: inbox
 tags:
@@ -16,6 +14,9 @@ tags:
 title: win10安装CUDA和cuDNN的正确姿势
 topics:
 - 运维工具
+source_url: https://zhuanlan.zhihu.com/p/94220564
+published_at: null
+related_concepts: []
 ---
 
 在win10上安装 [CUDA](https://zhida.zhihu.com/search?content_id=109067535&content_type=Article&match_order=1&q=CUDA&zhida_source=entity) 和 [cuDNN](https://zhida.zhihu.com/search?content_id=109067535&content_type=Article&match_order=1&q=cuDNN&zhida_source=entity) 总是有很多人安装失败。

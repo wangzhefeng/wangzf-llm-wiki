@@ -6,13 +6,15 @@ created_at: 2026-04-06
 topics:
   - 计算机视觉
 status: inbox
-source: "https://github.com/opencv/opencv-python"
 published: 
 created: 2026-04-06
 description: "Automated CI toolchain to produce precompiled opencv-python, opencv-python-headless, opencv-contrib-python and opencv-contrib-python-headless packages. - opencv/opencv-python"
 tags:
   - 
   - "clippings"
+source_url: "https://github.com/opencv/opencv-python"
+published_at: null
+related_concepts: []
 ---
 
 ### Keep OpenCV Free

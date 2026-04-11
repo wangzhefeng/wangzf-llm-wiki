@@ -4,8 +4,6 @@ created: 2026-04-06
 created_at: 2026-04-06
 description: 题目：一个艺术风格化的神经网络算法 文章地址：《A Neural Algorithm of Artistic Style》. arXiv:1508.06576
   Github链...
-published: 2016-12-25
-source: https://www.jianshu.com/p/9f03b61fdeac
 source_type: web
 status: inbox
 tags:
@@ -14,6 +12,9 @@ tags:
 title: '[译] A Neural Algorithm of Artistic Style'
 topics:
 - 计算机视觉
+source_url: https://www.jianshu.com/p/9f03b61fdeac
+published_at: 2016-12-25
+related_concepts: []
 ---
 
 > ## 题目：一个艺术风格化的神经网络算法

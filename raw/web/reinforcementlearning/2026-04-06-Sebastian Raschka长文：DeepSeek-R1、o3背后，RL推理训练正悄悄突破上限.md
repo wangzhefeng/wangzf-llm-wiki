@@ -6,13 +6,15 @@ created_at: 2026-04-06
 topics:
   - 强化学习
 status: inbox
-source: "https://mp.weixin.qq.com/s/Bmiimack-HEzlsgu-WiHKg"
 published: 
 created: 2026-04-06
 description: "推理模型的「后训练时代」你准备好了吗？"
 tags:
   - 
   - "clippings"
+source_url: "https://mp.weixin.qq.com/s/Bmiimack-HEzlsgu-WiHKg"
+published_at: null
+related_concepts: []
 ---
 
 *2025年4月21日 15:02*

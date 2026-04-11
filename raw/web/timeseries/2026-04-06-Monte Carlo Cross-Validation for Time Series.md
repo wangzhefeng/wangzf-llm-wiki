@@ -8,13 +8,14 @@ created_at: 2026-04-06
 topics:
   - 时间序列
 status: inbox
-source: "https://towardsdatascience.com/monte-carlo-cross-validation-for-time-series-ed01c41e2995/"
-published: 2022-12-13
 created: 2026-04-06
 description: "How to get better forecasting performance estimates with a bit of randomness"
 tags:
   - 
   - "clippings"
+source_url: "https://towardsdatascience.com/monte-carlo-cross-validation-for-time-series-ed01c41e2995/"
+published_at: 2022-12-13
+related_concepts: []
 ---
 
 ![[0DZ06-YmGhE0WP_nS-scaled.jpg|Photo by Markus Spiske on Unsplash]]

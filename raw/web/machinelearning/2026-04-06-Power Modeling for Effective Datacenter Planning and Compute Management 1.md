@@ -11,8 +11,6 @@ created: 2026-04-06
 created_at: 2026-04-06
 description: 'Abstract page for arXiv paper 2103.13308: Power Modeling for Effective
   Datacenter Planning and Compute Management'
-published: null
-source: https://arxiv.org/abs/2103.13308?utm_source=chatgpt.com
 source_type: web
 status: inbox
 tags:
@@ -21,6 +19,9 @@ tags:
 title: Power Modeling for Effective Datacenter Planning and Compute Management
 topics:
 - 机器学习
+source_url: https://arxiv.org/abs/2103.13308?utm_source=chatgpt.com
+published_at: null
+related_concepts: []
 ---
 
 ## Title:Power Modeling for Effective Datacenter Planning and Compute Management

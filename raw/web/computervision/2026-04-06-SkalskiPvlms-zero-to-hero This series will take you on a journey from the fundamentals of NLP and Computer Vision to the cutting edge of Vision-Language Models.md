@@ -6,13 +6,15 @@ created_at: 2026-04-06
 topics:
   - 计算机视觉
 status: inbox
-source: "https://github.com/SkalskiP/vlms-zero-to-hero"
 published: 
 created: 2026-04-06
 description: "This series will take you on a journey from the fundamentals of NLP and Computer Vision to the cutting edge of Vision-Language Models. - SkalskiP/vlms-zero-to-hero"
 tags:
   - 
   - "clippings"
+source_url: "https://github.com/SkalskiP/vlms-zero-to-hero"
+published_at: null
+related_concepts: []
 ---
 
 ## VLMs zero-to-hero

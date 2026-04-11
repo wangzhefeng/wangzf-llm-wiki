@@ -9,13 +9,14 @@ created_at: 2026-04-06
 topics:
   - 大语言模型
 status: inbox
-source: "https://magazine.sebastianraschka.com/p/coding-the-kv-cache-in-llms"
-published: 2025-06-17
 created: 2026-04-06
 description: "KV caches are one of the most critical techniques for efficient inference in LLMs in production."
 tags:
   - 
   - "clippings"
+source_url: "https://magazine.sebastianraschka.com/p/coding-the-kv-cache-in-llms"
+published_at: 2025-06-17
+related_concepts: []
 ---
 
 KV caches are one of the most critical techniques for efficient inference in LLMs in production. KV caches are an important component for compute-efficient LLM inference in production. This article explains how they work conceptually and in code with a from-scratch, human-readable implementation.

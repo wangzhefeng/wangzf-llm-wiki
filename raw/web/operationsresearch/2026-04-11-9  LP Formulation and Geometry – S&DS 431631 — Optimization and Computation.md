@@ -2,8 +2,6 @@
 author: null
 created: 2026-04-11
 description: null
-published: null
-source: https://zhuoranyang.github.io/sds431-notes/lectures/09-lp-formulation-geometry.html
 tags:
 - clippings
 title: 9  LP Formulation and Geometry – S&DS 431/631 — Optimization and Computation
@@ -11,6 +9,10 @@ topics:
 - 运筹优化
 source_type: local_note
 created_at: 2026-04-11
+status: inbox
+source_url: https://zhuoranyang.github.io/sds431-notes/lectures/09-lp-formulation-geometry.html
+published_at: null
+related_concepts: []
 ---
 Why should we care about the geometry of linear programs? Because geometry reveals where the optimal solution must live. A linear objective function, when minimized over a polyhedron, always achieves its best value at a “corner” – a vertex of the feasible region. This geometric insight is the foundation of the simplex method, the most widely used LP algorithm in practice, and it reduces the search for an optimal solution from an infinite continuous region to a finite set of candidate points.
 

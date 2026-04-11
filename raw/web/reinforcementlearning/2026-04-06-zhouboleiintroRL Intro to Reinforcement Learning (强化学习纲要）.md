@@ -6,13 +6,15 @@ created_at: 2026-04-06
 topics:
   - 强化学习
 status: inbox
-source: "https://github.com/zhoubolei/introRL"
 published: 
 created: 2026-04-06
 description: "Intro to Reinforcement Learning (强化学习纲要）. Contribute to zhoubolei/introRL development by creating an account on GitHub."
 tags:
   - 
   - "clippings"
+source_url: "https://github.com/zhoubolei/introRL"
+published_at: null
+related_concepts: []
 ---
 
 [![[teaser.png|teaser]]](https://github.com/zhoubolei/introRL/blob/master/asset/teaser.png)

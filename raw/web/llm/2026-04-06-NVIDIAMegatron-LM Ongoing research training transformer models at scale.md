@@ -6,13 +6,15 @@ created_at: 2026-04-06
 topics:
   - 大语言模型
 status: inbox
-source: "https://github.com/NVIDIA/Megatron-LM"
 published: 
 created: 2026-04-06
 description: "Ongoing research training transformer models at scale - NVIDIA/Megatron-LM"
 tags:
   - 
   - "clippings"
+source_url: "https://github.com/NVIDIA/Megatron-LM"
+published_at: null
+related_concepts: []
 ---
 
 ## Megatron-LM and Megatron Core

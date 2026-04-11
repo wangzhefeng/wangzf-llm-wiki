@@ -8,13 +8,15 @@ created_at: 2026-04-06
 topics:
   - 计算机视觉
 status: inbox
-source: "https://zhuanlan.zhihu.com/p/642406552?share_code=15P4FEvLiV9O9&utm_psn=1912574157167789921"
 published: 
 created: 2026-04-06
 description: "1.变分自编码器VAE生成手写数字图像VAE详细介绍可参考： https://zhuanlan.zhihu.com/p/620113235先简单复习一下变分自编码器VAE的结构和原理（仍以mnist手写数据集为例）： 变分自编码器VAE结构图与自编码器AE类…"
 tags:
   - 
   - "clippings"
+source_url: "https://zhuanlan.zhihu.com/p/642406552?share_code=15P4FEvLiV9O9&utm_psn=1912574157167789921"
+published_at: null
+related_concepts: []
 ---
 
 ## 1.变分自编码器VAE生成手写数字图像

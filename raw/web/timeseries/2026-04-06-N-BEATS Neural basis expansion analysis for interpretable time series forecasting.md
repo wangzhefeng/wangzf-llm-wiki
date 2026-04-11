@@ -11,13 +11,15 @@ created_at: 2026-04-06
 topics:
   - 时间序列
 status: inbox
-source: "https://arxiv.org/abs/1905.10437"
 published: 
 created: 2026-04-06
 description: "Abstract page for arXiv paper 1905.10437: N-BEATS: Neural basis expansion analysis for interpretable time series forecasting"
 tags:
   - 
   - "clippings"
+source_url: "https://arxiv.org/abs/1905.10437"
+published_at: null
+related_concepts: []
 ---
 
 ## Title:N-BEATS: Neural basis expansion analysis for interpretable time series forecasting

@@ -2,8 +2,6 @@
 author: null
 created: 2026-04-11
 description: null
-published: null
-source: https://zhuoranyang.github.io/sds431-notes/lectures/01-introduction.html
 tags:
 - clippings
 title: 1  Introduction and Motivation – S&DS 431/631 — Optimization and Computation
@@ -11,6 +9,10 @@ topics:
 - 运筹优化
 source_type: local_note
 created_at: 2026-04-11
+status: inbox
+source_url: https://zhuoranyang.github.io/sds431-notes/lectures/01-introduction.html
+published_at: null
+related_concepts: []
 ---
 Optimization is the mathematical engine behind nearly every quantitative discipline. Whenever a statistician fits a model, a machine learning engineer trains a neural network, or a financial analyst constructs a portfolio, the core computational task is an optimization problem: find the best decision from a set of alternatives. What distinguishes a good practitioner from a great one is understanding *which* optimization problem is being solved, *what* algorithms are available, and *how* to certify that a solution is correct.
 

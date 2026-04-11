@@ -6,13 +6,15 @@ created_at: 2026-04-06
 topics:
   - 大语言模型
 status: inbox
-source: "https://github.com/datawhalechina/happy-llm"
 published: 
 created: 2026-04-06
 description: "📚 从零开始构建大模型. Contribute to datawhalechina/happy-llm development by creating an account on GitHub."
 tags:
   - 
   - "clippings"
+source_url: "https://github.com/datawhalechina/happy-llm"
+published_at: null
+related_concepts: []
 ---
 
 [![[head.jpg|alt text]]](https://github.com/datawhalechina/happy-llm/blob/main/images/head.jpg)

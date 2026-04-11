@@ -3,8 +3,6 @@ author: null
 created: 2026-04-06
 created_at: 2026-04-06
 description: Interactive sliding window algorithm visualizer with bilingual support
-published: null
-source: https://sliding-window-visualizer-bryanneumann.replit.app/
 source_type: web
 status: inbox
 tags:
@@ -13,6 +11,9 @@ tags:
 title: Sliding Window Technique Visualizer
 topics:
 - 工具
+source_url: https://sliding-window-visualizer-bryanneumann.replit.app/
+published_at: null
+related_concepts: []
 ---
 
 Learn and visualize sliding window techniques with interactive demonstrations for both fixed and variable size windows.

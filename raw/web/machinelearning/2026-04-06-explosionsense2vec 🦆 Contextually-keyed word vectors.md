@@ -4,8 +4,6 @@ created: 2026-04-06
 created_at: 2026-04-06
 description: 🦆 Contextually-keyed word vectors. Contribute to explosion/sense2vec
   development by creating an account on GitHub.
-published: null
-source: https://github.com/explosion/sense2vec?tab=readme-ov-file
 source_type: web
 status: inbox
 tags:
@@ -14,6 +12,9 @@ tags:
 title: 'explosion/sense2vec: 🦆 Contextually-keyed word vectors'
 topics:
 - 机器学习
+source_url: https://github.com/explosion/sense2vec?tab=readme-ov-file
+published_at: null
+related_concepts: []
 ---
 
 [![[raw/assets/attachments/machinelearning/Image 28.svg]]](https://explosion.ai/)

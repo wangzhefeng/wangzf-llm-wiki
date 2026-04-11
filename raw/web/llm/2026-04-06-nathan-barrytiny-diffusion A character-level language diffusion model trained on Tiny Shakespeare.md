@@ -4,8 +4,6 @@ created: 2026-04-06
 created_at: 2026-04-06
 description: A character-level language diffusion model trained on Tiny Shakespeare
   - nathan-barry/tiny-diffusion
-published: null
-source: https://github.com/nathan-barry/tiny-diffusion
 source_type: web
 status: inbox
 tags:
@@ -15,6 +13,9 @@ title: 'nathan-barry/tiny-diffusion: A character-level language diffusion model 
   on Tiny Shakespeare'
 topics:
 - 大语言模型
+source_url: https://github.com/nathan-barry/tiny-diffusion
+published_at: null
+related_concepts: []
 ---
 
 ## tiny-diffusion

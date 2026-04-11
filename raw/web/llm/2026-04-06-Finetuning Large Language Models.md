@@ -9,8 +9,6 @@ description: Dive into the realm of artificial intelligence with this comprehens
   guide on effectively using Large Language Models (LLMs). From in-context learning
   and indexing to the nitty-gritty of finetuning, we break down the complexities for
   beginners.
-published: 2023-04-22
-source: https://magazine.sebastianraschka.com/p/finetuning-large-language-models
 source_type: web
 status: inbox
 tags:
@@ -19,6 +17,9 @@ tags:
 title: Finetuning Large Language Models
 topics:
 - 大语言模型
+source_url: https://magazine.sebastianraschka.com/p/finetuning-large-language-models
+published_at: 2023-04-22
+related_concepts: []
 ---
 
 ### An introduction to the core ideas and approaches

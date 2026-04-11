@@ -6,13 +6,15 @@ created_at: 2026-04-06
 topics:
   - 大语言模型
 status: inbox
-source: "https://github.com/Mxoder/LLM-from-scratch"
 published: 
 created: 2026-04-06
 description: "一些 LLM 方面的从零复现笔记. Contribute to Mxoder/LLM-from-scratch development by creating an account on GitHub."
 tags:
   - 
   - "clippings"
+source_url: "https://github.com/Mxoder/LLM-from-scratch"
+published_at: null
+related_concepts: []
 ---
 
 ## LLM-from-scratch

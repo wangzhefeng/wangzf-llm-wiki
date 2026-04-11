@@ -3,8 +3,6 @@ author: null
 created: 2026-04-06
 created_at: 2026-04-06
 description: null
-published: null
-source: https://simple-pid.readthedocs.io/en/latest/reference.html
 source_type: web
 status: inbox
 tags:
@@ -13,6 +11,9 @@ tags:
 title: API reference - simple-pid 2.0.0
 topics:
 - 控制算法
+source_url: https://simple-pid.readthedocs.io/en/latest/reference.html
+published_at: null
+related_concepts: []
 ---
 
 ## API reference

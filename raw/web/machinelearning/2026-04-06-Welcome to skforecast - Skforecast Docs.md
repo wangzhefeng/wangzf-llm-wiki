@@ -7,8 +7,6 @@ created_at: 2026-04-06
 description: Python library for time series forecasting using machine learning models.
   It works with any estimator compatible with the scikit-learn API, including popular
   options like LightGBM, XGBoost, CatBoost, Keras, and many others.
-published: null
-source: https://skforecast.org/0.20.0/index.html
 source_type: web
 status: inbox
 tags:
@@ -18,6 +16,9 @@ title: Welcome to skforecast - Skforecast Docs
 topics:
 - 时间序列
 - 机器学习
+source_url: https://skforecast.org/0.20.0/index.html
+published_at: null
+related_concepts: []
 ---
 
 ## Welcome to skforecast

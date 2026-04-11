@@ -4,8 +4,6 @@ created: 2026-04-06
 created_at: 2026-04-06
 description: 'Clarabel.rs: Interior-point solver for convex conic optimisation problems
   in Rust. - oxfordcontrol/Clarabel.rs'
-published: null
-source: https://github.com/oxfordcontrol/Clarabel.rs
 source_type: web
 status: inbox
 tags:
@@ -15,6 +13,9 @@ title: 'oxfordcontrol/Clarabel.rs: Clarabel.rs: Interior-point solver for convex
   optimisation problems in Rust.'
 topics:
 - 运筹优化
+source_url: https://github.com/oxfordcontrol/Clarabel.rs
+published_at: null
+related_concepts: []
 ---
 
 ![[logo-banner-dark-rs.png|Clarabel.jl logo]]

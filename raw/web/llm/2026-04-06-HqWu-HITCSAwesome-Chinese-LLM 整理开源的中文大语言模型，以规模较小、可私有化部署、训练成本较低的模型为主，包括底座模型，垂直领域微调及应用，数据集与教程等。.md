@@ -6,13 +6,15 @@ created_at: 2026-04-06
 topics:
   - 大语言模型
 status: inbox
-source: "https://github.com/HqWu-HITCS/Awesome-Chinese-LLM?tab=readme-ov-file#7-llm%E6%95%99%E7%A8%8B"
 published: 
 created: 2026-04-06
 description: "整理开源的中文大语言模型，以规模较小、可私有化部署、训练成本较低的模型为主，包括底座模型，垂直领域微调及应用，数据集与教程等。 - HqWu-HITCS/Awesome-Chinese-LLM"
 tags:
   - 
   - "clippings"
+source_url: "https://github.com/HqWu-HITCS/Awesome-Chinese-LLM?tab=readme-ov-file#7-llm%E6%95%99%E7%A8%8B"
+published_at: null
+related_concepts: []
 ---
 
 ## Awesome Chinese LLM

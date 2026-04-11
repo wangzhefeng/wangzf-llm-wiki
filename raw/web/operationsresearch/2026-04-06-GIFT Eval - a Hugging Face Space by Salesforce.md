@@ -5,8 +5,6 @@ created_at: 2026-04-06
 description: This app shows up‑to‑date leaderboards of large language models, letting
   you browse overall rankings as well as results split by domain, frequency, term
   length, and variate type. You can filter mod...
-published: null
-source: https://huggingface.co/spaces/Salesforce/GIFT-Eval
 source_type: web
 status: inbox
 tags:
@@ -15,6 +13,9 @@ tags:
 title: GIFT Eval - a Hugging Face Space by Salesforce
 topics:
 - 运筹优化
+source_url: https://huggingface.co/spaces/Salesforce/GIFT-Eval
+published_at: null
+related_concepts: []
 ---
 
 Refreshing

@@ -2,8 +2,6 @@
 author: null
 created: 2026-04-11
 description: null
-published: null
-source: https://zhuoranyang.github.io/sds431-notes/lectures/14-newton-method.html
 tags:
 - clippings
 title: 14  Newton’s Method – S&DS 431/631 — Optimization and Computation
@@ -11,6 +9,10 @@ topics:
 - 运筹优化
 source_type: local_note
 created_at: 2026-04-11
+status: inbox
+source_url: https://zhuoranyang.github.io/sds431-notes/lectures/14-newton-method.html
+published_at: null
+related_concepts: []
 ---
 In [Part 7](https://zhuoranyang.github.io/sds431-notes/lectures/06-gradient-descent.html) we introduced gradient descent and saw that it only uses first-order information — the gradient — to choose a search direction. While simple and broadly applicable, gradient descent can be frustratingly slow on ill-conditioned problems, zigzagging across narrow valleys for thousands of iterations. Newton’s method overcomes this limitation by incorporating second-order information — the Hessian matrix — to adapt each step to the local curvature of the objective function, achieving dramatically faster convergence near the optimum.
 

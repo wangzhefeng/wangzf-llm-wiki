@@ -12,6 +12,7 @@ source_type: local_note
 created_at: 2024-09-23
 topics:
   - llm
+status: inbox
 ---
 
 <style>

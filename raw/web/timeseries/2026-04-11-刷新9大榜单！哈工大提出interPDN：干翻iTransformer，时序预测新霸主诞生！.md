@@ -1,6 +1,5 @@
 ---
 title: "刷新9大榜单！哈工大提出interPDN：干翻iTransformer，时序预测新霸主诞生！"
-source: "https://mp.weixin.qq.com/s/Cu7PP9UkSDpUb068hLtOKg"
 author:
   - "[[时序之心]]"
 published:
@@ -8,6 +7,14 @@ created: 2026-04-11
 description: "AAAI 2026 | 刷新9大榜单！哈工大提出interPDN：干翻iTransformer，时序预测新霸主诞生！"
 tags:
   - "clippings"
+source_type: web
+created_at: 2026-04-11
+topics:
+  - "clippings"
+status: inbox
+source_url: "https://mp.weixin.qq.com/s/Cu7PP9UkSDpUb068hLtOKg"
+published_at: null
+related_concepts: []
 ---
 ## AAAI 2026 | 刷新9大榜单！哈工大提出interPDN：干翻iTransformer，时序预测新霸主诞生！
 

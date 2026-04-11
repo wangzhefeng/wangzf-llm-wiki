@@ -12,13 +12,14 @@ created_at: 2026-04-06
 topics:
   - 计算机视觉
 status: inbox
-source: "https://huggingface.co/blog/smolvlm"
-published: 2024-11-26
 created: 2026-04-06
 description: "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
 tags:
   - 
   - "clippings"
+source_url: "https://huggingface.co/blog/smolvlm"
+published_at: 2024-11-26
+related_concepts: []
 ---
 
 ## TLDR

@@ -5,8 +5,6 @@ author:
 created: 2026-04-06
 created_at: 2026-04-06
 description: 使用pytorch手写一个transformer😋
-published: null
-source: https://mp.weixin.qq.com/s/iBVNkvfz8usZTpPLRcghRA
 source_type: web
 status: inbox
 tags:
@@ -16,6 +14,9 @@ title: Transformer深入浅出
 topics:
 - 大语言模型
 - 深度学习
+source_url: https://mp.weixin.qq.com/s/iBVNkvfz8usZTpPLRcghRA
+published_at: null
+related_concepts: []
 ---
 
 原创 梁云1991 *2023年8月1日 22:53*

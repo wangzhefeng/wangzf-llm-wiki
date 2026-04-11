@@ -8,13 +8,15 @@ created_at: 2026-04-06
 topics:
   - 时间序列
 status: inbox
-source: "https://mp.weixin.qq.com/s/MsJmWfXuqh_pTYlwve6O3Q"
 published: 
 created: 2026-04-06
 description: "TimeMixer是一种基于多尺度融合架构的时序预测模型，它通过解耦多尺度时间序列的过去信息和未来预测，实现了在长期和短期预测任务上的卓越性能和效率。"
 tags:
   - 
   - "clippings"
+source_url: "https://mp.weixin.qq.com/s/MsJmWfXuqh_pTYlwve6O3Q"
+published_at: null
+related_concepts: []
 ---
 
 原创 wokangkang *2024年3月25日 07:49*

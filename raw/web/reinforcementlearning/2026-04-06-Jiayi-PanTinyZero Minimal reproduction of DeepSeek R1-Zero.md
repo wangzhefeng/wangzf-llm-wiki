@@ -4,8 +4,6 @@ created: 2026-04-06
 created_at: 2026-04-06
 description: Minimal reproduction of DeepSeek R1-Zero. Contribute to Jiayi-Pan/TinyZero
   development by creating an account on GitHub.
-published: null
-source: https://github.com/Jiayi-Pan/TinyZero
 source_type: web
 status: inbox
 tags:
@@ -14,6 +12,9 @@ tags:
 title: 'Jiayi-Pan/TinyZero: Minimal reproduction of DeepSeek R1-Zero'
 topics:
 - 强化学习
+source_url: https://github.com/Jiayi-Pan/TinyZero
+published_at: null
+related_concepts: []
 ---
 
 ## TinyZero

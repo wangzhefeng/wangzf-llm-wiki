@@ -3,8 +3,6 @@ author: null
 created: 2026-04-06
 created_at: 2026-04-06
 description: A deep-dive into machine learning embeddings.
-published: null
-source: https://vickiboykis.com/what_are_embeddings/
 source_type: web
 status: inbox
 tags:
@@ -14,6 +12,9 @@ title: What are embeddings?
 topics:
 - 大语言模型
 - 机器学习
+source_url: https://vickiboykis.com/what_are_embeddings/
+published_at: null
+related_concepts: []
 ---
 
 ![[raw/assets/attachments/llm/kandinsky 1.png]]

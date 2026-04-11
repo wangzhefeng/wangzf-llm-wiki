@@ -4,8 +4,6 @@ created: 2026-04-06
 created_at: 2026-04-06
 description: Fully open reproduction of DeepSeek-R1. Contribute to huggingface/open-r1
   development by creating an account on GitHub.
-published: null
-source: https://github.com/huggingface/open-r1
 source_type: web
 status: inbox
 tags:
@@ -14,6 +12,9 @@ tags:
 title: 'huggingface/open-r1: Fully open reproduction of DeepSeek-R1'
 topics:
 - 大语言模型
+source_url: https://github.com/huggingface/open-r1
+published_at: null
+related_concepts: []
 ---
 
 ## Open R1

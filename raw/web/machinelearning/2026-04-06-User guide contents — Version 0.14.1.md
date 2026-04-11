@@ -3,8 +3,6 @@ author: null
 created: 2026-04-06
 created_at: 2026-04-06
 description: null
-published: null
-source: https://imbalanced-learn.org/stable/user_guide.html
 source_type: web
 status: inbox
 tags:
@@ -13,6 +11,9 @@ tags:
 title: 'User guide: contents — Version 0.14.1'
 topics:
 - 深度学习
+source_url: https://imbalanced-learn.org/stable/user_guide.html
+published_at: null
+related_concepts: []
 ---
 
 ## User Guide

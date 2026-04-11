@@ -2,8 +2,6 @@
 author: null
 created: 2026-04-11
 description: null
-published: null
-source: https://zhuoranyang.github.io/sds431-notes/lectures/01-introduction.html
 tags:
 - clippings
 title: 1  引言和动机 – S&DS 431/631 — 优化与计算 --- 1  Introduction and Motivation – S&DS 431/631
@@ -12,6 +10,10 @@ topics:
 - 运筹优化
 source_type: local_note
 created_at: 2026-04-11
+status: inbox
+source_url: https://zhuoranyang.github.io/sds431-notes/lectures/01-introduction.html
+published_at: null
+related_concepts: []
 ---
 优化是几乎所有定量学科背后的数学引擎。每当统计学家拟合模型、机器学习工程师训练神经网络或金融分析师构建投资组合时，核心计算任务都是一个优化问题：从一组备选方案中找到最佳决策。区分优秀实践者和卓越实践者的关键在于理解正在解决哪个优化问题、有哪些可用算法以及如何证明解决方案的正确性。
 

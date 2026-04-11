@@ -5,7 +5,9 @@ source_url: https://youmind.com/boards
 status: inbox
 title: YouMind - AI 创作智能体
 topics:
-- 知识库建设
+- 知识库建设published_at: null
+author: null
+related_concepts: []
 ---
 
 

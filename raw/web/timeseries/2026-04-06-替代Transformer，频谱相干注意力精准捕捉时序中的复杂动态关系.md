@@ -5,8 +5,6 @@ author:
 created: 2026-04-06
 created_at: 2026-04-06
 description: null
-published: null
-source: https://mp.weixin.qq.com/s/_H4ODSnQAPwTaut9WyIpgA
 source_type: web
 status: inbox
 tags:
@@ -16,6 +14,9 @@ title: 替代Transformer，频谱相干注意力精准捕捉时序中的复杂�
 topics:
 - 大语言模型
 - 深度学习
+source_url: https://mp.weixin.qq.com/s/_H4ODSnQAPwTaut9WyIpgA
+published_at: null
+related_concepts: []
 ---
 
 ## AAAI 2026 Oral | 替代Transformer，频谱相干注意力精准捕捉时序中的复杂动态关系

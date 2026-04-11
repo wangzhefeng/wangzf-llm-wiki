@@ -2,8 +2,6 @@
 author: null
 created: 2026-04-11
 description: null
-published: null
-source: https://zhuoranyang.github.io/sds431-notes/lectures/summary.html
 tags:
 - clippings
 title: Course Summary – S&DS 431/631 — Optimization and Computation
@@ -11,6 +9,10 @@ topics:
 - 运筹优化
 source_type: local_note
 created_at: 2026-04-11
+status: inbox
+source_url: https://zhuoranyang.github.io/sds431-notes/lectures/summary.html
+published_at: null
+related_concepts: []
 ---
 This course has taken you on a journey through the core of mathematical optimization — from the foundational theory of convexity that tells us *what* an optimal solution looks like, through the first- and second-order algorithms that *find* one, to the classical theory of linear programming and the modern constrained optimization methods that power industrial solvers. Along the way, we saw how these ideas come alive in two of the most consequential applications of our time: diffusion models and transformers. The unifying theme throughout has been the interplay between structure and algorithms: convexity, smoothness, strong convexity, and constraint geometry each unlock specific algorithmic strategies with provable guarantees.
 

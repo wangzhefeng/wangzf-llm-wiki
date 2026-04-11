@@ -8,13 +8,15 @@ created_at: 2026-04-06
 topics:
   - 时间序列
 status: inbox
-source: "https://zhuanlan.zhihu.com/p/27937723158"
 published: 
 created: 2026-04-06
 description: "1. 引言时间序列预测（TSF）在金融、能源管理、交通流量规划和天气预报等多个领域具有重要应用。近年来，深度学习技术，特别是基于卷积神经网络（CNN）、Transformer和多层感知器（MLP）的方法，极大地推动了TSF的…"
 tags:
   - 
   - "clippings"
+source_url: "https://zhuanlan.zhihu.com/p/27937723158"
+published_at: null
+related_concepts: []
 ---
 
 ![[raw/assets/attachments/timeseries/v2-d6d99355b514bb7fe34d7ecfc5c9e35e_1440w.jpg]]

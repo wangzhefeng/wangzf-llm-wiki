@@ -8,13 +8,15 @@ created_at: 2026-04-06
 topics:
   - 时间序列
 status: inbox
-source: "https://zhuanlan.zhihu.com/p/22292409357"
 published: 
 created: 2026-04-06
 description: "论文标题：Sundial: A Family of Highly Capable Time Series Foundation Models 作者： Yong Liu(刘雍), Guo Qin, Zhiyuan Shi, Zhi Chen, Caiyin Yang, Xiangdong Huang, Jianmin Wang(王建民), Mingsheng Long(…"
 tags:
   - 
   - "clippings"
+source_url: "https://zhuanlan.zhihu.com/p/22292409357"
+published_at: null
+related_concepts: []
 ---
 
 目录

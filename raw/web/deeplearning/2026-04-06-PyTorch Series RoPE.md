@@ -6,13 +6,15 @@ created_at: 2026-04-06
 topics:
   - 深度学习
 status: inbox
-source: "https://www.k-a.in/pyt-rope.html"
 published: 
 created: 2026-04-06
 description: 
 tags:
   - 
   - "clippings"
+source_url: "https://www.k-a.in/pyt-rope.html"
+published_at: null
+related_concepts: []
 ---
 
 Today we are doing a walkthrough of Rotary Positional Embeddings (RoPE).

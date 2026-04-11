@@ -4,8 +4,6 @@ created: 2026-04-06
 created_at: 2026-04-06
 description: 'Official implementation for "iTransformer: Inverted Transformers Are
   Effective for Time Series Forecasting" (ICLR 2024 Spotlight) - thuml/iTransformer'
-published: null
-source: https://github.com/thuml/iTransformer
 source_type: web
 status: inbox
 tags:
@@ -16,6 +14,9 @@ title: 'thuml/iTransformer: Official implementation for "iTransformer: Inverted 
 topics:
 - 大语言模型
 - 时间序列
+source_url: https://github.com/thuml/iTransformer
+published_at: null
+related_concepts: []
 ---
 
 ## iTransformer

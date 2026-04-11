@@ -8,13 +8,14 @@ created_at: 2026-04-06
 topics:
   - 时间序列
 status: inbox
-source: "https://towardsdatascience.com/introduction-to-forecasting-ensembles-f63877a2498/"
-published: 2023-01-12
 created: 2026-04-06
 description: "A cheap trick to boost forecasting performance"
 tags:
   - 
   - "clippings"
+source_url: "https://towardsdatascience.com/introduction-to-forecasting-ensembles-f63877a2498/"
+published_at: 2023-01-12
+related_concepts: []
 ---
 
 ![[0g5TGnU7Rb3yB_1ar-scaled.jpg|Photo by Natalie Pedigo on Unsplash]]

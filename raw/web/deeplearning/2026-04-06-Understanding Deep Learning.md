@@ -6,13 +6,15 @@ created_at: 2026-04-06
 topics:
   - 深度学习
 status: inbox
-source: "https://udlbook.github.io/udlbook/"
 published: 
 created: 2026-04-06
 description: 
 tags:
   - 
   - "clippings"
+source_url: "https://udlbook.github.io/udlbook/"
+published_at: null
+related_concepts: []
 ---
 
 RECENT NEWS:

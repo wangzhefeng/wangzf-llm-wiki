@@ -4,8 +4,6 @@ created: 2026-04-06
 created_at: 2026-04-06
 description: The simplest, fastest repository for training/finetuning small-sized
   VLMs. - nanoVLM/models/config.py at main · huggingface/nanoVLM
-published: null
-source: https://github.com/huggingface/nanoVLM/blob/main/models/config.py
 source_type: web
 status: inbox
 tags:
@@ -14,6 +12,9 @@ tags:
 title: nanoVLM/models/config.py at main
 topics:
 - 大语言模型
+source_url: https://github.com/huggingface/nanoVLM/blob/main/models/config.py
+published_at: null
+related_concepts: []
 ---
 
 1

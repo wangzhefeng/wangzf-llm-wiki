@@ -6,13 +6,15 @@ created_at: 2026-04-06
 topics:
   - 强化学习
 status: inbox
-source: "https://mp.weixin.qq.com/s/e0-tVsaIgNajBTOl117ctg"
 published: 
 created: 2026-04-06
 description: "手把手教你从头跑通 GRPO"
 tags:
   - 
   - "clippings"
+source_url: "https://mp.weixin.qq.com/s/e0-tVsaIgNajBTOl117ctg"
+published_at: null
+related_concepts: []
 ---
 
 *2025年3月2日 11:54*

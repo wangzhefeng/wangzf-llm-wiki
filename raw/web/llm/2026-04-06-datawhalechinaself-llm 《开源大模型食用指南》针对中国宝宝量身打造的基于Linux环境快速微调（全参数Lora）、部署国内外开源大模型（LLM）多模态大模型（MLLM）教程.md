@@ -6,13 +6,15 @@ created_at: 2026-04-06
 topics:
   - 大语言模型
 status: inbox
-source: "https://github.com/datawhalechina/self-llm"
 published: 
 created: 2026-04-06
 description: "《开源大模型食用指南》针对中国宝宝量身打造的基于Linux环境快速微调（全参数/Lora）、部署国内外开源大模型（LLM）/多模态大模型（MLLM）教程 - datawhalechina/self-llm"
 tags:
   - 
   - "clippings"
+source_url: "https://github.com/datawhalechina/self-llm"
+published_at: null
+related_concepts: []
 ---
 
 [![[raw/assets/attachments/llm/head-img.png]]](https://github.com/datawhalechina/self-llm/blob/master/images/head-img.png)

@@ -3,8 +3,6 @@ author: null
 created: 2026-04-06
 created_at: 2026-04-06
 description: null
-published: null
-source: https://colab.research.google.com/github/StatQuest/decoder_transformer_from_scratch/blob/main/decoder_transformers_with_pytorch_and_lightning_v2.ipynb#scrollTo=f4226d63-8d76-40bc-a8e6-0f290a159418
 source_type: web
 status: inbox
 tags:
@@ -13,6 +11,9 @@ tags:
 title: Google Colab
 topics:
 - 深度学习
+source_url: https://colab.research.google.com/github/StatQuest/decoder_transformer_from_scratch/blob/main/decoder_transformers_with_pytorch_and_lightning_v2.ipynb#scrollTo=f4226d63-8d76-40bc-a8e6-0f290a159418
+published_at: null
+related_concepts: []
 ---
 
 Gemini

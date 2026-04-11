@@ -8,13 +8,14 @@ created_at: 2026-04-06
 topics:
   - 计算机视觉
 status: inbox
-source: "https://opencv.org/"
-published: 2021-02-09
 created: 2026-04-06
 description: "OpenCV provides a real-time optimized Computer Vision library, tools, and hardware. It also supports model execution for Machine Learning (ML) and Artificial Intelligence (AI)."
 tags:
   - 
   - "clippings"
+source_url: "https://opencv.org/"
+published_at: 2021-02-09
+related_concepts: []
 ---
 
 [Register for OpenCV Conference 2026, May 4th, Los Angeles →](https://www.displayweek.org/event-enhancements/oscca/)

@@ -3,8 +3,6 @@ author: null
 created: 2026-04-06
 created_at: 2026-04-06
 description: null
-published: null
-source: https://mmdetection.readthedocs.io/en/latest/index.html
 source_type: web
 status: inbox
 tags:
@@ -13,6 +11,9 @@ tags:
 title: Welcome to MMDetection’s documentation! — MMDetection 3.3.0 documentation
 topics:
 - 运筹优化
+source_url: https://mmdetection.readthedocs.io/en/latest/index.html
+published_at: null
+related_concepts: []
 ---
 
 ## Welcome to MMDetection’s documentation!

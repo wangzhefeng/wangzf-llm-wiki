@@ -4,8 +4,6 @@ created: 2026-04-06
 created_at: 2026-04-06
 description: Caffe CNNs for the Oxford 102 flower dataset. Contribute to jimgoo/caffe-oxford102
   development by creating an account on GitHub.
-published: null
-source: https://github.com/jimgoo/caffe-oxford102
 source_type: web
 status: inbox
 tags:
@@ -14,6 +12,9 @@ tags:
 title: 'jimgoo/caffe-oxford102: Caffe CNNs for the Oxford 102 flower dataset'
 topics:
 - 大语言模型
+source_url: https://github.com/jimgoo/caffe-oxford102
+published_at: null
+related_concepts: []
 ---
 
 ## caffe-oxford102

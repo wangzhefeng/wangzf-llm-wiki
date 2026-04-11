@@ -6,13 +6,15 @@ created_at: 2026-04-06
 topics:
   - 时间序列
 status: inbox
-source: "https://mp.weixin.qq.com/s/KlwV1o4zO4gKNa-8YxccUw"
 published: 
 created: 2026-04-06
 description: 
 tags:
   - 
   - "clippings"
+source_url: "https://mp.weixin.qq.com/s/KlwV1o4zO4gKNa-8YxccUw"
+published_at: null
+related_concepts: []
 ---
 
 *2026年1月27日 08:31*

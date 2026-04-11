@@ -11,13 +11,14 @@ created_at: 2026-04-06
 topics:
   - 时间序列
 status: inbox
-source: "https://www.salesforce.com/blog/moirai/"
-published: 2024-03-20
 created: 2026-04-06
 description: "TL;DR: Moirai is a cutting-edge time series foundation model, offering universal forecasting capabilities. It stands out as a versatile time series forecasting model capable of addressing diverse forecasting tasks across multiple domains, frequencies,…"
 tags:
   - 
   - "clippings"
+source_url: "https://www.salesforce.com/blog/moirai/"
+published_at: 2024-03-20
+related_concepts: []
 ---
 
 0%

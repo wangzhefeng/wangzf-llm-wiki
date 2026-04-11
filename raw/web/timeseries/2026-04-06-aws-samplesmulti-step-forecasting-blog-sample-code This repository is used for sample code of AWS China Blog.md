@@ -6,13 +6,15 @@ created_at: 2026-04-06
 topics:
   - 时间序列
 status: inbox
-source: "https://github.com/aws-samples/multi-step-forecasting-blog-sample-code/tree/main"
 published: 
 created: 2026-04-06
 description: "This repository is used for sample code of AWS China Blog. - aws-samples/multi-step-forecasting-blog-sample-code"
 tags:
   - 
   - "clippings"
+source_url: "https://github.com/aws-samples/multi-step-forecasting-blog-sample-code/tree/main"
+published_at: null
+related_concepts: []
 ---
 
 This repository was archived by the owner on Mar 7, 2026. It is now read-only.

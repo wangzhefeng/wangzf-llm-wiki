@@ -8,13 +8,14 @@ created_at: 2026-04-06
 topics:
   - 时间序列
 status: inbox
-source: "https://machinelearningmastery.com/backtest-machine-learning-models-time-series-forecasting/"
-published: 2016-12-19
 created: 2026-04-06
 description: "k-fold Cross Validation Does Not Work For Time Series Data and Techniques That You Can Use Instead. The goal of time series forecasting is to make accurate predictions about the future. The fast and powerful methods that we rely on in machine learning, such as using train-test splits and k-fold cross validation, do not work […]"
 tags:
   - 
   - "clippings"
+source_url: "https://machinelearningmastery.com/backtest-machine-learning-models-time-series-forecasting/"
+published_at: 2016-12-19
+related_concepts: []
 ---
 
 ### k-fold Cross Validation Does Not Work For Time Series Data and Techniques That You Can Use Instead.

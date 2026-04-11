@@ -8,13 +8,15 @@ created_at: 2026-04-06
 topics:
   - 深度学习
 status: inbox
-source: "https://mp.weixin.qq.com/s/aPp4R5obMObW41GNFdj2Aw"
 published: 
 created: 2026-04-06
 description: "好文干货 作者：伍天舟、马曾欧、陈信达入门深度学习，很多人经历了从入门到放弃的心酸历程，且千军万马倒在了入"
 tags:
   - 
   - "clippings"
+source_url: "https://mp.weixin.qq.com/s/aPp4R5obMObW41GNFdj2Aw"
+published_at: null
+related_concepts: []
 ---
 
 *2020年7月21日 23:59*

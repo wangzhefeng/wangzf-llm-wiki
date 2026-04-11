@@ -4,8 +4,6 @@ created: 2026-04-06
 created_at: 2026-04-06
 description: StackNet is a computational, scalable and analytical Meta modelling framework
   - kaz-Anova/StackNet
-published: null
-source: https://github.com/kaz-Anova/StackNet#what-is-stacknet
 source_type: web
 status: inbox
 tags:
@@ -15,6 +13,9 @@ title: 'kaz-Anova/StackNet: StackNet is a computational, scalable and analytical
   modelling framework'
 topics:
 - 机器学习
+source_url: https://github.com/kaz-Anova/StackNet#what-is-stacknet
+published_at: null
+related_concepts: []
 ---
 
 ## StackNet

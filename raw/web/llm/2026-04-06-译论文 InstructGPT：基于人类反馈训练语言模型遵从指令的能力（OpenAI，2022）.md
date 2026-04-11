@@ -6,13 +6,15 @@ created_at: 2026-04-06
 topics:
   - 大语言模型
 status: inbox
-source: "https://arthurchiao.art/blog/instructgpt-paper-zh/"
 published: 
 created: 2026-04-06
 description: 
 tags:
   - 
   - "clippings"
+source_url: "https://arthurchiao.art/blog/instructgpt-paper-zh/"
+published_at: null
+related_concepts: []
 ---
 
 ### 译者序

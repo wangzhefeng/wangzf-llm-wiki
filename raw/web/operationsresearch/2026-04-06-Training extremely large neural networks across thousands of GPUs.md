@@ -7,8 +7,6 @@ created_at: 2026-04-06
 description: In this blog post, we'll discuss techniques such as data and model parallelism
   which allow us to distribute the model training process across a large cluster of
   machines.
-published: 2025-02-27
-source: https://www.jeremyjordan.me/distributed-training/
 source_type: web
 status: inbox
 tags:
@@ -17,6 +15,9 @@ tags:
 title: Training extremely large neural networks across thousands of GPUs.
 topics:
 - 运筹优化
+source_url: https://www.jeremyjordan.me/distributed-training/
+published_at: 2025-02-27
+related_concepts: []
 ---
 
 Over the past few years, we've seen an incredible rate of scaling when it comes to training deep neural networks. Today's large language models, for instance, require an immense amount of compute and data to reach state of the art performance.

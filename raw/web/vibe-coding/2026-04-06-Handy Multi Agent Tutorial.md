@@ -4,8 +4,6 @@ created: 2026-04-06
 created_at: 2026-04-06
 description: Handy Multi Agent Tutorial - A practical guide for developers to deeply
   understand and practice multi-agent systems
-published: null
-source: https://datawhalechina.github.io/handy-multi-agent/#/README
 source_type: web
 status: inbox
 tags:
@@ -15,6 +13,9 @@ title: Handy Multi Agent Tutorial
 topics:
 - 大语言模型
 - Vibe Coding
+source_url: https://datawhalechina.github.io/handy-multi-agent/#/README
+published_at: null
+related_concepts: []
 ---
 
 722 words | 2 min

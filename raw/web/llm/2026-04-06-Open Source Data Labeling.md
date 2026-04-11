@@ -4,8 +4,6 @@ created: 2026-04-06
 created_at: 2026-04-06
 description: A flexible data labeling tool for all data types. Prepare training data
   for computer vision, natural language processing, speech, voice, and video models.
-published: null
-source: https://labelstud.io/
 source_type: web
 status: inbox
 tags:
@@ -14,6 +12,9 @@ tags:
 title: Open Source Data Labeling
 topics:
 - 大语言模型
+source_url: https://labelstud.io/
+published_at: null
+related_concepts: []
 ---
 
 ## Open SourceData Labeling Platform

@@ -6,13 +6,14 @@ created_at: 2026-04-06
 topics:
   - 计算机视觉
 status: inbox
-source: "https://pypi.org/project/opencv-python/"
-published: 2026-02-05
 created: 2026-04-06
 description: "Wrapper package for OpenCV python bindings."
 tags:
   - 
   - "clippings"
+source_url: "https://pypi.org/project/opencv-python/"
+published_at: 2026-02-05
+related_concepts: []
 ---
 
 Wrapper package for OpenCV python bindings.

@@ -4,8 +4,6 @@ created: 2026-04-06
 created_at: 2026-04-06
 description: A repository of concepts related to neural networks for NLP - nn4nlp-concepts/concepts.md
   at master · neulab/nn4nlp-concepts
-published: null
-source: https://github.com/neulab/nn4nlp-concepts/blob/master/concepts.md
 source_type: web
 status: inbox
 tags:
@@ -14,6 +12,9 @@ tags:
 title: nn4nlp-concepts/concepts.md at master
 topics:
 - 深度学习
+source_url: https://github.com/neulab/nn4nlp-concepts/blob/master/concepts.md
+published_at: null
+related_concepts: []
 ---
 
 ## Concept Hierarchy in Neural Networks for NLP

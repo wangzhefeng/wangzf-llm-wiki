@@ -5,8 +5,6 @@ author:
 created: 2026-04-06
 created_at: 2026-04-06
 description: Everything about Go, SQL, and software in general.
-published: null
-source: https://antonz.org/
 source_type: web
 status: inbox
 tags:
@@ -15,6 +13,9 @@ tags:
 title: Anton Zhiyanov
 topics:
 - 编程教程
+source_url: https://antonz.org/
+published_at: null
+related_concepts: []
 ---
 
 [![[go-concurrency-3.png|Gist of Go: Concurrency]]](https://antonz.org/go-concurrency/)

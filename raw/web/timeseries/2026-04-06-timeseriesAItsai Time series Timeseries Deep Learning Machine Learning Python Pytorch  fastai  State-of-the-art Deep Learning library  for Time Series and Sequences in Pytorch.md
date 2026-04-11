@@ -6,13 +6,15 @@ created_at: 2026-04-06
 topics:
   - 时间序列
 status: inbox
-source: "https://github.com/timeseriesAI/tsai"
 published: 
 created: 2026-04-06
 description: "Time series Timeseries Deep Learning Machine Learning Python Pytorch  fastai | State-of-the-art Deep Learning library  for Time Series and Sequences in Pytorch / fastai - timeseriesAI/tsai"
 tags:
   - 
   - "clippings"
+source_url: "https://github.com/timeseriesAI/tsai"
+published_at: null
+related_concepts: []
 ---
 
 ## tsai

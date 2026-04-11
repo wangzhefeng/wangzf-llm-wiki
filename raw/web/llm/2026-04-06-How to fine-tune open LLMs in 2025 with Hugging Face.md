@@ -8,13 +8,14 @@ created_at: 2026-04-06
 topics:
   - 大语言模型
 status: inbox
-source: "https://www.philschmid.de/fine-tune-llms-in-2025#1-define-a-good-use-case-for-fine-tuning"
-published: 2024-12-20
 created: 2026-04-06
 description: "The only guide you need to fine-tune open LLMs in 2025, including QLoRA, Spectrum, Flash Attention, Liger Kernels and more."
 tags:
   - 
   - "clippings"
+source_url: "https://www.philschmid.de/fine-tune-llms-in-2025#1-define-a-good-use-case-for-fine-tuning"
+published_at: 2024-12-20
+related_concepts: []
 ---
 
 Large Language Models (LLMs) continued their important role in 2024, with several major developments completely outperforming previous models. The focus continued to more smaller, more powerful models from companies like Meta, Qwen, or Google. These models not only became more powerful, but also more efficient. We got Llama models as small as 1B parameters outperforming Llama 2 13B.

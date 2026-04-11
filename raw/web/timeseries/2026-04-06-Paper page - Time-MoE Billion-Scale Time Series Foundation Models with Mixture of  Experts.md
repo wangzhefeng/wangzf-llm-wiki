@@ -6,13 +6,14 @@ created_at: 2026-04-06
 topics:
   - 时间序列
 status: inbox
-source: "https://huggingface.co/papers/2409.16040"
-published: 2024-09-25
 created: 2026-04-06
 description: "Join the discussion on this paper page"
 tags:
   - 
   - "clippings"
+source_url: "https://huggingface.co/papers/2409.16040"
+published_at: 2024-09-25
+related_concepts: []
 ---
 
 arxiv:2409.16040

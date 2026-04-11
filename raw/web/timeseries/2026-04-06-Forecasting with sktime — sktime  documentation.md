@@ -6,13 +6,15 @@ created_at: 2026-04-06
 topics:
   - 时间序列
 status: inbox
-source: "https://www.sktime.net/en/stable/examples/01_forecasting.html"
 published: 
 created: 2026-04-06
 description: 
 tags:
   - 
   - "clippings"
+source_url: "https://www.sktime.net/en/stable/examples/01_forecasting.html"
+published_at: null
+related_concepts: []
 ---
 
 **Set-up instructions:** this notebook give a tutorial on the forecasting learning task supported by `sktime`. On binder, this should run out-of-the-box.

@@ -3,8 +3,6 @@ author: null
 created: 2026-04-06
 created_at: 2026-04-06
 description: null
-published: null
-source: https://colab.research.google.com/drive/1_X7O2BkFLvqyCdZzDZvV2MB0aAvYALLC#scrollTo=928tzaA2AA2g
 source_type: web
 status: inbox
 tags:
@@ -13,6 +11,9 @@ tags:
 title: Google Colab
 topics:
 - 工具
+source_url: https://colab.research.google.com/drive/1_X7O2BkFLvqyCdZzDZvV2MB0aAvYALLC#scrollTo=928tzaA2AA2g
+published_at: null
+related_concepts: []
 ---
 
 Gemini

@@ -4,8 +4,6 @@ created: 2026-04-06
 created_at: 2026-04-06
 description: FiftyOne is the most powerful data platform for multimodal AI and CV
   developers. See how it can supercharge your AI workflow.
-published: null
-source: https://voxel51.com/fiftyone
 source_type: web
 status: inbox
 tags:
@@ -14,6 +12,9 @@ tags:
 title: Discover FiftyOne | Boost Your Multimodal Data
 topics:
 - 计算机视觉
+source_url: https://voxel51.com/fiftyone
+published_at: null
+related_concepts: []
 ---
 
 ## Powering visual AI withFiftyOne

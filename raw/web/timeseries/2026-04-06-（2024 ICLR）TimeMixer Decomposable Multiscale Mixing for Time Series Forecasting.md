@@ -8,13 +8,15 @@ created_at: 2026-04-06
 topics:
   - 时间序列
 status: inbox
-source: "https://zhuanlan.zhihu.com/p/686772622"
 published: 
 created: 2026-04-06
 description: "清华和ant group在今年发表在ICLR上的一篇文章，也是基于MLP来做时间序列预测任务的。 论文链接：https://openreview.net/pdf?id=7oLshfEIC2代码链接：https://github.com/kwuking/TimeMixerKey Point整个文章的id…"
 tags:
   - 
   - "clippings"
+source_url: "https://zhuanlan.zhihu.com/p/686772622"
+published_at: null
+related_concepts: []
 ---
 
 清华和ant group在今年发表在ICLR上的一篇文章，也是基于 [MLP](https://zhida.zhihu.com/search?content_id=240746147&content_type=Article&match_order=1&q=MLP&zhida_source=entity) 来做时间序列预测任务的。

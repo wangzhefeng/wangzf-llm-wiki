@@ -5,8 +5,6 @@ created_at: 2026-04-06
 description: We propose a new test to measure a text model’s multitask accuracy. The
   test covers 57 tasks including elementary mathematics, US history, computer science,
   law, and more. To attain high accuracy on this test, models m…
-published: null
-source: https://ar5iv.labs.arxiv.org/html/2009.03300?_immersive_translate_auto_translate=1
 source_type: web
 status: inbox
 tags:
@@ -15,6 +13,9 @@ tags:
 title: Measuring Massive Multitask Language Understanding
 topics:
 - 大语言模型
+source_url: https://ar5iv.labs.arxiv.org/html/2009.03300?_immersive_translate_auto_translate=1
+published_at: null
+related_concepts: []
 ---
 
 ## Measuring Massive Multitask Language Understanding衡量大规模多任务处理 语言理解

@@ -6,13 +6,15 @@ created_at: 2026-04-06
 topics:
   - 时间序列
 status: inbox
-source: "https://arxiv.org/html/2405.18975v2?_immersive_translate_auto_translate=1"
 published: 
 created: 2026-04-06
 description: 
 tags:
   - 
   - "clippings"
+source_url: "https://arxiv.org/html/2405.18975v2?_immersive_translate_auto_translate=1"
+published_at: null
+related_concepts: []
 ---
 
 ## 时间序列预测的层次分类辅助网络

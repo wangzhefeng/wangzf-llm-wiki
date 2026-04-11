@@ -8,13 +8,14 @@ created_at: 2026-04-06
 topics:
   - 大语言模型
 status: inbox
-source: "https://www.philschmid.de/evaluate-llm"
-published: 2023-10-30
 created: 2026-04-06
 description: "Learn how to evaluate LLMs and RAG pipelines using Langchain and Hugging Face"
 tags:
   - 
   - "clippings"
+source_url: "https://www.philschmid.de/evaluate-llm"
+published_at: 2023-10-30
+related_concepts: []
 ---
 
 The rise of generative AI and LLMs like GPT-4, Llama or Claude enables a new era of AI drive applications and use cases. However, evaluating these models remains an open challenge. Academic benchmarks can no longer always be applied to generative models since the correct or most helpful answer can be formulated in different ways, which would give limited insight into real-world performance.

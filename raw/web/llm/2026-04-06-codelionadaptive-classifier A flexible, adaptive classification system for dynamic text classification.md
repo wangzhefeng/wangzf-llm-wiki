@@ -4,8 +4,6 @@ created: 2026-04-06
 created_at: 2026-04-06
 description: A flexible, adaptive classification system for dynamic text classification
   - codelion/adaptive-classifier
-published: null
-source: https://github.com/codelion/adaptive-classifier
 source_type: web
 status: inbox
 tags:
@@ -15,6 +13,9 @@ title: 'codelion/adaptive-classifier: A flexible, adaptive classification system
   dynamic text classification'
 topics:
 - 大语言模型
+source_url: https://github.com/codelion/adaptive-classifier
+published_at: null
+related_concepts: []
 ---
 
 [![[adaptive-classifier-logo.webp|Adaptive Classifier Logo]]](https://github.com/codelion/adaptive-classifier/blob/main/adaptive-classifier-logo.webp)

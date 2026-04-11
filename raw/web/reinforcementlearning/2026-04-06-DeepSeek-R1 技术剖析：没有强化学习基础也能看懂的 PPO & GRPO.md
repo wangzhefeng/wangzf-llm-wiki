@@ -8,13 +8,15 @@ created_at: 2026-04-06
 topics:
   - 强化学习
 status: inbox
-source: "https://zhuanlan.zhihu.com/p/22128744640"
 published: 
 created: 2026-04-06
 description: "1. 开篇在强化学习（RL）中，如果我们只知道“做对了能拿多少分”，那往往还不够，因为 单纯追求高分可能带来种种副作用，比如过度搜索、模型不稳定、甚至“走捷径”而偏离合理范围。为了解决这些问题，人们在 RL …"
 tags:
   - 
   - "clippings"
+source_url: "https://zhuanlan.zhihu.com/p/22128744640"
+published_at: null
+related_concepts: []
 ---
 
 ### 1\. 开篇

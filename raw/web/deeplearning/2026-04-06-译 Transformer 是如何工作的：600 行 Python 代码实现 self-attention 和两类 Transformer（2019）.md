@@ -3,8 +3,6 @@ author: null
 created: 2026-04-06
 created_at: 2026-04-06
 description: null
-published: null
-source: https://arthurchiao.art/blog/transformers-from-scratch-zh/
 source_type: web
 status: inbox
 tags:
@@ -14,6 +12,9 @@ title: '[译] Transformer 是如何工作的：600 行 Python 代码实现 self-
 topics:
 - 大语言模型
 - 深度学习
+source_url: https://arthurchiao.art/blog/transformers-from-scratch-zh/
+published_at: null
+related_concepts: []
 ---
 
 ### 译者序

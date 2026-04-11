@@ -4,8 +4,6 @@ created: 2026-04-06
 created_at: 2026-04-06
 description: Implement a reasoning LLM in PyTorch from scratch, step by step - reasoning-from-scratch/ch03/01_main-chapter-code/ch03_main.ipynb
   at main · rasbt/reasoning-from-scratch
-published: null
-source: https://github.com/rasbt/reasoning-from-scratch/blob/main/ch03/01_main-chapter-code/ch03_main.ipynb
 source_type: web
 status: inbox
 tags:
@@ -14,6 +12,9 @@ tags:
 title: reasoning-from-scratch/ch03/01_main-chapter-code/ch03_main.ipynb at main
 topics:
 - 大语言模型
+source_url: https://github.com/rasbt/reasoning-from-scratch/blob/main/ch03/01_main-chapter-code/ch03_main.ipynb
+published_at: null
+related_concepts: []
 ---
 
 [Open in github.dev](https://github.dev/) [Open in a new github.dev tab](https://github.dev/) [Open in codespace](https://github.com/codespaces/new/rasbt/reasoning-from-scratch/tree/main?resume=1)

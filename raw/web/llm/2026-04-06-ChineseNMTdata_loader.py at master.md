@@ -4,8 +4,6 @@ created: 2026-04-06
 created_at: 2026-04-06
 description: 'ChineseNMT: Translate English to Chinese with PyTorch Implementation
   of Transformer - ChineseNMT/data_loader.py at master · hemingkx/ChineseNMT'
-published: null
-source: https://github.com/hemingkx/ChineseNMT/blob/master/data_loader.py
 source_type: web
 status: inbox
 tags:
@@ -14,6 +12,9 @@ tags:
 title: ChineseNMT/data_loader.py at master
 topics:
 - 深度学习
+source_url: https://github.com/hemingkx/ChineseNMT/blob/master/data_loader.py
+published_at: null
+related_concepts: []
 ---
 
 1

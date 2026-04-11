@@ -3,8 +3,6 @@ author: null
 created: 2026-04-06
 created_at: 2026-04-06
 description: This package contains the original 2012 AlexNet code. - computerhistory/AlexNet-Source-Code
-published: null
-source: https://github.com/computerhistory/AlexNet-Source-Code
 source_type: web
 status: inbox
 tags:
@@ -14,6 +12,9 @@ title: 'computerhistory/AlexNet-Source-Code: This package contains the original 
   AlexNet code.'
 topics:
 - 深度学习
+source_url: https://github.com/computerhistory/AlexNet-Source-Code
+published_at: null
+related_concepts: []
 ---
 
 ## AlexNet Source Code

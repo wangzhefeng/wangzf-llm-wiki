@@ -8,13 +8,14 @@ created_at: 2026-04-06
 topics:
   - 时间序列
 status: inbox
-source: "https://www.kaggle.com/code/andreshg/timeseries-analysis-a-complete-guide/notebook"
-published: 2021-03-06
 created: 2026-04-06
 description: "Explore and run machine learning code with Kaggle Notebooks | Using data from Acea Smart Water Analytics"
 tags:
   - 
   - "clippings"
+source_url: "https://www.kaggle.com/code/andreshg/timeseries-analysis-a-complete-guide/notebook"
+published_at: 2021-03-06
+related_concepts: []
 ---
 
 AndresHG · 5y ago · 178,793 views

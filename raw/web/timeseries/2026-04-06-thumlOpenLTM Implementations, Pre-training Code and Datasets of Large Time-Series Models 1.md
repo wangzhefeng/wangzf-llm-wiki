@@ -4,8 +4,6 @@ created: 2026-04-06
 created_at: 2026-04-06
 description: Implementations, Pre-training Code and Datasets of Large Time-Series
   Models - thuml/OpenLTM
-published: null
-source: https://github.com/thuml/OpenLTM?tab=readme-ov-file
 source_type: web
 status: inbox
 tags:
@@ -15,6 +13,9 @@ title: 'thuml/OpenLTM: Implementations, Pre-training Code and Datasets of Large 
   Models'
 topics:
 - 时间序列
+source_url: https://github.com/thuml/OpenLTM?tab=readme-ov-file
+published_at: null
+related_concepts: []
 ---
 
 ## OpenLTM

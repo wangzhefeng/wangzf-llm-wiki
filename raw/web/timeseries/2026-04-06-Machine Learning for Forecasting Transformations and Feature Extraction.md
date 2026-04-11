@@ -8,13 +8,14 @@ created_at: 2026-04-06
 topics:
   - 时间序列
 status: inbox
-source: "https://towardsdatascience.com/machine-learning-for-forecasting-transformations-and-feature-extraction-bbbea9de0ac2/"
-published: 2022-11-15
 created: 2026-04-06
 description: "Photo by Adam Śmigielski on Unsplash In this post, you’ll learn to apply supervised learning with time series using Python. This includes two things: transforming time series from a sequence into a tabular format; adding new features based on summary statistics. Introduction Forecasting is one of the most studied problems in data science. The goal […]"
 tags:
   - 
   - "clippings"
+source_url: "https://towardsdatascience.com/machine-learning-for-forecasting-transformations-and-feature-extraction-bbbea9de0ac2/"
+published_at: 2022-11-15
+related_concepts: []
 ---
 
 ![[0bbo01Xh_yBeQ0aSf-scaled.jpg|Photo by Adam Śmigielski on Unsplash]]

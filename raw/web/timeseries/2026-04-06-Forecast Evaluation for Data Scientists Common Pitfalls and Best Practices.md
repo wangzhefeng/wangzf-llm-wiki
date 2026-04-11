@@ -10,13 +10,15 @@ created_at: 2026-04-06
 topics:
   - 时间序列
 status: inbox
-source: "https://arxiv.org/abs/2203.10716"
 published: 
 created: 2026-04-06
 description: "Abstract page for arXiv paper 2203.10716: Forecast Evaluation for Data Scientists: Common Pitfalls and Best Practices"
 tags:
   - 
   - "clippings"
+source_url: "https://arxiv.org/abs/2203.10716"
+published_at: null
+related_concepts: []
 ---
 
 ## Title:Forecast Evaluation for Data Scientists: Common Pitfalls and Best Practices

@@ -8,13 +8,14 @@ created_at: 2026-04-06
 topics:
   - 深度学习
 status: inbox
-source: "https://medium.com/pytorch/training-a-1-trillion-parameter-model-with-pytorch-fully-sharded-data-parallel-on-aws-3ac13aa96cff"
-published: 2022-03-16
 created: 2026-04-06
 description: "Training a 1 Trillion Parameter Model With PyTorch Fully Sharded Data Parallel on AWS Authors: Pavel Belevich (Meta AI), Yanli Zhao (Meta AI), Shen Li (Meta AI), Jessica Choi (Meta AI), Rohan Varma …"
 tags:
   - 
   - "clippings"
+source_url: "https://medium.com/pytorch/training-a-1-trillion-parameter-model-with-pytorch-fully-sharded-data-parallel-on-aws-3ac13aa96cff"
+published_at: 2022-03-16
+related_concepts: []
 ---
 
 [Sitemap](https://medium.com/sitemap/sitemap.xml)

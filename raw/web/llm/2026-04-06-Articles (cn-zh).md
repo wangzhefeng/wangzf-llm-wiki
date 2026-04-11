@@ -3,8 +3,6 @@ author: null
 created: 2026-04-06
 created_at: 2026-04-06
 description: null
-published: null
-source: https://arthurchiao.art/articles-zh/
 source_type: web
 status: inbox
 tags:
@@ -13,6 +11,9 @@ tags:
 title: Articles (cn-zh)
 topics:
 - 大语言模型
+source_url: https://arthurchiao.art/articles-zh/
+published_at: null
+related_concepts: []
 ---
 
 ## Articles

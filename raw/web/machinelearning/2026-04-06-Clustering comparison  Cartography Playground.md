@@ -4,8 +4,6 @@ created: 2026-04-06
 created_at: 2026-04-06
 description: Compare the centroid-based clustering method k-Means and the density
   based method DBSCAN.
-published: null
-source: https://cartography-playground.gitlab.io/playgrounds/clustering-comparison/
 source_type: web
 status: inbox
 tags:
@@ -14,6 +12,9 @@ tags:
 title: Clustering comparison | Cartography Playground
 topics:
 - 知识库建设
+source_url: https://cartography-playground.gitlab.io/playgrounds/clustering-comparison/
+published_at: null
+related_concepts: []
 ---
 
 ## Clustering comparison

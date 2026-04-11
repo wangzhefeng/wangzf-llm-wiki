@@ -9,13 +9,14 @@ created_at: 2026-04-06
 topics:
   - 强化学习
 status: inbox
-source: "https://cameronrwolfe.substack.com/p/direct-preference-optimization?img=https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fdee66741-b7e3-4284-8c79-96b5abc301b5_2394x1362.png&open=false"
-published: 2025-07-28
 created: 2026-04-06
 description: "How to align LLMs with limited hardware and minimal complexity..."
 tags:
   - 
   - "clippings"
+source_url: "https://cameronrwolfe.substack.com/p/direct-preference-optimization?img=https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fdee66741-b7e3-4284-8c79-96b5abc301b5_2394x1362.png&open=false"
+published_at: 2025-07-28
+related_concepts: []
 ---
 
 ### How to align LLMs with limited hardware and minimal complexity...

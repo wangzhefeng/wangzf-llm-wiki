@@ -5,8 +5,6 @@ created_at: 2026-04-06
 description: A reactive notebook for Python — run reproducible experiments, query
   with SQL, execute as a script, deploy as an app, and version with git. Stored as
   pure Python. All in a modern, AI-native editor. - marimo-team/marimo
-published: null
-source: https://github.com/marimo-team/marimo?tab=readme-ov-file
 source_type: web
 status: inbox
 tags:
@@ -17,6 +15,9 @@ title: 'marimo-team/marimo: A reactive notebook for Python — run reproducible 
   as pure Python. All in a modern, AI-native editor.'
 topics:
 - 深度学习
+source_url: https://github.com/marimo-team/marimo?tab=readme-ov-file
+published_at: null
+related_concepts: []
 ---
 
 [![[raw/assets/attachments/tools/marimo-logotype-thick.svg]]](https://raw.githubusercontent.com/marimo-team/marimo/main/docs/_static/marimo-logotype-thick.svg)

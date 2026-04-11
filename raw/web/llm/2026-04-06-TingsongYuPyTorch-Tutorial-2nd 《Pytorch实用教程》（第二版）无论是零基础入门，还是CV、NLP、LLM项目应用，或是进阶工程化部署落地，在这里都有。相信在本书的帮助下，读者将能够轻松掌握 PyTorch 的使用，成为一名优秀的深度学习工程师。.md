@@ -6,13 +6,15 @@ created_at: 2026-04-06
 topics:
   - 大语言模型
 status: inbox
-source: "https://github.com/TingsongYu/PyTorch-Tutorial-2nd"
 published: 
 created: 2026-04-06
 description: "《Pytorch实用教程》（第二版）无论是零基础入门，还是CV、NLP、LLM项目应用，或是进阶工程化部署落地，在这里都有。相信在本书的帮助下，读者将能够轻松掌握 PyTorch 的使用，成为一名优秀的深度学习工程师。 - TingsongYu/PyTorch-Tutorial-2nd"
 tags:
   - 
   - "clippings"
+source_url: "https://github.com/TingsongYu/PyTorch-Tutorial-2nd"
+published_at: null
+related_concepts: []
 ---
 
 ## PyTorch 实用教程（第二版）

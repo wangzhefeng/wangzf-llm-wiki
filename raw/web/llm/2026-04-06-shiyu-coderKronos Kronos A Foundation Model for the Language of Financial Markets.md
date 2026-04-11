@@ -3,8 +3,6 @@ author: null
 created: 2026-04-06
 created_at: 2026-04-06
 description: 'Kronos: A Foundation Model for the Language of Financial Markets - shiyu-coder/Kronos'
-published: null
-source: https://github.com/shiyu-coder/Kronos
 source_type: web
 status: inbox
 tags:
@@ -14,6 +12,9 @@ title: 'shiyu-coder/Kronos: Kronos: A Foundation Model for the Language of Finan
   Markets'
 topics:
 - 大语言模型
+source_url: https://github.com/shiyu-coder/Kronos
+published_at: null
+related_concepts: []
 ---
 
 ## Kronos: A Foundation Model for the Language of Financial Markets

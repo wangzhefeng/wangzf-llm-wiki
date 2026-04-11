@@ -4,8 +4,6 @@ created: 2026-04-06
 created_at: 2026-04-06
 description: Unlock the new opportunities of the AI era by equipping yourself with
   the knowledge and skills to harness artificial intelligence effectively.
-published: null
-source: https://academy.openai.com/
 source_type: web
 status: inbox
 tags:
@@ -14,6 +12,9 @@ tags:
 title: OpenAI Academy
 topics:
 - 大语言模型
+source_url: https://academy.openai.com/
+published_at: null
+related_concepts: []
 ---
 
 ## Home

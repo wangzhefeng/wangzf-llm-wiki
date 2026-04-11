@@ -6,13 +6,15 @@ created_at: 2026-04-06
 topics:
   - 大语言模型
 status: inbox
-source: "https://github.com/wdndev/tiny-llm-zh/blob/main/doc/%E8%87%AA%E5%AE%9A%E4%B9%89%E6%9E%84%E9%80%A0Tokenizer.md"
 published: 
 created: 2026-04-06
 description: "从零实现一个小参数量中文大语言模型。. Contribute to wdndev/tiny-llm-zh development by creating an account on GitHub."
 tags:
   - 
   - "clippings"
+source_url: "https://github.com/wdndev/tiny-llm-zh/blob/main/doc/%E8%87%AA%E5%AE%9A%E4%B9%89%E6%9E%84%E9%80%A0Tokenizer.md"
+published_at: null
+related_concepts: []
 ---
 
 ## 自定义构造Tokenizer

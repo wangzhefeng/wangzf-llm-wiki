@@ -9,13 +9,14 @@ created_at: 2026-04-06
 topics:
   - 大语言模型
 status: inbox
-source: "https://magazine.sebastianraschka.com/p/the-big-llm-architecture-comparison"
-published: 2025-07-19
 created: 2026-04-06
 description: "From DeepSeek-V3 to Kimi K2: A Look At Modern LLM Architecture Design"
 tags:
   - 
   - "clippings"
+source_url: "https://magazine.sebastianraschka.com/p/the-big-llm-architecture-comparison"
+published_at: 2025-07-19
+related_concepts: []
 ---
 
 ### From DeepSeek V3 to GLM-5: A Look At Modern LLM Architecture Design

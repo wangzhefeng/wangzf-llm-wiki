@@ -3,8 +3,6 @@ author: null
 created: 2026-04-06
 created_at: 2026-04-06
 description: null
-published: null
-source: https://pdf2zh.com/
 source_type: web
 status: inbox
 tags:
@@ -13,6 +11,9 @@ tags:
 title: PDFMathTranslate - PDF Translation with preserved formats
 topics:
 - 运筹优化
+source_url: https://pdf2zh.com/
+published_at: null
+related_concepts: []
 ---
 
 ## PDFMathTranslate @ GitHub

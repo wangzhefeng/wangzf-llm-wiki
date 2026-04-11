@@ -7,8 +7,6 @@ created_at: 2026-04-06
 description: Discover how Vision Transformers (ViTs) are transforming computer vision
   by using transformer architecture for tasks like image classification and object
   det…
-published: 2025-01-13
-source: https://www.digitalocean.com/community/tutorials/vision-transformer-for-computer-vision
 source_type: web
 status: inbox
 tags:
@@ -18,6 +16,9 @@ title: 'Vision Transformers (ViTs): Computer Vision with Transformer Models'
 topics:
 - 大语言模型
 - 深度学习
+source_url: https://www.digitalocean.com/community/tutorials/vision-transformer-for-computer-vision
+published_at: 2025-01-13
+related_concepts: []
 ---
 
 [DigitalOcean](https://www.digitalocean.com/)

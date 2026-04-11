@@ -3,8 +3,6 @@ author: null
 created: 2026-04-06
 created_at: 2026-04-06
 description: null
-published: null
-source: https://www.sbert.net/examples/sentence_transformer/training/sts/README.html
 source_type: web
 status: inbox
 tags:
@@ -14,6 +12,9 @@ title: Semantic Textual Similarity — Sentence Transformers  documentation
 topics:
 - 大语言模型
 - 深度学习
+source_url: https://www.sbert.net/examples/sentence_transformer/training/sts/README.html
+published_at: null
+related_concepts: []
 ---
 
 ## Semantic Textual Similarity

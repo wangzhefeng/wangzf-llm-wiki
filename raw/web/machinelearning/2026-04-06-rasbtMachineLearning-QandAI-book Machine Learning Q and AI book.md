@@ -6,13 +6,15 @@ created_at: 2026-04-06
 topics:
   - 机器学习
 status: inbox
-source: "https://github.com/rasbt/MachineLearning-QandAI-book"
 published: 
 created: 2026-04-06
 description: "Machine Learning Q and AI book. Contribute to rasbt/MachineLearning-QandAI-book development by creating an account on GitHub."
 tags:
   - 
   - "clippings"
+source_url: "https://github.com/rasbt/MachineLearning-QandAI-book"
+published_at: null
+related_concepts: []
 ---
 
 ## Machine Learning Q and AI Beyond the Basics Book

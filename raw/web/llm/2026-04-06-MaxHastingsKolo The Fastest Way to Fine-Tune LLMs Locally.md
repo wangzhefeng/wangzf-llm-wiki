@@ -6,13 +6,15 @@ created_at: 2026-04-06
 topics:
   - 大语言模型
 status: inbox
-source: "https://github.com/MaxHastings/Kolo/tree/main"
 published: 
 created: 2026-04-06
 description: "The Fastest Way to Fine-Tune LLMs Locally. Contribute to MaxHastings/Kolo development by creating an account on GitHub."
 tags:
   - 
   - "clippings"
+source_url: "https://github.com/MaxHastings/Kolo/tree/main"
+published_at: null
+related_concepts: []
 ---
 
 ## Kolo

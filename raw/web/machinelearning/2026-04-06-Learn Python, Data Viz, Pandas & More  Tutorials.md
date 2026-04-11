@@ -5,8 +5,6 @@ created_at: 2026-04-06
 description: 'Practical data skills you can apply immediately: that''s what you''ll
   learn in these no-cost courses. They''re the fastest (and most fun) way to become
   a data scientist or improve your current skills.'
-published: null
-source: https://www.kaggle.com/learn
 source_type: web
 status: inbox
 tags:
@@ -15,6 +13,9 @@ tags:
 title: Learn Python, Data Viz, Pandas & More | Tutorials
 topics:
 - 机器学习
+source_url: https://www.kaggle.com/learn
+published_at: null
+related_concepts: []
 ---
 
 ## Learn

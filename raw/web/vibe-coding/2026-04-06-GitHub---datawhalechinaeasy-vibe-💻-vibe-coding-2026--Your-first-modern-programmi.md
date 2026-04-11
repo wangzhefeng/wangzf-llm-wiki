@@ -6,7 +6,9 @@ status: inbox
 title: 'GitHub - datawhalechina/easy-vibe: 💻 vibe coding 2026 | Your first modern
   programming course for beginners to master step by step. · GitHub'
 topics:
-- Vibe Coding
+- Vibe Codingpublished_at: null
+author: null
+related_concepts: []
 ---
 
 # GitHub - datawhalechina/easy-vibe: 💻 vibe coding 2026 | Your first modern programming course for beginners to master step by step. · GitHub

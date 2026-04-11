@@ -3,8 +3,6 @@ author: null
 created: 2026-04-06
 created_at: 2026-04-06
 description: null
-published: null
-source: https://lightgbm.readthedocs.io/en/stable/Parameters.html#objective-parameters
 source_type: web
 status: inbox
 tags:
@@ -13,6 +11,9 @@ tags:
 title: Parameters — LightGBM 4.6.0 documentation
 topics:
 - 机器学习
+source_url: https://lightgbm.readthedocs.io/en/stable/Parameters.html#objective-parameters
+published_at: null
+related_concepts: []
 ---
 
 ## Parameters

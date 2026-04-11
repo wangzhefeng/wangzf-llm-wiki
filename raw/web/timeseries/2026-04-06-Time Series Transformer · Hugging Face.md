@@ -4,8 +4,6 @@ created: 2026-04-06
 created_at: 2026-04-06
 description: We’re on a journey to advance and democratize artificial intelligence
   through open source and open science.
-published: null
-source: https://huggingface.co/docs/transformers/main/en/model_doc/time_series_transformer
 source_type: web
 status: inbox
 tags:
@@ -15,6 +13,9 @@ title: Time Series Transformer · Hugging Face
 topics:
 - 大语言模型
 - 时间序列
+source_url: https://huggingface.co/docs/transformers/main/en/model_doc/time_series_transformer
+published_at: null
+related_concepts: []
 ---
 
 You are viewing main version, which requires [installation from source](https://huggingface.co/docs/transformers/installation#install-from-source). If you'd like regular pip install, checkout the latest stable version ([v5.5.0](https://huggingface.co/docs/transformers/v5.5.0/model_doc/time_series_transformer)).

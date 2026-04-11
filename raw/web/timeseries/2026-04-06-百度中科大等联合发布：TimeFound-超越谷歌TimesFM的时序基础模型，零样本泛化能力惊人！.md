@@ -8,13 +8,15 @@ created_at: 2026-04-06
 topics:
   - 时间序列
 status: inbox
-source: "https://mp.weixin.qq.com/s/4zopxtf3hq_Rlb8HSENmwA"
 published: 
 created: 2026-04-06
 description: "百度/中科大等联合发布 | TimeFound：超越谷歌TimesFM的时序基础模型，零样本泛化能力惊人！"
 tags:
   - 
   - "clippings"
+source_url: "https://mp.weixin.qq.com/s/4zopxtf3hq_Rlb8HSENmwA"
+published_at: null
+related_concepts: []
 ---
 
 原创 时序之心 *2026年1月26日 10:41*

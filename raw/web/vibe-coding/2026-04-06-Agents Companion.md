@@ -5,8 +5,6 @@ created_at: 2026-04-06
 description: Discover what actually works in AI. Join millions of builders, researchers,
   and labs evaluating agents, models, and frontier technology through crowdsourced
   benchmarks, competitions, and hackathons.
-published: null
-source: https://www.kaggle.com/whitepaper-agent-companion
 source_type: web
 status: inbox
 tags:
@@ -16,6 +14,9 @@ title: Agents Companion
 topics:
 - 大语言模型
 - Vibe Coding
+source_url: https://www.kaggle.com/whitepaper-agent-companion
+published_at: null
+related_concepts: []
 ---
 
 Kaggle uses cookies from Google to deliver and enhance the quality of its services and to analyze traffic.

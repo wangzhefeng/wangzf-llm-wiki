@@ -6,13 +6,15 @@ created_at: 2026-04-06
 topics:
   - 运筹优化
 status: inbox
-source: "https://github.com/optuna/optuna"
 published: 
 created: 2026-04-06
 description: "A hyperparameter optimization framework. Contribute to optuna/optuna development by creating an account on GitHub."
 tags:
   - 
   - "clippings"
+source_url: "https://github.com/optuna/optuna"
+published_at: null
+related_concepts: []
 ---
 
 [![[raw/assets/attachments/operationsresearch/optuna-logo 1.png]]](https://raw.githubusercontent.com/optuna/optuna/master/docs/image/optuna-logo.png)

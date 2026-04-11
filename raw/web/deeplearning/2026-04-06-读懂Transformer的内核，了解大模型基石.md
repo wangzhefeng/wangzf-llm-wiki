@@ -3,8 +3,6 @@ author: null
 created: 2026-04-06
 created_at: 2026-04-06
 description: 从理论到源码的深度剖析。
-published: null
-source: https://mp.weixin.qq.com/s/S4piibBsAywLVe-5qbp8HA
 source_type: web
 status: inbox
 tags:
@@ -14,6 +12,9 @@ title: 读懂Transformer的内核，了解大模型基石
 topics:
 - 大语言模型
 - 深度学习
+source_url: https://mp.weixin.qq.com/s/S4piibBsAywLVe-5qbp8HA
+published_at: null
+related_concepts: []
 ---
 
 *2025年9月2日 22:06*

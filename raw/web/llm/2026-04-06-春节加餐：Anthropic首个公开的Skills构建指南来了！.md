@@ -5,8 +5,6 @@ author:
 created: 2026-04-06
 created_at: 2026-04-06
 description: null
-published: null
-source: https://mp.weixin.qq.com/s/PcyKi5q8zT-tJ_9rzgKSqg
 source_type: web
 status: inbox
 tags:
@@ -15,6 +13,9 @@ tags:
 title: 春节加餐：Anthropic首个公开的Skills构建指南来了！
 topics:
 - 大语言模型
+source_url: https://mp.weixin.qq.com/s/PcyKi5q8zT-tJ_9rzgKSqg
+published_at: null
+related_concepts: []
 ---
 
 原创 Datawhale *2026年2月19日 22:11*

@@ -5,8 +5,6 @@ author:
 created: 2026-04-06
 created_at: 2026-04-06
 description: DeepSeek-V3.2-Exp 技术报告解读
-published: null
-source: https://mp.weixin.qq.com/s/He9uruxD9UgA51_4XbTZBw
 source_type: web
 status: inbox
 tags:
@@ -15,6 +13,9 @@ tags:
 title: Deepseek新发布的DSA，太炸裂了！
 topics:
 - 强化学习
+source_url: https://mp.weixin.qq.com/s/He9uruxD9UgA51_4XbTZBw
+published_at: null
+related_concepts: []
 ---
 
 不戒 *2025年9月30日 21:03*

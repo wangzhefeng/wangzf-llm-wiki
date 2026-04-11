@@ -4,8 +4,6 @@ created: 2026-04-06
 created_at: 2026-04-06
 description: 🖍️ LabelImg is a graphical image annotation tool and label object bounding
   boxes in images - wangzhefeng/labelImg
-published: null
-source: https://github.com/wangzhefeng/labelImg
 source_type: web
 status: inbox
 tags:
@@ -15,6 +13,9 @@ title: 'wangzhefeng/labelImg: 🖍️ LabelImg is a graphical image annotation t
   label object bounding boxes in images'
 topics:
 - 计算机视觉
+source_url: https://github.com/wangzhefeng/labelImg
+published_at: null
+related_concepts: []
 ---
 
 ## LabelImg

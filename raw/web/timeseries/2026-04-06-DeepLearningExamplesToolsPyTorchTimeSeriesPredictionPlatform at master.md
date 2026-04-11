@@ -6,8 +6,6 @@ description: State-of-the-Art Deep Learning scripts organized by models - easy t
   train and deploy with reproducible accuracy and performance on enterprise-grade
   infrastructure. - DeepLearningExamples/Tools/PyTorch/TimeSeriesPredictionPlatform
   at master · NVIDIA/DeepLearningExamples
-published: null
-source: https://github.com/NVIDIA/DeepLearningExamples/tree/master/Tools/PyTorch/TimeSeriesPredictionPlatform
 source_type: web
 status: inbox
 tags:
@@ -17,6 +15,9 @@ title: DeepLearningExamples/Tools/PyTorch/TimeSeriesPredictionPlatform at master
 topics:
 - 时间序列
 - 深度学习
+source_url: https://github.com/NVIDIA/DeepLearningExamples/tree/master/Tools/PyTorch/TimeSeriesPredictionPlatform
+published_at: null
+related_concepts: []
 ---
 
 ## Time-Series Prediction Platform 1.1 for PyTorch

@@ -4,8 +4,6 @@ created: 2026-04-06
 created_at: 2026-04-06
 description: Large Language Model Text Generation Inference. Contribute to huggingface/text-generation-inference
   development by creating an account on GitHub.
-published: null
-source: https://github.com/huggingface/text-generation-inference
 source_type: web
 status: inbox
 tags:
@@ -15,6 +13,9 @@ title: 'huggingface/text-generation-inference: Large Language Model Text Generat
   Inference'
 topics:
 - 深度学习
+source_url: https://github.com/huggingface/text-generation-inference
+published_at: null
+related_concepts: []
 ---
 
 > [!caution] Caution

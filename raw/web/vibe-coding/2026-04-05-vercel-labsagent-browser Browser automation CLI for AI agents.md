@@ -4,8 +4,6 @@ created: 2026-04-05
 created_at: 2026-04-05
 description: Browser automation CLI for AI agents. Contribute to vercel-labs/agent-browser
   development by creating an account on GitHub.
-published: null
-source: https://github.com/vercel-labs/agent-browser
 source_type: web
 status: inbox
 tags:
@@ -15,6 +13,9 @@ title: 'vercel-labs/agent-browser: Browser automation CLI for AI agents'
 topics:
 - 大语言模型
 - Vibe Coding
+source_url: https://github.com/vercel-labs/agent-browser
+published_at: null
+related_concepts: []
 ---
 
 ## agent-browser

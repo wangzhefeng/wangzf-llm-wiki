@@ -6,13 +6,15 @@ created_at: 2026-04-06
 topics:
   - 大语言模型
 status: inbox
-source: "https://github.com/google/langextract"
 published: 
 created: 2026-04-06
 description: "A Python library for extracting structured information from unstructured text using LLMs with precise source grounding and interactive visualization. - google/langextract"
 tags:
   - 
   - "clippings"
+source_url: "https://github.com/google/langextract"
+published_at: null
+related_concepts: []
 ---
 
 [![[logo.svg|LangExtract Logo]]](https://github.com/google/langextract)

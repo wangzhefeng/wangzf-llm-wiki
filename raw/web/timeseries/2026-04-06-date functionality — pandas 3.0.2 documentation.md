@@ -3,8 +3,6 @@ author: null
 created: 2026-04-06
 created_at: 2026-04-06
 description: null
-published: null
-source: https://pandas.pydata.org/docs/user_guide/timeseries.html#time-date-components
 source_type: web
 status: inbox
 tags:
@@ -13,6 +11,9 @@ tags:
 title: date functionality — pandas 3.0.2 documentation
 topics:
 - 时间序列
+source_url: https://pandas.pydata.org/docs/user_guide/timeseries.html#time-date-components
+published_at: null
+related_concepts: []
 ---
 
 ## Time series / date functionality

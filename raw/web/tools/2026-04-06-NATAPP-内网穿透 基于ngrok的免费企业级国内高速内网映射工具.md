@@ -3,8 +3,6 @@ author: null
 created: 2026-04-06
 created_at: 2026-04-06
 description: natapp是基于ngrok的国内高速内网穿透专业服务商,独家彻底解决ngrok1.7内存泄漏问题.稳定拒绝掉线,适用于微信开发调试,本地架设演示服务器,外网可以访问,远程服务器,远程桌面,远程办公,游戏联机等
-published: null
-source: https://natapp.cn/
 source_type: web
 status: inbox
 tags:
@@ -13,6 +11,9 @@ tags:
 title: NATAPP-内网穿透 基于ngrok的免费企业级国内高速内网映射工具
 topics:
 - 运维工具
+source_url: https://natapp.cn/
+published_at: null
+related_concepts: []
 ---
 
 > [!warning] Warning

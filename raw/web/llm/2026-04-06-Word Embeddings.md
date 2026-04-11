@@ -6,13 +6,15 @@ created_at: 2026-04-06
 topics:
   - 大语言模型
 status: inbox
-source: "https://lena-voita.github.io/nlp_course/word_embeddings.html#main_content"
 published: 
 created: 2026-04-06
 description: 
 tags:
   - 
   - "clippings"
+source_url: "https://lena-voita.github.io/nlp_course/word_embeddings.html#main_content"
+published_at: null
+related_concepts: []
 ---
 
 ![[raw/assets/attachments/llm/word_repr_intro-min.png]]

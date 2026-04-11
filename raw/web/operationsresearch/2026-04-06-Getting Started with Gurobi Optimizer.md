@@ -6,13 +6,14 @@ created_at: 2026-04-06
 topics:
   - 运筹优化
 status: inbox
-source: "https://support.gurobi.com/hc/en-us/articles/14799677517585-Getting-Started-with-Gurobi-Optimizer"
-published: 2025-11-21
 created: 2026-04-06
 description: "Welcome to Gurobi Optimizer! We're here to help you get started!Basic steps to get started with Gurobi Optimizer First, obtain a Gurobi..."
 tags:
   - 
   - "clippings"
+source_url: "https://support.gurobi.com/hc/en-us/articles/14799677517585-Getting-Started-with-Gurobi-Optimizer"
+published_at: 2025-11-21
+related_concepts: []
 ---
 
 **Welcome to Gurobi Optimizer! We're here to help you get started!**

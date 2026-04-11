@@ -4,8 +4,6 @@ created: 2026-04-06
 created_at: 2026-04-06
 description: A simple and interactive website for explaining cartographic algorithms,
   problems and other matters.
-published: null
-source: https://cartography-playground.gitlab.io/
 source_type: web
 status: inbox
 tags:
@@ -14,6 +12,9 @@ tags:
 title: Cartography Playground
 topics:
 - 工具
+source_url: https://cartography-playground.gitlab.io/
+published_at: null
+related_concepts: []
 ---
 
 This is the Cartography Playground, a simple and interactive website for explaining cartographic algorithms, problems and other matters.  

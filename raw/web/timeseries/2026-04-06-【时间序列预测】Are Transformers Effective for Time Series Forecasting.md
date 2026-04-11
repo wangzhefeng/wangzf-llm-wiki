@@ -5,8 +5,6 @@ author:
 created: 2026-04-06
 created_at: 2026-04-06
 description: 香港中文大学曾爱玲文章，在长时间序列预测问题上使用线性模型打败基于 Transformer 的模型，并对已有模型的能力进行实验分析（灵魂7问，强烈推荐好好读一下！）。
-published: 2023-03-18
-source: https://blog.xiang578.com/post/are-transformers-effective-for-time-series-forecasting.html
 source_type: web
 status: inbox
 tags:
@@ -16,6 +14,9 @@ title: 【时间序列预测】Are Transformers Effective for Time Series Foreca
 topics:
 - 大语言模型
 - 时间序列
+source_url: https://blog.xiang578.com/post/are-transformers-effective-for-time-series-forecasting.html
+published_at: 2023-03-18
+related_concepts: []
 ---
 
 香港中文大学曾爱玲文章，在长时间序列预测问题上使用线性模型打败基于 Transformer 的模型，并对已有模型的能力进行实验分析（灵魂7问，强烈推荐好好读一下！）。

@@ -6,13 +6,15 @@ created_at: 2026-04-06
 topics:
   - 时间序列
 status: inbox
-source: "https://www.sktime.net/en/latest/api_reference/forecasting.html#online-and-stream-forecasting"
 published: 
 created: 2026-04-06
 description: 
 tags:
   - 
   - "clippings"
+source_url: "https://www.sktime.net/en/latest/api_reference/forecasting.html#online-and-stream-forecasting"
+published_at: null
+related_concepts: []
 ---
 
 ## Forecasting

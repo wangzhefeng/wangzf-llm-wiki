@@ -8,13 +8,15 @@ created_at: 2026-04-06
 topics:
   - 大语言模型
 status: inbox
-source: "https://mp.weixin.qq.com/s/mLpaek5BMWx3gWSC_UhIhw"
 published: 
 created: 2026-04-06
 description: "本文将从Agentic SFT入手，介绍SFT如何赋能智能体（Agent），从而真正使得大模型能够创造生产力。"
 tags:
   - 
   - "clippings"
+source_url: "https://mp.weixin.qq.com/s/mLpaek5BMWx3gWSC_UhIhw"
+published_at: null
+related_concepts: []
 ---
 
 笨鸟先飞 *2026年1月8日 19:50*

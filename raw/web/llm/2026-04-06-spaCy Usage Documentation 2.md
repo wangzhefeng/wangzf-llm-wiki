@@ -3,8 +3,6 @@ author: null
 created: 2026-04-06
 created_at: 2026-04-06
 description: Power spaCy components with custom neural networks
-published: null
-source: https://spacy.io/usage/layers-architectures
 source_type: web
 status: inbox
 tags:
@@ -13,6 +11,9 @@ tags:
 title: spaCy Usage Documentation
 topics:
 - 深度学习
+source_url: https://spacy.io/usage/layers-architectures
+published_at: null
+related_concepts: []
 ---
 
 A **model architecture** is a function that wires up a [Thinc `Model`](https://thinc.ai/docs/api-model) instance. It describes the neural network that is run internally as part of a component in a spaCy pipeline. To define the actual architecture, you can implement your logic in Thinc directly, or you can use Thinc as a thin wrapper around frameworks such as PyTorch, TensorFlow and MXNet. Each `Model` can also be used as a sublayer of a larger network, allowing you to freely combine implementations from different frameworks into a single model.

@@ -4,8 +4,6 @@ created: 2026-04-06
 created_at: 2026-04-06
 description: Latex code for making neural networks diagrams. Contribute to HarisIqbal88/PlotNeuralNet
   development by creating an account on GitHub.
-published: null
-source: https://github.com/HarisIqbal88/PlotNeuralNet
 source_type: web
 status: inbox
 tags:
@@ -14,6 +12,9 @@ tags:
 title: 'HarisIqbal88/PlotNeuralNet: Latex code for making neural networks diagrams'
 topics:
 - 深度学习
+source_url: https://github.com/HarisIqbal88/PlotNeuralNet
+published_at: null
+related_concepts: []
 ---
 
 ## PlotNeuralNet

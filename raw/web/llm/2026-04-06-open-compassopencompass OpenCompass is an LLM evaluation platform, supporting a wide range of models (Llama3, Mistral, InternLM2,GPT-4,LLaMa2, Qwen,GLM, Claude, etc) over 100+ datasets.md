@@ -6,13 +6,15 @@ created_at: 2026-04-06
 topics:
   - 大语言模型
 status: inbox
-source: "https://github.com/open-compass/opencompass"
 published: 
 created: 2026-04-06
 description: "OpenCompass is an LLM evaluation platform, supporting a wide range of models (Llama3, Mistral, InternLM2,GPT-4,LLaMa2, Qwen,GLM, Claude, etc) over 100+ datasets. - open-compass/opencompass"
 tags:
   - 
   - "clippings"
+source_url: "https://github.com/open-compass/opencompass"
+published_at: null
+related_concepts: []
 ---
 
 👋 join us on [Discord](https://discord.gg/KKwfEbFj7U) and [WeChat](https://r.vansin.top/?r=opencompass)

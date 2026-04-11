@@ -6,13 +6,15 @@ created_at: 2026-04-06
 topics:
   - 深度学习
 status: inbox
-source: "https://github.com/tczhangzhi/pytorch-distributed?tab=readme-ov-file#horovod-%E7%9A%84%E4%BC%98%E9%9B%85%E5%AE%9E%E7%8E%B0"
 published: 
 created: 2026-04-06
 description: "A quickstart and benchmark for pytorch distributed training. - tczhangzhi/pytorch-distributed"
 tags:
   - 
   - "clippings"
+source_url: "https://github.com/tczhangzhi/pytorch-distributed?tab=readme-ov-file#horovod-%E7%9A%84%E4%BC%98%E9%9B%85%E5%AE%9E%E7%8E%B0"
+published_at: null
+related_concepts: []
 ---
 
 ## Distribution is all you need

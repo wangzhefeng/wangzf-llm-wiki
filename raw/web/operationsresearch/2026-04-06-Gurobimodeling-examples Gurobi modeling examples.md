@@ -4,8 +4,6 @@ created: 2026-04-06
 created_at: 2026-04-06
 description: Gurobi modeling examples. Contribute to Gurobi/modeling-examples development
   by creating an account on GitHub.
-published: null
-source: https://github.com/Gurobi/modeling-examples
 source_type: web
 status: inbox
 tags:
@@ -14,6 +12,9 @@ tags:
 title: 'Gurobi/modeling-examples: Gurobi modeling examples'
 topics:
 - 运筹优化
+source_url: https://github.com/Gurobi/modeling-examples
+published_at: null
+related_concepts: []
 ---
 
 [![[gurobi-light.png|Gurobi]]](https://www.gurobi.com/)

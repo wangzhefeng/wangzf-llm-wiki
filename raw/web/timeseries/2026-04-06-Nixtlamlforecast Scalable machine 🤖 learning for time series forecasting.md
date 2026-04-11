@@ -6,13 +6,15 @@ created_at: 2026-04-06
 topics:
   - 时间序列
 status: inbox
-source: "https://github.com/Nixtla/mlforecast"
 published: 
 created: 2026-04-06
 description: "Scalable machine 🤖 learning for time series forecasting. - Nixtla/mlforecast"
 tags:
   - 
   - "clippings"
+source_url: "https://github.com/Nixtla/mlforecast"
+published_at: null
+related_concepts: []
 ---
 
 ## mlforecast

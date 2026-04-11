@@ -11,6 +11,7 @@ source_type: local_note
 created_at: 2022-08-14
 topics:
   - computer-vision
+status: inbox
 ---
 
 * numpy

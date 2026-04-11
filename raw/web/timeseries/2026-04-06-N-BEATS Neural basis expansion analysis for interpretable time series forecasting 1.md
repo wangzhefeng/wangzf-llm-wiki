@@ -6,13 +6,15 @@ created_at: 2026-04-06
 topics:
   - 时间序列
 status: inbox
-source: "https://ar5iv.labs.arxiv.org/html/1905.10437?_immersive_translate_auto_translate=1#0"
 published: 
 created: 2026-04-06
 description: "We focus on solving the univariate times series point forecasting problem using deep learning. We propose a deep neural architecture based on backward and forward residual links and a very deep stack of fully-connected…"
 tags:
   - 
   - "clippings"
+source_url: "https://ar5iv.labs.arxiv.org/html/1905.10437?_immersive_translate_auto_translate=1#0"
+published_at: null
+related_concepts: []
 ---
 
 ## N-BEATS：用于可解释时间序列预测的神经基扩展分析

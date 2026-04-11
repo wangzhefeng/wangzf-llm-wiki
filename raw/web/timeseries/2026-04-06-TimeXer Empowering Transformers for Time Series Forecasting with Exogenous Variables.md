@@ -14,8 +14,6 @@ created: 2026-04-06
 created_at: 2026-04-06
 description: 'Abstract page for arXiv paper 2402.19072: TimeXer: Empowering Transformers
   for Time Series Forecasting with Exogenous Variables'
-published: null
-source: https://arxiv.org/abs/2402.19072
 source_type: web
 status: inbox
 tags:
@@ -26,6 +24,9 @@ title: 'TimeXer: Empowering Transformers for Time Series Forecasting with Exogen
 topics:
 - 大语言模型
 - 时间序列
+source_url: https://arxiv.org/abs/2402.19072
+published_at: null
+related_concepts: []
 ---
 
 ## Title:TimeXer: Empowering Transformers for Time Series Forecasting with Exogenous Variables

@@ -6,13 +6,15 @@ created_at: 2026-04-06
 topics:
   - 强化学习
 status: inbox
-source: "https://github.com/datawhalechina/easy-rl?tab=readme-ov-file"
 published: 
 created: 2026-04-06
 description: "强化学习中文教程（蘑菇书🍄），在线阅读地址：https://datawhalechina.github.io/easy-rl/ - datawhalechina/easy-rl"
 tags:
   - 
   - "clippings"
+source_url: "https://github.com/datawhalechina/easy-rl?tab=readme-ov-file"
+published_at: null
+related_concepts: []
 ---
 
 ## 蘑菇书EasyRL

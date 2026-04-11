@@ -28,6 +28,18 @@ ORPHAN_EXCLUDE_DIR_PREFIXES = {
     "wiki/sources/autofix/",
 }
 
+RAW_NAMING_ALLOWLIST = {
+    "raw/codex_threads/线程总结模板.md",
+    "raw/local-notes/时间序列预测-历史文档清单.md",
+    "raw/local-notes/深度学习-历史文档清单.md",
+    "raw/local-notes/知识库建设方法-历史文档清单.md",
+    "raw/local-notes/运筹优化算法-历史文档清单.md",
+    "raw/repos/repo-wangzhefeng-tsproj-ml.md",
+}
+
+RAW_DATE_PREFIX_RE = re.compile(r"^\d{4}-\d{2}-\d{2}-")
+RAW_REPO_CARD_RE = re.compile(r"^repo-[A-Za-z0-9_.-]+-[A-Za-z0-9_.-]+\.md$")
+
 
 @dataclass(frozen=True)
 class FrontmatterCheck:
@@ -137,7 +149,7 @@ def check_wikilinks() -> tuple[list[tuple[Path, str]], dict[Path, int]]:
 
 def check_raw_frontmatter() -> list[FrontmatterCheck]:
     # raw 层的最小字段（按 repo 约定）
-    required = {"source_type", "created_at", "topics"}
+    required = {"source_type", "created_at", "topics", "status"}
     issues: list[FrontmatterCheck] = []
 
     for p in md_files(RAW_ROOT):
@@ -148,6 +160,25 @@ def check_raw_frontmatter() -> list[FrontmatterCheck]:
         missing = sorted([k for k in required if k not in fm])
         if missing:
             issues.append(FrontmatterCheck(path=p, missing_keys=tuple(missing)))
+    return issues
+
+
+def check_raw_naming() -> list[Path]:
+    issues: list[Path] = []
+    for p in md_files(RAW_ROOT):
+        if p.name in {"README.md", "_index.md"}:
+            continue
+        rel = p.relative_to(ROOT).as_posix()
+        if rel in RAW_NAMING_ALLOWLIST:
+            continue
+        # 目录式条目：raw/local-notes/**/index.md 常见，不要求带日期前缀
+        if p.name == "index.md":
+            continue
+        # raw/repos 下允许 repo-组织-仓库.md
+        if rel.startswith("raw/repos/") and RAW_REPO_CARD_RE.match(p.name):
+            continue
+        if not RAW_DATE_PREFIX_RE.match(p.name):
+            issues.append(p)
     return issues
 
 
@@ -175,6 +206,9 @@ def main() -> int:
     # 3) raw frontmatter
     raw_issues = check_raw_frontmatter()
 
+    # 3.5) raw naming convention
+    raw_naming_issues = check_raw_naming()
+
     # 4) attachments existence
     missing_attachments = check_missing_attachments()
 
@@ -184,6 +218,7 @@ def main() -> int:
     print(f"- broken wikilinks: {len(broken)}")
     print(f"- orphan pages (excluding indexes/*): {len(orphans)}")
     print(f"- raw frontmatter missing(min): {len(raw_issues)}")
+    print(f"- raw naming issues: {len(raw_naming_issues)}")
     print(f"- missing attachments: {len(missing_attachments)}")
 
     if broken:
@@ -202,13 +237,18 @@ def main() -> int:
             miss = ", ".join(it.missing_keys)
             print(f"- {it.path.relative_to(ROOT)} missing: {miss}")
 
+    if raw_naming_issues:
+        print("\nTop raw naming issues (up to 50):")
+        for p in raw_naming_issues[:50]:
+            print(f"- {p.relative_to(ROOT)}")
+
     if missing_attachments:
         print("\nTop missing attachments (up to 50):")
         for src, rel in missing_attachments[:50]:
             print(f"- {src.relative_to(ROOT)} -> {rel}")
 
     # 非零退出表示存在健康债务（便于 CI/脚本集成）
-    return 1 if (broken or orphans or raw_issues or missing_attachments) else 0
+    return 1 if (broken or orphans or raw_issues or raw_naming_issues or missing_attachments) else 0
 
 
 if __name__ == "__main__":

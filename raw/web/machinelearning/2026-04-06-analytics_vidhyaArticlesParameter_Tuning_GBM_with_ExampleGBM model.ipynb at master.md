@@ -5,8 +5,6 @@ created_at: 2026-04-06
 description: Codes related to activities on AV including articles, hackathons and
   discussions. - analytics_vidhya/Articles/Parameter_Tuning_GBM_with_Example/GBM model.ipynb
   at master · thismlguy/analytics_vidhya
-published: null
-source: https://github.com/thismlguy/analytics_vidhya/blob/master/Articles/Parameter_Tuning_GBM_with_Example/GBM%20model.ipynb
 source_type: web
 status: inbox
 tags:
@@ -16,6 +14,9 @@ title: analytics_vidhya/Articles/Parameter_Tuning_GBM_with_Example/GBM model.ipy
   at master
 topics:
 - 机器学习
+source_url: https://github.com/thismlguy/analytics_vidhya/blob/master/Articles/Parameter_Tuning_GBM_with_Example/GBM%20model.ipynb
+published_at: null
+related_concepts: []
 ---
 
 [Open in github.dev](https://github.dev/) [Open in a new github.dev tab](https://github.dev/) [Open in codespace](https://github.com/codespaces/new/thismlguy/analytics_vidhya/tree/master?resume=1)

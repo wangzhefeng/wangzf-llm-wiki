@@ -5,8 +5,6 @@ author:
 created: 2026-04-06
 created_at: 2026-04-06
 description: 时间序列预测还能再进步吗？你有没有过这种感觉：明明用了很“高级”的模型，比如Transformer，跑时间序列预测，结果表现还不如一个简单的线性模型？
-published: null
-source: https://mp.weixin.qq.com/s/6DGiRXxrI872KUAIooP9Fg
 source_type: web
 status: inbox
 tags:
@@ -16,6 +14,9 @@ title: 时间序列预测还能再进步吗？别再迷信Transformer了，问�
 topics:
 - 大语言模型
 - 时间序列
+source_url: https://mp.weixin.qq.com/s/6DGiRXxrI872KUAIooP9Fg
+published_at: null
+related_concepts: []
 ---
 
 原创 时序之心 *2025年11月13日 12:21*

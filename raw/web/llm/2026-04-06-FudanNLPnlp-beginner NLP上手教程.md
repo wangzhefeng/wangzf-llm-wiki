@@ -4,8 +4,6 @@ created: 2026-04-06
 created_at: 2026-04-06
 description: NLP上手教程. Contribute to FudanNLP/nlp-beginner development by creating
   an account on GitHub.
-published: null
-source: https://github.com/FudanNLP/nlp-beginner
 source_type: web
 status: inbox
 tags:
@@ -14,6 +12,9 @@ tags:
 title: 'FudanNLP/nlp-beginner: NLP上手教程'
 topics:
 - 深度学习
+source_url: https://github.com/FudanNLP/nlp-beginner
+published_at: null
+related_concepts: []
 ---
 
 ## NLP-Beginner：自然语言处理入门练习

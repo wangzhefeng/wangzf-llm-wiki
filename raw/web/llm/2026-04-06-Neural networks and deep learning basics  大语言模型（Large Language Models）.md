@@ -6,13 +6,15 @@ created_at: 2026-04-06
 topics:
   - 深度学习
 status: inbox
-source: "https://gair-nlp.github.io/cs2916/docs/2025/lectures/nn-basics/"
 published: 
 created: 2026-04-06
 description: "课程大纲"
 tags:
   - 
   - "clippings"
+source_url: "https://gair-nlp.github.io/cs2916/docs/2025/lectures/nn-basics/"
+published_at: null
+related_concepts: []
 ---
 
 ## 课程大纲

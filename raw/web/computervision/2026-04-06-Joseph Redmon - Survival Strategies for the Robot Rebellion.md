@@ -5,8 +5,6 @@ author:
 created: 2026-04-06
 created_at: 2026-04-06
 description: null
-published: null
-source: https://pjreddie.com/darknet/yolov2/
 source_type: web
 status: inbox
 tags:
@@ -15,6 +13,9 @@ tags:
 title: Joseph Redmon - Survival Strategies for the Robot Rebellion
 topics:
 - 计算机视觉
+source_url: https://pjreddie.com/darknet/yolov2/
+published_at: null
+related_concepts: []
 ---
 
 ## Interested in AI for the Environment??

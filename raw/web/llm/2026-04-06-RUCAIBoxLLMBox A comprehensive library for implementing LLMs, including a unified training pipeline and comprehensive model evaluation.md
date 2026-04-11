@@ -6,13 +6,15 @@ created_at: 2026-04-06
 topics:
   - 大语言模型
 status: inbox
-source: "https://github.com/RUCAIBox/LLMBox?tab=readme-ov-file"
 published: 
 created: 2026-04-06
 description: "A comprehensive library for implementing LLMs, including a unified training pipeline and comprehensive model evaluation. - RUCAIBox/LLMBox"
 tags:
   - 
   - "clippings"
+source_url: "https://github.com/RUCAIBox/LLMBox?tab=readme-ov-file"
+published_at: null
+related_concepts: []
 ---
 
 **LLMBox** | [Training](https://github.com/RUCAIBox/LLMBox/tree/main/training) | [Utilization](https://github.com/RUCAIBox/LLMBox/tree/main/utilization)

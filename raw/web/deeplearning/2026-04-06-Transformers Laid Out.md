@@ -4,8 +4,6 @@ created: 2026-04-06
 created_at: 2026-04-06
 description: I have encountered that there are mainly three types of blogs/videos/tutorials
   talking about transformers
-published: 2025-01-03
-source: https://goyalpramod.github.io/blogs/Transformers_laid_out/#coding-the-transformer?continueFlag=f54e16ed9bf504f6c57a7f7fd05f536e
 source_type: web
 status: inbox
 tags:
@@ -15,6 +13,9 @@ title: Transformers Laid Out
 topics:
 - 大语言模型
 - 深度学习
+source_url: https://goyalpramod.github.io/blogs/Transformers_laid_out/#coding-the-transformer?continueFlag=f54e16ed9bf504f6c57a7f7fd05f536e
+published_at: 2025-01-03
+related_concepts: []
 ---
 
 I have encountered that there are mainly three types of blogs/videos/tutorials talking about transformers

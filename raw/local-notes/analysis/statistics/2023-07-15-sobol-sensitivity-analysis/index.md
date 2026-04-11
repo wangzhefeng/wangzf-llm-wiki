@@ -11,4 +11,5 @@ source_type: local_note
 created_at: 2023-07-15
 topics:
   - data-analysis
+status: inbox
 ---

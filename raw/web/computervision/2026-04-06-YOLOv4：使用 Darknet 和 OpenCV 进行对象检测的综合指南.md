@@ -8,13 +8,15 @@ created_at: 2026-04-06
 topics:
   - 计算机视觉
 status: inbox
-source: "https://mp.weixin.qq.com/s/87aeQpJ_3yW2BYUJpE4I7w"
 published: 
 created: 2026-04-06
 description: "对象检测是计算机视觉中的一项基本任务，涉及识别和定位图像或视频中的对象。"
 tags:
   - 
   - "clippings"
+source_url: "https://mp.weixin.qq.com/s/87aeQpJ_3yW2BYUJpE4I7w"
+published_at: null
+related_concepts: []
 ---
 
 原创 磐怼怼 *2023年8月17日 19:00*

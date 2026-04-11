@@ -6,13 +6,15 @@ created_at: 2026-04-06
 topics:
   - 时间序列
 status: inbox
-source: "https://github.com/sktime/pytorch-forecasting"
 published: 
 created: 2026-04-06
 description: "Time series forecasting with PyTorch. Contribute to sktime/pytorch-forecasting development by creating an account on GitHub."
 tags:
   - 
   - "clippings"
+source_url: "https://github.com/sktime/pytorch-forecasting"
+published_at: null
+related_concepts: []
 ---
 
 [![[logo 1.svg|PyTorch Forecasting]]](https://github.com/sktime/pytorch-forecasting/blob/main/docs/source/_static/logo.svg)

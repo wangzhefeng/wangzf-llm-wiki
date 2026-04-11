@@ -9,13 +9,14 @@ created_at: 2026-04-06
 topics:
   - 深度学习
 status: inbox
-source: "https://magazine.sebastianraschka.com/p/accelerating-pytorch-model-training"
-published: 2023-06-26
 created: 2026-04-06
 description: "Maximize your PyTorch model's efficiency! Dive into mixed-precision & multi-GPU training techniques, with practical steps using the Fabric library. Learn how to achieve a 10x speed boost without losing prediction accuracy"
 tags:
   - 
   - "clippings"
+source_url: "https://magazine.sebastianraschka.com/p/accelerating-pytorch-model-training"
+published_at: 2023-06-26
+related_concepts: []
 ---
 
 ### Using Mixed-Precision and Fully Sharded Data Parallelism

@@ -6,13 +6,15 @@ created_at: 2026-04-06
 topics:
   - 运筹优化
 status: inbox
-source: "https://web.stanford.edu/~boyd/cvxbook/"
 published: 
 created: 2026-04-06
 description: 
 tags:
   - 
   - "clippings"
+source_url: "https://web.stanford.edu/~boyd/cvxbook/"
+published_at: null
+related_concepts: []
 ---
 
 | ![[bv_cvxbook_cover.jpg|Convex Optimization book cover]] |     |

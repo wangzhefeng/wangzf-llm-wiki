@@ -8,13 +8,15 @@ created_at: 2026-04-06
 topics:
   - 时间序列
 status: inbox
-source: "https://zhuanlan.zhihu.com/p/1894041339106144523?utm_psn=1894857526874456590"
 published: 
 created: 2026-04-06
 description: "笔者的话 作为一名大三的理工科学生，我在入门科研时曾被论文中复杂的公式和术语“劝退”。幸运的是，知乎平台上许多深入浅出的论文解读文章，像一盏盏明灯，帮助我快速理解论文的核心思想和方法论设计。 如今，我…"
 tags:
   - 
   - "clippings"
+source_url: "https://zhuanlan.zhihu.com/p/1894041339106144523?utm_psn=1894857526874456590"
+published_at: null
+related_concepts: []
 ---
 
 目录

@@ -6,13 +6,15 @@ created_at: 2026-04-06
 topics:
   - 时间序列
 status: inbox
-source: "https://github.com/blue-yonder/tsfresh"
 published: 
 created: 2026-04-06
 description: "Automatic extraction of relevant features from time series: - blue-yonder/tsfresh"
 tags:
   - 
   - "clippings"
+source_url: "https://github.com/blue-yonder/tsfresh"
+published_at: null
+related_concepts: []
 ---
 
 [![[raw/assets/attachments/timeseries/tsfresh_logo.svg]]](https://github.com/blue-yonder/tsfresh/blob/main/docs/images/tsfresh_logo.svg)

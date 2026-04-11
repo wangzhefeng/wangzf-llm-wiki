@@ -6,13 +6,15 @@ created_at: 2026-04-06
 topics:
   - 大语言模型
 status: inbox
-source: "https://github.com/Lightning-AI/litgpt"
 published: 
 created: 2026-04-06
 description: "20+ high-performance LLMs with recipes to pretrain, finetune and deploy at scale. - Lightning-AI/litgpt"
 tags:
   - 
   - "clippings"
+source_url: "https://github.com/Lightning-AI/litgpt"
+published_at: null
+related_concepts: []
 ---
 
 ## ⚡ LitGPT

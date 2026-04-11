@@ -3,8 +3,6 @@ author: null
 created: 2026-04-06
 created_at: 2026-04-06
 description: A deep dive into embeddings starting from fundamentals - veekaybee/what_are_embeddings
-published: null
-source: https://github.com/veekaybee/what_are_embeddings
 source_type: web
 status: inbox
 tags:
@@ -14,6 +12,9 @@ title: 'veekaybee/what_are_embeddings: A deep dive into embeddings starting from
 topics:
 - 大语言模型
 - 机器学习
+source_url: https://github.com/veekaybee/what_are_embeddings
+published_at: null
+related_concepts: []
 ---
 
 [![[kandinsky.png]]](https://github.com/veekaybee/what_are_embeddings/blob/main/kandinsky.png)

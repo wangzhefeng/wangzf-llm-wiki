@@ -5,8 +5,6 @@ author:
 created: 2026-04-06
 created_at: 2026-04-06
 description: null
-published: null
-source: https://pjreddie.com/darknet/
 source_type: web
 status: inbox
 tags:
@@ -15,6 +13,9 @@ tags:
 title: 'Darknet: Open Source Neural Networks in C'
 topics:
 - 深度学习
+source_url: https://pjreddie.com/darknet/
+published_at: null
+related_concepts: []
 ---
 
 ### Hardware Guide: Neural Networks on GPUs

@@ -11,6 +11,7 @@ source_type: local_note
 created_at: 2023-01-27
 topics:
   - deeplearning
+status: inbox
 ---
 
 ![img](./images/lenet-5-slide.png)

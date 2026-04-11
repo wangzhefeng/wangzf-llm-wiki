@@ -5,7 +5,9 @@ source_url: https://mp.weixin.qq.com/s/mLpaek5BMWx3gWSC_UhIhw
 status: inbox
 title: Agentic后训练 - SFT（监督微调）全流程详解
 topics:
-- 大语言模型
+- 大语言模型published_at: null
+author: null
+related_concepts: []
 ---
 
 # Agentic后训练 - SFT（监督微调）全流程详解

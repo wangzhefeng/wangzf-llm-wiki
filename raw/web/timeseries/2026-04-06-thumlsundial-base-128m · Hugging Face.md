@@ -4,8 +4,6 @@ created: 2026-04-06
 created_at: 2026-04-06
 description: We’re on a journey to advance and democratize artificial intelligence
   through open source and open science.
-published: 2025-01-21
-source: https://huggingface.co/thuml/sundial-base-128m
 source_type: web
 status: inbox
 tags:
@@ -14,6 +12,9 @@ tags:
 title: thuml/sundial-base-128m · Hugging Face
 topics:
 - 时间序列
+source_url: https://huggingface.co/thuml/sundial-base-128m
+published_at: 2025-01-21
+related_concepts: []
 ---
 
 [Edit model card](https://huggingface.co/thuml/sundial-base-128m/edit/main/README.md)

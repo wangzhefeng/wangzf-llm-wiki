@@ -4,8 +4,6 @@ created: 2026-04-06
 created_at: 2026-04-06
 description: spaCy is a free open-source library for Natural Language Processing in
   Python. It features NER, POS tagging, dependency parsing, word vectors and more.
-published: null
-source: https://spacy.io/usage/projects
 source_type: web
 status: inbox
 tags:
@@ -14,6 +12,9 @@ tags:
 title: spaCy Usage Documentation
 topics:
 - 机器学习
+source_url: https://spacy.io/usage/projects
+published_at: null
+related_concepts: []
 ---
 
 spaCy projects let you manage and share **end-to-end spaCy workflows** for different **use cases and domains**, and orchestrate training, packaging and serving your custom pipelines. You can start off by cloning a pre-defined project template, adjust it to fit your needs, load in your data, train a pipeline, export it as a Python package, upload your outputs to a remote storage and share your results with your team. spaCy projects can be used via the new [`spacy project`](https://spacy.io/api/cli#project) command and we provide templates in our [`projects`](https://github.com/explosion/projects) repo.

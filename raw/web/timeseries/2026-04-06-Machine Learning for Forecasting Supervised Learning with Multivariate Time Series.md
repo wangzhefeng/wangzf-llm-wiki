@@ -8,13 +8,14 @@ created_at: 2026-04-06
 topics:
   - 时间序列
 status: inbox
-source: "https://towardsdatascience.com/machine-learning-for-forecasting-supervised-learning-with-multivariate-time-series-b5b5044fe068/"
-published: 2022-11-22
 created: 2026-04-06
 description: "An Introduction to the Auto-regressive Distributed Lags Model using Python."
 tags:
   - 
   - "clippings"
+source_url: "https://towardsdatascience.com/machine-learning-for-forecasting-supervised-learning-with-multivariate-time-series-b5b5044fe068/"
+published_at: 2022-11-22
+related_concepts: []
 ---
 
 ![[1HzdWx-vpu6IlrEWQyiKpGw.png|Figure 1: Multivariate time series about monthly wine sales. Link for the data source here. Image by Author.]]

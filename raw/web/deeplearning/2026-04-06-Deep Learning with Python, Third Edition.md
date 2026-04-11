@@ -9,13 +9,14 @@ created_at: 2026-04-06
 topics:
   - 深度学习
 status: inbox
-source: "https://deeplearningwithpython.io/"
-published: 2025-09-01
 created: 2026-04-06
 description: "Read the third edition of Deep Learning with Python online, for free. Build from the basics to state-of-the-art techniques with Python code you can run from your browser."
 tags:
   - 
   - "clippings"
+source_url: "https://deeplearningwithpython.io/"
+published_at: 2025-09-01
+related_concepts: []
 ---
 
 In less than a decade, deep learning has changed the world — twice. First, Python-based libraries like Keras, TensorFlow, and PyTorch elevated neural networks from lab experiments to high-performance production systems deployed at scale. Now, through Large Language Models and generative AI tools, deep learning is again transforming business and society. In this new edition, Keras creator François Chollet invites you into this amazing subject in the fluid, mentoring style of a true insider.

@@ -6,13 +6,15 @@ created_at: 2026-04-06
 topics:
   - 大语言模型
 status: inbox
-source: "https://github.com/rasbt/reasoning-from-scratch/tree/main/chF/04_llm-judge"
 published: 
 created: 2026-04-06
 description: "Implement a reasoning LLM in PyTorch from scratch, step by step - reasoning-from-scratch/chF/04_llm-judge at main · rasbt/reasoning-from-scratch"
 tags:
   - 
   - "clippings"
+source_url: "https://github.com/rasbt/reasoning-from-scratch/tree/main/chF/04_llm-judge"
+published_at: null
+related_concepts: []
 ---
 
 ## LLM-as-a-judge

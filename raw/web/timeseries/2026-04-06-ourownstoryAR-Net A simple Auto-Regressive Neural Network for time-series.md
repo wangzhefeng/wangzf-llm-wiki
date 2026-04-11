@@ -3,8 +3,6 @@ author: null
 created: 2026-04-06
 created_at: 2026-04-06
 description: A simple Auto-Regressive Neural Network for time-series - ourownstory/AR-Net
-published: null
-source: https://github.com/ourownstory/AR-Net/tree/master?tab=readme-ov-file
 source_type: web
 status: inbox
 tags:
@@ -13,6 +11,9 @@ tags:
 title: 'ourownstory/AR-Net: A simple Auto-Regressive Neural Network for time-series'
 topics:
 - 时间序列
+source_url: https://github.com/ourownstory/AR-Net/tree/master?tab=readme-ov-file
+published_at: null
+related_concepts: []
 ---
 
 ## AR-Net

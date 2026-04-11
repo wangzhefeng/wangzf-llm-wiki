@@ -6,13 +6,15 @@ created_at: 2026-04-06
 topics:
   - 时间序列
 status: inbox
-source: "https://github.com/google-research/timesfm?tab=readme-ov-file"
 published: 
 created: 2026-04-06
 description: "TimesFM (Time Series Foundation Model) is a pretrained time-series foundation model developed by Google Research for time-series forecasting. - google-research/timesfm"
 tags:
   - 
   - "clippings"
+source_url: "https://github.com/google-research/timesfm?tab=readme-ov-file"
+published_at: null
+related_concepts: []
 ---
 
 ## TimesFM
