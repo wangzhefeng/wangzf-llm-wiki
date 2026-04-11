@@ -1,4 +1,4 @@
-# wangzf_kb
+# wangzf-llm-wiki
 
 一个面向 LLM 持续工作的 Markdown 知识库。核心目标不是堆积笔记，而是把原始资料稳定转化为可检索、可复用、可回流的结构化知识。
 
