@@ -26,26 +26,26 @@ status: summarized
 |--------|----------|------|
 | [[2026-04-06-2.图解Word2vec]] | Word2Vec 图解教程 | 待摘要 |
 | [[2026-04-06-What are embeddings]] | Embeddings 综述 (Word2Vec 到 Transformer) | 待摘要 |
-| [[2026-04-06-veekaybeewhat_are_embeddings A deep dive into embeddings]] | Embeddings 深度解析 | 待摘要 |
+| [[sources/llm/2026-04-06-veekaybeewhat_are_embeddings A deep dive into embeddings starting from fundamentals]] | Embeddings 深度解析 | 待摘要 |
 
 ### 注意力机制
 
 | 文件名 | 核心内容 | 状态 |
 |--------|----------|------|
 | [[2026-04-06-超详细图解Self-Attention]] | Self-Attention 图解 | 待摘要 |
-| [[2026-04-06-10. 注意力机制 — 动手学深度学习]] | 注意力机制教程 | 待摘要 |
+| [[sources/deep-learning/2026-04-06-10. 注意力机制 — 动手学深度学习 2.0.0 documentation]] | 注意力机制教程 | 待摘要 |
 
 ### NLP 预训练
 
 | 文件名 | 核心内容 | 状态 |
 |--------|----------|------|
-| [[2026-04-06-14. 自然语言处理：预训练 — 动手学深度学习]] | NLP 预训练模型教程 | 待摘要 |
+| [[sources/deep-learning/2026-04-06-14. 自然语言处理：预训练 — 动手学深度学习 2.0.0 documentation]] | NLP 预训练模型教程 | 待摘要 |
 
 ### 工具与教程
 
 | 文件名 | 核心内容 | 状态 |
 |--------|----------|------|
-| [[2026-04-06-第二章：使用spaCy进行大规模数据分析]] | spaCy NLP 工具 | 待摘要 |
+| [[sources/llm/2026-04-06-第二章：使用spaCy进行大规模数据分析 · 使用spaCy做进阶自然语言处理]] | spaCy NLP 工具 | 待摘要 |
 | `2026-04-06-spaCy Usage Documentation (1/2/3)` | spaCy 使用文档 | 待摘要 |
 
 ### 机器翻译
@@ -53,7 +53,7 @@ status: summarized
 | 文件名 | 核心内容 | 状态 |
 |--------|----------|------|
 | [[2026-04-06-基于Transform的机器翻译系统]] | Transformer 机器翻译实现 | 待摘要 |
-| [[2026-04-06-ymoslemOpenNMT-Tutorial Neural Machine Translation tutorial]] | OpenNMT 神经机器翻译 | 待摘要 |
+| [[2026-04-06-ymoslemOpenNMT-Tutorial Neural Machine Translation (NMT) tutorial. Data preprocessing, model training, evaluation, and deployment]] | OpenNMT 神经机器翻译 | 待摘要 |
 
 ## 关键概念
 

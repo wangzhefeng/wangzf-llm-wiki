@@ -31,7 +31,7 @@ status: linked
 
 ## LLM 评估与输出
 
-- [[2026-04-06-Understanding the 4 Main Approaches to LLM Evaluation]] — 评估方法
+- [[sources/llm/2026-04-06-Understanding the 4 Main Approaches to LLM Evaluation (From Scratch)]] — 评估方法
 - [[2026-04-06-Structured LLM outputs]] — 结构化输出
 
 ## 生成式 AI

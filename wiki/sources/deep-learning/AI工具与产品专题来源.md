@@ -37,7 +37,7 @@ status: summarized
 
 | 文件名 | 核心内容 | 状态 |
 |--------|----------|------|
-| [[2026-04-06-Understanding the 4 Main Approaches to LLM Evaluation]] | LLM 评估方法 | 待摘要 |
+| [[sources/llm/2026-04-06-Understanding the 4 Main Approaches to LLM Evaluation (From Scratch)]] | LLM 评估方法 | 待摘要 |
 | [[2026-04-06-Structured LLM outputs]] | 结构化 LLM 输出 | 待摘要 |
 
 ### 生成式 AI

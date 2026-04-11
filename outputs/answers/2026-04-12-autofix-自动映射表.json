@@ -1,0 +1,246 @@
+{
+  "mappings": {
+    "2026-04-06-Ubuntu系统18-24.04安装和干净卸载nvidia显卡驱动": {
+      "autofix_path": "/Users/wangzf/wangzf-llm-wiki/wiki/sources/autofix/2026-04-06-Ubuntu系统18-24.04安装和干净卸载nvidia显卡驱动.md",
+      "actual_path": "/Users/wangzf/wangzf-llm-wiki/wiki/sources/shared/2026-04-06-Ubuntu系统18-24.04安装和干净卸载nvidia显卡驱动——超详细、最简单_ubuntu安装nvidia显卡驱动-CSDN博客.md",
+      "wiki_link": "sources/shared/2026-04-06-Ubuntu系统18-24.04安装和干净卸载nvidia显卡驱动——超详细、最简单_ubuntu安装nvidia显卡驱动-CSDN博客",
+      "confidence": 1.0,
+      "match_type": "partial"
+    },
+    "2026-04-05-全网爆火的大模型AI知识库，保姆级教程来了": {
+      "autofix_path": "/Users/wangzf/wangzf-llm-wiki/wiki/sources/autofix/2026-04-05-全网爆火的大模型AI知识库，保姆级教程来了.md",
+      "actual_path": "/Users/wangzf/wangzf-llm-wiki/wiki/sources/shared/2026-04-05-全网爆火的大模型AI知识库，保姆级教程来了.md",
+      "wiki_link": "sources/shared/2026-04-05-全网爆火的大模型AI知识库，保姆级教程来了",
+      "confidence": 1.0,
+      "match_type": "exact"
+    },
+    "2026-04-06-Ray Tune Hyperparameter Tuning": {
+      "autofix_path": "/Users/wangzf/wangzf-llm-wiki/wiki/sources/autofix/2026-04-06-Ray Tune Hyperparameter Tuning.md",
+      "actual_path": "/Users/wangzf/wangzf-llm-wiki/wiki/sources/shared/2026-04-06-Ray Tune Hyperparameter Tuning — Ray 2.54.1.md",
+      "wiki_link": "sources/shared/2026-04-06-Ray Tune Hyperparameter Tuning — Ray 2.54.1",
+      "confidence": 1.0,
+      "match_type": "partial"
+    },
+    "2026-04-06-逻辑回归": {
+      "autofix_path": "/Users/wangzf/wangzf-llm-wiki/wiki/sources/autofix/2026-04-06-逻辑回归.md",
+      "actual_path": "/Users/wangzf/wangzf-llm-wiki/wiki/sources/machine-learning/2026-04-06-逻辑回归模型算法研究与案例分析 – 我爱自然语言处理.md",
+      "wiki_link": "sources/machine-learning/2026-04-06-逻辑回归模型算法研究与案例分析 – 我爱自然语言处理",
+      "confidence": 1.0,
+      "match_type": "partial"
+    },
+    "2026-04-06-Amelia II": {
+      "autofix_path": "/Users/wangzf/wangzf-llm-wiki/wiki/sources/autofix/2026-04-06-Amelia II.md",
+      "actual_path": "/Users/wangzf/wangzf-llm-wiki/wiki/sources/timeseries/2026-04-06-Amelia II A Program for Missing Data.md",
+      "wiki_link": "sources/timeseries/2026-04-06-Amelia II A Program for Missing Data",
+      "confidence": 1.0,
+      "match_type": "partial"
+    },
+    "2026-04-06-樱花内网穿透": {
+      "autofix_path": "/Users/wangzf/wangzf-llm-wiki/wiki/sources/autofix/2026-04-06-樱花内网穿透.md",
+      "actual_path": "/Users/wangzf/wangzf-llm-wiki/wiki/sources/shared/2026-04-06-樱花内网穿透 — 免费内网穿透_免费端口映射_高速_高防节点_不限流量_Minecraft我的世界_微信开发调试_群辉NAS_无需公网_免备案.md",
+      "wiki_link": "sources/shared/2026-04-06-樱花内网穿透 — 免费内网穿透_免费端口映射_高速_高防节点_不限流量_Minecraft我的世界_微信开发调试_群辉NAS_无需公网_免备案",
+      "confidence": 1.0,
+      "match_type": "partial"
+    },
+    "2026-04-06-PDFMathTranslate": {
+      "autofix_path": "/Users/wangzf/wangzf-llm-wiki/wiki/sources/autofix/2026-04-06-PDFMathTranslate.md",
+      "actual_path": "/Users/wangzf/wangzf-llm-wiki/wiki/sources/operations-research/2026-04-06-PDFMathTranslate - PDF Translation with preserved formats.md",
+      "wiki_link": "sources/operations-research/2026-04-06-PDFMathTranslate - PDF Translation with preserved formats",
+      "confidence": 1.0,
+      "match_type": "partial"
+    },
+    "2026-04-06-sktime": {
+      "autofix_path": "/Users/wangzf/wangzf-llm-wiki/wiki/sources/autofix/2026-04-06-sktime.md",
+      "actual_path": "/Users/wangzf/wangzf-llm-wiki/wiki/sources/timeseries/2026-04-06-sktimepytorch-forecasting Time series forecasting with PyTorch.md",
+      "wiki_link": "sources/timeseries/2026-04-06-sktimepytorch-forecasting Time series forecasting with PyTorch",
+      "confidence": 1.0,
+      "match_type": "partial"
+    },
+    "2026-04-05-卡帕西引爆硅谷！公开「第二大脑」黑科技，1250万人围观": {
+      "autofix_path": "/Users/wangzf/wangzf-llm-wiki/wiki/sources/autofix/2026-04-05-卡帕西引爆硅谷！公开「第二大脑」黑科技，1250万人围观.md",
+      "actual_path": "/Users/wangzf/wangzf-llm-wiki/wiki/sources/shared/2026-04-05-卡帕西引爆硅谷！公开「第二大脑」黑科技，1250万人围观.md",
+      "wiki_link": "sources/shared/2026-04-05-卡帕西引爆硅谷！公开「第二大脑」黑科技，1250万人围观",
+      "confidence": 1.0,
+      "match_type": "exact"
+    },
+    "2026-04-06-第二章：使用spaCy进行大规模数据分析": {
+      "autofix_path": "/Users/wangzf/wangzf-llm-wiki/wiki/sources/autofix/2026-04-06-第二章：使用spaCy进行大规模数据分析.md",
+      "actual_path": "/Users/wangzf/wangzf-llm-wiki/wiki/sources/llm/2026-04-06-第二章：使用spaCy进行大规模数据分析 · 使用spaCy做进阶自然语言处理.md",
+      "wiki_link": "sources/llm/2026-04-06-第二章：使用spaCy进行大规模数据分析 · 使用spaCy做进阶自然语言处理",
+      "confidence": 1.0,
+      "match_type": "partial"
+    },
+    "2026-04-06-Understanding the 4 Main Approaches to LLM Evaluation": {
+      "autofix_path": "/Users/wangzf/wangzf-llm-wiki/wiki/sources/autofix/2026-04-06-Understanding the 4 Main Approaches to LLM Evaluation.md",
+      "actual_path": "/Users/wangzf/wangzf-llm-wiki/wiki/sources/llm/2026-04-06-Understanding the 4 Main Approaches to LLM Evaluation (From Scratch).md",
+      "wiki_link": "sources/llm/2026-04-06-Understanding the 4 Main Approaches to LLM Evaluation (From Scratch)",
+      "confidence": 1.0,
+      "match_type": "partial"
+    },
+    "2026-04-06-Multiprocessing": {
+      "autofix_path": "/Users/wangzf/wangzf-llm-wiki/wiki/sources/autofix/2026-04-06-Multiprocessing.md",
+      "actual_path": "/Users/wangzf/wangzf-llm-wiki/wiki/sources/deep-learning/2026-04-06-Multiprocessing best practices.md",
+      "wiki_link": "sources/deep-learning/2026-04-06-Multiprocessing best practices",
+      "confidence": 1.0,
+      "match_type": "partial"
+    },
+    "2026-04-06-14. 自然语言处理：预训练 — 动手学深度学习": {
+      "autofix_path": "/Users/wangzf/wangzf-llm-wiki/wiki/sources/autofix/2026-04-06-14. 自然语言处理：预训练 — 动手学深度学习.md",
+      "actual_path": "/Users/wangzf/wangzf-llm-wiki/wiki/sources/deep-learning/2026-04-06-14. 自然语言处理：预训练 — 动手学深度学习 2.0.0 documentation.md",
+      "wiki_link": "sources/deep-learning/2026-04-06-14. 自然语言处理：预训练 — 动手学深度学习 2.0.0 documentation",
+      "confidence": 1.0,
+      "match_type": "partial"
+    },
+    "2026-04-06-10. 注意力机制 — 动手学深度学习": {
+      "autofix_path": "/Users/wangzf/wangzf-llm-wiki/wiki/sources/autofix/2026-04-06-10. 注意力机制 — 动手学深度学习.md",
+      "actual_path": "/Users/wangzf/wangzf-llm-wiki/wiki/sources/deep-learning/2026-04-06-10. 注意力机制 — 动手学深度学习 2.0.0 documentation.md",
+      "wiki_link": "sources/deep-learning/2026-04-06-10. 注意力机制 — 动手学深度学习 2.0.0 documentation",
+      "confidence": 1.0,
+      "match_type": "partial"
+    },
+    "2026-04-06-深度学习环境配置": {
+      "autofix_path": "/Users/wangzf/wangzf-llm-wiki/wiki/sources/autofix/2026-04-06-深度学习环境配置.md",
+      "actual_path": "/Users/wangzf/wangzf-llm-wiki/wiki/sources/deep-learning/2026-04-06-深度学习环境配置指南！（Windows、Mac、Ubuntu全讲解）.md",
+      "wiki_link": "sources/deep-learning/2026-04-06-深度学习环境配置指南！（Windows、Mac、Ubuntu全讲解）",
+      "confidence": 1.0,
+      "match_type": "partial"
+    },
+    "2026-04-06-数据缺失处理": {
+      "autofix_path": "/Users/wangzf/wangzf-llm-wiki/wiki/sources/autofix/2026-04-06-数据缺失处理.md",
+      "actual_path": "/Users/wangzf/wangzf-llm-wiki/wiki/sources/shared/2026-04-06-数据缺失处理-CSDN博客.md",
+      "wiki_link": "sources/shared/2026-04-06-数据缺失处理-CSDN博客",
+      "confidence": 1.0,
+      "match_type": "partial"
+    },
+    "2026-04-06-GAN": {
+      "autofix_path": "/Users/wangzf/wangzf-llm-wiki/wiki/sources/autofix/2026-04-06-GAN.md",
+      "actual_path": "/Users/wangzf/wangzf-llm-wiki/wiki/sources/deep-learning/2026-04-06-GAN的前生今世（先导篇）.md",
+      "wiki_link": "sources/deep-learning/2026-04-06-GAN的前生今世（先导篇）",
+      "confidence": 1.0,
+      "match_type": "partial"
+    },
+    "2026-04-06-torchrun": {
+      "autofix_path": "/Users/wangzf/wangzf-llm-wiki/wiki/sources/autofix/2026-04-06-torchrun.md",
+      "actual_path": "/Users/wangzf/wangzf-llm-wiki/wiki/sources/deep-learning/2026-04-06-torchrun (Elastic Launch).md",
+      "wiki_link": "sources/deep-learning/2026-04-06-torchrun (Elastic Launch)",
+      "confidence": 1.0,
+      "match_type": "partial"
+    },
+    "2026-04-05-LLM wiki：karpathy 公开构建个人本地知识库详细方法「超强提示词」": {
+      "autofix_path": "/Users/wangzf/wangzf-llm-wiki/wiki/sources/autofix/2026-04-05-LLM wiki：karpathy 公开构建个人本地知识库详细方法「超强提示词」.md",
+      "actual_path": "/Users/wangzf/wangzf-llm-wiki/wiki/sources/llm/2026-04-05-LLM wiki：karpathy 公开构建个人本地知识库详细方法「超强提示词」.md",
+      "wiki_link": "sources/llm/2026-04-05-LLM wiki：karpathy 公开构建个人本地知识库详细方法「超强提示词」",
+      "confidence": 1.0,
+      "match_type": "exact"
+    },
+    "2026-04-06-veekaybeewhat_are_embeddings A deep dive into embeddings": {
+      "autofix_path": "/Users/wangzf/wangzf-llm-wiki/wiki/sources/autofix/2026-04-06-veekaybeewhat_are_embeddings A deep dive into embeddings.md",
+      "actual_path": "/Users/wangzf/wangzf-llm-wiki/wiki/sources/llm/2026-04-06-veekaybeewhat_are_embeddings A deep dive into embeddings starting from fundamentals.md",
+      "wiki_link": "sources/llm/2026-04-06-veekaybeewhat_are_embeddings A deep dive into embeddings starting from fundamentals",
+      "confidence": 1.0,
+      "match_type": "partial"
+    },
+    "2026-04-06-NATAPP": {
+      "autofix_path": "/Users/wangzf/wangzf-llm-wiki/wiki/sources/autofix/2026-04-06-NATAPP.md",
+      "actual_path": "/Users/wangzf/wangzf-llm-wiki/wiki/sources/shared/2026-04-06-NATAPP-内网穿透 基于ngrok的免费企业级国内高速内网映射工具.md",
+      "wiki_link": "sources/shared/2026-04-06-NATAPP-内网穿透 基于ngrok的免费企业级国内高速内网映射工具",
+      "confidence": 1.0,
+      "match_type": "partial"
+    },
+    "2026-04-06-Docker": {
+      "autofix_path": "/Users/wangzf/wangzf-llm-wiki/wiki/sources/autofix/2026-04-06-Docker.md",
+      "actual_path": "/Users/wangzf/wangzf-llm-wiki/wiki/sources/shared/2026-04-06-Docker 从入门到实践.md",
+      "wiki_link": "sources/shared/2026-04-06-Docker 从入门到实践",
+      "confidence": 1.0,
+      "match_type": "partial"
+    },
+    "2026-04-06-OpenCV": {
+      "autofix_path": "/Users/wangzf/wangzf-llm-wiki/wiki/sources/autofix/2026-04-06-OpenCV.md",
+      "actual_path": "/Users/wangzf/wangzf-llm-wiki/wiki/sources/computer-vision/2026-04-06-OpenCV OpenCV modules.md",
+      "wiki_link": "sources/computer-vision/2026-04-06-OpenCV OpenCV modules",
+      "confidence": 1.0,
+      "match_type": "partial"
+    }
+  },
+  "not_found": [
+    "2026-04-06-Checkpointing",
+    "2026-04-06-PyTorch Metrics",
+    "2026-04-06-线性规划贪心算法",
+    "2026-04-06-ManimML 可视化",
+    "2026-04-06-H2O",
+    "2026-04-06-nlp in action",
+    "2026-04-06-SwanHubXSwanLab... 支持 verl LLaMA Factory 等",
+    "2026-04-06-VAE",
+    "2026-04-06-探索性数据分析",
+    "2026-04-06-frp",
+    "2026-04-06-pandas DatetimeIndex",
+    "2026-04-06-CS230 深度学习课程",
+    "2026-04-06-Shell 编程掌握",
+    "2026-04-06-PlotNeuralNet",
+    "2026-04-06-sense2vec",
+    "2026-04-06-Bayesian Optimization",
+    "2026-04-06-datawhalechinaeasy-rl 强化学习中文教程（蘑菇书）",
+    "2026-04-06-权重衰减",
+    "2026-04-06-Welcome to PyTorch Lightning",
+    "2023-02-19-二分类评价指标",
+    "2026-04-06-ymoslemOpenNMT-Tutorial Neural Machine Translation tutorial",
+    "2026-04-06-PID 控制",
+    "2026-04-06-handcalcs",
+    "2026-04-06-计算智能优化算法",
+    "2026-04-06-XGBoost",
+    "2026-04-06-spaCy GitHub",
+    "2026-04-06-SwanHubXSwanLab ⚡️SwanLab - an open-source, modern-design AI training tracking and visualization tool. Supports Cloud ⨁ Self-hosted use. Integrated with PyTorch ⨁ Transformers ⨁ verl ⨁ LLaMA Factory ⨁ ms-swift ⨁ Ultralytics ⨁ MMEngine",
+    "2026-04-06-语义分割 Argmax",
+    "2026-04-06-Roboflow trackers",
+    "2026-04-06-PaddlePaddle VisualDL",
+    "2026-04-06-YOLOv5 教程",
+    "2026-04-06-机器学习(28)【降维】之 sklearn 中 PCA 库讲解与实战",
+    "2026-04-06-显存换算",
+    "2026-04-06-可重复代码 AAAMLP",
+    "2026-04-06-TingsongYuPyTorch-Tutorial-2nd PyTorch实用教程（第二版）",
+    "2026-04-06-LSTM",
+    "2026-04-06-聚类实战（kaggle）",
+    "2026-04-06-Marimo notebook",
+    "2026-04-06-PyTorch FSDP",
+    "2026-04-06-LeetCUDA",
+    "2026-04-06-LLM+OR 杉数科技",
+    "2026-04-06-AI 训练营强化学习",
+    "2026-04-06-Welcome to MMDetection's documentation! — MMDetection 3.3.0 documentation",
+    "2023-02-24-广义线性模型",
+    "2026-04-06-MMDetection",
+    "2026-04-06-MDP 第二章",
+    "2026-04-06-simple-pid",
+    "2026-04-06-Gurobi 优化器",
+    "2026-04-06-PyTorch DDP",
+    "2026-04-06-web批量摄取-操作记录",
+    "2026-04-06-skforecast",
+    "2026-04-06-滑动窗口",
+    "2026-04-06-PyTorch 文档",
+    "2026-04-05-LLM-wiki-核心能力缺口与补齐路线",
+    "2026-04-05-运筹优化算法-知识空白分析",
+    "2026-04-06-草履虫强化学习",
+    "2026-04-06-Robotics",
+    "2026-04-06-自动微分",
+    "2026-04-06-YOLO Tutorial v2",
+    "2026-04-06-roboflowtrackers Trackers Trackers gives you clean, modular re-implementations of leading multi-object tracking algorithms.",
+    "2026-04-06-NLP 上手教程",
+    "2026-04-06-PyTorch 实用教程（第二版）",
+    "2026-04-06-StackNet",
+    "2026-04-06-LightGBM forecasting",
+    "2026-04-06-Clarabel.rs",
+    "2026-04-06-凸优化（Boyd）",
+    "2026-04-06-wangzhefenglabelImg 图像标注工具",
+    "2026-04-06-CUDA 编程",
+    "2026-04-06-AlphaOPT（LLM+OR）",
+    "2026-04-06-SwanLab",
+    "2026-04-06-一篇深入剖析 PCA 的好文",
+    "2026-04-06-Understanding Automatic Differentiation in 30 lines of Python",
+    "2026-04-06-PyTorch DataParallel",
+    "2026-04-06-Stirling-PDF"
+  ],
+  "stats": {
+    "total_autofix": 97,
+    "mapped": 23,
+    "not_mapped": 74
+  }
+}

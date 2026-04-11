@@ -61,4 +61,4 @@ status: summarized
 
 ## related_outputs
 
-- [[2026-04-05-scikit-learn-机器学习时间序列预测实践解读]]
+- [[2026-04-05-scikit-learn-滞后特征预测示例]]

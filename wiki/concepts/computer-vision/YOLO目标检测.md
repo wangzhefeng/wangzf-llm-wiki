@@ -56,7 +56,7 @@ YOLO（You Only Look Once）是一系列实时目标检测算法，以速度快�
 - [[2026-04-06-YOLOv4：使用 Darknet 和 OpenCV 进行对象检测的综合指南]]
 - [[2026-04-06-使用YOLOv5模型进行目标检测！]]
 - [[2026-04-06-Joseph Redmon - Survival Strategies for the Robot Rebellion]]
-- [[2026-04-06-Welcome to MMDetection's documentation! — MMDetection 3.3.0 documentation]]
+- [[2026-04-06-Welcome to MMDetection’s documentation! — MMDetection 3.3.0 documentation]]
 
 ## 相关概念
 

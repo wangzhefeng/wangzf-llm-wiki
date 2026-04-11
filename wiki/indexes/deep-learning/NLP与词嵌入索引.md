@@ -27,27 +27,27 @@ status: linked
 
 ### Embeddings 综述
 - [[2026-04-06-What are embeddings]] — 从 Word2Vec 到 Transformer
-- [[2026-04-06-veekaybeewhat_are_embeddings A deep dive into embeddings]] — 深度解析
+- [[sources/llm/2026-04-06-veekaybeewhat_are_embeddings A deep dive into embeddings starting from fundamentals]] — 深度解析
 
 ## 注意力机制
 
 - [[2026-04-06-超详细图解Self-Attention]]
-- [[2026-04-06-10. 注意力机制 — 动手学深度学习]]
+- [[sources/deep-learning/2026-04-06-10. 注意力机制 — 动手学深度学习 2.0.0 documentation]]
 
 ## NLP 预训练
 
-- [[2026-04-06-14. 自然语言处理：预训练 — 动手学深度学习]]
+- [[sources/deep-learning/2026-04-06-14. 自然语言处理：预训练 — 动手学深度学习 2.0.0 documentation]]
 
 ## 工具与教程
 
 ### spaCy
-- [[2026-04-06-第二章：使用spaCy进行大规模数据分析]]
+- [[sources/llm/2026-04-06-第二章：使用spaCy进行大规模数据分析 · 使用spaCy做进阶自然语言处理]]
 - `2026-04-06-spaCy Usage Documentation (1/2/3)`
 
 ## 机器翻译
 
 - [[2026-04-06-基于Transform的机器翻译系统]]
-- [[2026-04-06-ymoslemOpenNMT-Tutorial Neural Machine Translation tutorial]]
+- [[2026-04-06-ymoslemOpenNMT-Tutorial Neural Machine Translation (NMT) tutorial. Data preprocessing, model training, evaluation, and deployment]]
 
 ## 关键概念
 
