@@ -1,6 +1,6 @@
 ---
 source_type: local_note
-source_path: raw/local-notes/post/2026-02-07-tsf-report/index.md
+source_path: raw/local-notes/timeseries/timeseries-time-domain/timeseries-machinelearning/2026-02-07-tsf-report/index.md
 title: 基于非线性树模型的时间序列预测框架：全生命周期深度研究报告
 author: wangzf
 published_at: 2026-02-07
@@ -17,8 +17,8 @@ status: summarized
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/local-notes/post/2026-02-07-tsf-report/index]]
-- 来源：`raw/local-notes/post/2026-02-07-tsf-report/index.md`
+- 原文：[[raw/local-notes/timeseries/timeseries-time-domain/timeseries-machinelearning/2026-02-07-tsf-report/index]]
+- 来源：`raw/local-notes/timeseries/timeseries-time-domain/timeseries-machinelearning/2026-02-07-tsf-report/index.md`
 - 归属主题：时间序列
 
 ## 价值是什么

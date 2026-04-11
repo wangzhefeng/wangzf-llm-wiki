@@ -1,6 +1,6 @@
 ---
 source_type: local_note
-source_path: raw/local-notes/post/2026-01-18-tsf-dl-stages/index.md
+source_path: raw/local-notes/timeseries/timeseries-time-domain/timeseries-deeplearning/2026-01-18-tsf-dl-stages/index.md
 title: 深度时序模型研究的三个阶段
 author: wangzf
 published_at: 2026-01-18
@@ -17,8 +17,8 @@ status: summarized
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/local-notes/post/2026-01-18-tsf-dl-stages/index]]
-- 来源：`raw/local-notes/post/2026-01-18-tsf-dl-stages/index.md`
+- 原文：[[raw/local-notes/timeseries/timeseries-time-domain/timeseries-deeplearning/2026-01-18-tsf-dl-stages/index]]
+- 来源：`raw/local-notes/timeseries/timeseries-time-domain/timeseries-deeplearning/2026-01-18-tsf-dl-stages/index.md`
 - 归属主题：时间序列
 
 ## 价值是什么
