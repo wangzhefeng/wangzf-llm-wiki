@@ -216,7 +216,7 @@ Other articles, blogs, and books that I have written. Most in a similar style an
 
 Computer vision book
 
-- [Computer vision: models, learning, and inference](http://computervisionmodels.com/)
+- [Computer vision: models, learning, and inference](http://computer-visionmodels.com/)
 	- 2012 book published with CUP
 		- Focused on probabilistic models
 		- Pre-"deep learning"

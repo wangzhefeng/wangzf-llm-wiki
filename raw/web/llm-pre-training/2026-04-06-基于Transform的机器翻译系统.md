@@ -735,7 +735,7 @@ def make_model(src_vocab, tgt_vocab, N=6, d_model=512, d_ff=2048, h = 8, dropout
 
 标签平滑
 
-在训练期间，我们采用了值 ϵls=0.1的标签平滑（参见： [arxiv.org/pdf/1512.0056](https://link.zhihu.com/?target=https%3A//arxiv.org/pdf/1512.00567.pdf) ），其实还是从ComputerVision上搬过来的，具体操作可以看下面的代码实现， **在这里不作为重点** 。  
+在训练期间，我们采用了值 ϵls=0.1的标签平滑（参见： [arxiv.org/pdf/1512.0056](https://link.zhihu.com/?target=https%3A//arxiv.org/pdf/1512.00567.pdf) ），其实还是从computer-vision上搬过来的，具体操作可以看下面的代码实现， **在这里不作为重点** 。  
 这种做法提高了困惑度，因为模型变得更加不确定，但提高了准确性和BLEU分数。 我们使用 KLdivloss（KL散度损失）实现标签平滑。  
 对于输出的分布，从原始的 one-hot 分布转为在groundtruth上使用一个confidence值，而后其他的所有非groudtruth标签上采用 作为概率值进行平滑。
 

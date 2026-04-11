@@ -16,4 +16,4 @@ list_pages: true
 
 ## Doc
 
-- Wiki 入口：[[wiki/indexes/computervision/计算机视觉总索引]]
+- Wiki 入口：[[wiki/indexes/computer-vision/计算机视觉总索引]]
