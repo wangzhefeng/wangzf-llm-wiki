@@ -19,7 +19,7 @@ related_concepts: []
 
 > ## 题目：一个艺术风格化的神经网络算法
 
-![[raw/assets/attachments/computer-vision/145616-cb98523022feb4fc.png]]
+<!-- missing attachment -->
 
 效果图
 
@@ -32,11 +32,11 @@ related_concepts: []
 
 ## 快读
 
-![[raw/assets/attachments/computer-vision/145616-f446b39700e31e93.png]]
+<!-- missing attachment -->
 
 a图的style 和 p图的content 进行融合，得到第三幅图x
 
-![[raw/assets/attachments/computer-vision/145616-7cf69d91f730fbee.png]]
+<!-- missing attachment -->
 
 代价函数Loss
 
@@ -44,7 +44,7 @@ a图的style 和 p图的content 进行融合，得到第三幅图x
 
 ## 正文
 
-![[raw/assets/attachments/computer-vision/145616-dc97ba42b9883975.png]]
+<!-- missing attachment -->
 
 **对于好的艺术，尤其是画作，人们掌握了通过在内容和风格中构成复杂的影响来创造独特的视觉体验的技能。因此这个过程的算法基础是未知的而且不存在任一人工系统有同样的能力。但是，在其他基于视觉概念的关键领域,比如说接近于人类表现的物体和脸部识别最近已由一系列仿生的称为深度神经网络的视觉模型做到了.在这时我们介绍一种其于深度神经网络的人工系统,它可以生成具有高感知品质的艺术图片.这个系统使用了神经的表达来分离并且再结合任意图片的内容和风格,为生成艺术图片提供了一个神经算法.而且,按照要去表现最优的人工神经网络和生物视觉中找到相同.我们的工作提供了人类是怎样创作和认知艺术图像的算法理解.**
 

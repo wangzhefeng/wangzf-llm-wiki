@@ -108,6 +108,6 @@ ICRA 2015
 
 > I think the little pony resume is probably not the right choice for grad school.
 
-[![[raw/assets/attachments/computer-vision/plse.png]]](http://uwplse.org/) [![[raw/assets/attachments/computer-vision/ZeroCater.png]]](http://www.zerocater.com/) [![[raw/assets/attachments/computer-vision/gpony.png]]](https://research.google.com/) [![[raw/assets/attachments/computer-vision/KUCB.png]]](http://kucb.org/) [![[raw/assets/attachments/computer-vision/IBM.png]]](http://www.ibm.com/) [![[raw/assets/attachments/computer-vision/NIST.png]]](http://www.nist.gov/)
+![plse.png](http://uwplse.org/) ![ZeroCater.png](http://www.zerocater.com/) ![gpony.png](https://research.google.com/) ![KUCB.png](http://kucb.org/) ![IBM.png](http://www.ibm.com/) ![NIST.png](http://www.nist.gov/)
 
-[![[raw/assets/attachments/computer-vision/gscholar.png]]](https://scholar.google.com/citations?user=TDk_NfkAAAAJ) [![[raw/assets/attachments/computer-vision/github.png]]](https://github.com/pjreddie) [![[raw/assets/attachments/computer-vision/twitter.png]]](https://bsky.app/profile/pjreddie.bsky.social) [![[raw/assets/attachments/computer-vision/kaggle.png]]](https://www.kaggle.com/users/16295/pjreddie)
+![gscholar.png](https://scholar.google.com/citations?user=TDk_NfkAAAAJ) ![github.png](https://github.com/pjreddie) ![twitter.png](https://bsky.app/profile/pjreddie.bsky.social) ![kaggle.png](https://www.kaggle.com/users/16295/pjreddie)

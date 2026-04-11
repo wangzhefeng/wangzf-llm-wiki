@@ -17,7 +17,7 @@ status: summarized
 # 卡帕西引爆硅谷：Karpathy 公开「第二大脑」LLM Wiki 新范式来源摘要
 
 
-- 原文：[[wiki/sources/autofix/2026-04-05-卡帕西引爆硅谷！公开「第二大脑」黑科技，1250万人围观.md]]
+- 原文：[[raw/web/knowledge-base-building/2026-04-05-卡帕西引爆硅谷！公开「第二大脑」黑科技，1250万人围观.md]]
 ## 材料定位
 
 这篇新智元中文报道是对 Karpathy LLM Wiki Gist 及其社区反响应的全景式综述，重点补充了 Farzapedia 案例和 Karpathy 关于"数据主权"的四点归纳。与已有的 Karpathy 原始 Gist 和中文解读相比，这篇更偏"事件报道 + 案例展示"，适合作为 LLM Wiki 模式的外部验证和对照来源。

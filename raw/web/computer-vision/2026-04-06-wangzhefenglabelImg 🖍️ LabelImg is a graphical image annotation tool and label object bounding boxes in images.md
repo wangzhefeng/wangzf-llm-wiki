@@ -242,4 +242,4 @@ Citation: Tzutalin. LabelImg. Git code (2015). [https://github.com/tzutalin/labe
 6. [The link of this project on iHub platform](https://code.ihub.org.cn/projects/260/repository/labelImg)
 7. [Convert annotation files to CSV format or format for Google Cloud AutoML](https://github.com/tzutalin/labelImg/tree/master/tools)
 
-[![[raw/assets/attachments/computer-vision/Image 61.svg]]](https://camo.githubusercontent.com/d5c16430bfda299ce10a1b2df34df69bce1f134d8d21a722d42fe5d6a6dcf8b0/68747470733a2f2f7374617263686172742e63632f747a7574616c696e2f6c6162656c496d672e737667)
+![Image 61.svg](https://camo.githubusercontent.com/d5c16430bfda299ce10a1b2df34df69bce1f134d8d21a722d42fe5d6a6dcf8b0/68747470733a2f2f7374617263686172742e63632f747a7574616c696e2f6c6162656c496d672e737667)

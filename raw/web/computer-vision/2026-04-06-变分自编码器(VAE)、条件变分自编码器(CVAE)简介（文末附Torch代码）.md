@@ -23,13 +23,13 @@ related_concepts: []
 
 VAE详细介绍可参考：
 
-[![[raw/assets/attachments/computer-vision/v2-7feae519b612e19c42cce6b64180f662.jpeg]]](https://zhuanlan.zhihu.com/p/620113235)
+![v2-7feae519b612e19c42cce6b64180f662.jpeg](https://zhuanlan.zhihu.com/p/620113235)
 
 先简单复习一下变分自编码器VAE的结构和原理（仍以mnist手写数据集为例）：
 
 变分自编码器VAE结构图与自编码器AE类似，分为编码器与解码器。其往往作为生成模型来使用（本例中也即是生成手写数字图像）。
 
-![[raw/assets/attachments/computer-vision/v2-4664567ddbb313c30c3e9206ec3548fd_1440w.jpg]]
+<!-- missing attachment -->
 
 VAE结构
 
@@ -41,7 +41,7 @@ VAE结构
 
 训练完成后，只使用解码器decoder部分，给出n个标准正态分布的采样值，解码器decoder可以此输入生成手写数字图像。
 
-![[raw/assets/attachments/computer-vision/v2-29814cceeaf3d126c2258f1aecd7424d_1440w.jpg]]
+<!-- missing attachment -->
 
 VAE使用
 
@@ -59,7 +59,7 @@ VAE使用
 
 将数字类别信息作为条件加入到encoder和decoder的输入中，由此来指定数字类别生成对应的数字图片。
 
-![[raw/assets/attachments/computer-vision/v2-19f167d5649deeba94dbe1806bf743cf_1440w.jpg]]
+<!-- missing attachment -->
 
 CVAE结构
 
@@ -72,7 +72,7 @@ CVAE结构
 
 训练完成使用时，CVAE的decoder输入为n个标准正态分布的采样值，及指定的数字类别，输出为指定数字类别对应的手写数字图像。
 
-![[raw/assets/attachments/computer-vision/v2-bb6a68386f4017a1b2bd50a3a9ebd16a_1440w.jpg]]
+<!-- missing attachment -->
 
 CVAE使用
 
@@ -84,7 +84,7 @@ CVAE使用
 
 之所以VAE的decoder生成数字是随机的，是因为它接收的只有标准正态分布的采样值，没有其他信息，因此其无法判断自己要生成什么数字。实际上，可以保持encoder的输入不变，只改变decoder的输入类型：数字的类别信息作为条件，与正态分布的采样值z拼接，一并作为decoder的输入。也可以一定程度上实现，生成指定数字类别手写数字图像的功能。
 
-![[raw/assets/attachments/computer-vision/v2-a27191acd7d6ef450c37b3dbf18595e4_1440w.jpg]]
+<!-- missing attachment -->
 
 改版CVAE
 
@@ -94,7 +94,7 @@ CVAE使用
 
 如果将数字类别作为CVAE的初始输入，而把手写数字图像作为条件，那么整个CVAE的输出也将是数字类别。此时我们用同样的训练方法，仅调换手写数字图像与数字类别的位置。
 
-![[raw/assets/attachments/computer-vision/v2-23972727d15f900fe4bf09e93591a7e3_1440w.jpg]]
+<!-- missing attachment -->
 
 分类CVAE结构图
 
@@ -102,7 +102,7 @@ CVAE使用
 
 最后的输出是一个10维向量，可以认为其代表了该图像属于0-9这10类数字的概率值，第几维的数值最大，就认为该数字类别为几（此处与onehot encoding后的输入对应，区别仅在于onehot只有0和1，这里的输出一般每个维度都有值）。
 
-![[raw/assets/attachments/computer-vision/v2-dd79dab2a3f267cea8d8248952c11d12_1440w.jpg]]
+<!-- missing attachment -->
 
 使用CVAE分类
 
