@@ -16,6 +16,7 @@ status: summarized
 
 ## 这份材料讲了什么
 
+- 原文：[[raw/web/llm/2026-04-06-一文通透想颠覆Transformer的Mamba：从SSM、HiPPO、S4到Mamba(被誉为Mamba最佳解读)_mamba模型-CSDN博客]]
 - 来源：`raw/web/llm/2026-04-06-一文通透想颠覆Transformer的Mamba：从SSM、HiPPO、S4到Mamba(被誉为Mamba最佳解读)_mamba模型-CSDN博客.md`
 - 主题：大语言模型
 

@@ -18,6 +18,7 @@ status: summarized
 
 ## 这份材料讲了什么
 
+- 原文：[[raw/local-notes/llm/lm/2023-03-17-model-distilling/index]]
 - 来源：`raw/local-notes/llm/lm/2023-03-17-model-distilling/index.md`
 - 主题：LLM 本地知识笔记
 

@@ -20,6 +20,7 @@ status: summarized
 
 ## 这份材料讲了什么
 
+- 原文：[[raw/local-notes/post/2025-07-05-llm-finetuning/index]]
 - 来源：`raw/local-notes/post/2025-07-05-llm-finetuning/index.md`
 - 归属主题：大语言模型
 

@@ -19,3 +19,13 @@
 推荐命名：
 
 - 输出结果：`YYYY-MM-DD-主题-用途.md`
+
+## 图谱入口（近期关键输出）
+
+- [[outputs/answers/2026-04-09-llm-timeseries-autofix-映射候选]]
+- [[outputs/logs/2026-04-06-时间序列来源编译与synthesis产出记录]]
+- [[outputs/logs/2026-04-11-raw-assets-分类修复-动作记录]]
+- [[outputs/syntheses/2026-04-06-web批量摄取-知识库总结]]
+- [[outputs/syntheses/2026-04-08-llm-wiki-维护流程总结]]
+- [[outputs/syntheses/2026-04-08-llm-wiki-ai与用户使用流程总结]]
+- [[outputs/syntheses/2026-04-08-llm-wiki-构建流程总结]]

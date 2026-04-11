@@ -15,8 +15,10 @@ DIR_RENAMES = {
     "computer-vision": "computervision",
     "machine-learning": "machinelearning",
     "reinforcement-learning": "reinforcementlearning",
-    "data-structure-algorithm": "data_structure_algorithm",
-    "control-algorithms": "control_algorithms",
+    "data_structure_algorithm": "data-structure-algorithm",
+    "data-structure-algorithm": "data-structure-algorithm",
+    "control_algorithms": "control-algorithms",
+    "control-algorithms": "control-algorithms",
 }
 
 
@@ -123,4 +125,3 @@ def main() -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
-

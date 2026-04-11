@@ -45,8 +45,8 @@ status: linked
 
 - [[wiki/sources/analysis/README]]
 - [[wiki/sources/computervision/README]]
-- [[wiki/sources/control_algorithms/README]]
-- [[wiki/sources/data_structure_algorithm/README]]
+- [[wiki/sources/control-algorithms/README]]
+- [[wiki/sources/data-structure-algorithm/README]]
 - [[wiki/sources/deeplearning/README]]
 - [[wiki/sources/knowledge-base/README]]
 - [[wiki/sources/llm/README]]

@@ -1,6 +1,6 @@
 ---
 source_type: web
-source_path: raw/web/uncategorized/2026-04-06-fatedierfrp A fast reverse proxy to help you expose a local server behind a NAT or firewall to the internet.md
+source_path: raw/web/tools/2026-04-06-fatedierfrp A fast reverse proxy to help you expose a local server behind a NAT or firewall to the internet.md
 title: fatedier/frp: A fast reverse proxy to help you expose a local server behind a NAT or firewall to the internet.
 author: unknown
 published_at: 2026-04-06
@@ -16,7 +16,8 @@ status: summarized
 
 ## 这份材料讲了什么
 
-- 来源：`raw/web/uncategorized/2026-04-06-fatedierfrp A fast reverse proxy to help you expose a local server behind a NAT or firewall to the internet.md`
+- 原文：[[raw/web/tools/2026-04-06-fatedierfrp A fast reverse proxy to help you expose a local server behind a NAT or firewall to the internet]]
+- 来源：`raw/web/tools/2026-04-06-fatedierfrp A fast reverse proxy to help you expose a local server behind a NAT or firewall to the internet.md`
 - 主题：待分类
 
 ## 价值是什么

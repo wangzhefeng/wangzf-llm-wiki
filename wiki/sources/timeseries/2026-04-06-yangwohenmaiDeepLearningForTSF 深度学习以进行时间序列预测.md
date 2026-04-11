@@ -16,6 +16,7 @@ status: summarized
 
 ## 这份材料讲了什么
 
+- 原文：[[raw/web/timeseries/2026-04-06-yangwohenmaiDeepLearningForTSF 深度学习以进行时间序列预测]]
 - 来源：`raw/web/timeseries/2026-04-06-yangwohenmaiDeepLearningForTSF 深度学习以进行时间序列预测.md`
 - 主题：时间序列
 

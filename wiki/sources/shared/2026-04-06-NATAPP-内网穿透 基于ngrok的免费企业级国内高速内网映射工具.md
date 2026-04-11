@@ -1,6 +1,6 @@
 ---
 source_type: web
-source_path: raw/web/uncategorized/2026-04-06-NATAPP-内网穿透 基于ngrok的免费企业级国内高速内网映射工具.md
+source_path: raw/web/tools/2026-04-06-NATAPP-内网穿透 基于ngrok的免费企业级国内高速内网映射工具.md
 title: NATAPP-内网穿透 基于ngrok的免费企业级国内高速内网映射工具
 author: unknown
 published_at: 2026-04-06
@@ -16,7 +16,8 @@ status: summarized
 
 ## 这份材料讲了什么
 
-- 来源：`raw/web/uncategorized/2026-04-06-NATAPP-内网穿透 基于ngrok的免费企业级国内高速内网映射工具.md`
+- 原文：[[raw/web/tools/2026-04-06-NATAPP-内网穿透 基于ngrok的免费企业级国内高速内网映射工具]]
+- 来源：`raw/web/tools/2026-04-06-NATAPP-内网穿透 基于ngrok的免费企业级国内高速内网映射工具.md`
 - 主题：待分类
 
 ## 价值是什么

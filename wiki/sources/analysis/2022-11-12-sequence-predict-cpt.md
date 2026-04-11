@@ -16,6 +16,7 @@ status: summarized
 
 ## 这份材料讲了什么
 
+- 原文：[[raw/local-notes/analysis/2022-11-12-sequence-predict-cpt/index]]
 ---
 
 ## 价值是什么

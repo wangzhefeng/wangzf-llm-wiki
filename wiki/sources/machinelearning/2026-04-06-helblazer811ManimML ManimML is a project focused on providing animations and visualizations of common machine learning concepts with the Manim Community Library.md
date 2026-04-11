@@ -1,6 +1,6 @@
 ---
 source_type: web
-source_path: raw/web/machine-learning/2026-04-06-helblazer811ManimML ManimML is a project focused on providing animations and visualizations of common machine learning concepts with the Manim Community Library.md
+source_path: raw/web/machinelearning/2026-04-06-helblazer811ManimML ManimML is a project focused on providing animations and visualizations of common machine learning concepts with the Manim Community Library.md
 title: helblazer811/ManimML: ManimML is a project focused on providing animations and visualizations of common machine learning concepts with the Manim Community Library.
 author: unknown
 published_at: 2026-04-06
@@ -16,7 +16,8 @@ status: summarized
 
 ## 这份材料讲了什么
 
-- 来源：`raw/web/machine-learning/2026-04-06-helblazer811ManimML ManimML is a project focused on providing animations and visualizations of common machine learning concepts with the Manim Community Library.md`
+- 原文：[[raw/web/machinelearning/2026-04-06-helblazer811ManimML ManimML is a project focused on providing animations and visualizations of common machine learning concepts with the Manim Community Library]]
+- 来源：`raw/web/machinelearning/2026-04-06-helblazer811ManimML ManimML is a project focused on providing animations and visualizations of common machine learning concepts with the Manim Community Library.md`
 - 主题：机器学习
 
 ## 价值是什么

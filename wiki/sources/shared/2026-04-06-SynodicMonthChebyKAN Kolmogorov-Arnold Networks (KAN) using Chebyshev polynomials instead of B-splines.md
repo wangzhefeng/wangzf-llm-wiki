@@ -1,6 +1,6 @@
 ---
 source_type: web
-source_path: raw/web/uncategorized/2026-04-06-SynodicMonthChebyKAN Kolmogorov-Arnold Networks (KAN) using Chebyshev polynomials instead of B-splines.md
+source_path: raw/web/timeseries/2026-04-06-SynodicMonthChebyKAN Kolmogorov-Arnold Networks (KAN) using Chebyshev polynomials instead of B-splines.md
 title: SynodicMonth/ChebyKAN: Kolmogorov-Arnold Networks (KAN) using Chebyshev polynomials instead of B-splines.
 author: unknown
 published_at: 2026-04-06
@@ -16,7 +16,8 @@ status: summarized
 
 ## 这份材料讲了什么
 
-- 来源：`raw/web/uncategorized/2026-04-06-SynodicMonthChebyKAN Kolmogorov-Arnold Networks (KAN) using Chebyshev polynomials instead of B-splines.md`
+- 原文：[[raw/web/timeseries/2026-04-06-SynodicMonthChebyKAN Kolmogorov-Arnold Networks (KAN) using Chebyshev polynomials instead of B-splines]]
+- 来源：`raw/web/timeseries/2026-04-06-SynodicMonthChebyKAN Kolmogorov-Arnold Networks (KAN) using Chebyshev polynomials instead of B-splines.md`
 - 主题：待分类
 
 ## 价值是什么

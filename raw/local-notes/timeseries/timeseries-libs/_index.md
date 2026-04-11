@@ -29,3 +29,5 @@ list_pages: true
 | Paddlets        |                    |                    |                            |                    |
 
 ## Docs
+
+- Wiki 入口：[[wiki/indexes/timeseries/时间序列预测总索引]]

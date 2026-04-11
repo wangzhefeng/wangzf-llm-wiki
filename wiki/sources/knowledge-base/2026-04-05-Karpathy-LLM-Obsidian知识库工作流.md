@@ -1,7 +1,7 @@
 ---
 source_type: web
 source_url: https://mp.weixin.qq.com/s?__biz=Mzg3MTkxMjYzOA==&mid=2247513861&idx=1&sn=59fe0da79f6b7865f6bcd8d30f4dfc61&scene=21&poc_token=HJrm0Wmjda1Zvqj9DBg_Y8STbze9Fz5RBokyAetr
-source_path: raw/web/knowledge-base/2026-04-05-Karpathy最新硬核分享：用大模型和Obsidian打造个人本地知识库.md
+source_path: raw/web/llm/2026-04-05-Karpathy最新硬核分享：用大模型和Obsidian打造个人本地知识库.md
 created_at: 2026-04-05
 topics:
   - 知识库构建
@@ -14,6 +14,8 @@ status: summarized
 
 # Karpathy LLM + Obsidian 知识库工作流来源摘要
 
+
+- 原文：[[raw/web/llm/2026-04-05-Karpathy最新硬核分享：用大模型和Obsidian打造个人本地知识库]]
 ## 材料定位
 
 这篇外部文章不是当前知识库方法的源头文档，而是一份很强的外部映射材料。它的价值在于说明：你库里已经采用的很多做法，在外部也能找到相当接近的工作流表达，因此适合作为方法验证和对照来源，而不适合作为主题总纲本身。

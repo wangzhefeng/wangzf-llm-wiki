@@ -16,6 +16,7 @@ status: summarized
 
 ## 这份材料讲了什么
 
+- 原文：[[raw/web/llm/2026-04-06-RUCAIBoxLLMBox A comprehensive library for implementing LLMs, including a unified training pipeline and comprehensive model evaluation]]
 - 来源：`raw/web/llm/2026-04-06-RUCAIBoxLLMBox A comprehensive library for implementing LLMs, including a unified training pipeline and comprehensive model evaluation.md`
 - 主题：大语言模型
 

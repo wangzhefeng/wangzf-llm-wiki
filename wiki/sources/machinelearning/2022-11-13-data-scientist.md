@@ -17,6 +17,7 @@ status: summarized
 
 ## 这份材料讲了什么
 
+- 原文：[[raw/local-notes/post/2022-11-13-data-scientist/index]]
 - 来源：`raw/local-notes/post/2022-11-13-data-scientist/index.md`
 - 归属主题：机器学习
 

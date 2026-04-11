@@ -18,6 +18,7 @@ status: summarized
 
 ## 这份材料讲了什么
 
+- 原文：[[raw/local-notes/deeplearning/2022-07-15-gpu-hardware/index]]
 - 来源：`raw/local-notes/deeplearning/2022-07-15-gpu-hardware/index.md`
 - 主题：GPU 硬件
 - 类型：本地历史笔记（deep learning）

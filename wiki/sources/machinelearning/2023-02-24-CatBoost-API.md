@@ -19,6 +19,7 @@ status: summarized
 
 ## 这份材料讲了什么
 
+- 原文：[[raw/local-notes/machinelearning/supervised/ensemble/catboost/2023-02-24-ml-gbm-catboost-api/index]]
 这份材料围绕 CatBoost 的参数体系、核心数据结构与 Learning API 展开，偏向工程使用层。
 
 ## 价值是什么

@@ -16,6 +16,7 @@ status: summarized
 
 ## 这份材料讲了什么
 
+- 原文：[[raw/web/timeseries/2026-04-06-TimeMixer++ A General Time Series Pattern Machine for Universal Predictive Analysis]]
 - 来源：`raw/web/timeseries/2026-04-06-TimeMixer++ A General Time Series Pattern Machine for Universal Predictive Analysis.md`
 - 主题：时间序列
 

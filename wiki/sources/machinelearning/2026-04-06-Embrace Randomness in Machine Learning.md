@@ -1,6 +1,6 @@
 ---
 source_type: web
-source_path: raw/web/machine-learning/2026-04-06-Embrace Randomness in Machine Learning.md
+source_path: raw/web/machinelearning/2026-04-06-Embrace Randomness in Machine Learning.md
 title: Embrace Randomness in Machine Learning
 author: unknown
 published_at: 2026-04-06
@@ -16,7 +16,8 @@ status: summarized
 
 ## 这份材料讲了什么
 
-- 来源：`raw/web/machine-learning/2026-04-06-Embrace Randomness in Machine Learning.md`
+- 原文：[[raw/web/machinelearning/2026-04-06-Embrace Randomness in Machine Learning]]
+- 来源：`raw/web/machinelearning/2026-04-06-Embrace Randomness in Machine Learning.md`
 - 主题：机器学习
 
 ## 价值是什么

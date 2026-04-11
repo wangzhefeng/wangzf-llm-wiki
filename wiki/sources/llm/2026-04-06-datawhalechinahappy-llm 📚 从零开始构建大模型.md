@@ -16,6 +16,7 @@ status: summarized
 
 ## 这份材料讲了什么
 
+- 原文：[[raw/web/llm/2026-04-06-datawhalechinahappy-llm 📚 从零开始构建大模型]]
 - 来源：`raw/web/llm/2026-04-06-datawhalechinahappy-llm 📚 从零开始构建大模型.md`
 - 主题：大语言模型
 

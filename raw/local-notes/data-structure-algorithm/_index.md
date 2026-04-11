@@ -6,3 +6,5 @@ list_pages: true
 ---
 
 ![img](./images/hello_algo_mindmap.png)
+
+- Wiki 入口：[[wiki/indexes/data-structure-algorithm/数据结构与算法总索引]]

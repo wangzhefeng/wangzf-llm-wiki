@@ -56,9 +56,9 @@ status: linked
 
 - `wiki/sources/` - 来源卡层
 - `wiki/concepts/` - 概念层
-- `wiki/entities/` - 实体层（可增量建设）
-- `wiki/comparisons/` - 对比层（可增量建设）
-- `wiki/queries/` - 查询沉淀层（可增量建设）
+- `wiki/entities/` - 实体层（入口：[[wiki/entities/index]]）
+- `wiki/comparisons/` - 对比层（入口：[[wiki/comparisons/index]]）
+- `wiki/queries/` - 查询沉淀层（入口：[[wiki/queries/index]]）
 
 ## Area READMEs
 

@@ -18,6 +18,7 @@ status: summarized
 
 ## 这份材料讲了什么
 
+- 原文：[[raw/local-notes/cv/image_processing/2022-08-14-cv-numpy-scipy-matplotlib/index]]
 ---
 
 ## 价值是什么

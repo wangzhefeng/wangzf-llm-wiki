@@ -1,6 +1,6 @@
 ---
 source_type: web
-source_path: raw/web/computer-vision/2026-04-06-yjh0410YOLO-Tutorial-v2.md
+source_path: raw/web/computervision/2026-04-06-yjh0410YOLO-Tutorial-v2.md
 title: yjh0410/YOLO-Tutorial-v2
 author: unknown
 published_at: 2026-04-06
@@ -16,7 +16,8 @@ status: summarized
 
 ## 这份材料讲了什么
 
-- 来源：`raw/web/computer-vision/2026-04-06-yjh0410YOLO-Tutorial-v2.md`
+- 原文：[[raw/web/computervision/2026-04-06-yjh0410YOLO-Tutorial-v2]]
+- 来源：`raw/web/computervision/2026-04-06-yjh0410YOLO-Tutorial-v2.md`
 - 主题：计算机视觉
 
 ## 价值是什么

@@ -23,3 +23,5 @@ order_by: title
         - 实例分割
 
 ## 文档
+
+- Wiki 入口：[[wiki/indexes/computervision/计算机视觉总索引]]

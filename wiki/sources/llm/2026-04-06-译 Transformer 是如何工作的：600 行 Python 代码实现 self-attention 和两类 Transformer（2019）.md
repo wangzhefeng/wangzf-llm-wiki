@@ -1,6 +1,6 @@
 ---
 source_type: web
-source_path: raw/web/llm/2026-04-06-译 Transformer 是如何工作的：600 行 Python 代码实现 self-attention 和两类 Transformer（2019）.md
+source_path: raw/web/deeplearning/2026-04-06-译 Transformer 是如何工作的：600 行 Python 代码实现 self-attention 和两类 Transformer（2019）.md
 title: [译] Transformer 是如何工作的：600 行 Python 代码实现 self-attention 和两类 Transformer（2019）
 author: unknown
 published_at: 2026-04-06
@@ -16,7 +16,8 @@ status: summarized
 
 ## 这份材料讲了什么
 
-- 来源：`raw/web/llm/2026-04-06-译 Transformer 是如何工作的：600 行 Python 代码实现 self-attention 和两类 Transformer（2019）.md`
+- 原文：[[raw/web/deeplearning/2026-04-06-译 Transformer 是如何工作的：600 行 Python 代码实现 self-attention 和两类 Transformer（2019）]]
+- 来源：`raw/web/deeplearning/2026-04-06-译 Transformer 是如何工作的：600 行 Python 代码实现 self-attention 和两类 Transformer（2019）.md`
 - 主题：大语言模型
 
 ## 价值是什么

@@ -1,6 +1,6 @@
 ---
 source_type: web
-source_path: raw/web/uncategorized/2026-04-06-cbovarConvNetDraw Draw multi-layer neural network in your browser.md
+source_path: raw/web/tools/2026-04-06-cbovarConvNetDraw Draw multi-layer neural network in your browser.md
 title: cbovar/ConvNetDraw: Draw multi-layer neural network in your browser
 author: unknown
 published_at: 2026-04-06
@@ -16,6 +16,7 @@ status: summarized
 
 ## 这份材料讲了什么
 
+- 原文：[[raw/web/tools/2026-04-06-cbovarConvNetDraw Draw multi-layer neural network in your browser]]
 - 来源：`raw/web/uncategorized/2026-04-06-cbovarConvNetDraw Draw multi-layer neural network in your browser.md`
 - 主题：计算机视觉
 

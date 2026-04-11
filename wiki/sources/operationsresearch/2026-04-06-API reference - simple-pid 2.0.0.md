@@ -1,6 +1,6 @@
 ---
 source_type: web
-source_path: raw/web/uncategorized/2026-04-06-API reference - simple-pid 2.0.0.md
+source_path: raw/web/control-algorithms/2026-04-06-API reference - simple-pid 2.0.0.md
 title: API reference - simple-pid 2.0.0
 author: unknown
 published_at: 2026-04-06
@@ -16,7 +16,8 @@ status: summarized
 
 ## 这份材料讲了什么
 
-- 来源：`raw/web/uncategorized/2026-04-06-API reference - simple-pid 2.0.0.md`
+- 原文：`raw/web/control-algorithms/2026-04-06-API reference - simple-pid 2.0.0`
+- 来源：`raw/web/control-algorithms/2026-04-06-API reference - simple-pid 2.0.0.md`
 - 主题：运筹优化
 
 ## 价值是什么

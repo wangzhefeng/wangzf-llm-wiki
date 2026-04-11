@@ -1,6 +1,6 @@
 ---
 source_type: web
-source_path: raw/web/uncategorized/2026-04-06-Autoformerpredict.ipynb at main.md
+source_path: raw/web/timeseries/2026-04-06-Autoformerpredict.ipynb at main.md
 title: Autoformer/predict.ipynb at main
 author: unknown
 published_at: 2026-04-06
@@ -16,7 +16,8 @@ status: summarized
 
 ## 这份材料讲了什么
 
-- 来源：`raw/web/uncategorized/2026-04-06-Autoformerpredict.ipynb at main.md`
+- 原文：`raw/web/timeseries/2026-04-06-Autoformerpredict.ipynb at main`
+- 来源：`raw/web/timeseries/2026-04-06-Autoformerpredict.ipynb at main.md`
 - 主题：时间序列
 
 ## 价值是什么

@@ -18,6 +18,7 @@ status: summarized
 
 ## 这份材料讲了什么
 
+- 原文：[[raw/local-notes/deeplearning/video/2023-01-21-video-pyav/index]]
 - 来源：`raw/local-notes/deeplearning/video/2023-01-21-video-pyav/index.md`
 - 主题：Video pyav
 - 类型：本地历史笔记（deep learning）

@@ -1,6 +1,6 @@
 ---
 source_type: web
-source_path: raw/web/llm/2026-04-06-pytorch-transformer-tsautoformerhyperparameter-tuning.ipynb at main.md
+source_path: raw/web/deeplearning/2026-04-06-pytorch-transformer-tsautoformerhyperparameter-tuning.ipynb at main.md
 title: pytorch-transformer-ts/autoformer/hyperparameter-tuning.ipynb at main
 author: unknown
 published_at: 2026-04-06
@@ -16,7 +16,8 @@ status: summarized
 
 ## 这份材料讲了什么
 
-- 来源：`raw/web/llm/2026-04-06-pytorch-transformer-tsautoformerhyperparameter-tuning.ipynb at main.md`
+- 原文：`raw/web/deeplearning/2026-04-06-pytorch-transformer-tsautoformerhyperparameter-tuning.ipynb at main`
+- 来源：`raw/web/deeplearning/2026-04-06-pytorch-transformer-tsautoformerhyperparameter-tuning.ipynb at main.md`
 - 主题：大语言模型
 
 ## 价值是什么

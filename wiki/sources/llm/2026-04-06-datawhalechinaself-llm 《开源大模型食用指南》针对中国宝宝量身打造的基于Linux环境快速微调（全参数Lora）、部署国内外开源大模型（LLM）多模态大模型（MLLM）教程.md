@@ -16,6 +16,7 @@ status: summarized
 
 ## 这份材料讲了什么
 
+- 原文：[[raw/web/llm/2026-04-06-datawhalechinaself-llm 《开源大模型食用指南》针对中国宝宝量身打造的基于Linux环境快速微调（全参数Lora）、部署国内外开源大模型（LLM）多模态大模型（MLLM）教程]]
 - 来源：`raw/web/llm/2026-04-06-datawhalechinaself-llm 《开源大模型食用指南》针对中国宝宝量身打造的基于Linux环境快速微调（全参数Lora）、部署国内外开源大模型（LLM）多模态大模型（MLLM）教程.md`
 - 主题：大语言模型
 

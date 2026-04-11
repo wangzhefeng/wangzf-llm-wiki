@@ -18,6 +18,7 @@ status: summarized
 
 ## 这份材料讲了什么
 
+- 原文：[[raw/local-notes/llm/llm-models/2024-05-02-chatgpt-usage/index]]
 - 来源：`raw/local-notes/llm/llm-models/2024-05-02-chatgpt-usage/index.md`
 - 主题：LLM 本地知识笔记
 

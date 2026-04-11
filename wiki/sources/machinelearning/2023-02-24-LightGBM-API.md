@@ -19,6 +19,7 @@ status: summarized
 
 ## 这份材料讲了什么
 
+- 原文：[[raw/local-notes/machinelearning/supervised/ensemble/lightgbm/2023-02-24-ml-gbm-lightgbm-api/index]]
 这份材料围绕 LightGBM 的数据格式、核心数据结构和训练接口展开，属于方法之后的工程实践层资料。
 
 ## 价值是什么

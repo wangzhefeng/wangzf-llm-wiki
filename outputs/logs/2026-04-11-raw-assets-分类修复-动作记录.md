@@ -56,7 +56,7 @@ status: summarized
   - `raw/assets/attachments/computer-vision/` -> `raw/assets/attachments/computervision/`
   - `raw/assets/attachments/machine-learning/` -> `raw/assets/attachments/machinelearning/`
   - `raw/assets/attachments/reinforcement-learning/` -> `raw/assets/attachments/reinforcementlearning/`
-  - `raw/assets/attachments/control-algorithms/` -> `raw/assets/attachments/control_algorithms/`
+  - `raw/assets/attachments/control_algorithms/` -> `raw/assets/attachments/control-algorithms/`
 - 将剩余 `uncategorized/` 与根目录 `*.latex` 归并到 `raw/assets/attachments/shared/`：
   - `raw/assets/attachments/uncategorized/` -> `raw/assets/attachments/shared/uncategorized/`
   - `raw/assets/attachments/gif*.latex` -> `raw/assets/attachments/shared/latex/`

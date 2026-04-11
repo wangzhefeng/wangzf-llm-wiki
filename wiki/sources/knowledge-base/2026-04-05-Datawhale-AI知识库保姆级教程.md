@@ -1,7 +1,7 @@
 ---
 source_type: web
 source_url: https://mp.weixin.qq.com/s/48LCpLkzL3bWNL1MjpDFeA
-source_path: raw/web/uncategorized/2026-04-05-全网爆火的大模型AI知识库，保姆级教程来了.md
+source_path: raw/web/vibe-coding/2026-04-05-全网爆火的大模型AI知识库，保姆级教程来了.md
 created_at: 2026-04-05
 topics:
   - 知识库构建
@@ -16,6 +16,8 @@ status: summarized
 
 # Datawhale：Karpathy 同款 AI 知识库保姆级教程来源摘要
 
+
+- 原文：[[raw/web/vibe-coding/2026-04-05-全网爆火的大模型AI知识库，保姆级教程来了]]
 ## 材料定位
 
 这篇 Datawhale 文章不是对 Karpathy Gist 的简单翻译，而是一份操作导向的教程，把 LLM Wiki 模式拆成 7 个可直接执行的步骤。它的独特价值在于补充了自动化采集工具（agent-browser）、给出了 CLAUDE.md/AGENTS.md 的起始模板、并明确讨论了工具选择和错误复利的风险。

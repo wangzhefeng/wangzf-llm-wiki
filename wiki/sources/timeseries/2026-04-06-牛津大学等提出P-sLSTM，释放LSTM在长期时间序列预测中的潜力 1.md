@@ -16,6 +16,7 @@ status: summarized
 
 ## 这份材料讲了什么
 
+- 原文：[[raw/web/timeseries/2026-04-06-牛津大学等提出P-sLSTM，释放LSTM在长期时间序列预测中的潜力 1]]
 - 来源：`raw/web/timeseries/2026-04-06-牛津大学等提出P-sLSTM，释放LSTM在长期时间序列预测中的潜力 1.md`
 - 主题：时间序列
 

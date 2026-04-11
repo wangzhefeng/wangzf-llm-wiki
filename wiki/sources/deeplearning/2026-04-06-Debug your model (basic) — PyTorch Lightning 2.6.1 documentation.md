@@ -16,6 +16,7 @@ status: summarized
 
 ## 这份材料讲了什么
 
+- 原文：`raw/web/deeplearning/2026-04-06-Debug your model (basic) — PyTorch Lightning 2.6.1 documentation`
 - 来源：`raw/web/deeplearning/2026-04-06-Debug your model (basic) — PyTorch Lightning 2.6.1 documentation.md`
 - 主题：深度学习
 

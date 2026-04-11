@@ -6,3 +6,5 @@ list_pages: true
 ---
 
 ![img](./images/dl.png)
+
+- Wiki 入口：[[wiki/indexes/deeplearning/深度学习总索引]]

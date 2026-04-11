@@ -18,6 +18,7 @@ status: summarized
 
 ## 这份材料讲了什么
 
+- 原文：[[raw/local-notes/deeplearning/2023-03-26-model-layer/index]]
 - 来源：`raw/local-notes/deeplearning/2023-03-26-model-layer/index.md`
 - 主题：模型层
 - 类型：本地历史笔记（deep learning）

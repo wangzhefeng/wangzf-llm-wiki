@@ -1,6 +1,6 @@
 ---
 source_type: web
-source_path: raw/web/computer-vision/2026-04-06-opencv-python.md
+source_path: raw/web/computervision/2026-04-06-opencv-python.md
 title: opencv-python
 author: unknown
 published_at: 2026-04-06
@@ -16,6 +16,7 @@ status: summarized
 
 ## 这份材料讲了什么
 
+- 原文：[[raw/web/computervision/2026-04-06-opencv-python]]
 - 来源：`raw/web/computer-vision/2026-04-06-opencv-python.md`
 - 主题：计算机视觉
 

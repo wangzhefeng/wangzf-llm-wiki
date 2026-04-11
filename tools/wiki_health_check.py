@@ -86,6 +86,27 @@ def resolve_wikilink_target(target: str, stems: dict[str, Path]) -> Path | None:
     t = target.strip()
     if not t:
         return None
+    # 支持 raw 路径式 wikilink：[[raw/web/xx/2026-...]]（Obsidian 图谱需要显式 raw 互链）
+    if t.startswith("raw/"):
+        # 若显式给了“常见文件扩展名”，按原样检查；否则默认补 .md。
+        # 注意：文件名中可能包含类似 `xxx.md at main` 的点号片段，不能用 Path.suffix 的存在性直接判断。
+        known_exts = {
+            ".md",
+            ".pdf",
+            ".png",
+            ".jpg",
+            ".jpeg",
+            ".gif",
+            ".svg",
+            ".webp",
+            ".mp4",
+            ".mov",
+        }
+        suffix = Path(t).suffix.lower()
+        cand = ROOT / t if suffix in known_exts else ROOT / (t + ".md")
+        if cand.exists():
+            return cand
+        return None
     # 支持路径式 wikilink：[[wiki/sources/analysis/README]] 或 [[sources/analysis/README]]
     if "/" in t:
         rel = t

@@ -16,6 +16,7 @@ status: summarized
 
 ## 这份材料讲了什么
 
+- 原文：[[raw/web/llm/2026-04-06-Understanding the 4 Main Approaches to LLM Evaluation (From Scratch)]]
 - 来源：`raw/web/llm/2026-04-06-Understanding the 4 Main Approaches to LLM Evaluation (From Scratch).md`
 - 主题：大语言模型
 

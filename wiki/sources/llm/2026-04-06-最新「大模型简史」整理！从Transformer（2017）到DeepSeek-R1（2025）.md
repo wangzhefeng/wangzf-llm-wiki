@@ -16,6 +16,7 @@ status: summarized
 
 ## 这份材料讲了什么
 
+- 原文：[[raw/web/llm/2026-04-06-最新「大模型简史」整理！从Transformer（2017）到DeepSeek-R1（2025）]]
 - 来源：`raw/web/llm/2026-04-06-最新「大模型简史」整理！从Transformer（2017）到DeepSeek-R1（2025）.md`
 - 主题：大语言模型
 

@@ -1,6 +1,6 @@
 ---
 source_type: web
-source_path: raw/web/uncategorized/2026-04-06-不错的关于比赛的feature engineering 的ppt.md
+source_path: raw/web/machinelearning/2026-04-06-不错的关于比赛的feature engineering 的ppt.md
 title: 不错的关于比赛的feature engineering 的ppt
 author: unknown
 published_at: 2026-04-06
@@ -16,7 +16,8 @@ status: summarized
 
 ## 这份材料讲了什么
 
-- 来源：`raw/web/uncategorized/2026-04-06-不错的关于比赛的feature engineering 的ppt.md`
+- 原文：[[raw/web/machinelearning/2026-04-06-不错的关于比赛的feature engineering 的ppt]]
+- 来源：`raw/web/machinelearning/2026-04-06-不错的关于比赛的feature engineering 的ppt.md`
 - 主题：机器学习
 
 ## 价值是什么

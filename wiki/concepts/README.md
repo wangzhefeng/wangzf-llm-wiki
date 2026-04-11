@@ -38,9 +38,10 @@ status: linked
 ## Topics
 
 - [[wiki/concepts/analysis/README]]
+- [[wiki/concepts/autofix/README]]
 - [[wiki/concepts/computervision/README]]
-- [[wiki/concepts/control_algorithms/README]]
-- [[wiki/concepts/data_structure_algorithm/README]]
+- [[wiki/concepts/control-algorithms/README]]
+- [[wiki/concepts/data-structure-algorithm/README]]
 - [[wiki/concepts/deeplearning/README]]
 - [[wiki/concepts/knowledge-base/README]]
 - [[wiki/concepts/llm/README]]

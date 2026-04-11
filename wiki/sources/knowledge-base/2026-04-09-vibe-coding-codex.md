@@ -18,6 +18,7 @@ status: summarized
 
 ## 这份材料讲了什么
 
+- 原文：[[raw/local-notes/vibe-coding/codex/README]]
 - 来源：`raw/local-notes/vibe-coding/codex/README.md`
 - 类型：README 知识说明
 

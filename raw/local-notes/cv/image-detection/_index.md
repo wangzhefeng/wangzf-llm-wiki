@@ -15,3 +15,5 @@ list_pages: true
 * [学习使用计算机视觉进行人脸检测](https://mp.weixin.qq.com/s/3iFDnGb1Hlf-J_6qzu05gA)
 
 ## Doc
+
+- Wiki 入口：[[wiki/indexes/computervision/计算机视觉总索引]]

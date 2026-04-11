@@ -1,6 +1,6 @@
 ---
 source_type: web
-source_path: raw/web/collection/2026-04-06-YouMind---AI-创作智能体.md
+source_path: raw/web/knowledge-base-building/2026-04-06-YouMind---AI-创作智能体.md
 title: YouMind - AI 创作智能体
 author: unknown
 published_at: 2026-04-06
@@ -16,7 +16,8 @@ status: summarized
 
 ## 这份材料讲了什么
 
-- 来源：`raw/web/collection/2026-04-06-YouMind---AI-创作智能体.md`
+- 原文：[[raw/web/knowledge-base-building/2026-04-06-YouMind---AI-创作智能体]]
+- 来源：`raw/web/knowledge-base-building/2026-04-06-YouMind---AI-创作智能体.md`
 - 主题：待分类
 
 ## 价值是什么

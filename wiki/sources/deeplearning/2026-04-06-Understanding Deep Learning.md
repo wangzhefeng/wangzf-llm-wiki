@@ -16,6 +16,7 @@ status: summarized
 
 ## 这份材料讲了什么
 
+- 原文：[[raw/web/deeplearning/2026-04-06-Understanding Deep Learning]]
 - 来源：`raw/web/deeplearning/2026-04-06-Understanding Deep Learning.md`
 - 主题：深度学习
 

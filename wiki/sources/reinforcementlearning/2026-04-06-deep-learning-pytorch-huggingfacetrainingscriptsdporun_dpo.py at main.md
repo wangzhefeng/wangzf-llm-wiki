@@ -16,6 +16,7 @@ status: summarized
 
 ## 这份材料讲了什么
 
+- 原文：`raw/web/reinforcement-learning/2026-04-06-deep-learning-pytorch-huggingfacetrainingscriptsdporun_dpo.py at main`
 - 来源：`raw/web/reinforcement-learning/2026-04-06-deep-learning-pytorch-huggingfacetrainingscriptsdporun_dpo.py at main.md`
 - 主题：强化学习
 

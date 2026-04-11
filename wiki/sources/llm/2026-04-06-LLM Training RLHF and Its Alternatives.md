@@ -16,6 +16,7 @@ status: summarized
 
 ## 这份材料讲了什么
 
+- 原文：[[raw/web/llm/2026-04-06-LLM Training RLHF and Its Alternatives]]
 - 来源：`raw/web/llm/2026-04-06-LLM Training RLHF and Its Alternatives.md`
 - 主题：大语言模型
 

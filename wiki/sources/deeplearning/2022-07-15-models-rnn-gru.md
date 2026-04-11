@@ -18,6 +18,7 @@ status: summarized
 
 ## 这份材料讲了什么
 
+- 原文：[[raw/local-notes/deeplearning/2022-07-15-models-rnn-gru/index]]
 - 来源：`raw/local-notes/deeplearning/2022-07-15-models-rnn-gru/index.md`
 - 主题：GRU
 - 类型：本地历史笔记（deep learning）

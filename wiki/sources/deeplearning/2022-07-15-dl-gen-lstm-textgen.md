@@ -18,6 +18,7 @@ status: summarized
 
 ## 这份材料讲了什么
 
+- 原文：[[raw/local-notes/deeplearning/unsupervised/gen/2022-07-15-dl-gen-lstm-textgen/index]]
 - 来源：`raw/local-notes/deeplearning/unsupervised/gen/2022-07-15-dl-gen-lstm-textgen/index.md`
 - 主题：LSTM 生成文本
 - 类型：本地历史笔记（deep learning）

@@ -30,6 +30,19 @@ status: inbox
 
 - [线程总结模板](./线程总结模板.md)
 
+## 已沉淀线程（Obsidian 图谱入口）
+
+- [[raw/codex_threads/2026-04-07-知识库搭建与工作流固化线程]]
+- [[raw/codex_threads/2026-04-07-知识库健康检查线程整理]]
+- [[raw/codex_threads/2026-04-07-知识库健康检查与结构分层重构线程总结]]
+- [[raw/codex_threads/2026-04-07-知识库健康检查执行闭环线程总结]]
+- [[raw/codex_threads/2026-04-07-图谱诊断与健康检查线程总结]]
+- [[raw/codex_threads/2026-04-07-llm-wiki-工作流补齐与-schema-固化线程总结]]
+- [[raw/codex_threads/2026-04-07-知识库建设方法主题落地与迁移线程总结]]
+- [[raw/codex_threads/2026-04-07-Marp演示稿工作流线程总结]]
+- [[raw/codex_threads/2026-04-07-知识库方法页组重构与工作台收口线程总结]]
+- [[raw/codex_threads/线程总结模板]]
+
 ## 与其他线程交互的提示词（可直接复用）
 
 ```md

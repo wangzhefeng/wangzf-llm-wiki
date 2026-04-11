@@ -11,3 +11,5 @@ list_pages: true
 以及如何分析模型以探索可能解决方案的一门学科。
 
 ## 文档
+
+- Wiki 入口：[[wiki/indexes/operationsresearch/运筹优化算法总索引]]

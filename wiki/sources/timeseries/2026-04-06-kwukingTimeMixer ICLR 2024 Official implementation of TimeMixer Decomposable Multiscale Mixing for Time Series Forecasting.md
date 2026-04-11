@@ -16,6 +16,7 @@ status: summarized
 
 ## 这份材料讲了什么
 
+- 原文：[[raw/web/timeseries/2026-04-06-kwukingTimeMixer ICLR 2024 Official implementation of TimeMixer Decomposable Multiscale Mixing for Time Series Forecasting]]
 - 来源：`raw/web/timeseries/2026-04-06-kwukingTimeMixer ICLR 2024 Official implementation of TimeMixer Decomposable Multiscale Mixing for Time Series Forecasting.md`
 - 主题：时间序列
 

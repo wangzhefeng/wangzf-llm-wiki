@@ -17,6 +17,7 @@ status: summarized
 
 ## 这份材料讲了什么
 
+- 原文：[[raw/local-notes/post/2025-01-19-distributed-parallel-training/index]]
 - 来源：`raw/local-notes/post/2025-01-19-distributed-parallel-training/index.md`
 - 归属主题：深度学习
 

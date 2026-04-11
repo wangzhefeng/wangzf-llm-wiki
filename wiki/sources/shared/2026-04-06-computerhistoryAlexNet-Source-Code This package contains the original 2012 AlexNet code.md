@@ -1,6 +1,6 @@
 ---
 source_type: web
-source_path: raw/web/uncategorized/2026-04-06-computerhistoryAlexNet-Source-Code This package contains the original 2012 AlexNet code.md
+source_path: raw/web/computervision/2026-04-06-computerhistoryAlexNet-Source-Code This package contains the original 2012 AlexNet code.md
 title: computerhistory/AlexNet-Source-Code: This package contains the original 2012 AlexNet code.
 author: unknown
 published_at: 2026-04-06
@@ -16,7 +16,8 @@ status: summarized
 
 ## 这份材料讲了什么
 
-- 来源：`raw/web/uncategorized/2026-04-06-computerhistoryAlexNet-Source-Code This package contains the original 2012 AlexNet code.md`
+- 原文：[[raw/web/computervision/2026-04-06-computerhistoryAlexNet-Source-Code This package contains the original 2012 AlexNet code]]
+- 来源：`raw/web/computervision/2026-04-06-computerhistoryAlexNet-Source-Code This package contains the original 2012 AlexNet code.md`
 - 主题：待分类
 
 ## 价值是什么

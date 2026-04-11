@@ -17,6 +17,7 @@ status: summarized
 
 ## 这份材料讲了什么
 
+- 原文：[[raw/local-notes/analysis/2022-10-15-root-cause-analysis/index]]
 ---
 
 ## 价值是什么

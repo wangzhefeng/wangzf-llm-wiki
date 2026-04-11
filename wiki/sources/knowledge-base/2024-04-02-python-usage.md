@@ -17,6 +17,7 @@ status: summarized
 
 ## 这份材料讲了什么
 
+- 原文：[[raw/local-notes/post/2024-04-02-python-usage/index]]
 - 来源：`raw/local-notes/post/2024-04-02-python-usage/index.md`
 - 归属主题：知识库建设
 

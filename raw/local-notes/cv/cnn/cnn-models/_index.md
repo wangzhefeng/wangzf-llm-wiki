@@ -4,3 +4,5 @@ title: CNN 网络模型
 list_pages: true
 # order_by: title
 ---
+
+- Wiki 入口：[[wiki/indexes/computervision/计算机视觉总索引]]

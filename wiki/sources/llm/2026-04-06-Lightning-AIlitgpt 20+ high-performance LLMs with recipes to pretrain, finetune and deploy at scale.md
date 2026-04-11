@@ -16,6 +16,7 @@ status: summarized
 
 ## 这份材料讲了什么
 
+- 原文：[[raw/web/llm/2026-04-06-Lightning-AIlitgpt 20+ high-performance LLMs with recipes to pretrain, finetune and deploy at scale]]
 - 来源：`raw/web/llm/2026-04-06-Lightning-AIlitgpt 20+ high-performance LLMs with recipes to pretrain, finetune and deploy at scale.md`
 - 主题：大语言模型
 

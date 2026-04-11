@@ -17,6 +17,7 @@ status: summarized
 
 ## 这份材料讲了什么
 
+- 原文：[[raw/local-notes/post/2022-02-27-blog-build-deploy/index]]
 - 来源：`raw/local-notes/post/2022-02-27-blog-build-deploy/index.md`
 - 归属主题：知识库建设
 

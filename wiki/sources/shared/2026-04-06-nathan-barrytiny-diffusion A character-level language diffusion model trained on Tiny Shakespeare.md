@@ -1,6 +1,6 @@
 ---
 source_type: web
-source_path: raw/web/uncategorized/2026-04-06-nathan-barrytiny-diffusion A character-level language diffusion model trained on Tiny Shakespeare.md
+source_path: raw/web/llm/2026-04-06-nathan-barrytiny-diffusion A character-level language diffusion model trained on Tiny Shakespeare.md
 title: nathan-barry/tiny-diffusion: A character-level language diffusion model trained on Tiny Shakespeare
 author: unknown
 published_at: 2026-04-06
@@ -16,7 +16,8 @@ status: summarized
 
 ## 这份材料讲了什么
 
-- 来源：`raw/web/uncategorized/2026-04-06-nathan-barrytiny-diffusion A character-level language diffusion model trained on Tiny Shakespeare.md`
+- 原文：[[raw/web/llm/2026-04-06-nathan-barrytiny-diffusion A character-level language diffusion model trained on Tiny Shakespeare]]
+- 来源：`raw/web/llm/2026-04-06-nathan-barrytiny-diffusion A character-level language diffusion model trained on Tiny Shakespeare.md`
 - 主题：待分类
 
 ## 价值是什么

@@ -1,6 +1,6 @@
 ---
 source_type: web
-source_path: raw/web/llm/2026-04-06-时间序列预测还能再进步吗？别再迷信Transformer了，问题可能出在评估方式上！.md
+source_path: raw/web/timeseries/2026-04-06-时间序列预测还能再进步吗？别再迷信Transformer了，问题可能出在评估方式上！.md
 title: 时间序列预测还能再进步吗？别再迷信Transformer了，问题可能出在评估方式上！
 author: unknown
 published_at: 2026-04-06
@@ -16,7 +16,8 @@ status: summarized
 
 ## 这份材料讲了什么
 
-- 来源：`raw/web/llm/2026-04-06-时间序列预测还能再进步吗？别再迷信Transformer了，问题可能出在评估方式上！.md`
+- 原文：[[raw/web/timeseries/2026-04-06-时间序列预测还能再进步吗？别再迷信Transformer了，问题可能出在评估方式上！]]
+- 来源：`raw/web/timeseries/2026-04-06-时间序列预测还能再进步吗？别再迷信Transformer了，问题可能出在评估方式上！.md`
 - 主题：大语言模型
 
 ## 价值是什么

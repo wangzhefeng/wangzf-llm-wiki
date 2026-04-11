@@ -16,6 +16,7 @@ status: summarized
 
 ## 这份材料讲了什么
 
+- 原文：`raw/web/uncategorized/2026-04-06-datawhalechinatiny-universe 《大模型白盒子构建指南》：一个全手搓的Tiny-Universe 1`
 - 来源：`raw/web/uncategorized/2026-04-06-datawhalechinatiny-universe 《大模型白盒子构建指南》：一个全手搓的Tiny-Universe 1.md`
 - 主题：机器学习
 

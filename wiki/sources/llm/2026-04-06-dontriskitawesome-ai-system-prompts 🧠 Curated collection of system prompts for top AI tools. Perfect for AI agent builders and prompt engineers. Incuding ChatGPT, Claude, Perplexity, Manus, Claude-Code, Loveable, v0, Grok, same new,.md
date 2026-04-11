@@ -16,6 +16,7 @@ status: summarized
 
 ## 这份材料讲了什么
 
+- 原文：`raw/web/llm/2026-04-06-dontriskitawesome-ai-system-prompts 🧠 Curated collection of system prompts for top AI tools. Perfect for AI agent builders and prompt engineers. Incuding ChatGPT, Claude, Perplexity, Manus, Claude-Code, Loveable, v0, Grok, same new,`
 - 来源：`raw/web/llm/2026-04-06-dontriskitawesome-ai-system-prompts 🧠 Curated collection of system prompts for top AI tools. Perfect for AI agent builders and prompt engineers. Incuding ChatGPT, Claude, Perplexity, Manus, Claude-Code, Loveable, v0, Grok, same new,.md`
 - 主题：大语言模型
 

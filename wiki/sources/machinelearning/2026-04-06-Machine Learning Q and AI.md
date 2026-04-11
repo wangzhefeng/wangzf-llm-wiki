@@ -1,6 +1,6 @@
 ---
 source_type: web
-source_path: raw/web/machine-learning/2026-04-06-Machine Learning Q and AI.md
+source_path: raw/web/machinelearning/2026-04-06-Machine Learning Q and AI.md
 title: Machine Learning Q and AI
 author: unknown
 published_at: 2026-04-06
@@ -16,7 +16,8 @@ status: summarized
 
 ## 这份材料讲了什么
 
-- 来源：`raw/web/machine-learning/2026-04-06-Machine Learning Q and AI.md`
+- 原文：[[raw/web/machinelearning/2026-04-06-Machine Learning Q and AI]]
+- 来源：`raw/web/machinelearning/2026-04-06-Machine Learning Q and AI.md`
 - 主题：机器学习
 
 ## 价值是什么

@@ -16,6 +16,7 @@ status: summarized
 
 ## 这份材料讲了什么
 
+- 原文：`raw/web/collection/2026-04-06-2025年的年终总结--MkSaaS---Make-Your-AI-SaaS-Product-in-a-Weekend`
 - 来源：`raw/web/collection/2026-04-06-2025年的年终总结--MkSaaS---Make-Your-AI-SaaS-Product-in-a-Weekend.md`
 - 主题：待分类
 

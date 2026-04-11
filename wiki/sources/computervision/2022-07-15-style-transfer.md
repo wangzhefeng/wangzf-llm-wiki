@@ -18,6 +18,7 @@ status: summarized
 
 ## 这份材料讲了什么
 
+- 原文：[[raw/local-notes/cv/others/2022-07-15-style-transfer/index]]
 ---
 
 ## 价值是什么

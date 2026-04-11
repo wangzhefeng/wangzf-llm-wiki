@@ -16,6 +16,7 @@ status: summarized
 
 ## 这份材料讲了什么
 
+- 原文：[[raw/web/deeplearning/2026-04-06-google-researchtuning_playbook A playbook for systematically maximizing the performance of deep learning models]]
 - 来源：`raw/web/deeplearning/2026-04-06-google-researchtuning_playbook A playbook for systematically maximizing the performance of deep learning models.md`
 - 主题：深度学习
 

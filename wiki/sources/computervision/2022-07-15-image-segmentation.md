@@ -17,6 +17,7 @@ status: summarized
 
 ## 这份材料讲了什么
 
+- 原文：[[raw/local-notes/cv/image-segmentation/2022-07-15-image-segmentation/index]]
 ---
 
 ## 价值是什么

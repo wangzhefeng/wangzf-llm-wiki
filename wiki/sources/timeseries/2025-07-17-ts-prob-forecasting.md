@@ -17,6 +17,7 @@ status: summarized
 
 ## 这份材料讲了什么
 
+- 原文：[[raw/local-notes/post/2025-07-17-ts-prob-forecasting/index]]
 - 来源：`raw/local-notes/post/2025-07-17-ts-prob-forecasting/index.md`
 - 归属主题：时间序列
 

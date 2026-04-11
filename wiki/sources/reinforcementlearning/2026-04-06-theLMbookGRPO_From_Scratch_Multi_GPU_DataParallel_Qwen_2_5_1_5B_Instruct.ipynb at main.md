@@ -1,6 +1,6 @@
 ---
 source_type: web
-source_path: raw/web/reinforcement-learning/2026-04-06-theLMbookGRPO_From_Scratch_Multi_GPU_DataParallel_Qwen_2_5_1_5B_Instruct.ipynb at main.md
+source_path: raw/web/reinforcementlearning/2026-04-06-theLMbookGRPO_From_Scratch_Multi_GPU_DataParallel_Qwen_2_5_1_5B_Instruct.ipynb at main.md
 title: theLMbook/GRPO_From_Scratch_Multi_GPU_DataParallel_Qwen_2_5_1_5B_Instruct.ipynb at main
 author: unknown
 published_at: 2026-04-06
@@ -16,7 +16,8 @@ status: summarized
 
 ## 这份材料讲了什么
 
-- 来源：`raw/web/reinforcement-learning/2026-04-06-theLMbookGRPO_From_Scratch_Multi_GPU_DataParallel_Qwen_2_5_1_5B_Instruct.ipynb at main.md`
+- 原文：`raw/web/reinforcementlearning/2026-04-06-theLMbookGRPO_From_Scratch_Multi_GPU_DataParallel_Qwen_2_5_1_5B_Instruct.ipynb at main`
+- 来源：`raw/web/reinforcementlearning/2026-04-06-theLMbookGRPO_From_Scratch_Multi_GPU_DataParallel_Qwen_2_5_1_5B_Instruct.ipynb at main.md`
 - 主题：强化学习
 
 ## 价值是什么

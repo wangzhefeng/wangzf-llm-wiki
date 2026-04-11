@@ -18,6 +18,7 @@ status: summarized
 
 ## 这份材料讲了什么
 
+- 原文：[[raw/local-notes/vibe-coding/OpenClaw橙皮书-从入门到精通-v1.2.0.pdf]]
 - 来源：`raw/local-notes/vibe-coding/OpenClaw橙皮书-从入门到精通-v1.2.0.pdf`
 - 类型：专题 PDF 资料
 

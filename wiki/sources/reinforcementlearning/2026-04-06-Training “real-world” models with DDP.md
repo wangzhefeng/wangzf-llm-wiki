@@ -1,6 +1,6 @@
 ---
 source_type: web
-source_path: raw/web/reinforcement-learning/2026-04-06-Training “real-world” models with DDP.md
+source_path: raw/web/deeplearning/2026-04-06-Training “real-world” models with DDP.md
 title: Training “real-world” models with DDP
 author: unknown
 published_at: 2026-04-06
@@ -16,7 +16,8 @@ status: summarized
 
 ## 这份材料讲了什么
 
-- 来源：`raw/web/reinforcement-learning/2026-04-06-Training “real-world” models with DDP.md`
+- 原文：[[raw/web/deeplearning/2026-04-06-Training “real-world” models with DDP]]
+- 来源：`raw/web/deeplearning/2026-04-06-Training “real-world” models with DDP.md`
 - 主题：强化学习
 
 ## 价值是什么

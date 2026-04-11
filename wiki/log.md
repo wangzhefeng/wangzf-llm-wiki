@@ -88,3 +88,19 @@ status: linked
 
 - Added `tools/organize_assets_leftovers.py`：将残留 `uncategorized` 与根目录 `*.latex` 归并到 `raw/assets/attachments/shared/`。
 - Added `tools/normalize_attachment_dir_names.py`：将附件主题目录名与 wiki 主题 slug 对齐，并批量改写引用路径。
+
+## [2026-04-11] update | entities/comparisons/queries 入口补齐 + 图谱连通性修复
+
+- Added `wiki/entities/index.md` + 若干实体页（Sebastian Raschka、Jason Brownlee、Datawhale、PyTorch Contributors、时序之心）。
+- Added `wiki/comparisons/index.md`、`wiki/queries/index.md`，并沉淀 2 个可复用 query 入口页。
+- Fixed reachability from `wiki/index.md`（unreachable = 0）。
+- Logged: `outputs/logs/2026-04-11-知识库-图谱连通性诊断.md`
+
+## [2026-04-11] backfill | Obsidian 图谱 raw/outputs 连通性补齐
+
+- Added `tools/backfill_raw_wikilinks_in_source_cards.py`：为来源卡补齐指向 raw 的显式 wikilink（让 Obsidian 图谱可见边）。
+- Added `tools/fix_broken_source_path_by_filename.py`：修复 `source_path` 指向不存在 raw 路径的问题（按文件名唯一匹配）。
+- Added `tools/create_missing_source_cards_for_raw.py`：为缺失来源卡的 raw/web 等条目生成最小来源卡入口。
+- Added `tools/backfill_raw_local_notes_index_links.py`：为 `raw/local-notes/**/_index.md` 补 wiki 入口链接。
+- Updated `raw/codex_threads/README.md`、`outputs/README.md`、`prompts/README.md`、`README.md`：补齐图谱入口链接，减少“散点”。
+- Updated `tools/wiki_health_check.py`：支持校验 `[[raw/...]]` 形式的 wikilink。

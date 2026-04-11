@@ -10,3 +10,5 @@ order_by: title
 * [使用 Google Colab 训练的图像分类模型](https://mp.weixin.qq.com/s/41WNBhDWua0ptSyPMuY36w) 
 
 ## Doc
+
+- Wiki 入口：[[wiki/indexes/computervision/计算机视觉总索引]]

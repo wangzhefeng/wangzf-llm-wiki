@@ -17,6 +17,7 @@ status: summarized
 
 ## 这份材料讲了什么
 
+- 原文：[[raw/local-notes/post/2023-07-30-montecarlo/index]]
 - 来源：`raw/local-notes/post/2023-07-30-montecarlo/index.md`
 - 归属主题：时间序列
 

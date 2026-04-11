@@ -18,6 +18,7 @@ status: summarized
 
 ## 这份材料讲了什么
 
+- 原文：[[raw/local-notes/llm/2024-08-14-llm-models-api/index]]
 - 来源：`raw/local-notes/llm/2024-08-14-llm-models-api/index.md`
 - 主题：LLM 本地知识笔记
 

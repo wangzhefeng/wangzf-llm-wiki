@@ -16,6 +16,7 @@ status: summarized
 
 ## 这份材料讲了什么
 
+- 原文：[[raw/web/llm/2026-04-06-Agentic后训练 - SFT（监督微调）全流程详解]]
 - 来源：`raw/web/llm/2026-04-06-Agentic后训练 - SFT（监督微调）全流程详解.md`
 - 主题：大语言模型
 

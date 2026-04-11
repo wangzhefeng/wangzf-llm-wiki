@@ -1,6 +1,6 @@
 ---
 source_type: web
-source_path: raw/web/collection/2026-04-06-Agentic后训练---SFT（监督微调）全流程详解.md
+source_path: raw/web/llm/2026-04-06-Agentic后训练---SFT（监督微调）全流程详解.md
 title: Agentic后训练 - SFT（监督微调）全流程详解
 author: unknown
 published_at: 2026-04-06
@@ -16,7 +16,8 @@ status: summarized
 
 ## 这份材料讲了什么
 
-- 来源：`raw/web/collection/2026-04-06-Agentic后训练---SFT（监督微调）全流程详解.md`
+- 原文：[[raw/web/llm/2026-04-06-Agentic后训练---SFT（监督微调）全流程详解]]
+- 来源：`raw/web/llm/2026-04-06-Agentic后训练---SFT（监督微调）全流程详解.md`
 - 主题：大语言模型
 
 ## 价值是什么

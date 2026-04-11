@@ -16,6 +16,7 @@ status: summarized
 
 ## 这份材料讲了什么
 
+- 原文：[[raw/web/llm/2026-04-06-mbzuai-oryxAwesome-LLM-Post-training Awesome Reasoning LLM TutorialSurveyGuide]]
 - 来源：`raw/web/llm/2026-04-06-mbzuai-oryxAwesome-LLM-Post-training Awesome Reasoning LLM TutorialSurveyGuide.md`
 - 主题：大语言模型
 

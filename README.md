@@ -80,3 +80,8 @@
 
 - [使用说明](raw/codex_threads/README.md)
 - [线程总结模板](raw/codex_threads/线程总结模板.md)
+
+## 仓库元信息
+
+- [[TODO]]
+- [[purpose]]

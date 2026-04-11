@@ -16,6 +16,7 @@ status: summarized
 
 ## 这份材料讲了什么
 
+- 原文：`raw/web/collection/2026-04-06-Your-First-API-Call--DeepSeek-API-Docs`
 - 来源：`raw/web/collection/2026-04-06-Your-First-API-Call--DeepSeek-API-Docs.md`
 - 主题：待分类
 

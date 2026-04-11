@@ -18,6 +18,7 @@ status: summarized
 
 ## 这份材料讲了什么
 
+- 原文：[[raw/local-notes/deeplearning/2022-12-01-dl-experience/index]]
 - 来源：`raw/local-notes/deeplearning/2022-12-01-dl-experience/index.md`
 - 主题：经验总结
 - 类型：本地历史笔记（deep learning）

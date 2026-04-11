@@ -1,6 +1,6 @@
 ---
 source_type: web
-source_path: raw/web/uncategorized/2026-04-06-nanoVLMmodelsconfig.py at main.md
+source_path: raw/web/llm/2026-04-06-nanoVLMmodelsconfig.py at main.md
 title: nanoVLM/models/config.py at main
 author: unknown
 published_at: 2026-04-06
@@ -16,6 +16,7 @@ status: summarized
 
 ## 这份材料讲了什么
 
+- 原文：`raw/web/llm/2026-04-06-nanoVLMmodelsconfig.py at main`
 - 来源：`raw/web/uncategorized/2026-04-06-nanoVLMmodelsconfig.py at main.md`
 - 主题：计算机视觉
 

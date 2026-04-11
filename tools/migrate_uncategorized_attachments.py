@@ -23,7 +23,9 @@ TOPIC_DIR_MAP = {
     "machinelearning": "machine-learning",
     "reinforcementlearning": "reinforcement-learning",
     "data_structure_algorithm": "data-structure-algorithm",
+    "data-structure-algorithm": "data-structure-algorithm",
     "control_algorithms": "control-algorithms",
+    "control-algorithms": "control-algorithms",
     "knowledge-base-building": "knowledge-base-building",
 }
 
@@ -151,4 +153,3 @@ def main() -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
-

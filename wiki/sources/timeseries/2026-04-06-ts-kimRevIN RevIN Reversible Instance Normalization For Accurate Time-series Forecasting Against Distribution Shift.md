@@ -16,6 +16,7 @@ status: summarized
 
 ## 这份材料讲了什么
 
+- 原文：[[raw/web/timeseries/2026-04-06-ts-kimRevIN RevIN Reversible Instance Normalization For Accurate Time-series Forecasting Against Distribution Shift]]
 - 来源：`raw/web/timeseries/2026-04-06-ts-kimRevIN RevIN Reversible Instance Normalization For Accurate Time-series Forecasting Against Distribution Shift.md`
 - 主题：时间序列
 

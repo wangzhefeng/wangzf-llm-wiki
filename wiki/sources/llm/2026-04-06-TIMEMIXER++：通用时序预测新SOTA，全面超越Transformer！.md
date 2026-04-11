@@ -1,6 +1,6 @@
 ---
 source_type: web
-source_path: raw/web/llm/2026-04-06-TIMEMIXER++：通用时序预测新SOTA，全面超越Transformer！.md
+source_path: raw/web/timeseries/2026-04-06-TIMEMIXER++：通用时序预测新SOTA，全面超越Transformer！.md
 title: TIMEMIXER++：通用时序预测新SOTA，全面超越Transformer！
 author: unknown
 published_at: 2026-04-06
@@ -16,7 +16,8 @@ status: summarized
 
 ## 这份材料讲了什么
 
-- 来源：`raw/web/llm/2026-04-06-TIMEMIXER++：通用时序预测新SOTA，全面超越Transformer！.md`
+- 原文：[[raw/web/timeseries/2026-04-06-TIMEMIXER++：通用时序预测新SOTA，全面超越Transformer！]]
+- 来源：`raw/web/timeseries/2026-04-06-TIMEMIXER++：通用时序预测新SOTA，全面超越Transformer！.md`
 - 主题：大语言模型
 
 ## 价值是什么

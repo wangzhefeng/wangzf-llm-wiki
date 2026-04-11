@@ -16,6 +16,7 @@ status: summarized
 
 ## 这份材料讲了什么
 
+- 原文：[[raw/web/llm/2026-04-06-MxoderLLM-from-scratch 一些 LLM 方面的从零复现笔记]]
 - 来源：`raw/web/llm/2026-04-06-MxoderLLM-from-scratch 一些 LLM 方面的从零复现笔记.md`
 - 主题：大语言模型
 

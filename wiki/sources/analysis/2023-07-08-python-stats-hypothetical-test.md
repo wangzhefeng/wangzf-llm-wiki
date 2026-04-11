@@ -17,6 +17,7 @@ status: summarized
 
 ## 这份材料讲了什么
 
+- 原文：[[raw/local-notes/analysis/statistics/2023-07-08-python-stats-hypothetical-test/index]]
 ---
 
 ## 价值是什么

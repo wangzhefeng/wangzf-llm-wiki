@@ -18,6 +18,7 @@ status: summarized
 
 ## 这份材料讲了什么
 
+- 原文：[[raw/local-notes/nlp/nlp-speech/2022-12-02-nlp-machine-translation/index]]
 - 来源：`raw/local-notes/nlp/nlp-speech/2022-12-02-nlp-machine-translation/index.md`
 - 主题：NLP 本地知识笔记
 

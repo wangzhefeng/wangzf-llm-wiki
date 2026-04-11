@@ -10,3 +10,5 @@ order_by: title
 * [建立重复图像查找系统](https://mp.weixin.qq.com/s/BE_07eA3nDBsEKyB4jcVoA)
 
 ## Doc
+
+- Wiki 入口：[[wiki/indexes/computervision/计算机视觉总索引]]

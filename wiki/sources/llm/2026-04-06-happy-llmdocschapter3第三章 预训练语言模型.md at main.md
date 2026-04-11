@@ -16,6 +16,7 @@ status: summarized
 
 ## 这份材料讲了什么
 
+- 原文：`raw/web/llm/2026-04-06-happy-llmdocschapter3第三章 预训练语言模型.md at main`
 - 来源：`raw/web/llm/2026-04-06-happy-llmdocschapter3第三章 预训练语言模型.md at main.md`
 - 主题：大语言模型
 

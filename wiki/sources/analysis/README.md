@@ -31,8 +31,10 @@ status: inbox
 - [[wiki/sources/analysis/2023-07-20-bayesian-net]]
 - [[wiki/sources/analysis/2023-07-20-statistics-probability]]
 - [[wiki/sources/analysis/2023-07-25-causal-inference]]
+- [[wiki/sources/analysis/2026-04-06-改进探索性数据分析的实用技巧！]]
 - [[wiki/sources/analysis/数据分析专题来源]]
 
 <!-- AUTO-GENERATED: sources-dir-index:end -->
+
 
 

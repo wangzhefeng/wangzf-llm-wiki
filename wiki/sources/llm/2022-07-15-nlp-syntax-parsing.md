@@ -18,6 +18,7 @@ status: summarized
 
 ## 这份材料讲了什么
 
+- 原文：[[raw/local-notes/llm/nlp-tasks/2022-07-15-nlp-syntax-parsing/index]]
 - 来源：`raw/local-notes/llm/nlp-tasks/2022-07-15-nlp-syntax-parsing/index.md`
 - 主题：LLM 本地知识笔记
 

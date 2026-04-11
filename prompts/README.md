@@ -4,7 +4,7 @@
 
 当前分类基线与自动扩展触发条件见：
 
-- `prompt-分类与触发规则.md`
+- [[prompts/prompt-分类与触发规则]]
 
 约束：
 
@@ -27,9 +27,9 @@
 
 - `intake/source-summary.md`
   通用来源摘要卡生成模板。适合你已经准备好 `raw` 材料，只想生成一页 `wiki/sources/` 摘要卡时使用。
-- `intake/web-source-intake.md`
+- [[prompts/intake/web-source-intake]]
   网页来源沉淀模板。适合技术文章、官方文档、教程示例页。
-- `intake/repo-source-intake.md`
+- [[prompts/intake/repo-source-intake]]
   代码仓库来源沉淀模板。适合 GitHub 仓库、算法实现仓库、工程项目。
 - `intake/paper-source-intake.md`
   论文来源沉淀模板。适合论文 PDF、论文笔记、论文元数据页。
@@ -51,9 +51,9 @@
 
 用于把一个新专题成批纳入当前知识库。
 
-- `topic-intake/topic-intake-plan.md`
+- [[prompts/topic-intake/topic-intake-plan]]
   先产出专题纳入计划，不直接实施。适合新专题体量较大、结构还不清楚时使用。
-- `topic-intake/topic-intake-execute.md`
+- [[prompts/topic-intake/topic-intake-execute]]
   基于已确认计划直接实施。适合你已经确认范围、希望直接落盘到知识库时使用。
 
 ## 4. 维护检查类

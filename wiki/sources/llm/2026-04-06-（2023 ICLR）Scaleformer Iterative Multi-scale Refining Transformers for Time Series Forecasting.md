@@ -16,6 +16,7 @@ status: summarized
 
 ## 这份材料讲了什么
 
+- 原文：[[raw/web/llm/2026-04-06-（2023 ICLR）Scaleformer Iterative Multi-scale Refining Transformers for Time Series Forecasting]]
 - 来源：`raw/web/llm/2026-04-06-（2023 ICLR）Scaleformer Iterative Multi-scale Refining Transformers for Time Series Forecasting.md`
 - 主题：大语言模型
 

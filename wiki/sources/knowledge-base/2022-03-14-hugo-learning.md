@@ -17,6 +17,7 @@ status: summarized
 
 ## 这份材料讲了什么
 
+- 原文：[[raw/local-notes/post/2022-03-14-hugo-learning/index]]
 - 来源：`raw/local-notes/post/2022-03-14-hugo-learning/index.md`
 - 归属主题：知识库建设
 

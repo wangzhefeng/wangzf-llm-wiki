@@ -1,6 +1,6 @@
 ---
 source_type: web
-source_path: raw/web/uncategorized/2026-04-06-h2o-tutorialstutorialsensembles-stacking at master.md
+source_path: raw/web/machinelearning/2026-04-06-h2o-tutorialstutorialsensembles-stacking at master.md
 title: h2o-tutorials/tutorials/ensembles-stacking at master
 author: unknown
 published_at: 2026-04-06
@@ -16,7 +16,8 @@ status: summarized
 
 ## 这份材料讲了什么
 
-- 来源：`raw/web/uncategorized/2026-04-06-h2o-tutorialstutorialsensembles-stacking at master.md`
+- 原文：[[raw/web/machinelearning/2026-04-06-h2o-tutorialstutorialsensembles-stacking at master]]
+- 来源：`raw/web/machinelearning/2026-04-06-h2o-tutorialstutorialsensembles-stacking at master.md`
 - 主题：待分类
 
 ## 价值是什么

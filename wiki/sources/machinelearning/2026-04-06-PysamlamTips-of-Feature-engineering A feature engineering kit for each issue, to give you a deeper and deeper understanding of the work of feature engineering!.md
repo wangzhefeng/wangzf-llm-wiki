@@ -1,6 +1,6 @@
 ---
 source_type: web
-source_path: raw/web/uncategorized/2026-04-06-PysamlamTips-of-Feature-engineering A feature engineering kit for each issue, to give you a deeper and deeper understanding of the work of feature engineering!.md
+source_path: raw/web/machinelearning/2026-04-06-PysamlamTips-of-Feature-engineering A feature engineering kit for each issue, to give you a deeper and deeper understanding of the work of feature engineering!.md
 title: Pysamlam/Tips-of-Feature-engineering: A feature engineering kit for each issue, to give you a deeper and deeper understanding of the work of feature engineering!
 author: unknown
 published_at: 2026-04-06
@@ -16,7 +16,8 @@ status: summarized
 
 ## 这份材料讲了什么
 
-- 来源：`raw/web/uncategorized/2026-04-06-PysamlamTips-of-Feature-engineering A feature engineering kit for each issue, to give you a deeper and deeper understanding of the work of feature engineering!.md`
+- 原文：[[raw/web/machinelearning/2026-04-06-PysamlamTips-of-Feature-engineering A feature engineering kit for each issue, to give you a deeper and deeper understanding of the work of feature engineering!]]
+- 来源：`raw/web/machinelearning/2026-04-06-PysamlamTips-of-Feature-engineering A feature engineering kit for each issue, to give you a deeper and deeper understanding of the work of feature engineering!.md`
 - 主题：机器学习
 
 ## 价值是什么

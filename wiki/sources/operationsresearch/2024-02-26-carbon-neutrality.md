@@ -17,6 +17,7 @@ status: summarized
 
 ## 这份材料讲了什么
 
+- 原文：[[raw/local-notes/post/2024-02-26-carbon-neutrality/index]]
 - 来源：`raw/local-notes/post/2024-02-26-carbon-neutrality/index.md`
 - 归属主题：运筹优化
 

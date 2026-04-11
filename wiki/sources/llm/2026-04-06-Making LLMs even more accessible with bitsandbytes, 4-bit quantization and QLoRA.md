@@ -16,6 +16,7 @@ status: summarized
 
 ## 这份材料讲了什么
 
+- 原文：[[raw/web/llm/2026-04-06-Making LLMs even more accessible with bitsandbytes, 4-bit quantization and QLoRA]]
 - 来源：`raw/web/llm/2026-04-06-Making LLMs even more accessible with bitsandbytes, 4-bit quantization and QLoRA.md`
 - 主题：大语言模型
 

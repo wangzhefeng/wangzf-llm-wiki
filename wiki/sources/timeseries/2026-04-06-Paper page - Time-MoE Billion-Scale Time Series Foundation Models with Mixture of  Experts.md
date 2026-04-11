@@ -16,6 +16,7 @@ status: summarized
 
 ## 这份材料讲了什么
 
+- 原文：[[raw/web/timeseries/2026-04-06-Paper page - Time-MoE Billion-Scale Time Series Foundation Models with Mixture of  Experts]]
 - 来源：`raw/web/timeseries/2026-04-06-Paper page - Time-MoE Billion-Scale Time Series Foundation Models with Mixture of  Experts.md`
 - 主题：时间序列
 
