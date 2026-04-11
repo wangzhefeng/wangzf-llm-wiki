@@ -16,7 +16,7 @@ status: summarized
 # scikit-learn 滞后特征预测示例来源摘要
 
 
-- 原文：[[raw/web/timeseries/2026-04-05-scikit-learn-lagged-features]]
+- 原文：[[raw/web/timeseries/2026-04-05-scikit-learn-lagged-features.md]]
 ## 材料定位
 
 这是一篇官方示例页，重点不在“介绍某个单一模型”，而在演示如何把时间序列通过滞后特征转成表格监督学习问题，并用正确的时间序列验证方式评估机器学习预测模型。

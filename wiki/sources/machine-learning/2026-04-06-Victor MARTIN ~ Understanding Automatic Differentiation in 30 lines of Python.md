@@ -3,15 +3,15 @@ created_at: 2026-04-11
 topics:
   - machinelearning
 status: inbox
-source_path: raw/web/machinelearning/2026-04-06-Victor MARTIN ~ Understanding Automatic Differentiation in 30 lines of Python.md
+source_path: raw/web/machine-learning/2026-04-06-Victor MARTIN ~ Understanding Automatic Differentiation in 30 lines of Python.md
 ---
 
 # 来源卡：2026-04-06-Victor MARTIN ~ Understanding Automatic Differentiation in 30 lines of Python
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/web/machinelearning/2026-04-06-Victor MARTIN ~ Understanding Automatic Differentiation in 30 lines of Python]]
-- 来源路径：`raw/web/machinelearning/2026-04-06-Victor MARTIN ~ Understanding Automatic Differentiation in 30 lines of Python.md`
+- 原文：[[raw/web/deep-learning/2026-04-06-Victor MARTIN ~ Understanding Automatic Differentiation in 30 lines of Python.md]]
+- 来源路径：`raw/web/machine-learning/2026-04-06-Victor MARTIN ~ Understanding Automatic Differentiation in 30 lines of Python.md`
 
 ## 价值是什么
 

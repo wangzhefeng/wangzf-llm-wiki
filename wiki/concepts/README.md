@@ -37,15 +37,15 @@ status: linked
 
 ## Topics
 
-- [[wiki/concepts/analysis/README]]
+- [[wiki/concepts/data-analysis/README]]
 - [[wiki/concepts/autofix/README]]
-- [[wiki/concepts/computervision/README]]
+- [[wiki/concepts/computer-vision/README]]
 - [[wiki/concepts/control-algorithms/README]]
 - [[wiki/concepts/data-structure-algorithm/README]]
-- [[wiki/concepts/deeplearning/README]]
+- [[wiki/concepts/deep-learning/README]]
 - [[wiki/concepts/knowledge-base/README]]
 - [[wiki/concepts/llm/README]]
-- [[wiki/concepts/machinelearning/README]]
-- [[wiki/concepts/operationsresearch/README]]
-- [[wiki/concepts/reinforcementlearning/README]]
+- [[wiki/concepts/machine-learning/README]]
+- [[wiki/concepts/operations-research/README]]
+- [[wiki/concepts/reinforcement-learning/README]]
 - [[wiki/concepts/timeseries/README]]

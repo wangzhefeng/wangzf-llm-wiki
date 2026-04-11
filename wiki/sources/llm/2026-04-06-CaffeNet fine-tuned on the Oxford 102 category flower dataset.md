@@ -1,6 +1,6 @@
 ---
 source_type: web
-source_path: raw/web/operationsresearch/2026-04-06-CaffeNet fine-tuned on the Oxford 102 category flower dataset.md
+source_path: raw/web/computer-vision/2026-04-06-CaffeNet fine-tuned on the Oxford 102 category flower dataset.md
 title: CaffeNet fine-tuned on the Oxford 102 category flower dataset
 author: unknown
 published_at: 2026-04-06
@@ -16,8 +16,8 @@ status: summarized
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/web/operationsresearch/2026-04-06-CaffeNet fine-tuned on the Oxford 102 category flower dataset]]
-- 来源：`raw/web/operationsresearch/2026-04-06-CaffeNet fine-tuned on the Oxford 102 category flower dataset.md`
+- 原文：[[raw/web/computer-vision/2026-04-06-CaffeNet fine-tuned on the Oxford 102 category flower dataset]]
+- 来源：`raw/web/computer-vision/2026-04-06-CaffeNet fine-tuned on the Oxford 102 category flower dataset.md`
 - 主题：大语言模型
 
 ## 价值是什么

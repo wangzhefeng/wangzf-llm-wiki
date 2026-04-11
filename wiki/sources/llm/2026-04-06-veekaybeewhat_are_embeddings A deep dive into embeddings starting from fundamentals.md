@@ -1,6 +1,6 @@
 ---
 source_type: web
-source_path: raw/web/machinelearning/2026-04-06-veekaybeewhat_are_embeddings A deep dive into embeddings starting from fundamentals.md
+source_path: raw/web/machine-learning/2026-04-06-veekaybeewhat_are_embeddings A deep dive into embeddings starting from fundamentals.md
 title: veekaybee/what_are_embeddings: A deep dive into embeddings starting from fundamentals
 author: unknown
 published_at: 2026-04-06
@@ -16,8 +16,8 @@ status: summarized
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/web/machinelearning/2026-04-06-veekaybeewhat_are_embeddings A deep dive into embeddings starting from fundamentals]]
-- 来源：`raw/web/machinelearning/2026-04-06-veekaybeewhat_are_embeddings A deep dive into embeddings starting from fundamentals.md`
+- 原文：[[raw/web/machine-learning/2026-04-06-veekaybeewhat_are_embeddings A deep dive into embeddings starting from fundamentals.md]]
+- 来源：`raw/web/machine-learning/2026-04-06-veekaybeewhat_are_embeddings A deep dive into embeddings starting from fundamentals.md`
 - 主题：大语言模型
 
 ## 价值是什么

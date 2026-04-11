@@ -1,6 +1,6 @@
 ---
 source_type: local_note
-source_path: raw/local-notes/vibe-coding/Claude Code从入门到精通-v2.0.0.pdf
+source_path: raw/localnotes/vibe-coding/Claude Code从入门到精通-v2.0.0.pdf
 title: Vibe Coding - Claude Code从入门到精通-v2.0.0
 author: wangzf
 published_at: 2026-04-09
@@ -18,8 +18,8 @@ status: summarized
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/local-notes/vibe-coding/Claude Code从入门到精通-v2.0.0.pdf]]
-- 来源：`raw/local-notes/vibe-coding/Claude Code从入门到精通-v2.0.0.pdf`
+- 原文：[[raw/localnotes/vibe-coding/Claude Code从入门到精通-v2.0.0.pdf]]
+- 来源：`raw/localnotes/vibe-coding/Claude Code从入门到精通-v2.0.0.pdf`
 - 类型：专题 PDF 资料
 
 ## 价值是什么

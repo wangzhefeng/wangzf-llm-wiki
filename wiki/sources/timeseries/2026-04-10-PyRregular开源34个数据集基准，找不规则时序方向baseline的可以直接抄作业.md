@@ -10,7 +10,7 @@ source_path: raw/web/timeseries/2026-04-10-PyRregular开源34个数据集基准�
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/web/timeseries/2026-04-10-PyRregular开源34个数据集基准，找不规则时序方向baseline的可以直接抄作业]]
+- 原文：[[raw/web/timeseries/2026-04-10-PyRregular开源34个数据集基准，找不规则时序方向baseline的可以直接抄作业.md]]
 - 来源路径：`raw/web/timeseries/2026-04-10-PyRregular开源34个数据集基准，找不规则时序方向baseline的可以直接抄作业.md`
 
 ## 价值是什么

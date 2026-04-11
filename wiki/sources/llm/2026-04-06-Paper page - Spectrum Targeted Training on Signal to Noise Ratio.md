@@ -3,15 +3,15 @@ created_at: 2026-04-11
 topics:
   - llm
 status: inbox
-source_path: raw/web/llm/2026-04-06-Paper page - Spectrum Targeted Training on Signal to Noise Ratio.md
+source_path: raw/web/llm-pre-training/2026-04-06-Paper page - Spectrum Targeted Training on Signal to Noise Ratio.md
 ---
 
 # 来源卡：2026-04-06-Paper page - Spectrum Targeted Training on Signal to Noise Ratio
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/web/llm/2026-04-06-Paper page - Spectrum Targeted Training on Signal to Noise Ratio]]
-- 来源路径：`raw/web/llm/2026-04-06-Paper page - Spectrum Targeted Training on Signal to Noise Ratio.md`
+- 原文：[[raw/web/llm-pre-training/2026-04-06-Paper page - Spectrum Targeted Training on Signal to Noise Ratio.md]]
+- 来源路径：`raw/web/llm-pre-training/2026-04-06-Paper page - Spectrum Targeted Training on Signal to Noise Ratio.md`
 
 ## 价值是什么
 

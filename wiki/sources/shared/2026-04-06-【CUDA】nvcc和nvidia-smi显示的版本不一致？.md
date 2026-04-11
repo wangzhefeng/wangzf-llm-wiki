@@ -10,7 +10,7 @@ source_path: raw/web/tools/2026-04-06-【CUDA】nvcc和nvidia-smi显示的版本
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/web/tools/2026-04-06-【CUDA】nvcc和nvidia-smi显示的版本不一致？]]
+- 原文：[[raw/web/programming-tools/2026-04-06-【CUDA】nvcc和nvidia-smi显示的版本不一致？.md]]
 - 来源路径：`raw/web/tools/2026-04-06-【CUDA】nvcc和nvidia-smi显示的版本不一致？.md`
 
 ## 价值是什么

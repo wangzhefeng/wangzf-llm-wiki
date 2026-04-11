@@ -10,7 +10,7 @@ source_path: raw/web/control-algorithms/2026-04-06-Introduction to Robotics and 
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/web/control-algorithms/2026-04-06-Introduction to Robotics and Perception — Introduction to Robotics and Perception]]
+- 原文：[[raw/web/control-algorithms/2026-04-06-Introduction to Robotics and Perception — Introduction to Robotics and Perception.md]]
 - 来源路径：`raw/web/control-algorithms/2026-04-06-Introduction to Robotics and Perception — Introduction to Robotics and Perception.md`
 
 ## 价值是什么

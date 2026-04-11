@@ -3,7 +3,7 @@ created_at: 2026-04-11
 topics:
   - llm
 status: inbox
-source_path: raw/web/llm/2026-04-06-reasoning-from-scratchch0301_main-chapter-codech03_main.ipynb at main.md
+source_path: raw/web/llm-pre-training/2026-04-06-reasoning-from-scratchch0301_main-chapter-codech03_main.ipynb at main.md
 ---
 
 # 来源卡：2026-04-06-reasoning-from-scratchch0301_main-chapter-codech03_main.ipynb at main
@@ -11,7 +11,7 @@ source_path: raw/web/llm/2026-04-06-reasoning-from-scratchch0301_main-chapter-co
 ## 这份材料讲了什么
 
 - 原文：`raw/web/llm/2026-04-06-reasoning-from-scratchch0301_main-chapter-codech03_main.ipynb at main`
-- 来源路径：`raw/web/llm/2026-04-06-reasoning-from-scratchch0301_main-chapter-codech03_main.ipynb at main.md`
+- 来源路径：`raw/web/llm-pre-training/2026-04-06-reasoning-from-scratchch0301_main-chapter-codech03_main.ipynb at main.md`
 
 ## 价值是什么
 

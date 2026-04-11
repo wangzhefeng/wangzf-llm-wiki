@@ -1,6 +1,6 @@
 ---
 source_type: web
-source_path: raw/web/llm/2026-04-06-Datawhale.md
+source_path: raw/web/llm-pre-training/2026-04-06-Datawhale.md
 title: Datawhale
 author: unknown
 published_at: 2026-04-06
@@ -16,8 +16,8 @@ status: summarized
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/web/llm/2026-04-06-Datawhale]]
-- 来源：`raw/web/llm/2026-04-06-Datawhale.md`
+- 原文：[[raw/web/llm-pre-training/2026-04-06-Datawhale.md]]
+- 来源：`raw/web/llm-pre-training/2026-04-06-Datawhale.md`
 - 主题：机器学习
 
 ## 价值是什么

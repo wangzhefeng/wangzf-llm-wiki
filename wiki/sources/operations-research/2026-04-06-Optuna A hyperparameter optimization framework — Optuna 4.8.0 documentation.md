@@ -1,6 +1,6 @@
 ---
 source_type: web
-source_path: raw/web/operationsresearch/2026-04-06-Optuna A hyperparameter optimization framework — Optuna 4.8.0 documentation.md
+source_path: raw/web/machine-learning/2026-04-06-Optuna A hyperparameter optimization framework — Optuna 4.8.0 documentation.md
 title: Optuna: A hyperparameter optimization framework — Optuna 4.8.0 documentation
 author: unknown
 published_at: 2026-04-06
@@ -16,8 +16,8 @@ status: summarized
 
 ## 这份材料讲了什么
 
-- 原文：`raw/web/operationsresearch/2026-04-06-Optuna A hyperparameter optimization framework — Optuna 4.8.0 documentation`
-- 来源：`raw/web/operationsresearch/2026-04-06-Optuna A hyperparameter optimization framework — Optuna 4.8.0 documentation.md`
+- 原文：`raw/web/operations-research/2026-04-06-Optuna A hyperparameter optimization framework — Optuna 4.8.0 documentation`
+- 来源：`raw/web/machine-learning/2026-04-06-Optuna A hyperparameter optimization framework — Optuna 4.8.0 documentation.md`
 - 主题：运筹优化
 
 ## 价值是什么

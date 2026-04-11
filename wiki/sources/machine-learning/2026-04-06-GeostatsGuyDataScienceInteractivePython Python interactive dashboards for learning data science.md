@@ -1,6 +1,6 @@
 ---
 source_type: web
-source_path: raw/web/machinelearning/2026-04-06-GeostatsGuyDataScienceInteractivePython Python interactive dashboards for learning data science.md
+source_path: raw/web/machine-learning/2026-04-06-GeostatsGuyDataScienceInteractivePython Python interactive dashboards for learning data science.md
 title: GeostatsGuy/DataScienceInteractivePython: Python interactive dashboards for learning data science
 author: unknown
 published_at: 2026-04-06
@@ -16,8 +16,8 @@ status: summarized
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/web/machinelearning/2026-04-06-GeostatsGuyDataScienceInteractivePython Python interactive dashboards for learning data science]]
-- 来源：`raw/web/machinelearning/2026-04-06-GeostatsGuyDataScienceInteractivePython Python interactive dashboards for learning data science.md`
+- 原文：[[raw/web/machine-learning/2026-04-06-GeostatsGuyDataScienceInteractivePython Python interactive dashboards for learning data science.md]]
+- 来源：`raw/web/machine-learning/2026-04-06-GeostatsGuyDataScienceInteractivePython Python interactive dashboards for learning data science.md`
 - 主题：机器学习
 
 ## 价值是什么

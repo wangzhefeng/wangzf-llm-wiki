@@ -1,6 +1,6 @@
 ---
 source_type: local_note
-source_path: raw/local-notes/post/2024-10-16-virtual-power-plant/index.md
+source_path: raw/localnotes/post/2024-10-16-virtual-power-plant/index.md
 title: 虚拟电厂
 author: wangzf
 published_at: 2024-10-16
@@ -17,8 +17,8 @@ status: summarized
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/local-notes/post/2024-10-16-virtual-power-plant/index]]
-- 来源：`raw/local-notes/post/2024-10-16-virtual-power-plant/index.md`
+- 原文：[[raw/papers/2023-05-21-how-to-read-papers/index.md]]
+- 来源：`raw/localnotes/post/2024-10-16-virtual-power-plant/index.md`
 - 归属主题：运筹优化
 
 ## 价值是什么

@@ -1,6 +1,6 @@
 ---
 source_type: web
-source_path: raw/web/reinforcementlearning/2026-04-06-xtunerREADME_zh-CN.md at main.md
+source_path: raw/web/llm-others/2026-04-06-xtunerREADME_zh-CN.md at main.md
 title: xtuner/README_zh-CN.md at main
 author: unknown
 published_at: 2026-04-06
@@ -16,8 +16,8 @@ status: summarized
 
 ## 这份材料讲了什么
 
-- 原文：`raw/web/reinforcementlearning/2026-04-06-xtunerREADME_zh-CN.md at main`
-- 来源：`raw/web/reinforcementlearning/2026-04-06-xtunerREADME_zh-CN.md at main.md`
+- 原文：`raw/web/reinforcement-learning/2026-04-06-xtunerREADME_zh-CN.md at main`
+- 来源：`raw/web/llm-others/2026-04-06-xtunerREADME_zh-CN.md at main.md`
 - 主题：待分类
 
 ## 价值是什么

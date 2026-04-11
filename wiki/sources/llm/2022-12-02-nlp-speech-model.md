@@ -1,6 +1,6 @@
 ---
 source_type: local_note
-source_path: raw/local-notes/nlp/nlp-speech/2022-12-02-nlp-speech-model/index.md
+source_path: raw/localnotes/nlp/nlp-speech/2022-12-02-nlp-speech-model/index.md
 title: 语音模型 Speech Model
 author: wangzf
 published_at: 2022-12-02
@@ -18,8 +18,8 @@ status: summarized
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/local-notes/nlp/nlp-speech/2022-12-02-nlp-speech-model/index]]
-- 来源：`raw/local-notes/nlp/nlp-speech/2022-12-02-nlp-speech-model/index.md`
+- 原文：[[raw/localnotes/nlp/nlp-speech/2022-12-02-nlp-speech-model/index.md]]
+- 来源：`raw/localnotes/nlp/nlp-speech/2022-12-02-nlp-speech-model/index.md`
 - 主题：NLP 本地知识笔记
 
 ## 价值是什么

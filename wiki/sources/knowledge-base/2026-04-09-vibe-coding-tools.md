@@ -1,6 +1,6 @@
 ---
 source_type: local_note
-source_path: raw/local-notes/vibe-coding/tools/README.md
+source_path: raw/localnotes/vibe-coding/tools/README.md
 title: Vibe Coding - tools
 author: wangzf
 published_at: 2026-04-09
@@ -18,8 +18,8 @@ status: summarized
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/local-notes/vibe-coding/tools/README]]
-- 来源：`raw/local-notes/vibe-coding/tools/README.md`
+- 原文：[[raw/localnotes/vibe-coding/tools/README.md]]
+- 来源：`raw/localnotes/vibe-coding/tools/README.md`
 - 类型：README 知识说明
 
 ## 价值是什么

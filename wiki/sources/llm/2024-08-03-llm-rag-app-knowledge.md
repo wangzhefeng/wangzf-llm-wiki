@@ -1,6 +1,6 @@
 ---
 source_type: local_note
-source_path: raw/local-notes/llm/llm-arch/2024-08-03-llm-rag-app-knowledge/index.md
+source_path: raw/localnotes/llm/llm-arch/2024-08-03-llm-rag-app-knowledge/index.md
 title: LLM 架构--RAG 应用
 author: wangzf
 published_at: 2024-08-03
@@ -18,8 +18,8 @@ status: summarized
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/local-notes/llm/llm-arch/2024-08-03-llm-rag-app-knowledge/index]]
-- 来源：`raw/local-notes/llm/llm-arch/2024-08-03-llm-rag-app-knowledge/index.md`
+- 原文：[[raw/localnotes/llm/llm-arch/2024-08-03-llm-rag-app-knowledge/index.md]]
+- 来源：`raw/localnotes/llm/llm-arch/2024-08-03-llm-rag-app-knowledge/index.md`
 - 主题：LLM 本地知识笔记
 
 ## 价值是什么

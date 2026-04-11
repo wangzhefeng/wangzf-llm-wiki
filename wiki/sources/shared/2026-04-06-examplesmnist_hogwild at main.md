@@ -1,6 +1,6 @@
 ---
 source_type: web
-source_path: raw/web/deeplearning/2026-04-06-examplesmnist_hogwild at main.md
+source_path: raw/web/deep-learning/2026-04-06-examplesmnist_hogwild at main.md
 title: examples/mnist_hogwild at main
 author: unknown
 published_at: 2026-04-06
@@ -16,8 +16,8 @@ status: summarized
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/web/deeplearning/2026-04-06-examplesmnist_hogwild at main]]
-- 来源：`raw/web/deeplearning/2026-04-06-examplesmnist_hogwild at main.md`
+- 原文：[[raw/web/deep-learning/2026-04-06-examplesmnist_hogwild at main.md]]
+- 来源：`raw/web/deep-learning/2026-04-06-examplesmnist_hogwild at main.md`
 - 主题：待分类
 
 ## 价值是什么

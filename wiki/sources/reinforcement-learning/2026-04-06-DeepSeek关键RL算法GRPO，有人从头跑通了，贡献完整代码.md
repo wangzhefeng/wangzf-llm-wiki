@@ -1,6 +1,6 @@
 ---
 source_type: web
-source_path: raw/web/reinforcementlearning/2026-04-06-DeepSeek关键RL算法GRPO，有人从头跑通了，贡献完整代码.md
+source_path: raw/web/reinforcement-learning/2026-04-06-DeepSeek关键RL算法GRPO，有人从头跑通了，贡献完整代码.md
 title: DeepSeek关键RL算法GRPO，有人从头跑通了，贡献完整代码
 author: unknown
 published_at: 2026-04-06
@@ -16,8 +16,8 @@ status: summarized
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/web/reinforcementlearning/2026-04-06-DeepSeek关键RL算法GRPO，有人从头跑通了，贡献完整代码]]
-- 来源：`raw/web/reinforcementlearning/2026-04-06-DeepSeek关键RL算法GRPO，有人从头跑通了，贡献完整代码.md`
+- 原文：[[raw/web/reinforcement-learning/2026-04-06-DeepSeek关键RL算法GRPO，有人从头跑通了，贡献完整代码.md]]
+- 来源：`raw/web/reinforcement-learning/2026-04-06-DeepSeek关键RL算法GRPO，有人从头跑通了，贡献完整代码.md`
 - 主题：强化学习
 
 ## 价值是什么

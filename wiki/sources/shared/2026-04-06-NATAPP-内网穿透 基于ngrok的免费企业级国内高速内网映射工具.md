@@ -16,7 +16,7 @@ status: summarized
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/web/tools/2026-04-06-NATAPP-内网穿透 基于ngrok的免费企业级国内高速内网映射工具]]
+- 原文：[[raw/web/programming-tools/2026-04-06-NATAPP-内网穿透 基于ngrok的免费企业级国内高速内网映射工具.md]]
 - 来源：`raw/web/tools/2026-04-06-NATAPP-内网穿透 基于ngrok的免费企业级国内高速内网映射工具.md`
 - 主题：待分类
 

@@ -1,6 +1,6 @@
 ---
 source_type: local_note
-source_path: raw/local-notes/data-structure-algorithm/2022-05-07-data-structure-algorithm/index.md
+source_path: raw/localnotes/data-structure-algorithm/2022-05-07-data-structure-algorithm/index.md
 title: 2022-05-07-data-structure-algorithm
 author: wangzf
 published_at: 2022-05-07
@@ -18,7 +18,7 @@ status: summarized
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/local-notes/data-structure-algorithm/2022-05-07-data-structure-algorithm/index]]
+- 原文：[[raw/localnotes/data-structure-algorithm/2022-05-07-data-structure-algorithm/index.md]]
 - 原始标题：数据结构与算法概览
 - 主题归类：数据结构
 - 来源类型：本地历史文档（local note）

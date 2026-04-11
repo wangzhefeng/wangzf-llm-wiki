@@ -1,6 +1,6 @@
 ---
 source_type: web
-source_path: raw/web/machinelearning/2026-04-06-Github项目推荐  (Python)用FeatureSelector高效特征选择工具构建机器学习工作流.md
+source_path: raw/web/machine-learning/2026-04-06-Github项目推荐  (Python)用FeatureSelector高效特征选择工具构建机器学习工作流.md
 title: Github项目推荐 | (Python)用FeatureSelector高效特征选择工具构建机器学习工作流
 author: unknown
 published_at: 2026-04-06
@@ -16,8 +16,8 @@ status: summarized
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/web/machinelearning/2026-04-06-Github项目推荐  (Python)用FeatureSelector高效特征选择工具构建机器学习工作流]]
-- 来源：`raw/web/machinelearning/2026-04-06-Github项目推荐  (Python)用FeatureSelector高效特征选择工具构建机器学习工作流.md`
+- 原文：[[raw/web/machine-learning/2026-04-06-Github项目推荐  (Python)用FeatureSelector高效特征选择工具构建机器学习工作流.md]]
+- 来源：`raw/web/machine-learning/2026-04-06-Github项目推荐  (Python)用FeatureSelector高效特征选择工具构建机器学习工作流.md`
 - 主题：机器学习
 
 ## 价值是什么

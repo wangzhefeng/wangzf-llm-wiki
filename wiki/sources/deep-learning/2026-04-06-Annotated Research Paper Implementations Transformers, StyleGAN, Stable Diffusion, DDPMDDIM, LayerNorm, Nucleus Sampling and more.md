@@ -3,15 +3,15 @@ created_at: 2026-04-11
 topics:
   - deeplearning
 status: inbox
-source_path: raw/web/deeplearning/2026-04-06-Annotated Research Paper Implementations Transformers, StyleGAN, Stable Diffusion, DDPMDDIM, LayerNorm, Nucleus Sampling and more.md
+source_path: raw/web/deep-learning/2026-04-06-Annotated Research Paper Implementations Transformers, StyleGAN, Stable Diffusion, DDPMDDIM, LayerNorm, Nucleus Sampling and more.md
 ---
 
 # 来源卡：2026-04-06-Annotated Research Paper Implementations Transformers, StyleGAN, Stable Diffusion, DDPMDDIM, LayerNorm, Nucleus Sampling and more
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/web/deeplearning/2026-04-06-Annotated Research Paper Implementations Transformers, StyleGAN, Stable Diffusion, DDPMDDIM, LayerNorm, Nucleus Sampling and more]]
-- 来源路径：`raw/web/deeplearning/2026-04-06-Annotated Research Paper Implementations Transformers, StyleGAN, Stable Diffusion, DDPMDDIM, LayerNorm, Nucleus Sampling and more.md`
+- 原文：[[raw/web/deep-learning/2026-04-06-Annotated Research Paper Implementations Transformers, StyleGAN, Stable Diffusion, DDPMDDIM, LayerNorm, Nucleus Sampling and more.md]]
+- 来源路径：`raw/web/deep-learning/2026-04-06-Annotated Research Paper Implementations Transformers, StyleGAN, Stable Diffusion, DDPMDDIM, LayerNorm, Nucleus Sampling and more.md`
 
 ## 价值是什么
 

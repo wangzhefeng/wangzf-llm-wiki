@@ -1,6 +1,6 @@
 ---
 source_type: local_note
-source_path: raw/local-notes/cv/others/2022-08-31-opencv-face-detection/index.md
+source_path: raw/localnotes/computer-vision/others/2022-08-31-opencv-face-detection/index.md
 title: 2022-08-31-opencv-face-detection
 author: wangzf
 published_at: 2022-08-31
@@ -17,7 +17,7 @@ status: summarized
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/local-notes/cv/others/2022-08-31-opencv-face-detection/index]]
+- 原文：[[raw/localnotes/computer-vision/others/2022-08-31-opencv-face-detection/index.md]]
 ---
 
 ## 价值是什么

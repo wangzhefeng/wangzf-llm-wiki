@@ -1,6 +1,6 @@
 ---
 source_type: web
-source_path: raw/web/deeplearning/2026-04-06-Tensor Attributes.md
+source_path: raw/web/deep-learning/2026-04-06-Tensor Attributes.md
 title: Tensor Attributes
 author: unknown
 published_at: 2026-04-06
@@ -16,8 +16,8 @@ status: summarized
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/web/deeplearning/2026-04-06-Tensor Attributes]]
-- 来源：`raw/web/deeplearning/2026-04-06-Tensor Attributes.md`
+- 原文：[[raw/web/deep-learning/2026-04-06-Tensor Attributes.md]]
+- 来源：`raw/web/deep-learning/2026-04-06-Tensor Attributes.md`
 - 主题：待分类
 
 ## 价值是什么

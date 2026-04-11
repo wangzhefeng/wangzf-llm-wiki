@@ -3,15 +3,15 @@ created_at: 2026-04-11
 topics:
   - operationsresearch
 status: inbox
-source_path: raw/web/operationsresearch/2026-04-06-CaffeNet fine-tuned on the Oxford 102 category flower dataset.md
+source_path: raw/web/computer-vision/2026-04-06-CaffeNet fine-tuned on the Oxford 102 category flower dataset.md
 ---
 
 # 来源卡：2026-04-06-CaffeNet fine-tuned on the Oxford 102 category flower dataset
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/web/operationsresearch/2026-04-06-CaffeNet fine-tuned on the Oxford 102 category flower dataset]]
-- 来源路径：`raw/web/operationsresearch/2026-04-06-CaffeNet fine-tuned on the Oxford 102 category flower dataset.md`
+- 原文：[[raw/web/computer-vision/2026-04-06-CaffeNet fine-tuned on the Oxford 102 category flower dataset.md]]
+- 来源路径：`raw/web/computer-vision/2026-04-06-CaffeNet fine-tuned on the Oxford 102 category flower dataset.md`
 
 ## 价值是什么
 

@@ -3,15 +3,15 @@ created_at: 2026-04-11
 topics:
   - machinelearning
 status: inbox
-source_path: raw/web/machinelearning/2026-04-06-Welcome to skforecast - Skforecast Docs.md
+source_path: raw/web/machine-learning/2026-04-06-Welcome to skforecast - Skforecast Docs.md
 ---
 
 # 来源卡：2026-04-06-Welcome to skforecast - Skforecast Docs
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/web/machinelearning/2026-04-06-Welcome to skforecast - Skforecast Docs]]
-- 来源路径：`raw/web/machinelearning/2026-04-06-Welcome to skforecast - Skforecast Docs.md`
+- 原文：[[raw/web/timeseries/2026-04-06-Welcome to skforecast - Skforecast Docs.md]]
+- 来源路径：`raw/web/machine-learning/2026-04-06-Welcome to skforecast - Skforecast Docs.md`
 
 ## 价值是什么
 

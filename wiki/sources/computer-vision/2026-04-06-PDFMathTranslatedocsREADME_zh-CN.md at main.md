@@ -3,15 +3,15 @@ created_at: 2026-04-11
 topics:
   - computervision
 status: inbox
-source_path: raw/web/computervision/2026-04-06-PDFMathTranslatedocsREADME_zh-CN.md at main.md
+source_path: raw/web/computer-vision/2026-04-06-PDFMathTranslatedocsREADME_zh-CN.md at main.md
 ---
 
 # 来源卡：2026-04-06-PDFMathTranslatedocsREADME_zh-CN.md at main
 
 ## 这份材料讲了什么
 
-- 原文：`raw/web/computervision/2026-04-06-PDFMathTranslatedocsREADME_zh-CN.md at main`
-- 来源路径：`raw/web/computervision/2026-04-06-PDFMathTranslatedocsREADME_zh-CN.md at main.md`
+- 原文：`raw/web/computer-vision/2026-04-06-PDFMathTranslatedocsREADME_zh-CN.md at main`
+- 来源路径：`raw/web/computer-vision/2026-04-06-PDFMathTranslatedocsREADME_zh-CN.md at main.md`
 
 ## 价值是什么
 

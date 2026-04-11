@@ -16,7 +16,7 @@ status: summarized
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/web/timeseries/2026-04-06-【时间序列】TimesBERT A BERT-Style Foundation Model for Time Series Understanding 论文阅读与分享]]
+- 原文：[[raw/web/timeseries/2026-04-06-【时间序列】TimesBERT A BERT-Style Foundation Model for Time Series Understanding 论文阅读与分享.md]]
 - 来源：`raw/web/timeseries/2026-04-06-【时间序列】TimesBERT A BERT-Style Foundation Model for Time Series Understanding 论文阅读与分享.md`
 - 主题：时间序列
 

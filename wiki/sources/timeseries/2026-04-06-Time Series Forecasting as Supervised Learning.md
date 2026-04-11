@@ -16,7 +16,7 @@ status: summarized
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/web/timeseries/2026-04-06-Time Series Forecasting as Supervised Learning]]
+- 原文：[[raw/web/timeseries/2026-04-06-Time Series Forecasting as Supervised Learning.md]]
 - 来源：`raw/web/timeseries/2026-04-06-Time Series Forecasting as Supervised Learning.md`
 - 主题：时间序列
 

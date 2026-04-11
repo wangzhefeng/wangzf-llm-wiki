@@ -10,7 +10,7 @@ source_path: raw/web/vibe-coding/2026-04-05-vercel-labsagent-browser Browser aut
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/web/vibe-coding/2026-04-05-vercel-labsagent-browser Browser automation CLI for AI agents]]
+- 原文：[[raw/web/vibe-coding/2026-04-05-vercel-labsagent-browser Browser automation CLI for AI agents.md]]
 - 来源路径：`raw/web/vibe-coding/2026-04-05-vercel-labsagent-browser Browser automation CLI for AI agents.md`
 
 ## 价值是什么

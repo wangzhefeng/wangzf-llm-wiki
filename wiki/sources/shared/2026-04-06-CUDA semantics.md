@@ -10,7 +10,7 @@ source_path: raw/web/tools/2026-04-06-CUDA semantics.md
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/web/tools/2026-04-06-CUDA semantics]]
+- 原文：[[raw/web/programming-tools/2026-04-06-CUDA semantics.md]]
 - 来源路径：`raw/web/tools/2026-04-06-CUDA semantics.md`
 
 ## 价值是什么

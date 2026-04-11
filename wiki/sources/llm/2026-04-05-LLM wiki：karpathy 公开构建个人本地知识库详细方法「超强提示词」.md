@@ -10,7 +10,7 @@ source_path: raw/web/llm/2026-04-05-LLM wiki：karpathy 公开构建个人本地
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/web/llm/2026-04-05-LLM wiki：karpathy 公开构建个人本地知识库详细方法「超强提示词」]]
+- 原文：[[wiki/sources/llm/2026-04-05-LLM wiki：karpathy 公开构建个人本地知识库详细方法「超强提示词」.md]]
 - 来源路径：`raw/web/llm/2026-04-05-LLM wiki：karpathy 公开构建个人本地知识库详细方法「超强提示词」.md`
 
 ## 价值是什么

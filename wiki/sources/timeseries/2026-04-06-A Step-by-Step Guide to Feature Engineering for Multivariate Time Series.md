@@ -16,7 +16,7 @@ status: summarized
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/web/timeseries/2026-04-06-A Step-by-Step Guide to Feature Engineering for Multivariate Time Series]]
+- 原文：[[raw/web/timeseries/2026-04-06-A Step-by-Step Guide to Feature Engineering for Multivariate Time Series.md]]
 - 来源：`raw/web/timeseries/2026-04-06-A Step-by-Step Guide to Feature Engineering for Multivariate Time Series.md`
 - 主题：时间序列
 

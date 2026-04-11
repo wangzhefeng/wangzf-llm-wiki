@@ -16,7 +16,7 @@ status: summarized
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/web/tools/2026-04-06-如何添加 NVIDIA GPU 节点到 Kubernetes 集群]]
+- 原文：[[raw/web/programming-tools/2026-04-06-如何添加 NVIDIA GPU 节点到 Kubernetes 集群.md]]
 - 来源：`raw/web/tools/2026-04-06-如何添加 NVIDIA GPU 节点到 Kubernetes 集群.md`
 - 主题：待分类
 

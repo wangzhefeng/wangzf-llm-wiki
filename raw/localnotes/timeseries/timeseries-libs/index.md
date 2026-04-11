@@ -2,7 +2,11 @@
 title: 时间序列分析库
 subtitle: Python Libraries
 list_pages: true
-# order_by: title
+source_type: local_note
+created_at: 2026-04-11
+topics:
+  - timeseries
+status: linked
 ---
 
 ## Python 库

@@ -1,6 +1,6 @@
 ---
 source_type: web
-source_path: raw/web/deeplearning/2026-04-06-Autoformerexpexp_main.py at main.md
+source_path: raw/web/deep-learning/2026-04-06-Autoformerexpexp_main.py at main.md
 title: Autoformer/exp/exp_main.py at main
 author: unknown
 published_at: 2026-04-06
@@ -16,8 +16,8 @@ status: summarized
 
 ## 这份材料讲了什么
 
-- 原文：`raw/web/deeplearning/2026-04-06-Autoformerexpexp_main.py at main`
-- 来源：`raw/web/deeplearning/2026-04-06-Autoformerexpexp_main.py at main.md`
+- 原文：`raw/web/deep-learning/2026-04-06-Autoformerexpexp_main.py at main`
+- 来源：`raw/web/deep-learning/2026-04-06-Autoformerexpexp_main.py at main.md`
 - 主题：时间序列
 
 ## 价值是什么

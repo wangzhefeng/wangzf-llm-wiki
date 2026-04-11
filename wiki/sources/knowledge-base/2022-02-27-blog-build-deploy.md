@@ -1,6 +1,6 @@
 ---
 source_type: local_note
-source_path: raw/local-notes/post/2022-02-27-blog-build-deploy/index.md
+source_path: raw/localnotes/post/2022-02-27-blog-build-deploy/index.md
 title: 本站构建之路
 author: wangzf
 published_at: 2022-02-27
@@ -17,8 +17,8 @@ status: summarized
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/local-notes/post/2022-02-27-blog-build-deploy/index]]
-- 来源：`raw/local-notes/post/2022-02-27-blog-build-deploy/index.md`
+- 原文：[[raw/papers/2023-05-21-how-to-read-papers/index.md]]
+- 来源：`raw/localnotes/post/2022-02-27-blog-build-deploy/index.md`
 - 归属主题：知识库建设
 
 ## 价值是什么

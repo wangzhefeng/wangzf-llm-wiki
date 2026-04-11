@@ -3,15 +3,15 @@ created_at: 2026-04-11
 topics:
   - llm
 status: inbox
-source_path: raw/web/llm/2026-04-06-DeepSeek-R1 and FP8 Mixed-Precision Training.md
+source_path: raw/web/llm-pre-training/2026-04-06-DeepSeek-R1 and FP8 Mixed-Precision Training.md
 ---
 
 # 来源卡：2026-04-06-DeepSeek-R1 and FP8 Mixed-Precision Training
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/web/llm/2026-04-06-DeepSeek-R1 and FP8 Mixed-Precision Training]]
-- 来源路径：`raw/web/llm/2026-04-06-DeepSeek-R1 and FP8 Mixed-Precision Training.md`
+- 原文：[[raw/web/llm-pre-training/2026-04-06-DeepSeek-R1 and FP8 Mixed-Precision Training.md]]
+- 来源路径：`raw/web/llm-pre-training/2026-04-06-DeepSeek-R1 and FP8 Mixed-Precision Training.md`
 
 ## 价值是什么
 

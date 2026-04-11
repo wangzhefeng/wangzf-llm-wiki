@@ -10,5 +10,5 @@ status: inbox
 
 ## 近期补齐
 
-- [[wiki/concepts/reinforcementlearning/PPO近端策略优化]]
-- [[wiki/concepts/reinforcementlearning/GRPO群体相对策略优化]]
+- [[wiki/concepts/reinforcement-learning/PPO近端策略优化]]
+- [[wiki/concepts/reinforcement-learning/GRPO群体相对策略优化]]

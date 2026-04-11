@@ -16,7 +16,7 @@ status: summarized
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/web/timeseries/2026-04-06-timeseriesAItsai Time series Timeseries Deep Learning Machine Learning Python Pytorch  fastai  State-of-the-art Deep Learning library  for Time Series and Sequences in Pytorch]]
+- 原文：[[raw/web/timeseries/2026-04-06-timeseriesAItsai Time series Timeseries Deep Learning Machine Learning Python Pytorch  fastai  State-of-the-art Deep Learning library  for Time Series and Sequences in Pytorch.md]]
 - 来源：`raw/web/timeseries/2026-04-06-timeseriesAItsai Time series Timeseries Deep Learning Machine Learning Python Pytorch  fastai  State-of-the-art Deep Learning library  for Time Series and Sequences in Pytorch.md`
 - 主题：时间序列
 

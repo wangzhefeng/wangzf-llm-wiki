@@ -3,15 +3,15 @@ created_at: 2026-04-11
 topics:
   - reinforcementlearning
 status: inbox
-source_path: raw/web/reinforcementlearning/2026-04-06-xtunerREADME_zh-CN.md at main.md
+source_path: raw/web/llm-others/2026-04-06-xtunerREADME_zh-CN.md at main.md
 ---
 
 # 来源卡：2026-04-06-xtunerREADME_zh-CN.md at main
 
 ## 这份材料讲了什么
 
-- 原文：`raw/web/reinforcementlearning/2026-04-06-xtunerREADME_zh-CN.md at main`
-- 来源路径：`raw/web/reinforcementlearning/2026-04-06-xtunerREADME_zh-CN.md at main.md`
+- 原文：`raw/web/reinforcement-learning/2026-04-06-xtunerREADME_zh-CN.md at main`
+- 来源路径：`raw/web/llm-others/2026-04-06-xtunerREADME_zh-CN.md at main.md`
 
 ## 价值是什么
 

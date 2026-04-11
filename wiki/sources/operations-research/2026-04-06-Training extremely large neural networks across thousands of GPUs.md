@@ -3,15 +3,15 @@ created_at: 2026-04-11
 topics:
   - operationsresearch
 status: inbox
-source_path: raw/web/operationsresearch/2026-04-06-Training extremely large neural networks across thousands of GPUs.md
+source_path: raw/web/operations-research/2026-04-06-Training extremely large neural networks across thousands of GPUs.md
 ---
 
 # 来源卡：2026-04-06-Training extremely large neural networks across thousands of GPUs
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/web/operationsresearch/2026-04-06-Training extremely large neural networks across thousands of GPUs]]
-- 来源路径：`raw/web/operationsresearch/2026-04-06-Training extremely large neural networks across thousands of GPUs.md`
+- 原文：[[raw/web/operations-research/2026-04-06-Training extremely large neural networks across thousands of GPUs.md]]
+- 来源路径：`raw/web/operations-research/2026-04-06-Training extremely large neural networks across thousands of GPUs.md`
 
 ## 价值是什么
 

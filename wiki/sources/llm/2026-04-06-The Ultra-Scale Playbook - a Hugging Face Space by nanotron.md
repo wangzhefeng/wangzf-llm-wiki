@@ -3,15 +3,15 @@ created_at: 2026-04-11
 topics:
   - llm
 status: inbox
-source_path: raw/web/llm/2026-04-06-The Ultra-Scale Playbook - a Hugging Face Space by nanotron.md
+source_path: raw/web/llm-pre-training/2026-04-06-The Ultra-Scale Playbook - a Hugging Face Space by nanotron.md
 ---
 
 # 来源卡：2026-04-06-The Ultra-Scale Playbook - a Hugging Face Space by nanotron
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/web/llm/2026-04-06-The Ultra-Scale Playbook - a Hugging Face Space by nanotron]]
-- 来源路径：`raw/web/llm/2026-04-06-The Ultra-Scale Playbook - a Hugging Face Space by nanotron.md`
+- 原文：[[raw/web/llm-pre-training/2026-04-06-The Ultra-Scale Playbook - a Hugging Face Space by nanotron.md]]
+- 来源路径：`raw/web/llm-pre-training/2026-04-06-The Ultra-Scale Playbook - a Hugging Face Space by nanotron.md`
 
 ## 价值是什么
 

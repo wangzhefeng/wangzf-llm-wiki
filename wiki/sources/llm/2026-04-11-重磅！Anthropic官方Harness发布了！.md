@@ -3,15 +3,15 @@ created_at: 2026-04-11
 topics:
   - llm
 status: inbox
-source_path: raw/web/llm/2026-04-11-重磅！Anthropic官方Harness发布了！.md
+source_path: raw/web/vibe-coding/2026-04-11-重磅！Anthropic官方Harness发布了！.md
 ---
 
 # 来源卡：2026-04-11-重磅！Anthropic官方Harness发布了！
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/web/llm/2026-04-11-重磅！Anthropic官方Harness发布了！]]
-- 来源路径：`raw/web/llm/2026-04-11-重磅！Anthropic官方Harness发布了！.md`
+- 原文：[[raw/web/vibe-coding/2026-04-11-重磅！Anthropic官方Harness发布了！]]
+- 来源路径：`raw/web/vibe-coding/2026-04-11-重磅！Anthropic官方Harness发布了！.md`
 
 ## 价值是什么
 

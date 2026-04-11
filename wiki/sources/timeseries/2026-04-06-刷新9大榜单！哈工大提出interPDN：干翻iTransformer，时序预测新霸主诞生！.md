@@ -10,7 +10,7 @@ source_path: raw/web/timeseries/2026-04-06-刷新9大榜单！哈工大提出int
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/web/timeseries/2026-04-06-刷新9大榜单！哈工大提出interPDN：干翻iTransformer，时序预测新霸主诞生！]]
+- 原文：[[raw/web/timeseries/2026-04-06-刷新9大榜单！哈工大提出interPDN：干翻iTransformer，时序预测新霸主诞生！.md]]
 - 来源路径：`raw/web/timeseries/2026-04-06-刷新9大榜单！哈工大提出interPDN：干翻iTransformer，时序预测新霸主诞生！.md`
 
 ## 价值是什么

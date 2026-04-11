@@ -1,6 +1,6 @@
 ---
 source_type: local_note
-source_path: raw/local-notes/cv/image-detection/2022-07-15-object-detection/index.md
+source_path: raw/localnotes/computer-vision/image-detection/2022-07-15-object-detection/index.md
 title: 2022-07-15-object-detection
 author: wangzf
 published_at: 2022-07-15
@@ -18,7 +18,7 @@ status: summarized
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/local-notes/cv/image-detection/2022-07-15-object-detection/index]]
+- 原文：[[raw/localnotes/computer-vision/image-detection/2022-07-15-object-detection/index.md]]
 ---
 
 ## 价值是什么

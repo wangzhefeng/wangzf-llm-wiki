@@ -1,6 +1,6 @@
 ---
 source_type: local_note
-source_path: raw/local-notes/cv/cnn/cnn-models/2023-03-23-cnn-resnet/index.md
+source_path: raw/localnotes/computer-vision/cnn/cnn-models/2023-03-23-cnn-resnet/index.md
 title: 2023-03-23-cnn-resnet
 author: wangzf
 published_at: 2023-03-23
@@ -18,7 +18,7 @@ status: summarized
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/local-notes/cv/cnn/cnn-models/2023-03-23-cnn-resnet/index]]
+- 原文：[[raw/localnotes/computer-vision/cnn/cnn-models/2023-03-23-cnn-resnet/index.md]]
 ---
 
 ## 价值是什么

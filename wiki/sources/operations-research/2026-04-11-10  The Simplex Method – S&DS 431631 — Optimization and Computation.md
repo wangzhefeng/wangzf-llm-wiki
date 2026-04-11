@@ -3,15 +3,15 @@ created_at: 2026-04-11
 topics:
   - operationsresearch
 status: inbox
-source_path: raw/web/operationsresearch/2026-04-11-10  The Simplex Method – S&DS 431631 — Optimization and Computation.md
+source_path: raw/web/operations-research/2026-04-11-10  The Simplex Method – S&DS 431631 — Optimization and Computation.md
 ---
 
 # 来源卡：2026-04-11-10  The Simplex Method – S&DS 431631 — Optimization and Computation
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/web/operationsresearch/2026-04-11-10  The Simplex Method – S&DS 431631 — Optimization and Computation]]
-- 来源路径：`raw/web/operationsresearch/2026-04-11-10  The Simplex Method – S&DS 431631 — Optimization and Computation.md`
+- 原文：[[raw/web/operations-research/2026-04-11-10  The Simplex Method – S&DS 431631 — Optimization and Computation.md]]
+- 来源路径：`raw/web/operations-research/2026-04-11-10  The Simplex Method – S&DS 431631 — Optimization and Computation.md`
 
 ## 价值是什么
 

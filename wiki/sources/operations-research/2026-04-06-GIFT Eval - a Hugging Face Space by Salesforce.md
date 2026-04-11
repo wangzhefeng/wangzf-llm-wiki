@@ -3,15 +3,15 @@ created_at: 2026-04-11
 topics:
   - operationsresearch
 status: inbox
-source_path: raw/web/operationsresearch/2026-04-06-GIFT Eval - a Hugging Face Space by Salesforce.md
+source_path: raw/web/operations-research/2026-04-06-GIFT Eval - a Hugging Face Space by Salesforce.md
 ---
 
 # 来源卡：2026-04-06-GIFT Eval - a Hugging Face Space by Salesforce
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/web/operationsresearch/2026-04-06-GIFT Eval - a Hugging Face Space by Salesforce]]
-- 来源路径：`raw/web/operationsresearch/2026-04-06-GIFT Eval - a Hugging Face Space by Salesforce.md`
+- 原文：[[raw/web/timeseries/2026-04-06-GIFT Eval - a Hugging Face Space by Salesforce.md]]
+- 来源路径：`raw/web/operations-research/2026-04-06-GIFT Eval - a Hugging Face Space by Salesforce.md`
 
 ## 价值是什么
 

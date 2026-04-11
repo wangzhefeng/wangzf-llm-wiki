@@ -16,7 +16,7 @@ status: summarized
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/web/timeseries/2026-04-06-Forecast Evaluation for Data Scientists Common Pitfalls and Best Practices]]
+- 原文：[[raw/web/timeseries/2026-04-06-Forecast Evaluation for Data Scientists Common Pitfalls and Best Practices.md]]
 - 来源：`raw/web/timeseries/2026-04-06-Forecast Evaluation for Data Scientists Common Pitfalls and Best Practices.md`
 - 主题：时间序列
 

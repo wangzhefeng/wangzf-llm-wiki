@@ -18,6 +18,7 @@ status: linked
 ## Core Control Files
 
 - [[schema]] - 结构约束、字段规范与会话启动规则
+- [[purpose]] - 目标、范围与演进原则
 - [[index]] - 当前统一入口页
 - [[log]] - 操作时间线（ingest/query/lint/backfill）
 

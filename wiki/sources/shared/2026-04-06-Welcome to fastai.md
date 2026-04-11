@@ -1,6 +1,6 @@
 ---
 source_type: web
-source_path: raw/web/deeplearning/2026-04-06-Welcome to fastai.md
+source_path: raw/web/deep-learning/2026-04-06-Welcome to fastai.md
 title: Welcome to fastai
 author: unknown
 published_at: 2026-04-06
@@ -16,8 +16,8 @@ status: summarized
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/web/deeplearning/2026-04-06-Welcome to fastai]]
-- 来源：`raw/web/deeplearning/2026-04-06-Welcome to fastai.md`
+- 原文：[[raw/web/deep-learning/2026-04-06-Welcome to fastai.md]]
+- 来源：`raw/web/deep-learning/2026-04-06-Welcome to fastai.md`
 - 主题：待分类
 
 ## 价值是什么

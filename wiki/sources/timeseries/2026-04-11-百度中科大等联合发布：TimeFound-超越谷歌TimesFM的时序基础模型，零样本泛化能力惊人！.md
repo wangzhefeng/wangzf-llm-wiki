@@ -10,7 +10,7 @@ source_path: raw/web/timeseries/2026-04-11-百度中科大等联合发布：Time
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/web/timeseries/2026-04-11-百度中科大等联合发布：TimeFound-超越谷歌TimesFM的时序基础模型，零样本泛化能力惊人！]]
+- 原文：[[raw/web/timeseries/2026-04-11-百度中科大等联合发布：TimeFound-超越谷歌TimesFM的时序基础模型，零样本泛化能力惊人！.md]]
 - 来源路径：`raw/web/timeseries/2026-04-11-百度中科大等联合发布：TimeFound-超越谷歌TimesFM的时序基础模型，零样本泛化能力惊人！.md`
 
 ## 价值是什么

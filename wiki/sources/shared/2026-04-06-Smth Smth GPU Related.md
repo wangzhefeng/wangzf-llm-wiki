@@ -1,6 +1,6 @@
 ---
 source_type: web
-source_path: raw/web/deeplearning/2026-04-06-Smth Smth GPU Related.md
+source_path: raw/web/deep-learning/2026-04-06-Smth Smth GPU Related.md
 title: Smth Smth GPU Related
 author: unknown
 published_at: 2026-04-06
@@ -16,8 +16,8 @@ status: summarized
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/web/deeplearning/2026-04-06-Smth Smth GPU Related]]
-- 来源：`raw/web/deeplearning/2026-04-06-Smth Smth GPU Related.md`
+- 原文：[[raw/web/deep-learning/2026-04-06-Smth Smth GPU Related.md]]
+- 来源：`raw/web/deep-learning/2026-04-06-Smth Smth GPU Related.md`
 - 主题：待分类
 
 ## 价值是什么

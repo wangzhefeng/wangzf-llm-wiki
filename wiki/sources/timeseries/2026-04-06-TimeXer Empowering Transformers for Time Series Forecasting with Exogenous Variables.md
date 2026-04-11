@@ -10,7 +10,7 @@ source_path: raw/web/timeseries/2026-04-06-TimeXer Empowering Transformers for T
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/web/timeseries/2026-04-06-TimeXer Empowering Transformers for Time Series Forecasting with Exogenous Variables]]
+- 原文：[[raw/web/timeseries/2026-04-06-TimeXer Empowering Transformers for Time Series Forecasting with Exogenous Variables.md]]
 - 来源路径：`raw/web/timeseries/2026-04-06-TimeXer Empowering Transformers for Time Series Forecasting with Exogenous Variables.md`
 
 ## 价值是什么

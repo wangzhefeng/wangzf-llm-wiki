@@ -69,8 +69,11 @@ def main() -> int:
     args = ap.parse_args()
 
     raw_by_name: dict[str, list[Path]] = {}
+    raw_index_by_parent: dict[str, list[Path]] = {}
     for p in md_files(RAW_ROOT):
         raw_by_name.setdefault(p.name, []).append(p)
+        if p.name == "index.md":
+            raw_index_by_parent.setdefault(p.parent.name, []).append(p)
 
     fixes: list[Fix] = []
     for p in md_files(WIKI_SOURCES):
@@ -86,6 +89,10 @@ def main() -> int:
             continue
         fname = Path(sp_norm).name
         cands = raw_by_name.get(fname, [])
+        if len(cands) != 1 and fname.endswith(" 1.md"):
+            cands = raw_by_name.get(fname.replace(" 1.md", ".md"), [])
+        if len(cands) != 1 and fname == "index.md":
+            cands = raw_index_by_parent.get(Path(sp_norm).parent.name, [])
         if len(cands) != 1:
             continue
         new_sp = cands[0].relative_to(ROOT).as_posix()
@@ -119,4 +126,3 @@ def main() -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
-

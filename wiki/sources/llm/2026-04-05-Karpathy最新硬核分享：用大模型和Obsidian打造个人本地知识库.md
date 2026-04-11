@@ -10,7 +10,7 @@ source_path: raw/web/llm/2026-04-05-Karpathy最新硬核分享：用大模型和
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/web/llm/2026-04-05-Karpathy最新硬核分享：用大模型和Obsidian打造个人本地知识库]]
+- 原文：[[wiki/sources/llm/2026-04-05-Karpathy最新硬核分享：用大模型和Obsidian打造个人本地知识库.md]]
 - 来源路径：`raw/web/llm/2026-04-05-Karpathy最新硬核分享：用大模型和Obsidian打造个人本地知识库.md`
 
 ## 价值是什么

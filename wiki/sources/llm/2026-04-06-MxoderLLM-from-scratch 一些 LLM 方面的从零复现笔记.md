@@ -1,6 +1,6 @@
 ---
 source_type: web
-source_path: raw/web/llm/2026-04-06-MxoderLLM-from-scratch 一些 LLM 方面的从零复现笔记.md
+source_path: raw/web/llm-pre-training/2026-04-06-MxoderLLM-from-scratch 一些 LLM 方面的从零复现笔记.md
 title: Mxoder/LLM-from-scratch: 一些 LLM 方面的从零复现笔记
 author: unknown
 published_at: 2026-04-06
@@ -16,8 +16,8 @@ status: summarized
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/web/llm/2026-04-06-MxoderLLM-from-scratch 一些 LLM 方面的从零复现笔记]]
-- 来源：`raw/web/llm/2026-04-06-MxoderLLM-from-scratch 一些 LLM 方面的从零复现笔记.md`
+- 原文：[[raw/web/llm-pre-training/2026-04-06-MxoderLLM-from-scratch 一些 LLM 方面的从零复现笔记.md]]
+- 来源：`raw/web/llm-pre-training/2026-04-06-MxoderLLM-from-scratch 一些 LLM 方面的从零复现笔记.md`
 - 主题：大语言模型
 
 ## 价值是什么

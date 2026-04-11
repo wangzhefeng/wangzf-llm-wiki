@@ -3,6 +3,11 @@ title: 时间序列分析-描述性
 subtitle: Descriptive Time Series
 list_pages: true
 order_by: title
+source_type: local_note
+created_at: 2026-04-11
+topics:
+  - timeseries
+status: linked
 ---
 
 

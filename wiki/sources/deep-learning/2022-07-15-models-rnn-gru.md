@@ -1,6 +1,6 @@
 ---
 source_type: local_note
-source_path: raw/local-notes/deeplearning/2022-07-15-models-rnn-gru/index.md
+source_path: raw/localnotes/deep-learning/2022-07-15-models-rnn-gru/index.md
 title: GRU
 author: wangzf
 published_at: 2022-07-15
@@ -18,8 +18,8 @@ status: summarized
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/local-notes/deeplearning/2022-07-15-models-rnn-gru/index]]
-- 来源：`raw/local-notes/deeplearning/2022-07-15-models-rnn-gru/index.md`
+- 原文：[[raw/localnotes/deep-learning/2022-07-15-models-rnn-gru/index.md]]
+- 来源：`raw/localnotes/deep-learning/2022-07-15-models-rnn-gru/index.md`
 - 主题：GRU
 - 类型：本地历史笔记（deep learning）
 

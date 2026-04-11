@@ -1,6 +1,6 @@
 ---
 source_type: web
-source_path: raw/web/operationsresearch/2026-04-06-basinhopping — SciPy v1.17.0 Manual.md
+source_path: raw/web/operations-research/2026-04-06-basinhopping — SciPy v1.17.0 Manual.md
 title: basinhopping — SciPy v1.17.0 Manual
 author: unknown
 published_at: 2026-04-06
@@ -16,8 +16,8 @@ status: summarized
 
 ## 这份材料讲了什么
 
-- 原文：`raw/web/operationsresearch/2026-04-06-basinhopping — SciPy v1.17.0 Manual`
-- 来源：`raw/web/operationsresearch/2026-04-06-basinhopping — SciPy v1.17.0 Manual.md`
+- 原文：`raw/web/operations-research/2026-04-06-basinhopping — SciPy v1.17.0 Manual`
+- 来源：`raw/web/operations-research/2026-04-06-basinhopping — SciPy v1.17.0 Manual.md`
 - 主题：待分类
 
 ## 价值是什么

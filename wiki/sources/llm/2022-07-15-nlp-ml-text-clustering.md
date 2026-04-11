@@ -1,6 +1,6 @@
 ---
 source_type: local_note
-source_path: raw/local-notes/llm/nlp-tasks/2022-07-15-nlp-ml-text-clustering/index.md
+source_path: raw/localnotes/llm/nlp-tasks/2022-07-15-nlp-ml-text-clustering/index.md
 title: NLP-文本聚类
 author: wangzf
 published_at: 2022-04-05
@@ -18,8 +18,8 @@ status: summarized
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/local-notes/llm/nlp-tasks/2022-07-15-nlp-ml-text-clustering/index]]
-- 来源：`raw/local-notes/llm/nlp-tasks/2022-07-15-nlp-ml-text-clustering/index.md`
+- 原文：[[raw/localnotes/llm/nlp-tasks/2022-07-15-nlp-ml-text-clustering/index.md]]
+- 来源：`raw/localnotes/llm/nlp-tasks/2022-07-15-nlp-ml-text-clustering/index.md`
 - 主题：LLM 本地知识笔记
 
 ## 价值是什么

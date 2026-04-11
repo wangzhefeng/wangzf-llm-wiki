@@ -1,6 +1,6 @@
 ---
 source_type: web
-source_path: raw/web/llm/2026-04-06-Measuring Massive Multitask Language Understanding.md
+source_path: raw/web/llm-pre-training/2026-04-06-Measuring Massive Multitask Language Understanding.md
 title: Measuring Massive Multitask Language Understanding
 author: unknown
 published_at: 2026-04-06
@@ -16,8 +16,8 @@ status: summarized
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/web/llm/2026-04-06-Measuring Massive Multitask Language Understanding]]
-- 来源：`raw/web/llm/2026-04-06-Measuring Massive Multitask Language Understanding.md`
+- 原文：[[raw/web/llm-pre-training/2026-04-06-Measuring Massive Multitask Language Understanding.md]]
+- 来源：`raw/web/llm-pre-training/2026-04-06-Measuring Massive Multitask Language Understanding.md`
 - 主题：待分类
 
 ## 价值是什么

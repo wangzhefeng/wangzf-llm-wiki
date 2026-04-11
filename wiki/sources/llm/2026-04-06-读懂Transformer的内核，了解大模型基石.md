@@ -1,6 +1,6 @@
 ---
 source_type: web
-source_path: raw/web/deeplearning/2026-04-06-读懂Transformer的内核，了解大模型基石.md
+source_path: raw/web/deep-learning/2026-04-06-读懂Transformer的内核，了解大模型基石.md
 title: 读懂Transformer的内核，了解大模型基石
 author: unknown
 published_at: 2026-04-06
@@ -16,8 +16,8 @@ status: summarized
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/web/deeplearning/2026-04-06-读懂Transformer的内核，了解大模型基石]]
-- 来源：`raw/web/deeplearning/2026-04-06-读懂Transformer的内核，了解大模型基石.md`
+- 原文：[[raw/web/deep-learning/2026-04-06-读懂Transformer的内核，了解大模型基石.md]]
+- 来源：`raw/web/deep-learning/2026-04-06-读懂Transformer的内核，了解大模型基石.md`
 - 主题：大语言模型
 
 ## 价值是什么

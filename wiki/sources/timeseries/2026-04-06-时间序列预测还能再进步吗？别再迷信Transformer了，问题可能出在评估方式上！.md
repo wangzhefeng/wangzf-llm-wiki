@@ -10,7 +10,7 @@ source_path: raw/web/timeseries/2026-04-06-时间序列预测还能再进步吗�
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/web/timeseries/2026-04-06-时间序列预测还能再进步吗？别再迷信Transformer了，问题可能出在评估方式上！]]
+- 原文：[[raw/web/timeseries/2026-04-06-时间序列预测还能再进步吗？别再迷信Transformer了，问题可能出在评估方式上！.md]]
 - 来源路径：`raw/web/timeseries/2026-04-06-时间序列预测还能再进步吗？别再迷信Transformer了，问题可能出在评估方式上！.md`
 
 ## 价值是什么

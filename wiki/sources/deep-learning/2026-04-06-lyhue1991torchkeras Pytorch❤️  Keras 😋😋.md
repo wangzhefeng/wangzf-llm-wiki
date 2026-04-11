@@ -1,6 +1,6 @@
 ---
 source_type: web
-source_path: raw/web/deeplearning/2026-04-06-lyhue1991torchkeras Pytorch❤️  Keras 😋😋.md
+source_path: raw/web/deep-learning/2026-04-06-lyhue1991torchkeras Pytorch❤️  Keras 😋😋.md
 title: lyhue1991/torchkeras: Pytorch❤️  Keras 😋😋
 author: unknown
 published_at: 2026-04-06
@@ -16,8 +16,8 @@ status: summarized
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/web/deeplearning/2026-04-06-lyhue1991torchkeras Pytorch❤️  Keras 😋😋]]
-- 来源：`raw/web/deeplearning/2026-04-06-lyhue1991torchkeras Pytorch❤️  Keras 😋😋.md`
+- 原文：[[raw/web/deep-learning/2026-04-06-lyhue1991torchkeras Pytorch❤️  Keras 😋😋.md]]
+- 来源：`raw/web/deep-learning/2026-04-06-lyhue1991torchkeras Pytorch❤️  Keras 😋😋.md`
 - 主题：深度学习
 
 ## 价值是什么

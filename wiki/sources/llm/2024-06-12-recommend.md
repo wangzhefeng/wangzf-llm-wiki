@@ -1,6 +1,6 @@
 ---
 source_type: local_note
-source_path: raw/local-notes/llm/llm-app/2024-06-12-recommend/index.md
+source_path: raw/localnotes/llm/llm-app/2024-06-12-recommend/index.md
 title: LLM 应用--推荐任务
 author: wangzf
 published_at: 2024-06-12
@@ -18,8 +18,8 @@ status: summarized
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/local-notes/llm/llm-app/2024-06-12-recommend/index]]
-- 来源：`raw/local-notes/llm/llm-app/2024-06-12-recommend/index.md`
+- 原文：[[raw/localnotes/llm/llm-app/2024-06-12-recommend/index.md]]
+- 来源：`raw/localnotes/llm/llm-app/2024-06-12-recommend/index.md`
 - 主题：LLM 本地知识笔记
 
 ## 价值是什么

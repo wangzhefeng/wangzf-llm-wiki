@@ -16,7 +16,7 @@ status: summarized
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/web/tools/2026-04-06-cbovarConvNetDraw Draw multi-layer neural network in your browser]]
+- 原文：[[raw/web/tools/2026-04-06-cbovarConvNetDraw Draw multi-layer neural network in your browser.md]]
 - 来源：`raw/web/uncategorized/2026-04-06-cbovarConvNetDraw Draw multi-layer neural network in your browser.md`
 - 主题：计算机视觉
 

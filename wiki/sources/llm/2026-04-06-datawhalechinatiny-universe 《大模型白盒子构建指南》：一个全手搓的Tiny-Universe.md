@@ -3,15 +3,15 @@ created_at: 2026-04-11
 topics:
   - llm
 status: inbox
-source_path: raw/web/llm/2026-04-06-datawhalechinatiny-universe 《大模型白盒子构建指南》：一个全手搓的Tiny-Universe.md
+source_path: raw/web/llm-pre-training/2026-04-06-datawhalechinatiny-universe 《大模型白盒子构建指南》：一个全手搓的Tiny-Universe.md
 ---
 
 # 来源卡：2026-04-06-datawhalechinatiny-universe 《大模型白盒子构建指南》：一个全手搓的Tiny-Universe
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/web/llm/2026-04-06-datawhalechinatiny-universe 《大模型白盒子构建指南》：一个全手搓的Tiny-Universe]]
-- 来源路径：`raw/web/llm/2026-04-06-datawhalechinatiny-universe 《大模型白盒子构建指南》：一个全手搓的Tiny-Universe.md`
+- 原文：[[raw/web/llm-pre-training/2026-04-06-datawhalechinatiny-universe 《大模型白盒子构建指南》：一个全手搓的Tiny-Universe.md]]
+- 来源路径：`raw/web/llm-pre-training/2026-04-06-datawhalechinatiny-universe 《大模型白盒子构建指南》：一个全手搓的Tiny-Universe.md`
 
 ## 价值是什么
 

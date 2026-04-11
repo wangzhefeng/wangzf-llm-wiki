@@ -16,7 +16,7 @@ status: summarized
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/web/timeseries/2026-04-06-ourownstoryAR-Net A simple Auto-Regressive Neural Network for time-series]]
+- 原文：[[raw/web/timeseries/2026-04-06-ourownstoryAR-Net A simple Auto-Regressive Neural Network for time-series.md]]
 - 来源：`raw/web/timeseries/2026-04-06-ourownstoryAR-Net A simple Auto-Regressive Neural Network for time-series.md`
 - 主题：深度学习
 

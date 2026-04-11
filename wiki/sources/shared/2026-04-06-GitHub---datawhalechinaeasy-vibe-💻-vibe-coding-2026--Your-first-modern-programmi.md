@@ -10,7 +10,7 @@ source_path: raw/web/vibe-coding/2026-04-06-GitHub---datawhalechinaeasy-vibe-�
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/web/vibe-coding/2026-04-06-GitHub---datawhalechinaeasy-vibe-💻-vibe-coding-2026--Your-first-modern-programmi]]
+- 原文：[[raw/web/vibe-coding/2026-04-06-GitHub---datawhalechinaeasy-vibe-💻-vibe-coding-2026--Your-first-modern-programmi.md]]
 - 来源路径：`raw/web/vibe-coding/2026-04-06-GitHub---datawhalechinaeasy-vibe-💻-vibe-coding-2026--Your-first-modern-programmi.md`
 
 ## 价值是什么

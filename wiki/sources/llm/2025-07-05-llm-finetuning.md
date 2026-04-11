@@ -1,6 +1,6 @@
 ---
 source_type: local_note
-source_path: raw/local-notes/post/2025-07-05-llm-finetuning/index.md
+source_path: raw/localnotes/llm/2025-07-05-llm-finetuning/index.md
 title: 模型微调
 author: wangzf
 published_at: 2025-07-05
@@ -20,8 +20,8 @@ status: summarized
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/local-notes/post/2025-07-05-llm-finetuning/index]]
-- 来源：`raw/local-notes/post/2025-07-05-llm-finetuning/index.md`
+- 原文：[[raw/papers/2023-05-21-how-to-read-papers/index.md]]
+- 来源：`raw/localnotes/llm/2025-07-05-llm-finetuning/index.md`
 - 归属主题：大语言模型
 
 ## 价值是什么

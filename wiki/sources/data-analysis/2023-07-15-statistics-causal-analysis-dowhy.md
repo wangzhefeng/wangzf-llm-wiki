@@ -1,6 +1,6 @@
 ---
 source_type: local_note
-source_path: raw/local-notes/analysis/statistics/2023-07-15-statistics-causal-analysis-dowhy/index.md
+source_path: raw/localnotes/data-analysis/statistics/2023-07-15-statistics-causal-analysis-dowhy/index.md
 title: 2023-07-15-statistics-causal-analysis-dowhy
 author: wangzf
 published_at: 2023-07-15
@@ -18,7 +18,7 @@ status: summarized
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/local-notes/analysis/statistics/2023-07-15-statistics-causal-analysis-dowhy/index]]
+- 原文：[[raw/localnotes/data-analysis/statistics/2023-07-15-statistics-causal-analysis-dowhy/index.md]]
 ---
 
 ## 价值是什么

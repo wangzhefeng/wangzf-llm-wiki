@@ -16,7 +16,7 @@ status: summarized
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/web/tools/2026-04-06-Quick Start — Netscope]]
+- 原文：[[raw/web/programming-tools/2026-04-06-Quick Start — Netscope.md]]
 - 来源：`raw/web/tools/2026-04-06-Quick Start — Netscope.md`
 - 主题：待分类
 

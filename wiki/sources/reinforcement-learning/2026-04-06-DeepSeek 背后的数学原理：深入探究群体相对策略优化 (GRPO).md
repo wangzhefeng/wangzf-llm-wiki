@@ -1,6 +1,6 @@
 ---
 source_type: web
-source_path: raw/web/reinforcementlearning/2026-04-06-DeepSeek 背后的数学原理：深入探究群体相对策略优化 (GRPO).md
+source_path: raw/web/reinforcement-learning/2026-04-06-DeepSeek 背后的数学原理：深入探究群体相对策略优化 (GRPO).md
 title: DeepSeek 背后的数学原理：深入探究群体相对策略优化 (GRPO)
 author: unknown
 published_at: 2026-04-06
@@ -16,8 +16,8 @@ status: summarized
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/web/reinforcementlearning/2026-04-06-DeepSeek 背后的数学原理：深入探究群体相对策略优化 (GRPO)]]
-- 来源：`raw/web/reinforcementlearning/2026-04-06-DeepSeek 背后的数学原理：深入探究群体相对策略优化 (GRPO).md`
+- 原文：[[raw/web/reinforcement-learning/2026-04-06-DeepSeek 背后的数学原理：深入探究群体相对策略优化 (GRPO).md]]
+- 来源：`raw/web/reinforcement-learning/2026-04-06-DeepSeek 背后的数学原理：深入探究群体相对策略优化 (GRPO).md`
 - 主题：强化学习
 
 ## 价值是什么

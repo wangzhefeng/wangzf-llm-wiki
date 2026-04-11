@@ -3,6 +3,11 @@ title: 计算机视觉
 subtitle: Computer Vision
 list_pages: true
 order_by: title
+source_type: local_note
+created_at: 2026-04-11
+topics:
+  - computer-vision
+status: linked
 ---
 
 ## 计算机视觉的三大应用任务

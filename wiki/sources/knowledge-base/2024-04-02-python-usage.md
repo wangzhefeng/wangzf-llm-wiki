@@ -1,6 +1,6 @@
 ---
 source_type: local_note
-source_path: raw/local-notes/post/2024-04-02-python-usage/index.md
+source_path: raw/localnotes/programming-tools/2024-04-02-python-usage/index.md
 title: Python 类使用详解
 author: wangzf
 published_at: 2024-04-02
@@ -17,8 +17,8 @@ status: summarized
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/local-notes/post/2024-04-02-python-usage/index]]
-- 来源：`raw/local-notes/post/2024-04-02-python-usage/index.md`
+- 原文：[[raw/papers/2023-05-21-how-to-read-papers/index.md]]
+- 来源：`raw/localnotes/programming-tools/2024-04-02-python-usage/index.md`
 - 归属主题：知识库建设
 
 ## 价值是什么

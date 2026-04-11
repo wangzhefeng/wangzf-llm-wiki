@@ -16,7 +16,7 @@ status: summarized
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/web/timeseries/2026-04-06-TIMEMIXER++：通用时序预测新SOTA，全面超越Transformer！ 1]]
+- 原文：[[wiki/sources/llm/2026-04-06-TIMEMIXER++：通用时序预测新SOTA，全面超越Transformer！ 1.md]]
 - 来源：`raw/web/timeseries/2026-04-06-TIMEMIXER++：通用时序预测新SOTA，全面超越Transformer！ 1.md`
 - 主题：大语言模型
 

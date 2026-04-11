@@ -16,7 +16,7 @@ status: summarized
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/web/vibe-coding/2026-04-06-GitHub---datawhalechinaeasy-vibe-💻-vibe-coding-2026--Your-first-modern-programmi]]
+- 原文：[[raw/web/vibe-coding/2026-04-06-GitHub---datawhalechinaeasy-vibe-💻-vibe-coding-2026--Your-first-modern-programmi.md]]
 - 来源：`raw/web/vibe-coding/2026-04-06-GitHub---datawhalechinaeasy-vibe-💻-vibe-coding-2026--Your-first-modern-programmi.md`
 - 主题：机器学习
 

@@ -16,7 +16,7 @@ status: summarized
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/web/timeseries/2026-04-06-How to Convert a Time Series to a Supervised Learning Problem in Python]]
+- 原文：[[raw/web/timeseries/2026-04-06-How to Convert a Time Series to a Supervised Learning Problem in Python.md]]
 - 来源：`raw/web/timeseries/2026-04-06-How to Convert a Time Series to a Supervised Learning Problem in Python.md`
 - 主题：时间序列
 

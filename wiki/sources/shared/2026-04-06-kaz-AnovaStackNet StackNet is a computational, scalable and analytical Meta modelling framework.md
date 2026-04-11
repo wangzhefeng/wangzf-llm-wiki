@@ -1,6 +1,6 @@
 ---
 source_type: web
-source_path: raw/web/machinelearning/2026-04-06-kaz-AnovaStackNet StackNet is a computational, scalable and analytical Meta modelling framework.md
+source_path: raw/web/machine-learning/2026-04-06-kaz-AnovaStackNet StackNet is a computational, scalable and analytical Meta modelling framework.md
 title: kaz-Anova/StackNet: StackNet is a computational, scalable and analytical Meta modelling framework
 author: unknown
 published_at: 2026-04-06
@@ -16,8 +16,8 @@ status: summarized
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/web/machinelearning/2026-04-06-kaz-AnovaStackNet StackNet is a computational, scalable and analytical Meta modelling framework]]
-- 来源：`raw/web/machinelearning/2026-04-06-kaz-AnovaStackNet StackNet is a computational, scalable and analytical Meta modelling framework.md`
+- 原文：[[raw/web/machine-learning/2026-04-06-kaz-AnovaStackNet StackNet is a computational, scalable and analytical Meta modelling framework.md]]
+- 来源：`raw/web/machine-learning/2026-04-06-kaz-AnovaStackNet StackNet is a computational, scalable and analytical Meta modelling framework.md`
 - 主题：待分类
 
 ## 价值是什么

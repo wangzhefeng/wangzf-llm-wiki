@@ -1,6 +1,6 @@
 ---
 source_type: web
-source_path: raw/web/deeplearning/2026-04-06-Spatio-Temporal Graph Convolutional Networks A Deep Learning Framework for Traffic Forecasting.md
+source_path: raw/web/deep-learning/2026-04-06-Spatio-Temporal Graph Convolutional Networks A Deep Learning Framework for Traffic Forecasting.md
 title: Spatio-Temporal Graph Convolutional Networks: A Deep Learning Framework for Traffic Forecasting
 author: unknown
 published_at: 2026-04-06
@@ -16,8 +16,8 @@ status: summarized
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/web/deeplearning/2026-04-06-Spatio-Temporal Graph Convolutional Networks A Deep Learning Framework for Traffic Forecasting]]
-- 来源：`raw/web/deeplearning/2026-04-06-Spatio-Temporal Graph Convolutional Networks A Deep Learning Framework for Traffic Forecasting.md`
+- 原文：[[raw/web/deep-learning/2026-04-06-Spatio-Temporal Graph Convolutional Networks A Deep Learning Framework for Traffic Forecasting.md]]
+- 来源：`raw/web/deep-learning/2026-04-06-Spatio-Temporal Graph Convolutional Networks A Deep Learning Framework for Traffic Forecasting.md`
 - 主题：时间序列
 
 ## 价值是什么

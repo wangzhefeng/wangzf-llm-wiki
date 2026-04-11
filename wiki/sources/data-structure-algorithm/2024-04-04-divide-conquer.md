@@ -1,6 +1,6 @@
 ---
 source_type: local_note
-source_path: raw/local-notes/data-structure-algorithm/2024-04-04-divide-conquer/index.md
+source_path: raw/localnotes/data-structure-algorithm/2024-04-04-divide-conquer/index.md
 title: 2024-04-04-divide-conquer
 author: wangzf
 published_at: 2024-04-04
@@ -18,7 +18,7 @@ status: summarized
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/local-notes/data-structure-algorithm/2024-04-04-divide-conquer/index]]
+- 原文：[[raw/localnotes/data-structure-algorithm/2024-04-04-divide-conquer/index.md]]
 - 原始标题：分治算法
 - 主题归类：分治算法
 - 来源类型：本地历史文档（local note）

@@ -10,7 +10,7 @@ source_path: raw/web/timeseries/2026-04-06-Datasets at Hugging Face.md
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/web/timeseries/2026-04-06-Datasets at Hugging Face]]
+- 原文：[[raw/web/timeseries/2026-04-06-Datasets at Hugging Face.md]]
 - 来源路径：`raw/web/timeseries/2026-04-06-Datasets at Hugging Face.md`
 
 ## 价值是什么

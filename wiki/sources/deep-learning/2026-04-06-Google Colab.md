@@ -16,7 +16,7 @@ status: summarized
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/web/tools/2026-04-06-Google Colab]]
+- 原文：[[raw/web/tools/2026-04-06-Google Colab.md]]
 - 来源：`raw/web/tools/2026-04-06-Google Colab.md`
 - 主题：深度学习
 

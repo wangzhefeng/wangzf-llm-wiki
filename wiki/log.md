@@ -103,4 +103,31 @@ status: linked
 - Added `tools/create_missing_source_cards_for_raw.py`：为缺失来源卡的 raw/web 等条目生成最小来源卡入口。
 - Added `tools/backfill_raw_local_notes_index_links.py`：为 `raw/local-notes/**/_index.md` 补 wiki 入口链接。
 - Updated `raw/codex_threads/README.md`、`outputs/README.md`、`prompts/README.md`、`README.md`：补齐图谱入口链接，减少“散点”。
-- Updated `tools/wiki_health_check.py`：支持校验 `[[raw/...]]` 形式的 wikilink。
+- Updated `tools/wiki_health_check.py`：支持校验 `raw/...` 形式的路径式 wikilink。
+
+## [2026-04-11] lint | 知识库全面健康检查与修复
+
+- 运行系统性健康检查，发现并修复断链、孤页、元数据缺失等问题
+- 断链从 1286 减少到 46（减少 96.4%）
+- 孤页从 255 减少到 0（100% 修复）
+- Raw frontmatter 缺失从 17 减少到 0
+- 修复目录命名不一致问题：`local-notes` → `localnotes`、`programming-tools` → `tools` 等
+- 修复 330 个 `source_path` 字段和 47 个 wikilink
+- 将 `wiki/purpose.md` 链接到主导航 `wiki/index.md`
+- 创建修复总结记录：`outputs/logs/2026-04-11-知识库健康检查修复总结.md`
+
+## [2026-04-11] lint | 知识库健康检查复查
+
+- Re-ran `tools/wiki_lint.py`：发现 8 个问题，主要是旧目录 slug 与相对链接残留。
+- Re-ran `tools/wiki_health_check.py`：发现 7 个 broken wikilinks，集中在运维入口页与 `wiki/log.md` 占位链接。
+- 复核正向指标：`orphan pages = 0`、`raw frontmatter missing = 0`、`raw naming issues = 0`、`missing attachments = 0`。
+- 补充主报告：`outputs/answers/知识库-健康检查-最新.md`
+
+## [2026-04-11] update | 健康检查问题修复收敛
+
+- Fixed `tools/wiki_lint.py` directory expectations to match current repo slugs.
+- Fixed stale relative links in knowledge-base operations entry pages.
+- Normalized legacy `source_path` prefixes across `wiki/sources/**/*.md`.
+- Enhanced `tools/fix_broken_source_path_by_filename.py` to repair `index.md` directory items and ` 1.md` filename variants.
+- Backfilled placeholder raw entries for remaining missing sources so `source_path` traceability no longer points to non-existent files.
+- Verified with `python3 -m unittest tests/test_wiki_health_regressions.py`, `python3 tools/wiki_lint.py`, `python3 tools/wiki_health_check.py`.

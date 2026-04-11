@@ -10,7 +10,7 @@ source_path: raw/web/timeseries/2026-04-06-thumliTransformer Official implementa
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/web/timeseries/2026-04-06-thumliTransformer Official implementation for iTransformer Inverted Transformers Are Effective for Time Series Forecasting (ICLR 2024 Spotlight)]]
+- 原文：[[raw/web/timeseries/2026-04-06-thumliTransformer Official implementation for iTransformer Inverted Transformers Are Effective for Time Series Forecasting (ICLR 2024 Spotlight).md]]
 - 来源路径：`raw/web/timeseries/2026-04-06-thumliTransformer Official implementation for iTransformer Inverted Transformers Are Effective for Time Series Forecasting (ICLR 2024 Spotlight).md`
 
 ## 价值是什么

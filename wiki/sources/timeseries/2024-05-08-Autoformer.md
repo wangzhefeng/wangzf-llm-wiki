@@ -1,6 +1,6 @@
 ---
 source_type: local_note
-source_path: raw/local-notes/timeseries/timeseries-time-domain/timeseries-deeplearning/2024-05-08-paper-ts-autoformer/index.md
+source_path: raw/localnotes/timeseries/timeseries-time-domain/timeseries-deeplearning/2024-05-08-paper-ts-autoformer/index.md
 created_at: 2026-04-04
 topics:
   - 时间序列预测
@@ -15,7 +15,7 @@ status: summarized
 # Autoformer 来源摘要
 
 
-- 原文：[[raw/local-notes/timeseries/timeseries-time-domain/timeseries-deeplearning/2024-05-08-paper-ts-autoformer/index]]
+- 原文：[[raw/localnotes/timeseries/timeseries-time-domain/timeseries-deeplearning/2024-05-08-paper-ts-autoformer/index.md]]
 ## 材料定位
 
 这篇论文解读文档聚焦 Autoformer 的背景、贡献和模型结构，是长序列预测中基于分解与自相关机制的代表材料。

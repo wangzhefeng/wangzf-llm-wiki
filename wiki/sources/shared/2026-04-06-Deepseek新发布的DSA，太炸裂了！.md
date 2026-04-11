@@ -1,6 +1,6 @@
 ---
 source_type: web
-source_path: raw/web/reinforcementlearning/2026-04-06-Deepseek新发布的DSA，太炸裂了！.md
+source_path: raw/web/reinforcement-learning/2026-04-06-Deepseek新发布的DSA，太炸裂了！.md
 title: Deepseek新发布的DSA，太炸裂了！
 author: unknown
 published_at: 2026-04-06
@@ -16,8 +16,8 @@ status: summarized
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/web/reinforcementlearning/2026-04-06-Deepseek新发布的DSA，太炸裂了！]]
-- 来源：`raw/web/reinforcementlearning/2026-04-06-Deepseek新发布的DSA，太炸裂了！.md`
+- 原文：[[raw/web/reinforcement-learning/2026-04-06-Deepseek新发布的DSA，太炸裂了！.md]]
+- 来源：`raw/web/reinforcement-learning/2026-04-06-Deepseek新发布的DSA，太炸裂了！.md`
 - 主题：待分类
 
 ## 价值是什么

@@ -1,6 +1,6 @@
 ---
 source_type: web
-source_path: raw/web/tools/2026-04-06-OPENSSH PRIVATE KEY转换为RSA PRIVATE KEY.md
+source_path: raw/web/programming-tools/2026-04-06-OPENSSH PRIVATE KEY转换为RSA PRIVATE KEY.md
 title: OPENSSH PRIVATE KEY转换为RSA PRIVATE KEY
 author: unknown
 published_at: 2026-04-06
@@ -16,8 +16,8 @@ status: summarized
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/web/tools/2026-04-06-OPENSSH PRIVATE KEY转换为RSA PRIVATE KEY]]
-- 来源：`raw/web/tools/2026-04-06-OPENSSH PRIVATE KEY转换为RSA PRIVATE KEY.md`
+- 原文：[[raw/web/programming-tools/2026-04-06-OPENSSH PRIVATE KEY转换为RSA PRIVATE KEY.md]]
+- 来源：`raw/web/programming-tools/2026-04-06-OPENSSH PRIVATE KEY转换为RSA PRIVATE KEY.md`
 - 主题：待分类
 
 ## 价值是什么

@@ -16,7 +16,7 @@ status: summarized
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/web/tools/2026-04-06-fatedierfrp A fast reverse proxy to help you expose a local server behind a NAT or firewall to the internet]]
+- 原文：[[raw/web/programming-tools/2026-04-06-fatedierfrp A fast reverse proxy to help you expose a local server behind a NAT or firewall to the internet.md]]
 - 来源：`raw/web/tools/2026-04-06-fatedierfrp A fast reverse proxy to help you expose a local server behind a NAT or firewall to the internet.md`
 - 主题：待分类
 

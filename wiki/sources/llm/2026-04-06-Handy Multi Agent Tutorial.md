@@ -16,7 +16,7 @@ status: summarized
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/web/vibe-coding/2026-04-06-Handy Multi Agent Tutorial]]
+- 原文：[[raw/web/vibe-coding/2026-04-06-Handy Multi Agent Tutorial.md]]
 - 来源：`raw/web/vibe-coding/2026-04-06-Handy Multi Agent Tutorial.md`
 - 主题：大语言模型
 

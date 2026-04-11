@@ -10,7 +10,7 @@ source_path: raw/web/tools/2026-04-06-win10安装CUDA和cuDNN的正确姿势.md
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/web/tools/2026-04-06-win10安装CUDA和cuDNN的正确姿势]]
+- 原文：[[raw/web/programming-tools/2026-04-06-win10安装CUDA和cuDNN的正确姿势.md]]
 - 来源路径：`raw/web/tools/2026-04-06-win10安装CUDA和cuDNN的正确姿势.md`
 
 ## 价值是什么

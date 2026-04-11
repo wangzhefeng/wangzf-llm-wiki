@@ -1,6 +1,6 @@
 ---
 source_type: web
-source_path: raw/web/reinforcementlearning/2026-04-06-Generative AI A Creative New World.md
+source_path: raw/web/reinforcement-learning/2026-04-06-Generative AI A Creative New World.md
 title: Generative AI: A Creative New World
 author: unknown
 published_at: 2026-04-06
@@ -16,8 +16,8 @@ status: summarized
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/web/reinforcementlearning/2026-04-06-Generative AI A Creative New World]]
-- 来源：`raw/web/reinforcementlearning/2026-04-06-Generative AI A Creative New World.md`
+- 原文：[[raw/web/reinforcement-learning/2026-04-06-Generative AI A Creative New World.md]]
+- 来源：`raw/web/reinforcement-learning/2026-04-06-Generative AI A Creative New World.md`
 - 主题：强化学习
 
 ## 价值是什么

@@ -1,6 +1,6 @@
 ---
 source_type: web
-source_path: raw/web/operationsresearch/2026-04-06-Welcome to MMDetection’s documentation! — MMDetection 3.3.0 documentation.md
+source_path: raw/web/computer-vision/2026-04-06-Welcome to MMDetection’s documentation! — MMDetection 3.3.0 documentation.md
 title: Welcome to MMDetection’s documentation! — MMDetection 3.3.0 documentation
 author: unknown
 published_at: 2026-04-06
@@ -16,7 +16,7 @@ status: summarized
 
 ## 这份材料讲了什么
 
-- 原文：`raw/web/operationsresearch/2026-04-06-Welcome to MMDetection’s documentation! — MMDetection 3.3.0 documentation`
+- 原文：`raw/web/operations-research/2026-04-06-Welcome to MMDetection’s documentation! — MMDetection 3.3.0 documentation`
 - 来源：`raw/web/uncategorized/2026-04-06-Welcome to MMDetection’s documentation! — MMDetection 3.3.0 documentation.md`
 - 主题：计算机视觉
 

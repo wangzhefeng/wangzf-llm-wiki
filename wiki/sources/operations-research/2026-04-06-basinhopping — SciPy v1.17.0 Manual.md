@@ -3,15 +3,15 @@ created_at: 2026-04-11
 topics:
   - operationsresearch
 status: inbox
-source_path: raw/web/operationsresearch/2026-04-06-basinhopping — SciPy v1.17.0 Manual.md
+source_path: raw/web/operations-research/2026-04-06-basinhopping — SciPy v1.17.0 Manual.md
 ---
 
 # 来源卡：2026-04-06-basinhopping — SciPy v1.17.0 Manual
 
 ## 这份材料讲了什么
 
-- 原文：`raw/web/operationsresearch/2026-04-06-basinhopping — SciPy v1.17.0 Manual`
-- 来源路径：`raw/web/operationsresearch/2026-04-06-basinhopping — SciPy v1.17.0 Manual.md`
+- 原文：`raw/web/operations-research/2026-04-06-basinhopping — SciPy v1.17.0 Manual`
+- 来源路径：`raw/web/operations-research/2026-04-06-basinhopping — SciPy v1.17.0 Manual.md`
 
 ## 价值是什么
 

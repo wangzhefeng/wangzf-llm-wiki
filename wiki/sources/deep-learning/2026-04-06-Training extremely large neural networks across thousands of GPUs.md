@@ -1,6 +1,6 @@
 ---
 source_type: web
-source_path: raw/web/operationsresearch/2026-04-06-Training extremely large neural networks across thousands of GPUs.md
+source_path: raw/web/operations-research/2026-04-06-Training extremely large neural networks across thousands of GPUs.md
 title: Training extremely large neural networks across thousands of GPUs.
 author: unknown
 published_at: 2026-04-06
@@ -16,8 +16,8 @@ status: summarized
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/web/operationsresearch/2026-04-06-Training extremely large neural networks across thousands of GPUs]]
-- 来源：`raw/web/operationsresearch/2026-04-06-Training extremely large neural networks across thousands of GPUs.md`
+- 原文：[[raw/web/operations-research/2026-04-06-Training extremely large neural networks across thousands of GPUs.md]]
+- 来源：`raw/web/operations-research/2026-04-06-Training extremely large neural networks across thousands of GPUs.md`
 - 主题：深度学习
 
 ## 价值是什么

@@ -10,7 +10,7 @@ source_path: raw/web/timeseries/2026-04-06-【时间序列预测】Are Transform
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/web/timeseries/2026-04-06-【时间序列预测】Are Transformers Effective for Time Series Forecasting]]
+- 原文：[[raw/web/timeseries/2026-04-06-【时间序列预测】Are Transformers Effective for Time Series Forecasting.md]]
 - 来源路径：`raw/web/timeseries/2026-04-06-【时间序列预测】Are Transformers Effective for Time Series Forecasting.md`
 
 ## 价值是什么

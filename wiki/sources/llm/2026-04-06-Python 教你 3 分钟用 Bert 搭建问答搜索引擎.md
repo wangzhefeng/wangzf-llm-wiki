@@ -1,6 +1,6 @@
 ---
 source_type: web
-source_path: raw/web/llm/2026-04-06-Python 教你 3 分钟用 Bert 搭建问答搜索引擎.md
+source_path: raw/web/llm-pre-training/2026-04-06-Python 教你 3 分钟用 Bert 搭建问答搜索引擎.md
 title: Python 教你 3 分钟用 Bert 搭建问答搜索引擎
 author: unknown
 published_at: 2026-04-06
@@ -16,8 +16,8 @@ status: summarized
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/web/llm/2026-04-06-Python 教你 3 分钟用 Bert 搭建问答搜索引擎]]
-- 来源：`raw/web/llm/2026-04-06-Python 教你 3 分钟用 Bert 搭建问答搜索引擎.md`
+- 原文：[[raw/web/llm-pre-training/2026-04-06-Python 教你 3 分钟用 Bert 搭建问答搜索引擎.md]]
+- 来源：`raw/web/llm-pre-training/2026-04-06-Python 教你 3 分钟用 Bert 搭建问答搜索引擎.md`
 - 主题：大语言模型
 
 ## 价值是什么

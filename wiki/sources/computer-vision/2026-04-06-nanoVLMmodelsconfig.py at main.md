@@ -1,6 +1,6 @@
 ---
 source_type: web
-source_path: raw/web/llm/2026-04-06-nanoVLMmodelsconfig.py at main.md
+source_path: raw/web/llm-pre-training/2026-04-06-nanoVLMmodelsconfig.py at main.md
 title: nanoVLM/models/config.py at main
 author: unknown
 published_at: 2026-04-06

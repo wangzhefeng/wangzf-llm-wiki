@@ -1,6 +1,6 @@
 ---
 source_type: web
-source_path: raw/web/machinelearning/2026-04-06-Missing Value Treatment.md
+source_path: raw/web/machine-learning/2026-04-06-Missing Value Treatment.md
 title: Missing Value Treatment
 author: unknown
 published_at: 2026-04-06
@@ -16,8 +16,8 @@ status: summarized
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/web/machinelearning/2026-04-06-Missing Value Treatment]]
-- 来源：`raw/web/machinelearning/2026-04-06-Missing Value Treatment.md`
+- 原文：[[raw/web/machine-learning/2026-04-06-Missing Value Treatment.md]]
+- 来源：`raw/web/machine-learning/2026-04-06-Missing Value Treatment.md`
 - 主题：待分类
 
 ## 价值是什么

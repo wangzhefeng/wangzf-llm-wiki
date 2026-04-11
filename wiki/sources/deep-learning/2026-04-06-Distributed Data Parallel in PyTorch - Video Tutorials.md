@@ -1,6 +1,6 @@
 ---
 source_type: web
-source_path: raw/web/deeplearning/2026-04-06-Distributed Data Parallel in PyTorch - Video Tutorials.md
+source_path: raw/web/deep-learning/2026-04-06-Distributed Data Parallel in PyTorch - Video Tutorials.md
 title: Distributed Data Parallel in PyTorch - Video Tutorials
 author: unknown
 published_at: 2026-04-06
@@ -16,8 +16,8 @@ status: summarized
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/web/deeplearning/2026-04-06-Distributed Data Parallel in PyTorch - Video Tutorials]]
-- 来源：`raw/web/deeplearning/2026-04-06-Distributed Data Parallel in PyTorch - Video Tutorials.md`
+- 原文：[[raw/web/deep-learning/2026-04-06-Distributed Data Parallel in PyTorch - Video Tutorials.md]]
+- 来源：`raw/web/deep-learning/2026-04-06-Distributed Data Parallel in PyTorch - Video Tutorials.md`
 - 主题：深度学习
 
 ## 价值是什么

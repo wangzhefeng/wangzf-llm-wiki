@@ -43,15 +43,15 @@ status: linked
 
 ## Topics
 
-- [[wiki/sources/analysis/README]]
-- [[wiki/sources/computervision/README]]
+- [[wiki/sources/data-analysis/README]]
+- [[wiki/sources/computer-vision/README]]
 - [[wiki/sources/control-algorithms/README]]
 - [[wiki/sources/data-structure-algorithm/README]]
-- [[wiki/sources/deeplearning/README]]
+- [[wiki/sources/deep-learning/README]]
 - [[wiki/sources/knowledge-base/README]]
 - [[wiki/sources/llm/README]]
-- [[wiki/sources/machinelearning/README]]
-- [[wiki/sources/operationsresearch/README]]
-- [[wiki/sources/reinforcementlearning/README]]
+- [[wiki/sources/machine-learning/README]]
+- [[wiki/sources/operations-research/README]]
+- [[wiki/sources/reinforcement-learning/README]]
 - [[wiki/sources/shared/README]]
 - [[wiki/sources/timeseries/README]]

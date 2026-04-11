@@ -16,7 +16,7 @@ status: summarized
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/web/timeseries/2026-04-06-iTransformer：倒置Transformer在时间序列预测中卓有成效]]
+- 原文：[[raw/web/timeseries/2026-04-06-iTransformer：倒置Transformer在时间序列预测中卓有成效.md]]
 - 来源：`raw/web/timeseries/2026-04-06-iTransformer：倒置Transformer在时间序列预测中卓有成效.md`
 - 主题：大语言模型
 

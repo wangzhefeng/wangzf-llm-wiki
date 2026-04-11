@@ -1,6 +1,6 @@
 ---
 source_type: local_note
-source_path: raw/local-notes/vibe-coding/claude_code/README.md
+source_path: raw/localnotes/vibe-coding/claude_code/README.md
 title: Vibe Coding - claude_code
 author: wangzf
 published_at: 2026-04-09
@@ -18,8 +18,8 @@ status: summarized
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/local-notes/vibe-coding/claude_code/README]]
-- 来源：`raw/local-notes/vibe-coding/claude_code/README.md`
+- 原文：[[raw/localnotes/vibe-coding/claude_code/README.md]]
+- 来源：`raw/localnotes/vibe-coding/claude_code/README.md`
 - 类型：README 知识说明
 
 ## 价值是什么

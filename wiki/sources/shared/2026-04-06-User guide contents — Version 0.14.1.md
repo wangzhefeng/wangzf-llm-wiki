@@ -1,6 +1,6 @@
 ---
 source_type: web
-source_path: raw/web/machinelearning/2026-04-06-User guide contents — Version 0.14.1.md
+source_path: raw/web/machine-learning/2026-04-06-User guide contents — Version 0.14.1.md
 title: User guide: contents — Version 0.14.1
 author: unknown
 published_at: 2026-04-06
@@ -16,8 +16,8 @@ status: summarized
 
 ## 这份材料讲了什么
 
-- 原文：`raw/web/machinelearning/2026-04-06-User guide contents — Version 0.14.1`
-- 来源：`raw/web/machinelearning/2026-04-06-User guide contents — Version 0.14.1.md`
+- 原文：`raw/web/machine-learning/2026-04-06-User guide contents — Version 0.14.1`
+- 来源：`raw/web/machine-learning/2026-04-06-User guide contents — Version 0.14.1.md`
 - 主题：待分类
 
 ## 价值是什么

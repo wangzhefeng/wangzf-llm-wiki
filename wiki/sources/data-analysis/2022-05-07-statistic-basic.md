@@ -1,6 +1,6 @@
 ---
 source_type: local_note
-source_path: raw/local-notes/analysis/statistics/2022-05-07-statistic-basic/index.md
+source_path: raw/localnotes/data-analysis/statistics/2022-05-07-statistic-basic/index.md
 title: 2022-05-07-statistic-basic
 author: wangzf
 published_at: 2022-05-07
@@ -17,7 +17,7 @@ status: summarized
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/local-notes/analysis/statistics/2022-05-07-statistic-basic/index]]
+- 原文：[[raw/localnotes/data-analysis/statistics/2022-05-07-statistic-basic/index.md]]
 ---
 
 ## 价值是什么

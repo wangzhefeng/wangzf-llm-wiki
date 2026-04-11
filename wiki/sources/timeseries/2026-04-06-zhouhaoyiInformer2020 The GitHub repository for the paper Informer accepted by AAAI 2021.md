@@ -1,6 +1,6 @@
 ---
 source_type: web
-source_path: raw/web/deeplearning/2026-04-06-zhouhaoyiInformer2020 The GitHub repository for the paper Informer accepted by AAAI 2021.md
+source_path: raw/web/deep-learning/2026-04-06-zhouhaoyiInformer2020 The GitHub repository for the paper Informer accepted by AAAI 2021.md
 title: zhouhaoyi/Informer2020: The GitHub repository for the paper \"Informer\" accepted by AAAI 2021.
 author: unknown
 published_at: 2026-04-06
@@ -16,8 +16,8 @@ status: summarized
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/web/deeplearning/2026-04-06-zhouhaoyiInformer2020 The GitHub repository for the paper Informer accepted by AAAI 2021]]
-- 来源：`raw/web/deeplearning/2026-04-06-zhouhaoyiInformer2020 The GitHub repository for the paper Informer accepted by AAAI 2021.md`
+- 原文：[[raw/web/deep-learning/2026-04-06-zhouhaoyiInformer2020 The GitHub repository for the paper Informer accepted by AAAI 2021.md]]
+- 来源：`raw/web/deep-learning/2026-04-06-zhouhaoyiInformer2020 The GitHub repository for the paper Informer accepted by AAAI 2021.md`
 - 主题：时间序列
 
 ## 价值是什么

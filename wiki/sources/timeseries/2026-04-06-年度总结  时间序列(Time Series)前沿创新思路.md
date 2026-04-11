@@ -16,7 +16,7 @@ status: summarized
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/web/timeseries/2026-04-06-年度总结  时间序列(Time Series)前沿创新思路]]
+- 原文：[[raw/web/timeseries/2026-04-06-年度总结  时间序列(Time Series)前沿创新思路.md]]
 - 来源：`raw/web/timeseries/2026-04-06-年度总结  时间序列(Time Series)前沿创新思路.md`
 - 主题：时间序列
 

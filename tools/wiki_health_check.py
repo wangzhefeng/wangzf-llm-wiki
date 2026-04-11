@@ -11,7 +11,9 @@ WIKI_ROOT = ROOT / "wiki"
 RAW_ROOT = ROOT / "raw"
 
 WIKILINK_RE = re.compile(r"\[\[([^\]|#]+)(?:#[^\]]*)?(?:\|[^\]]*)?\]\]")
-ATTACHMENT_PATH_RE = re.compile(r"raw/assets/attachments/[A-Za-z0-9_./% ()-]+\.[A-Za-z0-9]+")
+ATTACHMENT_PATH_RE = re.compile(
+    r"raw/assets/attachments/[A-Za-z0-9_./% ()-]+\.[A-Za-z0-9]+"
+)
 
 # 允许存在于模板/指引类文本中的“占位链接”，不计入断链
 IGNORE_WIKILINK_TARGETS = {
@@ -29,11 +31,11 @@ ORPHAN_EXCLUDE_DIR_PREFIXES = {
 }
 
 RAW_NAMING_ALLOWLIST = {
-    "raw/codex_threads/线程总结模板.md",
-    "raw/local-notes/时间序列预测-历史文档清单.md",
-    "raw/local-notes/深度学习-历史文档清单.md",
-    "raw/local-notes/知识库建设方法-历史文档清单.md",
-    "raw/local-notes/运筹优化算法-历史文档清单.md",
+    "raw/codex-threads/线程总结模板.md",
+    "raw/localnotes/时间序列预测-历史文档清单.md",
+    "raw/localnotes/深度学习-历史文档清单.md",
+    "raw/localnotes/知识库建设方法-历史文档清单.md",
+    "raw/localnotes/运筹优化算法-历史文档清单.md",
     "raw/repos/repo-wangzhefeng-tsproj-ml.md",
 }
 
@@ -269,7 +271,11 @@ def main() -> int:
             print(f"- {src.relative_to(ROOT)} -> {rel}")
 
     # 非零退出表示存在健康债务（便于 CI/脚本集成）
-    return 1 if (broken or orphans or raw_issues or raw_naming_issues or missing_attachments) else 0
+    return (
+        1
+        if (broken or orphans or raw_issues or raw_naming_issues or missing_attachments)
+        else 0
+    )
 
 
 if __name__ == "__main__":

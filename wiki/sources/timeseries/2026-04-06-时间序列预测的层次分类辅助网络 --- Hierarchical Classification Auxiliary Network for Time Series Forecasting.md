@@ -16,7 +16,7 @@ status: summarized
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/web/timeseries/2026-04-06-时间序列预测的层次分类辅助网络 --- Hierarchical Classification Auxiliary Network for Time Series Forecasting]]
+- 原文：[[raw/web/timeseries/2026-04-06-时间序列预测的层次分类辅助网络 --- Hierarchical Classification Auxiliary Network for Time Series Forecasting.md]]
 - 来源：`raw/web/timeseries/2026-04-06-时间序列预测的层次分类辅助网络 --- Hierarchical Classification Auxiliary Network for Time Series Forecasting.md`
 - 主题：时间序列
 

@@ -2,7 +2,11 @@
 title: 运筹学
 subtitle: Operations Research
 list_pages: true
-# order_by: title
+source_type: local_note
+created_at: 2026-04-11
+topics:
+  - operations-research
+status: linked
 ---
 
 ## 运筹学定义

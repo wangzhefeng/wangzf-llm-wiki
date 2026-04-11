@@ -1,6 +1,6 @@
 ---
 source_type: local_note
-source_path: raw/local-notes/analysis/statistics/2023-07-25-causal-inference/index.md
+source_path: raw/localnotes/data-analysis/statistics/2023-07-25-causal-inference/index.md
 title: 2023-07-25-causal-inference
 author: wangzf
 published_at: 2023-07-25
@@ -18,7 +18,7 @@ status: summarized
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/local-notes/analysis/statistics/2023-07-25-causal-inference/index]]
+- 原文：[[raw/localnotes/data-analysis/statistics/2023-07-25-causal-inference/index.md]]
 ---
 
 ## 价值是什么

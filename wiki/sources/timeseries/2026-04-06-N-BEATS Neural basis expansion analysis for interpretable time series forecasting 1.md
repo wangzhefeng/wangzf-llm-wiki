@@ -16,7 +16,7 @@ status: summarized
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/web/timeseries/2026-04-06-N-BEATS Neural basis expansion analysis for interpretable time series forecasting 1]]
+- 原文：[[raw/web/timeseries/2026-04-06-N-BEATS Neural basis expansion analysis for interpretable time series forecasting 1.md]]
 - 来源：`raw/web/timeseries/2026-04-06-N-BEATS Neural basis expansion analysis for interpretable time series forecasting 1.md`
 - 主题：时间序列
 

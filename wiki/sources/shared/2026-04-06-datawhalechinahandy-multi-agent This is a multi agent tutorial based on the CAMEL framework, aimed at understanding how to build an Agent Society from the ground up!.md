@@ -10,7 +10,7 @@ source_path: raw/web/vibe-coding/2026-04-06-datawhalechinahandy-multi-agent This
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/web/vibe-coding/2026-04-06-datawhalechinahandy-multi-agent This is a multi agent tutorial based on the CAMEL framework, aimed at understanding how to build an Agent Society from the ground up!]]
+- 原文：[[raw/web/vibe-coding/2026-04-06-datawhalechinahandy-multi-agent This is a multi agent tutorial based on the CAMEL framework, aimed at understanding how to build an Agent Society from the ground up!.md]]
 - 来源路径：`raw/web/vibe-coding/2026-04-06-datawhalechinahandy-multi-agent This is a multi agent tutorial based on the CAMEL framework, aimed at understanding how to build an Agent Society from the ground up!.md`
 
 ## 价值是什么

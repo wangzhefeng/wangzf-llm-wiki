@@ -16,7 +16,7 @@ status: summarized
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/web/timeseries/2026-04-06-TimeXer Empowering Transformers for Time Series Forecasting with Exogenous Variables]]
+- 原文：[[raw/web/timeseries/2026-04-06-TimeXer Empowering Transformers for Time Series Forecasting with Exogenous Variables.md]]
 - 来源：`raw/web/timeseries/2026-04-06-TimeXer Empowering Transformers for Time Series Forecasting with Exogenous Variables.md`
 - 主题：大语言模型
 

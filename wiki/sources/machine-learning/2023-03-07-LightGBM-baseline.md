@@ -1,6 +1,6 @@
 ---
 source_type: local_note
-source_path: raw/local-notes/machinelearning/supervised/ensemble/lightgbm/2023-03-07-ml-gbm-lightgbm-baseline/index.md
+source_path: raw/localnotes/machine-learning/supervised/ensemble/lightgbm/2023-03-07-ml-gbm-lightgbm-baseline/index.md
 title: LightGBM baseline
 author: wangzf
 published_at: 2023-03-07
@@ -19,7 +19,7 @@ status: summarized
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/local-notes/machinelearning/supervised/ensemble/lightgbm/2023-03-07-ml-gbm-lightgbm-baseline/index]]
+- 原文：[[raw/localnotes/machine-learning/supervised/ensemble/lightgbm/2023-03-07-ml-gbm-lightgbm-baseline/index.md]]
 这份材料记录了 LightGBM baseline 的基本训练流程，包含数据划分、交叉验证、模型训练与结果输出。
 
 ## 价值是什么
