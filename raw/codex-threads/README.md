@@ -46,7 +46,7 @@ status: inbox
 ## 与其他线程交互的提示词（可直接复用）
 
 ```md
-请基于当前线程内容，并以 `/Users/wangzf/projects_ai/wangzf_kb/raw/codex_threads/README.md` 和 `/Users/wangzf/projects_ai/wangzf_kb/raw/codex_threads/线程总结模板.md` 的要求为准，帮我整理这条线程，供我后续沉淀到 `raw/codex_threads/` 目录中。
+请基于当前线程内容，并以 `/Users/wangzf/projects_ai/wangzf-llm-wiki/raw/codex_threads/README.md` 和 `/Users/wangzf/projects_ai/wangzf-llm-wiki/raw/codex_threads/线程总结模板.md` 的要求为准，帮我整理这条线程，供我后续沉淀到 `raw/codex_threads/` 目录中。
 
 整理目标不是总结知识库主题内容，而是提炼这条线程对于“Codex 在该项目中的工作流程、有效经验、问题、可固化步骤、可提炼 skill 素材”的价值。
 
@@ -66,7 +66,7 @@ status: inbox
 2. 对照 [线程总结模板](./线程总结模板.md) 快速检查章节完整性。
 3. 将最终 Markdown 保存到 `raw/codex_threads/`。
 
-说明：本仓库根目录 `README.md` 位于 `/Users/wangzf/projects_ai/wangzf_kb/README.md`，线程总结文件应保存到同一仓库目录下的 `/Users/wangzf/projects_ai/wangzf_kb/raw/codex_threads/`。
+说明：本仓库根目录 `README.md` 位于 `/Users/wangzf/projects_ai/wangzf-llm-wiki/README.md`，线程总结文件应保存到同一仓库目录下的 `/Users/wangzf/projects_ai/wangzf-llm-wiki/raw/codex_threads/`。
 
 ## 线程总结文件命名规范
 

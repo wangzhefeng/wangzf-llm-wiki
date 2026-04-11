@@ -18,7 +18,7 @@ status: inbox
 - 时间范围：2026-04-05 至 2026-04-07
 - 线程状态：已完成
 - 相关主题：Codex 工作流、知识库 schema、repo 级 agent 约束
-- 相关仓库路径：`/Users/wangzf/projects_ai/wangzf_kb`
+- 相关仓库路径：`/Users/wangzf/projects_ai/wangzf-llm-wiki`
 - 是否涉及代码修改：是，主要为 Markdown / prompt / 索引页 / repo 级约束文件
 
 # 1. 线程目标
@@ -38,20 +38,20 @@ status: inbox
 - 完成了缺口诊断，并明确把问题分为“核心能力缺口”而不是“主题内容缺口”。
 - 补齐了 query / log / 问题地图 / 多来源 intake / synthesis 这几类工作流缺口。
 - 新增或更新的关键文件包括：
-  - [知识库问答与研究工作流](/Users/wangzf/projects_ai/wangzf_kb/wiki/indexes/shared/知识库问答与研究工作流.md)
-  - [知识库问题地图](/Users/wangzf/projects_ai/wangzf_kb/wiki/indexes/shared/知识库问题地图.md)
-  - [知识库操作记录索引](/Users/wangzf/projects_ai/wangzf_kb/wiki/indexes/shared/知识库操作记录索引.md)
-  - [knowledge-base-query prompt](/Users/wangzf/projects_ai/wangzf_kb/prompts/query/knowledge-base-query.md)
-  - [operation-log prompt](/Users/wangzf/projects_ai/wangzf_kb/prompts/logging/operation-log.md)
-  - [paper-source-intake](/Users/wangzf/projects_ai/wangzf_kb/prompts/intake/paper-source-intake.md)
-  - [dataset-source-intake](/Users/wangzf/projects_ai/wangzf_kb/prompts/intake/dataset-source-intake.md)
-  - [image-source-intake](/Users/wangzf/projects_ai/wangzf_kb/prompts/intake/image-source-intake.md)
-  - [local-note-source-intake](/Users/wangzf/projects_ai/wangzf_kb/prompts/intake/local-note-source-intake.md)
-  - [LLM-wiki-核心能力缺口与补齐路线](/Users/wangzf/projects_ai/wangzf_kb/outputs/syntheses/2026-04-05-LLM-wiki-核心能力缺口与补齐路线.md)
-  - [LLM-wiki-核心能力补齐记录](/Users/wangzf/projects_ai/wangzf_kb/outputs/logs/2026-04-05-LLM-wiki-核心能力补齐记录.md)
-  - [AGENTS.md](/Users/wangzf/projects_ai/wangzf_kb/AGENTS.md)
-  - [CLAUDE.md](/Users/wangzf/projects_ai/wangzf_kb/CLAUDE.md)
-- 同时更新了首页与 shared 索引入口，如 [README.md](/Users/wangzf/projects_ai/wangzf_kb/README.md)、[知识库工作台](/Users/wangzf/projects_ai/wangzf_kb/wiki/indexes/shared/知识库工作台.md)、[知识库任务与输出工作流索引](/Users/wangzf/projects_ai/wangzf_kb/wiki/indexes/shared/知识库任务与输出工作流索引.md)、[prompts/README.md](/Users/wangzf/projects_ai/wangzf_kb/prompts/README.md)。
+  - [知识库问答与研究工作流](/Users/wangzf/projects_ai/wangzf-llm-wiki/wiki/indexes/shared/知识库问答与研究工作流.md)
+  - [知识库问题地图](/Users/wangzf/projects_ai/wangzf-llm-wiki/wiki/indexes/shared/知识库问题地图.md)
+  - [知识库操作记录索引](/Users/wangzf/projects_ai/wangzf-llm-wiki/wiki/indexes/shared/知识库操作记录索引.md)
+  - [knowledge-base-query prompt](/Users/wangzf/projects_ai/wangzf-llm-wiki/prompts/query/knowledge-base-query.md)
+  - [operation-log prompt](/Users/wangzf/projects_ai/wangzf-llm-wiki/prompts/logging/operation-log.md)
+  - [paper-source-intake](/Users/wangzf/projects_ai/wangzf-llm-wiki/prompts/intake/paper-source-intake.md)
+  - [dataset-source-intake](/Users/wangzf/projects_ai/wangzf-llm-wiki/prompts/intake/dataset-source-intake.md)
+  - [image-source-intake](/Users/wangzf/projects_ai/wangzf-llm-wiki/prompts/intake/image-source-intake.md)
+  - [local-note-source-intake](/Users/wangzf/projects_ai/wangzf-llm-wiki/prompts/intake/local-note-source-intake.md)
+  - [LLM-wiki-核心能力缺口与补齐路线](/Users/wangzf/projects_ai/wangzf-llm-wiki/outputs/syntheses/2026-04-05-LLM-wiki-核心能力缺口与补齐路线.md)
+  - [LLM-wiki-核心能力补齐记录](/Users/wangzf/projects_ai/wangzf-llm-wiki/outputs/logs/2026-04-05-LLM-wiki-核心能力补齐记录.md)
+  - [AGENTS.md](/Users/wangzf/projects_ai/wangzf-llm-wiki/AGENTS.md)
+  - [CLAUDE.md](/Users/wangzf/projects_ai/wangzf-llm-wiki/CLAUDE.md)
+- 同时更新了首页与 shared 索引入口，如 [README.md](/Users/wangzf/projects_ai/wangzf-llm-wiki/README.md)、[知识库工作台](/Users/wangzf/projects_ai/wangzf-llm-wiki/wiki/indexes/shared/知识库工作台.md)、[知识库任务与输出工作流索引](/Users/wangzf/projects_ai/wangzf-llm-wiki/wiki/indexes/shared/知识库任务与输出工作流索引.md)、[prompts/README.md](/Users/wangzf/projects_ai/wangzf-llm-wiki/prompts/README.md)。
 - 未完成项：
   - 主题级问题地图未全面展开
   - 新 query / log / synthesis 工作流尚未经过多轮真实线程验证
@@ -131,7 +131,7 @@ status: inbox
   - 追加要求“同时为 Claude Code 和 Codex 创建文件”很清楚，减少来回。
 
 - 哪些上下文提供方式有效：
-  - 先给 [raw/codex_threads/README.md](/Users/wangzf/projects_ai/wangzf_kb/raw/codex_threads/README.md) 这种“整理口径页”，再要求总结，能明显提高摘要质量。
+  - 先给 [raw/codex_threads/README.md](/Users/wangzf/projects_ai/wangzf-llm-wiki/raw/codex_threads/README.md) 这种“整理口径页”，再要求总结，能明显提高摘要质量。
   - 方法页、执行指引、工作台、prompt 树、输出目录一起读，比只读 README 更能看出真实工作流。
 
 - 哪些文件组织方式有效：

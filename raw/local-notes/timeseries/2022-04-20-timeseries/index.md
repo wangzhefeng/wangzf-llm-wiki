@@ -14,7 +14,7 @@ status: inbox
 
 # 占位文件: index
 
-> 此文件为占位文件，原始文件缺失。原计划链接自：raw/localnotes/post/2023-07-30-montecarlo/index
+> 此文件为占位文件，原始文件缺失。原计划链接自：raw/local-notes/timeseries/2022-04-20-timeseries/index
 
 ## 说明
 
