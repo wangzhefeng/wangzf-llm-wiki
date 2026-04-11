@@ -25,7 +25,7 @@ Everything You Need to Know About Parameter Efficient Fine-Tuning (PEFT)
 
 ---
 
-![[assets/attachments/uncategorized/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F493b62da-91e6-4f6b-896f-4af8c5eb1405_580x514.png]]
+![[raw/assets/attachments/llm/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F493b62da-91e6-4f6b-896f-4af8c5eb1405_580x514.png]]
 
 Low Rank Adaptation (LoRA), Source: ( LoRA Paper )
 
@@ -92,7 +92,7 @@ In practice, large AI companies and open-source communities avoid full fine-tuni
 
 ***[Parameter-efficient fine-tuning (PEFT)](https://github.com/huggingface/peft)*** is a set of techniques aimed at fine-tuning large pre-trained language models by altering only a small subset of their parameters—rather than adjusting all weights as in full fine-tuning. This approach makes fine-tuning practical even with limited computational resources while still achieving high performance.
 
-![[assets/attachments/uncategorized/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F21bd8707-5fd1-4f4d-a1e2-3c9be91d78a4_585x465.png]]
+![[raw/assets/attachments/llm/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F21bd8707-5fd1-4f4d-a1e2-3c9be91d78a4_585x465.png]]
 
 Source: ( Author )
 
@@ -134,7 +134,7 @@ This theorem states that the best *rank-k* approximation of a matrix *A*, where
 
 in terms of minimizing the Frobenius norm, is obtained by truncating its ***[Singular Value Decomposition (SVD)](https://en.wikipedia.org/wiki/Singular_value_decomposition)***.
 
-![[assets/attachments/uncategorized/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F915be077-23d2-4889-a83c-162e7e9ca0f3_1194x350.png]]
+![[raw/assets/attachments/llm/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F915be077-23d2-4889-a83c-162e7e9ca0f3_1194x350.png]]
 
 Singular Value Decomposition (SVD), Source: ( Author )
 
@@ -158,7 +158,7 @@ In large language models, the most compute-intensive parameters reside in the at
 
 we express it as the product of two smaller, trainable matrices:
 
-![[assets/attachments/uncategorized/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F6c58a2b0-bf27-44a9-b114-1881dc3ab373_916x455.png]]
+![[raw/assets/attachments/llm/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F6c58a2b0-bf27-44a9-b114-1881dc3ab373_916x455.png]]
 
 Low Rank Adaptation (LoRA), )Source: ( Author )
 
@@ -378,7 +378,7 @@ moderately positive
 
 Tracked my fine-tuning progress using ***[Weights & Biases](https://docs.wandb.ai/)***, logging essential metrics like token-level accuracy, loss, learning rate, and gradient norm, along with global step and epoch. These visualizations helped in monitoring training behavior closely.
 
-![[assets/attachments/uncategorized/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F1eeee170-99da-4842-a4fa-12479adf2d72_2726x1256.png]]
+![[raw/assets/attachments/llm/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F1eeee170-99da-4842-a4fa-12479adf2d72_2726x1256.png]]
 
 Source: ( Author )
 

@@ -7,6 +7,10 @@ categories:
   - control-system
 tags:
   - algorithm
+source_type: local_note
+created_at: 2024-07-21
+topics:
+  - control-system
 ---
 
 <style>

@@ -17,7 +17,7 @@ tags:
 
 [**中文**](https://github.com/PaddlePaddle/VisualDL/blob/develop/README_CN.md)
 
-[![[assets/attachments/deeplearning/logo-visualdl 1.svg]]](https://raw.githubusercontent.com/PaddlePaddle/VisualDL/develop/frontend/packages/core/public/images/logo-visualdl.svg?sanitize=true)
+![logo-visualdl 1.svg](https://raw.githubusercontent.com/PaddlePaddle/VisualDL/develop/frontend/packages/core/public/images/logo-visualdl.svg?sanitize=true)
 
 ## Introduction
 
@@ -110,9 +110,9 @@ class LogWriter(logdir=None,
 | display\_name | string | This parameter is displayed in the location of `Select Data Stream` in the panel. If not set, the default name is `logdir`.(When `logdir` is too long or needed to be hidden). |
 | file\_name | string | Set the name of the log file. If the file\_name already exists, setting the file\_name will be new records in the same log file, which will continue to be used. Note that the name should include 'vdlrecords'. |
 
-[![[assets/attachments/deeplearning/103187556-b9714280-48ff-11eb-9052-008e02a21199 1.png]]](https://user-images.githubusercontent.com/48054808/103187556-b9714280-48ff-11eb-9052-008e02a21199.png)
+[![[raw/assets/attachments/deeplearning/103187556-b9714280-48ff-11eb-9052-008e02a21199 1.png]]](https://user-images.githubusercontent.com/48054808/103187556-b9714280-48ff-11eb-9052-008e02a21199.png)
 
-[![[assets/attachments/deeplearning/103187552-b4ac8e80-48ff-11eb-998a-57d5a1bc7ee6 1.png]]](https://user-images.githubusercontent.com/48054808/103187552-b4ac8e80-48ff-11eb-998a-57d5a1bc7ee6.png)
+[![[raw/assets/attachments/deeplearning/103187552-b4ac8e80-48ff-11eb-998a-57d5a1bc7ee6 1.png]]](https://user-images.githubusercontent.com/48054808/103187552-b4ac8e80-48ff-11eb-998a-57d5a1bc7ee6.png)
 
 #### Example
 
@@ -214,7 +214,7 @@ app.run(logdir="./log")
 
 After launching the panel by one of the above methods, developers can see the visualization results on the browser shown as blow:
 
-[![[assets/attachments/deeplearning/90868674-ba321f00-e3c9-11ea-83c1-f03c6dd19187 1.png]]](https://user-images.githubusercontent.com/48054808/90868674-ba321f00-e3c9-11ea-83c1-f03c6dd19187.png)
+[![[raw/assets/attachments/deeplearning/90868674-ba321f00-e3c9-11ea-83c1-f03c6dd19187 1.png]]](https://user-images.githubusercontent.com/48054808/90868674-ba321f00-e3c9-11ea-83c1-f03c6dd19187.png)
 
 ### 3\. Read data in log files using LogReader
 
@@ -264,31 +264,31 @@ For more information of `LogReader`, please refer to [LogReader](https://github.
 
 After the launch of VisualDL Board, the LogReader will continuously record the data to display in the front-end. Hence, the changes of parameters can be visualized in real-time, as shown below:
 
-[![[assets/attachments/deeplearning/Image 10.gif]]](https://camo.githubusercontent.com/0d42742c05670fb6d041c313ac50687fc2ea44c8697114c30499e0119ee3f9e6/68747470733a2f2f76697375616c646c2e626a2e626365626f732e636f6d2f696d616765732f64796e616d69635f646973706c61792e676966)
+[![[raw/assets/attachments/deeplearning/Image 10.gif]]](https://camo.githubusercontent.com/0d42742c05670fb6d041c313ac50687fc2ea44c8697114c30499e0119ee3f9e6/68747470733a2f2f76697375616c646c2e626a2e626365626f732e636f6d2f696d616765732f64796e616d69635f646973706c61792e676966)
 
 #### Comparison of Multiple Experiments
 
 Developers can compare multiple experiments by specifying and uploading the path of each experiment at the same time so as to visualize the same parameters in the same chart.
 
-[![[assets/attachments/deeplearning/90869567-fdd95880-e3ca-11ea-9855-6c97ad5c8ae7 1.gif]]](https://user-images.githubusercontent.com/48054808/90869567-fdd95880-e3ca-11ea-9855-6c97ad5c8ae7.gif)
+[![[raw/assets/attachments/deeplearning/90869567-fdd95880-e3ca-11ea-9855-6c97ad5c8ae7 1.gif]]](https://user-images.githubusercontent.com/48054808/90869567-fdd95880-e3ca-11ea-9855-6c97ad5c8ae7.gif)
 
 ### Image
 
 **Image** provides real-time visualizations of the image data during the training process, allowing developers to observe the changes of images at different training stages and to deeply understand the effects of the training process.
 
-[![[assets/attachments/deeplearning/90869677-22353500-e3cb-11ea-9830-2334bdd8e52e 1.gif]]](https://user-images.githubusercontent.com/48054808/90869677-22353500-e3cb-11ea-9830-2334bdd8e52e.gif)
+[![[raw/assets/attachments/deeplearning/90869677-22353500-e3cb-11ea-9830-2334bdd8e52e 1.gif]]](https://user-images.githubusercontent.com/48054808/90869677-22353500-e3cb-11ea-9830-2334bdd8e52e.gif)
 
 ### Audio
 
 **Audio** aims to allow developers to listen to the audio data in real-time during the training process, helping developers to monitor the process of speech recognition and text-to-speech.
 
-[![[assets/attachments/deeplearning/90869771-47c23e80-e3cb-11ea-8b2a-a38b6c33d64b 1.png]]](https://user-images.githubusercontent.com/48054808/90869771-47c23e80-e3cb-11ea-8b2a-a38b6c33d64b.png)
+[![[raw/assets/attachments/deeplearning/90869771-47c23e80-e3cb-11ea-8b2a-a38b6c33d64b 1.png]]](https://user-images.githubusercontent.com/48054808/90869771-47c23e80-e3cb-11ea-8b2a-a38b6c33d64b.png)
 
 ### Text
 
 **Text** visualizes the text output of NLP models within any stage, aiding developers to compare the changes of outputs so as to deeply understand the training process and simply evaluate the performance of the model.
 
-[![[assets/attachments/deeplearning/106248340-cdd09400-624b-11eb-8ea9-5a07a239c365 1.png]]](https://user-images.githubusercontent.com/28444161/106248340-cdd09400-624b-11eb-8ea9-5a07a239c365.png)
+[![[raw/assets/attachments/deeplearning/106248340-cdd09400-624b-11eb-8ea9-5a07a239c365 1.png]]](https://user-images.githubusercontent.com/28444161/106248340-cdd09400-624b-11eb-8ea9-5a07a239c365.png)
 
 ### Graph
 
@@ -296,11 +296,11 @@ Developers can compare multiple experiments by specifying and uploading the path
 
 - dynamic graph
 
-[![[assets/attachments/deeplearning/175811841-64b44d99-7d48-4fe9-a679-01156d15af74 1.gif]]](https://user-images.githubusercontent.com/22424850/175811841-64b44d99-7d48-4fe9-a679-01156d15af74.gif)
+[![[raw/assets/attachments/deeplearning/175811841-64b44d99-7d48-4fe9-a679-01156d15af74 1.gif]]](https://user-images.githubusercontent.com/22424850/175811841-64b44d99-7d48-4fe9-a679-01156d15af74.gif)
 
 - static graph
 
-[![[assets/attachments/deeplearning/175811795-1fd21737-06f0-42fc-bea3-ef7a17216fc9.gif]]](https://user-images.githubusercontent.com/22424850/175811795-1fd21737-06f0-42fc-bea3-ef7a17216fc9.gif)
+[![[raw/assets/attachments/deeplearning/175811795-1fd21737-06f0-42fc-bea3-ef7a17216fc9.gif]]](https://user-images.githubusercontent.com/22424850/175811795-1fd21737-06f0-42fc-bea3-ef7a17216fc9.gif)
 
 ### Histogram
 
@@ -308,71 +308,71 @@ Developers can compare multiple experiments by specifying and uploading the path
 
 - Offset Mode
 
-[![[assets/attachments/deeplearning/90870121-bd2e0f00-e3cb-11ea-89cf-6622cb607b89.png]]](https://user-images.githubusercontent.com/48054808/90870121-bd2e0f00-e3cb-11ea-89cf-6622cb607b89.png)
+[![[raw/assets/attachments/deeplearning/90870121-bd2e0f00-e3cb-11ea-89cf-6622cb607b89.png]]](https://user-images.githubusercontent.com/48054808/90870121-bd2e0f00-e3cb-11ea-89cf-6622cb607b89.png)
 
 - Overlay Mode
 
-[![[assets/attachments/deeplearning/90870194-cfa84880-e3cb-11ea-8a66-bebcad267a10.png]]](https://user-images.githubusercontent.com/48054808/90870194-cfa84880-e3cb-11ea-8a66-bebcad267a10.png)
+[![[raw/assets/attachments/deeplearning/90870194-cfa84880-e3cb-11ea-8a66-bebcad267a10.png]]](https://user-images.githubusercontent.com/48054808/90870194-cfa84880-e3cb-11ea-8a66-bebcad267a10.png)
 
 ### PR Curve
 
 **PR Curve** displays the precision and recall values under different thresholds, helping developers to find the best threshold efficiently.
 
-[![[assets/attachments/deeplearning/103274647-1ef72900-49fd-11eb-9284-2a5b63bdf2e3.png]]](https://user-images.githubusercontent.com/48054808/103274647-1ef72900-49fd-11eb-9284-2a5b63bdf2e3.png)
+[![[raw/assets/attachments/deeplearning/103274647-1ef72900-49fd-11eb-9284-2a5b63bdf2e3.png]]](https://user-images.githubusercontent.com/48054808/103274647-1ef72900-49fd-11eb-9284-2a5b63bdf2e3.png)
 
 ### ROC Curve
 
 **ROC Curve** shows the performance of a classification model at all classification thresholds; the larger the area under the curve, the better the model performs, aiding developers in evaluating the model performance and choosing an appropriate threshold.
 
-[![[assets/attachments/deeplearning/103344081-8928d000-4ac8-11eb-84d0-28f249886172.gif]]](https://user-images.githubusercontent.com/48054808/103344081-8928d000-4ac8-11eb-84d0-28f249886172.gif)
+[![[raw/assets/attachments/deeplearning/103344081-8928d000-4ac8-11eb-84d0-28f249886172.gif]]](https://user-images.githubusercontent.com/48054808/103344081-8928d000-4ac8-11eb-84d0-28f249886172.gif)
 
 ### High Dimensional
 
 **High Dimensional** provides three approaches--T-SNE, PCA and UMAP--to do the dimensionality reduction, allowing developers to have an in-depth analysis of the relationship between high-dimensional data and to optimize algorithms based on the analysis.
 
-[![[assets/attachments/deeplearning/103188111-1b32ac00-4902-11eb-914e-c2368bdb8373.gif]]](https://user-images.githubusercontent.com/48054808/103188111-1b32ac00-4902-11eb-914e-c2368bdb8373.gif)
+[![[raw/assets/attachments/deeplearning/103188111-1b32ac00-4902-11eb-914e-c2368bdb8373.gif]]](https://user-images.githubusercontent.com/48054808/103188111-1b32ac00-4902-11eb-914e-c2368bdb8373.gif)
 
 ### Hyper Parameters
 
 **Hyper Parameters** visualize the relationship between hyperparameters and model metrics (such as accuracy and loss) in a rich view, helping you identify the best hyperparameters in an efficient way.
 
-[![[assets/attachments/deeplearning/119247155-e9c0c280-bbb9-11eb-8175-58a9c7657a9c.gif]]](https://user-images.githubusercontent.com/28444161/119247155-e9c0c280-bbb9-11eb-8175-58a9c7657a9c.gif)
+[![[raw/assets/attachments/deeplearning/119247155-e9c0c280-bbb9-11eb-8175-58a9c7657a9c.gif]]](https://user-images.githubusercontent.com/28444161/119247155-e9c0c280-bbb9-11eb-8175-58a9c7657a9c.gif)
 
 ### Performance Analysis
 
 **Performance Analysis** (Profiler) visualize the profiling data collected during your program runs, helping you identify program bottlenecks and optimize performance. Please refer to [VisualDL Profiler Guide](https://github.com/PaddlePaddle/VisualDL/blob/develop/profiler/README.md) 。
 
-[![[assets/attachments/deeplearning/185894151-53ffc60b-7203-4cb8-a289-5d97332d0691.gif]]](https://user-images.githubusercontent.com/22424850/185894151-53ffc60b-7203-4cb8-a289-5d97332d0691.gif)
+[![[raw/assets/attachments/deeplearning/185894151-53ffc60b-7203-4cb8-a289-5d97332d0691.gif]]](https://user-images.githubusercontent.com/22424850/185894151-53ffc60b-7203-4cb8-a289-5d97332d0691.gif)
 
 ### Performance Analysis
 
 **Performance Analysis** (Profiler) visualize the profiling data collected during your program runs, helping you identify program bottlenecks and optimize performance. Please refer to [VisualDL Profiler Guide](https://github.com/PaddlePaddle/VisualDL/blob/develop/docs/components/profiler/README.md).
 
-[![[assets/attachments/deeplearning/185894151-53ffc60b-7203-4cb8-a289-5d97332d0691.gif]]](https://user-images.githubusercontent.com/22424850/185894151-53ffc60b-7203-4cb8-a289-5d97332d0691.gif)
+[![[raw/assets/attachments/deeplearning/185894151-53ffc60b-7203-4cb8-a289-5d97332d0691.gif]]](https://user-images.githubusercontent.com/22424850/185894151-53ffc60b-7203-4cb8-a289-5d97332d0691.gif)
 
 ### X2Paddle
 
 The X2Paddle component provides the functions of onnx model format visualization and transformation to paddle format.
 
-[![[assets/attachments/deeplearning/211203066-f2e43ef5-104f-436a-b44c-cad2b37ad518.gif]]](https://user-images.githubusercontent.com/22424850/211203066-f2e43ef5-104f-436a-b44c-cad2b37ad518.gif)
+[![[raw/assets/attachments/deeplearning/211203066-f2e43ef5-104f-436a-b44c-cad2b37ad518.gif]]](https://user-images.githubusercontent.com/22424850/211203066-f2e43ef5-104f-436a-b44c-cad2b37ad518.gif)
 
 ### FastDeployServer
 
 The FastDeployServer component provides the functions of loading and editing the model repository, fastdeployserver service management and monitoring, and providing the client to test service. Please refer to [use VisualDL for fastdeploy serving deployment visualization](https://github.com/PaddlePaddle/VisualDL/blob/develop/docs/components/fastdeploy_server/README.md).
 
-[![[assets/attachments/deeplearning/211196832-1a05bf80-5aaa-493f-bba2-27e819c18bb9.gif]]](https://user-images.githubusercontent.com/22424850/211196832-1a05bf80-5aaa-493f-bba2-27e819c18bb9.gif)
+[![[raw/assets/attachments/deeplearning/211196832-1a05bf80-5aaa-493f-bba2-27e819c18bb9.gif]]](https://user-images.githubusercontent.com/22424850/211196832-1a05bf80-5aaa-493f-bba2-27e819c18bb9.gif)
 
 ### FastDeployClient
 
 The FastDeployClient component is mainly used to quickly access the fastdeployserver service, to help users visualize prediction requests and results. Please refer to [use VisualDL as fastdeploy client for request visualization](https://github.com/PaddlePaddle/VisualDL/blob/develop/docs/components/fastdeploy_client/README.md).
 
-[![[assets/attachments/deeplearning/211203852-059d5b98-6299-4057-97d8-5209805aa67f.gif]]](https://user-images.githubusercontent.com/22424850/211203852-059d5b98-6299-4057-97d8-5209805aa67f.gif)
+[![[raw/assets/attachments/deeplearning/211203852-059d5b98-6299-4057-97d8-5209805aa67f.gif]]](https://user-images.githubusercontent.com/22424850/211203852-059d5b98-6299-4057-97d8-5209805aa67f.gif)
 
 ### VDL.service
 
 **VDL.service** enables developers to easily save, track and share visualization results with anyone for free.
 
-[![[assets/attachments/deeplearning/93731055-fbeafb00-fbfd-11ea-80f4-bbfd08a0fc35.png]]](https://user-images.githubusercontent.com/48054808/93731055-fbeafb00-fbfd-11ea-80f4-bbfd08a0fc35.png)
+[![[raw/assets/attachments/deeplearning/93731055-fbeafb00-fbfd-11ea-80f4-bbfd08a0fc35.png]]](https://user-images.githubusercontent.com/48054808/93731055-fbeafb00-fbfd-11ea-80f4-bbfd08a0fc35.png)
 
 ## Frequently Asked Questions
 

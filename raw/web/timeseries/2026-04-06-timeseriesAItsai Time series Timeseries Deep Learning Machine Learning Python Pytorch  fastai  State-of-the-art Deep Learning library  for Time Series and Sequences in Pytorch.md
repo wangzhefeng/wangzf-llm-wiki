@@ -17,7 +17,7 @@ tags:
 
 ## tsai
 
-[![[assets/attachments/timeseries/tsai_logo.svg]]](https://github.com/timeseriesAI/tsai/blob/main/nbs/multimedia/tsai_logo.svg?raw=true)
+[![[raw/assets/attachments/timeseries/tsai_logo.svg]]](https://github.com/timeseriesAI/tsai/blob/main/nbs/multimedia/tsai_logo.svg?raw=true)
 
 ## Description
 

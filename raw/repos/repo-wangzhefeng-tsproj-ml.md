@@ -46,7 +46,7 @@ status: inbox
 
 - `README.md`
   当前最重要的知识入口，已经浓缩了方法分类和工程结构。
-- `docs/assets/ts_stationary.png`
+- `docs/raw/assets/ts_stationary.png`
   README 中已引用平稳性相关示意图。
 
 ## 训练、测试、预测涉及的知识单元

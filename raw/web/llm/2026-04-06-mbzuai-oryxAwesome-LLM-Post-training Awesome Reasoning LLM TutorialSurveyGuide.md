@@ -30,7 +30,7 @@ Feel free to ⭐ star and fork this repository to keep up with the latest advanc
 
 ---
 
-[![[assets/attachments/llm/teasor.jpg]]](https://github.com/mbzuai-oryx/Awesome-LLM-Post-training/blob/main/Images/teasor.jpg)
+[![[raw/assets/attachments/llm/teasor.jpg]]](https://github.com/mbzuai-oryx/Awesome-LLM-Post-training/blob/main/Images/teasor.jpg)
 
 A taxonomy of post-training approaches for \*\*LLMs\*\*, categorized into Fine-tuning, Reinforcement Learning, and Test-time Scaling methods. We summarize the key techniques used in recent LLM models.
 
@@ -360,4 +360,4 @@ Looking forward to your feedback, contributions, and stars! 🌟 Please raise an
 
 ---
 
-[![[assets/attachments/llm/IVAL_logo.png]]](https://www.ival-mbzuai.com/) [![[assets/attachments/llm/MBZUAI_logo.png]]](https://mbzuai.ac.ae/)
+[![[raw/assets/attachments/llm/IVAL_logo.png]]](https://www.ival-mbzuai.com/) [![[raw/assets/attachments/llm/MBZUAI_logo.png]]](https://mbzuai.ac.ae/)

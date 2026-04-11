@@ -47,7 +47,7 @@ OpenCV is open source, contains over 2500 algorithms, and is operated by the non
 
 ## Our Services
 
-![[assets/attachments/computer-vision/ai-consulting.jpg]]
+<!-- missing attachment -->
 
 ### OpenCV.ai
 
@@ -55,7 +55,7 @@ Explore OpenCV's market-leading Computer Vision solutions.
 
 [Learn more](https://opencv.ai/)
 
-![[assets/attachments/computer-vision/opcv.jpg]]
+<!-- missing attachment -->
 
 ### OpenCV University
 
@@ -63,7 +63,7 @@ The world’s most trustworthy destination for learning Computer Vision, Deep Le
 
 [Learn more](https://opencv.org/university/?utm_source=opcv&utm_medium=our-service)
 
-![[assets/attachments/computer-vision/face-rec-1.jpg]]
+<!-- missing attachment -->
 
 ### OpenCV Face Recognition
 
@@ -75,7 +75,7 @@ The world’s largest Computer Vision library meets the world’s top-rated Face
 
 ### Gold
 
-[![[assets/attachments/computer-vision/arm-logo.png]]](https://www.arm.com/)
+![arm-logo.png](https://www.arm.com/)
 
 [赞助商 Logo 待补抓（Futurewei）](http://www.futurewei.com/)
 
@@ -95,13 +95,13 @@ The world’s largest Computer Vision library meets the world’s top-rated Face
 
 [赞助商 Logo 待补抓（JetBrains）](https://www.jetbrains.com/?utm_source=opencv&utm_medium=referral&utm_campaign=pycharm&utm_content=logo)
 
-[![[assets/attachments/computer-vision/The-Embedded-AI-Vision-Alliance_logo.png]]](https://www.edge-ai-vision.com/)
+![The-Embedded-AI-Vision-Alliance_logo.png](https://www.edge-ai-vision.com/)
 
-[![[assets/attachments/computer-vision/openmv-logo.png]]](https://openmv.io/)
+![openmv-logo.png](https://openmv.io/)
 
 [赞助商 Logo 待补抓（Tangram Vision）](https://www.tangramvision.com/)
 
-[![[assets/attachments/computer-vision/amped-logo.png]]](https://ampedsoftware.com/)
+![amped-logo.png](https://ampedsoftware.com/)
 
 [赞助商 Logo 待补抓（Intuitivo）](https://www.intuitivo.ai/)
 
@@ -111,7 +111,7 @@ The world’s largest Computer Vision library meets the world’s top-rated Face
 
 [赞助商 Logo 待补抓（BairesDev）](https://www.bairesdev.com/sponsoring-open-source-projects/)
 
-[![[assets/attachments/computer-vision/Big-Vision-logo.png]]](https://www.bigvision.ai/)
+![Big-Vision-logo.png](https://www.bigvision.ai/)
 
 [Become A Sponsor](https://opencv.org/membership/)
 

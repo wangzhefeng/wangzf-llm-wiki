@@ -21,8 +21,8 @@
 
 # assets
 
-* [x] 对 assets/attachments 中的图片文件依据其引用的文件所属主题进行分类，为新的分类创建文件夹。
-* [ ] 对 assets/attachments 中的图片文件进行命名规范。
+* [x] 对 raw/assets/attachments 中的图片文件依据其引用的文件所属主题进行分类，为新的分类创建文件夹。
+* [ ] 对 raw/assets/attachments 中的图片文件进行命名规范。
 
 # outputs
 

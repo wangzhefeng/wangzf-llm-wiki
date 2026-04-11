@@ -10,6 +10,8 @@ tags:
 title: S&DS 431/631 — Optimization and Computation
 topics:
 - 运筹优化
+source_type: local_note
+created_at: 2026-04-11
 ---
 ## Welcome
 

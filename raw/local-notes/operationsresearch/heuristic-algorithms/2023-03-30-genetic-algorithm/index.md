@@ -8,6 +8,10 @@ categories:
   - optimizer-algorithm
 tags:
   - algorithm
+source_type: local_note
+created_at: 2023-03-30
+topics:
+  - optimizer-algorithm
 ---
 
 <style>

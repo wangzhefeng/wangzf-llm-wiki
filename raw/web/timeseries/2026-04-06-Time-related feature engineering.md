@@ -892,25 +892,25 @@ Finally, in this notebook we used `RidgeCV` because it is very efficient from a 
 
 Related examples
 
-![[assets/attachments/uncategorized/sphx_glr_plot_time_series_lagged_features_thumb.png]]
+![[raw/assets/attachments/timeseries/sphx_glr_plot_time_series_lagged_features_thumb.png]]
 
 [Lagged features for time series forecasting](https://scikit-learn.org/stable/auto_examples/applications/plot_time_series_lagged_features.html)
 
 Lagged features for time series forecasting
 
-![[assets/attachments/uncategorized/sphx_glr_plot_gradient_boosting_categorical_thumb.png]]
+![[raw/assets/attachments/timeseries/sphx_glr_plot_gradient_boosting_categorical_thumb.png]]
 
 [Categorical Feature Support in Gradient Boosting](https://scikit-learn.org/stable/auto_examples/ensemble/plot_gradient_boosting_categorical.html)
 
 Categorical Feature Support in Gradient Boosting
 
-![[assets/attachments/uncategorized/sphx_glr_plot_polynomial_interpolation_thumb.png]]
+![[raw/assets/attachments/timeseries/sphx_glr_plot_polynomial_interpolation_thumb.png]]
 
 [Polynomial and Spline interpolation](https://scikit-learn.org/stable/auto_examples/linear_model/plot_polynomial_interpolation.html)
 
 Polynomial and Spline interpolation
 
-![[assets/attachments/uncategorized/sphx_glr_plot_target_encoder_thumb.png]]
+![[raw/assets/attachments/timeseries/sphx_glr_plot_target_encoder_thumb.png]]
 
 [Comparing Target Encoder with Other Encoders](https://scikit-learn.org/stable/auto_examples/preprocessing/plot_target_encoder.html)
 

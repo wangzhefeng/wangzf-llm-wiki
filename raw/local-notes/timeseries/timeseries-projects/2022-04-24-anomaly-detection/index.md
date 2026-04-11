@@ -8,6 +8,10 @@ categories:
   - timeseries
 tags:
   - model
+source_type: local_note
+created_at: 2022-04-24
+topics:
+  - timeseries
 ---
 
 <style>

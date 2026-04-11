@@ -7,6 +7,10 @@ categories:
   - timeseries
 tags:
   - tool
+source_type: local_note
+created_at: 2023-03-03
+topics:
+  - timeseries
 ---
 
 <style>

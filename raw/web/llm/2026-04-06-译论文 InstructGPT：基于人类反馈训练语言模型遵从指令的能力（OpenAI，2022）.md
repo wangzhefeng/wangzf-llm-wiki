@@ -19,7 +19,7 @@ tags:
 
 本文翻译自 2022 年 OpenAI 的论文： [Training language models to follow instructions with human feedback](https://arxiv.org/abs/2203.02155) ， 整理翻译了其中感兴趣的部分。
 
-![[assets/attachments/llm/fig-1 1.png]]
+![[raw/assets/attachments/llm/fig-1 1.png]]
 
 大模型进化树，可以看到 InstructGPT 所处的年代和位置。来自 [大语言模型（LLM）综述与实用指南（Amazon，2023）](https://arthurchiao.art/blog/llm-practical-guide-zh/) 。
 
@@ -155,7 +155,7 @@ tags:
 
 本文专注于 **==通过微调方法来对齐语言模型==** 。具体来说， 使用人类反馈强化学习（RLHF；Christiano 等，2017；Stiennon 等，2020） 来微调 GPT-3，以便它能遵循类型广泛的各种用户指令。具体过程如图 2 所示，
 
-![[assets/attachments/llm/fig-2.png]]
+![[raw/assets/attachments/llm/fig-2.png]]
 
 Figure 2: ==InstructGPT 三部曲== ：(1) ==SFT==, (2) ==RM training==, (3) ==RLHF via proximal policy optimization (PPO)== on RM.  
 蓝色箭头表示相应的数据用于训练模型。Step 2 中 A-D 是模型输出的采样，然后标注员对它们进行排序。详见 Section 3。
@@ -309,7 +309,7 @@ There are many ways to change the generation behavior of language models. Solaim
 
 按照以下三个步骤开始训练，如图 2 所示，
 
-![[assets/attachments/llm/fig-2.png]]
+![[raw/assets/attachments/llm/fig-2.png]]
 
 Figure 2: ==InstructGPT 三部曲== ：(1) ==SFT==, (2) ==RM training==, (3) ==RLHF via proximal policy optimization (PPO)== on RM.  
 蓝色箭头表示相应的数据用于训练模型。Step 2 中 A-D 是模型输出的采样，然后标注员对它们进行排序。详见 Section 3。
@@ -644,7 +644,7 @@ Table 3: Labeler-collected metadata on the API distribution
 
 暂略。 见原文。
 
-![[assets/attachments/llm/fig-1 2.png]]
+![[raw/assets/attachments/llm/fig-1 2.png]]
 
 Figure 1: Human evaluations of various models on our API prompt distribution, evaluated by how often outputs from each model were preferred to those from the 175B SFT model. Our InstructGPT models (PPO-ptx) as well as its variant trained without pretraining mix (PPO) significantly outperform the GPT-3 baselines (GPT, GPT prompted); outputs from our 1.3B PPO-ptx model are preferred to those from the 175B GPT-3. Error bars throughout the paper are 95% confidence intervals
 

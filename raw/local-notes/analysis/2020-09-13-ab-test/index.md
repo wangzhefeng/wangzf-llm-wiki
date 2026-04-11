@@ -7,6 +7,10 @@ categories:
   - data-analysis
 tags:
   - note
+source_type: local_note
+created_at: 2020-09-13
+topics:
+  - data-analysis
 ---
 
 <style>

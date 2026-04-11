@@ -16,13 +16,13 @@ topics:
 - 大语言模型
 ---
 
-[![# LLaMA Factory](https://github.com/hiyouga/LlamaFactory/raw/main/assets/logo.png)](https://github.com/hiyouga/LlamaFactory/blob/main/assets/logo.png)
+[![# LLaMA Factory](https://github.com/hiyouga/LlamaFactory/raw/main/raw/assets/logo.png)](https://github.com/hiyouga/LlamaFactory/blob/main/raw/assets/logo.png)
 
 ### 获得亚马逊、英伟达、阿里云等的应用。
 
 ### 赞助商 ❤️
 
-|  | [![SerpAPI sponsorship](https://github.com/hiyouga/LlamaFactory/raw/main/assets/sponsors/serpapi.svg)](https://serpapi.com/) |
+|  | [![SerpAPI sponsorship](https://github.com/hiyouga/LlamaFactory/raw/main/raw/assets/sponsors/serpapi.svg)](https://serpapi.com/) |
 | --- | --- |
 
 ---

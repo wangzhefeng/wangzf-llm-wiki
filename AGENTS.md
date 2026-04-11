@@ -31,7 +31,7 @@
 - `outputs/figures/`：图表、示意图。
 - `outputs/logs/`：`ingest / query / lint / backfill` 的时间记录。
 - `prompts/`：可复用提示词模板。
-- `assets/`：本地附件与通用素材。
+- `raw/assets/`：本地附件与通用素材。
 
 ## 4. 原始来源类型
 
@@ -158,7 +158,7 @@ status: inbox
 - 复杂任务至少先读：
   - `README.md`
   - `wiki/index.md`
-  - `wiki/SCHEMA.md`
+  - `wiki/schema.md`
   - `wiki/log.md`
   - 相关主题总索引
   - 必要的来源卡或概念页
@@ -172,7 +172,7 @@ status: inbox
 方法与结构入口：
 
 - `wiki/index.md`
-- `wiki/SCHEMA.md`
+- `wiki/schema.md`
 - `wiki/indexes/knowledge-base-building/知识库建设方法总索引.md`
 - `wiki/indexes/knowledge-base-building/知识库Schema设计.md`
 

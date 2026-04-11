@@ -35,7 +35,7 @@ topics:
 
 键值对Attention最核心的公式如下图。其实这一个公式中蕴含了很多个点，我们一个一个来讲。请读者跟随我的思路，从最核心的部分入手，细枝末节的部分会豁然开朗。
 
-![[assets/attachments/uncategorized/v2-da928d89f18a138c259cc42b7cc582cd_1440w.jpg]]
+![[raw/assets/attachments/deeplearning/v2-da928d89f18a138c259cc42b7cc582cd_1440w.jpg]]
 
 假如上面的公式很难理解，那么下面的公式读者能否知道其意义是什么呢？
 
@@ -61,7 +61,7 @@ $S o f t m a x \left(\right. X X^{T} \left.\right) X$
 
 下面的运算模拟了一个过程，即 。我们来看看其结果究竟有什么意义
 
-![[assets/attachments/uncategorized/v2-f6973006b0ca2b67f452439698e6aacd_1440w.jpg]]
+![[raw/assets/attachments/deeplearning/v2-f6973006b0ca2b67f452439698e6aacd_1440w.jpg]]
 
 首先，行向量 分别与自己和其他两个行向量做内积（"早"分别与"上""好"计算内积），得到了一个新的向量。我们回想前文提到的 **向量的内积表征两个向量的夹角，表征一个向量在另一个向量上的投影** 。那么新的向量向量有什么意义的？是行向量 在自己和其他两个行向量上的投影。我们思考，投影的值大有什么意思？投影的值小又如何？
 
@@ -77,11 +77,11 @@ $S o f t m a x \left(\right. X X^{T} \left.\right) X$
 
 至此，我们理解了公式 中， 的意义。我们进一步，Softmax的意义何在呢？请看下图
 
-![[assets/attachments/uncategorized/v2-179fd393b3aac244ec338767ef5d8d3d_1440w.jpg]]
+![[raw/assets/attachments/deeplearning/v2-179fd393b3aac244ec338767ef5d8d3d_1440w.jpg]]
 
 我们回想Softmax的公式，Softmax操作的意义是什么呢？
 
-![[assets/attachments/uncategorized/v2-cdf70f87d0d540475c21051cbdd8ac33_1440w.jpg]]
+![[raw/assets/attachments/deeplearning/v2-cdf70f87d0d540475c21051cbdd8ac33_1440w.jpg]]
 
 **答：归一化**
 
@@ -93,11 +93,11 @@ $S o f t m a x \left(\right. X X^{T} \left.\right) X$
 
 行文至此，我们对这个东西是不是有点熟悉？Python中的热力图Heatmap，其中的矩阵是不是也保存了相似度的结果？
 
-![[assets/attachments/uncategorized/v2-eca771a34e33a3ba86fbaebb48a4b818_1440w.jpg]]
+![[raw/assets/attachments/deeplearning/v2-eca771a34e33a3ba86fbaebb48a4b818_1440w.jpg]]
 
 我们仿佛已经拨开了一些迷雾，公式 已经理解了其中的一半。最后一个 X 有什么意义？完整的公式究竟表示什么？我们继续之前的计算，请看下图
 
-![[assets/attachments/uncategorized/v2-71069dfdaf4758a037bdddc56d2a5fc5_1440w.jpg]]
+![[raw/assets/attachments/deeplearning/v2-71069dfdaf4758a037bdddc56d2a5fc5_1440w.jpg]]
 
 我们取 的一个行向量举例。这一行向量与 的一个列向量相乘，表示什么？
 
@@ -107,13 +107,13 @@ $S o f t m a x \left(\right. X X^{T} \left.\right) X$
 
 一张更形象的图是这样的，图中右半部分的颜色深浅，其实就是我们上图中黄色向量中数值的大小，意义就是单词之间的相关度（ **回想之前的内容，相关度其本质是由向量的内积度量的** ）！
 
-![[assets/attachments/uncategorized/v2-f85c81cbb259b80c3644a16e005679be_1440w.jpg]]
+![[raw/assets/attachments/deeplearning/v2-f85c81cbb259b80c3644a16e005679be_1440w.jpg]]
 
 如果您坚持阅读到这里，相信对公式 已经有了更深刻的理解。
 
 我们接下来解释原始公式中一些细枝末节的问题
 
-![[assets/attachments/uncategorized/v2-da928d89f18a138c259cc42b7cc582cd_1440w.jpg]]
+![[raw/assets/attachments/deeplearning/v2-da928d89f18a138c259cc42b7cc582cd_1440w.jpg]]
 
 ## 2\. Q K V矩阵
 
@@ -121,7 +121,7 @@ $S o f t m a x \left(\right. X X^{T} \left.\right) X$
 
 `Q` `K` `V` 究竟是什么？我们看下面的图
 
-![[assets/attachments/uncategorized/v2-55d08f662a489739c3220486de095e12_1440w.jpg]]
+![[raw/assets/attachments/deeplearning/v2-55d08f662a489739c3220486de095e12_1440w.jpg]]
 
 其实，许多文章中所谓的 `Q` `K` `V` 矩阵、查询向量之类的字眼，其来源是 与矩阵的乘积， **本质上都是** **的线性变换** 。
 
@@ -175,9 +175,9 @@ class Self_Attention(nn.Module):
         
         return output
 ```
-![[assets/attachments/uncategorized/v2-3ac48b3ae8bc00ef88f639f342ad7acd_1440w.jpg]]
+![[raw/assets/attachments/deeplearning/v2-3ac48b3ae8bc00ef88f639f342ad7acd_1440w.jpg]]
 
-![[assets/attachments/uncategorized/v2-d19efe6c82afff4f83946cb624aa409c_1440w.jpg]]
+![[raw/assets/attachments/deeplearning/v2-d19efe6c82afff4f83946cb624aa409c_1440w.jpg]]
 
 ```
 # Muti-head Attention 机制的实现
@@ -246,7 +246,7 @@ class Self_Attention_Muti_Head(nn.Module):
 
 [https://t.zsxq.com/0a2frxDEK](https://link.zhihu.com/?target=https%3A//t.zsxq.com/0aR5ACY7z)
 
-![[assets/attachments/uncategorized/v2-448728c6943c8deeb5a751fd0fc01aa5_l.jpg]]
+![[raw/assets/attachments/deeplearning/v2-448728c6943c8deeb5a751fd0fc01aa5_l.jpg]]
 
 ConquerJ
 

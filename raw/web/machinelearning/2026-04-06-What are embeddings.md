@@ -16,17 +16,17 @@ topics:
 - 机器学习
 ---
 
-![[assets/attachments/llm/kandinsky 1.png]]
+![[raw/assets/attachments/llm/kandinsky 1.png]]
 
 If you go to the [Museu Picasso in Barcelona](https://museupicassobcn.cat/en), you'll see many of the artist's early works. They're really interesting because they don't look like what we think of as Picasso's style. These paintings, completed during his early years, are displays of his technical genius - as a classical painter.
 
 Some particularly amazing examples are " [Science and Charity](https://en.wikipedia.org/wiki/Science_and_Charity) " and " [First Communion](https://www.wikiart.org/en/pablo-picasso/first-communion-1896) ". One of my favorites is "Portrait of the Artist's Mother." These were all painted when he was fifteen.
 
-![[assets/attachments/llm/portrait.png]]
+![[raw/assets/attachments/llm/portrait.png]]
 
 You can see both the artist's innate ability to make art, and his immense potential future. But to get to the point where Picasso could reject traditional styles, he had to master them first.
 
-![[assets/attachments/llm/yellow_hat.png]]
+<!-- missing attachment -->
 
 This is also true for machine learning. There's a whole universe of exciting developments at the forefront of large language models. But in the noise of the bleeding edge, a lot of important foundational concepts get lost. If we don't [understand the fundamentals](https://increment.com/software-architecture/architecture-for-generations/) of how we get from a single word to a BERT representation, and more importantly, why we do so, the models will remain black boxes to us. We won't be able to build on them and master them in the ways that we want.
 

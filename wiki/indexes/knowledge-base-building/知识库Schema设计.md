@@ -58,7 +58,7 @@ schema 的作用，就是把这些“不能每次重猜”的规则固定下来�
 
 ### 1. 结构约束
 
-- `raw/`、`wiki/`、`outputs/`、`prompts/`、`assets/` 的职责边界
+- `raw/`、`wiki/`、`outputs/`、`prompts/`、`raw/assets/` 的职责边界
 - `wiki/sources/`、`wiki/indexes/`、`wiki/concepts/` 的页面分工
 - 哪些内容属于 `knowledge-base` 主题，哪些内容属于 `shared` 工作台
 

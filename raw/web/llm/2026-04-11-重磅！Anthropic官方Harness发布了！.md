@@ -10,6 +10,8 @@ tags:
 title: 重磅！Anthropic官方Harness发布了！
 topics:
 - 大语言模型
+source_type: local_note
+created_at: 2026-04-11
 ---
 原创 Datawhale *2026年4月10日 22:36*
 

@@ -59,15 +59,15 @@ This Notebook has been released under the [Apache 2.0](http://www.apache.org/lic
 
 ## Continue exploring
 
-- ![[assets/attachments/timeseries/input_light.svg]]
+- ![[raw/assets/attachments/timeseries/input_light.svg]]
 	Input
 	1 file
-- ![[assets/attachments/timeseries/output_light.svg]]
+- ![[raw/assets/attachments/timeseries/output_light.svg]]
 	Output
 	0 files
-- ![[assets/attachments/timeseries/logs_light.svg]]
+- ![[raw/assets/attachments/timeseries/logs_light.svg]]
 	Logs
 	107.9 second run - successful
-- ![[assets/attachments/timeseries/comments_light.svg]]
+- ![[raw/assets/attachments/timeseries/comments_light.svg]]
 	Comments
 	209 comments

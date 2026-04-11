@@ -8,6 +8,10 @@ categories:
   - timeseries
 tags:
   - tool
+source_type: local_note
+created_at: 2024-04-12
+topics:
+  - timeseries
 ---
 
 <style>

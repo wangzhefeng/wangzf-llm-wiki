@@ -442,11 +442,11 @@ ldd --version
 
 使用 `nvidia-smi` 命令可以看到一个 CUDA 的版本号，但这个版本号是 CUDA driver libcuda.so 的版本号，不是 CUDA Toolkit 的版本号。
 
-![[assets/attachments/uncategorized/gpu-driver-1.png]]
+![[raw/assets/attachments/tools/gpu-driver-1.png]]
 
 如上图 CUDA driver 是向后兼容的，即支持之前的 CUDA Toolkit 版本。
 
-![[assets/attachments/uncategorized/gpu-driver-2.png]]
+![[raw/assets/attachments/tools/gpu-driver-2.png]]
 
 如上图，CUDA driver 支持向前的次要版本兼容，即大版本号相同就支持。参考\[2\]。
 

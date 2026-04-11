@@ -14,7 +14,7 @@
   仓库级入口。回答“这个仓库是什么、有哪些模块、从哪里开始”。
 - `wiki/index.md`：
   wiki 子系统统一导航。回答“在 wiki 内先看什么、从哪个入口执行”。
-- `wiki/SCHEMA.md`：
+- `wiki/schema.md`：
   wiki 结构与字段规范。回答“页面和流程应遵循什么约束”。
 - `wiki/log.md`：
   wiki 操作时间线。回答“最近做了什么、下一轮如何衔接”。
@@ -27,13 +27,13 @@
 - `wiki/`：结构化知识层（`sources` / `indexes` / `concepts` 等）
 - `outputs/`：问答、综述、演示稿、图表与日志等派生结果
 - `prompts/`：可复用提示词模板
-- `assets/`：通用附件与素材
+- `raw/assets/`：通用附件与素材
 
 ## 快速开始
 
 1. 先看 wiki 控制入口：
    - [Wiki Index](wiki/index.md)
-   - [Wiki Schema](wiki/SCHEMA.md)
+   - [Wiki Schema](wiki/schema.md)
    - [Wiki Log](wiki/log.md)
 2. 再进入共享工作台：
    - [知识库工作台](wiki/indexes/knowledge-base-operations/知识库工作台.md)

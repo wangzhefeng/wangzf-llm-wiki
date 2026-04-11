@@ -33,7 +33,7 @@ In this article, we will briefly go over what in-context learning means, and the
 
 Since GPT-2 ([Radford et al.](https://d4mucfpksywv.cloudfront.net/better-language-models/language_models_are_unsupervised_multitask_learners.pdf)) and GPT-3 ([Brown et al.](https://arxiv.org/abs/2005.14165)), we have seen that generative large language models (LLMs) pretrained on a general text corpus are capable of ***in-context learning***, which doesn’t require us to further train or finetune pretrained LLMs if we want to perform specific or new tasks that the LLM wasn’t explicitly trained on. Instead, we can directly provide a few examples of a target task via the input prompt, as illustrated in the example below.
 
-![[assets/attachments/uncategorized/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Ffea460ea-84d5-4973-9bc7-dc0e53a13ae0_1340x680.png]]
+![[raw/assets/attachments/llm/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Ffea460ea-84d5-4973-9bc7-dc0e53a13ae0_1340x680.png]]
 
 An example of in-context learning.
 
@@ -41,7 +41,7 @@ In-context learning is very useful if we don’t have direct access to the model
 
 Related to in-context learning is the concept of ***hard prompt tuning*** where we modify the inputs in hope to improve the outputs as illustrated below.
 
-![[assets/attachments/uncategorized/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fa46d7a6f-fbd6-4783-8b5c-0a0bc39f5412_1582x330.png]]
+![[raw/assets/attachments/llm/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fa46d7a6f-fbd6-4783-8b5c-0a0bc39f5412_1582x330.png]]
 
 An illustration of (hard) prompt tuning
 
@@ -51,7 +51,7 @@ The prompt tuning approach mentioned above offers a more resource-efficient alte
 
 Before we discuss finetuning in more detail, another method to utilize a purely in-context learning-based approach is ***indexing***. Within the realm of LLMs, indexing can be seen as an in-context learning workaround that enables the conversion of LLMs into information retrieval systems for extracting data from external resources and websites. In this process, an indexing module breaks down a document or website into smaller segments, converting them into vectors that can be stored in a vector database. Then, when a user submits a query, the indexing module calculates the vector similarity between the embedded query and each vector in the database. Ultimately, the indexing module fetches the top *k* most similar embeddings to generate the response.
 
-![[assets/attachments/uncategorized/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F4063347e-8920-40c6-86b3-c520084b303c_1272x998.jpeg]]
+![[raw/assets/attachments/llm/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F4063347e-8920-40c6-86b3-c520084b303c_1272x998.jpeg]]
 
 An illustration of indexing.
 
@@ -61,7 +61,7 @@ In-context learning is a valuable and user-friendly method for situations where 
 
 However, if we have access to the LLM, adapting and finetuning it on a target task using data from a target domain usually leads to superior results. So, how can we adapt a model to a target task? There are three conventional approaches outlined in the figure below.
 
-![[assets/attachments/uncategorized/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fa505c654-5ddf-485f-90a8-b656d03b94dc_2394x834.png]]
+![[raw/assets/attachments/llm/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fa505c654-5ddf-485f-90a8-b656d03b94dc_2394x834.png]]
 
 The 3 conventional feature-based and finetuning approaches.
 
@@ -206,13 +206,13 @@ If you are curious about some real-world results, the code snippets above were u
 
 These results are consistent with the general rule of thumb that finetuning more layers often results in better performance, but it comes with increased cost.
 
-![[assets/attachments/uncategorized/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fae8e84db-16f9-485d-a0cb-0392fc8aca56_1454x536.png]]
+![[raw/assets/attachments/llm/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fae8e84db-16f9-485d-a0cb-0392fc8aca56_1454x536.png]]
 
 Rule-of-thumb computational and modeling performance trade-offs for various approaches.
 
 The scenarios above highlighted the three most distinct or extreme cases of finetuning: training only the last layer(s) versus training all layers. Of course, our mileage may vary based on the model and dataset, but exploring the various options in between may also be worthwhile. For instance, we can sometimes get the same modeling performance by training only half of the model (but more on parameter-efficient finetuning in the next section). For those who are curious, the figure below shows the predictive performances and training times for a DistilBERT model finetuned on the 20k training examples from the [IMDB movie review dataset](https://ai.stanford.edu/~amaas/data/sentiment/).
 
-![[assets/attachments/uncategorized/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F6088451d-43e7-43a7-a615-270b1867cfea_1814x1316.png]]
+![[raw/assets/attachments/llm/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F6088451d-43e7-43a7-a615-270b1867cfea_1814x1316.png]]
 
 Performance of pretrained DistilBERT models finetuned on the IMDB Movie review dataset. The code can be found here on GitHub.
 
@@ -234,7 +234,7 @@ Over the years, researchers developed several techniques ([Lialin et al.](https:
 
 Some of the most widely used PEFT techniques are summarized in the figure below.
 
-![[assets/attachments/uncategorized/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F89599158-c5bf-4e73-9d31-a388b625e4d2_2262x622.png]]
+![[raw/assets/attachments/llm/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F89599158-c5bf-4e73-9d31-a388b625e4d2_2262x622.png]]
 
 A selection of the most popular parameter-efficient finetuning techniques.
 
@@ -250,7 +250,7 @@ In RLHF, human feedback is collected by having humans rank or rate different mod
 
 The reward model itself is learned via supervised learning (typically using a pretrained LLM as base model). Next, the reward model is used to update the pretrained LLM that is to be adapted to human preferences -- the training uses a flavor of reinforcement learning called proximal policy optimization (*[Schulman et al.](https://arxiv.org/abs/1707.06347)*).
 
-![[assets/attachments/uncategorized/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F7dfa415c-da9c-4d6f-8de8-ffc9f92272db_1602x952.png]]
+![[raw/assets/attachments/llm/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F7dfa415c-da9c-4d6f-8de8-ffc9f92272db_1602x952.png]]
 
 Screenshot from the InstructGPT paper outlining the RLHF process.
 
@@ -266,7 +266,7 @@ Moreover, reinforcement learning with human feedback (RLHF) serves as an alterna
 
 *This magazine is a personal passion project. For those who wish to support me beyond a [paid subscription](https://magazine.sebastianraschka.com/subscribe), please consider purchasing a copy of [one of my books](https://sebastianraschka.com/books). If you find them insightful and beneficial, please feel free to recommend them to your friends and colleagues.*
 
-![[assets/attachments/uncategorized/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F27b6d27d-1052-4a4f-a419-a69cdd36704a_1118x454 1.png]]
+![[raw/assets/attachments/llm/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F27b6d27d-1052-4a4f-a419-a69cdd36704a_1118x454 1.png]]
 
 Machine Learning with PyTorch and Scikit-Learn, Machine Learning Q and AI, and Build a Large Language Model (from Scratch)
 

@@ -27,9 +27,9 @@ tags:
 
 整个文章的idea是，对一个原始的时间序列，用不同的频率来采样它，得到的新的序列所蕴含的时域信息是不同的。比如用电量序列，如果以每小时采样，那它就呈现以天为周期的形式；如果以每天采样，那它就可能呈现以周末、节假日相关的波动。因此，如何利用好不同尺度的序列（即用不同频率采样得到的序列）之间的关系，对时序预测任务很重要。这个idea有点类似于 [NHits](https://zhida.zhihu.com/search?content_id=240746147&content_type=Article&match_order=1&q=NHits&zhida_source=entity) 和Scaleformer，这两篇我在之前的知乎文章中有介绍：
 
-[![[assets/attachments/timeseries/v2-bd2c5261acdd3bab27dcb899b713e93e.png]]](https://zhuanlan.zhihu.com/p/573203887)
+[![[raw/assets/attachments/timeseries/v2-bd2c5261acdd3bab27dcb899b713e93e.png]]](https://zhuanlan.zhihu.com/p/573203887)
 
-[![[assets/attachments/timeseries/v2-ed8e30d16217e4434a7fe53e7d3d7085.png]]](https://zhuanlan.zhihu.com/p/535556231)
+[![[raw/assets/attachments/timeseries/v2-ed8e30d16217e4434a7fe53e7d3d7085.png]]](https://zhuanlan.zhihu.com/p/535556231)
 
 但不同的是，NHits和Scaleformer都是用单独的block来建模每个尺度序列，先用第一个block处理最粗粒度（采样频率低）的序列，然后进行插值得到更细粒度的序列，输入到下一个block，依此类推，得到最终最细粒度的预测。而本文是 **每个block内部都会处理所有尺度序列（倒是和 [Pyraformer](https://zhida.zhihu.com/search?content_id=240746147&content_type=Article&match_order=1&q=Pyraformer&zhida_source=entity) 中的金字塔attention比较像）** ，此外，还引入了 **序列分解** 的思想和 **尺度间信息流动** 的新方式。
 
@@ -37,7 +37,7 @@ tags:
 
 本文提出的TimeMixer的架构如下图
 
-![[assets/attachments/timeseries/v2-0b6cd99d2cd5d9017fc3339ef8eeb4ab_1440w.jpg]]
+![[raw/assets/attachments/timeseries/v2-0b6cd99d2cd5d9017fc3339ef8eeb4ab_1440w.jpg]]
 
 用简单的话来概述上图就是
 
@@ -49,7 +49,7 @@ tags:
 
 尺度间交互是怎么做的呢？作者用两种相反的流动方式来分别处理 **不同尺度的趋势项** 和 **不同尺度的周期项，** 如下图 **：**
 
-![[assets/attachments/timeseries/v2-7b48025c901fd765f964fac3e4fbb0fd_1440w.jpg]]
+![[raw/assets/attachments/timeseries/v2-7b48025c901fd765f964fac3e4fbb0fd_1440w.jpg]]
 
 - 对于 **周期项** ：如上图左侧，下面细粒度的seasonal序列用一个两层的MLP映射到和上面粗粒度的seasonal序列尺度对齐，然后相加即可得到融合后的结果，然后依此类推，把所有尺度的seasonal全部融合一遍。可是为什么要用bottom-up的流动方式呢？作者的原文如下：In seasonality analysis, larger periods can be seen as the aggregation of smaller periods, such as the weekly period of traffic flow formed by seven daily changes, addressing the importance of detailed information in predicting future seasonal variation。我的理解是，细粒度周期本身就包含了粗粒度周期，比如一个每小时采样的序列，周期严格是24，那么用每2小时、每半天、每一天的频率来采样该序列，则周期可以直接推算出来，分别是12，2，1。所以细粒度周期包含的信息多一些，用它来指导粗粒度周期会好一些。
 - 对于 **趋势项** ：如上图右侧，其实是和周期项一样的处理方式，唯一的区别是方向是反的，是粗粒度逐渐映射到细粒度的。为什么用top-down的流动方式呢？作者的原文如下：Contrary to seasonal parts, for trend items, the detailed variations can introduce noise in capturing macroscopic trend. Note that the upper coarse scale time series can easily provide clear macro information than the lower level. Therefore, we adopt a top-down mixing method to utilize the macro knowledge from coarser scales to guide the trend modeling of finer scales。我的理解是，越是细粒度，趋势就包含越多的噪声和意想不到的变化，因此需要宏观趋势（粗粒度）来指导微观趋势（细粒度）。
@@ -60,7 +60,7 @@ tags:
 
 那么对于最后一个block，它的输出也是多个尺度的序列，所以直接用多个predictor，对每个尺度的序列都映射到和预测范围的长度一致，然后所有尺度的预测结果相加即可得到最终的预测。每个predictor其实就是一个Linear，如下图所示，和Dlinear论文中一样：
 
-![[assets/attachments/timeseries/v2-ec40ab722bf748350d0cce844bdf965c_1440w.jpg]]
+![[raw/assets/attachments/timeseries/v2-ec40ab722bf748350d0cce844bdf965c_1440w.jpg]]
 
 ## 实验
 
@@ -68,23 +68,23 @@ tags:
 
 多变量时序预测的结果：
 
-![[assets/attachments/timeseries/v2-0134aaa6260e982d1c9ccdcf105c5c56_1440w.jpg]]
+![[raw/assets/attachments/timeseries/v2-0134aaa6260e982d1c9ccdcf105c5c56_1440w.jpg]]
 
 在PEMS几个时空数据集上预测的结果：
 
-![[assets/attachments/timeseries/v2-a90d32c0a2deb4255f5aade925b710d8_1440w.jpg]]
+![[raw/assets/attachments/timeseries/v2-a90d32c0a2deb4255f5aade925b710d8_1440w.jpg]]
 
 单变量时序预测的结果：
 
-![[assets/attachments/timeseries/v2-a45ee5fc94c92fd63ad2df9e652e091a_1440w.jpg]]
+![[raw/assets/attachments/timeseries/v2-a45ee5fc94c92fd63ad2df9e652e091a_1440w.jpg]]
 
 预测效率和DLinear差不多，训练显存占用很小，速度也是非常快的了：
 
-![[assets/attachments/timeseries/v2-a2d63e1a817a064d3067fbecd45754e9_1440w.jpg]]
+![[raw/assets/attachments/timeseries/v2-a2d63e1a817a064d3067fbecd45754e9_1440w.jpg]]
 
 关于序列分解和尺度间信息融合方式的消融实验，作者发现采用序列分解，然后对分解后的trend和seasonal分别做信息融合效果好，而且，对trend采用top-down的流动方式，对seasonal采用bottom-up的流动方式，效果最好：
 
-![[assets/attachments/timeseries/v2-a1e935187353cbb5a78a8a8a21743dc3_1440w.jpg]]
+![[raw/assets/attachments/timeseries/v2-a1e935187353cbb5a78a8a8a21743dc3_1440w.jpg]]
 
 ## Comments
 

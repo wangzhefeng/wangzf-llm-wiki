@@ -18,11 +18,11 @@ topics:
 - 机器学习
 ---
 
-![[assets/attachments/uncategorized/v2-c7aabf84f6f36752757367f82a71dd91_1440w.jpg]]
+![[raw/assets/attachments/machinelearning/v2-c7aabf84f6f36752757367f82a71dd91_1440w.jpg]]
 
 “More data beats clever algorithms, but better data beats more data.”——名人名言哈哈哈哈，更多的数据打败聪明的算法，更好的数据打败更多的数据。
 
-![[assets/attachments/uncategorized/v2-608823133a7eed6afad9cace40bed2a7_1440w.jpg]]
+![[raw/assets/attachments/machinelearning/v2-608823133a7eed6afad9cace40bed2a7_1440w.jpg]]
 
 特征工程
 
@@ -36,7 +36,7 @@ topics:
 
 •检查/重新检查以前的工作
 
-![[assets/attachments/uncategorized/v2-b97cdd8dbb068051e388e0fdfd54cbc0_1440w.jpg]]
+![[raw/assets/attachments/machinelearning/v2-b97cdd8dbb068051e388e0fdfd54cbc0_1440w.jpg]]
 
 类别特征
 
@@ -46,7 +46,7 @@ topics:
 
 •难以做 [缺失值插补](https://zhida.zhihu.com/search?content_id=107072087&content_type=Article&match_order=1&q=%E7%BC%BA%E5%A4%B1%E5%80%BC%E6%8F%92%E8%A1%A5&zhida_source=entity)
 
-![[assets/attachments/uncategorized/v2-a88c1a805501a81c8fb56522406a98da_1440w.jpg]]
+![[raw/assets/attachments/machinelearning/v2-a88c1a805501a81c8fb56522406a98da_1440w.jpg]]
 
 Onehot编码
 
@@ -60,11 +60,11 @@ Onehot编码
 
 •大多数当前的处理方法都不能很好地对待缺失值，以及新数据中的新类别
 
-![[assets/attachments/uncategorized/v2-27a08ebb86c35ee7351b5631bdf68e4b_1440w.jpg]]
+![[raw/assets/attachments/machinelearning/v2-27a08ebb86c35ee7351b5631bdf68e4b_1440w.jpg]]
 
 一个简单的例子。
 
-![[assets/attachments/uncategorized/v2-71c8bacfd939560294f537c858dc8f26_1440w.jpg]]
+![[raw/assets/attachments/machinelearning/v2-71c8bacfd939560294f537c858dc8f26_1440w.jpg]]
 
 [哈希编码](https://zhida.zhihu.com/search?content_id=107072087&content_type=Article&match_order=1&q=%E5%93%88%E5%B8%8C%E7%BC%96%E7%A0%81&zhida_source=entity)
 
@@ -80,11 +80,11 @@ Onehot编码
 
 •优雅地处理新变量（例如：新的用户代理）（新的类别重新hash然后合并即可）（关于hash编码可见facebook对于文本的处理的那篇论文，忘了叫啥了，回头补充在编码的文章里好了）
 
-![[assets/attachments/uncategorized/v2-e0780437588a806f5a1bc2a478d5d7e2_1440w.jpg]]
+![[raw/assets/attachments/machinelearning/v2-e0780437588a806f5a1bc2a478d5d7e2_1440w.jpg]]
 
 一个简单的例子
 
-![[assets/attachments/uncategorized/v2-e288d8fba1fc632958998cbefb378601_1440w.jpg]]
+![[raw/assets/attachments/machinelearning/v2-e288d8fba1fc632958998cbefb378601_1440w.jpg]]
 
 为每个类别变量赋予唯一的数字ID
 
@@ -94,11 +94,11 @@ Onehot编码
 
 •将cat\_var-> num\_id映射随机化，然后进行平均再训练，以降低准确性。（没看明白）
 
-![[assets/attachments/uncategorized/v2-a8dc5aba6c09120c9765063eec6acd51_1440w.jpg]]
+![[raw/assets/attachments/machinelearning/v2-a8dc5aba6c09120c9765063eec6acd51_1440w.jpg]]
 
 一个简单的例子
 
-![[assets/attachments/uncategorized/v2-4e40f15e548b72d0cb4f54993b0bcf37_1440w.jpg]]
+![[raw/assets/attachments/machinelearning/v2-4e40f15e548b72d0cb4f54993b0bcf37_1440w.jpg]]
 
 计数编码（ [频率编码](https://zhida.zhihu.com/search?content_id=107072087&content_type=Article&match_order=1&q=%E9%A2%91%E7%8E%87%E7%BC%96%E7%A0%81&zhida_source=entity) ）
 
@@ -114,11 +114,11 @@ Onehot编码
 
 •可能会产生冲突：相同的编码，不同的变量（不同类别出现次数一样）
 
-![[assets/attachments/uncategorized/v2-a20560cd413f69dd8aa257e7b57c5e7d_1440w.jpg]]
+![[raw/assets/attachments/machinelearning/v2-a20560cd413f69dd8aa257e7b57c5e7d_1440w.jpg]]
 
 一个简单的例子
 
-![[assets/attachments/uncategorized/v2-59f118bf4d5c72e36c0df78735d458e6_1440w.jpg]]
+![[raw/assets/attachments/machinelearning/v2-59f118bf4d5c72e36c0df78735d458e6_1440w.jpg]]
 
 LabelCount编码（就是对count编码进行排名）
 
@@ -132,11 +132,11 @@ LabelCount编码（就是对count编码进行排名）
 
 • 两全其美
 
-![[assets/attachments/uncategorized/v2-1188023b60e2d4efefb28b643f221f94_1440w.jpg]]
+![[raw/assets/attachments/machinelearning/v2-1188023b60e2d4efefb28b643f221f94_1440w.jpg]]
 
 一个简单的例子
 
-![[assets/attachments/uncategorized/v2-5a66f1dccdcca4a99e9e02d649cecf45_1440w.jpg]]
+![[raw/assets/attachments/machinelearning/v2-5a66f1dccdcca4a99e9e02d649cecf45_1440w.jpg]]
 
 [目标编码](https://zhida.zhihu.com/search?content_id=107072087&content_type=Article&match_order=1&q=%E7%9B%AE%E6%A0%87%E7%BC%96%E7%A0%81&zhida_source=entity)
 
@@ -154,11 +154,11 @@ LabelCount编码（就是对count编码进行排名）
 
 •正确应用时：线性和非线性的最佳编码
 
-![[assets/attachments/uncategorized/v2-8ad967abcbffde43a3fc0e166cc5db88_1440w.jpg]]
+![[raw/assets/attachments/machinelearning/v2-8ad967abcbffde43a3fc0e166cc5db88_1440w.jpg]]
 
 一个简单的例子。
 
-![[assets/attachments/uncategorized/v2-ebdf9ec5047ba4ec299a626ef848154d_1440w.jpg]]
+![[raw/assets/attachments/machinelearning/v2-ebdf9ec5047ba4ec299a626ef848154d_1440w.jpg]]
 
 类别的embedding
 
@@ -174,11 +174,11 @@ LabelCount编码（就是对count编码进行排名）
 
 • [Entity Embeddings of Categorical Variables](https://link.zhihu.com/?target=https%3A//arxiv.org/abs/1604.06737) （回头补充到类别编码的内容里）
 
-![[assets/attachments/uncategorized/v2-eb4fc3ad783d52afcc7ec89112e8bd03_1440w.jpg]]
+![[raw/assets/attachments/machinelearning/v2-eb4fc3ad783d52afcc7ec89112e8bd03_1440w.jpg]]
 
 一个简单的例子
 
-![[assets/attachments/uncategorized/v2-dcdc44d075d5cc3968ca4cbc55605367_1440w.jpg]]
+![[raw/assets/attachments/machinelearning/v2-dcdc44d075d5cc3968ca4cbc55605367_1440w.jpg]]
 
 NaN编码
 
@@ -190,11 +190,11 @@ NaN编码
 
 •仅当nan值在训练集测试集中的NaN值是由相同的值引起的，或者当局部验证证明它可以保留信息时才使用（这里涉及到缺失值的缺失原因，比如客户处于某种不好的目的而故意不提供的情况下表示客户的某种不良的潜在行为则可以统一使用）
 
-![[assets/attachments/uncategorized/v2-9635ba3da70efbc6f1462d17134119fe_1440w.jpg]]
+![[raw/assets/attachments/machinelearning/v2-9635ba3da70efbc6f1462d17134119fe_1440w.jpg]]
 
 一个简单的例子。
 
-![[assets/attachments/uncategorized/v2-01e039a2ecbbaa2e9fecf41ee2ee5703_1440w.jpg]]
+![[raw/assets/attachments/machinelearning/v2-01e039a2ecbbaa2e9fecf41ee2ee5703_1440w.jpg]]
 
 多项式编码
 
@@ -208,11 +208,11 @@ NaN编码
 
 其实就是做了类别交叉然后再使用其它的 [编码方式](https://zhida.zhihu.com/search?content_id=107072087&content_type=Article&match_order=1&q=%E7%BC%96%E7%A0%81%E6%96%B9%E5%BC%8F&zhida_source=entity) 来处理
 
-![[assets/attachments/uncategorized/v2-621df0d4629492d69918907a0cb33962_1440w.jpg]]
+![[raw/assets/attachments/machinelearning/v2-621df0d4629492d69918907a0cb33962_1440w.jpg]]
 
 一个简单的例子。
 
-![[assets/attachments/uncategorized/v2-7dbd2931c18330a6069eb6bc2ff8300d_1440w.jpg]]
+![[raw/assets/attachments/machinelearning/v2-7dbd2931c18330a6069eb6bc2ff8300d_1440w.jpg]]
 
 [扩展编码](https://zhida.zhihu.com/search?content_id=107072087&content_type=Article&match_order=1&q=%E6%89%A9%E5%B1%95%E7%BC%96%E7%A0%81&zhida_source=entity)
 
@@ -232,11 +232,11 @@ NaN编码
 
 kaggle的常见magic feature的产生方式，这里需要人工思考和头脑风暴的结果
 
-![[assets/attachments/uncategorized/v2-1641d2e481b3b804775fb920417e7b19_1440w.jpg]]
+![[raw/assets/attachments/machinelearning/v2-1641d2e481b3b804775fb920417e7b19_1440w.jpg]]
 
 一个简单的例子
 
-![[assets/attachments/uncategorized/v2-207fe2ff7119b1a47f5f6cfd2a872b7e_1440w.jpg]]
+![[raw/assets/attachments/machinelearning/v2-207fe2ff7119b1a47f5f6cfd2a872b7e_1440w.jpg]]
 
 [合并编码](https://zhida.zhihu.com/search?content_id=107072087&content_type=Article&match_order=1&q=%E5%90%88%E5%B9%B6%E7%BC%96%E7%A0%81&zhida_source=entity)
 
@@ -248,7 +248,7 @@ kaggle的常见magic feature的产生方式，这里需要人工思考和头脑�
 
 其实就是 [数据预处理](https://zhida.zhihu.com/search?content_id=107072087&content_type=Article&match_order=1&q=%E6%95%B0%E6%8D%AE%E9%A2%84%E5%A4%84%E7%90%86&zhida_source=entity) 中把相同含义的类别统一用一个类别表示
 
-![[assets/attachments/uncategorized/v2-e81ea82a39f9ba6d13fbcefd23f627af_1440w.jpg]]
+![[raw/assets/attachments/machinelearning/v2-e81ea82a39f9ba6d13fbcefd23f627af_1440w.jpg]]
 
 一个简单的例子
 
@@ -256,7 +256,7 @@ kaggle的常见magic feature的产生方式，这里需要人工思考和头脑�
 
 前面都是关于类别特征的常见处理，下面是关于连续特征的。
 
-![[assets/attachments/uncategorized/v2-959d1f1a913b650dd1877562eacb792c_1440w.jpg]]
+![[raw/assets/attachments/machinelearning/v2-959d1f1a913b650dd1877562eacb792c_1440w.jpg]]
 
 [数值特征](https://zhida.zhihu.com/search?content_id=107072087&content_type=Article&match_order=1&q=%E6%95%B0%E5%80%BC%E7%89%B9%E5%BE%81&zhida_source=entity)
 
@@ -266,7 +266,7 @@ kaggle的常见magic feature的产生方式，这里需要人工思考和头脑�
 
 •更容易做缺失值插补
 
-![[assets/attachments/uncategorized/v2-2c58730516363f0512efb8a0875b9c79_1440w.jpg]]
+![[raw/assets/attachments/machinelearning/v2-2c58730516363f0512efb8a0875b9c79_1440w.jpg]]
 
 四舍五入
 
@@ -282,9 +282,9 @@ kaggle的常见magic feature的产生方式，这里需要人工思考和头脑�
 
 当然要确保不损失信息的情况下使用，比如kaggle ieee的欺诈比赛，不同精度的交易金额代表了不同国家。。。这就不能直接四舍五入了。
 
-![[assets/attachments/uncategorized/v2-87d44052ab0b1e05db8e0b3199086e23_1440w.jpg]]
+![[raw/assets/attachments/machinelearning/v2-87d44052ab0b1e05db8e0b3199086e23_1440w.jpg]]
 
-![[assets/attachments/uncategorized/v2-8f252d4031120bfbfff9ad1c8c674dd3_1440w.jpg]]
+![[raw/assets/attachments/machinelearning/v2-8f252d4031120bfbfff9ad1c8c674dd3_1440w.jpg]]
 
 分箱
 
@@ -294,11 +294,11 @@ kaggle的常见magic feature的产生方式，这里需要人工思考和头脑�
 
 •可以与超出训练集的范围的变量正常配合
 
-![[assets/attachments/uncategorized/v2-a17eec54d249331f477bd14a05b3edcc_1440w.jpg]]
+![[raw/assets/attachments/machinelearning/v2-a17eec54d249331f477bd14a05b3edcc_1440w.jpg]]
 
-![[assets/attachments/uncategorized/v2-b0daa172407ff45ad5e9771f83224cc5_1440w.jpg]]
+![[raw/assets/attachments/machinelearning/v2-b0daa172407ff45ad5e9771f83224cc5_1440w.jpg]]
 
-![[assets/attachments/uncategorized/v2-8a1fd1f05c1d08805632620f73ba6f0a_1440w.jpg]]
+![[raw/assets/attachments/machinelearning/v2-8a1fd1f05c1d08805632620f73ba6f0a_1440w.jpg]]
 
 标准化
 
@@ -312,7 +312,7 @@ kaggle的常见magic feature的产生方式，这里需要人工思考和头脑�
 
 •log 变换（ [log变换](https://zhida.zhihu.com/search?content_id=107072087&content_type=Article&match_order=1&q=log%E5%8F%98%E6%8D%A2&zhida_source=entity) 是box cox变换的特例）
 
-![[assets/attachments/uncategorized/v2-ca7aeed7ac7fe8ba778b823982a212a7_1440w.jpg]]
+![[raw/assets/attachments/machinelearning/v2-ca7aeed7ac7fe8ba778b823982a212a7_1440w.jpg]]
 
 缺失值插补
 
@@ -330,9 +330,9 @@ kaggle的常见magic feature的产生方式，这里需要人工思考和头脑�
 
 （缺失值的处理是一门大学问，这里写的太简单）
 
-![[assets/attachments/uncategorized/v2-e49b99b37a94a0efab430ebd15a05d9d_1440w.jpg]]
+![[raw/assets/attachments/machinelearning/v2-e49b99b37a94a0efab430ebd15a05d9d_1440w.jpg]]
 
-![[assets/attachments/uncategorized/v2-f2010ddec1cc1a2ed2bd3916496b3fff_1440w.jpg]]
+![[raw/assets/attachments/machinelearning/v2-f2010ddec1cc1a2ed2bd3916496b3fff_1440w.jpg]]
 
 连续特征的交互
 
@@ -344,7 +344,7 @@ kaggle的常见magic feature的产生方式，这里需要人工思考和头脑�
 
 •忽略：有时候违背直觉的计算反而可以显着改善模型的训练效果！
 
-![[assets/attachments/uncategorized/v2-af67e51a7771b4bdb27920de75159ca1_1440w.jpg]]
+![[raw/assets/attachments/machinelearning/v2-af67e51a7771b4bdb27920de75159ca1_1440w.jpg]]
 
 线性算法的 [非线性编码](https://zhida.zhihu.com/search?content_id=107072087&content_type=Article&match_order=1&q=%E9%9D%9E%E7%BA%BF%E6%80%A7%E7%BC%96%E7%A0%81&zhida_source=entity)
 
@@ -358,7 +358,7 @@ kaggle的常见magic feature的产生方式，这里需要人工思考和头脑�
 
 •局部线性嵌入，频谱嵌入，t SNE （降维提取重要特征）
 
-![[assets/attachments/uncategorized/v2-807c6a076409b6ecfc4105393b4e54e1_1440w.jpg]]
+![[raw/assets/attachments/machinelearning/v2-807c6a076409b6ecfc4105393b4e54e1_1440w.jpg]]
 
 按照行计算统计值
 
@@ -372,7 +372,7 @@ kaggle的常见magic feature的产生方式，这里需要人工思考和头脑�
 
 •平均值，最大值，最小值，偏度等。
 
-![[assets/attachments/uncategorized/v2-7285ca1f6e22d8d1a222111671405570_1440w.jpg]]
+![[raw/assets/attachments/machinelearning/v2-7285ca1f6e22d8d1a222111671405570_1440w.jpg]]
 
 时间特征
 
@@ -382,7 +382,7 @@ kaggle的常见magic feature的产生方式，这里需要人工思考和头脑�
 
 •能够给模型效果带来很多好的提升
 
-![[assets/attachments/uncategorized/v2-ca1e5107d15718a13a8b434282da6bb7_1440w.jpg]]
+![[raw/assets/attachments/machinelearning/v2-ca1e5107d15718a13a8b434282da6bb7_1440w.jpg]]
 
 [投射](https://zhida.zhihu.com/search?content_id=107072087&content_type=Article&match_order=1&q=%E6%8A%95%E5%B0%84&zhida_source=entity) 到一个圆圈
 
@@ -392,11 +392,11 @@ kaggle的常见magic feature的产生方式，这里需要人工思考和头脑�
 
 •用于day\_of\_week，day\_of\_month，hour\_of\_day等。
 
-![[assets/attachments/uncategorized/v2-668981c6234e71c921526e01df35c0ec_1440w.jpg]]
+![[raw/assets/attachments/machinelearning/v2-668981c6234e71c921526e01df35c0ec_1440w.jpg]]
 
 趋势编码，简单说就是根据 [时间序列](https://zhida.zhihu.com/search?content_id=107072087&content_type=Article&match_order=1&q=%E6%97%B6%E9%97%B4%E5%BA%8F%E5%88%97&zhida_source=entity) 来计算某段时间的一些统计值，比如对总支出进行编码，例如：在上周支出，在上个月支出，在去年支出。这个也是比较常见的方法。
 
-![[assets/attachments/uncategorized/v2-d08f2641a7f573167d8fc18051bf722a_1440w.jpg]]
+![[raw/assets/attachments/machinelearning/v2-d08f2641a7f573167d8fc18051bf722a_1440w.jpg]]
 
 事件编码
 
@@ -406,7 +406,7 @@ kaggle的常见magic feature的产生方式，这里需要人工思考和头脑�
 
 •这些因素可能对消费行为产生重大影响。
 
-![[assets/attachments/uncategorized/v2-cd9c8de6ff9f674890eadf6f038f63dd_1440w.jpg]]
+![[raw/assets/attachments/machinelearning/v2-cd9c8de6ff9f674890eadf6f038f63dd_1440w.jpg]]
 
 空间编码
 
@@ -414,7 +414,7 @@ kaggle的常见magic feature的产生方式，这里需要人工思考和头脑�
 
 •示例包括：GPS坐标，城市，国家/地区，地址
 
-![[assets/attachments/uncategorized/v2-4574cbaf690937dbf1eda36fa2ab620a_1440w.jpg]]
+![[raw/assets/attachments/machinelearning/v2-4574cbaf690937dbf1eda36fa2ab620a_1440w.jpg]]
 
 • [克里格](https://zhida.zhihu.com/search?content_id=107072087&content_type=Article&match_order=1&q=%E5%85%8B%E9%87%8C%E6%A0%BC&zhida_source=entity) （这是啥。。。）
 
@@ -426,7 +426,7 @@ kaggle的常见magic feature的产生方式，这里需要人工思考和头脑�
 
 •在街道名称中添加 [邮政编码](https://zhida.zhihu.com/search?content_id=107072087&content_type=Article&match_order=1&q=%E9%82%AE%E6%94%BF%E7%BC%96%E7%A0%81&zhida_source=entity)
 
-![[assets/attachments/uncategorized/v2-946a2a2b4873bebee7e7e8c6279ce885_1440w.jpg]]
+![[raw/assets/attachments/machinelearning/v2-946a2a2b4873bebee7e7e8c6279ce885_1440w.jpg]]
 
 位置编码
 
@@ -436,7 +436,7 @@ kaggle的常见magic feature的产生方式，这里需要人工思考和头脑�
 
 •电话位置可以映射到附近的企业和超市
 
-![[assets/attachments/uncategorized/v2-ee038355501bf031a6d7ddf9af0703d0_1440w.jpg]]
+![[raw/assets/attachments/machinelearning/v2-ee038355501bf031a6d7ddf9af0703d0_1440w.jpg]]
 
 位置所反应出来的欺诈行为
 
@@ -452,7 +452,7 @@ kaggle的常见magic feature的产生方式，这里需要人工思考和头脑�
 
 接下来是关于数据探索的一些资料：
 
-![[assets/attachments/uncategorized/v2-ab74a35f7ae5ae7602070514038222f3_1440w.jpg]]
+![[raw/assets/attachments/machinelearning/v2-ab74a35f7ae5ae7602070514038222f3_1440w.jpg]]
 
 数据探索
 
@@ -464,7 +464,7 @@ kaggle的常见magic feature的产生方式，这里需要人工思考和头脑�
 
 •合并目标，以便找到信息之间的相关性。
 
-![[assets/attachments/uncategorized/v2-7bd250fb28724510a6cf5d3af24d00c3_1440w.jpg]]
+![[raw/assets/attachments/machinelearning/v2-7bd250fb28724510a6cf5d3af24d00c3_1440w.jpg]]
 
 迭代/调试
 
@@ -480,7 +480,7 @@ kaggle的常见magic feature的产生方式，这里需要人工思考和头脑�
 
 关于标签的一些处理方法：
 
-![[assets/attachments/uncategorized/v2-5e90810e2a9a0982eb1c0e26520f7abe_1440w.jpg]]
+![[raw/assets/attachments/machinelearning/v2-5e90810e2a9a0982eb1c0e26520f7abe_1440w.jpg]]
 
 •可以将标签/ [目标变量](https://zhida.zhihu.com/search?content_id=107072087&content_type=Article&match_order=2&q=%E7%9B%AE%E6%A0%87%E5%8F%98%E9%87%8F&zhida_source=entity) /因变量视为数据的特征，反之亦然。
 
@@ -498,7 +498,7 @@ kaggle的常见magic feature的产生方式，这里需要人工思考和头脑�
 
 关于 [自然语言处理](https://zhida.zhihu.com/search?content_id=107072087&content_type=Article&match_order=1&q=%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86&zhida_source=entity) 的一些方案，当然，很多方法类别特征也是很合适的。
 
-![[assets/attachments/uncategorized/v2-4863eb063f6ac99fffa17fdd266e1dcc_1440w.jpg]]
+![[raw/assets/attachments/machinelearning/v2-4863eb063f6ac99fffa17fdd266e1dcc_1440w.jpg]]
 
 •可以使用来自分类功能的相同想法。
 
@@ -508,7 +508,7 @@ kaggle的常见magic feature的产生方式，这里需要人工思考和头脑�
 
 •很多挖掘出好特征的机会：
 
-![[assets/attachments/uncategorized/v2-35e5f01a153c260fe83904c0860e0a59_1440w.jpg]]
+![[raw/assets/attachments/machinelearning/v2-35e5f01a153c260fe83904c0860e0a59_1440w.jpg]]
 
 算了，不写了，nlp没怎么涉及，用到再看吧。。。
 

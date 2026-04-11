@@ -58,7 +58,7 @@ puttygen demo -o demo.ppk
 puttygen demo.ppk -O private-openssh -o demo.pem
 ```
 
-[![[assets/attachments/uncategorized/20200430-102305.png]]](https://cdn.static.ponycool.com/img/20200430-102305.png "点击放大图片")
+[![[raw/assets/attachments/tools/20200430-102305.png]]](https://cdn.static.ponycool.com/img/20200430-102305.png "点击放大图片")
 
 ##### 可以参考issues/3360
 
@@ -68,8 +68,8 @@ puttygen demo.ppk -O private-openssh -o demo.pem
 
 1.导入OPENSSH格式密钥
 
-[![[assets/attachments/uncategorized/20200430-105037.png]]](https://cdn.static.ponycool.com/img/20200430-105037.png "点击放大图片")
+[![[raw/assets/attachments/tools/20200430-105037.png]]](https://cdn.static.ponycool.com/img/20200430-105037.png "点击放大图片")
 
 2.点击菜单->Conversions->Export OpenSSH key导出RSA格式密钥
 
-[![[assets/attachments/uncategorized/20200430-105224.png]]](https://cdn.static.ponycool.com/img/20200430-105224.png "点击放大图片")
+[![[raw/assets/attachments/tools/20200430-105224.png]]](https://cdn.static.ponycool.com/img/20200430-105224.png "点击放大图片")

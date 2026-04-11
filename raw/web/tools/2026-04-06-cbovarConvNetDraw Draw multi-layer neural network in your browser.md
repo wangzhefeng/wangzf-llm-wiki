@@ -24,7 +24,7 @@ topics:
 
 Small tool to create multi-layer neural network diagrams such as this
 
-[![[assets/attachments/example.png|Example]]](https://github.com/cbovar/ConvNetDraw/blob/master/img/example.png)
+![Example](https://github.com/cbovar/ConvNetDraw/blob/master/img/example.png)
 
 by entering the following script in your browser
 

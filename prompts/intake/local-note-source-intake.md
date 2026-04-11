@@ -22,7 +22,7 @@
    - 阅读地图
    - 相关概念页
 4. 如果本地文档中有图片或附件
-   - 本地化到 `assets/attachments/<topic-slug>/`
+   - 本地化到 `raw/assets/attachments/<topic-slug>/`
    - 新页面只引用迁移后的路径
 5. 做最小验证
    - 原始路径可追溯

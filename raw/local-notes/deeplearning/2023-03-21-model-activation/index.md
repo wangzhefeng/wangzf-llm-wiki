@@ -7,6 +7,10 @@ categories:
   - deeplearning
 tags:
   - model
+source_type: local_note
+created_at: 2023-03-21
+topics:
+  - deeplearning
 ---
 
 <style>

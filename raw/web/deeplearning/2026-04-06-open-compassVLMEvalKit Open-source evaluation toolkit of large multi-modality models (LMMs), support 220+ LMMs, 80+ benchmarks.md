@@ -65,7 +65,7 @@ See \[[QuickStart](https://github.com/open-compass/VLMEvalKit/blob/main/docs/en/
 
 **The performance numbers on our official multi-modal leaderboards can be downloaded from here!**
 
-[**OpenVLM Leaderboard**](https://huggingface.co/spaces/opencompass/open_vlm_leaderboard): [**Download All DETAILED Results**](http://opencompass.openxlab.space/assets/OpenVLM.json).
+[**OpenVLM Leaderboard**](https://huggingface.co/spaces/opencompass/open_vlm_leaderboard): [**Download All DETAILED Results**](http://opencompass.openxlab.space/raw/assets/OpenVLM.json).
 
 Check **Supported Benchmarks** Tab in [**VLMEvalKit Features**](https://aicarrier.feishu.cn/wiki/Qp7wwSzQ9iK1Y6kNUJVcr6zTnPe?table=tblsdEpLieDoCxtb) to view all supported image & video benchmarks (70+).
 
@@ -103,10 +103,10 @@ Note that some VLMs may not be able to run under certain flash-attention version
 from vlmeval.config import supported_VLM
 model = supported_VLM['idefics_9b_instruct']()
 # Forward Single Image
-ret = model.generate(['assets/apple.jpg', 'What is in this image?'])
+ret = model.generate(['raw/assets/apple.jpg', 'What is in this image?'])
 print(ret)  # The image features a red apple with a leaf on it.
 # Forward Multiple Images
-ret = model.generate(['assets/apple.jpg', 'assets/apple.jpg', 'How many apples are there in the provided images? '])
+ret = model.generate(['raw/assets/apple.jpg', 'raw/assets/apple.jpg', 'How many apples are there in the provided images? '])
 print(ret)  # There are two apples in the provided images.
 ```
 

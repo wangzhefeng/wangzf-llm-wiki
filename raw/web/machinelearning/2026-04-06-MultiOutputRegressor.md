@@ -326,7 +326,7 @@ The updated object.
 
 ## Gallery examples
 
-![[assets/attachments/uncategorized/sphx_glr_plot_random_forest_regression_multioutput_thumb.png]]
+![[raw/assets/attachments/machinelearning/sphx_glr_plot_random_forest_regression_multioutput_thumb.png]]
 
 [Comparing random forests and the multi-output meta estimator](https://scikit-learn.org/stable/auto_examples/ensemble/plot_random_forest_regression_multioutput.html)
 

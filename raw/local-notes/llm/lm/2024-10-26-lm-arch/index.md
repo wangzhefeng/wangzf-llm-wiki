@@ -8,6 +8,11 @@ categories:
   - deeplearning
 tags:
   - model
+source_type: local_note
+created_at: 2024-10-26
+topics:
+  - nlp
+  - deeplearning
 ---
 
 <style>

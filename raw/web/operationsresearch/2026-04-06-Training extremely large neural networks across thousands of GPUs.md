@@ -41,13 +41,13 @@ In practice, instead of using the *entire* dataset to compute the gradient durin
 
 Smaller batches provide noisier estimates of the gradient; which can be faster to compute but may require more optimization steps to converge on a target loss value. Larger batches, on the other hand, give us a better approximation of the true gradient (leading to smoother optimization dynamics and allowing for us to use a higher learning rate) at the cost of being more expensive to compute per batch.
 
-![[assets/attachments/uncategorized/Screenshot-2024-09-29-at-4.42.00-PM.png]]
+![[raw/assets/attachments/operationsresearch/Screenshot-2024-09-29-at-4.42.00-PM.png]]
 
 An illustration from An Empirical Model of Large-Batch Training (Figure 2) demonstrating the improved training dynamics of low-variance estimates of the gradient, allowing us to use a higher learning rate and resulting in fewer optimization steps to reach the desired minimum point.
 
 Moreover, as you increase the batch size you'll hit a point where it gives a very close approximation to the true gradient and increasing the batch size further past this point yields minimal benefit (e.g. it's more expensive to compute but doesn't meaningfully improve the estimate of our gradient). As discussed in [An Empirical Model of Large-Batch Training](https://arxiv.org/pdf/1812.06162.pdf?ref=jeremyjordan.me), this transition happens at different batch sizes depending on your dataset and the complexity of your modeling task. The paper also provides some guidelines for determining at what batch size this transition will happen based on the per-sample gradients of your input data.
 
-![[assets/attachments/uncategorized/Screenshot-2024-09-29-at-4.53.02-PM.png]]
+![[raw/assets/attachments/operationsresearch/Screenshot-2024-09-29-at-4.53.02-PM.png]]
 
 An illustration from An Empirical Model of Large-Batch Training (Figure 3) demonstrating the two regimes of perfect scaling, where you can scale the learning rate linearly with batch size to speed up training, and ineffective scaling, where the optimal learning rate starts to scale sub-linearly with respect to batch size.
 
@@ -71,7 +71,7 @@ Let's take a second to enumerate the various things that we need to keep in memo
 
 You can look at the overall memory footprint during model training, broken down by category, using [PyTorch's memory profiler](https://pytorch.org/docs/stable/profiler.html?ref=jeremyjordan.me).
 
-![[assets/attachments/uncategorized/memory_footprint.png]]
+![[raw/assets/attachments/operationsresearch/memory_footprint.png]]
 
 The memory footprint during training of a small Transformer model on random data for 5 steps.
 
@@ -152,19 +152,19 @@ This sequential processing across GPUs creates a challenge in GPU utilization. C
 
 This leads to significant GPU idle time - a phenomenon known as the "pipeline bubble" because of the gaps in GPU utilization it creates.
 
-![[assets/attachments/uncategorized/Screenshot-2025-02-17-at-10.56.53-AM.png]]
+![[raw/assets/attachments/operationsresearch/Screenshot-2025-02-17-at-10.56.53-AM.png]]
 
 A visualization from " GPipe: Easy Scaling with Micro-Batch Pipeline Parallelism " depicting the "pipeline bubble" challenge. The white space represents idle time where the GPU devices are not being utilized.
 
 One way to mitigate this issue is to split a batch into multiple **micro-batches**, allowing different GPUs to work on different micro-batches at the same time. Instead of GPU0 initially processing the entire input batch at once, we'll have it compute a subset (i.e. micro-batch) of the input and pass on those activations to GPU1 to compute the activations of the next layers. This allows GPU0 to compute the next subset of inputs *while* GPU1 is computing the first subset of inputs. This staggering of computation allows more GPUs to work in parallel, increasing the overall device utilization and reducing the size of the "pipeline bubble". Each device accumulates the computed gradients across all micro-batches before applying an update to the model weights at the end of the pipeline execution.
 
-![[assets/attachments/uncategorized/Screenshot-2025-02-17-at-10.57.15-AM.png]]
+![[raw/assets/attachments/operationsresearch/Screenshot-2025-02-17-at-10.57.15-AM.png]]
 
 A visualization from " GPipe: Easy Scaling with Micro-Batch Pipeline Parallelism " depicting the reduction in idle GPU time as a result of splitting a batch into micro-batches.
 
 In other variants of pipeline parallelism, model weights can be updated after each micro-batch, resulting in even near-perfect GPU utilization across devices as a result of more dense interleaving of forward and backward passes from the various micro-batches. However, this increased utilization comes at the cost of greater inconsistency as a result of different micro-batches seeing different versions of the model weights.
 
-![[assets/attachments/uncategorized/Screenshot-2025-02-17-at-12.03.02-PM.png]]
+![[raw/assets/attachments/operationsresearch/Screenshot-2025-02-17-at-12.03.02-PM.png]]
 
 A visualization from " PipeDream: Fast and Efficient Pipeline Parallel DNN Training " showing how we can completely remove the pipeline bubble if you remove the constraint of synchronously updating the model weights.
 
@@ -239,7 +239,7 @@ Consider a sequence of two linear layers with a nonlinear activation function (l
 1. If we use column partitioning (split weights along the output dimension) for the first layer, each GPU can independently apply the activation function to its portion of the output
 2. By then using row partitioning (split weights along the input dimension) for the second layer, each GPU can directly consume its local activations without requiring any communication
 3. Finally, we can apply an all-reduce across the devices to combine the final outputs
-![[assets/attachments/uncategorized/mlp_mp_2.png]]
+![[raw/assets/attachments/operationsresearch/mlp_mp_2.png]]
 
 A visualization from Megatron-LM: Training Multi-Billion Parameter Language Models Using Model Parallelism showing how clever partitioning of the weight matrices A and B allow for efficient distributed processing and reduce the communication overhead.
 

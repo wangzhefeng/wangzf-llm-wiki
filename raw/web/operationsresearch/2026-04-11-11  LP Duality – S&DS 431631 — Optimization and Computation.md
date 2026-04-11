@@ -9,6 +9,8 @@ tags:
 title: 11  LP Duality – S&DS 431/631 — Optimization and Computation
 topics:
 - 运筹优化
+source_type: local_note
+created_at: 2026-04-11
 ---
 The [simplex method](https://zhuoranyang.github.io/sds431-notes/lectures/10-simplex-method.html) finds an optimal solution by moving from vertex to vertex. But suppose the algorithm hands you a solution $x^*$ and claims it is optimal. **How do you know it is truly the best?** Simply checking feasibility is not enough — you need a *certificate* that no feasible point can do better.
 

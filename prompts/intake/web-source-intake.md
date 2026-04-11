@@ -12,7 +12,7 @@
 - 网页原始材料统一先进入 `raw/web/`
 - 不要一上来把网页直接改写成最终综述
 - 先补来源层，再补索引层，最后补概念层
-- 重要图片、图表、截图优先本地化到 `assets/attachments/<topic-slug>/<page-slug>/`
+- 重要图片、图表、截图优先本地化到 `raw/assets/attachments/<topic-slug>/<page-slug>/`
 - 新页面统一使用普通 Markdown 和 frontmatter
 - 不要编造网页中没有出现的信息
 - 如果网页信息不足以支撑概念更新，要明确写出 `missing_context`
@@ -60,7 +60,7 @@
    - 更新时只补“这篇网页带来的新增信息”，不要整页重写
 
 4. 如果网页里有高价值图片或图表
-   - 复制到 `assets/attachments/<topic-slug>/<page-slug>/`
+   - 复制到 `raw/assets/attachments/<topic-slug>/<page-slug>/`
    - 新建的 `wiki/` 页面只引用复制后的本地路径
    - 不修改原始网页地址
 

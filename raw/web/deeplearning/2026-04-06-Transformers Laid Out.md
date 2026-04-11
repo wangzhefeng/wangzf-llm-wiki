@@ -335,7 +335,7 @@ It consists of multiple encoders, and each encoder block consists of the followi
 - Layer Normalization
 - Feed Forward network
 
-![[assets/attachments/encoder.png|Image of an encoder]]
+<!-- missing attachment -->
 
 ### Residual connection
 

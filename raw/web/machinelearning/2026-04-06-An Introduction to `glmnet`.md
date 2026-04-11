@@ -98,7 +98,7 @@ We can visualize the coefficients by executing the `plot` method:
 plot(fit)
 ```
 
-![[assets/attachments/uncategorized/unnamed-chunk-6-1.png]]
+![[raw/assets/attachments/machinelearning/unnamed-chunk-6-1.png]]
 
 Each curve corresponds to a variable. It shows the path of its coefficient against the $\ell_1$ -norm of the whole coefficient vector as $\lambda$ varies. The axis above indicates the number of nonzero coefficients at the current $\lambda$, which is the effective degrees of freedom (*df*) for the lasso. Users may also wish to annotate the curves: this can be done by setting `label = TRUE` in the plot command.
 
@@ -173,7 +173,7 @@ cvfit <- cv.glmnet(x, y)
 plot(cvfit)
 ```
 
-![[assets/attachments/uncategorized/unnamed-chunk-11-1.png]]
+![[raw/assets/attachments/machinelearning/unnamed-chunk-11-1.png]]
 
 This plots the cross-validation curve (red dotted line) along with upper and lower standard deviation curves along the $\lambda$ sequence (error bars). Two special values along the $\lambda$ sequence are indicated by the vertical dotted lines. `lambda.min` is the value of $\lambda$ that gives minimum mean cross-validated error, while `lambda.1se` is the value of $\lambda$ that gives the most regularized model such that the cross-validated error is within one standard error of the minimum.
 
@@ -363,7 +363,7 @@ For example, let’s plot `fit` against the log-lambda value and with each curve
 plot(fit, xvar = "lambda", label = TRUE)
 ```
 
-![[assets/attachments/uncategorized/unnamed-chunk-18-1.png]]
+![[raw/assets/attachments/machinelearning/unnamed-chunk-18-1.png]]
 
 Now when we plot against %deviance we get a very different picture. This is percent deviance explained on the training data, and is a measure of complexity of the model. We see that toward the end of the path, %deviance is not changing much but the coefficients are “blowing up” a bit. This enables us focus attention on the parts of the fit that matter. This will especially be true for other models, such as logistic regression.
 
@@ -371,7 +371,7 @@ Now when we plot against %deviance we get a very different picture. This is perc
 plot(fit, xvar = "dev", label = TRUE)
 ```
 
-![[assets/attachments/uncategorized/unnamed-chunk-19-1.png]]
+![[raw/assets/attachments/machinelearning/unnamed-chunk-19-1.png]]
 
 ### Cross-validation
 
@@ -498,7 +498,7 @@ legend("topleft", legend = c("alpha= 1", "alpha= .5", "alpha 0"),
        pch = 19, col = c("red","grey","blue"))
 ```
 
-![[assets/attachments/uncategorized/unnamed-chunk-29-1.png]]
+![[raw/assets/attachments/machinelearning/unnamed-chunk-29-1.png]]
 
 We see that the lasso (`alpha=1`) does about the best here. We also see that the range of lambdas used differs with `alpha`.
 
@@ -513,7 +513,7 @@ tfit <- glmnet(x, y, lower.limits = -0.7, upper.limits = 0.5)
 plot(tfit)
 ```
 
-![[assets/attachments/uncategorized/unnamed-chunk-30-1.png]]
+![[raw/assets/attachments/machinelearning/unnamed-chunk-30-1.png]]
 
 Often we want the coefficients to be positive: to do so, we just need to specify `lower.limits = 0`. (Note, the lower limit must be no bigger than zero, and the upper limit no smaller than zero.) These bounds can be a vector, with different values for each coefficient. If given as a scalar, the same number gets recycled for all.
 
@@ -533,7 +533,7 @@ pfit <- glmnet(x, y, penalty.factor = p.fac)
 plot(pfit, label = TRUE)
 ```
 
-![[assets/attachments/uncategorized/unnamed-chunk-31-1.png]]
+![[raw/assets/attachments/machinelearning/unnamed-chunk-31-1.png]]
 
 We see from the labels that the three variables with zero penalty factors always stay in the model, while the others follow typical regularization paths and shrunk to zero eventually.
 
@@ -570,7 +570,7 @@ As before, we can use the `plot` method to visualize the coefficients:
 plot(mfit, xvar = "lambda", label = TRUE, type.coef = "2norm")
 ```
 
-![[assets/attachments/uncategorized/unnamed-chunk-33-1.png]]
+![[raw/assets/attachments/machinelearning/unnamed-chunk-33-1.png]]
 
 Note that we set `type.coef = "2norm"`. Under this setting, a single curve is plotted per variable, with value equal to the $\ell_2$ norm of the variable’s coefficient vector. The default setting is `type.coef = "coef"`, where a coefficient plot is created for each response (multiple figures). `xvar` and `label` are two other arguments which have the same functionality as in the single-response case.
 
@@ -682,7 +682,7 @@ As before, we can plot the object and show the optimal values of $\lambda$.
 plot(cvfit)
 ```
 
-![[assets/attachments/uncategorized/unnamed-chunk-39-1.png]]
+![[raw/assets/attachments/machinelearning/unnamed-chunk-39-1.png]]
 
 ```
 cvfit$lambda.min
@@ -737,7 +737,7 @@ fit <- glmnet(x, y, family = "multinomial", type.multinomial = "grouped")
 plot(fit, xvar = "lambda", label = TRUE, type.coef = "2norm")
 ```
 
-![[assets/attachments/uncategorized/unnamed-chunk-41-1.png]]
+![[raw/assets/attachments/machinelearning/unnamed-chunk-41-1.png]]
 
 For the `plot` method, the function arguments are `xvar`, `label` and `type.coef`, in addition to other ordinary graphical parameters. `xvar` and `label` are the same as other families while `type.coef` is only for multinomial regression and multi-response Gaussian model. It can produce a figure of coefficients for each response variable if `type.coef = "coef"` or a figure showing the $\ell_2$ -norm in one figure if `type.coef = "2norm"`.
 
@@ -748,7 +748,7 @@ cvfit <- cv.glmnet(x, y, family = "multinomial", type.multinomial = "grouped")
 plot(cvfit)
 ```
 
-![[assets/attachments/uncategorized/unnamed-chunk-42-1.png]]
+![[raw/assets/attachments/machinelearning/unnamed-chunk-42-1.png]]
 
 Users may wish to predict at the optimally selected $\lambda$:
 
@@ -809,7 +809,7 @@ Again, we plot the coefficients to have a first sense of the result.
 plot(fit)
 ```
 
-![[assets/attachments/uncategorized/unnamed-chunk-46-1.png]]
+![[raw/assets/attachments/machinelearning/unnamed-chunk-46-1.png]]
 
 As before, we can extract the coefficients and make predictions at certain $\lambda$ ’s using `coef` and `predict` respectively. The optional input arguments are similar to those for other families. For the `predict` method, the argument `type` has the same meaning as that for `family = "binomial"`, except that “response” gives the fitted mean (rather than fitted probabilities in the binomial case). For example, we can do the following:
 
@@ -1035,7 +1035,7 @@ invisible(sapply(rocs, lines, col="grey"))
 lines(rocs[[best]], lwd = 2,col = "red")
 ```
 
-![[assets/attachments/uncategorized/unnamed-chunk-56-1.png]]
+![[raw/assets/attachments/machinelearning/unnamed-chunk-56-1.png]]
 
 ### Confusion matrices for classification
 
@@ -1266,7 +1266,7 @@ cvfit = cv.glmnet(x, y)
 plot(cvfit)
 ```
 
-![[assets/attachments/uncategorized/unnamed-chunk-71-1.png]]
+![[raw/assets/attachments/machinelearning/unnamed-chunk-71-1.png]]
 
 The usage of other functions are similar and we do not expand here.
 

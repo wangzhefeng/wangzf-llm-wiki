@@ -46,21 +46,21 @@ The repo is the official implementation for the paper: [iTransformer: Inverted T
 
 🌟 Considering the characteristics of multivariate time series, iTransformer breaks the conventional structure without modifying any Transformer modules. **Inverted Transformer is all you need in MTSF**.
 
-[![[assets/attachments/llm/motivation.png]]](https://github.com/thuml/iTransformer/blob/main/figures/motivation.png)
+[![[raw/assets/attachments/llm/motivation.png]]](https://github.com/thuml/iTransformer/blob/main/figures/motivation.png)
 
 🏆 iTransformer achieves the comprehensive state-of-the-art in challenging multivariate forecasting tasks and solves several pain points of Transformer on extensive time series data.
 
-[![[assets/attachments/llm/radar.png]]](https://github.com/thuml/iTransformer/blob/main/figures/radar.png)
+[![[raw/assets/attachments/llm/radar.png]]](https://github.com/thuml/iTransformer/blob/main/figures/radar.png)
 
 ## Overall Architecture
 
 iTransformer regards **independent time series as variate tokens** to **capture multivariate correlations by attention** and **utilize layernorm and feed-forward networks to learn series representations**.
 
-[![[assets/attachments/llm/architecture 1.png]]](https://github.com/thuml/iTransformer/blob/main/figures/architecture.png)
+[![[raw/assets/attachments/llm/architecture 1.png]]](https://github.com/thuml/iTransformer/blob/main/figures/architecture.png)
 
 The pseudo-code of iTransformer is as simple as the following:
 
-[![[assets/attachments/llm/algorithm.png]]](https://github.com/thuml/iTransformer/blob/main/figures/algorithm.png)
+[![[raw/assets/attachments/llm/algorithm.png]]](https://github.com/thuml/iTransformer/blob/main/figures/algorithm.png)
 
 ## Usage
 
@@ -96,19 +96,19 @@ We evaluate the iTransformer on challenging multivariate forecasting benchmarks 
 
 ### Online Transaction Load Prediction of Alipay Trading Platform (Avg Results)
 
-[![[assets/attachments/llm/main_results_alipay.png]]](https://github.com/thuml/iTransformer/blob/main/figures/main_results_alipay.png)
+[![[raw/assets/attachments/llm/main_results_alipay.png]]](https://github.com/thuml/iTransformer/blob/main/figures/main_results_alipay.png)
 
 ## General Performance Boosting on Transformers
 
 By introducing the proposed framework, Transformer and its variants achieve **significant performance improvement**, demonstrating the **generality of the iTransformer approach** and **benefiting from efficient attention mechanisms**.
 
-[![[assets/attachments/llm/boosting.png]]](https://github.com/thuml/iTransformer/blob/main/figures/boosting.png)
+[![[raw/assets/attachments/llm/boosting.png]]](https://github.com/thuml/iTransformer/blob/main/figures/boosting.png)
 
 ## Zero-Shot Generalization on Variates
 
 **Technically, iTransformer is able to forecast with arbitrary numbers of variables**. We train iTransformers on partial variates and forecast unseen variates with good generalizability.
 
-[![[assets/attachments/llm/generability.png]]](https://github.com/thuml/iTransformer/blob/main/figures/generability.png)
+[![[raw/assets/attachments/llm/generability.png]]](https://github.com/thuml/iTransformer/blob/main/figures/generability.png)
 
 ## Model Analysis
 
@@ -117,7 +117,7 @@ Benefiting from inverted Transformer modules:
 - (Left) Inverted Transformers learn **better time series representations** (more similar [CKA](https://github.com/jayroxis/CKA-similarity)) favored by forecasting.
 - (Right) The inverted self-attention module learns **interpretable multivariate correlations**.
 
-[![[assets/attachments/llm/analysis.png]]](https://github.com/thuml/iTransformer/blob/main/figures/analysis.png)
+[![[raw/assets/attachments/llm/analysis.png]]](https://github.com/thuml/iTransformer/blob/main/figures/analysis.png)
 
 ## Citation
 

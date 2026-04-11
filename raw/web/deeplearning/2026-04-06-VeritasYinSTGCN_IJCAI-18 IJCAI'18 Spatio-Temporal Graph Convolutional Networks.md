@@ -26,7 +26,7 @@ We propose a novel deep learning framework, **STGCN**, to tackle time series pre
 
 Traffic forecast is a typical time-series prediction problem, i.e. predicting the most likely traffic measurements (e.g. speed or traffic flow) in the next $H$ time steps given the previous $M$ observations from traffic network $G$ as,
 
-[![[assets/attachments/uncategorized/Image 60.svg]]](https://camo.githubusercontent.com/8d8ba847dc34f82eec0043d7dde65fd4e4d95f1ce9496564fbd191d49369ce19/68747470733a2f2f6c617465782e636f6465636f67732e636f6d2f7376672e696d6167653f5c6c617267652673706163653b5c6861747b767d5f7b742b317d2c2673706163653b2e2e2e2c2673706163653b5c6861747b767d5f7b742b487d3d5c6d6174686f707b5c6172675c6d61787d5f7b765f7b742b317d2c2673706163653b2e2e2e2c2673706163653b765f7b742b487d7d2673706163653b5c6c6f672673706163653b5028765f7b742b317d2c2673706163653b2e2e2e2c765f7b742b487d7c765f7b742d4d2b317d2c2673706163653b2e2e2e2c765f743b4729)
+[![[raw/assets/attachments/deeplearning/Image 60.svg]]](https://camo.githubusercontent.com/8d8ba847dc34f82eec0043d7dde65fd4e4d95f1ce9496564fbd191d49369ce19/68747470733a2f2f6c617465782e636f6465636f67732e636f6d2f7376672e696d6167653f5c6c617267652673706163653b5c6861747b767d5f7b742b317d2c2673706163653b2e2e2e2c2673706163653b5c6861747b767d5f7b742b487d3d5c6d6174686f707b5c6172675c6d61787d5f7b765f7b742b317d2c2673706163653b2e2e2e2c2673706163653b765f7b742b487d7d2673706163653b5c6c6f672673706163653b5028765f7b742b317d2c2673706163653b2e2e2e2c765f7b742b487d7c765f7b742d4d2b317d2c2673706163653b2e2e2e2c765f743b4729)
 
 **Fig.1 Graph-structured traffic data.**  
 Each $v
@@ -34,7 +34,7 @@ Each $v
 
 ## Network Structure
 
-[![[assets/attachments/uncategorized/STGCN.png]]](https://github.com/VeritasYin/STGCN_IJCAI-18/blob/master/figures/STGCN.png)
+[![[raw/assets/attachments/deeplearning/STGCN.png]]](https://github.com/VeritasYin/STGCN_IJCAI-18/blob/master/figures/STGCN.png)
 
 **Fig. 2 Architecture of spatio-temporal graph convolutional networks.**  
 The framework STGCN consists of two spatio-temporal convolutional blocks (ST-Conv blocks) and a fully-connected output layer in the end. Each ST-Conv block contains two temporal gated convolution layers and one spatial graph convolution layer in the middle. The residual connection and bottleneck strategy are applied inside each block. The input $v

@@ -68,7 +68,7 @@
    - 不要把 README 原文直接搬进概念页
 
 4. 如果仓库里有重要架构图、流程图或实验图
-   - 复制到 `assets/attachments/<topic-slug>/<repo-slug>/`
+   - 复制到 `raw/assets/attachments/<topic-slug>/<repo-slug>/`
    - 新建的 `wiki/` 页面只引用复制后的本地路径
 
 5. 最后做最小验证

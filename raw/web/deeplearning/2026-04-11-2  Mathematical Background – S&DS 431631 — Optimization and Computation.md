@@ -9,6 +9,8 @@ tags:
 title: 2  Mathematical Background – S&DS 431/631 — Optimization and Computation
 topics:
 - 深度学习
+source_type: local_note
+created_at: 2026-04-11
 ---
 Before we can analyze optimization algorithms or prove convergence rates, we need a shared mathematical vocabulary. The language of optimization is built from linear algebra and multivariate calculus: norms tell us how to measure the size of errors and the distance to a solution, eigenvalues reveal the curvature of quadratic objectives, and gradients point us toward descent directions. Without fluency in these tools, the theoretical results in later chapters would remain opaque.
 

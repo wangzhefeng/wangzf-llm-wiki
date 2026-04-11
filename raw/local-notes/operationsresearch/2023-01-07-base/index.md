@@ -7,6 +7,10 @@ categories:
   - optimizer-algorithm
 tags:
   - algorithm
+source_type: local_note
+created_at: 2023-01-07
+topics:
+  - optimizer-algorithm
 ---
 
 <style>

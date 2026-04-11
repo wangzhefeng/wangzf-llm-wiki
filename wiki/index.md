@@ -17,7 +17,7 @@ status: linked
 
 ## Core Control Files
 
-- [[SCHEMA]] - 结构约束、字段规范与会话启动规则
+- [[schema]] - 结构约束、字段规范与会话启动规则
 - [[index]] - 当前统一入口页
 - [[log]] - 操作时间线（ingest/query/lint/backfill）
 
@@ -60,12 +60,22 @@ status: linked
 - `wiki/comparisons/` - 对比层（可增量建设）
 - `wiki/queries/` - 查询沉淀层（可增量建设）
 
+## Area READMEs
+
+- [[wiki/README]]（wiki 根说明）
+- [[wiki/sources/README]]（wiki/sources 说明）
+- [[wiki/concepts/README]]（wiki/concepts 说明）
+- [[wiki/entities/README]]（wiki/entities 说明）
+- [[wiki/comparisons/README]]（wiki/comparisons 说明）
+- [[wiki/queries/README]]（wiki/queries 说明）
+
 ## Raw Layer
 
 - `raw/web/`
 - `raw/papers/`
 - `raw/local-notes/`
 - `raw/images/`
+- `raw/assets/`
 
 ## Common Resources
 

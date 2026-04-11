@@ -10,6 +10,8 @@ tags:
 title: Harness Engineering在硅谷爆火，一文带你搞懂！
 topics:
 - Vibe Coding
+source_type: local_note
+created_at: 2026-04-11
 ---
 原创 Datawhale *2026年3月29日 22:07*
 

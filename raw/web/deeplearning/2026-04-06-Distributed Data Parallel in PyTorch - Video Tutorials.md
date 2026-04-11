@@ -25,7 +25,7 @@ Authors: [Suraj Subramanian](https://github.com/subramen)
 
 Follow along with the video below or on [youtube](https://www.youtube.com/watch/-K3bZYHYHEA).
 
-![[assets/attachments/pytorch/ddp-video-tutorials.jpg]]
+![[raw/assets/attachments/pytorch/ddp-video-tutorials.jpg]]
 
 This series of video tutorials walks you through distributed training in PyTorch via DDP.
 

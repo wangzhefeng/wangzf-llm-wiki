@@ -49,7 +49,7 @@ Note that this training pipeline is based on [OpenAI's InstructGPT paper](https:
 
 Let's begin with the initial step, *pretraining*, as depicted below.
 
-![[assets/attachments/llm/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F52beec42-4ba4-4477-80d3-4dbb8f3162d3_1600x950.png]]
+![[raw/assets/attachments/llm/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F52beec42-4ba4-4477-80d3-4dbb8f3162d3_1600x950.png]]
 
 Illustration of the LLM pretraining step
 
@@ -71,7 +71,7 @@ One point worth emphasizing is that this type of pretraining allows us to levera
 
 The next step is s *upervised finetuning*, which is summarized in the figure below.
 
-![[assets/attachments/llm/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F97601e27-cee1-443d-b9ac-a5ea6f802fc9_2156x1164.png]]
+![[raw/assets/attachments/llm/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F97601e27-cee1-443d-b9ac-a5ea6f802fc9_2156x1164.png]]
 
 Finetuning the pretrained model on instruction data.
 
@@ -88,7 +88,7 @@ While both employ a similar next-token training objective, supervised finetuning
 
 Following this supervised finetuning stage, there's another finetuning phase commonly regarded as the "alignment" step, as its primary objective is to align the LLM with human preferences. This is where RLHF comes into play.  
 
-![[assets/attachments/llm/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F4c3c20d4-8c22-4203-9ea2-0da80e7eabb5_2088x1178.png]]
+![[raw/assets/attachments/llm/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F4c3c20d4-8c22-4203-9ea2-0da80e7eabb5_2088x1178.png]]
 
 Annotated graph from InstructGPT paper, https://arxiv.org/abs/2203.02155
 
@@ -118,7 +118,7 @@ For simplicity, we will look at the RLHF pipeline in three separate steps:
 
 RLHF Step 1, shown below, is a supervised finetuning step to create the base model for further RLHF finetuning.  
 
-![[assets/attachments/llm/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fce4819d8-db35-4218-8570-8b2412b59934_1600x681.png]]
+![[raw/assets/attachments/llm/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fce4819d8-db35-4218-8570-8b2412b59934_1600x681.png]]
 
 Annotated figure from InstructGPT paper, https://arxiv.org/abs/2203.02155
 
@@ -128,7 +128,7 @@ Note that this RLHF Step 1 is similar to step 2 in the previous section, "The Ca
 
 In RLHF Step 2, we then use this model from supervised finetuning to create a reward model, as shown below.
 
-![[assets/attachments/llm/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F41432907-13e3-48d3-ad8f-9db5baa76dfd_1600x778.png]]
+![[raw/assets/attachments/llm/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F41432907-13e3-48d3-ad8f-9db5baa76dfd_1600x778.png]]
 
 Annotated figure from InstructGPT paper, https://arxiv.org/abs/2203.02155
 
@@ -144,7 +144,7 @@ If you are interested, [here](https://lightning.ai/courses/deep-learning-fundame
 
 The third step in the RLHF pipeline is to use the reward (RM) model to finetune the previous model from supervised finetuning (SFT), which is illustrated in the figure below.
 
-![[assets/attachments/llm/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F89309fc6-320e-431c-ab2d-110cd1461f0e_1600x857.png]]
+![[raw/assets/attachments/llm/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F89309fc6-320e-431c-ab2d-110cd1461f0e_1600x857.png]]
 
 Annotated figure from InstructGPT paper, https://arxiv.org/abs/2203.02155
 
@@ -168,7 +168,7 @@ In the previous section, we looked at the RLHF procedure described in OpenAI's I
 
 Meta AI utilized RLHF in creating the Llama-2-chat models as well. Nevertheless, there are several distinctions between the two approaches, which I've highlighted in the annotated figure below.
 
-![[assets/attachments/llm/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Feef9ddfa-657d-4784-9e87-371e7617143d_1600x768.png]]
+![[raw/assets/attachments/llm/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Feef9ddfa-657d-4784-9e87-371e7617143d_1600x768.png]]
 
 Annotated figure from Llama 2: Open Foundation and Fine-Tuned Chat Models, https://arxiv.org/abs/2307.09288
 
@@ -213,7 +213,7 @@ For instance, returning a higher margin via “m(r)” will make the difference 
 
 As mentioned earlier, there are two reward models in Llama 2 instead of one. One reward model is based on *helpfulness*, and the other is based on *safety*. The final reward function that is then used for the model optimization is a linear combination of the two scores.
 
-![[assets/attachments/llm/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F17d06b15-e1de-49df-907c-65dc26d1fc21_1444x986.png]]
+![[raw/assets/attachments/llm/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F17d06b15-e1de-49df-907c-65dc26d1fc21_1444x986.png]]
 
 Explanation of the Llama 2 ranking method and reward model creation based on an annotated figure from the InstructGPT paper, https://arxiv.org/abs/2203.02155
 
@@ -224,7 +224,7 @@ Moreover, the authors of Llama 2 employ a training pipeline that iteratively pro
 
 In rejection sampling, K outputs are drawn, and the one with the highest reward is chosen for the gradient update during the optimization step, as illustrated below.  
 
-![[assets/attachments/llm/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fd187fa03-982c-4818-bbd7-833d2ef10386_1298x864.png]]
+![[raw/assets/attachments/llm/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fd187fa03-982c-4818-bbd7-833d2ef10386_1298x864.png]]
 
 Explanation of the Llama 2 rejection sampling step for creating multiple responses and selecting those with the highest reward based on a figure from the InstructGPT paper https://arxiv.org/abs/2203.02155
 
@@ -234,7 +234,7 @@ After the initial phases of supervised finetuning, models are exclusively traine
 
 The researchers plotted the model performance over the RLHF stages, which shows that the RLHF-finetuned models improve on both the harmlessness and helpfulness axes.
 
-![[assets/attachments/llm/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F334cb151-1c0d-45e0-ad66-ef4509d022c7_804x748.png]]
+![[raw/assets/attachments/llm/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F334cb151-1c0d-45e0-ad66-ef4509d022c7_804x748.png]]
 
 Annotated figure from Llama 2: Open Foundation and Fine-Tuned Chat Models, https://arxiv.org/abs/2307.09288
 
@@ -244,7 +244,7 @@ Note that the researchers used PPO in the final step, following up on the previo
 
 Now that we have discussed and defined the RLHF process, a pretty elaborate procedure, one might wonder whether it's even worth the trouble. The previous graphs from the InstructGPT and Llama 2 papers (shown again below) provide evidence that RLHF is worth the trouble.
 
-![[assets/attachments/llm/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F6727c2d5-e824-4361-a938-b05f494a97f4_1600x761.png]]
+![[raw/assets/attachments/llm/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F6727c2d5-e824-4361-a938-b05f494a97f4_1600x761.png]]
 
 However, a lot of ongoing research focuses on developing more efficient alternatives. The most interesting approaches are summarized below.  
 
@@ -252,7 +252,7 @@ However, a lot of ongoing research focuses on developing more efficient alternat
 
 In this Constitutional AI paper, researchers propose a self-training mechanism based on a list of rules humans provide. Similar to the InstructGPT paper mentioned earlier, the proposed method uses a reinforcement learning approach
 
-![[assets/attachments/llm/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fd6daf523-60c3-4c86-abe6-ca71e83d838f_1600x700.png]]
+![[raw/assets/attachments/llm/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fd6daf523-60c3-4c86-abe6-ca71e83d838f_1600x700.png]]
 
 Figure from Constitutional AI: Harmlessness from AI Feedback, https://arxiv.org/abs/2212.08073
 
@@ -266,7 +266,7 @@ The Wisdom of Hindsight makes Language Models Better Instruction Followers shows
 
 How does the proposed HIR (Hindsight Instruction Labeling) work? In a nutshell, the method HIR consists of two steps, sampling and training. In the sampling step, prompts and instructions are fed to the LLM to collect the responses. Based on an alignment score, the instruction is relabeled where appropriate in the training phase. Then, the relabeled instructions and the original prompts are used to finetune the LLM. Using this relabeling approach, the researchers effectively turn failure cases (cases where the LLM creates outputs that don't match the original instructions) into useful training data for supervised learning.
 
-![[assets/attachments/llm/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F46df147c-6afe-4c32-86d9-1ad0fd6898c4_1544x1432.png]]
+![[raw/assets/attachments/llm/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F46df147c-6afe-4c32-86d9-1ad0fd6898c4_1544x1432.png]]
 
 Annotated figure from The Wisdom of Hindsight Makes Language Models Better Instruction Followers, https://arxiv.org/abs/2302.05206
 
@@ -276,7 +276,7 @@ Note that this study is not directly comparable to the RLHF work in InstructGPT,
 
 Direct Preference Optimization (DPO) is an alternative to RLHF with PPO where the researchers show that the cross entropy loss for fitting the reward model in RLHF can be used directly to finetune the LLM. According to their benchmarks, it's more efficient to use DPO and often also preferred over RLHF/PPO in terms of response quality.
 
-![[assets/attachments/llm/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F071f6b8c-89b4-4920-ad89-1f5b0dfba385_1358x1084.png]]
+![[raw/assets/attachments/llm/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F071f6b8c-89b4-4920-ad89-1f5b0dfba385_1358x1084.png]]
 
 Annotated figure from https://arxiv.org/abs/2305.18290
 
@@ -288,7 +288,7 @@ Like Direct Preference Optimization (DPO), Contrastive Preference Learning (CPL)
 
 ReST is an alternative to reinforcement learning with human feedback (RLHF) that aligns LLMs with human preferences. ReST uses a sampling approach to create an improved dataset, iteratively training on increasingly higher-quality subsets to refine its reward function. According to the authors, ReST achieves greater efficiency compared to standard online RLHF methods (like RLHF with proximal policy optimization, PPO) by generating its training dataset offline, but a comprehensive comparison to standard RLHF PPO methods as used in InstructGPT or Llama 2 is missing
 
-![[assets/attachments/llm/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F481cac18-c77e-4dc4-898f-355492c5eae6_1322x736.png]]
+![[raw/assets/attachments/llm/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F481cac18-c77e-4dc4-898f-355492c5eae6_1322x736.png]]
 
 Annotated figure from https://arxiv.org/abs/2308.08998
 
@@ -298,7 +298,7 @@ The recent reinforcement learning with AI feedback (RLAIF) study shows that the 
 
 An additional interesting side note is that both RLHF and RLAIF strongly outperformed models that are purely trained via supervised instruction finetuning.
 
-![[assets/attachments/llm/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F49781970-bcb7-43a6-94ee-d9b3b1e155d4_1358x1194.png]]
+![[raw/assets/attachments/llm/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F49781970-bcb7-43a6-94ee-d9b3b1e155d4_1358x1194.png]]
 
 Annotated figure from the RLAIF paper, https://arxiv.org/abs/2309.00267
 

@@ -7,6 +7,10 @@ categories:
   - computer-vision
 tags:
   - note
+source_type: local_note
+created_at: 2022-08-31
+topics:
+  - computer-vision
 ---
 
 <style>

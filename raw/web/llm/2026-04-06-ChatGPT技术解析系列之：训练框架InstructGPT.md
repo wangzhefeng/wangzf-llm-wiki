@@ -91,7 +91,7 @@ tags:
 首先，你需要教会模型怎么说一句完整的话。你在网上找了大量任意资料给模型看，它在海量的资料中学习。  
 比如你给它上半句“今天天气真不错”，它能根据自己的学习成果，接出下半句，且每次询问它，都可能得到不同的结果。
 
-![[assets/attachments/llm/v2-a20c33610859862d375edc542b8f9447_1440w.jpg]]
+![[raw/assets/attachments/llm/v2-a20c33610859862d375edc542b8f9447_1440w.jpg]]
 
 ### 2、引导模型按照人类的意图（intention）说话
 
@@ -99,19 +99,19 @@ tags:
 例如，从你的意图来说，你希望是“今天天气真不错，我在家里睡懒觉。”从你老板的意图来说，他希望是“今天天气真不错，大家一起来加班。”从你老妈的意图来说，她希望是“今天天气真不错，我娃必须去擦地。”  
 为了让模型对齐人类意图，人类将模型这三句话重新送入模型，做有监督的微调。
 
-![[assets/attachments/llm/v2-2a01e69c76f428a8c6185f1879008aa2_1440w.jpg]]
+![[raw/assets/attachments/llm/v2-2a01e69c76f428a8c6185f1879008aa2_1440w.jpg]]
 
 ### 3、给模型的回答进行排序/打分
 
 对于同一个问题，不同人类的回答是不一样的。为了让模型得到一个让大部分人都满意的答案，我们再邀请一批人类，来对不同的回答进行排序/打分。然后，我们再训练一个“ **打分模型** ”，来学习人类的打分标准。
 
-![[assets/attachments/llm/v2-19330745e67cf37721073151a7b1077e_1440w.jpg]]
+![[raw/assets/attachments/llm/v2-19330745e67cf37721073151a7b1077e_1440w.jpg]]
 
 ### 4、将打分结果反馈给模型，帮助模型更好总结人类意图
 
 到这里，我们的模型已经明白了人类希望的回答，以及不同回答在人类那里的得分，此时，我们只需要把得分反馈给模型，让它在这样循环中更新迭代自己就行。于是，chatGPT的整体架构就出来了：
 
-![[assets/attachments/llm/v2-05c6c16a3da60ba33f9a6a2323ecdd2b_1440w.jpg]]
+![[raw/assets/attachments/llm/v2-05c6c16a3da60ba33f9a6a2323ecdd2b_1440w.jpg]]
 
 其中，
 
@@ -121,7 +121,7 @@ tags:
 
 这张架构图，即为chatGPT官网给出的训练步骤的总结。在接下来的章节里，将阐述每一个步骤的技术细节。
 
-![[assets/attachments/llm/v2-25264af8da10f7999e69897b8d43b9a5_1440w.jpg]]
+![[raw/assets/attachments/llm/v2-25264af8da10f7999e69897b8d43b9a5_1440w.jpg]]
 
   
 最后，对于这样一个面向社会公众开放的AI模型，它应该具备以下三种能力：
@@ -151,7 +151,7 @@ tags:
   
 有了标注数据，我们就可以对GPT进行微调，在论文中，一组(prompt, completion)也被称为demonstration。
 
-![[assets/attachments/llm/v2-2efde208350867db4937a167139a0fa5_1440w.jpg]]
+![[raw/assets/attachments/llm/v2-2efde208350867db4937a167139a0fa5_1440w.jpg]]
 
 ## 三、奖励模型（RM, Reward Model）
 
@@ -163,7 +163,7 @@ tags:
 在标注阶段，标注人员被要求对每一个prompt下的不同回答进行偏号排序。如图，某个prompt下有ABC三个回答，标注人员认为A>B>C。  
 在训练阶段，假设一个prompt下有K个回答，则两两回答一组，组成一条训练数据，例如（prompt, A, B），则一共有 条训练数据。这群训练数据将组成一个batch，通过构造并最小化Pairwise Ranking Loss的方法，来训练奖励模型，整体过程如下：
 
-![[assets/attachments/llm/v2-d9d3227afe7f3c679f04d04568118cfe_1440w.jpg]]
+![[raw/assets/attachments/llm/v2-d9d3227afe7f3c679f04d04568118cfe_1440w.jpg]]
 
   
 我们从Pairwise Ranking Loss入手，来更好理解上面过程：
@@ -194,7 +194,7 @@ tags:
   
 模型学会了怎么说话，同时我们又训练出了一个独立的奖励模型，这时候，我们就要把两者结合起来，让模型能够更好的对齐人类意图了。在这里，chatGPT使用改良版本的 **PPO** （Schulman et al, 2017）对GPT进行再次训练，改良后的训练算法被称为 **[PPO-ptx](https://zhida.zhihu.com/search?content_id=222690774&content_type=Article&match_order=1&q=PPO-ptx&zhida_source=entity)** 。为了更好回顾，我们再贴出第一部分的缩略版架构图：
 
-![[assets/attachments/llm/v2-05c6c16a3da60ba33f9a6a2323ecdd2b_1440w.jpg]]
+![[raw/assets/attachments/llm/v2-05c6c16a3da60ba33f9a6a2323ecdd2b_1440w.jpg]]
 
   
 不了解强化学习也没关系，我们直接从损失函数上来说明这一步到底是怎么做的：

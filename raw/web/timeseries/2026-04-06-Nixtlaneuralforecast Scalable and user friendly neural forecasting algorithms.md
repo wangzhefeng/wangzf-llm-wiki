@@ -19,7 +19,7 @@ topics:
 
 ## Nixtla
 
-[![[assets/attachments/timeseries/logo_new.png]]](https://raw.githubusercontent.com/Nixtla/neuralforecast/main/nbs/imgs_indx/logo_new.png)
+[![[raw/assets/attachments/timeseries/logo_new.png]]](https://raw.githubusercontent.com/Nixtla/neuralforecast/main/nbs/imgs_indx/logo_new.png)
 
 ## Neural 🧠 Forecast
 

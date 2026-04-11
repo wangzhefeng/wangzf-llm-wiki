@@ -54,13 +54,13 @@ tags:
   
 　　时间序列分析被广泛应用于许多实际应用中，并具有多样化的任务形式，其中 **时间序列预测** 引起了大量关注和研究工作。然而，剩余任务相对关注较少，导致对模型在实际需求方面的能力缺乏全面的探索。这篇论文试图解决时间序列分析中 **时间序列理解** （time series understanding）的问题，特别是对于 **分类、插补缺失值、异常检测** 等任务的支持。
 
-![[assets/attachments/timeseries/v2-e71b9299285d6ac636f57d002a555012_1440w.jpg]]
+![[raw/assets/attachments/timeseries/v2-e71b9299285d6ac636f57d002a555012_1440w.jpg]]
 
 使用 TimesBERT 可以完成时间序列中的各种任务
 
 　　虽然现有的 GPT 风格模型在时间序列预测等生成任务中表现出色，但它们缺乏利用双向上下文的能力，这对全局理解造成了关键瓶颈。相比之下，BERT在自然语言中表现出任务多样性。
 
-![[assets/attachments/timeseries/v2-19c6e8e7b90222db0e73cac231d4fbf1_1440w.jpg]]
+![[raw/assets/attachments/timeseries/v2-19c6e8e7b90222db0e73cac231d4fbf1_1440w.jpg]]
 
 自然语言和时间序列之间的关系：a multivariate time series is worth a multisentence text document
 
@@ -72,13 +72,13 @@ tags:
 1. 提出将多变量时间序列视为多句文档，揭示了BERT作为预训练模型的优势。
 2. 开发了 TimesBERT，包括一个统一的结构化嵌入和一个针对多变量时间序列多粒度结构的功能性标记预测任务，将BERT与时间序列完全对齐。
 3. 在包含2600亿个时间点的大规模数据集上对我们的模型进行了预训练，该模型可以适应时间序列分类、插补、异常检测和短期预测任务的最新成果。
-![[assets/attachments/timeseries/v2-4308ae9e1eff2eed9b9f1f2120cbb161_1440w.jpg]]
+![[raw/assets/attachments/timeseries/v2-4308ae9e1eff2eed9b9f1f2120cbb161_1440w.jpg]]
 
 　与BERT的句子对形式化不同，作者为具有任意数量变量的数据实施了一种嵌入方法，并设计了相应的功能标记，以适应时间序列变量固有的不规则性。
 
 ## 具体方法
 
-![[assets/attachments/timeseries/v2-4e6900519aae7e465295e26f7f100ec3_1440w.jpg]]
+![[raw/assets/attachments/timeseries/v2-4e6900519aae7e465295e26f7f100ec3_1440w.jpg]]
 
 TimesBERT 整体结构图
 
@@ -95,7 +95,7 @@ TimesBERT 整体结构图
 
 　　采用一个仅编码器的Transformer，具有维度D和L层，作为TimesBERT的主干，将嵌入展平后前向传播。
 
-![[assets/attachments/timeseries/v2-34ed7c0aa5e248ef36dc030e4468e877_1440w.jpg]]
+![[raw/assets/attachments/timeseries/v2-34ed7c0aa5e248ef36dc030e4468e877_1440w.jpg]]
 
 将多变量时间序列看作一句有很多句话的文档
 
@@ -105,13 +105,13 @@ TimesBERT 整体结构图
 
 　　受 BERT 中使用的 [掩码语言建模](https://zhida.zhihu.com/search?content_id=256283594&content_type=Article&match_order=1&q=%E6%8E%A9%E7%A0%81%E8%AF%AD%E8%A8%80%E5%BB%BA%E6%A8%A1&zhida_source=entity) 任务启发，作者采用了 [掩码补丁建模](https://zhida.zhihu.com/search?content_id=256283594&content_type=Article&match_order=1&q=%E6%8E%A9%E7%A0%81%E8%A1%A5%E4%B8%81%E5%BB%BA%E6%A8%A1&zhida_source=entity) （MPM）为基础模型提供基础理解能力。对于输入标记序列，作者对非功能性标记采用了掩码比例α = 25%。（被选择的patch被z\[MASK\]替换的概率是90%，剩下的patch作者没说如何处理，应该是保持原样，和bert中一样，这是为了缓解 finetune 时候与预训练时候输入不匹配的问题）
 
-![[assets/attachments/timeseries/v2-8ce549174f7b8c0a209964a5293c1112_1440w.jpg]]
+![[raw/assets/attachments/timeseries/v2-8ce549174f7b8c0a209964a5293c1112_1440w.jpg]]
 
 任务一：MPM的示意图
 
 **任务二：FTP(FUNCTIONAL TOKEN PREDICTION)**
 
-![[assets/attachments/timeseries/v2-bd4358ca2896c70a549264f8a907efa1_1440w.jpg]]
+![[raw/assets/attachments/timeseries/v2-bd4358ca2896c70a549264f8a907efa1_1440w.jpg]]
 
 任务二：FTP的示意图
 
@@ -131,10 +131,10 @@ TimesBERT 整体结构图
 
 ## 实验效果
 
-![[assets/attachments/timeseries/v2-4f4e6eb8952941b8e65e738bcaa4f025_1440w.jpg]]
+![[raw/assets/attachments/timeseries/v2-4f4e6eb8952941b8e65e738bcaa4f025_1440w.jpg]]
 
 五边形战士
 
-![[assets/attachments/timeseries/v2-17730453b849e4ab01e68948134fbb64_1440w.jpg]]
+![[raw/assets/attachments/timeseries/v2-17730453b849e4ab01e68948134fbb64_1440w.jpg]]
 
 编辑于 2025-04-16 16:01・广东[BERT](https://www.zhihu.com/topic/20743626)[时间序列分析](https://www.zhihu.com/topic/19712111)

@@ -7,4 +7,8 @@ categories:
   - nlp
 tags:
   - model
+source_type: local_note
+created_at: 2022-12-02
+topics:
+  - nlp
 ---

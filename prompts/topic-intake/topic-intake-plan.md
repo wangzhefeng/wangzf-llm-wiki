@@ -7,7 +7,7 @@
 - 原始目录优先保留，不要直接覆盖或拆散旧文档
 - 新 wiki 页面统一使用普通 Markdown 和 frontmatter
 - 新页面不要沿用旧站点里的 `<style>`、`<details>`、Hugo 特有结构
-- 图片统一迁移到 `assets/attachments/<topic-slug>/`
+- 图片统一迁移到 `raw/assets/attachments/<topic-slug>/`
 
 请按下面结构输出：
 

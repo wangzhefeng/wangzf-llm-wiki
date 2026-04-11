@@ -37,7 +37,7 @@
      - 与任务定义、评估、数据质量最相关的概念页
 
 4. 如果数据集有关键 schema 图、字段图或样例图
-   - 本地化到 `assets/attachments/<topic-slug>/<dataset-slug>/`
+   - 本地化到 `raw/assets/attachments/<topic-slug>/<dataset-slug>/`
 
 5. 做最小验证
    - 原始页、来源卡、索引入口都应存在

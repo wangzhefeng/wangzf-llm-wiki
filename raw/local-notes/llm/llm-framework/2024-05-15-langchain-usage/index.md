@@ -7,6 +7,10 @@ categories:
   - llm
 tags:
   - agent
+source_type: local_note
+created_at: 2024-05-15
+topics:
+  - llm
 ---
 
 <style>

@@ -118,7 +118,7 @@ vars:
 directories: ["assets", "corpus", "training", "metrics", "configs", "packages"]
 
 assets:
-  - dest: "assets/${vars.treebank}"
+  - dest: "raw/assets/${vars.treebank}"
     git:
       repo: "https://github.com/UniversalDependencies/${vars.treebank}"
       branch: "master"
@@ -138,21 +138,21 @@ commands:
       - "mkdir -p corpus/${vars.treebank}"
       - >-
         python -m spacy convert
-        assets/${vars.treebank}/${vars.train_name}.conllu 
+        raw/assets/${vars.treebank}/${vars.train_name}.conllu 
         corpus/${vars.treebank}/ 
         --converter conllu 
         --n-sents 10 
         --merge-subtokens
       - >-
         python -m spacy convert 
-        assets/${vars.treebank}/${vars.dev_name}.conllu 
+        raw/assets/${vars.treebank}/${vars.dev_name}.conllu 
         corpus/${vars.treebank}/ 
         --converter conllu 
         --n-sents 10 
         --merge-subtokens
       - >-
         python -m spacy convert 
-        assets/${vars.treebank}/${vars.test_name}.conllu
+        raw/assets/${vars.treebank}/${vars.test_name}.conllu
         corpus/${vars.treebank}/
         --converter conllu 
         --n-sents 10 
@@ -161,9 +161,9 @@ commands:
       - "mv corpus/${vars.treebank}/${vars.dev_name}.spacy corpus/${vars.treebank}/dev.spacy"
       - "mv corpus/${vars.treebank}/${vars.test_name}.spacy corpus/${vars.treebank}/test.spacy"
     deps:
-      - "assets/${vars.treebank}/${vars.train_name}.conllu"
-      - "assets/${vars.treebank}/${vars.dev_name}.conllu"
-      - "assets/${vars.treebank}/${vars.test_name}.conllu"
+      - "raw/assets/${vars.treebank}/${vars.train_name}.conllu"
+      - "raw/assets/${vars.treebank}/${vars.dev_name}.conllu"
+      - "raw/assets/${vars.treebank}/${vars.test_name}.conllu"
     outputs:
       - "corpus/${vars.treebank}/train.spacy"
       - "corpus/${vars.treebank}/dev.spacy"
@@ -297,7 +297,7 @@ The `project.yml` can define a list of `directories` that should be created with
 ```yaml
 Example project directory├── project.yml          # the project settings
 ├── project.lock         # lockfile that tracks inputs/outputs
-├── assets/              # downloaded data assets
+├── raw/assets/              # downloaded data assets
 ├── configs/             # pipeline config.cfg files used for training
 ├── corpus/              # output directory for training corpus
 ├── metas/               # pipeline meta.json templates used for packaging

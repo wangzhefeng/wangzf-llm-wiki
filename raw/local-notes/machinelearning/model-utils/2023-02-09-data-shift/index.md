@@ -8,6 +8,10 @@ categories:
   - data-analysis
 tags:
   - model
+source_type: local_note
+created_at: 2023-02-09
+topics:
+  - data-analysis
 ---
 
 <style>

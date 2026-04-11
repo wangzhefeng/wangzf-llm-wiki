@@ -47,7 +47,7 @@ Q: 总结一下论文的主要内容
 
 **关键词** ：基础模型、零样本预测、流匹配，概率预测，连续/离散 token
 
-![[assets/attachments/timeseries/v2-7d2517309b6caf33b1123de96f1a9971_1440w.jpg]]
+![[raw/assets/attachments/timeseries/v2-7d2517309b6caf33b1123de96f1a9971_1440w.jpg]]
 
 ### 摘要
 
@@ -55,7 +55,7 @@ Q: 总结一下论文的主要内容
 
 ### Q: 这篇论文试图解决什么问题？
 
-![[assets/attachments/timeseries/v2-cfa0c7e0d07c6b682df14caa03390d7b_1440w.jpg]]
+![[raw/assets/attachments/timeseries/v2-cfa0c7e0d07c6b682df14caa03390d7b_1440w.jpg]]
 
 原生时序模型在连续词元上学习表示。灵活的基础模型在没有指定先验分布的情况下进行预训练。Sundial为第一个原生且灵活的时间序列基础模型系列
 
@@ -111,7 +111,7 @@ Q: 总结一下论文的主要内容
 
 ### Q: 论文如何解决这个问题？
 
-![[assets/attachments/timeseries/v2-366ce3e41dc4c802317281daa73fc86f_1440w.jpg]]
+![[raw/assets/attachments/timeseries/v2-366ce3e41dc4c802317281daa73fc86f_1440w.jpg]]
 
 Sundial
 
@@ -120,7 +120,7 @@ Sundial
 **提出TimeFlow Loss** ：
 
 - 为了在不进行离散化词元化（tokenization）的情况下预训练Transformer模型，并能够进行概率预测，论文提出了TimeFlow Loss。这是一个基于流匹配（flow-matching）的参数化训练目标，允许自回归模型学习每个词元（token）的预测分布，并在推理过程中生成原始预测序列。
-![[assets/attachments/timeseries/v2-615c7ba8efdf0926bac07dac1476cc6e_1440w.jpg]]
+![[raw/assets/attachments/timeseries/v2-615c7ba8efdf0926bac07dac1476cc6e_1440w.jpg]]
 
 TimeFlow Loss
 
@@ -135,7 +135,7 @@ TimeFlow Loss
 **构建TimeBench数据集** ：
 
 - 为了探索时间序列基础模型的扩展规律，作者收集和策划了TimeBench，这是一个包含超过 **1万亿时间点** 的大规模数据集，涵盖了 **多个领域** 的数据。
-![[assets/attachments/timeseries/v2-a49afffce23107def12c38bc132ff961_1440w.jpg]]
+![[raw/assets/attachments/timeseries/v2-a49afffce23107def12c38bc132ff961_1440w.jpg]]
 
 Sundial的预训练语料库TimeBench中的数据源
 
@@ -155,11 +155,11 @@ Sundial的预训练语料库TimeBench中的数据源
 
 ### Q: 论文做了哪些实验？
 
-![[assets/attachments/timeseries/v2-7a5b313fdf1f55b671d3b76d2ae5a9fb_1440w.jpg]]
+![[raw/assets/attachments/timeseries/v2-7a5b313fdf1f55b671d3b76d2ae5a9fb_1440w.jpg]]
 
 Sundial整体评测结果（性能，效率）
 
-![[assets/attachments/timeseries/v2-54210fea3bf58ecfca1524a4b35954f3_1440w.jpg]]
+![[raw/assets/attachments/timeseries/v2-54210fea3bf58ecfca1524a4b35954f3_1440w.jpg]]
 
 数据集
 
@@ -170,72 +170,72 @@ Sundial整体评测结果（性能，效率）
 - **点预测（Point Forecasting）** ：
 - 使用长期预测基准（Time-Series-Library）评估不同模型在不同预测范围下的性能，使用均方误差（MSE）和平均绝对误差（MAE）作为评估指标。
 		- 比较Sundial与其他先进的时间序列基础模型的性能。
-![[assets/attachments/timeseries/v2-5c5b929708aa9b8ed6442f42fc92adc6_1440w.jpg]]
+![[raw/assets/attachments/timeseries/v2-5c5b929708aa9b8ed6442f42fc92adc6_1440w.jpg]]
 
 零样本
 
 - **概率预测（Probabilistic Forecasting）** ：
 - 在GIFT-Eval基准测试上进行实验，这是一个综合评估不同时间序列的数据集，覆盖了多个领域和数据特性。
 	- 在FEV排行榜上进行评估，这是一个包含27个数据集的概率预测排行榜，用于零样本评估。
-![[assets/attachments/timeseries/v2-b096037cb2b84dde25b4540a4db67f38_1440w.jpg]]
+![[raw/assets/attachments/timeseries/v2-b096037cb2b84dde25b4540a4db67f38_1440w.jpg]]
 
 GIFT-Eval概率预测
 
-![[assets/attachments/timeseries/v2-c70cac89545d37dbf7498f885150dab3_1440w.jpg]]
+![[raw/assets/attachments/timeseries/v2-c70cac89545d37dbf7498f885150dab3_1440w.jpg]]
 
 FEV概率预测
 
-![[assets/attachments/timeseries/v2-822a80a1ff4b0b2ee89bf1de28f6a93b_1440w.jpg]]
+![[raw/assets/attachments/timeseries/v2-822a80a1ff4b0b2ee89bf1de28f6a93b_1440w.jpg]]
 
 推理时间
 
 **模型扩展性（Scalability）** ：
 
 - 研究模型大小对Sundial性能的影响，通过比较不同大小的Sundial模型在TimeBench上的训练曲线和预测性能。
-![[assets/attachments/timeseries/v2-6658f5e219f0b88f171d264ca56d8ae4_1440w.jpg]]
+![[raw/assets/attachments/timeseries/v2-6658f5e219f0b88f171d264ca56d8ae4_1440w.jpg]]
 
 模型扩展性
 
 **TimeFlow Loss的有效性** ：
 
 - 通过与其他训练目标（如MSE Loss和基于去噪扩散的过程的参数化训练目标）进行比较，验证TimeFlow Loss在零样本性能上的有效性。
-![[assets/attachments/timeseries/v2-ba0ae256ca57c545996d024c044d6522_1440w.jpg]]
+![[raw/assets/attachments/timeseries/v2-ba0ae256ca57c545996d024c044d6522_1440w.jpg]]
 
 不同损失的零样本预测结果
 
 **模型推理（Model Inference）** ：
 
 - 探讨在推理过程中调整预测质量的不同配置，包括生成预测的数量和流匹配中的采样步骤，以及它们对预测性能和推理速度的影响。
-![[assets/attachments/timeseries/v2-ef125969ad5bc535c28a4199444ff039_1440w.jpg]]
+![[raw/assets/attachments/timeseries/v2-ef125969ad5bc535c28a4199444ff039_1440w.jpg]]
 
 生成预测数量和采样步骤
 
 **模型适应性（Model Adaptation）** ：
 
 - 通过对预训练的Sundial模型在FEV排行榜上进行微调，评估模型的知识迁移能力，并与从零开始训练的模型进行比较。
-![[assets/attachments/timeseries/v2-b11370cb3f1230621b326913ca2099c3_1440w.jpg]]
+![[raw/assets/attachments/timeseries/v2-b11370cb3f1230621b326913ca2099c3_1440w.jpg]]
 
 从头训练VS零样本VS微调
 
 这些实验全面评估了Sundial模型在不同方面的表现，包括其在点预测和概率预测任务上的性能、模型的扩展性、训练目标的有效性、推理效率和模型的适应性。通过这些实验，作者展示了Sundial模型在时间序列预测任务中的有效性和优越性。
 
-![[assets/attachments/timeseries/v2-d2ab932e1ef3589fb99b374ea0061b3b_1440w.jpg]]
+![[raw/assets/attachments/timeseries/v2-d2ab932e1ef3589fb99b374ea0061b3b_1440w.jpg]]
 
 时序基础模型参数对比
 
 **具体示例**
 
-![[assets/attachments/timeseries/v2-870586f8febd4bc71fb4d8260fc727d0_1440w.jpg]]
+![[raw/assets/attachments/timeseries/v2-870586f8febd4bc71fb4d8260fc727d0_1440w.jpg]]
 
-![[assets/attachments/timeseries/v2-5da388e59fd6c90bd7436b91bc921a44_1440w.jpg]]
+![[raw/assets/attachments/timeseries/v2-5da388e59fd6c90bd7436b91bc921a44_1440w.jpg]]
 
 - 图10-11 展示了 Sundial (Base) 在 FEV 排行榜上的零样本预测结果。通过生成多个不同初始噪声的预测，计算中位数并绘制 80% 预测区间。这表明 Sundial 模型能够根据历史数据生成多种可能的预测结果，反映出未来时间序列的不确定性，体现了模型在概率预测方面的能力，为决策者提供了更丰富的信息。
-![[assets/attachments/timeseries/v2-8de03636f5dc1b14dfef5232ab25feec_1440w.jpg]]
+![[raw/assets/attachments/timeseries/v2-8de03636f5dc1b14dfef5232ab25feec_1440w.jpg]]
 
 - Sundial (Base) 在长时预测数据集上的零样本预测。展示了不同数据集和不同预测长度下的预测情况，说明 Sundial 在长时预测任务中也能取得较好的效果，生成的预测与输入序列高度相关，且能捕捉到时间序列的趋势和变化，进一步证明了模型的泛化能力和有效性。
-![[assets/attachments/timeseries/v2-0d1a85c0e34702a1e6028a5cc80f6edb_1440w.jpg]]
+![[raw/assets/attachments/timeseries/v2-0d1a85c0e34702a1e6028a5cc80f6edb_1440w.jpg]]
 
-![[assets/attachments/timeseries/v2-a1e4669bf541dff9f721e158cc7c3de0_1440w.jpg]]
+![[raw/assets/attachments/timeseries/v2-a1e4669bf541dff9f721e158cc7c3de0_1440w.jpg]]
 
 - 对比了 Sundial 和采用相同骨干网络但由 MSE 损失预训练的 Transformer 的零样本预测展示。Sundial 作为 **生成式预测器** ，能基于回顾序列预测各种未来可能性；而由 MSE 损失预训练的模型作为确定性预测器，只能输出一个预测。且 MSE 损失预训练的模型在处理大规模预训练时存在局限性，会出现过度平滑的预测，凸显了 Sundial 在预测多样性和处理复杂分布方面的优势。
 

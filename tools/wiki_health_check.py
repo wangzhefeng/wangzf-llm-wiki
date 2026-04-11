@@ -11,6 +11,7 @@ WIKI_ROOT = ROOT / "wiki"
 RAW_ROOT = ROOT / "raw"
 
 WIKILINK_RE = re.compile(r"\[\[([^\]|#]+)(?:#[^\]]*)?(?:\|[^\]]*)?\]\]")
+ATTACHMENT_PATH_RE = re.compile(r"raw/assets/attachments/[A-Za-z0-9_./% ()-]+\.[A-Za-z0-9]+")
 
 # 允许存在于模板/指引类文本中的“占位链接”，不计入断链
 IGNORE_WIKILINK_TARGETS = {
@@ -69,15 +70,48 @@ def build_wiki_stem_index() -> dict[str, Path]:
     return idx
 
 
+def resolve_wikilink_target(target: str, stems: dict[str, Path]) -> Path | None:
+    t = target.strip()
+    if not t:
+        return None
+    # 支持路径式 wikilink：[[wiki/sources/analysis/README]] 或 [[sources/analysis/README]]
+    if "/" in t:
+        rel = t
+        if rel.startswith("wiki/"):
+            rel = rel[len("wiki/") :]
+        # 注意：Path.with_suffix 会把路径中“最后一个点号后的内容”当成后缀，
+        # 而本仓库文件名里常含有类似 `10. xxx` 的点号，会导致错误截断。
+        cand = WIKI_ROOT / (rel if rel.endswith(".md") else (rel + ".md"))
+        if cand.exists():
+            return cand
+    return stems.get(t)
+
+
 def collect_wikilinks() -> list[tuple[Path, str]]:
     pairs: list[tuple[Path, str]] = []
     for p in md_files(WIKI_ROOT):
         text = p.read_text(encoding="utf-8")
         for t in WIKILINK_RE.findall(text):
             target = t.strip()
+            if target.startswith("raw/assets/attachments/"):
+                # 附件路径不是 wiki 页面，不参与 wikilink 断链统计；交给 missing_attachments 检查
+                continue
             if not target or target in IGNORE_WIKILINK_TARGETS:
                 continue
             pairs.append((p, target))
+    return pairs
+
+
+def collect_attachment_paths() -> list[tuple[Path, str]]:
+    pairs: list[tuple[Path, str]] = []
+    bases = [WIKI_ROOT, RAW_ROOT, ROOT / "outputs"]
+    for base in bases:
+        if not base.exists():
+            continue
+        for p in md_files(base):
+            text = p.read_text(encoding="utf-8")
+            for t in ATTACHMENT_PATH_RE.findall(text):
+                pairs.append((p, t.strip()))
     return pairs
 
 
@@ -92,7 +126,7 @@ def check_wikilinks() -> tuple[list[tuple[Path, str]], dict[Path, int]]:
     broken: list[tuple[Path, str]] = []
 
     for src, target in collect_wikilinks():
-        dst = stems.get(target)
+        dst = resolve_wikilink_target(target, stems)
         if dst is None:
             broken.append((src, target))
             continue
@@ -117,6 +151,15 @@ def check_raw_frontmatter() -> list[FrontmatterCheck]:
     return issues
 
 
+def check_missing_attachments() -> list[tuple[Path, str]]:
+    missing: list[tuple[Path, str]] = []
+    for src, rel in collect_attachment_paths():
+        path = (ROOT / rel).resolve()
+        if not path.exists():
+            missing.append((src, rel))
+    return missing
+
+
 def main() -> int:
     # 1) 结构/字段/相对链接（现有脚本）
     # 注：这里不调用 tools/wiki_lint.py，避免在报告里产生双份输出；上层可自行执行。
@@ -132,12 +175,16 @@ def main() -> int:
     # 3) raw frontmatter
     raw_issues = check_raw_frontmatter()
 
+    # 4) attachments existence
+    missing_attachments = check_missing_attachments()
+
     print("Wiki Health Check Summary")
     print(f"- wiki md: {len(md_files(WIKI_ROOT))}")
     print(f"- raw md: {len(md_files(RAW_ROOT))}")
     print(f"- broken wikilinks: {len(broken)}")
     print(f"- orphan pages (excluding indexes/*): {len(orphans)}")
     print(f"- raw frontmatter missing(min): {len(raw_issues)}")
+    print(f"- missing attachments: {len(missing_attachments)}")
 
     if broken:
         print("\nTop broken wikilinks (up to 50):")
@@ -155,8 +202,13 @@ def main() -> int:
             miss = ", ".join(it.missing_keys)
             print(f"- {it.path.relative_to(ROOT)} missing: {miss}")
 
+    if missing_attachments:
+        print("\nTop missing attachments (up to 50):")
+        for src, rel in missing_attachments[:50]:
+            print(f"- {src.relative_to(ROOT)} -> {rel}")
+
     # 非零退出表示存在健康债务（便于 CI/脚本集成）
-    return 1 if (broken or orphans or raw_issues) else 0
+    return 1 if (broken or orphans or raw_issues or missing_attachments) else 0
 
 
 if __name__ == "__main__":

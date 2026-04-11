@@ -7,6 +7,10 @@ categories:
   - nlp
 tags:
   - model
+source_type: local_note
+created_at: 2024-05-16
+topics:
+  - nlp
 ---
 
 <style>

@@ -41,7 +41,7 @@ This repo provides official code, datasets, and checkpoints for [Timer: Generati
 
 **Tim** e Series Transfor **mer** (Timer) is a pre-trained Transformer for general time series analysis.
 
-[![[assets/attachments/llm/abilities.png]]](https://github.com/thuml/Large-Time-Series-Model/blob/main/figures/abilities.png)
+[![[raw/assets/attachments/llm/abilities.png]]](https://github.com/thuml/Large-Time-Series-Model/blob/main/figures/abilities.png)
 
 ## Quick Start
 
@@ -102,7 +102,7 @@ More usage examples are provided [here](https://github.com/thuml/Large-Time-Seri
 
 We collect Unified Time Series Datasets (UTSD), which encompass well-curated time series to facilitate the research on large time-series models. Our dataset is released in [HuggingFace](https://huggingface.co/datasets/thuml/UTSD).
 
-[![[assets/attachments/llm/utsd.png]]](https://github.com/thuml/Large-Time-Series-Model/blob/main/figures/utsd.png)
+[![[raw/assets/attachments/llm/utsd.png]]](https://github.com/thuml/Large-Time-Series-Model/blob/main/figures/utsd.png)
 
 ### Usage
 
@@ -132,7 +132,7 @@ If you meet troubles when accessing the data, you can also download UTSD in nump
 
 We propose [Timer](https://arxiv.org/abs/2402.02368), a decoder-only **pre-trained** time series Transformer. We propose **single-series sequence (S3) format**, converting diverse series into unified 1D sequences. The predictive model can also be adapted for forecasting, imputation, and anomaly detection [\[README\]](https://github.com/thuml/Large-Time-Series-Model/blob/main/scripts/README.md).
 
-[![[assets/attachments/llm/timer.png]]](https://github.com/thuml/Large-Time-Series-Model/blob/main/figures/timer.png)
+[![[raw/assets/attachments/llm/timer.png]]](https://github.com/thuml/Large-Time-Series-Model/blob/main/figures/timer.png)
 
 ### ICLR 2025
 

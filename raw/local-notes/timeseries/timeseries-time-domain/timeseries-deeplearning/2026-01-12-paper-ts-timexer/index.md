@@ -7,6 +7,10 @@ categories:
   - timeseries
 tags:
   - paper
+source_type: local_note
+created_at: 2026-01-12
+topics:
+  - timeseries
 ---
 
 <style>

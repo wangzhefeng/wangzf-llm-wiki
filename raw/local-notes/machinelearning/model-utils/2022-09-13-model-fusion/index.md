@@ -8,6 +8,10 @@ categories:
   - machine-learning
 tags:
   - model
+source_type: local_note
+created_at: 2022-09-13
+topics:
+  - machine-learning
 ---
 
 <style>

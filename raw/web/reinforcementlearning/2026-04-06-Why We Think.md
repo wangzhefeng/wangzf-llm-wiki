@@ -61,7 +61,7 @@ Early work on improving CoT reasoning involved doing supervised learning on huma
 
 Later work found that the CoT reasoning capabilities can be significantly improved by doing reinforcement learning on a dataset of problems with automatically checkable solutions, such as STEM problems with short answers, or coding tasks that can be checked with unit tests ([Zelikman et al. 2022](https://arxiv.org/abs/2203.14465), [Wang et al., 2023](https://arxiv.org/abs/2312.08935), [Liu et al., 2023](https://arxiv.org/abs/2310.10047)). This approach rose to prominence with the announcement of [o1-preview](https://openai.com/index/learning-to-reason-with-llms/), [o3](https://openai.com/index/introducing-o3-and-o4-mini/), and the R1 tech report ([DeepSeek-AI, 2025](https://arxiv.org/abs/2501.12948)), which showed that a simple recipe where a policy gradient algorithm could lead to strong performance.
 
-![[assets/attachments/uncategorized/cot-wei22.png]]
+![[raw/assets/attachments/reinforcementlearning/cot-wei22.png]]
 
 Chain-of-thought prompting leads to higher success rate of solving math problems. Larger models benefit more from thinking time. (Image source: Wei et al. 2022)
 
@@ -74,7 +74,7 @@ The fundamental intent of test-time compute is to adaptively modify the model’
 
 Parallel sampling is simple, intuitive and easier to implement, but bounded by the model capability of whether it can achieve the correct solution in one-go. Sequential explicitly asks the model to reflect on mistakes but it is slower and requires extra care during implementation as it does run the risk of correct predictions being modified to be incorrect or introducing other types of hallucinations. These two methods can be used together. [Snell et al. (2024](https://arxiv.org/abs/2408.03314)) showed that easier questions benefit from purely sequential test-time compute, whereas harder questions often perform best with an optimal ratio of sequential to parallel compute.
 
-![[assets/attachments/uncategorized/parallel-vs-sequential.png]]
+![[raw/assets/attachments/reinforcementlearning/parallel-vs-sequential.png]]
 
 Illustration of parallel sampling vs sequential revision.
 
@@ -84,13 +84,13 @@ Given a generative model and a scoring function that we can use to score full or
 
 Beam search maintains a set of promising partial sequences and alternates between extending them and pruning the less promising ones. As a selection mechanism, we can use a process reward model (PRM; [Lightman et al. 2023](https://arxiv.org/abs/2305.20050)) to guide beam search candidate selection. [Xie et al. (2023](https://arxiv.org/abs/2305.00633)) used LLM to evaluate how likely its own generated reasoning step is correct, formatted as a multiple-choice question and found that per-step self-evaluation reduces accumulative errors in multi-step reasoning during beam search decoding. Besides, during sampling, annealing the temperature helps mitigate aggregated randomness. These experiments by Xie et al. achieved 5-6% improvement on few-shot GSM8k, AQuA and StrategyQA benchmarks with the Codex model. Reward balanced search (short for “REBASE”; [Wu et al. 2025](https://arxiv.org/abs/2408.00724)) separately trained a process reward model (PRM) to determine how much each node should be expanded at each depth during beam search, according to the softmax-normalized reward scores. [Jiang et al. (2024)](https://arxiv.org/abs/2410.01044) trained their PRM, named “RATIONALYST”, for beam search guidance on synthetic rationales conditioned on a large amount of unlabelled data. Good rationales are filtered based on whether they help reduce the neg log-prob of true answer tokens by a threshold, when comparing the difference between when the rationales is included in the context vs not. At inference time, RATIONALYST provides process supervision to the CoT generator by helping estimate log-prob of next reasoning steps (“implicit”) or directly generating next reasoning steps as part of the prompt (“explicit”).
 
-![[assets/attachments/uncategorized/beam-search-xie23.png]]
+![[raw/assets/attachments/reinforcementlearning/beam-search-xie23.png]]
 
 Beam search decoding guided by LLM self-evaluation per reasoning step. (Image source: Xie et al. 2023 )
 
 Interestingly, it is possible to trigger the emergent chain-of-thought reasoning paths *without* explicit zero-shot or few-shot prompting. [Wang & Zhou (2024)](https://arxiv.org/abs/2402.10200) discovered that if we branch out at the first sampling tokens by retaining the top $k$ tokens with highest confidence, measured as the difference between top-1 and top-2 candidates during sampling, and then continue these $k$ sampling trials with greedy decoding onward, many of these sequences natively contain CoT. Especially when CoT does appear in the context, it leads to a more confident decoding of the final answer. To calculate the confidence of the final answer, the answer span needs to be identified by task-specific heuristics (e.g. last numerical values for math questions) or by prompting the model further with `"So the answer is"`. The design choice of only branching out at the first token is based on the observation that early branching significantly enhances the diversity of potential paths, while later tokens are influenced a lot by previous sequences.
 
-![[assets/attachments/uncategorized/cot-decoding.png]]
+![[raw/assets/attachments/reinforcementlearning/cot-decoding.png]]
 
 Top- k decoding, refers to the number of candidates at the first sampling step. (Image source: Wang & Zhou, 2024 )
 
@@ -104,7 +104,7 @@ Self-correction learning ([Welleck et al. 2023](https://arxiv.org/abs/2211.00053
 2. then create value-improving pairs by pairing two outputs for the same prompt together if one has a higher value than the other, (prompt $x$, hypothesis $y$, correction $y^{'}$).
 3. These pairs are selected proportional to is improvement in value, $v \left(\right. y^{'} \left.\right) - v \left(\right. y \left.\right)$, and similarity between two outputs, $\text{Similarity} \left(\right. y , y^{'} \left.\right)$ to train the corrector model.
 4. To encourage exploration, the corrector provides new generations into the data pool as well. At the inference time, the corrector can be used iteratively to create a correction trajectory of sequential revision.
-![[assets/attachments/uncategorized/self-correction-welleck23.png]]
+![[raw/assets/attachments/reinforcementlearning/self-correction-welleck23.png]]
 
 Illustration of self-correction learning by matching model outputs for the same problem to form value-improving pairs to train a correction model. (Image source: Welleck et al. 2023)
 
@@ -112,7 +112,7 @@ Recursive inspection ([Qu et al. 2024](https://arxiv.org/abs/2407.18219)) also a
 
 SCoRe (Self-Correction via Reinforcement Learning; [Kumar et al. 2024](https://arxiv.org/abs/2409.12917)) is a multi-turn RL approach to encourage the model to do self-correction by producing better answers at the second attempt than the one created at the first attempt. It composes two stages of training: stage 1 only maximizes the accuracy of the second attempt while enforcing a KL penalty only on the first attempt to avoid too much shifting of the first-turn responses from the base model behavior; stage 2 optimizes the accuracy of answers produced by both the first and second attempts. Ideally we do want to see performance at both first and second attempts to be better, but adding stage 1 prevents the behavior collapse where the model does minor or none edits on the first response, and stage 2 further improves the results.
 
-![[assets/attachments/uncategorized/SCoRe-kumar24.png]]
+![[raw/assets/attachments/reinforcementlearning/SCoRe-kumar24.png]]
 
 Explicit training setup to improve self-correction capabilities by doing two-staged RL training. (Image source: Kumar et al. 2024)
 
@@ -132,13 +132,13 @@ There’s been a lot of recent success in using RL to improve the reasoning abil
 		- For certain non-reasoning tasks, call DeepSeek-V3 to generate potential CoTs before answering the question by prompting. But for simpler queries like “hello”, CoT is not needed.
 		- Then fine-tune the DeepSeek-V3-Base on the total 800k samples for 2 epochs.
 4. The final **RL** stage trains the step 3 checkpoint on both reasoning and non-reasoning prompts, improving helpfulness, harmlessness and reasoning.
-![[assets/attachments/uncategorized/R1-eval.png]]
+![[raw/assets/attachments/reinforcementlearning/R1-eval.png]]
 
 DeepSeek-R1 performs comparable to OpenAI o1-preview and o1-mini on several widely used reasoning benchmarks. DeepSeek-V3 is the only non-reasoning model listed. (Image source: DeepSeek-AI, 2025)
 
 Interestingly the DeepSeek team showed that with pure RL, no SFT stage, it is still possible to learn advanced reasoning capabilities like reflection and backtracking (“Aha moment”). The model naturally learns to spend more thinking tokens during the RL training process to solve reasoning tasks. The “aha moment” can emerge, referring to the model reflecting on previous mistakes and then trying alternative approaches to correct them. Later, various open source efforts happened for replicating R1 results like [Open-R1](https://github.com/huggingface/open-r1), [SimpleRL-reason](https://github.com/hkust-nlp/simpleRL-reason), and [TinyZero](https://github.com/Jiayi-Pan/TinyZero), all based on [Qwen](https://github.com/QwenLM/Qwen2.5) models. These efforts also confirmed that pure RL leads to great performance on math problems, as well as the emergent “aha moment”.
 
-![[assets/attachments/uncategorized/aha-moment.png]]
+![[raw/assets/attachments/reinforcementlearning/aha-moment.png]]
 
 Examples of the model learning to reflect and correct mistakes. (Image source: (left) DeepSeek-AI, 2025; (right) Zeng et al. 2025)
 
@@ -148,13 +148,13 @@ The DeepSeek team also shared some of their unsuccessful attempts. They failed t
 
 During the reasoning steps, certain intermediate steps can be reliably and accurately solved by executing code or running mathematical calculations. Offloading that part of reasoning components into an external code interpreter, as in PAL (Program-Aided Language Model; [Gao et al. 2022](https://arxiv.org/abs/2211.10435)) or Chain of Code ([Li et al. 2023](https://chain-of-code.github.io/)), can extend the capability of LLM with external tools, eliminating the need for LLMs to learn to execute code or function as calculators themselves. These code emulators, like in Chain of Code, can be augmented by an LLM such that if a standard code interpreter fails, we have the option of using LLM to execute that line of code instead. Using code to enhance reasoning steps are especially beneficial for mathematical problems, symbolic reasoning and algorithmic tasks. These unit tests may not exist as part of the coding questions, and in those cases, we can instruct the model to self-generate unit tests for it to test against to verify the solution ([Shinn, et al. 2023](https://arxiv.org/abs/2303.11366)).
 
-![[assets/attachments/uncategorized/pal.png]]
+![[raw/assets/attachments/reinforcementlearning/pal.png]]
 
 An example of program-aided language model prompting looks like. (Image source: Gao et al. 2022)
 
 ReAct (Reason+Act; [Yao et al. 2023](https://arxiv.org/abs/2210.03629)) combines the action of searching the Wikipedia API and generation of reasoning traces, such that reasoning paths can incorporate external knowledge.
 
-![[assets/attachments/uncategorized/react 1.png]]
+![[raw/assets/attachments/reinforcementlearning/react 1.png]]
 
 An example of the ReAct prompting method to solve a HotpotQA question, using Wikipedia search API as an external tool to help with reasoning. (Image source: Yao et al. 2023)
 
@@ -166,7 +166,7 @@ Deep learning models are often treated as black boxes and various interpretabili
 
 Recent work showed that monitoring CoT of reasoning models can effectively detect model misbehavior such as [reward hacking](https://lilianweng.github.io/posts/2024-11-28-reward-hacking/), and can even enable a weaker model to monitor a stronger model ([Baker et al. 2025](https://arxiv.org/abs/2503.11926)). Increasing test time compute can also lead to improved adversarial robustness ([Zaremba et al. 2025](https://arxiv.org/abs/2501.18841)); this makes sense intuitively, because thinking for longer should be especially useful when the model is presented with an unusual input, such as an adversarial example or jailbreak attempt – it can use the extra thinking time to make sense of the strange situation it’s been presented with.
 
-![[assets/attachments/uncategorized/cot-monitor.png]]
+![[raw/assets/attachments/reinforcementlearning/cot-monitor.png]]
 
 The experiment of asking the model to decide if another model tried to hack the unit tests in some way for coding questions given its thought process. We can monitor these reward hacking behavior during training with different types of monitor. The exit(0) coding hack is when the agent exploited a bug that allowed it to exit from the environment early without running all unit tests. The raise SkipTest hack is when the agent raises an exception from functions outside the testing framework in order to skip unit test evaluation. (Image source: Baker et al. 2025)
 
@@ -179,12 +179,12 @@ Intuitively, model CoTs could be biased due to lack of explicit training objecti
 - Mistake 1 (*Early answering*): The model may form a conclusion prematurely before CoT is generated. This is tested by early truncating or inserting mistakes into CoT. Different tasks revealed varying task-specific dependencies on CoT effectiveness; some have evaluation performance sensitive to truncated CoT but some do not. [Wang et al. (2023)](https://arxiv.org/abs/2212.10001) did similar experiments but with more subtle mistakes related to bridging objects or language templates in the formation of CoT.
 - Mistake 2 (*Uninformative tokens*): Uninformative CoT tokens improve performance. This hypothesis is tested by replacing CoT with filler text (e.g. all periods) and this setup shows no accuracy increase and some tasks may suffer performance drop slightly when compared to no CoT.
 - Mistake 3 (*Human-unreadable encoding*): Relevant information is encoded in a way that is hard for humans to understand. Paraphrasing CoTs in an non-standard way did not degrade performance across datasets, suggesting accuracy gains do not rely on human-readable reasoning.
-![[assets/attachments/uncategorized/cot-perturb.png]]
+![[raw/assets/attachments/reinforcementlearning/cot-perturb.png]]
 
 Illustration of different ways of CoT perturbation to assess its faithfulness. (Image source: Lanham et al. 2023)
 
 Interestingly, Lanham et al. suggests that for multiple choice questions, smaller models may not be capable enough of utilizing CoT well, whereas larger models may have been able to solve the tasks without CoT. This dependency on CoT reasoning, measured by the percent of obtaining the same answer with vs without CoT, does not always increase with model size on multiple choice questions, but does increase with model size on addition tasks, implying that thinking time matters more for complex reasoning tasks.
 
-![[assets/attachments/uncategorized/cot-ablation.png]]
+![[raw/assets/attachments/reinforcementlearning/cot-ablation.png]]
 
 The dependency on CoT reasoning is measured as the percentage of obtaining same answers with vs without CoT. It matters more for reasoning tasks like addition and larger models benefit more. (Image source: Lanham et al. 2023)

@@ -316,7 +316,7 @@ Models broadly fall into two camps regarding initial training approaches:
 
 - **The Guided Approach**: Teams behind Qwen, Kimi, and Phi-4 start with supervised fine-tuning before unleashing RL. It's like providing a foundation of examples – some human-written, others AI-generated – before letting the model learn through trial and error. This deliberate first step helps establish core behaviors from the beginning.
 - **The Discovery Approach**: DeepSeek R1-Zero, OpenReasoner-Zero, and QwQ 32B boldly skip straight to RL with carefully designed reward systems. This streamlined approach led to fascinating surprises, like DeepSeek's model spontaneously developing reflection and verification skills nobody explicitly taught it – pure learning through experience.
-	![[assets/attachments/llm/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F4df2ebc4-01f5-4b9e-beca-5e10df96f992_1538x463.heic]]
+	![[raw/assets/attachments/llm/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F4df2ebc4-01f5-4b9e-beca-5e10df96f992_1538x463.heic]]
 
 ### The Reward Modeling Debate: Transparency vs. Flexibility
 
@@ -325,7 +325,7 @@ Models broadly fall into two camps regarding initial training approaches:
 
 Kimi blends interpretability and nuance with a Chain-of-Thought reward model—reasoning before judging—to reach 98.5% accuracy in math evals.
 
-![[assets/attachments/llm/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F14366741-34e6-4aba-a2ad-d07fc5b4af11_1560x517.heic]]
+![[raw/assets/attachments/llm/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F14366741-34e6-4aba-a2ad-d07fc5b4af11_1560x517.heic]]
 
 ### Data Curation: Verifiability and Difficulty Filters
 

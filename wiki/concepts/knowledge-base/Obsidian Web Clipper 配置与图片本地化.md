@@ -39,7 +39,7 @@ Karpathy 在 LLM Wiki 模式中强调：**网页随时可能挂掉或修改，�
 | **Default location** | `raw/web/` | 剪藏文件存放路径，与知识库目录约定对齐 |
 | **File name format** | `{{date:YYYY-MM-DD}}-{{title}}` | 统一命名格式，便于后续自动化处理 |
 | **Download images** | ✅ 开启 | 自动把网页图片下载到本地 |
-| **Image download folder** | `assets/attachments/` 或相对路径 | 图片存放位置，建议与知识库 `assets/` 结构对齐 |
+| **Image download folder** | `raw/assets/attachments/` 或相对路径 | 图片存放位置，建议与知识库 `raw/assets/` 结构对齐 |
 | **Template** | 自定义或留空 | 可在知识库仓库中维护一个统一模板文件 |
 
 ## 第二部分：在 Obsidian 中批量下载远程图片
@@ -60,7 +60,7 @@ Karpathy 在 LLM Wiki 模式中强调：**网页随时可能挂掉或修改，�
 安装方式：
 1. **设置 → 第三方插件** → 关闭安全模式
 2. 搜索 **Local Images Plus** → 安装 → 启用
-3. 在插件设置中指定下载目录（建议对齐 `assets/attachments/` 结构）
+3. 在插件设置中指定下载目录（建议对齐 `raw/assets/attachments/` 结构）
 
 使用方式：
 1. 打开文件或选择多个文件
@@ -82,7 +82,7 @@ Karpathy 在 LLM Wiki 模式中强调：**网页随时可能挂掉或修改，�
 
 | 设置项 | 推荐值 | 说明 |
 |--------|--------|------|
-| **附件文件夹路径** | `assets/attachments/` | 与当前知识库结构对齐 |
+| **附件文件夹路径** | `raw/assets/attachments/` | 与当前知识库结构对齐 |
 | **附件子文件夹** | "基于当前文件路径" 或按专题手动分子目录 | 建议按专题分子目录，如 `knowledge-base/`、`timeseries/`、`operationsresearch/` |
 | **使用双括号链接** | ✅ 开启 | 保持 Obsidian 链接风格一致性 |
 
@@ -93,7 +93,7 @@ Karpathy 在 LLM Wiki 模式中强调：**网页随时可能挂掉或修改，�
 完成图片本地化后，这份剪藏文件就是一个合格的 `raw/` 层来源：
 
 1. 文件位于 `raw/web/YYYY-MM-DD-标题.md`
-2. 图片已下载到 `assets/attachments/` 下
+2. 图片已下载到 `raw/assets/attachments/` 下
 3. Markdown 中的图片路径已指向本地文件
 4. 后续可以交给 LLM 生成 `wiki/sources/` 来源卡
 

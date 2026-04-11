@@ -7,6 +7,10 @@ categories:
   - computer algorithms
 tags:
   - algorithm
+source_type: local_note
+created_at: 2024-04-03
+topics:
+  - computer algorithms
 ---
 
 <style>

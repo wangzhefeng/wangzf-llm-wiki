@@ -48,7 +48,7 @@
      - 最相关的 1-3 个概念页
 
 4. 如果论文里有关键图表值得长期引用
-   - 复制到 `assets/attachments/<topic-slug>/<paper-slug>/`
+   - 复制到 `raw/assets/attachments/<topic-slug>/<paper-slug>/`
    - wiki 页面只引用本地化后的路径
 
 5. 最后做最小验证

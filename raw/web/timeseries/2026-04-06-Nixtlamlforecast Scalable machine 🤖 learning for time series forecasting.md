@@ -17,7 +17,7 @@ tags:
 
 ## mlforecast
 
-[![[assets/attachments/timeseries/logo 2.png]]](https://raw.githubusercontent.com/Nixtla/mlforecast/main/nbs/figs/logo.png)
+[![[raw/assets/attachments/timeseries/logo 2.png]]](https://raw.githubusercontent.com/Nixtla/mlforecast/main/nbs/figs/logo.png)
 
 ## Machine Learning 🤖 Forecast
 
@@ -200,7 +200,7 @@ from utilsforecast.plotting import plot_series
 fig = plot_series(series, predictions, max_ids=4, plot_random=False)
 ```
 
-[![[assets/attachments/timeseries/index.png]]](https://raw.githubusercontent.com/Nixtla/mlforecast/main/nbs/figs/index.png)
+[![[raw/assets/attachments/timeseries/index.png]]](https://raw.githubusercontent.com/Nixtla/mlforecast/main/nbs/figs/index.png)
 
 ## How to contribute
 

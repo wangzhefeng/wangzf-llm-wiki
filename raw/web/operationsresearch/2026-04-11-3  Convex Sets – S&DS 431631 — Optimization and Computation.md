@@ -9,6 +9,8 @@ tags:
 title: 3  Convex Sets – S&DS 431/631 — Optimization and Computation
 topics:
 - 运筹优化
+source_type: local_note
+created_at: 2026-04-11
 ---
 Before we can solve optimization problems, we need to agree on what a “solution” actually means. Does a minimum always exist? If it does, is it the best we can do globally or only locally? These questions are not mere formalities — they determine which algorithms are trustworthy and which guarantees we can rely on. In this chapter we pin down the fundamental vocabulary of optimization: optimal solutions, optimal values, and the critical distinction between local and global minima.
 

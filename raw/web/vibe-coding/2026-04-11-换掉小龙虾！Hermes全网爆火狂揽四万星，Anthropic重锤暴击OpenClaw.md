@@ -9,6 +9,8 @@ tags:
 title: 换掉小龙虾！Hermes全网爆火狂揽四万星，Anthropic重锤暴击OpenClaw
 topics:
 - Vibe Coding
+source_type: local_note
+created_at: 2026-04-11
 ---
 *2026年4月10日 22:50*
 

@@ -19,7 +19,7 @@ tags:
 
 This is the official repository of [Sundial: A Family of Highly Capable Time Series Foundation Models](https://arxiv.org/abs/2502.00816) [\[Slides\]](https://cloud.tsinghua.edu.cn/f/8d526337afde465e87c9/) [\[Poster\]](https://cloud.tsinghua.edu.cn/f/cc2a156315e9453f99b3/) [\[Intro (CN)\]](https://mp.weixin.qq.com/s/y3sc2e2lmW1sqfnoK-ZdDA).
 
-[![[assets/attachments/timeseries/cover 1.png]]](https://github.com/thuml/Sundial/blob/main/figures/cover.png)
+[![[raw/assets/attachments/timeseries/cover 1.png]]](https://github.com/thuml/Sundial/blob/main/figures/cover.png)
 
 ## Updates
 
@@ -87,7 +87,7 @@ More examples of predicting quantiles or confidence intervals are provided in th
 
 ## Architecture
 
-[![[assets/attachments/arch.png]]](https://github.com/thuml/Sundial/blob/main/figures/arch.png)
+![arch.png](https://github.com/thuml/Sundial/blob/main/figures/arch.png)
 
 > Intuitively, Sundial can be viewed as an **ARMA** model (Auto-Regression and Moving-Average). Transformer learns auto-regressive token representations. Conditioned on them, TimeFlow transforms random noises into non-deterministic predictions.
 

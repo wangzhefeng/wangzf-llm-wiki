@@ -29,24 +29,24 @@ To apply machine learning models to forecasting problems, the time series needs 
 
 This transformation is essential for machine learning models to capture the dependencies and patterns that exist between past and future values in a time series. By using lags as input features, machine learning models can learn from the past and make predictions about future values. The number of lags used as input features in the matrix is an important hyperparameter that needs to be carefully tuned to obtain the best performance of the model.
 
-![[assets/attachments/timeseries/transform_timeseries.gif]]  
+![[raw/assets/attachments/timeseries/transform_timeseries.gif]]  
 *Time series transformation into a matrix of 5 lags and a vector with the value of the series that follows each row of the matrix*
 
 This type of transformation also allows to include additional variables.
 
-![[assets/attachments/timeseries/matrix_transformation_with_exog_variable.png]]  
+![[raw/assets/attachments/timeseries/matrix_transformation_with_exog_variable.png]]  
 *Time series transformation including an exogenous variable*
 
 Once data have been rearranged into the new shape, any regression model can be trained to predict the next value (step) of the series. During model training, every row is considered a separate data instance, where values at lags 1, 2,... *p* are considered predictors for the target quantity of the time series at time step *p+1*.
 
-![[assets/attachments/timeseries/diagram-trainig-forecaster.png]]  
+![[raw/assets/attachments/timeseries/diagram-trainig-forecaster.png]]  
 *Diagram of training a machine learning model with time series data*
 
 ## Single-step forecasting
 
 Single-step prediction is used when the goal is to predict only the next value of the series.
 
-![[assets/attachments/timeseries/diagram-single-step-forecasting.png]]  
+![[raw/assets/attachments/timeseries/diagram-single-step-forecasting.png]]  
 *Diagram of single-step forecasting*
 
 ## Multi-step forecasting
@@ -57,20 +57,20 @@ When working with time series, it is seldom needed to predict only the next elem
 
 Since the value *t(n-1)* is required to predict *t(n)*, and *t(n-1)* is unknown, a recursive process is applied in which, each new prediction, is based on the previous one. This process is known as recursive forecasting or recursive multi-step forecasting and can be easily generated with the [`ForecasterRecursive`](https://skforecast.org/0.14.0/user_guides/autoregresive-forecaster) class.
 
-![[assets/attachments/timeseries/diagram-recursive-mutistep-forecasting.png]]  
+![[raw/assets/attachments/timeseries/diagram-recursive-mutistep-forecasting.png]]  
 *Diagram of recursive multi-step forecasting*
 
-![[assets/attachments/timeseries/recursive_forecasting_gif.gif]]  
+![[raw/assets/attachments/timeseries/recursive_forecasting_gif.gif]]  
 *Recursive forecasting*
 
 ### Direct multi-step forecasting
 
 Direct multi-step forecasting consists of training a different model for each step of the forecast horizon. For example, to predict the next 5 values of a time series, 5 different models are trained, one for each step. As a result, the predictions are independent of each other. This entire process is automated in the [`ForecasterDirect`](https://skforecast.org/0.14.0/user_guides/direct-multi-step-forecasting) class.
 
-![[assets/attachments/timeseries/diagram-direct-multi-step-forecasting.png]]  
+![[raw/assets/attachments/timeseries/diagram-direct-multi-step-forecasting.png]]  
 *Diagram of direct multi-step forecasting*
 
-![[assets/attachments/timeseries/direct_forecasting_gif.gif]]  
+![[raw/assets/attachments/timeseries/direct_forecasting_gif.gif]]  
 *Direct forecasting*
 
 ### Multiple output forecasting
@@ -85,12 +85,12 @@ Univariate time series forecasting models a single time series as a linear or no
 
 A single model is trained for all time series, but each time series remains independent of the others, meaning that past values of one series are not used as predictors of other series. However, modeling them together is useful because the series may follow the same intrinsic pattern regarding their past and future values. For instance, the sales of products A and B in the same store may not be related, but they follow the same dynamics, that of the store.
 
-![[assets/attachments/timeseries/forecaster_multi_series_train_matrix_diagram.png]]  
+![[raw/assets/attachments/timeseries/forecaster_multi_series_train_matrix_diagram.png]]  
 *Transformation of two time series and an exogenous variable into the matrices needed to train a machine learning model in a multi-series context*
 
 To predict the next *n* steps, the strategy of [recursive multi-step forecasting](https://skforecast.org/0.14.0/introduction-forecasting/introduction-forecasting#recursive-multi-step-forecasting) is applied
 
-![[assets/attachments/timeseries/forecaster_multi_series_prediction_diagram.png]]  
+![[raw/assets/attachments/timeseries/forecaster_multi_series_prediction_diagram.png]]  
 *Diagram of recursive forecasting with multiple independent time series*
 
 The [`ForecasterRecursiveMultiSeries`](https://skforecast.org/0.14.0/user_guides/independent-multi-time-series-forecasting) class cover this process.
@@ -99,7 +99,7 @@ The [`ForecasterRecursiveMultiSeries`](https://skforecast.org/0.14.0/user_guides
 
 All series are modeled together in a single model, considering that each time series depends not only on its past values but also on the past values of the other series. The forecaster is expected not only to learn the information of each series separately but also to relate them. An example is the measurements made by all the sensors (flow, temperature, pressure...) installed on an industrial machine such as a compressor.
 
-![[assets/attachments/timeseries/forecaster_multivariate_train_matrix_diagram.png]]  
+![[raw/assets/attachments/timeseries/forecaster_multivariate_train_matrix_diagram.png]]  
 *Transformation of two time series and an exogenous variable into the matrices needed to train a machine learning model in a multi-variate-series context*
 
 The [`ForecasterDirectMultiVariate`](https://skforecast.org/0.14.0/user_guides/dependent-multi-series-multivariate-forecasting) class covers this process.
@@ -127,7 +127,7 @@ Exogenous variables are predictors that are independent of the model being used 
 
 In skforecast, exogenous variables [can be easily included](https://skforecast.org/0.14.0/user_guides/exogenous-variables) as predictors in all forecasting models. To ensure that their effects are accurately accounted for, it is crucial to include these variables during both the training and prediction phases. This will help to optimize the accuracy of forecasts and provide more reliable predictions.
 
-![[assets/attachments/timeseries/matrix_transformation_with_exog_variable.png]]  
+![[raw/assets/attachments/timeseries/matrix_transformation_with_exog_variable.png]]  
 *Time series transformation including an exogenous variable*
 
 ## Backtesting forecasting models
@@ -144,9 +144,9 @@ Overall, backtesting is an essential step in the development of a time series fo
 
 Backtesting without refit is a strategy where the model is trained only once and used sequentially without updating it, following the temporal order of the data. This approach is advantageous as it is much faster than other methods that require retraining the model each time. However, the model may lose its predictive power over time as it does not incorporate the latest information available.
 
-![[assets/attachments/timeseries/diagram-backtesting-no-refit.png]]
+![[raw/assets/attachments/timeseries/diagram-backtesting-no-refit.png]]
 
-![[assets/attachments/timeseries/backtesting_no_refit.gif]]  
+![[raw/assets/attachments/timeseries/backtesting_no_refit.gif]]  
 *Backtesting without refit*
 
 ### Backtesting with refit and increasing training size (fixed origin)
@@ -155,18 +155,18 @@ In this approach, the model is trained before making predictions each time, and 
 
 Instead of randomizing the data, this backtesting sequentially increases the size of the training set while maintaining the temporal order of the data. By doing this, the model can be tested on progressively larger amounts of historical data, providing a more accurate assessment of its predictive capabilities.
 
-![[assets/attachments/timeseries/diagram-backtesting-refit.png]]
+![[raw/assets/attachments/timeseries/diagram-backtesting-refit.png]]
 
-![[assets/attachments/timeseries/backtesting_refit.gif]]  
+![[raw/assets/attachments/timeseries/backtesting_refit.gif]]  
 *Backtesting with refit and increasing training size (fixed origin)*
 
 ### Backtesting with refit and fixed training size (rolling origin)
 
 In this approach, the model is trained using a fixed window of past observations, and the testing is performed on a rolling basis, where the training window is moved forward in time. The size of the training window is kept constant, allowing for the model to be tested on different sections of the data. This technique is particularly useful when there is a limited amount of data available, or when the data is non-stationary, and the model's performance may vary over time. Is also known as time series cross-validation or walk-forward validation.
 
-![[assets/attachments/timeseries/diagram-backtesting-refit-fixed-train-size.png]]
+![[raw/assets/attachments/timeseries/diagram-backtesting-refit-fixed-train-size.png]]
 
-![[assets/attachments/timeseries/backtesting_refit_fixed_train_size.gif]]  
+![[raw/assets/attachments/timeseries/backtesting_refit_fixed_train_size.gif]]  
 *Backtesting with refit and fixed training size (rolling origin)*
 
 ### Backtesting with intermittent refit
@@ -175,7 +175,7 @@ The model is retrained every *n* iterations, a method often used when the model 
 
 This refit strategy can be implemented using either a fixed or rolling origin, providing flexibility in adapting the model to new data.
 
-![[assets/attachments/timeseries/backtesting_intermittent_refit.gif]]  
+![[raw/assets/attachments/timeseries/backtesting_intermittent_refit.gif]]  
 *Backtesting with intermittent refit*
 
 ### Backtesting including gap
@@ -184,7 +184,7 @@ This approach introduces a time gap between the training and test sets, replicat
 
 For example, consider the goal of predicting the 24 hours of day D+1, but the predictions need to be made at 11:00 to allow sufficient flexibility. At 11:00 on day D, the task is to forecast hours \[12 - 23\] of the same day and hours \[0 - 23\] of day D+1. Thus, a total of 36 hours into the future must be predicted, with only the last 24 hours to be stored.
 
-![[assets/attachments/timeseries/backtesting_refit_gap.gif]]  
+![[raw/assets/attachments/timeseries/backtesting_refit_gap.gif]]  
 *Backtesting with refit and gap*
 
 ### Which strategy should I use?

@@ -19,7 +19,7 @@ AI寒武纪 *2026年4月3日 12:10*
 
 Andrej Karpathy 刚刚分享了他正在用 LLM 构建个人知识库，有很多值得借鉴的地方。
 
-![[assets/attachments/knowledge-base/Image.webp|图片]]
+![[raw/assets/attachments/knowledge-base/Image.webp|图片]]
 
 以下是他分享的具体工作流：
 

@@ -75,7 +75,7 @@ Skill 的核心价值有三类：
 - `scripts/`：把高确定性的动作做成代码；
 - `templates/`：固定输出结构；
 - `references/`：补充事实或进阶规则；
-- `assets/`：品牌素材、示例、配置片段。
+- `raw/assets/`：品牌素材、示例、配置片段。
 
 ### 2.2 Skill 生命周期
 

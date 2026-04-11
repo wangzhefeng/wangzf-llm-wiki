@@ -10,6 +10,8 @@ title: 8  SGD, Proximal Gradient, and Frank-Wolfe – S&DS 431/631 — Optimiza
   Computation
 topics:
 - 运筹优化
+source_type: local_note
+created_at: 2026-04-11
 ---
 The momentum and adaptive methods from the previous chapter dramatically accelerate gradient descent, but they assume two favorable conditions: that computing the full gradient is feasible, and that the objective is smooth. In practice, these assumptions often fail. This chapter addresses three fundamental challenges that arise in real-world optimization:
 

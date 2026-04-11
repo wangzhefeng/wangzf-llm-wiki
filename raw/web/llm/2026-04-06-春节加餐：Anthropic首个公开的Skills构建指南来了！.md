@@ -173,7 +173,7 @@ Validate the data before proceeding.
 完整的 Skill 文件夹结构：
 
 ```bash
-your-skill-name/ ├── SKILL.md              # 必需 - 主文件 ├── scripts/              # 可选 - 可执行代码 │   ├── process_data.py │   └── validate.sh ├── references/           # 可选 - 参考文档 │   ├── api-guide.md │   └── examples/ └── assets/               # 可选 - 模板等     └── report-template.md
+your-skill-name/ ├── SKILL.md              # 必需 - 主文件 ├── scripts/              # 可选 - 可执行代码 │   ├── process_data.py │   └── validate.sh ├── references/           # 可选 - 参考文档 │   ├── api-guide.md │   └── examples/ └── raw/assets/               # 可选 - 模板等     └── report-template.md
 ```
 
 **关键规则：**

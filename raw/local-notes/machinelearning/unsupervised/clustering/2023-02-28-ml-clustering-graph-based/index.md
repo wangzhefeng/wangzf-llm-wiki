@@ -7,6 +7,10 @@ categories:
   - machine-learning
 tags: 
     - model
+source_type: local_note
+created_at: 2023-02-28
+topics:
+  - machine-learning
 ---
 
 ## 基于图论的距离

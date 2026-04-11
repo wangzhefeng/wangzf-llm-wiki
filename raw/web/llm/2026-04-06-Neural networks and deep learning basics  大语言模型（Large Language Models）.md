@@ -17,12 +17,12 @@ tags:
 
 ## 课程大纲
 
-- 机器学习基础 \[[课件](https://gair-nlp.github.io/cs2916/assets/files/lecture02-part1-6c06dc80ee22e6645b8f71e687f18b68.pdf)\]
-- 神经网络基础概念 \[[课件](https://gair-nlp.github.io/cs2916/assets/files/lecture02-part2-3b078e50593b6d793a393ae42ee3a149.pdf)\]
+- 机器学习基础 \[[课件](https://gair-nlp.github.io/cs2916/raw/assets/files/lecture02-part1-6c06dc80ee22e6645b8f71e687f18b68.pdf)\]
+- 神经网络基础概念 \[[课件](https://gair-nlp.github.io/cs2916/raw/assets/files/lecture02-part2-3b078e50593b6d793a393ae42ee3a149.pdf)\]
 
 ## 练习
 
-- [Feedforward neural network](https://gair-nlp.github.io/cs2916/assets/files/nn_bp-bee2999c27c7ab32e0788f422816a8b6.py)
+- [Feedforward neural network](https://gair-nlp.github.io/cs2916/raw/assets/files/nn_bp-bee2999c27c7ab32e0788f422816a8b6.py)
 
 ## 推荐阅读材料
 

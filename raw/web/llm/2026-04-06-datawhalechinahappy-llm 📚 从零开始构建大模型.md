@@ -133,7 +133,7 @@ tags:
 - 感谢 [@Sm1les](https://github.com/Sm1les) 对本项目的帮助与支持
 - 感谢所有为本项目做出贡献的开发者们 ❤️
 
-[![[assets/attachments/llm/Image 25.svg]]](https://github.com/datawhalechina/happy-llm/graphs/contributors)
+[![[raw/assets/attachments/llm/Image 25.svg]]](https://github.com/datawhalechina/happy-llm/graphs/contributors)
 
 ## Star History
 

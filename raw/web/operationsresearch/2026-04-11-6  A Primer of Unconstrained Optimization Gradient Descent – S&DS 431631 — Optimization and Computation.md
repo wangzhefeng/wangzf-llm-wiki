@@ -10,6 +10,8 @@ title: '6  A Primer of Unconstrained Optimization: Gradient Descent – S&DS 43
   — Optimization and Computation'
 topics:
 - 运筹优化
+source_type: local_note
+created_at: 2026-04-11
 ---
 In the previous chapters we developed a rich theory of convex optimization – convex sets, convex functions, and problem formulations – that tells us *what* an optimal solution looks like (for instance, a point where the gradient vanishes). But how do we actually *find* one? For most problems of practical interest, closed-form solutions do not exist, and we must turn to iterative algorithms that start from an initial guess and progressively improve it.
 

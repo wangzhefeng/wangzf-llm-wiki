@@ -22,7 +22,7 @@ tags:
 
 [🔥SwanLab 在线版](https://swanlab.cn/) · [📃 文档](https://docs.swanlab.cn/) · [报告问题](https://github.com/swanhubx/swanlab/issues) · [建议反馈](https://geektechstudio.feishu.cn/share/base/form/shrcnyBlK8OMD0eweoFcc2SvWKc) · [更新日志](https://docs.swanlab.cn/zh/guide_cloud/general/changelog.html) · [基线社区](https://swanlab.cn/benchmarks)
 
-[![[assets/attachments/llm/swanlab-overview.png]]](https://github.com/SwanHubX/SwanLab/blob/main/readme_files/swanlab-overview.png)
+[![[raw/assets/attachments/llm/swanlab-overview.png]]](https://github.com/SwanHubX/SwanLab/blob/main/readme_files/swanlab-overview.png)
 
 中文 / [English](https://github.com/SwanHubX/SwanLab/blob/main/README_EN.md) / [日本語](https://github.com/SwanHubX/SwanLab/blob/main/README_JP.md) / [Русский](https://github.com/SwanHubX/SwanLab/blob/main/README_RU.md)
 
@@ -138,7 +138,7 @@ swanlab-demo.mp4<video src="https://private-user-images.githubusercontent.com/58
 
 **2\. ⚡️ 全面的框架集成**: PyTorch、🤗HuggingFace Transformers、PyTorch Lightning、🦙LLaMA Factory、MMDetection、Ultralytics、PaddleDetetion、LightGBM、XGBoost、Keras、Tensorboard、Weights&Biases、OpenAI、Swift、XTuner、Stable Baseline3、Hydra 在内的 **30+** 框架
 
-[![[assets/attachments/llm/integrations.png]]](https://github.com/SwanHubX/SwanLab/blob/main/readme_files/integrations.png)
+[![[raw/assets/attachments/llm/integrations.png]]](https://github.com/SwanHubX/SwanLab/blob/main/readme_files/integrations.png)
 
 **3\. 💻 硬件监控**: 支持实时记录与监控CPU、NPU（ **昇腾Ascend** ）、GPU（ **英伟达Nvidia** ）、AMD（ **AMD ROCm** ）、MLU（ **寒武纪Cambricon** ）、XLU（ **昆仑芯Kunlunxin** ）、DCU（ **海光DCU** ）、MetaX GPU（ **沐曦XPU** ）、Moore Threads GPU（ **摩尔线程** ）、Iluvatar GPU（ **天数智芯** ）、内存的系统级硬件指标
 
@@ -146,7 +146,7 @@ swanlab-demo.mp4<video src="https://private-user-images.githubusercontent.com/58
 
 **5\. 🆚 比较结果**: 通过在线表格与对比图表比较不同实验的超参数和结果，挖掘迭代灵感
 
-[![[assets/attachments/llm/swanlab-table.png]]](https://github.com/SwanHubX/SwanLab/blob/main/readme_files/swanlab-table.png)
+[![[raw/assets/attachments/llm/swanlab-table.png]]](https://github.com/SwanHubX/SwanLab/blob/main/readme_files/swanlab-table.png)
 
 **6\. 👥 在线协作**: 您可以与团队进行协作式训练，支持将实验实时同步在一个项目下，您可以在线查看团队的训练记录，基于结果发表看法与建议
 
@@ -169,22 +169,22 @@ swanlab-demo.mp4<video src="https://private-user-images.githubusercontent.com/58
 
 | [ResNet50 猫狗分类](https://swanlab.cn/@ZeyiLin/Cats_Dogs_Classification/runs/jzo93k112f15pmx14vtxf/chart) | [Yolov8-COCO128 目标检测](https://swanlab.cn/@ZeyiLin/ultratest/runs/yux7vclmsmmsar9ear7u5/chart) |
 | --- | --- |
-| [![[assets/attachments/llm/example-catsdogs.png]]](https://swanlab.cn/@ZeyiLin/Cats_Dogs_Classification/runs/jzo93k112f15pmx14vtxf/chart) | [![[assets/attachments/llm/example-yolo.png]]](https://swanlab.cn/@ZeyiLin/ultratest/runs/yux7vclmsmmsar9ear7u5/chart) |
+| [![[raw/assets/attachments/llm/example-catsdogs.png]]](https://swanlab.cn/@ZeyiLin/Cats_Dogs_Classification/runs/jzo93k112f15pmx14vtxf/chart) | [![[raw/assets/attachments/llm/example-yolo.png]]](https://swanlab.cn/@ZeyiLin/ultratest/runs/yux7vclmsmmsar9ear7u5/chart) |
 | 跟踪一个简单的 ResNet50 模型在猫狗数据集上训练的图像分类任务。 | 使用 Yolov8 在 COCO128 数据集上进行目标检测任务，跟踪训练超参数和指标。 |
 
 | [Qwen2 指令微调](https://swanlab.cn/@ZeyiLin/Qwen2-fintune/runs/cfg5f8dzkp6vouxzaxlx6/chart) | [LSTM Google 股票预测](https://swanlab.cn/@ZeyiLin/Google-Stock-Prediction/charts) |
 | --- | --- |
-| [![[assets/attachments/llm/example-qwen2.png]]](https://swanlab.cn/@ZeyiLin/Qwen2-fintune/runs/cfg5f8dzkp6vouxzaxlx6/chart) | [![[assets/attachments/llm/example-lstm.png]]](https://swanlab.cn/@ZeyiLin/Google-Stock-Prediction/charts) |
+| [![[raw/assets/attachments/llm/example-qwen2.png]]](https://swanlab.cn/@ZeyiLin/Qwen2-fintune/runs/cfg5f8dzkp6vouxzaxlx6/chart) | [![[raw/assets/attachments/llm/example-lstm.png]]](https://swanlab.cn/@ZeyiLin/Google-Stock-Prediction/charts) |
 | 跟踪 Qwen2 大语言模型的指令微调训练，完成简单的指令遵循。 | 使用简单的 LSTM 模型在 Google 股价数据集上训练，实现对未来股价的预测。 |
 
 | [ResNeXt101 音频分类](https://swanlab.cn/@ZeyiLin/PyTorch_Audio_Classification/charts) | [Qwen2-VL COCO数据集微调](https://swanlab.cn/@ZeyiLin/Qwen2-VL-finetune/runs/pkgest5xhdn3ukpdy6kv5/chart) |
 | --- | --- |
-| [![[assets/attachments/llm/example-audio-classification.png]]](https://swanlab.cn/@ZeyiLin/PyTorch_Audio_Classification/charts) | [![[assets/attachments/llm/example-qwen2-vl.jpg]]](https://swanlab.cn/@ZeyiLin/Qwen2-VL-finetune/runs/pkgest5xhdn3ukpdy6kv5/chart) |
+| [![[raw/assets/attachments/llm/example-audio-classification.png]]](https://swanlab.cn/@ZeyiLin/PyTorch_Audio_Classification/charts) | [![[raw/assets/attachments/llm/example-qwen2-vl.jpg]]](https://swanlab.cn/@ZeyiLin/Qwen2-VL-finetune/runs/pkgest5xhdn3ukpdy6kv5/chart) |
 | 从ResNet到ResNeXt在音频分类任务上的渐进式实验过程 | 基于Qwen2-VL多模态大模型，在COCO2014数据集上进行Lora微调。 |
 
 | [EasyR1 多模态LLM RL训练](https://swanlab.cn/@Kedreamix/easy_r1/runs/wzezd8q36bb6dlza6wtpc/chart) | [Qwen2.5-0.5B GRPO训练](https://swanlab.cn/@kmno4/Qwen-R1/runs/t0zr3ak5r7188mjbjgdsc/chart) |
 | --- | --- |
-| [![[assets/attachments/llm/example-easyr1-rl.png]]](https://swanlab.cn/@Kedreamix/easy_r1/runs/wzezd8q36bb6dlza6wtpc/chart) | [![[assets/attachments/llm/example-qwen2-grpo.png]]](https://swanlab.cn/@kmno4/Qwen-R1/runs/t0zr3ak5r7188mjbjgdsc/chart) |
+| [![[raw/assets/attachments/llm/example-easyr1-rl.png]]](https://swanlab.cn/@Kedreamix/easy_r1/runs/wzezd8q36bb6dlza6wtpc/chart) | [![[raw/assets/attachments/llm/example-qwen2-grpo.png]]](https://swanlab.cn/@kmno4/Qwen-R1/runs/t0zr3ak5r7188mjbjgdsc/chart) |
 | 使用EasyR1框架进行多模态LLM RL训练 | 基于Qwen2.5-0.5B模型在GSM8k数据集上进行GRPO训练 |
 
 [更多案例](https://docs.swanlab.cn/zh/examples/mnist.html)
@@ -483,8 +483,8 @@ SwanLab会对AI训练过程中所使用的 **硬件信息** 和 **资源使用�
 、
 
 ```
-[![](https://raw.githubusercontent.com/SwanHubX/assets/main/badge2.svg)](your experiment url)
-[![](https://raw.githubusercontent.com/SwanHubX/assets/main/badge1.svg)](your experiment url)
+[![](https://raw.githubusercontent.com/SwanHubX/raw/assets/main/badge2.svg)](your experiment url)
+[![](https://raw.githubusercontent.com/SwanHubX/raw/assets/main/badge1.svg)](your experiment url)
 ```
 
 更多设计素材： [assets](https://github.com/SwanHubX/assets)
@@ -514,9 +514,9 @@ SwanLab会对AI训练过程中所使用的 **硬件信息** 和 **资源使用�
 
 **Contributors**
 
-[![[assets/attachments/llm/Image 54.svg]]](https://github.com/swanhubx/swanlab/graphs/contributors)  
+[![[raw/assets/attachments/llm/Image 54.svg]]](https://github.com/swanhubx/swanlab/graphs/contributors)  
 
-[![[assets/attachments/llm/swanlab-and-user.png]]](https://github.com/SwanHubX/SwanLab/blob/main/readme_files/swanlab-and-user.png)
+[![[raw/assets/attachments/llm/swanlab-and-user.png]]](https://github.com/SwanHubX/SwanLab/blob/main/readme_files/swanlab-and-user.png)
 
 ## 📃 协议
 

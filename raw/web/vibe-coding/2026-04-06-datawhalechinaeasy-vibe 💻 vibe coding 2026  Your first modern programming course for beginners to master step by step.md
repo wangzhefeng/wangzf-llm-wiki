@@ -17,7 +17,7 @@ topics:
 - Vibe Coding
 ---
 
-[![[easy-vibe-logo-hd.svg|Easy-Vibe Logo]]](https://github.com/datawhalechina/easy-vibe/blob/main/assets/easy-vibe-logo-hd.svg)
+[![[easy-vibe-logo-hd.svg|Easy-Vibe Logo]]](https://github.com/datawhalechina/easy-vibe/blob/main/raw/assets/easy-vibe-logo-hd.svg)
 
 Jump right in and vibe together — if you can talk, you can build apps.  
 直接上手，一起 vibe！会说话就会做应用。
@@ -30,10 +30,10 @@ Jump right in and vibe together — if you can talk, you can build apps.
 [Read Online](https://datawhalechina.github.io/easy-vibe/welcome.html) · [Learning Map](#-content-navigation)  
 [开始阅读](https://datawhalechina.github.io/easy-vibe/welcome.html) · [学习地图](#-content-navigation)
 
-| [![[assets/attachments/uncategorized/gif-header.png]]](https://github.com/datawhalechina/easy-vibe/blob/main/assets/gif-header.png)   **A beginner-friendly learning map**   <sub>Clear guidance from zero, so you can stop "learning and forgetting"</sub> | [![[assets/attachments/uncategorized/gif-tutorial.png]]](https://github.com/datawhalechina/easy-vibe/blob/main/assets/gif-tutorial.png)   **Step-by-step visual tutorials**   <sub>Detailed walkthroughs that feel like learning with a private tutor</sub> |
+| [![[raw/assets/attachments/vibe-coding/gif-header.png]]](https://github.com/datawhalechina/easy-vibe/blob/main/raw/assets/gif-header.png)   **A beginner-friendly learning map**   <sub>Clear guidance from zero, so you can stop "learning and forgetting"</sub> | [![[raw/assets/attachments/vibe-coding/gif-tutorial.png]]](https://github.com/datawhalechina/easy-vibe/blob/main/raw/assets/gif-tutorial.png)   **Step-by-step visual tutorials**   <sub>Detailed walkthroughs that feel like learning with a private tutor</sub> |
 | --- | --- |
-| [![[assets/attachments/uncategorized/gif-ide.gif]]](https://github.com/datawhalechina/easy-vibe/blob/main/assets/gif-ide.gif)   **Immersive simulated coding**   <sub>Virtual mouse guidance helps you quickly learn the core IDE workflow</sub> | [![[assets/attachments/uncategorized/gif-diffusion.gif]]](https://github.com/datawhalechina/easy-vibe/blob/main/assets/gif-diffusion.gif)   **Visible AI principles**   <sub>Animated explanations make it easy to see how AI generates images</sub> |
-| [![[assets/attachments/uncategorized/gif-rag.gif]]](https://github.com/datawhalechina/easy-vibe/blob/main/assets/gif-rag.gif)   **Learn RAG like a game**   <sub>Interactive components let you click through the full RAG data flow</sub> | ![[assets/attachments/uncategorized/git-terminal.gif]]   **Visual terminal concepts**   <sub>Command-line behavior becomes intuitive when the underlying logic is visualized</sub> |
+| [![[raw/assets/attachments/vibe-coding/gif-ide.gif]]](https://github.com/datawhalechina/easy-vibe/blob/main/raw/assets/gif-ide.gif)   **Immersive simulated coding**   <sub>Virtual mouse guidance helps you quickly learn the core IDE workflow</sub> | [![[raw/assets/attachments/vibe-coding/gif-diffusion.gif]]](https://github.com/datawhalechina/easy-vibe/blob/main/raw/assets/gif-diffusion.gif)   **Visible AI principles**   <sub>Animated explanations make it easy to see how AI generates images</sub> |
+| [![[raw/assets/attachments/vibe-coding/gif-rag.gif]]](https://github.com/datawhalechina/easy-vibe/blob/main/raw/assets/gif-rag.gif)   **Learn RAG like a game**   <sub>Interactive components let you click through the full RAG data flow</sub> | ![[raw/assets/attachments/vibe-coding/git-terminal.gif]]   **Visual terminal concepts**   <sub>Command-line behavior becomes intuitive when the underlying logic is visualized</sub> |
 
 ### ⭐ Star the repo here to help accelerate updates ❤️
 
@@ -151,7 +151,7 @@ Past News
 
 | Section | Key Content |
 | --- | --- |
-| [Build your own asset-generation agent starting from Lovart](https://datawhalechina.github.io/easy-vibe/en/stage-2/frontend/lovart-assets/) | Use Nanobanana and Lovart to generate high-quality visual assets and build a drawing agent that understands intent |
+| [Build your own asset-generation agent starting from Lovart](https://datawhalechina.github.io/easy-vibe/en/stage-2/frontend/lovart-raw/assets/) | Use Nanobanana and Lovart to generate high-quality visual assets and build a drawing agent that understands intent |
 | [Getting started with Figma and MasterGo](https://datawhalechina.github.io/easy-vibe/en/stage-2/frontend/figma-mastergo/) | Organize information architecture and page structure with design tools |
 | [Build your first modern application: UI design](https://datawhalechina.github.io/easy-vibe/en/stage-2/frontend/ui-design/) | Turn design drafts into component-based interfaces |
 | [UI guidelines and multi-product UI design](https://datawhalechina.github.io/easy-vibe/en/stage-2/frontend/multi-product-ui/) | Extend a unified visual system across multiple products |
@@ -263,7 +263,7 @@ Please help me run this project locally.
 - Thanks to [@Sm1les](https://github.com/Sm1les) for the help and support on this project
 - Thanks to every contributor and everyone who supported the project with feedback and stars ❤️
 
-[![[assets/attachments/uncategorized/Image 22.svg]]](https://github.com/datawhalechina/easy-vibe/graphs/contributors)
+[![[raw/assets/attachments/vibe-coding/Image 22.svg]]](https://github.com/datawhalechina/easy-vibe/graphs/contributors)
 
 ## 📄 LICENSE
 

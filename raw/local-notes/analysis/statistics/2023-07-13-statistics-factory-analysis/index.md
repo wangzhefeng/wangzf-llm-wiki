@@ -7,6 +7,10 @@ categories:
   - statistic
 tags:
   - note
+source_type: local_note
+created_at: 2023-07-13
+topics:
+  - statistic
 ---
 
 

@@ -9,6 +9,8 @@ tags:
 title: 7  Momentum and Adaptive Methods – S&DS 431/631 — Optimization and Computation
 topics:
 - 深度学习
+source_type: local_note
+created_at: 2026-04-11
 ---
 Gradient descent is simple and elegant, but it has a well-known weakness: on ill-conditioned problems, it converges painfully slowly. The iterates zigzag across narrow valleys, wasting most of their effort oscillating in high-curvature directions while barely making progress along the bottom of the valley. For a function with condition number $\kappa$, gradient descent requires $O(\kappa \log(1/\varepsilon))$ iterations — and in machine learning applications, $\kappa$ can easily be in the thousands or millions.
 

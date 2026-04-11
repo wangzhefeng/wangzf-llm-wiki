@@ -10,6 +10,8 @@ tags:
 title: 用 PyTorch DDP 把多张卡用起来
 topics:
 - 深度学习
+source_type: local_note
+created_at: 2026-04-11
 ---
 原创 小溪1005 *2026年3月28日 16:53*
 

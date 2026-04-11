@@ -8,6 +8,10 @@ categories:
   - deeplearning
 tags:
   - model
+source_type: local_note
+created_at: 2022-04-05
+topics:
+  - deeplearning
 ---
 
 <style>
@@ -92,7 +96,7 @@ BERT 集成了最近一段时间内 NLP 领域中的一些顶尖的思想，
 包括但不限于 [Semi-supervised Sequence Learning](https://arxiv.org/abs/1511.01432), 
 [ELMo](https://arxiv.org/abs/1802.05365), 
 [ULMFiT](https://arxiv.org/abs/1801.06146), 
-和 [OpenAI 的 Transformer](https://s3-us-west-2.amazonaws.com/openai-assets/research-covers/language-unsupervised/language_understanding_paper.pdf), 
+和 [OpenAI 的 Transformer](https://s3-us-west-2.amazonaws.com/openai-raw/assets/research-covers/language-unsupervised/language_understanding_paper.pdf), 
 以及 [Google 的 Transformer](https://arxiv.org/pdf/1706.03762.pdf)
 
 需要注意一些事情才能恰当的理解 BERT 的内容，不过，在介绍模型涉及的概念之前可以使用BERT的方法

@@ -82,7 +82,7 @@ The platform has the following architecture.
 
 The platform is designed to support multiple data types for input features, including the observed values of the forecasted time-series, known data supporting the forecasts (for example, day of the week), and static data (for example, user ID). This is summarized in the following figure.
 
-[![[assets/attachments/timeseries/Image 21.png]]](https://camo.githubusercontent.com/af784017d17c0cfa8087d6c54f4185aa816970f79132cbb6f748e94390335087/68747470733a2f2f646576656c6f7065722e646f776e6c6f61642e6e76696469612e636f6d2f74696d652d7365726965732d706c6174666f726d2f74696d655f7365726965735f646174612e706e67)
+[![[raw/assets/attachments/timeseries/Image 21.png]]](https://camo.githubusercontent.com/af784017d17c0cfa8087d6c54f4185aa816970f79132cbb6f748e94390335087/68747470733a2f2f646576656c6f7065722e646f776e6c6f61642e6e76696469612e636f6d2f74696d652d7365726965732d706c6174666f726d2f74696d655f7365726965735f646174612e706e67)
 
 **Time-series data type**
 

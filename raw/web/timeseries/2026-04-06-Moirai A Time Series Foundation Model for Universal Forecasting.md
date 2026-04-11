@@ -34,7 +34,7 @@ For example, a growing demand for cloud computing services has magnified the imp
 
 This motivates us to move towards the **universal forecasting** paradigm (see Figure 1), where a single large pre-trained model is capable of handling any time series forecasting problem.
 
-![[assets/attachments/timeseries/Untitled_7bc7bd.png]]
+![[raw/assets/attachments/timeseries/Untitled_7bc7bd.png]]
 
 *Figure 1. A universal forecaster is a large pre-trained model capable of handling any time series forecasting problem. It is trained on a large-scale time series dataset spanning multiple domains. Compared to the existing paradigm, universal forecasting faces the three key issues of i) multiple frequencies, ii) any-variate forecasting, and iii) varying distributions.*
 
@@ -49,7 +49,7 @@ The paradigm shift towards foundation models was initially sparked by the field 
 
 ### Our New Approach: Unified Training of Universal Time Series Forecasting Transformers
 
-![[assets/attachments/timeseries/Untitled_fb2f0b.png]]
+![[raw/assets/attachments/timeseries/Untitled_fb2f0b.png]]
 
 *Figure 2. The overall architecture of Moirai. The visualization depicts a 3-variate time series, where variates 0 and 1 represent target variables (i.e., those to be forecasted), and variate 2 serves as a dynamic covariate (with known values in the forecast horizon). Utilizing a patch size of 64, each variate is patchified into three tokens. These patch embeddings, along with sequence and variate identifiers, are fed into the Transformer. The shaded patches in the visualization denote the forecast horizon to be predicted. The corresponding output representations of these patches are then mapped into the parameters of the mixture distribution.*
 
@@ -62,7 +62,7 @@ To address these challenges, we present novel enhancements (see Figure 2) to the
 
 of past covariates, and the total number of observations can be found in our research paper ([https://arxiv.org/abs/2402.02592](https://arxiv.org/abs/2402.02592)).
 
-![[assets/attachments/timeseries/pasted-image-0.png]]
+![[raw/assets/attachments/timeseries/pasted-image-0.png]]
 
 ### Deeper Dive: Moirai
 
@@ -74,17 +74,17 @@ In our pre-training task, we formulate the objective to optimize the mixture dis
 
 We train Moirai in 3 sizes – small/base/large with 14m/91m/311m parameters! On in-distribution evaluations using the Monash Time Series Forecasting Benchmark, Moirai displays phenomenal performance, beating all baselines.
 
-![[assets/attachments/timeseries/Untitled_589089.png]]
+![[raw/assets/attachments/timeseries/Untitled_589089.png]]
 
 In out-of-distribution/zero-shot forecasting evaluations, Moirai consistently demonstrates competitive performance, and in some instances, surpasses state-of-the-art full-shot models. This superiority is observed across probabilistic forecasting and long-sequence forecasting benchmarks.
 
-![[assets/attachments/timeseries/Untitled_01dfb1.png]]
+![[raw/assets/attachments/timeseries/Untitled_01dfb1.png]]
 
-![[assets/attachments/timeseries/Untitled_cda89d.png]]
+![[raw/assets/attachments/timeseries/Untitled_cda89d.png]]
 
 Here are some visualizations of zero-shot forecasts from Moirai on the popular datasets. As depicted, Moirai adeptly crafts forecasts marked by discernible seasonal patterns from ETTh1-1 and ETTh1-2, while also accurately capturing trend patterns from ETTm1-1 and ETTm1-2. These illustrations underscore Moirai’s capability to deliver insightful predictions across varied scenarios.
 
-![[assets/attachments/timeseries/Untitled_897279.png]]
+![[raw/assets/attachments/timeseries/Untitled_897279.png]]
 
 ### Impact: Why Moirai Matters
 
@@ -135,24 +135,24 @@ Doyen Sahoo Director, Research
 
 Doyen Sahoo is the Director, of Salesforce AI Research Asia. Doyen leads several projects pertaining to AI for IT Operations or AIOps, AI for Software, and Time-Series intelligence – working on both fundamental and applied research.
 
-![[assets/attachments/timeseries/salesforce-cloud.png]]
+![[raw/assets/attachments/timeseries/salesforce-cloud.png]]
 
 Gerald Woo
 
-![[assets/attachments/timeseries/Screenshot-2024-11-07-at-11.06.34%E2%80%AFAM.png]]
+![[raw/assets/attachments/timeseries/Screenshot-2024-11-07-at-11.06.34%E2%80%AFAM.png]]
 
 Chenghao Liu
 
-![[assets/attachments/timeseries/justforyou-cloud-one.png]] ![[assets/attachments/timeseries/justforyou-cloud-two.png]] ![[assets/attachments/timeseries/justforyou-cloud-three.png]] ![[assets/attachments/timeseries/justforyou-cloud-two.png]]
+![[raw/assets/attachments/timeseries/justforyou-cloud-one.png]] ![[raw/assets/attachments/timeseries/justforyou-cloud-two.png]] ![[raw/assets/attachments/timeseries/justforyou-cloud-three.png]] ![[raw/assets/attachments/timeseries/justforyou-cloud-two.png]]
 
-[![[assets/attachments/timeseries/VibePass-Blog_3.png]]](https://www.salesforce.com/blog/vibepass/)![[CQ_mrvect02_adobe.png|Illustration depicting question marks, speech bubbles, and network icons to represent brainstorming and problem solving.]]
+[![[raw/assets/attachments/timeseries/VibePass-Blog_3.png]]](https://www.salesforce.com/blog/vibepass/)![[CQ_mrvect02_adobe.png|Illustration depicting question marks, speech bubbles, and network icons to represent brainstorming and problem solving.]]
 
 Illustration depicting question marks, speech bubbles, and network icons to represent brainstorming and problem solving.![[image_11f6a3.png|Illustration of Astro and Agentforce for Salesforce Suites with AI on a purple background.]]
 
 Illustration of Astro and Agentforce for Salesforce Suites with AI on a purple background.
 
-[![[assets/attachments/timeseries/AdobeStock_99592236.jpg]]](https://www.salesforce.com/blog/conversational-email-strategies/)
+[![[raw/assets/attachments/timeseries/AdobeStock_99592236.jpg]]](https://www.salesforce.com/blog/conversational-email-strategies/)
 
-![[assets/attachments/timeseries/subscribe-cloud.png]]
+![[raw/assets/attachments/timeseries/subscribe-cloud.png]]
 
 Get the latest articles in your inbox.

@@ -62,9 +62,9 @@ This release comes with open-source models integrated into transformers, [a demo
 
 | Input Image | Input Prompt | Answer |
 | --- | --- | --- |
-| ![[assets/attachments/computer-vision/wat_arun.jpg]] | **I'm planning a visit to this temple, give me travel tips.** | The Grand Palace is the most famous landmark in Bangkok and it's worth visiting for its stunning architecture and history. Here are some of our favorite things about the palace:  **The Main Building:** Located at the center of the complex, the main building features intricate tile work with traditional Thai motifs that cover every inch of the structure. This includes patterns such as dragons, mythical creatures, flowers, and geometric shapes. The roofline has an elaborate design featuring multiple layers of tiles adorned with gold accents.  **Towers & Spires:** There are several towers within the Grand Palace including the Phra Nakhon Si Ayutthaya National Museum Tower which houses exhibits on Thai culture and heritage. Another notable tower is the Wat Yai Chai Mongkol Tower where you can find beautiful murals depicting scenes from Buddhist mythology.  **Architecture Style:** The architectural style combines elements of Hindu and Khmer styles seen commonly throughout Southeast Asia. You'll notice influences like stupas (dome-shaped structures), lotus flower carvings, and ornate details typical of these regions' religious buildings.  **Visitor Experience:** While exploring the Grand Palace, visitors should be aware of certain rules due to security measures taken by authorities. These include no photography inside certain areas or using flashbulbs outside. Additionally, there may be queues during peak tourist seasons so plan accordingly if you're traveling here.  ### Travel Tips For Visiting The Grand Palace:  - **Best Time To Visit**: The best time to visit would likely be early morning before sunrise when temperatures drop significantly making walking around easier. - **Transportation**: Public transportation options exist but they might not provide direct access to the Grand Palace itself; consider taking a taxi instead. - **Food Options**: There aren't many dining facilities available near the Grand Palace yet local street food vendors do offer delicious meals nearby. - **Clothing Guidelines**: While not mandatory, wearing traditional Thai clothing (sarongs) could add cultural immersion experience. However, shorts/trousers are allowed provided they don't go below knee level. - **Safety Measures**: Visitors must follow signs indicating restricted zones marked "No Photography" among others. Always carry identification documents just in case.  By following these guidelines, your trip will undoubtedly enhance both your understanding of Thailand’s rich historical tapestry and personal enjoyment! |
-| ![[assets/attachments/computer-vision/weather_events.png]] | **Where do the severe droughts happen according to this diagram?** | The severe droughts are happening in eastern and southern Africa. |
-| ![[assets/attachments/computer-vision/invoice.png]] | **What is the due date and the invoice date?** | The due date is 26/02/2019, and the invoice date is 11/02/2019. |
+| <!-- missing attachment --> | **I'm planning a visit to this temple, give me travel tips.** | The Grand Palace is the most famous landmark in Bangkok and it's worth visiting for its stunning architecture and history. Here are some of our favorite things about the palace:  **The Main Building:** Located at the center of the complex, the main building features intricate tile work with traditional Thai motifs that cover every inch of the structure. This includes patterns such as dragons, mythical creatures, flowers, and geometric shapes. The roofline has an elaborate design featuring multiple layers of tiles adorned with gold accents.  **Towers & Spires:** There are several towers within the Grand Palace including the Phra Nakhon Si Ayutthaya National Museum Tower which houses exhibits on Thai culture and heritage. Another notable tower is the Wat Yai Chai Mongkol Tower where you can find beautiful murals depicting scenes from Buddhist mythology.  **Architecture Style:** The architectural style combines elements of Hindu and Khmer styles seen commonly throughout Southeast Asia. You'll notice influences like stupas (dome-shaped structures), lotus flower carvings, and ornate details typical of these regions' religious buildings.  **Visitor Experience:** While exploring the Grand Palace, visitors should be aware of certain rules due to security measures taken by authorities. These include no photography inside certain areas or using flashbulbs outside. Additionally, there may be queues during peak tourist seasons so plan accordingly if you're traveling here.  ### Travel Tips For Visiting The Grand Palace:  - **Best Time To Visit**: The best time to visit would likely be early morning before sunrise when temperatures drop significantly making walking around easier. - **Transportation**: Public transportation options exist but they might not provide direct access to the Grand Palace itself; consider taking a taxi instead. - **Food Options**: There aren't many dining facilities available near the Grand Palace yet local street food vendors do offer delicious meals nearby. - **Clothing Guidelines**: While not mandatory, wearing traditional Thai clothing (sarongs) could add cultural immersion experience. However, shorts/trousers are allowed provided they don't go below knee level. - **Safety Measures**: Visitors must follow signs indicating restricted zones marked "No Photography" among others. Always carry identification documents just in case.  By following these guidelines, your trip will undoubtedly enhance both your understanding of Thailand’s rich historical tapestry and personal enjoyment! |
+| ![[raw/assets/attachments/computervision/weather_events.png]] | **Where do the severe droughts happen according to this diagram?** | The severe droughts are happening in eastern and southern Africa. |
+| ![[raw/assets/attachments/computervision/invoice.png]] | **What is the due date and the invoice date?** | The due date is 26/02/2019, and the invoice date is 11/02/2019. |
 
 ## Architecture
 
@@ -278,7 +278,7 @@ Hot
 
 ## [SmolVLM2: Bringing Video Understanding to Every Device](https://huggingface.co/blog/smolvlm2)
 
-- ![[assets/attachments/computer-vision/W5chvk17Zol6-2QSWkFVR.jpeg]]
+- <!-- missing attachment -->
 - +3
 
 orrzohar, et. al.
@@ -291,9 +291,9 @@ multimodalon-devicellm
 
 ## [Llama can now see and run on your device - welcome Llama 3.2](https://huggingface.co/blog/llama32)
 
-- ![[assets/attachments/computer-vision/1624629516652-5ff5d596f244529b3ec0fb89.png]]
-- ![[assets/attachments/computer-vision/w6hr-DEQot4VVkoyRIBiy.png]]
-- ![[assets/attachments/computer-vision/1655385361868-61b85ce86eb1f2c5e6233736.jpeg]]
+- <!-- missing attachment -->
+- <!-- missing attachment -->
+- <!-- missing attachment -->
 - +3
 
 merve, et. al.

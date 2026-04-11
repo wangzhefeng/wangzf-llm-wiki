@@ -15,7 +15,7 @@ tags:
   - "clippings"
 ---
 
-[![[assets/attachments/timeseries/Image 3.svg]]](https://camo.githubusercontent.com/b3c638ce41cbff7d65a4e44e6ed98afec7d3d00945e6f7a7445489c51eef5e5f/68747470733a2f2f74732e676c756f6e2e61692f6465762f5f7374617469632f676c756f6e74732e737667)
+[![[raw/assets/attachments/timeseries/Image 3.svg]]](https://camo.githubusercontent.com/b3c638ce41cbff7d65a4e44e6ed98afec7d3d00945e6f7a7445489c51eef5e5f/68747470733a2f2f74732e676c756f6e2e61692f6465762f5f7374617469632f676c756f6e74732e737667)
 
 ## GluonTS - Probabilistic Time Series Modeling in Python
 

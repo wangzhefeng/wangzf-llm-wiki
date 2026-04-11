@@ -2,11 +2,18 @@
 
 `wiki/` 只放由 `raw/` 编译出来的结构化知识页，不放原始资料。
 
+建议把 `wiki/index.md` 作为“日常入口”，把 `wiki/schema.md` 作为“规则入口”：
+
+- `wiki/index.md`
+- `wiki/schema.md`
+- `wiki/log.md`
+
 目录职责：
 
 - `sources/`：每个来源的一页摘要卡
 - `indexes/`：主题索引、阅读地图、问题地图
 - `concepts/`：概念、方法、人物、工具等条目
+  - 其他（按需启用）：`entities/`、`queries/`、`comparisons/`
 
 当前组织方式：
 
@@ -34,3 +41,12 @@
 - 全库维护入口：[[知识库健康检查清单]]
 - 时间序列主题入口：[[时间序列预测总索引]]
 - 运筹优化主题入口：[[运筹优化算法总索引]]
+
+本层子目录说明：
+
+- `wiki/sources/README.md`
+- `wiki/indexes/README.md`
+- `wiki/concepts/README.md`
+- `wiki/entities/README.md`
+- `wiki/queries/README.md`
+- `wiki/comparisons/README.md`

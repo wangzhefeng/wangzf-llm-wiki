@@ -39,7 +39,7 @@ Now, we can generate synthetic datasets from scratch, it is always better to pro
 
 Let’s discuss the EXACT pipeline we use to generate high-quality synthetic datasets.
 
-![[assets/attachments/llm/645f77cd5e4b02b72cd112f9_33e6e0c1.jpg]]
+![[raw/assets/attachments/llm/645f77cd5e4b02b72cd112f9_33e6e0c1.jpg]]
 
 ### Extracting properties from provided examples
 
@@ -49,9 +49,9 @@ The goal of this step is to generate and understand the key properties of the pr
 
 Here’s an example of how to do this:
 
-![[assets/attachments/llm/645f7640c1cf8ec3f58d1d0e_7f2769e3.jpg]]
+![[raw/assets/attachments/llm/645f7640c1cf8ec3f58d1d0e_7f2769e3.jpg]]
 
-![[assets/attachments/llm/645f763e885c34030d6a52a2_09a2a670.jpg]]
+![[raw/assets/attachments/llm/645f763e885c34030d6a52a2_09a2a670.jpg]]
 
 ### Generating the dataset
 
@@ -67,7 +67,7 @@ You can of course tweak these parameters according to your needs.
 
 Here’s the prompt to use for this step:
 
-![[assets/attachments/llm/645f766e4f8e6541f3528f15_fa176408.jpg]]
+![[raw/assets/attachments/llm/645f766e4f8e6541f3528f15_fa176408.jpg]]
 
 `  * Goal is to generate difficult to read and complicated sentences and paraphrase them so they are easy to read and more clear. Use difficult and complicated words in the difficult sentences, and easier to understand words in the paraphrased sentences. The easy to read sentences must be easy to understand, short, should use easy words, and should be on a 5th-grade reading level.         Here’s an example of such a pair:[{“difficult”:“The new legislation, which was passed by a majority of the members of the legislature, will result in a drastic reduction of the number of individuals who are eligible for certain government benefits.”,“easy”:“The lawmakers voted to pass a law that will make it so fewer people can get help from the government.”}]         Some VERY important things:Do not change the meaning of the sentences. Try to only change a few words, and use easier synonyms.Do not change the sentence a lot.Use heavy jargon and very complicated words in difficult sentences.Use easy words in the easy sentences.Difficult sentences should be difficult to parse and follow.Use a formal tone in both sentences. Formal words.All sentences should be very different from each other.         Important: Sentences must be long and complicatedTopic: legal jargon. Talk about different topics within the given topic.         JSON with 5 pairs, varying sentences:  *  `
 
@@ -77,7 +77,7 @@ The prompts are changed to compress the information from the first output, initi
 
 Here’s an example output of the above prompt with the topic set to *business administration*:
 
-![[assets/attachments/llm/645f764d159a448158e297d7_88411663.jpg]]
+![[raw/assets/attachments/llm/645f764d159a448158e297d7_88411663.jpg]]
 
 ### Postprocessing and storing
 
@@ -85,7 +85,7 @@ Once we have the prompts ready, we can tie everything together and start generat
 
 For this tutorial, we will take the output JSON from GPT3, parse it using python and store it inside a pandas dataframe. After that, we can store it as a CSV.
 
-![[assets/attachments/llm/645f78763a0d8e2c7a306133_bba7e9fe.jpg]]
+![[raw/assets/attachments/llm/645f78763a0d8e2c7a306133_bba7e9fe.jpg]]
 
 ## Generating a Synthetic Dataset of Rephrased Sentences
 
@@ -97,7 +97,7 @@ Now we write a python function that calls the GPT APIs and generates the dataset
 
 Here’s the code:
 
-![[assets/attachments/llm/645f78888d05c01821cdca61_238d3efc.jpg]]
+![[raw/assets/attachments/llm/645f78888d05c01821cdca61_238d3efc.jpg]]
 
 In this code, we first load the openai module which allows us to call the GPT APIs, then we load the *OPENAI\_KEY* and set it as the API key to authenticate our requests to OpenAI's GPT service.
 
@@ -111,13 +111,13 @@ Then, we call the *openai.Completion.create()* method to generate the sentence p
 
 Once we have the code to generate the sentences, we can write a loop that will generate them in the context of a specific topic.
 
-![[assets/attachments/llm/645f7648c147b29d6a0fb455_cee3d730.jpg]]
+![[raw/assets/attachments/llm/645f7648c147b29d6a0fb455_cee3d730.jpg]]
 
 In this bit of code, we are looping through our list of *topics* and calling the *infer\_gpt* for the pased amount of times every single topic in the list.
 
 Once done, we will have all the data in the *df\_gpt* variable. We can dump that data into a CSV:
 
-![[assets/attachments/llm/645f78a3159a448158e45320_6088aca1.jpg]]
+![[raw/assets/attachments/llm/645f78a3159a448158e45320_6088aca1.jpg]]
 
 You can access the data we generated [here](https://docs.google.com/spreadsheets/d/1TN0Cal-3QnblKIQwGi0hZdm88MW--DwkwkGV3OE5thI/edit?usp=sharing).
 

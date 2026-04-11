@@ -39,7 +39,7 @@ Not only the mean or quantiles, you can get any statistical predictions with a s
 
 We propose **TimeFlow Loss** to predict next-patch’s distribution, allowing Transformers to be trained **without discrete tokenization** and make **non-deterministic predictions**.
 
-[![[assets/attachments/timeseries/compare 1.png]]](https://github.com/thuml/Sundial/blob/main/figures/compare.png)
+[![[raw/assets/attachments/timeseries/compare 1.png]]](https://github.com/thuml/Sundial/blob/main/figures/compare.png)
 
 ## Quickstart
 
@@ -87,7 +87,7 @@ More examples of predicting quantiles or confidence intervals are provided in th
 
 ## Architecture
 
-[![[assets/attachments/timeseries/arch 1.png]]](https://github.com/thuml/Sundial/blob/main/figures/arch.png)
+[![[raw/assets/attachments/timeseries/arch 1.png]]](https://github.com/thuml/Sundial/blob/main/figures/arch.png)
 
 > Intuitively, Sundial can be viewed as an **ARMA** model (Auto-Regression and Moving-Average). Transformer learns auto-regressive token representations. Conditioned on them, TimeFlow transforms random noises into non-deterministic predictions.
 
@@ -95,7 +95,7 @@ More examples of predicting quantiles or confidence intervals are provided in th
 
 We have currently built three different sizes of Sundial. Model configurations are provided here:
 
-[![[assets/attachments/timeseries/config 1.png]]](https://github.com/thuml/Sundial/blob/main/figures/config.png)
+[![[raw/assets/attachments/timeseries/config 1.png]]](https://github.com/thuml/Sundial/blob/main/figures/config.png)
 
 ## Evaluation
 

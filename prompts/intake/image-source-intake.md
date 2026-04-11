@@ -2,7 +2,7 @@
 
 执行约束：
 - 原始图像统一进入 `raw/images/` 或已有附件目录
-- 高价值图像应复制到 `assets/attachments/<topic-slug>/<image-slug>/`
+- 高价值图像应复制到 `raw/assets/attachments/<topic-slug>/<image-slug>/`
 - 不把图片当成独立概念页
 - 重点是让图片可追溯、可引用、可回链
 
@@ -22,7 +22,7 @@
      - 为什么值得保留
      - 适合挂到哪些来源卡、概念页或输出里
 
-2. 把图片本地化到 `assets/attachments/` 下的稳定路径
+2. 把图片本地化到 `raw/assets/attachments/` 下的稳定路径
 
 3. 在 `wiki/sources/<topic>/` 中创建或更新来源卡
    - 至少回答：

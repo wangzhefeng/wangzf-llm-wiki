@@ -8,6 +8,10 @@ categories:
   - computer-vision
 tags:
   - model
+source_type: local_note
+created_at: 2023-04-29
+topics:
+  - computer-vision
 ---
 
 <style>

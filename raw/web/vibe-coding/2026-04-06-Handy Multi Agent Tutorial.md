@@ -60,7 +60,7 @@ topics:
 
 扫描下方二维码关注公众号：CAMEL-AI
 
-![[assets/attachments/llm/ED5GPU1dRNqBk9j.png]]
+![[raw/assets/attachments/llm/ED5GPU1dRNqBk9j.png]]
 
 ## LICENSE
 

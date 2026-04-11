@@ -17,7 +17,7 @@ tags:
   - "clippings"
 ---
 
-![[assets/attachments/timeseries/v2-d6d99355b514bb7fe34d7ecfc5c9e35e_1440w.jpg]]
+![[raw/assets/attachments/timeseries/v2-d6d99355b514bb7fe34d7ecfc5c9e35e_1440w.jpg]]
 
 ### 1\. 引言
 
@@ -51,7 +51,7 @@ Kolmogorov-Arnold表示定理指出，任何多变量连续函数都可以表示
 
 现实世界中的时间序列通常包含各种潜在模式。为了利用不同模式的特征，最近的方法倾向于将序列分解为多个子成分，包括趋势-季节分解、多尺度分解和多周期分解。例如，DLinear使用移动平均来解耦季节性和趋势性成分，SCINet使用分层下采样树来迭代提取和交换多个时间分辨率的信息，TimeMixer遵循从细到粗的原则，将序列分解为不同时间跨度的多个尺度，并进一步将每个尺度分解为季节性和周期性成分。TimesNet和PDF利用傅里叶周期分析，根据计算出的周期将序列解耦为多个子周期序列。受这些工作的启发，本文提出了一种新颖的分解-学习-混合架构，从多频率角度审视时间序列，以准确建模时间序列中的复杂模式。
 
-![[assets/attachments/timeseries/v2-e4c1ad79e2610a706ac027eaa7a0e21e_1440w.jpg]]
+![[raw/assets/attachments/timeseries/v2-e4c1ad79e2610a706ac027eaa7a0e21e_1440w.jpg]]
 
 ### 3\. TimeKAN
 
@@ -99,7 +99,7 @@ M-KAN 块的最终输出是多阶 KAN 和深度卷积输出的总和。
 
 由于采用变量独立策略，我们还需要将所有变量的预测结果堆叠在一起，以获得最终的多变量预测 。
 
-![[assets/attachments/timeseries/v2-3c79c0fe47b3708be31eba33609c8762_1440w.jpg]]
+![[raw/assets/attachments/timeseries/v2-3c79c0fe47b3708be31eba33609c8762_1440w.jpg]]
 
 ### 4\. 实验
 
@@ -107,7 +107,7 @@ M-KAN 块的最终输出是多阶 KAN 和深度卷积输出的总和。
 
 实验结果表明，TimeKAN 在所有数据集中均表现出卓越的预测性能，除了 Electricity 数据集，其中 iTransformer 取得了最佳结果。这是由于 iTransformer 使用了通道级自注意力机制来对变量间依赖关系进行建模，这对于像 Electricity 这样高维的数据集特别有效。此外，TimeKAN 和 TimeMixer 在长期预测任务中均表现一致良好，这展示了精心设计的时序分解架构在准确预测方面的通用性。与其他最先进的方法相比，TimeKAN 引入了新颖的分解-学习-混合框架，将多阶 KAN 的特性与这种分层架构紧密集成，使其在广泛的长期预测任务中表现出色。
 
-![[assets/attachments/timeseries/v2-2794b10c3bdc6e79f75d0c44196a5b37_1440w.jpg]]
+![[raw/assets/attachments/timeseries/v2-2794b10c3bdc6e79f75d0c44196a5b37_1440w.jpg]]
 
 ### 4.2 消融研究
 
@@ -117,11 +117,11 @@ M-KAN 块的最终输出是多阶 KAN 和深度卷积输出的总和。
 
 多阶 KAN我们设计了以下模块来研究多阶 KAN 的有效性：(1) MLPs，这意味着使用 MLP 替换每个 KAN；(2) 固定低阶 KAN，这意味着在每个频率级别使用阶数为 2 的 KAN；(3) 固定高阶 KAN，这意味着在每个频率级别使用阶数为 5 的 KAN。比较结果如表 3 所示。总体而言，多阶 KAN 取得了最佳性能。与 MLPs 相比，多阶 KAN 的表现明显更好，这表明精心设计的 KAN 比 MLPs 具有更强的表示能力，是 MLPs 的有力替代品。低阶 KAN 和高阶 KAN 的表现均不如多阶 KAN，这表明我们逐步增加 KAN 阶数的选择是有效的，以适应不同频率成分的表示。因此，KAN 的可学习函数确实是一把双刃剑；要获得满意的结果，需要为特定任务选择适当的功能复杂性水平。
 
-![[assets/attachments/timeseries/v2-8807587eb466b15712b6bb7c759c50ba_1440w.jpg]]
+![[raw/assets/attachments/timeseries/v2-8807587eb466b15712b6bb7c759c50ba_1440w.jpg]]
 
 深度卷积为了评估深度卷积的有效性，我们用以下选择替换它：(1) 无深度卷积；(2) 标准卷积；(3) 多头自注意力。结果如表 4 所示。总体而言，深度卷积是最佳选择。我们清楚地观察到，移除深度卷积或将其替换为多头自注意力会导致性能显著下降，这突出了使用卷积来学习时序依赖性的有效性。当深度卷积被标准卷积替换时，大多数指标都有所下降，这意味着关注单独提取时序依赖性而不受通道间关系干扰是合理的。
 
-![[assets/attachments/timeseries/v2-1dcc6919c3b845488ea18290465d77b3_1440w.jpg]]
+![[raw/assets/attachments/timeseries/v2-1dcc6919c3b845488ea18290465d77b3_1440w.jpg]]
 
 ### 5\. 结论
 
@@ -129,7 +129,7 @@ M-KAN 块的最终输出是多阶 KAN 和深度卷积输出的总和。
 
 完整代码见星球，加入QuantML星球，与750+专业人士一起交流学习：
 
-![[assets/attachments/timeseries/v2-c54040ac633768c401cdd8395d270532_1440w.jpg]]
+![[raw/assets/attachments/timeseries/v2-c54040ac633768c401cdd8395d270532_1440w.jpg]]
 
 往期回顾
 

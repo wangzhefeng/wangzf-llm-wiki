@@ -20,7 +20,7 @@ topics:
 
 [Deutsch](https://zdoc.app/de/shiyu-coder/Kronos) | [Español](https://zdoc.app/es/shiyu-coder/Kronos) | [Français](https://zdoc.app/fr/shiyu-coder/Kronos) | [日本語](https://zdoc.app/ja/shiyu-coder/Kronos) | [한국어](https://zdoc.app/ko/shiyu-coder/Kronos) | [Português](https://zdoc.app/pt/shiyu-coder/Kronos) | [Русский](https://zdoc.app/ru/shiyu-coder/Kronos) | [中文](https://zdoc.app/zh/shiyu-coder/Kronos)
 
-[![[assets/attachments/uncategorized/logo 3.png]]](https://github.com/shiyu-coder/Kronos/blob/master/figures/logo.png)
+[![[raw/assets/attachments/llm/logo 3.png]]](https://github.com/shiyu-coder/Kronos/blob/master/figures/logo.png)
 
 > Kronos is the **first open-source foundation model** for financial candlesticks (K-lines), trained on data from over **45 global exchanges**.
 
@@ -37,7 +37,7 @@ topics:
 1. A specialized tokenizer first quantizes continuous, multi-dimensional K-line data (OHLCV) into **hierarchical discrete tokens**.
 2. A large, autoregressive Transformer is then pre-trained on these tokens, enabling it to serve as a unified model for diverse quantitative tasks.
 
-[![[assets/attachments/uncategorized/overview.png]]](https://github.com/shiyu-coder/Kronos/blob/master/figures/overview.png)
+[![[raw/assets/attachments/llm/overview.png]]](https://github.com/shiyu-coder/Kronos/blob/master/figures/overview.png)
 
 ## ✨ Live Demo
 
