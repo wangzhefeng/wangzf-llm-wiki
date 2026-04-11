@@ -5,3 +5,8 @@
 pyproject.toml
 uv.lock
 .obsidian/
+raw/repos/Time-Series-Library/
+raw/repos/tsproj_ml/
+raw/repos/tsproj_dl/
+raw/repos/tsproj_stat/
+raw/repos/tsproj_ltsfm/

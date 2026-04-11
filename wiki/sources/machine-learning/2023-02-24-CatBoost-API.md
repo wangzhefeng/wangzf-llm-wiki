@@ -1,6 +1,6 @@
 ---
 source_type: local_note
-source_path: raw/localnotes/machine-learning/supervised/ensemble/catboost/2023-02-24-ml-gbm-catboost-api/index.md
+source_path: raw/local-notes/machine-learning/supervised/ensemble/catboost/2023-02-24-ml-gbm-catboost-api/index.md
 title: CatBoost API
 author: wangzf
 published_at: 2023-02-24
@@ -19,7 +19,7 @@ status: summarized
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/localnotes/machine-learning/supervised/ensemble/catboost/2023-02-24-ml-gbm-catboost-api/index.md]]
+- 原文：[[raw/local-notes/machine-learning/supervised/ensemble/catboost/2023-02-24-ml-gbm-catboost-api/index.md]]
 这份材料围绕 CatBoost 的参数体系、核心数据结构与 Learning API 展开，偏向工程使用层。
 
 ## 价值是什么

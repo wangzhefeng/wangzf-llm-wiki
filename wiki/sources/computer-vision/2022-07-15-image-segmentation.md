@@ -1,6 +1,6 @@
 ---
 source_type: local_note
-source_path: raw/localnotes/computer-vision/image-segmentation/2022-07-15-image-segmentation/index.md
+source_path: raw/local-notes/computer-vision/image-segmentation/2022-07-15-image-segmentation/index.md
 title: 2022-07-15-image-segmentation
 author: wangzf
 published_at: 2022-07-15
@@ -17,7 +17,7 @@ status: summarized
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/localnotes/computer-vision/image-segmentation/2022-07-15-image-segmentation/index.md]]
+- 原文：[[raw/local-notes/computer-vision/image-segmentation/2022-07-15-image-segmentation/index.md]]
 ---
 
 ## 价值是什么

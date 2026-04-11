@@ -1,6 +1,6 @@
 ---
 source_type: local_note
-source_path: raw/localnotes/computer-vision/cnn/cnn-models/2023-03-23-cnn-alexnet/index.md
+source_path: raw/local-notes/computer-vision/cnn/cnn-models/2023-03-23-cnn-alexnet/index.md
 title: 2023-03-23-cnn-alexnet
 author: wangzf
 published_at: 2023-03-23
@@ -18,7 +18,7 @@ status: summarized
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/localnotes/computer-vision/cnn/cnn-models/2023-03-23-cnn-alexnet/index.md]]
+- 原文：[[raw/local-notes/computer-vision/cnn/cnn-models/2023-03-23-cnn-alexnet/index.md]]
 ---
 
 ## 价值是什么

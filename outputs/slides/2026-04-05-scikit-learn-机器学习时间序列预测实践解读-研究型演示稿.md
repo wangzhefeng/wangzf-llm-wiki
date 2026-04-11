@@ -3,7 +3,7 @@ marp: true
 theme: default
 paginate: true
 size: 16:9
-footer: "wangzf_kb · 研究型演示稿 · 2026-04-05"
+footer: "wangzf-llm-wiki · 研究型演示稿 · 2026-04-05"
 style: |
   section {
     background: linear-gradient(180deg, #f8fafc 0%, #fffdf8 100%);

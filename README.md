@@ -46,15 +46,15 @@
 
 - [大语言模型总索引](wiki/indexes/llm/大语言模型总索引.md)
 - [时间序列预测总索引](wiki/indexes/timeseries/时间序列预测总索引.md)
-- [运筹优化算法总索引](wiki/indexes/operationsresearch/运筹优化算法总索引.md)
-- [机器学习总索引](wiki/indexes/machinelearning/机器学习总索引.md)
-- [数据分析总索引](wiki/indexes/analysis/数据分析总索引.md)
-- [深度学习总索引](wiki/indexes/deeplearning/深度学习总索引.md)
-- [计算机视觉总索引](wiki/indexes/computervision/计算机视觉总索引.md)
-- [强化学习总索引](wiki/indexes/reinforcementlearning/强化学习总索引.md)
-- [控制算法总索引](wiki/indexes/control_algorithms/控制算法总索引.md)
+- [运筹优化算法总索引](wiki/indexes/operations-research/运筹优化算法总索引.md)
+- [机器学习总索引](wiki/indexes/machine-learning/机器学习总索引.md)
+- [数据分析总索引](wiki/indexes/data-analysis/数据分析总索引.md)
+- [深度学习总索引](wiki/indexes/deep-learning/深度学习总索引.md)
+- [计算机视觉总索引](wiki/indexes/computer-vision/计算机视觉总索引.md)
+- [强化学习总索引](wiki/indexes/reinforcement-learning/强化学习总索引.md)
+- [控制算法总索引](wiki/indexes/control-algorithms/控制算法总索引.md)
 - [电力市场交易总索引](wiki/indexes/power-market-trading/电力市场交易总索引.md)
-- [Vibe Coding总索引](wiki/indexes/vibe-coding/Vibe Coding总索引.md)
+- [Vibe Coding总索引](wiki/indexes/vibe-coding/Vibe-Coding总索引.md)
 
 ## 标准工作顺序
 
@@ -76,10 +76,10 @@
 
 ## 线程沉淀
 
-需要把历史线程经验回流时，使用 `raw/codex_threads/`：
+需要把历史线程经验回流时，使用 `raw/codex-threads/`：
 
-- [使用说明](raw/codex_threads/README.md)
-- [线程总结模板](raw/codex_threads/线程总结模板.md)
+- [使用说明](raw/codex-threads/README.md)
+- [线程总结模板](raw/codex-threads/线程总结模板.md)
 
 ## 仓库元信息
 

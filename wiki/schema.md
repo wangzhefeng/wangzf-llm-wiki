@@ -97,7 +97,8 @@ sources:
 
 每次会话建议先读：
 
-1. `wiki/schema.md`
-2. `wiki/index.md`
-3. `wiki/log.md`（最近 20~30 行）
-4. 任务相关主题总索引（`wiki/indexes/*/`）
+1. `wiki/purpose.md`（目标与意图）
+2. `wiki/schema.md`（结构规则）
+3. `wiki/index.md`（导航入口）
+4. `wiki/log.md`（最近 20~30 行）
+5. 任务相关主题总索引（`wiki/indexes/*/`）

@@ -7,8 +7,8 @@ WIKI_ROOT = ROOT / "wiki"
 
 # 映射表：错误的链接目标 -> 正确的路径
 LINK_MAPPINGS = {
-    # 修复 raw/localnotes/analysis/ -> raw/localnotes/data-analysis/
-    "raw/localnotes/analysis/": "raw/localnotes/data-analysis/",
+    # 修复 raw/local-notes/analysis/ -> raw/local-notes/data-analysis/
+    "raw/local-notes/analysis/": "raw/local-notes/data-analysis/",
     # 修复其他可能的错误
     "raw/web/tools/": "raw/web/programming-tools/",  # 检查这个映射
     "raw/web/llm/": "raw/web/llm-pre-training/",  # llm可能指向llm-pre-training

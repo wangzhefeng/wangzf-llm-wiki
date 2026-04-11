@@ -8,18 +8,18 @@ WIKI_ROOT = ROOT / "wiki"
 # 映射表：错误的链接目标 -> 正确的路径
 # 注意：这里处理的是wikilink中的目标
 LINK_MAPPINGS = {
-    # 修复 local-notes -> localnotes
-    "raw/local-notes/": "raw/localnotes/",
+    # 修复 local-notes -> local-notes
+    "raw/local-notes/": "raw/local-notes/",
     # 修复主题目录命名
-    "raw/localnotes/cv/": "raw/localnotes/computer-vision/",
-    "raw/localnotes/deeplearning/": "raw/localnotes/deep-learning/",
-    "raw/localnotes/machinelearning/": "raw/localnotes/machine-learning/",
-    "raw/localnotes/operationsresearch/": "raw/localnotes/operations-research/",
-    "raw/localnotes/reinforcementlearning/": "raw/localnotes/reinforcement-learning/",
-    "raw/localnotes/datastructurealgorithm/": "raw/localnotes/data-structure-algorithm/",
-    "raw/localnotes/controlalgorithms/": "raw/localnotes/control-algorithms/",
-    "raw/localnotes/computervision/": "raw/localnotes/computer-vision/",
-    "raw/localnotes/dataanalysis/": "raw/localnotes/data-analysis/",
+    "raw/local-notes/cv/": "raw/local-notes/computer-vision/",
+    "raw/local-notes/deeplearning/": "raw/local-notes/deep-learning/",
+    "raw/local-notes/machinelearning/": "raw/local-notes/machine-learning/",
+    "raw/local-notes/operationsresearch/": "raw/local-notes/operations-research/",
+    "raw/local-notes/reinforcementlearning/": "raw/local-notes/reinforcement-learning/",
+    "raw/local-notes/datastructurealgorithm/": "raw/local-notes/data-structure-algorithm/",
+    "raw/local-notes/controlalgorithms/": "raw/local-notes/control-algorithms/",
+    "raw/local-notes/computer-vision/": "raw/local-notes/computer-vision/",
+    "raw/local-notes/dataanalysis/": "raw/local-notes/data-analysis/",
     # 处理可能缺少的.md扩展名（我们会在后面处理）
 }
 
@@ -54,8 +54,8 @@ def fix_raw_links_in_file(file_path):
                 if link.startswith(wrong):
                     link = right + link[len(wrong) :]
 
-            # 检查是否是raw/localnotes/...链接且没有.md扩展名
-            if link.startswith("raw/localnotes/") and not link.endswith(".md"):
+            # 检查是否是raw/local-notes/...链接且没有.md扩展名
+            if link.startswith("raw/local-notes/") and not link.endswith(".md"):
                 # 检查是否存在对应的.md文件
                 md_path = ROOT / (link + ".md")
                 if md_path.exists():

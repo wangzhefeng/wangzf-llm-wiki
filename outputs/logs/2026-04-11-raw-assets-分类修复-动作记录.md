@@ -53,7 +53,7 @@ status: summarized
 ## 2026-04-11 附件目录规范化（本次会话）
 
 - 将附件目录名与 wiki 主题 slug 对齐（减少长期维护成本）：
-  - `raw/assets/attachments/computer-vision/` -> `raw/assets/attachments/computervision/`
+  - `raw/assets/attachments/computer-vision/` -> `raw/assets/attachments/computer-vision/`
   - `raw/assets/attachments/machine-learning/` -> `raw/assets/attachments/machinelearning/`
   - `raw/assets/attachments/reinforcement-learning/` -> `raw/assets/attachments/reinforcementlearning/`
   - `raw/assets/attachments/control_algorithms/` -> `raw/assets/attachments/control-algorithms/`

@@ -1,6 +1,6 @@
 ---
 source_type: local_note
-source_path: raw/localnotes/data-structure-algorithm/2024-04-04-data-structure/index.md
+source_path: raw/local-notes/data-structure-algorithm/2024-04-04-data-structure/index.md
 title: 2024-04-04-data-structure
 author: wangzf
 published_at: 2024-04-04
@@ -18,7 +18,7 @@ status: summarized
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/localnotes/data-structure-algorithm/2024-04-04-data-structure/index.md]]
+- 原文：[[raw/local-notes/data-structure-algorithm/2024-04-04-data-structure/index.md]]
 - 原始标题：数据结构
 - 主题归类：数据结构
 - 来源类型：本地历史文档（local note）

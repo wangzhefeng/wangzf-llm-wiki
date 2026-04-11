@@ -1,6 +1,6 @@
 ---
 source_type: local_note
-source_path: raw/localnotes/llm/lm/2024-10-26-lm-training/index.md
+source_path: raw/local-notes/llm/lm/2024-10-26-lm-training/index.md
 title: 语言模型训练
 author: wangzf
 published_at: 2024-10-26
@@ -18,8 +18,8 @@ status: summarized
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/localnotes/llm/lm/2024-10-26-lm-training/index.md]]
-- 来源：`raw/localnotes/llm/lm/2024-10-26-lm-training/index.md`
+- 原文：[[raw/local-notes/llm/lm/2024-10-26-lm-training/index.md]]
+- 来源：`raw/local-notes/llm/lm/2024-10-26-lm-training/index.md`
 - 主题：LLM 本地知识笔记
 
 ## 价值是什么

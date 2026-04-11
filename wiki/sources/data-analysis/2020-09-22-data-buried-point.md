@@ -1,6 +1,6 @@
 ---
 source_type: local_note
-source_path: raw/localnotes/data-analysis/2020-09-22-data-buried-point/index.md
+source_path: raw/local-notes/data-analysis/2020-09-22-data-buried-point/index.md
 title: 2020-09-22-data-buried-point
 author: wangzf
 published_at: 2020-09-22
@@ -17,7 +17,7 @@ status: summarized
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/localnotes/data-analysis/2020-09-22-data-buried-point/index.md]]
+- 原文：[[raw/local-notes/data-analysis/2020-09-22-data-buried-point/index.md]]
 ---
 
 ## 价值是什么

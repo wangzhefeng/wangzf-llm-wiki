@@ -1,6 +1,6 @@
 ---
 source_type: local_note
-source_path: raw/localnotes/timeseries/timeseries-time-domain/timeseries-deeplearning/2024-09-04-paper-ts-fedformer/index.md
+source_path: raw/local-notes/timeseries/timeseries-time-domain/timeseries-deeplearning/2024-09-04-paper-ts-fedformer/index.md
 created_at: 2026-04-05
 topics:
   - 时间序列预测
@@ -15,7 +15,7 @@ status: summarized
 # FEDformer 来源摘要
 
 
-- 原文：[[raw/localnotes/timeseries/timeseries-time-domain/timeseries-deeplearning/2024-09-04-paper-ts-fedformer/index.md]]
+- 原文：[[raw/local-notes/timeseries/timeseries-time-domain/timeseries-deeplearning/2024-09-04-paper-ts-fedformer/index.md]]
 ## 材料定位
 
 这篇论文解读文档目前主要记录了 FEDformer 的论文入口、章节框架和少量模型信息，是后续继续补写的深度预测来源入口。

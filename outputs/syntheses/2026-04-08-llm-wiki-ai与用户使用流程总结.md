@@ -135,12 +135,12 @@ AI 负责：
 
 ## 当前仓库中的对应入口或文件
 
-- [README.md](/Users/wangzf/projects_ai/wangzf_kb/README.md)
-- [知识库工作台.md](/Users/wangzf/projects_ai/wangzf_kb/wiki/indexes/shared/知识库工作台.md)
-- [知识库问答与研究工作流.md](/Users/wangzf/projects_ai/wangzf_kb/wiki/indexes/shared/知识库问答与研究工作流.md)
-- [知识库问题地图.md](/Users/wangzf/projects_ai/wangzf_kb/wiki/indexes/shared/知识库问题地图.md)
-- [prompts/README.md](/Users/wangzf/projects_ai/wangzf_kb/prompts/README.md)
-- [AGENTS.md](/Users/wangzf/projects_ai/wangzf_kb/AGENTS.md)
+- [README.md](/Users/wangzf/projects_ai/wangzf-llm-wiki/README.md)
+- [知识库工作台.md](/Users/wangzf/projects_ai/wangzf-llm-wiki/wiki/indexes/shared/知识库工作台.md)
+- [知识库问答与研究工作流.md](/Users/wangzf/projects_ai/wangzf-llm-wiki/wiki/indexes/shared/知识库问答与研究工作流.md)
+- [知识库问题地图.md](/Users/wangzf/projects_ai/wangzf-llm-wiki/wiki/indexes/shared/知识库问题地图.md)
+- [prompts/README.md](/Users/wangzf/projects_ai/wangzf-llm-wiki/prompts/README.md)
+- [AGENTS.md](/Users/wangzf/projects_ai/wangzf-llm-wiki/AGENTS.md)
 
 ## 从线程证据抽出的关键经验
 

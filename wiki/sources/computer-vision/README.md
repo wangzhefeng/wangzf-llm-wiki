@@ -1,10 +1,10 @@
 ---
 created_at: 2026-04-11
-topics: [computervision, sources]
+topics: [computer-vision, sources]
 status: inbox
 ---
 
-# wiki/sources/computervision
+# wiki/sources/computer-vision
 
 本目录存放计算机视觉主题的来源摘要卡。入口建议从：[[计算机视觉总索引]]。
 

@@ -19,10 +19,10 @@ WIKILINK_RE = re.compile(
 
 
 TOPIC_DIR_MAP = {
-    "computervision": "computer-vision",
+    "computer-vision": "computer-vision",
     "machinelearning": "machine-learning",
     "reinforcementlearning": "reinforcement-learning",
-    "data_structure_algorithm": "data-structure-algorithm",
+    "data-structure-algorithm": "data-structure-algorithm",
     "data-structure-algorithm": "data-structure-algorithm",
     "control_algorithms": "control-algorithms",
     "control-algorithms": "control-algorithms",

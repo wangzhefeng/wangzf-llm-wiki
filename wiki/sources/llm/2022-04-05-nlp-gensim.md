@@ -1,6 +1,6 @@
 ---
 source_type: local_note
-source_path: raw/localnotes/nlp/nlp-libs/2022-04-05-nlp-gensim/index.md
+source_path: raw/local-notes/nlp/nlp-libs/2022-04-05-nlp-gensim/index.md
 title: NLP-gensim
 author: wangzf
 published_at: 2022-04-05
@@ -18,8 +18,8 @@ status: summarized
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/localnotes/nlp/nlp-libs/2022-04-05-nlp-gensim/index.md]]
-- 来源：`raw/localnotes/nlp/nlp-libs/2022-04-05-nlp-gensim/index.md`
+- 原文：[[raw/local-notes/nlp/nlp-libs/2022-04-05-nlp-gensim/index.md]]
+- 来源：`raw/local-notes/nlp/nlp-libs/2022-04-05-nlp-gensim/index.md`
 - 主题：NLP 本地知识笔记
 
 ## 价值是什么

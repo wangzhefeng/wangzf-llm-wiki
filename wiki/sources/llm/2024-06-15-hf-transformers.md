@@ -1,6 +1,6 @@
 ---
 source_type: local_note
-source_path: raw/localnotes/llm/llm-framework/2024-06-15-hf-transformers/index.md
+source_path: raw/local-notes/llm/llm-framework/2024-06-15-hf-transformers/index.md
 title: LLM 框架--Huggingface
 author: wangzf
 published_at: 2024-06-15
@@ -18,8 +18,8 @@ status: summarized
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/localnotes/llm/llm-framework/2024-06-15-hf-transformers/index.md]]
-- 来源：`raw/localnotes/llm/llm-framework/2024-06-15-hf-transformers/index.md`
+- 原文：[[raw/local-notes/llm/llm-framework/2024-06-15-hf-transformers/index.md]]
+- 来源：`raw/local-notes/llm/llm-framework/2024-06-15-hf-transformers/index.md`
 - 主题：LLM 本地知识笔记
 
 ## 价值是什么

@@ -1,6 +1,6 @@
 ---
 source_type: local_note
-source_path: raw/localnotes/operations-research/2026-02-09-math-model/index.md
+source_path: raw/local-notes/operations-research/2026-02-09-math-model/index.md
 title: 数学建模
 author: wangzf
 published_at: 2026-02-09
@@ -18,7 +18,7 @@ status: summarized
 ## 这份材料讲了什么
 
 - 原文：[[raw/papers/2023-05-21-how-to-read-papers/index.md]]
-- 来源：`raw/localnotes/operations-research/2026-02-09-math-model/index.md`
+- 来源：`raw/local-notes/operations-research/2026-02-09-math-model/index.md`
 - 归属主题：运筹优化
 
 ## 价值是什么

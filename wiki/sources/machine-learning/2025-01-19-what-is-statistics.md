@@ -1,6 +1,6 @@
 ---
 source_type: local_note
-source_path: raw/localnotes/post/2025-01-19-what-is-statistics/index.md
+source_path: raw/local-notes/post/2025-01-19-what-is-statistics/index.md
 title: What Is Statistics?
 author: wangzf
 published_at: 2025-01-19
@@ -18,7 +18,7 @@ status: summarized
 ## 这份材料讲了什么
 
 - 原文：[[raw/papers/2023-05-21-how-to-read-papers/index.md]]
-- 来源：`raw/localnotes/post/2025-01-19-what-is-statistics/index.md`
+- 来源：`raw/local-notes/post/2025-01-19-what-is-statistics/index.md`
 - 归属主题：机器学习
 
 ## 价值是什么

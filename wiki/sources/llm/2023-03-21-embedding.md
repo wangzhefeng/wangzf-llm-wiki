@@ -1,6 +1,6 @@
 ---
 source_type: local_note
-source_path: raw/localnotes/llm/lm/embedding/2023-03-21-embedding/index.md
+source_path: raw/local-notes/llm/lm/embedding/2023-03-21-embedding/index.md
 title: Word Embedding
 author: wangzf
 published_at: 2023-03-21
@@ -18,8 +18,8 @@ status: summarized
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/localnotes/llm/lm/embedding/2023-03-21-embedding/index.md]]
-- 来源：`raw/localnotes/llm/lm/embedding/2023-03-21-embedding/index.md`
+- 原文：[[raw/local-notes/llm/lm/embedding/2023-03-21-embedding/index.md]]
+- 来源：`raw/local-notes/llm/lm/embedding/2023-03-21-embedding/index.md`
 - 主题：LLM 本地知识笔记
 
 ## 价值是什么

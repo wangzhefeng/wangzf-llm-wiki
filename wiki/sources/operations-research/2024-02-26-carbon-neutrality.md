@@ -1,6 +1,6 @@
 ---
 source_type: local_note
-source_path: raw/localnotes/post/2024-02-26-carbon-neutrality/index.md
+source_path: raw/local-notes/post/2024-02-26-carbon-neutrality/index.md
 title: 碳中和 Carbon Neutrality
 author: wangzf
 published_at: 2024-02-26
@@ -18,7 +18,7 @@ status: summarized
 ## 这份材料讲了什么
 
 - 原文：[[raw/papers/2023-05-21-how-to-read-papers/index.md]]
-- 来源：`raw/localnotes/post/2024-02-26-carbon-neutrality/index.md`
+- 来源：`raw/local-notes/post/2024-02-26-carbon-neutrality/index.md`
 - 归属主题：运筹优化
 
 ## 价值是什么

@@ -1,6 +1,6 @@
 ---
 source_type: local_note
-source_path: raw/localnotes/post/2023-07-30-montecarlo/index.md
+source_path: raw/local-notes/post/2023-07-30-montecarlo/index.md
 title: 蒙特卡洛模拟
 author: wangzf
 published_at: 2023-07-30
@@ -17,8 +17,8 @@ status: summarized
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/localnotes/post/2023-07-30-montecarlo/index]]
-- 来源：`raw/localnotes/post/2023-07-30-montecarlo/index.md`
+- 原文：[[raw/local-notes/post/2023-07-30-montecarlo/index]]
+- 来源：`raw/local-notes/post/2023-07-30-montecarlo/index.md`
 - 归属主题：时间序列
 
 ## 价值是什么

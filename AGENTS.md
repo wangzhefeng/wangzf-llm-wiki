@@ -2,7 +2,7 @@
 
 本文件定义当前仓库的 repo 级协作约束，面向 Codex 及其他通用 AI agent。
 
-目标：让 agent 在 `wangzf_kb` 中稳定遵守 `raw -> wiki -> outputs` 的知识库工作链，而不是每次重新猜目录职责、页面角色和操作顺序。
+目标：让 agent 在 `wangzf-llm-wiki` 中稳定遵守 `raw -> wiki -> outputs` 的知识库工作链，而不是每次重新猜目录职责、页面角色和操作顺序。
 
 ## 1. 仓库目标
 

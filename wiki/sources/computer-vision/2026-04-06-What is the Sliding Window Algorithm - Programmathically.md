@@ -1,7 +1,7 @@
 ---
 created_at: 2026-04-11
 topics:
-  - computervision
+  - computer-vision
 status: inbox
 source_path: raw/web/computer-vision/2026-04-06-What is the Sliding Window Algorithm - Programmathically.md
 ---

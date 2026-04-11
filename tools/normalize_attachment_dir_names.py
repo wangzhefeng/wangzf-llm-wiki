@@ -12,10 +12,10 @@ ATT = ROOT / "raw" / "assets" / "attachments"
 
 
 DIR_RENAMES = {
-    "computer-vision": "computervision",
+    "computer-vision": "computer-vision",
     "machine-learning": "machinelearning",
     "reinforcement-learning": "reinforcementlearning",
-    "data_structure_algorithm": "data-structure-algorithm",
+    "data-structure-algorithm": "data-structure-algorithm",
     "data-structure-algorithm": "data-structure-algorithm",
     "control_algorithms": "control-algorithms",
     "control-algorithms": "control-algorithms",

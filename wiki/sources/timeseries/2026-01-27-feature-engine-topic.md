@@ -1,6 +1,6 @@
 ---
 source_type: local_note
-source_path: raw/localnotes/post/2026-01-27-feature-engine-topic/index.md
+source_path: raw/local-notes/post/2026-01-27-feature-engine-topic/index.md
 title: 特征工程相关问题
 author: wangzf
 published_at: 2026-01-27
@@ -17,8 +17,8 @@ status: summarized
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/localnotes/post/2026-01-27-feature-engine-topic/index]]
-- 来源：`raw/localnotes/post/2026-01-27-feature-engine-topic/index.md`
+- 原文：[[raw/local-notes/post/2026-01-27-feature-engine-topic/index]]
+- 来源：`raw/local-notes/post/2026-01-27-feature-engine-topic/index.md`
 - 归属主题：时间序列
 
 ## 价值是什么

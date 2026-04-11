@@ -1,6 +1,6 @@
 ---
 source_type: local_note
-source_path: raw/localnotes/deep-learning/video/2023-01-21-video-pyav/index.md
+source_path: raw/local-notes/deep-learning/video/2023-01-21-video-pyav/index.md
 title: Video pyav
 author: wangzf
 published_at: 2023-01-21
@@ -18,8 +18,8 @@ status: summarized
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/localnotes/deep-learning/video/2023-01-21-video-pyav/index.md]]
-- 来源：`raw/localnotes/deep-learning/video/2023-01-21-video-pyav/index.md`
+- 原文：[[raw/local-notes/deep-learning/video/2023-01-21-video-pyav/index.md]]
+- 来源：`raw/local-notes/deep-learning/video/2023-01-21-video-pyav/index.md`
 - 主题：Video pyav
 - 类型：本地历史笔记（deep learning）
 

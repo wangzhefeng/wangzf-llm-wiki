@@ -1,6 +1,6 @@
 ---
 source_type: local_note
-source_path: raw/localnotes/deep-learning/2022-07-15-gpu-hardware/index.md
+source_path: raw/local-notes/deep-learning/2022-07-15-gpu-hardware/index.md
 title: GPU 硬件
 author: wangzf
 published_at: 2022-07-15
@@ -18,8 +18,8 @@ status: summarized
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/localnotes/deep-learning/2022-07-15-gpu-hardware/index.md]]
-- 来源：`raw/localnotes/deep-learning/2022-07-15-gpu-hardware/index.md`
+- 原文：[[raw/local-notes/deep-learning/2022-07-15-gpu-hardware/index.md]]
+- 来源：`raw/local-notes/deep-learning/2022-07-15-gpu-hardware/index.md`
 - 主题：GPU 硬件
 - 类型：本地历史笔记（deep learning）
 

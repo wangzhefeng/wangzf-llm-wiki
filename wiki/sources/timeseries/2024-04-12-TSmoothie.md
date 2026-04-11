@@ -1,6 +1,6 @@
 ---
 source_type: local_note
-source_path: raw/localnotes/timeseries/timeseries-libs/2024-04-12-timeseries-lib-tsmoothie/index.md
+source_path: raw/local-notes/timeseries/timeseries-libs/2024-04-12-timeseries-lib-tsmoothie/index.md
 title: TSmoothie 时间序列平滑库
 author: wangzf
 published_at: 2024-04-12
@@ -18,7 +18,7 @@ status: summarized
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/localnotes/timeseries/timeseries-libs/2024-04-12-timeseries-lib-tsmoothie/index.md]]
+- 原文：[[raw/local-notes/timeseries/timeseries-libs/2024-04-12-timeseries-lib-tsmoothie/index.md]]
 TSmoothie 是一个专注于时间序列平滑和异常检测的 Python 库，覆盖：
 
 1. **平滑方法**：指数平滑、移动平均、Savitzky-Golay 等

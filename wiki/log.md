@@ -111,7 +111,7 @@ status: linked
 - 断链从 1286 减少到 46（减少 96.4%）
 - 孤页从 255 减少到 0（100% 修复）
 - Raw frontmatter 缺失从 17 减少到 0
-- 修复目录命名不一致问题：`local-notes` → `localnotes`、`programming-tools` → `tools` 等
+- 修复目录命名不一致问题：`local-notes` → `local-notes`、`programming-tools` → `tools` 等
 - 修复 330 个 `source_path` 字段和 47 个 wikilink
 - 将 `wiki/purpose.md` 链接到主导航 `wiki/index.md`
 - 创建修复总结记录：`outputs/logs/2026-04-11-知识库健康检查修复总结.md`
@@ -131,3 +131,11 @@ status: linked
 - Enhanced `tools/fix_broken_source_path_by_filename.py` to repair `index.md` directory items and ` 1.md` filename variants.
 - Backfilled placeholder raw entries for remaining missing sources so `source_path` traceability no longer points to non-existent files.
 - Verified with `python3 -m unittest tests/test_wiki_health_regressions.py`, `python3 tools/wiki_lint.py`, `python3 tools/wiki_health_check.py`.
+
+## [2026-04-11] compile | purpose.md 知识库目标文件集成
+
+- Integrated `wiki/purpose.md` into knowledge base structure as core control file
+- Updated `wiki/indexes/knowledge-base-building/知识库建设方法总索引.md` to include [[purpose]] in related structure pages
+- Updated `wiki/schema.md` Session Start section to include `wiki/purpose.md` as first reading
+- Updated `wiki/concepts/knowledge-base/知识库建设方法.md` to link to [[purpose]]
+- File now follows standard frontmatter format with topics: 知识库导航, purpose, llm-wiki

@@ -8,7 +8,7 @@ WIKI_ROOT = ROOT / "wiki"
 # 映射表：错误的链接目标 -> 正确的路径
 LINK_MAPPINGS = {
     # 修复 raw/web/ 目录命名
-    "raw/web/computervision/": "raw/web/computer-vision/",
+    "raw/web/computer-vision/": "raw/web/computer-vision/",
     "raw/web/deeplearning/": "raw/web/deep-learning/",
     "raw/web/machinelearning/": "raw/web/machine-learning/",
     "raw/web/operationsresearch/": "raw/web/operations-research/",

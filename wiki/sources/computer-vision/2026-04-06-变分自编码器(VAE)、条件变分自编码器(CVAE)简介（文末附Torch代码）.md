@@ -1,7 +1,7 @@
 ---
 created_at: 2026-04-11
 topics:
-  - computervision
+  - computer-vision
 status: inbox
 source_path: raw/web/computer-vision/2026-04-06-变分自编码器(VAE)、条件变分自编码器(CVAE)简介（文末附Torch代码）.md
 ---

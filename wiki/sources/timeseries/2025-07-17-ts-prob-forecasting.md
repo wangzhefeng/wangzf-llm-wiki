@@ -1,6 +1,6 @@
 ---
 source_type: local_note
-source_path: raw/localnotes/timeseries/timeseries-time-domain/timeseries-statistics/2025-07-17-ts-prob-forecasting/index.md
+source_path: raw/local-notes/timeseries/timeseries-time-domain/timeseries-statistics/2025-07-17-ts-prob-forecasting/index.md
 title: 时间序列概率预测
 author: wangzf
 published_at: 2025-07-17
@@ -17,8 +17,8 @@ status: summarized
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/localnotes/timeseries/timeseries-time-domain/timeseries-statistics/2025-07-17-ts-prob-forecasting/index.md]]
-- 来源：`raw/localnotes/timeseries/timeseries-time-domain/timeseries-statistics/2025-07-17-ts-prob-forecasting/index.md`
+- 原文：[[raw/local-notes/timeseries/timeseries-time-domain/timeseries-statistics/2025-07-17-ts-prob-forecasting/index.md]]
+- 来源：`raw/local-notes/timeseries/timeseries-time-domain/timeseries-statistics/2025-07-17-ts-prob-forecasting/index.md`
 - 归属主题：时间序列
 
 ## 价值是什么
