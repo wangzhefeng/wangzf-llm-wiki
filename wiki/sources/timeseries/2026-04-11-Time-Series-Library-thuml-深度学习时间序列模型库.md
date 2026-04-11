@@ -34,7 +34,10 @@ source_path: raw/repos/repo-thuml-Time-Series-Library.md
 - **models/**：模型实现目录，按论文组织代码
 - **exp/**：实验脚本，支持长期预测、零样本预测等任务
 - **scripts/**：运行脚本，方便复现论文结果
-- **data/**：数据集加载与预处理工具
+- **data_provider/**：数据集加载与预处理工具
+- **layers/**：基础神经网络层实现
+- **utils/**：工具函数库
+- **tutorial/**：教程与示例
 
 ## 使用建议
 

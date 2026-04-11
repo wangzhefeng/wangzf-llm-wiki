@@ -16,13 +16,18 @@ status: linked
 
 ## 标准入口
 
-- [[Vibe Coding总索引]]
-- [[Vibe Coding阅读地图]]
-- [[Vibe Coding来源清单]]
+- [[Vibe-Coding总索引]]
+- [[Vibe-Coding阅读地图]]
+- [[Vibe-Coding来源清单]]
 
 ## 概述
 
-本索引收口 Vibe Coding 主题，聚焦 AI Agent 工程实践、MCP、工具调用、RAG 与技能化工作流。
+本专题系统编译了 Vibe Coding 相关的多类原始资料，包括：
+- `raw/web/vibe-coding/` 中的前沿文章、工程实践、工具教程（19 篇）
+- `raw/local-notes/vibe-coding/` 中的历史文档、专题笔记、实践案例（包含 agent、claude_code、codex、mcp、rag、skills、tools 子目录）
+- 聚焦 AI Agent 工程实践、MCP、工具调用、RAG 与技能化工作流
+
+当前已完成 Vibe Coding 主题的收口。
 
 ## 来源卡片
 

@@ -1,6 +1,7 @@
 ---
 source_type: repo
 source_url: https://github.com/thuml/Time-Series-Library
+source_local_path: raw/repos/Time-Series-Library
 title: Time-Series-Library
 created_at: 2026-04-11
 topics:
@@ -35,7 +36,10 @@ status: summarized
   - `models/`：模型实现代码
   - `exp/`：实验脚本
   - `scripts/`：运行脚本
-  - `data/`：数据集处理
+  - `data_provider/`：数据集加载与预处理
+  - `layers/`：基础神经网络层
+  - `utils/`：工具函数
+  - `tutorial/`：教程与示例
 
 ## 研究价值
 

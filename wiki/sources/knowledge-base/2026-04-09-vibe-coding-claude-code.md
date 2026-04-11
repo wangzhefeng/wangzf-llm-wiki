@@ -29,5 +29,5 @@ status: summarized
 
 ## 连到哪些概念
 
-- [[Vibe Coding总索引]]
+- [[Vibe-Coding总索引]]
 - [[VibeCoding与Agent专题来源]]
