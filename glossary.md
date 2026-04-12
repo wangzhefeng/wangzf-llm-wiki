@@ -22,3 +22,4 @@
 * statistics-theory: 统计学理论
 * timeseries-analysis: 时间序列分析
 * vibe-coding: Vibe Coding
+* others: 其它
