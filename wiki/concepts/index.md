@@ -11,31 +11,32 @@ status: linked
 
 # wiki/concepts
 
-`wiki/concepts/` 存放“概念页 / 方法页 / 工具页”等稳定知识单元，用于把多个来源卡的共识沉淀成可复用的长期资产。
+`wiki/concepts/` 负责“概念沉淀层”，把多来源共识整理为长期可复用知识单元。
 
-## 放什么
+## 职责
 
-- 概念：定义、边界、关键术语、典型变体
-- 方法：适用场景、步骤、注意事项、常见坑
-- 工具：定位、使用方式、与本库工作流的对齐方式
+- 沉淀概念、方法、工具等稳定页面。
+- 明确定义边界、适用场景、关键术语与常见误区。
+- 提供可回链的知识节点，支撑问答和研究复用。
 
-## 建页门槛（建议）
+## 收录范围
 
-- 至少满足其一：
-  - 2+ 来源重复出现、需要统一解释与互链
-  - 单来源但对主题极关键、后续会反复引用
+- 概念页：定义、边界、术语、典型变体。
+- 方法页：步骤、适用条件、风险与约束。
+- 工具页：定位、能力边界、与工作流衔接方式。
 
-## 写作原则
+## 建页门槛
 
-- 以“可复用”为目标：稳定结构 + 明确入口
-- 必须能回链到至少 1 个来源卡（`wiki/sources/`）
+- 2+ 来源重复出现且需要统一解释。
+- 或单来源但对主题关键且会被反复引用。
 
-## 入口
+## 维护流程
 
-- wiki 总入口：`wiki/index.md`
-- schema 约束：`wiki/schema.md`
+1. 从来源卡抽取可复用共识。
+2. 新建或更新概念页并补充来源回链。
+3. 将入口补到主题总索引与相关概念页。
 
-## Topics
+## 主题入口
 
 - [[wiki/concepts/data-analysis/index]]
 - [[wiki/concepts/autofix/index]]
@@ -49,3 +50,8 @@ status: linked
 - [[wiki/concepts/operations-research/index]]
 - [[wiki/concepts/reinforcement-learning/index]]
 - [[wiki/concepts/timeseries/index]]
+
+## 关联入口
+
+- 总入口：[[wiki/index]]
+- 规则约束：[[wiki/schema]]

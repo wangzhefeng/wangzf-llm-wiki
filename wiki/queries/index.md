@@ -3,30 +3,6 @@ created_at: 2026-04-11
 topics:
   - wiki
   - queries
-status: inbox
----
-
-# Queries Index
-
-> 用于把高频问题固化成可复用入口（问题范围 + 证据路径 + 输出结构）。
-
-## 已沉淀
-
-- [[wiki/queries/机器学习时间序列预测-知识空白分析]]
-- [[wiki/queries/运筹优化算法-知识空白分析]]
-
-## 候选（待迁移/抽象）
-
-- `outputs/answers/2026-04-05-scikit-learn-机器学习时间序列预测实践解读.md`
-- `outputs/answers/2026-04-09-llm-timeseries-autofix-映射候选.md`
-
-## 目录说明
-
----
-created_at: 2026-04-11
-topics:
-  - wiki
-  - queries
   - llm-wiki
 related_concepts:
   - 知识库问答与研究工作流
@@ -35,18 +11,41 @@ status: linked
 
 # wiki/queries
 
-`wiki/queries/` 存放“可复用问答页 / 研究问题页”：把高频问题固化成可重复运行的查询模板（问题、范围、证据入口、输出格式）。
+`wiki/queries/` 负责“可复用问题层”，把高频问题沉淀为可重复执行的查询入口与证据路径模板。
 
-## 放什么
+## 职责
 
-- 复用价值高的问题：会反复问、或会反复扩展证据
-- 明确证据入口：指出要读哪些 `wiki/sources/`、`wiki/concepts/`、`outputs/` 入口
+- 固化可复用问题定义（范围、输入、输出结构）。
+- 明确证据入口（sources/concepts/indexes/outputs）。
+- 连接一次性输出与长期知识资产之间的迁移通道。
 
-## 不放什么
+## 收录范围
 
-- 一次性聊天式回答（默认放 `outputs/answers/`，需要复用时再迁入此处）
+- 会重复出现或需要持续追踪的问题。
+- 具备稳定证据入口与可复用输出结构的问题页。
 
-## 入口
+## 不收录范围
 
-- wiki 总入口：`wiki/index.md`
-- schema 约束：`wiki/schema.md`
+- 一次性聊天结果（默认放 `outputs/answers/`）。
+- 缺少证据路径或无法复跑的问题描述。
+
+## 维护流程
+
+1. 在 `outputs/answers/` 形成高价值问题结果。
+2. 抽象为可复用 query 页并补证据入口。
+3. 把 query 入口补到主题索引或问题地图。
+
+## 已沉淀问题
+
+- [[wiki/queries/机器学习时间序列预测-知识空白分析]]
+- [[wiki/queries/运筹优化算法-知识空白分析]]
+
+## 候选迁移
+
+- `outputs/answers/2026-04-05-scikit-learn-机器学习时间序列预测实践解读.md`
+- `outputs/answers/2026-04-09-llm-timeseries-autofix-映射候选.md`
+
+## 关联入口
+
+- 总入口：[[wiki/index]]
+- 规则约束：[[wiki/schema]]

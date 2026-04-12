@@ -23,7 +23,10 @@
 - `wiki/`：结构化知识层。
 - `wiki/sources/`：来源摘要卡，只回答“这份材料讲了什么、价值是什么、连到哪些概念”。
 - `wiki/indexes/`：主题总索引、阅读地图、问题地图、来源清单、共享工作台。
-- `wiki/concepts/`：概念页、方法页、工具页、人物页。
+- `wiki/concepts/`：概念页、方法页、工具页（不承载实体目录页）。
+- `wiki/entities/`：实体页（人物、组织、社区等多主题复用对象）。
+- `wiki/comparisons/`：对比页（2+ 对象、固定维度、可复用结论）。
+- `wiki/queries/`：可复用问题页（问题范围、证据路径、输出结构）。
 - `outputs/`：派生结果，不替代 `wiki/`。
 - `outputs/answers/`：单次问答结果。
 - `outputs/syntheses/`：阶段性综述或专题整理。
@@ -93,6 +96,20 @@ status: inbox
 
 不要跳过来源层直接写概念百科。
 
+## 6.1 控制文件契约（强约束）
+
+控制层固定为 5 个文件，职责不可混用：
+
+- `README.md`：仓库级入口（定位、结构、快速开始、主题入口、维护入口）。
+- `wiki/index.md`：wiki 唯一导航入口（控制文件、执行入口、主题入口、区域入口）。
+- `wiki/purpose.md`：目标、关键问题、范围、演进方向。
+- `wiki/schema.md`：结构、字段、命名、流程、质量约束（唯一规则源）。
+- `wiki/log.md`：append-only 操作时间线，不写说明性规范。
+
+说明：
+- `wiki/README.md` 已退场，不再作为入口。
+- 如出现规则冲突，以 `wiki/schema.md` 为准。
+
 ## 7. 四类核心操作
 
 ### ingest
@@ -112,6 +129,12 @@ status: inbox
 
 - 做知识库健康检查
 - 重点看孤页、断链、缺摘要来源、重复概念、附件缺失、输出未回流
+
+### backfill
+
+- 处理高价值输出回流（`outputs -> wiki/indexes -> wiki/concepts`）。
+- 至少补 1 个索引入口与 1 条操作记录。
+- 若结论仍是阶段性，先停在输出层，不强制写概念页。
 
 ### log
 
@@ -156,6 +179,7 @@ status: inbox
 
 - 修改前先读上下文，不凭空猜仓库结构。
 - 复杂任务至少先读：
+  - `wiki/purpose.md`
   - `README.md`
   - `wiki/index.md`
   - `wiki/schema.md`
@@ -171,16 +195,28 @@ status: inbox
 
 方法与结构入口：
 
+- `README.md`
+- `wiki/purpose.md`
 - `wiki/index.md`
 - `wiki/schema.md`
 - `wiki/indexes/knowledge-base-building/知识库建设方法总索引.md`
 - `wiki/indexes/knowledge-base-building/知识库Schema设计.md`
+
+六大核心功能目录入口：
+
+- `wiki/sources/index.md`
+- `wiki/indexes/index.md`
+- `wiki/concepts/index.md`
+- `wiki/entities/index.md`
+- `wiki/comparisons/index.md`
+- `wiki/queries/index.md`
 
 执行入口：
 
 - `wiki/indexes/knowledge-base-operations/知识库工作台.md`
 - `wiki/indexes/knowledge-base-building/知识库来源与专题摄取索引.md`
 - `wiki/indexes/knowledge-base-usage/知识库问答与研究工作流.md`
+- `wiki/indexes/knowledge-base-usage/知识库输出回流工作流.md`
 - `wiki/indexes/knowledge-base-operations/知识库维护检查索引.md`
 - `wiki/indexes/knowledge-base-usage/知识库问题地图.md`
 - `wiki/indexes/knowledge-base-operations/知识库操作记录索引.md`

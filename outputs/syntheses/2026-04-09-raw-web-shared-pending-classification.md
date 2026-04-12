@@ -145,7 +145,7 @@ status: linked
 - [[2026-04-06-宅码]] | `raw/web/uncategorized/2026-04-06-宅码.md`
 - [[2026-04-06-当代研究生应当掌握的并行训练方法（单机多卡）]] | `raw/web/uncategorized/2026-04-06-当代研究生应当掌握的并行训练方法（单机多卡）.md`
 - [[2026-04-06-掌握Shell编程，一篇就够了]] | `raw/web/uncategorized/2026-04-06-掌握Shell编程，一篇就够了.md`
-- [[2026-04-06-改进探索性数据分析的实用技巧！]] | `raw/web/uncategorized/2026-04-06-改进探索性数据分析的实用技巧！.md`
+- [[2026-04-06-改进探索性数据分析的实用技巧]] | `raw/web/uncategorized/2026-04-06-改进探索性数据分析的实用技巧.md`
 - [[2026-04-06-教程 — Optuna 2.7.0 文档]] | `raw/web/uncategorized/2026-04-06-教程 — Optuna 2.7.0 文档.md`
 - [[2026-04-06-数据缺失处理-CSDN博客]] | `raw/web/uncategorized/2026-04-06-数据缺失处理-CSDN博客.md`
 - [[2026-04-06-时空联合建模与时空可持续学习]] | `raw/web/uncategorized/2026-04-06-时空联合建模与时空可持续学习.md`

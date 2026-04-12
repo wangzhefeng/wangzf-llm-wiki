@@ -12,9 +12,11 @@ status: linked
 
 # Wiki 操作日志
 
-> 按时间顺序记录的 wiki 操作。
-> 格式：`## [YYYY-MM-DD] action | subject`
-> 动作类型：ingest（摄取）、update（更新）、query（查询）、lint（检查）、backfill（回流）、archive（归档）
+## 日志格式说明
+
+- 按时间顺序记录 wiki 操作，保持 append-only。
+- 格式：`## [YYYY-MM-DD] action | subject`
+- 动作类型：`ingest`（摄取）、`update`（更新）、`query`（查询）、`lint`（检查）、`backfill`（回流）、`archive`（归档）
 
 ## [2026-04-09] 创建 | 添加轻量级 llm-wiki 控制层
 
@@ -172,3 +174,26 @@ status: linked
 - 涵盖 28 个相关概念
 - 基于 [[运筹优化算法总索引]] 和 [[数学优化模型]]
 
+## [2026-04-12] update | 核心入口文档深度重构（控制层）
+
+- 重构 `README.md`：收敛为仓库级入口，仅保留定位、结构、快速开始、主题入口、维护入口。
+- 重构 `wiki/index.md`：作为 wiki 唯一导航入口，统一为“控制文件/执行入口/主题入口/区域入口/使用说明”。
+- 重构 `wiki/purpose.md`：收敛为目标、关键问题、范围、演进原则、更新触发条件。
+- 重构 `wiki/schema.md`：收敛为结构、字段、命名、流程、质量约束、会话启动，作为唯一规则源。
+- 删除 `wiki/README.md`，并修正 `prompts/maintenance/knowledge-base-health-check.md` 中对旧 wiki 根 README 入口的引用。
+
+## [2026-04-12] update | 六大核心功能目录 index 统一重构
+
+- 重构 `wiki/sources/index.md`：明确来源卡层职责、收录边界、维护流程与主题入口。
+- 重构 `wiki/indexes/index.md`：明确索引层职责与 outputs 回流入口职责。
+- 重构 `wiki/concepts/index.md`：明确概念沉淀门槛、维护流程与主题入口。
+- 重构 `wiki/entities/index.md`：清理双 frontmatter 拼接，统一为单入口结构并保留现有实体入口。
+- 重构 `wiki/comparisons/index.md`：清理双 frontmatter 拼接，统一对比层职责与候选方向登记。
+- 重构 `wiki/queries/index.md`：清理双 frontmatter 拼接，统一可复用问题层职责与迁移流程。
+
+## [2026-04-12] update | backfill 执行入口补齐
+
+- 新增 `wiki/indexes/knowledge-base-usage/知识库输出回流工作流.md` 作为 backfill 专用执行页。
+- 更新 `wiki/index.md` 执行入口，新增 [[知识库输出回流工作流]]。
+- 更新 `README.md`、`AGENTS.md`、`知识库工作台`、`知识库使用总索引`、`知识库任务与输出工作流索引` 的相关入口链接。
+- 更新 `知识库问答与研究工作流`，将“最小回流动作”显式连接到 backfill 专页。

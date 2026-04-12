@@ -3,35 +3,6 @@ created_at: 2026-04-11
 topics:
   - wiki
   - entities
-status: inbox
----
-
-# Entities Index
-
-> 本页用于给 `wiki/entities/` 提供稳定入口，避免实体页成为孤页。
-
-## 人物
-
-- [[wiki/entities/Sebastian Raschka]]
-- [[wiki/entities/Jason Brownlee]]
-
-## 组织 / 社区
-
-- [[wiki/entities/Datawhale]]
-- [[wiki/entities/PyTorch Contributors]]
-- [[wiki/entities/时序之心]]
-
-## 维护提示
-
-- 新增实体页后：把它补到本页 + 对应主题总索引（如 [[大语言模型总索引]]、[[机器学习总索引]]）。
-
-## 目录说明
-
----
-created_at: 2026-04-11
-topics:
-  - wiki
-  - entities
   - llm-wiki
 related_concepts:
   - 知识库Schema设计
@@ -40,19 +11,37 @@ status: linked
 
 # wiki/entities
 
-`wiki/entities/` 存放“实体页”：人物、组织、公司、产品、论文作者群、数据集发布方等可被多处引用的对象。
+`wiki/entities/` 负责“实体层”，沉淀可被多主题复用的人物、组织、社区、团队等对象。
 
-## 何时使用
+## 职责
 
-- 一个实体在多个主题/来源中重复出现，需要统一背景与引用入口
-- 需要把“实体—概念—来源”关系稳定化，便于检索与对比
+- 为反复出现的实体提供统一背景入口。
+- 维护“实体-概念-来源”之间的稳定连接。
+- 减少同一实体在不同页面的重复介绍与命名漂移。
 
-## 页面建议包含
+## 收录范围
 
-- 基本信息（简洁）
-- 关键关联：相关概念页、代表来源卡、重要时间点
+- 人物实体（作者、研究者、核心贡献者）。
+- 组织与社区实体（团队、机构、开源社区）。
+- 在多个主题或来源中反复出现的对象。
 
-## 入口
+## 不收录范围
 
-- wiki 总入口：`wiki/index.md`
-- schema 约束：`wiki/schema.md`
+- 单次提及且不具复用价值的对象。
+- 纯概念性内容（应放 `wiki/concepts/`）。
+
+## 维护流程
+
+1. 确认实体在 2+ 来源或主题中重复出现。
+2. 建立实体页并补充关联概念与来源入口。
+3. 把实体入口补到对应主题总索引。
+
+## 当前实体入口
+
+- 人物：[[wiki/entities/Sebastian Raschka]]、[[wiki/entities/Jason Brownlee]]
+- 组织/社区：[[wiki/entities/Datawhale]]、[[wiki/entities/PyTorch Contributors]]、[[wiki/entities/时序之心]]
+
+## 关联入口
+
+- 总入口：[[wiki/index]]
+- 规则约束：[[wiki/schema]]

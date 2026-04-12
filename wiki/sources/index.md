@@ -11,37 +11,33 @@ status: linked
 
 # wiki/sources
 
-`wiki/sources/` 存放“来源摘要卡”（source card），用于把 `raw/` 的单条来源压缩成可检索、可互链的结构化入口。
+`wiki/sources/` 负责“来源摘要卡层”，把 `raw/` 的单条原始资料压缩为可检索、可互链的结构化入口。
 
-## 放什么
+## 职责
 
-- 每个来源 1 张卡：回答“这份材料讲什么、价值是什么、与哪些概念相关、下一步怎么用”。
-- 卡片应尽量链接到：
-  - 对应 `raw/` 原文（或原件路径）
-  - 相关 `wiki/concepts/` 概念页
-  - 相关 `wiki/indexes/` 主题入口（必要时）
+- 每个来源 1 张卡，回答“讲了什么、价值是什么、可连到哪些概念”。
+- 每张卡至少链接到对应 `raw/` 原文路径。
+- 高价值来源卡应回链到相关 `wiki/concepts/` 或 `wiki/indexes/`。
 
-## 不放什么
+## 收录范围
 
-- 不放原始全文（原文应在 `raw/`）
-- 不放长篇综述（阶段性综述放 `outputs/syntheses/`，再回流链接）
+- `raw/web|papers|repos|datasets|images|local-notes` 的来源摘要卡。
+- 主题内附件入口页（仅在需要可达性时创建）。
 
-## 典型工作流
+## 不收录范围
 
-1. ingest：先把材料落到 `raw/`
-2. 为该来源创建/更新来源卡：写入 `wiki/sources/<topic>/...md`
-3. 如形成稳定复用价值：再回写 `wiki/indexes/`（导航）与 `wiki/concepts/`（概念）
+- 原始全文（应留在 `raw/`）。
+- 长篇综述与阶段总结（应留在 `outputs/syntheses/`）。
+- 一次性问答结果（应留在 `outputs/answers/`）。
 
-## 命名建议
+## 维护流程
 
-- 优先沿用原始来源文件名或 slug，保证可追溯。
+1. 先完成 `raw/` 入库。
+2. 创建或更新来源卡到 `wiki/sources/<topic>/`。
+3. 将来源卡入口补到对应主题索引。
+4. 如形成稳定共识，再推动概念页沉淀。
 
-## 入口
-
-- wiki 总入口：`wiki/index.md`
-- schema 约束：`wiki/schema.md`
-
-## Topics
+## 主题入口
 
 - [[wiki/sources/data-analysis/index]]
 - [[wiki/sources/computer-vision/index]]
@@ -55,3 +51,8 @@ status: linked
 - [[wiki/sources/reinforcement-learning/index]]
 - [[wiki/sources/shared/index]]
 - [[wiki/sources/timeseries/index]]
+
+## 关联入口
+
+- 总入口：[[wiki/index]]
+- 规则约束：[[wiki/schema]]

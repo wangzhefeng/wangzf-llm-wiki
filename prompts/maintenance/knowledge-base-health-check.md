@@ -46,7 +46,7 @@
 - [[知识库健康检查清单]]
 - [[README]]
 - [[raw/README]]
-- [[wiki/README]]
+- [[wiki/index]]
 - [[outputs/README]]
 
 执行流程要求：
