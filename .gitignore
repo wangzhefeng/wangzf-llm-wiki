@@ -1,11 +1,8 @@
+.agents/
 .env/
-.DS_Store
-.venv/
-.qwen/
-.python-version
-pyproject.toml
-uv.lock
 .obsidian/
+.ruff_cache/
+.DS_Store
 raw/repos/Time-Series-Library/
 raw/repos/tsproj_ml/
 raw/repos/tsproj_dl/
