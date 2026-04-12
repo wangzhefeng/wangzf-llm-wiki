@@ -1,9 +1,10 @@
 ---
 created_at: 2026-04-11
-topics: [data-structure-algorithm, sources]
+topics:
+- data-structure-algorithm
+- shared
 status: inbox
 ---
-
 # wiki/sources/data-structure-algorithm
 
 本目录存放数据结构与算法主题的来源摘要卡。入口建议从：[[数据结构与算法总索引]]。
@@ -21,7 +22,7 @@ status: inbox
 - [[wiki/sources/data-structure-algorithm/2024-04-03-algorithm-complexity-analysis]]
 - [[wiki/sources/data-structure-algorithm/2024-04-04-data-structure]]
 - [[wiki/sources/data-structure-algorithm/2024-04-04-divide-conquer]]
-- [[wiki/sources/data-structure-algorithm/2024-04-04-greedy]]
+- [[wiki/sources/operations-research/2024-04-04-greedy]]
 - [[wiki/sources/data-structure-algorithm/2026-04-06-Hello 算法]]
 
 <!-- AUTO-GENERATED: sources-dir-index:end -->

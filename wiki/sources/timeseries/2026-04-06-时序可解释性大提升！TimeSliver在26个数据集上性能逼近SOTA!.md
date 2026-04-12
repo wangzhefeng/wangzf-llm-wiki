@@ -6,12 +6,11 @@ author: unknown
 published_at: 2026-04-06
 created_at: 2026-04-09
 topics:
-  - 时间序列
+- timeseries
 related_concepts:
-  - 时间序列预测总索引
+- 时间序列预测总索引
 status: summarized
 ---
-
 # 来源卡：时序可解释性大提升！TimeSliver在26个数据集上性能逼近SOTA!
 
 ## 这份材料讲了什么

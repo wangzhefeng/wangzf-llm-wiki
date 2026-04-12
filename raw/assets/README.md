@@ -1,3 +1,14 @@
+---
+source_type: internal
+source_path: "raw/assets/readme-20260412200431.md"
+title: "README"
+author: unknown
+created_at: 2026-04-12
+topics:
+- knowledge-base
+status: inbox
+---
+
 # assets
 
 `raw/assets/` 存放通用附件和非来源型素材，不用于代替 `raw/` 保存原始来源。

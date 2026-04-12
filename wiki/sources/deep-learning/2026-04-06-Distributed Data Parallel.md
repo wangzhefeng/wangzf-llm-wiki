@@ -6,17 +6,16 @@ author: unknown
 published_at: 2026-04-06
 created_at: 2026-04-09
 topics:
-  - 深度学习
+- deep-learning
 related_concepts:
-  - 深度学习总索引
+- 深度学习总索引
 status: summarized
 ---
-
 # 来源卡：Distributed Data Parallel
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/web/deep-learning/2026-04-06-Distributed Data Parallel.md]]
+- 原文：[[raw/web/deep-learning/2026-04-06-Distributed-Data-Parallel.md]]
 - 来源：`raw/web/deep-learning/2026-04-06-Distributed Data Parallel.md`
 - 主题：深度学习
 

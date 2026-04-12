@@ -1,22 +1,21 @@
 ---
 source_type: web
 source_path: raw/web/llm-pre-training/2026-04-06-MxoderLLM-from-scratch 一些 LLM 方面的从零复现笔记.md
-title: Mxoder/LLM-from-scratch: 一些 LLM 方面的从零复现笔记
+title: 'Mxoder/LLM-from-scratch: 一些 LLM 方面的从零复现笔记'
 author: unknown
 published_at: 2026-04-06
 created_at: 2026-04-09
 topics:
-  - 大语言模型
+- llm
 related_concepts:
-  - 大语言模型总索引
+- 大语言模型总索引
 status: summarized
 ---
-
 # 来源卡：Mxoder/LLM-from-scratch: 一些 LLM 方面的从零复现笔记
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/web/llm-pre-training/2026-04-06-MxoderLLM-from-scratch 一些 LLM 方面的从零复现笔记.md]]
+- 原文：[[raw/web/llm-pre-training/2026-04-06-MxoderLLM-from-scratch-一些-LLM-方面的从零复现笔记.md]]
 - 来源：`raw/web/llm-pre-training/2026-04-06-MxoderLLM-from-scratch 一些 LLM 方面的从零复现笔记.md`
 - 主题：大语言模型
 

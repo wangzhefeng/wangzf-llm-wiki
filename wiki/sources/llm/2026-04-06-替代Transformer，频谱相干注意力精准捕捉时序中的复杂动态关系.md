@@ -6,12 +6,11 @@ author: unknown
 published_at: 2026-04-06
 created_at: 2026-04-09
 topics:
-  - 大语言模型
+- llm
 related_concepts:
-  - 大语言模型总索引
+- 大语言模型总索引
 status: summarized
 ---
-
 # 来源卡：替代Transformer，频谱相干注意力精准捕捉时序中的复杂动态关系
 
 ## 这份材料讲了什么

@@ -6,16 +6,15 @@ author: wangzf
 published_at: 2025-07-05
 created_at: 2026-04-09
 topics:
-  - 大语言模型
-  - post
+- llm
+- shared
 related_concepts:
-  - 模型微调
-  - SFT (监督微调)
-  - 模型量化
-  - 大语言模型总索引
+- 模型微调
+- SFT (监督微调)
+- 模型量化
+- 大语言模型总索引
 status: summarized
 ---
-
 # 来源卡：模型微调
 
 ## 这份材料讲了什么

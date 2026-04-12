@@ -6,13 +6,12 @@ author: wangzf
 published_at: 2023-07-20
 created_at: 2026-04-09
 topics:
-  - 数据分析
-  - 统计学
+- data-analysis
+- shared
 related_concepts:
-  - 概率论基础
+- 概率论基础
 status: summarized
 ---
-
 # 来源卡：2023-07-20-statistics-probability
 
 ## 这份材料讲了什么

@@ -6,14 +6,12 @@ author: wangzf
 published_at: 2022-08-14
 created_at: 2026-04-09
 topics:
-  - 计算机视觉
-  - 图像处理
+- computer-vision
 related_concepts:
-  - 图像标注
-  - 图像分类
+- 图像标注
+- 图像分类
 status: summarized
 ---
-
 # 来源卡：2022-08-14-cv-numpy-scipy-matplotlib
 
 ## 这份材料讲了什么

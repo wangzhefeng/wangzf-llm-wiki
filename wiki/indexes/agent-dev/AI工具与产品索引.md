@@ -27,7 +27,7 @@ status: linked
 
 ## RAG 与知识库
 
-- [[2026-04-06-大模型外挂(向量)知识库]] — LLM 外挂知识库 (RAG)
+- [[raw/web/llm-pre-training/2026-04-06-大模型外挂(向量)知识库]] — LLM 外挂知识库 (RAG)
 
 ## LLM 评估与输出
 

@@ -1,17 +1,16 @@
 ---
 source_type: web
 source_path: raw/web/operations-research/2026-04-06-optunaoptuna A hyperparameter optimization framework.md
-title: optuna/optuna: A hyperparameter optimization framework
+title: 'optuna/optuna: A hyperparameter optimization framework'
 author: unknown
 published_at: 2026-04-06
 created_at: 2026-04-09
 topics:
-  - 运筹优化
+- operations-research
 related_concepts:
-  - 运筹优化算法总索引
+- 运筹优化算法总索引
 status: summarized
 ---
-
 # 来源卡：optuna/optuna: A hyperparameter optimization framework
 
 ## 这份材料讲了什么

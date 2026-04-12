@@ -1,11 +1,10 @@
 ---
 created_at: 2026-04-11
 topics:
-  - operationsresearch
+- operations-research
 status: inbox
 source_path: raw/web/operations-research/2026-04-06-basinhopping — SciPy v1.17.0 Manual.md
 ---
-
 # 来源卡：2026-04-06-basinhopping — SciPy v1.17.0 Manual
 
 ## 这份材料讲了什么

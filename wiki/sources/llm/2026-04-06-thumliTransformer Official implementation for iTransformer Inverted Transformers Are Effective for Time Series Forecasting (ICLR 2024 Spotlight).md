@@ -1,22 +1,21 @@
 ---
 source_type: web
 source_path: raw/web/timeseries/2026-04-06-thumliTransformer Official implementation for iTransformer Inverted Transformers Are Effective for Time Series Forecasting (ICLR 2024 Spotlight).md
-title: thuml/iTransformer: Official implementation for \"iTransformer: Inverted Transformers Are Effective for Time Series Forecasting\" (ICLR 2024 Spotlight)
+title: 'thuml/iTransformer: Official implementation for "iTransformer: Inverted Transformers Are Effective for Time Series Forecasting" (ICLR 2024 Spotlight)'
 author: unknown
 published_at: 2026-04-06
 created_at: 2026-04-09
 topics:
-  - 大语言模型
+- llm
 related_concepts:
-  - 大语言模型总索引
+- 大语言模型总索引
 status: summarized
 ---
-
 # 来源卡：thuml/iTransformer: Official implementation for \"iTransformer: Inverted Transformers Are Effective for Time Series Forecasting\" (ICLR 2024 Spotlight)
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/web/timeseries/2026-04-06-thumliTransformer Official implementation for iTransformer Inverted Transformers Are Effective for Time Series Forecasting (ICLR 2024 Spotlight).md]]
+- 原文：[[raw/web/timeseries/2026-04-06-thumliTransformer-Official-implementation-for-iTransformer-Inverted-Transformers-Are-Effective-for-Time-Series-Forecasting-(ICLR-2024-Spotlight).md]]
 - 来源：`raw/web/timeseries/2026-04-06-thumliTransformer Official implementation for iTransformer Inverted Transformers Are Effective for Time Series Forecasting (ICLR 2024 Spotlight).md`
 - 主题：大语言模型
 

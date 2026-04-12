@@ -1,14 +1,12 @@
 ---
 created_at: 2026-04-11
 topics:
-  - wiki
-  - concepts
-  - llm-wiki
+- llm
+- shared
 related_concepts:
-  - 知识库建设方法
+- 知识库建设方法
 status: linked
 ---
-
 # wiki/concepts
 
 `wiki/concepts/` 负责“概念沉淀层”，把多来源共识整理为长期可复用知识单元。

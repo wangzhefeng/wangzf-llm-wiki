@@ -1,17 +1,16 @@
 ---
 source_type: web
 source_path: raw/web/llm-pre-training/2026-04-06-GitHub---huggingfacetext-generation-inference-Large-Language-Model-Text-Generati.md
-title: GitHub - huggingface/text-generation-inference: Large Language Model Text Generation Inference · GitHub
+title: 'GitHub - huggingface/text-generation-inference: Large Language Model Text Generation Inference · GitHub'
 author: unknown
 published_at: 2026-04-06
 created_at: 2026-04-09
 topics:
-  - 大语言模型
+- llm
 related_concepts:
-  - 大语言模型总索引
+- 大语言模型总索引
 status: summarized
 ---
-
 # 来源卡：GitHub - huggingface/text-generation-inference: Large Language Model Text Generation Inference · GitHub
 
 ## 这份材料讲了什么

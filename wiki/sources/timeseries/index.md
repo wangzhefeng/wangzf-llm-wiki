@@ -1,14 +1,16 @@
 ---
 created_at: 2026-04-11
-topics: [timeseries, sources]
+topics:
+- shared
+- timeseries
 status: inbox
 ---
-
 # wiki/sources/timeseries
 
 本目录存放时间序列主题的来源摘要卡。入口建议从：[[时间序列预测总索引]]。
 
 <!-- AUTO-GENERATED: sources-dir-index:start -->
+
 
 ## 本目录来源卡清单（自动生成）
 
@@ -101,12 +103,8 @@ status: inbox
 - [[wiki/sources/timeseries/2026-04-06-AI已经开始为能源交易员提供七个月的逐小时预测]]
 - [[wiki/sources/timeseries/2026-04-06-AI论文速读  日晷(Sundial)：一系列高性能时间序列基础模型]]
 - [[wiki/sources/timeseries/2026-04-06-Amelia II A Program for Missing Data]]
-- [[wiki/sources/timeseries/2026-04-06-Autoformerexpexp_main.py at main]]
-- [[wiki/sources/timeseries/2026-04-06-Autoformerpredict.ipynb at main]]
 - [[wiki/sources/timeseries/2026-04-06-Chebyshev polynomials - Wikipedia]]
 - [[wiki/sources/timeseries/2026-04-06-D2Vformer：一个可实现任意位置任意长度时序预测的深度学习模型]]
-- [[wiki/sources/timeseries/2026-04-06-DC-researchTSorchestra Time Series Orchestra (TSorchestra) is a novel ensemble framework designed for zero-shot time series forecasting. It is built upon a curated collection of time series foundation models. The architecture is desig]]
-- [[wiki/sources/timeseries/2026-04-06-DCIC2024 光伏发电出力预测B榜0.904 baseline分享]]
 - [[wiki/sources/timeseries/2026-04-06-Datasets at Hugging Face]]
 - [[wiki/sources/timeseries/2026-04-06-DeepLearningExamplesToolsPyTorchTimeSeriesPredictionPlatform at master]]
 - [[wiki/sources/timeseries/2026-04-06-Forecast Evaluation for Data Scientists Common Pitfalls and Best Practices]]
@@ -129,7 +127,6 @@ status: inbox
 - [[wiki/sources/timeseries/2026-04-06-Lagged features for time series forecasting]]
 - [[wiki/sources/timeseries/2026-04-06-Machine Learning for Forecasting Supervised Learning with Multivariate Time Series]]
 - [[wiki/sources/timeseries/2026-04-06-Machine Learning for Forecasting Transformations and Feature Extraction]]
-- [[wiki/sources/timeseries/2026-04-06-Meteor-StarsSEMixer This is code for SEMixer Semantics Enhanced MLP-Mixer for Multiscale Mixing and Long-term Time Series Forecasting (WWW 2026). SEMixer can handle longer input sequences and achieve better performance from longer inp]]
 - [[wiki/sources/timeseries/2026-04-06-Moirai A Time Series Foundation Model for Universal Forecasting]]
 - [[wiki/sources/timeseries/2026-04-06-Monte Carlo Cross-Validation for Time Series]]
 - [[wiki/sources/timeseries/2026-04-06-N-BEATS Neural basis expansion analysis for interpretable time series  forecasting]]
@@ -139,22 +136,14 @@ status: inbox
 - [[wiki/sources/timeseries/2026-04-06-Nixtlamlforecast Scalable machine 🤖 learning for time series forecasting]]
 - [[wiki/sources/timeseries/2026-04-06-Nixtlaneuralforecast Scalable and user friendly neural forecasting algorithms]]
 - [[wiki/sources/timeseries/2026-04-06-PIR：让时间序列预测更可靠的“智能后处理框架”]]
-- [[wiki/sources/timeseries/2026-04-06-Panel ARDL.pdf]]
 - [[wiki/sources/timeseries/2026-04-06-Paper page - Time-MoE Billion-Scale Time Series Foundation Models with Mixture of  Experts]]
 - [[wiki/sources/timeseries/2026-04-06-RegressorChain]]
-- [[wiki/sources/timeseries/2026-04-06-ServiceNowN-BEATS N-BEATS is a neural-network based model for univariate timeseries forecasting. N-BEATS is a ServiceNow Research project that was started at Element AI]]
-- [[wiki/sources/timeseries/2026-04-06-ServiceNowN-BEATS N-BEATS is a neural-network based model for univariate timeseries forecasting. N-BEATS is a ServiceNow Research project that was started at Element AI 1]]
 - [[wiki/sources/timeseries/2026-04-06-Spatio-Temporal Graph Convolutional Networks A Deep Learning Framework for Traffic Forecasting]]
 - [[wiki/sources/timeseries/2026-04-06-SynodicMonthChebyKAN Kolmogorov-Arnold Networks (KAN) using Chebyshev polynomials instead of B-splines]]
 - [[wiki/sources/timeseries/2026-04-06-TIMEMIXER++：通用时序预测新SOTA，全面超越Transformer！]]
-- [[wiki/sources/timeseries/2026-04-06-TIMEMIXER++：通用时序预测新SOTA，全面超越Transformer！ 1]]
-- [[wiki/sources/timeseries/2026-04-06-TSorchestraclieval.sh at main]]
 - [[wiki/sources/timeseries/2026-04-06-Time Series Forecasting as Supervised Learning]]
 - [[wiki/sources/timeseries/2026-04-06-Time Series Transformer · Hugging Face]]
-- [[wiki/sources/timeseries/2026-04-06-Time-Series-LibraryREADME_zh.md at main]]
-- [[wiki/sources/timeseries/2026-04-06-Time-Series-Libraryexpexp_zero_shot_forecasting.py at main]]
 - [[wiki/sources/timeseries/2026-04-06-Time-Series-Librarymodels at main]]
-- [[wiki/sources/timeseries/2026-04-06-Time-Series-Libraryscriptslong_term_forecastETT_scriptLTSM.sh at main]]
 - [[wiki/sources/timeseries/2026-04-06-Time-related feature engineering]]
 - [[wiki/sources/timeseries/2026-04-06-TimeKAN：基于KAN的时间序列预测模型]]
 - [[wiki/sources/timeseries/2026-04-06-TimeMixer++ A General Time Series Pattern Machine for Universal Predictive Analysis]]
@@ -168,13 +157,11 @@ status: inbox
 - [[wiki/sources/timeseries/2026-04-06-aws-samplesmulti-step-forecasting-blog-sample-code This repository is used for sample code of AWS China Blog]]
 - [[wiki/sources/timeseries/2026-04-06-awslabsgluonts Probabilistic time series modeling in Python]]
 - [[wiki/sources/timeseries/2026-04-06-blue-yondertsfresh Automatic extraction of relevant features from time series]]
-- [[wiki/sources/timeseries/2026-04-06-date functionality — pandas 3.0.2 documentation]]
 - [[wiki/sources/timeseries/2026-04-06-google-researchtimesfm TimesFM (Time Series Foundation Model) is a pretrained time-series foundation model developed by Google Research for time-series forecasting]]
 - [[wiki/sources/timeseries/2026-04-06-huangst21TimeKAN An offical implementation of TimeKAN KAN-based Frequency Decomposition Learning Architecture for Long-term Time Series Forecasting (ICLR 2025)]]
 - [[wiki/sources/timeseries/2026-04-06-iTransformer：倒置Transformer在时间序列预测中卓有成效]]
 - [[wiki/sources/timeseries/2026-04-06-kwukingTimeMixer ICLR 2024 Official implementation of TimeMixer Decomposable Multiscale Mixing for Time Series Forecasting]]
 - [[wiki/sources/timeseries/2026-04-06-ourownstoryAR-Net A simple Auto-Regressive Neural Network for time-series]]
-- [[wiki/sources/timeseries/2026-04-06-pandas.DatetimeIndex — pandas 3.0.2 documentation]]
 - [[wiki/sources/timeseries/2026-04-06-sktimepytorch-forecasting Time series forecasting with PyTorch]]
 - [[wiki/sources/timeseries/2026-04-06-thumlLarge-Time-Series-Model Official code, datasets and checkpoints for Timer Generative Pre-trained Transformers Are Large Time Series Models (ICML 2024) and subsequent works]]
 - [[wiki/sources/timeseries/2026-04-06-thumlOpenLTM Implementations, Pre-training Code and Datasets of Large Time-Series Models]]
@@ -205,7 +192,6 @@ status: inbox
 - [[wiki/sources/timeseries/2026-04-06-多步时间序列预测策略实战-腾讯云开发者社区-腾讯云]]
 - [[wiki/sources/timeseries/2026-04-06-年度总结  时间序列(Time Series)前沿创新思路]]
 - [[wiki/sources/timeseries/2026-04-06-把时间序列画成图？VLM4TS用视觉语言模型破解时序检测难题 1]]
-- [[wiki/sources/timeseries/2026-04-06-时代变了，预测也用上大模型了！深度解析谷歌TimesFM2.5]]
 - [[wiki/sources/timeseries/2026-04-06-时序可解释性大提升！TimeSliver在26个数据集上性能逼近SOTA!]]
 - [[wiki/sources/timeseries/2026-04-06-时序模型的新天花板：SEMixer在10大数据集上全面领先！]]
 - [[wiki/sources/timeseries/2026-04-06-时序预测双飞轮，全面超越Transformer，纯MLP模型实现性能效能齐飞]]
@@ -216,7 +202,7 @@ status: inbox
 - [[wiki/sources/timeseries/2026-04-06-时间序列数据特征提取的几类方法。]]
 - [[wiki/sources/timeseries/2026-04-06-时间序列的区间预测概率预测]]
 - [[wiki/sources/timeseries/2026-04-06-时间序列预测专栏_Snu77的博客-CSDN博客]]
-- [[wiki/sources/timeseries/2026-04-06-时间序列预测的层次分类辅助网络 --- Hierarchical Classification Auxiliary Network for Time Series Forecasting]]
+- [[wiki/sources/timeseries/2026-04-06-时间序列预测的层次分类辅助网络-Hierarchical-Classification-Auxiliary-Network-for-Time-Series-Forecasting]]
 - [[wiki/sources/timeseries/2026-04-06-时间序列预测还能再进步吗？别再迷信Transformer了，问题可能出在评估方式上！]]
 - [[wiki/sources/timeseries/2026-04-06-替代Transformer，频谱相干注意力精准捕捉时序中的复杂动态关系]]
 - [[wiki/sources/timeseries/2026-04-06-机器学习多步时间序列预测解决方案]]

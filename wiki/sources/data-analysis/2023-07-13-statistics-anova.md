@@ -6,13 +6,12 @@ author: wangzf
 published_at: 2023-07-13
 created_at: 2026-04-09
 topics:
-  - 数据分析
-  - 统计学
+- data-analysis
+- shared
 related_concepts:
-  - 方差分析
+- 方差分析
 status: summarized
 ---
-
 # 来源卡：2023-07-13-statistics-anova
 
 ## 这份材料讲了什么

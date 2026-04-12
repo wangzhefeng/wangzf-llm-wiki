@@ -6,13 +6,12 @@ author: wangzf
 published_at: 2022-05-07
 created_at: 2026-04-09
 topics:
-  - 机器学习
-  - post
+- machine-learning
+- shared
 related_concepts:
-  - 机器学习总索引
+- 机器学习总索引
 status: summarized
 ---
-
 # 来源卡：读《漫谈现代统计"四大天王"》
 
 ## 这份材料讲了什么

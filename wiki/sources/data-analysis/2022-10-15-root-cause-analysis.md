@@ -6,13 +6,11 @@ author: wangzf
 published_at: 2022-10-15
 created_at: 2026-04-09
 topics:
-  - 数据分析
-  - 根因分析
+- data-analysis
 related_concepts:
-  - 根因分析
+- 根因分析
 status: summarized
 ---
-
 # 来源卡：2022-10-15-root-cause-analysis
 
 ## 这份材料讲了什么

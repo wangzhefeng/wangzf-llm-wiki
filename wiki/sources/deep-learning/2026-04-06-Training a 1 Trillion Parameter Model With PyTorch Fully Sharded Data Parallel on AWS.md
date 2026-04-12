@@ -6,17 +6,16 @@ author: unknown
 published_at: 2026-04-06
 created_at: 2026-04-09
 topics:
-  - 深度学习
+- deep-learning
 related_concepts:
-  - 深度学习总索引
+- 深度学习总索引
 status: summarized
 ---
-
 # 来源卡：Training a 1 Trillion Parameter Model With PyTorch Fully Sharded Data Parallel on AWS
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/web/deep-learning/2026-04-06-Training a 1 Trillion Parameter Model With PyTorch Fully Sharded Data Parallel on AWS.md]]
+- 原文：[[raw/web/deep-learning/2026-04-06-Training-a-1-Trillion-Parameter-Model-With-PyTorch-Fully-Sharded-Data-Parallel-on-AWS.md]]
 - 来源：`raw/web/deep-learning/2026-04-06-Training a 1 Trillion Parameter Model With PyTorch Fully Sharded Data Parallel on AWS.md`
 - 主题：深度学习
 

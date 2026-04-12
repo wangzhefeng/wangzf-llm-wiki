@@ -1,11 +1,11 @@
 ---
 created_at: 2026-04-11
 topics:
-  - operationsresearch
+- operations-research
+- timeseries
 status: inbox
 source_path: raw/web/operations-research/2026-04-06-GIFT Eval - a Hugging Face Space by Salesforce.md
 ---
-
 # 来源卡：2026-04-06-GIFT Eval - a Hugging Face Space by Salesforce
 
 ## 这份材料讲了什么

@@ -6,12 +6,11 @@ author: unknown
 published_at: 2026-04-06
 created_at: 2026-04-09
 topics:
-  - 强化学习
+- reinforcement-learning
 related_concepts:
-  - 强化学习总索引
+- 强化学习总索引
 status: summarized
 ---
-
 # 来源卡：DeepSeek关键RL算法GRPO，有人从头跑通了，贡献完整代码
 
 ## 这份材料讲了什么

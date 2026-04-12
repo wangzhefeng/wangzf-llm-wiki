@@ -6,12 +6,11 @@ author: unknown
 published_at: 2026-04-06
 created_at: 2026-04-09
 topics:
-  - 深度学习
+- deep-learning
 related_concepts:
-  - 深度学习总索引
+- 深度学习总索引
 status: summarized
 ---
-
 # 来源卡：Debug your model (basic) — PyTorch Lightning 2.6.1 documentation
 
 ## 这份材料讲了什么

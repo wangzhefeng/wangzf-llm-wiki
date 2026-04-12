@@ -1,22 +1,21 @@
 ---
 source_type: web
 source_path: raw/web/deep-learning/2026-04-06-Optional Data Parallelism.md
-title: Optional: Data Parallelism
+title: 'Optional: Data Parallelism'
 author: unknown
 published_at: 2026-04-06
 created_at: 2026-04-09
 topics:
-  - 待分类
+- shared
 related_concepts:
-  - 知识库来源与专题摄取索引
+- 知识库来源与专题摄取索引
 status: summarized
 ---
-
 # 来源卡：Optional: Data Parallelism
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/web/deep-learning/2026-04-06-Optional Data Parallelism.md]]
+- 原文：[[raw/web/deep-learning/2026-04-06-Optional-Data-Parallelism.md]]
 - 来源：`raw/web/deep-learning/2026-04-06-Optional Data Parallelism.md`
 - 主题：待分类
 

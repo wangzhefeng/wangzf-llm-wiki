@@ -3,15 +3,13 @@ source_type: local_note
 source_path: raw/local-notes/timeseries/timeseries-time-domain/timeseries-deeplearning/2024-09-04-paper-ts-fedformer/index.md
 created_at: 2026-04-05
 topics:
-  - 时间序列预测
-  - deep-learning-forecasting
+- timeseries
 related_concepts:
-  - 深度学习时间序列预测
-  - 趋势与季节性
-  - 时间序列预测
+- 深度学习时间序列预测
+- 趋势与季节性
+- 时间序列预测
 status: summarized
 ---
-
 # FEDformer 来源摘要
 
 

@@ -6,17 +6,16 @@ author: unknown
 published_at: 2026-04-06
 created_at: 2026-04-09
 topics:
-  - 待分类
+- shared
 related_concepts:
-  - 知识库来源与专题摄取索引
+- 知识库来源与专题摄取索引
 status: summarized
 ---
-
 # 来源卡：Articles (cn-zh)
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/web/llm-pre-training/2026-04-06-Articles (cn-zh).md]]
+- 原文：[[raw/web/llm-pre-training/2026-04-06-Articles-(cn-zh).md]]
 - 来源：`raw/web/llm-pre-training/2026-04-06-Articles (cn-zh).md`
 - 主题：待分类
 

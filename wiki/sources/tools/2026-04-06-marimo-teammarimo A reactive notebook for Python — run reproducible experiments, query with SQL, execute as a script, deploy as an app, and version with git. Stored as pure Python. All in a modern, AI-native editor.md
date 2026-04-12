@@ -1,17 +1,17 @@
 ---
 source_type: web
 source_path: raw/web/tools/2026-04-06-marimo-teammarimo A reactive notebook for Python — run reproducible experiments, query with SQL, execute as a script, deploy as an app, and version with git. Stored as pure Python. All in a modern, AI-native editor.md
-title: marimo-team/marimo: A reactive notebook for Python — run reproducible experiments, query with SQL, execute as a script, deploy as an app, and version with git. Stored as pure Python. All in a modern, AI-native editor.
+title: 'marimo-team/marimo: A reactive notebook for Python — run reproducible experiments, query with SQL, execute as a script, deploy as an app, and version with git. Stored as pure Python. All in a modern, AI-native editor.'
 author: unknown
 published_at: 2026-04-06
 created_at: 2026-04-09
 topics:
-  - 运筹优化
+- operations-research
+- tools
 related_concepts:
-  - 运筹优化算法总索引
+- 运筹优化算法总索引
 status: summarized
 ---
-
 # 来源卡：marimo-team/marimo: A reactive notebook for Python — run reproducible experiments, query with SQL, execute as a script, deploy as an app, and version with git. Stored as pure Python. All in a modern, AI-native editor.
 
 ## 这份材料讲了什么

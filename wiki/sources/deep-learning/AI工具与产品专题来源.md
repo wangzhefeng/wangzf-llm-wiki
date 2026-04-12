@@ -3,15 +3,14 @@ source_type: web
 title: AI 工具与产品专题
 created_at: 2026-04-06
 topics:
-  - AI 应用
-  - AI 产品
+- deep-learning
+- shared
 related_concepts:
-  - RAG
-  - AI 创作
-  - LLM 评估
+- RAG
+- AI 创作
+- LLM 评估
 status: summarized
 ---
-
 # AI 工具与产品专题
 
 ## 来源概述
@@ -31,7 +30,7 @@ status: summarized
 
 | 文件名 | 核心内容 | 状态 |
 |--------|----------|------|
-| [[2026-04-06-大模型外挂(向量)知识库]] | LLM 外挂知识库 (RAG) | 待摘要 |
+| [[raw/web/llm-pre-training/2026-04-06-大模型外挂(向量)知识库]] | LLM 外挂知识库 (RAG) | 待摘要 |
 
 ### LLM 评估与输出
 

@@ -1,22 +1,21 @@
 ---
 source_type: web
 source_path: raw/web/computer-vision/2026-04-06-OpenCV OpenCV modules.md
-title: OpenCV: OpenCV modules
+title: 'OpenCV: OpenCV modules'
 author: unknown
 published_at: 2026-04-06
 created_at: 2026-04-09
 topics:
-  - 计算机视觉
+- computer-vision
 related_concepts:
-  - 计算机视觉总索引
+- 计算机视觉总索引
 status: summarized
 ---
-
 # 来源卡：OpenCV: OpenCV modules
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/web/computer-vision/2026-04-06-OpenCV OpenCV modules.md]]
+- 原文：[[raw/web/computer-vision/2026-04-06-OpenCV-OpenCV-modules.md]]
 - 来源：`raw/web/computer-vision/2026-04-06-OpenCV OpenCV modules.md`
 - 主题：计算机视觉
 

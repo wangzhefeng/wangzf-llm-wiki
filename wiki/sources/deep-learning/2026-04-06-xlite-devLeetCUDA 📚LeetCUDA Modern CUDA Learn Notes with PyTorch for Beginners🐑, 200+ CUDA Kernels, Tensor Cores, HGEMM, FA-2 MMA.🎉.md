@@ -1,17 +1,16 @@
 ---
 source_type: web
 source_path: raw/web/computer-vision/2026-04-06-xlite-devLeetCUDA 📚LeetCUDA Modern CUDA Learn Notes with PyTorch for Beginners🐑, 200+ CUDA Kernels, Tensor Cores, HGEMM, FA-2 MMA.🎉.md
-title: xlite-dev/LeetCUDA: 📚LeetCUDA: Modern CUDA Learn Notes with PyTorch for Beginners🐑, 200+ CUDA Kernels, Tensor Cores, HGEMM, FA-2 MMA.🎉
+title: 'xlite-dev/LeetCUDA: 📚LeetCUDA: Modern CUDA Learn Notes with PyTorch for Beginners🐑, 200+ CUDA Kernels, Tensor Cores, HGEMM, FA-2 MMA.🎉'
 author: unknown
 published_at: 2026-04-06
 created_at: 2026-04-09
 topics:
-  - 深度学习
+- deep-learning
 related_concepts:
-  - 深度学习总索引
+- 深度学习总索引
 status: summarized
 ---
-
 # 来源卡：xlite-dev/LeetCUDA: 📚LeetCUDA: Modern CUDA Learn Notes with PyTorch for Beginners🐑, 200+ CUDA Kernels, Tensor Cores, HGEMM, FA-2 MMA.🎉
 
 ## 这份材料讲了什么

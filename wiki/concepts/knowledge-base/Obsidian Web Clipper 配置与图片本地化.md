@@ -1,15 +1,13 @@
 ---
 created_at: 2026-04-05
 topics:
-  - 知识库构建
-  - Obsidian
-  - 工具配置
+- knowledge-base
+- tools
 related_concepts:
-  - 知识库建设方法
-  - 知识库工作台
+- 知识库建设方法
+- 知识库工作台
 status: linked
 ---
-
 # Obsidian Web Clipper 配置与图片本地化
 
 ## 一句话说明

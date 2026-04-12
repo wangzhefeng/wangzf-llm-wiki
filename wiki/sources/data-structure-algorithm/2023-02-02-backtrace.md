@@ -6,14 +6,12 @@ author: wangzf
 published_at: 2023-02-02
 created_at: 2026-04-09
 topics:
-  - 数据结构与算法
-  - 回溯算法
+- data-structure-algorithm
 related_concepts:
-  - 数据结构与算法
-  - 回溯算法
+- 数据结构与算法
+- 回溯算法
 status: summarized
 ---
-
 # 来源卡：2023-02-02-backtrace
 
 ## 这份材料讲了什么

@@ -1,15 +1,14 @@
 ---
 created_at: 2026-04-09
 topics:
-  - 强化学习
-  - LLM 对齐
+- llm
+- reinforcement-learning
 related_concepts:
-  - 奖励模型
-  - DPO直接偏好优化
-  - 策略优化
+- 奖励模型
+- DPO直接偏好优化
+- 策略优化
 status: linked
 ---
-
 # RLHF
 
 ## 定义
@@ -36,9 +35,9 @@ RLHF（Reinforcement Learning from Human Feedback）是利用人类反馈构造�
 ## 相关来源
 
 - [[强化学习专题来源]]
-- [[2026-04-06-图解大模型RLHF系列之：人人都能看懂的PPO原理与源码解读]]
+- [[raw/web/reinforcement-learning/2026-04-06-图解大模型RLHF系列之：人人都能看懂的PPO原理与源码解读]]
 - [[2026-04-06-LLM Training RLHF and Its Alternatives]]
-- [[2026-04-06-我的RLHF实践记录~]]
+- [[raw/web/llm-pre-training/2026-04-06-我的RLHF实践记录~]]
 
 ## 相关概念
 

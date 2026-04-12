@@ -1,14 +1,12 @@
 ---
 created_at: 2026-04-11
 topics:
-  - wiki
-  - sources
-  - llm-wiki
+- llm
+- shared
 related_concepts:
-  - 知识库来源与专题摄取索引
+- 知识库来源与专题摄取索引
 status: linked
 ---
-
 # wiki/sources
 
 `wiki/sources/` 负责“来源摘要卡层”，把 `raw/` 的单条原始资料压缩为可检索、可互链的结构化入口。

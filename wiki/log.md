@@ -197,3 +197,19 @@ status: linked
 - 更新 `wiki/index.md` 执行入口，新增 [[知识库输出回流工作流]]。
 - 更新 `README.md`、`AGENTS.md`、`知识库工作台`、`知识库使用总索引`、`知识库任务与输出工作流索引` 的相关入口链接。
 - 更新 `知识库问答与研究工作流`，将“最小回流动作”显式连接到 backfill 专页。
+
+## [2026-04-12] update | shared 三主题重构与 Schema 去重
+
+- 将 `wiki/indexes/shared/knowledge-base-building|operations|usage` 重命名为 `llm-wiki-building|operations|usage`。
+- 将执行型页面统一迁移到 `wiki/indexes/shared/` 根目录：`知识库来源与专题摄取索引`、`知识库问答与研究工作流`、`知识库输出回流工作流`、`知识库维护检查索引`、`知识库任务与输出工作流索引`。
+- 将 `知识库问题地图` 调整到 `wiki/indexes/shared/llm-wiki-usage/`，与“使用方法”主题归位。
+- 删除重复规则页 `wiki/indexes/shared/llm-wiki-operations/知识库Schema设计.md`，并将规则统一收敛到 `wiki/schema.md`。
+- 在 `wiki/schema.md` 添加 `aliases: [知识库Schema设计]` 与 shared 目录契约，明确“主题定义层 / shared 执行层”边界。
+- 更新 `README.md`、`AGENTS.md`、`wiki/indexes/shared/index.md`、`知识库工作台` 与三主题总索引入口链接，修复旧路径引用。
+
+## [2026-04-12] update | shared 执行入口再收敛
+
+- 将 `知识库健康检查清单`、`知识库操作记录索引` 从 `shared/llm-wiki-operations/` 迁移到 `shared/` 根目录。
+- 将 `知识库问题地图` 从 `shared/llm-wiki-usage/` 迁移到 `shared/` 根目录。
+- 更新 `README.md`、`AGENTS.md`、`wiki/indexes/shared/index.md`、`wiki/schema.md` 与 `知识库运维总索引` 的路径与职责描述。
+- 将 `LLM知识库构建方法索引` 的正文能力归并到 `知识库建设方法总索引/来源清单`，并将原页面收敛为兼容入口页。

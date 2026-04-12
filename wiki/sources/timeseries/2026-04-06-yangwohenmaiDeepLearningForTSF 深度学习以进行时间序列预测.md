@@ -1,22 +1,21 @@
 ---
 source_type: web
 source_path: raw/web/timeseries/2026-04-06-yangwohenmaiDeepLearningForTSF 深度学习以进行时间序列预测.md
-title: yangwohenmai/DeepLearningForTSF: 深度学习以进行时间序列预测
+title: 'yangwohenmai/DeepLearningForTSF: 深度学习以进行时间序列预测'
 author: unknown
 published_at: 2026-04-06
 created_at: 2026-04-09
 topics:
-  - 时间序列
+- timeseries
 related_concepts:
-  - 时间序列预测总索引
+- 时间序列预测总索引
 status: summarized
 ---
-
 # 来源卡：yangwohenmai/DeepLearningForTSF: 深度学习以进行时间序列预测
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/web/timeseries/2026-04-06-yangwohenmaiDeepLearningForTSF 深度学习以进行时间序列预测.md]]
+- 原文：[[raw/web/timeseries/2026-04-06-yangwohenmaiDeepLearningForTSF-深度学习以进行时间序列预测.md]]
 - 来源：`raw/web/timeseries/2026-04-06-yangwohenmaiDeepLearningForTSF 深度学习以进行时间序列预测.md`
 - 主题：时间序列
 

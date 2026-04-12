@@ -6,14 +6,13 @@ author: wangzf
 published_at: 2026-04-09
 created_at: 2026-04-09
 topics:
-  - Vibe Coding
-  - AI Agent
+- agent-dev
+- vibe-coding
 related_concepts:
-  - Vibe Coding总索引
-  - VibeCoding与Agent专题来源
+- Vibe Coding总索引
+- VibeCoding与Agent专题来源
 status: summarized
 ---
-
 # 来源卡：Vibe Coding - tools
 
 ## 这份材料讲了什么

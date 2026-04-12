@@ -1,11 +1,10 @@
 ---
 created_at: 2026-04-11
 topics:
-  - deeplearning
+- deep-learning
 status: inbox
 source_path: raw/web/deep-learning/2026-04-06-nn4nlp-conceptsconcepts.md at master.md
 ---
-
 # 来源卡：2026-04-06-nn4nlp-conceptsconcepts.md at master
 
 ## 这份材料讲了什么

@@ -1,22 +1,21 @@
 ---
 source_type: web
 source_path: raw/web/llm-pre-training/2026-04-06-rsennrichsubword-nmt Unsupervised Word Segmentation for Neural Machine Translation and Text Generation.md
-title: rsennrich/subword-nmt: Unsupervised Word Segmentation for Neural Machine Translation and Text Generation
+title: 'rsennrich/subword-nmt: Unsupervised Word Segmentation for Neural Machine Translation and Text Generation'
 author: unknown
 published_at: 2026-04-06
 created_at: 2026-04-09
 topics:
-  - 计算机视觉
+- computer-vision
 related_concepts:
-  - 计算机视觉总索引
+- 计算机视觉总索引
 status: summarized
 ---
-
 # 来源卡：rsennrich/subword-nmt: Unsupervised Word Segmentation for Neural Machine Translation and Text Generation
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/web/llm-pre-training/2026-04-06-rsennrichsubword-nmt Unsupervised Word Segmentation for Neural Machine Translation and Text Generation.md]]
+- 原文：[[raw/web/llm-pre-training/2026-04-06-rsennrichsubword-nmt-Unsupervised-Word-Segmentation-for-Neural-Machine-Translation-and-Text-Generation.md]]
 - 来源：`raw/web/uncategorized/2026-04-06-rsennrichsubword-nmt Unsupervised Word Segmentation for Neural Machine Translation and Text Generation.md`
 - 主题：计算机视觉
 

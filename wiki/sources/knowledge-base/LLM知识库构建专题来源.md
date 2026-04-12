@@ -3,15 +3,14 @@ source_type: web
 title: LLM 个人本地知识库构建专题
 created_at: 2026-04-06
 topics:
-  - 知识库构建
-  - LLM 应用
+- knowledge-base
+- llm
 related_concepts:
-  - 知识库建设方法
-  - LLM 辅助研究
-  - Obsidian
+- 知识库建设方法
+- LLM 辅助研究
+- Obsidian
 status: summarized
 ---
-
 # LLM 个人本地知识库构建专题
 
 ## 来源概述

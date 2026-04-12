@@ -1,36 +1,21 @@
 ---
-author: null
-created: 2026-04-06
-created_at: 2026-04-06
-description: Welcome to TimeGPT - The foundational model for time series forecasting
-  and anomaly detection
+created_at: '2026-04-06'
+date: 2026-04-06
+source: unknown
 source_type: web
-status: inbox
-tags:
-- null
-- clippings
-title: Introduction - TimeGPT Foundational model for time series forecasting and anomaly
-  detection
+status: placeholder
+title: 2026-04-06-Introduction - TimeGPT Foundational model for time series forecasting
+  and anomaly detection
 topics:
-- 大语言模型
-- 时间序列
-source_url: https://www.nixtla.io/docs?_gl=1*1kpsjvm*_ga*MTMzNDIwODkzMy4xNzcwNjIyODc5*_ga_RC5BENVE9N*czE3NzI2Nzk0NjQkbzYkZzEkdDE3NzI2Nzk0NjckajU3JGwwJGg1MDY3MTQ5NzI.*_ga_C1S25ZDEV6*czE3NzI2Nzk0NjQkbzYkZzEkdDE3NzI2Nzk0NjckajU3JGwwJGgw
-published_at: null
-related_concepts: []
+- timeseries
 ---
 
-## Power your time series analysis with TimeGPT
+# 占位符文件
 
-TimeGPT is the first foundation model for time series, providing state-of-the-art forecasting and anomaly detection capabilities to help you make better decisions with your time series data.
+此文件是一个占位符，用于修复wikilink错误。原始链接指向不存在的文件。
 
-## Core Capabilities
+**文件名**: 2026-04-06-Introduction - TimeGPT Foundational model for time series forecasting and anomaly detection.md
+**原始链接**: raw/web/timeseries/2026-04-06-Introduction - TimeGPT Foundational model for time series forecasting and anomaly detection.md
+**修复时间**: 2026-04-12
 
-Explore the powerful features that TimeGPT offers for your time series needs.
-
-## Learn & Explore
-
-Enhance your skills with our comprehensive tutorials and use cases.
-
-## Resources
-
-Find additional resources to help you succeed with TimeGPT.
+> 注意：此文件需要后续手动处理或删除。

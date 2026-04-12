@@ -1,15 +1,14 @@
 ---
 created_at: 2026-04-06
 topics:
-  - 强化学习
-  - LLM 对齐
+- llm
+- reinforcement-learning
 related_concepts:
-  - 偏好优化
-  - 奖励模型
-  - 直接优化
+- 偏好优化
+- 奖励模型
+- 直接优化
 status: inbox
 ---
-
 # DPO (Direct Preference Optimization)
 
 ## 定义
@@ -64,8 +63,8 @@ $$\mathcal{L}_{DPO} = -E[\log \sigma(\beta \log \frac{\pi_\theta(y_w|x)}{\pi_{re
 
 - [[强化学习专题来源]]
 - [[2026-04-06-Direct Preference Optimization (DPO)]]
-- [[2026-04-06-人人都能看懂的DPO数学原理]]
-- [[2026-04-06-面试问了DPO算法，答得稀烂~]]
+- [[raw/web/reinforcement-learning/2026-04-06-人人都能看懂的DPO数学原理]]
+- [[raw/web/reinforcement-learning/2026-04-06-面试问了DPO算法，答得稀烂~]]
 - `2026-04-06-deep-learning-pytorch-huggingfacetrainingscriptsdporun_dpo.py`
 
 ## 相关概念

@@ -6,17 +6,16 @@ author: unknown
 published_at: 2026-04-06
 created_at: 2026-04-09
 topics:
-  - 时间序列
+- timeseries
 related_concepts:
-  - 时间序列预测总索引
+- 时间序列预测总索引
 status: summarized
 ---
-
 # 来源卡：上海AI Lab新作登顶ICLR 2025！TimeKAN刷新时间序列预测SOTA！
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/web/timeseries/2026-04-06-上海AI Lab新作登顶ICLR 2025！TimeKAN刷新时间序列预测SOTA！.md]]
+- 原文：[[raw/web/timeseries/2026-04-06-上海AI-Lab新作登顶ICLR-2025！TimeKAN刷新时间序列预测SOTA！.md]]
 - 来源：`raw/web/timeseries/2026-04-06-上海AI Lab新作登顶ICLR 2025！TimeKAN刷新时间序列预测SOTA！.md`
 - 主题：时间序列
 

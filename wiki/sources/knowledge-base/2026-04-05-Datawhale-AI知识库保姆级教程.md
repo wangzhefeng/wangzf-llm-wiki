@@ -4,16 +4,14 @@ source_url: https://mp.weixin.qq.com/s/48LCpLkzL3bWNL1MjpDFeA
 source_path: raw/web/vibe-coding/2026-04-05-全网爆火的大模型AI知识库，保姆级教程来了.md
 created_at: 2026-04-05
 topics:
-  - 知识库构建
-  - AI 工作流
-  - llm-knowledge-base
+- knowledge-base
+- programming
 related_concepts:
-  - 知识库建设方法
-  - 知识库工作台
-  - 知识库健康检查清单
+- 知识库建设方法
+- 知识库工作台
+- 知识库健康检查清单
 status: summarized
 ---
-
 # Datawhale：Karpathy 同款 AI 知识库保姆级教程来源摘要
 
 

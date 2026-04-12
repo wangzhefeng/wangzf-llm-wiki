@@ -4,12 +4,9 @@ created: 2026-04-12
 updated: 2026-04-12
 type: concept
 topics:
-  - timeseries
-  - statistical-models
-  - forecasting
-status: draft
+- timeseries
+status: summarized
 ---
-
 # ARIMA模型
 
 > 自回归积分滑动平均模型，经典的时间序列统计预测方法。

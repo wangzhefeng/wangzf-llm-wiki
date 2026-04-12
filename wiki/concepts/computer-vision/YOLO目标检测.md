@@ -1,14 +1,13 @@
 ---
 created_at: 2026-04-06
 topics:
-  - 计算机视觉
+- computer-vision
 related_concepts:
-  - 目标检测
-  - 实时检测
-  - 单阶段检测
+- 目标检测
+- 实时检测
+- 单阶段检测
 status: inbox
 ---
-
 # YOLO 目标检测
 
 ## 定义
@@ -54,7 +53,7 @@ YOLO（You Only Look Once）是一系列实时目标检测算法，以速度快�
 - [[计算机视觉专题来源]]
 - [[2026-04-06-YOLOv9 终于来了！]]
 - [[2026-04-06-YOLOv4：使用 Darknet 和 OpenCV 进行对象检测的综合指南]]
-- [[2026-04-06-使用YOLOv5模型进行目标检测！]]
+- [[raw/web/computer-vision/2026-04-06-使用YOLOv5模型进行目标检测！]]
 - [[2026-04-06-Joseph Redmon - Survival Strategies for the Robot Rebellion]]
 - [[2026-04-06-Welcome to MMDetection’s documentation! — MMDetection 3.3.0 documentation]]
 

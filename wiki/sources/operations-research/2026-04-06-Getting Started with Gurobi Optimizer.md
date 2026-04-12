@@ -6,17 +6,16 @@ author: unknown
 published_at: 2026-04-06
 created_at: 2026-04-09
 topics:
-  - 运筹优化
+- operations-research
 related_concepts:
-  - 运筹优化算法总索引
+- 运筹优化算法总索引
 status: summarized
 ---
-
 # 来源卡：Getting Started with Gurobi Optimizer
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/web/operations-research/2026-04-06-Getting Started with Gurobi Optimizer.md]]
+- 原文：[[raw/web/operations-research/2026-04-06-Getting-Started-with-Gurobi-Optimizer.md]]
 - 来源：`raw/web/operations-research/2026-04-06-Getting Started with Gurobi Optimizer.md`
 - 主题：运筹优化
 

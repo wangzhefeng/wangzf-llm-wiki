@@ -1,17 +1,16 @@
 ---
 source_type: web
 source_path: raw/web/operations-research/2026-04-06-roboflowtrackers Trackers gives you clean, modular re-implementations of leading multi-object tracking algorithms released under the permissive Apache 2.0 license. You combine them with any detection model you already use.md
-title: roboflow/trackers: Trackers gives you clean, modular re-implementations of leading multi-object tracking algorithms released under the permissive Apache 2.0 license. You combine them with any detection model you already use.
+title: 'roboflow/trackers: Trackers gives you clean, modular re-implementations of leading multi-object tracking algorithms released under the permissive Apache 2.0 license. You combine them with any detection model you already use.'
 author: unknown
 published_at: 2026-04-06
 created_at: 2026-04-09
 topics:
-  - 计算机视觉
+- computer-vision
 related_concepts:
-  - 计算机视觉总索引
+- 计算机视觉总索引
 status: summarized
 ---
-
 # 来源卡：roboflow/trackers: Trackers gives you clean, modular re-implementations of leading multi-object tracking algorithms released under the permissive Apache 2.0 license. You combine them with any detection model you already use.
 
 ## 这份材料讲了什么

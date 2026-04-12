@@ -6,12 +6,11 @@ author: unknown
 published_at: 2026-04-06
 created_at: 2026-04-09
 topics:
-  - 强化学习
+- reinforcement-learning
 related_concepts:
-  - 强化学习总索引
+- 强化学习总索引
 status: summarized
 ---
-
 # 来源卡：theLMbook/GRPO_From_Scratch_Multi_GPU_DataParallel_Qwen_2_5_1_5B_Instruct.ipynb at main
 
 ## 这份材料讲了什么

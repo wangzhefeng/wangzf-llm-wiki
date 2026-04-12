@@ -1,22 +1,21 @@
 ---
 source_type: web
 source_path: raw/web/reinforcement-learning/2026-04-06-Stirling-ToolsStirling-PDF 1 PDF Application on GitHub that lets you edit PDFs on any device anywhere.md
-title: Stirling-Tools/Stirling-PDF: #1 PDF Application on GitHub that lets you edit PDFs on any device anywhere
+title: 'Stirling-Tools/Stirling-PDF: #1 PDF Application on GitHub that lets you edit PDFs on any device anywhere'
 author: unknown
 published_at: 2026-04-06
 created_at: 2026-04-09
 topics:
-  - 强化学习
+- reinforcement-learning
 related_concepts:
-  - 强化学习总索引
+- 强化学习总索引
 status: summarized
 ---
-
 # 来源卡：Stirling-Tools/Stirling-PDF: #1 PDF Application on GitHub that lets you edit PDFs on any device anywhere
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/web/reinforcement-learning/2026-04-06-Stirling-ToolsStirling-PDF 1 PDF Application on GitHub that lets you edit PDFs on any device anywhere.md]]
+- 原文：[[raw/web/reinforcement-learning/2026-04-06-Stirling-ToolsStirling-PDF-1-PDF-Application-on-GitHub-that-lets-you-edit-PDFs-on-any-device-anywhere.md]]
 - 来源：`raw/web/reinforcement-learning/2026-04-06-Stirling-ToolsStirling-PDF 1 PDF Application on GitHub that lets you edit PDFs on any device anywhere.md`
 - 主题：强化学习
 

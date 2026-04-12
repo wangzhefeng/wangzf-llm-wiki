@@ -1,22 +1,21 @@
 ---
 source_type: web
 source_path: raw/web/llm-pre-training/2026-04-06-Adaptive Classifier Dynamic Text Classification with Continuous Learning.md
-title: Adaptive Classifier: Dynamic Text Classification with Continuous Learning
+title: 'Adaptive Classifier: Dynamic Text Classification with Continuous Learning'
 author: unknown
 published_at: 2026-04-06
 created_at: 2026-04-09
 topics:
-  - 机器学习
+- machine-learning
 related_concepts:
-  - 机器学习总索引
+- 机器学习总索引
 status: summarized
 ---
-
 # 来源卡：Adaptive Classifier: Dynamic Text Classification with Continuous Learning
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/web/llm-pre-training/2026-04-06-Adaptive Classifier Dynamic Text Classification with Continuous Learning.md]]
+- 原文：[[raw/web/llm-pre-training/2026-04-06-Adaptive-Classifier-Dynamic-Text-Classification-with-Continuous-Learning.md]]
 - 来源：`raw/web/llm-pre-training/2026-04-06-Adaptive Classifier Dynamic Text Classification with Continuous Learning.md`
 - 主题：机器学习
 

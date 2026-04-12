@@ -1,17 +1,16 @@
 ---
 source_type: web
 source_path: raw/web/operations-research/2026-04-06-gtbookrobotics Notebook-based book Introduction to Robotics and Perception by Frank Dellaert and Seth Hutchinson.md
-title: gtbook/robotics: Notebook-based book \"Introduction to Robotics and Perception\" by Frank Dellaert and Seth Hutchinson
+title: 'gtbook/robotics: Notebook-based book "Introduction to Robotics and Perception" by Frank Dellaert and Seth Hutchinson'
 author: unknown
 published_at: 2026-04-06
 created_at: 2026-04-09
 topics:
-  - 待分类
+- shared
 related_concepts:
-  - 知识库来源与专题摄取索引
+- 知识库来源与专题摄取索引
 status: summarized
 ---
-
 # 来源卡：gtbook/robotics: Notebook-based book \"Introduction to Robotics and Perception\" by Frank Dellaert and Seth Hutchinson
 
 ## 这份材料讲了什么

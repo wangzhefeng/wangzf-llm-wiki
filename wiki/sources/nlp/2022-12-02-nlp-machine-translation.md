@@ -6,14 +6,13 @@ author: wangzf
 published_at: 2022-12-02
 created_at: 2026-04-09
 topics:
-  - 大语言模型
-  - NLP
+- llm
+- nlp
 related_concepts:
-  - NLP任务
-  - 大语言模型总索引
+- NLP任务
+- 大语言模型总索引
 status: summarized
 ---
-
 # 来源卡：机器翻译 Machine Translation
 
 ## 这份材料讲了什么

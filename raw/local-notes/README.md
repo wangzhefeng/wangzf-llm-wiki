@@ -1,3 +1,14 @@
+---
+source_type: local-note
+source_path: "raw/local-notes/readme-20260412200431.md"
+title: "README"
+author: unknown
+created_at: 2026-04-12
+topics:
+- knowledge-base
+status: inbox
+---
+
 # local-notes
 
 `local-notes/` 用来接纳本地已有的个人文档、旧专题笔记和历史知识资产。

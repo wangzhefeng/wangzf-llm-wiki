@@ -1,11 +1,11 @@
 ---
 created_at: 2026-04-11
 topics:
-  - reinforcementlearning
+- deep-learning
+- reinforcement-learning
 status: inbox
 source_path: raw/web/llm-others/2026-04-06-xtunerREADME_zh-CN.md at main.md
 ---
-
 # 来源卡：2026-04-06-xtunerREADME_zh-CN.md at main
 
 ## 这份材料讲了什么

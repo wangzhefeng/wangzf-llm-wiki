@@ -6,14 +6,13 @@ author: wangzf
 published_at: 2022-04-05
 created_at: 2026-04-09
 topics:
-  - 大语言模型
-  - NLP
+- llm
+- nlp
 related_concepts:
-  - LLM工程框架
-  - 大语言模型总索引
+- LLM工程框架
+- 大语言模型总索引
 status: summarized
 ---
-
 # 来源卡：NLP-opencc
 
 ## 这份材料讲了什么

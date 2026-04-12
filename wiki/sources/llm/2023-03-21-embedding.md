@@ -6,14 +6,13 @@ author: wangzf
 published_at: 2023-03-21
 created_at: 2026-04-09
 topics:
-  - 大语言模型
-  - 本地笔记
+- llm
+- shared
 related_concepts:
-  - Embedding
-  - 大语言模型总索引
+- Embedding
+- 大语言模型总索引
 status: summarized
 ---
-
 # 来源卡：Word Embedding
 
 ## 这份材料讲了什么

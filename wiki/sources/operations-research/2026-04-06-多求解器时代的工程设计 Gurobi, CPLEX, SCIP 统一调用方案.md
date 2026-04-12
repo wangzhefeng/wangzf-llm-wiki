@@ -6,17 +6,16 @@ author: unknown
 published_at: 2026-04-06
 created_at: 2026-04-09
 topics:
-  - 运筹优化
+- operations-research
 related_concepts:
-  - 运筹优化算法总索引
+- 运筹优化算法总索引
 status: summarized
 ---
-
 # 来源卡：多求解器时代的工程设计 Gurobi, CPLEX, SCIP 统一调用方案
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/web/operations-research/2026-04-06-多求解器时代的工程设计 Gurobi, CPLEX, SCIP 统一调用方案.md]]
+- 原文：[[raw/web/operations-research/2026-04-06-多求解器时代的工程设计-Gurobi,-CPLEX,-SCIP-统一调用方案.md]]
 - 来源：`raw/web/operations-research/2026-04-06-多求解器时代的工程设计 Gurobi, CPLEX, SCIP 统一调用方案.md`
 - 主题：运筹优化
 

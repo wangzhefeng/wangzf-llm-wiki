@@ -6,13 +6,12 @@ author: wangzf
 published_at: 2023-07-30
 created_at: 2026-04-09
 topics:
-  - 时间序列
-  - post
+- shared
+- timeseries
 related_concepts:
-  - 时间序列预测总索引
+- 时间序列预测总索引
 status: summarized
 ---
-
 # 来源卡：蒙特卡洛模拟
 
 ## 这份材料讲了什么

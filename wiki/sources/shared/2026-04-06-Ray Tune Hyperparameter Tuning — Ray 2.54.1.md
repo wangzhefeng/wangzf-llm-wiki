@@ -1,17 +1,16 @@
 ---
 source_type: web
 source_path: raw/web/machine-learning/2026-04-06-Ray Tune Hyperparameter Tuning — Ray 2.54.1.md
-title: Ray Tune: Hyperparameter Tuning — Ray 2.54.1
+title: 'Ray Tune: Hyperparameter Tuning — Ray 2.54.1'
 author: unknown
 published_at: 2026-04-06
 created_at: 2026-04-09
 topics:
-  - 待分类
+- shared
 related_concepts:
-  - 知识库来源与专题摄取索引
+- 知识库来源与专题摄取索引
 status: summarized
 ---
-
 # 来源卡：Ray Tune: Hyperparameter Tuning — Ray 2.54.1
 
 ## 这份材料讲了什么

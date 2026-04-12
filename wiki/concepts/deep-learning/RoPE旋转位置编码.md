@@ -1,13 +1,13 @@
 ---
 created_at: 2026-04-06
 topics:
-  - LLM 架构
+- deep-learning
+- llm
 related_concepts:
-  - 位置编码
-  - 注意力机制
+- 位置编码
+- 注意力机制
 status: inbox
 ---
-
 # RoPE (Rotary Position Embedding)
 
 ## 定义

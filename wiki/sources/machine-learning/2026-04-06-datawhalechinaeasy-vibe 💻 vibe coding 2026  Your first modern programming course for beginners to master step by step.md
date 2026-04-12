@@ -1,22 +1,21 @@
 ---
 source_type: web
 source_path: raw/web/vibe-coding/2026-04-06-datawhalechinaeasy-vibe 💻 vibe coding 2026  Your first modern programming course for beginners to master step by step.md
-title: datawhalechina/easy-vibe: 💻 vibe coding 2026 | Your first modern programming course for beginners to master step by step.
+title: 'datawhalechina/easy-vibe: 💻 vibe coding 2026 | Your first modern programming course for beginners to master step by step.'
 author: unknown
 published_at: 2026-04-06
 created_at: 2026-04-09
 topics:
-  - 机器学习
+- machine-learning
 related_concepts:
-  - 机器学习总索引
+- 机器学习总索引
 status: summarized
 ---
-
 # 来源卡：datawhalechina/easy-vibe: 💻 vibe coding 2026 | Your first modern programming course for beginners to master step by step.
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/web/vibe-coding/2026-04-06-datawhalechinaeasy-vibe 💻 vibe coding 2026  Your first modern programming course for beginners to master step by step.md]]
+- 原文：[[raw/web/vibe-coding/2026-04-06-datawhalechinaeasy-vibe-💻-vibe-coding-2026-Your-first-modern-programming-course-for-beginners-to-master-step-by-step.md]]
 - 来源：`raw/web/vibe-coding/2026-04-06-datawhalechinaeasy-vibe 💻 vibe coding 2026  Your first modern programming course for beginners to master step by step.md`
 - 主题：机器学习
 

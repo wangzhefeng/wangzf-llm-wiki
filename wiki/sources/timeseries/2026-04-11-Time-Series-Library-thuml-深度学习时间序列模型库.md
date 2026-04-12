@@ -1,12 +1,11 @@
 ---
 created_at: 2026-04-11
 topics:
-  - 时间序列预测
-  - 深度学习
+- deep-learning
+- timeseries
 status: summarized
 source_path: raw/repos/repo-thuml-Time-Series-Library.md
 ---
-
 # 来源卡：Time-Series-Library (THUML)
 
 ## 这份材料讲了什么

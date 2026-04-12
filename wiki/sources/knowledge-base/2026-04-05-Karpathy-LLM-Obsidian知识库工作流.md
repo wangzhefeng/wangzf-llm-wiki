@@ -4,14 +4,11 @@ source_url: https://mp.weixin.qq.com/s?__biz=Mzg3MTkxMjYzOA==&mid=2247513861&idx
 source_path: raw/web/llm/2026-04-05-Karpathy最新硬核分享：用大模型和Obsidian打造个人本地知识库.md
 created_at: 2026-04-05
 topics:
-  - 知识库构建
-  - 个人知识库
-  - llm-knowledge-base
+- knowledge-base
 related_concepts:
-  - 知识库建设方法
+- 知识库建设方法
 status: summarized
 ---
-
 # Karpathy LLM + Obsidian 知识库工作流来源摘要
 
 

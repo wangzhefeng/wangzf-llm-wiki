@@ -6,17 +6,16 @@ author: unknown
 published_at: 2026-04-06
 created_at: 2026-04-09
 topics:
-  - 深度学习
+- deep-learning
 related_concepts:
-  - 深度学习总索引
+- 深度学习总索引
 status: summarized
 ---
-
 # 来源卡：CUDA semantics
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/web/tools/2026-04-06-CUDA semantics.md]]
+- 原文：[[raw/web/tools/2026-04-06-CUDA-semantics.md]]
 - 来源：`raw/web/tools/2026-04-06-CUDA semantics.md`
 - 主题：深度学习
 

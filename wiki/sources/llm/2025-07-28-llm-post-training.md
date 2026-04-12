@@ -6,13 +6,12 @@ author: wangzf
 published_at: 2025-07-28
 created_at: 2026-04-09
 topics:
-  - 大语言模型
-  - post
+- llm
+- shared
 related_concepts:
-  - 大语言模型总索引
+- 大语言模型总索引
 status: summarized
 ---
-
 # 来源卡：LLM Post-training
 
 ## 这份材料讲了什么

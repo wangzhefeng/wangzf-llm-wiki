@@ -1,14 +1,13 @@
 ---
 created_at: 2026-04-06
 topics:
-  - 大语言模型
+- llm
 related_concepts:
-  - 预训练
-  - 自注意力
-  - 解码
+- 预训练
+- 自注意力
+- 解码
 status: inbox
 ---
-
 # Transformer 架构
 
 ## 定义

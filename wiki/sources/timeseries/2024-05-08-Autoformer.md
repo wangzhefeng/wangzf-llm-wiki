@@ -3,15 +3,13 @@ source_type: local_note
 source_path: raw/local-notes/timeseries/timeseries-time-domain/timeseries-deeplearning/2024-05-08-paper-ts-autoformer/index.md
 created_at: 2026-04-04
 topics:
-  - 时间序列预测
-  - deep-learning-forecasting
+- timeseries
 related_concepts:
-  - 深度学习时间序列预测
-  - 趋势与季节性
-  - TFT
+- 深度学习时间序列预测
+- 趋势与季节性
+- TFT
 status: summarized
 ---
-
 # Autoformer 来源摘要
 
 

@@ -1,5 +1,7 @@
 ---
 created_at: 2026-04-09
+aliases:
+  - 知识库Schema设计
 topics:
   - 知识库构建
   - schema
@@ -27,10 +29,19 @@ status: linked
   - `raw/assets/`：通用附件与非来源型素材（见 `raw/assets/README.md`）
 - `wiki/sources/`：来源摘要卡（讲材料内容与价值）
 - `wiki/indexes/`：主题索引、阅读地图、工作台
+- `wiki/indexes/shared/`：共享执行层
+  - 根目录：执行工作流与任务流入口（ingest/query/backfill/lint）
+  - `llm-wiki-building/`：构建方法论（结构原则、阅读路径、来源清单）
+  - `llm-wiki-operations/`：运维治理（运维总索引、运维阅读地图、运维来源清单）
+  - `llm-wiki-usage/`：使用方法（使用总索引、使用阅读地图、使用来源清单）
 - `wiki/concepts/`：概念页与方法页
 - `wiki/entities/`：实体页（当前可按需补齐）
 - `wiki/comparisons/`：对比分析页（当前可按需补齐）
 - `wiki/queries/`：可复用问答页（当前可按需补齐）
+
+共享层约束：
+- `shared` 根目录只放执行页；三主题目录只放定义与导航页。
+- `知识库工作台` 是 shared 层统一调度入口。
 
 ## 字段
 
@@ -92,6 +103,7 @@ sources:
 - 页面互链优先使用 `[[wikilinks]]`。
 - 原始层文件不做语义改写，修正写入 `wiki/` 层。
 - 每次关键操作（ingest/query/lint/backfill）追加到 `wiki/log.md`。
+- 不再单独维护“知识库Schema设计”页面；规则统一在本页维护。
 
 ## 质量约束
 

@@ -4,14 +4,14 @@ source_url: https://huggingface.co/spaces/Salesforce/GIFT-Eval
 source_path: raw/web/timeseries/2026-04-06-GIFT Eval - a Hugging Face Space by Salesforce.md
 created_at: 2026-04-06
 topics:
-  - 运筹优化
-  - 大语言模型评估
+- llm
+- operations-research
+- timeseries
 related_concepts:
-  - 大语言模型评估
-  - 时间序列基础模型评估
+- 大语言模型评估
+- 时间序列基础模型评估
 status: summarized
 ---
-
 # GIFT Eval - Salesforce 大语言模型评估空间来源摘要
 
 - 原文：[[raw/web/timeseries/2026-04-06-GIFT Eval - a Hugging Face Space by Salesforce.md]]

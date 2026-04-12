@@ -31,7 +31,7 @@ status: linked
 
 ## 注意力机制
 
-- [[2026-04-06-超详细图解Self-Attention]]
+- [[raw/web/deep-learning/2026-04-06-超详细图解Self-Attention]]
 - [[sources/deep-learning/2026-04-06-10. 注意力机制 — 动手学深度学习 2.0.0 documentation]]
 
 ## NLP 预训练
@@ -46,7 +46,7 @@ status: linked
 
 ## 机器翻译
 
-- [[2026-04-06-基于Transform的机器翻译系统]]
+- [[raw/web/llm-pre-training/2026-04-06-基于Transform的机器翻译系统]]
 - [[2026-04-06-ymoslemOpenNMT-Tutorial Neural Machine Translation (NMT) tutorial. Data preprocessing, model training, evaluation, and deployment]]
 
 ## 关键概念

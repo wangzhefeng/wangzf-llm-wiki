@@ -6,17 +6,16 @@ author: unknown
 published_at: 2026-04-06
 created_at: 2026-04-09
 topics:
-  - 时间序列
+- timeseries
 related_concepts:
-  - 时间序列预测总索引
+- 时间序列预测总索引
 status: summarized
 ---
-
 # 来源卡：牛津大学等提出P-sLSTM，释放LSTM在长期时间序列预测中的潜力
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/web/timeseries/2026-04-06-牛津大学等提出P-sLSTM，释放LSTM在长期时间序列预测中的潜力 1.md]]
+- 原文：[[raw/web/timeseries/2026-04-06-牛津大学等提出P-sLSTM，释放LSTM在长期时间序列预测中的潜力-1.md]]
 - 来源：`raw/web/timeseries/2026-04-06-牛津大学等提出P-sLSTM，释放LSTM在长期时间序列预测中的潜力 1.md`
 - 主题：时间序列
 

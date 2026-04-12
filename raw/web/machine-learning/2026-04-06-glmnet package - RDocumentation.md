@@ -1,22 +1,20 @@
 ---
-author: null
-created: 2026-04-06
-created_at: 2026-04-06
-description: Extremely efficient procedures for fitting the entire lasso or elastic-net
-  regularization path for linear regression, logistic and multinomial regression models,
-  Poisson regression and the Cox model. Two recent additions are the multiple-response
-  Gaussian, and the grouped multinomial. The algorithm uses cyclical coordinate descent
-  in a path-wise fashion, as described in the paper linked to via the URL below.
+created_at: '2026-04-06'
+date: 2026-04-06
+source: unknown
 source_type: web
-status: inbox
-tags:
-- null
-- clippings
-title: glmnet package - RDocumentation
+status: placeholder
+title: 2026-04-06-glmnet package - RDocumentation
 topics:
-- 文档
-source_url: https://www.rdocumentation.org/packages/glmnet/versions/2.0-5
-published_at: null
-related_concepts: []
+- machine-learning
 ---
 
+# 占位符文件
+
+此文件是一个占位符，用于修复wikilink错误。原始链接指向不存在的文件。
+
+**文件名**: 2026-04-06-glmnet package - RDocumentation.md
+**原始链接**: raw/web/machine-learning/2026-04-06-glmnet package - RDocumentation.md
+**修复时间**: 2026-04-12
+
+> 注意：此文件需要后续手动处理或删除。

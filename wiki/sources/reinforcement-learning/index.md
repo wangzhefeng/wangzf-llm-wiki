@@ -1,14 +1,16 @@
 ---
 created_at: 2026-04-11
-topics: [reinforcementlearning, sources]
+topics:
+- reinforcement-learning
+- shared
 status: inbox
 ---
-
 # wiki/sources/reinforcementlearning
 
 本目录存放强化学习主题的来源摘要卡。入口建议从：[[强化学习总索引]]。
 
 <!-- AUTO-GENERATED: sources-dir-index:start -->
+
 
 ## 本目录来源卡清单（自动生成）
 
@@ -33,11 +35,7 @@ status: inbox
 - [[wiki/sources/reinforcement-learning/2026-04-06-The World's Leading Online Programming Learning Platform]]
 - [[wiki/sources/reinforcement-learning/2026-04-06-Training “real-world” models with DDP]]
 - [[wiki/sources/reinforcement-learning/2026-04-06-Why We Think]]
-- [[wiki/sources/reinforcement-learning/2026-04-06-datawhalechinaeasy-rl 强化学习中文教程（蘑菇书🍄），在线阅读地址：httpsdatawhalechina.github.ioeasy-rl]]
-- [[wiki/sources/reinforcement-learning/2026-04-06-deep-learning-pytorch-huggingfacetrainingscriptsdporun_dpo.py at main]]
 - [[wiki/sources/reinforcement-learning/2026-04-06-gaoxiaosSupermariobros-PPO-pytorch rl on super-mario-bros]]
-- [[wiki/sources/reinforcement-learning/2026-04-06-theLMbookGRPO_From_Scratch_Multi_GPU_DataParallel_Qwen_2_5_1_5B_Instruct.ipynb at main]]
-- [[wiki/sources/reinforcement-learning/2026-04-06-xtunerREADME_zh-CN.md at main]]
 - [[wiki/sources/reinforcement-learning/2026-04-06-zhouboleiintroRL Intro to Reinforcement Learning (强化学习纲要）]]
 - [[wiki/sources/reinforcement-learning/2026-04-06-人人都能看懂的DPO数学原理]]
 - [[wiki/sources/reinforcement-learning/2026-04-06-人人都能看懂的RL-PPO理论知识]]
@@ -46,13 +44,11 @@ status: inbox
 - [[wiki/sources/reinforcement-learning/2026-04-06-我的RLHF实践记录~]]
 - [[wiki/sources/reinforcement-learning/2026-04-06-最新万字长文！强化学习之父联合谷歌RL副总裁：未来不是靠强化学习算法而是「经验流」]]
 - [[wiki/sources/reinforcement-learning/2026-04-06-浅聊RL框架的勃勃生机、万物竞发]]
-- [[wiki/sources/reinforcement-learning/2026-04-06-浅聊RL框架的勃勃生机、万物竞发 1]]
 - [[wiki/sources/reinforcement-learning/2026-04-06-第二章 马尔可夫决策过程 (MDP)]]
 - [[wiki/sources/reinforcement-learning/2026-04-06-草履虫也能学会的强化学习系列（6）]]
 - [[wiki/sources/reinforcement-learning/2026-04-06-蘑菇书EasyRL]]
 - [[wiki/sources/reinforcement-learning/2026-04-06-面试问了DPO算法，答得稀烂~]]
 - [[wiki/sources/reinforcement-learning/2026-04-06-马尔可夫决策过程 - 动手学强化学习]]
-- [[wiki/sources/reinforcement-learning/2026-04-06-马尔可夫决策过程 - 动手学强化学习 1]]
 - [[wiki/sources/reinforcement-learning/强化学习专题来源]]
 
 <!-- AUTO-GENERATED: sources-dir-index:end -->

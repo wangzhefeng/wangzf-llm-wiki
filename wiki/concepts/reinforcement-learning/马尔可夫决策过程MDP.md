@@ -1,13 +1,12 @@
 ---
 created_at: 2026-04-06
 topics:
-  - 强化学习
+- reinforcement-learning
 related_concepts:
-  - 决策过程
-  - 马尔可夫性
+- 决策过程
+- 马尔可夫性
 status: inbox
 ---
-
 # 马尔可夫决策过程 (MDP)
 
 ## 定义

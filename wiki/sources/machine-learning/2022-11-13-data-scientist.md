@@ -6,13 +6,12 @@ author: wangzf
 published_at: 2022-11-13
 created_at: 2026-04-09
 topics:
-  - 机器学习
-  - post
+- machine-learning
+- shared
 related_concepts:
-  - 机器学习总索引
+- 机器学习总索引
 status: summarized
 ---
-
 # 来源卡：优秀数据科学家的五个特征
 
 ## 这份材料讲了什么

@@ -1,11 +1,10 @@
 ---
 created_at: 2026-04-11
 topics:
-  - machinelearning
+- machine-learning
 status: inbox
 source_path: raw/web/machine-learning/2026-04-06-Ray Tune Hyperparameter Tuning — Ray 2.54.1.md
 ---
-
 # 来源卡：2026-04-06-Ray Tune Hyperparameter Tuning — Ray 2.54.1
 
 ## 这份材料讲了什么

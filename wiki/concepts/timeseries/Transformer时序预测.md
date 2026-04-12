@@ -1,13 +1,12 @@
 ---
 created_at: 2026-04-06
 topics:
-  - 时间序列预测
+- timeseries
 related_concepts:
-  - 多尺度建模
-  - 频率分解
+- 多尺度建模
+- 频率分解
 status: inbox
 ---
-
 # Transformer 时序预测
 
 ## 定义

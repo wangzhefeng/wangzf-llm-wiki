@@ -1,15 +1,13 @@
 ---
 created_at: 2026-04-09
 topics:
-  - 大语言模型
-  - 指令对齐
+- llm
 related_concepts:
-  - SFT (监督微调)
-  - RLHF
-  - 大语言模型总索引
+- SFT (监督微调)
+- RLHF
+- 大语言模型总索引
 status: linked
 ---
-
 # InstructGPT
 
 ## 定义

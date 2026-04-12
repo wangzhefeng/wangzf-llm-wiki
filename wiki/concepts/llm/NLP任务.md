@@ -1,15 +1,14 @@
 ---
 created_at: 2026-04-09
 topics:
-  - 大语言模型
-  - NLP任务
+- llm
+- nlp
 related_concepts:
-  - 大语言模型
-  - Embedding
-  - 大语言模型总索引
+- 大语言模型
+- Embedding
+- 大语言模型总索引
 status: linked
 ---
-
 # NLP任务
 
 NLP 任务是 LLM 应用的直接落地层，常见包括文本分类、序列标注、问答、关键词抽取、语义匹配与生成任务。

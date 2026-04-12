@@ -1,11 +1,11 @@
 ---
 created_at: 2026-04-11
 topics:
-  - operationsresearch
+- operations-research
+- tools
 status: inbox
 source_path: raw/web/operations-research/2026-04-06-PDFMathTranslate - PDF Translation with preserved formats.md
 ---
-
 # 来源卡：2026-04-06-PDFMathTranslate - PDF Translation with preserved formats
 
 ## 这份材料讲了什么

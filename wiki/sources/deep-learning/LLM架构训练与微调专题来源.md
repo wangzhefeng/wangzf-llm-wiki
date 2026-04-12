@@ -3,18 +3,17 @@ source_type: web
 title: LLM 架构、训练与微调专题
 created_at: 2026-04-06
 topics:
-  - LLM 架构
-  - 模型训练
-  - 模型微调
+- deep-learning
+- llm
+- shared
 related_concepts:
-  - Transformer 架构
-  - RoPE
-  - KV Cache
-  - RLHF
-  - 量化
+- Transformer 架构
+- RoPE
+- KV Cache
+- RLHF
+- 量化
 status: summarized
 ---
-
 # LLM 架构、训练与微调专题
 
 ## 来源概述

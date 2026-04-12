@@ -6,14 +6,14 @@ author: wangzf
 published_at: 2022-04-05
 created_at: 2026-04-09
 topics:
-  - 大语言模型
-  - 本地笔记
+- llm
+- nlp
+- shared
 related_concepts:
-  - 大语言模型
-  - 大语言模型总索引
+- 大语言模型
+- 大语言模型总索引
 status: summarized
 ---
-
 # 来源卡：NLP-特征提取
 
 ## 这份材料讲了什么

@@ -4,15 +4,14 @@ source_url: https://github.com/wangzhefeng/tsproj_stat
 source_path: raw/repos/repo-wangzhefeng-tsproj-stat.md
 created_at: 2026-04-12
 topics:
-  - 时间序列预测
-  - 统计模型
+- shared
+- timeseries
 related_concepts:
-  - 统计时间序列预测
-  - ARIMA模型
-  - 预测框架
+- 统计时间序列预测
+- ARIMA模型
+- 预测框架
 status: summarized
 ---
-
 # 来源卡：tsproj_stat 统计时间序列预测框架
 
 ## 这份材料讲了什么

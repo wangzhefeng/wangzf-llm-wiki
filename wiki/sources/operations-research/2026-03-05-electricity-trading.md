@@ -6,13 +6,12 @@ author: wangzf
 published_at: 2026-03-05
 created_at: 2026-04-09
 topics:
-  - 运筹优化
-  - post
+- operations-research
+- shared
 related_concepts:
-  - 运筹优化算法总索引
+- 运筹优化算法总索引
 status: summarized
 ---
-
 # 来源卡：电力交易
 
 ## 这份材料讲了什么

@@ -1,14 +1,13 @@
 ---
 created_at: 2026-04-06
 topics:
-  - 大语言模型
+- llm
 related_concepts:
-  - 向量数据库
-  - 检索
-  - 知识库
+- 向量数据库
+- 检索
+- 知识库
 status: inbox
 ---
-
 # RAG（检索增强生成）
 
 ## 定义
@@ -82,7 +81,7 @@ RAG（Retrieval-Augmented Generation，检索增强生成）是一种将外部�
 ## 相关来源
 
 - [[大语言模型专题来源]]
-- [[2026-04-06-大模型外挂(向量)知识库]]
+- [[raw/web/llm-pre-training/2026-04-06-大模型外挂(向量)知识库]]
 - [[Vibe Coding来源清单]]
 
 ## 相关概念

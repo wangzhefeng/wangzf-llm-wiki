@@ -1,15 +1,14 @@
 ---
 created_at: 2026-04-06
 topics:
-  - 大语言模型
-  - 智能体
+- agent-dev
+- llm
 related_concepts:
-  - 工具调用
-  - 规划
-  - 上下文工程
+- 工具调用
+- 规划
+- 上下文工程
 status: inbox
 ---
-
 # Agent（智能体）
 
 ## 定义
@@ -99,8 +98,8 @@ Thought: 现在我可以用这个结果...
 
 - [[大语言模型专题来源]]
 - [[2026-04-06-从零搓出一个Claude Code，一篇超详细的总结！]]
-- [[2026-04-06-GitHub---datawhalechinahandy-multi-agent-This-is-a-multi-agent-tutorial-based-on]]
-- [[2026-04-06-Agents]] — AI Agent 完整教材
+- [[raw/web/vibe-coding/2026-04-06-GitHub---datawhalechinahandy-multi-agent-This-is-a-multi-agent-tutorial-based-on]]
+- [[raw/web/vibe-coding/2026-04-06-Agents]] — AI Agent 完整教材
 - [[2026-04-06-Agents Companion]] — Agent 配套教材
 
 ## 相关概念

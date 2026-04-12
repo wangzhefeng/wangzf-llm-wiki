@@ -1,16 +1,16 @@
 ---
 created_at: 2026-04-11
 topics:
-  - operationsresearch
+- control-algorithms
+- operations-research
 status: inbox
 source_path: raw/web/operations-research/2026-04-06-gtbookrobotics Notebook-based book Introduction to Robotics and Perception by Frank Dellaert and Seth Hutchinson.md
 ---
-
 # 来源卡：2026-04-06-gtbookrobotics Notebook-based book Introduction to Robotics and Perception by Frank Dellaert and Seth Hutchinson
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/web/operations-research/2026-04-06-gtbookrobotics Notebook-based book Introduction to Robotics and Perception by Frank Dellaert and Seth Hutchinson]]
+- 原文：[[raw/web/control-algorithms/2026-04-06-gtbookrobotics-Notebook-based-book-Introduction-to-Robotics-and-Perception-by-Frank-Dellaert-and-Seth-Hutchinson.md]]
 - 来源路径：`raw/web/operations-research/2026-04-06-gtbookrobotics Notebook-based book Introduction to Robotics and Perception by Frank Dellaert and Seth Hutchinson.md`
 
 ## 价值是什么

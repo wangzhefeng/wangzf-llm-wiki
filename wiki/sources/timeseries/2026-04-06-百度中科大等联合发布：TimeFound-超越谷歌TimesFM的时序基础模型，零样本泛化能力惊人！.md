@@ -6,12 +6,11 @@ author: unknown
 published_at: 2026-04-06
 created_at: 2026-04-09
 topics:
-  - 时间序列
+- timeseries
 related_concepts:
-  - 时间序列预测总索引
+- 时间序列预测总索引
 status: summarized
 ---
-
 # 来源卡：百度/中科大等联合发布：TimeFound-超越谷歌TimesFM的时序基础模型，零样本泛化能力惊人！
 
 ## 这份材料讲了什么

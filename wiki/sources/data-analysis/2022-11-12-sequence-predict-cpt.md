@@ -6,12 +6,11 @@ author: wangzf
 published_at: 2022-11-12
 created_at: 2026-04-09
 topics:
-  - 数据分析
+- data-analysis
 related_concepts:
-  - 序列预测与条件概率
+- 序列预测与条件概率
 status: summarized
 ---
-
 # 来源卡：目标序列
 
 ## 这份材料讲了什么

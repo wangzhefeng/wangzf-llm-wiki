@@ -1,14 +1,13 @@
 ---
 created_at: 2026-04-06
 topics:
-  - 计算机视觉
+- computer-vision
 related_concepts:
-  - Transformer
-  - 自注意力
-  - 图像分类
+- Transformer
+- 自注意力
+- 图像分类
 status: inbox
 ---
-
 # Vision Transformer (ViT)
 
 ## 定义

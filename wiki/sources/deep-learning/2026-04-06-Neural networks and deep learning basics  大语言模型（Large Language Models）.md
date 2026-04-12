@@ -6,17 +6,16 @@ author: unknown
 published_at: 2026-04-06
 created_at: 2026-04-09
 topics:
-  - 深度学习
+- deep-learning
 related_concepts:
-  - 深度学习总索引
+- 深度学习总索引
 status: summarized
 ---
-
 # 来源卡：Neural networks and deep learning basics | 大语言模型（Large Language Models）
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/web/llm-pre-training/2026-04-06-Neural networks and deep learning basics  大语言模型（Large Language Models）.md]]
+- 原文：[[raw/web/llm-pre-training/2026-04-06-Neural-networks-and-deep-learning-basics-大语言模型（Large-Language-Models）.md]]
 - 来源：`raw/web/llm-pre-training/2026-04-06-Neural networks and deep learning basics  大语言模型（Large Language Models）.md`
 - 主题：深度学习
 

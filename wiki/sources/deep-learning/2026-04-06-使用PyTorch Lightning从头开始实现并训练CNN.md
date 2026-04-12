@@ -6,17 +6,16 @@ author: unknown
 published_at: 2026-04-06
 created_at: 2026-04-09
 topics:
-  - 深度学习
+- deep-learning
 related_concepts:
-  - 深度学习总索引
+- 深度学习总索引
 status: summarized
 ---
-
 # 来源卡：使用PyTorch Lightning从头开始实现并训练CNN
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/web/deep-learning/2026-04-06-使用PyTorch Lightning从头开始实现并训练CNN.md]]
+- 原文：[[raw/web/deep-learning/2026-04-06-使用PyTorch-Lightning从头开始实现并训练CNN.md]]
 - 来源：`raw/web/deep-learning/2026-04-06-使用PyTorch Lightning从头开始实现并训练CNN.md`
 - 主题：深度学习
 

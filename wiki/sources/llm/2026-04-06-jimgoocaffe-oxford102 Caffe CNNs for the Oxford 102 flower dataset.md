@@ -10,7 +10,7 @@ source_path: raw/web/llm-pre-training/2026-04-06-jimgoocaffe-oxford102 Caffe CNN
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/web/llm-pre-training/2026-04-06-jimgoocaffe-oxford102 Caffe CNNs for the Oxford 102 flower dataset.md]]
+- 原文：[[raw/web/llm-pre-training/2026-04-06-jimgoocaffe-oxford102-Caffe-CNNs-for-the-Oxford-102-flower-dataset.md]]
 - 来源路径：`raw/web/llm-pre-training/2026-04-06-jimgoocaffe-oxford102 Caffe CNNs for the Oxford 102 flower dataset.md`
 
 ## 价值是什么

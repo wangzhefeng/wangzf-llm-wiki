@@ -5,7 +5,7 @@ updated: 2026-04-12
 type: index
 tags: [vibe-coding, 工作流, 编程风格, AI Agent]
 sources: []
-status: active
+status: linked
 ---
 
 # Vibe-Coding工作流

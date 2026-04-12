@@ -6,14 +6,13 @@ author: wangzf
 published_at: 2024-08-15
 created_at: 2026-04-09
 topics:
-  - 大语言模型
-  - 本地笔记
+- llm
+- shared
 related_concepts:
-  - Transformer架构
-  - 大语言模型总索引
+- Transformer架构
+- 大语言模型总索引
 status: summarized
 ---
-
 # 来源卡：LLM 应用-Llama 3.1 8B
 
 ## 这份材料讲了什么

@@ -1,22 +1,21 @@
 ---
 source_type: web
 source_path: raw/web/deep-learning/2026-04-06-zhouhaoyiInformer2020 The GitHub repository for the paper Informer accepted by AAAI 2021.md
-title: zhouhaoyi/Informer2020: The GitHub repository for the paper \"Informer\" accepted by AAAI 2021.
+title: 'zhouhaoyi/Informer2020: The GitHub repository for the paper "Informer" accepted by AAAI 2021.'
 author: unknown
 published_at: 2026-04-06
 created_at: 2026-04-09
 topics:
-  - 时间序列
+- timeseries
 related_concepts:
-  - 时间序列预测总索引
+- 时间序列预测总索引
 status: summarized
 ---
-
 # 来源卡：zhouhaoyi/Informer2020: The GitHub repository for the paper \"Informer\" accepted by AAAI 2021.
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/web/deep-learning/2026-04-06-zhouhaoyiInformer2020 The GitHub repository for the paper Informer accepted by AAAI 2021.md]]
+- 原文：[[raw/web/deep-learning/2026-04-06-zhouhaoyiInformer2020-The-GitHub-repository-for-the-paper-Informer-accepted-by-AAAI-2021.md]]
 - 来源：`raw/web/deep-learning/2026-04-06-zhouhaoyiInformer2020 The GitHub repository for the paper Informer accepted by AAAI 2021.md`
 - 主题：时间序列
 

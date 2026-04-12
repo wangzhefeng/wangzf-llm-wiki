@@ -6,14 +6,12 @@ author: wangzf
 published_at: 2022-07-15
 created_at: 2026-04-09
 topics:
-  - 计算机视觉
-  - 图像分类
+- computer-vision
 related_concepts:
-  - 图像分类
-  - 卷积神经网络CNN
+- 图像分类
+- 卷积神经网络CNN
 status: summarized
 ---
-
 # 来源卡：2022-07-15-image-classification
 
 ## 这份材料讲了什么

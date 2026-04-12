@@ -6,13 +6,12 @@ author: wangzf
 published_at: 2022-05-07
 created_at: 2026-04-09
 topics:
-  - 数据分析
-  - 统计学
+- data-analysis
+- shared
 related_concepts:
-  - 数据分析方法
+- 数据分析方法
 status: summarized
 ---
-
 # 来源卡：2022-05-07-statistic-basic
 
 ## 这份材料讲了什么

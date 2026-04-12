@@ -10,7 +10,7 @@ source_path: raw/web/computer-vision/2026-04-06-Discover FiftyOne  Boost Your Mu
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/web/computer-vision/2026-04-06-Discover FiftyOne  Boost Your Multimodal Data.md]]
+- 原文：[[raw/web/computer-vision/2026-04-06-Discover-FiftyOne-Boost-Your-Multimodal-Data.md]]
 - 来源路径：`raw/web/computer-vision/2026-04-06-Discover FiftyOne  Boost Your Multimodal Data.md`
 
 ## 价值是什么

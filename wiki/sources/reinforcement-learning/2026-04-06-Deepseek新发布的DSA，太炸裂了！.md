@@ -1,11 +1,10 @@
 ---
 created_at: 2026-04-11
 topics:
-  - reinforcementlearning
+- reinforcement-learning
 status: inbox
 source_path: raw/web/reinforcement-learning/2026-04-06-Deepseek新发布的DSA，太炸裂了！.md
 ---
-
 # 来源卡：2026-04-06-Deepseek新发布的DSA，太炸裂了！
 
 ## 这份材料讲了什么

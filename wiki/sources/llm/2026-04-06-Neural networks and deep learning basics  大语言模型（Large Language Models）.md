@@ -10,7 +10,7 @@ source_path: raw/web/llm-pre-training/2026-04-06-Neural networks and deep learni
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/web/llm-pre-training/2026-04-06-Neural networks and deep learning basics  大语言模型（Large Language Models）.md]]
+- 原文：[[raw/web/llm-pre-training/2026-04-06-Neural-networks-and-deep-learning-basics-大语言模型（Large-Language-Models）.md]]
 - 来源路径：`raw/web/llm-pre-training/2026-04-06-Neural networks and deep learning basics  大语言模型（Large Language Models）.md`
 
 ## 价值是什么

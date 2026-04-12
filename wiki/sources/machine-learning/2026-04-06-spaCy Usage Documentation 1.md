@@ -1,16 +1,15 @@
 ---
 created_at: 2026-04-11
 topics:
-  - machinelearning
+- machine-learning
 status: inbox
 source_path: raw/web/machine-learning/2026-04-06-spaCy Usage Documentation 1.md
 ---
-
 # 来源卡：2026-04-06-spaCy Usage Documentation 1
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/web/nlp/2026-04-06-spaCy Usage Documentation 1.md]]
+- 原文：[[raw/web/nlp/2026-04-06-spaCy-Usage-Documentation-1.md]]
 - 来源路径：`raw/web/machine-learning/2026-04-06-spaCy Usage Documentation 1.md`
 
 ## 价值是什么

@@ -10,7 +10,7 @@ source_path: raw/web/timeseries/2026-04-06-SynodicMonthChebyKAN Kolmogorov-Arnol
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/web/timeseries/2026-04-06-SynodicMonthChebyKAN Kolmogorov-Arnold Networks (KAN) using Chebyshev polynomials instead of B-splines.md]]
+- 原文：[[raw/web/timeseries/2026-04-06-SynodicMonthChebyKAN-Kolmogorov-Arnold-Networks-(KAN)-using-Chebyshev-polynomials-instead-of-B-splines.md]]
 - 来源路径：`raw/web/timeseries/2026-04-06-SynodicMonthChebyKAN Kolmogorov-Arnold Networks (KAN) using Chebyshev polynomials instead of B-splines.md`
 
 ## 价值是什么

@@ -1,22 +1,21 @@
 ---
 source_type: web
 source_path: raw/web/deep-learning/2026-04-06-tczhangzhipytorch-distributed A quickstart and benchmark for pytorch distributed training.md
-title: tczhangzhi/pytorch-distributed: A quickstart and benchmark for pytorch distributed training.
+title: 'tczhangzhi/pytorch-distributed: A quickstart and benchmark for pytorch distributed training.'
 author: unknown
 published_at: 2026-04-06
 created_at: 2026-04-09
 topics:
-  - 深度学习
+- deep-learning
 related_concepts:
-  - 深度学习总索引
+- 深度学习总索引
 status: summarized
 ---
-
 # 来源卡：tczhangzhi/pytorch-distributed: A quickstart and benchmark for pytorch distributed training.
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/web/deep-learning/2026-04-06-tczhangzhipytorch-distributed A quickstart and benchmark for pytorch distributed training.md]]
+- 原文：[[raw/web/deep-learning/2026-04-06-tczhangzhipytorch-distributed-A-quickstart-and-benchmark-for-pytorch-distributed-training.md]]
 - 来源：`raw/web/deep-learning/2026-04-06-tczhangzhipytorch-distributed A quickstart and benchmark for pytorch distributed training.md`
 - 主题：深度学习
 

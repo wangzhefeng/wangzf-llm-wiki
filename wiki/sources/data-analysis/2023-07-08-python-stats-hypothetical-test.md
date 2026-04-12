@@ -6,13 +6,12 @@ author: wangzf
 published_at: 2023-07-08
 created_at: 2026-04-09
 topics:
-  - 数据分析
-  - 统计学
+- data-analysis
+- shared
 related_concepts:
-  - 假设检验
+- 假设检验
 status: summarized
 ---
-
 # 来源卡：置信水平
 
 ## 这份材料讲了什么

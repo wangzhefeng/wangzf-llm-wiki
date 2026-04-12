@@ -6,12 +6,11 @@ author: unknown
 published_at: 2026-04-06
 created_at: 2026-04-09
 topics:
-  - 时间序列
+- timeseries
 related_concepts:
-  - 时间序列预测总索引
+- 时间序列预测总索引
 status: summarized
 ---
-
 # 来源卡：时间序列基础-＞数据标签、数据分割器、数据加载器的定义和讲解(零基础入门时间序列)_时间序列dataloder-CSDN博客
 
 ## 这份材料讲了什么

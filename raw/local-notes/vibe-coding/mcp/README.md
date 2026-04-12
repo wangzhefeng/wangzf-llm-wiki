@@ -1,3 +1,14 @@
+---
+source_type: local-note
+source_path: "raw/local-notes/vibe-coding/mcp/readme-20260412200431.md"
+title: "README"
+author: unknown
+created_at: 2026-04-12
+topics:
+- knowledge-base
+status: inbox
+---
+
 # MCP 知识库
 
 <details><summary>目录</summary><p>

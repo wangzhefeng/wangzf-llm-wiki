@@ -6,17 +6,16 @@ author: unknown
 published_at: 2026-04-06
 created_at: 2026-04-09
 topics:
-  - 强化学习
+- reinforcement-learning
 related_concepts:
-  - 强化学习总索引
+- 强化学习总索引
 status: summarized
 ---
-
 # 来源卡：DeepSeek-R1 技术剖析：没有强化学习基础也能看懂的 PPO & GRPO
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/web/reinforcement-learning/2026-04-06-DeepSeek-R1 技术剖析：没有强化学习基础也能看懂的 PPO & GRPO.md]]
+- 原文：[[raw/web/reinforcement-learning/2026-04-06-DeepSeek-R1-技术剖析：没有强化学习基础也能看懂的-PPO-&-GRPO.md]]
 - 来源：`raw/web/reinforcement-learning/2026-04-06-DeepSeek-R1 技术剖析：没有强化学习基础也能看懂的 PPO & GRPO.md`
 - 主题：强化学习
 

@@ -36,7 +36,7 @@ status: linked
 ## 核心材料
 
 - [[2026-04-06-datawhalechinaeasy-vibe 💻 vibe coding 2026  Your first modern programming course for beginners to master step by step]]
-- [[2026-04-06-GitHub---datawhalechinaeasy-vibe-💻-vibe-coding-2026--Your-first-modern-programmi]]
+- [[raw/web/vibe-coding/2026-04-06-GitHub---datawhalechinaeasy-vibe-💻-vibe-coding-2026--Your-first-modern-programmi]]
 - [[Vibe Coding来源清单]]
 - [[2026-04-06-从零搓出一个Claude Code，一篇超详细的总结！]]
 

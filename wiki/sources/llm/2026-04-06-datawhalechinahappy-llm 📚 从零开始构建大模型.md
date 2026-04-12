@@ -1,22 +1,21 @@
 ---
 source_type: web
 source_path: raw/web/llm-pre-training/2026-04-06-datawhalechinahappy-llm 📚 从零开始构建大模型.md
-title: datawhalechina/happy-llm: 📚 从零开始构建大模型
+title: 'datawhalechina/happy-llm: 📚 从零开始构建大模型'
 author: unknown
 published_at: 2026-04-06
 created_at: 2026-04-09
 topics:
-  - 大语言模型
+- llm
 related_concepts:
-  - 大语言模型总索引
+- 大语言模型总索引
 status: summarized
 ---
-
 # 来源卡：datawhalechina/happy-llm: 📚 从零开始构建大模型
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/web/llm-pre-training/2026-04-06-datawhalechinahappy-llm 📚 从零开始构建大模型.md]]
+- 原文：[[raw/web/llm-pre-training/2026-04-06-datawhalechinahappy-llm-📚-从零开始构建大模型.md]]
 - 来源：`raw/web/llm-pre-training/2026-04-06-datawhalechinahappy-llm 📚 从零开始构建大模型.md`
 - 主题：大语言模型
 

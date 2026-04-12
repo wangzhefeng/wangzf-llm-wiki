@@ -6,13 +6,12 @@ author: wangzf
 published_at: 2026-02-07
 created_at: 2026-04-09
 topics:
-  - 时间序列
-  - post
+- shared
+- timeseries
 related_concepts:
-  - 时间序列预测总索引
+- 时间序列预测总索引
 status: summarized
 ---
-
 # 来源卡：基于非线性树模型的时间序列预测框架：全生命周期深度研究报告
 
 ## 这份材料讲了什么

@@ -1,14 +1,16 @@
 ---
 created_at: 2026-04-11
-topics: [deeplearning, sources]
+topics:
+- deep-learning
+- shared
 status: inbox
 ---
-
 # wiki/sources/deeplearning
 
 本目录存放深度学习主题的来源摘要卡。入口建议从：[[深度学习总索引]]。
 
 <!-- AUTO-GENERATED: sources-dir-index:start -->
+
 
 ## 本目录来源卡清单（自动生成）
 
@@ -37,21 +39,15 @@ status: inbox
 - [[wiki/sources/deep-learning/2025-01-19-distributed-parallel-training]]
 - [[wiki/sources/deep-learning/2025-01-19-pytorch-automatic-mixed-precision]]
 - [[wiki/sources/deep-learning/2026-01-29-conv1d]]
-- [[wiki/sources/deep-learning/2026-04-06-(34 封私信  12 条消息) 为什么我用lstm，svm，ann来预测股价，效果都非常好？ - 知乎]]
 - [[wiki/sources/deep-learning/2026-04-06-(35 封私信  12 条消息) 猛猿 - 知乎]]
-- [[wiki/sources/deep-learning/2026-04-06-10. 注意力机制 — 动手学深度学习 2.0.0 documentation]]
-- [[wiki/sources/deep-learning/2026-04-06-14. 自然语言处理：预训练 — 动手学深度学习 2.0.0 documentation]]
-- [[wiki/sources/deep-learning/2026-04-06-4.5. 权重衰减 — 动手学深度学习 2.0.0 documentation]]
 - [[wiki/sources/deep-learning/2026-04-06-Accelerating PyTorch Model Training]]
 - [[wiki/sources/deep-learning/2026-04-06-AccumulateMoreCV ✔（已完结）超级全面的 深度学习 笔记【土堆 Pytorch】【李沐 动手学深度学习】【吴恩达 深度学习】【大飞 大模型Agent】]]
 - [[wiki/sources/deep-learning/2026-04-06-Annotated Research Paper Implementations Transformers, StyleGAN, Stable Diffusion, DDPMDDIM, LayerNorm, Nucleus Sampling and more]]
 - [[wiki/sources/deep-learning/2026-04-06-Assignment1&2 - 小角龙的学习记录]]
-- [[wiki/sources/deep-learning/2026-04-06-Autoformerexpexp_main.py at main]]
 - [[wiki/sources/deep-learning/2026-04-06-CUDA semantics]]
 - [[wiki/sources/deep-learning/2026-04-06-CUDA编程入门极简教程]]
 - [[wiki/sources/deep-learning/2026-04-06-Darknet Open Source Neural Networks in C]]
 - [[wiki/sources/deep-learning/2026-04-06-DataParallel]]
-- [[wiki/sources/deep-learning/2026-04-06-Debug your model (basic) — PyTorch Lightning 2.6.1 documentation]]
 - [[wiki/sources/deep-learning/2026-04-06-Deep Learning with Python, Third Edition]]
 - [[wiki/sources/deep-learning/2026-04-06-Distributed Data Parallel]]
 - [[wiki/sources/deep-learning/2026-04-06-Distributed Data Parallel in PyTorch - Video Tutorials]]
@@ -75,8 +71,6 @@ status: inbox
 - [[wiki/sources/deep-learning/2026-04-06-PyTorch Series RoPE]]
 - [[wiki/sources/deep-learning/2026-04-06-PyTorch documentation]]
 - [[wiki/sources/deep-learning/2026-04-06-PyTorch实用教程（第二版）]]
-- [[wiki/sources/deep-learning/2026-04-06-PyTorch实用教程（第二版） 1]]
-- [[wiki/sources/deep-learning/2026-04-06-Quick Start — PyTorch-Metrics 1.9.0 documentation]]
 - [[wiki/sources/deep-learning/2026-04-06-Semantic Textual Similarity — Sentence Transformers  documentation]]
 - [[wiki/sources/deep-learning/2026-04-06-Smth Smth GPU Related]]
 - [[wiki/sources/deep-learning/2026-04-06-Spatio-Temporal Graph Convolutional Networks A Deep Learning Framework for Traffic Forecasting]]
@@ -90,10 +84,8 @@ status: inbox
 - [[wiki/sources/deep-learning/2026-04-06-Understanding Deep Learning]]
 - [[wiki/sources/deep-learning/2026-04-06-Understanding-Deep-Learning]]
 - [[wiki/sources/deep-learning/2026-04-06-VeritasYinSTGCN_IJCAI-18 IJCAI'18 Spatio-Temporal Graph Convolutional Networks]]
-- [[wiki/sources/deep-learning/2026-04-06-Vision Transformers (ViTs) Computer Vision with Transformer Models]]
-- [[wiki/sources/deep-learning/2026-04-06-Welcome to TorchMetrics — PyTorch-Metrics 1.9.0 documentation]]
+- [[wiki/sources/llm/2026-04-06-Vision Transformers (ViTs) Computer Vision with Transformer Models]]
 - [[wiki/sources/deep-learning/2026-04-06-Welcome to fastai]]
-- [[wiki/sources/deep-learning/2026-04-06-Welcome to ⚡ PyTorch Lightning — PyTorch Lightning 2.6.2 documentation]]
 - [[wiki/sources/deep-learning/2026-04-06-examplesdistributed at main]]
 - [[wiki/sources/deep-learning/2026-04-06-examplesmnist_hogwild at main]]
 - [[wiki/sources/deep-learning/2026-04-06-explosionspaCy 💫 Industrial-strength Natural Language Processing (NLP) in Python]]
@@ -104,17 +96,10 @@ status: inbox
 - [[wiki/sources/deep-learning/2026-04-06-huggingfacetext-generation-inference Large Language Model Text Generation Inference]]
 - [[wiki/sources/deep-learning/2026-04-06-kashifpytorch-transformer-ts Repository of Transformer based PyTorch Time Series Models]]
 - [[wiki/sources/deep-learning/2026-04-06-lyhue1991torchkeras Pytorch❤️  Keras 😋😋]]
-- [[wiki/sources/deep-learning/2026-04-06-nn4nlp-conceptsconcepts.md at master]]
 - [[wiki/sources/deep-learning/2026-04-06-ourownstoryAR-Net A simple Auto-Regressive Neural Network for time-series]]
-- [[wiki/sources/deep-learning/2026-04-06-pytorch-transformer-tsautoformerhyperparameter-tuning.ipynb at main]]
-- [[wiki/sources/deep-learning/2026-04-06-pytorch-transformer-tsautoformerhyperparameter-tuning.ipynb at main 1]]
-- [[wiki/sources/deep-learning/2026-04-06-pytorch-transformer-tsautoformerhyperparameter-tuning.ipynb at main 2]]
 - [[wiki/sources/deep-learning/2026-04-06-tczhangzhipytorch-distributed A quickstart and benchmark for pytorch distributed training]]
-- [[wiki/sources/deep-learning/2026-04-06-torch.utils.checkpoint]]
 - [[wiki/sources/deep-learning/2026-04-06-torchrun (Elastic Launch)]]
-- [[wiki/sources/deep-learning/2026-04-06-visionreferences at v0.10.0]]
 - [[wiki/sources/deep-learning/2026-04-06-win10安装CUDA和cuDNN的正确姿势]]
-- [[wiki/sources/deep-learning/2026-04-06-xlite-devLeetCUDA 📚LeetCUDA Modern CUDA Learn Notes with PyTorch for Beginners🐑, 200+ CUDA Kernels, Tensor Cores, HGEMM, FA-2 MMA.🎉]]
 - [[wiki/sources/deep-learning/2026-04-06-zhouhaoyiInformer2020 The GitHub repository for the paper Informer accepted by AAAI 2021]]
 - [[wiki/sources/deep-learning/2026-04-06-zoogzogchexnet Implementation of the CheXNet network (PyTorch)]]
 - [[wiki/sources/deep-learning/2026-04-06-【CUDA】nvcc和nvidia-smi显示的版本不一致？]]
@@ -127,8 +112,8 @@ status: inbox
 - [[wiki/sources/deep-learning/2026-04-06-深度学习环境配置指南！（Windows、Mac、Ubuntu全讲解）]]
 - [[wiki/sources/deep-learning/2026-04-06-深度学习训练过程可视化（附github源码）]]
 - [[wiki/sources/deep-learning/2026-04-06-深度学习调参最全指南！(附对应pdf)]]
-- [[wiki/sources/deep-learning/2026-04-06-译 Transformer 是如何工作的：600 行 Python 代码实现 self-attention 和两类 Transformer（2019）]]
-- [[wiki/sources/deep-learning/2026-04-06-读懂Transformer的内核，了解大模型基石]]
+- [[wiki/sources/llm/2026-04-06-译 Transformer 是如何工作的：600 行 Python 代码实现 self-attention 和两类 Transformer（2019）]]
+- [[wiki/sources/llm/2026-04-06-读懂Transformer的内核，了解大模型基石]]
 - [[wiki/sources/deep-learning/2026-04-06-超详细图解Self-Attention]]
 - [[wiki/sources/deep-learning/2026-04-06-达观数据：数据不够？GAN来凑！]]
 - [[wiki/sources/deep-learning/2026-04-11-18  Transformers – S&DS 431631 — Optimization and Computation]]
@@ -138,11 +123,8 @@ status: inbox
 - [[wiki/sources/deep-learning/AI工具与产品专题来源]]
 - [[wiki/sources/deep-learning/LLM架构微调与多模态扩展专题来源]]
 - [[wiki/sources/deep-learning/LLM架构训练与微调专题来源]]
-- [[wiki/sources/deep-learning/NLP与词嵌入专题来源]]
-- [[wiki/sources/deep-learning/NLP本地笔记]]
 - [[wiki/sources/deep-learning/深度学习基础教程专题来源]]
 - [[wiki/sources/deep-learning/深度学习工具与框架专题来源]]
-- [[wiki/sources/deep-learning/计算机视觉与目标检测专题来源]]
 - [[wiki/sources/deep-learning/附件入口清单-deeplearning]]
 
 <!-- AUTO-GENERATED: sources-dir-index:end -->

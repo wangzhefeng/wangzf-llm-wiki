@@ -10,7 +10,7 @@ source_path: raw/web/llm-pre-training/2026-04-06-fastnlpfastHan fastHan是基于
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/web/llm-pre-training/2026-04-06-fastnlpfastHan fastHan是基于fastNLP与pytorch实现的中文自然语言处理工具，像spacy一样调用方便。.md]]
+- 原文：[[raw/web/llm-pre-training/2026-04-06-fastnlpfastHan-fastHan是基于fastNLP与pytorch实现的中文自然语言处理工具，像spacy一样调用方便。.md]]
 - 来源路径：`raw/web/llm-pre-training/2026-04-06-fastnlpfastHan fastHan是基于fastNLP与pytorch实现的中文自然语言处理工具，像spacy一样调用方便。.md`
 
 ## 价值是什么

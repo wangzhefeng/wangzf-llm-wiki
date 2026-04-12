@@ -4,12 +4,10 @@ created: 2026-04-12
 updated: 2026-04-12
 type: concept
 topics:
-  - vibe-coding
-  - 编程风格
-  - AI Agent
-status: draft
+- agent-dev
+- vibe-coding
+status: summarized
 ---
-
 # Vibe Coding
 
 > 一种强调与 AI Agent 自然协作的编程风格与方法论。

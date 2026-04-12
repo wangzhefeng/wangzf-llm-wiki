@@ -10,7 +10,7 @@ source_path: raw/web/computer-vision/2026-04-06-What is the Sliding Window Algor
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/web/computer-vision/2026-04-06-What is the Sliding Window Algorithm - Programmathically.md]]
+- 原文：[[raw/web/computer-vision/2026-04-06-What-is-the-Sliding-Window-Algorithm-Programmathically.md]]
 - 来源路径：`raw/web/computer-vision/2026-04-06-What is the Sliding Window Algorithm - Programmathically.md`
 
 ## 价值是什么

@@ -6,13 +6,12 @@ author: wangzf
 published_at: 2025-06-18
 created_at: 2026-04-09
 topics:
-  - 强化学习
-  - post
+- reinforcement-learning
+- shared
 related_concepts:
-  - 强化学习总索引
+- 强化学习总索引
 status: summarized
 ---
-
 # 来源卡：强化学习
 
 ## 这份材料讲了什么

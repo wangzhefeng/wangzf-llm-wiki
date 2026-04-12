@@ -6,12 +6,11 @@ author: unknown
 published_at: 2026-04-06
 created_at: 2026-04-09
 topics:
-  - 时间序列
+- timeseries
 related_concepts:
-  - 时间序列预测总索引
+- 时间序列预测总索引
 status: summarized
 ---
-
 # 来源卡：时序预测新范式：冻结大语言模型，外挂时序适配器，性能超越TimeMixer++
 
 ## 这份材料讲了什么

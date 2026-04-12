@@ -5,7 +5,7 @@ updated: 2026-04-12
 type: index
 tags: [vibe-coding, 编程风格, 工具]
 sources: []
-status: active
+status: linked
 ---
 
 # Vibe Coding来源清单

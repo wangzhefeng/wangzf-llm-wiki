@@ -6,14 +6,13 @@ author: wangzf
 published_at: 2024-05-15
 created_at: 2026-04-09
 topics:
-  - 大语言模型
-  - 本地笔记
+- llm
+- shared
 related_concepts:
-  - LLM工程框架
-  - 大语言模型总索引
+- LLM工程框架
+- 大语言模型总索引
 status: summarized
 ---
-
 # 来源卡：LLM 框架--LangChain
 
 ## 这份材料讲了什么

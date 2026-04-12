@@ -1,15 +1,13 @@
 ---
 created_at: 2026-04-05
 topics:
-  - 时间序列预测
-  - statistical-forecasting
+- timeseries
 related_concepts:
-  - 统计时间序列预测
-  - 机器学习时间序列预测
-  - 时间序列预测
+- 统计时间序列预测
+- 机器学习时间序列预测
+- 时间序列预测
 status: linked
 ---
-
 # VAR
 
 ## 一句话定义

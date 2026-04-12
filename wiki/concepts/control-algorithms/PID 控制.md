@@ -1,15 +1,13 @@
 ---
 created_at: 2026-04-06
 topics:
-  - 控制算法
-  - 经典控制
+- control-algorithms
 related_concepts:
-  - 控制系统基础
-  - 模糊控制
-  - 模糊 PID
+- 控制系统基础
+- 模糊控制
+- 模糊 PID
 status: linked
 ---
-
 # PID 控制
 
 一句话定义：PID 控制是比例（Proportional）、积分（Integral）、微分（Derivative）三种控制规律的组合，核心思想是"既看当前误差，也看历史累计，还看变化趋势"。

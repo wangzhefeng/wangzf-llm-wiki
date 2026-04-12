@@ -3,11 +3,10 @@ source_type: local_note
 title: deeplearning 附件入口清单
 created_at: 2026-04-11
 topics:
-  - deeplearning
-  - assets
+- deep-learning
+- shared
 status: linked
 ---
-
 # 附件入口清单（deeplearning）
 
 > 目的：为 `raw/assets/attachments/` 中暂未被引用的附件提供可追溯入口，避免成为“暗资产”。

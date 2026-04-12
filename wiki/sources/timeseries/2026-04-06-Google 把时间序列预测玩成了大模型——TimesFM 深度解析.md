@@ -6,17 +6,16 @@ author: unknown
 published_at: 2026-04-06
 created_at: 2026-04-09
 topics:
-  - 时间序列
+- timeseries
 related_concepts:
-  - 时间序列预测总索引
+- 时间序列预测总索引
 status: summarized
 ---
-
 # 来源卡：Google 把时间序列预测玩成了大模型——TimesFM 深度解析
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/web/llm-pre-training/2026-04-06-Google 把时间序列预测玩成了大模型——TimesFM 深度解析.md]]
+- 原文：[[raw/web/llm-pre-training/2026-04-06-Google-把时间序列预测玩成了大模型——TimesFM-深度解析.md]]
 - 来源：`raw/web/llm-pre-training/2026-04-06-Google 把时间序列预测玩成了大模型——TimesFM 深度解析.md`
 - 主题：时间序列
 

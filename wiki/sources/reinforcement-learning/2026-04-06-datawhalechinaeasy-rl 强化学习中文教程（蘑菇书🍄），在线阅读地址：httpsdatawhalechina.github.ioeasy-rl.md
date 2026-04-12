@@ -1,17 +1,16 @@
 ---
 source_type: web
 source_path: raw/web/reinforcement-learning/2026-04-06-datawhalechinaeasy-rl 强化学习中文教程（蘑菇书🍄），在线阅读地址：httpsdatawhalechina.github.ioeasy-rl.md
-title: datawhalechina/easy-rl: 强化学习中文教程（蘑菇书🍄），在线阅读地址：https://datawhalechina.github.io/easy-rl/
+title: 'datawhalechina/easy-rl: 强化学习中文教程（蘑菇书🍄），在线阅读地址：https://datawhalechina.github.io/easy-rl/'
 author: unknown
 published_at: 2026-04-06
 created_at: 2026-04-09
 topics:
-  - 强化学习
+- reinforcement-learning
 related_concepts:
-  - 强化学习总索引
+- 强化学习总索引
 status: summarized
 ---
-
 # 来源卡：datawhalechina/easy-rl: 强化学习中文教程（蘑菇书🍄），在线阅读地址：https://datawhalechina.github.io/easy-rl/
 
 ## 这份材料讲了什么

@@ -1,23 +1,20 @@
 ---
-author: null
-created: 2026-04-06
-created_at: 2026-04-06
-description: This interactive web page walks you through the practical steps for scaling
-  LLM training on GPU clusters, explaining key decisions and showing performance trade‑offs.
-  Simply open the page to read t...
+created_at: '2026-04-06'
+date: 2026-04-06
+source: unknown
 source_type: web
-status: inbox
-tags:
-- null
-- clippings
-title: The Ultra-Scale Playbook - a Hugging Face Space by nanotron
+status: placeholder
+title: 2026-04-06-The Ultra-Scale Playbook - a Hugging Face Space by nanotron
 topics:
-- 大语言模型
-source_url: https://huggingface.co/spaces/nanotron/ultrascale-playbook?section=first_steps%3A_training_on_one_gpu
-published_at: null
-related_concepts: []
+- llm-pre-training
 ---
 
-Refreshing
+# 占位符文件
 
-<iframe src="https://nanotron-ultrascale-playbook.static.hf.space/index.html?section=first_steps%3A_training_on_one_gpu" aria-label="static space app" allow="accelerometer; ambient-light-sensor; autoplay; battery; camera; clipboard-read; clipboard-write; display-capture; document-domain; encrypted-media; fullscreen; geolocation; gyroscope; layout-animations; legacy-image-formats; magnetometer; microphone; midi; oversized-images; payment; picture-in-picture; publickey-credentials-get; serial; sync-xhr; usb; vr ; wake-lock; xr-spatial-tracking"></iframe>
+此文件是一个占位符，用于修复wikilink错误。原始链接指向不存在的文件。
+
+**文件名**: 2026-04-06-The Ultra-Scale Playbook - a Hugging Face Space by nanotron.md
+**原始链接**: raw/web/llm-pre-training/2026-04-06-The Ultra-Scale Playbook - a Hugging Face Space by nanotron.md
+**修复时间**: 2026-04-12
+
+> 注意：此文件需要后续手动处理或删除。

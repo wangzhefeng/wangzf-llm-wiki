@@ -1,3 +1,13 @@
+---
+source_type: internal
+source_path: "raw/readme-20260412200431.md"
+title: "raw 目录说明"
+author: unknown
+created_at: 2026-04-12
+topics:
+- knowledge-base
+status: archived
+---
 # raw
 
 `raw/` 是知识库的唯一摄取入口，只存放外部来源原件和最小元数据。

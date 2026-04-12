@@ -170,9 +170,10 @@ status: inbox
 
 ## 10. 主题与共享分工
 
-- 知识库方法主题使用：`wiki/indexes/knowledge-base-building/`
-- 知识库运维主题使用：`wiki/indexes/knowledge-base-operations/`
-- 知识库使用主题使用：`wiki/indexes/knowledge-base-usage/`
+- 知识库方法主题使用：`wiki/indexes/llm-wiki-building/`
+- 知识库运维主题使用：`wiki/indexes/llm-wiki-operations/`
+- 知识库使用主题使用：`wiki/indexes/llm-wiki-usage/`
+- `wiki/indexes/shared/` 根目录存放共享执行工作流（ingest / query / backfill / lint 与任务流入口），由 `知识库工作台` 统一管理。
 - 具体专题（如 `timeseries/`、`operationsresearch/`）优先放各自来源、索引、概念网络。
 
 ## 11. 默认行为要求
@@ -199,8 +200,8 @@ status: inbox
 - `wiki/purpose.md`
 - `wiki/index.md`
 - `wiki/schema.md`
-- `wiki/indexes/knowledge-base-building/知识库建设方法总索引.md`
-- `wiki/indexes/knowledge-base-building/知识库Schema设计.md`
+- `wiki/indexes/llm-wiki-building/知识库建设方法总索引.md`
+- `wiki/schema.md`（兼容别名：`知识库Schema设计`）
 
 六大核心功能目录入口：
 
@@ -213,13 +214,13 @@ status: inbox
 
 执行入口：
 
-- `wiki/indexes/knowledge-base-operations/知识库工作台.md`
-- `wiki/indexes/knowledge-base-building/知识库来源与专题摄取索引.md`
-- `wiki/indexes/knowledge-base-usage/知识库问答与研究工作流.md`
-- `wiki/indexes/knowledge-base-usage/知识库输出回流工作流.md`
-- `wiki/indexes/knowledge-base-operations/知识库维护检查索引.md`
-- `wiki/indexes/knowledge-base-usage/知识库问题地图.md`
-- `wiki/indexes/knowledge-base-operations/知识库操作记录索引.md`
+- `wiki/indexes/shared/知识库工作台.md`
+- `wiki/indexes/shared/知识库来源与专题摄取索引.md`
+- `wiki/indexes/shared/知识库问答与研究工作流.md`
+- `wiki/indexes/shared/知识库输出回流工作流.md`
+- `wiki/indexes/shared/知识库维护检查索引.md`
+- `wiki/indexes/shared/知识库问题地图.md`
+- `wiki/indexes/shared/知识库操作记录索引.md`
 
 提示词入口：
 

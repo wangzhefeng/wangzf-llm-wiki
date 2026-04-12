@@ -1,14 +1,12 @@
 ---
 created_at: 2026-04-09
 topics:
-  - 数据分析
-  - A/B测试
+- data-analysis
 related_concepts:
-  - 假设检验
-  - 相关性分析
+- 假设检验
+- 相关性分析
 status: linked
 ---
-
 # A/B测试方法
 
 A/B 测试用于评估策略变更是否带来显著效果，核心在于随机分组、指标定义和统计显著性判定。

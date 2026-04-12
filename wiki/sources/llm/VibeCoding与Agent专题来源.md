@@ -3,18 +3,18 @@ source_type: local_note
 title: Vibe Coding 与 Agent 专题
 created_at: 2026-04-06
 topics:
-  - Vibe Coding
-  - AI Agent
-  - MCP
+- agent-dev
+- llm
+- tools
+- vibe-coding
 related_concepts:
-  - Claude Code
-  - Codex
-  - OpenClaw
-  - RAG
-  - Skills
+- Claude Code
+- Codex
+- OpenClaw
+- RAG
+- Skills
 status: inbox
 ---
-
 # Vibe Coding 与 Agent 专题
 
 ## 来源概述

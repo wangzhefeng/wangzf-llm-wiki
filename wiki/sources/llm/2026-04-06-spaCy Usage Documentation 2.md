@@ -10,7 +10,7 @@ source_path: raw/web/llm-pre-training/2026-04-06-spaCy Usage Documentation 2.md
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/web/llm-pre-training/2026-04-06-spaCy Usage Documentation 2.md]]
+- 原文：[[raw/web/llm-pre-training/2026-04-06-spaCy-Usage-Documentation-2.md]]
 - 来源路径：`raw/web/llm-pre-training/2026-04-06-spaCy Usage Documentation 2.md`
 
 ## 价值是什么

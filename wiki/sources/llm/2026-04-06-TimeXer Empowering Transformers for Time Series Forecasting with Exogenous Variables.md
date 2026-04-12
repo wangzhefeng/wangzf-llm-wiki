@@ -1,22 +1,21 @@
 ---
 source_type: web
 source_path: raw/web/timeseries/2026-04-06-TimeXer Empowering Transformers for Time Series Forecasting with Exogenous Variables.md
-title: TimeXer: Empowering Transformers for Time Series Forecasting with Exogenous Variables
+title: 'TimeXer: Empowering Transformers for Time Series Forecasting with Exogenous Variables'
 author: unknown
 published_at: 2026-04-06
 created_at: 2026-04-09
 topics:
-  - 大语言模型
+- llm
 related_concepts:
-  - 大语言模型总索引
+- 大语言模型总索引
 status: summarized
 ---
-
 # 来源卡：TimeXer: Empowering Transformers for Time Series Forecasting with Exogenous Variables
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/web/timeseries/2026-04-06-TimeXer Empowering Transformers for Time Series Forecasting with Exogenous Variables.md]]
+- 原文：[[raw/web/timeseries/2026-04-06-TimeXer-Empowering-Transformers-for-Time-Series-Forecasting-with-Exogenous-Variables.md]]
 - 来源：`raw/web/timeseries/2026-04-06-TimeXer Empowering Transformers for Time Series Forecasting with Exogenous Variables.md`
 - 主题：大语言模型
 

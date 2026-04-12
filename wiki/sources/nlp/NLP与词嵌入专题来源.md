@@ -3,15 +3,13 @@ source_type: web
 title: NLP与词嵌入专题
 created_at: 2026-04-06
 topics:
-  - 自然语言处理
-  - 词嵌入
+- nlp
 related_concepts:
-  - Word2Vec
-  - Self-Attention
-  - 预训练模型
+- Word2Vec
+- Self-Attention
+- 预训练模型
 status: summarized
 ---
-
 # NLP 与词嵌入专题
 
 ## 来源概述
@@ -32,7 +30,7 @@ status: summarized
 
 | 文件名 | 核心内容 | 状态 |
 |--------|----------|------|
-| [[2026-04-06-超详细图解Self-Attention]] | Self-Attention 图解 | 待摘要 |
+| [[raw/web/deep-learning/2026-04-06-超详细图解Self-Attention]] | Self-Attention 图解 | 待摘要 |
 | [[sources/deep-learning/2026-04-06-10. 注意力机制 — 动手学深度学习 2.0.0 documentation]] | 注意力机制教程 | 待摘要 |
 
 ### NLP 预训练
@@ -52,7 +50,7 @@ status: summarized
 
 | 文件名 | 核心内容 | 状态 |
 |--------|----------|------|
-| [[2026-04-06-基于Transform的机器翻译系统]] | Transformer 机器翻译实现 | 待摘要 |
+| [[raw/web/llm-pre-training/2026-04-06-基于Transform的机器翻译系统]] | Transformer 机器翻译实现 | 待摘要 |
 | [[2026-04-06-ymoslemOpenNMT-Tutorial Neural Machine Translation (NMT) tutorial. Data preprocessing, model training, evaluation, and deployment]] | OpenNMT 神经机器翻译 | 待摘要 |
 
 ## 关键概念

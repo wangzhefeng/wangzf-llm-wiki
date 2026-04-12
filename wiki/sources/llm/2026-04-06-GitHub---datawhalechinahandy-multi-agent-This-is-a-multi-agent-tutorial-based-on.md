@@ -1,17 +1,16 @@
 ---
 source_type: web
 source_path: raw/web/vibe-coding/2026-04-06-GitHub---datawhalechinahandy-multi-agent-This-is-a-multi-agent-tutorial-based-on.md
-title: GitHub - datawhalechina/handy-multi-agent: This is a multi agent tutorial based on the CAMEL framework, aimed at understanding how to build an Agent Society from the ground up! · GitHub
+title: 'GitHub - datawhalechina/handy-multi-agent: This is a multi agent tutorial based on the CAMEL framework, aimed at understanding how to build an Agent Society from the ground up! · GitHub'
 author: unknown
 published_at: 2026-04-06
 created_at: 2026-04-09
 topics:
-  - 大语言模型
+- llm
 related_concepts:
-  - 大语言模型总索引
+- 大语言模型总索引
 status: summarized
 ---
-
 # 来源卡：GitHub - datawhalechina/handy-multi-agent: This is a multi agent tutorial based on the CAMEL framework, aimed at understanding how to build an Agent Society from the ground up! · GitHub
 
 ## 这份材料讲了什么

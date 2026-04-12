@@ -1,15 +1,13 @@
 ---
 created_at: 2026-04-09
 topics:
-  - 大语言模型
-  - Embedding
+- llm
 related_concepts:
-  - NLP任务
-  - RAG检索增强生成
-  - 大语言模型总索引
+- NLP任务
+- RAG检索增强生成
+- 大语言模型总索引
 status: linked
 ---
-
 # Embedding
 
 Embedding 是将文本映射到向量空间的表示学习方法，是语义检索、聚类、相似度计算与 RAG 检索召回的核心基础。

@@ -6,12 +6,11 @@ author: unknown
 published_at: 2026-04-06
 created_at: 2026-04-09
 topics:
-  - 计算机视觉
+- computer-vision
 related_concepts:
-  - 计算机视觉总索引
+- 计算机视觉总索引
 status: summarized
 ---
-
 # 来源卡：Welcome to MMDetection’s documentation! — MMDetection 3.3.0 documentation
 
 ## 这份材料讲了什么

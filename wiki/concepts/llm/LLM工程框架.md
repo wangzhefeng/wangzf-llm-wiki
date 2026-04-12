@@ -1,15 +1,14 @@
 ---
 created_at: 2026-04-09
 topics:
-  - 大语言模型
-  - 工程框架
+- llm
+- tools
 related_concepts:
-  - Agent智能体
-  - RAG检索增强生成
-  - 大语言模型总索引
+- Agent智能体
+- RAG检索增强生成
+- 大语言模型总索引
 status: linked
 ---
-
 # LLM工程框架
 
 LLM 工程框架用于组织模型调用、工具编排、检索链路、评估与服务部署，例如 LangChain、Transformers、Gradio、Streamlit 等。

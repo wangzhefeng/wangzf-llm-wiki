@@ -4,16 +4,14 @@ source_url: https://github.com/wangzhefeng/tsproj_ltsfm
 source_path: raw/repos/repo-wangzhefeng-tsproj-ltsfm.md
 created_at: 2026-04-12
 topics:
-  - 时间序列预测
-  - 时序基础模型
-  - 大模型
+- llm
+- timeseries
 related_concepts:
-  - 时序基础模型
-  - 大语言模型时间序列预测
-  - 零样本预测
+- 时序基础模型
+- 大语言模型时间序列预测
+- 零样本预测
 status: summarized
 ---
-
 # 来源卡：tsproj_ltsfm 时间序列基础模型评测框架
 
 ## 这份材料讲了什么

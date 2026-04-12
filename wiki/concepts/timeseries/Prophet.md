@@ -1,15 +1,13 @@
 ---
 created_at: 2026-04-05
 topics:
-  - 时间序列预测
-  - statistical-forecasting
+- timeseries
 related_concepts:
-  - 统计时间序列预测
-  - 趋势与季节性
-  - 预测工具生态
+- 统计时间序列预测
+- 趋势与季节性
+- 预测工具生态
 status: linked
 ---
-
 # Prophet
 
 ## 一句话定义

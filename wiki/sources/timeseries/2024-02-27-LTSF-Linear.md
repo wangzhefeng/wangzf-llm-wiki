@@ -3,15 +3,13 @@ source_type: local_note
 source_path: raw/local-notes/timeseries/timeseries-time-domain/timeseries-deeplearning/2024-02-27-paper-ts-ltsf-linear/index.md
 created_at: 2026-04-05
 topics:
-  - 时间序列预测
-  - deep-learning-forecasting
+- timeseries
 related_concepts:
-  - 深度学习时间序列预测
-  - 时间序列预测
-  - 预测模型评估
+- 深度学习时间序列预测
+- 时间序列预测
+- 预测模型评估
 status: summarized
 ---
-
 # LTSF-Linear 来源摘要
 
 

@@ -6,17 +6,16 @@ author: unknown
 published_at: 2026-04-06
 created_at: 2026-04-09
 topics:
-  - 大语言模型
+- llm
 related_concepts:
-  - 大语言模型总索引
+- 大语言模型总索引
 status: summarized
 ---
-
 # 来源卡：reasoning-from-scratch/chF/04_llm-judge at main
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/web/llm-pre-training/2026-04-06-reasoning-from-scratchchF04_llm-judge at main.md]]
+- 原文：[[raw/web/llm-pre-training/2026-04-06-reasoning-from-scratchchF04_llm-judge-at-main.md]]
 - 来源：`raw/web/llm-pre-training/2026-04-06-reasoning-from-scratchchF04_llm-judge at main.md`
 - 主题：大语言模型
 

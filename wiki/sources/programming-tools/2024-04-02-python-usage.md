@@ -6,13 +6,13 @@ author: wangzf
 published_at: 2024-04-02
 created_at: 2026-04-09
 topics:
-  - 知识库建设
-  - post
+- knowledge-base
+- programming-tools
+- shared
 related_concepts:
-  - 知识库建设方法总索引
+- 知识库建设方法总索引
 status: summarized
 ---
-
 # 来源卡：Python 类使用详解
 
 ## 这份材料讲了什么

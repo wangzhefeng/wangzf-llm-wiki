@@ -1,14 +1,16 @@
 ---
 created_at: 2026-04-11
-topics: [machinelearning, sources]
+topics:
+- machine-learning
+- shared
 status: inbox
 ---
-
 # wiki/sources/machinelearning
 
 本目录存放机器学习主题的来源摘要卡。入口建议从：[[机器学习总索引]]。
 
 <!-- AUTO-GENERATED: sources-dir-index:start -->
+
 
 ## 本目录来源卡清单（自动生成）
 
@@ -89,7 +91,6 @@ status: inbox
 - [[wiki/sources/machine-learning/2026-04-06-(34 封私信  12 条消息) 为什么我用lstm，svm，ann来预测股价，效果都非常好？ - 知乎]]
 - [[wiki/sources/machine-learning/2026-04-06-(34 封私信  12 条消息) 机器学习中如何处理缺失数据？ - 知乎]]
 - [[wiki/sources/machine-learning/2026-04-06-(35 封私信  12 条消息) 连续特征的离散化：在什么情况下将连续的特征离散化之后可以获得更好的效果？ - 知乎]]
-- [[wiki/sources/machine-learning/2026-04-06-1.13. Feature selection]]
 - [[wiki/sources/machine-learning/2026-04-06-66天写的逻辑回归]]
 - [[wiki/sources/machine-learning/2026-04-06-AAAMLP 中译版]]
 - [[wiki/sources/machine-learning/2026-04-06-Adaptive Classifier Dynamic Text Classification with Continuous Learning]]
@@ -107,20 +108,16 @@ status: inbox
 - [[wiki/sources/machine-learning/2026-04-06-Machine Learning Q and AI]]
 - [[wiki/sources/machine-learning/2026-04-06-Missing Value Treatment]]
 - [[wiki/sources/machine-learning/2026-04-06-MultiOutputRegressor]]
-- [[wiki/sources/machine-learning/2026-04-06-Parameters — LightGBM 4.6.0 documentation]]
 - [[wiki/sources/machine-learning/2026-04-06-Power Modeling for Effective Datacenter Planning and Compute Management]]
 - [[wiki/sources/machine-learning/2026-04-06-Power Modeling for Effective Datacenter Planning and Compute Management 1]]
 - [[wiki/sources/machine-learning/2026-04-06-PysamlamTips-of-Feature-engineering A feature engineering kit for each issue, to give you a deeper and deeper understanding of the work of feature engineering!]]
-- [[wiki/sources/machine-learning/2026-04-06-Ray Tune Hyperparameter Tuning — Ray 2.54.1]]
 - [[wiki/sources/machine-learning/2026-04-06-Start Here with Machine Learning]]
 - [[wiki/sources/machine-learning/2026-04-06-Tech Blog]]
 - [[wiki/sources/machine-learning/2026-04-06-Time-related feature engineering]]
-- [[wiki/sources/machine-learning/2026-04-06-User guide contents — Version 0.14.1]]
 - [[wiki/sources/machine-learning/2026-04-06-Victor MARTIN ~ Understanding Automatic Differentiation in 30 lines of Python]]
 - [[wiki/sources/machine-learning/2026-04-06-Welcome to skforecast - Skforecast Docs]]
 - [[wiki/sources/machine-learning/2026-04-06-What are embeddings]]
 - [[wiki/sources/machine-learning/2026-04-06-abhishekkrthakurapproachingalmost Approaching (Almost) Any Machine Learning Problem]]
-- [[wiki/sources/machine-learning/2026-04-06-analytics_vidhyaArticlesParameter_Tuning_GBM_with_ExampleGBM model.ipynb at master]]
 - [[wiki/sources/machine-learning/2026-04-06-codelionadaptive-classifier A flexible, adaptive classification system for dynamic text classification]]
 - [[wiki/sources/machine-learning/2026-04-06-datawhalechinaeasy-vibe 💻 vibe coding 2026  Your first modern programming course for beginners to master step by step]]
 - [[wiki/sources/machine-learning/2026-04-06-datawhalechinatiny-universe 《大模型白盒子构建指南》：一个全手搓的Tiny-Universe]]
@@ -139,7 +136,6 @@ status: inbox
 - [[wiki/sources/machine-learning/2026-04-06-不错的关于比赛的feature engineering 的ppt]]
 - [[wiki/sources/machine-learning/2026-04-06-主成分分析（PCA）原理总结]]
 - [[wiki/sources/machine-learning/2026-04-06-图灵社区]]
-- [[wiki/sources/machine-learning/2026-04-06-教程 — Optuna 2.7.0 文档]]
 - [[wiki/sources/machine-learning/2026-04-06-数据缺失处理-CSDN博客]]
 - [[wiki/sources/machine-learning/2026-04-06-机器学习(27)【降维】之主成分分析(PCA)详解]]
 - [[wiki/sources/machine-learning/2026-04-06-机器学习(28)【降维】之sklearn中PCA库讲解与实战]]

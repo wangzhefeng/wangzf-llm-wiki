@@ -1,17 +1,16 @@
 ---
 source_type: web
 source_path: raw/web/llm-pre-training/2026-04-06-ymoslemOpenNMT-Tutorial Neural Machine Translation (NMT) tutorial. Data preprocessing, model training, evaluation, and deployment.md
-title: ymoslem/OpenNMT-Tutorial: Neural Machine Translation (NMT) tutorial. Data preprocessing, model training, evaluation, and deployment.
+title: 'ymoslem/OpenNMT-Tutorial: Neural Machine Translation (NMT) tutorial. Data preprocessing, model training, evaluation, and deployment.'
 author: unknown
 published_at: 2026-04-06
 created_at: 2026-04-09
 topics:
-  - 待分类
+- shared
 related_concepts:
-  - 知识库来源与专题摄取索引
+- 知识库来源与专题摄取索引
 status: summarized
 ---
-
 # 来源卡：ymoslem/OpenNMT-Tutorial: Neural Machine Translation (NMT) tutorial. Data preprocessing, model training, evaluation, and deployment.
 
 ## 这份材料讲了什么

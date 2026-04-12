@@ -6,12 +6,11 @@ author: unknown
 published_at: 2026-04-06
 created_at: 2026-04-09
 topics:
-  - 计算机视觉
+- computer-vision
 related_concepts:
-  - 计算机视觉总索引
+- 计算机视觉总索引
 status: summarized
 ---
-
 # 来源卡：人工智能文本转图像模型 Stable Diffusion 入门教程
 
 ## 这份材料讲了什么

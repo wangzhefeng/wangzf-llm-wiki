@@ -1,22 +1,21 @@
 ---
 source_type: web
 source_path: raw/web/timeseries/2026-04-06-NX-AItirex TiRex Zero-Shot Forecasting Across Long and Short Horizons with Enhanced In-Context Learning.md
-title: NX-AI/tirex: TiRex: Zero-Shot Forecasting Across Long and Short Horizons with Enhanced In-Context Learning
+title: 'NX-AI/tirex: TiRex: Zero-Shot Forecasting Across Long and Short Horizons with Enhanced In-Context Learning'
 author: unknown
 published_at: 2026-04-06
 created_at: 2026-04-09
 topics:
-  - 时间序列
+- timeseries
 related_concepts:
-  - 时间序列预测总索引
+- 时间序列预测总索引
 status: summarized
 ---
-
 # 来源卡：NX-AI/tirex: TiRex: Zero-Shot Forecasting Across Long and Short Horizons with Enhanced In-Context Learning
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/web/timeseries/2026-04-06-NX-AItirex TiRex Zero-Shot Forecasting Across Long and Short Horizons with Enhanced In-Context Learning.md]]
+- 原文：[[raw/web/timeseries/2026-04-06-NX-AItirex-TiRex-Zero-Shot-Forecasting-Across-Long-and-Short-Horizons-with-Enhanced-In-Context-Learning.md]]
 - 来源：`raw/web/timeseries/2026-04-06-NX-AItirex TiRex Zero-Shot Forecasting Across Long and Short Horizons with Enhanced In-Context Learning.md`
 - 主题：时间序列
 

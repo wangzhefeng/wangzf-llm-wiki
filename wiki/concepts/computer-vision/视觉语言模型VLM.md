@@ -1,15 +1,14 @@
 ---
 created_at: 2026-04-06
 topics:
-  - 计算机视觉
-  - 多模态
+- computer-vision
+- shared
 related_concepts:
-  - 视觉语言模型
-  - 图像文本对齐
-  - CLIP
+- 视觉语言模型
+- 图像文本对齐
+- CLIP
 status: inbox
 ---
-
 # 视觉语言模型 (VLM)
 
 ## 定义

@@ -6,13 +6,12 @@ author: wangzf
 published_at: 2022-08-31
 created_at: 2026-04-09
 topics:
-  - 计算机视觉
+- computer-vision
 related_concepts:
-  - 目标检测
-  - 图像分类
+- 目标检测
+- 图像分类
 status: summarized
 ---
-
 # 来源卡：2022-08-31-opencv-face-detection
 
 ## 这份材料讲了什么

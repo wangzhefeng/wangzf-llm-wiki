@@ -1,22 +1,21 @@
 ---
 source_type: web
 source_path: raw/web/computer-vision/2026-04-06-Darknet Open Source Neural Networks in C.md
-title: Darknet: Open Source Neural Networks in C
+title: 'Darknet: Open Source Neural Networks in C'
 author: unknown
 published_at: 2026-04-06
 created_at: 2026-04-09
 topics:
-  - 深度学习
+- deep-learning
 related_concepts:
-  - 深度学习总索引
+- 深度学习总索引
 status: summarized
 ---
-
 # 来源卡：Darknet: Open Source Neural Networks in C
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/web/computer-vision/2026-04-06-Darknet Open Source Neural Networks in C.md]]
+- 原文：[[raw/web/computer-vision/2026-04-06-Darknet-Open-Source-Neural-Networks-in-C.md]]
 - 来源：`raw/web/computer-vision/2026-04-06-Darknet Open Source Neural Networks in C.md`
 - 主题：深度学习
 

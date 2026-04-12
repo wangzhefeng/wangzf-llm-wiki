@@ -3,15 +3,13 @@ source_type: local_note
 source_path: raw/local-notes/timeseries/timeseries-libs/2022-05-02-timeseries-lib-statsmodels/index.md
 created_at: 2026-04-04
 topics:
-  - 时间序列预测
-  - forecasting-tools
+- timeseries
 related_concepts:
-  - 预测工具生态
-  - 统计时间序列预测
-  - 时间序列回归模型
+- 预测工具生态
+- 统计时间序列预测
+- 时间序列回归模型
 status: summarized
 ---
-
 # Statsmodels 来源摘要
 
 

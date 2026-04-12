@@ -6,14 +6,13 @@ author: wangzf
 published_at: 2024-04-12
 created_at: 2026-04-06
 topics:
-  - 时间序列预测
-  - 数据预处理
+- machine-learning
+- timeseries
 related_concepts:
-  - 时间序列平滑与预测
-  - 预测特征工程
+- 时间序列平滑与预测
+- 预测特征工程
 status: summarized
 ---
-
 # 来源卡：TSmoothie 时间序列平滑库
 
 ## 这份材料讲了什么

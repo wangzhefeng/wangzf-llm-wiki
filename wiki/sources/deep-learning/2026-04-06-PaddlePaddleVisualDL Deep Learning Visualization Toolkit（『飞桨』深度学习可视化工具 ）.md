@@ -1,22 +1,21 @@
 ---
 source_type: web
 source_path: raw/web/deep-learning/2026-04-06-PaddlePaddleVisualDL Deep Learning Visualization Toolkit（『飞桨』深度学习可视化工具 ）.md
-title: PaddlePaddle/VisualDL: Deep Learning Visualization Toolkit（『飞桨』深度学习可视化工具 ）
+title: 'PaddlePaddle/VisualDL: Deep Learning Visualization Toolkit（『飞桨』深度学习可视化工具 ）'
 author: unknown
 published_at: 2026-04-06
 created_at: 2026-04-09
 topics:
-  - 深度学习
+- deep-learning
 related_concepts:
-  - 深度学习总索引
+- 深度学习总索引
 status: summarized
 ---
-
 # 来源卡：PaddlePaddle/VisualDL: Deep Learning Visualization Toolkit（『飞桨』深度学习可视化工具 ）
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/web/deep-learning/2026-04-06-PaddlePaddleVisualDL Deep Learning Visualization Toolkit（『飞桨』深度学习可视化工具 ）.md]]
+- 原文：[[raw/web/deep-learning/2026-04-06-PaddlePaddleVisualDL-Deep-Learning-Visualization-Toolkit（『飞桨』深度学习可视化工具-）.md]]
 - 来源：`raw/web/deep-learning/2026-04-06-PaddlePaddleVisualDL Deep Learning Visualization Toolkit（『飞桨』深度学习可视化工具 ）.md`
 - 主题：深度学习
 

@@ -3,16 +3,15 @@ source_type: web
 title: LLM架构、微调与多模态扩展专题
 created_at: 2026-04-06
 topics:
-  - LLM 架构
-  - 模型微调
-  - 多模态
+- deep-learning
+- llm
+- shared
 related_concepts:
-  - Transformer
-  - LoRA
-  - 模型评估
+- Transformer
+- LoRA
+- 模型评估
 status: summarized
 ---
-
 # LLM 架构、微调与多模态扩展专题（补充）
 
 ## 来源概述

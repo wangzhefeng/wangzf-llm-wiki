@@ -10,7 +10,7 @@ source_path: raw/web/computer-vision/2026-04-06-Joseph Redmon - Survival Strateg
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/web/computer-vision/2026-04-06-Joseph Redmon - Survival Strategies for the Robot Rebellion.md]]
+- 原文：[[raw/web/computer-vision/2026-04-06-Joseph-Redmon-Survival-Strategies-for-the-Robot-Rebellion.md]]
 - 来源路径：`raw/web/computer-vision/2026-04-06-Joseph Redmon - Survival Strategies for the Robot Rebellion.md`
 
 ## 价值是什么

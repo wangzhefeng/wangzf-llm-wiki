@@ -6,14 +6,13 @@ author: wangzf
 published_at: 2024-08-03
 created_at: 2026-04-09
 topics:
-  - 大语言模型
-  - 本地笔记
+- llm
+- shared
 related_concepts:
-  - RAG检索增强生成
-  - 大语言模型总索引
+- RAG检索增强生成
+- 大语言模型总索引
 status: summarized
 ---
-
 # 来源卡：LLM 架构--RAG 应用
 
 ## 这份材料讲了什么

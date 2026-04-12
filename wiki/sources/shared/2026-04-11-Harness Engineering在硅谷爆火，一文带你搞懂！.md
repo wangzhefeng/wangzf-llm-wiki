@@ -10,7 +10,7 @@ source_path: raw/web/vibe-coding/2026-04-11-Harness Engineering在硅谷爆火�
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/web/vibe-coding/2026-04-11-Harness Engineering在硅谷爆火，一文带你搞懂！.md]]
+- 原文：[[raw/web/vibe-coding/2026-04-11-Harness-Engineering在硅谷爆火，一文带你搞懂！.md]]
 - 来源路径：`raw/web/vibe-coding/2026-04-11-Harness Engineering在硅谷爆火，一文带你搞懂！.md`
 
 ## 价值是什么

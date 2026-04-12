@@ -6,14 +6,13 @@ author: wangzf
 published_at: 2022-12-01
 created_at: 2026-04-09
 topics:
-  - 深度学习
-  - local-note
+- deep-learning
+- shared
 related_concepts:
-  - 深度学习训练实践
-  - 深度学习总索引
+- 深度学习训练实践
+- 深度学习总索引
 status: summarized
 ---
-
 # 来源卡：经验总结
 
 ## 这份材料讲了什么

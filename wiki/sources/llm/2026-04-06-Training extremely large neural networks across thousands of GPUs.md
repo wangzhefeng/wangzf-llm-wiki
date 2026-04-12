@@ -1,11 +1,11 @@
 ---
 created_at: 2026-04-11
 topics:
-  - operationsresearch
+- llm
+- operations-research
 status: inbox
 source_path: raw/web/operations-research/2026-04-06-Training extremely large neural networks across thousands of GPUs.md
 ---
-
 # 来源卡：2026-04-06-Training extremely large neural networks across thousands of GPUs
 
 ## 这份材料讲了什么

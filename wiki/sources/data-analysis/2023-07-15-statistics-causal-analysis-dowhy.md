@@ -6,14 +6,12 @@ author: wangzf
 published_at: 2023-07-15
 created_at: 2026-04-09
 topics:
-  - 数据分析
-  - 统计学
-  - 因果推断
+- data-analysis
+- shared
 related_concepts:
-  - 因果推断
+- 因果推断
 status: summarized
 ---
-
 # 来源卡：2023-07-15-statistics-causal-analysis-dowhy
 
 ## 这份材料讲了什么

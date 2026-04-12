@@ -3,15 +3,13 @@ source_type: local_note
 title: 自然语言处理本地笔记
 created_at: 2026-04-06
 topics:
-  - 自然语言处理
-  - NLP
+- nlp
 related_concepts:
-  - 知识图谱
-  - 语音处理
-  - NLP 任务
+- 知识图谱
+- 语音处理
+- NLP 任务
 status: inbox
 ---
-
 # 自然语言处理本地笔记
 
 ## 来源概述

@@ -10,7 +10,7 @@ source_path: raw/web/llm-pre-training/2026-04-06-第二章：使用spaCy进行�
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/web/llm-pre-training/2026-04-06-第二章：使用spaCy进行大规模数据分析 · 使用spaCy做进阶自然语言处理.md]]
+- 原文：[[raw/web/llm-pre-training/2026-04-06-第二章：使用spaCy进行大规模数据分析-·-使用spaCy做进阶自然语言处理.md]]
 - 来源路径：`raw/web/llm-pre-training/2026-04-06-第二章：使用spaCy进行大规模数据分析 · 使用spaCy做进阶自然语言处理.md`
 
 ## 价值是什么

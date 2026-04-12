@@ -1,13 +1,13 @@
 ---
 created_at: 2026-04-06
 topics:
-  - 自然语言处理
+- deep-learning
+- nlp
 related_concepts:
-  - 词表示
-  - 语义空间
+- 词表示
+- 语义空间
 status: inbox
 ---
-
 # Word2Vec
 
 ## 定义

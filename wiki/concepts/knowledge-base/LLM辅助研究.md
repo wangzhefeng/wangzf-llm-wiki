@@ -1,13 +1,12 @@
 ---
 created_at: 2026-04-06
 topics:
-  - 知识库构建
+- knowledge-base
 related_concepts:
-  - LLM 辅助研究
-  - Obsidian
+- LLM 辅助研究
+- Obsidian
 status: inbox
 ---
-
 # LLM 辅助研究
 
 ## 定义

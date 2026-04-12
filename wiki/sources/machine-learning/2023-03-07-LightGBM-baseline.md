@@ -6,15 +6,13 @@ author: wangzf
 published_at: 2023-03-07
 created_at: 2026-04-06
 topics:
-  - 机器学习
-  - 集成学习
+- machine-learning
 related_concepts:
-  - 集成学习
-  - 模型验证
-  - 模型评估
+- 集成学习
+- 模型验证
+- 模型评估
 status: summarized
 ---
-
 # 来源卡：LightGBM baseline
 
 ## 这份材料讲了什么

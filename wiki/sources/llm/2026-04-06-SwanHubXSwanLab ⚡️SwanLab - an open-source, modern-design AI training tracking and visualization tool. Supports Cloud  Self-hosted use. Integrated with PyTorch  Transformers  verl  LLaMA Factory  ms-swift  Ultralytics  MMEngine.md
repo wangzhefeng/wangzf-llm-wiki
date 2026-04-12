@@ -1,17 +1,16 @@
 ---
 source_type: web
 source_path: raw/web/llm-pre-training/2026-04-06-SwanHubXSwanLab ⚡️SwanLab - an open-source, modern-design AI training tracking and visualization tool. Supports Cloud  Self-hosted use. Integrated with PyTorch  Transformers  verl  LLaMA Factory  ms-swift  Ultralytics  MMEngine.md
-title: SwanHubX/SwanLab: ⚡️SwanLab - an open-source, modern-design AI training tracking and visualization tool. Supports Cloud / Self-hosted use. Integrated with PyTorch / Transformers / verl / LLaMA Factory / ms-swift / Ultralytics / MMEngine
+title: 'SwanHubX/SwanLab: ⚡️SwanLab - an open-source, modern-design AI training tracking and visualization tool. Supports Cloud / Self-hosted use. Integrated with PyTorch / Transformers / verl / LLaMA Factory / ms-swift / Ultralytics / MMEngine'
 author: unknown
 published_at: 2026-04-06
 created_at: 2026-04-09
 topics:
-  - 大语言模型
+- llm
 related_concepts:
-  - 大语言模型总索引
+- 大语言模型总索引
 status: summarized
 ---
-
 # 来源卡：SwanHubX/SwanLab: ⚡️SwanLab - an open-source, modern-design AI training tracking and visualization tool. Supports Cloud / Self-hosted use. Integrated with PyTorch / Transformers / verl / LLaMA Factory / ms-swift / Ultralytics / MMEngine
 
 ## 这份材料讲了什么

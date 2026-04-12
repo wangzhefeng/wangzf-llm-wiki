@@ -6,14 +6,12 @@ author: wangzf
 published_at: 2022-07-15
 created_at: 2026-04-09
 topics:
-  - 计算机视觉
-  - 目标检测
+- computer-vision
 related_concepts:
-  - 目标检测
-  - YOLO目标检测
+- 目标检测
+- YOLO目标检测
 status: summarized
 ---
-
 # 来源卡：2022-07-15-object-detection
 
 ## 这份材料讲了什么

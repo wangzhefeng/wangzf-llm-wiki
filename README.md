@@ -26,10 +26,10 @@
 
 1. 先读控制文件：`purpose -> schema -> index -> log`
 2. 按任务类型进入入口：
-   - 摄取：[知识库来源与专题摄取索引](wiki/indexes/knowledge-base-building/知识库来源与专题摄取索引.md)
-   - 问答/研究：[知识库问答与研究工作流](wiki/indexes/knowledge-base-usage/知识库问答与研究工作流.md)
-   - 输出回流：[知识库输出回流工作流](wiki/indexes/knowledge-base-usage/知识库输出回流工作流.md)
-   - 维护：[知识库维护检查索引](wiki/indexes/knowledge-base-operations/知识库维护检查索引.md)
+   - 摄取：[知识库来源与专题摄取索引](wiki/indexes/shared/知识库来源与专题摄取索引.md)
+   - 问答/研究：[知识库问答与研究工作流](wiki/indexes/shared/知识库问答与研究工作流.md)
+   - 输出回流：[知识库输出回流工作流](wiki/indexes/shared/知识库输出回流工作流.md)
+   - 维护：[知识库维护检查索引](wiki/indexes/shared/知识库维护检查索引.md)
 3. 将高价值结果写入 `outputs/`，并补回对应索引入口
 
 ## 主题入口
@@ -49,9 +49,9 @@
 
 ## 维护入口
 
-- [知识库工作台](wiki/indexes/knowledge-base-operations/知识库工作台.md)
-- [知识库健康检查清单](wiki/indexes/knowledge-base-operations/知识库健康检查清单.md)
-- [知识库维护检查索引](wiki/indexes/knowledge-base-operations/知识库维护检查索引.md)
-- [知识库操作记录索引](wiki/indexes/knowledge-base-operations/知识库操作记录索引.md)
+- [知识库工作台](wiki/indexes/shared/知识库工作台.md)
+- [知识库健康检查清单](wiki/indexes/shared/知识库健康检查清单.md)
+- [知识库维护检查索引](wiki/indexes/shared/知识库维护检查索引.md)
+- [知识库操作记录索引](wiki/indexes/shared/知识库操作记录索引.md)
 - [最新健康检查报告](outputs/answers/知识库-健康检查-最新.md)
 - [提示词模板入口](prompts/README.md)

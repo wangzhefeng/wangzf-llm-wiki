@@ -4,19 +4,18 @@ source_url: https://github.com/vercel-labs/agent-browser
 source_path: raw/web/vibe-coding/2026-04-05-vercel-labsagent-browser Browser automation CLI for AI agents.md
 created_at: 2026-04-05
 topics:
-  - 知识库构建
-  - AI 工作流
-  - 工具自动化
+- knowledge-base
+- programming
+- tools
 related_concepts:
-  - 知识库建设方法
-  - 知识库工作台
+- 知识库建设方法
+- 知识库工作台
 status: summarized
 ---
-
 # Vercel agent-browser：AI Agent 浏览器自动化 CLI 来源摘要
 
 
-- 原文：[[raw/web/vibe-coding/2026-04-05-vercel-labsagent-browser Browser automation CLI for AI agents.md]]
+- 原文：[[raw/web/vibe-coding/2026-04-05-vercel-labsagent-browser-Browser-automation-CLI-for-AI-agents.md]]
 ## 材料定位
 
 这是 Vercel Labs 开源的浏览器自动化 CLI 工具的仓库说明。它不是知识库方法论文献，而是一个工具型来源——为 LLM Wiki 模式的 raw/ 自动化摄入提供了一个候选方案。

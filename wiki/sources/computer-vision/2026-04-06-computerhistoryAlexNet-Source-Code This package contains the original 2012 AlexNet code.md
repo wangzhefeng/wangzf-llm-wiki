@@ -10,7 +10,7 @@ source_path: raw/web/computer-vision/2026-04-06-computerhistoryAlexNet-Source-Co
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/web/computer-vision/2026-04-06-computerhistoryAlexNet-Source-Code This package contains the original 2012 AlexNet code.md]]
+- 原文：[[raw/web/computer-vision/2026-04-06-computerhistoryAlexNet-Source-Code-This-package-contains-the-original-2012-AlexNet-code.md]]
 - 来源路径：`raw/web/computer-vision/2026-04-06-computerhistoryAlexNet-Source-Code This package contains the original 2012 AlexNet code.md`
 
 ## 价值是什么

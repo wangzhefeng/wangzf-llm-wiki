@@ -1,14 +1,11 @@
 ---
 created_at: 2026-04-11
 topics:
-  - wiki
-  - sources
-  - shared
+- shared
 related_concepts:
-  - 知识库工作台
+- 知识库工作台
 status: linked
 ---
-
 # wiki/sources/shared
 
 `shared/` 用于放“跨主题通用”的来源卡，例如知识库方法论、工作流、通用工程实践等不属于单一学科主题的来源。
@@ -20,6 +17,7 @@ status: linked
 
 <!-- AUTO-GENERATED: sources-dir-index:start -->
 
+
 ## 本目录来源卡清单（自动生成）
 
 > 本区块由脚本生成：用于避免来源卡成为孤页（仅统计 wikilinks）。
@@ -30,7 +28,6 @@ status: linked
 - [[wiki/sources/shared/2026-04-06-(35 封私信  12 条消息) 猛猿 - 知乎]]
 - [[wiki/sources/shared/2026-04-06-(35 封私信  12 条消息) 连续特征的离散化：在什么情况下将连续的特征离散化之后可以获得更好的效果？ - 知乎]]
 - [[wiki/sources/shared/2026-04-06-2025年的年终总结--MkSaaS---Make-Your-AI-SaaS-Product-in-a-Weekend]]
-- [[wiki/sources/shared/2026-04-06-3.优化方法简史]]
 - [[wiki/sources/shared/2026-04-06-5 分钟，使用内网穿透快速实现远程桌面]]
 - [[wiki/sources/shared/2026-04-06-AAAMLP 中译版]]
 - [[wiki/sources/shared/2026-04-06-AI已经开始为能源交易员提供七个月的逐小时预测]]
@@ -43,9 +40,7 @@ status: linked
 - [[wiki/sources/shared/2026-04-06-CUDA semantics]]
 - [[wiki/sources/shared/2026-04-06-Cartography Playground]]
 - [[wiki/sources/shared/2026-04-06-Chebyshev polynomials - Wikipedia]]
-- [[wiki/sources/shared/2026-04-06-ChineseNMTdata_loader.py at master]]
 - [[wiki/sources/shared/2026-04-06-Clustering comparison  Cartography Playground]]
-- [[wiki/sources/shared/2026-04-06-DCIC2024 光伏发电出力预测B榜0.904 baseline分享]]
 - [[wiki/sources/shared/2026-04-06-Datasets at Hugging Face]]
 - [[wiki/sources/shared/2026-04-06-DeepSeek-R1 and FP8 Mixed-Precision Training]]
 - [[wiki/sources/shared/2026-04-06-Deepseek新发布的DSA，太炸裂了！]]
@@ -75,8 +70,6 @@ status: linked
 - [[wiki/sources/shared/2026-04-06-Open Source Data Labeling]]
 - [[wiki/sources/shared/2026-04-06-Optional Data Parallelism]]
 - [[wiki/sources/shared/2026-04-06-PDFMathTranslate - PDF Translation with preserved formats]]
-- [[wiki/sources/shared/2026-04-06-PDFMathTranslatedocsREADME_zh-CN.md at main]]
-- [[wiki/sources/shared/2026-04-06-Panel ARDL.pdf]]
 - [[wiki/sources/shared/2026-04-06-Paper page - Spectrum Targeted Training on Signal to Noise Ratio]]
 - [[wiki/sources/shared/2026-04-06-Pillow]]
 - [[wiki/sources/shared/2026-04-06-Pillow 1]]
@@ -85,7 +78,6 @@ status: linked
 - [[wiki/sources/shared/2026-04-06-Quick Start — Netscope]]
 - [[wiki/sources/shared/2026-04-06-Quickstart - Distilabel Docs]]
 - [[wiki/sources/shared/2026-04-06-Quickstart — OpenNMT-py  documentation]]
-- [[wiki/sources/shared/2026-04-06-Ray Tune Hyperparameter Tuning — Ray 2.54.1]]
 - [[wiki/sources/shared/2026-04-06-RegressorChain]]
 - [[wiki/sources/shared/2026-04-06-Shell 变量  菜鸟教程]]
 - [[wiki/sources/shared/2026-04-06-Shell 编程范例 - 泰晓科技]]
@@ -93,16 +85,12 @@ status: linked
 - [[wiki/sources/shared/2026-04-06-Smth Smth GPU Related]]
 - [[wiki/sources/shared/2026-04-06-SynodicMonthChebyKAN Kolmogorov-Arnold Networks (KAN) using Chebyshev polynomials instead of B-splines]]
 - [[wiki/sources/shared/2026-04-06-TPT]]
-- [[wiki/sources/shared/2026-04-06-TSorchestraclieval.sh at main]]
 - [[wiki/sources/shared/2026-04-06-Teaching]]
 - [[wiki/sources/shared/2026-04-06-Tech Blog]]
 - [[wiki/sources/shared/2026-04-06-Tensor Attributes]]
 - [[wiki/sources/shared/2026-04-06-The Leader in Decision Intelligence Technology]]
 - [[wiki/sources/shared/2026-04-06-The Ultra-Scale Playbook - a Hugging Face Space by nanotron]]
-- [[wiki/sources/shared/2026-04-06-Time-Series-LibraryREADME_zh.md at main]]
 - [[wiki/sources/shared/2026-04-06-Time-Series-Librarymodels at main]]
-- [[wiki/sources/shared/2026-04-06-Ubuntu系统18-24.04安装和干净卸载nvidia显卡驱动——超详细、最简单_ubuntu安装nvidia显卡驱动-CSDN博客]]
-- [[wiki/sources/shared/2026-04-06-User guide contents — Version 0.14.1]]
 - [[wiki/sources/shared/2026-04-06-VeritasYinSTGCN_IJCAI-18 IJCAI'18 Spatio-Temporal Graph Convolutional Networks]]
 - [[wiki/sources/shared/2026-04-06-Victor MARTIN ~ Understanding Automatic Differentiation in 30 lines of Python]]
 - [[wiki/sources/shared/2026-04-06-Welcome to fastai]]
@@ -111,13 +99,10 @@ status: linked
 - [[wiki/sources/shared/2026-04-06-YouMind---AI-创作智能体]]
 - [[wiki/sources/shared/2026-04-06-Your First API Call  DeepSeek API Docs]]
 - [[wiki/sources/shared/2026-04-06-Your-First-API-Call--DeepSeek-API-Docs]]
-- [[wiki/sources/shared/2026-04-06-analytics_vidhyaArticlesParameter_Tuning_GBM_with_ExampleGBM model.ipynb at master]]
-- [[wiki/sources/shared/2026-04-06-basinhopping — SciPy v1.17.0 Manual]]
 - [[wiki/sources/shared/2026-04-06-computerhistoryAlexNet-Source-Code This package contains the original 2012 AlexNet code]]
 - [[wiki/sources/shared/2026-04-06-connorfersterhandcalcs Python library for converting Python calculations into rendered latex]]
 - [[wiki/sources/shared/2026-04-06-datawhalechinaeasy-vibe 💻 vibe coding 2026  Your first modern programming course for beginners to master step by step]]
 - [[wiki/sources/shared/2026-04-06-datawhalechinahandy-multi-agent This is a multi agent tutorial based on the CAMEL framework, aimed at understanding how to build an Agent Society from the ground up!]]
-- [[wiki/sources/shared/2026-04-06-date functionality — pandas 3.0.2 documentation]]
 - [[wiki/sources/shared/2026-04-06-doFighterComputational-intelligence 记录计算智能优化算法的学习笔记，通过阅读论文并复现的形式加深对相关的启发式智能优化的理解。]]
 - [[wiki/sources/shared/2026-04-06-examplesdistributed at main]]
 - [[wiki/sources/shared/2026-04-06-examplesmnist_hogwild at main]]
@@ -131,11 +116,7 @@ status: linked
 - [[wiki/sources/shared/2026-04-06-jimgoocaffe-oxford102 Caffe CNNs for the Oxford 102 flower dataset]]
 - [[wiki/sources/shared/2026-04-06-jimgoocaffe-oxford102 Caffe CNNs for the Oxford 102 flower dataset 1]]
 - [[wiki/sources/shared/2026-04-06-kaz-AnovaStackNet StackNet is a computational, scalable and analytical Meta modelling framework]]
-- [[wiki/sources/shared/2026-04-06-marimo-teammarimo A reactive notebook for Python — run reproducible experiments, query with SQL, execute as a script, deploy as an app, and version with git. Stored as pure Python. All in a modern, AI-native editor]]
-- [[wiki/sources/shared/2026-04-06-minimize — SciPy v1.17.0 Manual]]
 - [[wiki/sources/shared/2026-04-06-nathan-barrytiny-diffusion A character-level language diffusion model trained on Tiny Shakespeare]]
-- [[wiki/sources/shared/2026-04-06-pandas.DatetimeIndex — pandas 3.0.2 documentation]]
-- [[wiki/sources/shared/2026-04-06-reasoning-from-scratchch0301_main-chapter-codech03_main.ipynb at main]]
 - [[wiki/sources/shared/2026-04-06-shiyu-coderKronos Kronos A Foundation Model for the Language of Financial Markets]]
 - [[wiki/sources/shared/2026-04-06-spaCy Usage Documentation]]
 - [[wiki/sources/shared/2026-04-06-spaCy Usage Documentation 1]]
@@ -144,12 +125,8 @@ status: linked
 - [[wiki/sources/shared/2026-04-06-thumlOpenLTM Implementations, Pre-training Code and Datasets of Large Time-Series Models 1]]
 - [[wiki/sources/shared/2026-04-06-thumlTime-Series-Library at main]]
 - [[wiki/sources/shared/2026-04-06-thumlsundial-base-128m · Hugging Face]]
-- [[wiki/sources/shared/2026-04-06-torch.utils.checkpoint]]
 - [[wiki/sources/shared/2026-04-06-torchrun (Elastic Launch)]]
 - [[wiki/sources/shared/2026-04-06-win10安装CUDA和cuDNN的正确姿势]]
-- [[wiki/sources/shared/2026-04-06-xtunerREADME_zh-CN.md at main]]
-- [[wiki/sources/shared/2026-04-06-ymoslemOpenNMT-Tutorial Neural Machine Translation (NMT) tutorial. Data preprocessing, model training, evaluation, and deployment]]
-- [[wiki/sources/shared/2026-04-06-‍​​⁡⁤﻿﻿‬​​‬​​‬‌﻿⁤⁤​‍⁣⁤​‍​﻿⁤⁢​⁤​⁡​‍﻿⁤‍⁣⁣‌‌‍⁢⁢⁤​⁣⁤⁤‬算力数据运管数据点位模型需求-v1.0 - 飞书云文档]]
 - [[wiki/sources/shared/2026-04-06-【CUDA】nvcc和nvidia-smi显示的版本不一致？]]
 - [[wiki/sources/shared/2026-04-06-【NO6 电力市场】华北电力大学：电力中长期交易与现货交易解析]]
 - [[wiki/sources/shared/2026-04-06-【kaggle项目】最佳聚类实战案例]]
@@ -173,8 +150,6 @@ status: linked
 - [[wiki/sources/shared/2026-04-06-宅码]]
 - [[wiki/sources/shared/2026-04-06-当代研究生应当掌握的并行训练方法（单机多卡）]]
 - [[wiki/sources/shared/2026-04-06-掌握Shell编程，一篇就够了]]
-- [[wiki/sources/shared/2026-04-06-改进探索性数据分析的实用技巧]]
-- [[wiki/sources/shared/2026-04-06-教程 — Optuna 2.7.0 文档]]
 - [[wiki/sources/shared/2026-04-06-数据缺失处理-CSDN博客]]
 - [[wiki/sources/shared/2026-04-06-时空联合建模与时空可持续学习]]
 - [[wiki/sources/shared/2026-04-06-春节加餐：Anthropic首个公开的Skills构建指南来了！]]

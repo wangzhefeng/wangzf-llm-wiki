@@ -6,14 +6,12 @@ author: wangzf
 published_at: 2024-04-04
 created_at: 2026-04-09
 topics:
-  - 数据结构与算法
-  - 分治算法
+- data-structure-algorithm
 related_concepts:
-  - 数据结构与算法
-  - 分治算法
+- 数据结构与算法
+- 分治算法
 status: summarized
 ---
-
 # 来源卡：2024-04-04-divide-conquer
 
 ## 这份材料讲了什么

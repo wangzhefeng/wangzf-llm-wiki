@@ -4,15 +4,14 @@ source_url: https://scikit-learn.org/stable/auto_examples/applications/plot_time
 source_path: raw/web/timeseries/2026-04-05-scikit-learn-lagged-features.md
 created_at: 2026-04-05
 topics:
-  - 时间序列预测
-  - machine-learning-forecasting
+- machine-learning
+- timeseries
 related_concepts:
-  - 机器学习时间序列预测
-  - 预测特征工程
-  - 预测模型评估
+- 机器学习时间序列预测
+- 预测特征工程
+- 预测模型评估
 status: summarized
 ---
-
 # scikit-learn 滞后特征预测示例来源摘要
 
 

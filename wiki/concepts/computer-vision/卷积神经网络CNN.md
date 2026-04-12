@@ -1,14 +1,13 @@
 ---
 created_at: 2026-04-06
 topics:
-  - 计算机视觉
+- computer-vision
 related_concepts:
-  - 卷积
-  - 池化
-  - 特征图
+- 卷积
+- 池化
+- 特征图
 status: inbox
 ---
-
 # 卷积神经网络 (CNN)
 
 ## 定义

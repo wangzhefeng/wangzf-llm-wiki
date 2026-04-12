@@ -6,14 +6,13 @@ author: wangzf
 published_at: 2022-07-15
 created_at: 2026-04-09
 topics:
-  - 深度学习
-  - local-note
+- deep-learning
+- shared
 related_concepts:
-  - 深度生成模型
-  - 深度学习总索引
+- 深度生成模型
+- 深度学习总索引
 status: summarized
 ---
-
 # 来源卡：DeepDream
 
 ## 这份材料讲了什么
