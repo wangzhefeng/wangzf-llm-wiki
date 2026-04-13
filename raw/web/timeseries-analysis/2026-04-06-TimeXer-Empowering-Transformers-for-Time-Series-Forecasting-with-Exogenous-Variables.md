@@ -21,12 +21,12 @@ tags:
 - clippings
 title: 'TimeXer: Empowering Transformers for Time Series Forecasting with Exogenous
   Variables'
-topics:
-- 大语言模型
-- 时间序列
 source_url: https://arxiv.org/abs/2402.19072
 published_at: null
 related_concepts: []
+topics:
+  - timeseries-analysis
+  - 时间序列分析
 ---
 
 ## Title:TimeXer: Empowering Transformers for Time Series Forecasting with Exogenous Variables

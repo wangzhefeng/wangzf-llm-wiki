@@ -1,5 +1,5 @@
 ---
-source_type: local_note
+source_type: notes
 source_path: raw/local-notes/vibe-coding/Claude Code从入门到精通-v2.0.0.pdf
 title: Vibe Coding - Claude Code从入门到精通-v2.0.0
 author: wangzf

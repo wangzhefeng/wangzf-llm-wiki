@@ -20,11 +20,12 @@ tags:
 - null
 - clippings
 title: 'LoRA: Low-Rank Adaptation of Large Language Models'
-topics:
-- 大语言模型
 source_url: https://www.alphaxiv.org/overview/2106.09685v2
 published_at: 2021-10-17
 related_concepts: []
+topics:
+  - llm-pre-training
+  - 大语言模型预训练
 ---
 
 ## Introduction

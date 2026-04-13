@@ -3,8 +3,6 @@ source_type: web
 title: "rasbt/LLM-finetuning-scripts"
 author: 
 created_at: 2026-04-06
-topics:
-  - 大语言模型
 status: inbox
 published: 
 created: 2026-04-06
@@ -15,6 +13,9 @@ tags:
 source_url: "https://github.com/rasbt/LLM-finetuning-scripts/tree/main"
 published_at: null
 related_concepts: []
+topics:
+  - llm-pre-training
+  - 大语言模型预训练
 ---
 
 [Open in github.dev](https://github.dev/) [Open in a new github.dev tab](https://github.dev/) [Open in codespace](https://github.com/codespaces/new/rasbt/LLM-finetuning-scripts/tree/main?resume=1)

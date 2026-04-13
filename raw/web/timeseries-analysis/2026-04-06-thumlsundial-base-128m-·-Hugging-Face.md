@@ -10,11 +10,12 @@ tags:
 - null
 - clippings
 title: thuml/sundial-base-128m · Hugging Face
-topics:
-- 时间序列
 source_url: https://huggingface.co/thuml/sundial-base-128m
 published_at: 2025-01-21
 related_concepts: []
+topics:
+  - timeseries-analysis
+  - 时间序列分析
 ---
 
 [Edit model card](https://huggingface.co/thuml/sundial-base-128m/edit/main/README.md)

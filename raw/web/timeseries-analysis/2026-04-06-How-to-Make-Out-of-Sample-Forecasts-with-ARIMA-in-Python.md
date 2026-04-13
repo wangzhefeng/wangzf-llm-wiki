@@ -5,8 +5,6 @@ author:
   - 
   - "[[Jason Brownlee]]"
 created_at: 2026-04-06
-topics:
-  - 时间序列
 status: inbox
 created: 2026-04-06
 description: "Making out-of-sample forecasts can be confusing when getting started with time series data. The statsmodels Python API provides functions for performing one-step and multi-step out-of-sample forecasts. In this tutorial, you will clear up any confusion you have about making out-of-sample forecasts with time series data in Python. After completing this tutorial, you will know: How […]"
@@ -16,6 +14,9 @@ tags:
 source_url: "https://machinelearningmastery.com/make-sample-forecasts-arima-python/"
 published_at: 2017-03-24
 related_concepts: []
+topics:
+  - timeseries-analysis
+  - 时间序列分析
 ---
 
 Making out-of-sample forecasts can be confusing when getting started with time series data.

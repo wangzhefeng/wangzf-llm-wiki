@@ -12,11 +12,12 @@ tags:
 - null
 - clippings
 title: Distributed Data Parallel
-topics:
-- 深度学习
 source_url: https://docs.pytorch.org/docs/stable/notes/ddp.html#ddp
 published_at: 2001-01-15
 related_concepts: []
+topics:
+  - deep-learning-theory
+  - 深度学习理论
 ---
 
 ## Distributed Data Parallel

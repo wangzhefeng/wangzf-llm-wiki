@@ -9,11 +9,12 @@ tags:
 - null
 - clippings
 title: 'User guide: contents — Version 0.14.1'
-topics:
-- 深度学习
 source_url: https://imbalanced-learn.org/stable/user_guide.html
 published_at: null
 related_concepts: []
+topics:
+  - machine-learning-theory
+  - 机器学习理论
 ---
 
 ## User Guide

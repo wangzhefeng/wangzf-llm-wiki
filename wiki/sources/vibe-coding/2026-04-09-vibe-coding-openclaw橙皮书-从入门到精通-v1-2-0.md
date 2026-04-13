@@ -1,5 +1,5 @@
 ---
-source_type: local_note
+source_type: notes
 source_path: raw/local-notes/vibe-coding/OpenClaw橙皮书-从入门到精通-v1.2.0.pdf
 title: Vibe Coding - OpenClaw橙皮书-从入门到精通-v1.2.0
 author: wangzf

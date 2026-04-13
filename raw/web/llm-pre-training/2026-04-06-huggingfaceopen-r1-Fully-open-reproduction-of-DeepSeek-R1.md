@@ -10,11 +10,12 @@ tags:
 - null
 - clippings
 title: 'huggingface/open-r1: Fully open reproduction of DeepSeek-R1'
-topics:
-- 大语言模型
 source_url: https://github.com/huggingface/open-r1
 published_at: null
 related_concepts: []
+topics:
+  - llm-pre-training
+  - 大语言模型预训练
 ---
 
 ## Open R1

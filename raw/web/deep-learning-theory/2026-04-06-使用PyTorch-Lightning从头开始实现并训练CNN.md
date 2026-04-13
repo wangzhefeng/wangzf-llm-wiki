@@ -5,8 +5,6 @@ author:
   - 
   - "[[磐怼怼]]"
 created_at: 2026-04-06
-topics:
-  - 深度学习
 status: inbox
 published: 
 created: 2026-04-06
@@ -17,6 +15,9 @@ tags:
 source_url: "https://mp.weixin.qq.com/s/uMxruIyMIpY1BpaaZdLKjA"
 published_at: null
 related_concepts: []
+topics:
+  - deep-learning-theory
+  - 深度学习理论
 ---
 
 原创 磐怼怼 *2024年8月19日 18:23*

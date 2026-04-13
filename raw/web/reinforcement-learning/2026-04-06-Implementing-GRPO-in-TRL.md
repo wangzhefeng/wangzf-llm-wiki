@@ -3,8 +3,6 @@ source_type: web
 title: "Implementing GRPO in TRL"
 author: 
 created_at: 2026-04-06
-topics:
-  - 强化学习
 status: inbox
 published: 
 created: 2026-04-06
@@ -15,6 +13,9 @@ tags:
 source_url: "https://huggingface.co/learn/llm-course/en/chapter12/4?fw=pt"
 published_at: null
 related_concepts: []
+topics:
+  - reinforcement-learning
+  - 强化学习
 ---
 
 In this page, we’ll learn how to implement Group Relative Policy Optimization (GRPO) using the Transformer Reinforcement Learning (TRL) library. We’ll focus on practical implementation with minimal code.

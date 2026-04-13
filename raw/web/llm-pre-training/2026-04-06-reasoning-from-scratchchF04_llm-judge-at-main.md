@@ -3,8 +3,6 @@ source_type: web
 title: "reasoning-from-scratch/chF/04_llm-judge at main"
 author: 
 created_at: 2026-04-06
-topics:
-  - 大语言模型
 status: inbox
 published: 
 created: 2026-04-06
@@ -15,6 +13,9 @@ tags:
 source_url: "https://github.com/rasbt/reasoning-from-scratch/tree/main/chF/04_llm-judge"
 published_at: null
 related_concepts: []
+topics:
+  - programming-tools
+  - 编程工具
 ---
 
 ## LLM-as-a-judge

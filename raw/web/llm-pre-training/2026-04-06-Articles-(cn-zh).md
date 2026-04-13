@@ -9,11 +9,12 @@ tags:
 - null
 - clippings
 title: Articles (cn-zh)
-topics:
-- 大语言模型
 source_url: https://arthurchiao.art/articles-zh/
 published_at: null
 related_concepts: []
+topics:
+  - llm-pre-training
+  - 大语言模型预训练
 ---
 
 ## Articles

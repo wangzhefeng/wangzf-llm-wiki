@@ -3,8 +3,6 @@ source_type: web
 title: "OpenNMT/OpenNMT-py: Open Source Neural Machine Translation and (Large) Language Models in PyTorch"
 author: 
 created_at: 2026-04-06
-topics:
-  - 深度学习
 status: inbox
 published: 
 created: 2026-04-06
@@ -15,6 +13,9 @@ tags:
 source_url: "https://github.com/OpenNMT/OpenNMT-py/"
 published_at: null
 related_concepts: []
+topics:
+  - deep-learning-theory
+  - 深度学习理论
 ---
 
 ## Announcement: OpenNMT-py is no longer actively supported.

@@ -11,12 +11,12 @@ tags:
 - clippings
 title: 'AccumulateMore/CV: ✔（已完结）超级全面的 深度学习 笔记【土堆 Pytorch】【李沐 动手学深度学习】【吴恩达 深度学习】【大飞
   大模型Agent】'
-topics:
-- 大语言模型
-- 深度学习
 source_url: https://github.com/AccumulateMore/CV
 published_at: null
 related_concepts: []
+topics:
+  - deep-learning-theory
+  - 深度学习理论
 ---
 
 ## 超级全面的 深度学习 笔记（包含CV、NLP、大模型、Agent）

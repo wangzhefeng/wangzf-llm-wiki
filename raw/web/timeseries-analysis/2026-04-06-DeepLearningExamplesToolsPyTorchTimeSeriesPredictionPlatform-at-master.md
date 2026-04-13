@@ -12,12 +12,12 @@ tags:
 - null
 - clippings
 title: DeepLearningExamples/Tools/PyTorch/TimeSeriesPredictionPlatform at master
-topics:
-- 时间序列
-- 深度学习
 source_url: https://github.com/NVIDIA/DeepLearningExamples/tree/master/Tools/PyTorch/TimeSeriesPredictionPlatform
 published_at: null
 related_concepts: []
+topics:
+  - timeseries-analysis
+  - 时间序列分析
 ---
 
 ## Time-Series Prediction Platform 1.1 for PyTorch

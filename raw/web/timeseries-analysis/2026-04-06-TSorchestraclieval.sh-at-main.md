@@ -13,11 +13,12 @@ tags:
 - null
 - clippings
 title: TSorchestra/cli/eval.sh at main
-topics:
-- 时间序列
 source_url: https://github.com/DC-research/TSorchestra/blob/main/cli/eval.sh
 published_at: null
 related_concepts: []
+topics:
+  - timeseries-analysis
+  - 时间序列分析
 ---
 
 1

@@ -11,11 +11,12 @@ tags:
 - clippings
 title: 'rsennrich/subword-nmt: Unsupervised Word Segmentation for Neural Machine Translation
   and Text Generation'
-topics:
-- 大语言模型
 source_url: https://github.com/rsennrich/subword-nmt
 published_at: null
 related_concepts: []
+topics:
+  - llm-pre-training
+  - 大语言模型预训练
 ---
 
 ## Subword Neural Machine Translation

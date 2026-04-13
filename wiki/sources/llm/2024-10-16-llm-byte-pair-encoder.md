@@ -1,5 +1,5 @@
 ---
-source_type: local_note
+source_type: notes
 source_path: raw/local-notes/llm/llm-models/2024-10-16-llm-byte-pair-encoder/index.md
 title: BPE 算法
 author: wangzf

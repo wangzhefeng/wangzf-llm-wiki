@@ -1,5 +1,5 @@
 ---
-source_type: local_note
+source_type: notes
 source_path: raw/local-notes/vibe-coding/agent/README.md
 title: Vibe Coding - agent
 author: wangzf

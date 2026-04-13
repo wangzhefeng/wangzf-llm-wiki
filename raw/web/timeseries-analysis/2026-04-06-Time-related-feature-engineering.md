@@ -11,11 +11,12 @@ tags:
 - null
 - clippings
 title: Time-related feature engineering
-topics:
-- 计算机视觉
 source_url: https://scikit-learn.org/stable/auto_examples/applications/plot_cyclical_feature_engineering.html#time-based-cross-validation
 published_at: null
 related_concepts: []
+topics:
+  - timeseries-analysis
+  - 时间序列分析
 ---
 
 Note

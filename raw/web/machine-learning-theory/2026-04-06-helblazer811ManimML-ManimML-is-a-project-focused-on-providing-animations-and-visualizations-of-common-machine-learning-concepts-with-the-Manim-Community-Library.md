@@ -3,8 +3,6 @@ source_type: web
 title: "helblazer811/ManimML: ManimML is a project focused on providing animations and visualizations of common machine learning concepts with the Manim Community Library."
 author: 
 created_at: 2026-04-06
-topics:
-  - 机器学习
 status: inbox
 published: 
 created: 2026-04-06
@@ -15,6 +13,9 @@ tags:
 source_url: "https://github.com/helblazer811/ManimML"
 published_at: null
 related_concepts: []
+topics:
+  - machine-learning-theory
+  - 机器学习理论
 ---
 
 ## ManimML

@@ -9,11 +9,12 @@ tags:
 - null
 - clippings
 title: Panel ARDL.pdf
-topics:
-- 时间序列
 source_url: https://drive.google.com/file/d/1WMnCLwMUxvibAV1CEHWb6pBOKyFZf7sE/view?pli=1
 published_at: null
 related_concepts: []
+topics:
+  - timeseries-analysis
+  - 时间序列分析
 ---
 
 ![](https://drive.google.com/u/0/drive-viewer/AKGpihYLfyKe9ToNMb3CpSKLkoMi-2-7Uk3JdD6a0PjYLdfeX6n_qLRC4RUgjoyCkFGfwuieUIteD83YbrC87femDmJysIWWOb2lmFw=s1600-rw-v1)

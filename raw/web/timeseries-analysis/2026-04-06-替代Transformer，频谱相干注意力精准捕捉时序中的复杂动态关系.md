@@ -11,12 +11,12 @@ tags:
 - null
 - clippings
 title: 替代Transformer，频谱相干注意力精准捕捉时序中的复杂动态关系
-topics:
-- 大语言模型
-- 深度学习
 source_url: https://mp.weixin.qq.com/s/_H4ODSnQAPwTaut9WyIpgA
 published_at: null
 related_concepts: []
+topics:
+  - timeseries-analysis
+  - 时间序列分析
 ---
 
 ## AAAI 2026 Oral | 替代Transformer，频谱相干注意力精准捕捉时序中的复杂动态关系

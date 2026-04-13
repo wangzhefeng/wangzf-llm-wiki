@@ -7,11 +7,12 @@ categories:
   - statistic
 tags:
   - note
-source_type: local_note
+source_type: notes
 created_at: 2023-07-12
-topics:
-  - statistic
 status: inbox
+topics:
+  - causal-inference
+  - 因果推断
 ---
 
 

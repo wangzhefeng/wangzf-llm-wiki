@@ -1,5 +1,5 @@
 ---
-source_type: local_note
+source_type: notes
 source_path: raw/local-notes/llm/nlp-tasks/2022-07-15-nlp-ml-text-classification/index.md
 title: NLP-文本分类
 author: wangzf

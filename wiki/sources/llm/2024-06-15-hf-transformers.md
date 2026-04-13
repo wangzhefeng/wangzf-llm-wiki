@@ -1,5 +1,5 @@
 ---
-source_type: local_note
+source_type: notes
 source_path: raw/local-notes/llm/llm-framework/2024-06-15-hf-transformers/index.md
 title: LLM 框架--Huggingface
 author: wangzf

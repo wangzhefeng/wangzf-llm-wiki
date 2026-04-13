@@ -7,11 +7,12 @@ categories:
   - timeseries
 tags:
   - paper
-source_type: local_note
+source_type: notes
 created_at: 2022-04-30
-topics:
-  - timeseries
 status: inbox
+topics:
+  - timeseries-analysis
+  - 时间序列分析
 ---
 
 

@@ -13,12 +13,12 @@ tags:
 - null
 - clippings
 title: Welcome to skforecast - Skforecast Docs
-topics:
-- 时间序列
-- 机器学习
 source_url: https://skforecast.org/0.20.0/index.html
 published_at: null
 related_concepts: []
+topics:
+  - timeseries-analysis
+  - 时间序列分析
 ---
 
 ## Welcome to skforecast

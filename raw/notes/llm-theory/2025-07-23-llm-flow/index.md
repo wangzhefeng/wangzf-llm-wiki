@@ -1,10 +1,6 @@
 ---
-source_type: local_note
+source_type: notes
 created_at: 2025-07-23
-topics:
-  - post
-  - llm
-  - model
 status: inbox
 title: LLM 四个阶段
 subtitle: Four Stages of LLM Development
@@ -16,6 +12,9 @@ categories:
   - llm
 tags:
   - model
+topics:
+  - llm-theory
+  - 大语言模型理论
 ---
 
 

@@ -12,11 +12,12 @@ tags:
 - null
 - clippings
 title: 基于Transform的机器翻译系统
-topics:
-- 深度学习
 source_url: https://zhuanlan.zhihu.com/p/144825330
 published_at: null
 related_concepts: []
+topics:
+  - llm-pre-training
+  - 大语言模型预训练
 ---
 
 ## 大纲

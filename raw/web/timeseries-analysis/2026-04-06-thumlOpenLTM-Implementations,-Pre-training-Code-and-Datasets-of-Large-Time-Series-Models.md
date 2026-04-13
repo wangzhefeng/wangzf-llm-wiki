@@ -11,11 +11,12 @@ tags:
 - clippings
 title: 'thuml/OpenLTM: Implementations, Pre-training Code and Datasets of Large Time-Series
   Models'
-topics:
-- 时间序列
 source_url: https://github.com/thuml/OpenLTM
 published_at: null
 related_concepts: []
+topics:
+  - timeseries-analysis
+  - 时间序列分析
 ---
 
 ## OpenLTM

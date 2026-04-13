@@ -1,5 +1,5 @@
 ---
-source_type: local_note
+source_type: notes
 source_path: raw/local-notes/nlp/nlp-libs/2022-04-05-nlp-opencc/index.md
 title: NLP-opencc
 author: wangzf

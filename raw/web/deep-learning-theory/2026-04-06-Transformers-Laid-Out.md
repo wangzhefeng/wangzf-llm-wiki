@@ -10,12 +10,12 @@ tags:
 - null
 - clippings
 title: Transformers Laid Out
-topics:
-- 大语言模型
-- 深度学习
 source_url: https://goyalpramod.github.io/blogs/Transformers_laid_out/#coding-the-transformer?continueFlag=f54e16ed9bf504f6c57a7f7fd05f536e
 published_at: 2025-01-03
 related_concepts: []
+topics:
+  - deep-learning-theory
+  - 深度学习理论
 ---
 
 I have encountered that there are mainly three types of blogs/videos/tutorials talking about transformers

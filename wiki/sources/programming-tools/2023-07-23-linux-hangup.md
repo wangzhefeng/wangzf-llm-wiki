@@ -1,5 +1,5 @@
 ---
-source_type: local_note
+source_type: notes
 source_path: raw/local-notes/programming-tools/2023-07-23-linux-hangup/index.md
 title: Linux 后台执行命令
 author: wangzf

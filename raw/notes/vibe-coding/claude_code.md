@@ -1,12 +1,13 @@
 ---
-source_type: local-note
+source_type: notes
 source_path: "raw/local-notes/vibe-coding/claude_code/readme-20260412200431.md"
 title: "README"
 author: unknown
 created_at: 2026-04-12
-topics:
-- knowledge-base
 status: inbox
+topics:
+  - vibe-coding
+  - Vibe Coding
 ---
 
 # Claude Code 知识库

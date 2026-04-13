@@ -3,8 +3,6 @@ source_type: web
 title: "aws-samples/multi-step-forecasting-blog-sample-code: This repository is used for sample code of AWS China Blog."
 author: 
 created_at: 2026-04-06
-topics:
-  - 时间序列
 status: inbox
 published: 
 created: 2026-04-06
@@ -15,6 +13,9 @@ tags:
 source_url: "https://github.com/aws-samples/multi-step-forecasting-blog-sample-code/tree/main"
 published_at: null
 related_concepts: []
+topics:
+  - timeseries-analysis
+  - 时间序列分析
 ---
 
 This repository was archived by the owner on Mar 7, 2026. It is now read-only.

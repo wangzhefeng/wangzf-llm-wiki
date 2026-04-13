@@ -1,10 +1,6 @@
 ---
-source_type: local_note
+source_type: notes
 created_at: 2026-02-09
-topics:
-  - post
-  - optimizer-algorithm
-  - algorithm
 status: inbox
 title: 数学建模
 subtitle: Mathematical Modeling
@@ -16,6 +12,9 @@ categories:
   - optimizer-algorithm
 tags:
   - algorithm
+topics:
+  - operations-research
+  - 数学优化算法/运筹学
 ---
 
 

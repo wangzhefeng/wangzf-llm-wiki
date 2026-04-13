@@ -10,11 +10,12 @@ tags:
 - null
 - clippings
 title: Datasets at Hugging Face
-topics:
-- 时间序列
 source_url: https://huggingface.co/datasets/thuml/Time-Series-Library
 published_at: 2024-07-18
 related_concepts: []
+topics:
+  - timeseries-analysis
+  - 时间序列分析
 ---
 
 Dataset Viewer

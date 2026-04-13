@@ -9,11 +9,12 @@ tags:
 - null
 - clippings
 title: RegressorChain
-topics:
-- 计算机视觉
 source_url: https://scikit-learn.org/stable/modules/generated/sklearn.multioutput.RegressorChain.html#sklearn.multioutput.RegressorChain
 published_at: null
 related_concepts: []
+topics:
+  - timeseries-analysis
+  - 时间序列分析
 ---
 
 ## RegressorChain

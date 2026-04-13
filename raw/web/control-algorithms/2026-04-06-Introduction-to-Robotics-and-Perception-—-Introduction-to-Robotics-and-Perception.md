@@ -3,8 +3,6 @@ source_type: web
 title: "Introduction to Robotics and Perception — Introduction to Robotics and Perception"
 author: 
 created_at: 2026-04-06
-topics:
-  - 待分类
 status: inbox
 published: 
 created: 2026-04-06
@@ -15,6 +13,9 @@ tags:
 source_url: "https://www.roboticsbook.org/intro.html"
 published_at: null
 related_concepts: []
+topics:
+  - programming-tools
+  - 编程工具
 ---
 
 ## Introduction to Robotics and Perception

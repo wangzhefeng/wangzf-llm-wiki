@@ -1,12 +1,13 @@
 ---
-source_type: local-note
+source_type: notes
 source_path: "raw/local-notes/vibe-coding/openclaw/readme-20260412200431.md"
 title: "README"
 author: unknown
 created_at: 2026-04-12
-topics:
-- knowledge-base
 status: inbox
+topics:
+  - agent-dev
+  - 智能体开发
 ---
 
 # OpenClaw 知识库

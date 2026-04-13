@@ -9,11 +9,12 @@ tags:
 - null
 - clippings
 title: 'Ray Tune: Hyperparameter Tuning — Ray 2.54.1'
-topics:
-- 机器学习
 source_url: https://docs.ray.io/en/latest/tune/index.html
 published_at: null
 related_concepts: []
+topics:
+  - machine-learning-theory
+  - 机器学习理论
 ---
 
 ## Ray Tune: Hyperparameter Tuning

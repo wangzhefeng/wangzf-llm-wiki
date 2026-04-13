@@ -1,5 +1,5 @@
 ---
-source_type: local_note
+source_type: notes
 source_path: raw/local-notes/computer-vision/cnn/cnn-models/2023-03-23-cnn-googlenet/index.md
 title: 2023-03-23-cnn-googlenet
 author: wangzf

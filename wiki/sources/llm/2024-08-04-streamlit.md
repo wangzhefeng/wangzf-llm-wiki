@@ -1,5 +1,5 @@
 ---
-source_type: local_note
+source_type: notes
 source_path: raw/local-notes/llm/llm-framework/2024-08-04-streamlit/index.md
 title: LLM 框架--Streamlit
 author: wangzf

@@ -3,8 +3,6 @@ source_type: web
 title: "timeseriesAI/tsai: Time series Timeseries Deep Learning Machine Learning Python Pytorch  fastai | State-of-the-art Deep Learning library  for Time Series and Sequences in Pytorch"
 author: 
 created_at: 2026-04-06
-topics:
-  - 时间序列
 status: inbox
 published: 
 created: 2026-04-06
@@ -15,6 +13,9 @@ tags:
 source_url: "https://github.com/timeseriesAI/tsai"
 published_at: null
 related_concepts: []
+topics:
+  - timeseries-analysis
+  - 时间序列分析
 ---
 
 ## tsai

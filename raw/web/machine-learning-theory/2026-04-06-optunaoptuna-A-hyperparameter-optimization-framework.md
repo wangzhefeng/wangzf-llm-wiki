@@ -3,8 +3,6 @@ source_type: web
 title: "optuna/optuna: A hyperparameter optimization framework"
 author: 
 created_at: 2026-04-06
-topics:
-  - 运筹优化
 status: inbox
 published: 
 created: 2026-04-06
@@ -15,6 +13,9 @@ tags:
 source_url: "https://github.com/optuna/optuna"
 published_at: null
 related_concepts: []
+topics:
+  - machine-learning-theory
+  - 机器学习理论
 ---
 
 [![[raw/assets/attachments/operationsresearch/optuna-logo 1.png]]](https://raw.githubusercontent.com/optuna/optuna/master/docs/image/optuna-logo.png)

@@ -1,10 +1,6 @@
 ---
-source_type: local_note
+source_type: notes
 created_at: 2026-01-27
-topics:
-  - post
-  - machine-learning
-  - model
 status: inbox
 title: 特征工程相关问题
 subtitle: Feature Engineering Topics
@@ -16,6 +12,9 @@ categories:
   - machine-learning
 tags:
   - model
+topics:
+  - feature-engine
+  - 特征工程
 ---
 
 

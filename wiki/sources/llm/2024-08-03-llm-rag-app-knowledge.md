@@ -1,5 +1,5 @@
 ---
-source_type: local_note
+source_type: notes
 source_path: raw/local-notes/llm/llm-arch/2024-08-03-llm-rag-app-knowledge/index.md
 title: LLM 架构--RAG 应用
 author: wangzf

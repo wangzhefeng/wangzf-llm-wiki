@@ -12,11 +12,12 @@ tags:
 - null
 - clippings
 title: DataParallel
-topics:
-- 深度学习
 source_url: https://docs.pytorch.org/docs/stable/generated/torch.nn.DataParallel.html
 published_at: 2023-01-01
 related_concepts: []
+topics:
+  - deep-learning-theory
+  - 深度学习理论
 ---
 
 ## DataParallel

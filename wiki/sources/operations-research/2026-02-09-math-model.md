@@ -1,5 +1,5 @@
 ---
-source_type: local_note
+source_type: notes
 source_path: raw/local-notes/operations-research/2026-02-09-math-model/index.md
 title: 数学建模
 author: wangzf

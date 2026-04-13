@@ -7,11 +7,12 @@ categories:
   - deeplearning
 tags:
   - model
-source_type: local_note
+source_type: notes
 created_at: 2023-03-20
-topics:
-  - deeplearning
 status: inbox
+topics:
+  - deep-learning-theory
+  - 深度学习理论
 ---
 
 

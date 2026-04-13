@@ -11,11 +11,12 @@ tags:
 - null
 - clippings
 title: Victor MARTIN ~ Understanding Automatic Differentiation in 30 lines of Python
-topics:
-- 机器学习
 source_url: https://vmartin.fr/understanding-automatic-differentiation-in-30-lines-of-python.html?continueFlag=d461abeeae49162d7df52ae87fdb24ec&s_trans=2390860643_&s_channel=4
 published_at: null
 related_concepts: []
+topics:
+  - deep-learning-theory
+  - 深度学习理论
 ---
 
 \---> [For French version of this article, click here](https://vmartin.fr/understanding-automatic-differentiation-in-30-lines-of-python-fr.html)

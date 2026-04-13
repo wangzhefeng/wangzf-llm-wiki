@@ -1,5 +1,5 @@
 ---
-source_type: local_note
+source_type: notes
 source_path: raw/local-notes/data-analysis/statistics/2022-05-07-statistic-basic/index.md
 title: 2022-05-07-statistic-basic
 author: wangzf

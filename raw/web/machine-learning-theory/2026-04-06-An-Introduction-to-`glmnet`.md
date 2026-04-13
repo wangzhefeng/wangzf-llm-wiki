@@ -13,11 +13,12 @@ tags:
 - null
 - clippings
 title: An Introduction to `glmnet`
-topics:
-- 计算机视觉
 source_url: https://glmnet.stanford.edu/articles/glmnet.html
 published_at: null
 related_concepts: []
+topics:
+  - machine-learning-theory
+  - 机器学习理论
 ---
 
 ## Introduction

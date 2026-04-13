@@ -1,5 +1,5 @@
 ---
-source_type: local_note
+source_type: notes
 source_path: raw/local-notes/programming-tools/2024-04-02-python-usage/index.md
 title: Python 类使用详解
 author: wangzf

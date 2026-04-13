@@ -11,12 +11,12 @@ tags:
 - null
 - clippings
 title: TIMEMIXER++：通用时序预测新SOTA，全面超越Transformer！
-topics:
-- 大语言模型
-- 时间序列
 source_url: https://mp.weixin.qq.com/s/c-tZqxJ-vgs3UXvr2yl2lg
 published_at: null
 related_concepts: []
+topics:
+  - timeseries-analysis
+  - 时间序列分析
 ---
 
 ## ICLR 2025 | TIMEMIXER++：通用时序预测新SOTA，全面超越Transformer！

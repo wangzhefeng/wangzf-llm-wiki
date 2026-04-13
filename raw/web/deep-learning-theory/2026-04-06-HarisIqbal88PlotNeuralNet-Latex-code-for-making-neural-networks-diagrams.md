@@ -10,11 +10,12 @@ tags:
 - null
 - clippings
 title: 'HarisIqbal88/PlotNeuralNet: Latex code for making neural networks diagrams'
-topics:
-- 深度学习
 source_url: https://github.com/HarisIqbal88/PlotNeuralNet
 published_at: null
 related_concepts: []
+topics:
+  - deep-learning-theory
+  - 深度学习理论
 ---
 
 ## PlotNeuralNet

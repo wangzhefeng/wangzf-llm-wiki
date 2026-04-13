@@ -11,12 +11,12 @@ tags:
 - null
 - clippings
 title: 时序预测双飞轮，全面超越Transformer，纯MLP模型实现性能效能齐飞
-topics:
-- 大语言模型
-- 计算机视觉
 source_url: https://mp.weixin.qq.com/s/d7fEnEpnyW5T8BN08XRi7g
 published_at: null
 related_concepts: []
+topics:
+  - timeseries-analysis
+  - 时间序列分析
 ---
 
 王世宇 *2024年6月25日 19:14*

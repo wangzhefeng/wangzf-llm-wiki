@@ -7,11 +7,12 @@ categories:
   - deeplearning
 tags:
   - model
-source_type: local_note
+source_type: notes
 created_at: 2022-12-01
-topics:
-  - deeplearning
 status: inbox
+topics:
+  - machine-learning-supervised-model
+  - 有监督学习模型
 ---
 
 

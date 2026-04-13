@@ -11,11 +11,12 @@ tags:
 - clippings
 title: 'zhouhaoyi/Informer2020: The GitHub repository for the paper "Informer" accepted
   by AAAI 2021.'
-topics:
-- 深度学习
 source_url: https://github.com/zhouhaoyi/Informer2020
 published_at: null
 related_concepts: []
+topics:
+  - timeseries-analysis
+  - 时间序列分析
 ---
 
 ## Informer: Beyond Efficient Transformer for Long Sequence Time-Series Forecasting (AAAI'21 Best Paper)

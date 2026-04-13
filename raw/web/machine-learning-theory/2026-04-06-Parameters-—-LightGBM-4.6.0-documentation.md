@@ -9,11 +9,12 @@ tags:
 - null
 - clippings
 title: Parameters — LightGBM 4.6.0 documentation
-topics:
-- 机器学习
 source_url: https://lightgbm.readthedocs.io/en/stable/Parameters.html#objective-parameters
 published_at: null
 related_concepts: []
+topics:
+  - machine-learning-theory
+  - 机器学习理论
 ---
 
 ## Parameters

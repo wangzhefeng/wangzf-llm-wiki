@@ -7,11 +7,12 @@ categories:
   - machine-learning
 tags:
   - model
-source_type: local_note
+source_type: notes
 created_at: 2024-09-18
-topics:
-  - machine-learning
 status: inbox
+topics:
+  - programming-tools
+  - 编程工具
 ---
 
 

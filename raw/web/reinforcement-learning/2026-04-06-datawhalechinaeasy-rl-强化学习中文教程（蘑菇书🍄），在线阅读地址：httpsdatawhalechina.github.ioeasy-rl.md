@@ -3,8 +3,6 @@ source_type: web
 title: "datawhalechina/easy-rl: 强化学习中文教程（蘑菇书🍄），在线阅读地址：https://datawhalechina.github.io/easy-rl/"
 author: 
 created_at: 2026-04-06
-topics:
-  - 强化学习
 status: inbox
 published: 
 created: 2026-04-06
@@ -15,6 +13,9 @@ tags:
 source_url: "https://github.com/datawhalechina/easy-rl?tab=readme-ov-file"
 published_at: null
 related_concepts: []
+topics:
+  - reinforcement-learning
+  - 强化学习
 ---
 
 ## 蘑菇书EasyRL

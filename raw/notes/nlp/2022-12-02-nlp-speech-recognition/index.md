@@ -7,11 +7,12 @@ categories:
   - nlp
 tags:
   - model
-source_type: local_note
+source_type: notes
 created_at: 2022-12-02
+status: inbox
 topics:
   - nlp
-status: inbox
+  - 自然语言处理
 ---
 
 ## TODO

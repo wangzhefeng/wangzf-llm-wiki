@@ -6,8 +6,6 @@ author:
   - "[[Sonya Huang]]"
   - "[[Pat Grady and GPT-3]]"
 created_at: 2026-04-06
-topics:
-  - 强化学习
 status: inbox
 created: 2026-04-06
 description: "A powerful new class of large language models is making it possible for machines to write, code, draw and create with credible and even superhuman results."
@@ -17,6 +15,9 @@ tags:
 source_url: "https://sequoiacap.com/article/generative-ai-a-creative-new-world/"
 published_at: 2022-09-19
 related_concepts: []
+topics:
+  - reinforcement-learning
+  - 强化学习
 ---
 
 ![[raw/assets/attachments/reinforcementlearning/robots-1-1960.jpg]]

@@ -8,8 +8,6 @@ author:
   - "[[Nicolas Chapados]]"
   - "[[Yoshua Bengio]]"
 created_at: 2026-04-06
-topics:
-  - 时间序列
 status: inbox
 created: 2026-04-06
 description: "Researchers from Element AI and Mila, including Yoshua Bengio, introduced N-BEATS, a pure deep learning architecture for univariate time series forecasting"
@@ -19,6 +17,9 @@ tags:
 source_url: "https://www.alphaxiv.org/overview/1905.10437v4"
 published_at: 2020-02-21
 related_concepts: []
+topics:
+  - timeseries-analysis
+  - 时间序列分析
 ---
 
 ## Introduction

@@ -12,11 +12,12 @@ tags:
 - null
 - clippings
 title: Multiprocessing best practices
-topics:
-- 深度学习
 source_url: https://docs.pytorch.org/docs/stable/notes/multiprocessing.html
 published_at: 2001-01-16
 related_concepts: []
+topics:
+  - deep-learning-theory
+  - 深度学习理论
 ---
 
 ## Multiprocessing best practices

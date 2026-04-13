@@ -7,11 +7,12 @@ categories:
   - control-system
 tags:
   - algorithm
-source_type: local_note
+source_type: notes
 created_at: 2024-07-21
-topics:
-  - control-system
 status: inbox
+topics:
+  - control-algorithms
+  - 控制算法
 ---
 
 

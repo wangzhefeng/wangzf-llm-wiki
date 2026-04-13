@@ -3,8 +3,6 @@ source_type: web
 title: "Gurobi Optimization"
 author: 
 created_at: 2026-04-06
-topics:
-  - 运筹优化
 status: inbox
 published: 
 created: 2026-04-06
@@ -15,6 +13,9 @@ tags:
 source_url: "https://github.com/Gurobi"
 published_at: null
 related_concepts: []
+topics:
+  - operations-research
+  - 数学优化算法/运筹学
 ---
 
 ![[gurobi-dark.png|Gurobi]]

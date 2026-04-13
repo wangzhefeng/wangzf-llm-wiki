@@ -11,11 +11,12 @@ tags:
 - clippings
 title: 'kaz-Anova/StackNet: StackNet is a computational, scalable and analytical Meta
   modelling framework'
-topics:
-- 机器学习
 source_url: https://github.com/kaz-Anova/StackNet#what-is-stacknet
 published_at: null
 related_concepts: []
+topics:
+  - machine-learning-theory
+  - 机器学习理论
 ---
 
 ## StackNet

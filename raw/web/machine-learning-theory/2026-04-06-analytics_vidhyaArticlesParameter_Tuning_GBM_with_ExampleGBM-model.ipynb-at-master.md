@@ -12,11 +12,12 @@ tags:
 - clippings
 title: analytics_vidhya/Articles/Parameter_Tuning_GBM_with_Example/GBM model.ipynb
   at master
-topics:
-- 机器学习
 source_url: https://github.com/thismlguy/analytics_vidhya/blob/master/Articles/Parameter_Tuning_GBM_with_Example/GBM%20model.ipynb
 published_at: null
 related_concepts: []
+topics:
+  - machine-learning-theory
+  - 机器学习理论
 ---
 
 [Open in github.dev](https://github.dev/) [Open in a new github.dev tab](https://github.dev/) [Open in codespace](https://github.com/codespaces/new/thismlguy/analytics_vidhya/tree/master?resume=1)

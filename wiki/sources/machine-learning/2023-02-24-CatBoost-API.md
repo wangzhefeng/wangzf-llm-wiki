@@ -1,5 +1,5 @@
 ---
-source_type: local_note
+source_type: notes
 source_path: raw/local-notes/machine-learning/supervised/ensemble/catboost/2023-02-24-ml-gbm-catboost-api/index.md
 title: CatBoost API
 author: wangzf

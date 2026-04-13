@@ -1,5 +1,5 @@
 ---
-source_type: local_note
+source_type: notes
 source_path: raw/local-notes/llm/llm-app/2024-06-12-text-generation/index.md
 title: LLM 应用--文本生成
 author: wangzf

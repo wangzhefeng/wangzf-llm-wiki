@@ -1,5 +1,5 @@
 ---
-source_type: local_note
+source_type: notes
 source_path: raw/local-notes/llm/nlp-tasks/2022-07-15-nlp-feature-extraction/index.md
 title: NLP-特征提取
 author: wangzf

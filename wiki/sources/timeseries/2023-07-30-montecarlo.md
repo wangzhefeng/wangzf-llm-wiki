@@ -1,5 +1,5 @@
 ---
-source_type: local_note
+source_type: notes
 source_path: raw/local-notes/post/2023-07-30-montecarlo/index.md
 title: 蒙特卡洛模拟
 author: wangzf

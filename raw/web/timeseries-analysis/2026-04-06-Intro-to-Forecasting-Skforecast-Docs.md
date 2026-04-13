@@ -5,8 +5,6 @@ author:
   - 
   - "[[Joaquin Amat Rodrigo and Javier Escobar Ortiz]]"
 created_at: 2026-04-06
-topics:
-  - 时间序列
 status: inbox
 published: 
 created: 2026-04-06
@@ -17,6 +15,9 @@ tags:
 source_url: "https://skforecast.org/0.14.0/introduction-forecasting/introduction-forecasting"
 published_at: null
 related_concepts: []
+topics:
+  - timeseries-analysis
+  - 时间序列分析
 ---
 
 ## Introduction to forecasting

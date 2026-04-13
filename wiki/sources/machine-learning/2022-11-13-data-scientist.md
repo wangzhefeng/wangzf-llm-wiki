@@ -1,5 +1,5 @@
 ---
-source_type: local_note
+source_type: notes
 source_path: raw/local-notes/post/2022-11-13-data-scientist/index.md
 title: 优秀数据科学家的五个特征
 author: wangzf

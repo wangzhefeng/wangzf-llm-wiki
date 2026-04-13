@@ -11,11 +11,12 @@ tags:
 - null
 - clippings
 title: GIFT Eval - a Hugging Face Space by Salesforce
-topics:
-- 运筹优化
 source_url: https://huggingface.co/spaces/Salesforce/GIFT-Eval
 published_at: null
 related_concepts: []
+topics:
+  - timeseries-analysis
+  - 时间序列分析
 ---
 
 Refreshing

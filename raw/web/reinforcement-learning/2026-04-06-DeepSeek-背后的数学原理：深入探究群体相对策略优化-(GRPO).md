@@ -5,8 +5,6 @@ author:
   - 
   - "[[致Great]]"
 created_at: 2026-04-06
-topics:
-  - 强化学习
 status: inbox
 published: 
 created: 2026-04-06
@@ -17,6 +15,9 @@ tags:
 source_url: "https://mp.weixin.qq.com/s/Z-wRuqsQTF_6TeV7ao_9Yw"
 published_at: null
 related_concepts: []
+topics:
+  - reinforcement-learning
+  - 强化学习
 ---
 
 致Great *2025年2月11日 18:07*

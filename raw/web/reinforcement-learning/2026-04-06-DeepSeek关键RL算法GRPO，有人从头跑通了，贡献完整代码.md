@@ -3,8 +3,6 @@ source_type: web
 title: "DeepSeek关键RL算法GRPO，有人从头跑通了，贡献完整代码"
 author: 
 created_at: 2026-04-06
-topics:
-  - 强化学习
 status: inbox
 published: 
 created: 2026-04-06
@@ -15,6 +13,9 @@ tags:
 source_url: "https://mp.weixin.qq.com/s/e0-tVsaIgNajBTOl117ctg"
 published_at: null
 related_concepts: []
+topics:
+  - reinforcement-learning
+  - 强化学习
 ---
 
 *2025年3月2日 11:54*

@@ -11,11 +11,12 @@ tags:
 - null
 - clippings
 title: Python 教你 3 分钟用 Bert 搭建问答搜索引擎
-topics:
-- 大语言模型
 source_url: https://mp.weixin.qq.com/s/IhUhAOD8HmCXxhg7CpFhUw
 published_at: null
 related_concepts: []
+topics:
+  - llm-pre-training
+  - 大语言模型预训练
 ---
 
 *2024年5月23日 13:54*

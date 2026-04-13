@@ -1,5 +1,5 @@
 ---
-source_type: local_note
+source_type: notes
 source_path: raw/local-notes/llm/nlp-tasks/2022-07-15-nlp-tagging/index.md
 title: NLP-词性标注
 author: wangzf

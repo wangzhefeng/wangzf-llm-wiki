@@ -10,8 +10,6 @@ author:
   - "[[Min Xu]]"
   - "[[Alban Desmaison]]"
 created_at: 2026-04-06
-topics:
-  - 深度学习
 status: inbox
 published: 
 created: 2026-04-06
@@ -22,6 +20,9 @@ tags:
 source_url: "https://pytorch.org/blog/introducing-pytorch-fully-sharded-data-parallel-api/"
 published_at: null
 related_concepts: []
+topics:
+  - deep-learning-theory
+  - 深度学习理论
 ---
 
 Recent studies have shown that large model training will be beneficial for improving model quality. During the last 3 years, model size grew 10,000 times from [BERT](https://arxiv.org/abs/1810.04805) with 110M parameters to [Megatron-2](https://arxiv.org/abs/2104.04473) with one trillion. However, training large AI models is not easy—aside from the need for large amounts of computing resources, software engineering complexity is also challenging. PyTorch has been working on building tools and infrastructure to make it easier.

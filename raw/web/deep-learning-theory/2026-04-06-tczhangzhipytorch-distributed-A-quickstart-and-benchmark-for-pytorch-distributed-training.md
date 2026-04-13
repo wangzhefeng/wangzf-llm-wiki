@@ -3,8 +3,6 @@ source_type: web
 title: "tczhangzhi/pytorch-distributed: A quickstart and benchmark for pytorch distributed training."
 author: 
 created_at: 2026-04-06
-topics:
-  - 深度学习
 status: inbox
 published: 
 created: 2026-04-06
@@ -15,6 +13,9 @@ tags:
 source_url: "https://github.com/tczhangzhi/pytorch-distributed?tab=readme-ov-file#horovod-%E7%9A%84%E4%BC%98%E9%9B%85%E5%AE%9E%E7%8E%B0"
 published_at: null
 related_concepts: []
+topics:
+  - deep-learning-theory
+  - 深度学习理论
 ---
 
 ## Distribution is all you need

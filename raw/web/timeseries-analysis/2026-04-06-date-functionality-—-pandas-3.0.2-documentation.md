@@ -9,11 +9,12 @@ tags:
 - null
 - clippings
 title: date functionality — pandas 3.0.2 documentation
-topics:
-- 时间序列
 source_url: https://pandas.pydata.org/docs/user_guide/timeseries.html#time-date-components
 published_at: null
 related_concepts: []
+topics:
+  - timeseries-analysis
+  - 时间序列分析
 ---
 
 ## Time series / date functionality

@@ -1,5 +1,5 @@
 ---
-source_type: local_note
+source_type: notes
 source_path: raw/local-notes/data-analysis/statistics/2023-07-08-python-stats-hypothetical-test/index.md
 title: 置信水平
 author: wangzf

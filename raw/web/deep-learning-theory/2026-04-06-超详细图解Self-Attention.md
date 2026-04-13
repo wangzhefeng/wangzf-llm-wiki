@@ -12,11 +12,12 @@ tags:
 - null
 - clippings
 title: 超详细图解Self-Attention
-topics:
-- 深度学习
 source_url: https://zhuanlan.zhihu.com/p/410776234
 published_at: null
 related_concepts: []
+topics:
+  - deep-learning-theory
+  - 深度学习理论
 ---
 
 一年之前，初次接触 `Transformer` 。当时只觉得模型复杂，步骤繁复，苦读论文多日也没有完全理解其中道理，只是泛泛地记住了一些名词，于其内部机理完全不通，相关公式更是过目便忘。

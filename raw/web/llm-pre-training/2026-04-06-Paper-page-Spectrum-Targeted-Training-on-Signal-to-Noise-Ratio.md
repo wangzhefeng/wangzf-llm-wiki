@@ -9,11 +9,12 @@ tags:
 - null
 - clippings
 title: 'Paper page - Spectrum: Targeted Training on Signal to Noise Ratio'
-topics:
-- 大语言模型
 source_url: https://huggingface.co/papers/2406.06623
 published_at: 2024-06-12
 related_concepts: []
+topics:
+  - llm-pre-training
+  - 大语言模型预训练
 ---
 
 arxiv:2406.06623

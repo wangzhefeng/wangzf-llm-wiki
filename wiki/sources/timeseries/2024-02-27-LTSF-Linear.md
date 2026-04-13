@@ -1,5 +1,5 @@
 ---
-source_type: local_note
+source_type: notes
 source_path: raw/local-notes/timeseries/timeseries-time-domain/timeseries-deeplearning/2024-02-27-paper-ts-ltsf-linear/index.md
 created_at: 2026-04-05
 topics:

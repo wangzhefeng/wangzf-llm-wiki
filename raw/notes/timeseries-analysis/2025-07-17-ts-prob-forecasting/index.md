@@ -1,10 +1,6 @@
 ---
-source_type: local_note
+source_type: notes
 created_at: 2025-07-17
-topics:
-  - post
-  - timeseries
-  - model
 status: inbox
 title: 时间序列概率预测
 subtitle: Probabilistic Time Series Forecasting
@@ -16,6 +12,9 @@ categories:
   - timeseries
 tags:
   - model
+topics:
+  - timeseries-analysis
+  - 时间序列分析
 ---
 
 

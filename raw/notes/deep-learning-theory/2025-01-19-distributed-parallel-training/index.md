@@ -1,10 +1,6 @@
 ---
-source_type: local_note
+source_type: notes
 created_at: 2025-01-19
-topics:
-  - post
-  - deeplearning
-  - model
 status: inbox
 title: 模型分布式训练
 subtitle: Distributed Parallel Training
@@ -16,6 +12,9 @@ categories:
   - deeplearning
 tags:
   - model
+topics:
+  - deep-learning-theory
+  - 深度学习理论
 ---
 
 

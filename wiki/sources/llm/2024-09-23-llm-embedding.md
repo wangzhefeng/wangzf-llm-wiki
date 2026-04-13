@@ -1,5 +1,5 @@
 ---
-source_type: local_note
+source_type: notes
 source_path: raw/local-notes/llm/2024-09-23-llm-embedding/index.md
 title: LLM Embedding 调用
 author: wangzf

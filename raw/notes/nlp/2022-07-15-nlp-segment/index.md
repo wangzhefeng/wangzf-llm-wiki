@@ -7,11 +7,12 @@ categories:
   - nlp
 tags:
   - algorithm
-source_type: local_note
+source_type: notes
 created_at: 2022-04-05
-topics:
-  - nlp
 status: inbox
+topics:
+  - statistics-theory
+  - 统计学理论
 ---
 
 

@@ -5,8 +5,6 @@ author:
   - 
   - "[[PyTorch Contributors]]"
 created_at: 2026-04-06
-topics:
-  - 深度学习
 status: inbox
 created: 2026-04-06
 description: "PyTorch Documentation. Explore PyTorch, an open-source machine learning library that accelerates the path from research prototyping to production deployment."
@@ -16,6 +14,9 @@ tags:
 source_url: "https://docs.pytorch.org/tutorials/beginner/dist_overview.html"
 published_at: 2023-01-01
 related_concepts: []
+topics:
+  - deep-learning-theory
+  - 深度学习理论
 ---
 
 ## PyTorch Distributed Overview

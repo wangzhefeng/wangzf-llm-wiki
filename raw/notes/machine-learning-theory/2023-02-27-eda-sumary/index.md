@@ -4,14 +4,15 @@ author: wangzf
 date: '2023-02-27'
 slug: eda
 categories:
-  - data-analysis
+  - machine-learning-theory
 tags:
   - model
-source_type: local_note
+source_type: notes
 created_at: 2023-02-27
-topics:
-  - data-analysis
 status: inbox
+topics:
+  - machine-learning-theory
+  - 机器学习理论
 ---
 
 

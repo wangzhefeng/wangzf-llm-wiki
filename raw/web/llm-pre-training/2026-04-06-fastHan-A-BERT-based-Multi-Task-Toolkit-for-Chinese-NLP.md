@@ -15,11 +15,12 @@ tags:
 - null
 - clippings
 title: 'fastHan: A BERT-based Multi-Task Toolkit for Chinese NLP'
-topics:
-- 大语言模型
 source_url: https://arxiv.org/abs/2009.08633
 published_at: null
 related_concepts: []
+topics:
+  - llm-pre-training
+  - 大语言模型预训练
 ---
 
 ## Title:fastHan: A BERT-based Multi-Task Toolkit for Chinese NLP

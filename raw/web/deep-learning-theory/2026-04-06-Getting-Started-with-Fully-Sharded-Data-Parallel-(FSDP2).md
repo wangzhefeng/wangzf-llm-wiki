@@ -12,11 +12,12 @@ tags:
 - null
 - clippings
 title: Getting Started with Fully Sharded Data Parallel (FSDP2)
-topics:
-- 深度学习
 source_url: https://docs.pytorch.org/tutorials/intermediate/FSDP_tutorial.html#how-fsdp2-works
 published_at: 2023-01-01
 related_concepts: []
+topics:
+  - deep-learning-theory
+  - 深度学习理论
 ---
 
 ## Getting Started with Fully Sharded Data Parallel (FSDP2)

@@ -1,5 +1,5 @@
 ---
-source_type: local_note
+source_type: notes
 source_path: raw/local-notes/computer-vision/others/2022-07-15-style-transfer/index.md
 title: 2022-07-15-style-transfer
 author: wangzf

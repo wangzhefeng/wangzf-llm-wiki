@@ -1,5 +1,5 @@
 ---
-source_type: local_note
+source_type: notes
 source_path: raw/local-notes/vibe-coding/codex/README.md
 title: Vibe Coding - codex
 author: wangzf

@@ -5,8 +5,6 @@ author:
   - 
   - "[[Vitor Cerqueira]]"
 created_at: 2026-04-06
-topics:
-  - 时间序列
 status: inbox
 created: 2026-04-06
 description: "How to get better forecasting performance estimates with a bit of randomness"
@@ -16,6 +14,9 @@ tags:
 source_url: "https://towardsdatascience.com/monte-carlo-cross-validation-for-time-series-ed01c41e2995/"
 published_at: 2022-12-13
 related_concepts: []
+topics:
+  - timeseries-analysis
+  - 时间序列分析
 ---
 
 ![[0DZ06-YmGhE0WP_nS-scaled.jpg|Photo by Markus Spiske on Unsplash]]

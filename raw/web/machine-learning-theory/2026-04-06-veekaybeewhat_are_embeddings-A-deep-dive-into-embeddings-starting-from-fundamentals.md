@@ -9,12 +9,12 @@ tags:
 - null
 - clippings
 title: 'veekaybee/what_are_embeddings: A deep dive into embeddings starting from fundamentals'
-topics:
-- 大语言模型
-- 机器学习
 source_url: https://github.com/veekaybee/what_are_embeddings
 published_at: null
 related_concepts: []
+topics:
+  - machine-learning-theory
+  - 机器学习理论
 ---
 
 [![[kandinsky.png]]](https://github.com/veekaybee/what_are_embeddings/blob/main/kandinsky.png)

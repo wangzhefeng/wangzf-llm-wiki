@@ -10,12 +10,12 @@ tags:
 - null
 - clippings
 title: 'yangwohenmai/DeepLearningForTSF: 深度学习以进行时间序列预测'
-topics:
-- 时间序列
-- 深度学习
 source_url: https://github.com/yangwohenmai/DeepLearningForTSF/tree/master
 published_at: null
 related_concepts: []
+topics:
+  - timeseries-analysis
+  - 时间序列分析
 ---
 
 ## DeepLearningForTimeSeriesForecasting

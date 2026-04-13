@@ -7,11 +7,12 @@ categories:
   - deeplearning
 tags:
   - model
-source_type: local_note
+source_type: notes
 created_at: 2022-07-15
-topics:
-  - deeplearning
 status: inbox
+topics:
+  - timeseries-analysis
+  - 时间序列分析
 ---
 
 

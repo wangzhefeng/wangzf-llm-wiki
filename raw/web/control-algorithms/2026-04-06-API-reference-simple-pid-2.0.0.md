@@ -9,11 +9,12 @@ tags:
 - null
 - clippings
 title: API reference - simple-pid 2.0.0
-topics:
-- 控制算法
 source_url: https://simple-pid.readthedocs.io/en/latest/reference.html
 published_at: null
 related_concepts: []
+topics:
+  - control-algorithms
+  - 控制算法
 ---
 
 ## API reference

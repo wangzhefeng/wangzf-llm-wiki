@@ -1,6 +1,6 @@
 ---
 created_at: 2026-04-11
-source_type: local_note
+source_type: notes
 status: linked
 title: uncategorized 附件入口清单
 topics:

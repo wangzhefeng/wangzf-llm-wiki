@@ -3,8 +3,6 @@ source_type: web
 title: "theLMbook/GRPO_From_Scratch_Multi_GPU_DataParallel_Qwen_2_5_1_5B_Instruct.ipynb at main"
 author: 
 created_at: 2026-04-06
-topics:
-  - 强化学习
 status: inbox
 published: 
 created: 2026-04-06
@@ -15,6 +13,9 @@ tags:
 source_url: "https://github.com/aburkov/theLMbook/blob/main/GRPO_From_Scratch_Multi_GPU_DataParallel_Qwen_2_5_1_5B_Instruct.ipynb"
 published_at: null
 related_concepts: []
+topics:
+  - reinforcement-learning
+  - 强化学习
 ---
 
 [Open in github.dev](https://github.dev/) [Open in a new github.dev tab](https://github.dev/) [Open in codespace](https://github.com/codespaces/new/aburkov/theLMbook/tree/main?resume=1)

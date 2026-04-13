@@ -1,5 +1,5 @@
 ---
-source_type: local_note
+source_type: notes
 title: LLM wiki 工作流补齐与 schema 固化线程总结
 created_at: 2026-04-07
 topics:

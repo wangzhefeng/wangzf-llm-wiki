@@ -1,5 +1,5 @@
 ---
-source_type: local_note
+source_type: notes
 source_path: raw/local-notes/llm/llm-fine-tune/2024-04-09-llm-prompt/index.md
 title: LLM 架构--Prompt
 author: wangzf

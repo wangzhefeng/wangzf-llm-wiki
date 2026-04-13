@@ -17,12 +17,12 @@ title: 'DC-research/TSorchestra: Time Series Orchestra (TSorchestra) is a novel 
   collection of time series foundation models. The architecture is designed to leverage
   the specialized capabilities of its constituent models to deliver SOTA performance
   and generalization across datasets.'
-topics:
-- 大语言模型
-- 时间序列
 source_url: https://github.com/DC-research/TSorchestra
 published_at: null
 related_concepts: []
+topics:
+  - timeseries-analysis
+  - 时间序列分析
 ---
 
 ## TSorchestra

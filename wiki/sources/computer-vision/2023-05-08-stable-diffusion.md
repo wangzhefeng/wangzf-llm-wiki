@@ -1,5 +1,5 @@
 ---
-source_type: local_note
+source_type: notes
 source_path: raw/local-notes/computer-vision/others/2023-05-08-stable-diffusion/index.md
 title: 2023-05-08-stable-diffusion
 author: wangzf

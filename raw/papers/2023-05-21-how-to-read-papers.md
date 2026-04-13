@@ -1,5 +1,5 @@
 ---
-source_type: local_note
+source_type: notes
 created_at: 2023-05-21
 topics:
   - post

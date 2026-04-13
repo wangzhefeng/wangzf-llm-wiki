@@ -3,8 +3,6 @@ source_type: web
 title: "abhishekkrthakur/approachingalmost: Approaching (Almost) Any Machine Learning Problem"
 author: 
 created_at: 2026-04-06
-topics:
-  - 机器学习
 status: inbox
 published: 
 created: 2026-04-06
@@ -15,6 +13,9 @@ tags:
 source_url: "https://github.com/abhishekkrthakur/approachingalmost"
 published_at: null
 related_concepts: []
+topics:
+  - machine-learning-theory
+  - 机器学习理论
 ---
 
 **If you like the book, please consider writing a review on Google/Amazon/Goodreads 🙂**

@@ -9,8 +9,6 @@ author:
   - "[[Emadeldeen Eldele]]"
   - "[[Qinghua Hu]]"
 created_at: 2026-04-06
-topics:
-  - 时间序列
 status: inbox
 created: 2026-04-06
 description: "分层分类辅助网络（HCAN）将时间序列预测转化为分层分类问题，以克服预测过度平滑的问题。该辅助网络通过不确定性感知和分层一致性增强特征学习，持续改进了多个数据集上的各种深度学习模型。"
@@ -20,6 +18,9 @@ tags:
 source_url: "https://www.alphaxiv.org/zh/overview/2405.18975v2"
 published_at: 2024-12-24
 related_concepts: []
+topics:
+  - timeseries-analysis
+  - 时间序列分析
 ---
 
 ## 简介

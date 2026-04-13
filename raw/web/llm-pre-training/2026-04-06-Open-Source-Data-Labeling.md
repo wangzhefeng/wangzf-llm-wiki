@@ -10,11 +10,12 @@ tags:
 - null
 - clippings
 title: Open Source Data Labeling
-topics:
-- 大语言模型
 source_url: https://labelstud.io/
 published_at: null
 related_concepts: []
+topics:
+  - llm-pre-training
+  - 大语言模型预训练
 ---
 
 ## Open SourceData Labeling Platform

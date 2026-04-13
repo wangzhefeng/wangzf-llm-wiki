@@ -11,11 +11,12 @@ tags:
 - null
 - clippings
 title: The Ultra-Scale Playbook - a Hugging Face Space by nanotron
-topics:
-- 大语言模型
 source_url: https://huggingface.co/spaces/nanotron/ultrascale-playbook?section=first_steps%3A_training_on_one_gpu
 published_at: null
 related_concepts: []
+topics:
+  - llm-pre-training
+  - 大语言模型预训练
 ---
 
 Refreshing

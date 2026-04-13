@@ -11,11 +11,12 @@ tags:
 - null
 - clippings
 title: Autoformer/predict.ipynb at main
-topics:
-- 时间序列
 source_url: https://github.com/thuml/Autoformer/blob/main/predict.ipynb
 published_at: null
 related_concepts: []
+topics:
+  - timeseries-analysis
+  - 时间序列分析
 ---
 
 [Open in github.dev](https://github.dev/) [Open in a new github.dev tab](https://github.dev/) [Open in codespace](https://github.com/codespaces/new/thuml/Autoformer/tree/main?resume=1)

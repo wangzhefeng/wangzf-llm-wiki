@@ -1,10 +1,6 @@
 ---
-source_type: local_note
+source_type: notes
 created_at: 2025-07-05
-topics:
-  - post
-  - deeplearning
-  - model
 status: inbox
 title: 模型微调
 subtitle: Model Finetune
@@ -16,6 +12,9 @@ categories:
   - deeplearning
 tags:
   - model
+topics:
+  - llm-theory
+  - 大语言模型理论
 ---
 
 

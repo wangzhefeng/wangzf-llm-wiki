@@ -7,11 +7,12 @@ categories:
   - deeplearning
 tags:
   - paper
-source_type: local_note
+source_type: notes
 created_at: 2023-01-27
-topics:
-  - deeplearning
 status: inbox
+topics:
+  - deep-learning-theory
+  - 深度学习理论
 ---
 
 ![img](./images/lenet-5-slide.png)

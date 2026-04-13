@@ -3,8 +3,6 @@ source_type: web
 title: "tiny-llm-zh/doc/自定义构造Tokenizer.md at main"
 author: 
 created_at: 2026-04-06
-topics:
-  - 大语言模型
 status: inbox
 published: 
 created: 2026-04-06
@@ -15,6 +13,9 @@ tags:
 source_url: "https://github.com/wdndev/tiny-llm-zh/blob/main/doc/%E8%87%AA%E5%AE%9A%E4%B9%89%E6%9E%84%E9%80%A0Tokenizer.md"
 published_at: null
 related_concepts: []
+topics:
+  - llm-pre-training
+  - 大语言模型预训练
 ---
 
 ## 自定义构造Tokenizer

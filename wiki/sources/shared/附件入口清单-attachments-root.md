@@ -1,5 +1,5 @@
 ---
-source_type: local_note
+source_type: notes
 title: attachments-root 附件入口清单
 created_at: 2026-04-11
 topics:

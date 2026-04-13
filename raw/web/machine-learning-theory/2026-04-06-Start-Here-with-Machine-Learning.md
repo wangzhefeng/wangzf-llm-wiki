@@ -3,8 +3,6 @@ source_type: web
 title: "Start Here with Machine Learning"
 author: 
 created_at: 2026-04-06
-topics:
-  - 机器学习
 status: inbox
 created: 2026-04-06
 description: "Your guide to getting started and getting good at applied machine learning with Machine Learning Mastery."
@@ -14,6 +12,9 @@ tags:
 source_url: "https://machinelearningmastery.com/start-here/#process"
 published_at: 2014-01-26
 related_concepts: []
+topics:
+  - machine-learning-theory
+  - 机器学习理论
 ---
 
 ## Need Help Getting Started with Applied Machine Learning?

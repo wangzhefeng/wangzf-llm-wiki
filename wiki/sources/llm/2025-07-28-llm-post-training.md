@@ -1,5 +1,5 @@
 ---
-source_type: local_note
+source_type: notes
 source_path: raw/local-notes/llm/2025-07-28-llm-post-training/index.md
 title: LLM Post-training
 author: wangzf

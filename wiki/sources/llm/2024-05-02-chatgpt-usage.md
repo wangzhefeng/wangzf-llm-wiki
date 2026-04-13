@@ -1,5 +1,5 @@
 ---
-source_type: local_note
+source_type: notes
 source_path: raw/local-notes/llm/llm-models/2024-05-02-chatgpt-usage/index.md
 title: LLM 应用--ChatGPT
 author: wangzf

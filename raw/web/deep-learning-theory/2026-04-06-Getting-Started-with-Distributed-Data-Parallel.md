@@ -12,11 +12,12 @@ tags:
 - null
 - clippings
 title: Getting Started with Distributed Data Parallel
-topics:
-- 深度学习
 source_url: https://docs.pytorch.org/tutorials/intermediate/ddp_tutorial.html
 published_at: 2023-01-01
 related_concepts: []
+topics:
+  - deep-learning-theory
+  - 深度学习理论
 ---
 
 ## Getting Started with Distributed Data Parallel

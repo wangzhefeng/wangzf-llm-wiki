@@ -10,11 +10,12 @@ tags:
 - null
 - clippings
 title: reasoning-from-scratch/ch03/01_main-chapter-code/ch03_main.ipynb at main
-topics:
-- 大语言模型
 source_url: https://github.com/rasbt/reasoning-from-scratch/blob/main/ch03/01_main-chapter-code/ch03_main.ipynb
 published_at: null
 related_concepts: []
+topics:
+  - llm-pre-training
+  - 大语言模型预训练
 ---
 
 [Open in github.dev](https://github.dev/) [Open in a new github.dev tab](https://github.dev/) [Open in codespace](https://github.com/codespaces/new/rasbt/reasoning-from-scratch/tree/main?resume=1)

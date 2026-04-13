@@ -12,12 +12,12 @@ tags:
 title: 'thuml/Large-Time-Series-Model: Official code, datasets and checkpoints for
   "Timer: Generative Pre-trained Transformers Are Large Time Series Models" (ICML
   2024) and subsequent works'
-topics:
-- 大语言模型
-- 时间序列
 source_url: https://github.com/thuml/Large-Time-Series-Model
 published_at: null
 related_concepts: []
+topics:
+  - timeseries-analysis
+  - 时间序列分析
 ---
 
 ## Large Time-Series Model

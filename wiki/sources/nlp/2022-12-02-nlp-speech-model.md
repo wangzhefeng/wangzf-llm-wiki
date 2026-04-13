@@ -1,5 +1,5 @@
 ---
-source_type: local_note
+source_type: notes
 source_path: raw/local-notes/nlp/nlp-speech/2022-12-02-nlp-speech-model/index.md
 title: 语音模型 Speech Model
 author: wangzf

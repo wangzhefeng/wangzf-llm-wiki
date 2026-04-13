@@ -1,5 +1,5 @@
 ---
-source_type: local_note
+source_type: notes
 source_path: raw/local-notes/data-analysis/statistics/2023-07-15-statistics-causal-analysis-dowhy/index.md
 title: 2023-07-15-statistics-causal-analysis-dowhy
 author: wangzf

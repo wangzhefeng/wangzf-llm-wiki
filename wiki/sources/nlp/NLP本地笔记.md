@@ -1,5 +1,5 @@
 ---
-source_type: local_note
+source_type: notes
 title: 自然语言处理本地笔记
 created_at: 2026-04-06
 topics:

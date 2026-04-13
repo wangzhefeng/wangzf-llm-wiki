@@ -8,11 +8,12 @@ categories:
   - feature-engine
 tags:
   - model
-source_type: local_note
+source_type: notes
 created_at: 2022-09-13
-topics:
-  - feature-engine
 status: inbox
+topics:
+  - machine-learning-theory
+  - 机器学习理论
 ---
 
 

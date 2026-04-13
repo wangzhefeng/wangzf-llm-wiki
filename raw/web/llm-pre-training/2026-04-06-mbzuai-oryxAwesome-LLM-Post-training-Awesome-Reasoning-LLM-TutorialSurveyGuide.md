@@ -3,8 +3,6 @@ source_type: web
 title: "mbzuai-oryx/Awesome-LLM-Post-training: Awesome Reasoning LLM Tutorial/Survey/Guide"
 author: 
 created_at: 2026-04-06
-topics:
-  - 大语言模型
 status: inbox
 published: 
 created: 2026-04-06
@@ -15,6 +13,9 @@ tags:
 source_url: "https://github.com/mbzuai-oryx/Awesome-LLM-Post-training"
 published_at: null
 related_concepts: []
+topics:
+  - llm-pre-training
+  - 大语言模型预训练
 ---
 
 ## LLM Post-Training: A Deep Dive into Reasoning Large Language Models

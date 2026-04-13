@@ -6,14 +6,15 @@ description: null
 tags:
 - clippings
 title: Harness Engineering在硅谷爆火，一文带你搞懂！
-topics:
-- Vibe Coding
-source_type: local_note
+source_type: web
 created_at: 2026-04-11
 status: inbox
 source_url: https://mp.weixin.qq.com/s/1-bPS2omne-tncLTPm5N7A?scene=21#wechat_redirect
 published_at: null
 related_concepts: []
+topics:
+  - vibe-coding
+  - Vibe Coding
 ---
 原创 Datawhale *2026年3月29日 22:07*
 

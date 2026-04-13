@@ -3,8 +3,6 @@ source_type: web
 title: "google-research/tuning_playbook: A playbook for systematically maximizing the performance of deep learning models."
 author: 
 created_at: 2026-04-06
-topics:
-  - 深度学习
 status: inbox
 published: 
 created: 2026-04-06
@@ -15,6 +13,9 @@ tags:
 source_url: "https://github.com/google-research/tuning_playbook"
 published_at: null
 related_concepts: []
+topics:
+  - deep-learning-theory
+  - 深度学习理论
 ---
 
 ## Deep Learning Tuning Playbook

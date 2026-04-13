@@ -8,11 +8,12 @@ categories:
   - deeplearning
 tags:
   - tool
-source_type: local_note
+source_type: notes
 created_at: 2022-07-15
-topics:
-  - deeplearning
 status: inbox
+topics:
+  - deep-learning-theory
+  - 深度学习理论
 ---
 
 

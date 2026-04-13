@@ -10,11 +10,12 @@ tags:
 - null
 - clippings
 title: Smth Smth GPU Related
-topics:
-- 深度学习
 source_url: https://sodakeyeatsmush.notion.site/Smth-Smth-GPU-Related-27bf1129214e804ba217e8d5d08fc8b5#27bf1129214e80928aeef2a9fa3c0e38
 published_at: null
 related_concepts: []
+topics:
+  - deep-learning-theory
+  - 深度学习理论
 ---
 
 For quite some time, I’ve been wanting to learn about GPUs. As someone in ML, I use them a lot, but I was really curious to understand how they actually work under the hood.

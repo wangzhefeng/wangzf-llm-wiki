@@ -1,5 +1,5 @@
 ---
-source_type: local_note
+source_type: notes
 source_path: raw/local-notes/timeseries/timeseries-libs/2022-05-02-timeseries-lib-statsmodels/index.md
 created_at: 2026-04-04
 topics:

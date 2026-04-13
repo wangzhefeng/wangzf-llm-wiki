@@ -1,5 +1,5 @@
 ---
-source_type: local_note
+source_type: notes
 source_path: raw/local-notes/llm/lm/2023-03-17-model-distilling/index.md
 title: 模型蒸馏
 author: wangzf

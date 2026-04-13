@@ -11,11 +11,12 @@ tags:
 - clippings
 title: 'gtbook/robotics: Notebook-based book "Introduction to Robotics and Perception"
   by Frank Dellaert and Seth Hutchinson'
-topics:
-- 运筹优化
 source_url: https://github.com/gtbook/robotics
 published_at: null
 related_concepts: []
+topics:
+  - control-algorithms
+  - 控制算法
 ---
 
 ## Introduction to Robotics and Perception Draft

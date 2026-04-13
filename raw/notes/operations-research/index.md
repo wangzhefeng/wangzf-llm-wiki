@@ -2,11 +2,12 @@
 title: 运筹学
 subtitle: Operations Research
 list_pages: true
-source_type: local_note
+source_type: notes
 created_at: 2026-04-11
+status: linked
 topics:
   - operations-research
-status: linked
+  - 数学优化算法/运筹学
 ---
 
 ## 运筹学定义

@@ -10,11 +10,12 @@ tags:
 - null
 - clippings
 title: Datawhale
-topics:
-- 大语言模型
 source_url: https://github.com/datawhalechina
 published_at: null
 related_concepts: []
+topics:
+  - llm-pre-training
+  - 大语言模型预训练
 ---
 
 ## Who we are?

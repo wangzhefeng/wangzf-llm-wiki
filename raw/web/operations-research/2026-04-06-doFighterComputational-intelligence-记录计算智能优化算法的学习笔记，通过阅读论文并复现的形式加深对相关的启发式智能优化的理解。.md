@@ -10,11 +10,12 @@ tags:
 - null
 - clippings
 title: 'doFighter/Computational-intelligence: 记录计算智能优化算法的学习笔记，通过阅读论文并复现的形式加深对相关的启发式智能优化的理解。'
-topics:
-- 运筹优化
 source_url: https://github.com/doFighter/Computational-intelligence
 published_at: null
 related_concepts: []
+topics:
+  - operations-research
+  - 数学优化算法/运筹学
 ---
 
 ## Computational-intelligence

@@ -1,5 +1,5 @@
 ---
-source_type: local_note
+source_type: notes
 source_path: raw/local-notes/llm/lm/2024-09-27-model-pretrain/index.md
 title: 模型预训练
 author: wangzf

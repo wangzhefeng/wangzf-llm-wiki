@@ -9,11 +9,12 @@ tags:
 - null
 - clippings
 title: LLaMA Factory
-topics:
-- 大语言模型
 source_url: https://llamafactory.readthedocs.io/zh-cn/latest/
 published_at: null
 related_concepts: []
+topics:
+  - llm-pre-training
+  - 大语言模型预训练
 ---
 
 ## Welcome to LLaMA Factory!

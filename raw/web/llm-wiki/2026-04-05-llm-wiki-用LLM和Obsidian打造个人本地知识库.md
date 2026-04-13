@@ -9,9 +9,8 @@ source_url: https://mp.weixin.qq.com/s?__biz=Mzg3MTkxMjYzOA==&mid=2247513861&idx
 status: linked
 title: Karpathy最新硬核分享：用大模型和Obsidian打造个人本地知识库
 topics:
-  - 知识库维护
-  - 个人知识库
-  - llm-knowledge-base
+  - llm-wiki
+  - 大语言模型知识库(本仓库)
 ---
 
 AI寒武纪 *2026年4月3日 12:10*

@@ -1,10 +1,6 @@
 ---
-source_type: local_note
+source_type: notes
 created_at: 2025-04-03
-topics:
-  - post
-  - vibe-coding
-  - agent
 status: inbox
 title: MCP
 subtitle: Model Context Protocol
@@ -16,6 +12,9 @@ categories:
   - vibe-coding
 tags:
   - agent
+topics:
+  - agent-dev
+  - 智能体开发
 ---
 
 # MCP 知识库

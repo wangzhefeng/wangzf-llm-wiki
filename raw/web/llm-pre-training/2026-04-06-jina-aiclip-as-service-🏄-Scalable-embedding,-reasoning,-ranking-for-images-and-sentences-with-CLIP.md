@@ -3,8 +3,6 @@ source_type: web
 title: "jina-ai/clip-as-service: 🏄 Scalable embedding, reasoning, ranking for images and sentences with CLIP"
 author: 
 created_at: 2026-04-06
-topics:
-  - 大语言模型
 status: inbox
 published: 
 created: 2026-04-06
@@ -15,6 +13,9 @@ tags:
 source_url: "https://github.com/jina-ai/clip-as-service#install"
 published_at: null
 related_concepts: []
+topics:
+  - llm-pre-training
+  - 大语言模型预训练
 ---
 
 [![[logo-light.svg|CLIP-as-service logo: The data structure for unstructured data]]](https://clip-as-service.jina.ai/)  

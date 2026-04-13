@@ -5,8 +5,6 @@ author:
   - 
   - "[[小天狼星不来客ML PhD Student]]"
 created_at: 2026-04-06
-topics:
-  - 强化学习
 status: inbox
 published: 
 created: 2026-04-06
@@ -17,6 +15,9 @@ tags:
 source_url: "https://zhuanlan.zhihu.com/p/22128744640"
 published_at: null
 related_concepts: []
+topics:
+  - reinforcement-learning
+  - 强化学习
 ---
 
 ### 1\. 开篇

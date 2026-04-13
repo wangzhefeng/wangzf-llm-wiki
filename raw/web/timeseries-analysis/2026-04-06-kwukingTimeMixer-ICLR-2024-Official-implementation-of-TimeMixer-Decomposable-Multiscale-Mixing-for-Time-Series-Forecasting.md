@@ -3,8 +3,6 @@ source_type: web
 title: "kwuking/TimeMixer: [ICLR 2024] Official implementation of \"TimeMixer: Decomposable Multiscale Mixing for Time Series Forecasting\""
 author: 
 created_at: 2026-04-06
-topics:
-  - 时间序列
 status: inbox
 published: 
 created: 2026-04-06
@@ -15,6 +13,9 @@ tags:
 source_url: "https://github.com/kwuking/TimeMixer"
 published_at: null
 related_concepts: []
+topics:
+  - timeseries-analysis
+  - 时间序列分析
 ---
 
 ## (ICLR'24) TimeMixer: Decomposable Multiscale Mixing for Time Series Forecasting

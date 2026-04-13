@@ -1,10 +1,6 @@
 ---
-source_type: local_note
+source_type: notes
 created_at: 2025-07-28
-topics:
-  - post
-  - llm
-  - model
 status: inbox
 title: LLM Post-training
 subtitle: Post-training for Large Language Models
@@ -16,6 +12,9 @@ categories:
   - llm
 tags:
   - model
+topics:
+  - llm-post-training
+  - 大语言模型后训练
 ---
 
 

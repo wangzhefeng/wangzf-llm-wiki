@@ -5,8 +5,6 @@ author:
   - 
   - "[[Andy]]"
 created_at: 2026-04-06
-topics:
-  - 时间序列
 status: inbox
 published: 
 created: 2026-04-06
@@ -17,6 +15,9 @@ tags:
 source_url: "https://zhuanlan.zhihu.com/p/1894041339106144523?utm_psn=1894857526874456590"
 published_at: null
 related_concepts: []
+topics:
+  - timeseries-analysis
+  - 时间序列分析
 ---
 
 目录

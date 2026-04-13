@@ -1,5 +1,5 @@
 ---
-source_type: local_note
+source_type: notes
 source_path: raw/local-notes/post/2025-01-19-what-is-statistics/index.md
 title: What Is Statistics?
 author: wangzf

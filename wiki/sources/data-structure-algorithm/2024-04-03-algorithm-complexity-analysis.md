@@ -1,5 +1,5 @@
 ---
-source_type: local_note
+source_type: notes
 source_path: raw/local-notes/data-structure-algorithm/2024-04-03-algorithm-complexity-analysis/index.md
 title: 2024-04-03-algorithm-complexity-analysis
 author: wangzf

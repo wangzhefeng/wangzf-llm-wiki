@@ -17,12 +17,12 @@ tags:
 - null
 - clippings
 title: iTransformer：倒置Transformer在时间序列预测中卓有成效
-topics:
-- 大语言模型
-- 时间序列
 source_url: https://www.alphaxiv.org/zh/overview/2310.06625v4
 published_at: 2024-03-14
 related_concepts: []
+topics:
+  - timeseries-analysis
+  - 时间序列分析
 ---
 
 ## 概述

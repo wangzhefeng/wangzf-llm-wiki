@@ -11,12 +11,12 @@ tags:
 - null
 - clippings
 title: 时间序列预测还能再进步吗？别再迷信Transformer了，问题可能出在评估方式上！
-topics:
-- 大语言模型
-- 时间序列
 source_url: https://mp.weixin.qq.com/s/6DGiRXxrI872KUAIooP9Fg
 published_at: null
 related_concepts: []
+topics:
+  - timeseries-analysis
+  - 时间序列分析
 ---
 
 原创 时序之心 *2025年11月13日 12:21*

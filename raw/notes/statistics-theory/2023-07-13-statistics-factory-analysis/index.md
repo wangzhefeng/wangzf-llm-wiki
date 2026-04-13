@@ -7,11 +7,12 @@ categories:
   - statistic
 tags:
   - note
-source_type: local_note
+source_type: notes
 created_at: 2023-07-13
-topics:
-  - statistic
 status: inbox
+topics:
+  - statistics-theory
+  - 统计学理论
 ---
 
 

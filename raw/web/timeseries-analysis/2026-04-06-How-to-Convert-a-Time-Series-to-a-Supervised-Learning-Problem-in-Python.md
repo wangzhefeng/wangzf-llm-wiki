@@ -5,8 +5,6 @@ author:
   - 
   - "[[Jason Brownlee]]"
 created_at: 2026-04-06
-topics:
-  - 时间序列
 status: inbox
 created: 2026-04-06
 description: "Machine learning methods like deep learning can be used for time series forecasting. Before machine learning can be used, time series forecasting problems must be re-framed as supervised learning problems. From a sequence to pairs of input and output sequences. In this tutorial, you will discover how to transform univariate and multivariate time series forecasting […]"
@@ -16,6 +14,9 @@ tags:
 source_url: "https://machinelearningmastery.com/convert-time-series-supervised-learning-problem-python/"
 published_at: 2017-05-08
 related_concepts: []
+topics:
+  - timeseries-analysis
+  - 时间序列分析
 ---
 
 Machine learning methods like deep learning can be used for time series forecasting.

@@ -1,5 +1,5 @@
 ---
-source_type: local_note
+source_type: notes
 source_path: raw/local-notes/llm/2024-08-14-llm-models-api/index.md
 title: LLM 调用
 author: wangzf

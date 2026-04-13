@@ -7,11 +7,12 @@ categories:
   - nlp
 tags:
   - model
-source_type: local_note
+source_type: notes
 created_at: 2024-05-16
-topics:
-  - nlp
 status: inbox
+topics:
+  - llm-theory
+  - 大语言模型理论
 ---
 
 

@@ -9,11 +9,12 @@ tags:
 - null
 - clippings
 title: 'ourownstory/AR-Net: A simple Auto-Regressive Neural Network for time-series'
-topics:
-- 时间序列
 source_url: https://github.com/ourownstory/AR-Net/tree/master?tab=readme-ov-file
 published_at: null
 related_concepts: []
+topics:
+  - timeseries-analysis
+  - 时间序列分析
 ---
 
 ## AR-Net

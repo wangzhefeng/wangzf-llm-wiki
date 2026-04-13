@@ -1,5 +1,5 @@
 ---
-source_type: local_note
+source_type: notes
 source_path: raw/local-notes/llm/llm-framework/2024-05-15-langchain-usage/index.md
 title: LLM 框架--LangChain
 author: wangzf

@@ -11,11 +11,12 @@ tags:
 - null
 - clippings
 title: Chebyshev polynomials - Wikipedia
-topics:
-- 知识库建设
 source_url: https://en.wikipedia.org/wiki/Chebyshev_polynomials
 published_at: 2003-02-18
 related_concepts: []
+topics:
+  - timeseries-analysis
+  - 时间序列分析
 ---
 
 ![[raw/assets/attachments/timeseries/250px-Chebyshev_Polynomials_of_the_First_Kind.svg.png]]

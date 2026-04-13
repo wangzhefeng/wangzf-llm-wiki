@@ -17,11 +17,12 @@ tags:
 - null
 - clippings
 title: Power Modeling for Effective Datacenter Planning and Compute Management
-topics:
-- 机器学习
 source_url: https://arxiv.org/abs/2103.13308?utm_source=chatgpt.com
 published_at: null
 related_concepts: []
+topics:
+  - machine-learning-theory
+  - 机器学习理论
 ---
 
 ## Title:Power Modeling for Effective Datacenter Planning and Compute Management

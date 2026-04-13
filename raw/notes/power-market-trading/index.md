@@ -1,10 +1,6 @@
 ---
-source_type: local_note
+source_type: notes
 created_at: 2026-03-05
-topics:
-  - post
-  - book
-  - note
 status: inbox
 title: 电力交易
 subtitle: Electricity Trading
@@ -16,6 +12,9 @@ categories:
   - book
 tags:
   - note
+topics:
+  - power-market-trading
+  - 电力市场交易
 ---
 
 

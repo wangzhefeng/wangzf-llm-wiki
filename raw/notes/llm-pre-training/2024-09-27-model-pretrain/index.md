@@ -8,11 +8,12 @@ categories:
   - llm
 tags:
   - model
-source_type: local_note
+source_type: notes
 created_at: 2024-09-27
-topics:
-  - llm
 status: inbox
+topics:
+  - llm-pre-training
+  - 大语言模型预训练
 ---
 
 

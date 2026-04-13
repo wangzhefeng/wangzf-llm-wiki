@@ -3,8 +3,6 @@ source_type: web
 title: "awslabs/gluonts: Probabilistic time series modeling in Python"
 author: 
 created_at: 2026-04-06
-topics:
-  - 时间序列
 status: inbox
 published: 
 created: 2026-04-06
@@ -15,6 +13,9 @@ tags:
 source_url: "https://github.com/awslabs/gluonts"
 published_at: null
 related_concepts: []
+topics:
+  - timeseries-analysis
+  - 时间序列分析
 ---
 
 [![[raw/assets/attachments/timeseries/Image 3.svg]]](https://camo.githubusercontent.com/b3c638ce41cbff7d65a4e44e6ed98afec7d3d00945e6f7a7445489c51eef5e5f/68747470733a2f2f74732e676c756f6e2e61692f6465762f5f7374617469632f676c756f6e74732e737667)

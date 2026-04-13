@@ -11,9 +11,10 @@ tags:
 source_type: web
 source_url: https://developers.openai.com/codex/use-cases/agent-friendly-clis
 created_at: 2026-04-11
-topics:
-  - vibe-coding
 status: inbox
+topics:
+  - programming-tools
+  - 编程工具
 ---
 Ask Codex to create a composable CLI it can run from any folder, combine with repo scripts, use to download files, and remember through a companion skill.
 

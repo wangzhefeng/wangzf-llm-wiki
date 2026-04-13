@@ -1,5 +1,5 @@
 ---
-source_type: local_note
+source_type: notes
 source_path: raw/local-notes/post/2022-05-07-statistics-man/index.md
 title: 读《漫谈现代统计"四大天王"》
 author: wangzf

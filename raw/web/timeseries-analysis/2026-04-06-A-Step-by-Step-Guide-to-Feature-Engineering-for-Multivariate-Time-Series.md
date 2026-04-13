@@ -5,8 +5,6 @@ author:
   - 
   - "[[Vitor Cerqueira]]"
 created_at: 2026-04-06
-topics:
-  - 时间序列
 status: inbox
 created: 2026-04-06
 description: "Adding new features based on summary statistics using Python"
@@ -16,6 +14,9 @@ tags:
 source_url: "https://towardsdatascience.com/a-step-by-step-guide-to-feature-engineering-for-multivariate-time-series-162ccf232e2f/"
 published_at: 2022-12-01
 related_concepts: []
+topics:
+  - timeseries-analysis
+  - 时间序列分析
 ---
 
 This is a step-by-step guide to feature engineering for [multivariate time series forecasting](https://towardsdatascience.com/machine-learning-for-forecasting-supervised-learning-with-multivariate-time-series-b5b5044fe068). You’ll learn how to compute several rolling statistics. Adding these to the explanatory variables often leads to better forecasting performance.

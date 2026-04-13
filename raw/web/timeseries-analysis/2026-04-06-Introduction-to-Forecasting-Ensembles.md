@@ -5,8 +5,6 @@ author:
   - 
   - "[[Vitor Cerqueira]]"
 created_at: 2026-04-06
-topics:
-  - 时间序列
 status: inbox
 created: 2026-04-06
 description: "A cheap trick to boost forecasting performance"
@@ -16,6 +14,9 @@ tags:
 source_url: "https://towardsdatascience.com/introduction-to-forecasting-ensembles-f63877a2498/"
 published_at: 2023-01-12
 related_concepts: []
+topics:
+  - timeseries-analysis
+  - 时间序列分析
 ---
 
 ![[0g5TGnU7Rb3yB_1ar-scaled.jpg|Photo by Natalie Pedigo on Unsplash]]

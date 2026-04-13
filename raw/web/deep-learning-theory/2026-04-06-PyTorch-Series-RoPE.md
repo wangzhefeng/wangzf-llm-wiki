@@ -3,8 +3,6 @@ source_type: web
 title: "PyTorch Series: RoPE"
 author: 
 created_at: 2026-04-06
-topics:
-  - 深度学习
 status: inbox
 published: 
 created: 2026-04-06
@@ -15,6 +13,9 @@ tags:
 source_url: "https://www.k-a.in/pyt-rope.html"
 published_at: null
 related_concepts: []
+topics:
+  - deep-learning-theory
+  - 深度学习理论
 ---
 
 Today we are doing a walkthrough of Rotary Positional Embeddings (RoPE).

@@ -1,5 +1,5 @@
 ---
-source_type: local_note
+source_type: notes
 source_path: raw/local-notes/machine-learning/supervised/ensemble/lightgbm/2023-03-07-ml-gbm-lightgbm-baseline/index.md
 title: LightGBM baseline
 author: wangzf

@@ -5,8 +5,6 @@ author:
   - 
   - "[[wokangkang]]"
 created_at: 2026-04-06
-topics:
-  - 时间序列
 status: inbox
 published: 
 created: 2026-04-06
@@ -17,6 +15,9 @@ tags:
 source_url: "https://mp.weixin.qq.com/s/MsJmWfXuqh_pTYlwve6O3Q"
 published_at: null
 related_concepts: []
+topics:
+  - timeseries-analysis
+  - 时间序列分析
 ---
 
 原创 wokangkang *2024年3月25日 07:49*

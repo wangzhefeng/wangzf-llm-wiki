@@ -1,5 +1,5 @@
 ---
-source_type: local_note
+source_type: notes
 source_path: raw/local-notes/timeseries/timeseries-time-domain/timeseries-deeplearning/2024-09-04-paper-ts-fedformer/index.md
 created_at: 2026-04-05
 topics:

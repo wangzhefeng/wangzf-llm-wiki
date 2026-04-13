@@ -11,12 +11,12 @@ tags:
 - null
 - clippings
 title: 刷新9大榜单！哈工大提出interPDN：干翻iTransformer，时序预测新霸主诞生！
-topics:
-- 大语言模型
-- 时间序列
 source_url: https://mp.weixin.qq.com/s/Cu7PP9UkSDpUb068hLtOKg
 published_at: null
 related_concepts: []
+topics:
+  - timeseries-analysis
+  - 时间序列分析
 ---
 
 ## AAAI 2026 | 刷新9大榜单！哈工大提出interPDN：干翻iTransformer，时序预测新霸主诞生！

@@ -1,5 +1,5 @@
 ---
-source_type: local_note
+source_type: notes
 source_path: raw/local-notes/timeseries/timeseries-time-domain/timeseries-statistics/2025-07-17-ts-prob-forecasting/index.md
 title: 时间序列概率预测
 author: wangzf

@@ -3,8 +3,6 @@ source_type: web
 title: "Quick Start — PyTorch-Metrics 1.9.0 documentation"
 author: 
 created_at: 2026-04-06
-topics:
-  - 深度学习
 status: inbox
 published: 
 created: 2026-04-06
@@ -15,6 +13,9 @@ tags:
 source_url: "https://lightning.ai/docs/torchmetrics/stable/pages/quickstart.html"
 published_at: null
 related_concepts: []
+topics:
+  - deep-learning-theory
+  - 深度学习理论
 ---
 
 ## Quick Start

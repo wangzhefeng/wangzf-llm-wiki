@@ -10,11 +10,12 @@ tags:
 - null
 - clippings
 title: Long Short-Term Memory (LSTM)
-topics:
-- 深度学习
 source_url: https://nn.labml.ai/lstm/index.html
 published_at: null
 related_concepts: []
+topics:
+  - deep-learning-theory
+  - 深度学习理论
 ---
 
 [#](#section-0)

@@ -9,12 +9,12 @@ tags:
 - null
 - clippings
 title: '[译] Transformer 是如何工作的：600 行 Python 代码实现 self-attention 和两类 Transformer（2019）'
-topics:
-- 大语言模型
-- 深度学习
 source_url: https://arthurchiao.art/blog/transformers-from-scratch-zh/
 published_at: null
 related_concepts: []
+topics:
+  - deep-learning-theory
+  - 深度学习理论
 ---
 
 ### 译者序

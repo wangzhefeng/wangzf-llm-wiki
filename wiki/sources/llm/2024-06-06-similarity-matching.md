@@ -1,5 +1,5 @@
 ---
-source_type: local_note
+source_type: notes
 source_path: raw/local-notes/llm/llm-app/2024-06-06-similarity-matching/index.md
 title: LLM 应用--相似匹配
 author: wangzf

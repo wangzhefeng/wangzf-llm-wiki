@@ -12,11 +12,12 @@ tags:
 - null
 - clippings
 title: Tensor Attributes
-topics:
-- 知识库建设
 source_url: https://docs.pytorch.org/docs/stable/tensor_attributes.html
 published_at: 2001-04-21
 related_concepts: []
+topics:
+  - deep-learning-theory
+  - 深度学习理论
 ---
 
 ## Tensor Attributes

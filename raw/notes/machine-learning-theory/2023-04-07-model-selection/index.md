@@ -8,11 +8,12 @@ categories:
   - machine-learning
 tags:
   - model
-source_type: local_note
+source_type: notes
 created_at: 2023-04-07
-topics:
-  - machine-learning
 status: inbox
+topics:
+  - operations-research
+  - 数学优化算法/运筹学
 ---
 
 

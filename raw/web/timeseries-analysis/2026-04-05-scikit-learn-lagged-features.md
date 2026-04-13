@@ -7,12 +7,11 @@ related_concepts:
 source_type: web
 source_url: https://scikit-learn.org/stable/auto_examples/applications/plot_time_series_lagged_features.html
 status: inbox
-topics:
-- 时间序列预测
-- machine-learning-forecasting
-- 时间序列published_at: null
 author: null
 title: null
+topics:
+  - timeseries-analysis
+  - 时间序列分析
 ---
 
 # scikit-learn 时间序列滞后特征示例

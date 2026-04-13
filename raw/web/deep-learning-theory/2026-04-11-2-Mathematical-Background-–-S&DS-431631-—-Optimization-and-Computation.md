@@ -5,14 +5,15 @@ description: null
 tags:
 - clippings
 title: 2  Mathematical Background – S&DS 431/631 — Optimization and Computation
-topics:
-- 深度学习
-source_type: local_note
+source_type: web
 created_at: 2026-04-11
 status: inbox
 source_url: https://zhuoranyang.github.io/sds431-notes/lectures/02-math-background.html
 published_at: null
 related_concepts: []
+topics:
+  - deep-learning-theory
+  - 深度学习理论
 ---
 Before we can analyze optimization algorithms or prove convergence rates, we need a shared mathematical vocabulary. The language of optimization is built from linear algebra and multivariate calculus: norms tell us how to measure the size of errors and the distance to a solution, eigenvalues reveal the curvature of quadratic objectives, and gradients point us toward descent directions. Without fluency in these tools, the theoretical results in later chapters would remain opaque.
 

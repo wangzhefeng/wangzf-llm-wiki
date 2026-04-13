@@ -5,14 +5,15 @@ description: null
 tags:
 - clippings
 title: 15  The Ellipsoid Method – S&DS 431/631 — Optimization and Computation
-topics:
-- 运筹优化
-source_type: local_note
+source_type: web
 created_at: 2026-04-11
 status: inbox
 source_url: https://zhuoranyang.github.io/sds431-notes/lectures/15-ellipsoid-method.html
 published_at: null
 related_concepts: []
+topics:
+  - programming-tools
+  - 编程工具
 ---
 The [simplex method](https://zhuoranyang.github.io/sds431-notes/lectures/10-simplex-method.html) is remarkably efficient in practice, but as we saw through the Klee–Minty construction, its worst-case complexity is exponential. This raises a fundamental question: **can linear programs be solved in polynomial time?**
 

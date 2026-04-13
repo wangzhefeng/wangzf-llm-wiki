@@ -11,12 +11,12 @@ tags:
 - clippings
 title: Introduction - TimeGPT Foundational model for time series forecasting and anomaly
   detection
-topics:
-- 大语言模型
-- 时间序列
 source_url: https://www.nixtla.io/docs?_gl=1*1kpsjvm*_ga*MTMzNDIwODkzMy4xNzcwNjIyODc5*_ga_RC5BENVE9N*czE3NzI2Nzk0NjQkbzYkZzEkdDE3NzI2Nzk0NjckajU3JGwwJGg1MDY3MTQ5NzI.*_ga_C1S25ZDEV6*czE3NzI2Nzk0NjQkbzYkZzEkdDE3NzI2Nzk0NjckajU3JGwwJGgw
 published_at: null
 related_concepts: []
+topics:
+  - timeseries-analysis
+  - 时间序列分析
 ---
 
 ## Power your time series analysis with TimeGPT

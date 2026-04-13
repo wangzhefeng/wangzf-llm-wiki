@@ -7,11 +7,12 @@ categories:
   - deeplearning
 tags:
   - model
-source_type: local_note
+source_type: notes
 created_at: 2023-03-23
-topics:
-  - deeplearning
 status: inbox
+topics:
+  - deep-learning-theory
+  - 深度学习理论
 ---
 
 ## ZFNet 简介

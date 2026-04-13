@@ -1,5 +1,5 @@
 ---
-source_type: local_note
+source_type: notes
 source_path: raw/local-notes/llm/2025-07-05-llm-finetuning/index.md
 title: 模型微调
 author: wangzf

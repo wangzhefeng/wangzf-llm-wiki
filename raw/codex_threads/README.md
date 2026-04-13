@@ -1,5 +1,5 @@
 ---
-source_type: local_note
+source_type: notes
 title: Codex 线程历史整理入口
 created_at: 2026-04-07
 topics:

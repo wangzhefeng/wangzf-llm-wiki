@@ -4,10 +4,11 @@ source_type: web
 source_url: https://udlbook.github.io/udlbook/
 status: inbox
 title: Understanding Deep Learning
-topics:
-- 深度学习published_at: null
 author: null
 related_concepts: []
+topics:
+  - deep-learning-theory
+  - 深度学习理论
 ---
 
 # Understanding Deep Learning

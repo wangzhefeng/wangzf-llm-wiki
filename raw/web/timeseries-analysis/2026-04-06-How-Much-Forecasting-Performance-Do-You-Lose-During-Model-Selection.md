@@ -5,8 +5,6 @@ author:
   - 
   - "[[Vitor Cerqueira]]"
 created_at: 2026-04-06
-topics:
-  - 时间序列
 status: inbox
 created: 2026-04-06
 description: "How often does cross-validation pick the best forecasting model? What happens when it doesn't?"
@@ -16,6 +14,9 @@ tags:
 source_url: "https://towardsdatascience.com/how-much-forecasting-performance-do-you-lose-during-model-selection-923889e2f2dc/"
 published_at: 2023-01-06
 related_concepts: []
+topics:
+  - timeseries-analysis
+  - 时间序列分析
 ---
 
 ![[04Fw68lkKHlKIGW-Y-scaled.jpg|Photo by Héctor J. Rivas on Unsplash]]

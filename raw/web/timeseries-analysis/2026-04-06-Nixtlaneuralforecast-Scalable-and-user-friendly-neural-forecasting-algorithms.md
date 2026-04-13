@@ -10,12 +10,12 @@ tags:
 - null
 - clippings
 title: 'Nixtla/neuralforecast: Scalable and user friendly neural forecasting algorithms.'
-topics:
-- 时间序列
-- 深度学习
 source_url: https://github.com/Nixtla/neuralforecast
 published_at: null
 related_concepts: []
+topics:
+  - timeseries-analysis
+  - 时间序列分析
 ---
 
 ## Nixtla

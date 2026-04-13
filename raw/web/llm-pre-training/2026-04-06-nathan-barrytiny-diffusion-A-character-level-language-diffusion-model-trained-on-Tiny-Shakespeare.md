@@ -11,11 +11,12 @@ tags:
 - clippings
 title: 'nathan-barry/tiny-diffusion: A character-level language diffusion model trained
   on Tiny Shakespeare'
-topics:
-- 大语言模型
 source_url: https://github.com/nathan-barry/tiny-diffusion
 published_at: null
 related_concepts: []
+topics:
+  - llm-pre-training
+  - 大语言模型预训练
 ---
 
 ## tiny-diffusion

@@ -3,8 +3,6 @@ source_type: web
 title: "datawhalechina/happy-llm: 📚 从零开始构建大模型"
 author: 
 created_at: 2026-04-06
-topics:
-  - 大语言模型
 status: inbox
 published: 
 created: 2026-04-06
@@ -15,6 +13,9 @@ tags:
 source_url: "https://github.com/datawhalechina/happy-llm"
 published_at: null
 related_concepts: []
+topics:
+  - llm-pre-training
+  - 大语言模型预训练
 ---
 
 [![[head.jpg|alt text]]](https://github.com/datawhalechina/happy-llm/blob/main/images/head.jpg)

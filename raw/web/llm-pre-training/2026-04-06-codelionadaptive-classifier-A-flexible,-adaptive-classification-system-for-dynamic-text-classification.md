@@ -11,11 +11,12 @@ tags:
 - clippings
 title: 'codelion/adaptive-classifier: A flexible, adaptive classification system for
   dynamic text classification'
-topics:
-- 大语言模型
 source_url: https://github.com/codelion/adaptive-classifier
 published_at: null
 related_concepts: []
+topics:
+  - llm-pre-training
+  - 大语言模型预训练
 ---
 
 [![[adaptive-classifier-logo.webp|Adaptive Classifier Logo]]](https://github.com/codelion/adaptive-classifier/blob/main/adaptive-classifier-logo.webp)

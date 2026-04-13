@@ -1,5 +1,5 @@
 ---
-source_type: local_note
+source_type: notes
 source_path: raw/local-notes/data-analysis/2022-10-15-root-cause-analysis/index.md
 title: 2022-10-15-root-cause-analysis
 author: wangzf

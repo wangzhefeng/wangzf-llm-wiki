@@ -3,8 +3,6 @@ source_type: web
 title: "Forecasting with sktime — sktime  documentation"
 author: 
 created_at: 2026-04-06
-topics:
-  - 时间序列
 status: inbox
 published: 
 created: 2026-04-06
@@ -15,6 +13,9 @@ tags:
 source_url: "https://www.sktime.net/en/stable/examples/01_forecasting.html"
 published_at: null
 related_concepts: []
+topics:
+  - timeseries-analysis
+  - 时间序列分析
 ---
 
 **Set-up instructions:** this notebook give a tutorial on the forecasting learning task supported by `sktime`. On binder, this should run out-of-the-box.

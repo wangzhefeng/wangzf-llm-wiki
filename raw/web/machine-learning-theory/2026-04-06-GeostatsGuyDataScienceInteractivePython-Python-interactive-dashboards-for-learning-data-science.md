@@ -10,11 +10,12 @@ tags:
 - clippings
 title: 'GeostatsGuy/DataScienceInteractivePython: Python interactive dashboards for
   learning data science'
-topics:
-- 机器学习
 source_url: https://github.com/GeostatsGuy/DataScienceInteractivePython
 published_at: null
 related_concepts: []
+topics:
+  - machine-learning-theory
+  - 机器学习理论
 ---
 
 ## DataScienceInteractivePython: Interactive Educational Data Science Python Dashboards Repository (0.0.1)

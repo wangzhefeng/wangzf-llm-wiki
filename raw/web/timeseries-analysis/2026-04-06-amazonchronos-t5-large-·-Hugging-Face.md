@@ -10,11 +10,12 @@ tags:
 - null
 - clippings
 title: amazon/chronos-t5-large · Hugging Face
-topics:
-- 时间序列
 source_url: https://huggingface.co/amazon/chronos-t5-large
 published_at: 2025-12-04
 related_concepts: []
+topics:
+  - timeseries-analysis
+  - 时间序列分析
 ---
 
 [Edit model card](https://huggingface.co/amazon/chronos-t5-large/edit/main/README.md)

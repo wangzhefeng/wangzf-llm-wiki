@@ -3,8 +3,6 @@ source_type: web
 title: "rasbt/MachineLearning-QandAI-book: Machine Learning Q and AI book"
 author: 
 created_at: 2026-04-06
-topics:
-  - 机器学习
 status: inbox
 published: 
 created: 2026-04-06
@@ -15,6 +13,9 @@ tags:
 source_url: "https://github.com/rasbt/MachineLearning-QandAI-book"
 published_at: null
 related_concepts: []
+topics:
+  - machine-learning-theory
+  - 机器学习理论
 ---
 
 ## Machine Learning Q and AI Beyond the Basics Book

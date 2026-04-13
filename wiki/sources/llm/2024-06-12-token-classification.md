@@ -1,5 +1,5 @@
 ---
-source_type: local_note
+source_type: notes
 source_path: raw/local-notes/llm/llm-app/2024-06-12-token-classification/index.md
 title: LLM 应用--Token 分类
 author: wangzf

@@ -1,14 +1,15 @@
 ---
-created_at: '2026-04-06'
+created_at: 2026-04-06
 source_type: web
 source_url: https://github.com/huggingface/text-generation-inference
 status: inbox
 title: 'GitHub - huggingface/text-generation-inference: Large Language Model Text
   Generation Inference · GitHub'
-topics:
-- 大语言模型published_at: null
 author: null
 related_concepts: []
+topics:
+  - llm-pre-training
+  - 大语言模型预训练
 ---
 
 # GitHub - huggingface/text-generation-inference: Large Language Model Text Generation Inference · GitHub

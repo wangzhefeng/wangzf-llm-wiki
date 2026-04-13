@@ -1,5 +1,5 @@
 ---
-source_type: local_note
+source_type: notes
 source_path: raw/local-notes/timeseries/timeseries-time-domain/timeseries-deeplearning/2026-01-18-tsf-dl-stages/index.md
 title: 深度时序模型研究的三个阶段
 author: wangzf

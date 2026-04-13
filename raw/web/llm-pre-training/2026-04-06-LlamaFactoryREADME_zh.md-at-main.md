@@ -10,11 +10,12 @@ tags:
 - null
 - clippings
 title: LlamaFactory/README_zh.md at main
-topics:
-- 大语言模型
 source_url: https://github.com/hiyouga/LlamaFactory/blob/main/README_zh.md
 published_at: null
 related_concepts: []
+topics:
+  - llm-pre-training
+  - 大语言模型预训练
 ---
 
 [![# LLaMA Factory](https://github.com/hiyouga/LlamaFactory/raw/main/raw/assets/logo.png)](https://github.com/hiyouga/LlamaFactory/blob/main/raw/assets/logo.png)

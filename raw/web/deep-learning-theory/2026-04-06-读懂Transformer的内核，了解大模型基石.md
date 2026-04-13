@@ -9,12 +9,12 @@ tags:
 - null
 - clippings
 title: 读懂Transformer的内核，了解大模型基石
-topics:
-- 大语言模型
-- 深度学习
 source_url: https://mp.weixin.qq.com/s/S4piibBsAywLVe-5qbp8HA
 published_at: null
 related_concepts: []
+topics:
+  - deep-learning-theory
+  - 深度学习理论
 ---
 
 *2025年9月2日 22:06*

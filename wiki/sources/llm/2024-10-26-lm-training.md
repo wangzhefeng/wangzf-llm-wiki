@@ -1,5 +1,5 @@
 ---
-source_type: local_note
+source_type: notes
 source_path: raw/local-notes/llm/lm/2024-10-26-lm-training/index.md
 title: 语言模型训练
 author: wangzf

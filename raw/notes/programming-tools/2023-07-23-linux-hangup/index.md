@@ -1,10 +1,6 @@
 ---
-source_type: local_note
+source_type: notes
 created_at: 2023-07-23
-topics:
-  - post
-  - linux
-  - tool
 status: inbox
 title: Linux 后台执行命令
 author: wangzf
@@ -14,6 +10,9 @@ categories:
   - linux
 tags:
   - tool
+topics:
+  - programming-tools
+  - 编程工具
 ---
 
 

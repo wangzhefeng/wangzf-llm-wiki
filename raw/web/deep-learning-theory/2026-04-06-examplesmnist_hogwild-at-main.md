@@ -10,11 +10,12 @@ tags:
 - null
 - clippings
 title: examples/mnist_hogwild at main
-topics:
-- 深度学习
 source_url: https://github.com/pytorch/examples/tree/main/mnist_hogwild
 published_at: null
 related_concepts: []
+topics:
+  - deep-learning-theory
+  - 深度学习理论
 ---
 
 ## MNIST Hogwild Example

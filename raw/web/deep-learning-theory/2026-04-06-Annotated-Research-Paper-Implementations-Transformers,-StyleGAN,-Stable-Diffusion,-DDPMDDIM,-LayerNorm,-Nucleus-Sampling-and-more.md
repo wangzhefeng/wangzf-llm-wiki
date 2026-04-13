@@ -10,12 +10,12 @@ tags:
 - clippings
 title: 'Annotated Research Paper Implementations: Transformers, StyleGAN, Stable Diffusion,
   DDPM/DDIM, LayerNorm, Nucleus Sampling and more'
-topics:
-- 大语言模型
-- 深度学习
 source_url: https://nn.labml.ai/
 published_at: null
 related_concepts: []
+topics:
+  - deep-learning-theory
+  - 深度学习理论
 ---
 
 This is a collection of simple PyTorch implementations of neural networks and related algorithms. [These implementations](https://github.com/labmlai/annotated_deep_learning_paper_implementations) are documented with explanations, and the [website](https://nn.labml.ai/index.html) renders these as side-by-side formatted notes. We believe these would help you understand these algorithms better.

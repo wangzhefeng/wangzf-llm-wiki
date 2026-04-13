@@ -1,5 +1,5 @@
 ---
-source_type: local_note
+source_type: notes
 source_path: raw/local-notes/deep-learning/2022-07-15-gpu-software/index.md
 title: GPU 软件
 author: wangzf

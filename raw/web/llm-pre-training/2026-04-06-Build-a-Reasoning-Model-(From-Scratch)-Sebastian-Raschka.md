@@ -35,11 +35,12 @@ tags:
 - null
 - clippings
 title: Build a Reasoning Model (From Scratch) - Sebastian Raschka
-topics:
-- 大语言模型
 source_url: https://www.manning.com/books/build-a-reasoning-model-from-scratch?utm_source=raschka&utm_medium=affiliate&utm_campaign=book_raschka2&a_aid=raschka&a_bid=4c3c5398&chan=mm_newsletter
 published_at: null
 related_concepts: []
+topics:
+  - llm-pre-training
+  - 大语言模型预训练
 ---
 
 [**Manning Early Access Program (MEAP)**](https://www.manning.com/meap-program "more about MEAP") Read chapters as they are written, get the finished eBook as soon as it’s ready, and receive the pBook long before it's in bookstores.

@@ -3,8 +3,6 @@ source_type: web
 title: "Mxoder/LLM-from-scratch: 一些 LLM 方面的从零复现笔记"
 author: 
 created_at: 2026-04-06
-topics:
-  - 大语言模型
 status: inbox
 published: 
 created: 2026-04-06
@@ -15,6 +13,9 @@ tags:
 source_url: "https://github.com/Mxoder/LLM-from-scratch"
 published_at: null
 related_concepts: []
+topics:
+  - llm-pre-training
+  - 大语言模型预训练
 ---
 
 ## LLM-from-scratch

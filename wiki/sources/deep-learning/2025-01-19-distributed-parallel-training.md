@@ -1,5 +1,5 @@
 ---
-source_type: local_note
+source_type: notes
 source_path: raw/local-notes/deep-learning/2025-01-19-distributed-parallel-training/index.md
 title: 模型分布式训练
 author: wangzf

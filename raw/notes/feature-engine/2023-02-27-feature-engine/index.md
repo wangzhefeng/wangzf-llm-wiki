@@ -7,11 +7,12 @@ categories:
   - feature-engine
 tags:
   - model
-source_type: local_note
+source_type: notes
 created_at: 2023-02-27
+status: inbox
 topics:
   - feature-engine
-status: inbox
+  - 特征工程
 ---
 
 <style>

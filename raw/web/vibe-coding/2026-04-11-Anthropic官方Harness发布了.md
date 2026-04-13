@@ -6,14 +6,15 @@ description: Anthropic把Harness变成了产品。
 tags:
 - clippings
 title: 重磅！Anthropic官方Harness发布了！
-topics:
-- 大语言模型
-source_type: local_note
+source_type: web
 created_at: 2026-04-11
 status: inbox
 source_url: https://mp.weixin.qq.com/s/66SDrz5_MlBAPwL0xtMFyw
 published_at: null
 related_concepts: []
+topics:
+  - vibe-coding
+  - Vibe Coding
 ---
 原创 Datawhale *2026年4月10日 22:36*
 

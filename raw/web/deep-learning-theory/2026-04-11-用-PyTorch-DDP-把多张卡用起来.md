@@ -6,14 +6,15 @@ description: 嗨，周末愉快！小编以前做过一个复杂度稍高的模�
 tags:
 - clippings
 title: 用 PyTorch DDP 把多张卡用起来
-topics:
-- 深度学习
-source_type: local_note
+source_type: web
 created_at: 2026-04-11
 status: inbox
 source_url: https://mp.weixin.qq.com/s/aFj9R2N1cq1njUjtAXGPsg?clicktime=1774689238&enterid=1774689238&scene=90&subscene=236&xtrack=1
 published_at: null
 related_concepts: []
+topics:
+  - deep-learning-theory
+  - 深度学习理论
 ---
 原创 小溪1005 *2026年3月28日 16:53*
 

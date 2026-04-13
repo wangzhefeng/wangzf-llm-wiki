@@ -1,12 +1,11 @@
 ---
-source_type: local_note
+source_type: notes
 source_path: /Users/wangzf/projects_ai/wangzf-llm-wiki/raw/local-notes/knowledge-base
 created_at: 2026-04-04
-topics:
-  - 知识库维护
-  - 个人知识库
-  - llm-knowledge-base
 status: linked
+topics:
+  - llm-wiki
+  - 大语言模型知识库(本仓库)
 ---
 
 # 知识库建设方法论与实践

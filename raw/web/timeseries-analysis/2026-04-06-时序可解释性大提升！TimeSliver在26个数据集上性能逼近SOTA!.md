@@ -5,8 +5,6 @@ author:
   - 
   - "[[时序之心]]"
 created_at: 2026-04-06
-topics:
-  - 时间序列
 status: inbox
 published: 
 created: 2026-04-06
@@ -17,6 +15,9 @@ tags:
 source_url: "https://mp.weixin.qq.com/s/_h9taHzRtUJNx-oSM5veEg"
 published_at: null
 related_concepts: []
+topics:
+  - timeseries-analysis
+  - 时间序列分析
 ---
 
 ## ICLR 2026 | 时序可解释性大提升！TimeSliver在26个数据集上性能逼近SOTA!

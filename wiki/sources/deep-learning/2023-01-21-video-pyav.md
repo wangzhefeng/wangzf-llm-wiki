@@ -1,5 +1,5 @@
 ---
-source_type: local_note
+source_type: notes
 source_path: raw/local-notes/deep-learning/video/2023-01-21-video-pyav/index.md
 title: Video pyav
 author: wangzf

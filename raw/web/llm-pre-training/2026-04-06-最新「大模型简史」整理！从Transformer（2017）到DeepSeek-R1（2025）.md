@@ -5,8 +5,6 @@ author:
   - 
   - "[[LM Po]]"
 created_at: 2026-04-06
-topics:
-  - 大语言模型
 status: inbox
 published: 
 created: 2026-04-06
@@ -17,6 +15,9 @@ tags:
 source_url: "https://mp.weixin.qq.com/s/s4NvK_7Z27_n9zl3RJEU4Q"
 published_at: null
 related_concepts: []
+topics:
+  - llm-pre-training
+  - 大语言模型预训练
 ---
 
 LM Po *2025年3月1日 23:19*

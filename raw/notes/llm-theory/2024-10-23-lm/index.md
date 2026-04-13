@@ -9,12 +9,12 @@ categories:
   - deeplearning
 tags:
   - model
-source_type: local_note
+source_type: notes
 created_at: 2024-10-23
-topics:
-  - nlp
-  - deeplearning
 status: inbox
+topics:
+  - llm-theory
+  - 大语言模型理论
 ---
 
 

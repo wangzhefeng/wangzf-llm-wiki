@@ -3,8 +3,6 @@ source_type: web
 title: "google/langextract: A Python library for extracting structured information from unstructured text using LLMs with precise source grounding and interactive visualization."
 author: 
 created_at: 2026-04-06
-topics:
-  - 大语言模型
 status: inbox
 published: 
 created: 2026-04-06
@@ -15,6 +13,9 @@ tags:
 source_url: "https://github.com/google/langextract"
 published_at: null
 related_concepts: []
+topics:
+  - llm-pre-training
+  - 大语言模型预训练
 ---
 
 [![[logo.svg|LangExtract Logo]]](https://github.com/google/langextract)

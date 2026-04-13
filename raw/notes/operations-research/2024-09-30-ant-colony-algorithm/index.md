@@ -8,11 +8,12 @@ categories:
   - optimizer-algorithm
 tags:
   - algorithm
-source_type: local_note
+source_type: notes
 created_at: 2024-09-30
-topics:
-  - optimizer-algorithm
 status: inbox
+topics:
+  - control-algorithms
+  - 控制算法
 ---
 
 

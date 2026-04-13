@@ -5,8 +5,6 @@ author:
   - 
   - "[[catneverfat]]"
 created_at: 2026-04-06
-topics:
-  - 强化学习
 status: inbox
 published: 
 created: 2026-04-06
@@ -17,6 +15,9 @@ tags:
 source_url: "https://mp.weixin.qq.com/s/TOTza-CEhG7vYrBBtURldw"
 published_at: null
 related_concepts: []
+topics:
+  - reinforcement-learning
+  - 强化学习
 ---
 
 catneverfat *2025年5月4日 22:03*

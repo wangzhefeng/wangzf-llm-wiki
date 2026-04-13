@@ -11,11 +11,12 @@ tags:
 - null
 - clippings
 title: Power Modeling for Effective Datacenter Planning and Compute Management
-topics:
-- 机器学习
 source_url: https://ar5iv.labs.arxiv.org/html/2103.13308?_immersive_translate_auto_translate=1
 published_at: null
 related_concepts: []
+topics:
+  - machine-learning-theory
+  - 机器学习理论
 ---
 
 ## 有效数据中心规划与计算管理的功率建模

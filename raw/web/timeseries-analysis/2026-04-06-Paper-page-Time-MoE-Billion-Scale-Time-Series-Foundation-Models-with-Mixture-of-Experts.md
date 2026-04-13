@@ -3,8 +3,6 @@ source_type: web
 title: "Paper page - Time-MoE: Billion-Scale Time Series Foundation Models with Mixture of  Experts"
 author: 
 created_at: 2026-04-06
-topics:
-  - 时间序列
 status: inbox
 created: 2026-04-06
 description: "Join the discussion on this paper page"
@@ -14,6 +12,9 @@ tags:
 source_url: "https://huggingface.co/papers/2409.16040"
 published_at: 2024-09-25
 related_concepts: []
+topics:
+  - timeseries-analysis
+  - 时间序列分析
 ---
 
 arxiv:2409.16040

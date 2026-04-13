@@ -7,11 +7,12 @@ categories:
   - video
 tags:
   - tool
-source_type: local_note
+source_type: notes
 created_at: 2023-01-21
-topics:
-  - video
 status: inbox
+topics:
+  - deep-learning-theory
+  - 深度学习理论
 ---
 
 

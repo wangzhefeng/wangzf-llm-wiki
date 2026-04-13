@@ -9,12 +9,13 @@ tags:
   - "clippings"
 source_type: web
 created_at: 2026-04-11
-topics:
-  - "clippings"
 status: inbox
 source_url: "https://mp.weixin.qq.com/s/4zopxtf3hq_Rlb8HSENmwA"
 published_at: null
 related_concepts: []
+topics:
+  - timeseries-analysis
+  - 时间序列分析
 ---
 原创 时序之心 *2026年1月26日 10:41*
 

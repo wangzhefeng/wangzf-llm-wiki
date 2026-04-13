@@ -10,11 +10,12 @@ tags:
 - null
 - clippings
 title: Welcome to fastai
-topics:
-- 深度学习
 source_url: https://docs.fast.ai/
 published_at: null
 related_concepts: []
+topics:
+  - programming-tools
+  - 编程工具
 ---
 
 ## Installing

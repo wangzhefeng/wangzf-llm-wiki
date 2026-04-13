@@ -1,5 +1,5 @@
 ---
-source_type: local_note
+source_type: notes
 source_path: raw/local-notes/data-structure-algorithm/2022-05-07-data-structure-algorithm/index.md
 title: 2022-05-07-data-structure-algorithm
 author: wangzf

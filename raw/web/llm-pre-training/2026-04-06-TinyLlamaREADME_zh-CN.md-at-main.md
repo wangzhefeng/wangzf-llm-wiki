@@ -10,11 +10,12 @@ tags:
 - null
 - clippings
 title: TinyLlama/README_zh-CN.md at main
-topics:
-- 大语言模型
 source_url: https://github.com/jzhang38/TinyLlama/blob/main/README_zh-CN.md
 published_at: null
 related_concepts: []
+topics:
+  - llm-pre-training
+  - 大语言模型预训练
 ---
 
 ## TinyLlama-1.1B

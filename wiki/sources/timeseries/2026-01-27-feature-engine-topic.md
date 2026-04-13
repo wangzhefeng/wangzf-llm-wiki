@@ -1,5 +1,5 @@
 ---
-source_type: local_note
+source_type: notes
 source_path: raw/local-notes/post/2026-01-27-feature-engine-topic/index.md
 title: 特征工程相关问题
 author: wangzf

@@ -5,8 +5,6 @@ author:
   - 
   - "[[的泼墨佛给克呢​​github.com/ddz16/TSFpaper]]"
 created_at: 2026-04-06
-topics:
-  - 时间序列
 status: inbox
 published: 
 created: 2026-04-06
@@ -17,6 +15,9 @@ tags:
 source_url: "https://zhuanlan.zhihu.com/p/686772622"
 published_at: null
 related_concepts: []
+topics:
+  - timeseries-analysis
+  - 时间序列分析
 ---
 
 清华和ant group在今年发表在ICLR上的一篇文章，也是基于 [MLP](https://zhida.zhihu.com/search?content_id=240746147&content_type=Article&match_order=1&q=MLP&zhida_source=entity) 来做时间序列预测任务的。

@@ -1,5 +1,5 @@
 ---
-source_type: local_note
+source_type: notes
 source_path: raw/local-notes/deep-learning/unsupervised/gen/2022-07-15-dl-gen-lstm-textgen/index.md
 title: LSTM 生成文本
 author: wangzf

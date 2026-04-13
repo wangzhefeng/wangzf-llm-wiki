@@ -5,8 +5,6 @@ author:
   - 
   - "[[NO1WDS”时空探索之旅“ “STLearner”]]"
 created_at: 2026-04-06
-topics:
-  - 时间序列
 status: inbox
 published: 
 created: 2026-04-06
@@ -17,6 +15,9 @@ tags:
 source_url: "https://zhuanlan.zhihu.com/p/22292409357"
 published_at: null
 related_concepts: []
+topics:
+  - timeseries-analysis
+  - 时间序列分析
 ---
 
 目录

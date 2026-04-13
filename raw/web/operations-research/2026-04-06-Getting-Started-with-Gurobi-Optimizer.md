@@ -3,8 +3,6 @@ source_type: web
 title: "Getting Started with Gurobi Optimizer"
 author: 
 created_at: 2026-04-06
-topics:
-  - 运筹优化
 status: inbox
 created: 2026-04-06
 description: "Welcome to Gurobi Optimizer! We're here to help you get started!Basic steps to get started with Gurobi Optimizer First, obtain a Gurobi..."
@@ -14,6 +12,9 @@ tags:
 source_url: "https://support.gurobi.com/hc/en-us/articles/14799677517585-Getting-Started-with-Gurobi-Optimizer"
 published_at: 2025-11-21
 related_concepts: []
+topics:
+  - operations-research
+  - 数学优化算法/运筹学
 ---
 
 **Welcome to Gurobi Optimizer! We're here to help you get started!**

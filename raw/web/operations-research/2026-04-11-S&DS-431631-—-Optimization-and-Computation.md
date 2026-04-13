@@ -6,14 +6,15 @@ description: null
 tags:
 - clippings
 title: S&DS 431/631 — Optimization and Computation
-topics:
-- 运筹优化
-source_type: local_note
+source_type: web
 created_at: 2026-04-11
 status: inbox
 source_url: https://zhuoranyang.github.io/sds431-notes/
 published_at: null
 related_concepts: []
+topics:
+  - programming-tools
+  - 编程工具
 ---
 ## Welcome
 

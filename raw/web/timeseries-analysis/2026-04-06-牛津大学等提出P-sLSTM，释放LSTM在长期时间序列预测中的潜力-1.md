@@ -11,12 +11,12 @@ tags:
 - null
 - clippings
 title: 牛津大学等提出P-sLSTM，释放LSTM在长期时间序列预测中的潜力
-topics:
-- 时间序列
-- 深度学习
 source_url: https://mp.weixin.qq.com/s/0umpT9wcLzobty8JhLh3-A
 published_at: null
 related_concepts: []
+topics:
+  - timeseries-analysis
+  - 时间序列分析
 ---
 
 TSer *2025年2月5日 20:30*

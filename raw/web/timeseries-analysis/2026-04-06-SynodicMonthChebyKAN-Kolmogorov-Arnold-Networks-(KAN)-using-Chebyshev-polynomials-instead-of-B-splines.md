@@ -11,11 +11,12 @@ tags:
 - clippings
 title: 'SynodicMonth/ChebyKAN: Kolmogorov-Arnold Networks (KAN) using Chebyshev polynomials
   instead of B-splines.'
-topics:
-- 知识库建设
 source_url: https://github.com/SynodicMonth/ChebyKAN
 published_at: null
 related_concepts: []
+topics:
+  - timeseries-analysis
+  - 时间序列分析
 ---
 
 ## This is a VERY COARSE version and absolutely NOT FULLY TESTED! it's only intended for experiementing! Any discussion and criticism are welcome! Check the issues for more information!

@@ -11,11 +11,12 @@ tags:
 - null
 - clippings
 title: Deepseek新发布的DSA，太炸裂了！
-topics:
-- 强化学习
 source_url: https://mp.weixin.qq.com/s/He9uruxD9UgA51_4XbTZBw
 published_at: null
 related_concepts: []
+topics:
+  - reinforcement-learning
+  - 强化学习
 ---
 
 不戒 *2025年9月30日 21:03*

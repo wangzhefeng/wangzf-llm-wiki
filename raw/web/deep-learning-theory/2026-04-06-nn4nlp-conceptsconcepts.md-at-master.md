@@ -10,11 +10,12 @@ tags:
 - null
 - clippings
 title: nn4nlp-concepts/concepts.md at master
-topics:
-- 深度学习
 source_url: https://github.com/neulab/nn4nlp-concepts/blob/master/concepts.md
 published_at: null
 related_concepts: []
+topics:
+  - deep-learning-theory
+  - 深度学习理论
 ---
 
 ## Concept Hierarchy in Neural Networks for NLP

@@ -1,5 +1,5 @@
 ---
-source_type: local_note
+source_type: notes
 source_path: raw/local-notes/llm/llm-framework/2024-09-23-llm-vector-database/index.md
 title: LLM 框架--Vector Database
 author: wangzf

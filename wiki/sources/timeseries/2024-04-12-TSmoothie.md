@@ -1,5 +1,5 @@
 ---
-source_type: local_note
+source_type: notes
 source_path: raw/local-notes/timeseries/timeseries-libs/2024-04-12-timeseries-lib-tsmoothie/index.md
 title: TSmoothie 时间序列平滑库
 author: wangzf

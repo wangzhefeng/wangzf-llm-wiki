@@ -10,11 +10,12 @@ tags:
 - null
 - clippings
 title: MultiOutputRegressor
-topics:
-- 机器学习
 source_url: https://scikit-learn.org/stable/modules/generated/sklearn.multioutput.MultiOutputRegressor.html
 published_at: null
 related_concepts: []
+topics:
+  - machine-learning-theory
+  - 机器学习理论
 ---
 
 ## MultiOutputRegressor

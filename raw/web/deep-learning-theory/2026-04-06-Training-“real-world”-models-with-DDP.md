@@ -12,12 +12,12 @@ tags:
 - null
 - clippings
 title: Training “real-world” models with DDP
-topics:
-- 强化学习
-- 深度学习
 source_url: https://docs.pytorch.org/tutorials/intermediate/ddp_series_minGPT.html
 published_at: 2023-01-01
 related_concepts: []
+topics:
+  - deep-learning-theory
+  - 深度学习理论
 ---
 
 [Introduction](https://docs.pytorch.org/tutorials/beginner/ddp_series_intro.html) || [What is DDP](https://docs.pytorch.org/tutorials/beginner/ddp_series_theory.html) || [Single-Node Multi-GPU Training](https://docs.pytorch.org/tutorials/beginner/ddp_series_multigpu.html) || [Fault Tolerance](https://docs.pytorch.org/tutorials/beginner/ddp_series_fault_tolerance.html) || [Multi-Node training](https://docs.pytorch.org/tutorials/intermediate/ddp_series_multinode.html) || **minGPT Training**

@@ -11,11 +11,12 @@ tags:
 - clippings
 title: 'oxfordcontrol/Clarabel.rs: Clarabel.rs: Interior-point solver for convex conic
   optimisation problems in Rust.'
-topics:
-- 运筹优化
 source_url: https://github.com/oxfordcontrol/Clarabel.rs
 published_at: null
 related_concepts: []
+topics:
+  - operations-research
+  - 数学优化算法/运筹学
 ---
 
 ![[logo-banner-dark-rs.png|Clarabel.jl logo]]

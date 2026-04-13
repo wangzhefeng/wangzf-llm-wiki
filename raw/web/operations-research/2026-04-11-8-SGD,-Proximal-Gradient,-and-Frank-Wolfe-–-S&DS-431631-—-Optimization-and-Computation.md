@@ -6,14 +6,15 @@ tags:
 - clippings
 title: 8  SGD, Proximal Gradient, and Frank-Wolfe – S&DS 431/631 — Optimization and
   Computation
-topics:
-- 运筹优化
-source_type: local_note
+source_type: web
 created_at: 2026-04-11
 status: inbox
 source_url: https://zhuoranyang.github.io/sds431-notes/lectures/08-sgd-proximal-frank-wolfe.html
 published_at: null
 related_concepts: []
+topics:
+  - operations-research
+  - 数学优化算法/运筹学
 ---
 The momentum and adaptive methods from the previous chapter dramatically accelerate gradient descent, but they assume two favorable conditions: that computing the full gradient is feasible, and that the objective is smooth. In practice, these assumptions often fail. This chapter addresses three fundamental challenges that arise in real-world optimization:
 

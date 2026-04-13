@@ -11,12 +11,12 @@ tags:
 - clippings
 title: deep-learning-pytorch-huggingface/training/fine-tune-llms-in-2025.ipynb at
   main
-topics:
-- 大语言模型
-- 深度学习
 source_url: https://github.com/philschmid/deep-learning-pytorch-huggingface/blob/main/training/fine-tune-llms-in-2025.ipynb
 published_at: null
 related_concepts: []
+topics:
+  - llm-pre-training
+  - 大语言模型预训练
 ---
 
 [Open in github.dev](https://github.dev/) [Open in a new github.dev tab](https://github.dev/) [Open in codespace](https://github.com/codespaces/new/philschmid/deep-learning-pytorch-huggingface/tree/main?resume=1)

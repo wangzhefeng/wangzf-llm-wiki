@@ -1,10 +1,6 @@
 ---
-source_type: local_note
+source_type: notes
 created_at: 2025-06-18
-topics:
-  - post
-  - reinforcement-learning
-  - model
 status: inbox
 title: 强化学习
 subtitle: Reinforcement Learning
@@ -16,6 +12,9 @@ categories:
   - reinforcement-learning
 tags:
   - model
+topics:
+  - timeseries-analysis
+  - 时间序列分析
 ---
 
 

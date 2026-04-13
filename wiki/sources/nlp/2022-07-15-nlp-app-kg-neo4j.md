@@ -1,5 +1,5 @@
 ---
-source_type: local_note
+source_type: notes
 source_path: raw/local-notes/nlp/nlp-kg/2022-07-15-nlp-app-kg-neo4j/index.md
 title: NLP-Neo4j
 author: wangzf

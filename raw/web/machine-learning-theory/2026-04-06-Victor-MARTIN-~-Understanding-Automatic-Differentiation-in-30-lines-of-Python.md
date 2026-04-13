@@ -5,11 +5,12 @@ title: Victor MARTIN ~ Understanding Automatic Differentiation in 30 lines of Py
 author: unknown
 published_at: 2026-04-06
 created_at: 2026-04-06
-topics:
-  - 待分类
 related_concepts:
   - 待链接
 status: inbox
+topics:
+  - machine-learning-theory
+  - 机器学习理论
 ---
 
 # 占位文件: Victor MARTIN ~ Understanding Automatic Differentiation in 30 lines of Python

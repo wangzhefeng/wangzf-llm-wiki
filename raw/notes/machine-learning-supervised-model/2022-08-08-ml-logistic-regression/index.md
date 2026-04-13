@@ -7,11 +7,12 @@ categories:
   - machine-learning
 tags:
   - model
-source_type: local_note
+source_type: notes
 created_at: 2022-08-08
-topics:
-  - machine-learning
 status: inbox
+topics:
+  - machine-learning-supervised-model
+  - 有监督学习模型
 ---
 
 

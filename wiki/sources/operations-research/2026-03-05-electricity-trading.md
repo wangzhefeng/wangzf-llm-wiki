@@ -1,5 +1,5 @@
 ---
-source_type: local_note
+source_type: notes
 source_path: raw/local-notes/post/2026-03-05-electricity-trading/index.md
 title: 电力交易
 author: wangzf

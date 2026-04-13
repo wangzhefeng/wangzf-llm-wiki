@@ -11,12 +11,12 @@ tags:
 - null
 - clippings
 title: Transformer深入浅出
-topics:
-- 大语言模型
-- 深度学习
 source_url: https://mp.weixin.qq.com/s/iBVNkvfz8usZTpPLRcghRA
 published_at: null
 related_concepts: []
+topics:
+  - deep-learning-theory
+  - 深度学习理论
 ---
 
 原创 梁云1991 *2023年8月1日 22:53*

@@ -7,11 +7,12 @@ categories:
   - optimizer-algorithm
 tags:
   - algorithm
-source_type: local_note
+source_type: notes
 created_at: 2023-01-07
-topics:
-  - optimizer-algorithm
 status: inbox
+topics:
+  - operations-research
+  - 数学优化算法/运筹学
 ---
 
 

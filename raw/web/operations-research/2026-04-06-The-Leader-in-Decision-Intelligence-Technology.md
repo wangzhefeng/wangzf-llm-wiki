@@ -10,11 +10,12 @@ tags:
 - null
 - clippings
 title: The Leader in Decision Intelligence Technology
-topics:
-- 运筹优化
 source_url: https://www.gurobi.com/jupyter_models/?_difficulty_level=beginner
 published_at: null
 related_concepts: []
+topics:
+  - operations-research
+  - 数学优化算法/运筹学
 ---
 
 **Sign In**[Customer Login](https://portal.gurobi.com/iam/login/)

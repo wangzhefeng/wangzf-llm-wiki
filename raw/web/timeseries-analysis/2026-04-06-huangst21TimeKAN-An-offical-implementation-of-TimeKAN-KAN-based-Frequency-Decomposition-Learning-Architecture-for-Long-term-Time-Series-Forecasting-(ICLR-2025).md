@@ -3,8 +3,6 @@ source_type: web
 title: "huangst21/TimeKAN: An offical implementation of \"TimeKAN: KAN-based Frequency Decomposition Learning Architecture for Long-term Time Series Forecasting\" (ICLR 2025)"
 author: 
 created_at: 2026-04-06
-topics:
-  - 时间序列
 status: inbox
 published: 
 created: 2026-04-06
@@ -15,6 +13,9 @@ tags:
 source_url: "https://github.com/huangst21/TimeKAN"
 published_at: null
 related_concepts: []
+topics:
+  - timeseries-analysis
+  - 时间序列分析
 ---
 
 ## (ICLR 2025) TimeKAN: KAN-based Frequency Decomposition Learning Architecture for Long-term Time Series Forecasting🚀

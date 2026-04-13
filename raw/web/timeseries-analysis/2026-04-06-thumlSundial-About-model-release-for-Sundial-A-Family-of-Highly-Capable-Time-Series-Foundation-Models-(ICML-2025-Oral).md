@@ -3,8 +3,6 @@ source_type: web
 title: "thuml/Sundial: About model release for \"Sundial: A Family of Highly Capable Time Series Foundation Models\" (ICML 2025 Oral)"
 author: 
 created_at: 2026-04-06
-topics:
-  - 时间序列
 status: inbox
 published: 
 created: 2026-04-06
@@ -15,6 +13,9 @@ tags:
 source_url: "https://github.com/thuml/Sundial/tree/main"
 published_at: null
 related_concepts: []
+topics:
+  - timeseries-analysis
+  - 时间序列分析
 ---
 
 ## Sundial

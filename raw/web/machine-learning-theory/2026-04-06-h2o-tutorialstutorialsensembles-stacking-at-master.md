@@ -10,11 +10,12 @@ tags:
 - null
 - clippings
 title: h2o-tutorials/tutorials/ensembles-stacking at master
-topics:
-- 机器学习
 source_url: https://github.com/h2oai/h2o-tutorials/tree/master/tutorials/ensembles-stacking
 published_at: null
 related_concepts: []
+topics:
+  - machine-learning-theory
+  - 机器学习理论
 ---
 
 ## Ensembles: Stacking, Super Learner

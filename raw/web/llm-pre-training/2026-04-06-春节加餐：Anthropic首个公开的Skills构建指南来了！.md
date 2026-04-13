@@ -11,11 +11,12 @@ tags:
 - null
 - clippings
 title: 春节加餐：Anthropic首个公开的Skills构建指南来了！
-topics:
-- 大语言模型
 source_url: https://mp.weixin.qq.com/s/PcyKi5q8zT-tJ_9rzgKSqg
 published_at: null
 related_concepts: []
+topics:
+  - llm-pre-training
+  - 大语言模型预训练
 ---
 
 原创 Datawhale *2026年2月19日 22:11*

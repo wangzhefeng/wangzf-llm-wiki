@@ -11,12 +11,12 @@ tags:
 - clippings
 title: 'thuml/iTransformer: Official implementation for "iTransformer: Inverted Transformers
   Are Effective for Time Series Forecasting" (ICLR 2024 Spotlight)'
-topics:
-- 大语言模型
-- 时间序列
 source_url: https://github.com/thuml/iTransformer
 published_at: null
 related_concepts: []
+topics:
+  - timeseries-analysis
+  - 时间序列分析
 ---
 
 ## iTransformer

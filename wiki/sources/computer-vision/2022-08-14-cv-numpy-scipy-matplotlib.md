@@ -1,5 +1,5 @@
 ---
-source_type: local_note
+source_type: notes
 source_path: raw/local-notes/computer-vision/image_processing/2022-08-14-cv-numpy-scipy-matplotlib/index.md
 title: 2022-08-14-cv-numpy-scipy-matplotlib
 author: wangzf

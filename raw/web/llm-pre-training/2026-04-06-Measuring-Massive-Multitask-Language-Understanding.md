@@ -11,11 +11,12 @@ tags:
 - null
 - clippings
 title: Measuring Massive Multitask Language Understanding
-topics:
-- 大语言模型
 source_url: https://ar5iv.labs.arxiv.org/html/2009.03300?_immersive_translate_auto_translate=1
 published_at: null
 related_concepts: []
+topics:
+  - llm-pre-training
+  - 大语言模型预训练
 ---
 
 ## Measuring Massive Multitask Language Understanding衡量大规模多任务处理 语言理解

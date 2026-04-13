@@ -11,12 +11,12 @@ tags:
 - clippings
 title: 'open-compass/VLMEvalKit: Open-source evaluation toolkit of large multi-modality
   models (LMMs), support 220+ LMMs, 80+ benchmarks'
-topics:
-- 强化学习
-- 深度学习
 source_url: https://github.com/open-compass/VLMEvalKit
 published_at: null
 related_concepts: []
+topics:
+  - deep-learning-theory
+  - 深度学习理论
 ---
 
 [![[Image 18.jpg|LOGO]]](https://camo.githubusercontent.com/9764813f4b7eb750979b5ba95de41aa81d4948b91de19e753cd3850e0ed15507/68747470733a2f2f6f70656e636f6d706173732e6f70656e786c61622e73706163652f7574696c732f4d4d4c422e6a7067)

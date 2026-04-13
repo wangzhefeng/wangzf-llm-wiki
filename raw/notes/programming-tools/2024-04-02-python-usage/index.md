@@ -1,10 +1,6 @@
 ---
-source_type: local_note
+source_type: notes
 created_at: 2024-04-02
-topics:
-  - post
-  - python
-  - tool
 status: inbox
 title: Python 类使用详解
 subtitle: Python Class Usage
@@ -16,6 +12,9 @@ categories:
   - python
 tags:
   - tool
+topics:
+  - programming-tools
+  - 编程工具
 ---
 
 

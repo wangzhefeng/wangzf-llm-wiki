@@ -2,11 +2,12 @@
 title: 深度学习
 subtitle: Deep Learning
 list_pages: true
-source_type: local_note
+source_type: notes
 created_at: 2026-04-11
-topics:
-  - deep-learning
 status: linked
+topics:
+  - deep-learning-theory
+  - 深度学习理论
 ---
 
 ![img](./images/dl.png)

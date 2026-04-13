@@ -1,5 +1,5 @@
 ---
-source_type: local_note
+source_type: notes
 source_path: raw/local-notes/llm/llm-models/2024-08-15-llm-app-llama318b/index.md
 title: LLM 应用-Llama 3.1 8B
 author: wangzf

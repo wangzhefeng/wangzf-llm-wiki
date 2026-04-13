@@ -1,5 +1,5 @@
 ---
-source_type: local_note
+source_type: notes
 source_path: raw/local-notes/timeseries/timeseries-time-domain/timeseries-machinelearning/2026-02-07-tsf-report/index.md
 title: 基于非线性树模型的时间序列预测框架：全生命周期深度研究报告
 author: wangzf

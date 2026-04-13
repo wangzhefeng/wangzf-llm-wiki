@@ -1,5 +1,5 @@
 ---
-source_type: local_note
+source_type: notes
 source_path: raw/local-notes/nlp/nlp-speech/2022-12-02-nlp-machine-translation/index.md
 title: 机器翻译 Machine Translation
 author: wangzf

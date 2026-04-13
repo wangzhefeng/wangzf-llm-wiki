@@ -1,5 +1,5 @@
 ---
-source_type: local_note
+source_type: notes
 source_path: raw/local-notes/data-analysis/2020-09-22-data-buried-point/index.md
 title: 2020-09-22-data-buried-point
 author: wangzf

@@ -10,11 +10,12 @@ tags:
 - null
 - clippings
 title: examples/distributed at main
-topics:
-- 深度学习
 source_url: https://github.com/pytorch/examples/tree/main/distributed
 published_at: null
 related_concepts: []
+topics:
+  - deep-learning-theory
+  - 深度学习理论
 ---
 
 [Open in github.dev](https://github.dev/) [Open in a new github.dev tab](https://github.dev/) [Open in codespace](https://github.com/codespaces/new/pytorch/examples/tree/main?resume=1)

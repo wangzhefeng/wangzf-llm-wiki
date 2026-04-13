@@ -1,5 +1,5 @@
 ---
-source_type: local_note
+source_type: notes
 source_path: raw/local-notes/machine-learning/supervised/ensemble/lightgbm/2023-02-24-ml-gbm-lightgbm-api/index.md
 title: LightGBM API
 author: wangzf

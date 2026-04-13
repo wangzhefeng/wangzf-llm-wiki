@@ -10,11 +10,12 @@ tags:
 - null
 - clippings
 title: 'jimgoo/caffe-oxford102: Caffe CNNs for the Oxford 102 flower dataset'
-topics:
-- 大语言模型
 source_url: https://github.com/jimgoo/caffe-oxford102?tab=readme-ov-file
 published_at: null
 related_concepts: []
+topics:
+  - llm-pre-training
+  - 大语言模型预训练
 ---
 
 ## caffe-oxford102

@@ -5,8 +5,6 @@ author:
   - 
   - "[[Vitor Cerqueira]]"
 created_at: 2026-04-06
-topics:
-  - 时间序列
 status: inbox
 created: 2026-04-06
 description: "A few practical recommendations for getting better forecasting performance estimates"
@@ -16,6 +14,9 @@ tags:
 source_url: "https://towardsdatascience.com/4-things-to-do-when-applying-cross-validation-with-time-series-c6a5674ebf3a/"
 published_at: 2022-12-08
 related_concepts: []
+topics:
+  - timeseries-analysis
+  - 时间序列分析
 ---
 
 ![[0hfxdSdl1MfbWG9eq-scaled.jpg|Photo by Thought Catalog on Unsplash]]

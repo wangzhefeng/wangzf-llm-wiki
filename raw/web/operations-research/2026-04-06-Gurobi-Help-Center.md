@@ -9,11 +9,12 @@ tags:
 - null
 - clippings
 title: Gurobi Help Center
-topics:
-- 文档
 source_url: https://support.gurobi.com/hc/en-us
 published_at: null
 related_concepts: []
+topics:
+  - operations-research
+  - 数学优化算法/运筹学
 ---
 
 Welcome to the Gurobi Help Center.

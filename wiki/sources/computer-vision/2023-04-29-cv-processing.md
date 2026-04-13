@@ -1,5 +1,5 @@
 ---
-source_type: local_note
+source_type: notes
 source_path: raw/local-notes/computer-vision/image_processing/2023-04-29-cv-processing/index.md
 title: 2023-04-29-cv-processing
 author: wangzf

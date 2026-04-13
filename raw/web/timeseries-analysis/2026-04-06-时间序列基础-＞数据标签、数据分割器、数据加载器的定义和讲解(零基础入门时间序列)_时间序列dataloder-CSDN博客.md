@@ -12,12 +12,12 @@ tags:
 - null
 - clippings
 title: 时间序列基础-＞数据标签、数据分割器、数据加载器的定义和讲解(零基础入门时间序列)_时间序列dataloder-CSDN博客
-topics:
-- 时间序列
-- 深度学习
 source_url: https://blog.csdn.net/java1314777/article/details/134407174
 published_at: null
 related_concepts: []
+topics:
+  - timeseries-analysis
+  - 时间序列分析
 ---
 
 ![[raw/assets/attachments/timeseries/36bced8b7be43bce9369848b0c2bd472.gif]]

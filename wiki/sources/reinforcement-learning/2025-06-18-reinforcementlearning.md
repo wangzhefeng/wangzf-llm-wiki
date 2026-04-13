@@ -1,5 +1,5 @@
 ---
-source_type: local_note
+source_type: notes
 source_path: raw/local-notes/post/2025-06-18-reinforcementlearning/index.md
 title: 强化学习
 author: wangzf

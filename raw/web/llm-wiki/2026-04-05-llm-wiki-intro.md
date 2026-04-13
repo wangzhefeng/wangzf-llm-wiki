@@ -11,11 +11,12 @@ tags:
 - null
 - clippings
 title: 卡帕西引爆硅谷！公开「第二大脑」黑科技，1250万人围观
-topics:
-- 知识库建设
 source_url: https://mp.weixin.qq.com/s/zOAsp5uZh_JTUb4VDliC0A?click_id=1
 published_at: null
 related_concepts: []
+topics:
+  - llm-wiki
+  - 大语言模型知识库(本仓库)
 ---
 
 新智元 *2026年4月5日 15:30*

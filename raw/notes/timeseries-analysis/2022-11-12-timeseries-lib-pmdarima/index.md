@@ -8,11 +8,12 @@ categories:
   - timeseries
 tags:
   - model
-source_type: local_note
+source_type: notes
 created_at: 2022-11-12
-topics:
-  - timeseries
 status: inbox
+topics:
+  - timeseries-analysis
+  - 时间序列分析
 ---
 
 

@@ -3,8 +3,6 @@ source_type: web
 title: "年度总结 | 时间序列(Time Series)前沿创新思路"
 author: 
 created_at: 2026-04-06
-topics:
-  - 时间序列
 status: inbox
 published: 
 created: 2026-04-06
@@ -15,6 +13,9 @@ tags:
 source_url: "https://mp.weixin.qq.com/s/KlwV1o4zO4gKNa-8YxccUw"
 published_at: null
 related_concepts: []
+topics:
+  - timeseries-analysis
+  - 时间序列分析
 ---
 
 *2026年1月27日 08:31*

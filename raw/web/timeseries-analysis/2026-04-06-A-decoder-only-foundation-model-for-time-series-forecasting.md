@@ -6,8 +6,6 @@ author:
   - "[[Posted by Rajat Sen and Yichen Zhou]]"
   - "[[Google Research]]"
 created_at: 2026-04-06
-topics:
-  - 时间序列
 status: inbox
 created: 2026-04-06
 description: "Posted by Rajat Sen and Yichen Zhou, Google Research Time-series forecasting is ubiquitous in various domains, such as retail, finance, manufacturi..."
@@ -17,6 +15,9 @@ tags:
 source_url: "https://research.google/blog/a-decoder-only-foundation-model-for-time-series-forecasting/"
 published_at: 2024-02-02
 related_concepts: []
+topics:
+  - timeseries-analysis
+  - 时间序列分析
 ---
 
 ![[raw/assets/attachments/timeseries/fbfc456bb8f84afa34298d2f0bb7cd1e-hero.jpg]]

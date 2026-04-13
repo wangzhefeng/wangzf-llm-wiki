@@ -10,11 +10,12 @@ tags:
 - null
 - clippings
 title: h2oai/pystacknet
-topics:
-- 深度学习
 source_url: https://github.com/h2oai/pystacknet
 published_at: null
 related_concepts: []
+topics:
+  - deep-learning-theory
+  - 深度学习理论
 ---
 
 ## About

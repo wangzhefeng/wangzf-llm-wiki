@@ -1,5 +1,5 @@
 ---
-source_type: local_note
+source_type: notes
 source_path: raw/local-notes/deep-learning/2022-12-01-dl-experience/index.md
 title: 经验总结
 author: wangzf

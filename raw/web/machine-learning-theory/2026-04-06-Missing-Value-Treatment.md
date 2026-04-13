@@ -11,11 +11,12 @@ tags:
 - null
 - clippings
 title: Missing Value Treatment
-topics:
-- 机器学习
 source_url: https://datascienceplus.com/missing-value-treatment/
 published_at: 2001-04-25
 related_concepts: []
+topics:
+  - machine-learning-theory
+  - 机器学习理论
 ---
 
 Missing values in data is a common phenomenon in real world problems. Knowing how to handle missing values effectively is a required step to reduce bias and to produce powerful models. Lets explore various options of how to deal with missing values and how to implement them.

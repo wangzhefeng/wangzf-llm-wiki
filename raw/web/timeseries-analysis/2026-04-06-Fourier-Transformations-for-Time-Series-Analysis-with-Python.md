@@ -5,8 +5,6 @@ author:
   - 
   - "[[Kyle Jones]]"
 created_at: 2026-04-06
-topics:
-  - 时间序列
 status: inbox
 created: 2026-04-06
 description: "Fourier Transformations for Time Series Analysis with Python Fourier Transforms are a mathematical framework for finding hidden patterns in time series data through frequency analysis and signal …"
@@ -16,6 +14,9 @@ tags:
 source_url: "https://medium.com/@kyle-t-jones/fourier-transformations-for-time-series-analysis-with-python-635747d1a35e"
 published_at: 2025-01-17
 related_concepts: []
+topics:
+  - timeseries-analysis
+  - 时间序列分析
 ---
 
 ## Fourier Transforms are a mathematical framework for finding hidden patterns in time series data through frequency analysis and signal decomposition

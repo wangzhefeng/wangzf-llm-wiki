@@ -5,8 +5,6 @@ author:
   - 
   - "[[时序之心]]"
 created_at: 2026-04-06
-topics:
-  - 时间序列
 status: inbox
 published: 
 created: 2026-04-06
@@ -17,6 +15,9 @@ tags:
 source_url: "https://mp.weixin.qq.com/s/3Kk-WK5cD_wocIEN6RgRGg"
 published_at: null
 related_concepts: []
+topics:
+  - timeseries-analysis
+  - 时间序列分析
 ---
 
 原创 时序之心 *2025年8月11日 11:39*

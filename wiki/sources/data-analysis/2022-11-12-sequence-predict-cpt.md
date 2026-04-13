@@ -1,5 +1,5 @@
 ---
-source_type: local_note
+source_type: notes
 source_path: raw/local-notes/data-analysis/2022-11-12-sequence-predict-cpt/index.md
 title: 目标序列
 author: wangzf

@@ -3,8 +3,6 @@ source_type: web
 title: "wdndev/tiny-llm-zh: 从零实现一个小参数量中文大语言模型。"
 author: 
 created_at: 2026-04-06
-topics:
-  - 大语言模型
 status: inbox
 published: 
 created: 2026-04-06
@@ -15,6 +13,9 @@ tags:
 source_url: "https://github.com/wdndev/tiny-llm-zh"
 published_at: null
 related_concepts: []
+topics:
+  - llm-pre-training
+  - 大语言模型预训练
 ---
 
 ## Tiny LLM zh

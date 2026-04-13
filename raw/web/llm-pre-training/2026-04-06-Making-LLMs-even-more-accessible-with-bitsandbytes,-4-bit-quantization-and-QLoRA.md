@@ -9,8 +9,6 @@ author:
   - "[[Sylvain Gugger]]"
   - "[[Sourab Mangrulkar]]"
 created_at: 2026-04-06
-topics:
-  - 大语言模型
 status: inbox
 created: 2026-04-06
 description: "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
@@ -20,6 +18,9 @@ tags:
 source_url: "https://huggingface.co/blog/4bit-transformers-bitsandbytes"
 published_at: 2023-05-24
 related_concepts: []
+topics:
+  - llm-pre-training
+  - 大语言模型预训练
 ---
 
 This article is also available in Chinese [简体中文](https://huggingface.co/blog/zh/4bit-transformers-bitsandbytes).

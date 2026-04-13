@@ -6,14 +6,15 @@ description: PyRregular开源34个数据集基准，找不规则时序方向base
 tags:
 - clippings
 title: PyRregular开源34个数据集基准，找不规则时序方向baseline的可以直接抄作业
-topics:
-- 时间序列
-source_type: local_note
+source_type: web
 created_at: 2026-04-10
 status: inbox
 source_url: https://mp.weixin.qq.com/s/_h6SMNWEhpvbeGU8wwlSQw
 published_at: null
 related_concepts: []
+topics:
+  - timeseries-analysis
+  - 时间序列分析
 ---
 原创 时序之心 *2026年4月10日 14:43*
 

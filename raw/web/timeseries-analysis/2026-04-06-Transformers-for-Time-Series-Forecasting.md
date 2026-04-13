@@ -13,12 +13,12 @@ tags:
 - null
 - clippings
 title: Transformers for Time Series Forecasting
-topics:
-- 大语言模型
-- 时间序列
 source_url: https://medium.com/@serana.ai/transformers-for-time-series-forecasting-e5e0327e78be
 published_at: 2025-06-02
 related_concepts: []
+topics:
+  - timeseries-analysis
+  - 时间序列分析
 ---
 
 [Sitemap](https://medium.com/sitemap/sitemap.xml)

@@ -7,8 +7,6 @@ author:
   - "[[Klaus Ackermann]]"
   - "[[Christoph Bergmeir]]"
 created_at: 2026-04-06
-topics:
-  - 时间序列
 status: inbox
 published: 
 created: 2026-04-06
@@ -19,6 +17,9 @@ tags:
 source_url: "https://arxiv.org/abs/2203.10716"
 published_at: null
 related_concepts: []
+topics:
+  - timeseries-analysis
+  - 时间序列分析
 ---
 
 ## Title:Forecast Evaluation for Data Scientists: Common Pitfalls and Best Practices

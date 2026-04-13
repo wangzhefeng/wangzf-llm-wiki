@@ -1,5 +1,5 @@
 ---
-source_type: local_note
+source_type: notes
 source_path: raw/local-notes/deep-learning/unsupervised/gen/2022-07-15-dl-gen-neural-style-transfer/index.md
 title: 神经风格迁移
 author: wangzf

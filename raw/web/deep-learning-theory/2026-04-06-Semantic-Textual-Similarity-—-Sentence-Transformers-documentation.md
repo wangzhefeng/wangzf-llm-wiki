@@ -9,12 +9,12 @@ tags:
 - null
 - clippings
 title: Semantic Textual Similarity — Sentence Transformers  documentation
-topics:
-- 大语言模型
-- 深度学习
 source_url: https://www.sbert.net/examples/sentence_transformer/training/sts/README.html
 published_at: null
 related_concepts: []
+topics:
+  - deep-learning-theory
+  - 深度学习理论
 ---
 
 ## Semantic Textual Similarity

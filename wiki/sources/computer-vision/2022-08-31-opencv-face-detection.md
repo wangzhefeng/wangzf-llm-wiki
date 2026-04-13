@@ -1,5 +1,5 @@
 ---
-source_type: local_note
+source_type: notes
 source_path: raw/local-notes/computer-vision/others/2022-08-31-opencv-face-detection/index.md
 title: 2022-08-31-opencv-face-detection
 author: wangzf

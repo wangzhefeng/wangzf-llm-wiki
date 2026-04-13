@@ -1,5 +1,5 @@
 ---
-source_type: local_note
+source_type: notes
 source_path: raw/local-notes/llm/lm/embedding/2023-03-21-embedding/index.md
 title: Word Embedding
 author: wangzf
