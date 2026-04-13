@@ -35,7 +35,7 @@
 ## 主题入口
 
 - [大语言模型总索引](wiki/indexes/llm/大语言模型总索引.md)
-- [时间序列预测总索引](wiki/indexes/timeseries/时间序列预测总索引.md)
+- [时间序列预测总索引](wiki/indexes/timeseries-analysis/时间序列预测总索引.md)
 - [运筹优化算法总索引](wiki/indexes/operations-research/运筹优化算法总索引.md)
 - [机器学习总索引](wiki/indexes/machine-learning/机器学习总索引.md)
 - [数据分析总索引](wiki/indexes/data-analysis/数据分析总索引.md)

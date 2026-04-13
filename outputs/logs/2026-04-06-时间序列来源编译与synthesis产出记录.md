@@ -34,8 +34,8 @@ status: completed
 
 ### 更新的文件
 
-- `wiki/indexes/timeseries/时间序列预测来源清单.md` — 新增第三轮编译条目
-- `wiki/indexes/timeseries/时间序列预测总索引.md` — 更新旁支与延伸说明
+- `wiki/indexes/timeseries-analysis/时间序列预测来源清单.md` — 新增第三轮编译条目
+- `wiki/indexes/timeseries-analysis/时间序列预测总索引.md` — 更新旁支与延伸说明
 
 ## 2. outputs/syntheses 产出
 

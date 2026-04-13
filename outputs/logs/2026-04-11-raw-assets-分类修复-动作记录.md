@@ -44,7 +44,7 @@ status: summarized
 - 目标：将当时未被引用的附件（92 个）补齐入口，避免成为“暗资产”。
 - 做法：在 `wiki/sources/<topic>/` 生成附件入口清单页，并通过目录 README 的自动索引形成入链。
 - 入口页：
-  - `wiki/sources/timeseries/附件入口清单-timeseries.md`
+  - `wiki/sources/timeseries-analysis/附件入口清单-timeseries.md`
   - `wiki/sources/deeplearning/附件入口清单-deeplearning.md`
   - `wiki/sources/operationsresearch/附件入口清单-operationsresearch.md`
   - `wiki/sources/shared/附件入口清单-uncategorized.md`

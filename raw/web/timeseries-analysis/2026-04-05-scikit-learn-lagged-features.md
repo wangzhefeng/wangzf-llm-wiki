@@ -69,7 +69,7 @@ topics:
 
 ## 待沉淀方向
 
-- 应写入来源卡：`wiki/sources/timeseries/2026-04-05-scikit-learn-滞后特征预测示例.md`
+- 应写入来源卡：`wiki/sources/timeseries-analysis/2026-04-05-scikit-learn-滞后特征预测示例.md`
 - 应更新概念页：
   - `[[机器学习时间序列预测]]`
   - `[[预测特征工程]]`

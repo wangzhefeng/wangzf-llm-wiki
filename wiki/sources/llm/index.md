@@ -171,7 +171,7 @@ status: inbox
 - [[wiki/sources/llm/2026-04-06-thumliTransformer Official implementation for iTransformer Inverted Transformers Are Effective for Time Series Forecasting (ICLR 2024 Spotlight)]]
 - [[wiki/sources/llm/2026-04-06-veekaybeewhat_are_embeddings A deep dive into embeddings starting from fundamentals]]
 - [[wiki/sources/llm/2026-04-06-wdndevtiny-llm-zh 从零实现一个小参数量中文大语言模型。]]
-- [[wiki/sources/timeseries/2026-04-06-【时间序列预测】Are Transformers Effective for Time Series Forecasting]]
+- [[wiki/sources/timeseries-analysis/2026-04-06-【时间序列预测】Are Transformers Effective for Time Series Forecasting]]
 - [[wiki/sources/llm/2026-04-06-【科研】常用的实验结果评价指标（1） —— R2(R-square)是什么？]]
 - [[wiki/sources/llm/2026-04-06-一文通透想颠覆Transformer的Mamba：从SSM、HiPPO、S4到Mamba(被誉为Mamba最佳解读)_mamba模型-CSDN博客]]
 - [[wiki/sources/llm/2026-04-06-为什么主流LLM都用RoPE？]]

@@ -47,7 +47,7 @@ status: linked
 - [[wiki/concepts/machine-learning/index]]
 - [[wiki/concepts/operations-research/index]]
 - [[wiki/concepts/reinforcement-learning/index]]
-- [[wiki/concepts/timeseries/index]]
+- [[wiki/concepts/timeseries-analysis/index]]
 
 ## 关联入口
 

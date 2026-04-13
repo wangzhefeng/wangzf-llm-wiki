@@ -213,3 +213,20 @@ status: linked
 - 将 `知识库问题地图` 从 `shared/llm-wiki-usage/` 迁移到 `shared/` 根目录。
 - 更新 `README.md`、`AGENTS.md`、`wiki/indexes/shared/index.md`、`wiki/schema.md` 与 `知识库运维总索引` 的路径与职责描述。
 - 将 `LLM知识库构建方法索引` 的正文能力归并到 `知识库建设方法总索引/来源清单`，并将原页面收敛为兼容入口页。
+
+## [2026-04-13] update | timeseries-analysis 专题重扫描与路径编译
+
+- 基于 `raw/notes` 与 `raw/web` 重整结果，重扫 `timeseries-analysis` 专题来源层与索引层。
+- 在 `wiki/sources/timeseries-analysis/` 批量将旧路径前缀迁移为新前缀：`raw/local-notes/ -> raw/notes/`、`raw/web/timeseries/ -> raw/web/timeseries-analysis/`。
+- 对来源卡执行 `source_path` 重绑定（优先使用卡片内可解析的 `[[raw/...]]` 链接），减少重命名后的失配路径。
+- 更新 `wiki/indexes/timeseries-analysis/时间序列预测总索引.md` 的来源统计为：`raw/web/timeseries-analysis` 143 篇、`raw/notes/timeseries-analysis` 75 篇。
+- 更新 `wiki/indexes/timeseries-analysis/时间序列预测来源清单.md` 中 post 区块说明，标记迁移后待回填状态。
+
+## [2026-04-13] update | GLOSSARY 命名对齐（timeseries -> timeseries-analysis）
+
+- 依据 `GLOSSARY.md` 主题词表，将 wiki 时间序列主题目录统一为 `timeseries-analysis`：
+  - `wiki/sources/timeseries` -> `wiki/sources/timeseries-analysis`
+  - `wiki/indexes/timeseries` -> `wiki/indexes/timeseries-analysis`
+  - `wiki/concepts/timeseries` -> `wiki/concepts/timeseries-analysis`
+- 批量更新仓库内相关路径引用，消除旧目录命名残留。
+- 复检 `wiki/sources/timeseries-analysis`：`source_path` 缺失项为 0。

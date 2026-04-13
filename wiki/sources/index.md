@@ -48,7 +48,7 @@ status: linked
 - [[wiki/sources/operations-research/index]]
 - [[wiki/sources/reinforcement-learning/index]]
 - [[wiki/sources/shared/index]]
-- [[wiki/sources/timeseries/index]]
+- [[wiki/sources/timeseries-analysis/index]]
 
 ## 关联入口
 
