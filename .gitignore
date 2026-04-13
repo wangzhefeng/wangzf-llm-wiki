@@ -1,4 +1,5 @@
 .agents/
+.claude/
 .env/
 .obsidian/
 .ruff_cache/
