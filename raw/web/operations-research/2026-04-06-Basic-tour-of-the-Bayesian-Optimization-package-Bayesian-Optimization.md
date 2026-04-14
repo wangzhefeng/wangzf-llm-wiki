@@ -3,7 +3,7 @@ source_type: web
 title: "Basic tour of the Bayesian Optimization package - Bayesian Optimization"
 author: 
 created_at: 2026-04-06
-status: inbox
+status: summarized
 published: 
 created: 2026-04-06
 description: 

@@ -10,7 +10,7 @@ tags:
   - model
 source_type: notes
 created_at: 2024-08-26
-status: inbox
+status: summarized
 topics:
   - operations-research
   - 数学优化算法/运筹学

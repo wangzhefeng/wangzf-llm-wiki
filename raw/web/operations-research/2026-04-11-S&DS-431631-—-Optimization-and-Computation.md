@@ -8,7 +8,7 @@ tags:
 title: S&DS 431/631 — Optimization and Computation
 source_type: web
 created_at: 2026-04-11
-status: inbox
+status: summarized
 source_url: https://zhuoranyang.github.io/sds431-notes/
 published_at: null
 related_concepts: []

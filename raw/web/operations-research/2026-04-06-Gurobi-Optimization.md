@@ -3,7 +3,7 @@ source_type: web
 title: "Gurobi Optimization"
 author: 
 created_at: 2026-04-06
-status: inbox
+status: summarized
 published: 
 created: 2026-04-06
 description: "Gurobi Optimization has 23 repositories available. Follow their code on GitHub."

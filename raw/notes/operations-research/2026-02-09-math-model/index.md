@@ -1,7 +1,7 @@
 ---
 source_type: notes
 created_at: 2026-02-09
-status: inbox
+status: summarized
 title: 数学建模
 subtitle: Mathematical Modeling
 author: wangzf

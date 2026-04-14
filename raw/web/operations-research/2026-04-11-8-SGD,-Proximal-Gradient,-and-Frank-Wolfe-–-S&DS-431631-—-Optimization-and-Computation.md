@@ -8,7 +8,7 @@ title: 8  SGD, Proximal Gradient, and Frank-Wolfe – S&DS 431/631 — Optimiza
   Computation
 source_type: web
 created_at: 2026-04-11
-status: inbox
+status: summarized
 source_url: https://zhuoranyang.github.io/sds431-notes/lectures/08-sgd-proximal-frank-wolfe.html
 published_at: null
 related_concepts: []

@@ -5,7 +5,7 @@ created_at: 2026-04-06
 description: 'Clarabel.rs: Interior-point solver for convex conic optimisation problems
   in Rust. - oxfordcontrol/Clarabel.rs'
 source_type: web
-status: inbox
+status: summarized
 tags:
 - null
 - clippings

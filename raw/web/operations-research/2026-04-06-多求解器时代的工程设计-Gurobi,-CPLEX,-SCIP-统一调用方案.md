@@ -5,7 +5,7 @@ author:
   - 
   - "[[王源]]"
 created_at: 2026-04-06
-status: inbox
+status: summarized
 published: 
 created: 2026-04-06
 description: 

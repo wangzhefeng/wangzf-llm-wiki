@@ -9,7 +9,7 @@ tags:
   - algorithm
 source_type: notes
 created_at: 2023-01-07
-status: inbox
+status: summarized
 topics:
   - operations-research
   - 数学优化算法/运筹学

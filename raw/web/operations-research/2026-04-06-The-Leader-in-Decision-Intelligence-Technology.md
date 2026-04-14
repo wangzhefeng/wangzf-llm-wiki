@@ -5,7 +5,7 @@ created_at: 2026-04-06
 description: Transform your complex business challenge into an optimized plan of action—powered
   by Gurobi’s world-leading solver technology.
 source_type: web
-status: inbox
+status: summarized
 tags:
 - null
 - clippings

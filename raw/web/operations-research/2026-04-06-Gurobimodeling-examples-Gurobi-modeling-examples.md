@@ -5,7 +5,7 @@ created_at: 2026-04-06
 description: Gurobi modeling examples. Contribute to Gurobi/modeling-examples development
   by creating an account on GitHub.
 source_type: web
-status: inbox
+status: summarized
 tags:
 - null
 - clippings

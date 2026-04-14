@@ -3,7 +3,7 @@ source_type: web
 title: "Getting Started with Gurobi Optimizer"
 author: 
 created_at: 2026-04-06
-status: inbox
+status: summarized
 created: 2026-04-06
 description: "Welcome to Gurobi Optimizer! We're here to help you get started!Basic steps to get started with Gurobi Optimizer First, obtain a Gurobi..."
 tags:

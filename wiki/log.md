@@ -230,3 +230,24 @@ status: linked
   - `wiki/concepts/timeseries` -> `wiki/concepts/timeseries-analysis`
 - 批量更新仓库内相关路径引用，消除旧目录命名残留。
 - 复检 `wiki/sources/timeseries-analysis`：`source_path` 缺失项为 0。
+
+## [2026-04-14] ingest | operations-research 专题 Web 来源系统编译
+
+- 来源范围：`raw/web/operations-research/`（41 篇，全部 2026-04 新增）+ `raw/notes/operations-research/`（12 篇，状态核实并更新）。
+- 来源卡新增 20 张（`wiki/sources/operations-research/`）：
+  - S&DS 431/631 课程系列 6 张（耶鲁大学凸优化课程完整编译）
+  - 工具与教材 6 张：Gurobi、CVXPY、SciPy、Clarabel、Boyd 教材、贝叶斯优化包
+  - LLM + OR 前沿 3 张：LLM与OR融合研究、AlphaOPT、求解器与大模型融合
+  - 实践指导 5 张：优化方法简史、多求解器工程设计、MILP分位数约束、连续背包贪心、计算智能笔记
+- 概念页新增 5 个（`wiki/concepts/operations-research/`）：[[梯度下降与一阶优化方法]]、[[内点法]]、[[LP对偶理论]]、[[贝叶斯优化]]、[[LLM与运筹优化]]
+- 概念页更新 3 个：[[凸优化]]（存根扩充为完整页）、[[线性规划]]（添加 LP 几何/对偶/博弈论/TUM 要点）、[[数值优化求解器]]（添加 CVXPY/Clarabel/SciPy/贝叶斯优化节）
+- 索引更新 3 个：`运筹优化算法总索引.md`（新增 4 条结构分组主线和 20 张来源卡链接）、`运筹优化算法来源清单.md`（新增 Web 来源区块）、`运筹优化算法阅读地图.md`（新增第 0 阶段凸优化理论和第 6 阶段 LLM 前沿）
+- 状态同步：`raw/web/operations-research/` 41 篇 inbox → summarized；`raw/notes/operations-research/` 12 篇 inbox → summarized
+
+## [2026-04-14] ingest+backfill | timeseries-analysis 第四轮扩展编译
+
+- 来源范围：`raw/web/timeseries-analysis/`（160 篇）+ `raw/notes/timeseries-analysis/`（75 个目录），总计 241 张来源卡已覆盖。
+- 修复 2 张"待补"来源卡：`2026-04-06-时空联合建模与时空可持续学习` + `2026-04-11-只做预测还没用！时间序列+因果推断`，补充摘要与概念链接。
+- 新增 3 个概念页：[[概率预测]]、[[时空时序预测]]、[[时序因果推断]]。
+- 更新 `时间序列预测总索引.md`：概念页重组为分类结构（核心预测、统计、基础模型、特征评估、扩展任务、工具）；添加第四轮说明。
+- 更新 `时间序列预测来源清单.md`：新增第四轮来源区块（概率预测、时空预测、时序因果推断）。
