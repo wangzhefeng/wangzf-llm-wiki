@@ -27,6 +27,19 @@ status: linked
 - [[2026-04-09-vibe-coding-skills]]
 - [[2026-04-09-vibe-coding-tools]]
 
+## Web 文章来源卡（raw/web/vibe-coding）
+
+- [[2026-04-11-Harness工程]]
+- [[2026-04-11-Anthropic-Managed-Agents]]
+- [[2026-04-05-vercel-agent-browser]]
+- [[2026-04-11-Agent可用CLI设计]]
+- [[2026-04-06-OpenAI-Academy]]
+- [[2026-04-06-首次Vibe Coding开课了！首月最丰富组队学习来了🥳（多达18个课程）]]
+- [[2026-04-06-春节加餐：Anthropic首个公开的Skills构建指南来了！]]
+- [[2026-04-11-企业养虾🦞（OpenClaw），虾住在哪里比虾本身重要]]
+- [[2026-04-11-换掉小龙虾！Hermes全网爆火狂揽四万星，Anthropic重锤暴击OpenClaw]]
+
 ## 说明
 
-- 已纳入 README/PDF 适配编译，共 10 条。
+- 本地文档来源：10 条（2026-04-09 批次）
+- Web 文章来源：9 条（2026-04-05/06/11 批次）

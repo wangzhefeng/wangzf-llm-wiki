@@ -9,7 +9,7 @@ tags:
   - algorithm
 source_type: notes
 created_at: 2024-07-21
-status: inbox
+status: summarized
 topics:
   - control-algorithms
   - 控制算法

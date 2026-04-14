@@ -251,3 +251,60 @@ status: linked
 - 新增 3 个概念页：[[概率预测]]、[[时空时序预测]]、[[时序因果推断]]。
 - 更新 `时间序列预测总索引.md`：概念页重组为分类结构（核心预测、统计、基础模型、特征评估、扩展任务、工具）；添加第四轮说明。
 - 更新 `时间序列预测来源清单.md`：新增第四轮来源区块（概率预测、时空预测、时序因果推断）。
+
+## [2026-04-14] ingest | control-algorithms 专题完整编译
+
+- 来源范围：`raw/web/control-algorithms/`（3 篇）+ `raw/notes/control-algorithms/`（1 篇笔记）
+- **来源卡新建 3 张**：`2026-04-06-API reference - simple-pid 2.0.0`（PID Python 工程实现）、`2026-04-06-Introduction to Robotics and Perception`（Georgia Tech CS3630 教材）、`2026-04-06-gtbookrobotics`（配套 Notebook 仓库）
+- **丢弃 1 张孤立存根来源卡**：`2026-04-06-什么是PID？讲个故事，秒懂！.md`，原始文件缺失，已删除来源卡（control-algorithms 和 shared 各一份）并清理所有索引引用
+- **清理 1 个误放概念页**：删除 `wiki/concepts/control-algorithms/System Prompts.md`（与控制算法无关的占位页）
+- **概念页新增 2 个**：[[模糊 PID]]（从占位页升级为正式页，含调整逻辑表与应用场景）、[[机器人学基础]]（新建，覆盖感知→规划→控制链路）
+- **概念页更新 1 个**：[[PID 控制]]（新增"Python 实现要点"章节，覆盖 simple-pid 库工程实践、积分饱和防护、无扰切换）
+- **索引更新 3 个**：`控制算法总索引.md`（概念页 3→5，来源卡 1→4，成熟度种子期→成长期）、`控制算法阅读地图.md`（新增第 5、6 站）、`控制算法来源清单.md`（新增 Web 来源区块）
+- **状态同步**：`raw/notes/control-algorithms/2024-07-21-control-system/index.md` inbox → summarized；`raw/web/control-algorithms/` 3 篇 inbox → summarized
+
+## [2026-04-14] ingest | power-market-trading 主题系统编译
+
+- 来源范围：`raw/web/power-market-trading/`（5 篇）+ `raw/notes/power-market-trading/`（1 篇笔记），共 6 个原始来源
+- **来源卡新建 4 张**：`2026-04-06-【NO6-电力市场】华北电力大学：电力中长期交易与现货交易解析`（学术框架）、`2026-04-10-算电协同技术研究报告`（算电协同技术全景）、`2026-04-11-100万千瓦！上海虚拟电厂最大响应负荷创历史新高！`（VPP规模化实践）、`notes-电力交易-个人研究笔记`（理论体系，含LMP/SCUC/SCED/三层结算）
+- **来源卡重写 2 张**：`2026-04-06-电力现货时代来了！从0到1建立电力交易认知，这篇说透核心逻辑`（补充9大模块摘要）、`2026-04-06-电力现货实战型交易策略培训课件（102页完整版）`（补充实战策略内容）
+- **概念页新建 8 个**（`wiki/concepts/power-market-trading/`）：[[电力现货市场]]（四时序市场+SCUC/SCED）、[[节点边际电价]]（LMP三分量+网损因子）、[[电力中长期交易]]（合约类型+分解机制）、[[差价合约]]（完全对冲条件+量价风险分离）、[[电力辅助服务市场]]（调频/一级/二级备用）、[[电力交易结算]]（三层结算机制）、[[虚拟电厂]]（VPP聚合+上海案例116.27万kW）、[[算电协同]]（三层协同+东数西算+市场规模）
+- **索引更新 3 个**：`电力市场交易总索引.md`（补充全部来源卡与8个概念页分类）、`电力市场交易来源清单.md`（完整6张来源卡列表）、`电力市场交易阅读地图.md`（14步分支阅读路径）
+- **状态同步**：`raw/web/power-market-trading/` 5 篇 inbox → summarized；`raw/notes/power-market-trading/index.md` inbox → summarized
+
+## [2026-04-14] rename+restructure | knowledge-base 主题全面重命名为 llm-wiki + 索引重构
+
+- **目录重命名**：`wiki/sources/knowledge-base/` → `wiki/sources/llm-wiki/`；`wiki/concepts/knowledge-base/` → `wiki/concepts/llm-wiki/`
+- **索引重构**：废除 `wiki/indexes/shared/llm-wiki-building/`、`llm-wiki-operations/`、`llm-wiki-usage/` 三个过度拆分子目录，合并为 `wiki/indexes/llm-wiki/` 单目录，包含 `LLM-Wiki总索引.md`、`LLM-Wiki阅读地图.md`、`LLM-Wiki来源清单.md`
+- **路径引用更新**：`wiki/sources/index.md`、`wiki/concepts/index.md`、`wiki/sources/llm-wiki/index.md`、`wiki/concepts/llm-wiki/index.md`、`wiki/indexes/shared/知识库工作台.md`、`raw/notes/llm-wiki/index.md`（修复断链）
+- **Frontmatter 批量更新**：`wiki/sources/llm-wiki/` 下 11 张来源卡的 `topics: knowledge-base` → `topics: llm-wiki`
+- **Raw 状态同步**：`raw/notes/llm-wiki/2026-04-04-个人知识库诞生设想.md`、`raw/notes/llm-wiki/2026-04-04-知识库构建执行指引.md` inbox → linked
+
+## [2026-04-14] ingest | llm-wiki 知识库构建方法论主题补全
+
+- 来源范围：`raw/web/llm-wiki/`（5 篇）+ `raw/notes/llm-wiki/`（3 篇）
+- **现状确认**：`wiki/sources/knowledge-base/` 已有 7 张来源卡（Karpathy 系列 + Datawhale + 个人笔记），`wiki/concepts/knowledge-base/知识库建设方法.md` 已完整
+- **来源清单补全**：`wiki/indexes/shared/llm-wiki-building/知识库建设方法来源清单.md` 补入缺失条目 `[[2026-04-05-LLM-Wiki-持久化知识库模式]]` 和 `[[2026-04-05-LLM-Wiki-详细方法与提示词]]`
+
+## [2026-04-14] ingest | vibe-coding 主题扩展编译（Harness 工程批次）
+
+- 来源范围：`raw/web/vibe-coding/` 新增 5 篇（2026-04-05/06/11 批次）
+- **来源卡新建 5 张**（`wiki/sources/vibe-coding/`）：
+  - `2026-04-11-Harness工程.md`（Harness Engineering 概念框架 + OpenAI/Anthropic 双厂实践）
+  - `2026-04-11-Anthropic-Managed-Agents.md`（Claude Managed Agents 产品发布，三个设计模式，Vibecode/Sentry/Asana 案例）
+  - `2026-04-05-vercel-agent-browser.md`（Rust CLI 浏览器自动化，Accessibility Tree + ref 机制）
+  - `2026-04-11-Agent可用CLI设计.md`（为 Agent 构建可组合 CLI 的设计模式）
+  - `2026-04-06-OpenAI-Academy.md`（OpenAI 官方学习平台，Codex 入门课程）
+- **概念页新建 3 个**（`wiki/concepts/vibe-coding/`）：
+  - `Harness工程.md`（Agent = Model + Harness，三问框架，双厂比较）
+  - `Claude-Managed-Agents.md`（四大能力，三个设计模式，产品定位转变）
+  - `浏览器自动化工具.md`（Accessibility Tree 方案 vs DOM 方案，agent-browser 工具）
+- **索引更新 3 个**：`Vibe-Coding来源清单.md`（补入 5 张 Web 来源卡）、`Vibe-Coding总索引.md`（新增 Harness 工程层条目）、`Vibe-Coding阅读地图.md`（新增进阶路径：Harness Engineering 6 步阅读顺序）
+- **概念页更新 1 个**：`Vibe-Coding.md`（补入 Harness 工程层三个新概念）
+- **状态同步**：`raw/web/vibe-coding/` 5 篇 inbox → linked
+
+## [2026-04-14] restructure | wiki/indexes 主题入口清理
+
+- **删除 12 个目录占位页**：移除 `wiki/indexes/{computer-vision,control-algorithms,data-analysis,data-structure-algorithm,deep-learning,llm,machine-learning,operations-research,power-market-trading,reinforcement-learning,timeseries-analysis,vibe-coding}/index.md`
+- **入口核对**：检查 `README.md`、`wiki/index.md`、`wiki/indexes/index.md` 与仓库内显式链接，现有主题入口均已直接指向各自“总索引”，无需额外改写
+- **保留共享层目录页**：`wiki/indexes/shared/index.md` 继续承担共享执行层目录契约说明，不在本次清理范围

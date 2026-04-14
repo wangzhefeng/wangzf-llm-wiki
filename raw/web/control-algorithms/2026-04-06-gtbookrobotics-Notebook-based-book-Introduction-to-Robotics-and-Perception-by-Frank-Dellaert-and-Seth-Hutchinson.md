@@ -5,7 +5,7 @@ created_at: 2026-04-06
 description: Notebook-based book "Introduction to Robotics and Perception" by Frank
   Dellaert and Seth Hutchinson - gtbook/robotics
 source_type: web
-status: inbox
+status: summarized
 tags:
 - null
 - clippings

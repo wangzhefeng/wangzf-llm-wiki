@@ -1,22 +1,28 @@
 ---
-created_at: 2026-04-11
-topics:
-  - llm
-status: inbox
+source_type: web
 source_path: raw/web/llm-pre-training/2026-04-06-spaCy Usage Documentation 2.md
+title: spaCy Usage Documentation
+author: unknown
+published_at: 2026-04-06
+created_at: 2026-04-09
+topics:
+- llm
+related_concepts:
+- 知识库来源与专题摄取索引
+status: summarized
 ---
-
-# 来源卡：2026-04-06-spaCy Usage Documentation 2
+# 来源卡：spaCy Usage Documentation
 
 ## 这份材料讲了什么
 
 - 原文：[[raw/web/llm-pre-training/2026-04-06-spaCy-Usage-Documentation-2.md]]
-- 来源路径：`raw/web/llm-pre-training/2026-04-06-spaCy Usage Documentation 2.md`
+- 来源：`raw/web/llm-pre-training/2026-04-06-spaCy Usage Documentation 2.md`
+- 主题：待分类
 
 ## 价值是什么
 
-- （待补）一句话说明这份材料能解决什么问题/提供什么证据。
+- 为专题索引与概念页提供可追溯证据入口。
 
 ## 连到哪些概念
 
-- （待补）`对应主题总索引` / `相关概念页`
+- [[知识库来源与专题摄取索引]]

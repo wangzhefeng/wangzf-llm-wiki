@@ -21,4 +21,4 @@ topics:
 
 - [[2026-04-05-Karpathy最新硬核分享：用大模型和Obsidian打造个人本地知识库]]
 
-- Wiki 入口：[[wiki/indexes/knowledge-base-building/知识库建设方法总索引]]
+- Wiki 入口：[[wiki/indexes/llm-wiki/LLM-Wiki总索引]]

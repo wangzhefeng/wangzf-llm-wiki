@@ -18,7 +18,6 @@ status: inbox
 
 - [[wiki/sources/control-algorithms/2024-07-21-控制算法概述-PID与模糊控制]]
 - [[wiki/sources/control-algorithms/2026-04-06-Introduction to Robotics and Perception — Introduction to Robotics and Perception]]
-- [[wiki/sources/control-algorithms/2026-04-06-什么是PID？讲个故事，秒懂！]]
 - [[wiki/sources/shared/2026-04-06-掌握Shell编程，一篇就够了]]
 
 <!-- AUTO-GENERATED: sources-dir-index:end -->

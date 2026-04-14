@@ -3,7 +3,7 @@ source_type: web
 title: "Introduction to Robotics and Perception — Introduction to Robotics and Perception"
 author: 
 created_at: 2026-04-06
-status: inbox
+status: summarized
 published: 
 created: 2026-04-06
 description: 
@@ -12,10 +12,12 @@ tags:
   - "clippings"
 source_url: "https://www.roboticsbook.org/intro.html"
 published_at: null
-related_concepts: []
+related_concepts:
+  - 机器人学基础
+  - 控制系统基础
 topics:
-  - programming-tools
-  - 编程工具
+  - control-algorithms
+  - 控制算法
 ---
 
 ## Introduction to Robotics and Perception

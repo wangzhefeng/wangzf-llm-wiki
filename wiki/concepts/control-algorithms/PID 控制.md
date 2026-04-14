@@ -1,5 +1,6 @@
 ---
 created_at: 2026-04-06
+updated_at: 2026-04-14
 topics:
 - control-algorithms
 related_concepts:
@@ -100,9 +101,47 @@ status: linked
 - 对大滞后、多变量耦合对象不一定理想
 - 微分项易受测量噪声影响
 
+## Python 实现要点
+
+使用 `simple-pid` 库（`pip install simple-pid`）可快速实现工程级 PID：
+
+```python
+from simple_pid import PID
+
+pid = PID(Kp=1.0, Ki=0.1, Kd=0.05,
+          setpoint=100,
+          output_limits=(-100, 100))   # 防积分饱和
+
+while True:
+    measurement = read_sensor()
+    control = pid(measurement)          # 传入测量值，返回控制量
+    apply_control(control)
+```
+
+**关键工程参数**：
+
+| 参数 | 作用 | 建议 |
+|---|---|---|
+| `output_limits=(lo, hi)` | 限制输出范围，**同时防积分饱和（windup）** | 总是设置，避免积分项无限增长 |
+| `proportional_on_measurement=True` | 比例项作用于测量值而非误差 | 设定值跳变时可减少超调 |
+| `differential_on_measurement=True` | 微分项作用于测量值（默认开启） | 避免"微分尖峰"（setpoint 阶跃导致的 D 项突变） |
+| `sample_time=0.01` | 固定采样间隔（秒） | 避免因循环速度不均匀导致积分/微分计算误差 |
+| `reset()` | 清空积分项和历史状态 | 切换设定值前或模式切换时调用 |
+| `pid.components` | 返回 (P, I, D) 三项分量 | 调试时用于查看各项贡献 |
+
+**手动/自动无扰切换**：
+
+```python
+# 从手动切换到自动时，传入当前手动输出值
+pid.set_auto_mode(True, last_output=manual_output)
+```
+
+**来源参考**：[[2026-04-06-API reference - simple-pid 2.0.0]]
+
 ## 代表来源
 
 - [[2024-07-21-控制算法概述-PID与模糊控制]]
+- [[2026-04-06-API reference - simple-pid 2.0.0]]（工程实现参考）
 
 ## 相关概念
 

@@ -5,7 +5,7 @@ created_at: 2026-04-05
 description: Browser automation CLI for AI agents. Contribute to vercel-labs/agent-browser
   development by creating an account on GitHub.
 source_type: web
-status: inbox
+status: linked
 tags:
 - null
 - clippings

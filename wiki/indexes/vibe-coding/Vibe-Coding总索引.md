@@ -50,6 +50,22 @@ status: linked
 - `raw/local-notes/vibe-coding/skills/`
 - `raw/local-notes/vibe-coding/tools/`
 
+## 新增核心概念（2026-04 批次）
+
+### Harness 工程层
+
+- [[Harness工程]]：Agent = Model + Harness，设计 AI 工作环境的工程学科
+- [[Claude-Managed-Agents]]：Anthropic 官方 Harness 产品，生产就绪的 Agent 运行环境
+- [[浏览器自动化工具]]：Accessibility Tree 方案，Agent 的 Web 交互接口层
+
+### 新增来源
+
+- [[2026-04-11-Harness工程]]
+- [[2026-04-11-Anthropic-Managed-Agents]]
+- [[2026-04-05-vercel-agent-browser]]
+- [[2026-04-11-Agent可用CLI设计]]
+- [[2026-04-06-OpenAI-Academy]]
+
 ## 方法入口
 
 - [[大语言模型总索引]]

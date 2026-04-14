@@ -11,7 +11,7 @@ tags:
 source_type: web
 source_url: https://developers.openai.com/codex/use-cases/agent-friendly-clis
 created_at: 2026-04-11
-status: inbox
+status: linked
 topics:
   - programming-tools
   - 编程工具

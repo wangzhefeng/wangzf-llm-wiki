@@ -8,7 +8,7 @@ tags:
 title: 重磅！Anthropic官方Harness发布了！
 source_type: web
 created_at: 2026-04-11
-status: inbox
+status: linked
 source_url: https://mp.weixin.qq.com/s/66SDrz5_MlBAPwL0xtMFyw
 published_at: null
 related_concepts: []

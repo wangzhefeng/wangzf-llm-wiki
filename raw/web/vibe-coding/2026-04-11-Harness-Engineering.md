@@ -8,7 +8,7 @@ tags:
 title: Harness Engineering在硅谷爆火，一文带你搞懂！
 source_type: web
 created_at: 2026-04-11
-status: inbox
+status: linked
 source_url: https://mp.weixin.qq.com/s/1-bPS2omne-tncLTPm5N7A?scene=21#wechat_redirect
 published_at: null
 related_concepts: []

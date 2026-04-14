@@ -5,7 +5,7 @@ created_at: 2026-04-06
 description: Unlock the new opportunities of the AI era by equipping yourself with
   the knowledge and skills to harness artificial intelligence effectively.
 source_type: web
-status: inbox
+status: linked
 tags:
 - null
 - clippings

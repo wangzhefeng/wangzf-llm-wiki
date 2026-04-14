@@ -42,7 +42,7 @@ status: linked
 - [[wiki/sources/control-algorithms/index]]
 - [[wiki/sources/data-structure-algorithm/index]]
 - [[wiki/sources/deep-learning/index]]
-- [[wiki/sources/knowledge-base/index]]
+- [[wiki/sources/llm-wiki/index]]
 - [[wiki/sources/llm/index]]
 - [[wiki/sources/machine-learning/index]]
 - [[wiki/sources/operations-research/index]]

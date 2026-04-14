@@ -1,7 +1,7 @@
 ---
 source_type: notes
 created_at: 2026-03-05
-status: inbox
+status: summarized
 title: 电力交易
 subtitle: Electricity Trading
 author: wangzf
