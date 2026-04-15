@@ -6,7 +6,7 @@ topics:
   - llm-wiki
 related_concepts:
   - 知识库工作台
-  - 知识库建设方法总索引
+  - LLM-Wiki总索引
 status: linked
 ---
 

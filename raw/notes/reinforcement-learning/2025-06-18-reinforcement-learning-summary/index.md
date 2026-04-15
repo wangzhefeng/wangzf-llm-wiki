@@ -1,7 +1,7 @@
 ---
-source_type: notes
+source_type: local_note
 created_at: 2025-06-18
-status: inbox
+status: summarized
 title: 强化学习
 subtitle: Reinforcement Learning
 author: wangzf
@@ -13,8 +13,7 @@ categories:
 tags:
   - model
 topics:
-  - timeseries-analysis
-  - 时间序列分析
+  - reinforcement-learning
 ---
 
 

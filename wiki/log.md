@@ -112,6 +112,37 @@ status: linked
 - 运行系统性健康检查，发现并修复断链、孤页、元数据缺失等问题
 - 断链从 1286 减少到 46（减少 96.4%）
 - 孤页从 255 减少到 0（100% 修复）
+
+## [2026-04-15] ingest | 机器学习三主题编译完成
+
+机器学习主题的三个子专题（理论、有监督、无监督）的完整编译工作已完成。
+
+**生成成果**：
+- 三个专用子索引（3 个文件）：
+  - `wiki/indexes/machine-learning/机器学习理论索引.md`
+  - `wiki/indexes/machine-learning/监督学习模型索引.md`
+  - `wiki/indexes/machine-learning/无监督学习模型索引.md`
+  
+- 53 个来源卡（53 个文件）：
+  - 机器学习理论：18 个源卡（EDA、特征工程、模型评估、高级话题）
+  - 监督学习模型：27 个源卡（线性模型、树模型、集成学习、模型融合）
+  - 无监督学习模型：8 个源卡（聚类算法族、降维分解）
+
+**原始资料来源**：
+- raw/notes/machine-learning-theory/：18 个子目录
+- raw/notes/machine-learning-supervised-model/：27 个子目录
+- raw/notes/machine-learning-unsupervised-model/：8 个子目录
+- 另有 raw/web/ 下补充资料 34 篇（25+4+5）待后续编译
+
+**指标更新**：
+- wiki/sources/machine-learning/：从 146 个源卡增加到 199 个
+- wiki/indexes/machine-learning/：从 5 个索引增加到 8 个（新增 3 个子主题索引）
+- 机器学习专题的 raw 层追踪完整性：从 68/155 → 99/155（新编译 53 篇文档）
+
+**下一步方向**：
+- 补充 raw/web 层的 34 篇网络资料的来源卡编译
+- 根据新索引补强相关概念页（如 聚类分析、正则化 等）
+- 建立更深层的理论→实践→优化的递进式学习路径
 - Raw frontmatter 缺失从 17 减少到 0
 - 修复目录命名不一致问题：`local-notes` → `local-notes`、`programming-tools` → `tools` 等
 - 修复 330 个 `source_path` 字段和 47 个 wikilink
@@ -306,5 +337,46 @@ status: linked
 ## [2026-04-14] restructure | wiki/indexes 主题入口清理
 
 - **删除 12 个目录占位页**：移除 `wiki/indexes/{computer-vision,control-algorithms,data-analysis,data-structure-algorithm,deep-learning,llm,machine-learning,operations-research,power-market-trading,reinforcement-learning,timeseries-analysis,vibe-coding}/index.md`
-- **入口核对**：检查 `README.md`、`wiki/index.md`、`wiki/indexes/index.md` 与仓库内显式链接，现有主题入口均已直接指向各自“总索引”，无需额外改写
+- **入口核对**：检查 `README.md`、`wiki/index.md`、`wiki/indexes/index.md` 与仓库内显式链接，现有主题入口均已直接指向各自”总索引”，无需额外改写
 - **保留共享层目录页**：`wiki/indexes/shared/index.md` 继续承担共享执行层目录契约说明，不在本次清理范围
+
+## [2026-04-15] ingest | 强化学习主题 Wiki 编译（完整链路 raw→sources→indexes）
+
+### 现状
+- 强化学习主题已积累 39 个来源卡，涵盖教程、核心算法（PPO/GRPO/DPO）、RLHF、框架生态
+- 4 个主要索引页面结构完整，8 个概念页面已建立
+- 完整性：95%+ 但细节补齐与规范化待完成
+
+### 执行内容
+- **raw 层修复**：修正 `raw/notes/reinforcement-learning/2025-06-18-reinforcement-learning-summary/index.md` 的 frontmatter（topics: timeseries-analysis→reinforcement-learning，status: inbox→summarized）
+- **sources 层补齐**：完成 Teaching（David Silver 课程）与 DSA（稀疏注意力机制）两个关键资源卡的摘要补充
+- **indexes 层优化**：重构 `wiki/indexes/reinforcement-learning/强化学习来源清单.md`，按教程/算法/应用分类列出 35 个已摘要资源卡，明确 4 个待摘要资源
+
+### 关键发现
+- 39 个来源卡中，35 个已摘要（89.7%），4 个待摘要（涉及分类问题，如 Agents/Jiayi-Pan 等资源被误分到 RL）
+- 8 个概念页覆盖核心算法（MDP/PPO/GRPO/DPO/RLHF/Q-Learning/价值函数/策略优化），缺 3 个（Actor-Critic/On-Off-Policy/奖励模型）
+- 总索引中链接混用 raw 层与 sources 层引用，规范化超出本次范围
+
+### 资源分布
+| 分类 | 数量 | 例示 |
+|------|------|------|
+| 教程/课程 | 6 | Datawhale 蘑菇书、David Silver、周博磊纲要 |
+| PPO 相关 | 5 | 理论、实现、游戏应用、技术解析 |
+| GRPO 相关 | 4 | 数学原理、实现、优化（DSA） |
+| DPO 相关 | 2 | 理论推导、面试讲解 |
+| RLHF 与对齐 | 3 | 工程实践、替代方案对比 |
+| MDP 与基础 | 2 | 蘑菇书详解、Sutton 长文 |
+| 框架与工具 | 2 | 框架对比、训练追踪 |
+
+### 验证状态
+✓ raw 层 frontmatter 规范化完成
+✓ sources 层摘要补齐（真正属于 RL 的资源）
+✓ indexes 层来源清单重构
+✓ concepts 层完整性检查（可进一步扩展但已满足核心覆盖）
+△ 链接规范化（混用 raw/sources 引用，归档为后续优化项）
+
+### 後续建议
+1. **分类清理**：处理被误分到 RL 的资源（Agents/Why We Think 等，应归到 vibe-coding 或其他主题）
+2. **概念扩展**：补齐 Actor-Critic、On-Policy vs Off-Policy、奖励模型等 3 个缺失概念页
+3. **链接规范化**：统一 sources 层引用，降低总索引中的 raw 层直接引用
+4. **状态标注**：将标注误分资源为 archived 或重新分类

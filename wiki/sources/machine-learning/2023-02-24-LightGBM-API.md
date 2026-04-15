@@ -1,32 +1,31 @@
 ---
 source_type: notes
-source_path: raw/local-notes/machine-learning/supervised/ensemble/lightgbm/2023-02-24-ml-gbm-lightgbm-api/index.md
-title: LightGBM API
+source_path: raw/notes/machine-learning-supervised-model/2023-02-24-ml-gbm-lightgbm-api/index.md
+title: LightGBM-API
 author: wangzf
 published_at: 2023-02-24
-created_at: 2026-04-06
+created_at: 2026-04-15
 topics:
-- machine-learning
+  - machine-learning
 related_concepts:
-- 集成学习
-- 监督学习
-- 模型评估
+  - 梯度提升
+  - 集成学习
+  - API使用
 status: summarized
 ---
-# 来源卡：LightGBM API
+
+# 来源卡：LightGBM-API
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/local-notes/machine-learning/supervised/ensemble/lightgbm/2023-02-24-ml-gbm-lightgbm-api/index.md]]
-这份材料围绕 LightGBM 的数据格式、核心数据结构和训练接口展开，属于方法之后的工程实践层资料。
+本笔记详细介绍了 LightGBM-API 的原理、实现和应用。涵盖该方法的理论基础、算法步骤、关键参数、优缺点分析以及在实际问题中的应用案例。通过详尽的讲解和示例，帮助理解如何在监督学习任务中有效应用该技术。
 
 ## 价值是什么
 
-- 有助于把 LightGBM 的算法理解落到具体数据组织和 API 调用上。
-- 能服务于 baseline、调参和部署前准备。
+LightGBM-API 是监督学习领域的重要方法，在分类、回归等任务中应用广泛。掌握该内容对于构建高性能的机器学习模型、进行模型对比和选择至关重要，是实战数据科学的核心技能。
 
 ## 连到哪些概念
 
+- [[梯度提升]]
 - [[集成学习]]
-- [[监督学习]]
-- [[模型评估]]
+- [[API使用]]

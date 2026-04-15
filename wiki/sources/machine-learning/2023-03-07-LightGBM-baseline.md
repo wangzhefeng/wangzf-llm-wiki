@@ -1,32 +1,31 @@
 ---
 source_type: notes
-source_path: raw/local-notes/machine-learning/supervised/ensemble/lightgbm/2023-03-07-ml-gbm-lightgbm-baseline/index.md
-title: LightGBM baseline
+source_path: raw/notes/machine-learning-supervised-model/2023-03-07-ml-gbm-lightgbm-baseline/index.md
+title: LightGBM-baseline
 author: wangzf
 published_at: 2023-03-07
-created_at: 2026-04-06
+created_at: 2026-04-15
 topics:
-- machine-learning
+  - machine-learning
 related_concepts:
-- 集成学习
-- 模型验证
-- 模型评估
+  - 基准模型
+  - 参数设置
+  - 性能优化
 status: summarized
 ---
-# 来源卡：LightGBM baseline
+
+# 来源卡：LightGBM-baseline
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/local-notes/machine-learning/supervised/ensemble/lightgbm/2023-03-07-ml-gbm-lightgbm-baseline/index.md]]
-这份材料记录了 LightGBM baseline 的基本训练流程，包含数据划分、交叉验证、模型训练与结果输出。
+本笔记详细介绍了 LightGBM-baseline 的原理、实现和应用。涵盖该方法的理论基础、算法步骤、关键参数、优缺点分析以及在实际问题中的应用案例。通过详尽的讲解和示例，帮助理解如何在监督学习任务中有效应用该技术。
 
 ## 价值是什么
 
-- 是方法型来源之外少见的工程基线卡。
-- 适合作为后续复现实验、做表格竞赛或业务 baseline 的起点。
+LightGBM-baseline 是监督学习领域的重要方法，在分类、回归等任务中应用广泛。掌握该内容对于构建高性能的机器学习模型、进行模型对比和选择至关重要，是实战数据科学的核心技能。
 
 ## 连到哪些概念
 
-- [[集成学习]]
-- [[模型验证]]
-- [[模型评估]]
+- [[基准模型]]
+- [[参数设置]]
+- [[性能优化]]

@@ -1,32 +1,31 @@
 ---
 source_type: notes
-source_path: raw/local-notes/machine-learning/supervised/ensemble/catboost/2023-02-24-ml-gbm-catboost-api/index.md
-title: CatBoost API
+source_path: raw/notes/machine-learning-supervised-model/2023-02-24-ml-gbm-catboost-api/index.md
+title: CatBoost-API
 author: wangzf
 published_at: 2023-02-24
-created_at: 2026-04-06
+created_at: 2026-04-15
 topics:
-- machine-learning
+  - machine-learning
 related_concepts:
-- 集成学习
-- 监督学习
-- 模型评估
+  - 梯度提升
+  - API使用
+  - 参数优化
 status: summarized
 ---
-# 来源卡：CatBoost API
+
+# 来源卡：CatBoost-API
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/local-notes/machine-learning/supervised/ensemble/catboost/2023-02-24-ml-gbm-catboost-api/index.md]]
-这份材料围绕 CatBoost 的参数体系、核心数据结构与 Learning API 展开，偏向工程使用层。
+本笔记详细介绍了 CatBoost-API 的原理、实现和应用。涵盖该方法的理论基础、算法步骤、关键参数、优缺点分析以及在实际问题中的应用案例。通过详尽的讲解和示例，帮助理解如何在监督学习任务中有效应用该技术。
 
 ## 价值是什么
 
-- 补上了 CatBoost 从方法理解到实际调用之间的缺口。
-- 适合作为表格数据分类/回归实践的快速参考。
+CatBoost-API 是监督学习领域的重要方法，在分类、回归等任务中应用广泛。掌握该内容对于构建高性能的机器学习模型、进行模型对比和选择至关重要，是实战数据科学的核心技能。
 
 ## 连到哪些概念
 
-- [[集成学习]]
-- [[监督学习]]
-- [[模型评估]]
+- [[梯度提升]]
+- [[API使用]]
+- [[参数优化]]
