@@ -1,6 +1,6 @@
 ---
 source_type: notes
-source_path: raw/local-notes/deep-learning/2025-01-19-distributed-parallel-training/index.md
+source_path: raw/notes/deep-learning/2025-01-19-distributed-parallel-training/index.md
 title: 模型分布式训练
 author: wangzf
 published_at: 2025-01-19
@@ -17,7 +17,7 @@ status: summarized
 ## 这份材料讲了什么
 
 - 原文：[[raw/papers/2023-05-21-how-to-read-papers/index.md]]
-- 来源：`raw/local-notes/deep-learning/2025-01-19-distributed-parallel-training/index.md`
+- 来源：`raw/notes/deep-learning/2025-01-19-distributed-parallel-training/index.md`
 - 归属主题：深度学习
 
 ## 价值是什么

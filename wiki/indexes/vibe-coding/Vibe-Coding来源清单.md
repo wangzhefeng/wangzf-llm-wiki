@@ -14,7 +14,7 @@ status: linked
 
 - [[VibeCoding与Agent专题来源]]
 
-## 本地文档来源卡（raw/local-notes/vibe-coding）
+## 本地文档来源卡（raw/notes/vibe-coding）
 
 - [[2026-04-09-vibe-coding-agent]]
 - [[2026-04-09-vibe-coding-claude-code]]

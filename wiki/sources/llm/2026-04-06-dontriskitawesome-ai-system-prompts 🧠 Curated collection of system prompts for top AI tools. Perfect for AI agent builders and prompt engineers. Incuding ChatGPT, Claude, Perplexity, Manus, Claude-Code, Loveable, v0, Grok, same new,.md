@@ -1,28 +1,25 @@
 ---
-source_type: web
-source_path: raw/web/llm-pre-training/2026-04-06-dontriskitawesome-ai-system-prompts 🧠 Curated collection of system prompts for top AI tools. Perfect for AI agent builders and prompt engineers. Incuding ChatGPT, Claude, Perplexity, Manus, Claude-Code, Loveable, v0, Grok, same new,.md
-title: 'dontriskit/awesome-ai-system-prompts: 🧠 Curated collection of system prompts for top AI tools. Perfect for AI agent builders and prompt engineers. Incuding: ChatGPT, Claude, Perplexity, Manus, Claude-Code, Loveable, v0, Grok, same new, windsurf, notion, and MetaAI.'
-author: unknown
-published_at: 2026-04-06
-created_at: 2026-04-09
-topics:
-- llm
-related_concepts:
-- 大语言模型总索引
+title: Dontrisk.it Awesome AI System Prompts - Curated collection
+created: '2026-04-15'
+updated: '2026-04-15'
+type: source
+tags:
+  - llm-pre-training
+sources:
+  - raw/web/llm-pre-training/2026-04-06-dontriskitawesome-ai-system-prompts 🧠 Curated collection of system prompts for top AI tools. Perfect for AI agent builders and prompt engineers. Incuding ChatGPT, Claude, Perplexity, Manus, Claude-Code, Loveable, v0, Grok, same new,.md
 status: summarized
 ---
-# 来源卡：dontriskit/awesome-ai-system-prompts: 🧠 Curated collection of system prompts for top AI tools. Perfect for AI agent builders and prompt engineers. Incuding: ChatGPT, Claude, Perplexity, Manus, Claude-Code, Loveable, v0, Grok, same new, windsurf, notion, and MetaAI.
 
-## 这份材料讲了什么
+## 内容摘要
 
-- 原文：`raw/web/llm/2026-04-06-dontriskitawesome-ai-system-prompts 🧠 Curated collection of system prompts for top AI tools. Perfect for AI agent builders and prompt engineers. Incuding ChatGPT, Claude, Perplexity, Manus, Claude-Code, Loveable, v0, Grok, same new,`
-- 来源：`raw/web/llm-pre-training/2026-04-06-dontriskitawesome-ai-system-prompts 🧠 Curated collection of system prompts for top AI tools. Perfect for AI agent builders and prompt engineers. Incuding ChatGPT, Claude, Perplexity, Manus, Claude-Code, Loveable, v0, Grok, same new,.md`
-- 主题：大语言模型
+详见源文件内容
 
-## 价值是什么
+## 关键要点
 
-- 为专题索引与概念页提供可追溯证据入口。
+- 来源类型：网页/文章
+- 子主题：llm-pre-training
 
-## 连到哪些概念
+## 来源信息
 
-- [[大语言模型总索引]]
+- 原始文件：raw/web/llm-pre-training/2026-04-06-dontriskitawesome-ai-system-prompts 🧠 Curated collection of system prompts for top AI tools. Perfect for AI agent builders and prompt engineers. Incuding ChatGPT, Claude, Perplexity, Manus, Claude-Code, Loveable, v0, Grok, same new,.md
+- 来源类型：web

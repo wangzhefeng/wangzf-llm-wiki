@@ -5,7 +5,7 @@ topics:
 - shared
 status: inbox
 ---
-# wiki/concepts/reinforcementlearning
+# wiki/concepts/reinforcement-learning
 
 本目录存放强化学习概念与方法页。入口建议从：[[强化学习总索引]]。
 

@@ -54,7 +54,7 @@
 - `raw/repos/`
 - `raw/datasets/`
 - `raw/images/`
-- `raw/local-notes/`
+- `raw/notes/`
 
 ## 5. 原始文档最小字段
 
@@ -174,7 +174,7 @@ status: inbox
 - 知识库运维主题使用：`wiki/indexes/llm-wiki-operations/`
 - 知识库使用主题使用：`wiki/indexes/llm-wiki-usage/`
 - `wiki/indexes/shared/` 根目录存放共享执行工作流（ingest / query / backfill / lint 与任务流入口），由 `知识库工作台` 统一管理。
-- 具体专题（如 `timeseries/`、`operationsresearch/`）优先放各自来源、索引、概念网络。
+- 具体专题（如 `timeseries/`、`operations-research/`）优先放各自来源、索引、概念网络。
 
 ## 11. 默认行为要求
 

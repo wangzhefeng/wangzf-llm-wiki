@@ -1,6 +1,6 @@
 ---
 source_type: notes
-source_path: raw/local-notes/post/2025-06-18-reinforcementlearning/index.md
+source_path: raw/notes/post/2025-06-18-reinforcement-learning/index.md
 title: 强化学习
 author: wangzf
 published_at: 2025-06-18
@@ -16,8 +16,8 @@ status: summarized
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/local-notes/post/2025-06-18-reinforcementlearning/index]]
-- 来源：`raw/local-notes/post/2025-06-18-reinforcementlearning/index.md`
+- 原文：[[raw/notes/post/2025-06-18-reinforcement-learning/index]]
+- 来源：`raw/notes/post/2025-06-18-reinforcement-learning/index.md`
 - 归属主题：强化学习
 
 ## 价值是什么

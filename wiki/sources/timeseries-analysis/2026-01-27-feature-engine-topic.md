@@ -16,8 +16,8 @@ status: summarized
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/notes/post/2026-01-27-feature-engine-topic/index]]
-- 来源：`raw/notes/post/2026-01-27-feature-engine-topic/index.md`
+- 原文：[[raw/notes/post/2026-01-27-feature-engineering-topic/index]]
+- 来源：`raw/notes/post/2026-01-27-feature-engineering-topic/index.md`
 - 归属主题：时间序列
 
 ## 价值是什么

@@ -2,7 +2,7 @@
 
 执行约束：
 - 保留原始目录，不覆盖、不删除旧文档，除非计划里明确要求迁移
-- `raw/` 是唯一摄取入口，本地旧文档统一进入 `raw/local-notes/`
+- `raw/` 是唯一摄取入口，本地旧文档统一进入 `raw/notes/`
 - 先补 `wiki/sources/`，再补 `wiki/indexes/`，最后补 `wiki/concepts/`
 - 新页面统一使用普通 Markdown 和 frontmatter
 - 不保留旧站点里的 `<style>`、`<details>`、Hugo 特有目录块
@@ -12,7 +12,7 @@
 
 请直接完成这些事情：
 
-1. 创建或更新 `raw/local-notes/` 下的专题清单
+1. 创建或更新 `raw/notes/` 下的专题清单
 2. 按计划创建来源卡、索引页、概念页
 3. 必要时复制图片到 `raw/assets/attachments/<topic-slug>/`
 4. 修正互链、来源路径和目录说明

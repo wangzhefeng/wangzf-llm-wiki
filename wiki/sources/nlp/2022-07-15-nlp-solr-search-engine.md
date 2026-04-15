@@ -1,6 +1,6 @@
 ---
 source_type: notes
-source_path: raw/local-notes/llm/nlp-tasks/2022-07-15-nlp-solr-search-engine/index.md
+source_path: raw/notes/llm/nlp-tasks/2022-07-15-nlp-solr-search-engine/index.md
 title: NLP-Solr 搜索引擎
 author: wangzf
 published_at: 2022-04-05
@@ -18,8 +18,8 @@ status: summarized
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/local-notes/llm/nlp-tasks/2022-07-15-nlp-solr-search-engine/index.md]]
-- 来源：`raw/local-notes/llm/nlp-tasks/2022-07-15-nlp-solr-search-engine/index.md`
+- 原文：[[raw/notes/llm/nlp-tasks/2022-07-15-nlp-solr-search-engine/index.md]]
+- 来源：`raw/notes/llm/nlp-tasks/2022-07-15-nlp-solr-search-engine/index.md`
 - 主题：LLM 本地知识笔记
 
 ## 价值是什么

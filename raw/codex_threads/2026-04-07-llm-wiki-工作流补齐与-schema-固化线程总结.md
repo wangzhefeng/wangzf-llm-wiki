@@ -226,7 +226,7 @@ status: inbox
 # 9. 遗留问题
 
 - 还没解决的问题：
-  - `timeseries`、`operationsresearch` 的专题问题地图尚未分别建立。
+  - `timeseries`、`operations-research` 的专题问题地图尚未分别建立。
   - 新 query / log / synthesis 工作流还缺更多真实样例。
 - 还没验证的假设：
   - `outputs/logs/` 是否会成为稳定使用的时间导航层，未明确。

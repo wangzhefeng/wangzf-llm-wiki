@@ -1,32 +1,22 @@
 ---
-source_type: notes
-source_path: raw/local-notes/llm/2024-08-14-llm-models-api/index.md
 title: LLM 调用
-author: wangzf
-published_at: 2024-08-14
-created_at: 2026-04-09
-topics:
-- llm
-- shared
-related_concepts:
-- 大语言模型
-- 大语言模型总索引
+created: 2024-08-14
+updated: 2026-04-15
+type: source
+tags:
+  - llm-theory
+sources:
+  - raw/notes/llm-theory/2024-08-14-llm-models-api
 status: summarized
 ---
-# 来源卡：LLM 调用
+## 内容摘要
+<details><summary>目录</summary><p> - [基本概念](#基本概念) - [Prompt](#prompt) - [Temperature](#temperature) - [System Prompt](#system-prompt) - [LLM 获取方式](#llm-获取方式)
 
-## 这份材料讲了什么
+## 关键要点
+- 在搭建的个人知识库助手项目中，一般将 `temperature` 设置为 0，
+- 在产品智能客服、科研论文写作等场景中，同样更需要稳定性而不是创造性；
+- 但在个性化 AI、创意营销文案生成等场景中，就更需要创意性，
 
-- 原文：[[raw/local-notes/llm/2024-08-14-llm-models-api/index.md]]
-- 来源：`raw/local-notes/llm/2024-08-14-llm-models-api/index.md`
-- 主题：LLM 本地知识笔记
-
-## 价值是什么
-
-- 为 LLM 主题提供可追溯本地来源，支持后续概念页持续编译。
-
-## 连到哪些概念
-
-- [[大语言模型]]
-- [[大语言模型总索引]]
-- [[大语言模型阅读地图]]
+## 来源信息
+- 原始文件：2024-08-14-llm-models-api
+- 来源类型：notes

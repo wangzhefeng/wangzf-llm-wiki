@@ -1,32 +1,22 @@
 ---
-source_type: notes
-source_path: raw/local-notes/llm/2024-09-23-llm-embedding/index.md
 title: LLM Embedding 调用
-author: wangzf
-published_at: 2024-09-23
-created_at: 2026-04-09
-topics:
-- llm
-- shared
-related_concepts:
-- Embedding
-- 大语言模型总索引
+created: 2024-09-23
+updated: 2026-04-15
+type: source
+tags:
+  - llm-theory
+sources:
+  - raw/notes/llm-theory/2024-09-23-llm-embedding
 status: summarized
 ---
-# 来源卡：LLM Embedding 调用
+## 内容摘要
+<details><summary>目录</summary><p> - [Embedding 模型使用](#embedding-模型使用) - [OpenAI API](#openai-api) - [模型简介](#模型简介) - [使用示例](#使用示例) - [文心千帆 API](#文心千帆-api) - [模型简介](#模型简介-1)
 
-## 这份材料讲了什么
+## 关键要点
+- MTEB 得分为 Embedding model 分类、聚类、配对等八个任务的平均得分
+- MIRACL 得分为 Embedding model 在检索任务上的平均得分
+- `text-embedding-3-large` 有最好的性能和最贵的价格，
 
-- 原文：[[raw/local-notes/llm/2024-09-23-llm-embedding/index.md]]
-- 来源：`raw/local-notes/llm/2024-09-23-llm-embedding/index.md`
-- 主题：LLM 本地知识笔记
-
-## 价值是什么
-
-- 为 LLM 主题提供可追溯本地来源，支持后续概念页持续编译。
-
-## 连到哪些概念
-
-- [[Embedding]]
-- [[大语言模型总索引]]
-- [[大语言模型阅读地图]]
+## 来源信息
+- 原始文件：2024-09-23-llm-embedding
+- 来源类型：notes

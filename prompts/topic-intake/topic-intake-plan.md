@@ -3,7 +3,7 @@
 背景约束：
 - 当前知识库采用 `raw -> wiki/sources -> wiki/indexes -> wiki/concepts -> outputs` 分层
 - `raw/` 是唯一摄取入口
-- 本地旧文档统一放在 `raw/local-notes/`
+- 本地旧文档统一放在 `raw/notes/`
 - 原始目录优先保留，不要直接覆盖或拆散旧文档
 - 新 wiki 页面统一使用普通 Markdown 和 frontmatter
 - 新页面不要沿用旧站点里的 `<style>`、`<details>`、Hugo 特有结构
@@ -26,7 +26,7 @@
 ## Key Changes
 
 - 列出这轮要新增或更新的目录、索引页、来源卡、概念页
-- 明确是否新增 `raw/local-notes/<topic>/` 入口文件
+- 明确是否新增 `raw/notes/<topic>/` 入口文件
 - 明确图片迁移规则
 - 明确旧目录是否保留
 

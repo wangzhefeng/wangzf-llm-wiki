@@ -1,6 +1,6 @@
 ---
 source_type: notes
-source_path: raw/local-notes/deep-learning/unsupervised/gen/2022-07-15-dl-gen-neural-style-transfer/index.md
+source_path: raw/notes/deep-learning/unsupervised/gen/2022-07-15-dl-gen-neural-style-transfer/index.md
 title: 神经风格迁移
 author: wangzf
 published_at: 2022-07-15
@@ -17,8 +17,8 @@ status: summarized
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/local-notes/deep-learning/unsupervised/gen/2022-07-15-dl-gen-neural-style-transfer/index.md]]
-- 来源：`raw/local-notes/deep-learning/unsupervised/gen/2022-07-15-dl-gen-neural-style-transfer/index.md`
+- 原文：[[raw/notes/deep-learning/unsupervised/gen/2022-07-15-dl-gen-neural-style-transfer/index.md]]
+- 来源：`raw/notes/deep-learning/unsupervised/gen/2022-07-15-dl-gen-neural-style-transfer/index.md`
 - 主题：神经风格迁移
 - 类型：本地历史笔记（deep learning）
 

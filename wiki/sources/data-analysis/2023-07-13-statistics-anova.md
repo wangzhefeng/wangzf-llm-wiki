@@ -1,6 +1,6 @@
 ---
 source_type: notes
-source_path: raw/local-notes/data-analysis/statistics/2023-07-13-statistics-anova/index.md
+source_path: raw/notes/data-analysis/statistics/2023-07-13-statistics-anova/index.md
 title: 2023-07-13-statistics-anova
 author: wangzf
 published_at: 2023-07-13
@@ -16,7 +16,7 @@ status: summarized
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/local-notes/data-analysis/statistics/2023-07-13-statistics-anova/index.md]]
+- 原文：[[raw/notes/data-analysis/statistics/2023-07-13-statistics-anova/index.md]]
 ---
 
 ## 价值是什么

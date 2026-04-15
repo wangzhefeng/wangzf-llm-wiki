@@ -1,6 +1,6 @@
 ---
 source_type: notes
-source_path: raw/local-notes/deep-learning/2022-12-01-dl-experience/index.md
+source_path: raw/notes/deep-learning/2022-12-01-dl-experience/index.md
 title: 经验总结
 author: wangzf
 published_at: 2022-12-01
@@ -17,8 +17,8 @@ status: summarized
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/local-notes/deep-learning/2022-12-01-dl-experience/index.md]]
-- 来源：`raw/local-notes/deep-learning/2022-12-01-dl-experience/index.md`
+- 原文：[[raw/notes/deep-learning/2022-12-01-dl-experience/index.md]]
+- 来源：`raw/notes/deep-learning/2022-12-01-dl-experience/index.md`
 - 主题：经验总结
 - 类型：本地历史笔记（deep learning）
 

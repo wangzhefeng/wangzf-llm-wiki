@@ -38,7 +38,7 @@
 - `intake/image-source-intake.md`
   图片来源沉淀模板。适合关键截图、图表、示意图。
 - `intake/local-note-source-intake.md`
-  本地历史文档沉淀模板。适合 `raw/local-notes/` 中已有原文的结构化提升。
+  本地历史文档沉淀模板。适合 `raw/notes/` 中已有原文的结构化提升。
 
 ## 2. 查询研究类
 

@@ -1,6 +1,6 @@
 ---
 source_type: notes
-source_path: raw/local-notes/data-analysis/statistics/2023-07-15-sobol-sensitivity-analysis/index.md
+source_path: raw/notes/data-analysis/statistics/2023-07-15-sobol-sensitivity-analysis/index.md
 title: 2023-07-15-sobol-sensitivity-analysis
 author: wangzf
 published_at: 2023-07-15
@@ -16,7 +16,7 @@ status: summarized
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/local-notes/data-analysis/statistics/2023-07-15-sobol-sensitivity-analysis/index.md]]
+- 原文：[[raw/notes/data-analysis/statistics/2023-07-15-sobol-sensitivity-analysis/index.md]]
 ---
 
 ## 价值是什么

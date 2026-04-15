@@ -1,35 +1,22 @@
 ---
-source_type: notes
-source_path: raw/local-notes/llm/2025-07-05-llm-finetuning/index.md
 title: 模型微调
-author: wangzf
-published_at: 2025-07-05
-created_at: 2026-04-09
-topics:
-- llm
-- shared
-related_concepts:
-- 模型微调
-- SFT (监督微调)
-- 模型量化
-- 大语言模型总索引
+created: 2026-04-15
+updated: 2026-04-15
+type: source
+tags:
+  - llm-post-training
+sources:
+  - raw/notes/llm-post-training/2025-07-05-llm-finetuning
 status: summarized
 ---
-# 来源卡：模型微调
+## 内容摘要
+系统梳理大模型微调、迁移学习、PEFT 与适配方法的核心思路。
 
-## 这份材料讲了什么
+## 关键要点
+- <details><summary>目录</summary><p>
+- - [预训练模型](#预训练模型)
+- - [Adaptation](#adaptation)
 
-- 原文：[[raw/papers/2023-05-21-how-to-read-papers/index.md]]
-- 来源：`raw/local-notes/llm/2025-07-05-llm-finetuning/index.md`
-- 归属主题：大语言模型
-
-## 价值是什么
-
-- 将 post 历史内容并入主题知识链，支持主题索引与概念页回溯。
-
-## 连到哪些概念
-
-- [[模型微调]]
-- [[模型微调]]
-- [[模型量化]]
-- [[大语言模型总索引]]
+## 来源信息
+- 原始文件：raw/notes/llm-post-training/2025-07-05-llm-finetuning
+- 来源类型：notes

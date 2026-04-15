@@ -28,7 +28,7 @@ status: linked
 
 ## 范围
 
-- 主域：AI/ML 研究与工程（重点：`llm`、`timeseries`、`operationsresearch` 等）。
+- 主域：AI/ML 研究与工程（重点：`llm`、`timeseries`、`operations-research` 等）。
 - 允许扩展：与主域强相关的工程实践、工具链、数据分析方法。
 - 不追求“百科全书式覆盖”；追求“对当前任务可用、可演进”。
 

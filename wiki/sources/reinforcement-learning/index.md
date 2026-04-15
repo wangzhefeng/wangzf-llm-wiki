@@ -5,7 +5,7 @@ topics:
 - shared
 status: inbox
 ---
-# wiki/sources/reinforcementlearning
+# wiki/sources/reinforcement-learning
 
 本目录存放强化学习主题的来源摘要卡。入口建议从：[[强化学习总索引]]。
 
@@ -16,7 +16,7 @@ status: inbox
 
 > 本区块由脚本生成：用于避免来源卡成为孤页（仅统计 wikilinks）。
 
-- [[wiki/sources/reinforcement-learning/2025-06-18-reinforcementlearning]]
+- [[wiki/sources/reinforcement-learning/2025-06-18-reinforcement-learning]]
 - [[wiki/sources/reinforcement-learning/2026-04-06-AI训练营强化学习-阿里云天池]]
 - [[wiki/sources/reinforcement-learning/2026-04-06-DeepSeek 背后的数学原理：深入探究群体相对策略优化 (GRPO)]]
 - [[wiki/sources/reinforcement-learning/2026-04-06-DeepSeek-R1 技术剖析：没有强化学习基础也能看懂的 PPO & GRPO]]

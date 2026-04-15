@@ -1,6 +1,6 @@
 ---
 source_type: notes
-source_path: raw/local-notes/post/2026-03-05-electricity-trading/index.md
+source_path: raw/notes/post/2026-03-05-electricity-trading/index.md
 title: 电力交易
 author: wangzf
 published_at: 2026-03-05
@@ -17,7 +17,7 @@ status: summarized
 ## 这份材料讲了什么
 
 - 原文：[[raw/papers/2023-05-21-how-to-read-papers/index.md]]
-- 来源：`raw/local-notes/post/2026-03-05-electricity-trading/index.md`
+- 来源：`raw/notes/post/2026-03-05-electricity-trading/index.md`
 - 归属主题：运筹优化
 
 ## 价值是什么

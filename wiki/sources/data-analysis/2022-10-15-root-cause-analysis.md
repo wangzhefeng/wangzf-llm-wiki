@@ -1,6 +1,6 @@
 ---
 source_type: notes
-source_path: raw/local-notes/data-analysis/2022-10-15-root-cause-analysis/index.md
+source_path: raw/notes/data-analysis/2022-10-15-root-cause-analysis/index.md
 title: 2022-10-15-root-cause-analysis
 author: wangzf
 published_at: 2022-10-15
@@ -15,7 +15,7 @@ status: summarized
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/local-notes/data-analysis/2022-10-15-root-cause-analysis/index.md]]
+- 原文：[[raw/notes/data-analysis/2022-10-15-root-cause-analysis/index.md]]
 ---
 
 ## 价值是什么

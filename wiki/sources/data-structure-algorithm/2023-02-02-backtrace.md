@@ -1,6 +1,6 @@
 ---
 source_type: notes
-source_path: raw/local-notes/data-structure-algorithm/2023-02-02-backtrace/index.md
+source_path: raw/notes/data-structure-algorithm/2023-02-02-backtrace/index.md
 title: 2023-02-02-backtrace
 author: wangzf
 published_at: 2023-02-02
@@ -16,7 +16,7 @@ status: summarized
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/local-notes/data-structure-algorithm/2023-02-02-backtrace/index.md]]
+- 原文：[[raw/notes/data-structure-algorithm/2023-02-02-backtrace/index.md]]
 - 原始标题：回溯算法
 - 主题归类：回溯算法
 - 来源类型：本地历史文档（local note）

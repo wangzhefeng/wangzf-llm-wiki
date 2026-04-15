@@ -20,7 +20,7 @@ topics:
   - 强化学习
 ---
 
-![[raw/assets/attachments/reinforcementlearning/robots-1-1960.jpg]]
+![[raw/assets/attachments/reinforcement-learning/robots-1-1960.jpg]]
 
 A powerful new class of large language models is making it possible for machines to write, code, draw and create with credible and sometimes superhuman results.
 
@@ -40,7 +40,7 @@ Generative AI has the same “why now” as AI more broadly: better models, more
 
 **Wave 2: The race to scale (2015-Today)** A landmark paper by Google Research ([Attention is All You Need](https://arxiv.org/abs/1706.03762)) describes a new neural network architecture for natural language understanding called transformers that can generate superior quality language models while being more parallelizable and requiring significantly less time to train. These models are few-shot learners and can be customized to specific domains relatively easily.
 
-![[raw/assets/attachments/reinforcementlearning/large-ai-models-vs-human-performance-920.png]]
+![[raw/assets/attachments/reinforcement-learning/large-ai-models-vs-human-performance-920.png]]
 
 As AI models have gotten progressively larger they have begun to surpass major human performance benchmarks. Sources: © The Economist Newspaper Limited, London, June 11th 2022. All rights reserved; SCIENCE.ORG/CONTENT/ARTICLE/COMPUTERS-ACE-IQ-TESTS-STILL-MAKE-DUMB-MISTAKES-CAN-DIFFERENT-TESTS-HELP
 
@@ -52,7 +52,7 @@ Despite all the fundamental research progress, these models are not widespread. 
 
 For developers who had been starved of access to LLMs, the floodgates are now open for exploration and application development. Applications begin to bloom.
 
-![[raw/assets/attachments/reinforcementlearning/sonya_cute_robots_singing_music_fantasy_cityscape_with_flowers__508554ad-db40-421d-87b6-4a188604f226.png]]
+![[raw/assets/attachments/reinforcement-learning/sonya_cute_robots_singing_music_fantasy_cityscape_with_flowers__508554ad-db40-421d-87b6-4a188604f226.png]]
 
 Illustration generated with Midjourney
 
@@ -64,7 +64,7 @@ Just as mobile unleashed new types of applications through new capabilities like
 
 Below is a schematic that describes the platform layer that will power each category and the potential types of applications that will be built on top.
 
-![[raw/assets/attachments/reinforcementlearning/genai-landscape-8.png]]
+![[raw/assets/attachments/reinforcement-learning/genai-landscape-8.png]]
 
 **Models**
 
@@ -77,7 +77,7 @@ Below is a schematic that describes the platform layer that will power each cate
 
 The below chart illustrates a timeline for how we might expect to see fundamental models progress and the associated applications that become possible. 2025 and beyond is just a guess.
 
-![[raw/assets/attachments/reinforcementlearning/genai-timeline-7.png]]
+![[raw/assets/attachments/reinforcement-learning/genai-timeline-7.png]]
 
 **Applications**  
 Here are some of the applications we are excited about. There are far more than we have captured on this page, and we are enthralled by the creative applications that founders and developers are dreaming up.
@@ -90,7 +90,7 @@ Here are some of the applications we are excited about. There are far more than 
 - **Media/Advertising:** Imagine the potential to automate agency work and optimize ad copy and creative on the fly for consumers. Great opportunities here for multi-modal generation that pairs sell messages with complementary visuals.
 - **Design**: Prototyping digital and physical products is a labor-intensive and iterative process. High-fidelity renderings from rough sketches and prompts are already a reality. As 3-D models become available the generative design process will extend up through manufacturing and production—text to object. Your next iPhone app or sneakers may be designed by a machine.
 - **Social media and digital communities:** Are there new ways of expressing ourselves using generative tools? New applications like Midjourney are creating new social experiences as consumers learn to create in public.
-![[raw/assets/attachments/reinforcementlearning/randobot_How_to_make_an_amazing_generative_ai_app_in_an_early_modern_style_1-920.jpg]]
+![[raw/assets/attachments/reinforcement-learning/randobot_How_to_make_an_amazing_generative_ai_app_in_an_early_modern_style_1-920.jpg]]
 
 Illustration generated with Midjourney
 
@@ -178,7 +178,7 @@ News
 
 ](https://sequoiacap.com/article/partnering-with-hugging-face-a-machine-learning-transformation/?itm_medium=related-content&itm_source=sequoiacap.com)
 
-[![[raw/assets/attachments/reinforcementlearning/61e56726a2a07f23275c32eb_Chris-blog-post-1-protection.jpg]]](https://sequoiacap.com/article/partnering-with-glean-organizing-knowledge-work/?itm_medium=related-content&itm_source=sequoiacap.com)
+[![[raw/assets/attachments/reinforcement-learning/61e56726a2a07f23275c32eb_Chris-blog-post-1-protection.jpg]]](https://sequoiacap.com/article/partnering-with-glean-organizing-knowledge-work/?itm_medium=related-content&itm_source=sequoiacap.com)
 
 ## [Partnering with Glean: Organizing Knowledge Work](https://sequoiacap.com/article/partnering-with-glean-organizing-knowledge-work/?itm_medium=related-content&itm_source=sequoiacap.com)
 

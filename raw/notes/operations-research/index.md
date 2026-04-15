@@ -17,4 +17,4 @@ topics:
 
 ## 文档
 
-- Wiki 入口：[[wiki/indexes/operationsresearch/运筹优化算法总索引]]
+- Wiki 入口：[[wiki/indexes/operations-research/运筹优化算法总索引]]

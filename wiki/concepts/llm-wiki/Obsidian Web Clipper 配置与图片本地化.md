@@ -81,7 +81,7 @@ Karpathy 在 LLM Wiki 模式中强调：**网页随时可能挂掉或修改，�
 | 设置项 | 推荐值 | 说明 |
 |--------|--------|------|
 | **附件文件夹路径** | `raw/assets/attachments/` | 与当前知识库结构对齐 |
-| **附件子文件夹** | "基于当前文件路径" 或按专题手动分子目录 | 建议按专题分子目录，如 `knowledge-base/`、`timeseries/`、`operationsresearch/` |
+| **附件子文件夹** | "基于当前文件路径" 或按专题手动分子目录 | 建议按专题分子目录，如 `knowledge-base/`、`timeseries/`、`operations-research/` |
 | **使用双括号链接** | ✅ 开启 | 保持 Obsidian 链接风格一致性 |
 
 这样下载的图片会自动整理到知识库已有的附件结构中，而不是散落在 vault 根目录。

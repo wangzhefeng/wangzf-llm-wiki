@@ -7,7 +7,7 @@ subtitle: Reinforcement Learning
 author: wangzf
 date: '2025-06-18'
 description: 概览强化学习的基本框架，并串联 RLHF、PPO 与 GRPO 等方法。
-slug: reinforcementlearning
+slug: reinforcement-learning
 categories:
   - reinforcement-learning
 tags:

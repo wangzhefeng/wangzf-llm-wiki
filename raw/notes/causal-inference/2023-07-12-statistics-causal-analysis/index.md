@@ -13,6 +13,12 @@ status: inbox
 topics:
   - causal-inference
   - 因果推断
+related_concepts:
+  - Causal Analysis
+  - A/B Testing
+  - Propensity Score Matching
+  - DoWhy
+  - Causal Inference Tools
 ---
 
 

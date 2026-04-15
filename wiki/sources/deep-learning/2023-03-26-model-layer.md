@@ -1,6 +1,6 @@
 ---
 source_type: notes
-source_path: raw/local-notes/deep-learning/2023-03-26-model-layer/index.md
+source_path: raw/notes/deep-learning/2023-03-26-model-layer/index.md
 title: 模型层
 author: wangzf
 published_at: 2023-03-26
@@ -17,8 +17,8 @@ status: summarized
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/local-notes/deep-learning/2023-03-26-model-layer/index.md]]
-- 来源：`raw/local-notes/deep-learning/2023-03-26-model-layer/index.md`
+- 原文：[[raw/notes/deep-learning/2023-03-26-model-layer/index.md]]
+- 来源：`raw/notes/deep-learning/2023-03-26-model-layer/index.md`
 - 主题：模型层
 - 类型：本地历史笔记（deep learning）
 

@@ -22,7 +22,7 @@ topics:
 
 ### How to align LLMs with limited hardware and minimal complexity...
 
-![[raw/assets/attachments/reinforcementlearning/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fdee66741-b7e3-4284-8c79-96b5abc301b5_2394x1362.png]]
+![[raw/assets/attachments/reinforcement-learning/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fdee66741-b7e3-4284-8c79-96b5abc301b5_2394x1362.png]]
 
 (from \[1, 2, 6, 9\])
 
@@ -36,13 +36,13 @@ To fully understand DPO, we first need to lay the groundwork for this technique 
 
 #### Preference Data and Reward Models
 
-![[raw/assets/attachments/reinforcementlearning/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F609d472d-1a82-4fd4-8c25-fe4e7253ee13_610x1118.png]]
+![[raw/assets/attachments/reinforcement-learning/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F609d472d-1a82-4fd4-8c25-fe4e7253ee13_610x1118.png]]
 
 (from \[2\])
 
 Human preferences are a pivotal component of the LLM post-training process. Preference data usually has the above form, where we have a single prompt, two responses (or completions) to this prompt, and a preference— *assigned either by a human annotator or an [LLM judge](https://cameronrwolfe.substack.com/p/llm-as-a-judge)* —for these completions. The preference simply indicates which of the two responses is better than the other.
 
-![[raw/assets/attachments/reinforcementlearning/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F99f3ffbc-9104-419f-9ccf-3902425a85d8_1580x562.png]]
+![[raw/assets/attachments/reinforcement-learning/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F99f3ffbc-9104-419f-9ccf-3902425a85d8_1580x562.png]]
 
 Basic structure of a preference dataset
 
@@ -50,7 +50,7 @@ This concept is formalized via the expression above, which defines a preference 
 
 **The Bradley-Terry Model of Preference** is the most popular [statistical model](https://en.wikipedia.org/wiki/Bradley%E2%80%93Terry_model) to use for modeling preferences within the LLM domain. At a high-level, Bradley-Terry takes two items (e.g., a chosen and rejected completion) and an associated reward for each of these items as input. Using this information, we can express the probability that one item is preferred over another as shown below. Here, we assume that the items we are comparing are structured as a preference pair.
 
-![[raw/assets/attachments/reinforcementlearning/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F6c9a5683-a059-4cce-a202-c46132d8fb36_1988x476.png]]
+![[raw/assets/attachments/reinforcement-learning/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F6c9a5683-a059-4cce-a202-c46132d8fb36_1988x476.png]]
 
 Pairwise probability with the Bradley-Terry model
 
@@ -58,7 +58,7 @@ Pairwise probability with the Bradley-Terry model
 
 **Reward Models.** The reward in the expression above is usually predicted by a reward model (RM). An RM is a specialized LLM— *implemented by adding an extra linear classification head to the standard decoder-only transformer (shown below)* —that takes a prompt-completion pair as input and outputs a (scalar) preference score.
 
-![[raw/assets/attachments/reinforcementlearning/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F0757f3b6-d8a3-49da-80dc-74b9bcb9a1aa_1716x890.png]]
+![[raw/assets/attachments/reinforcement-learning/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F0757f3b6-d8a3-49da-80dc-74b9bcb9a1aa_1716x890.png]]
 
 The architecture of a reward model (RM)
 
@@ -76,7 +76,7 @@ Given a fixed preference dataset, we can train an RM to produce scores that refl
 
 #### LLM Training & Alignment
 
-![[raw/assets/attachments/reinforcementlearning/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F989d7f58-c669-4a1c-bbe5-989f6ca31b48_2424x528.png]]
+![[raw/assets/attachments/reinforcement-learning/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F989d7f58-c669-4a1c-bbe5-989f6ca31b48_2424x528.png]]
 
 (from \[2, 6, 9\])
 
@@ -89,7 +89,7 @@ Given that this overview will focus upon DPO, we need to understand where DPO fi
 
 As we can see, each of these training stages play a key purpose in the process of creating a high-quality LLM. These training techniques can be grouped into the broad categories of pretraining and post-training— *or everything that comes after pretraining*. Pretraining is always the first step of training an LLM, but the post-training process can vary widely depending on the LLM being trained. The same techniques— *i.e., SFT, RLHF and RLVR* —are usually used, but their exact ordering and setup can change. See the image below for several examples of LLM post-training pipelines that each adopt a slightly different setup.
 
-![[raw/assets/attachments/reinforcementlearning/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fbff0107e-aac1-4a55-9363-8bcaa029e644_2126x1106.png]]
+![[raw/assets/attachments/reinforcement-learning/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fbff0107e-aac1-4a55-9363-8bcaa029e644_2126x1106.png]]
 
 Post-training for popular open LLMs (from \[6, 7, 8\])
 
@@ -101,7 +101,7 @@ Post-training for popular open LLMs (from \[6, 7, 8\])
 
 The third step of this process usually happens in an online fashion, *meaning that we are generating completions from our policy to be scored by the RM during the training process* [^2]. Online RL training is difficult to setup and orchestrate efficiently \[10\].
 
-![[raw/assets/attachments/reinforcementlearning/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fabf749db-7745-49a4-98c0-e67d5a9dfbe1_1002x440.png]]
+![[raw/assets/attachments/reinforcement-learning/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fabf749db-7745-49a4-98c0-e67d5a9dfbe1_1002x440.png]]
 
 Reinforcement learning from human feedback (adapted from \[6\])
 
@@ -113,7 +113,7 @@ Despite its effectiveness, PPO has several downsides. In addition to being an on
 
 **What happens during RL training?** During the RL training step of RLHF, we have a learned reward model available, and we want to maximize the rewards assigned by this reward model to our LLM’s outputs. Additionally, we want to avoid “drifting” too far away from our original model during training. This optimization process is usually formulated via the objective shown below.
 
-![[raw/assets/attachments/reinforcementlearning/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fe0d7ab5f-bad3-4416-a861-5c720fb976b9_2456x654.png]]
+![[raw/assets/attachments/reinforcement-learning/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fe0d7ab5f-bad3-4416-a861-5c720fb976b9_2456x654.png]]
 
 The standard RLHF objective
 
@@ -128,7 +128,7 @@ At a high level, there are two key reasons that PPO-based RLHF is so complex, ex
 
 The reward model is an additional LLM that we must train separately and store in memory during training. Additionally, the use of PPO for training introduces another copy of the model— *the value function* —that we must store in memory, as well as all the addition difficulties of RL-based preference tuning. Therefore, if we could simply avoid the separate reward model and the use of RL, *many of the common headaches associated with PPO-based RLHF would be avoided as well*!
 
-![[raw/assets/attachments/reinforcementlearning/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Ffcdacc07-ab94-46bd-bcb6-fb757eda6777_2394x896.png]]
+![[raw/assets/attachments/reinforcement-learning/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Ffcdacc07-ab94-46bd-bcb6-fb757eda6777_2394x896.png]]
 
 (from \[1, 2, 6, 9\])
 
@@ -140,7 +140,7 @@ DPO addresses the RLHF objective by introducing a novel reparameterization of th
 
 Because DPO does not require training a separate, explicit reward model, some practitioners mistakenly believe that DPO “avoids” reward modeling altogether and directly optimizes the policy via RLHF without any RL or reward model. In reality, DPO is still a reward modeling approach: *its training objective and process are identical to those of traditional reward modeling*. In DPO, we are indeed training a reward model— *the only difference is that this reward model is implicit within the policy itself*. By training our policy to optimize this implicit reward, DPO enables us to find a policy that optimally solves the RLHF objective as well.
 
-![[raw/assets/attachments/reinforcementlearning/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F89c5d093-f121-4698-8efd-7205356da4f8_1820x630.png]]
+![[raw/assets/attachments/reinforcement-learning/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F89c5d093-f121-4698-8efd-7205356da4f8_1820x630.png]]
 
 (from \[1\])
 
@@ -150,7 +150,7 @@ As depicted above, DPO avoids external reward models, online sampling, and RL as
 
 Throughout LLM post-training, there are many cases where we optimize our model subject to a KL divergence constraint. For example, the canonical optimization objective used within RLHF has the form shown below.
 
-![[raw/assets/attachments/reinforcementlearning/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fc7464e10-d669-4f6b-ab83-f1980b8918d4_2416x436.png]]
+![[raw/assets/attachments/reinforcement-learning/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fc7464e10-d669-4f6b-ab83-f1980b8918d4_2416x436.png]]
 
 The standard RLHF objective with a KL constraint
 
@@ -158,7 +158,7 @@ As we can see, we want to maximize rewards while minimizing a penalty term— *t
 
 **KL divergence** is a concept from [information theory](https://en.wikipedia.org/wiki/Information_theory) that measures how different [^4] a probability distribution is from some reference distribution. For a discrete probability distribution, the KL divergence has the form shown below. Notably, KL divergence is not symmetric— *the order of arguments matters*.
 
-![[raw/assets/attachments/reinforcementlearning/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F298d0b86-f69b-42c3-87fd-ac8b88f6ba74_1456x510.png]]
+![[raw/assets/attachments/reinforcement-learning/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F298d0b86-f69b-42c3-87fd-ac8b88f6ba74_1456x510.png]]
 
 KL divergence for continuous and discrete probability distributions
 
@@ -166,7 +166,7 @@ In the case of a continuous probability distribution, we can formulate the KL di
 
 **Relation to LLMs.** In the LLM domain, KL divergence is commonly used to compare two LLMs or policies. Typically, we will compare the policy that we are currently trying to train to a reference policy. For example, in the case of DPO, we begin with an SFT policy (i.e., an LLM that has already undergone both pretraining and SFT), then optimize the standard RLHF objective, where the KL divergence is computed between this SFT (reference) policy and the policy that we are training. Specifically, the form of this KL divergence would be:
 
-![[raw/assets/attachments/reinforcementlearning/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F9812728e-a0f6-4aa2-9ac2-ed46a76ed056_2074x728.png]]
+![[raw/assets/attachments/reinforcement-learning/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F9812728e-a0f6-4aa2-9ac2-ed46a76ed056_2074x728.png]]
 
 KL divergence between two LLMs
 
@@ -174,7 +174,7 @@ This form of the KL divergence looks at the ratio of probabilities predicted by 
 
 **Estimating KL divergence in practice.** We usually want to estimate the KL divergence between distributions predicted by our current policy and a fixed reference policy (e.g., the SFT model [^5]) during RL training. Intuitively, adding this constraint to the reward used during RL training (as shown below) ensures that the policy being trained does not become too different from the reference policy.
 
-![[raw/assets/attachments/reinforcementlearning/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F9e0a1a60-bfe2-4225-b728-183c5f6e36c1_2104x256.png]]
+![[raw/assets/attachments/reinforcement-learning/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F9e0a1a60-bfe2-4225-b728-183c5f6e36c1_2104x256.png]]
 
 In practice, we usually approximate the KL divergence, which— *as we will see* —is simple to do. However, there are [several different options](http://joschu.net/blog/kl-approx.html) for how we perform this approximation. Usually, approximating KL divergence uses the expectation (continuous) form of the KL divergence. As outlined above, this form of the KL divergence simply subtracts the log probabilities of the two distributions from each other and takes an expectation of this difference. Given that token log probabilities are already used in various aspects of RL training (e.g., [the PPO objective](https://rlhfbook.com/c/11-policy-gradients.html)), such an expression is pretty easy for us to compute!
 
@@ -212,7 +212,7 @@ Having established the fundamentals of LLM training and the role of DPO in this 
 
 #### TL;DR: What is DPO?
 
-![[raw/assets/attachments/reinforcementlearning/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F7107abbb-358e-48d4-a200-64ca6b5d1d72_2050x1092.png]]
+![[raw/assets/attachments/reinforcement-learning/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F7107abbb-358e-48d4-a200-64ca6b5d1d72_2050x1092.png]]
 
 DPO training loss (from \[1\])
 
@@ -227,7 +227,7 @@ This loss function is simple to optimize over an offline preference dataset usin
 
 If we study this loss, we will notice that it is very similar to the loss function used to train reward models, which is copied below for reference. The main difference is that we replace the reward model’s output with the implicit reward derived from our policy. As we will see later, the DPO objective— *in addition to adjusting the log probabilities of chosen and rejected completions* —naturally places emphasis upon examples where the LLM’s implicit reward estimate is incorrect.
 
-![[raw/assets/attachments/reinforcementlearning/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fc84db389-0e57-4a3c-808b-d48b28a192d6_1204x392.png]]
+![[raw/assets/attachments/reinforcement-learning/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fc84db389-0e57-4a3c-808b-d48b28a192d6_1204x392.png]]
 
 ([source](https://cameronrwolfe.substack.com/p/reward-models))
 
@@ -235,7 +235,7 @@ If we study this loss, we will notice that it is very similar to the loss functi
 
 Now that we understand the key ideas behind DPO, we need to understand where DPO comes from and how we know that it is solving the same optimization problem as standard RLHF. To do this, we will rely upon theory, meaning that this section will contain many equations. Although the theory can be difficult to parse, understanding it is beneficial for gaining a fundamental grasp of why DPO works. To make the theory digestible, we will break the derivation down step by step with corresponding explanations for each step.
 
-![[raw/assets/attachments/reinforcementlearning/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fae8d328e-9f10-4dd4-8ce7-2f92ca6a7e81_1996x1030.png]]
+![[raw/assets/attachments/reinforcement-learning/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fae8d328e-9f10-4dd4-8ce7-2f92ca6a7e81_1996x1030.png]]
 
 Steps followed to derive the DPO loss function
 
@@ -250,17 +250,17 @@ The above steps start with the objective used to train LLMs in RLHF and ends wit
 
 **(Step One) Optimal solution to RLHF.** To derive the DPO loss, we need to begin from the initial RLHF objective that we are trying to solve, which has been copied again below for readability. However, instead of using our learned reward model `RM` in this notation, we use a general reward function `r(x, y)`. The general reward function can include— *but is not limited to* —our reward model.
 
-![[raw/assets/attachments/reinforcementlearning/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F205b27bd-b961-48a7-a60d-37ddded1a7e5_1594x118.png]]
+![[raw/assets/attachments/reinforcement-learning/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F205b27bd-b961-48a7-a60d-37ddded1a7e5_1594x118.png]]
 
 Standard RLHF objective with a general reward function
 
 Starting with this objective, we can follow the steps below to find a closed-form expression for the optimal solution to this objective. Put simply, we are solving for the value of `π` that actually maximizes the RLHF objective shown below!
 
-![[raw/assets/attachments/reinforcementlearning/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F60bc6255-3a88-4267-aa3f-cc535b8c8751_1890x996.png]]
+![[raw/assets/attachments/reinforcement-learning/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F60bc6255-3a88-4267-aa3f-cc535b8c8751_1890x996.png]]
 
 In the last two steps of the derivation above, we introduce a function `Z(x)`, which we will call the *partition function*. The partition function is defined below. As we can see, the partition function only depends upon the reference policy and the input prompt `x`; there is no dependence upon the current policy or completion.
 
-![[raw/assets/attachments/reinforcementlearning/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F8cfbdd1a-069a-4110-8a74-29a6137bcfe3_1072x190.png]]
+![[raw/assets/attachments/reinforcement-learning/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F8cfbdd1a-069a-4110-8a74-29a6137bcfe3_1072x190.png]]
 
 The partition function used in DPO
 
@@ -268,7 +268,7 @@ The name “partition function” is borrowed from fields like probability theor
 
 Now that we understand the partition function, we will pick up the derivation from the equation in the red box shown above. Specifically, we will extract a portion of this term to define the expression below. We refer to this term as the “optimal policy”— *the reason for this will become clear soon*.
 
-![[raw/assets/attachments/reinforcementlearning/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F41ac0cad-62d2-429a-a305-70d93f4bd2b3_1930x856.png]]
+![[raw/assets/attachments/reinforcement-learning/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F41ac0cad-62d2-429a-a305-70d93f4bd2b3_1930x856.png]]
 
 As mentioned before, the partition function is used as a normalization term for the optimal policy in the above expression. We know that the optimal policy defined above is a valid probability distribution because:
 
@@ -277,21 +277,21 @@ As mentioned before, the partition function is used as a normalization term for 
 
 The first property is obvious— *all components of the optimal policy are non-negative* [^6]. Proof of the second property is provided below, where we directly see how the partition function `Z(x)` is used to normalize the optimal policy distribution.
 
-![[raw/assets/attachments/reinforcementlearning/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F7970973e-d3d9-4465-8bda-85016450fa53_2252x672.png]]
+![[raw/assets/attachments/reinforcement-learning/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F7970973e-d3d9-4465-8bda-85016450fa53_2252x672.png]]
 
 Now that we have defined (and verified the validity of) the optimal policy, we can return to the original expression in which this term appeared and substitute in the expression for the optimal policy. This yields the equation shown below.
 
-![[raw/assets/attachments/reinforcementlearning/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F73fce593-3f5f-4119-bb5c-aba95cfd124c_2018x982.png]]
+![[raw/assets/attachments/reinforcement-learning/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F73fce593-3f5f-4119-bb5c-aba95cfd124c_2018x982.png]]
 
 In the final term above, we see the crux of this derivation: *the standard RLHF objective is minimized by finding the policy π that minimizes the KL divergence with the optimal policy*. Since the KL divergence reaches its minimum value (zero) when the two probability distributions are identical [^7], the solution to this optimization is the optimal policy itself— *hence the name*. Therefore, we can express the optimal solution to the standard RLHF objective as shown in the equation below.
 
-![[raw/assets/attachments/reinforcementlearning/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F8a923561-76b7-4900-8566-15adb58a71d8_2178x680.png]]
+![[raw/assets/attachments/reinforcement-learning/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F8a923561-76b7-4900-8566-15adb58a71d8_2178x680.png]]
 
 Optimally solving the standard RLHF objective
 
 **(Step Two) Deriving an implicit reward.** From here, we can take our expression for the optimal policy shown above and rearrange it to derive an expression for the reward function— *in terms of the optimal policy* —as shown below.
 
-![[raw/assets/attachments/reinforcementlearning/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Ffd3ddc8a-8e48-4573-82f8-1cd97e3f2d6f_1908x1048.png]]
+![[raw/assets/attachments/reinforcement-learning/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Ffd3ddc8a-8e48-4573-82f8-1cd97e3f2d6f_1908x1048.png]]
 
 Now, we have derived a reparameterization of our reward. However, this reward function does not depend upon any explicit reward model. Rather, we estimate the reward purely using probabilities computed from the optimal policy and the reference policy— *we will call this an “implicit” reward*.
 
@@ -301,17 +301,17 @@ Now, the only remaining issue is the `Z(x)` term in our implicit reward. The par
 
 **(Step Three) Bradley-Terry preference model.** Under the Bradley-Terry model of preference, we can compute the probability that a given completion is preferred to another. In most cases, the input to this preference model is the explicit reward— *predicted by a reward model* —for each completion. In the case of DPO, we replace this explicit reward with our implicit reward function; see below.
 
-![[raw/assets/attachments/reinforcementlearning/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F3dbb1b28-93cc-4105-9108-1e3949bb3101_1928x968.png]]
+![[raw/assets/attachments/reinforcement-learning/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F3dbb1b28-93cc-4105-9108-1e3949bb3101_1928x968.png]]
 
 As shown in the final equation above, we now have an expression for the Bradley-Terry model of preference that uses our implicit reward function, where the implicit reward depends only upon the optimal policy and a reference policy. Due to the pairwise nature of the Bradley-Terry expression and the fact that the value of `Z(x)` depends only upon `x` (and not `y`), the `Z(x)` components of the implicit reward function actually cancel out when subtracting the implicit reward for the chosen completion from the implicit reward for the rejected completion.
 
 **(Step Four) Training our policy.** The expression above depends upon the optimal policy, which is fixed— *this optimal policy is the solution to the RLHF objective that we are trying to solve*. From here, we must determine how to derive a training objective that can recover this optimal policy. To do this, DPO substitutes the optimal policy in the above expression with a learned policy, as shown below.
 
-![[raw/assets/attachments/reinforcementlearning/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F50e1e6d3-2cef-4f1c-8567-31877238906b_2294x318.png]]
+![[raw/assets/attachments/reinforcement-learning/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F50e1e6d3-2cef-4f1c-8567-31877238906b_2294x318.png]]
 
 *How can we make these two expressions equal?* We need to train our learned policy! Specifically, we can formulate a ranking loss that optimizes our learned policy to empirically maximize the probability of chosen responses being preferred to rejected responses based on our implicit reward function. By doing this, we ensure that our preference model is accurate and, therefore, matches that of the optimal policy. Besides replacing explicit rewards with implicit rewards, *this loss function is the same exact training objective used by standard reward models*; see below.
 
-![[raw/assets/attachments/reinforcementlearning/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F277b6c07-adf3-4567-8e6f-ebb49820993b_2272x498.png]]
+![[raw/assets/attachments/reinforcement-learning/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F277b6c07-adf3-4567-8e6f-ebb49820993b_2272x498.png]]
 
 The final loss expression derived for DPO
 
@@ -327,15 +327,15 @@ Two reward functions `r(x, y)` and `r’(x, y)` are equivalent if and only if `r
 
 **Equivalent rewards.** To begin the proof, we can first specify an [equivalence relation](https://en.wikipedia.org/wiki/Equivalence_relation) for reward functions. This is just a definition that captures what it means for two reward functions to be equal; see above. Put simply, reward functions are considered equivalent if their difference in reward only depends upon the prompt and not the completion. Using this definition, we show below that two equivalent reward functions are guaranteed to yield the same preference distribution [^8].
 
-![[raw/assets/attachments/reinforcementlearning/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F9019ae85-f02a-4366-8df5-7abd7ad6afe9_1928x1132.png]]
+![[raw/assets/attachments/reinforcement-learning/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F9019ae85-f02a-4366-8df5-7abd7ad6afe9_1928x1132.png]]
 
 We can also write a similar proof to show that two equivalent reward functions, when plugged into the standard RLHF objective that we explored in the prior section, are guaranteed to yield the same optimal policy; see below.
 
-![[raw/assets/attachments/reinforcementlearning/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fd3e3e6e7-0abb-4085-a1fd-6e6b50f93437_2242x1068.png]]
+![[raw/assets/attachments/reinforcement-learning/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fd3e3e6e7-0abb-4085-a1fd-6e6b50f93437_2242x1068.png]]
 
 **Proving an optimal policy.** Given the above results, the last step in this proof is to simply show that the implicit reward function used within DPO is equivalent to the actual reward used within RLHF. If these two reward functions satisfy the equivalence relation, then we know that DPO will yield the same optimal policy as RLHF based on the findings shown above. To prove this final result, we can start by considering an arbitrary reward function `r(x, y)` used by RLHF. Our goal is to show that the implicit reward from DPO is equivalent to `r(x, y)`.
 
-![[raw/assets/attachments/reinforcementlearning/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fea1671b7-f195-4365-99e7-fde33bc0c3d1_1360x638.png]]
+![[raw/assets/attachments/reinforcement-learning/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fea1671b7-f195-4365-99e7-fde33bc0c3d1_1360x638.png]]
 
 Given an arbitrary reward, we can define the modified [^9] reward expression shown above. This expression just subtracts an extra term (i.e., the log of the partition function) from `r(x, y)`. Notice also that the term we subtract from `r(x, y)` only depends on `x`. For this reason, the modified reward expression is equivalent to `r(x, y)` according to the equivalence relation that we defined earlier.
 
@@ -343,11 +343,11 @@ Given an arbitrary reward, we can define the modified [^9] reward expression sho
 
 To prove the desired result, we have to draw upon our prior expression that rearranges the optimal RLHF solution to produce an implicit reward. If we plug this implicit reward into the modified reward expression above, we get a reward— *which is known to be equivalent to* `r(x, y)`*!*—that matches the implicit reward in DPO; see below. As a result, we now know that the implicit reward used by DPO satisfies the equivalence relation with `r(x,y)`, which completes the proof.
 
-![[raw/assets/attachments/reinforcementlearning/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F03f0f2ad-1ca3-432b-b7a0-b53e12b8ef05_1802x1114.png]]
+![[raw/assets/attachments/reinforcement-learning/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F03f0f2ad-1ca3-432b-b7a0-b53e12b8ef05_1802x1114.png]]
 
 **Key takeaway.** Before we conclude this section, we should quickly contextualize the result that we just proved. In the prior section, we derived an expression for the preference distribution induced by the implicit reward of the optimal policy (or solution) to the standard RLHF objective. After this expression is derived, we can easily train a model to have an implicit reward function that matches this preference distribution by adopting the same training strategy as a normal reward model. Therefore, *the key training procedure behind DPO centers around training an (implicit) reward model*, hence the name of the paper; see below.
 
-![[raw/assets/attachments/reinforcementlearning/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F3e90bb66-5833-4f58-bfe5-b17eef65c3e2_2092x602.png]]
+![[raw/assets/attachments/reinforcement-learning/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F3e90bb66-5833-4f58-bfe5-b17eef65c3e2_2092x602.png]]
 
 (from \[1\])
 
@@ -359,7 +359,7 @@ Given that the training procedure for DPO is based upon reward modeling, it’s 
 
 #### Why does DPO work?
 
-![[raw/assets/attachments/reinforcementlearning/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fd15cddcb-926d-478b-8ba3-d59e42672c57_2108x832.png]]
+![[raw/assets/attachments/reinforcement-learning/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fd15cddcb-926d-478b-8ba3-d59e42672c57_2108x832.png]]
 
 Gradient of DPO loss function
 
@@ -375,7 +375,7 @@ These terms work together to simultaneously *i)* increase the likelihood of chos
 
 **Weighting coefficient.** Authors in \[1\] observe that all three sub-components of DPO’s loss gradient are necessary for the algorithm to work well. Notably, if we remove the first weighting term from this gradient— *creating a gradient that uniformly increases the likelihood of all chosen completions and decreases the likelihood of all rejected completions* —the resulting policy is low-quality and even tends to completely degenerate when generating text; see below. Such a training algorithm is called unlikelihood training and has been explored in the past \[5\]. The simple weighting term added to the loss gradient by DPO completely transforms this approach, making it capable of performing high-quality LLM alignment.
 
-![[raw/assets/attachments/reinforcementlearning/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F7dee4f26-06ed-47da-9a32-611969a208d6_1546x786.png]]
+![[raw/assets/attachments/reinforcement-learning/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F7dee4f26-06ed-47da-9a32-611969a208d6_1546x786.png]]
 
 LLMs trained with unlikelihood training tend to degenerate (from \[1\])
 
@@ -383,13 +383,13 @@ LLMs trained with unlikelihood training tend to degenerate (from \[1\])
 
 Although the derivation of DPO is complex, the technique is actually quite simple to use practically. In fact, DPO played a huge role in democratizing research on LLM post-training for those outside of top labs \[3\]. Algorithms like PPO-based RLHF are harder to tune and require significant compute resources. In contrast, DPO uses a standard classification (or ranking) loss with no RL and only keeps two copies of the model— *instead of four* —throughout the training process.
 
-![[raw/assets/attachments/reinforcementlearning/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fb092dc43-cad8-4b1d-8129-2ce8a7860936_2420x876.png]]
+![[raw/assets/attachments/reinforcement-learning/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fb092dc43-cad8-4b1d-8129-2ce8a7860936_2420x876.png]]
 
 Standard DPO training pipeline
 
 **DPO training pipeline.** The standard training process with DPO is depicted above. We begin the process with a diverse set of prompts that capture the use case(s) for which we are training our model. From here, we use our reference policy to generate pairs of completions for each prompt and have human raters provide preference annotations for each pair. Once this preference dataset is available, we perform maximum likelihood estimation by training our model to minimize the DPO loss that we derived earlier over the preference dataset.
 
-![[raw/assets/attachments/reinforcementlearning/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F28ea6924-dbc4-49e0-be79-d9392492efa5_2004x940.png]]
+![[raw/assets/attachments/reinforcement-learning/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F28ea6924-dbc4-49e0-be79-d9392492efa5_2004x940.png]]
 
 Computing the loss for DPO in PyTorch (from \[1\])
 
@@ -405,7 +405,7 @@ Computing the loss for DPO in PyTorch (from \[1\])
 
 To minimize this distribution shift and ensure that the actual reference model aligns well with the completions present in our preference dataset, authors in \[1\] recommend the procedure depicted below. In this procedure, we first perform supervised finetuning of our reference model on the chosen completions in the preference dataset, then further train this model with DPO afterwards. This preliminary SFT training stage ensures the reference policy in DPO is not too different from the true reference policy used to create the preference dataset.
 
-![[raw/assets/attachments/reinforcementlearning/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fa70d83b0-01c7-41b6-b6f4-e86c446c036d_1954x1248.png]]
+![[raw/assets/attachments/reinforcement-learning/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fa70d83b0-01c7-41b6-b6f4-e86c446c036d_1954x1248.png]]
 
 Mitigating distribution shift from offline preference data in DPO
 

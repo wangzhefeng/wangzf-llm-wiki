@@ -32,7 +32,7 @@ status: archived
   - `repos/`
   - `datasets/`
   - `images/`
-  - `local-notes/`
+  - `notes/`
 
 推荐命名：
 

@@ -1,6 +1,6 @@
 ---
 source_type: notes
-source_path: raw/local-notes/computer-vision/image-classification/2022-07-15-image-classification/index.md
+source_path: raw/notes/computer-vision/image-classification/2022-07-15-image-classification/index.md
 title: 2022-07-15-image-classification
 author: wangzf
 published_at: 2022-07-15
@@ -16,7 +16,7 @@ status: summarized
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/local-notes/computer-vision/image-classification/2022-07-15-image-classification/index.md]]
+- 原文：[[raw/notes/computer-vision/image-classification/2022-07-15-image-classification/index.md]]
 ---
 
 ## 价值是什么

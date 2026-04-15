@@ -18,7 +18,7 @@ raw/          原始来源层（只放原件 + 最小 frontmatter，尽量只读
   papers/     论文
   repos/      仓库快照
   datasets/   数据集快照
-  local-notes/   本地笔记与历史文档
+  notes/   本地笔记与历史文档
   codex_threads/ 线程沉淀
   assets/        通用附件素材
 

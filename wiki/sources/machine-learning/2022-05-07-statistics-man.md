@@ -1,6 +1,6 @@
 ---
 source_type: notes
-source_path: raw/local-notes/post/2022-05-07-statistics-man/index.md
+source_path: raw/notes/post/2022-05-07-statistics-man/index.md
 title: 读《漫谈现代统计"四大天王"》
 author: wangzf
 published_at: 2022-05-07
@@ -17,7 +17,7 @@ status: summarized
 ## 这份材料讲了什么
 
 - 原文：[[raw/papers/2023-05-21-how-to-read-papers/index.md]]
-- 来源：`raw/local-notes/post/2022-05-07-statistics-man/index.md`
+- 来源：`raw/notes/post/2022-05-07-statistics-man/index.md`
 - 归属主题：机器学习
 
 ## 价值是什么

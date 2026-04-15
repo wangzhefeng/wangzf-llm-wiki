@@ -64,7 +64,7 @@
     - [ ] 测试数据文档的解析和使用方法
 * [ ] images
     - [ ] 处理图片文件的能力探索
-* [x] local-notes
+* [x] notes
     - [x] post 中内容的主题提取
 * [ ] papers
     - [ ] 处理 PDF 文档的能力探索

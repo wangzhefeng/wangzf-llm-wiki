@@ -1,32 +1,22 @@
 ---
-source_type: notes
-source_path: raw/local-notes/llm/llm-arch/2024-08-03-llm-rag-app-knowledge/index.md
 title: LLM 架构--RAG 应用
-author: wangzf
-published_at: 2024-08-03
-created_at: 2026-04-09
-topics:
-- llm
-- shared
-related_concepts:
-- RAG检索增强生成
-- 大语言模型总索引
+created: 2024-08-03
+updated: 2026-04-15
+type: source
+tags:
+  - llm-theory
+sources:
+  - raw/notes/llm-theory/2024-08-03-llm-rag-app-knowledge
 status: summarized
 ---
-# 来源卡：LLM 架构--RAG 应用
+## 内容摘要
+<details><summary>目录</summary><p> - [搭建向量知识库](#搭建向量知识库) - [词向量](#词向量) - [词向量简介](#词向量简介) - [通用文本向量](#通用文本向量) - [RAG 中词向量的优势](#rag-中词向量的优势) - [RAG 构建词向量的方法](#rag-构建词向量的方法)
 
-## 这份材料讲了什么
+## 关键要点
+- 词向量比文字更适合检索
+- 当在数据库检索时，如果数据库存储的是文字，
+- 词向量中包含了原文本的语义信息，可以通过计算问题与数据库中数据的点积、
 
-- 原文：[[raw/local-notes/llm/llm-arch/2024-08-03-llm-rag-app-knowledge/index.md]]
-- 来源：`raw/local-notes/llm/llm-arch/2024-08-03-llm-rag-app-knowledge/index.md`
-- 主题：LLM 本地知识笔记
-
-## 价值是什么
-
-- 为 LLM 主题提供可追溯本地来源，支持后续概念页持续编译。
-
-## 连到哪些概念
-
-- [[RAG检索增强生成]]
-- [[大语言模型总索引]]
-- [[大语言模型阅读地图]]
+## 来源信息
+- 原始文件：2024-08-03-llm-rag-app-knowledge
+- 来源类型：notes

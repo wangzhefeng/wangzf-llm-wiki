@@ -24,7 +24,7 @@ status: linked
   - `repos/`：仓库快照/摘录
   - `datasets/`：数据集快照/摘录
   - `images/`：来源型图像（与某一来源强绑定）
-  - `local-notes/`：本地笔记与历史文档
+  - `notes/`：本地笔记与历史文档
   - `codex_threads/`：线程沉淀
   - `raw/assets/`：通用附件与非来源型素材（见 `raw/assets/README.md`）
 - `wiki/sources/`：来源摘要卡（讲材料内容与价值）
@@ -88,7 +88,7 @@ sources:
 
 命名例外：
 - 模板/清单类文件允许无日期前缀。
-- `raw/local-notes/**/index.md` 允许目录式命名。
+- `raw/notes/**/index.md` 允许目录式命名。
 
 ## 流程
 

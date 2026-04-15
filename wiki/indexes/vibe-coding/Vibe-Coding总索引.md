@@ -24,7 +24,7 @@ status: linked
 
 本专题系统编译了 Vibe Coding 相关的多类原始资料，包括：
 - `raw/web/vibe-coding/` 中的前沿文章、工程实践、工具教程（19 篇）
-- `raw/local-notes/vibe-coding/` 中的历史文档、专题笔记、实践案例（包含 agent、claude_code、codex、mcp、rag、skills、tools 子目录）
+- `raw/notes/vibe-coding/` 中的历史文档、专题笔记、实践案例（包含 agent、claude_code、codex、mcp、rag、skills、tools 子目录）
 - 聚焦 AI Agent 工程实践、MCP、工具调用、RAG 与技能化工作流
 
 当前已完成 Vibe Coding 主题的收口。
@@ -42,13 +42,13 @@ status: linked
 
 ## 子主题结构（本地资料）
 
-- `raw/local-notes/vibe-coding/agent/`
-- `raw/local-notes/vibe-coding/claude_code/`
-- `raw/local-notes/vibe-coding/codex/`
-- `raw/local-notes/vibe-coding/mcp/`
-- `raw/local-notes/vibe-coding/rag/`
-- `raw/local-notes/vibe-coding/skills/`
-- `raw/local-notes/vibe-coding/tools/`
+- `raw/notes/vibe-coding/agent/`
+- `raw/notes/vibe-coding/claude_code/`
+- `raw/notes/vibe-coding/codex/`
+- `raw/notes/vibe-coding/mcp/`
+- `raw/notes/vibe-coding/rag/`
+- `raw/notes/vibe-coding/skills/`
+- `raw/notes/vibe-coding/tools/`
 
 ## 新增核心概念（2026-04 批次）
 

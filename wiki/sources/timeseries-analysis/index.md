@@ -87,7 +87,7 @@ status: inbox
 - [[wiki/sources/timeseries-analysis/2026-01-12-TimeXer]]
 - [[wiki/sources/timeseries-analysis/2026-01-14-深度时间序列模型总结]]
 - [[wiki/sources/timeseries-analysis/2026-01-18-tsf-dl-stages]]
-- [[wiki/sources/timeseries-analysis/2026-01-27-feature-engine-topic]]
+- [[wiki/sources/timeseries-analysis/2026-01-27-feature-engineering-topic]]
 - [[wiki/sources/timeseries-analysis/2026-02-07-tsf-report]]
 - [[wiki/sources/timeseries-analysis/2026-04-05-scikit-learn-滞后特征预测示例]]
 - [[wiki/sources/timeseries-analysis/2026-04-05-tsproj-ml-特征工程与输入组织]]

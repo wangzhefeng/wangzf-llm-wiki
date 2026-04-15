@@ -1,6 +1,6 @@
 ---
 source_type: notes
-source_path: raw/local-notes/vibe-coding/codex/README.md
+source_path: raw/notes/vibe-coding/codex/README.md
 title: Vibe Coding - codex
 author: wangzf
 published_at: 2026-04-09
@@ -17,8 +17,8 @@ status: summarized
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/local-notes/vibe-coding/codex/README.md]]
-- 来源：`raw/local-notes/vibe-coding/codex/README.md`
+- 原文：[[raw/notes/vibe-coding/codex/README.md]]
+- 来源：`raw/notes/vibe-coding/codex/README.md`
 - 类型：README 知识说明
 
 ## 价值是什么

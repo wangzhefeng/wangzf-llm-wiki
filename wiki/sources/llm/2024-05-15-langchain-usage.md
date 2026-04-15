@@ -1,32 +1,22 @@
 ---
-source_type: notes
-source_path: raw/local-notes/llm/llm-framework/2024-05-15-langchain-usage/index.md
 title: LLM 框架--LangChain
-author: wangzf
-published_at: 2024-05-15
-created_at: 2026-04-09
-topics:
-- llm
-- shared
-related_concepts:
-- LLM工程框架
-- 大语言模型总索引
+created: 2024-05-15
+updated: 2026-04-15
+type: source
+tags:
+  - llm-theory
+sources:
+  - raw/notes/llm-theory/2024-05-15-langchain-usage
 status: summarized
 ---
-# 来源卡：LLM 框架--LangChain
+## 内容摘要
+<details><summary>目录</summary><p> - [LangChain 简介](#langchain-简介) - [框架简介](#框架简介) - [框架架构](#框架架构) - [核心概念](#核心概念) - [核心模块](#核心模块) - [模型 I/O 模块](#模型-io-模块) - [检索模块](#检索模块)
 
-## 这份材料讲了什么
+## 关键要点
+- 开发：使用 LangChain 的开源构建块、组件和第三方集成来构建应用程序。
+- 生产化：使用 LangSmith 检查、监控和评估 Chain，以便持续优化和部署 Chain
+- 部署：使用 LangGraph Cloud 将 LangGraph 应用程序转变为生产就绪的 API 和助手
 
-- 原文：[[raw/local-notes/llm/llm-framework/2024-05-15-langchain-usage/index.md]]
-- 来源：`raw/local-notes/llm/llm-framework/2024-05-15-langchain-usage/index.md`
-- 主题：LLM 本地知识笔记
-
-## 价值是什么
-
-- 为 LLM 主题提供可追溯本地来源，支持后续概念页持续编译。
-
-## 连到哪些概念
-
-- [[LLM工程框架]]
-- [[大语言模型总索引]]
-- [[大语言模型阅读地图]]
+## 来源信息
+- 原始文件：2024-05-15-langchain-usage
+- 来源类型：notes

@@ -1,32 +1,20 @@
 ---
-source_type: notes
-source_path: raw/local-notes/llm/llm-models/2024-05-02-chatgpt-usage/index.md
 title: LLM 应用--ChatGPT
-author: wangzf
-published_at: 2024-05-02
-created_at: 2026-04-09
-topics:
-- llm
-- shared
-related_concepts:
-- Transformer架构
-- 大语言模型总索引
+created: 2024-05-02
+updated: 2026-04-15
+type: source
+tags:
+  - llm-theory
+sources:
+  - raw/notes/llm-theory/2024-05-02-chatgpt-usage
 status: summarized
 ---
-# 来源卡：LLM 应用--ChatGPT
+## 内容摘要
+<details><summary>目录</summary><p> - [ChatGPT 基础](#chatgpt-基础) - [最强表示架构 Transformer 设计与演变](#最强表示架构-transformer-设计与演变) - [生成语言模型 GPT 进化与逆袭](#生成语言模型-gpt-进化与逆袭)
 
-## 这份材料讲了什么
+## 关键要点
+- 《ChatGPT 原理及应用开发》
 
-- 原文：[[raw/local-notes/llm/llm-models/2024-05-02-chatgpt-usage/index.md]]
-- 来源：`raw/local-notes/llm/llm-models/2024-05-02-chatgpt-usage/index.md`
-- 主题：LLM 本地知识笔记
-
-## 价值是什么
-
-- 为 LLM 主题提供可追溯本地来源，支持后续概念页持续编译。
-
-## 连到哪些概念
-
-- [[Transformer架构]]
-- [[大语言模型总索引]]
-- [[大语言模型阅读地图]]
+## 来源信息
+- 原始文件：2024-05-02-chatgpt-usage
+- 来源类型：notes

@@ -13,6 +13,12 @@ status: inbox
 topics:
   - causal-inference
   - 因果推断
+related_concepts:
+  - DoWhy Framework
+  - Causal Graph
+  - Back-door Criterion
+  - Front-door Criterion
+  - Propensity Score Matching
 ---
 
 

@@ -1,6 +1,6 @@
 ---
 source_type: notes
-source_path: "raw/local-notes/vibe-coding/tools/readme-20260412200431.md"
+source_path: "raw/notes/vibe-coding/tools/readme-20260412200431.md"
 title: "README"
 author: unknown
 created_at: 2026-04-12

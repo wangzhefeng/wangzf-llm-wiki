@@ -46,7 +46,7 @@ status: summarized
 - 入口页：
   - `wiki/sources/timeseries-analysis/附件入口清单-timeseries.md`
   - `wiki/sources/deeplearning/附件入口清单-deeplearning.md`
-  - `wiki/sources/operationsresearch/附件入口清单-operationsresearch.md`
+  - `wiki/sources/operations-research/附件入口清单-operations-research.md`
   - `wiki/sources/shared/附件入口清单-uncategorized.md`
   - `wiki/sources/shared/附件入口清单-attachments-root.md`
 
@@ -55,7 +55,7 @@ status: summarized
 - 将附件目录名与 wiki 主题 slug 对齐（减少长期维护成本）：
   - `raw/assets/attachments/computer-vision/` -> `raw/assets/attachments/computer-vision/`
   - `raw/assets/attachments/machine-learning/` -> `raw/assets/attachments/machinelearning/`
-  - `raw/assets/attachments/reinforcement-learning/` -> `raw/assets/attachments/reinforcementlearning/`
+  - `raw/assets/attachments/reinforcement-learning/` -> `raw/assets/attachments/reinforcement-learning/`
   - `raw/assets/attachments/control_algorithms/` -> `raw/assets/attachments/control-algorithms/`
 - 将剩余 `uncategorized/` 与根目录 `*.latex` 归并到 `raw/assets/attachments/shared/`：
   - `raw/assets/attachments/uncategorized/` -> `raw/assets/attachments/shared/uncategorized/`

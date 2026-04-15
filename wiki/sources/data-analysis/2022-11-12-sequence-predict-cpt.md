@@ -1,6 +1,6 @@
 ---
 source_type: notes
-source_path: raw/local-notes/data-analysis/2022-11-12-sequence-predict-cpt/index.md
+source_path: raw/notes/data-analysis/2022-11-12-sequence-predict-cpt/index.md
 title: 目标序列
 author: wangzf
 published_at: 2022-11-12
@@ -15,7 +15,7 @@ status: summarized
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/local-notes/data-analysis/2022-11-12-sequence-predict-cpt/index.md]]
+- 原文：[[raw/notes/data-analysis/2022-11-12-sequence-predict-cpt/index.md]]
 ---
 
 ## 价值是什么

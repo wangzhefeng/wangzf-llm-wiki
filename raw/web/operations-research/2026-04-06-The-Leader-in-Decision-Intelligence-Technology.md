@@ -38,7 +38,7 @@ View, manage, and update your licenses.
 
 ](https://portal.gurobi.com/iam/licenses/list)
 
-![[raw/assets/attachments/operationsresearch/2r9Kj5lnwfLNUfEFy93XO4i1Lqg.png]] ![[raw/assets/attachments/operationsresearch/XTNTGxWXaWKCDgjuLoppQ3Vx4Y.png]]
+![[raw/assets/attachments/operations-research/2r9Kj5lnwfLNUfEFy93XO4i1Lqg.png]] ![[raw/assets/attachments/operations-research/XTNTGxWXaWKCDgjuLoppQ3Vx4Y.png]]
 
 404
 
@@ -48,7 +48,7 @@ The page you’re looking for can’t be found or may have moved. Try searching 
 
 Search the Website
 
-![[raw/assets/attachments/operationsresearch/cZG3F25DG4TaFZ7gpcm0YsgGM.svg]]
+![[raw/assets/attachments/operations-research/cZG3F25DG4TaFZ7gpcm0YsgGM.svg]]
 
 Cookie Settings
 

@@ -1,6 +1,6 @@
 ---
 source_type: notes
-source_path: raw/local-notes/data-structure-algorithm/2024-04-03-algorithm-complexity-analysis/index.md
+source_path: raw/notes/data-structure-algorithm/2024-04-03-algorithm-complexity-analysis/index.md
 title: 2024-04-03-algorithm-complexity-analysis
 author: wangzf
 published_at: 2024-04-03
@@ -16,7 +16,7 @@ status: summarized
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/local-notes/data-structure-algorithm/2024-04-03-algorithm-complexity-analysis/index.md]]
+- 原文：[[raw/notes/data-structure-algorithm/2024-04-03-algorithm-complexity-analysis/index.md]]
 - 原始标题：算法复杂度分析
 - 主题归类：复杂度分析
 - 来源类型：本地历史文档（local note）

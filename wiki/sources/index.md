@@ -19,7 +19,7 @@ status: linked
 
 ## 收录范围
 
-- `raw/web|papers|repos|datasets|images|local-notes` 的来源摘要卡。
+- `raw/web|papers|repos|datasets|images|notes` 的来源摘要卡。
 - 主题内附件入口页（仅在需要可达性时创建）。
 
 ## 不收录范围

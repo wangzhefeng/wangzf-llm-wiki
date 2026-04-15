@@ -5,7 +5,7 @@ topics:
 - shared
 status: inbox
 ---
-# wiki/sources/operationsresearch
+# wiki/sources/operations-research
 
 本目录存放运筹优化主题的来源摘要卡。入口建议从：[[运筹优化算法总索引]]。
 
@@ -67,7 +67,7 @@ status: inbox
 - [[wiki/sources/operations-research/2026-04-11-Course Summary – S&DS 431631 — Optimization and Computation]]
 - [[wiki/sources/operations-research/2026-04-11-S&DS 431631 — Optimization and Computation]]
 - [[wiki/sources/operations-research/数学优化与运筹学专题来源]]
-- [[wiki/sources/operations-research/附件入口清单-operationsresearch]]
+- [[wiki/sources/operations-research/附件入口清单-operations-research]]
 
 <!-- AUTO-GENERATED: sources-dir-index:end -->
 

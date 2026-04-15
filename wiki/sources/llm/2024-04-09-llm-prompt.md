@@ -1,32 +1,22 @@
 ---
-source_type: notes
-source_path: raw/local-notes/llm/llm-fine-tune/2024-04-09-llm-prompt/index.md
 title: LLM 架构--Prompt
-author: wangzf
-published_at: 2024-04-09
-created_at: 2026-04-09
-topics:
-- llm
-- shared
-related_concepts:
-- RAG检索增强生成
-- 大语言模型总索引
+created: 2024-04-09
+updated: 2026-04-15
+type: source
+tags:
+  - llm-theory
+sources:
+  - raw/notes/llm-theory/2024-04-09-llm-prompt
 status: summarized
 ---
-# 来源卡：LLM 架构--Prompt
+## 内容摘要
+<details><summary>目录</summary><p> - [预训练模型和 Prompt](#预训练模型和-prompt) - [Pretrain](#pretrain) - [Promot](#promot) - [Prompt 工作流](#prompt-工作流) - [Prompt Template](#prompt-template)
 
-## 这份材料讲了什么
+## 关键要点
+- 左边是传统的 Model Tuning 的范式：对于不同的任务，都需要将整个预训练模型进行精调，
+- 右边是 Prompt Tuning，对于不同的任务，仅需要插入不同的 Prompt 参数，
+- Prompt 模版（Template）的构造
 
-- 原文：[[raw/local-notes/llm/llm-fine-tune/2024-04-09-llm-prompt/index.md]]
-- 来源：`raw/local-notes/llm/llm-fine-tune/2024-04-09-llm-prompt/index.md`
-- 主题：LLM 本地知识笔记
-
-## 价值是什么
-
-- 为 LLM 主题提供可追溯本地来源，支持后续概念页持续编译。
-
-## 连到哪些概念
-
-- [[RAG检索增强生成]]
-- [[大语言模型总索引]]
-- [[大语言模型阅读地图]]
+## 来源信息
+- 原始文件：2024-04-09-llm-prompt
+- 来源类型：notes

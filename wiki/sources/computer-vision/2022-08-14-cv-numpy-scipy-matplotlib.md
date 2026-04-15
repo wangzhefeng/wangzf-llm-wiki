@@ -1,6 +1,6 @@
 ---
 source_type: notes
-source_path: raw/local-notes/computer-vision/image_processing/2022-08-14-cv-numpy-scipy-matplotlib/index.md
+source_path: raw/notes/computer-vision/image_processing/2022-08-14-cv-numpy-scipy-matplotlib/index.md
 title: 2022-08-14-cv-numpy-scipy-matplotlib
 author: wangzf
 published_at: 2022-08-14
@@ -16,7 +16,7 @@ status: summarized
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/local-notes/computer-vision/image_processing/2022-08-14-cv-numpy-scipy-matplotlib/index.md]]
+- 原文：[[raw/notes/computer-vision/image_processing/2022-08-14-cv-numpy-scipy-matplotlib/index.md]]
 ---
 
 ## 价值是什么
