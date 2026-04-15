@@ -38,7 +38,6 @@ status: linked
 ## 主题入口
 
 - [[wiki/sources/data-analysis/index]]
-- [[wiki/sources/computer-vision/index]]
 - [[wiki/sources/control-algorithms/index]]
 - [[wiki/sources/data-structure-algorithm/index]]
 - [[wiki/sources/deep-learning/index]]

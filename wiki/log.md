@@ -924,3 +924,80 @@ Layer 3: 表示学习（4 代演进）
 - 可用性：支持 4 种查询方式（按任务、按阶段、按工具、按理论）
 
 **编译用时**：约 4-5 小时（Phase 1-4 全阶段）
+
+## [2026-04-15] lint | 清除 computer-vision 主题编译内容
+
+### 背景
+- raw 层已删除 `raw/web/computer-vision/` 和 `raw/notes/computer-vision/` 的所有内容（deep-learning-theory 下的 CNN 除外）
+- 需要清除对应的 wiki 编译层内容，保持源-编译一致性
+
+### 执行内容
+- **删除目录 3 个**：
+  - `wiki/sources/computer-vision/` - 63 个来源卡文件
+  - `wiki/indexes/computer-vision/` - 2 个索引页
+  - `wiki/concepts/computer-vision/` - 15 个概念页
+  
+- **清理引用 3 处**：
+  - `wiki/sources/index.md` - 移除 `[[wiki/sources/computer-vision/index]]` 条目
+  - `wiki/concepts/index.md` - 移除 `[[wiki/concepts/computer-vision/index]]` 条目
+  - `wiki/indexes/shared/知识库工作台.md` - 移除计算机视觉总索引条目
+
+### 验证
+✓ 所有 computer-vision 目录物理删除完成
+✓ 所有导航入口引用已清理
+✓ 深度学习中的 CNN 概念页（来自 deep-learning-theory）保留未动
+✓ log 更新完成
+
+### 后续
+- 若后续重新添加 computer-vision 来源，遵循标准 ingest 流程：raw → sources → indexes → concepts
+
+## [2026-04-15] cleanup | 消除 deep-learning 与 deep-learning-theory 重复
+
+### 问题诊断
+- wiki/sources/、wiki/indexes/、wiki/concepts/ 下同时存在 "deep-learning" 和 "deep-learning-theory" 两个目录
+- 违反仓库规范（AGENTS.md）：不应存在两个同类重名主题
+- 两次编译的资源存在重叠（19 张重复）
+
+### 执行方案
+- **资源合并**：将 deep-learning-theory 的 97 张来源卡复制到 deep-learning
+- **目录清理**：删除重复的 deep-learning-theory 目录（3 个）
+  - ✓ 删除 `wiki/sources/deep-learning-theory/` (97 张)
+  - ✓ 删除 `wiki/indexes/deep-learning-theory/` (3 个索引文件)
+  - ✓ 删除 `wiki/concepts/deep-learning-theory/` (概念页)
+- **索引更新**：更新 `wiki/indexes/deep-learning/深度学习总索引.md` 反映新规模
+
+### 成果统计
+- ✓ `wiki/sources/deep-learning/`：127 + 78 (新增) = **205 张来源卡**
+- ✓ 消除 3 个重复目录
+- ✓ 统一为单一主题 `deep-learning`
+- ✓ 完整体系：基础理论 + CNN/RNN + Transformer + 工程实践
+
+### 质量效果
+- ✓ 符合仓库规范：单一主题目录，清晰的四层架构
+- ✓ 资源规模提升：205 张来源卡覆盖理论 + 框架 + 工程全方位
+- ✓ 学习体系完善：6 站递进式路线 + 4 种查询方式
+- ✓ 避免混淆：消除重复的命名和目录结构
+
+## [2026-04-15] lint | 清除自动修复占位页目录（autofix）
+
+### 背景
+- `wiki/concepts/autofix/` 是历史自动修复流程产生的债务，包含 118 个自动生成的占位符页面
+- 这些页面都是通过 "自动创建的占位页，用于修复断链" 来源，status 均为 inbox（未处理）
+- 与现有的规范概念页构建流程不符，应予以清除
+
+### 执行内容
+- **删除目录**：`wiki/concepts/autofix/` 及其 118 个占位符文件
+- **清理导航**：从 `wiki/concepts/index.md` 移除 `[[wiki/concepts/autofix/index]]` 条目
+- **影响范围**：
+  - 无其他页面链接到 autofix 页面（grep 验证）
+  - autofix 本身是修复工具产生的副产品，非正式知识结构
+
+### 验证
+✓ autofix 目录完全删除
+✓ 导航入口已清理
+✓ 无外部链接指向被删除的页面
+✓ 知识库结构恢复到规范状态
+
+### 后续
+- 若需要修复某些断链问题，应通过标准 ingest 流程创建真正的来源卡和概念页
+- 不再使用自动占位符机制来处理断链，而是优先消除断链的根本原因

@@ -37,8 +37,6 @@ status: linked
 ## 主题入口
 
 - [[wiki/concepts/data-analysis/index]]
-- [[wiki/concepts/autofix/index]]
-- [[wiki/concepts/computer-vision/index]]
 - [[wiki/concepts/control-algorithms/index]]
 - [[wiki/concepts/data-structure-algorithm/index]]
 - [[wiki/concepts/deep-learning/index]]
