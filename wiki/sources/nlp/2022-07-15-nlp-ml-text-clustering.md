@@ -1,6 +1,6 @@
 ---
 source_type: notes
-source_path: raw/notes/llm/nlp-tasks/2022-07-15-nlp-ml-text-clustering/index.md
+source_path: raw/notes/nlp/2022-07-15-nlp-ml-text-clustering/index.md/index.md
 title: NLP-文本聚类
 author: wangzf
 published_at: 2022-04-05

@@ -1,6 +1,6 @@
 ---
 source_type: notes
-source_path: raw/notes/llm/nlp-tasks/2022-07-15-nlp-keyword-extraction/index.md
+source_path: raw/notes/nlp/2022-07-15-nlp-keyword-extraction/index.md/index.md
 title: NLP-关键词提取
 author: wangzf
 published_at: 2022-04-05

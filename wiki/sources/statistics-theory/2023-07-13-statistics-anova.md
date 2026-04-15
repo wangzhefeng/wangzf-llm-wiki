@@ -1,16 +1,24 @@
 ---
 source_type: notes
-source_path: raw/notes/data-analysis/statistics/2023-07-13-statistics-anova/index.md
-title: 2023-07-13-statistics-anova
+source_path: raw/notes/statistics-theory/2023-07-13-statistics-anova/index.md
+title: 统计方差分析
 author: wangzf
 published_at: 2023-07-13
 created_at: 2026-04-09
+type: source
 topics:
-- data-analysis
-- shared
+  - statistics-theory
+  - 统计学理论
+tags:
+  - statistics-theory
+  - data-analysis
+  - 方差分析
+  - ANOVA
+  - 假设检验
 related_concepts:
-- 方差分析
-status: summarized
+  - 方差分析
+  - 假设检验
+status: linked
 ---
 # 来源卡：2023-07-13-statistics-anova
 

@@ -1,6 +1,6 @@
 ---
 source_type: notes
-source_path: raw/notes/nlp/nlp-libs/2022-04-05-nlp-gensim/index.md
+source_path: raw/notes/nlp/2022-04-05-nlp-gensim/index.md
 title: NLP-gensim
 author: wangzf
 published_at: 2022-04-05

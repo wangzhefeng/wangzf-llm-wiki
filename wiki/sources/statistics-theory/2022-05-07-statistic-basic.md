@@ -1,16 +1,25 @@
 ---
 source_type: notes
-source_path: raw/notes/data-analysis/statistics/2022-05-07-statistic-basic/index.md
-title: 2022-05-07-statistic-basic
+source_path: raw/notes/statistics-theory/2022-05-07-statistic-basic/index.md
+title: 统计学知识
 author: wangzf
 published_at: 2022-05-07
 created_at: 2026-04-09
+type: source
 topics:
-- data-analysis
-- shared
+  - statistics-theory
+  - 统计学理论
+tags:
+  - statistics-theory
+  - data-analysis
+  - 大数定律
+  - 中心极限定理
+  - 参数估计
+  - 回归分析
 related_concepts:
-- 数据分析方法
-status: summarized
+  - 数据分析方法
+  - 统计学理论
+status: linked
 ---
 # 来源卡：2022-05-07-statistic-basic
 

@@ -1,16 +1,24 @@
 ---
 source_type: notes
-source_path: raw/notes/data-analysis/statistics/2023-07-20-statistics-probability/index.md
-title: 2023-07-20-statistics-probability
+source_path: raw/notes/statistics-theory/2023-07-20-statistics-probability/index.md
+title: 概率论
 author: wangzf
 published_at: 2023-07-20
 created_at: 2026-04-09
+type: source
 topics:
-- data-analysis
-- shared
+  - statistics-theory
+  - 统计学理论
+tags:
+  - statistics-theory
+  - data-analysis
+  - 概率论
+  - 随机事件
+  - 概率定义
 related_concepts:
-- 概率论基础
-status: summarized
+  - 概率论基础
+  - 统计推断
+status: linked
 ---
 # 来源卡：2023-07-20-statistics-probability
 

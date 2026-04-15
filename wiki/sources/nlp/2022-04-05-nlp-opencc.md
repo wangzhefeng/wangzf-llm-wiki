@@ -1,6 +1,6 @@
 ---
 source_type: notes
-source_path: raw/notes/nlp/nlp-libs/2022-04-05-nlp-opencc/index.md
+source_path: raw/notes/nlp/2022-04-05-nlp-opencc/index.md
 title: NLP-opencc
 author: wangzf
 published_at: 2022-04-05
