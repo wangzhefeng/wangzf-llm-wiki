@@ -12,7 +12,9 @@ tags:
 title: OpenAI Academy
 source_url: https://academy.openai.com/
 published_at: null
-related_concepts: []
+related_concepts:
+  - 大语言模型
+  - Vibe Coding
 topics:
   - vibe-coding
   - Vibe Coding

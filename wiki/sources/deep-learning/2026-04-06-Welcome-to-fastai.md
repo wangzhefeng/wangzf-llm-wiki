@@ -6,7 +6,7 @@ author: null
 published_at: 2026-04-06
 created_at: 2026-04-15
 topics:
-  - deep-learning-theory
+  - deep-learning
   - PyTorch 框架与基础
 related_concepts:
   - PyTorch 框架与最佳实践

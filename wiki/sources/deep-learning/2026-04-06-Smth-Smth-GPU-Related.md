@@ -6,7 +6,7 @@ author: null
 published_at: 2026-04-06
 created_at: 2026-04-15
 topics:
-  - deep-learning-theory
+  - deep-learning
   - 训练基础设施与优化
 related_concepts:
   - 反向传播与梯度下降

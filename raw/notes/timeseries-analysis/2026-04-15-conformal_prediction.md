@@ -1,3 +1,17 @@
+---
+source_type: notes
+created_at: 2026-04-15
+topics:
+  - timeseries-analysis
+  - 概率预测
+  - 不确定性量化
+related_concepts:
+  - 时序预测
+  - 机器学习
+  - 统计方法
+status: inbox
+---
+
 # Conformal Prediction（保形预测）
 
 ## 概述

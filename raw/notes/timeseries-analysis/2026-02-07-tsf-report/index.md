@@ -1,7 +1,10 @@
 ---
 source_type: notes
 created_at: 2026-02-07
-status: inbox
+status: summarized
+related_concepts:
+  - 时间序列预测
+  - 统计时间序列预测
 title: 基于非线性树模型的时间序列预测框架：全生命周期深度研究报告
 subtitle: Nonlinear Tree Models for Time Series Forecasting
 author: wangzf

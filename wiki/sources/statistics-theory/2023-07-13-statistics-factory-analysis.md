@@ -11,7 +11,7 @@ topics:
   - 统计学理论
 tags:
   - statistics-theory
-  - data-analysis
+  - statistics-theory
   - 因子分析
   - 降维
 related_concepts:

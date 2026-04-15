@@ -12,7 +12,10 @@ tags:
 title: 'vercel-labs/agent-browser: Browser automation CLI for AI agents'
 source_url: https://github.com/vercel-labs/agent-browser
 published_at: null
-related_concepts: []
+related_concepts:
+  - Agent智能体
+  - 工具调用
+  - Vibe Coding
 topics:
   - programming-tools
   - 编程工具

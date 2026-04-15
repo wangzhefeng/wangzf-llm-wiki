@@ -11,7 +11,10 @@ tags:
   - "clippings"
 source_url: "https://support.gurobi.com/hc/en-us/articles/14799677517585-Getting-Started-with-Gurobi-Optimizer"
 published_at: 2025-11-21
-related_concepts: []
+related_concepts:
+  - 运筹优化
+  - 整数规划
+  - 数学优化
 topics:
   - operations-research
   - 数学优化算法/运筹学

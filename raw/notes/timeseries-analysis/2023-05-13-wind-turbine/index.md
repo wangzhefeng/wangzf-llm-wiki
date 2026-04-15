@@ -9,7 +9,11 @@ tags:
   - model
 source_type: notes
 created_at: 2023-05-13
-status: inbox
+status: summarized
+related_concepts:
+  - 时间序列预测
+  - 机器学习时间序列预测
+  - 电力市场交易
 topics:
   - timeseries-analysis
   - 时间序列分析

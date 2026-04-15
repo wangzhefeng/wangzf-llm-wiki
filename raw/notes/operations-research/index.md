@@ -5,6 +5,10 @@ list_pages: true
 source_type: notes
 created_at: 2026-04-11
 status: linked
+related_concepts:
+  - 运筹优化
+  - 数学优化
+  - 线性规划
 topics:
   - operations-research
   - 数学优化算法/运筹学

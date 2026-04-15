@@ -9,7 +9,11 @@ tags:
   - book
 source_type: notes
 created_at: 2024-03-23
-status: inbox
+status: summarized
+related_concepts:
+  - 时间序列预测
+  - 统计时间序列预测
+  - 机器学习时间序列预测
 topics:
   - timeseries-analysis
   - 时间序列分析

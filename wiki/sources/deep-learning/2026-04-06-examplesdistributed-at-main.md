@@ -6,7 +6,7 @@ author: null
 published_at: 2026-04-06
 created_at: 2026-04-15
 topics:
-  - deep-learning-theory
+  - deep-learning
   - 分布式训练与工程
 related_concepts:
   - 深度学习分布式训练

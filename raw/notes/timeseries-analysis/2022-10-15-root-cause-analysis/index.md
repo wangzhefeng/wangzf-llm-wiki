@@ -9,7 +9,10 @@ tags:
   - model
 source_type: notes
 created_at: 2022-10-15
-status: inbox
+status: summarized
+related_concepts:
+  - 时间序列预测
+  - 时间序列异常检测
 topics:
   - timeseries-analysis
   - 时间序列分析

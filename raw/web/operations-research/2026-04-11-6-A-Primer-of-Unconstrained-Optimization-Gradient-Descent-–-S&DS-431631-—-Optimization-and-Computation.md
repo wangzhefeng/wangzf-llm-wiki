@@ -11,7 +11,10 @@ created_at: 2026-04-11
 status: summarized
 source_url: https://zhuoranyang.github.io/sds431-notes/lectures/06-gradient-descent.html
 published_at: null
-related_concepts: []
+related_concepts:
+  - 运筹优化
+  - 深度学习优化算法
+  - 数学优化
 topics:
   - programming-tools
   - 编程工具

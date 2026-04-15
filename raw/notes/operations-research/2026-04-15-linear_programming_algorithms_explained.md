@@ -1,3 +1,16 @@
+---
+source_type: notes
+created_at: 2026-04-15
+topics:
+  - operations-research
+  - 线性规划
+  - 优化算法
+related_concepts:
+  - 整数规划
+  - 运筹优化
+status: inbox
+---
+
 # 线性规划算法原理与求解算法详解
 
 ## 1. 什么是线性规划

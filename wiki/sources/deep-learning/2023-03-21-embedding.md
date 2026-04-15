@@ -6,7 +6,7 @@ author: wangzf
 published_at: 2023-03-21
 created_at: 2026-04-15
 topics:
-  - deep-learning-theory
+  - deep-learning
   - 其他
 related_concepts:
   - 深度学习理论

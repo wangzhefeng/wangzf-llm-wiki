@@ -10,7 +10,9 @@ created_at: 2026-04-11
 status: summarized
 source_url: https://zhuoranyang.github.io/sds431-notes/lectures/summary.html
 published_at: null
-related_concepts: []
+related_concepts:
+  - 运筹优化
+  - 数学优化
 topics:
   - deep-learning-theory
   - 深度学习理论

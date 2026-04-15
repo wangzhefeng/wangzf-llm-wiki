@@ -12,7 +12,10 @@ tags:
 title: 'Gurobi/modeling-examples: Gurobi modeling examples'
 source_url: https://github.com/Gurobi/modeling-examples
 published_at: null
-related_concepts: []
+related_concepts:
+  - 运筹优化
+  - 整数规划
+  - 数学优化
 topics:
   - operations-research
   - 数学优化算法/运筹学

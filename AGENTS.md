@@ -170,9 +170,7 @@ status: inbox
 
 ## 10. 主题与共享分工
 
-- 知识库方法主题使用：`wiki/indexes/llm-wiki-building/`
-- 知识库运维主题使用：`wiki/indexes/llm-wiki-operations/`
-- 知识库使用主题使用：`wiki/indexes/llm-wiki-usage/`
+- 知识库相关主题使用：`wiki/indexes/llm-wiki/`（含 `LLM-Wiki总索引.md`、`LLM-Wiki来源清单.md`、`LLM-Wiki阅读地图.md`）
 - `wiki/indexes/shared/` 根目录存放共享执行工作流（ingest / query / backfill / lint 与任务流入口），由 `知识库工作台` 统一管理。
 - 具体专题（如 `timeseries/`、`operations-research/`）优先放各自来源、索引、概念网络。
 
@@ -200,7 +198,7 @@ status: inbox
 - `wiki/purpose.md`
 - `wiki/index.md`
 - `wiki/schema.md`
-- `wiki/indexes/llm-wiki-building/知识库建设方法总索引.md`
+- `wiki/indexes/llm-wiki/LLM-Wiki总索引.md`
 - `wiki/schema.md`（兼容别名：`知识库Schema设计`）
 
 六大核心功能目录入口：

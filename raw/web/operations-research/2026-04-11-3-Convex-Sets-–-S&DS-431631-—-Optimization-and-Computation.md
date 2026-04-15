@@ -10,7 +10,10 @@ created_at: 2026-04-11
 status: summarized
 source_url: https://zhuoranyang.github.io/sds431-notes/lectures/03-convex-sets.html
 published_at: null
-related_concepts: []
+related_concepts:
+  - 运筹优化
+  - 凸优化
+  - 数学优化
 topics:
   - operations-research
   - 数学优化算法/运筹学

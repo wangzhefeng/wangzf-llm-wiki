@@ -2,6 +2,10 @@
 source_type: local_note
 created_at: 2025-06-18
 status: summarized
+related_concepts:
+  - 强化学习
+  - RLHF
+  - 策略优化
 title: 强化学习
 subtitle: Reinforcement Learning
 author: wangzf

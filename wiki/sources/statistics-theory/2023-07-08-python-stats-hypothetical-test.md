@@ -11,7 +11,7 @@ topics:
   - 统计学理论
 tags:
   - statistics-theory
-  - data-analysis
+  - statistics-theory
   - 假设检验
   - 显著性
   - p值

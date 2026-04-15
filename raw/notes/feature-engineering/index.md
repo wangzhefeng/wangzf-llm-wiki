@@ -8,6 +8,11 @@ created_at: 2026-04-13
 topics:
   - feature-engine
   - 特征工程
+status: linked
+related_concepts:
+  - 特征工程
+  - 机器学习
+  - 数据预处理
 ---
 
 ## 导航

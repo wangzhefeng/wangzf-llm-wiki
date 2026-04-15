@@ -1,7 +1,11 @@
 ---
 source_type: notes
 created_at: 2026-01-29
-status: inbox
+status: summarized
+related_concepts:
+  - 时间序列预测
+  - 深度学习时间序列预测
+  - cnn
 title: conv1d-一维卷积
 subtitle: One-dimensional Convolution
 author: wangzf

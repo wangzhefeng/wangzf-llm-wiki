@@ -139,3 +139,11 @@ status: linked
 - [[知识库工作台]]
 
 理解方法后，进入工作台开始执行 ingest、query、lint 或输出回流。
+
+---
+
+## 派生输出（综合总结）
+
+- [[outputs/syntheses/2026-04-08-llm-wiki-构建流程总结]] — 知识库构建流程完整总结
+- [[outputs/syntheses/2026-04-08-llm-wiki-维护流程总结]] — 知识库维护与运营流程总结
+- [[outputs/syntheses/2026-04-08-llm-wiki-ai与用户使用流程总结]] — AI 与用户协作的知识库使用流程

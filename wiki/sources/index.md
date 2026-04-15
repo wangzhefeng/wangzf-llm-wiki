@@ -37,17 +37,21 @@ status: linked
 
 ## 主题入口
 
-- [[wiki/sources/data-analysis/index]]
-- [[wiki/sources/control-algorithms/index]]
-- [[wiki/sources/data-structure-algorithm/index]]
-- [[wiki/sources/deep-learning/index]]
-- [[wiki/sources/llm-wiki/index]]
 - [[wiki/sources/llm/index]]
+- [[wiki/sources/deep-learning/index]]
 - [[wiki/sources/machine-learning/index]]
+- [[wiki/sources/timeseries-analysis/index]]
 - [[wiki/sources/operations-research/index]]
 - [[wiki/sources/reinforcement-learning/index]]
+- [[wiki/sources/statistics-theory/index]]
+- [[wiki/sources/causal-inference/index]]
+- [[wiki/sources/nlp/index]]
+- [[wiki/sources/feature-engineering/index]]
+- [[wiki/sources/control-algorithms/index]]
+- [[wiki/sources/power-market-trading/index]]
+- [[wiki/sources/vibe-coding/index]]
+- [[wiki/sources/llm-wiki/index]]
 - [[wiki/sources/shared/index]]
-- [[wiki/sources/timeseries-analysis/index]]
 
 ## 关联入口
 

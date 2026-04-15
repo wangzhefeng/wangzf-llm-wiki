@@ -8,6 +8,11 @@ created_at: 2026-04-13
 topics:
   - machine-learning-supervised-model
   - 有监督学习模型
+status: linked
+related_concepts:
+  - 监督学习
+  - 集成学习
+  - 概率预测
 ---
 
 

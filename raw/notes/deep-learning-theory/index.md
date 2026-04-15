@@ -5,6 +5,10 @@ list_pages: true
 source_type: notes
 created_at: 2026-04-11
 status: linked
+related_concepts:
+  - 深度学习
+  - 神经网络
+  - 深度学习优化算法
 topics:
   - deep-learning-theory
   - 深度学习理论

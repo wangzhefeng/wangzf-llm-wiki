@@ -5,6 +5,10 @@ list_pages: true
 source_type: notes
 created_at: 2026-04-11
 status: linked
+related_concepts:
+  - 自然语言处理
+  - 文本处理
+  - 词嵌入
 topics:
   - llm-theory
   - 大语言模型理论

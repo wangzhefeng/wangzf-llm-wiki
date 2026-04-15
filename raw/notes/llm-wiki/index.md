@@ -3,6 +3,9 @@ source_type: notes
 source_path: /Users/wangzf/projects_ai/wangzf-llm-wiki/raw/notes/knowledge-base
 created_at: 2026-04-04
 status: linked
+related_concepts:
+  - 知识库建设方法
+  - LLM辅助研究
 topics:
   - llm-wiki
   - 大语言模型知识库(本仓库)

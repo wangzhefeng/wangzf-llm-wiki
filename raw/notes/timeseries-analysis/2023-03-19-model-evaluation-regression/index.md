@@ -9,7 +9,11 @@ tags:
   - model
 source_type: notes
 created_at: 2022-11-22
-status: inbox
+status: summarized
+related_concepts:
+  - 时间序列预测
+  - 预测模型评估
+  - 机器学习时间序列预测
 topics:
   - timeseries-analysis
   - 时间序列分析

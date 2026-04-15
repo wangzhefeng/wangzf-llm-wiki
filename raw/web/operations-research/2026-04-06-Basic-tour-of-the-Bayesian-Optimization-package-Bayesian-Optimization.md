@@ -12,7 +12,10 @@ tags:
   - "clippings"
 source_url: "https://bayesian-optimization.github.io/BayesianOptimization/1.5.1/basic-tour.html"
 published_at: null
-related_concepts: []
+related_concepts:
+  - 运筹优化
+  - 贝叶斯优化
+  - 数学优化
 topics:
   - operations-research
   - 数学优化算法/运筹学

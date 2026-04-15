@@ -9,7 +9,10 @@ tags:
   - note
 source_type: notes
 created_at: 2022-03-11
-status: inbox
+status: summarized
+related_concepts:
+  - 时间序列预测
+  - 统计时间序列预测
 topics:
   - timeseries-analysis
   - 时间序列分析

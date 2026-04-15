@@ -9,7 +9,11 @@ tags:
   - model
 source_type: notes
 created_at: 2023-03-03
-status: inbox
+status: summarized
+related_concepts:
+  - 时间序列预测
+  - 统计时间序列预测
+  - 时间序列平稳性检验
 topics:
   - timeseries-analysis
   - 时间序列分析

@@ -5,6 +5,10 @@ list_pages: true
 source_type: notes
 created_at: 2026-04-11
 status: linked
+related_concepts:
+  - 控制算法
+  - 自动控制
+  - 运筹优化
 topics:
   - control-algorithms
   - 控制算法

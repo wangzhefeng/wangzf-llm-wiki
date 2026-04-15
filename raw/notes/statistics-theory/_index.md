@@ -8,6 +8,11 @@ created_at: 2026-04-13
 topics:
   - statistics-theory
   - 统计学理论
+status: linked
+related_concepts:
+  - 统计学理论
+  - 概率论
+  - 假设检验
 ---
 
 

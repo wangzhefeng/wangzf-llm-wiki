@@ -38,14 +38,16 @@
 - [时间序列预测总索引](wiki/indexes/timeseries-analysis/时间序列预测总索引.md)
 - [运筹优化算法总索引](wiki/indexes/operations-research/运筹优化算法总索引.md)
 - [机器学习总索引](wiki/indexes/machine-learning/机器学习总索引.md)
-- [数据分析总索引](wiki/indexes/data-analysis/数据分析总索引.md)
+- [统计学理论总索引](wiki/indexes/statistics-theory/统计学理论总索引.md)
+- [因果推断总索引](wiki/indexes/causal-inference/因果推断总索引.md)
 - [深度学习总索引](wiki/indexes/deep-learning/深度学习总索引.md)
-- [计算机视觉总索引](wiki/indexes/computer-vision/计算机视觉总索引.md)
+- [自然语言处理总索引](wiki/indexes/nlp/NLP基础任务总索引.md)
 - [强化学习总索引](wiki/indexes/reinforcement-learning/强化学习总索引.md)
+- [特征工程总索引](wiki/indexes/feature-engineering/特征工程总索引.md)
 - [控制算法总索引](wiki/indexes/control-algorithms/控制算法总索引.md)
-- [数据结构与算法总索引](wiki/indexes/data-structure-algorithm/数据结构与算法总索引.md)
 - [电力市场交易总索引](wiki/indexes/power-market-trading/电力市场交易总索引.md)
 - [Vibe-Coding 总索引](wiki/indexes/vibe-coding/Vibe-Coding总索引.md)
+- [LLM-Wiki总索引](wiki/indexes/llm-wiki/LLM-Wiki总索引.md)
 
 ## 维护入口
 

@@ -1,7 +1,10 @@
 ---
 source_type: notes
 created_at: 2026-01-18
-status: inbox
+status: summarized
+related_concepts:
+  - 时间序列预测
+  - 统计时间序列预测
 title: 深度时序模型研究的三个阶段
 subtitle: Three Stages of Deep Time Series Modeling
 author: wangzf

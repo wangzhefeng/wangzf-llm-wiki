@@ -5,7 +5,7 @@ source_path: raw/web/vibe-coding/2026-04-06-OpenAI-Academy.md
 created_at: 2026-04-06
 topics:
   - vibe-coding
-  - programming-tools
+  - vibe-coding
 related_concepts:
   - Codex
 status: linked

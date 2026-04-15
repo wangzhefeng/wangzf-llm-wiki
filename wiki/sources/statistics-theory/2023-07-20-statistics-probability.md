@@ -11,7 +11,7 @@ topics:
   - 统计学理论
 tags:
   - statistics-theory
-  - data-analysis
+  - statistics-theory
   - 概率论
   - 随机事件
   - 概率定义

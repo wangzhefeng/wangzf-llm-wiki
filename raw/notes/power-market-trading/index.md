@@ -2,6 +2,9 @@
 source_type: notes
 created_at: 2026-03-05
 status: summarized
+related_concepts:
+  - 电力市场交易
+  - 能源管理
 title: 电力交易
 subtitle: Electricity Trading
 author: wangzf

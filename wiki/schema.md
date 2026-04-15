@@ -29,11 +29,8 @@ status: linked
   - `raw/assets/`：通用附件与非来源型素材（见 `raw/assets/README.md`）
 - `wiki/sources/`：来源摘要卡（讲材料内容与价值）
 - `wiki/indexes/`：主题索引、阅读地图、工作台
-- `wiki/indexes/shared/`：共享执行层
-  - 根目录：执行工作流与任务流入口（ingest/query/backfill/lint）
-  - `llm-wiki-building/`：构建方法论（结构原则、阅读路径、来源清单）
-  - `llm-wiki-operations/`：运维治理（运维总索引、运维阅读地图、运维来源清单）
-  - `llm-wiki-usage/`：使用方法（使用总索引、使用阅读地图、使用来源清单）
+- `wiki/indexes/shared/`：共享执行工作流（ingest/query/backfill/lint 入口）
+- `wiki/indexes/llm-wiki/`：知识库建设、运维与使用的主题索引（含总索引、来源清单、阅读地图）
 - `wiki/concepts/`：概念页与方法页
 - `wiki/entities/`：实体页（当前可按需补齐）
 - `wiki/comparisons/`：对比分析页（当前可按需补齐）

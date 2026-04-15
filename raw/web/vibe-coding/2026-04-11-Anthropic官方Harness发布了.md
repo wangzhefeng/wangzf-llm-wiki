@@ -11,7 +11,10 @@ created_at: 2026-04-11
 status: linked
 source_url: https://mp.weixin.qq.com/s/66SDrz5_MlBAPwL0xtMFyw
 published_at: null
-related_concepts: []
+related_concepts:
+  - Claude Code
+  - Vibe Coding
+  - 工具调用
 topics:
   - vibe-coding
   - Vibe Coding

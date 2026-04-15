@@ -11,7 +11,9 @@ tags:
 title: basinhopping — SciPy v1.17.0 Manual
 source_url: https://docs.scipy.org/doc/scipy/reference/generated/scipy.optimize.basinhopping.html
 published_at: null
-related_concepts: []
+related_concepts:
+  - 运筹优化
+  - 数学优化
 topics:
   - operations-research
   - 数学优化算法/运筹学

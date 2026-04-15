@@ -1,10 +1,11 @@
 # 术语表
 
-* agent-dev: 智能体开发
+* agent-dev: 智能体开发(已删除)
 * causal-inference: 因果推断
-* control-algorithms： 控制算法
-* data-analysis: 数据分析
-* data-structure-algorithm: 数据结构与算法
+* computer-vision: 计算机视觉(已删除)
+* control-algorithms: 控制算法
+* data-analysis: 数据分析(已删除)
+* data-structure-algorithm: 数据结构与算法(已删除)
 * deep-learning-theory: 深度学习理论
 * feature-engine: 特征工程
 * llm-post-training: 大语言模型后训练
@@ -17,9 +18,10 @@
 * nlp: 自然语言处理
 * operations-research: 数学优化算法/运筹学
 * power-market-trading: 电力市场交易
-* programming-tools: 编程工具
+* tools: 工具(已删除)
+* programming-tools: 编程工具(已删除)
 * reinforcement-learning: 强化学习
 * statistics-theory: 统计学理论
 * timeseries-analysis: 时间序列分析
 * vibe-coding: Vibe Coding
-* others: 其它
+* others: 其它(暂无)

@@ -11,6 +11,10 @@ tags:
 source_type: notes
 created_at: 2024-09-30
 status: summarized
+related_concepts:
+  - 运筹优化
+  - 启发式算法
+  - 元启发算法
 topics:
   - control-algorithms
   - 控制算法

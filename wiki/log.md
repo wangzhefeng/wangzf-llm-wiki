@@ -1001,3 +1001,156 @@ Layer 3: 表示学习（4 代演进）
 ### 后续
 - 若需要修复某些断链问题，应通过标准 ingest 流程创建真正的来源卡和概念页
 - 不再使用自动占位符机制来处理断链，而是优先消除断链的根本原因
+
+---
+
+## [2026-04-16] lint | 全面健康检查与修复（PHASE 1）
+
+### 背景
+对知识库进行全面健康检查，发现并修复以下问题：状态字段不一致、孤儿概念页、合成输出未回流、frontmatter 字段缺失。
+
+### 执行内容
+
+**1. 时序 raw status 同步**
+- 发现：`raw/notes/timeseries-analysis/` 77 个目录，75 个标注 `status: inbox`，但 74 个已有对应源卡
+- 操作：69 个有源卡的目录从 `inbox` 更新为 `summarized`（6 个无源卡保留 inbox）
+- 影响：知识库 inbox 总量从 ~615 下降约 69 个
+
+**2. 孤儿概念页入索引（20 个）**
+- 修复领域：LLM(4)、强化学习(3)、因果推断(5)、机器学习(1)、深度学习(2)、NLP(2)、运筹(3)
+- 修改的索引文件：大语言模型总索引、强化学习总索引、因果推断总索引、机器学习总索引、深度学习总索引、NLP基础任务总索引、NLP词嵌入总索引、NLP应用总索引
+- 修复内容：添加 wikilink、修正文件名不一致（如 Causal-Diagram vs Causal Diagram）
+
+**3. 合成输出回流（4 个）**
+- 4 个 outputs/syntheses/ 文件补入对应主题索引
+- 时序索引补充：`2026-04-06-时间序列机器学习预测-现状与进阶路线`
+- LLM-Wiki索引补充：构建流程总结、维护流程总结、AI与用户使用流程总结
+
+**4. Frontmatter 字段补全（15 个文件）**
+- 5 个无 frontmatter 的新建 notes 文件：补充完整 source_type/created_at/topics/status
+  - 路径：`raw/notes/operations-research/` 3 个、`raw/notes/timeseries-analysis/` 2 个
+- 5 个 index/_index 文件：补充 `status` 字段
+  - 路径：监督学习、无监督学习、特征工程、统计学、NgBoost 子目录
+
+### 验证
+✓ 69 个时序 raw 目录 status 已更新为 summarized
+✓ 20/20 孤儿概念页已被索引引用（grep 逐一验证）
+✓ 4/4 合成输出在主题索引中可达
+✓ notes/web/papers 目录下 status 和 source_type 缺失数量降为 0
+
+### 后续待处理（未在本轮修复）
+- ~~6 个无源卡的时序 raw 目录需完整 ingest~~ → 已在 PHASE 2 完成
+- ~~summarized/linked 状态文件缺 related_concepts~~ → 已在 PHASE 2 完成
+- inbox 状态文件缺 `related_concepts`（~383 个，推迟处理，优先级低）
+
+---
+
+## [2026-04-16] lint | 健康检查修复 PHASE 2
+
+### 背景
+继 PHASE 1 之后，继续处理剩余积压项目：6 个无源卡时序目录的完整 ingest，以及 154 个 summarized/linked/ingested 文件的 related_concepts 批量补全。
+
+### 执行内容
+
+**1. 6 个无源卡时序目录完整 ingest**
+
+为以下目录生成源卡并更新时序来源清单索引：
+- `2022-10-15-root-cause-analysis` → [[2022-10-15-根因分析]]（多维时序 RCA 算法）
+- `2023-02-09-data-shift` → [[2023-02-09-数据集偏移]]（协变量偏移/概念漂移）
+- `2023-02-09-eda-covariate` → [[2023-02-09-交叉变量探索分析]]（EDA 协变量分析）
+- `2023-03-19-model-evaluation-regression` → [[2022-11-22-回归与时序评价指标]]（MAE/MASE 等）
+- `2026-01-29-conv1d` → [[2026-01-29-Conv1D一维卷积]]（PyTorch Conv1d 时序应用）
+- `timeseries-summary` → [[2022-04-20-时间序列分析概述（历史笔记）]]（早期时序概述）
+
+所有 6 个 raw 目录 status 已更新为 `summarized`，时序 raw notes 全量（75/75）status 为 summarized。
+
+**2. related_concepts 批量补全（154 个文件）**
+
+覆盖目录：
+- `raw/notes/timeseries-analysis/`：75 个文件，按论文/工具/预处理/评估类别推断
+- `raw/notes/operations-research/`：13 个文件，按优化类别推断
+- `raw/web/operations-research/`：40 个文件，按线性规划/凸优化/求解器类别推断
+- `raw/web/power-market-trading/`：5 个文件 → `电力市场交易`
+- `raw/web/vibe-coding/`：5 个文件 → `Vibe Coding` / `Agent智能体`
+- 其他零散文件：21 个（控制算法、深度学习、特征工程、ML、NLP、RL 等）
+
+### 验证
+✓ 时序 raw notes：75/75 已 summarized，6 个新源卡已建立
+✓ summarized/linked/ingested 文件缺 related_concepts：154 → **0**（全部补全）
+✓ 时序来源清单已更新，第五轮新增 6 条来源条目
+
+---
+
+## 2026-04-16 PHASE 3：编译完整性分析与控制文件修复（lint）
+
+### 操作
+
+**编译完整性分析（全量）**
+
+对 17 个活跃主题 + 5 个已删除主题进行了三层（indexes/concepts/sources）编译状态核查，发现：
+
+1. `data-structure-algorithm`（已删除主题）：wiki 三层残留 23 个文件，已彻底删除
+   - 删除：`wiki/indexes/data-structure-algorithm/`（3 文件）
+   - 删除：`wiki/concepts/data-structure-algorithm/`（9 文件）
+   - 删除：`wiki/sources/data-structure-algorithm/`（11 文件）
+
+2. 控制文件断链修复：
+   - `README.md`：删除 3 个已删除主题入口（data-analysis/computer-vision/data-structure-algorithm），新增 4 个遗漏主题（statistics-theory/causal-inference/feature-engineering/nlp/llm-wiki）
+   - `wiki/index.md`：删除 3 个断链，新增 4 个遗漏主题
+   - `wiki/concepts/index.md`：删除 2 个断链，补入 10 个遗漏活跃主题
+   - `wiki/sources/index.md`：删除 2 个断链，补入全量主题目录
+
+3. AGENTS.md + wiki/schema.md 路径修正：
+   - 将不存在的 `llm-wiki-building/`、`llm-wiki-operations/`、`llm-wiki-usage/` 路径统一更正为实际路径 `wiki/indexes/llm-wiki/`
+
+4. topics 字段旧名称批量替换（108 个文件）：
+   - `deep-learning-theory` → `deep-learning`：97 个文件（wiki/sources/deep-learning/）
+   - `data-analysis` → `statistics-theory`：7 个文件（wiki/sources/statistics-theory/ + 索引）
+   - `programming-tools` → `vibe-coding`：4 个文件
+
+5. 编译状态摘要（活跃主题）：
+   - 完整：causal-inference、control-algorithms、deep-learning、feature-engineering、llm、machine-learning、nlp、operations-research、power-market-trading、reinforcement-learning、timeseries-analysis、vibe-coding
+   - 待补 ingest：causal-inference（13 篇 raw/web 未生成源卡）
+   - 其他已删除主题（agent-dev/computer-vision/data-analysis/programming-tools）：均已完全清理
+
+### 验证
+✓ data-structure-algorithm 三个目录已删除
+✓ README.md/wiki/index.md 断链已清除，活跃主题入口已完整
+✓ AGENTS.md/wiki/schema.md 不存在路径已修正
+✓ topics 旧名称替换：deep-learning-theory/data-analysis/programming-tools 残留均为 0
+
+---
+
+## 2026-04-16 删除 tools 主题编译内容（lint）
+
+删除 `wiki/sources/tools/`（15 个文件），该目录无对应 glossary 主题，原始来源已归入其他主题（deep-learning/vibe-coding 等）。
+
+- 删除：`wiki/sources/tools/`（15 个文件）
+- 更新：`wiki/sources/index.md` 移除 `[[wiki/sources/tools/index]]` 引用
+- 更新：`wiki/sources/llm/数据科学工具与其他专题来源.md` 移除断链行
+
+---
+
+## 2026-04-16 补齐 statistics-theory 和 NLP 缺失索引文件（backfill）
+
+### 问题
+
+全量索引结构检查发现 2 个主题缺少独立的 `来源清单` 和 `阅读地图` 文件（其他 12 个主题均已完整）：
+- `statistics-theory`：内容内联在 1 个总索引文件中
+- `nlp`：有 4 个子主题索引但无来源清单或阅读地图
+
+### 操作
+
+**statistics-theory（拆分内联内容）**：
+- 新建 `wiki/indexes/statistics-theory/统计学理论来源清单.md`（6 张来源卡分类表格）
+- 新建 `wiki/indexes/statistics-theory/统计学理论阅读地图.md`（三层学习路径）
+- 更新 `wiki/indexes/statistics-theory/统计学理论总索引.md`：移除内联的来源清单和阅读地图内容，替换为跳转链接
+
+**NLP（全新创建）**：
+- 新建 `wiki/indexes/nlp/NLP自然语言处理来源清单.md`（36 张来源卡，按基础任务/应用/词向量/知识图谱/工具分类）
+- 新建 `wiki/indexes/nlp/NLP自然语言处理阅读地图.md`（入门→进阶→词向量→高级四层路径，含三条学习路径推荐）
+- 更新 `wiki/indexes/nlp/NLP基础任务总索引.md`：补入两个新文件的导航链接
+
+### 验证
+✓ statistics-theory：3 文件（总索引 + 来源清单 + 阅读地图），结构与其他主题一致
+✓ NLP：6 文件（4 子索引 + 来源清单 + 阅读地图），来源清单覆盖全部 36 张来源卡

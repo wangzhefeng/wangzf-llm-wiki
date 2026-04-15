@@ -9,7 +9,11 @@ tags:
   - model
 source_type: notes
 created_at: 2022-04-22
-status: inbox
+status: summarized
+related_concepts:
+  - 时间序列预测
+  - 时间序列预处理
+  - 特征工程
 topics:
   - timeseries-analysis
   - 时间序列分析

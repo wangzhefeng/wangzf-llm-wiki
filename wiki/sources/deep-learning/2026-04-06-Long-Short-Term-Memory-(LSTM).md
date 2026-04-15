@@ -6,7 +6,7 @@ author: null
 published_at: 2026-04-06
 created_at: 2026-04-15
 topics:
-  - deep-learning-theory
+  - deep-learning
   - 循环与序列模型
 related_concepts:
   - 循环神经网络

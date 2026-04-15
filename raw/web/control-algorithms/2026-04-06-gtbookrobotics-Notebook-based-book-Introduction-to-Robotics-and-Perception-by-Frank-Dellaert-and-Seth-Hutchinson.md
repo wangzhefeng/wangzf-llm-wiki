@@ -13,7 +13,10 @@ title: 'gtbook/robotics: Notebook-based book "Introduction to Robotics and Perce
   by Frank Dellaert and Seth Hutchinson'
 source_url: https://github.com/gtbook/robotics
 published_at: null
-related_concepts: []
+related_concepts:
+  - 控制算法
+  - 自动控制
+  - 运筹优化
 topics:
   - control-algorithms
   - 控制算法

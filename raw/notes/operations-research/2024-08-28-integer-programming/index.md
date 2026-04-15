@@ -11,6 +11,10 @@ tags:
 source_type: notes
 created_at: 2024-08-28
 status: summarized
+related_concepts:
+  - 运筹优化
+  - 整数规划
+  - 线性规划
 topics:
   - operations-research
   - 数学优化算法/运筹学

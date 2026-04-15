@@ -36,16 +36,20 @@ status: linked
 
 ## 主题入口
 
-- [[wiki/concepts/data-analysis/index]]
-- [[wiki/concepts/control-algorithms/index]]
-- [[wiki/concepts/data-structure-algorithm/index]]
-- [[wiki/concepts/deep-learning/index]]
-- [[wiki/concepts/llm-wiki/index]]
 - [[wiki/concepts/llm/index]]
+- [[wiki/concepts/deep-learning/index]]
 - [[wiki/concepts/machine-learning/index]]
+- [[wiki/concepts/timeseries-analysis/index]]
 - [[wiki/concepts/operations-research/index]]
 - [[wiki/concepts/reinforcement-learning/index]]
-- [[wiki/concepts/timeseries-analysis/index]]
+- [[wiki/concepts/statistics-theory/index]]
+- [[wiki/concepts/causal-inference/index]]
+- [[wiki/concepts/nlp/index]]
+- [[wiki/concepts/feature-engineering/index]]
+- [[wiki/concepts/control-algorithms/index]]
+- [[wiki/concepts/power-market-trading/index]]
+- [[wiki/concepts/vibe-coding/index]]
+- [[wiki/concepts/llm-wiki/index]]
 
 ## 关联入口
 

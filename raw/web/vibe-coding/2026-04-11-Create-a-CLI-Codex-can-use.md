@@ -12,6 +12,10 @@ source_type: web
 source_url: https://developers.openai.com/codex/use-cases/agent-friendly-clis
 created_at: 2026-04-11
 status: linked
+related_concepts:
+  - Agent智能体
+  - 工具调用
+  - Vibe Coding
 topics:
   - programming-tools
   - 编程工具
