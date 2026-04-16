@@ -1,6 +1,6 @@
 ---
 source_type: web
-source_path: raw/web/llm-post-training/2026-04-06-RLHF-and-alternatives-ORPO.md
+source_path: raw/web/llm/2026-04-06-RLHF-and-alternatives-ORPO.md
 title: 'RLHF and alternatives: ORPO'
 author: unknown
 published_at: 2026-04-06
@@ -15,8 +15,8 @@ status: summarized
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/web/llm-post-training/2026-04-06-RLHF-and-alternatives-ORPO.md]]
-- 来源：`raw/web/llm-post-training/2026-04-06-RLHF-and-alternatives-ORPO.md`
+- 原文：[[raw/web/llm/2026-04-06-RLHF-and-alternatives-ORPO.md]]
+- 来源：`raw/web/llm/2026-04-06-RLHF-and-alternatives-ORPO.md`
 - 主题：强化学习
 
 ## 价值是什么

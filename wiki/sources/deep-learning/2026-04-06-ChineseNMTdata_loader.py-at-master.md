@@ -1,6 +1,6 @@
 ---
 source_type: web
-source_path: raw/web/deep-learning-theory/2026-04-06-ChineseNMTdata_loader.py-at-master.md
+source_path: raw/web/deep-learning/2026-04-06-ChineseNMTdata_loader.py-at-master.md
 title: ChineseNMT/data_loader.py at master
 author: null
 published_at: 2026-04-06

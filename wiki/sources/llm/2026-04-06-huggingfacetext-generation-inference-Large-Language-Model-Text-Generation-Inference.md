@@ -4,9 +4,9 @@ created: 2026-04-15
 updated: 2026-04-15
 type: source
 tags:
-  - llm-theory
+  - llm
 sources:
-  - raw/web/llm-theory/2026-04-06-huggingfacetext-generation-inference-Large-Language-Model-Text-Generation-Inference.md
+  - raw/web/llm/2026-04-06-huggingfacetext-generation-inference-Large-Language-Model-Text-Generation-Inference.md
 status: summarized
 ---
 ## 内容摘要

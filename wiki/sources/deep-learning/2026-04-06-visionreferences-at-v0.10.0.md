@@ -1,6 +1,6 @@
 ---
 source_type: web
-source_path: raw/web/deep-learning-theory/2026-04-06-visionreferences-at-v0.10.0.md
+source_path: raw/web/deep-learning/2026-04-06-visionreferences-at-v0.10.0.md
 title: vision/references at v0.10.0
 author: null
 published_at: 2026-04-06

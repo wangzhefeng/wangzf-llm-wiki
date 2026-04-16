@@ -5,7 +5,7 @@ author: wangzf
 date: '2022-11-28'
 slug: timeseries-lib-pandas
 categories:
-  - timeseries
+  - timeseries-analysis
 tags:
   - tool
 source_type: notes

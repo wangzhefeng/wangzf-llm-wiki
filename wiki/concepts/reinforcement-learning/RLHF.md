@@ -37,7 +37,7 @@ RLHF（Reinforcement Learning from Human Feedback）是利用人类反馈构造�
 - [[强化学习专题来源]]
 - [[raw/web/reinforcement-learning/2026-04-06-图解大模型RLHF系列之：人人都能看懂的PPO原理与源码解读]]
 - [[2026-04-06-LLM-Training-RLHF-and-Its-Alternatives]]
-- [[raw/web/llm-pre-training/2026-04-06-我的RLHF实践记录~]]
+- [[raw/web/llm/2026-04-06-我的RLHF实践记录~]]
 
 ## 相关概念
 

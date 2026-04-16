@@ -1,7 +1,7 @@
 ---
 created_at: 2026-04-05
 topics:
-- timeseries
+- timeseries-analysis
 related_concepts:
 - 统计时间序列预测
 - 趋势与季节性

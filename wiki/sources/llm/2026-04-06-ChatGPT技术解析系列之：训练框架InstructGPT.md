@@ -4,9 +4,9 @@ created: 2026-04-15
 updated: 2026-04-15
 type: source
 tags:
-  - llm-theory
+  - llm
 sources:
-  - raw/web/llm-theory/2026-04-06-ChatGPT技术解析系列之：训练框架InstructGPT.md
+  - raw/web/llm/2026-04-06-ChatGPT技术解析系列之：训练框架InstructGPT.md
 status: summarized
 ---
 ## 内容摘要

@@ -11,7 +11,6 @@ topics:
   - 统计学理论
 tags:
   - statistics-theory
-  - statistics-theory
   - 相关性分析
   - 相关系数
   - 皮尔逊相关

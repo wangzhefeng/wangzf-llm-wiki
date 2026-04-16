@@ -4,9 +4,9 @@ created: 2026-04-15
 updated: 2026-04-15
 type: source
 tags:
-  - llm-post-training
+  - llm
 sources:
-  - raw/web/llm-post-training/2026-04-06-RLHF-and-alternatives-ORPO.md
+  - raw/web/llm/2026-04-06-RLHF-and-alternatives-ORPO.md
 status: summarized
 ---
 ## 内容摘要
@@ -17,5 +17,5 @@ open-source tool for data-centric NLP
 - In previous posts, we started by analyzing the
 
 ## 来源信息
-- 原始文件：raw/web/llm-post-training/2026-04-06-RLHF-and-alternatives-ORPO.md
+- 原始文件：raw/web/llm/2026-04-06-RLHF-and-alternatives-ORPO.md
 - 来源类型：web

@@ -2,7 +2,6 @@
 created_at: 2026-04-14
 topics:
   - vibe-coding
-  - agent-dev
 related_concepts:
   - Harness工程
   - Agent智能体

@@ -4,7 +4,7 @@ author: wangzf
 date: '2022-09-17'
 slug: lstm-app
 categories:
-  - deeplearning
+  - deep-learning
 tags:
   - model
 source_type: notes

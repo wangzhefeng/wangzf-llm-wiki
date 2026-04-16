@@ -4,7 +4,7 @@ author: wangzf
 date: '2023-03-10'
 slug: paper-ts-arnet
 categories:
-  - timeseries
+  - timeseries-analysis
 tags:
   - paper
 source_type: notes

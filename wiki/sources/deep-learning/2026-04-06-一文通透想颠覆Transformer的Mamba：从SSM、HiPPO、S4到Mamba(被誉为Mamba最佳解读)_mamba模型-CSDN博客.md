@@ -1,6 +1,6 @@
 ---
 source_type: web
-source_path: raw/web/deep-learning-theory/2026-04-06-一文通透想颠覆Transformer的Mamba：从SSM、HiPPO、S4到Mamba(被誉为Mamba最佳解读)_mamba模型-CSDN博客.md
+source_path: raw/web/deep-learning/2026-04-06-一文通透想颠覆Transformer的Mamba：从SSM、HiPPO、S4到Mamba(被誉为Mamba最佳解读)_mamba模型-CSDN博客.md
 title: 一文通透想颠覆Transformer的Mamba：从SSM、HiPPO、S4到Mamba(被誉为Mamba最佳解读)_mamba模型-CSDN博客
 author: -
 published_at: 2026-04-06

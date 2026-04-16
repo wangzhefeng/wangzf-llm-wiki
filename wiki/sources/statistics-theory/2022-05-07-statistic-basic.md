@@ -11,7 +11,6 @@ topics:
   - 统计学理论
 tags:
   - statistics-theory
-  - statistics-theory
   - 大数定律
   - 中心极限定理
   - 参数估计

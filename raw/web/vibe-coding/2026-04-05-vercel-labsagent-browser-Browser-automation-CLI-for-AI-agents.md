@@ -17,7 +17,6 @@ related_concepts:
   - 工具调用
   - Vibe Coding
 topics:
-  - programming-tools
   - 编程工具
 ---
 

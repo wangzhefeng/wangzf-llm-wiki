@@ -1,6 +1,6 @@
 ---
 source_type: web
-source_path: raw/web/deep-learning-theory/2026-04-06-StatQuestdecoder_transformer_from_scratch.md
+source_path: raw/web/deep-learning/2026-04-06-StatQuestdecoder_transformer_from_scratch.md
 title: StatQuest/decoder_transformer_from_scratch
 author: created_at: 2026-04-06
 published_at: 2026-04-06

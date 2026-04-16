@@ -1,6 +1,6 @@
 ---
 source_type: web
-source_path: raw/web/deep-learning-theory/2026-04-06-教你用PyTorch玩转Transformer英译中翻译模型！.md
+source_path: raw/web/deep-learning/2026-04-06-教你用PyTorch玩转Transformer英译中翻译模型！.md
 title: 教你用PyTorch玩转Transformer英译中翻译模型！
 author: -
 published_at: 2026-04-06

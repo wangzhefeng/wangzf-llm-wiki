@@ -4,7 +4,7 @@ author: wangzf
 date: '2024-05-08'
 slug: paper-ts-timesnet
 categories:
-  - timeseries
+  - timeseries-analysis
 tags:
   - paper
 source_type: notes

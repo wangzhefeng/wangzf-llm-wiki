@@ -1,6 +1,6 @@
 ---
 source_type: web
-source_path: raw/web/deep-learning-theory/2026-04-06-Transformers-Laid-Out.md
+source_path: raw/web/deep-learning/2026-04-06-Transformers-Laid-Out.md
 title: Transformers Laid Out
 author: null
 published_at: 2026-04-06

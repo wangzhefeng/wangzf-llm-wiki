@@ -4,7 +4,6 @@ created: 2026-04-12
 updated: 2026-04-12
 type: concept
 topics:
-- agent-dev
 - vibe-coding
 status: summarized
 ---

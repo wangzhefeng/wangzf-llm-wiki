@@ -4,7 +4,7 @@ author: wangzf
 date: '2022-04-26'
 slug: timeseries-lib-autots
 categories:
-  - timeseries
+  - timeseries-analysis
 tags:
   - model
 source_type: notes

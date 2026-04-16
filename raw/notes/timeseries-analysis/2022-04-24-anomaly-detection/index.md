@@ -5,7 +5,7 @@ author: wangzf
 date: '2022-04-24'
 slug: anomaly-detection
 categories:
-  - timeseries
+  - timeseries-analysis
 tags:
   - model
 source_type: notes

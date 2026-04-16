@@ -15,7 +15,6 @@ related_concepts:
   - 运筹优化
   - 数学优化
 topics:
-  - programming-tools
   - 编程工具
 ---
 ## Welcome

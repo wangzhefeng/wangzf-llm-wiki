@@ -1,7 +1,7 @@
 ---
 created_at: 2026-04-11
 topics:
-  - timeseries
+  - timeseries-analysis
 status: inbox
 source_path: raw/web/timeseries-analysis/2026-04-06-刷新9大榜单！哈工大提出interPDN：干翻iTransformer，时序预测新霸主诞生！.md
 ---

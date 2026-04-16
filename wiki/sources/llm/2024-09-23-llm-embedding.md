@@ -4,9 +4,9 @@ created: 2024-09-23
 updated: 2026-04-15
 type: source
 tags:
-  - llm-theory
+  - llm
 sources:
-  - raw/notes/llm-theory/2024-09-23-llm-embedding
+  - raw/notes/llm/2024-09-23-llm-embedding
 status: summarized
 ---
 ## 内容摘要

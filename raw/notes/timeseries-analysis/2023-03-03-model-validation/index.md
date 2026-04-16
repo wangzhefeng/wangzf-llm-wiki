@@ -4,7 +4,7 @@ author: wangzf
 date: '2023-03-03'
 slug: timeseries-model-cv
 categories:
-  - timeseries
+  - timeseries-analysis
 tags:
   - model
 source_type: notes

@@ -3,9 +3,7 @@ source_type: notes
 title: Vibe Coding 与 Agent 专题
 created_at: 2026-04-06
 topics:
-- agent-dev
 - llm
-- tools
 - vibe-coding
 related_concepts:
 - Claude Code

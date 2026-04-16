@@ -1,6 +1,6 @@
 ---
 source_type: web
-source_path: raw/web/deep-learning-theory/2026-04-06-Training-a-1-Trillion-Parameter-Model-With-PyTorch-Fully-Sharded-Data-Parallel-on-AWS.md
+source_path: raw/web/deep-learning/2026-04-06-Training-a-1-Trillion-Parameter-Model-With-PyTorch-Fully-Sharded-Data-Parallel-on-AWS.md
 title: Training a 1 Trillion Parameter Model With PyTorch Fully Sharded Data Parallel on AWS
 author: -
 published_at: 2026-04-06

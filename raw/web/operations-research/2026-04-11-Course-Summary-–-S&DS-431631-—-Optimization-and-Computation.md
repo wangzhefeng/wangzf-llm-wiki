@@ -14,7 +14,7 @@ related_concepts:
   - 运筹优化
   - 数学优化
 topics:
-  - deep-learning-theory
+  - deep-learning
   - 深度学习理论
 ---
 This course has taken you on a journey through the core of mathematical optimization — from the foundational theory of convexity that tells us *what* an optimal solution looks like, through the first- and second-order algorithms that *find* one, to the classical theory of linear programming and the modern constrained optimization methods that power industrial solvers. Along the way, we saw how these ideas come alive in two of the most consequential applications of our time: diffusion models and transformers. The unifying theme throughout has been the interplay between structure and algorithms: convexity, smoothness, strong convexity, and constraint geometry each unlock specific algorithmic strategies with provable guarantees.

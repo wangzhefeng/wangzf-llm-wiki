@@ -4,7 +4,7 @@ author: wangzf
 date: '2024-02-27'
 slug: paper-ts-ltsf-linear
 categories:
-  - timeseries
+  - timeseries-analysis
 tags:
   - paper
 source_type: notes

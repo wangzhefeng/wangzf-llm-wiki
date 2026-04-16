@@ -4,9 +4,9 @@ created: '2026-04-15'
 updated: '2026-04-15'
 type: source
 tags:
-  - llm-pre-training
+  - llm
 sources:
-  - raw/web/llm-pre-training/2026-04-06-最新「大模型简史」整理！从Transformer（2017）到DeepSeek-R1（2025）.md
+  - raw/web/llm/2026-04-06-最新「大模型简史」整理！从Transformer（2017）到DeepSeek-R1（2025）.md
 status: summarized
 ---
 
@@ -21,5 +21,5 @@ status: summarized
 
 ## 来源信息
 
-- 原始文件：raw/web/llm-pre-training/2026-04-06-最新「大模型简史」整理！从Transformer（2017）到DeepSeek-R1（2025）.md
+- 原始文件：raw/web/llm/2026-04-06-最新「大模型简史」整理！从Transformer（2017）到DeepSeek-R1（2025）.md
 - 来源类型：web

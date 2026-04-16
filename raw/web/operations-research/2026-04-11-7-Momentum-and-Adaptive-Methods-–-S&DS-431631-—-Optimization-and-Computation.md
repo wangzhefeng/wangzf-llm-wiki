@@ -15,7 +15,6 @@ related_concepts:
   - 深度学习优化算法
   - 数学优化
 topics:
-  - programming-tools
   - 编程工具
 ---
 Gradient descent is simple and elegant, but it has a well-known weakness: on ill-conditioned problems, it converges painfully slowly. The iterates zigzag across narrow valleys, wasting most of their effort oscillating in high-curvature directions while barely making progress along the bottom of the valley. For a function with condition number $\kappa$, gradient descent requires $O(\kappa \log(1/\varepsilon))$ iterations — and in machine learning applications, $\kappa$ can easily be in the thousands or millions.

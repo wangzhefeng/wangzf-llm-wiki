@@ -5,7 +5,7 @@ author: wangzf
 date: '2023-03-09'
 slug: timeseries-lib-gluonts
 categories:
-  - timeseries
+  - timeseries-analysis
 tags:
   - model
 source_type: notes

@@ -4,7 +4,7 @@ author: wangzf
 date: '2024-09-04'
 slug: paper-ts-fedformer
 categories:
-  - timeseries
+  - timeseries-analysis
 tags:
   - paper
 source_type: notes

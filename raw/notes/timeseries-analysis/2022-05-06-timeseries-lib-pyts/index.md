@@ -5,7 +5,7 @@ author: wangzf
 date: '2022-05-06'
 slug: timeseries-lib-pyts
 categories:
-  - timeseries
+  - timeseries-analysis
 tags:
   - tool
 source_type: notes

@@ -1,6 +1,6 @@
 ---
 source_type: web
-source_path: raw/web/deep-learning-theory/2026-04-06-Deep-Learning-with-Python,-Third-Edition.md
+source_path: raw/web/deep-learning/2026-04-06-Deep-Learning-with-Python,-Third-Edition.md
 title: Deep Learning with Python, Third Edition
 author: -
 published_at: 2026-04-06

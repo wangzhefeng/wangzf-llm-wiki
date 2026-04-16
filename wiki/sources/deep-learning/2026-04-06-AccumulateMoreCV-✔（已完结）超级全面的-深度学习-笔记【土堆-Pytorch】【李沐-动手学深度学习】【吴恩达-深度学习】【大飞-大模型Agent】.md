@@ -1,6 +1,6 @@
 ---
 source_type: web
-source_path: raw/web/deep-learning-theory/2026-04-06-AccumulateMoreCV-✔（已完结）超级全面的-深度学习-笔记【土堆-Pytorch】【李沐-动手学深度学习】【吴恩达-深度学习】【大飞-大模型Agent】.md
+source_path: raw/web/deep-learning/2026-04-06-AccumulateMoreCV-✔（已完结）超级全面的-深度学习-笔记【土堆-Pytorch】【李沐-动手学深度学习】【吴恩达-深度学习】【大飞-大模型Agent】.md
 title: AccumulateMore/CV: ✔（已完结）超级全面的 深度学习 笔记【土堆 Pytorch】【李沐 动手学深度学习】【吴恩达 深度学习】【大飞
 author: null
 published_at: 2026-04-06

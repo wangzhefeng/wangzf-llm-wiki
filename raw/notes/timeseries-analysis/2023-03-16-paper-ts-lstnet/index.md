@@ -4,7 +4,7 @@ author: wangzf
 date: '2023-03-16'
 slug: paper-ts-lstnet
 categories:
-  - timeseries
+  - timeseries-analysis
 tags:
   - paper
 source_type: notes

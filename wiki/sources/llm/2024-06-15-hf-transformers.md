@@ -4,9 +4,9 @@ created: 2024-06-15
 updated: 2026-04-15
 type: source
 tags:
-  - llm-theory
+  - llm
 sources:
-  - raw/notes/llm-theory/2024-06-15-hf-transformers
+  - raw/notes/llm/2024-06-15-hf-transformers
 status: summarized
 ---
 ## 内容摘要

@@ -4,9 +4,9 @@ created: 2026-04-15
 updated: 2026-04-15
 type: source
 tags:
-  - llm-theory
+  - llm
 sources:
-  - raw/web/llm-theory/2026-04-06-HqWu-HITCSAwesome-Chinese-LLM-整理开源的中文大语言模型，以规模较小、可私有化部署、训练成本较低的模型为主，包括底座模型，垂直领域微调及应用，数据集与教程等。.md
+  - raw/web/llm/2026-04-06-HqWu-HITCSAwesome-Chinese-LLM-整理开源的中文大语言模型，以规模较小、可私有化部署、训练成本较低的模型为主，包括底座模型，垂直领域微调及应用，数据集与教程等。.md
 status: summarized
 ---
 ## 内容摘要

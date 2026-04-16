@@ -5,7 +5,7 @@ author: wangzf
 date: '2023-05-21'
 slug: var
 categories:
-  - timeseries
+  - timeseries-analysis
 tags:
   - model
 source_type: notes

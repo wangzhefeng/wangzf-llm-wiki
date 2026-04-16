@@ -4,7 +4,7 @@ title: timeseries 附件入口清单
 created_at: 2026-04-11
 topics:
 - shared
-- timeseries
+- timeseries-analysis
 status: linked
 ---
 # 附件入口清单（timeseries）

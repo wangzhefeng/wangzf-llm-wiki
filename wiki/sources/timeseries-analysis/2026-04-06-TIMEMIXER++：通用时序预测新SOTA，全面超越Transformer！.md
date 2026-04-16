@@ -1,7 +1,7 @@
 ---
 created_at: 2026-04-11
 topics:
-  - timeseries
+  - timeseries-analysis
 status: inbox
 source_path: raw/web/timeseries-analysis/2026-04-06-TIMEMIXER++：通用时序预测新SOTA，全面超越Transformer.md
 ---

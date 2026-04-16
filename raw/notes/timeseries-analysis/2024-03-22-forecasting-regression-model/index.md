@@ -4,7 +4,7 @@ author: wangzf
 date: '2024-03-22'
 slug: forecasting-regression-model
 categories:
-  - timeseries
+  - timeseries-analysis
 tags:
   - book
 source_type: notes

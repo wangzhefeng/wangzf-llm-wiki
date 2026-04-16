@@ -4,7 +4,7 @@ author: wangzf
 date: '2024-02-28'
 slug: forecasting-principles-and-practice
 categories:
-  - timeseries
+  - timeseries-analysis
 tags:
   - book
 source_type: notes

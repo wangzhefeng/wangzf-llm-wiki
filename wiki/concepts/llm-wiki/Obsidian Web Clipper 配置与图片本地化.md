@@ -2,7 +2,6 @@
 created_at: 2026-04-05
 topics:
 - llm-wiki
-- tools
 related_concepts:
 - 知识库建设方法
 - 知识库工作台

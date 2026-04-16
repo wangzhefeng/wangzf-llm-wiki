@@ -1,6 +1,6 @@
 ---
 source_type: notes
-source_path: raw/notes/deep-learning-theory/2022-07-15-gpu-software/index.md
+source_path: raw/notes/deep-learning/2022-07-15-gpu-software/index.md
 title: GPU 软件
 author: wangzf
 published_at: 2022-07-15

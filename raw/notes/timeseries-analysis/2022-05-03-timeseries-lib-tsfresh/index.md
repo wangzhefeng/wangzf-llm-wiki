@@ -5,7 +5,7 @@ author: wangzf
 date: '2022-05-03'
 slug: timeseries-lib-tsfresh
 categories:
-  - timeseries
+  - timeseries-analysis
 tags:
   - model
 source_type: notes

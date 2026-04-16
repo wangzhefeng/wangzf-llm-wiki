@@ -5,7 +5,7 @@ source_path: raw/repos/repo-wangzhefeng-tsproj-stat.md
 created_at: 2026-04-12
 topics:
 - shared
-- timeseries
+- timeseries-analysis
 related_concepts:
 - 统计时间序列预测
 - ARIMA模型

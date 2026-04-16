@@ -4,7 +4,7 @@ author: wangzf
 date: '2024-03-23'
 slug: forecasting-decomposition
 categories:
-  - timeseries
+  - timeseries-analysis
 tags:
   - book
 source_type: notes

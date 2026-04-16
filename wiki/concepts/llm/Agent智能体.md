@@ -1,7 +1,6 @@
 ---
 created_at: 2026-04-06
 topics:
-- agent-dev
 - llm
 related_concepts:
 - 工具调用

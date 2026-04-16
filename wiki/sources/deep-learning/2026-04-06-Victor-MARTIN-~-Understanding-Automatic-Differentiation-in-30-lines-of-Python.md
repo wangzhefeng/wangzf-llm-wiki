@@ -1,6 +1,6 @@
 ---
 source_type: web
-source_path: raw/web/deep-learning-theory/2026-04-06-Victor-MARTIN-~-Understanding-Automatic-Differentiation-in-30-lines-of-Python.md
+source_path: raw/web/deep-learning/2026-04-06-Victor-MARTIN-~-Understanding-Automatic-Differentiation-in-30-lines-of-Python.md
 title: Victor MARTIN ~ Understanding Automatic Differentiation in 30 lines of Python
 author: - null
 published_at: 2026-04-06

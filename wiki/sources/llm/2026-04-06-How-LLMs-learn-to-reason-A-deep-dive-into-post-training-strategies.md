@@ -4,9 +4,9 @@ created: 2026-04-15
 updated: 2026-04-15
 type: source
 tags:
-  - llm-post-training
+  - llm
 sources:
-  - raw/web/llm-post-training/2026-04-06-How-LLMs-learn-to-reason-A-deep-dive-into-post-training-strategies.md
+  - raw/web/llm/2026-04-06-How-LLMs-learn-to-reason-A-deep-dive-into-post-training-strategies.md
 status: summarized
 ---
 ## 内容摘要
@@ -18,5 +18,5 @@ Hi, I
 - What transforms a pretrained language model into a powerful reasoning engine? The answer lies in post-training—the crucial phase where models learn to solve math problems, write correct code, and follow complex instructions. I recently went down a bit of a
 
 ## 来源信息
-- 原始文件：raw/web/llm-post-training/2026-04-06-How-LLMs-learn-to-reason-A-deep-dive-into-post-training-strategies.md
+- 原始文件：raw/web/llm/2026-04-06-How-LLMs-learn-to-reason-A-deep-dive-into-post-training-strategies.md
 - 来源类型：web

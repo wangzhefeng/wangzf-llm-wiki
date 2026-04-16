@@ -4,7 +4,7 @@ author: wangzf
 date: '2023-04-03'
 slug: paper-ts-informer
 categories:
-  - timeseries
+  - timeseries-analysis
 tags:
   - paper
 source_type: notes

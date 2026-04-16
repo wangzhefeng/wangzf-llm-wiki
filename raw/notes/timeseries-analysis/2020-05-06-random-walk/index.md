@@ -4,7 +4,7 @@ author: wangzf
 date: '2020-05-06'
 slug: random-walk
 categories:
-  - timeseries
+  - timeseries-analysis
 tags:
   - tool
 source_type: notes

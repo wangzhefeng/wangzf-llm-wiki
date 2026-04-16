@@ -1,6 +1,6 @@
 ---
 source_type: notes
-source_path: raw/notes/deep-learning-theory/2024-06-06-similarity-matching/index.md
+source_path: raw/notes/deep-learning/2024-06-06-similarity-matching/index.md
 title: LLM 应用--相似匹配
 author: wangzf
 published_at: 2024-06-06

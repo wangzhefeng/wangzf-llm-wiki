@@ -15,7 +15,7 @@ source_url: https://mp.weixin.qq.com/s/PcyKi5q8zT-tJ_9rzgKSqg
 published_at: null
 related_concepts: []
 topics:
-  - llm-pre-training
+  - llm
   - 大语言模型预训练
 ---
 

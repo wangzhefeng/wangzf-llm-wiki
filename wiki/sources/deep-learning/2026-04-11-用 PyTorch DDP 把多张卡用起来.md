@@ -3,14 +3,14 @@ created_at: 2026-04-11
 topics:
 - deep-learning
 status: inbox
-source_path: raw/web/deep-learning-theory/2026-04-11-用-PyTorch-DDP-把多张卡用起来.md
+source_path: raw/web/deep-learning/2026-04-11-用-PyTorch-DDP-把多张卡用起来.md
 ---
 # 来源卡：2026-04-11-用 PyTorch DDP 把多张卡用起来
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/web/deep-learning-theory/2026-04-11-用-PyTorch-DDP-把多张卡用起来.md]]
-- 来源路径：`raw/web/deep-learning-theory/2026-04-11-用-PyTorch-DDP-把多张卡用起来.md`
+- 原文：[[raw/web/deep-learning/2026-04-11-用-PyTorch-DDP-把多张卡用起来.md]]
+- 来源路径：`raw/web/deep-learning/2026-04-11-用-PyTorch-DDP-把多张卡用起来.md`
 
 ## 价值是什么
 

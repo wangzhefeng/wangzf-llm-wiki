@@ -1,6 +1,6 @@
 ---
 source_type: web
-source_path: raw/web/deep-learning-theory/2026-04-06-Vision-Transformers-(ViTs)-Computer-Vision-with-Transformer-Models.md
+source_path: raw/web/deep-learning/2026-04-06-Vision-Transformers-(ViTs)-Computer-Vision-with-Transformer-Models.md
 title: Vision Transformers (ViTs): Computer Vision with Transformer Models
 author: - null
 published_at: 2026-04-06

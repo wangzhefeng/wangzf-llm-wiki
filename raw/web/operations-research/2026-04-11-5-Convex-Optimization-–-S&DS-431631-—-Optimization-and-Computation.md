@@ -15,7 +15,6 @@ related_concepts:
   - 凸优化
   - 数学优化
 topics:
-  - programming-tools
   - 编程工具
 ---
 Optimization is hard in general — a function can have countless local minima, saddle points, and deceptive plateaus. So why is it that many of the optimization problems arising in statistics, machine learning, and engineering can be solved reliably and efficiently? The answer, more often than not, is **convexity**. When both the objective and the constraints are convex, the landscape of the problem simplifies dramatically: every local minimum is automatically a global minimum, and efficient algorithms can find it in polynomial time.

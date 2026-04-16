@@ -385,7 +385,7 @@ status: linked
    - 创建新目录：wiki/concepts/feature-engineering
 
 2. **概念页迁移**
-   - 从 wiki/concepts/machine-learning/ 迁移 9 个概念页到新创建的 wiki/concepts/feature-engineering/
+   - 从 wiki/concepts/machine-learning/ 迁移 9 个概念页到新创建的 wiki/concepts/feature-engine/
    - 迁移的概念页：特征工程、特征编码、样本不平衡处理、数据增强、特征选择、特征构建、缺失值填充、特征标准化、特征离散化
 
 3. **路径引用更新**
@@ -656,8 +656,8 @@ status: linked
 
 - **来源范围**：`raw/notes/feature-engineering/`（12 个子主题）+ `raw/web/feature-engineering/`（4 个网页）
 - **架构调整**：将 feature-engineering 从 machine-learning 的混合目录结构升级为独立主题
-  - 所有概念页从 `wiki/concepts/machine-learning/` 迁移至 `wiki/concepts/feature-engineering/`（9 个）
-  - 保持 `wiki/sources/feature-engineering/` 与 `wiki/indexes/feature-engineering/` 的独立性
+  - 所有概念页从 `wiki/concepts/machine-learning/` 迁移至 `wiki/concepts/feature-engine/`（9 个）
+  - 保持 `wiki/sources/feature-engine/` 与 `wiki/indexes/feature-engine/` 的独立性
 
 - **来源卡编译状态**：16 张来源卡完成
   - Raw/notes：12 张（特征构建、缺失值处理、数值/类别/文本/音频/图像特征、样本不平衡分类/回归、特征工程概述、核心问题）
@@ -680,7 +680,7 @@ status: linked
   - `wiki/indexes/machine-learning/机器学习总索引.md`：重命名"数据理解与特征工程"为"数据理解与探索性分析"，移除已迁移条目，补充指向 feature-engineering专用索引 的导航
   - `wiki/indexes/machine-learning/机器学习基础与特征工程索引.md`：（待更新）
   - `raw/notes/feature-engineering/index.md`：新增正确的 wiki 导航链接指向 feature-engineering总索引
-  - `wiki/concepts/feature-engineering/README.md`：新建目录索引，包含 3 条学习路径（初级/中级/高级）
+  - `wiki/concepts/feature-engine/README.md`：新建目录索引，包含 3 条学习路径（初级/中级/高级）
 
 - **交叉引用补强**：为所有 9 个概念页补充"相关概念"链接，形成知识图
   - 特征编码 ← 特征选择、样本不平衡处理、特征离散化
@@ -693,9 +693,9 @@ status: linked
   - 缺失值填充 ← 特征构建、特征编码、特征标准化、特征选择
 
 - **验证完成**：
-  - ✓ 9 个概念页都在 wiki/concepts/feature-engineering/ 目录中
-  - ✓ 16 个来源卡都在 wiki/sources/feature-engineering/ 目录中
-  - ✓ 1 个专用索引在 wiki/indexes/feature-engineering/ 目录中
+  - ✓ 9 个概念页都在 wiki/concepts/feature-engine/ 目录中
+  - ✓ 16 个来源卡都在 wiki/sources/feature-engine/ 目录中
+  - ✓ 1 个专用索引在 wiki/indexes/feature-engine/ 目录中
   - ✓ 所有概念页都从 README 和主索引中可以找到
   - ✓ 所有概念页都有相互交叉引用（形成知识图）
   - ✓ 无断链（所有 wikilink 都指向存在的文件）
@@ -708,8 +708,8 @@ status: linked
 ## [2026-04-15] update | Feature-Engineering 索引层完整化与命名统一
 
 - **问题整改**：
-  1. 命名统一：将 `wiki/concepts/feature-engineering/README.md` 重命名为 `index.md`，与其他主题保持一致
-  2. 索引层完整：补全 `wiki/indexes/feature-engineering/` 缺失的两个核心文件
+  1. 命名统一：将 `wiki/concepts/feature-engine/README.md` 重命名为 `index.md`，与其他主题保持一致
+  2. 索引层完整：补全 `wiki/indexes/feature-engine/` 缺失的两个核心文件
 
 - **新建文件 2 张**：
   - `特征工程来源清单.md`：汇集全部 16 张来源卡的分类索引，包含"快速入门"和"深度学习"查询路径
@@ -717,11 +717,11 @@ status: linked
 
 - **导航更新 2 处**：
   - `特征工程总索引.md`：新增"快速导航"章节，指向来源清单、阅读地图、概念页库
-  - `wiki/concepts/feature-engineering/index.md`：补充"阅读地图"和"来源清单"链接，优化索引层的三维导航
+  - `wiki/concepts/feature-engine/index.md`：补充"阅读地图"和"来源清单"链接，优化索引层的三维导航
 
 - **结果**：
-  - ✓ wiki/indexes/feature-engineering/ 从 1 个文件 → 3 个文件（总索引、来源清单、阅读地图）
-  - ✓ wiki/concepts/feature-engineering/ 从 README.md → index.md（命名规范化）
+  - ✓ wiki/indexes/feature-engine/ 从 1 个文件 → 3 个文件（总索引、来源清单、阅读地图）
+  - ✓ wiki/concepts/feature-engine/ 从 README.md → index.md（命名规范化）
   - ✓ 索引体系：总索引（分类导航）→ 来源清单（资源导航）→ 阅读地图（学习路径）→ 概念页库（深度理解）
   - ✓ 用户体验：从"平面结构"升级为"四维导航"（分类、时序、问题、学习路径）
 
@@ -737,7 +737,7 @@ status: linked
   - 格式：标准三部分（讲了什么、价值、关联概念）
   - 分类：PyTorch(29) | Transformer(14) | 分布式(10) | CNN(11) | RNN(8) | 优化(11) | 其他(14)
 
-- **新建索引文件 3 张** in `wiki/indexes/deep-learning-theory/`：
+- **新建索引文件 3 张** in `wiki/indexes/deep-learning/`：
   1. **深度学习-理论总索引.md**：6 个分组导航 + 概念网络 + 资源统计
   2. **深度学习-理论阅读地图.md**：6 站递进式学习路线（数学基础→CNN→RNN→Transformer→分布式→框架）
   3. **深度学习-理论来源清单.md**：97 个资源按 7 组分类清单 + 快速查询
@@ -962,7 +962,7 @@ Layer 3: 表示学习（4 代演进）
 - **资源合并**：将 deep-learning-theory 的 97 张来源卡复制到 deep-learning
 - **目录清理**：删除重复的 deep-learning-theory 目录（3 个）
   - ✓ 删除 `wiki/sources/deep-learning-theory/` (97 张)
-  - ✓ 删除 `wiki/indexes/deep-learning-theory/` (3 个索引文件)
+  - ✓ 删除 `wiki/indexes/deep-learning/` (3 个索引文件)
   - ✓ 删除 `wiki/concepts/deep-learning-theory/` (概念页)
 - **索引更新**：更新 `wiki/indexes/deep-learning/深度学习总索引.md` 反映新规模
 
@@ -1265,7 +1265,7 @@ Layer 3: 表示学习（4 代演进）
 A4 细分为 4 类：
 
 1. **反斜杠结尾（12 条）**：Windows 路径残留，如 `[[2023-02-27-特征工程概述\|特征工程概述]]`。
-   - 集中在 `wiki/indexes/feature-engineering/特征工程总索引.md` 和 `特征工程阅读地图.md`。
+   - 集中在 `wiki/indexes/feature-engine/特征工程总索引.md` 和 `特征工程阅读地图.md`。
    - 建议：去掉反斜杠，保留别名。
 
 2. **wiki/路径格式引用-文件存在（113 条）**：使用了 `[[wiki/xxx/index]]` 全路径格式而非 stem。
@@ -1307,8 +1307,8 @@ A4 细分为 4 类：
 **P2 涉及文件**：
 - `wiki/concepts/index.md`、`wiki/sources/index.md`、`wiki/entities/index.md`
 - `wiki/comparisons/index.md`、`wiki/queries/index.md`、`wiki/indexes/index.md`
-- `wiki/indexes/feature-engineering/特征工程总索引.md`
-- `wiki/indexes/feature-engineering/特征工程阅读地图.md`
+- `wiki/indexes/feature-engine/特征工程总索引.md`
+- `wiki/indexes/feature-engine/特征工程阅读地图.md`
 
 **P3 涉及文件**：
 - `wiki/concepts/llm-wiki/LLM辅助研究.md`
@@ -1510,3 +1510,38 @@ Phase 1→2 编译发现关键问题："为什么每次编译都不更新 @wiki/
 ### 待处理
 - ⏳ 健康检查脚本重建（原脚本已删除）
 - ⏳ 各主题编译流程的 4 阶段回顾（跨主题审计）
+
+## [2026-04-16] refactor | 主题命名统一与目录结构整合
+
+### 背景
+GLOSSARY.md 定义了知识库各主题的规范英文名称。发现 raw/ 层使用粒度更细的子主题文件夹，与 wiki/ 层聚合结构不一致；多处 frontmatter topics 标签残留旧名或已删除主题名；若干 source_path 引用了已重命名的路径。
+
+### 执行内容
+
+**物理目录合并（raw/web/ 和 raw/notes/）：**
+- `deep-learning-theory/` → `deep-learning/`
+- `llm-theory/` + `llm-pre-training/` + `llm-post-training/` → `llm/`（合并）
+- `machine-learning-theory/` + `machine-learning-supervised-model/` + `machine-learning-unsupervised-model/` → `machine-learning/`（合并）
+- `feature-engineering/` → `feature-engine/`
+
+**wiki/ 层文件夹重命名：**
+- `wiki/indexes/feature-engine/` → `wiki/indexes/feature-engine/`
+- `wiki/sources/feature-engine/` → `wiki/sources/feature-engine/`
+- `wiki/concepts/feature-engine/` → `wiki/concepts/feature-engine/`
+
+**文件重命名：**
+- `wiki/sources/deep-learning/附件入口清单-deeplearning.md` → `附件入口清单-deep-learning.md`
+
+**frontmatter topics 批量修正（656 个文件）：**
+- 旧名替换：deeplearning → deep-learning、machinelearning → machine-learning、operationsresearch → operations-research、statistics → statistics-theory、timeseries → timeseries-analysis、llm-theory/llm-pre-training/llm-post-training → llm、machine-learning-theory/supervised/unsupervised → machine-learning、deep-learning-theory → deep-learning、feature-engineering → feature-engine、knowledge-base-building/operations/usage → llm-wiki
+- 已删除主题标签删除：agent-dev、computer-vision、data-analysis、data-structure-algorithm、tools、programming-tools
+
+**内部链接与 source_path 修复（421 个文件）：**
+- wiki/sources/deep-learning/ 来源卡 source_path 修正（130 个）
+- wiki/sources/、wiki/indexes/、wiki/concepts/ 内旧路径引用修正（291 个）
+- README.md feature-engineering 链接修正
+
+### 不变内容
+- `raw/assets/attachments/` 内容不变（含 deeplearning、machinelearning 等旧名附件子目录）
+- `raw/repos/` 代码文件不变
+- `wiki/log.md` 历史记录不变

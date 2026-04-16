@@ -4,9 +4,9 @@ created: 2026-04-15
 updated: 2026-04-15
 type: source
 tags:
-  - llm-post-training
+  - llm
 sources:
-  - raw/notes/llm-post-training/2025-07-28-llm-post-training-summary
+  - raw/notes/llm/2025-07-28-llm-post-training-summary
 status: summarized
 ---
 ## 内容摘要
@@ -18,5 +18,5 @@ status: summarized
 - - [LLM Post-training 范式](#llm-post-training-范式)
 
 ## 来源信息
-- 原始文件：raw/notes/llm-post-training/2025-07-28-llm-post-training-summary
+- 原始文件：raw/notes/llm/2025-07-28-llm-post-training-summary
 - 来源类型：notes

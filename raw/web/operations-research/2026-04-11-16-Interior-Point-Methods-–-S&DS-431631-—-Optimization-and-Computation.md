@@ -14,7 +14,6 @@ related_concepts:
   - 运筹优化
   - 数学优化
 topics:
-  - programming-tools
   - 编程工具
 ---
 Newton’s method gives us a powerful tool for unconstrained optimization, converging quadratically near a solution. But most real-world problems come with inequality constraints — budgets, capacity limits, non-negativity requirements — that Newton’s method cannot handle directly. Interior point methods extend Newton’s method to constrained problems by replacing hard inequality constraints with a smooth logarithmic penalty, then systematically tightening the penalty until the solution converges to the true optimum. These methods are the engine behind modern optimization solvers such as MOSEK, Gurobi’s barrier solver, and CVXPY’s default backend.

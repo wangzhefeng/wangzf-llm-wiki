@@ -14,7 +14,6 @@ related_concepts:
   - 运筹优化
   - 数学优化
 topics:
-  - programming-tools
   - 编程工具
 ---
 How can we generate photorealistic images from scratch? How do systems like Stable Diffusion and DALL-E 3 produce stunning artwork from a text prompt? The answer lies in a surprisingly simple and elegant idea: learn to reverse the process of adding noise. If we gradually corrupt an image by adding Gaussian noise until it becomes indistinguishable from pure static, and then train a neural network to undo each tiny noise step, we obtain a generative model that can conjure realistic images out of random noise.

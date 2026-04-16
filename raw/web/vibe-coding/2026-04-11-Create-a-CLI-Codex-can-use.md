@@ -17,7 +17,6 @@ related_concepts:
   - 工具调用
   - Vibe Coding
 topics:
-  - programming-tools
   - 编程工具
 ---
 Ask Codex to create a composable CLI it can run from any folder, combine with repo scripts, use to download files, and remember through a companion skill.

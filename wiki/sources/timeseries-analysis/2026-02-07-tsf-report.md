@@ -7,7 +7,7 @@ published_at: 2026-02-07
 created_at: 2026-04-09
 topics:
 - shared
-- timeseries
+- timeseries-analysis
 related_concepts:
 - 时间序列预测总索引
 status: summarized

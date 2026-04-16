@@ -6,7 +6,7 @@ author: unknown
 published_at: 2026-04-06
 created_at: 2026-04-09
 topics:
-- timeseries
+- timeseries-analysis
 related_concepts:
 - 时间序列预测总索引
 status: summarized

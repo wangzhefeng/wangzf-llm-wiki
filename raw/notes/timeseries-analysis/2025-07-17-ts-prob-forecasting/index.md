@@ -13,7 +13,7 @@ date: '2025-07-17'
 description: 介绍时间序列概率预测的建模目标、评价方式与常见方法。
 slug: ts-prob-forecasting
 categories:
-  - timeseries
+  - timeseries-analysis
 tags:
   - model
 topics:

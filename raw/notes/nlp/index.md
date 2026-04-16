@@ -10,7 +10,7 @@ related_concepts:
   - 文本处理
   - 词嵌入
 topics:
-  - llm-theory
+  - llm
   - 大语言模型理论
 ---
 

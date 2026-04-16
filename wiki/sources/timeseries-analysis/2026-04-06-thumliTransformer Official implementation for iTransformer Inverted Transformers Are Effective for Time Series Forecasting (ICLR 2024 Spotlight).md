@@ -1,7 +1,7 @@
 ---
 created_at: 2026-04-11
 topics:
-  - timeseries
+  - timeseries-analysis
 status: inbox
 source_path: raw/web/timeseries-analysis/2026-04-06-thumliTransformer-Official-implementation-for-iTransformer-Inverted-Transformers-Are-Effective-for-Time-Series-Forecasting-(ICLR-2024-Spotlight).md
 ---

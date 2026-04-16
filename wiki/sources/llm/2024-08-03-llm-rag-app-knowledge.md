@@ -4,9 +4,9 @@ created: 2024-08-03
 updated: 2026-04-15
 type: source
 tags:
-  - llm-theory
+  - llm
 sources:
-  - raw/notes/llm-theory/2024-08-03-llm-rag-app-knowledge
+  - raw/notes/llm/2024-08-03-llm-rag-app-knowledge
 status: summarized
 ---
 ## 内容摘要

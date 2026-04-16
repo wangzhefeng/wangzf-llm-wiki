@@ -5,7 +5,7 @@ source_path: raw/web/timeseries-analysis/2026-04-05-scikit-learn-lagged-features
 created_at: 2026-04-05
 topics:
 - machine-learning
-- timeseries
+- timeseries-analysis
 related_concepts:
 - 机器学习时间序列预测
 - 预测特征工程

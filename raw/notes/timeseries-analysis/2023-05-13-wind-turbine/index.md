@@ -4,7 +4,7 @@ author: wangzf
 date: '2023-05-13'
 slug: wind-turbine
 categories:
-  - timeseries
+  - timeseries-analysis
 tags:
   - model
 source_type: notes

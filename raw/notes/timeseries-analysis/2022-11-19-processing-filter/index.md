@@ -4,7 +4,7 @@ author: wangzf
 date: '2022-11-19'
 slug: timeseries-processing-filter
 categories:
-  - timeseries
+  - timeseries-analysis
 tags:
   - algorithm
 source_type: notes

@@ -12,7 +12,7 @@ date: '2026-02-07'
 description: 面向时序预测任务，系统讨论非线性树模型从数据到部署的完整研究框架。
 slug: tsf-report
 categories:
-  - timeseries
+  - timeseries-analysis
 tags:
   - note
 topics:

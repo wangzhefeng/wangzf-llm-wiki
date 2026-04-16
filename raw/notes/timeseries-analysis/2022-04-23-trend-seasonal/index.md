@@ -4,7 +4,7 @@ author: wangzf
 date: '2022-04-23'
 slug: trend-seasonal
 categories:
-  - timeseries
+  - timeseries-analysis
 tags:
   - model
 source_type: notes

@@ -4,7 +4,7 @@ author: wangzf
 date: '2024-09-10'
 slug: ml-forecasting
 categories:
-  - timeseries
+  - timeseries-analysis
 tags:
   - model
 source_type: notes

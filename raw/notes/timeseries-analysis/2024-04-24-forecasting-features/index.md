@@ -4,7 +4,7 @@ author: wangzf
 date: '2024-04-24'
 slug: forecasting-features
 categories:
-  - timeseries
+  - timeseries-analysis
 tags:
   - book
 source_type: notes

@@ -6,7 +6,7 @@ created_at: 2026-04-06
 topics:
 - llm
 - operations-research
-- timeseries
+- timeseries-analysis
 related_concepts:
 - 大语言模型评估
 - 时间序列基础模型评估

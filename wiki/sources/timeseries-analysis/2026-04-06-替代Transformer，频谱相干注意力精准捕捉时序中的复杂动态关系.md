@@ -1,7 +1,7 @@
 ---
 created_at: 2026-04-11
 topics:
-  - timeseries
+  - timeseries-analysis
 status: inbox
 source_path: raw/web/timeseries-analysis/2026-04-06-替代Transformer，频谱相干注意力精准捕捉时序中的复杂动态关系.md
 ---

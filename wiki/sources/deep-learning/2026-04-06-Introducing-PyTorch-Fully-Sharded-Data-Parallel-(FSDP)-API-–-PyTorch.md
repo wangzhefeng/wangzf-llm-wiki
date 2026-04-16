@@ -1,6 +1,6 @@
 ---
 source_type: web
-source_path: raw/web/deep-learning-theory/2026-04-06-Introducing-PyTorch-Fully-Sharded-Data-Parallel-(FSDP)-API-–-PyTorch.md
+source_path: raw/web/deep-learning/2026-04-06-Introducing-PyTorch-Fully-Sharded-Data-Parallel-(FSDP)-API-–-PyTorch.md
 title: Introducing PyTorch Fully Sharded Data Parallel (FSDP) API
 author: -
 published_at: 2026-04-06

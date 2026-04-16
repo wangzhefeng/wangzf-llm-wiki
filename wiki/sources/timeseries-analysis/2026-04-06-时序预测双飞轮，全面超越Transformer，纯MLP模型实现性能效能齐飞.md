@@ -1,7 +1,7 @@
 ---
 created_at: 2026-04-11
 topics:
-  - timeseries
+  - timeseries-analysis
 status: inbox
 source_path: raw/web/timeseries-analysis/2026-04-06-时序预测双飞轮，全面超越Transformer，纯MLP模型实现性能效能齐飞.md
 ---

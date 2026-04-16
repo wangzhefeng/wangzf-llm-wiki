@@ -1,6 +1,6 @@
 ---
 source_type: web
-source_path: raw/web/deep-learning-theory/2026-04-06-zoogzogchexnet-Implementation-of-the-CheXNet-network-(PyTorch).md
+source_path: raw/web/deep-learning/2026-04-06-zoogzogchexnet-Implementation-of-the-CheXNet-network-(PyTorch).md
 title: zoogzog/chexnet: Implementation of the CheXNet network (PyTorch)
 author: created_at: 2026-04-06
 published_at: 2026-04-06

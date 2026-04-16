@@ -5,7 +5,6 @@ source_path: raw/web/vibe-coding/2026-04-11-Anthropic官方Harness发布了.md
 created_at: 2026-04-11
 topics:
   - vibe-coding
-  - agent-dev
 related_concepts:
   - Claude-Managed-Agents
   - Harness工程

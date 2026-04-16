@@ -4,7 +4,7 @@ author: wangzf
 date: '2023-03-05'
 slug: timeseries-lib-tods
 categories:
-  - timeseries
+  - timeseries-analysis
 tags:
   - tool
 source_type: notes

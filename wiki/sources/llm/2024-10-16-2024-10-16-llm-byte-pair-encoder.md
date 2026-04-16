@@ -4,9 +4,9 @@ created: '2026-04-15'
 updated: '2026-04-15'
 type: source
 tags:
-  - llm-pre-training
+  - llm
 sources:
-  - raw/notes/llm-pre-training/2024-10-16-llm-byte-pair-encoder
+  - raw/notes/llm/2024-10-16-llm-byte-pair-encoder
 status: summarized
 ---
 
@@ -21,5 +21,5 @@ status: summarized
 
 ## 来源信息
 
-- 原始文件：raw/notes/llm-pre-training/2024-10-16-llm-byte-pair-encoder
+- 原始文件：raw/notes/llm/2024-10-16-llm-byte-pair-encoder
 - 来源类型：notes

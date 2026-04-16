@@ -1,6 +1,6 @@
 ---
 source_type: web
-source_path: raw/web/deep-learning-theory/2026-04-06-Annotated-Research-Paper-Implementations-Transformers,-StyleGAN,-Stable-Diffusion,-DDPMDDIM,-LayerNorm,-Nucleus-Sampling-and-more.md
+source_path: raw/web/deep-learning/2026-04-06-Annotated-Research-Paper-Implementations-Transformers,-StyleGAN,-Stable-Diffusion,-DDPMDDIM,-LayerNorm,-Nucleus-Sampling-and-more.md
 title: Annotated Research Paper Implementations: Transformers, StyleGAN, Stable Diffusion,
 author: null
 published_at: 2026-04-06

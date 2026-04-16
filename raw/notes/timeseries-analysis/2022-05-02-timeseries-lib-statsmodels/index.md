@@ -4,7 +4,7 @@ author: wangzf
 date: '2022-05-02'
 slug: timeseries-lib-statsmodels
 categories:
-  - timeseries
+  - timeseries-analysis
 tags:
   - model
 source_type: notes

@@ -1,6 +1,6 @@
 ---
 source_type: web
-source_path: raw/web/deep-learning-theory/2026-04-06-Getting-Started-with-Fully-Sharded-Data-Parallel-(FSDP2).md
+source_path: raw/web/deep-learning/2026-04-06-Getting-Started-with-Fully-Sharded-Data-Parallel-(FSDP2).md
 title: Getting Started with Fully Sharded Data Parallel (FSDP2)
 author: - null
 published_at: 2026-04-06

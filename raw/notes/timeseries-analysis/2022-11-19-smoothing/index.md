@@ -4,7 +4,7 @@ author: wangzf
 date: '2022-11-19'
 slug: timeseries-smoothing
 categories:
-  - timeseries
+  - timeseries-analysis
 tags:
   - model
 source_type: notes

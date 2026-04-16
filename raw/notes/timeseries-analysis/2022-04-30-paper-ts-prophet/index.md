@@ -4,7 +4,7 @@ author: wangzf
 date: '2022-04-30'
 slug: paper-ts-prophet
 categories:
-  - timeseries
+  - timeseries-analysis
 tags:
   - paper
 source_type: notes

@@ -4,7 +4,7 @@ author: wangzf
 date: '2026-01-14'
 slug: paper-ts-dl-models
 categories:
-  - timeseries
+  - timeseries-analysis
 tags:
   - paper
 source_type: notes

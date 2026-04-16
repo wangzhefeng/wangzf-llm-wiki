@@ -1,6 +1,6 @@
 ---
 source_type: notes
-source_path: raw/notes/machine-learning-supervised-model/2023-02-24-ml-gbm-lightgbm-api/index.md
+source_path: raw/notes/machine-learning/2023-02-24-ml-gbm-lightgbm-api/index.md
 title: LightGBM-API
 author: wangzf
 published_at: 2023-02-24

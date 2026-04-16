@@ -4,7 +4,7 @@ author: wangzf
 date: '2026-01-12'
 slug: paper-ts-timexer
 categories:
-  - timeseries
+  - timeseries-analysis
 tags:
   - paper
 source_type: notes

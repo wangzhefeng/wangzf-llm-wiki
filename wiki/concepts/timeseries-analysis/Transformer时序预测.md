@@ -1,7 +1,7 @@
 ---
 created_at: 2026-04-06
 topics:
-- timeseries
+- timeseries-analysis
 related_concepts:
 - 多尺度建模
 - 频率分解

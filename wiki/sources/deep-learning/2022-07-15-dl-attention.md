@@ -1,6 +1,6 @@
 ---
 source_type: notes
-source_path: raw/notes/deep-learning-theory/2022-07-15-dl-attention/index.md
+source_path: raw/notes/deep-learning/2022-07-15-dl-attention/index.md
 title: Attention
 author: wangzf
 published_at: 2022-07-15

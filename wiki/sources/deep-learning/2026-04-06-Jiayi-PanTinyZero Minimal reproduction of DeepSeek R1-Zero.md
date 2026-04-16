@@ -17,7 +17,7 @@ topics:
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/web/llm-post-training/2026-04-06-Jiayi-PanTinyZero-Minimal-reproduction-of-DeepSeek-R1-Zero.md]]
+- 原文：[[raw/web/llm/2026-04-06-Jiayi-PanTinyZero-Minimal-reproduction-of-DeepSeek-R1-Zero.md]]
 - 来源：`raw/web/reinforcement-learning/2026-04-06-Jiayi-PanTinyZero Minimal reproduction of DeepSeek R1-Zero.md`
 - 主题：待分类
 

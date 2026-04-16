@@ -4,7 +4,7 @@ author: wangzf
 date: '2022-04-22'
 slug: timeseries-preprocessing
 categories:
-  - timeseries
+  - timeseries-analysis
 tags:
   - model
 source_type: notes

@@ -1,6 +1,6 @@
 ---
 source_type: web
-source_path: raw/web/deep-learning-theory/2026-04-11-用-PyTorch-DDP-把多张卡用起来.md
+source_path: raw/web/deep-learning/2026-04-11-用-PyTorch-DDP-把多张卡用起来.md
 title: 用 PyTorch DDP 把多张卡用起来
 author: -
 published_at: 2026-04-11

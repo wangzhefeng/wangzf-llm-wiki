@@ -5,7 +5,6 @@ source_path: raw/web/vibe-coding/2026-04-05-vercel-labsagent-browser-Browser-aut
 created_at: 2026-04-05
 topics:
   - vibe-coding
-  - vibe-coding
 related_concepts:
   - 浏览器自动化工具
   - Harness工程

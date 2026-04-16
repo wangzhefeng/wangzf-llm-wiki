@@ -1,7 +1,7 @@
 ---
 created_at: 2026-04-11
 topics:
-  - timeseries
+  - timeseries-analysis
 status: inbox
 source_path: raw/web/timeseries-analysis/2026-04-06-thumlLarge-Time-Series-Model-Official-code,-datasets-and-checkpoints-for-Timer-Generative-Pre-trained-Transformers-Are-Large-Time-Series-Models-(ICML-2024)-and-subsequent-works.md
 ---

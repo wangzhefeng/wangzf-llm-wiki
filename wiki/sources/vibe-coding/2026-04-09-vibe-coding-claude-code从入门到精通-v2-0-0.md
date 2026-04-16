@@ -6,7 +6,6 @@ author: wangzf
 published_at: 2026-04-09
 created_at: 2026-04-09
 topics:
-- agent-dev
 - vibe-coding
 related_concepts:
 - Vibe Coding总索引

@@ -1,6 +1,6 @@
 ---
 source_type: web
-source_path: raw/web/deep-learning-theory/2026-04-06-Long-Short-Term-Memory-(LSTM).md
+source_path: raw/web/deep-learning/2026-04-06-Long-Short-Term-Memory-(LSTM).md
 title: Long Short-Term Memory (LSTM)
 author: null
 published_at: 2026-04-06

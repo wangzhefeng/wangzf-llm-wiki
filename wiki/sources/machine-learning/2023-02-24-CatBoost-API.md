@@ -1,6 +1,6 @@
 ---
 source_type: notes
-source_path: raw/notes/machine-learning-supervised-model/2023-02-24-ml-gbm-catboost-api/index.md
+source_path: raw/notes/machine-learning/2023-02-24-ml-gbm-catboost-api/index.md
 title: CatBoost-API
 author: wangzf
 published_at: 2023-02-24

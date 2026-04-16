@@ -1,6 +1,6 @@
 ---
 source_type: web
-source_path: raw/web/deep-learning-theory/2026-04-06-datawhalechinatiny-universe-《大模型白盒子构建指南》：一个全手搓的Tiny-Universe.md
+source_path: raw/web/deep-learning/2026-04-06-datawhalechinatiny-universe-《大模型白盒子构建指南》：一个全手搓的Tiny-Universe.md
 title: datawhalechina/tiny-universe: 《大模型白盒子构建指南》：一个全手搓的Tiny-Universe
 author: null
 published_at: 2026-04-06

@@ -1,6 +1,6 @@
 ---
 source_type: web
-source_path: raw/web/deep-learning-theory/2026-04-06-Understanding-Deep-Learning-20260412200431.md
+source_path: raw/web/deep-learning/2026-04-06-Understanding-Deep-Learning-20260412200431.md
 title: Understanding Deep Learning
 author: created_at: 2026-04-06
 published_at: 2026-04-06

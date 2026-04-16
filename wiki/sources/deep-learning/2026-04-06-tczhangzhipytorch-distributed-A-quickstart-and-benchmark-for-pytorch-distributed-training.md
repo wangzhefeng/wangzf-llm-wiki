@@ -1,6 +1,6 @@
 ---
 source_type: web
-source_path: raw/web/deep-learning-theory/2026-04-06-tczhangzhipytorch-distributed-A-quickstart-and-benchmark-for-pytorch-distributed-training.md
+source_path: raw/web/deep-learning/2026-04-06-tczhangzhipytorch-distributed-A-quickstart-and-benchmark-for-pytorch-distributed-training.md
 title: tczhangzhi/pytorch-distributed: A quickstart and benchmark for pytorch distributed training.
 author: created_at: 2026-04-06
 published_at: 2026-04-06

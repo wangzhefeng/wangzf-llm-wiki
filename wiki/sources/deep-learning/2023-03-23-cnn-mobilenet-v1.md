@@ -1,6 +1,6 @@
 ---
 source_type: notes
-source_path: raw/notes/deep-learning-theory/2023-03-23-cnn-mobilenet-v1/index.md
+source_path: raw/notes/deep-learning/2023-03-23-cnn-mobilenet-v1/index.md
 title: MobileNet-v1
 author: wangzf
 published_at: 2023-03-23

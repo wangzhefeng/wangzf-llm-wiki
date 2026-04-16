@@ -1,6 +1,6 @@
 ---
 source_type: web
-source_path: raw/web/deep-learning-theory/2026-04-06-Neural-networks-and-deep-learning-basics-大语言模型（Large-Language-Models）.md
+source_path: raw/web/deep-learning/2026-04-06-Neural-networks-and-deep-learning-basics-大语言模型（Large-Language-Models）.md
 title: Neural networks and deep learning basics | 大语言模型（Large Language Models）
 author: created_at: 2026-04-06
 published_at: 2026-04-06

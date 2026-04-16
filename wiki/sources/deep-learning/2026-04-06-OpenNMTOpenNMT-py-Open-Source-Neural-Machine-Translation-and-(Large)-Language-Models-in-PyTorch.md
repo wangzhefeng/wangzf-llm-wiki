@@ -1,6 +1,6 @@
 ---
 source_type: web
-source_path: raw/web/deep-learning-theory/2026-04-06-OpenNMTOpenNMT-py-Open-Source-Neural-Machine-Translation-and-(Large)-Language-Models-in-PyTorch.md
+source_path: raw/web/deep-learning/2026-04-06-OpenNMTOpenNMT-py-Open-Source-Neural-Machine-Translation-and-(Large)-Language-Models-in-PyTorch.md
 title: OpenNMT/OpenNMT-py: Open Source Neural Machine Translation and (Large) Language Models in PyTorch
 author: created_at: 2026-04-06
 published_at: 2026-04-06

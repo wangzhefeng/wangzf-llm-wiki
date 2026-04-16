@@ -4,7 +4,7 @@ created: 2026-04-15
 updated: 2026-04-15
 type: concept
 tags:
-  - llm-theory
+  - llm
 sources:
   - wiki/sources/llm/2026-04-06-The-Annotated-Transformer.md
   - wiki/sources/llm/2026-04-06-为什么主流LLM都用RoPE？.md

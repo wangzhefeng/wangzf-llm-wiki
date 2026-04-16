@@ -11,7 +11,6 @@ topics:
   - 统计学理论
 tags:
   - statistics-theory
-  - statistics-theory
   - 方差分析
   - ANOVA
   - 假设检验

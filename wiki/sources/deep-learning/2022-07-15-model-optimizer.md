@@ -1,6 +1,6 @@
 ---
 source_type: notes
-source_path: raw/notes/deep-learning-theory/2022-07-15-model-optimizer/index.md
+source_path: raw/notes/deep-learning/2022-07-15-model-optimizer/index.md
 title: 优化算法
 author: wangzf
 published_at: 2022-07-15

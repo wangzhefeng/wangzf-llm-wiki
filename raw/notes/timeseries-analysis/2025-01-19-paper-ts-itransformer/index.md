@@ -4,7 +4,7 @@ author: wangzf
 date: '2025-01-19'
 slug: paper-ts-itransformer
 categories:
-  - timeseries
+  - timeseries-analysis
 tags:
   - paper
 source_type: notes

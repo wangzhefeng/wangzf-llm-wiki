@@ -1,6 +1,6 @@
 ---
 source_type: notes
-source_path: raw/notes/deep-learning-theory/2023-01-21-video-pyav/index.md
+source_path: raw/notes/deep-learning/2023-01-21-video-pyav/index.md
 title: Video pyav
 author: wangzf
 published_at: 2023-01-21

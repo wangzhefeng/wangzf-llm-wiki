@@ -5,7 +5,7 @@ source_path: raw/repos/repo-wangzhefeng-tsproj-ltsfm.md
 created_at: 2026-04-12
 topics:
 - llm
-- timeseries
+- timeseries-analysis
 related_concepts:
 - 时序基础模型
 - 大语言模型时间序列预测

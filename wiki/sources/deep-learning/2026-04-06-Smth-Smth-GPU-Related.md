@@ -1,6 +1,6 @@
 ---
 source_type: web
-source_path: raw/web/deep-learning-theory/2026-04-06-Smth-Smth-GPU-Related.md
+source_path: raw/web/deep-learning/2026-04-06-Smth-Smth-GPU-Related.md
 title: Smth Smth GPU Related
 author: null
 published_at: 2026-04-06

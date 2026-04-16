@@ -1,6 +1,6 @@
 ---
 source_type: web
-source_path: raw/web/deep-learning-theory/2026-04-06-Training-“real-world”-models-with-DDP.md
+source_path: raw/web/deep-learning/2026-04-06-Training-“real-world”-models-with-DDP.md
 title: Training “real-world” models with DDP
 author: - null
 published_at: 2026-04-06

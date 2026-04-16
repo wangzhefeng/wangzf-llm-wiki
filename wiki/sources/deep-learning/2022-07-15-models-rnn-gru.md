@@ -1,6 +1,6 @@
 ---
 source_type: notes
-source_path: raw/notes/deep-learning-theory/2022-07-15-models-rnn-gru/index.md
+source_path: raw/notes/deep-learning/2022-07-15-models-rnn-gru/index.md
 title: GRU
 author: wangzf
 published_at: 2022-07-15

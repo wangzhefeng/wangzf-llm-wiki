@@ -2,7 +2,7 @@
 created_at: 2026-04-11
 topics:
 - operations-research
-- timeseries
+- timeseries-analysis
 status: inbox
 source_path: raw/web/timeseries-analysis/2026-04-06-GIFT-Eval-a-Hugging-Face-Space-by-Salesforce.md
 ---

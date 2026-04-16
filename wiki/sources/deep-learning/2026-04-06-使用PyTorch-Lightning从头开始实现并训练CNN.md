@@ -1,6 +1,6 @@
 ---
 source_type: web
-source_path: raw/web/deep-learning-theory/2026-04-06-使用PyTorch-Lightning从头开始实现并训练CNN.md
+source_path: raw/web/deep-learning/2026-04-06-使用PyTorch-Lightning从头开始实现并训练CNN.md
 title: 使用PyTorch Lightning从头开始实现并训练CNN
 author: -
 published_at: 2026-04-06

@@ -14,7 +14,6 @@ related_concepts:
   - 运筹优化
   - 数学优化
 topics:
-  - programming-tools
   - 编程工具
 ---
 In [Part 7](https://zhuoranyang.github.io/sds431-notes/lectures/06-gradient-descent.html) we introduced gradient descent and saw that it only uses first-order information — the gradient — to choose a search direction. While simple and broadly applicable, gradient descent can be frustratingly slow on ill-conditioned problems, zigzagging across narrow valleys for thousands of iterations. Newton’s method overcomes this limitation by incorporating second-order information — the Hessian matrix — to adapt each step to the local curvature of the objective function, achieving dramatically faster convergence near the optimum.

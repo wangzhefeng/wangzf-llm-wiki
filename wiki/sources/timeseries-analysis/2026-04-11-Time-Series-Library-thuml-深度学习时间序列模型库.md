@@ -2,7 +2,7 @@
 created_at: 2026-04-11
 topics:
 - deep-learning
-- timeseries
+- timeseries-analysis
 status: summarized
 source_path: raw/repos/repo-thuml-Time-Series-Library.md
 ---

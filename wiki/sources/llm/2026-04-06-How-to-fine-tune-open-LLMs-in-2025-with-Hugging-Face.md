@@ -4,9 +4,9 @@ created: 2026-04-15
 updated: 2026-04-15
 type: source
 tags:
-  - llm-post-training
+  - llm
 sources:
-  - raw/web/llm-post-training/2026-04-06-How-to-fine-tune-open-LLMs-in-2025-with-Hugging-Face.md
+  - raw/web/llm/2026-04-06-How-to-fine-tune-open-LLMs-in-2025-with-Hugging-Face.md
 status: summarized
 ---
 ## 内容摘要
@@ -17,5 +17,5 @@ The only guide you need to fine-tune open LLMs in 2025, including QLoRA, Spectru
 - LLMs can now handle many tasks out-of-the-box through prompting, including chatbots, question answering, and summ
 
 ## 来源信息
-- 原始文件：raw/web/llm-post-training/2026-04-06-How-to-fine-tune-open-LLMs-in-2025-with-Hugging-Face.md
+- 原始文件：raw/web/llm/2026-04-06-How-to-fine-tune-open-LLMs-in-2025-with-Hugging-Face.md
 - 来源类型：web

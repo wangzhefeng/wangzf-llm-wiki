@@ -3,7 +3,7 @@ source_type: notes
 source_path: raw/notes/timeseries-analysis/2024-05-08-paper-ts-autoformer/index.md
 created_at: 2026-04-04
 topics:
-- timeseries
+- timeseries-analysis
 related_concepts:
 - 深度学习时间序列预测
 - 趋势与季节性

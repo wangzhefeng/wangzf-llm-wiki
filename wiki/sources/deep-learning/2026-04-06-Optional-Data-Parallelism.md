@@ -1,6 +1,6 @@
 ---
 source_type: web
-source_path: raw/web/deep-learning-theory/2026-04-06-Optional-Data-Parallelism.md
+source_path: raw/web/deep-learning/2026-04-06-Optional-Data-Parallelism.md
 title: Optional: Data Parallelism
 author: - null
 published_at: 2026-04-06

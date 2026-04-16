@@ -5,7 +5,7 @@ author: wangzf
 date: '2022-04-27'
 slug: timeseries-lib-cesium
 categories:
-  - timeseries
+  - timeseries-analysis
 tags:
   - tool
 source_type: notes

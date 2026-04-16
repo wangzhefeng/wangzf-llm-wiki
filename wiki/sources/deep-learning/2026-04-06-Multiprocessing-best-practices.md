@@ -1,6 +1,6 @@
 ---
 source_type: web
-source_path: raw/web/deep-learning-theory/2026-04-06-Multiprocessing-best-practices.md
+source_path: raw/web/deep-learning/2026-04-06-Multiprocessing-best-practices.md
 title: Multiprocessing best practices
 author: - null
 published_at: 2026-04-06

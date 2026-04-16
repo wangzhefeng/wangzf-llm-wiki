@@ -1,6 +1,6 @@
 ---
 source_type: web
-source_path: raw/web/deep-learning-theory/2026-04-06-读懂Transformer的内核，了解大模型基石.md
+source_path: raw/web/deep-learning/2026-04-06-读懂Transformer的内核，了解大模型基石.md
 title: 读懂Transformer的内核，了解大模型基石
 author: null
 published_at: 2026-04-06

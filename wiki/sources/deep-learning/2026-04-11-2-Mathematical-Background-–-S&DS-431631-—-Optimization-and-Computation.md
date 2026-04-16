@@ -1,6 +1,6 @@
 ---
 source_type: web
-source_path: raw/web/deep-learning-theory/2026-04-11-2-Mathematical-Background-–-S&DS-431631-—-Optimization-and-Computation.md
+source_path: raw/web/deep-learning/2026-04-11-2-Mathematical-Background-–-S&DS-431631-—-Optimization-and-Computation.md
 title: 2  Mathematical Background
 author: null
 published_at: 2026-04-11

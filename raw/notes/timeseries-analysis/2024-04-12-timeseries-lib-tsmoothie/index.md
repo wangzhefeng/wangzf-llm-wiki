@@ -5,7 +5,7 @@ author: wangzf
 date: '2024-04-12'
 slug: timeseries-lib-tsmoothie
 categories:
-  - timeseries
+  - timeseries-analysis
 tags:
   - tool
 source_type: notes

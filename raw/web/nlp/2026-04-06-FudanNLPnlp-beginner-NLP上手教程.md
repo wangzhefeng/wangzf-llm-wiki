@@ -14,7 +14,7 @@ source_url: https://github.com/FudanNLP/nlp-beginner
 published_at: null
 related_concepts: []
 topics:
-  - deep-learning-theory
+  - deep-learning
   - 深度学习理论
 ---
 

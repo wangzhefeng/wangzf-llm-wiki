@@ -50,7 +50,7 @@ status: summarized
 
 | 文件名 | 核心内容 | 状态 |
 |--------|----------|------|
-| [[raw/web/llm-pre-training/2026-04-06-基于Transform的机器翻译系统]] | Transformer 机器翻译实现 | 待摘要 |
+| [[raw/web/llm/2026-04-06-基于Transform的机器翻译系统]] | Transformer 机器翻译实现 | 待摘要 |
 | [[2026-04-06-ymoslemOpenNMT-Tutorial-Neural-Machine-Translation-(NMT)-tutorial.-Data-preprocessing,-model-training,-evaluation,-and-deployment]] | OpenNMT 神经机器翻译 | 待摘要 |
 
 ## 关键概念

@@ -5,7 +5,7 @@ author: wangzf
 date: '2022-11-12'
 slug: timeseries-lib-pmdarima
 categories:
-  - timeseries
+  - timeseries-analysis
 tags:
   - model
 source_type: notes

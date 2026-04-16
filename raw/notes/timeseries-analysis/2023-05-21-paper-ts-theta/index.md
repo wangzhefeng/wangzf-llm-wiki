@@ -4,7 +4,7 @@ author: wangzf
 date: '2023-05-21'
 slug: paper-ts-theta
 categories:
-  - timeseries
+  - timeseries-analysis
 tags:
   - paper
 source_type: notes

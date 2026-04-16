@@ -1,6 +1,6 @@
 ---
 source_type: web
-source_path: raw/web/deep-learning-theory/2026-04-06-Welcome-to-⚡-PyTorch-Lightning-—-PyTorch-Lightning-2.6.2-documentation.md
+source_path: raw/web/deep-learning/2026-04-06-Welcome-to-⚡-PyTorch-Lightning-—-PyTorch-Lightning-2.6.2-documentation.md
 title: Welcome to ⚡ PyTorch Lightning — PyTorch Lightning 2.6.2 documentation
 author: created_at: 2026-04-06
 published_at: 2026-04-06

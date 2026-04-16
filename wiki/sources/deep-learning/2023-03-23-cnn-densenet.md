@@ -1,6 +1,6 @@
 ---
 source_type: notes
-source_path: raw/notes/deep-learning-theory/2023-03-23-cnn-densenet/index.md
+source_path: raw/notes/deep-learning/2023-03-23-cnn-densenet/index.md
 title: DenseNet
 author: wangzf
 published_at: 2023-03-23

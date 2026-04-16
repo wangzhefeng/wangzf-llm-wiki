@@ -1,6 +1,6 @@
 ---
 source_type: web
-source_path: raw/web/deep-learning-theory/2026-04-06-open-compassVLMEvalKit-Open-source-evaluation-toolkit-of-large-multi-modality-models-(LMMs),-support-220+-LMMs,-80+-benchmarks.md
+source_path: raw/web/deep-learning/2026-04-06-open-compassVLMEvalKit-Open-source-evaluation-toolkit-of-large-multi-modality-models-(LMMs),-support-220+-LMMs,-80+-benchmarks.md
 title: open-compass/VLMEvalKit: Open-source evaluation toolkit of large multi-modality
 author: null
 published_at: 2026-04-06

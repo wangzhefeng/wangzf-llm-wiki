@@ -1,7 +1,7 @@
 ---
 created_at: 2026-04-11
 topics:
-  - timeseries
+  - timeseries-analysis
 status: inbox
 source_path: raw/web/timeseries-analysis/2026-04-10-PyRregular开源34个数据集基准，找不规则时序方向baseline的可以直接抄作业.md
 ---

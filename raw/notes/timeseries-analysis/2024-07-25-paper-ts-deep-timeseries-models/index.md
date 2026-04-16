@@ -4,7 +4,7 @@ author: wangzf
 date: '2024-07-25'
 slug: paper-ts-deep-timeseries-models
 categories:
-  - timeseries
+  - timeseries-analysis
 tags:
   - paper
 source_type: notes

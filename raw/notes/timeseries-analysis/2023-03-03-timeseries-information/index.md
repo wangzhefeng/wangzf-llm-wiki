@@ -4,7 +4,7 @@ author: wangzf
 date: '2023-03-03'
 slug: timeseries-information
 categories:
-  - timeseries
+  - timeseries-analysis
 tags:
   - note
 source_type: notes

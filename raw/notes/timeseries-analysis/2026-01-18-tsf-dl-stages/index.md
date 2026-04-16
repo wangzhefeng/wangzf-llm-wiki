@@ -12,7 +12,7 @@ date: '2026-01-18'
 description: 复盘深度时序模型研究从结构迁移到任务重构的三个发展阶段。
 slug: tsf-dl-stages
 categories:
-  - timeseries
+  - timeseries-analysis
 tags:
   - note
 topics:

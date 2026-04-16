@@ -4,7 +4,7 @@ author: wangzf
 date: '2023-03-03'
 slug: time-domain
 categories:
-  - timeseries
+  - timeseries-analysis
 tags:
   - model
 source_type: notes

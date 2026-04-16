@@ -4,9 +4,9 @@ created: '2026-04-15'
 updated: '2026-04-15'
 type: source
 tags:
-  - llm-pre-training
+  - llm
 sources:
-  - raw/web/llm-pre-training/2026-04-06-dontriskitawesome-ai-system-prompts 🧠 Curated collection of system prompts for top AI tools. Perfect for AI agent builders and prompt engineers. Incuding ChatGPT, Claude, Perplexity, Manus, Claude-Code, Loveable, v0, Grok, same new,.md
+  - raw/web/llm/2026-04-06-dontriskitawesome-ai-system-prompts 🧠 Curated collection of system prompts for top AI tools. Perfect for AI agent builders and prompt engineers. Incuding ChatGPT, Claude, Perplexity, Manus, Claude-Code, Loveable, v0, Grok, same new,.md
 status: summarized
 ---
 
@@ -21,5 +21,5 @@ status: summarized
 
 ## 来源信息
 
-- 原始文件：raw/web/llm-pre-training/2026-04-06-dontriskitawesome-ai-system-prompts 🧠 Curated collection of system prompts for top AI tools. Perfect for AI agent builders and prompt engineers. Incuding ChatGPT, Claude, Perplexity, Manus, Claude-Code, Loveable, v0, Grok, same new,.md
+- 原始文件：raw/web/llm/2026-04-06-dontriskitawesome-ai-system-prompts 🧠 Curated collection of system prompts for top AI tools. Perfect for AI agent builders and prompt engineers. Incuding ChatGPT, Claude, Perplexity, Manus, Claude-Code, Loveable, v0, Grok, same new,.md
 - 来源类型：web
