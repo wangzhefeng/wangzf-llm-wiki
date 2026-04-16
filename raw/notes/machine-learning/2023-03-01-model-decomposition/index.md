@@ -4,14 +4,14 @@ author: wangzf
 date: '2023-03-01'
 slug: model-decomposition
 categories:
-  - feature-engine
+  - feature-engineering
 tags:
   - model
 source_type: notes
 created_at: 2023-03-01
 status: inbox
 topics:
-  - feature-engine
+  - feature-engineering
   - 特征工程
 ---
 

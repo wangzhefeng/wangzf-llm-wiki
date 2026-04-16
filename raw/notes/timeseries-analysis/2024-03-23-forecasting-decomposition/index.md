@@ -116,7 +116,7 @@ topics:
 
 #### Box-Cox 变换族
 
-> 已有的介绍：[数值特征中的 Box-Cox 变换](https://wangzhefeng.com/note/2022/09/13/feature-engine-type-numeric/#box-cox-%E8%BD%AC%E6%8D%A2)
+> 已有的介绍：[数值特征中的 Box-Cox 变换](https://wangzhefeng.com/note/2022/09/13/feature-engineering-type-numeric/#box-cox-%E8%BD%AC%E6%8D%A2)
 
 一个有用的变换族 Box-Cox 变换族，包括对数变换和幂变换，
 它取决于参数 `$\lambda$`，定义如下：

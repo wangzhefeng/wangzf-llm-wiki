@@ -2,9 +2,9 @@
 title: 时间序列特征工程
 author: wangzf
 date: '2022-09-13'
-slug: timeseries-feature-engine
+slug: timeseries-feature-engineering
 categories:
-  - feature-engine
+  - feature-engineering
 tags:
   - model
 source_type: notes

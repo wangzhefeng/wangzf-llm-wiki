@@ -328,13 +328,13 @@ status: linked
 
 **生成成果**：
 
-1. **来源卡编译**（16 个文件，新建 `wiki/sources/feature-engine/` 目录）：
+1. **来源卡编译**（16 个文件，新建 `wiki/sources/feature-engineering/` 目录）：
    - raw/notes 层（12 个）：特征构建、缺失值处理、数值/类别/文本/音频/图像特征、样本不平衡（分类/回归）、概述、核心问题
    - raw/web 层（4 个）：FeatureSelector 工具、Tips-of-Feature-Engineering 教程库、竞赛 PPT、系统讲解（Datawhale）
 
-2. **索引页编译**（新建 `wiki/indexes/feature-engine/` 目录）：
+2. **索引页编译**（新建 `wiki/indexes/feature-engineering/` 目录）：
    - `特征工程总索引.md`：按数据类型、操作阶段、深度专题、来源与工具组织
-   - 更新 `机器学习总索引.md`：补充 feature-engine 专用索引入口和网页来源卡链接
+   - 更新 `机器学习总索引.md`：补充 feature-engineering 专用索引入口和网页来源卡链接
 
 3. **概念页编译**（8 个新页面，更新 1 个总体概念页）：
    - **新建概念页**：特征编码、样本不平衡处理、数据增强、特征选择、特征构建、缺失值填充、特征标准化、特征离散化
@@ -347,10 +347,10 @@ status: linked
 - Layer 4: wiki/concepts 概念页编译（定义、核心方法、实践应用、进阶话题）
 
 **指标更新**：
-- wiki/sources/feature-engine/：16 个来源卡（12 来自 raw/notes，4 来自 raw/web）
-- wiki/indexes/feature-engine/：1 个专用索引 + 2 个更新的 machine-learning 索引
+- wiki/sources/feature-engineering/：16 个来源卡（12 来自 raw/notes，4 来自 raw/web）
+- wiki/indexes/feature-engineering/：1 个专用索引 + 2 个更新的 machine-learning 索引
 - wiki/concepts/machine-learning/：8 个新概念页 + 1 个更新的总体概念页
-- 机器学习总索引中的 feature-engine 专用资源链接：新增 4 个网页来源卡链接
+- 机器学习总索引中的 feature-engineering 专用资源链接：新增 4 个网页来源卡链接
 
 **编译效果**：
 - 特征工程知识库完整度提升：从 4-6/10 → 8.5/10
@@ -370,32 +370,32 @@ status: linked
 
 **核心问题诊断**：
 - 概念页在 wiki/concepts/machine-learning 下（作为 ML 子主题）
-- 但索引和来源在 wiki/indexes/feature-engine 和 wiki/sources/feature-engine 下（独立专题）
+- 但索引和来源在 wiki/indexes/feature-engineering 和 wiki/sources/feature-engineering 下（独立专题）
 - machine-learning 中还存在 13+ 个特征工程相关的重复来源卡
-- 命名不统一：feature-engine 与 feature-engineering 混用
+- 命名不统一：feature-engineering 与 feature-engineering 混用
 
 **重构策略**：确立 **feature-engineering 为独立专题**，实现全层级统一
 
 **重构内容**：
 1. **目录重命名**（完整统一）
-   - raw/notes/feature-engine → raw/notes/feature-engineering
-   - raw/web/feature-engine → raw/web/feature-engineering
-   - wiki/sources/feature-engine → wiki/sources/feature-engineering
-   - wiki/indexes/feature-engine → wiki/indexes/feature-engineering
+   - raw/notes/feature-engineering → raw/notes/feature-engineering
+   - raw/web/feature-engineering → raw/web/feature-engineering
+   - wiki/sources/feature-engineering → wiki/sources/feature-engineering
+   - wiki/indexes/feature-engineering → wiki/indexes/feature-engineering
    - 创建新目录：wiki/concepts/feature-engineering
 
 2. **概念页迁移**
-   - 从 wiki/concepts/machine-learning/ 迁移 9 个概念页到新创建的 wiki/concepts/feature-engine/
+   - 从 wiki/concepts/machine-learning/ 迁移 9 个概念页到新创建的 wiki/concepts/feature-engineering/
    - 迁移的概念页：特征工程、特征编码、样本不平衡处理、数据增强、特征选择、特征构建、缺失值填充、特征标准化、特征离散化
 
 3. **路径引用更新**
    - 批量更新所有 markdown 文件中的路径（wiki/indexes、wiki/sources、wiki/concepts）
    - 更新内容包括：
-     - wiki/sources/feature-engine → wiki/sources/feature-engineering（所有引用）
-     - wiki/indexes/feature-engine → wiki/indexes/feature-engineering（所有引用）
-     - raw/notes/feature-engine → raw/notes/feature-engineering（所有引用）
-     - raw/web/feature-engine → raw/web/feature-engineering（所有引用）
-     - 标签：feature-engine → feature-engineering（所有标签）
+     - wiki/sources/feature-engineering → wiki/sources/feature-engineering（所有引用）
+     - wiki/indexes/feature-engineering → wiki/indexes/feature-engineering（所有引用）
+     - raw/notes/feature-engineering → raw/notes/feature-engineering（所有引用）
+     - raw/web/feature-engineering → raw/web/feature-engineering（所有引用）
+     - 标签：feature-engineering → feature-engineering（所有标签）
 
 4. **来源卡补充**
    - 补充缺失的 2022-09-13-特征选择.md（来自 raw/notes）
@@ -656,8 +656,8 @@ status: linked
 
 - **来源范围**：`raw/notes/feature-engineering/`（12 个子主题）+ `raw/web/feature-engineering/`（4 个网页）
 - **架构调整**：将 feature-engineering 从 machine-learning 的混合目录结构升级为独立主题
-  - 所有概念页从 `wiki/concepts/machine-learning/` 迁移至 `wiki/concepts/feature-engine/`（9 个）
-  - 保持 `wiki/sources/feature-engine/` 与 `wiki/indexes/feature-engine/` 的独立性
+  - 所有概念页从 `wiki/concepts/machine-learning/` 迁移至 `wiki/concepts/feature-engineering/`（9 个）
+  - 保持 `wiki/sources/feature-engineering/` 与 `wiki/indexes/feature-engineering/` 的独立性
 
 - **来源卡编译状态**：16 张来源卡完成
   - Raw/notes：12 张（特征构建、缺失值处理、数值/类别/文本/音频/图像特征、样本不平衡分类/回归、特征工程概述、核心问题）
@@ -680,7 +680,7 @@ status: linked
   - `wiki/indexes/machine-learning/机器学习总索引.md`：重命名"数据理解与特征工程"为"数据理解与探索性分析"，移除已迁移条目，补充指向 feature-engineering专用索引 的导航
   - `wiki/indexes/machine-learning/机器学习基础与特征工程索引.md`：（待更新）
   - `raw/notes/feature-engineering/index.md`：新增正确的 wiki 导航链接指向 feature-engineering总索引
-  - `wiki/concepts/feature-engine/README.md`：新建目录索引，包含 3 条学习路径（初级/中级/高级）
+  - `wiki/concepts/feature-engineering/README.md`：新建目录索引，包含 3 条学习路径（初级/中级/高级）
 
 - **交叉引用补强**：为所有 9 个概念页补充"相关概念"链接，形成知识图
   - 特征编码 ← 特征选择、样本不平衡处理、特征离散化
@@ -693,9 +693,9 @@ status: linked
   - 缺失值填充 ← 特征构建、特征编码、特征标准化、特征选择
 
 - **验证完成**：
-  - ✓ 9 个概念页都在 wiki/concepts/feature-engine/ 目录中
-  - ✓ 16 个来源卡都在 wiki/sources/feature-engine/ 目录中
-  - ✓ 1 个专用索引在 wiki/indexes/feature-engine/ 目录中
+  - ✓ 9 个概念页都在 wiki/concepts/feature-engineering/ 目录中
+  - ✓ 16 个来源卡都在 wiki/sources/feature-engineering/ 目录中
+  - ✓ 1 个专用索引在 wiki/indexes/feature-engineering/ 目录中
   - ✓ 所有概念页都从 README 和主索引中可以找到
   - ✓ 所有概念页都有相互交叉引用（形成知识图）
   - ✓ 无断链（所有 wikilink 都指向存在的文件）
@@ -708,8 +708,8 @@ status: linked
 ## [2026-04-15] update | Feature-Engineering 索引层完整化与命名统一
 
 - **问题整改**：
-  1. 命名统一：将 `wiki/concepts/feature-engine/README.md` 重命名为 `index.md`，与其他主题保持一致
-  2. 索引层完整：补全 `wiki/indexes/feature-engine/` 缺失的两个核心文件
+  1. 命名统一：将 `wiki/concepts/feature-engineering/README.md` 重命名为 `index.md`，与其他主题保持一致
+  2. 索引层完整：补全 `wiki/indexes/feature-engineering/` 缺失的两个核心文件
 
 - **新建文件 2 张**：
   - `特征工程来源清单.md`：汇集全部 16 张来源卡的分类索引，包含"快速入门"和"深度学习"查询路径
@@ -717,11 +717,11 @@ status: linked
 
 - **导航更新 2 处**：
   - `特征工程总索引.md`：新增"快速导航"章节，指向来源清单、阅读地图、概念页库
-  - `wiki/concepts/feature-engine/index.md`：补充"阅读地图"和"来源清单"链接，优化索引层的三维导航
+  - `wiki/concepts/feature-engineering/index.md`：补充"阅读地图"和"来源清单"链接，优化索引层的三维导航
 
 - **结果**：
-  - ✓ wiki/indexes/feature-engine/ 从 1 个文件 → 3 个文件（总索引、来源清单、阅读地图）
-  - ✓ wiki/concepts/feature-engine/ 从 README.md → index.md（命名规范化）
+  - ✓ wiki/indexes/feature-engineering/ 从 1 个文件 → 3 个文件（总索引、来源清单、阅读地图）
+  - ✓ wiki/concepts/feature-engineering/ 从 README.md → index.md（命名规范化）
   - ✓ 索引体系：总索引（分类导航）→ 来源清单（资源导航）→ 阅读地图（学习路径）→ 概念页库（深度理解）
   - ✓ 用户体验：从"平面结构"升级为"四维导航"（分类、时序、问题、学习路径）
 
@@ -1265,7 +1265,7 @@ Layer 3: 表示学习（4 代演进）
 A4 细分为 4 类：
 
 1. **反斜杠结尾（12 条）**：Windows 路径残留，如 `[[2023-02-27-特征工程概述\|特征工程概述]]`。
-   - 集中在 `wiki/indexes/feature-engine/特征工程总索引.md` 和 `特征工程阅读地图.md`。
+   - 集中在 `wiki/indexes/feature-engineering/特征工程总索引.md` 和 `特征工程阅读地图.md`。
    - 建议：去掉反斜杠，保留别名。
 
 2. **wiki/路径格式引用-文件存在（113 条）**：使用了 `[[wiki/xxx/index]]` 全路径格式而非 stem。
@@ -1307,8 +1307,8 @@ A4 细分为 4 类：
 **P2 涉及文件**：
 - `wiki/concepts/index.md`、`wiki/sources/index.md`、`wiki/entities/index.md`
 - `wiki/comparisons/index.md`、`wiki/queries/index.md`、`wiki/indexes/index.md`
-- `wiki/indexes/feature-engine/特征工程总索引.md`
-- `wiki/indexes/feature-engine/特征工程阅读地图.md`
+- `wiki/indexes/feature-engineering/特征工程总索引.md`
+- `wiki/indexes/feature-engineering/特征工程阅读地图.md`
 
 **P3 涉及文件**：
 - `wiki/concepts/llm-wiki/LLM辅助研究.md`
@@ -1522,18 +1522,18 @@ GLOSSARY.md 定义了知识库各主题的规范英文名称。发现 raw/ 层�
 - `deep-learning-theory/` → `deep-learning/`
 - `llm-theory/` + `llm-pre-training/` + `llm-post-training/` → `llm/`（合并）
 - `machine-learning-theory/` + `machine-learning-supervised-model/` + `machine-learning-unsupervised-model/` → `machine-learning/`（合并）
-- `feature-engineering/` → `feature-engine/`
+- `feature-engineering/` → `feature-engineering/`
 
 **wiki/ 层文件夹重命名：**
-- `wiki/indexes/feature-engine/` → `wiki/indexes/feature-engine/`
-- `wiki/sources/feature-engine/` → `wiki/sources/feature-engine/`
-- `wiki/concepts/feature-engine/` → `wiki/concepts/feature-engine/`
+- `wiki/indexes/feature-engineering/` → `wiki/indexes/feature-engineering/`
+- `wiki/sources/feature-engineering/` → `wiki/sources/feature-engineering/`
+- `wiki/concepts/feature-engineering/` → `wiki/concepts/feature-engineering/`
 
 **文件重命名：**
 - `wiki/sources/deep-learning/附件入口清单-deeplearning.md` → `附件入口清单-deep-learning.md`
 
 **frontmatter topics 批量修正（656 个文件）：**
-- 旧名替换：deeplearning → deep-learning、machinelearning → machine-learning、operationsresearch → operations-research、statistics → statistics-theory、timeseries → timeseries-analysis、llm-theory/llm-pre-training/llm-post-training → llm、machine-learning-theory/supervised/unsupervised → machine-learning、deep-learning-theory → deep-learning、feature-engineering → feature-engine、knowledge-base-building/operations/usage → llm-wiki
+- 旧名替换：deeplearning → deep-learning、machinelearning → machine-learning、operationsresearch → operations-research、statistics → statistics-theory、timeseries → timeseries-analysis、llm-theory/llm-pre-training/llm-post-training → llm、machine-learning-theory/supervised/unsupervised → machine-learning、deep-learning-theory → deep-learning、feature-engineering → feature-engineering、knowledge-base-building/operations/usage → llm-wiki
 - 已删除主题标签删除：agent-dev、computer-vision、data-analysis、data-structure-algorithm、tools、programming-tools
 
 **内部链接与 source_path 修复（421 个文件）：**
@@ -1545,3 +1545,31 @@ GLOSSARY.md 定义了知识库各主题的规范英文名称。发现 raw/ 层�
 - `raw/assets/attachments/` 内容不变（含 deeplearning、machinelearning 等旧名附件子目录）
 - `raw/repos/` 代码文件不变
 - `wiki/log.md` 历史记录不变
+
+## [2026-04-16] ingest/backfill | power-market-trading 工具支线增量编译
+
+### 背景
+`raw/web/power-market-trading/` 新增 3 份与风光储测算相关的资料，包括 1 份业务算法方案和 2 份建模工具文档。用户要求将其纳入 `power-market-trading` 主题，但按“工具支线”处理，不提升为主题主干理论框架。
+
+### 执行内容
+
+- 规范化 3 份新增 raw 文档的 frontmatter：统一 `source_type`、`created_at`、`topics`、`related_concepts`、`status`
+- 将乱码文件名重命名为 `2026-04-16-风光储测算算法方案.md`
+- 新增 3 张来源卡：
+  - `2026-04-16-风光储测算算法方案.md`
+  - `2026-04-16-pvlib python — pvlib python 0.15.0 documentation.md`
+  - `2026-04-16-Getting started — windpowerlib documentation.md`
+- 新增工具型概念页：`wiki/concepts/power-market-trading/风光储测算.md`
+- 更新主题入口：
+  - `wiki/indexes/power-market-trading/电力市场交易总索引.md`
+  - `wiki/indexes/power-market-trading/电力市场交易来源清单.md`
+  - `wiki/indexes/power-market-trading/电力市场交易阅读地图.md`
+  - `wiki/indexes/power-market-trading/电力市场与时序预测应用索引.md`
+  - `wiki/concepts/power-market-trading/index.md`
+- 新增 `outputs/syntheses/2026-04-16-power-market-trading-专题综述.md`
+- 新增 `outputs/logs/2026-04-16-power-market-trading-动作记录.md`
+
+### 结果
+
+- `power-market-trading` 主题从“交易机制 + VPP/算电协同”扩展为“主干机制 + 场景扩展 + 工具支线”的完整结构
+- 建模类资料已经进入来源层、索引层和概念层，但仍保持为工具入口，不干扰主题主干叙事

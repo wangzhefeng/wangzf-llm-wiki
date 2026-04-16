@@ -43,7 +43,7 @@
 - [深度学习总索引](wiki/indexes/deep-learning/深度学习总索引.md)
 - [自然语言处理总索引](wiki/indexes/nlp/NLP基础任务总索引.md)
 - [强化学习总索引](wiki/indexes/reinforcement-learning/强化学习总索引.md)
-- [特征工程总索引](wiki/indexes/feature-engine/特征工程总索引.md)
+- [特征工程总索引](wiki/indexes/feature-engineering/特征工程总索引.md)
 - [控制算法总索引](wiki/indexes/control-algorithms/控制算法总索引.md)
 - [电力市场交易总索引](wiki/indexes/power-market-trading/电力市场交易总索引.md)
 - [Vibe-Coding 总索引](wiki/indexes/vibe-coding/Vibe-Coding总索引.md)

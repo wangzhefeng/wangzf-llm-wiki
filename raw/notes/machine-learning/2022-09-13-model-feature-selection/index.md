@@ -4,14 +4,14 @@ author: wangzf
 date: '2022-09-13'
 slug: model-feature-selection
 categories:
-  - feature-engine
+  - feature-engineering
 tags:
   - model
 source_type: notes
 created_at: 2022-09-13
 status: inbox
 topics:
-  - feature-engine
+  - feature-engineering
   - 特征工程
 ---
 

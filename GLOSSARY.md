@@ -12,7 +12,7 @@
     - 原名：可能为 data_structure_algorithm
 * deep-learning-theory: 深度学习理论
     - 原名：deeplearning
-* feature-engine: 特征工程
+* feature-engineering: 特征工程
     - 原名：无，从原先的 machinelearning 中单独取出来建立主题的
 * llm-post-training: 大语言模型后训练
     - 原名：无，从原先的 deeplearning 中单独取出来建立主题的
@@ -21,7 +21,7 @@
 * llm-theory: 大语言模型理论
     - 原名：llm
 * llm-wiki: 大语言模型知识库(本仓库)
-    - 原名： 原来分为三个主题 knowledge-base-building, knowledge-base-operations, knowledge-base-usage
+    - 原名： 原来分为三个主题 knowledge-base-building, knowledge-base-operations, knowledge-base-usage, knowledge-base
 * machine-learning-supervised-model: 有监督学习模型
     - 原名：无，从原先的 machinelearning 中单独取出来建立主题的
 * machine-learning-theory: 机器学习理论
