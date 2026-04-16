@@ -28,4 +28,4 @@ status: summarized
 ## 连到哪些概念
 
 - [[循环神经网络]]
-- [[门控结构 (LSTM/GRU)]]
+- 门控结构（LSTM/GRU）

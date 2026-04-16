@@ -1,3 +1,10 @@
+---
+created_at: 2026-04-16
+topics:
+  - 知识库输出
+status: linked
+---
+
 # outputs
 
 `outputs/` 只放围绕当前知识库生成的派生结果，不放原始来源，也不替代 `wiki/`。

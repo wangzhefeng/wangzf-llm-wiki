@@ -1,6 +1,6 @@
 ---
 source_type: notes
-source_path: raw/notes/nlp/nlp-speech/2022-12-02-nlp-speech-recognition/index.md
+source_path: raw/notes/nlp/2022-12-02-nlp-speech-recognition/index.md
 title: 语音识别 Speech Recognition
 author: wangzf
 published_at: 2022-12-02
@@ -17,8 +17,8 @@ status: summarized
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/notes/nlp/nlp-speech/2022-12-02-nlp-speech-recognition/index.md]]
-- 来源：`raw/notes/nlp/nlp-speech/2022-12-02-nlp-speech-recognition/index.md`
+- 原文：[[raw/notes/nlp/2022-12-02-nlp-speech-recognition/index.md]]
+- 来源：`raw/notes/nlp/2022-12-02-nlp-speech-recognition/index.md`
 - 主题：NLP 本地知识笔记
 
 ## 价值是什么

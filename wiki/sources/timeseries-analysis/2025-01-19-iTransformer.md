@@ -13,7 +13,7 @@ status: summarized
 # iTransformer 来源摘要
 
 
-- 原文：[[raw/notes/timeseries-analysis/timeseries-time-domain/timeseries-deeplearning/2025-01-19-paper-ts-itransformer/index.md]]
+- 原文：[[raw/notes/timeseries-analysis/2025-01-19-paper-ts-itransformer/index.md]]
 ## 材料定位
 
 这篇论文解读文档目前主要记录了 iTransformer 的论文入口、章节框架和少量模型信息，是后续继续补写的深度预测来源入口。

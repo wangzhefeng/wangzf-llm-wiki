@@ -1,6 +1,6 @@
 ---
 source_type: web
-source_path: raw/web/machine-learning/2026-04-06-rasbtMachineLearning-QandAI-book Machine Learning Q and AI book.md
+source_path: raw/web/machine-learning-theory/2026-04-06-rasbtMachineLearning-QandAI-book-Machine-Learning-Q-and-AI-book.md
 title: 'rasbt/MachineLearning-QandAI-book: Machine Learning Q and AI book'
 author: unknown
 published_at: 2026-04-06
@@ -15,8 +15,8 @@ status: summarized
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/web/machine-learning/2026-04-06-rasbtMachineLearning-QandAI-book-Machine-Learning-Q-and-AI-book.md]]
-- 来源：`raw/web/machine-learning/2026-04-06-rasbtMachineLearning-QandAI-book Machine Learning Q and AI book.md`
+- 原文：[[raw/web/machine-learning-theory/2026-04-06-rasbtMachineLearning-QandAI-book-Machine-Learning-Q-and-AI-book.md]]
+- 来源：`raw/web/machine-learning-theory/2026-04-06-rasbtMachineLearning-QandAI-book-Machine-Learning-Q-and-AI-book.md`
 - 主题：机器学习
 
 ## 价值是什么

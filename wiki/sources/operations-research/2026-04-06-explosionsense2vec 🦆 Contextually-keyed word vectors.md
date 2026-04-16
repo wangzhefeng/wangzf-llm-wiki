@@ -17,7 +17,7 @@ topics:
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/web/machine-learning/2026-04-06-explosionsense2vec-🦆-Contextually-keyed-word-vectors.md]]
+- 原文：[[raw/web/nlp/2026-04-06-explosionsense2vec-🦆-Contextually-keyed-word-vectors.md]]
 - 来源：`raw/web/machine-learning/2026-04-06-explosionsense2vec 🦆 Contextually-keyed word vectors.md`
 - 主题：待分类
 

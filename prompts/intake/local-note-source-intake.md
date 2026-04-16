@@ -11,7 +11,7 @@
 1. 确认原始文档或专题清单已位于 `raw/notes/`
 2. 在 `wiki/sources/<topic>/` 创建 1 张或多张来源摘要卡
    - 每张卡至少保留：
-     - `source_type: local_note`
+     - `source_type: notes`
      - `source_path`
      - `created_at`
      - `topics`

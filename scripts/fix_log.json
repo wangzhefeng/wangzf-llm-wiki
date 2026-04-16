@@ -1,0 +1,2899 @@
+[
+  {
+    "file": "wiki/concepts/causal-inference/Causal-Diagram.md",
+    "changes": [
+      "  行153 A1: '- [[Rubin Causal Model]] — 潜在结果框架' -> '- [[Rubin-Causal-Model]] — 潜在结果框架'",
+      "  行155 A1: '- [[DoWhy Framework]] — 因果图的实现工具' -> '- [[DoWhy-Framework]] — 因果图的实现工具'"
+    ]
+  },
+  {
+    "file": "wiki/concepts/causal-inference/Causal-Inference-Methods.md",
+    "changes": [
+      "  行274 A1: '- [[Propensity Score]] — PSM 详解' -> '- [[Propensity-Score]] — PSM 详解'",
+      "  行275 A1: '- [[DoWhy Framework]] — 方法实现工具' -> '- [[DoWhy-Framework]] — 方法实现工具'",
+      "  行276 A1: '- [[Rubin Causal Model]] — 理论基础' -> '- [[Rubin-Causal-Model]] — 理论基础'",
+      "  行277 A1: '- [[Causal Diagram]] — 识别混杂因子' -> '- [[Causal-Diagram]] — 识别混杂因子'"
+    ]
+  },
+  {
+    "file": "wiki/concepts/causal-inference/DoWhy-Framework.md",
+    "changes": [
+      "  行252 A1: '- [[Causal Diagram]] — 因果图基础' -> '- [[Causal-Diagram]] — 因果图基础'",
+      "  行253 A1: '- [[Rubin Causal Model]] — 潜在结果基础' -> '- [[Rubin-Causal-Model]] — 潜在结果基础'",
+      "  行254 A1: '- [[Propensity Score]] — 倾向得分实现' -> '- [[Propensity-Score]] — 倾向得分实现'"
+    ]
+  },
+  {
+    "file": "wiki/concepts/causal-inference/Propensity-Score.md",
+    "changes": [
+      "  行180 A1: '- [[Rubin Causal Model]] — RCM 理论基础' -> '- [[Rubin-Causal-Model]] — RCM 理论基础'",
+      "  行181 A1: '- [[DoWhy Framework]] — IPW 在 DoWhy 中的实现' -> '- [[DoWhy-Framework]] — IPW 在 DoWhy 中的实现'",
+      "  行182 A1: '- [[Causal Diagram]] — 识别混杂因子' -> '- [[Causal-Diagram]] — 识别混杂因子'"
+    ]
+  },
+  {
+    "file": "wiki/concepts/causal-inference/Rubin-Causal-Model.md",
+    "changes": [
+      "  行180 A1: '- [[Causal Diagram]] — Pearl 因果图框架' -> '- [[Causal-Diagram]] — Pearl 因果图框架'",
+      "  行181 A1: '- [[Propensity Score]] — 在观察性研究中应用 RCM' -> '- [[Propensity-Score]] — 在观察性研究中应用 RCM'",
+      "  行182 A1: '- [[DoWhy Framework]] — RCM + 因果图的统一实现' -> '- [[DoWhy-Framework]] — RCM + 因果图的统一实现'"
+    ]
+  },
+  {
+    "file": "wiki/concepts/control-algorithms/index.md",
+    "changes": [
+      "  行10 A2: '本目录存放控制算法概念与方法页。入口建议从：控制算法总索引。'"
+    ]
+  },
+  {
+    "file": "wiki/concepts/deep-learning/index.md",
+    "changes": [
+      "  行10 A2: '本目录存放深度学习概念与方法页。入口建议从：深度学习总索引。'"
+    ]
+  },
+  {
+    "file": "wiki/concepts/deep-learning/图神经网络.md",
+    "changes": [
+      "  行25 A2: '- 深度学习总索引'"
+    ]
+  },
+  {
+    "file": "wiki/concepts/deep-learning/深度学习工程工具.md",
+    "changes": [
+      "  行27 A2: '- 深度学习总索引'"
+    ]
+  },
+  {
+    "file": "wiki/concepts/deep-learning/深度学习训练基础设施.md",
+    "changes": [
+      "  行27 A2: '- 深度学习总索引'"
+    ]
+  },
+  {
+    "file": "wiki/concepts/deep-learning/深度学习训练实践.md",
+    "changes": [
+      "  行28 A2: '- 深度学习总索引'"
+    ]
+  },
+  {
+    "file": "wiki/concepts/feature-engineering/index.md",
+    "changes": [
+      "  行61 A2: '- 特征工程总索引 - 按数据类型、操作阶段、深度专题分类'"
+    ]
+  },
+  {
+    "file": "wiki/concepts/feature-engineering/数据增强.md",
+    "changes": [
+      "  行253 A2: '- 特征工程总索引'"
+    ]
+  },
+  {
+    "file": "wiki/concepts/feature-engineering/样本不平衡处理.md",
+    "changes": [
+      "  行269 A2: '- 特征工程总索引'"
+    ]
+  },
+  {
+    "file": "wiki/concepts/feature-engineering/特征构建.md",
+    "changes": [
+      "  行297 A2: '- 特征工程总索引'"
+    ]
+  },
+  {
+    "file": "wiki/concepts/feature-engineering/特征标准化.md",
+    "changes": [
+      "  行303 A2: '- 特征工程总索引'"
+    ]
+  },
+  {
+    "file": "wiki/concepts/feature-engineering/特征离散化.md",
+    "changes": [
+      "  行313 A2: '- 特征工程总索引'"
+    ]
+  },
+  {
+    "file": "wiki/concepts/feature-engineering/特征编码.md",
+    "changes": [
+      "  行261 A2: '- 特征工程总索引'"
+    ]
+  },
+  {
+    "file": "wiki/concepts/feature-engineering/特征选择.md",
+    "changes": [
+      "  行275 A2: '- 特征工程总索引'"
+    ]
+  },
+  {
+    "file": "wiki/concepts/feature-engineering/缺失值填充.md",
+    "changes": [
+      "  行323 A2: '- 特征工程总索引'"
+    ]
+  },
+  {
+    "file": "wiki/concepts/llm/Embedding.md",
+    "changes": [
+      "  行26 A2: '- 大语言模型总索引'"
+    ]
+  },
+  {
+    "file": "wiki/concepts/llm/InstructGPT.md",
+    "changes": [
+      "  行38 A1: '- [[2026-04-06-译论文 InstructGPT：基于人类反馈训练语言模型遵从指令的能力（OpenAI，2022）]]' -> '- [[2026-04-06-译论文-InstructGPT：基于人类反馈训练语言模型遵从指令的能力（OpenAI，2022）]]'",
+      "  行39 A1: '- [[2026-04-06-Articles (cn-zh)]]' -> '- [[2026-04-06-Articles-(cn-zh)]]'"
+    ]
+  },
+  {
+    "file": "wiki/concepts/llm/LLM工程框架.md",
+    "changes": [
+      "  行27 A2: '- 大语言模型总索引'"
+    ]
+  },
+  {
+    "file": "wiki/concepts/llm/NLP任务.md",
+    "changes": [
+      "  行27 A2: '- 大语言模型总索引'"
+    ]
+  },
+  {
+    "file": "wiki/concepts/llm/RAG检索增强生成.md",
+    "changes": [
+      "  行85 A1: '- [[Vibe Coding来源清单]]' -> '- [[Vibe-Coding来源清单]]'"
+    ]
+  },
+  {
+    "file": "wiki/concepts/llm/Transformer架构.md",
+    "changes": [
+      "  行70 A1: '- [[2026-04-06-译 Transformer 是如何工作的：600 行 Python 代码实现 self-attention 和两类 Transformer（2019）]]' -> '- [[2026-04-06-译-Transformer-是如何工作的：600-行-Python-代码实现-self-attention-和两类-Transformer（2019）]]'",
+      "  行71 A1: '- [[2026-04-06-The Big LLM Architecture Comparison]]' -> '- [[2026-04-06-The-Big-LLM-Architecture-Comparison]]'",
+      "  行72 A1: '- [[2026-04-06-Articles (cn-zh)]]' -> '- [[2026-04-06-Articles-(cn-zh)]]'"
+    ]
+  },
+  {
+    "file": "wiki/concepts/llm/index.md",
+    "changes": [
+      "  行10 A2: '本目录存放 LLM 相关“概念/方法/工具”的稳定页面。入口建议从主题总索引进入：大语言模型总索引。'"
+    ]
+  },
+  {
+    "file": "wiki/concepts/llm/大语言模型.md",
+    "changes": [
+      "  行27 A2: '- 大语言模型总索引'"
+    ]
+  },
+  {
+    "file": "wiki/concepts/llm/提示词工程.md",
+    "changes": [
+      "  行96 A1: '- [[2026-04-06-Advanced Prompt Engineering Techniques]]' -> '- [[2026-04-06-Advanced-Prompt-Engineering-Techniques]]'"
+    ]
+  },
+  {
+    "file": "wiki/concepts/llm/模型微调.md",
+    "changes": [
+      "  行44 A1: '- [[2026-04-06-LoRA Low-Rank Adaptation of Large Language Models]]' -> '- [[2026-04-06-LoRA-Low-Rank-Adaptation-of-Large-Language-Models]]'",
+      "  行45 A1: '- [[2026-04-06-Guide to fine-tuning LLMs using PEFT and LoRa techniques]]' -> '- [[2026-04-06-Guide-to-fine-tuning-LLMs-using-PEFT-and-LoRa-techniques]]'",
+      "  行46 A1: '- [[2026-04-06-Making LLMs even more accessible with bitsandbytes, 4-bit quantization and QLoRA]]' -> '- [[2026-04-06-Making-LLMs-even-more-accessible-with-bitsandbytes,-4-bit-quantization-and-QLoRA]]'"
+    ]
+  },
+  {
+    "file": "wiki/concepts/llm-wiki/index.md",
+    "changes": [
+      "  行10 A2: '本目录存放”llm-wiki 知识库建设/运维/使用”相关概念与方法页。入口建议从：LLM-Wiki总索引、[[知识库工作台]]。'"
+    ]
+  },
+  {
+    "file": "wiki/concepts/machine-learning/index.md",
+    "changes": [
+      "  行10 A2: '本目录存放机器学习概念与方法页。入口建议从：机器学习总索引。'"
+    ]
+  },
+  {
+    "file": "wiki/concepts/operations-research/index.md",
+    "changes": [
+      "  行10 A2: '本目录存放运筹优化/算法相关概念与方法页。入口建议从：运筹优化算法总索引。'"
+    ]
+  },
+  {
+    "file": "wiki/concepts/reinforcement-learning/RLHF.md",
+    "changes": [
+      "  行39 A1: '- [[2026-04-06-LLM Training RLHF and Its Alternatives]]' -> '- [[2026-04-06-LLM-Training-RLHF-and-Its-Alternatives]]'"
+    ]
+  },
+  {
+    "file": "wiki/concepts/reinforcement-learning/index.md",
+    "changes": [
+      "  行10 A2: '本目录存放强化学习概念与方法页。入口建议从：强化学习总索引。'"
+    ]
+  },
+  {
+    "file": "wiki/concepts/reinforcement-learning/价值函数近似.md",
+    "changes": [
+      "  行62 A2: '- 强化学习总索引'"
+    ]
+  },
+  {
+    "file": "wiki/concepts/reinforcement-learning/策略优化.md",
+    "changes": [
+      "  行56 A2: '- 强化学习总索引'"
+    ]
+  },
+  {
+    "file": "wiki/concepts/statistics-theory/假设检验.md",
+    "changes": [
+      "  行225 A2: '- 统计学理论总索引'"
+    ]
+  },
+  {
+    "file": "wiki/concepts/statistics-theory/参数估计.md",
+    "changes": [
+      "  行225 A2: '- 统计学理论总索引'"
+    ]
+  },
+  {
+    "file": "wiki/concepts/statistics-theory/概率论基础.md",
+    "changes": [
+      "  行226 A2: '- 统计学理论总索引：统计学完整导航'",
+      "  行228 A2: '- 机器学习总索引：概率在 ML 中的应用'"
+    ]
+  },
+  {
+    "file": "wiki/concepts/timeseries-analysis/index.md",
+    "changes": [
+      "  行10 A2: '本目录存放时间序列相关概念与方法页。入口建议从：时间序列预测总索引。'"
+    ]
+  },
+  {
+    "file": "wiki/concepts/vibe-coding/Claude-Managed-Agents.md",
+    "changes": [
+      "  行47 A2: '- Vibe-Coding总索引'"
+    ]
+  },
+  {
+    "file": "wiki/concepts/vibe-coding/Harness工程.md",
+    "changes": [
+      "  行43 A2: '- Vibe-Coding总索引'"
+    ]
+  },
+  {
+    "file": "wiki/concepts/vibe-coding/Vibe-Coding.md",
+    "changes": [
+      "  行36 A2: '- Vibe-Coding总索引'"
+    ]
+  },
+  {
+    "file": "wiki/concepts/vibe-coding/浏览器自动化工具.md",
+    "changes": [
+      "  行49 A2: '- Vibe-Coding总索引'"
+    ]
+  },
+  {
+    "file": "wiki/entities/Datawhale.md",
+    "changes": [
+      "  行15 A2: '- 大语言模型总索引'"
+    ]
+  },
+  {
+    "file": "wiki/entities/Jason Brownlee.md",
+    "changes": [
+      "  行15 A2: '- 机器学习总索引'"
+    ]
+  },
+  {
+    "file": "wiki/entities/PyTorch Contributors.md",
+    "changes": [
+      "  行15 A2: '- 深度学习总索引'"
+    ]
+  },
+  {
+    "file": "wiki/entities/Sebastian Raschka.md",
+    "changes": [
+      "  行15 A2: '- 大语言模型总索引'"
+    ]
+  },
+  {
+    "file": "wiki/entities/时序之心.md",
+    "changes": [
+      "  行15 A2: '- 时间序列预测总索引'"
+    ]
+  },
+  {
+    "file": "wiki/index.md",
+    "changes": [
+      "  行42 A2: '- 大语言模型总索引'",
+      "  行43 A2: '- 自然语言处理总索引（包含基础任务、应用与算法、表示学习三个子索引）'",
+      "  行44 A2: '- 时间序列预测总索引'",
+      "  行45 A2: '- 运筹优化算法总索引'",
+      "  行46 A2: '- 机器学习总索引'",
+      "  行47 A2: '- 统计学理论总索引'",
+      "  行48 A2: '- 因果推断总索引'",
+      "  行49 A2: '- 深度学习总索引'",
+      "  行50 A2: '- 强化学习总索引'",
+      "  行51 A2: '- 特征工程总索引'",
+      "  行52 A2: '- 控制算法总索引'",
+      "  行53 A2: '- 电力市场交易总索引'",
+      "  行54 A2: '- Vibe-Coding总索引'",
+      "  行55 A2: '- LLM-Wiki总索引'"
+    ]
+  },
+  {
+    "file": "wiki/indexes/causal-inference/因果推断总索引.md",
+    "changes": [
+      "  行53 A2: '- 机器学习总索引 — 监督学习方法与特征工程'",
+      "  行54 A2: '- 数据分析总索引 — 数据科学应用与工程实践'"
+    ]
+  },
+  {
+    "file": "wiki/indexes/causal-inference/因果推断来源清单.md",
+    "changes": [
+      "  行87 A2: '- 因果推断总索引 — 返回主索引'",
+      "  行89 A1: '- [[Causal Diagram]] — 概念页' -> '- [[Causal-Diagram]] — 概念页'",
+      "  行90 A1: '- [[Rubin Causal Model]] — 概念页' -> '- [[Rubin-Causal-Model]] — 概念页'",
+      "  行91 A1: '- [[Propensity Score]] — 概念页' -> '- [[Propensity-Score]] — 概念页'",
+      "  行92 A1: '- [[DoWhy Framework]] — 概念页' -> '- [[DoWhy-Framework]] — 概念页'",
+      "  行93 A1: '- [[Causal Inference Methods]] — 概念页' -> '- [[Causal-Inference-Methods]] — 概念页'"
+    ]
+  },
+  {
+    "file": "wiki/indexes/causal-inference/因果推断阅读地图.md",
+    "changes": [
+      "  行31 A1: '- **[[Rubin Causal Model]]** 概念页 — 潜在结果、个体与平均因果作用' -> '- **[[Rubin-Causal-Model]]** 概念页 — 潜在结果、个体与平均因果作用'",
+      "  行35 A1: '- **[[Causal Diagram]]** 概念页（可选）— 有向无环图直观表达' -> '- **[[Causal-Diagram]]** 概念页（可选）— 有向无环图直观表达'",
+      "  行50 A1: '- **[[Propensity Score]]** 概念页 — 观察性研究的救星' -> '- **[[Propensity-Score]]** 概念页 — 观察性研究的救星'",
+      "  行59 A1: '- **[[DoWhy Framework]]** 概念页 — 四步骤工作流' -> '- **[[DoWhy-Framework]]** 概念页 — 四步骤工作流'",
+      "  行73 A1: '- **[[Causal Inference Methods]]** 概念页 — 方法库完整对比' -> '- **[[Causal-Inference-Methods]]** 概念页 — 方法库完整对比'",
+      "  行112 A1: 'A：检查可忽略性假设是否合理。[[Rubin Causal Model]] 与 [[Propensity Score]] 两页会帮助判断。' -> 'A：检查可忽略性假设是否合理。[[Rubin-Causal-Model]] 与 [[Propensity-Score]] 两页会帮助判断。'",
+      "  行118 A1: 'A：[[DoWhy Framework]] 的反驳（Refute）步骤提供 7 种鲁棒性检查。' -> 'A：[[DoWhy-Framework]] 的反驳（Refute）步骤提供 7 种鲁棒性检查。'",
+      "  行122 A2: '- 因果推断总索引 — 返回主索引'"
+    ]
+  },
+  {
+    "file": "wiki/indexes/control-algorithms/控制算法总索引.md",
+    "changes": [
+      "  行25 A2: '- 控制算法总索引'",
+      "  行79 A2: '- 运筹优化算法总索引 — 优化与控制有交叉（如 MPC）'",
+      "  行80 A2: '- 时间序列预测总索引 — 预测可用于前馈补偿和扰动估计'"
+    ]
+  },
+  {
+    "file": "wiki/indexes/deep-learning/深度学习工具与框架索引.md",
+    "changes": [
+      "  行28 A1: '| PyTorch | [[2026-04-06-TingsongYuPyTorch-Tutorial-2nd 《Pytorch实用教程》（第二版）无论是零基础入门，还是CV、NLP、LLM项目应用，或是进阶工程化部署落地，在这里都有。相信在本书的帮助下，读者将能够轻松掌握 PyTorch 的使用，成为一名优秀的深度学习工程师。]] | CV/NLP/LLM/部署全面覆盖 |' -> '| PyTorch | [[2026-04-06-TingsongYuPyTorch-Tutorial-2nd-《Pytorch实用教程》（第二版）无论是零基础入门，还是CV、NLP、LLM项目应用，或是进阶工程化部署落地，在这里都有。相信在本书的帮助下，读者将能够轻松掌握-PyTorch-的使用，成为一名优秀的深度学习工程师。]] | CV/NLP/LLM/部署全面覆盖 |'",
+      "  行67 A2: '- 深度学习总索引'"
+    ]
+  },
+  {
+    "file": "wiki/indexes/deep-learning/深度学习总索引.md",
+    "changes": [
+      "  行27 A2: '- 深度学习总索引'",
+      "  行70 A2: '- NLP词嵌入与表示学习总索引'",
+      "  行72 A3: '- 深度学习-历史文档清单'",
+      "  行76 A2: '- 大语言模型总索引（LLM 主题主入口）'",
+      "  行77 A2: '- 计算机视觉总索引（计算机视觉主题主入口）'",
+      "  行111 A2: '- 机器学习总索引 — 深度学习是机器学习的一个方法族延伸'",
+      "  行112 A2: '- 时间序列预测总索引 — RNN/LSTM 等结构会直接连接时序建模'",
+      "  行113 A2: '- LLM-Wiki总索引 — 该专题是一次完整的 raw -> sources -> indexes -> concepts 编译示例'"
+    ]
+  },
+  {
+    "file": "wiki/indexes/llm/LLM-后训练总索引.md",
+    "changes": [
+      "  行95 A2: '- 大语言模型总索引（父索引）'",
+      "  行96 A2: '- LLM-理论基础总索引（理论基础）'",
+      "  行97 A2: '- LLM-预训练总索引（预训练基础）'",
+      "  行98 A2: '- 强化学习总索引（RLHF/DPO 的深度学习基础）'"
+    ]
+  },
+  {
+    "file": "wiki/indexes/llm/LLM-理论基础总索引.md",
+    "changes": [
+      "  行100 A2: '- 大语言模型总索引（父索引）'",
+      "  行101 A2: '- LLM-预训练总索引（预训练实践入门）'",
+      "  行102 A2: '- LLM-后训练总索引（指令微调与对齐）'"
+    ]
+  },
+  {
+    "file": "wiki/indexes/llm/LLM-预训练总索引.md",
+    "changes": [
+      "  行101 A2: '- 大语言模型总索引（父索引）'",
+      "  行102 A2: '- LLM-理论基础总索引（理论基础）'",
+      "  行103 A2: '- LLM-后训练总索引（后续微调与对齐）'"
+    ]
+  },
+  {
+    "file": "wiki/indexes/llm/LLM架构训练与微调索引.md",
+    "changes": [
+      "  行16 A2: '> 迁移说明：LLM 主题的统一入口是 大语言模型总索引。本页保留“深度学习视角”的训练与微调子索引角色。'",
+      "  行81 A2: '- 深度学习总索引'",
+      "  行82 A2: '- 大语言模型总索引'",
+      "  行83 A2: '- 机器学习总索引'",
+      "  行84 A2: '- 强化学习总索引'"
+    ]
+  },
+  {
+    "file": "wiki/indexes/llm/大语言模型总索引.md",
+    "changes": [
+      "  行24 A2: '- 大语言模型总索引'",
+      "  行36 A2: '- 强化学习对齐（RLHF/DPO/GRPO）→ 见强化学习总索引'",
+      "  行37 A2: '- 多模态 VLM → 见计算机视觉总索引'",
+      "  行44 A2: '- LLM-理论基础总索引（Transformer、Attention、位置编码、KV-Cache 等基础概念，50 篇）'",
+      "  行45 A2: '- LLM-预训练总索引（数据准备、分词、缩放定律、分布式训练、评估，63 篇）'",
+      "  行46 A2: '- LLM-后训练总索引（SFT、RLHF、DPO、量化、推理优化、安全对齐，24 篇）'",
+      "  行51 A2: '- LLM-Wiki总索引（知识库主题下的构建方法入口）'",
+      "  行52 A2: '- Vibe-Coding总索引（工程化 Agent / MCP / 工具链实践）'",
+      "  行71 A1: '| [[2026-04-06-译 如何训练一个企业级 GPT 助手（OpenAI，2023）]] | Karpathy State of GPT 演讲翻译（GPT-3/LLaMA 对比、数据、超参数） |' -> '| [[2026-04-06-译-如何训练一个企业级-GPT-助手（OpenAI，2023）]] | Karpathy State of GPT 演讲翻译（GPT-3/LLaMA 对比、数据、超参数） |'",
+      "  行79 A1: '| [[2026-04-06-Advanced Prompt Engineering Techniques]] | CoT、Self-Consistency、ReAct、ToT、APE 等高级技术 |' -> '| [[2026-04-06-Advanced-Prompt-Engineering-Techniques]] | CoT、Self-Consistency、ReAct、ToT、APE 等高级技术 |'",
+      "  行88 A1: '| [[Vibe Coding来源清单]] | 含 RAG 全栈教程 |' -> '| [[Vibe-Coding来源清单]] | 含 RAG 全栈教程 |'",
+      "  行126 A1: '| [[2026-04-06-Using ChatGPT to build Synthetic Datasets]] | ChatGPT 构建合成数据集完整指南 |' -> '| [[2026-04-06-Using-ChatGPT-to-build-Synthetic-Datasets]] | ChatGPT 构建合成数据集完整指南 |'",
+      "  行134 A1: '| [[2026-04-06-The Big LLM Architecture Comparison]] | 主流 LLM 架构对比（OLMo 3、GLM-5 等） |' -> '| [[2026-04-06-The-Big-LLM-Architecture-Comparison]] | 主流 LLM 架构对比（OLMo 3、GLM-5 等） |'",
+      "  行141 A1: '| [[2026-04-06-译 Transformer 是如何工作的：600 行 Python 代码实现 self-attention 和两类 Transformer（2019）]] | Transformer 原理（含 BERT 和 GPT-2 分析） |' -> '| [[2026-04-06-译-Transformer-是如何工作的：600-行-Python-代码实现-self-attention-和两类-Transformer（2019）]] | Transformer 原理（含 BERT 和 GPT-2 分析） |'",
+      "  行142 A1: '| [[2026-04-06-Articles (cn-zh)]] | arthurchiao 翻译文集（GPT 工作原理、InstructGPT、LLaMA、LLM 综述） |' -> '| [[2026-04-06-Articles-(cn-zh)]] | arthurchiao 翻译文集（GPT 工作原理、InstructGPT、LLaMA、LLM 综述） |'",
+      "  行164 A1: '| [[2026-04-06-译论文 InstructGPT：基于人类反馈训练语言模型遵从指令的能力（OpenAI，2022）]] | InstructGPT 论文翻译 |' -> '| [[2026-04-06-译论文-InstructGPT：基于人类反馈训练语言模型遵从指令的能力（OpenAI，2022）]] | InstructGPT 论文翻译 |'",
+      "  行199 A2: '- 强化学习总索引（RLHF/DPO/GRPO 对齐方法）'",
+      "  行200 A2: '- 计算机视觉总索引（多模态 VLM）'"
+    ]
+  },
+  {
+    "file": "wiki/indexes/llm/大语言模型来源清单.md",
+    "changes": [
+      "  行94 A2: '- [[VibeCoding与Agent专题来源]]（工程化实践，见 Vibe-Coding总索引）'"
+    ]
+  },
+  {
+    "file": "wiki/indexes/llm/大语言模型阅读地图.md",
+    "changes": [
+      "  行15 A2: '1. 大语言模型总索引：先建立全景。'",
+      "  行18 A2: '4. Vibe-Coding总索引：补工程化 Agent / MCP 实践视角。'"
+    ]
+  },
+  {
+    "file": "wiki/indexes/llm-wiki/LLM-Wiki总索引.md",
+    "changes": [
+      "  行17 A2: '- LLM-Wiki总索引'"
+    ]
+  },
+  {
+    "file": "wiki/indexes/machine-learning/传统机器学习算法索引.md",
+    "changes": [
+      "  行117 A2: '- 机器学习总索引'"
+    ]
+  },
+  {
+    "file": "wiki/indexes/machine-learning/无监督学习模型索引.md",
+    "changes": [
+      "  行78 A2: '- 机器学习总索引 — 机器学习主索引'"
+    ]
+  },
+  {
+    "file": "wiki/indexes/machine-learning/机器学习基础与特征工程索引.md",
+    "changes": [
+      "  行52 A2: '- 机器学习总索引'"
+    ]
+  },
+  {
+    "file": "wiki/indexes/machine-learning/机器学习总索引.md",
+    "changes": [
+      "  行24 A2: '- 机器学习总索引'",
+      "  行30 A2: '- 特征工程总索引 — **特征工程专用索引**（2026-04-15 新建）'",
+      "  行72 A2: '> **特征工程资源已独立**：特征工程的来源卡、索引、概念页已迁移至独立专题，请访问 特征工程总索引 获取完整资源。'",
+      "  行140 A2: '  - 特征工程专用索引已建立（特征工程总索引）'",
+      "  行153 A3: '- 深度学习-历史文档清单'",
+      "  行161 A2: '- 时间序列预测总索引 — 时间序列预测大量复用机器学习方法'",
+      "  行162 A2: '- 运筹优化算法总索引 — 优化算法用于模型训练和超参调优'",
+      "  行163 A2: '- 控制算法总索引 — 控制与学习有交叉（如强化学习控制、MPC）'"
+    ]
+  },
+  {
+    "file": "wiki/indexes/machine-learning/机器学习来源清单.md",
+    "changes": [
+      "  行90 A2: '- 强化学习已独立主题，见 强化学习总索引 与 [[强化学习来源清单]]。'"
+    ]
+  },
+  {
+    "file": "wiki/indexes/machine-learning/机器学习理论索引.md",
+    "changes": [
+      "  行78 A2: '- 机器学习总索引 — 机器学习主索引'"
+    ]
+  },
+  {
+    "file": "wiki/indexes/machine-learning/机器学习阅读地图.md",
+    "changes": [
+      "  行139 A2: '- 增强与 深度学习总索引 的跨专题导航'"
+    ]
+  },
+  {
+    "file": "wiki/indexes/machine-learning/监督学习模型索引.md",
+    "changes": [
+      "  行90 A2: '- 机器学习总索引 — 机器学习主索引'"
+    ]
+  },
+  {
+    "file": "wiki/indexes/nlp/NLP基础任务总索引.md",
+    "changes": [
+      "  行95 A2: '- NLP应用与算法总索引：在基础任务之上的应用任务（知识图谱、情感分析等）'",
+      "  行96 A2: '- NLP词嵌入与表示学习总索引：支撑基础任务和应用任务的表示学习方法'",
+      "  行103 A2: '- 大语言模型总索引：将基础 NLP 任务扩展到大模型的预训练和对齐'",
+      "  行104 A2: '- 深度学习总索引：神经 NLP 方法的深度学习基础'"
+    ]
+  },
+  {
+    "file": "wiki/indexes/nlp/NLP应用与算法总索引.md",
+    "changes": [
+      "  行118 A2: '- NLP基础任务总索引：这些应用任务建立在分词、标注、NER 等基础之上'",
+      "  行119 A2: '- NLP词嵌入与表示学习总索引：提供支撑这些应用任务的表示学习方法'",
+      "  行122 A2: '- 大语言模型总索引：将应用任务扩展到大模型时代（如 LLM 在文本生成、机器翻译中的角色）'"
+    ]
+  },
+  {
+    "file": "wiki/indexes/nlp/NLP词嵌入与表示学习总索引.md",
+    "changes": [
+      "  行148 A2: '- NLP基础任务总索引：分词、标注等基础任务通常以词向量为输入'",
+      "  行149 A2: '- NLP应用与算法总索引：情感分析、知识图谱等应用任务使用词向量和表示'",
+      "  行152 A2: '- 大语言模型总索引：LLM 的核心是在海量数据上的大规模表示学习'",
+      "  行153 A2: '  - LLM-理论基础总索引：Transformer 架构与 Attention 机制'",
+      "  行154 A2: '  - LLM-预训练总索引：大规模预训练的表示学习策略'",
+      "  行155 A2: '- 深度学习总索引：神经网络、Embedding、Attention 等深度学习基础'"
+    ]
+  },
+  {
+    "file": "wiki/indexes/nlp/自然语言处理总索引.md",
+    "changes": [
+      "  行23 A2: '| NLP基础任务总索引 | 分词、词性标注、命名实体识别、句法分析、文本分类 | 学习 NLP 基础任务、理解五大任务原理与工具 |'",
+      "  行24 A2: '| NLP应用与算法总索引 | 知识图谱、情感分析、文本摘要、机器翻译、语音处理、工具框架 | 做具体 NLP 应用、查算法实现 |'",
+      "  行25 A2: '| NLP词嵌入与表示学习总索引 | BoW、TF-IDF、Word2Vec、Transformer Embedding、预训练模型 | 理解文本表示方法演进、做特征工程或研究表示学习 |'",
+      "  行50 A2: '- 大语言模型总索引：NLP 向 LLM 的延伸方向'",
+      "  行51 A2: '- 深度学习总索引：神经 NLP 方法的深度学习基础'"
+    ]
+  },
+  {
+    "file": "wiki/indexes/nlp/自然语言处理来源清单.md",
+    "changes": [
+      "  行121 A2: '- NLP基础任务总索引 — 分词、词性、NER、句法、文本分类'",
+      "  行122 A2: '- NLP应用与算法总索引 — 情感分析、信息抽取、知识图谱'",
+      "  行123 A2: '- NLP词嵌入与表示学习总索引 — Word2Vec、Embeddings'"
+    ]
+  },
+  {
+    "file": "wiki/indexes/nlp/自然语言处理阅读地图.md",
+    "changes": [
+      "  行36 A2: '**五大基础任务**（参见 NLP基础任务总索引）：'",
+      "  行46 A2: '**应用任务**（参见 NLP应用与算法总索引）：'",
+      "  行61 A2: '（参见 NLP词嵌入与表示学习总索引）'",
+      "  行82 A2: '- 进阶：大语言模型总索引 — NLP 到 LLM 的跨越'",
+      "  行105 A2: '- NLP基础任务总索引 — 五大基础任务详细导航'",
+      "  行106 A2: '- NLP应用与算法总索引 — 情感分析、信息抽取、生成任务'",
+      "  行107 A2: '- NLP词嵌入与表示学习总索引 — 词向量与表示学习'",
+      "  行109 A2: '- 大语言模型总索引 — NLP 向 LLM 的延伸方向'"
+    ]
+  },
+  {
+    "file": "wiki/indexes/operations-research/数学优化与运筹学索引.md",
+    "changes": [
+      "  行58 A2: '- 运筹优化算法总索引'"
+    ]
+  },
+  {
+    "file": "wiki/indexes/operations-research/运筹优化算法总索引.md",
+    "changes": [
+      "  行18 A2: '- 运筹优化算法总索引'",
+      "  行140 A3: '- 历史语料清单：运筹优化算法-历史文档清单'"
+    ]
+  },
+  {
+    "file": "wiki/indexes/operations-research/运筹优化算法阅读地图.md",
+    "changes": [
+      "  行32 A3: '2. 运筹优化算法-历史文档清单'",
+      "  行33 A2: '3. 运筹优化算法总索引'"
+    ]
+  },
+  {
+    "file": "wiki/indexes/power-market-trading/电力市场与时序预测应用索引.md",
+    "changes": [
+      "  行15 A2: '> 迁移说明：电力市场交易主题统一入口为 电力市场交易总索引。本页保留“时序预测应用视角”的子索引角色。'",
+      "  行28 A1: '- [[2026-04-06-【NO6 电力市场】华北电力大学：电力中长期交易与现货交易解析]] — 交易解析' -> '- [[2026-04-06-【NO6-电力市场】华北电力大学：电力中长期交易与现货交易解析]] — 交易解析'",
+      "  行47 A2: '- 时间序列预测总索引'",
+      "  行49 A2: '- 电力市场交易总索引'"
+    ]
+  },
+  {
+    "file": "wiki/indexes/power-market-trading/电力市场交易总索引.md",
+    "changes": [
+      "  行22 A2: '- 电力市场交易总索引'",
+      "  行67 A2: '- 时间序列预测总索引 — 负载预测、电价预测支撑'",
+      "  行69 A2: '- 运筹优化算法总索引 — SCUC/SCED 算法基础'"
+    ]
+  },
+  {
+    "file": "wiki/indexes/power-market-trading/电力市场交易来源清单.md",
+    "changes": [
+      "  行33 A2: '- 运筹优化算法总索引 — SCUC/SCED 算法相关来源'"
+    ]
+  },
+  {
+    "file": "wiki/indexes/power-market-trading/电力市场交易阅读地图.md",
+    "changes": [
+      "  行61 A2: '- 时间序列预测总索引 — 负载/电价预测建模'",
+      "  行63 A2: '- 运筹优化算法总索引 — SCUC/SCED 调度优化算法'"
+    ]
+  },
+  {
+    "file": "wiki/indexes/reinforcement-learning/强化学习总索引.md",
+    "changes": [
+      "  行20 A2: '- 强化学习总索引'",
+      "  行90 A1: '| [[2026-04-06-LLM Training RLHF and Its Alternatives]] | RLHF 方法及替代方案概述 |' -> '| [[2026-04-06-LLM-Training-RLHF-and-Its-Alternatives]] | RLHF 方法及替代方案概述 |'",
+      "  行95 A1: '- [[2026-04-06-LLM RL入门]] — 工程人员 LLM RL 入门' -> '- [[2026-04-06-LLM-RL入门]] — 工程人员 LLM RL 入门'",
+      "  行124 A2: '- 机器学习总索引'"
+    ]
+  },
+  {
+    "file": "wiki/indexes/reinforcement-learning/强化学习来源清单.md",
+    "changes": [
+      "  行61 A1: '| [[2026-04-06-LLM Training RLHF and Its Alternatives]] | 概述与替代方案 |' -> '| [[2026-04-06-LLM-Training-RLHF-and-Its-Alternatives]] | 概述与替代方案 |'",
+      "  行87 A2: '- 强化学习总索引（主导航）'",
+      "  行88 A2: '- 大语言模型总索引（对齐训练关联）'"
+    ]
+  },
+  {
+    "file": "wiki/indexes/reinforcement-learning/强化学习索引.md",
+    "changes": [
+      "  行17 A2: '> - 强化学习总索引'",
+      "  行55 A2: '- 强化学习总索引'",
+      "  行56 A2: '- 机器学习总索引'"
+    ]
+  },
+  {
+    "file": "wiki/indexes/reinforcement-learning/强化学习阅读地图.md",
+    "changes": [
+      "  行15 A2: '1. 强化学习总索引：先看方法全景。'"
+    ]
+  },
+  {
+    "file": "wiki/indexes/shared/知识库-Marp演示稿构建工作流.md",
+    "changes": [
+      "  行56 A2: '请基于 某篇结果页 生成一份汇报型 Marp 演示稿，控制在 6–8 页。'",
+      "  行91 A2: '请基于 某篇结果页，并结合相关概念页和来源卡，生成一份研究型 Marp 演示稿。'"
+    ]
+  },
+  {
+    "file": "wiki/indexes/shared/知识库-时间序列模型开发工作流.md",
+    "changes": [
+      "  行48 A2: '- 时间序列预测总索引'",
+      "  行130 A2: '1. 打开 时间序列预测总索引'"
+    ]
+  },
+  {
+    "file": "wiki/indexes/shared/知识库任务与输出工作流索引.md",
+    "changes": [
+      "  行18 A2: '> 整合说明：本页位于 `shared/` 根目录，作为任务与输出执行入口页；使用职责定义与完整边界以 LLM-Wiki总索引 为准。'",
+      "  行31 A2: '- LLM-Wiki总索引：LLM-Wiki 统一入口'",
+      "  行53 A2: '1. 先从 LLM-Wiki总索引 进入，确认使用场景'"
+    ]
+  },
+  {
+    "file": "wiki/indexes/shared/知识库健康检查清单.md",
+    "changes": [
+      "  行27 A2: '- LLM-Wiki总索引：LLM-Wiki 统一导航入口'",
+      "  行110 A2: '- 运筹优化算法总索引 / [[运筹优化算法阅读地图]]'",
+      "  行111 A2: '- 时间序列预测总索引 / [[时间序列预测阅读地图]] / [[时间序列预测来源清单]]'",
+      "  行150 A2: '  - 检查命令示例：`grep -r \"概念页名\" wiki/indexes/ --include=\"*.md\"`'"
+    ]
+  },
+  {
+    "file": "wiki/indexes/shared/知识库工作台.md",
+    "changes": [
+      "  行21 A2: '- LLM-Wiki总索引'",
+      "  行25 A2: '- 大语言模型总索引'",
+      "  行26 A2: '- 深度学习总索引'",
+      "  行27 A2: '- 机器学习总索引'",
+      "  行28 A2: '- 统计学理论总索引'",
+      "  行29 A2: '- 因果推断总索引'",
+      "  行30 A2: '- 时间序列预测总索引'",
+      "  行31 A2: '- 运筹优化算法总索引'",
+      "  行32 A2: '- 强化学习总索引'",
+      "  行33 A2: '- NLP基础任务总索引'",
+      "  行34 A2: '- 特征工程总索引'",
+      "  行35 A2: '- 控制算法总索引'",
+      "  行36 A2: '- 电力市场交易总索引'",
+      "  行37 A2: '- Vibe-Coding总索引'",
+      "  行38 A2: '- LLM-Wiki总索引'",
+      "  行68 A2: '1. **研究方法与结构**：从”方法入口”进入 LLM-Wiki总索引，选择总索引或 schema 页'"
+    ]
+  },
+  {
+    "file": "wiki/indexes/shared/知识库来源与专题摄取索引.md",
+    "changes": [
+      "  行18 A2: '> 整合说明：本页位于 `shared/` 根目录，作为 ingest 执行入口页；构建方法论与完整边界以 LLM-Wiki总索引 为准。'",
+      "  行45 A2: '- LLM-Wiki总索引'"
+    ]
+  },
+  {
+    "file": "wiki/indexes/shared/知识库维护检查索引.md",
+    "changes": [
+      "  行19 A2: '> 整合说明：本页位于 `shared/` 根目录，作为 lint 运维执行入口页；运维职责定义与完整边界以 LLM-Wiki总索引 为准。'",
+      "  行29 A2: '- LLM-Wiki总索引：运维边界与完整入口'",
+      "  行38 A2: '1. 先读 LLM-Wiki总索引 了解运维边界与入口'"
+    ]
+  },
+  {
+    "file": "wiki/indexes/shared/知识库输出回流工作流.md",
+    "changes": [
+      "  行19 A2: '> 整合说明：本页位于 `shared/` 根目录，作为 backfill 执行流程页；使用主题边界以 LLM-Wiki总索引 为准。'"
+    ]
+  },
+  {
+    "file": "wiki/indexes/shared/知识库问答与研究工作流.md",
+    "changes": [
+      "  行17 A2: '> 整合说明：本页位于 `shared/` 根目录，作为 query 执行流程页；使用主题总边界以 LLM-Wiki总索引 为准。'",
+      "  行66 A2: '- 请先阅读 `某个总索引`、`某个概念页`、`某个来源卡`，先列出证据路径，再回答问题。'",
+      "  行109 A2: '- 方法论入口：LLM-Wiki总索引'"
+    ]
+  },
+  {
+    "file": "wiki/indexes/shared/知识库问题地图.md",
+    "changes": [
+      "  行32 A2: '- LLM-Wiki总索引'",
+      "  行55 A2: '- 时间序列预测总索引'",
+      "  行70 A2: '- 时间序列预测总索引'",
+      "  行78 A2: '- 运筹优化算法总索引'",
+      "  行87 A2: '- 运筹优化算法总索引'"
+    ]
+  },
+  {
+    "file": "wiki/indexes/statistics-theory/统计学理论总索引.md",
+    "changes": [
+      "  行173 A2: '- 机器学习总索引：统计学是机器学习的理论基础'",
+      "  行174 A2: '- 因果推断总索引：因果推断在统计学框架上构建'",
+      "  行175 A2: '- 时间序列预测总索引：时间序列分析应用统计推断'"
+    ]
+  },
+  {
+    "file": "wiki/indexes/statistics-theory/统计学理论来源清单.md",
+    "changes": [
+      "  行56 A2: '- 统计学理论总索引 — 返回主索引'"
+    ]
+  },
+  {
+    "file": "wiki/indexes/statistics-theory/统计学理论阅读地图.md",
+    "changes": [
+      "  行65 A2: '| 相关性是否有因果关系？ | 相关 + 因果推断总索引 | [[2023-07-18-correlation]] |'",
+      "  行75 A2: 'A：统计学提供推断框架（假设检验、区间估计），机器学习侧重预测建模。机器学习总索引 可进一步了解。'",
+      "  行78 A2: 'A：因果推断是统计学的延伸，专门处理\"干预效果\"问题。因果推断总索引 从 RCM 框架展开。'",
+      "  行87 A2: '- 统计学理论总索引 — 返回主索引'",
+      "  行89 A2: '- 因果推断总索引 — 因果推断是统计学的深化方向'",
+      "  行90 A2: '- 机器学习总索引 — 统计学是 ML 的理论基础'"
+    ]
+  },
+  {
+    "file": "wiki/indexes/timeseries-analysis/时间序列预测总索引.md",
+    "changes": [
+      "  行17 A2: '- 时间序列预测总索引'",
+      "  行117 A3: '- 时间序列预测-历史文档清单'"
+    ]
+  },
+  {
+    "file": "wiki/indexes/timeseries-analysis/时间序列预测深度学习论文索引.md",
+    "changes": [
+      "  行99 A2: '- 时间序列预测总索引'"
+    ]
+  },
+  {
+    "file": "wiki/indexes/timeseries-analysis/时间序列预测阅读地图.md",
+    "changes": [
+      "  行18 A2: '3. 时间序列预测总索引'"
+    ]
+  },
+  {
+    "file": "wiki/indexes/vibe-coding/Vibe-Coding工作流.md",
+    "changes": [
+      "  行29 A2: '- Vibe-Coding总索引'"
+    ]
+  },
+  {
+    "file": "wiki/indexes/vibe-coding/Vibe-Coding总索引.md",
+    "changes": [
+      "  行19 A2: '- Vibe-Coding总索引'",
+      "  行40 A1: '- [[Vibe Coding来源清单]]' -> '- [[Vibe-Coding来源清单]]'",
+      "  行71 A2: '- 大语言模型总索引'"
+    ]
+  },
+  {
+    "file": "wiki/indexes/vibe-coding/Vibe-Coding阅读地图.md",
+    "changes": [
+      "  行15 A2: '1. Vibe-Coding总索引：先看主题范围与核心材料。'",
+      "  行17 A2: '3. 大语言模型总索引：补模型侧背景。'"
+    ]
+  },
+  {
+    "file": "wiki/queries/机器学习时间序列预测-知识空白分析.md",
+    "changes": [
+      "  行18 A2: '- 时间序列预测总索引'",
+      "  行19 A2: '- 机器学习总索引'"
+    ]
+  },
+  {
+    "file": "wiki/queries/运筹优化算法-知识空白分析.md",
+    "changes": [
+      "  行17 A2: '- 运筹优化算法总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/causal-inference/2023-07-09-Yule-Simpson悖论与因果推断基础.md",
+    "changes": [
+      "  行43 A1: '[[Rubin Causal Model]] | [[Yule-Simpson Paradox]] | [[Ignorability]] | [[Causal Diagram]] | [[Fisher Randomization Test]]' -> '[[Rubin-Causal-Model]] | [[Yule-Simpson Paradox]] | [[Ignorability]] | [[Causal-Diagram]] | [[Fisher Randomization Test]]'"
+    ]
+  },
+  {
+    "file": "wiki/sources/causal-inference/2023-07-15-DoWhy框架与工作流.md",
+    "changes": [
+      "  行73 A1: '[[DoWhy Framework]] | [[Causal Graph]] | [[Back-door Criterion]] | [[Front-door Criterion]] | [[Propensity Score Matching]]' -> '[[DoWhy-Framework]] | [[Causal Graph]] | [[Back-door Criterion]] | [[Front-door Criterion]] | [[Propensity Score Matching]]'"
+    ]
+  },
+  {
+    "file": "wiki/sources/causal-inference/2023-07-25-因果推断理论框架.md",
+    "changes": [
+      "  行73 A1: '[[Causal Diagram]] | [[Potential Outcomes]] | [[Instrumental Variables]] | [[Difference-in-Differences]] | [[Regression Discontinuity Design]]' -> '[[Causal-Diagram]] | [[Potential Outcomes]] | [[Instrumental Variables]] | [[Difference-in-Differences]] | [[Regression Discontinuity Design]]'"
+    ]
+  },
+  {
+    "file": "wiki/sources/deep-learning/2022-07-15-dl-gen-deepdream.md",
+    "changes": [
+      "  行33 A2: '- 深度学习总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/deep-learning/2022-07-15-dl-gen-lstm-textgen.md",
+    "changes": [
+      "  行33 A2: '- 深度学习总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/deep-learning/2022-07-15-dl-gen-neural-style-transfer.md",
+    "changes": [
+      "  行33 A2: '- 深度学习总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/deep-learning/2022-07-15-dl-gen-vae.md",
+    "changes": [
+      "  行33 A2: '- 深度学习总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/deep-learning/2025-01-19-pytorch-automatic-mixed-precision.md",
+    "changes": [
+      "  行29 A2: '- 深度学习总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/deep-learning/2026-01-29-conv1d.md",
+    "changes": [
+      "  行29 A2: '- 深度学习总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/deep-learning/2026-04-06-10. 注意力机制 — 动手学深度学习 2.0.0 documentation.md",
+    "changes": [
+      "  行28 A2: '- 深度学习总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/deep-learning/2026-04-06-14. 自然语言处理：预训练 — 动手学深度学习 2.0.0 documentation.md",
+    "changes": [
+      "  行28 A2: '- 深度学习总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/deep-learning/2026-04-06-4.5. 权重衰减 — 动手学深度学习 2.0.0 documentation.md",
+    "changes": [
+      "  行28 A2: '- 深度学习总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/deep-learning/2026-04-06-Accelerating PyTorch Model Training.md",
+    "changes": [
+      "  行28 A2: '- 深度学习总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/deep-learning/2026-04-06-CUDA semantics.md",
+    "changes": [
+      "  行28 A2: '- 深度学习总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/deep-learning/2026-04-06-CUDA编程入门极简教程.md",
+    "changes": [
+      "  行28 A2: '- 深度学习总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/deep-learning/2026-04-06-Darknet Open Source Neural Networks in C.md",
+    "changes": [
+      "  行28 A2: '- 深度学习总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/deep-learning/2026-04-06-Debug your model (basic) — PyTorch Lightning 2.6.1 documentation.md",
+    "changes": [
+      "  行28 A2: '- 深度学习总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/deep-learning/2026-04-06-Deep Learning with Python, Third Edition.md",
+    "changes": [
+      "  行28 A2: '- 深度学习总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/deep-learning/2026-04-06-Distributed Data Parallel in PyTorch - Video Tutorials.md",
+    "changes": [
+      "  行28 A2: '- 深度学习总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/deep-learning/2026-04-06-Distributed Data Parallel.md",
+    "changes": [
+      "  行28 A2: '- 深度学习总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/deep-learning/2026-04-06-DistributedDataParallel.md",
+    "changes": [
+      "  行28 A2: '- 深度学习总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/deep-learning/2026-04-06-GAN的前生今世（先导篇）.md",
+    "changes": [
+      "  行28 A2: '- 深度学习总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/deep-learning/2026-04-06-Getting Started with Distributed Data Parallel.md",
+    "changes": [
+      "  行28 A2: '- 深度学习总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/deep-learning/2026-04-06-Getting Started with Fully Sharded Data Parallel (FSDP2).md",
+    "changes": [
+      "  行28 A2: '- 深度学习总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/deep-learning/2026-04-06-Google Colab 1.md",
+    "changes": [
+      "  行28 A2: '- 深度学习总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/deep-learning/2026-04-06-Google Colab.md",
+    "changes": [
+      "  行28 A2: '- 深度学习总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/deep-learning/2026-04-06-HarisIqbal88PlotNeuralNet Latex code for making neural networks diagrams.md",
+    "changes": [
+      "  行28 A2: '- 深度学习总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/deep-learning/2026-04-06-Introducing PyTorch Fully Sharded Data Parallel (FSDP) API – PyTorch.md",
+    "changes": [
+      "  行28 A2: '- 深度学习总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/deep-learning/2026-04-06-Long Short-Term Memory (LSTM).md",
+    "changes": [
+      "  行28 A2: '- 深度学习总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/deep-learning/2026-04-06-Neural networks and deep learning basics  大语言模型（Large Language Models）.md",
+    "changes": [
+      "  行28 A2: '- 深度学习总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/deep-learning/2026-04-06-OpenNMTOpenNMT-py Open Source Neural Machine Translation and (Large) Language Models in PyTorch.md",
+    "changes": [
+      "  行28 A2: '- 深度学习总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/deep-learning/2026-04-06-PaddlePaddleVisualDL Deep Learning Visualization Toolkit（『飞桨』深度学习可视化工具 ）.md",
+    "changes": [
+      "  行28 A2: '- 深度学习总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/deep-learning/2026-04-06-PyTorch Distributed Overview.md",
+    "changes": [
+      "  行28 A2: '- 深度学习总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/deep-learning/2026-04-06-PyTorch Series RoPE.md",
+    "changes": [
+      "  行28 A2: '- 深度学习总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/deep-learning/2026-04-06-PyTorch documentation.md",
+    "changes": [
+      "  行28 A2: '- 深度学习总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/deep-learning/2026-04-06-Quick Start — PyTorch-Metrics 1.9.0 documentation.md",
+    "changes": [
+      "  行28 A2: '- 深度学习总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/deep-learning/2026-04-06-Training a 1 Trillion Parameter Model With PyTorch Fully Sharded Data Parallel on AWS.md",
+    "changes": [
+      "  行28 A2: '- 深度学习总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/deep-learning/2026-04-06-Training extremely large neural networks across thousands of GPUs.md",
+    "changes": [
+      "  行28 A2: '- 深度学习总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/deep-learning/2026-04-06-Understanding Deep Learning.md",
+    "changes": [
+      "  行28 A2: '- 深度学习总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/deep-learning/2026-04-06-Welcome to TorchMetrics — PyTorch-Metrics 1.9.0 documentation.md",
+    "changes": [
+      "  行28 A2: '- 深度学习总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/deep-learning/2026-04-06-Welcome to ⚡ PyTorch Lightning — PyTorch Lightning 2.6.2 documentation.md",
+    "changes": [
+      "  行28 A2: '- 深度学习总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/deep-learning/2026-04-06-fastnlpfastHan fastHan是基于fastNLP与pytorch实现的中文自然语言处理工具，像spacy一样调用方便。.md",
+    "changes": [
+      "  行28 A2: '- 深度学习总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/deep-learning/2026-04-06-google-researchtuning_playbook A playbook for systematically maximizing the performance of deep learning models 1.md",
+    "changes": [
+      "  行28 A2: '- 深度学习总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/deep-learning/2026-04-06-google-researchtuning_playbook A playbook for systematically maximizing the performance of deep learning models.md",
+    "changes": [
+      "  行28 A2: '- 深度学习总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/deep-learning/2026-04-06-lyhue1991torchkeras Pytorch❤️  Keras 😋😋.md",
+    "changes": [
+      "  行28 A2: '- 深度学习总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/deep-learning/2026-04-06-ourownstoryAR-Net A simple Auto-Regressive Neural Network for time-series.md",
+    "changes": [
+      "  行28 A2: '- 深度学习总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/deep-learning/2026-04-06-tczhangzhipytorch-distributed A quickstart and benchmark for pytorch distributed training.md",
+    "changes": [
+      "  行28 A2: '- 深度学习总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/deep-learning/2026-04-06-win10安装CUDA和cuDNN的正确姿势.md",
+    "changes": [
+      "  行28 A2: '- 深度学习总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/deep-learning/2026-04-06-xlite-devLeetCUDA 📚LeetCUDA Modern CUDA Learn Notes with PyTorch for Beginners🐑, 200+ CUDA Kernels, Tensor Cores, HGEMM, FA-2 MMA.🎉.md",
+    "changes": [
+      "  行28 A2: '- 深度学习总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/deep-learning/2026-04-06-zoogzogchexnet Implementation of the CheXNet network (PyTorch).md",
+    "changes": [
+      "  行28 A2: '- 深度学习总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/deep-learning/2026-04-06-【CUDA】nvcc和nvidia-smi显示的版本不一致？.md",
+    "changes": [
+      "  行28 A2: '- 深度学习总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/deep-learning/2026-04-06-一文看懂GAN的原理.md",
+    "changes": [
+      "  行28 A2: '- 深度学习总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/deep-learning/2026-04-06-使用PyTorch Lightning从头开始实现并训练CNN.md",
+    "changes": [
+      "  行28 A2: '- 深度学习总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/deep-learning/2026-04-06-保姆级教程：个人深度学习工作站配置指南.md",
+    "changes": [
+      "  行28 A2: '- 深度学习总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/deep-learning/2026-04-06-变分自编码器(VAE)、条件变分自编码器(CVAE)简介（文末附Torch代码）.md",
+    "changes": [
+      "  行28 A2: '- 深度学习总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/deep-learning/2026-04-06-深度学习环境配置指南！（Windows、Mac、Ubuntu全讲解）.md",
+    "changes": [
+      "  行28 A2: '- 深度学习总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/deep-learning/2026-04-06-达观数据：数据不够？GAN来凑！.md",
+    "changes": [
+      "  行28 A2: '- 深度学习总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/deep-learning/AI工具与产品专题来源.md",
+    "changes": [
+      "  行40 A1: '| [[2026-04-06-Structured LLM outputs]] | 结构化 LLM 输出 | 待摘要 |' -> '| [[2026-04-06-Structured-LLM-outputs]] | 结构化 LLM 输出 | 待摘要 |'",
+      "  行47 A1: '| [[2026-04-06-Using ChatGPT to build Synthetic Datasets]] | ChatGPT 构建合成数据 | 待摘要 |' -> '| [[2026-04-06-Using-ChatGPT-to-build-Synthetic-Datasets]] | ChatGPT 构建合成数据 | 待摘要 |'"
+    ]
+  },
+  {
+    "file": "wiki/sources/deep-learning/LLM架构微调与多模态扩展专题来源.md",
+    "changes": [
+      "  行135 A2: '- 深度学习总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/deep-learning/LLM架构训练与微调专题来源.md",
+    "changes": [
+      "  行69 A2: '- 深度学习总索引'",
+      "  行70 A2: '- 机器学习总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/deep-learning/深度学习工具与框架专题来源.md",
+    "changes": [
+      "  行26 A1: '| [[2026-04-06-TingsongYuPyTorch-Tutorial-2nd 《Pytorch实用教程》（第二版）无论是零基础入门，还是CV、NLP、LLM项目应用，或是进阶工程化部署落地，在这里都有。相信在本书的帮助下，读者将能够轻松掌握 PyTorch 的使用，成为一名优秀的深度学习工程师。]] | PyTorch 全面教程 (CV/NLP/LLM/部署) | 待摘要 |' -> '| [[2026-04-06-TingsongYuPyTorch-Tutorial-2nd-《Pytorch实用教程》（第二版）无论是零基础入门，还是CV、NLP、LLM项目应用，或是进阶工程化部署落地，在这里都有。相信在本书的帮助下，读者将能够轻松掌握-PyTorch-的使用，成为一名优秀的深度学习工程师。]] | PyTorch 全面教程 (CV/NLP/LLM/部署) | 待摘要 |'",
+      "  行64 A2: '- 深度学习总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/feature-engineering/2022-09-13-图像特征工程.md",
+    "changes": [
+      "  行81 A2: '- 特征工程总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/feature-engineering/2022-09-13-数值特征工程.md",
+    "changes": [
+      "  行63 A2: '- 特征工程总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/feature-engineering/2022-09-13-文本特征工程.md",
+    "changes": [
+      "  行63 A2: '- 特征工程总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/feature-engineering/2022-09-13-样本不平衡分类.md",
+    "changes": [
+      "  行88 A2: '- 特征工程总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/feature-engineering/2022-09-13-特征构建.md",
+    "changes": [
+      "  行50 A2: '- 特征工程总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/feature-engineering/2022-09-13-类别特征工程.md",
+    "changes": [
+      "  行76 A2: '- 特征工程总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/feature-engineering/2022-09-13-缺失值处理.md",
+    "changes": [
+      "  行52 A2: '- 特征工程总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/feature-engineering/2022-09-13-音频特征工程.md",
+    "changes": [
+      "  行74 A2: '- 特征工程总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/feature-engineering/2023-02-27-特征工程概述.md",
+    "changes": [
+      "  行67 A2: '- 特征工程总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/feature-engineering/2023-03-16-样本不平衡回归.md",
+    "changes": [
+      "  行60 A2: '- 特征工程总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/feature-engineering/2026-01-27-特征工程核心问题.md",
+    "changes": [
+      "  行84 A2: '- 特征工程总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/feature-engineering/2026-04-06-FeatureSelector特征选择工具.md",
+    "changes": [
+      "  行81 A2: '- 特征工程总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/feature-engineering/2026-04-06-Tips-of-Feature-Engineering教程库.md",
+    "changes": [
+      "  行81 A2: '- 特征工程总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/feature-engineering/2026-04-06-特征工程系统讲解-Datawhale.md",
+    "changes": [
+      "  行97 A2: '- 特征工程总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/feature-engineering/2026-04-06-竞赛特征工程PPT讲义.md",
+    "changes": [
+      "  行74 A2: '- 特征工程总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/llm/大语言模型专题来源.md",
+    "changes": [
+      "  行30 A1: '| [[2026-04-06-译 如何训练一个企业级 GPT 助手（OpenAI，2023）]] | Karpathy State of GPT 演讲翻译（GPT-3/LLaMA 对比、数据、超参数） | 待摘要 |' -> '| [[2026-04-06-译-如何训练一个企业级-GPT-助手（OpenAI，2023）]] | Karpathy State of GPT 演讲翻译（GPT-3/LLaMA 对比、数据、超参数） | 待摘要 |'",
+      "  行39 A1: '| [[2026-04-06-Advanced Prompt Engineering Techniques]] | 高级提示词技术（CoT、Self-Consistency、ReAct、ToT、APE 等） | 待摘要 |' -> '| [[2026-04-06-Advanced-Prompt-Engineering-Techniques]] | 高级提示词技术（CoT、Self-Consistency、ReAct、ToT、APE 等） | 待摘要 |'",
+      "  行48 A1: '| [[Vibe Coding来源清单]] | 含 RAG 技术全栈教程段落 | 待摘要 |' -> '| [[Vibe-Coding来源清单]] | 含 RAG 技术全栈教程段落 | 待摘要 |'",
+      "  行74 A1: '| [[2026-04-06-Using ChatGPT to build Synthetic Datasets]] | 使用 ChatGPT 构建合成数据集的完整指南 | 待摘要 |' -> '| [[2026-04-06-Using-ChatGPT-to-build-Synthetic-Datasets]] | 使用 ChatGPT 构建合成数据集的完整指南 | 待摘要 |'",
+      "  行80 A1: '| [[2026-04-06-Articles (cn-zh)]] | arthurchiao 翻译文集（GPT 工作原理、InstructGPT、LLaMA、企业级 GPT 助手、LLM 综述等） | 待摘要 |' -> '| [[2026-04-06-Articles-(cn-zh)]] | arthurchiao 翻译文集（GPT 工作原理、InstructGPT、LLaMA、企业级 GPT 助手、LLM 综述等） | 待摘要 |'",
+      "  行82 A1: '| [[2026-04-06-The Big LLM Architecture Comparison]] | 主流 LLM 架构对比（含 OLMo 3、GLM-5 等最新模型） | 待摘要 |' -> '| [[2026-04-06-The-Big-LLM-Architecture-Comparison]] | 主流 LLM 架构对比（含 OLMo 3、GLM-5 等最新模型） | 待摘要 |'",
+      "  行83 A1: '| [[2026-04-06-译 Transformer 是如何工作的：600 行 Python 代码实现 self-attention 和两类 Transformer（2019）]] | Transformer 原理详解（含 BERT 和 GPT-2 分析） | 待摘要 |' -> '| [[2026-04-06-译-Transformer-是如何工作的：600-行-Python-代码实现-self-attention-和两类-Transformer（2019）]] | Transformer 原理详解（含 BERT 和 GPT-2 分析） | 待摘要 |'",
+      "  行100 A1: '| [[2026-04-06-译论文 InstructGPT：基于人类反馈训练语言模型遵从指令的能力（OpenAI，2022）]] | InstructGPT 论文翻译（SFT+RLHF 对齐） | 待摘要 |' -> '| [[2026-04-06-译论文-InstructGPT：基于人类反馈训练语言模型遵从指令的能力（OpenAI，2022）]] | InstructGPT 论文翻译（SFT+RLHF 对齐） | 待摘要 |'",
+      "  行126 A2: '- 大语言模型总索引'",
+      "  行127 A2: '- 强化学习总索引（RLHF/DPO/GRPO 对齐方法）'",
+      "  行128 A2: '- 计算机视觉总索引（多模态 VLM）'"
+    ]
+  },
+  {
+    "file": "wiki/sources/llm/数据科学工具与其他专题来源.md",
+    "changes": [
+      "  行71 A1: '| [[2026-04-06-Open Source Data Labeling]] | 开源数据标注 | 待摘要 |' -> '| [[2026-04-06-Open-Source-Data-Labeling]] | 开源数据标注 | 待摘要 |'",
+      "  行97 A1: '| [[2026-04-06-Word Embeddings]] | 词嵌入 | 待摘要 |' -> '| [[2026-04-06-Word-Embeddings]] | 词嵌入 | 待摘要 |'",
+      "  行147 A2: '- 机器学习总索引'",
+      "  行148 A2: '- 运筹优化算法总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/llm-wiki/2026-04-06-Obsidian 使用指南：从零开始搭建你的个人知识库-腾讯云开发者社区-腾讯云.md",
+    "changes": [
+      "  行28 A2: '- 知识库建设方法总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/llm-wiki/LLM知识库构建专题来源.md",
+    "changes": [
+      "  行40 A2: '- 知识库建设方法总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/machine-learning/2022-05-06-bayes.md",
+    "changes": [
+      "  行29 A2: '- 机器学习总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/machine-learning/2022-05-07-statistics-man.md",
+    "changes": [
+      "  行29 A2: '- 机器学习总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/machine-learning/2022-11-13-data-scientist.md",
+    "changes": [
+      "  行29 A2: '- 机器学习总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/machine-learning/2025-01-19-what-is-statistics.md",
+    "changes": [
+      "  行29 A2: '- 机器学习总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/machine-learning/2026-04-06-(34 封私信  12 条消息) 机器学习中如何处理缺失数据？ - 知乎.md",
+    "changes": [
+      "  行28 A2: '- 机器学习总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/machine-learning/2026-04-06-(35 封私信  12 条消息) 有哪些比较好的做异常值检测的方法？ - 知乎.md",
+    "changes": [
+      "  行29 A2: '- 计算机视觉总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/machine-learning/2026-04-06-1.13. Feature selection.md",
+    "changes": [
+      "  行28 A2: '- 机器学习总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/machine-learning/2026-04-06-66天写的逻辑回归.md",
+    "changes": [
+      "  行28 A2: '- 机器学习总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/machine-learning/2026-04-06-Adaptive Classifier Dynamic Text Classification with Continuous Learning.md",
+    "changes": [
+      "  行28 A2: '- 机器学习总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/machine-learning/2026-04-06-Amelia II A Program for Missing Data.md",
+    "changes": [
+      "  行28 A2: '- 机器学习总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/machine-learning/2026-04-06-An Introduction to `glmnet`.md",
+    "changes": [
+      "  行28 A2: '- 机器学习总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/machine-learning/2026-04-06-Basic tour of the Bayesian Optimization package - Bayesian Optimization.md",
+    "changes": [
+      "  行29 A2: '- 运筹优化算法总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/machine-learning/2026-04-06-Datawhale.md",
+    "changes": [
+      "  行28 A2: '- 机器学习总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/machine-learning/2026-04-06-Embrace Randomness in Machine Learning.md",
+    "changes": [
+      "  行28 A2: '- 机器学习总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/machine-learning/2026-04-06-GeostatsGuyDataScienceInteractivePython Python interactive dashboards for learning data science.md",
+    "changes": [
+      "  行28 A2: '- 机器学习总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/machine-learning/2026-04-06-GitHub---datawhalechinaeasy-vibe-💻-vibe-coding-2026--Your-first-modern-programmi.md",
+    "changes": [
+      "  行28 A2: '- 机器学习总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/machine-learning/2026-04-06-How to Develop Multi-Output Regression Models with Python.md",
+    "changes": [
+      "  行28 A2: '- 机器学习总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/machine-learning/2026-04-06-Logistic 回归.md",
+    "changes": [
+      "  行28 A2: '- 机器学习总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/machine-learning/2026-04-06-Machine Learning Q and AI.md",
+    "changes": [
+      "  行28 A2: '- 机器学习总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/machine-learning/2026-04-06-Optuna A hyperparameter optimization framework — Optuna 4.8.0 documentation.md",
+    "changes": [
+      "  行29 A2: '- 运筹优化算法总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/machine-learning/2026-04-06-Parameters — LightGBM 4.6.0 documentation.md",
+    "changes": [
+      "  行28 A2: '- 机器学习总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/machine-learning/2026-04-06-Start Here with Machine Learning.md",
+    "changes": [
+      "  行28 A2: '- 机器学习总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/machine-learning/2026-04-06-Time-related feature engineering.md",
+    "changes": [
+      "  行28 A2: '- 机器学习总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/machine-learning/2026-04-06-abhishekkrthakurapproachingalmost Approaching (Almost) Any Machine Learning Problem.md",
+    "changes": [
+      "  行28 A2: '- 机器学习总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/machine-learning/2026-04-06-codelionadaptive-classifier A flexible, adaptive classification system for dynamic text classification.md",
+    "changes": [
+      "  行28 A2: '- 机器学习总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/machine-learning/2026-04-06-datawhalechinaeasy-vibe 💻 vibe coding 2026  Your first modern programming course for beginners to master step by step.md",
+    "changes": [
+      "  行28 A2: '- 机器学习总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/machine-learning/2026-04-06-datawhalechinatiny-universe 《大模型白盒子构建指南》：一个全手搓的Tiny-Universe 1.md",
+    "changes": [
+      "  行28 A2: '- 机器学习总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/machine-learning/2026-04-06-datawhalechinatiny-universe 《大模型白盒子构建指南》：一个全手搓的Tiny-Universe.md",
+    "changes": [
+      "  行28 A2: '- 机器学习总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/machine-learning/2026-04-06-glmnet package - RDocumentation.md",
+    "changes": [
+      "  行28 A2: '- 机器学习总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/machine-learning/2026-04-06-helblazer811ManimML ManimML is a project focused on providing animations and visualizations of common machine learning concepts with the Manim Community Library.md",
+    "changes": [
+      "  行28 A2: '- 机器学习总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/machine-learning/2026-04-06-rasbtMachineLearning-QandAI-book Machine Learning Q and AI book.md",
+    "changes": [
+      "  行28 A2: '- 机器学习总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/machine-learning/2026-04-06-机器学习(27)【降维】之主成分分析(PCA)详解.md",
+    "changes": [
+      "  行28 A2: '- 机器学习总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/machine-learning/2026-04-06-机器学习(28)【降维】之sklearn中PCA库讲解与实战.md",
+    "changes": [
+      "  行28 A2: '- 机器学习总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/machine-learning/2026-04-06-逻辑回归模型算法研究与案例分析 – 我爱自然语言处理.md",
+    "changes": [
+      "  行28 A2: '- 机器学习总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/machine-learning/强化学习专题来源.md",
+    "changes": [
+      "  行65 A2: '- 机器学习总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/machine-learning/机器学习基础与特征工程专题来源.md",
+    "changes": [
+      "  行52 A2: '- 机器学习总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/nlp/2022-04-05-nlp-gensim.md",
+    "changes": [
+      "  行32 A2: '- 大语言模型总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/nlp/2022-04-05-nlp-opencc.md",
+    "changes": [
+      "  行32 A2: '- 大语言模型总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/nlp/2022-04-05-nlp-spacy.md",
+    "changes": [
+      "  行32 A2: '- 大语言模型总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/nlp/2022-07-15-nlp-anaphora-resolution.md",
+    "changes": [
+      "  行32 A2: '- 大语言模型总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/nlp/2022-07-15-nlp-app-kg-neo4j.md",
+    "changes": [
+      "  行32 A2: '- 大语言模型总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/nlp/2022-07-15-nlp-app-kg.md",
+    "changes": [
+      "  行32 A2: '- 大语言模型总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/nlp/2022-07-15-nlp-correction.md",
+    "changes": [
+      "  行32 A2: '- 大语言模型总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/nlp/2022-07-15-nlp-emotion-recognition.md",
+    "changes": [
+      "  行32 A2: '- 大语言模型总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/nlp/2022-07-15-nlp-feature-extraction.md",
+    "changes": [
+      "  行32 A2: '- 大语言模型总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/nlp/2022-07-15-nlp-keyword-extraction.md",
+    "changes": [
+      "  行32 A2: '- 大语言模型总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/nlp/2022-07-15-nlp-ml-text-classification.md",
+    "changes": [
+      "  行32 A2: '- 大语言模型总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/nlp/2022-07-15-nlp-ml-text-clustering.md",
+    "changes": [
+      "  行32 A2: '- 大语言模型总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/nlp/2022-07-15-nlp-ner.md",
+    "changes": [
+      "  行32 A2: '- 大语言模型总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/nlp/2022-07-15-nlp-qa-system.md",
+    "changes": [
+      "  行32 A2: '- 大语言模型总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/nlp/2022-07-15-nlp-segment.md",
+    "changes": [
+      "  行32 A2: '- 大语言模型总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/nlp/2022-07-15-nlp-solr-search-engine.md",
+    "changes": [
+      "  行32 A2: '- 大语言模型总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/nlp/2022-07-15-nlp-summary.md",
+    "changes": [
+      "  行29 A2: '- NLP应用与算法总索引（应用层级）'"
+    ]
+  },
+  {
+    "file": "wiki/sources/nlp/2022-07-15-nlp-syntax-parsing.md",
+    "changes": [
+      "  行32 A2: '- 大语言模型总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/nlp/2022-07-15-nlp-tagging.md",
+    "changes": [
+      "  行32 A2: '- 大语言模型总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/nlp/2022-07-15-nlp.md",
+    "changes": [
+      "  行32 A2: '- 大语言模型总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/nlp/2022-12-02-nlp-machine-translation.md",
+    "changes": [
+      "  行32 A2: '- 大语言模型总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/nlp/2022-12-02-nlp-speech-model.md",
+    "changes": [
+      "  行32 A2: '- 大语言模型总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/nlp/2022-12-02-nlp-speech-recognition.md",
+    "changes": [
+      "  行32 A2: '- 大语言模型总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/nlp/2022-12-02-nlp-text-generation.md",
+    "changes": [
+      "  行32 A2: '- 大语言模型总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/nlp/2023-05-10-word2vec.md",
+    "changes": [
+      "  行31 A2: '- NLP词嵌入与表示学习总索引（表示学习层级）'"
+    ]
+  },
+  {
+    "file": "wiki/sources/nlp/2026-04-06-nlp-fasthan.md",
+    "changes": [
+      "  行30 A2: '- NLP应用与算法总索引（应用层级）'"
+    ]
+  },
+  {
+    "file": "wiki/sources/nlp/2026-04-06-nlp-fudan-tutorial.md",
+    "changes": [
+      "  行29 A2: '- NLP基础任务总索引（基础层级）'"
+    ]
+  },
+  {
+    "file": "wiki/sources/nlp/2026-04-06-nlp-in-action.md",
+    "changes": [
+      "  行31 A2: '- NLP基础任务总索引（基础层级）'",
+      "  行32 A2: '- NLP应用与算法总索引（应用层级）'"
+    ]
+  },
+  {
+    "file": "wiki/sources/nlp/2026-04-06-nlp-spacy-advanced.md",
+    "changes": [
+      "  行30 A2: '- NLP应用与算法总索引（应用层级）'"
+    ]
+  },
+  {
+    "file": "wiki/sources/nlp/2026-04-06-nlp-spacy-framework.md",
+    "changes": [
+      "  行30 A2: '- NLP应用与算法总索引（应用层级）'"
+    ]
+  },
+  {
+    "file": "wiki/sources/nlp/2026-04-06-nlp-spacy-usage.md",
+    "changes": [
+      "  行30 A2: '- NLP应用与算法总索引（应用层级）'"
+    ]
+  },
+  {
+    "file": "wiki/sources/nlp/2026-04-06-nlp-word2vec-visualization.md",
+    "changes": [
+      "  行31 A2: '- NLP词嵌入与表示学习总索引（应用层级）'"
+    ]
+  },
+  {
+    "file": "wiki/sources/nlp/NLP与词嵌入专题来源.md",
+    "changes": [
+      "  行54 A1: '| [[2026-04-06-ymoslemOpenNMT-Tutorial Neural Machine Translation (NMT) tutorial. Data preprocessing, model training, evaluation, and deployment]] | OpenNMT 神经机器翻译 | 待摘要 |' -> '| [[2026-04-06-ymoslemOpenNMT-Tutorial-Neural-Machine-Translation-(NMT)-tutorial.-Data-preprocessing,-model-training,-evaluation,-and-deployment]] | OpenNMT 神经机器翻译 | 待摘要 |'",
+      "  行67 A2: '- 深度学习总索引'",
+      "  行68 A2: '- 机器学习总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/operations-research/2024-04-04-greedy.md",
+    "changes": [
+      "  行32 A2: '- 数据结构与算法总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/operations-research/2026-02-09-math-model.md",
+    "changes": [
+      "  行29 A2: '- 运筹优化算法总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/operations-research/2026-03-05-electricity-trading.md",
+    "changes": [
+      "  行29 A2: '- 运筹优化算法总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/operations-research/2026-04-06-API reference - simple-pid 2.0.0.md",
+    "changes": [
+      "  行28 A2: '- 运筹优化算法总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/operations-research/2026-04-06-CVXPY 官网.md",
+    "changes": [
+      "  行28 A2: '- 运筹优化算法总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/operations-research/2026-04-06-Convex Optimization – Boyd and Vandenberghe.md",
+    "changes": [
+      "  行28 A2: '- 运筹优化算法总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/operations-research/2026-04-06-Datawhale OR.md",
+    "changes": [
+      "  行28 A2: '- 运筹优化算法总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/operations-research/2026-04-06-Getting Started with Gurobi Optimizer.md",
+    "changes": [
+      "  行28 A2: '- 运筹优化算法总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/operations-research/2026-04-06-Gurobi Help Center.md",
+    "changes": [
+      "  行28 A2: '- 运筹优化算法总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/operations-research/2026-04-06-Gurobi Optimization.md",
+    "changes": [
+      "  行28 A2: '- 运筹优化算法总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/operations-research/2026-04-06-Gurobimodeling-examples Gurobi modeling examples.md",
+    "changes": [
+      "  行28 A2: '- 运筹优化算法总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/operations-research/2026-04-06-optunaoptuna A hyperparameter optimization framework.md",
+    "changes": [
+      "  行28 A2: '- 运筹优化算法总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/operations-research/2026-04-06-oxfordcontrolClarabel.rs Clarabel.rs Interior-point solver for convex conic optimisation problems in Rust.md",
+    "changes": [
+      "  行28 A2: '- 运筹优化算法总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/operations-research/2026-04-06-为什么这个线性规划不用求解器？连续背包的贪心本质.md",
+    "changes": [
+      "  行28 A2: '- 运筹优化算法总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/operations-research/2026-04-06-多求解器时代的工程设计 Gurobi, CPLEX, SCIP 统一调用方案.md",
+    "changes": [
+      "  行28 A2: '- 运筹优化算法总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/operations-research/2026-04-06-求解器如何与大模型的融合.md",
+    "changes": [
+      "  行28 A2: '- 运筹优化算法总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/operations-research/2026-04-06-混合整数线性规划建模分位数约束.md",
+    "changes": [
+      "  行28 A2: '- 运筹优化算法总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/operations-research/数学优化与运筹学专题来源.md",
+    "changes": [
+      "  行61 A2: '- 运筹优化算法总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/reinforcement-learning/2025-06-18-reinforcementlearning.md",
+    "changes": [
+      "  行29 A2: '- 强化学习总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/reinforcement-learning/2026-04-06-AI训练营强化学习-阿里云天池.md",
+    "changes": [
+      "  行28 A2: '- 强化学习总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/reinforcement-learning/2026-04-06-DeepSeek 背后的数学原理：深入探究群体相对策略优化 (GRPO).md",
+    "changes": [
+      "  行28 A2: '- 强化学习总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/reinforcement-learning/2026-04-06-DeepSeek-R1 技术剖析：没有强化学习基础也能看懂的 PPO & GRPO.md",
+    "changes": [
+      "  行28 A2: '- 强化学习总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/reinforcement-learning/2026-04-06-DeepSeek关键RL算法GRPO，有人从头跑通了，贡献完整代码.md",
+    "changes": [
+      "  行28 A2: '- 强化学习总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/reinforcement-learning/2026-04-06-Deepseek新发布的DSA，太炸裂了！.md",
+    "changes": [
+      "  行28 A2: '- 强化学习总索引（工程实践）'"
+    ]
+  },
+  {
+    "file": "wiki/sources/reinforcement-learning/2026-04-06-Direct Preference Optimization (DPO).md",
+    "changes": [
+      "  行28 A2: '- 强化学习总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/reinforcement-learning/2026-04-06-Generative AI A Creative New World.md",
+    "changes": [
+      "  行28 A2: '- 强化学习总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/reinforcement-learning/2026-04-06-Implementing GRPO in TRL.md",
+    "changes": [
+      "  行28 A2: '- 强化学习总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/reinforcement-learning/2026-04-06-PPO & GRPO原理，小学生也能看懂！.md",
+    "changes": [
+      "  行28 A2: '- 强化学习总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/reinforcement-learning/2026-04-06-PPO→GRPO→DAPO，强化学习一篇通关！.md",
+    "changes": [
+      "  行28 A2: '- 强化学习总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/reinforcement-learning/2026-04-06-RLHF and alternatives ORPO.md",
+    "changes": [
+      "  行28 A2: '- 强化学习总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/reinforcement-learning/2026-04-06-Sebastian Raschka长文：DeepSeek-R1、o3背后，RL推理训练正悄悄突破上限.md",
+    "changes": [
+      "  行28 A2: '- 强化学习总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/reinforcement-learning/2026-04-06-Stirling-ToolsStirling-PDF 1 PDF Application on GitHub that lets you edit PDFs on any device anywhere.md",
+    "changes": [
+      "  行28 A2: '- 强化学习总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/reinforcement-learning/2026-04-06-Teaching.md",
+    "changes": [
+      "  行39 A2: '- 强化学习总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/reinforcement-learning/2026-04-06-The World's Leading Online Programming Learning Platform.md",
+    "changes": [
+      "  行28 A2: '- 强化学习总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/reinforcement-learning/2026-04-06-Training “real-world” models with DDP.md",
+    "changes": [
+      "  行28 A2: '- 强化学习总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/reinforcement-learning/2026-04-06-datawhalechinaeasy-rl 强化学习中文教程（蘑菇书🍄），在线阅读地址：httpsdatawhalechina.github.ioeasy-rl.md",
+    "changes": [
+      "  行28 A2: '- 强化学习总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/reinforcement-learning/2026-04-06-deep-learning-pytorch-huggingfacetrainingscriptsdporun_dpo.py at main.md",
+    "changes": [
+      "  行28 A2: '- 强化学习总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/reinforcement-learning/2026-04-06-gaoxiaosSupermariobros-PPO-pytorch rl on super-mario-bros.md",
+    "changes": [
+      "  行28 A2: '- 强化学习总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/reinforcement-learning/2026-04-06-theLMbookGRPO_From_Scratch_Multi_GPU_DataParallel_Qwen_2_5_1_5B_Instruct.ipynb at main.md",
+    "changes": [
+      "  行28 A2: '- 强化学习总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/reinforcement-learning/2026-04-06-zhouboleiintroRL Intro to Reinforcement Learning (强化学习纲要）.md",
+    "changes": [
+      "  行28 A2: '- 强化学习总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/reinforcement-learning/2026-04-06-人人都能看懂的DPO数学原理.md",
+    "changes": [
+      "  行28 A2: '- 强化学习总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/reinforcement-learning/2026-04-06-人人都能看懂的RL-PPO理论知识.md",
+    "changes": [
+      "  行28 A2: '- 强化学习总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/reinforcement-learning/2026-04-06-图解大模型RLHF系列之：人人都能看懂的PPO原理与源码解读.md",
+    "changes": [
+      "  行28 A2: '- 强化学习总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/reinforcement-learning/2026-04-06-强化学习 david silver.md",
+    "changes": [
+      "  行28 A2: '- 强化学习总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/reinforcement-learning/2026-04-06-我的RLHF实践记录~.md",
+    "changes": [
+      "  行28 A2: '- 强化学习总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/reinforcement-learning/2026-04-06-最新万字长文！强化学习之父联合谷歌RL副总裁：未来不是靠强化学习算法而是「经验流」.md",
+    "changes": [
+      "  行28 A2: '- 强化学习总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/reinforcement-learning/2026-04-06-浅聊RL框架的勃勃生机、万物竞发.md",
+    "changes": [
+      "  行28 A2: '- 强化学习总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/reinforcement-learning/2026-04-06-第二章 马尔可夫决策过程 (MDP).md",
+    "changes": [
+      "  行28 A2: '- 强化学习总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/reinforcement-learning/2026-04-06-草履虫也能学会的强化学习系列（6）.md",
+    "changes": [
+      "  行28 A2: '- 强化学习总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/reinforcement-learning/2026-04-06-蘑菇书EasyRL.md",
+    "changes": [
+      "  行28 A2: '- 强化学习总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/reinforcement-learning/2026-04-06-面试问了DPO算法，答得稀烂~.md",
+    "changes": [
+      "  行28 A2: '- 强化学习总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/reinforcement-learning/2026-04-06-马尔可夫决策过程 - 动手学强化学习.md",
+    "changes": [
+      "  行28 A2: '- 强化学习总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/reinforcement-learning/强化学习专题来源.md",
+    "changes": [
+      "  行75 A1: '| [[2026-04-06-LLM Training RLHF and Its Alternatives]] | LLM 训练中 RLHF 方法及替代方案概述 | 待摘要 |' -> '| [[2026-04-06-LLM-Training-RLHF-and-Its-Alternatives]] | LLM 训练中 RLHF 方法及替代方案概述 | 待摘要 |'",
+      "  行83 A1: '| [[2026-04-06-LLM RL入门]] | 工程人员 LLM RL 入门（Actor-Critic/PPO） | 待摘要 |' -> '| [[2026-04-06-LLM-RL入门]] | 工程人员 LLM RL 入门（Actor-Critic/PPO） | 待摘要 |'",
+      "  行116 A2: '- 强化学习总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/timeseries-analysis/2023-07-30-montecarlo.md",
+    "changes": [
+      "  行29 A2: '- 时间序列预测总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/timeseries-analysis/2025-07-17-ts-prob-forecasting.md",
+    "changes": [
+      "  行29 A2: '- 时间序列预测总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/timeseries-analysis/2026-01-18-tsf-dl-stages.md",
+    "changes": [
+      "  行29 A2: '- 时间序列预测总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/timeseries-analysis/2026-01-27-feature-engine-topic.md",
+    "changes": [
+      "  行29 A2: '- 时间序列预测总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/timeseries-analysis/2026-02-07-tsf-report.md",
+    "changes": [
+      "  行29 A2: '- 时间序列预测总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/timeseries-analysis/2026-04-06-(34 封私信  12 条消息) 为什么基于深度学习的时间序列预测方向很少有动态预测的方法？ - 知乎.md",
+    "changes": [
+      "  行28 A2: '- 时间序列预测总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/timeseries-analysis/2026-04-06-(34 封私信  12 条消息) 为什么我用lstm，svm，ann来预测股价，效果都非常好？ - 知乎.md",
+    "changes": [
+      "  行29 A2: '- 深度学习总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/timeseries-analysis/2026-04-06-(34 封私信  12 条消息) 时序数据预测有哪些好方法？ - 知乎.md",
+    "changes": [
+      "  行28 A2: '- 时间序列预测总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/timeseries-analysis/2026-04-06-(34 封私信  12 条消息) 时间序列预测还能在进步吗？ - 知乎.md",
+    "changes": [
+      "  行28 A2: '- 时间序列预测总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/timeseries-analysis/2026-04-06-(35 封私信  12 条消息) 为什么基于深度学习的时间序列预测方向很少有动态预测的方法？ - 知乎.md",
+    "changes": [
+      "  行28 A2: '- 时间序列预测总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/timeseries-analysis/2026-04-06-4 Things to Do When Applying Cross-Validation with Time Series.md",
+    "changes": [
+      "  行28 A2: '- 时间序列预测总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/timeseries-analysis/2026-04-06-A Step-by-Step Guide to Feature Engineering for Multivariate Time Series.md",
+    "changes": [
+      "  行28 A2: '- 时间序列预测总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/timeseries-analysis/2026-04-06-A decoder-only foundation model for time-series forecasting.md",
+    "changes": [
+      "  行28 A2: '- 时间序列预测总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/timeseries-analysis/2026-04-06-AI论文速读  日晷(Sundial)：一系列高性能时间序列基础模型.md",
+    "changes": [
+      "  行28 A2: '- 时间序列预测总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/timeseries-analysis/2026-04-06-Autoformerexpexp_main.py at main.md",
+    "changes": [
+      "  行28 A2: '- 时间序列预测总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/timeseries-analysis/2026-04-06-Autoformerpredict.ipynb at main.md",
+    "changes": [
+      "  行28 A2: '- 时间序列预测总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/timeseries-analysis/2026-04-06-D2Vformer：一个可实现任意位置任意长度时序预测的深度学习模型.md",
+    "changes": [
+      "  行28 A2: '- 时间序列预测总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/timeseries-analysis/2026-04-06-DC-researchTSorchestra Time Series Orchestra (TSorchestra) is a novel ensemble framework designed for zero-shot time series forecasting. It is built upon a curated collection of time series foundation models. The architecture is desig.md",
+    "changes": [
+      "  行29 A2: '- 大语言模型总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/timeseries-analysis/2026-04-06-DeepLearningExamplesToolsPyTorchTimeSeriesPredictionPlatform at master.md",
+    "changes": [
+      "  行28 A2: '- 时间序列预测总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/timeseries-analysis/2026-04-06-Forecast Evaluation for Data Scientists Common Pitfalls and Best Practices.md",
+    "changes": [
+      "  行28 A2: '- 时间序列预测总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/timeseries-analysis/2026-04-06-Forecasting with sktime — sktime  documentation.md",
+    "changes": [
+      "  行28 A2: '- 时间序列预测总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/timeseries-analysis/2026-04-06-Forecasting — sktime  documentation.md",
+    "changes": [
+      "  行28 A2: '- 时间序列预测总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/timeseries-analysis/2026-04-06-Fourier Transformations for Time Series Analysis with Python.md",
+    "changes": [
+      "  行28 A2: '- 时间序列预测总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/timeseries-analysis/2026-04-06-Google 把时间序列预测玩成了大模型——TimesFM 深度解析.md",
+    "changes": [
+      "  行28 A2: '- 时间序列预测总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/timeseries-analysis/2026-04-06-Hierarchical Classification Auxiliary Network for Time Series Forecasting.md",
+    "changes": [
+      "  行28 A2: '- 时间序列预测总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/timeseries-analysis/2026-04-06-How Much Forecasting Performance Do You Lose During Model Selection.md",
+    "changes": [
+      "  行28 A2: '- 时间序列预测总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/timeseries-analysis/2026-04-06-How To Backtest Machine Learning Models for Time Series Forecasting.md",
+    "changes": [
+      "  行28 A2: '- 时间序列预测总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/timeseries-analysis/2026-04-06-How to Convert a Time Series to a Supervised Learning Problem in Python.md",
+    "changes": [
+      "  行28 A2: '- 时间序列预测总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/timeseries-analysis/2026-04-06-How to Make Out-of-Sample Forecasts with ARIMA in Python.md",
+    "changes": [
+      "  行28 A2: '- 时间序列预测总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/timeseries-analysis/2026-04-06-How to Use XGBoost for Time Series Forecasting.md",
+    "changes": [
+      "  行28 A2: '- 时间序列预测总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/timeseries-analysis/2026-04-06-ICLR2026时间序列论文预览(四)【表示、学习、生成方向】.md",
+    "changes": [
+      "  行28 A2: '- 时间序列预测总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/timeseries-analysis/2026-04-06-Informer算法原理与代码详解.md",
+    "changes": [
+      "  行28 A2: '- 时间序列预测总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/timeseries-analysis/2026-04-06-Intro to Forecasting - Skforecast Docs.md",
+    "changes": [
+      "  行28 A2: '- 时间序列预测总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/timeseries-analysis/2026-04-06-Introduction to Forecasting Ensembles.md",
+    "changes": [
+      "  行28 A2: '- 时间序列预测总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/timeseries-analysis/2026-04-06-Lag-Llama：时间序列大模型开源了！.md",
+    "changes": [
+      "  行28 A2: '- 时间序列预测总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/timeseries-analysis/2026-04-06-Lagged features for time series forecasting.md",
+    "changes": [
+      "  行28 A2: '- 时间序列预测总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/timeseries-analysis/2026-04-06-Machine Learning for Forecasting Supervised Learning with Multivariate Time Series.md",
+    "changes": [
+      "  行28 A2: '- 时间序列预测总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/timeseries-analysis/2026-04-06-Machine Learning for Forecasting Transformations and Feature Extraction.md",
+    "changes": [
+      "  行28 A2: '- 时间序列预测总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/timeseries-analysis/2026-04-06-Meteor-StarsSEMixer This is code for SEMixer Semantics Enhanced MLP-Mixer for Multiscale Mixing and Long-term Time Series Forecasting (WWW 2026). SEMixer can handle longer input sequences and achieve better performance from longer inp.md",
+    "changes": [
+      "  行28 A2: '- 时间序列预测总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/timeseries-analysis/2026-04-06-Moirai A Time Series Foundation Model for Universal Forecasting.md",
+    "changes": [
+      "  行28 A2: '- 时间序列预测总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/timeseries-analysis/2026-04-06-Monte Carlo Cross-Validation for Time Series.md",
+    "changes": [
+      "  行28 A2: '- 时间序列预测总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/timeseries-analysis/2026-04-06-MultiOutputRegressor.md",
+    "changes": [
+      "  行29 A2: '- 运筹优化算法总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/timeseries-analysis/2026-04-06-N-BEATS Neural basis expansion analysis for interpretable time series  forecasting.md",
+    "changes": [
+      "  行28 A2: '- 时间序列预测总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/timeseries-analysis/2026-04-06-N-BEATS Neural basis expansion analysis for interpretable time series forecasting 1.md",
+    "changes": [
+      "  行28 A2: '- 时间序列预测总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/timeseries-analysis/2026-04-06-N-BEATS Neural basis expansion analysis for interpretable time series forecasting.md",
+    "changes": [
+      "  行28 A2: '- 时间序列预测总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/timeseries-analysis/2026-04-06-NX-AItirex TiRex Zero-Shot Forecasting Across Long and Short Horizons with Enhanced In-Context Learning.md",
+    "changes": [
+      "  行28 A2: '- 时间序列预测总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/timeseries-analysis/2026-04-06-Nixtlamlforecast Scalable machine 🤖 learning for time series forecasting.md",
+    "changes": [
+      "  行28 A2: '- 时间序列预测总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/timeseries-analysis/2026-04-06-Nixtlaneuralforecast Scalable and user friendly neural forecasting algorithms.md",
+    "changes": [
+      "  行28 A2: '- 时间序列预测总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/timeseries-analysis/2026-04-06-PIR：让时间序列预测更可靠的“智能后处理框架”.md",
+    "changes": [
+      "  行28 A2: '- 时间序列预测总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/timeseries-analysis/2026-04-06-Paper page - Time-MoE Billion-Scale Time Series Foundation Models with Mixture of  Experts.md",
+    "changes": [
+      "  行28 A2: '- 时间序列预测总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/timeseries-analysis/2026-04-06-ServiceNowN-BEATS N-BEATS is a neural-network based model for univariate timeseries forecasting. N-BEATS is a ServiceNow Research project that was started at Element AI 1.md",
+    "changes": [
+      "  行28 A2: '- 时间序列预测总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/timeseries-analysis/2026-04-06-ServiceNowN-BEATS N-BEATS is a neural-network based model for univariate timeseries forecasting. N-BEATS is a ServiceNow Research project that was started at Element AI.md",
+    "changes": [
+      "  行28 A2: '- 时间序列预测总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/timeseries-analysis/2026-04-06-Spatio-Temporal Graph Convolutional Networks A Deep Learning Framework for Traffic Forecasting.md",
+    "changes": [
+      "  行28 A2: '- 时间序列预测总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/timeseries-analysis/2026-04-06-Time Series Forecasting as Supervised Learning.md",
+    "changes": [
+      "  行28 A2: '- 时间序列预测总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/timeseries-analysis/2026-04-06-Time-Series-Libraryexpexp_zero_shot_forecasting.py at main.md",
+    "changes": [
+      "  行28 A2: '- 时间序列预测总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/timeseries-analysis/2026-04-06-Time-Series-Libraryscriptslong_term_forecastETT_scriptLTSM.sh at main.md",
+    "changes": [
+      "  行28 A2: '- 时间序列预测总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/timeseries-analysis/2026-04-06-TimeKAN：基于KAN的时间序列预测模型.md",
+    "changes": [
+      "  行28 A2: '- 时间序列预测总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/timeseries-analysis/2026-04-06-TimeMixer++ A General Time Series Pattern Machine for Universal Predictive Analysis.md",
+    "changes": [
+      "  行28 A2: '- 时间序列预测总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/timeseries-analysis/2026-04-06-TimeSeries Analysis 📈A Complete Guide 📚.md",
+    "changes": [
+      "  行28 A2: '- 时间序列预测总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/timeseries-analysis/2026-04-06-Welcome to skforecast - Skforecast Docs.md",
+    "changes": [
+      "  行28 A2: '- 时间序列预测总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/timeseries-analysis/2026-04-06-amazon-sciencechronos-forecasting Chronos Pretrained Models for Time Series Forecasting.md",
+    "changes": [
+      "  行28 A2: '- 时间序列预测总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/timeseries-analysis/2026-04-06-amazonchronos-t5-large · Hugging Face.md",
+    "changes": [
+      "  行28 A2: '- 时间序列预测总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/timeseries-analysis/2026-04-06-autogluonfev Forecast evaluation library.md",
+    "changes": [
+      "  行28 A2: '- 时间序列预测总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/timeseries-analysis/2026-04-06-aws-samplesmulti-step-forecasting-blog-sample-code This repository is used for sample code of AWS China Blog.md",
+    "changes": [
+      "  行28 A2: '- 时间序列预测总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/timeseries-analysis/2026-04-06-awslabsgluonts Probabilistic time series modeling in Python.md",
+    "changes": [
+      "  行28 A2: '- 时间序列预测总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/timeseries-analysis/2026-04-06-blue-yondertsfresh Automatic extraction of relevant features from time series.md",
+    "changes": [
+      "  行28 A2: '- 时间序列预测总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/timeseries-analysis/2026-04-06-google-researchtimesfm TimesFM (Time Series Foundation Model) is a pretrained time-series foundation model developed by Google Research for time-series forecasting.md",
+    "changes": [
+      "  行28 A2: '- 时间序列预测总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/timeseries-analysis/2026-04-06-huangst21TimeKAN An offical implementation of TimeKAN KAN-based Frequency Decomposition Learning Architecture for Long-term Time Series Forecasting (ICLR 2025).md",
+    "changes": [
+      "  行28 A2: '- 时间序列预测总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/timeseries-analysis/2026-04-06-kwukingTimeMixer ICLR 2024 Official implementation of TimeMixer Decomposable Multiscale Mixing for Time Series Forecasting.md",
+    "changes": [
+      "  行28 A2: '- 时间序列预测总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/timeseries-analysis/2026-04-06-sktimepytorch-forecasting Time series forecasting with PyTorch.md",
+    "changes": [
+      "  行28 A2: '- 时间序列预测总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/timeseries-analysis/2026-04-06-thumlSundial About model release for Sundial A Family of Highly Capable Time Series Foundation Models (ICML 2025 Oral) 1.md",
+    "changes": [
+      "  行28 A2: '- 时间序列预测总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/timeseries-analysis/2026-04-06-thumlSundial About model release for Sundial A Family of Highly Capable Time Series Foundation Models (ICML 2025 Oral).md",
+    "changes": [
+      "  行28 A2: '- 时间序列预测总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/timeseries-analysis/2026-04-06-timeseriesAItsai Time series Timeseries Deep Learning Machine Learning Python Pytorch  fastai  State-of-the-art Deep Learning library  for Time Series and Sequences in Pytorch.md",
+    "changes": [
+      "  行28 A2: '- 时间序列预测总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/timeseries-analysis/2026-04-06-ts-kimRevIN RevIN Reversible Instance Normalization For Accurate Time-series Forecasting Against Distribution Shift.md",
+    "changes": [
+      "  行28 A2: '- 时间序列预测总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/timeseries-analysis/2026-04-06-yangwohenmaiDeepLearningForTSF 深度学习以进行时间序列预测.md",
+    "changes": [
+      "  行28 A2: '- 时间序列预测总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/timeseries-analysis/2026-04-06-zhouhaoyiInformer2020 The GitHub repository for the paper Informer accepted by AAAI 2021.md",
+    "changes": [
+      "  行28 A2: '- 时间序列预测总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/timeseries-analysis/2026-04-06-【时序】时间序列预测论文撰写思路及PyTorch代码管道构建.md",
+    "changes": [
+      "  行28 A2: '- 时间序列预测总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/timeseries-analysis/2026-04-06-【时间序列】TimesBERT A BERT-Style Foundation Model for Time Series Understanding 论文阅读与分享.md",
+    "changes": [
+      "  行28 A2: '- 时间序列预测总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/timeseries-analysis/2026-04-06-【时间序列入门】时间序列分析的基本理论和概念.md",
+    "changes": [
+      "  行28 A2: '- 时间序列预测总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/timeseries-analysis/2026-04-06-【时间序列预测】Are Transformers Effective for Time Series Forecasting.md",
+    "changes": [
+      "  行29 A2: '- 大语言模型总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/timeseries-analysis/2026-04-06-上海AI Lab新作登顶ICLR 2025！TimeKAN刷新时间序列预测SOTA！.md",
+    "changes": [
+      "  行28 A2: '- 时间序列预测总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/timeseries-analysis/2026-04-06-不必再手动炼丹！贝叶斯优化+LSTM+时序预测，准确率近100%刷新SOTA记录！.md",
+    "changes": [
+      "  行28 A2: '- 时间序列预测总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/timeseries-analysis/2026-04-06-全球首次！时序大模型突破十亿参数，华人团队发布Time-MoE，预训练数据达3000亿个时间点.md",
+    "changes": [
+      "  行28 A2: '- 时间序列预测总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/timeseries-analysis/2026-04-06-华为诺亚方舟实验室 TimePro：攻克多变量时序预测世界难题！.md",
+    "changes": [
+      "  行28 A2: '- 时间序列预测总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/timeseries-analysis/2026-04-06-在工业时序领域，大语言模型彻底歇菜！ 1.md",
+    "changes": [
+      "  行28 A2: '- 时间序列预测总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/timeseries-analysis/2026-04-06-在工业时序领域，大语言模型彻底歇菜！.md",
+    "changes": [
+      "  行28 A2: '- 时间序列预测总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/timeseries-analysis/2026-04-06-多变量当辅助序列提升多元时序预测效果.md",
+    "changes": [
+      "  行28 A2: '- 时间序列预测总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/timeseries-analysis/2026-04-06-多步时间序列预测策略实战-腾讯云开发者社区-腾讯云.md",
+    "changes": [
+      "  行28 A2: '- 时间序列预测总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/timeseries-analysis/2026-04-06-多步时间序列预测策略实战.md",
+    "changes": [
+      "  行28 A2: '- 时间序列预测总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/timeseries-analysis/2026-04-06-年度总结  时间序列(Time Series)前沿创新思路.md",
+    "changes": [
+      "  行28 A2: '- 时间序列预测总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/timeseries-analysis/2026-04-06-把时间序列画成图？VLM4TS用视觉语言模型破解时序检测难题 1.md",
+    "changes": [
+      "  行28 A2: '- 时间序列预测总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/timeseries-analysis/2026-04-06-时代变了，预测也用上大模型了！深度解析谷歌TimesFM2.5.md",
+    "changes": [
+      "  行28 A2: '- 时间序列预测总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/timeseries-analysis/2026-04-06-时序可解释性大提升！TimeSliver在26个数据集上性能逼近SOTA!.md",
+    "changes": [
+      "  行28 A2: '- 时间序列预测总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/timeseries-analysis/2026-04-06-时序模型的新天花板：SEMixer在10大数据集上全面领先！.md",
+    "changes": [
+      "  行28 A2: '- 时间序列预测总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/timeseries-analysis/2026-04-06-时序预测新范式：冻结大语言模型，外挂时序适配器，性能超越TimeMixer++.md",
+    "changes": [
+      "  行28 A2: '- 时间序列预测总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/timeseries-analysis/2026-04-06-时空联合建模与时空可持续学习.md",
+    "changes": [
+      "  行32 A2: '- 时间序列预测总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/timeseries-analysis/2026-04-06-时间序列基础-＞数据标签、数据分割器、数据加载器的定义和讲解(零基础入门时间序列)_时间序列dataloder-CSDN博客.md",
+    "changes": [
+      "  行28 A2: '- 时间序列预测总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/timeseries-analysis/2026-04-06-时间序列多步预测的五种策略.md",
+    "changes": [
+      "  行28 A2: '- 时间序列预测总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/timeseries-analysis/2026-04-06-时间序列数据特征提取的几类方法。.md",
+    "changes": [
+      "  行28 A2: '- 时间序列预测总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/timeseries-analysis/2026-04-06-时间序列的区间预测概率预测.md",
+    "changes": [
+      "  行28 A2: '- 时间序列预测总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/timeseries-analysis/2026-04-06-时间序列预测专栏_Snu77的博客-CSDN博客.md",
+    "changes": [
+      "  行28 A2: '- 时间序列预测总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/timeseries-analysis/2026-04-06-时间序列预测的层次分类辅助网络-Hierarchical-Classification-Auxiliary-Network-for-Time-Series-Forecasting.md",
+    "changes": [
+      "  行28 A2: '- 时间序列预测总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/timeseries-analysis/2026-04-06-机器学习多步时间序列预测解决方案.md",
+    "changes": [
+      "  行28 A2: '- 时间序列预测总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/timeseries-analysis/2026-04-06-深度学习时间序列预测案例_海洋 之心的博客-CSDN博客.md",
+    "changes": [
+      "  行28 A2: '- 时间序列预测总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/timeseries-analysis/2026-04-06-牛津大学等提出P-sLSTM，释放LSTM在长期时间序列预测中的潜力 1.md",
+    "changes": [
+      "  行28 A2: '- 时间序列预测总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/timeseries-analysis/2026-04-06-百度中科大等联合发布：TimeFound-超越谷歌TimesFM的时序基础模型，零样本泛化能力惊人！.md",
+    "changes": [
+      "  行28 A2: '- 时间序列预测总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/timeseries-analysis/2026-04-06-简单却高效：MSCP在时间序列预测中胜出复杂算法.md",
+    "changes": [
+      "  行28 A2: '- 时间序列预测总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/timeseries-analysis/2026-04-06-终于不用改模型架构了！TaTS仅用轻量MLP层就让现有时序模型效果飞升.md",
+    "changes": [
+      "  行28 A2: '- 时间序列预测总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/timeseries-analysis/2026-04-06-论文精读   2024 ICLR TimeMixer 可分解多尺度融合的时间序列预测.md",
+    "changes": [
+      "  行28 A2: '- 时间序列预测总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/timeseries-analysis/2026-04-06-谷歌的时间序列预测的基础模型TimesFM详解和对比测试.md",
+    "changes": [
+      "  行28 A2: '- 时间序列预测总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/timeseries-analysis/2026-04-06-重塑时序预测评估：TIME——新一代任务驱动型时序基础模型基准.md",
+    "changes": [
+      "  行28 A2: '- 时间序列预测总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/timeseries-analysis/2026-04-06-阿里达摩院最新FEDformer，长程时序预测全面超越SOTA  ICML 2022-CSDN博客.md",
+    "changes": [
+      "  行28 A2: '- 时间序列预测总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/timeseries-analysis/2026-04-06-预测界变天！亚马逊Chronos-2携“多变量协同”登场，与谷歌刚正面.md",
+    "changes": [
+      "  行28 A2: '- 时间序列预测总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/timeseries-analysis/2026-04-06-（2020 ICLR）N-BEATS Neural Basis Expansion Analysis For Interpretable Time Series Forecasting.md",
+    "changes": [
+      "  行28 A2: '- 时间序列预测总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/timeseries-analysis/2026-04-06-（2023 AAAI）N-HiTS Neural Hierarchical Interpolation for Time Series Forecasting.md",
+    "changes": [
+      "  行28 A2: '- 时间序列预测总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/timeseries-analysis/2026-04-06-（2023 ICLR）TimesNet：Temporal 2D-Variation Modeling for General Time Series Analysis.md",
+    "changes": [
+      "  行28 A2: '- 时间序列预测总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/timeseries-analysis/2026-04-06-（2024 ICLR）TimeMixer Decomposable Multiscale Mixing for Time Series Forecasting.md",
+    "changes": [
+      "  行28 A2: '- 时间序列预测总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/timeseries-analysis/2026-04-11-只做预测还没用！时间序列+因果推断才是王道，这两篇论文讲透了！.md",
+    "changes": [
+      "  行32 A2: '- 时间序列预测总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/timeseries-analysis/时间序列预测深度学习专题来源.md",
+    "changes": [
+      "  行135 A2: '- 时间序列预测总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/timeseries-analysis/电力市场与时序预测应用专题来源.md",
+    "changes": [
+      "  行27 A1: '| [[2026-04-06-【NO6 电力市场】华北电力大学：电力中长期交易与现货交易解析]] | 中长期交易与现货交易 | 待摘要 |' -> '| [[2026-04-06-【NO6-电力市场】华北电力大学：电力中长期交易与现货交易解析]] | 中长期交易与现货交易 | 待摘要 |'",
+      "  行51 A2: '- 时间序列预测总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/vibe-coding/2026-04-05-vercel-agent-browser.md",
+    "changes": [
+      "  行43 A2: '- Vibe-Coding总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/vibe-coding/2026-04-06-Agentic后训练 - SFT（监督微调）全流程详解.md",
+    "changes": [
+      "  行29 A2: '- 大语言模型总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/vibe-coding/2026-04-06-OpenAI-Academy.md",
+    "changes": [
+      "  行35 A2: '- Vibe-Coding总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/vibe-coding/2026-04-06-春节加餐：Anthropic首个公开的Skills构建指南来了！.md",
+    "changes": [
+      "  行30 A2: '- Vibe-Coding总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/vibe-coding/2026-04-06-首次Vibe Coding开课了！首月最丰富组队学习来了🥳（多达18个课程）.md",
+    "changes": [
+      "  行29 A2: '- 知识库建设方法总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/vibe-coding/2026-04-09-vibe-coding-agent.md",
+    "changes": [
+      "  行31 A2: '- Vibe-Coding总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/vibe-coding/2026-04-09-vibe-coding-claude-code.md",
+    "changes": [
+      "  行31 A2: '- Vibe-Coding总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/vibe-coding/2026-04-09-vibe-coding-claude-code从入门到精通-v2-0-0.md",
+    "changes": [
+      "  行31 A2: '- Vibe-Coding总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/vibe-coding/2026-04-09-vibe-coding-codex.md",
+    "changes": [
+      "  行31 A2: '- Vibe-Coding总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/vibe-coding/2026-04-09-vibe-coding-mcp.md",
+    "changes": [
+      "  行31 A2: '- Vibe-Coding总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/vibe-coding/2026-04-09-vibe-coding-openclaw.md",
+    "changes": [
+      "  行31 A2: '- Vibe-Coding总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/vibe-coding/2026-04-09-vibe-coding-openclaw橙皮书-从入门到精通-v1-2-0.md",
+    "changes": [
+      "  行31 A2: '- Vibe-Coding总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/vibe-coding/2026-04-09-vibe-coding-rag.md",
+    "changes": [
+      "  行31 A2: '- Vibe-Coding总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/vibe-coding/2026-04-09-vibe-coding-skills.md",
+    "changes": [
+      "  行31 A2: '- Vibe-Coding总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/vibe-coding/2026-04-09-vibe-coding-tools.md",
+    "changes": [
+      "  行31 A2: '- Vibe-Coding总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/vibe-coding/2026-04-11-Agent可用CLI设计.md",
+    "changes": [
+      "  行47 A2: '- Vibe-Coding总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/vibe-coding/2026-04-11-Anthropic-Managed-Agents.md",
+    "changes": [
+      "  行47 A2: '- Vibe-Coding总索引'"
+    ]
+  },
+  {
+    "file": "wiki/sources/vibe-coding/2026-04-11-Harness工程.md",
+    "changes": [
+      "  行38 A2: '- Vibe-Coding总索引'"
+    ]
+  }
+]

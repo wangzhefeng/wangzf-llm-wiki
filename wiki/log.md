@@ -70,7 +70,7 @@ status: linked
 
 ### 验证清单
 - [x] 所有 6 张来源卡 frontmatter 完整（type、tags、topics、status 均已补充）
-- [x] 源文件路径修正：统一指向 raw/notes/statistics-theory/（原错误指向 raw/notes/data-analysis/statistics/）
+- [x] 源文件路径修正：统一指向 raw/notes/statistics-theory/（原错误指向 raw/notes/statistics-theory/statistics/）
 - [x] 统计学理论总索引已创建，包含 6 个概念导航块与三层阅读地图
 - [x] 所有 6 个概念页包含完整的定义、原理、应用、常见问题结构
 - [x] 所有链接遵循 wikilinks 格式（[[]]），互链完整
@@ -233,7 +233,7 @@ status: linked
 - Added `tools/backfill_raw_wikilinks_in_source_cards.py`：为来源卡补齐指向 raw 的显式 wikilink（让 Obsidian 图谱可见边）。
 - Added `tools/fix_broken_source_path_by_filename.py`：修复 `source_path` 指向不存在 raw 路径的问题（按文件名唯一匹配）。
 - Added `tools/create_missing_source_cards_for_raw.py`：为缺失来源卡的 raw/web 等条目生成最小来源卡入口。
-- Added `tools/backfill_raw_local_notes_index_links.py`：为 `raw/notes/**/_index.md` 补 wiki 入口链接。
+- Added `tools/backfill_raw_notess_index_links.py`：为 `raw/notes/**/_index.md` 补 wiki 入口链接。
 - 更新 [[../raw/codex_threads/README.md]]、[[../outputs/README.md]]、[[../prompts/README.md]]、[[../README.md]]：补齐图谱入口链接，减少“散点”。
 - Updated `tools/wiki_health_check.py`：支持校验 `raw/...` 形式的路径式 wikilink。
 
@@ -1154,3 +1154,173 @@ Layer 3: 表示学习（4 代演进）
 ### 验证
 ✓ statistics-theory：3 文件（总索引 + 来源清单 + 阅读地图），结构与其他主题一致
 ✓ NLP：6 文件（4 子索引 + 来源清单 + 阅读地图），来源清单覆盖全部 36 张来源卡
+
+---
+
+## 2026-04-16 修复 shared/ 工作流断链（lint）
+
+### 问题
+`wiki/indexes/shared/` 下三个工作流页面存在大量断链，影响全库执行入口可用性：
+
+1. `知识库工作台.md`：
+   - 仍链接到已删除的 `data-analysis/数据分析总索引`（1 条断链）
+   - 专题入口仅 9 个，遗漏 5 个活跃主题（统计学理论、因果推断、强化学习、NLP、特征工程）
+   - 所有链接为相对路径，建议改为 wikilink
+
+2. `知识库操作记录索引.md`：
+   - 含 10 条指向已删除日志文件的相对路径链接（用户手动删除后未清理）
+
+3. `知识库健康检查清单.md`：
+   - 3 条旧链接（`raw/notes/README`、旧历史文档清单名称）
+
+### 操作
+- 修复 `知识库工作台.md`：移除断链，补入 5 个遗漏主题，所有链接改为 wikilink，专题入口 9 → 14
+- 修复 `知识库操作记录索引.md`：删除 10 条失效链接，保留 2 条有效链接，补 wiki/log.md 导航
+- 修复 `知识库健康检查清单.md`：修复 3 条断链
+
+### 验证
+✓ 知识库工作台专题入口覆盖全部 14 个活跃主题
+✓ 知识库操作记录索引无失效日志链接
+✓ 知识库健康检查清单相关链接均可解析
+
+---
+
+## 2026-04-16 更新健康检查流程（lint）
+
+### 背景
+本次全面 lint 会话历时完整，涵盖 glossary 对齐、孤儿概念、索引三件套、控制文件、shared/ 链接五个维度，发现并修复了 PHASE 1-3 的所有 P1/P2 问题。会话结束前，对健康检查工作流进行总结性更新。
+
+### 操作
+
+1. **重写 `wiki/indexes/shared/知识库健康检查清单.md`**：
+   - 新增"第 0 轮：核对 glossary 对齐状态"（检查已删除主题残留 + frontmatter 旧主题名）
+   - 第 1 轮新增：raw status 同步检查（有源卡但仍为 inbox）
+   - 第 2 轮新增：无主题归属来源目录检查
+   - 第 3 轮拆分为 3A（主题三件套完整性）+ 3B（控制文件链接有效性）+ 3C（shared/ 工作流链接有效性）
+   - 第 4 轮新增：孤儿概念检查（grep 索引验证方法）
+   - 第 5 轮新增：outputs/syntheses/ 回流检查
+
+2. **更新 `outputs/answers/知识库-健康检查-最新.md`**：
+   - 替换 2026-04-11 旧报告为 2026-04-16 当前状态
+   - 记录本轮全部修复内容与遗留问题（causal-inference 积压、时序 status 同步）
+   - 明确 5 个下一步优先级
+
+### 验证
+✓ 健康检查清单结构升级为 6 轮（第 0 轮 + 原 5 轮，第 3 轮拆分为 3A/3B/3C）
+✓ 健康检查主报告已更新为 2026-04-16 最新状态
+✓ 遗留问题（causal-inference ingest、时序 status 同步）已明确记录
+
+---
+
+## 2026-04-16 修复 NLP 索引结构（lint）
+
+### 问题
+1. `wiki/index.md` 的 `[[自然语言处理总索引]]` 是断链——该文件不存在
+2. `NLP与词嵌入索引.md`（2026-04-06）与 `NLP词嵌入与表示学习总索引.md`（2026-04-15）重复存在：旧文件内容杂乱（混合了基础任务/词嵌入/注意力/机器翻译），使用非标准的 raw/ 直接路径链接，已被新文件完全覆盖
+3. `深度学习总索引.md` 仍引用旧的 `NLP与词嵌入索引`
+
+### 操作
+- 新建 `wiki/indexes/nlp/自然语言处理总索引.md`：汇聚三个子索引（基础任务/应用与算法/词嵌入表示学习）的薄页，使 `wiki/index.md` 的链接可解析
+- 删除旧的 `NLP与词嵌入索引.md`
+- 更新 `深度学习总索引.md`：`[[NLP与词嵌入索引]]` → `[[NLP词嵌入与表示学习总索引]]`
+
+### 修复后 NLP indexes 目录结构（6 文件）
+- `自然语言处理总索引.md`（顶层入口，新建）
+- `NLP基础任务总索引.md`（子索引 1）
+- `NLP应用与算法总索引.md`（子索引 2）
+- `NLP词嵌入与表示学习总索引.md`（子索引 3）
+- `NLP自然语言处理来源清单.md`（来源清单）
+- `NLP自然语言处理阅读地图.md`（阅读地图）
+
+### 验证
+✓ wiki/index.md 的 `[[自然语言处理总索引]]` 现可解析
+✓ 旧的 `NLP与词嵌入索引.md` 已删除，无残留引用
+✓ 深度学习总索引链接已更新
+
+## [2026-04-16] lint | [[wikilink]] 断链精准分类与 A 类修复
+
+**目标**：扫描 wiki/ 下全部 .md（跳过 log.md），分类所有 `[[wikilink]]` 断链，修复结构性错误（A 类）。
+
+**扫描范围**：1273 个 .md 文件
+
+**分类结果**：
+
+| 类别 | 数量 | 说明 |
+|---|---|---|
+| A1（文件名不匹配） | 71 条 | 空格 vs 连字符，文件实际存在 |
+| A2（占位符模板） | 542 条 | `[[某总索引]]`、`[[概念页名]]` 等模板残留 |
+| A3（历史文档清单） | 5 条 | `[[深度学习-历史文档清单]]` 等不存在文件 |
+| A4（旧名/路径引用） | 182 条 | 含路径分隔符的引用，需人工决策 |
+| B（内容缺口） | 610 条 | 尚未创建的概念页，不修复 |
+| C（范围外路径） | 769 条 | `[[raw/...]]`、`[[outputs/...]]`，不修复 |
+
+**已完成修复（A1+A2+A3）**：
+- 修改文件数：451 个
+- A1 修复行数：72 行（空格→连字符，含 Causal 系列 5 个文件、LLM 来源文件等）
+- A2 修复行数：565 行（占位符 `[[xxx总索引]]` 改为纯文本）
+- A3 修复行数：5 行（历史文档清单改为纯文本）
+
+**A4 人工决策清单（需后续处理，不自动修复）**：
+
+A4 细分为 4 类：
+
+1. **反斜杠结尾（12 条）**：Windows 路径残留，如 `[[2023-02-27-特征工程概述\|特征工程概述]]`。
+   - 集中在 `wiki/indexes/feature-engineering/特征工程总索引.md` 和 `特征工程阅读地图.md`。
+   - 建议：去掉反斜杠，保留别名。
+
+2. **wiki/路径格式引用-文件存在（113 条）**：使用了 `[[wiki/xxx/index]]` 全路径格式而非 stem。
+   - 主要集中在 `wiki/index.md`、`wiki/concepts/index.md`、`wiki/sources/index.md`、`wiki/entities/index.md`、特征工程三件套。
+   - 说明：Obsidian 通常按 stem 解析，全路径可能无法跳转。建议改为 `[[index]]`（各子目录 index）或 `[[文件stem]]`。
+   - **注意**：`wiki/index.md` 中 `[[wiki/sources/index]]` 等 6 条若改为 `[[index]]` 会产生歧义（多个 index.md），建议保留原路径或改用别名。
+
+3. **wiki/路径格式引用-文件不存在（49 条）**：
+   - `wiki/sources/index.md` 中大量 `[[wiki/sources/llm/index]]` 等（wiki 内各 sources 子目录无 index.md）
+   - `wiki/concepts/index.md` 中 5 条指向不存在的 concepts 子目录 index
+   - 少量旧路径引用（`sources/llm/2026-04-05-...` 格式，跳过了 wiki/ 前缀）
+   - 建议：`wiki/sources/index.md` 统一改为直接链接来源清单文件，或移除子目录 index 引用。
+
+4. **概念名中含/（8 条）**：`[[A/B Testing]]`、`[[门控结构 (LSTM/GRU)]]`，被误识别为路径。
+   - 实际是合法概念名，文件尚未创建，属于 B 类内容缺口。
+
+**修复脚本位置**：
+- `/Users/wangzf/wangzf-llm-wiki/scripts/scan_wikilinks.py`（扫描分类）
+- `/Users/wangzf/wangzf-llm-wiki/scripts/scan_detailed.py`（详细扫描+导出 JSON）
+- `/Users/wangzf/wangzf-llm-wiki/scripts/fix_wikilinks.py`（A1/A2/A3 修复）
+- `/Users/wangzf/wangzf-llm-wiki/scripts/broken_links.json`（全量断链数据）
+
+## 2026-04-16 修复 A4 结构性断链 + 完善 lint 工具（lint）
+
+**触发**：上轮 A2 修复脚本正则过宽（`.*总索引$`），误将正常 wikilink 改为纯文本；同时 A4 类路径断链未处理。
+
+**修复内容**：
+
+| 类别 | 操作 | 文件数 | 处理量 |
+|------|------|--------|--------|
+| P0：恢复 A2 误删 wikilink | 手工还原 | 2 | 7 处 |
+| P1：表格 `\|` 转义（判定无需修复） | 无操作 | — | — |
+| P2：去除 `[[wiki/xxx]]` 路径前缀 | 脚本批量 | 8 | ~108 处 |
+| P3：`sources/` 路径不存在 → 纯文本 | 脚本批量 | 8 | 18 处 |
+| P4A：修复 scan_wikilinks.py A2 正则 | 修改脚本 | 1 | 正则精确化 |
+| P4B：新建 tools/wiki_lint.py | 新建工具 | 1 | 全量 lint 工具 |
+| P4C：健康检查清单新增 3D 节 | 编辑文档 | 1 | 自动扫描步骤 |
+
+**P2 涉及文件**：
+- `wiki/concepts/index.md`、`wiki/sources/index.md`、`wiki/entities/index.md`
+- `wiki/comparisons/index.md`、`wiki/queries/index.md`、`wiki/indexes/index.md`
+- `wiki/indexes/feature-engineering/特征工程总索引.md`
+- `wiki/indexes/feature-engineering/特征工程阅读地图.md`
+
+**P3 涉及文件**：
+- `wiki/concepts/llm-wiki/LLM辅助研究.md`
+- `wiki/sources/deep-learning/` 下 3 个专题来源文件
+- `wiki/sources/llm/数据科学工具与其他专题来源.md`
+- `wiki/sources/llm-wiki/LLM知识库构建专题来源.md`
+- `wiki/sources/nlp/NLP与词嵌入专题来源.md`
+
+**验证结果**：
+- `python3 tools/wiki_lint.py --report` → A 类真实断链 = **0 条** ✅
+- 扫描 1278 个文件，B 类内容缺口 612 条（正常），C 类跨层路径 773 条（不修复）
+- 报告写入：`outputs/logs/wiki-lint-report.md`
+
+**新工具**：
+- `tools/wiki_lint.py`：可复用 lint 工具，支持 `--report`（生成报告）和 `--fix`（清理占位符）两个模式

@@ -9,7 +9,7 @@ sources:
   - wiki/sources/llm/2026-04-06-The-Annotated-Transformer.md
   - wiki/sources/llm/2026-04-06-为什么主流LLM都用RoPE？.md
   - wiki/sources/llm/2024-09-27-2024-09-27-model-pretrain.md
-status: published
+status: linked
 ---
 
 # LLM 理论体系

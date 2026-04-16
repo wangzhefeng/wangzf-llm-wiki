@@ -1,6 +1,6 @@
 ---
 source_type: web
-source_path: raw/web/deep-learning/2026-04-06-google-researchtuning_playbook A playbook for systematically maximizing the performance of deep learning models.md
+source_path: raw/web/deep-learning-theory/2026-04-06-google-researchtuning_playbook-A-playbook-for-systematically-maximizing-the-performance-of-deep-learning-models.md
 title: 'google-research/tuning_playbook: A playbook for systematically maximizing the performance of deep learning models.'
 author: unknown
 published_at: 2026-04-06
@@ -15,8 +15,8 @@ status: summarized
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/web/deep-learning/2026-04-06-google-researchtuning_playbook-A-playbook-for-systematically-maximizing-the-performance-of-deep-learning-models.md]]
-- 来源：`raw/web/deep-learning/2026-04-06-google-researchtuning_playbook A playbook for systematically maximizing the performance of deep learning models.md`
+- 原文：[[raw/web/deep-learning-theory/2026-04-06-google-researchtuning_playbook-A-playbook-for-systematically-maximizing-the-performance-of-deep-learning-models.md]]
+- 来源：`raw/web/deep-learning-theory/2026-04-06-google-researchtuning_playbook-A-playbook-for-systematically-maximizing-the-performance-of-deep-learning-models.md`
 - 主题：深度学习
 
 ## 价值是什么

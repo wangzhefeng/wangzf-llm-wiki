@@ -17,7 +17,7 @@ status: summarized
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/notes/timeseries-analysis/timeseries-libs/2024-04-12-timeseries-lib-tsmoothie/index.md]]
+- 原文：[[raw/notes/timeseries-analysis/2024-04-12-timeseries-lib-tsmoothie/index.md]]
 TSmoothie 是一个专注于时间序列平滑和异常检测的 Python 库，覆盖：
 
 1. **平滑方法**：指数平滑、移动平均、Savitzky-Golay 等

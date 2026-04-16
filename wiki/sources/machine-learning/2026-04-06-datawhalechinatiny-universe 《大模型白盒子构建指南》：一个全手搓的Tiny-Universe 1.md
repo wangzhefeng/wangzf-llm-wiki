@@ -1,6 +1,6 @@
 ---
 source_type: web
-source_path: raw/web/llm-pre-training/2026-04-06-datawhalechinatiny-universe 《大模型白盒子构建指南》：一个全手搓的Tiny-Universe.md
+source_path: raw/web/deep-learning-theory/2026-04-06-datawhalechinatiny-universe-《大模型白盒子构建指南》：一个全手搓的Tiny-Universe.md
 title: 'datawhalechina/tiny-universe: 《大模型白盒子构建指南》：一个全手搓的Tiny-Universe'
 author: unknown
 published_at: 2026-04-06
@@ -16,7 +16,7 @@ status: summarized
 ## 这份材料讲了什么
 
 - 原文：`raw/web/uncategorized/2026-04-06-datawhalechinatiny-universe 《大模型白盒子构建指南》：一个全手搓的Tiny-Universe 1`
-- 来源：`raw/web/llm-pre-training/2026-04-06-datawhalechinatiny-universe 《大模型白盒子构建指南》：一个全手搓的Tiny-Universe.md`
+- 来源：`raw/web/deep-learning-theory/2026-04-06-datawhalechinatiny-universe-《大模型白盒子构建指南》：一个全手搓的Tiny-Universe.md`
 - 主题：机器学习
 
 ## 价值是什么

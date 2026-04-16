@@ -1,6 +1,6 @@
 ---
 source_type: web
-source_path: raw/web/llm-pre-training/2026-04-06-fastnlpfastHan fastHan是基于fastNLP与pytorch实现的中文自然语言处理工具，像spacy一样调用方便。.md
+source_path: raw/web/nlp/2026-04-06-fastnlpfastHan-fastHan是基于fastNLP与pytorch实现的中文自然语言处理工具，像spacy一样调用方便。.md
 title: 'fastnlp/fastHan: fastHan是基于fastNLP与pytorch实现的中文自然语言处理工具，像spacy一样调用方便。'
 author: unknown
 published_at: 2026-04-06
@@ -15,8 +15,8 @@ status: summarized
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/web/llm-pre-training/2026-04-06-fastnlpfastHan-fastHan是基于fastNLP与pytorch实现的中文自然语言处理工具，像spacy一样调用方便。.md]]
-- 来源：`raw/web/llm-pre-training/2026-04-06-fastnlpfastHan fastHan是基于fastNLP与pytorch实现的中文自然语言处理工具，像spacy一样调用方便。.md`
+- 原文：[[raw/web/nlp/2026-04-06-fastnlpfastHan-fastHan是基于fastNLP与pytorch实现的中文自然语言处理工具，像spacy一样调用方便。.md]]
+- 来源：`raw/web/nlp/2026-04-06-fastnlpfastHan-fastHan是基于fastNLP与pytorch实现的中文自然语言处理工具，像spacy一样调用方便。.md`
 - 主题：深度学习
 
 ## 价值是什么

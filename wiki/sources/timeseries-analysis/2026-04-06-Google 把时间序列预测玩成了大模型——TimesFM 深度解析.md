@@ -15,7 +15,7 @@ status: summarized
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/web/llm-pre-training/2026-04-06-Google-把时间序列预测玩成了大模型——TimesFM-深度解析.md]]
+- 原文：[[raw/web/timeseries-analysis/2026-04-06-Google-把时间序列预测玩成了大模型——TimesFM-深度解析.md]]
 - 来源：`raw/web/llm-pre-training/2026-04-06-Google 把时间序列预测玩成了大模型——TimesFM 深度解析.md`
 - 主题：时间序列
 

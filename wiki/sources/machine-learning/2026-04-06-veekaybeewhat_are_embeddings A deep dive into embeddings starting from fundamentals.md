@@ -3,14 +3,14 @@ created_at: 2026-04-11
 topics:
 - machine-learning
 status: inbox
-source_path: raw/web/machine-learning/2026-04-06-veekaybeewhat_are_embeddings A deep dive into embeddings starting from fundamentals.md
+source_path: raw/web/machine-learning-theory/2026-04-06-veekaybeewhat_are_embeddings-A-deep-dive-into-embeddings-starting-from-fundamentals.md
 ---
 # 来源卡：2026-04-06-veekaybeewhat_are_embeddings A deep dive into embeddings starting from fundamentals
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/web/machine-learning/2026-04-06-veekaybeewhat_are_embeddings-A-deep-dive-into-embeddings-starting-from-fundamentals.md]]
-- 来源路径：`raw/web/machine-learning/2026-04-06-veekaybeewhat_are_embeddings A deep dive into embeddings starting from fundamentals.md`
+- 原文：[[raw/web/machine-learning-theory/2026-04-06-veekaybeewhat_are_embeddings-A-deep-dive-into-embeddings-starting-from-fundamentals.md]]
+- 来源路径：`raw/web/machine-learning-theory/2026-04-06-veekaybeewhat_are_embeddings-A-deep-dive-into-embeddings-starting-from-fundamentals.md`
 
 ## 价值是什么
 

@@ -177,9 +177,9 @@ A/B 测试的事后分析
 
 ## 参考与链接
 
-- [[Rubin Causal Model]] — RCM 理论基础
-- [[DoWhy Framework]] — IPW 在 DoWhy 中的实现
-- [[Causal Diagram]] — 识别混杂因子
+- [[Rubin-Causal-Model]] — RCM 理论基础
+- [[DoWhy-Framework]] — IPW 在 DoWhy 中的实现
+- [[Causal-Diagram]] — 识别混杂因子
 - [[2023-07-09-Yule-Simpson悖论与因果推断基础]] — 可忽略性来源
 - [[2023-07-12-因果分析概念与方法论]] — 应用实例
 - [[2023-07-15-DoWhy框架与工作流]] — 实现方法

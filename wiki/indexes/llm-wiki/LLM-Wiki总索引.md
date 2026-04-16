@@ -14,7 +14,7 @@ status: linked
 
 ## 标准入口
 
-- [[LLM-Wiki总索引]]
+- LLM-Wiki总索引
 - [[LLM-Wiki阅读地图]]
 - [[LLM-Wiki来源清单]]
 

@@ -1,5 +1,5 @@
 ---
-source_type: local_note
+source_type: notes
 created_at: 2025-06-18
 status: summarized
 related_concepts:

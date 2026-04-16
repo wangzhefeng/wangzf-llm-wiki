@@ -4,7 +4,7 @@ created_at: 2026-04-09
 published_at: 2026-04-06
 related_concepts:
 - 知识库来源与专题摄取索引
-source_path: raw/web/deep-learning/2026-04-06-torchrun (Elastic Launch).md
+source_path: raw/web/llm-post-training/2026-04-06-torchrun-(Elastic-Launch).md
 source_type: web
 status: summarized
 title: torchrun (Elastic Launch)
@@ -17,7 +17,7 @@ topics:
 ## 这份材料讲了什么
 
 - 原文：[[raw/web/deep-learning/2026-04-06-torchrun-(Elastic-Launch).md]]
-- 来源：`raw/web/deep-learning/2026-04-06-torchrun (Elastic Launch).md`
+- 来源：`raw/web/llm-post-training/2026-04-06-torchrun-(Elastic-Launch).md`
 - 主题：待分类
 
 ## 价值是什么

@@ -1,3 +1,10 @@
+---
+created_at: 2026-04-16
+topics:
+  - 知识库输出
+status: linked
+---
+
 # logs
 
 `outputs/logs/` 用来保存知识库的时间导航记录。

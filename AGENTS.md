@@ -45,7 +45,7 @@
 - `repo`
 - `dataset`
 - `image`
-- `local_note`
+- `notes`
 
 对应目录优先使用：
 

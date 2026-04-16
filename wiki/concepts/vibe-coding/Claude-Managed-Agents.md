@@ -44,4 +44,4 @@ Claude Managed Agents 是 Anthropic 于 2026 年 4 月发布的官方 Harness �
 - [[Harness工程]]：Claude Managed Agents 的底层理念
 - [[Agent智能体]]：运行在 Managed Agents 上的执行主体
 - [[2026-04-09-vibe-coding-skills]]：Managed Agents 中 Skills 的渐进式展开机制
-- [[Vibe-Coding总索引]]
+- Vibe-Coding总索引

@@ -3,14 +3,14 @@ created_at: 2026-04-11
 topics:
 - machine-learning
 status: inbox
-source_path: raw/web/machine-learning/2026-04-06-Clustering comparison  Cartography Playground.md
+source_path: raw/web/machine-learning-unsupervised-model/2026-04-06-Clustering-comparison-Cartography-Playground.md
 ---
 # 来源卡：2026-04-06-Clustering comparison  Cartography Playground
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/web/machine-learning/2026-04-06-Clustering-comparison-Cartography-Playground.md]]
-- 来源路径：`raw/web/machine-learning/2026-04-06-Clustering comparison  Cartography Playground.md`
+- 原文：[[raw/web/machine-learning-unsupervised-model/2026-04-06-Clustering-comparison-Cartography-Playground.md]]
+- 来源路径：`raw/web/machine-learning-unsupervised-model/2026-04-06-Clustering-comparison-Cartography-Playground.md`
 
 ## 价值是什么
 

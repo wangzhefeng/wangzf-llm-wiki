@@ -24,7 +24,7 @@ status: linked
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/notes/data-analysis/statistics/2023-07-20-statistics-probability/index.md]]
+- 原文：[[raw/notes/statistics-theory/2023-07-20-statistics-probability/index.md]]
 ---
 
 ## 价值是什么

@@ -1,6 +1,6 @@
 ---
 source_type: web
-source_path: raw/web/operations-research/2026-04-06-AlphaOPT：用大模型为优化建模构建可进化的"经验知识库".md
+source_path: raw/web/operations-research/2026-04-06-AlphaOPT：用大模型为优化建模构建可进化的“经验知识库”.md
 created_at: 2026-04-06
 topics:
   - operations-research

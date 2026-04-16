@@ -150,9 +150,9 @@ $Z$ 不直接影响 $Y$，只通过 $X$ 影响，可作为工具变量
 
 ## 参考与链接
 
-- [[Rubin Causal Model]] — 潜在结果框架
+- [[Rubin-Causal-Model]] — 潜在结果框架
 - [[Back-door Criterion]] — 识别准则
-- [[DoWhy Framework]] — 因果图的实现工具
+- [[DoWhy-Framework]] — 因果图的实现工具
 - [[2023-07-09-Yule-Simpson悖论与因果推断基础]] — 理论基础来源
 - [[2023-07-25-因果推断理论框架]] — 完整框架来源
 

@@ -17,8 +17,8 @@ status: summarized
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/notes/nlp/nlp-libs/2022-04-05-nlp-opencc/index.md]]
-- 来源：`raw/notes/nlp/nlp-libs/2022-04-05-nlp-opencc/index.md`
+- 原文：[[raw/notes/nlp/2022-04-05-nlp-opencc/index.md]]
+- 来源：`raw/notes/nlp/2022-04-05-nlp-opencc/index.md`
 - 主题：NLP 本地知识笔记
 
 ## 价值是什么

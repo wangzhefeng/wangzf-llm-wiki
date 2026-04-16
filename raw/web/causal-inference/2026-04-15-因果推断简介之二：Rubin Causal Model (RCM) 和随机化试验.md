@@ -1,12 +1,14 @@
 ---
-source_type:
+source_type: web
 source: "https://mp.weixin.qq.com/s?__biz=MjM5NDQ3NTkwMA==&mid=2650144668&idx=1&sn=570baaf9b7e2dff3fc8c8eeee16df39d&chksm=be86658f89f1ec99a118be4c5bb687789500a60069a96612f84cde36d5b281173fc35e49bd72&scene=178&cur_album_id=2515660787328253953&search_click_id=#rd"
 title: "因果推断简介之二：Rubin Causal Model (RCM) 和随机化试验"
 author:
   - "[[丁鹏]]"
 published_at:
-created_at: "2026-04-15T16:35:01+08:00"
-topics: "因果推断用的最多的模型是 Rubin Causal Model (RCM; Rubin 1978) 和 Causal Diagram (Pearl 1995)。就应用来看，RCM 更加精确。这部分主要讲 RCM。"
+created_at: 2026-04-15
+topics:
+  - causal-inference
+  - causal-inference
 tags:
   - "clippings"
 related_concepts:

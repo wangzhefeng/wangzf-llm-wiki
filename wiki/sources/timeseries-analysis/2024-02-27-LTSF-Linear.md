@@ -13,7 +13,7 @@ status: summarized
 # LTSF-Linear 来源摘要
 
 
-- 原文：[[raw/notes/timeseries-analysis/timeseries-time-domain/timeseries-deeplearning/2024-02-27-paper-ts-ltsf-linear/index.md]]
+- 原文：[[raw/notes/timeseries-analysis/2024-02-27-paper-ts-ltsf-linear/index.md]]
 ## 材料定位
 
 这篇论文解读文档围绕 论文简介、历史研究和瓶颈、论文贡献 展开，记录了 LTSF-Linear 的问题背景、模型设计和实验信息。

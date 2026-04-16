@@ -1,12 +1,14 @@
 ---
-source_type:
+source_type: web
 source: "https://mp.weixin.qq.com/s?__biz=MjM5NDQ3NTkwMA==&mid=2650144615&idx=1&sn=ecf6b8e67af3b7cf615c867e187b797d&chksm=be86657489f1ec627929fd7997a5448bcfba9a4679b47ca18bf0572292c3e207bc066684a081&scene=178&cur_album_id=2515660787328253953&search_click_id=#rd"
 title: "因果推断简介之一：从 Yule-Simpson’s Paradox 讲起"
 author:
   - "[[丁鹏]]"
 published_at:
-created_at: "2026-04-15T16:34:11+08:00"
-topics: "在国内的时候，向别人介绍自己是研究因果推断（causal inference）的，多半的反应是：什么？统计还能研究因果？这确实是一个问题：统计研究因果，能，还是不能？"
+created_at: 2026-04-15
+topics:
+  - causal-inference
+  - causal-inference
 tags:
   - "clippings"
 related_concepts:

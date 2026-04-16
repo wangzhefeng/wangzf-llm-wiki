@@ -69,7 +69,7 @@ prompts/      可复用提示词模板
 
 ```yaml
 ---
-source_type: web | paper | repo | dataset | image | local_note
+source_type: web | paper | repo | dataset | image | notes
 created_at: YYYY-MM-DD
 topics:
   - topic-a          # 1-3 个

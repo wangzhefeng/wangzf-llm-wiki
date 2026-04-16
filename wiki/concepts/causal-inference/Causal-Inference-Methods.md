@@ -271,10 +271,10 @@ $$\text{DML ATE} = \frac{1}{n}\sum_i \frac{(Z_i - \hat{e}(X_i))(Y_i - \hat{m}(X_
 
 ## 参考与链接
 
-- [[Propensity Score]] — PSM 详解
-- [[DoWhy Framework]] — 方法实现工具
-- [[Rubin Causal Model]] — 理论基础
-- [[Causal Diagram]] — 识别混杂因子
+- [[Propensity-Score]] — PSM 详解
+- [[DoWhy-Framework]] — 方法实现工具
+- [[Rubin-Causal-Model]] — 理论基础
+- [[Causal-Diagram]] — 识别混杂因子
 - [[2023-07-25-因果推断理论框架]] — 完整理论
 - [[2023-07-12-因果分析概念与方法论]] — 应用场景
 

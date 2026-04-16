@@ -16,8 +16,8 @@ status: summarized
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/web/machine-learning/2026-04-06-MultiOutputRegressor.md]]
-- 来源：`raw/web/machine-learning/2026-04-06-MultiOutputRegressor.md`
+- 原文：[[raw/web/machine-learning-theory/2026-04-06-MultiOutputRegressor.md]]
+- 来源：`raw/web/machine-learning-theory/2026-04-06-MultiOutputRegressor.md`
 - 主题：运筹优化
 
 ## 价值是什么

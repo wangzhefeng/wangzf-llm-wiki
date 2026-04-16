@@ -3,14 +3,14 @@ created_at: 2026-04-11
 topics:
 - deep-learning
 status: inbox
-source_path: raw/web/deep-learning/2026-04-06-The Annotated Transformer.md
+source_path: raw/web/llm-theory/2026-04-06-The-Annotated-Transformer.md
 ---
 # 来源卡：2026-04-06-The Annotated Transformer
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/web/deep-learning/2026-04-06-The-Annotated-Transformer.md]]
-- 来源路径：`raw/web/deep-learning/2026-04-06-The Annotated Transformer.md`
+- 原文：[[raw/web/llm-theory/2026-04-06-The-Annotated-Transformer.md]]
+- 来源路径：`raw/web/llm-theory/2026-04-06-The-Annotated-Transformer.md`
 
 ## 价值是什么
 

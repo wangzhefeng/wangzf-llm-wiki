@@ -33,7 +33,7 @@ Vibe Coding 的生产化阶段依赖 Harness 工程体系：
 
 ## 相关概念
 
-- [[Vibe-Coding总索引]]
+- Vibe-Coding总索引
 - [[Vibe-Coding工作流]]
 - [[Harness工程]]
 - [[Claude-Managed-Agents]]

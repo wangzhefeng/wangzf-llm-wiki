@@ -67,9 +67,9 @@ $$\text{LayerNorm}(x + \text{Sublayer}(x))$$
 ## 相关来源
 
 - [[大语言模型专题来源]]
-- [[2026-04-06-译 Transformer 是如何工作的：600 行 Python 代码实现 self-attention 和两类 Transformer（2019）]]
-- [[2026-04-06-The Big LLM Architecture Comparison]]
-- [[2026-04-06-Articles (cn-zh)]]
+- [[2026-04-06-译-Transformer-是如何工作的：600-行-Python-代码实现-self-attention-和两类-Transformer（2019）]]
+- [[2026-04-06-The-Big-LLM-Architecture-Comparison]]
+- [[2026-04-06-Articles-(cn-zh)]]
 
 ## 相关概念
 

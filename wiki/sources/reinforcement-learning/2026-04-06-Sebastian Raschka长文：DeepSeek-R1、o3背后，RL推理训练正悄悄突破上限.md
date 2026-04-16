@@ -1,6 +1,6 @@
 ---
 source_type: web
-source_path: raw/web/reinforcement-learning/2026-04-06-Sebastian Raschka长文：DeepSeek-R1、o3背后，RL推理训练正悄悄突破上限.md
+source_path: raw/web/llm-post-training/2026-04-06-Sebastian-Raschka长文：DeepSeek-R1、o3背后，RL推理训练正悄悄突破上限.md
 title: Sebastian Raschka长文：DeepSeek-R1、o3背后，RL推理训练正悄悄突破上限
 author: unknown
 published_at: 2026-04-06
@@ -15,8 +15,8 @@ status: summarized
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/web/reinforcement-learning/2026-04-06-Sebastian-Raschka长文：DeepSeek-R1、o3背后，RL推理训练正悄悄突破上限.md]]
-- 来源：`raw/web/reinforcement-learning/2026-04-06-Sebastian Raschka长文：DeepSeek-R1、o3背后，RL推理训练正悄悄突破上限.md`
+- 原文：[[raw/web/llm-post-training/2026-04-06-Sebastian-Raschka长文：DeepSeek-R1、o3背后，RL推理训练正悄悄突破上限.md]]
+- 来源：`raw/web/llm-post-training/2026-04-06-Sebastian-Raschka长文：DeepSeek-R1、o3背后，RL推理训练正悄悄突破上限.md`
 - 主题：强化学习
 
 ## 价值是什么

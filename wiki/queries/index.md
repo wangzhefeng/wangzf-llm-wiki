@@ -37,8 +37,8 @@ status: linked
 
 ## 已沉淀问题
 
-- [[wiki/queries/机器学习时间序列预测-知识空白分析]]
-- [[wiki/queries/运筹优化算法-知识空白分析]]
+- [[queries/机器学习时间序列预测-知识空白分析]]
+- [[queries/运筹优化算法-知识空白分析]]
 
 ## 候选迁移
 
@@ -47,5 +47,5 @@ status: linked
 
 ## 关联入口
 
-- 总入口：[[wiki/index]]
-- 规则约束：[[wiki/schema]]
+- 总入口：[[index]]
+- 规则约束：[[schema]]

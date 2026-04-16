@@ -3,14 +3,14 @@ created_at: 2026-04-11
 topics:
 - deep-learning
 status: inbox
-source_path: raw/web/deep-learning/2026-04-11-7  Momentum and Adaptive Methods – S&DS 431631 — Optimization and Computation.md
+source_path: raw/web/operations-research/2026-04-11-7-Momentum-and-Adaptive-Methods-–-S&DS-431631-—-Optimization-and-Computation.md
 ---
 # 来源卡：2026-04-11-7  Momentum and Adaptive Methods – S&DS 431631 — Optimization and Computation
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/web/deep-learning/2026-04-11-7-Momentum-and-Adaptive-Methods-–-S&DS-431631-—-Optimization-and-Computation.md]]
-- 来源路径：`raw/web/deep-learning/2026-04-11-7  Momentum and Adaptive Methods – S&DS 431631 — Optimization and Computation.md`
+- 原文：[[raw/web/operations-research/2026-04-11-7-Momentum-and-Adaptive-Methods-–-S&DS-431631-—-Optimization-and-Computation.md]]
+- 来源路径：`raw/web/operations-research/2026-04-11-7-Momentum-and-Adaptive-Methods-–-S&DS-431631-—-Optimization-and-Computation.md`
 
 ## 价值是什么
 

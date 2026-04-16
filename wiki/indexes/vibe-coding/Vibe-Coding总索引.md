@@ -16,7 +16,7 @@ status: linked
 
 ## 标准入口
 
-- [[Vibe-Coding总索引]]
+- Vibe-Coding总索引
 - [[Vibe-Coding阅读地图]]
 - [[Vibe-Coding来源清单]]
 
@@ -37,7 +37,7 @@ status: linked
 
 - [[2026-04-06-datawhalechinaeasy-vibe 💻 vibe coding 2026  Your first modern programming course for beginners to master step by step]]
 - [[raw/web/vibe-coding/2026-04-06-GitHub---datawhalechinaeasy-vibe-💻-vibe-coding-2026--Your-first-modern-programmi]]
-- [[Vibe Coding来源清单]]
+- [[Vibe-Coding来源清单]]
 - [[2026-04-06-从零搓出一个Claude Code，一篇超详细的总结！]]
 
 ## 子主题结构（本地资料）
@@ -68,6 +68,6 @@ status: linked
 
 ## 方法入口
 
-- [[大语言模型总索引]]
+- 大语言模型总索引
 - [[知识库任务与输出工作流索引]]
 - [[知识库问答与研究工作流]]

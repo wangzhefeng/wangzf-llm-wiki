@@ -1,11 +1,13 @@
 ---
-source_type:
+source_type: web
 source: "https://github.com/xieliaing/CausalInferenceIntro"
 title: "xieliaing/CausalInferenceIntro: Causal Inference for the Brave and True的中文翻译版。全部代码基于Python，适用于计量经济学、量化社会学、策略评估等领域。英文版原作者：Matheus Facure"
 author:
 published_at:
-created_at: "2026-04-15T16:51:19+08:00"
-topics: "Causal Inference for the Brave and True的中文翻译版。全部代码基于Python，适用于计量经济学、量化社会学、策略评估等领域。英文版原作者：Matheus Facure - xieliaing/CausalInferenceIntro"
+created_at: 2026-04-15
+topics:
+  - causal-inference
+  - causal-inference
 tags:
   - "clippings"
 related_concepts:

@@ -7,7 +7,7 @@ topics:
 related_concepts:
   - 知识库工作台
   - Codex 工作流
-status: active
+status: linked
 ---
 
 # LLM wiki 供 AI 和用户使用的方式、方法、流程总结

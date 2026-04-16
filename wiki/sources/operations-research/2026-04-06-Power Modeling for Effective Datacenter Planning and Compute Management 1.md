@@ -17,7 +17,7 @@ topics:
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/web/machine-learning/2026-04-06-Power-Modeling-for-Effective-Datacenter-Planning-and-Compute-Management-1.md]]
+- 原文：[[raw/web/machine-learning-theory/2026-04-06-Power-Modeling-for-Effective-Datacenter-Planning-and-Compute-Management-1.md]]
 - 来源：`raw/web/machine-learning/2026-04-06-Power Modeling for Effective Datacenter Planning and Compute Management 1.md`
 - 主题：待分类
 

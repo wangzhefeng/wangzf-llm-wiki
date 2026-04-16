@@ -1,6 +1,6 @@
 ---
 source_type: web
-source_path: raw/web/deep-learning/2026-04-06-HarisIqbal88PlotNeuralNet Latex code for making neural networks diagrams.md
+source_path: raw/web/deep-learning-theory/2026-04-06-HarisIqbal88PlotNeuralNet-Latex-code-for-making-neural-networks-diagrams.md
 title: 'HarisIqbal88/PlotNeuralNet: Latex code for making neural networks diagrams'
 author: unknown
 published_at: 2026-04-06
@@ -15,8 +15,8 @@ status: summarized
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/web/deep-learning/2026-04-06-HarisIqbal88PlotNeuralNet-Latex-code-for-making-neural-networks-diagrams.md]]
-- 来源：`raw/web/deep-learning/2026-04-06-HarisIqbal88PlotNeuralNet Latex code for making neural networks diagrams.md`
+- 原文：[[raw/web/deep-learning-theory/2026-04-06-HarisIqbal88PlotNeuralNet-Latex-code-for-making-neural-networks-diagrams.md]]
+- 来源：`raw/web/deep-learning-theory/2026-04-06-HarisIqbal88PlotNeuralNet-Latex-code-for-making-neural-networks-diagrams.md`
 - 主题：深度学习
 
 ## 价值是什么

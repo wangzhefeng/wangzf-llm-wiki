@@ -40,7 +40,7 @@ Andrej Karpathy 提出的方法：
 
 - [[LLM知识库构建专题来源]]
 - [[2026-04-05-Karpathy最新硬核分享：用大模型和Obsidian打造个人本地知识库]]
-- [[sources/llm/2026-04-05-LLM wiki：karpathy 公开构建个人本地知识库详细方法「超强提示词」]]
+- 2026-04-05-LLM wiki：karpathy 公开构建个人本地知识库详细方法「超强提示词」
 
 ## 相关概念
 

@@ -26,7 +26,7 @@ Vibe Coding 工作流强调与 AI Agent 的自然协作、工具调用、RAG 与
 
 ## 相关资源
 
-- [[Vibe-Coding总索引]]
+- Vibe-Coding总索引
 - [[Vibe-Coding来源清单]]
 - [[Vibe-Coding阅读地图]]
 

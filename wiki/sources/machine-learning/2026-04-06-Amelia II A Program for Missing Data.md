@@ -1,6 +1,6 @@
 ---
 source_type: web
-source_path: raw/web/timeseries/2026-04-06-Amelia II A Program for Missing Data.md
+source_path: raw/web/timeseries-analysis/2026-04-06-Amelia II A Program for Missing Data.md
 title: 'Amelia II: A Program for Missing Data'
 author: unknown
 published_at: 2026-04-06
@@ -15,8 +15,8 @@ status: summarized
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/web/timeseries/2026-04-06-Amelia-II-A-Program-for-Missing-Data.md]]
-- 来源：`raw/web/timeseries/2026-04-06-Amelia II A Program for Missing Data.md`
+- 原文：[[raw/web/timeseries-analysis/2026-04-06-Amelia II A Program for Missing Data.md]]
+- 来源：`raw/web/timeseries-analysis/2026-04-06-Amelia II A Program for Missing Data.md`
 - 主题：机器学习
 
 ## 价值是什么

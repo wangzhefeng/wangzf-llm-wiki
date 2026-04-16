@@ -177,9 +177,9 @@ $$0 < P(Z=1|X) < 1 \quad \forall X$$
 
 ## 参考与链接
 
-- [[Causal Diagram]] — Pearl 因果图框架
-- [[Propensity Score]] — 在观察性研究中应用 RCM
-- [[DoWhy Framework]] — RCM + 因果图的统一实现
+- [[Causal-Diagram]] — Pearl 因果图框架
+- [[Propensity-Score]] — 在观察性研究中应用 RCM
+- [[DoWhy-Framework]] — RCM + 因果图的统一实现
 - [[2023-07-09-Yule-Simpson悖论与因果推断基础]] — 理论基础来源
 
 **相关概念**：潜在结果、个体因果作用、可忽略性、SUTVA、重叠、反事实推理

@@ -16,8 +16,8 @@ status: summarized
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/notes/timeseries-analysis/timeseries-time-domain/timeseries-deeplearning/2026-01-18-tsf-dl-stages/index.md]]
-- 来源：`raw/notes/timeseries-analysis/timeseries-time-domain/timeseries-deeplearning/2026-01-18-tsf-dl-stages/index.md`
+- 原文：[[raw/notes/timeseries-analysis/2026-01-18-tsf-dl-stages/index.md]]
+- 来源：`raw/notes/timeseries-analysis/2026-01-18-tsf-dl-stages/index.md`
 - 归属主题：时间序列
 
 ## 价值是什么

@@ -1,12 +1,14 @@
 ---
-source_type:
+source_type: web
 source: "https://arxiv.org/abs/2305.18793"
 title: "A First Course in Causal Inference"
 author:
   - "[[Peng Ding]]"
 published_at:
-created_at: "2026-04-15T16:43:13+08:00"
-topics: "Abstract page for arXiv paper 2305.18793: A First Course in Causal Inference"
+created_at: 2026-04-15
+topics:
+  - causal-inference
+  - causal-inference
 tags:
   - "clippings"
 related_concepts:

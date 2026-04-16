@@ -1,7 +1,7 @@
 ---
 source_type: repo
 source_url: https://github.com/vercel-labs/agent-browser
-source_path: raw/web/vibe-coding/2026-04-05-vercel-labsagent-browser Browser automation CLI for AI agents.md
+source_path: raw/web/vibe-coding/2026-04-05-vercel-labsagent-browser-Browser-automation-CLI-for-AI-agents.md
 created_at: 2026-04-05
 topics:
 - llm-wiki

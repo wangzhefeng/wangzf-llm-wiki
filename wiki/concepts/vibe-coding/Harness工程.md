@@ -40,4 +40,4 @@ Harness 工程是为 AI 模型搭建"工作环境"的工程学科，核心公式
 - [[Claude-Managed-Agents]]：Anthropic 将 Harness 工程产品化的实现
 - [[浏览器自动化工具]]：Harness 工具层的 Web 交互组件
 - [[Agent智能体]]：Harness 承载的运行主体
-- [[Vibe-Coding总索引]]
+- Vibe-Coding总索引

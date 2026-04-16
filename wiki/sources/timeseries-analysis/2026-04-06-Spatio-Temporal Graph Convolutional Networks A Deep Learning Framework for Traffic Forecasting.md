@@ -15,7 +15,7 @@ status: summarized
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/web/deep-learning/2026-04-06-Spatio-Temporal-Graph-Convolutional-Networks-A-Deep-Learning-Framework-for-Traffic-Forecasting.md]]
+- 原文：[[raw/web/timeseries-analysis/2026-04-06-Spatio-Temporal-Graph-Convolutional-Networks-A-Deep-Learning-Framework-for-Traffic-Forecasting.md]]
 - 来源：`raw/web/deep-learning/2026-04-06-Spatio-Temporal Graph Convolutional Networks A Deep Learning Framework for Traffic Forecasting.md`
 - 主题：时间序列
 

@@ -18,8 +18,8 @@ status: summarized
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/notes/llm/nlp-tasks/2022-07-15-nlp-tagging/index.md]]
-- 来源：`raw/notes/llm/nlp-tasks/2022-07-15-nlp-tagging/index.md`
+- 原文：[[raw/notes/nlp/2022-07-15-nlp-tagging/index.md]]
+- 来源：`raw/notes/nlp/2022-07-15-nlp-tagging/index.md`
 - 主题：LLM 本地知识笔记
 
 ## 价值是什么

@@ -3,14 +3,14 @@ created_at: 2026-04-11
 topics:
 - deep-learning
 status: inbox
-source_path: raw/web/deep-learning/2026-04-06-kashifpytorch-transformer-ts Repository of Transformer based PyTorch Time Series Models.md
+source_path: raw/web/timeseries-analysis/2026-04-06-kashifpytorch-transformer-ts-Repository-of-Transformer-based-PyTorch-Time-Series-Models.md
 ---
 # 来源卡：2026-04-06-kashifpytorch-transformer-ts Repository of Transformer based PyTorch Time Series Models
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/web/deep-learning/2026-04-06-kashifpytorch-transformer-ts-Repository-of-Transformer-based-PyTorch-Time-Series-Models.md]]
-- 来源路径：`raw/web/deep-learning/2026-04-06-kashifpytorch-transformer-ts Repository of Transformer based PyTorch Time Series Models.md`
+- 原文：[[raw/web/timeseries-analysis/2026-04-06-kashifpytorch-transformer-ts-Repository-of-Transformer-based-PyTorch-Time-Series-Models.md]]
+- 来源路径：`raw/web/timeseries-analysis/2026-04-06-kashifpytorch-transformer-ts-Repository-of-Transformer-based-PyTorch-Time-Series-Models.md`
 
 ## 价值是什么
 

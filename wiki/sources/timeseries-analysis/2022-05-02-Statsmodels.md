@@ -13,7 +13,7 @@ status: summarized
 # Statsmodels 来源摘要
 
 
-- 原文：[[raw/notes/timeseries-analysis/timeseries-libs/2022-05-02-timeseries-lib-statsmodels/index.md]]
+- 原文：[[raw/notes/timeseries-analysis/2022-05-02-timeseries-lib-statsmodels/index.md]]
 ## 材料定位
 
 这是一篇围绕 Statsmodels 安装、使用、回归模型和时间序列分析模块的工具文档，是 Python 统计预测生态中的基础入口。

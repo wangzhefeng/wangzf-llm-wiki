@@ -3,14 +3,14 @@ created_at: 2026-04-11
 topics:
 - machine-learning
 status: inbox
-source_path: raw/web/nlp/2026-04-06-What are embeddings.md
+source_path: raw/web/llm-theory/2026-04-06-What-are-embeddings.md
 ---
 # 来源卡：2026-04-06-What are embeddings
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/web/nlp/2026-04-06-What-are-embeddings.md]]
-- 来源路径：`raw/web/nlp/2026-04-06-What are embeddings.md`
+- 原文：[[raw/web/llm-theory/2026-04-06-What-are-embeddings.md]]
+- 来源路径：`raw/web/llm-theory/2026-04-06-What-are-embeddings.md`
 
 ## 价值是什么
 

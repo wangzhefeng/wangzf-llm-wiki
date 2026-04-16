@@ -40,7 +40,7 @@ sources:
 
 ## 概念链接
 
-[[Rubin Causal Model]] | [[Yule-Simpson Paradox]] | [[Ignorability]] | [[Causal Diagram]] | [[Fisher Randomization Test]]
+[[Rubin-Causal-Model]] | [[Yule-Simpson Paradox]] | [[Ignorability]] | [[Causal-Diagram]] | [[Fisher Randomization Test]]
 
 ## 原文位置
 

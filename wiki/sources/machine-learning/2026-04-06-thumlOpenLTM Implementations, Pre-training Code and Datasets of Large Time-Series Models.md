@@ -18,7 +18,7 @@ topics:
 
 ## 这份材料讲了什么
 
-- 原文：[[raw/web/timeseries/2026-04-06-thumlOpenLTM-Implementations,-Pre-training-Code-and-Datasets-of-Large-Time-Series-Models.md]]
+- 原文：[[raw/web/timeseries-analysis/2026-04-06-thumlOpenLTM-Implementations,-Pre-training-Code-and-Datasets-of-Large-Time-Series-Models.md]]
 - 来源：`raw/web/timeseries/2026-04-06-thumlOpenLTM Implementations, Pre-training Code and Datasets of Large Time-Series Models.md`
 - 主题：待分类
 

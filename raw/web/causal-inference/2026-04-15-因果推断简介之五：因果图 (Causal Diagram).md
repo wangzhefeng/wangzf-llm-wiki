@@ -1,11 +1,13 @@
 ---
-source_type:
+source_type: web
 source: "https://mp.weixin.qq.com/s?__biz=MjM5NDQ3NTkwMA==&mid=2650144874&idx=1&sn=16ca24b3e6b510394067b074831c4ab6&chksm=be859a7989f2136f73d29aebd0f80dd4fe8586cd61c537c0bbec3a7231589e162b74ee862428&scene=178&cur_album_id=2515660787328253953&search_click_id=#rd"
 title: "因果推断简介之五：因果图 (Causal Diagram)"
 author:
 published_at:
-created_at: "2026-04-15T16:35:48+08:00"
-topics: "这部分介绍 Judea Pearl 于 1995 年发表在 Biometrika 上的工作 “Causal diagrams for empirical research”."
+created_at: 2026-04-15
+topics:
+  - causal-inference
+  - causal-inference
 tags:
   - "clippings"
 related_concepts:

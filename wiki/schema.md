@@ -46,7 +46,7 @@ status: linked
 
 ```yaml
 ---
-source_type: web | paper | repo | dataset | image | local_note
+source_type: web | paper | repo | dataset | image | notes
 created_at: YYYY-MM-DD
 topics:
   - topic-a

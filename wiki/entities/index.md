@@ -38,10 +38,10 @@ status: linked
 
 ## 当前实体入口
 
-- 人物：[[wiki/entities/Sebastian Raschka]]、[[wiki/entities/Jason Brownlee]]
-- 组织/社区：[[wiki/entities/Datawhale]]、[[wiki/entities/PyTorch Contributors]]、[[wiki/entities/时序之心]]
+- 人物：[[entities/Sebastian Raschka]]、[[entities/Jason Brownlee]]
+- 组织/社区：[[entities/Datawhale]]、[[entities/PyTorch Contributors]]、[[entities/时序之心]]
 
 ## 关联入口
 
-- 总入口：[[wiki/index]]
-- 规则约束：[[wiki/schema]]
+- 总入口：[[index]]
+- 规则约束：[[schema]]

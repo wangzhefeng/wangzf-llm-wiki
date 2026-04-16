@@ -3,14 +3,14 @@ created_at: 2026-04-11
 topics:
 - deep-learning
 status: inbox
-source_path: raw/web/deep-learning/2026-04-06-explosionspaCy 💫 Industrial-strength Natural Language Processing (NLP) in Python.md
+source_path: raw/web/nlp/2026-04-06-explosionspaCy-💫-Industrial-strength-Natural-Language-Processing-(NLP)-in-Python.md
 ---
 # 来源卡：2026-04-06-explosionspaCy 💫 Industrial-strength Natural Language Processing (NLP) in Python
 
 ## 这份材料讲了什么
 
 - 原文：[[raw/web/deep-learning/2026-04-06-explosionspaCy-💫-Industrial-strength-Natural-Language-Processing-(NLP)-in-Python.md]]
-- 来源路径：`raw/web/deep-learning/2026-04-06-explosionspaCy 💫 Industrial-strength Natural Language Processing (NLP) in Python.md`
+- 来源路径：`raw/web/nlp/2026-04-06-explosionspaCy-💫-Industrial-strength-Natural-Language-Processing-(NLP)-in-Python.md`
 
 ## 价值是什么
 
