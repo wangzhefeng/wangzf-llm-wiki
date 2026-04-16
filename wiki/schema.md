@@ -100,7 +100,9 @@ sources:
 - 页面互链优先使用 `[[wikilinks]]`。
 - 原始层文件不做语义改写，修正写入 `wiki/` 层。
 - 每次关键操作（ingest/query/lint/backfill）追加到 `wiki/log.md`。
-- 不再单独维护“知识库Schema设计”页面；规则统一在本页维护。
+- 不再单独维护”知识库Schema设计”页面；规则统一在本页维护。
+
+**特别说明**：`wiki/concepts` 层有专独立规则文档 [[CONCEPTS-RULES.md]]，规定了阶段设计、粗细粒度划分、交叉链接维护等规则。当本 schema 与 CONCEPTS-RULES.md 冲突时，CONCEPTS-RULES.md 优先。
 
 ## 质量约束
 

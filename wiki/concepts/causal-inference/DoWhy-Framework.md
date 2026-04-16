@@ -252,6 +252,9 @@ refute = model.refute_estimate(identified_estimand)
 - [[Causal-Diagram]] — 因果图基础
 - [[Rubin-Causal-Model]] — 潜在结果基础
 - [[Propensity-Score]] — 倾向得分实现
+- [[工具变量]] — IV 方法的实现
+- [[反事实推理]] — DoWhy 中的反事实计算
+- [[因果发现]] — 图学习的集成方法
 - [[2023-07-15-DoWhy框架与工作流]] — 原始文献
 - [[2023-07-12-因果分析概念与方法论]] — 应用场景
 

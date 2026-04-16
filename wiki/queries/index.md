@@ -42,8 +42,6 @@ status: linked
 
 ## 候选迁移
 
-- `outputs/answers/2026-04-05-scikit-learn-机器学习时间序列预测实践解读.md`
-- `outputs/answers/2026-04-09-llm-timeseries-autofix-映射候选.md`
 
 ## 关联入口
 

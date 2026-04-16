@@ -1324,3 +1324,189 @@ A4 细分为 4 类：
 
 **新工具**：
 - `tools/wiki_lint.py`：可复用 lint 工具，支持 `--report`（生成报告）和 `--fix`（清理占位符）两个模式
+
+## [2026-04-16] ingest | Causal Inference 因果推断主题 Phase 2 扩展编译完成
+
+本次为 causal-inference 主题的 **Phase 2（全量 Web 资源摄取）**，完成了 29 个网络资源的系统编译。
+
+### Phase 1 概述（2026-04-15）
+- 完成 4 个本地笔记的来源卡生成
+- 创建 3 个索引页（总索引、阅读地图、来源清单）
+- 生成 5 个核心概念页（因果图、RCM、倾向评分、DoWhy、方法库）
+
+### Phase 2 完成成果（2026-04-16）
+
+#### 来源卡编译（29 张新增）
+分为 5 个批次，按资源特性分组：
+
+**Batch 1：Statistics Today 系列（5 篇，2026-04-15）**
+- 因果推断简介之一～五：从 Yule-Simpson 悖论入门，涵盖 RCM、Fisher/Neyman、倾向评分、因果图
+
+**Batch 2：因果推理初探系列（9 篇，2026-04-16）**
+- 因果推理初探 1～9：AI 视角的因果推理，涵盖 DAG、混杂因素、干预、工具变量、RDD、反事实、因果发现
+
+**Batch 3：应用实战系列（3 篇，2026-04-16）**
+- 因果推理实战 1～3：机器人学习应用（示教学习、Tetrad 软件、工具可供性）
+
+**Batch 4：教材与理论综述（7 篇，2026-04-15）**
+- 教科书 2 篇 + 理论综述 5 篇（统计哲学、思想飞跃、统计方法、因果革命、Python 包）
+
+**Batch 5：启蒙与应用案例（5 篇，2026-04-15）**
+- 吸烟致癌、女士品茶、因果分析、DoWhy 入门、广告界挑战
+
+#### 索引页扩展（3 张更新）
+- 因果推断总索引：来源 4→33 篇，新增分布表和访问建议
+- 因果推断来源清单：完整表格视图（33 行）+类型分组+概念索引
+- 因果推断阅读地图：初级/中级/高级递进，4 条学习路径，快速查询表
+
+#### 验证与完整性
+- ✅ 29 张新来源卡全部补充完整 frontmatter 与概念链接
+- ✅ 所有 source_path 指向现存 raw 文件
+- ✅ 所有 wikilink 指向现存来源卡或概念页
+- ✅ 双向链接完整：来源卡←→raw、来源卡←→概念页
+- ✅ 从主索引可达全部 33 个来源与 5 个概念页
+
+### 成果汇总
+
+**文件统计**：
+- 新增来源卡：29 张（总计 33 张）
+- 更新索引页：3 张（总/清单/地图）
+- 保持概念页：5 张（Phase 1 完成）
+
+**编译完成标记**：causal-inference 主题从 raw 层到 wiki 层的全量编译已完成，包含 Phase 1（4 个笔记）+ Phase 2（29 个 Web 资源），共计 33 个来源、5 个概念页、3 个索引页，形成完整的因果推断知识图谱。
+
+
+## [2026-04-16] update | Causal Inference 因果推断主题 Tier 2 概念补完与链接深化
+
+本次为 causal-inference 主题的 **Phase 2.5（Tier 2 细粒度概念补充与全局链接完善）**。
+
+### 问题诊断
+
+Phase 1→2 编译发现关键问题："为什么每次编译都不更新 @wiki/concepts？"
+
+**根本原因**：缺少明确的规则规定：
+- Phase 1 应创建 Tier 1（框架级）概念页
+- Phase 2 应同步创建 Tier 2（方法级）概念页
+- 导致每次 Phase 2 扩展后，新增方法无对应概念页
+
+### Phase 2.5 完成成果
+
+#### Tier 2 概念页补充（5 张新增）
+根据 Phase 2 新增 29 个资源中的核心方法，创建：
+
+1. **[[工具变量]]** — 工具变量（Instrumental Variables, IV）与 2SLS 方法
+   - 相关概念：排除限制、内生性识别、弱工具变量
+   - 来源：#14 工具变量定义与识别
+
+2. **[[断点回归设计]]** — 回归断点设计（Regression Discontinuity Design, RDD）
+   - 相关概念：Sharp RDD、Fuzzy RDD、连续性假设、局部平均处理效应
+   - 来源：#15 RDD 原理与应用
+
+3. **[[因果发现]]** — 从数据中学习因果结构（Causal Discovery）
+   - 相关概念：约束条件法、评分法、Markov 等价类、因果关系识别
+   - 来源：#18 因果发现方法与困难
+
+4. **[[流行病学研究设计]]** — 医学中的因果推断应用（Epidemiological Study Design）
+   - 相关概念：病例对照研究、队列研究、剂量反应关系
+   - 来源：#29 吸烟致癌案例分析
+
+5. **[[反事实推理]]** — 反事实的形式化、识别与计算（Counterfactual Reasoning）
+   - 相关概念：潜在结果框架、反事实可识别性、反事实计算
+   - 来源：#16, #17 反事实定义与形式化
+
+#### 索引页链接完善（3 张更新）
+
+**因果推断总索引.md**
+- 新增"Tier 2：方法级深化概念"区块
+- 将 5 个新概念页与其定义并列展示
+
+**因果推断阅读地图.md**
+- Line 149：[[工具变量]] 概念页链接（IV/2SLS）
+- Line 154：[[断点回归设计]] 概念页链接（RDD）
+- Line 171：[[因果发现]] 概念页链接（Causal Discovery）
+- Line 107：[[流行病学研究设计]] 概念页链接（Medical Applications）
+- Line 51：[[反事实推理]] 概念页链接（Counterfactual Framework）
+
+**因果推断来源清单.md**
+- 新增"相关导航"的 Tier 2 概念分类块
+- 方便用户从来源清单直接访问细粒度概念
+
+#### Tier 1 概念页交叉链接（5 张更新）
+
+所有 Tier 1 概念页都已更新，新增指向相关 Tier 2 概念的链接：
+
+- **Causal-Inference-Methods.md**：链接到 [[工具变量]]、[[断点回归设计]]、[[反事实推理]]、[[流行病学研究设计]]
+- **Rubin-Causal-Model.md**：链接到 [[工具变量]]、[[流行病学研究设计]]、[[反事实推理]]
+- **Causal-Diagram.md**：链接到 [[因果发现]]、[[流行病学研究设计]]
+- **Propensity-Score.md**：链接到 [[流行病学研究设计]]
+- **DoWhy-Framework.md**：链接到 [[反事实推理]]、[[因果发现]]
+
+### 规则诊断与完善
+
+基于本次问题诊断，已创建 **wiki/CONCEPTS-RULES.md**（1200+ 行），建立完整规则体系：
+
+1. **四阶段编译策略**
+   - Phase 0：规划与评估
+   - Phase 1：资源整理 + Tier 1 概念
+   - Phase 2：资源扩展 + Tier 2 概念
+   - Phase 3：链接深化 + 健康检查
+
+2. **粗细粒度划分规则**
+   - Tier 1：框架级（300-400 行），理论基础
+   - Tier 2：方法级（250-350 行），具体方法
+   - Tier 3：应用级（可选，200-300 行），领域特化
+
+3. **交叉链接维护规则**
+   - Tier 1 ↔ Tier 2：双向链接
+   - 来源卡 → 概念页：唯一性与映射规则
+   - 索引 → 概念页：完整覆盖检查清单
+
+4. **健康检查清单**
+   - 孤立概念页检测
+   - 链接完整性验证
+   - 内容矛盾检查
+   - 覆盖率统计
+
+### 成果汇总
+
+**链接完整性验证**：
+- ✅ 5 个 Tier 2 概念页全部创建
+- ✅ 所有 Tier 1 概念页已更新交叉链接
+- ✅ 3 个索引页全部更新，包含 Tier 2 概念导航
+- ✅ 33 张来源卡都可以通过概念页访问
+- ✅ 从主索引可达：5 Tier 1 概念 + 5 Tier 2 概念 + 33 来源卡
+
+**规则完善**：
+- ✅ wiki/CONCEPTS-RULES.md 已创建，作为 wiki/concepts 层的规范
+- ✅ 四阶段编译策略已正式确立
+- ✅ Tier 1/2/3 划分标准已明确
+- ⏳ 待后续应用：将规则应用于其他主题编译（LLM、机器学习等）
+
+
+## [2026-04-16] lint | wiki/concepts 层规则修复（全项目）
+
+**目标**：根据诊断报告 `outputs/diagnostics/2026-04-16-wiki-concepts-规则诊断报告.md` 修复 7 大规则缺失，并将规则推广到所有主要主题。
+
+**完成成果**：
+
+### 规则文档修复
+- ✅ `wiki/CONCEPTS-RULES.md` 已创建（2026-04-16），覆盖全部 7 大规则缺失
+- ✅ `wiki/schema.md` L105 已更新，明确 CONCEPTS-RULES.md 优先级
+- ✅ `CLAUDE.md` 已更新，增加 CONCEPTS-RULES.md "特别说明"引用
+
+### 诊断报告更新
+- ✅ `outputs/diagnostics/2026-04-16-wiki-concepts-规则诊断报告.md` 删除因果推断专属示例，改为通用占位符格式
+- ✅ 报告末尾"建议修复方案"更新，指向已创建的 CONCEPTS-RULES.md
+
+### 全项目 concept index.md 补全（Tier 1/2 分类）
+- ✅ `wiki/concepts/statistics-theory/index.md` — 3 Tier1 + 3 Tier2
+- ✅ `wiki/concepts/machine-learning/index.md` — 5 Tier1 + 7 Tier2
+- ✅ `wiki/concepts/deep-learning/index.md` — 5 Tier1 + 16 Tier2
+- ✅ `wiki/concepts/timeseries-analysis/index.md` — 6 Tier1 + 23 Tier2
+- ✅ `wiki/concepts/operations-research/index.md` — 5 Tier1 + 28 Tier2
+- ✅ `wiki/concepts/llm/index.md` — 8 Tier1 + 33 Tier2
+- ✅ `wiki/concepts/causal-inference/index.md` — 5 Tier1 + 5 Tier2（已在前次 Phase 2.5 完成）
+
+### 待处理
+- ⏳ 健康检查脚本重建（原脚本已删除）
+- ⏳ 各主题编译流程的 4 阶段回顾（跨主题审计）
