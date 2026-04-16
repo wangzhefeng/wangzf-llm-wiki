@@ -44,7 +44,7 @@
 
 用于围绕现有 wiki 发起问答、比较、研究和输出回流。
 
-- `query/knowledge-base-query.md`
+- `query/llm-wiki-query.md`
   统一 query 模板。适合先列证据，再给回答，并把结果写入 `answers/` 或 `syntheses/`。
 
 ## 3. 专题纳入类
@@ -62,7 +62,7 @@
 
 - `maintenance/wiki-lint.md`
   偏结构和格式检查。适合检查链接、frontmatter、角色边界、命名等问题。
-- `maintenance/knowledge-base-health-check.md`
+- `maintenance/llm-wiki-health-check.md`
   偏全库健康度检查。适合从 `raw / sources / indexes / concepts / outputs` 全链路看哪里缺口最大。
 
 ## 5. 操作记录类
@@ -93,7 +93,7 @@
 如果你要做的是“围绕现有库提问或研究”：
 
 1. 先看 [[知识库问题地图]]
-2. 再用 `query/knowledge-base-query.md`
+2. 再用 `query/llm-wiki-query.md`
 3. 做完后补 `logging/operation-log.md`
 
 如果你要做的是“新增一个专题”：
@@ -104,7 +104,7 @@
 如果你要做的是“检查现有知识库”：
 
 1. 偏格式和结构问题，用 `maintenance/wiki-lint.md`
-2. 偏整体状态和下一步优先级，用 `maintenance/knowledge-base-health-check.md`
+2. 偏整体状态和下一步优先级，用 `maintenance/llm-wiki-health-check.md`
 
 ## 后续约定
 

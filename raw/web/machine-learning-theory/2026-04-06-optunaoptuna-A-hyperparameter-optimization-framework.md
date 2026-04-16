@@ -18,7 +18,7 @@ topics:
   - 机器学习理论
 ---
 
-[![[raw/assets/attachments/operations-research/optuna-logo 1.png]]](https://raw.githubusercontent.com/optuna/optuna/master/docs/image/optuna-logo.png)
+[![[raw/assets/attachments/operationsresearch/optuna-logo 1.png]]](https://raw.githubusercontent.com/optuna/optuna/master/docs/image/optuna-logo.png)
 
 ## Optuna: A hyperparameter optimization framework
 

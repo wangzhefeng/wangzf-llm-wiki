@@ -52,6 +52,8 @@ status: linked
 
 ## 新增核心概念（2026-04 批次）
 
+- [[Vibe Coding]]
+
 ### Harness 工程层
 
 - [[Harness工程]]：Agent = Model + Harness，设计 AI 工作环境的工程学科

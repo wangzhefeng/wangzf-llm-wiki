@@ -19,7 +19,7 @@
 
 ### B. 查询研究类
 
-- `prompts/query/knowledge-base-query.md`
+- `prompts/query/llm-wiki-query.md`
 
 ### C. 专题纳入类
 
@@ -29,7 +29,7 @@
 ### D. 维护检查类
 
 - `prompts/maintenance/wiki-lint.md`
-- `prompts/maintenance/knowledge-base-health-check.md`
+- `prompts/maintenance/llm-wiki-health-check.md`
 
 ### E. 操作记录类
 
@@ -60,4 +60,4 @@
 
 - 文件名继续采用 `动作-对象-用途.md` 或现有稳定命名风格
 - 不使用“v2/v3/final”等一次性后缀
-- 同一动作的轻量/完整版用明确后缀区分（例如 `wiki-lint` vs `knowledge-base-health-check`）
+- 同一动作的轻量/完整版用明确后缀区分（例如 `wiki-lint` vs `llm-wiki-health-check`）

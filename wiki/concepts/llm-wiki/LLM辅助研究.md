@@ -1,7 +1,7 @@
 ---
 created_at: 2026-04-06
 topics:
-- knowledge-base
+- llm-wiki
 related_concepts:
 - LLM 辅助研究
 - Obsidian

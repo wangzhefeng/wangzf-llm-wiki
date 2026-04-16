@@ -2,7 +2,7 @@
 created_at: 2026-04-08
 topics:
   - AI 工作流
-  - llm-knowledge-base
+  - llm-wiki
   - 用户协作
 related_concepts:
   - 知识库工作台

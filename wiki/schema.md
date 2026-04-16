@@ -75,6 +75,16 @@ sources:
 
 兼容说明：历史页面可保留 `created_at/topics/related_concepts/status`，后续增量迁移。
 
+来源卡补充契约：
+
+- `wiki/sources/**/*.md` 推荐显式保留 `source_path`。
+- `source_path: raw/...` 表示单一原始来源。
+- `source_path:` 列表表示“聚合来源卡”，允许一张来源卡汇总多份紧密相关的原始资料。
+- `source_path` 的值必须全部是 `raw/` 相对路径，不得写成本地绝对路径。
+- 目录导航页（如各主题 `index.md`）允许使用 `status: active` 表示“当前启用的导航页”。
+- `llm-wiki` 是当前仓库中“知识库建设 / 运维 / 使用”主题的唯一规范英文名；旧 topic/tag 别名与旧 prompt 文件名不再新增。
+- 历史 `source_path`、原文回链和日志记录允许保留旧 raw 路径，不作为命名漂移错误。
+
 ## 命名
 
 - 原始网页：`YYYY-MM-DD-标题.md`
@@ -101,6 +111,8 @@ sources:
 - 原始层文件不做语义改写，修正写入 `wiki/` 层。
 - 每次关键操作（ingest/query/lint/backfill）追加到 `wiki/log.md`。
 - 不再单独维护”知识库Schema设计”页面；规则统一在本页维护。
+- 健康检查统一入口使用 `python3 .env/health/wiki_check.py` 或 `python3 .env/run_tool.py health check`。
+- lint 基线除目录、字段和相对链接外，还应检查旧主题命名残留。
 
 **特别说明**：`wiki/concepts` 层有专独立规则文档 [[CONCEPTS-RULES.md]]，规定了阶段设计、粗细粒度划分、交叉链接维护等规则。当本 schema 与 CONCEPTS-RULES.md 冲突时，CONCEPTS-RULES.md 优先。
 

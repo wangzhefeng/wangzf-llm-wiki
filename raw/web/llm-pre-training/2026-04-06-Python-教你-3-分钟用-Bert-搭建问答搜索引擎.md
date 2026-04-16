@@ -21,7 +21,7 @@ topics:
 
 *2024年5月23日 13:54*
 
-![图片](https://mmbiz.qpic.cn/mmbiz_gif/h6NqozYcCQ7lUGicnwZeGRlJOcBg8yn4SVjUnmTXTxoehqXia2qgmaE7fF4iaKkD6rOabWyReI2UZ7bHYJaeGLZzQ/640?wx_fmt=gif&tp=webp&wxfrom=5&wx_lazy=1#imgIndex=0)
+![[Image.gif|图片]]
 
 鼎鼎大名的 Bert 算法相信大部分同学都听说过，它是 Google 推出的 NLP 领域“王炸级”预训练模型，其在 NLP 任务中刷新了多项记录，并取得 state of the art 的成绩。
 

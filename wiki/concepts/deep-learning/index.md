@@ -34,8 +34,8 @@ status: active
 17. [[深度学习训练实践]] — 训练深度神经网络的最佳实践与技巧
 18. [[DDP (DistributedDataParallel)]] — PyTorch 分布式数据并行框架
 19. [[PyTorch]] — 深度学习框架与编程接口
-20. [[Training extremely large neural networks across thousands of GPUs]] — 超大规模训练技术
-21. [[real-world]] — 分布式训练的实际实现模式
+20. [[深度学习训练基础设施]] — 超大规模训练技术
+21. [[分布式训练]] — 分布式训练的实际实现模式
 
 ## 入口建议
 

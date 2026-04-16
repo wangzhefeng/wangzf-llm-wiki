@@ -5,7 +5,7 @@ title: "README"
 author: unknown
 created_at: 2026-04-12
 topics:
-- knowledge-base
+- llm-wiki
 status: inbox
 ---
 

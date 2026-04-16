@@ -66,7 +66,7 @@ status: linked
 ## 关键概念
 
 - [[Transformer架构]]
-- [[RoPE (Rotary Position Embedding)]]
+- [[RoPE]]
 - [[KV Cache]]
 - [[RLHF]]
 - [[DPO直接偏好优化]]

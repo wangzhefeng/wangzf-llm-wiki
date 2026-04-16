@@ -13,7 +13,7 @@ status: summarized
 How to align LLMs with limited hardware and minimal complexity...
 
 ## 关键要点
-- ![[raw/assets/attachments/reinforcement-learning/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fdee66741-b7e3-4284-8c79-96b5abc301b5_2394x1362.png]]
+- ![[raw/assets/attachments/reinforcementlearning/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fdee66741-b7e3-4284-8c79-96b5abc301b5_2394x1362.png]]
 - (from \[1, 2, 6, 9\])
 
 ## 来源信息
