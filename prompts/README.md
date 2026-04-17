@@ -40,6 +40,17 @@
 - `intake/local-note-source-intake.md`
   本地历史文档沉淀模板。适合 `raw/notes/` 中已有原文的结构化提升。
 
+当前正式摄取范围默认收敛为：
+
+- `raw/web/**`
+- `raw/repos/repo-*.md`
+- `raw/notes/**`
+
+说明：
+
+- `raw/repos/**` 中镜像仓库内文档只作仓库入口卡的背景证据，不逐文件编译。
+- `raw/notes/**` 是标准编译对象，不再只作为历史材料。
+
 ## 2. 查询研究类
 
 用于围绕现有 wiki 发起问答、比较、研究和输出回流。
@@ -105,6 +116,7 @@
 
 1. 偏格式和结构问题，用 `maintenance/wiki-lint.md`
 2. 偏整体状态和下一步优先级，用 `maintenance/llm-wiki-health-check.md`
+3. 命令统一走 `python3 .env/health/wiki_check.py --checks lint|health` 或 `python3 .env/run_tool.py health check`
 
 ## 后续约定
 

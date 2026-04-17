@@ -70,14 +70,14 @@ PPO 是 RLHF 的核心算法之一：
 ## 相关来源
 
 - [[强化学习专题来源]]
-- [[raw/web/reinforcement-learning/2026-04-06-人人都能看懂的RL-PPO理论知识]]
-- [[raw/web/reinforcement-learning/2026-04-06-图解大模型RLHF系列之：人人都能看懂的PPO原理与源码解读]]
-- [[raw/web/reinforcement-learning/2026-04-06-PPO→GRPO→DAPO，强化学习一篇通关！]]
+- [[2026-04-06-人人都能看懂的RL-PPO理论知识]]
+- [[2026-04-06-图解大模型RLHF系列之：人人都能看懂的PPO原理与源码解读]]
+- [[2026-04-06-PPO→GRPO→DAPO，强化学习一篇通关！]]
 - [[2026-04-06-gaoxiaosSupermariobros-PPO-pytorch rl on super-mario-bros]]
 
 ## 相关概念
 
-- [[GRPO (Group Relative Policy Optimization)]]
+- [[GRPO群体相对策略优化]]
 - [[优势函数]]
 - [[On-Policy vs Off-Policy]]
 - [[RLHF]]

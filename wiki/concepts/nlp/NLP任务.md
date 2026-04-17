@@ -30,4 +30,4 @@ NLP 任务是 LLM 应用的直接落地层，常见包括文本分类、序列�
 
 - [[2022-07-15-nlp-ner]]
 - [[2022-07-15-nlp-qa-system]]
-- [[2024-06-12-text-generation]]
+- [[2022-12-02-nlp-text-generation]]

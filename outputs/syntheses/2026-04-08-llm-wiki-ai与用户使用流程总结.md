@@ -72,6 +72,12 @@ AI 的标准起步顺序应是：
 - 来源摄取：`raw/` + `wiki/sources/` + 必要的索引与概念回写
 - 演示稿生成：`outputs/slides/` + `outputs/figures/` + 工作流或入口页回链
 
+当前正式摄取范围默认是：
+
+- `raw/web/**`
+- `raw/repos/repo-*.md`
+- `raw/notes/**`
+
 多条线程都暴露出同一个风险：如果不把“写回仓库”当作默认收尾动作，AI 很容易停在一次性对话结果。
 
 ### 4. 用户与 AI 通过工作台、问题地图和最近结果进行迭代
@@ -135,12 +141,12 @@ AI 负责：
 
 ## 当前仓库中的对应入口或文件
 
-- [README.md](/Users/wangzf/projects_ai/wangzf-llm-wiki/README.md)
-- [知识库工作台.md](/Users/wangzf/projects_ai/wangzf-llm-wiki/wiki/indexes/shared/知识库工作台.md)
-- [知识库问答与研究工作流.md](/Users/wangzf/projects_ai/wangzf-llm-wiki/wiki/indexes/shared/知识库问答与研究工作流.md)
-- [知识库问题地图.md](/Users/wangzf/projects_ai/wangzf-llm-wiki/wiki/indexes/shared/知识库问题地图.md)
-- [prompts/README.md](/Users/wangzf/projects_ai/wangzf-llm-wiki/prompts/README.md)
-- [AGENTS.md](/Users/wangzf/projects_ai/wangzf-llm-wiki/AGENTS.md)
+- [README.md](/Users/wangzf/wangzf-llm-wiki/README.md)
+- [知识库工作台.md](/Users/wangzf/wangzf-llm-wiki/wiki/indexes/shared/知识库工作台.md)
+- [知识库问答与研究工作流.md](/Users/wangzf/wangzf-llm-wiki/wiki/indexes/shared/知识库问答与研究工作流.md)
+- [知识库问题地图.md](/Users/wangzf/wangzf-llm-wiki/wiki/indexes/shared/知识库问题地图.md)
+- [prompts/README.md](/Users/wangzf/wangzf-llm-wiki/prompts/README.md)
+- [AGENTS.md](/Users/wangzf/wangzf-llm-wiki/AGENTS.md)
 
 ## 从线程证据抽出的关键经验
 

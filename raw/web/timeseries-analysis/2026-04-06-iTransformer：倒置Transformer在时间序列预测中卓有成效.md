@@ -1,30 +1,23 @@
 ---
+source_type:
+source: "https://www.alphaxiv.org/zh/overview/2310.06625v4"
+title: "iTransformer：倒置Transformer在时间序列预测中卓有成效"
 author:
-- null
-- '[[Yong Liu]]'
-- '[[Tengge Hu]]'
-- '[[Haoran Zhang]]'
-- '[[Haixu Wu]]'
-- '[[Shiyu Wang]]'
-- '[[Lintao Ma]]'
-- '[[Mingsheng Long]]'
-created: 2026-04-06
-created_at: 2026-04-06
-description: iTransformer通过反转其组件操作的维度，重新定位了用于多元时间序列预测的标准Transformer架构。它将每个变量的完整时间序列视为一个标记，并在变量之间应用自注意力，从而在多个数据集上实现了最先进的性能，同时有效利用了长回溯窗口。
-source_type: web
-status: inbox
+  - "[[Yong Liu]]"
+  - "[[Tengge Hu]]"
+  - "[[Haoran Zhang]]"
+  - "[[Haixu Wu]]"
+  - "[[Shiyu Wang]]"
+  - "[[Lintao Ma]]"
+  - "[[Mingsheng Long]]"
+published_at: "Thu Mar 14 2024 11:45:57 GMT+0000 (Coordinated Universal Time)"
+created_at: "2026-04-17T11:36:01+08:00"
+topics: "iTransformer通过反转其组件操作的维度，重新定位了用于多元时间序列预测的标准Transformer架构。它将每个变量的完整时间序列视为一个标记，并在变量之间应用自注意力，从而在多个数据集上实现了最先进的性能，同时有效利用了长回溯窗口。"
 tags:
-- null
-- clippings
-title: iTransformer：倒置Transformer在时间序列预测中卓有成效
-source_url: https://www.alphaxiv.org/zh/overview/2310.06625v4
-published_at: 2024-03-14
-related_concepts: []
-topics:
-  - timeseries-analysis
-  - 时间序列分析
+  - "clippings"
+related_concepts:
+status: "inbox"
 ---
-
 ## 概述
 
 iTransformer 对 Transformer 架构如何应用于多元时间序列预测进行了根本性的重新构想。这项工作没有修改 Transformer 的核心组件，而是提出反转这些组件操作的维度，将单个时间序列变量视为 token，而不是时间点。

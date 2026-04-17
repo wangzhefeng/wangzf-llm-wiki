@@ -27,8 +27,8 @@ Peng Ding在加州伯克利大学因果推断课程的讲义，针对包括本�
 
 ## 概念链接
 
-[[因果推断]] | [[Rubin Causal Model]] | [[因果图]] | [[因果推断方法]] | [[统计推断]]
+[[因果推断]] | [[Rubin-Causal-Model|Rubin Causal Model]] | [[Causal-Diagram|因果图]] | [[Causal-Inference-Methods|因果推断方法]] | 统计推断
 
 ## 原文位置
 
-[[raw/web/causal-inference/2026-04-15-A First Course in Causal Inference.md]]
+`raw/web/causal-inference/2026-04-15-A First Course in Causal Inference.md`

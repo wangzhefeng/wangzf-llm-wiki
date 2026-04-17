@@ -28,8 +28,8 @@ Nubank首席数据科学家Matheus Facure所著英文原版《Causal Inference f
 
 ## 概念链接
 
-[[因果推断]] | [[计量经济学]] | [[政策评估]] | [[工具变量]] | [[断点回归]] | [[双重差分]] | [[异质效应]]
+[[因果推断]] | 计量经济学 | 政策评估 | [[工具变量]] | [[断点回归设计|断点回归]] | 双重差分 | 异质效应
 
 ## 原文位置
 
-[[raw/web/causal-inference/2026-04-15-Causal-Inference-for-the-Brave-and-True的中文翻译版.md]]
+`raw/web/causal-inference/2026-04-15-Causal-Inference-for-the-Brave-and-True的中文翻译版.md`

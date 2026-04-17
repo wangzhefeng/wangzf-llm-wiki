@@ -293,9 +293,9 @@ $$
 ## 相关概念
 
 - [[Transformer架构]]
-- [[Self-Attention 机制]]
-- [[位置编码（RoPE）]]
-- [[KV-Cache 与推理优化]]
+- [[Self-Attention]]
+- [[RoPE旋转位置编码]]
+- [[KV Cache]]
 - [[缩放定律]]
 - [[预训练]]
 - [[后训练]]

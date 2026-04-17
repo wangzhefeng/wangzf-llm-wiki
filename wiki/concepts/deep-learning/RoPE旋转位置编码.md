@@ -8,7 +8,7 @@ related_concepts:
 - 注意力机制
 status: inbox
 ---
-# RoPE (Rotary Position Embedding)
+# RoPE（Rotary Position Embedding）
 
 ## 定义
 
@@ -37,7 +37,7 @@ $$f_q(x_m, m) = W_q x_m \cdot e^{im\theta_d}$$
 1. **更好的长度外推**: 相比绝对位置编码，RoPE 在推理时可以处理更长序列
 2. **相对位置编码**: 自然捕获 token 间的相对距离
 3. **与注意力兼容**: 可以高效集成到标准注意力计算中
-4. ** empirically 有效**: 在多种任务上表现优异
+4. **经验上稳定有效**: 在多种任务上表现优异
 
 ### 采用 RoPE 的模型
 
@@ -59,7 +59,7 @@ def apply_rotary_pos_emb(q, k, cos, sin):
 
 ## 相关来源
 
-- [[为什么主流 LLM 都用 RoPE？]]
+- [[2026-04-06-为什么主流LLM都用RoPE？]]
 - [[LLM架构训练与微调专题来源]]
 
 ## 相关概念

@@ -81,8 +81,8 @@ RAG（Retrieval-Augmented Generation，检索增强生成）是一种将外部�
 ## 相关来源
 
 - [[大语言模型专题来源]]
-- [[raw/web/llm/2026-04-06-大模型外挂(向量)知识库]]
-- [[Vibe-Coding来源清单]]
+- [[2024-09-23-llm-vector-database]]
+- [[VibeCoding与Agent专题来源]]
 
 ## 相关概念
 

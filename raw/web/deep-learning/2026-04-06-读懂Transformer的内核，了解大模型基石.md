@@ -1,22 +1,16 @@
 ---
-author: null
-created: 2026-04-06
-created_at: 2026-04-06
-description: 从理论到源码的深度剖析。
-source_type: web
-status: inbox
+source_type:
+source: "https://mp.weixin.qq.com/s/S4piibBsAywLVe-5qbp8HA"
+title: "读懂Transformer的内核，了解大模型基石"
+author:
+published_at:
+created_at: "2026-04-17T11:54:58+08:00"
+topics: "从理论到源码的深度剖析。"
 tags:
-- null
-- clippings
-title: 读懂Transformer的内核，了解大模型基石
-source_url: https://mp.weixin.qq.com/s/S4piibBsAywLVe-5qbp8HA
-published_at: null
-related_concepts: []
-topics:
-  - deep-learning
-  - 深度学习理论
+  - "clippings"
+related_concepts:
+status: "inbox"
 ---
-
 *2025年9月2日 22:06*
 
 ### Datawhale干货 作者：王大鹏，Datawhale成员
@@ -29,7 +23,7 @@ topics:
 
 解码器则承担着更复杂的任务：它需要接受目标序列和编码器输出的表示序列，然后输出词汇/字符的概率分布。这就像是一个翻译专家，既要理解原文的含义（通过编码器的输出），又要根据已经翻译的部分来决定下一个词应该是什么。
 
-![00.png](https://mmbiz.qpic.cn/mmbiz_png/ImctCic3ezBn68TQuSK3GvoIJmqhwCZQg3ocLicDDECWXK9dnNicRsFic2mG4icnTtZnF1bdkChWpbzJvAY0NmM7Gfg/640?wx_fmt=png&from=appmsg&tp=webp&wxfrom=5&wx_lazy=1#imgIndex=0)
+![[Image 14.webp|00.png]]
 
 但这里有一个关键问题需要解决：Transformer本身对位置信息不敏感。比如"我爱你"和"你爱我"这两个句子，在没有位置信息的情况下，模型无法感知到这是语义完全不同的句子。这就像是一个人失去了对词语顺序的感知能力，显然无法正确理解语言。
 
@@ -73,7 +67,7 @@ topics:
 
 可以看到，初始的位置信息x₀始终存在于每一层的输出中，这确保了位置信息不会随着网络层数的加深而消失。
 
-![0.png](data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg width='1px' height='1px' viewBox='0 0 1 1' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Ctitle%3E%3C/title%3E%3Cg stroke='none' stroke-width='1' fill='none' fill-rule='evenodd' fill-opacity='0'%3E%3Cg transform='translate(-249.000000, -126.000000)' fill='%23FFFFFF'%3E%3Crect x='249' y='126' width='1' height='1'%3E%3C/rect%3E%3C/g%3E%3C/g%3E%3C/svg%3E)
+![[Image 15.webp|0.png]]
 
 现在我们通过查看PyTorch的源码，深入了解Encoder和Decoder中的架构实现。源码位于\`/pytorch/torch/nn/modules/transformer.py\`，我们看的版本为v2.5.1。
 
@@ -83,7 +77,7 @@ topics:
 # 使用示例transformer_model = nn.Transformer(d_model=512, nhead=8, num_encoder_layers=6)src = torch.rand((10, 32, 512))tgt = torch.rand((20, 32, 512))out = transformer_model(src, tgt)
 ```
 
-![5.png](data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg width='1px' height='1px' viewBox='0 0 1 1' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Ctitle%3E%3C/title%3E%3Cg stroke='none' stroke-width='1' fill='none' fill-rule='evenodd' fill-opacity='0'%3E%3Cg transform='translate(-249.000000, -126.000000)' fill='%23FFFFFF'%3E%3Crect x='249' y='126' width='1' height='1'%3E%3C/rect%3E%3C/g%3E%3C/g%3E%3C/svg%3E)
+![[Image 16.webp|5.png]]
 
 在\`Transformer\`的\`\_\_init\_\_\`函数中，主要有5个核心参数：
 
@@ -97,17 +91,17 @@ topics:
 
 5\. **dim\_feedforward** ：前馈神经网络层中间的特征维度，默认是2048。Multihead attention输出时，会 **首先** 映射到2048这个大的特征空间，然后再把它映射回来到512这样的空间。必须要保证输出的维度仍然是512，这样就可以进行残差连接。
 
-![7.png](data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg width='1px' height='1px' viewBox='0 0 1 1' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Ctitle%3E%3C/title%3E%3Cg stroke='none' stroke-width='1' fill='none' fill-rule='evenodd' fill-opacity='0'%3E%3Cg transform='translate(-249.000000, -126.000000)' fill='%23FFFFFF'%3E%3Crect x='249' y='126' width='1' height='1'%3E%3C/rect%3E%3C/g%3E%3C/g%3E%3C/svg%3E)
+![[Image 17.webp|7.png]]
 
 init 函数的作用是去实例化模块，第一个要实例化的模块就是encoder。
 
-![8.png](data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg width='1px' height='1px' viewBox='0 0 1 1' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Ctitle%3E%3C/title%3E%3Cg stroke='none' stroke-width='1' fill='none' fill-rule='evenodd' fill-opacity='0'%3E%3Cg transform='translate(-249.000000, -126.000000)' fill='%23FFFFFF'%3E%3Crect x='249' y='126' width='1' height='1'%3E%3C/rect%3E%3C/g%3E%3C/g%3E%3C/svg%3E)
+![[Image 18.webp|8.png]]
 
 encoder通过TransformerEncoder的class 去实现实例，在这个class中需要传入 encoder\_layer，在TransformerEncoderLayer的class中实现了Multihead self attention 的调用、残差连接、层归一化、全连接层网络，主要是这些来构成一个encoder\_layer。
 
 对于decode部分也是一样,传入decodeLayer参数，这个layer包含了自注意力机制、交叉注意力机制以及前馈神经网络。
 
-![9.png](data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg width='1px' height='1px' viewBox='0 0 1 1' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Ctitle%3E%3C/title%3E%3Cg stroke='none' stroke-width='1' fill='none' fill-rule='evenodd' fill-opacity='0'%3E%3Cg transform='translate(-249.000000, -126.000000)' fill='%23FFFFFF'%3E%3Crect x='249' y='126' width='1' height='1'%3E%3C/rect%3E%3C/g%3E%3C/g%3E%3C/svg%3E)
+![[Image 19.webp|9.png]]
 
 总体上 Transformer 源码，就是由四个 class 所构成：
 
@@ -118,7 +112,7 @@ encoder通过TransformerEncoder的class 去实现实例，在这个class中需�
 
 在\`forward\`函数中，Transformer的计算流程非常清晰：
 
-![29.png](data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg width='1px' height='1px' viewBox='0 0 1 1' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Ctitle%3E%3C/title%3E%3Cg stroke='none' stroke-width='1' fill='none' fill-rule='evenodd' fill-opacity='0'%3E%3Cg transform='translate(-249.000000, -126.000000)' fill='%23FFFFFF'%3E%3Crect x='249' y='126' width='1' height='1'%3E%3C/rect%3E%3C/g%3E%3C/g%3E%3C/svg%3E)
+![[Image 20.webp|29.png]]
 
 首先encoder 输入是 source 句子以及 padding\_mask，encoder中的注意力机制不需要掩码的，因此mask及is\_causal参数不需要传入掩码。但需要对样本长度做掩盖，即 **padding\_mask** ，这个 mask 表示每一个样本的长度。当我们做训练时，序列长度是不一样的，有些短的样本，在后面的一些位置上就是无效的，通过在softmax中把无效位置上的值转成负无穷，这样经过归一化后概率就变成0，使得在这些位置上，这些没有值的位置变得无效。
 
@@ -134,11 +128,11 @@ decode 输入第一个是target，也就是目标句子。第二个是memory，�
 
 Transformer本质上是一个自回归的 解码过程，不是并行的预测输出，而是每次只会预测一个，输出一个，然后不断的进行解码去预测出整体的target sentence。
 
-![30.png](data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg width='1px' height='1px' viewBox='0 0 1 1' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Ctitle%3E%3C/title%3E%3Cg stroke='none' stroke-width='1' fill='none' fill-rule='evenodd' fill-opacity='0'%3E%3Cg transform='translate(-249.000000, -126.000000)' fill='%23FFFFFF'%3E%3Crect x='249' y='126' width='1' height='1'%3E%3C/rect%3E%3C/g%3E%3C/g%3E%3C/svg%3E)
+![[Image 21.webp|30.png]]
 
 接下来我们分别来看下 init 函数中的 4 个class，首先是 **单个编码器** 的实现: 在\` **TransformerEncoderLayer** \`的\`\_\_init\_\_\`函数中，需要实例化四个关键组件：
 
-![31.png](data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg width='1px' height='1px' viewBox='0 0 1 1' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Ctitle%3E%3C/title%3E%3Cg stroke='none' stroke-width='1' fill='none' fill-rule='evenodd' fill-opacity='0'%3E%3Cg transform='translate(-249.000000, -126.000000)' fill='%23FFFFFF'%3E%3Crect x='249' y='126' width='1' height='1'%3E%3C/rect%3E%3C/g%3E%3C/g%3E%3C/svg%3E)
+![[Image 22.webp|31.png]]
 
 先是init 函数中的参数，和transformer中传入的一致, d\_model是整个Transformer的特征维度512。nhead 是Multi head attention 中多头自注意力机制中头的数目。
 
@@ -146,7 +140,7 @@ Transformer本质上是一个自回归的 解码过程，不是并行的预测�
 
 这样做的话，对embedding的特征向量的维度会降低，比如说原来的特征向量维度是512，如果我们分为8个头，这时向量每一个头它向量的维度就会变成64（这里不是通过压缩，而是线性变换重组）。每个头独立计算注意力后，会得到8个64维的输出向量。然后通过拼接操作（concatenation），将这8个64维向量首尾相接，重新组合成一个512维的向量。最后再通过一个输出线性变换层，得到最终的512维输出。
 
-![1.png](data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg width='1px' height='1px' viewBox='0 0 1 1' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Ctitle%3E%3C/title%3E%3Cg stroke='none' stroke-width='1' fill='none' fill-rule='evenodd' fill-opacity='0'%3E%3Cg transform='translate(-249.000000, -126.000000)' fill='%23FFFFFF'%3E%3Crect x='249' y='126' width='1' height='1'%3E%3C/rect%3E%3C/g%3E%3C/g%3E%3C/svg%3E)
+![[Image 23.webp|1.png]]
 
 dimension feed forward是前馈神经网络FFN的维度，因为需要先从512到2048，再从2048到512，所以设定了两个全连接层。前馈神经网络它是对每个单独位置进行一个建模，并且不同位置的参数是共享的。类比1×1的pointwise卷积，对图像中每个像素位置的特征向量独立进行变换。参数共享就是为序列中的每个位置都设计相同的参数，目的是希望模型学会"如何处理特征"的通用能力，而不是"如何处理第x个位置的特征"的特定能力。
 
@@ -168,13 +162,13 @@ forward函数中，encoder层的调用很简单。Transformer encoder layer的�
 
 原始论文的设计是层归一化在后，即else的设计。
 
-![32.png](data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg width='1px' height='1px' viewBox='0 0 1 1' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Ctitle%3E%3C/title%3E%3Cg stroke='none' stroke-width='1' fill='none' fill-rule='evenodd' fill-opacity='0'%3E%3Cg transform='translate(-249.000000, -126.000000)' fill='%23FFFFFF'%3E%3Crect x='249' y='126' width='1' height='1'%3E%3C/rect%3E%3C/g%3E%3C/g%3E%3C/svg%3E)
+![[Image 24.webp|32.png]]
 
 \`TransformerEncoder\` class的作用是将多个编码器层串联起来：将上一层的输出作为下一层的输入，经过多层处理得到最终的编码器输出。
 
 init主要是传入两个参数，一个是encoder\_layer，表示TransformerEncoderLayer class的一个实例。第二个参数是num\_layers，表示transformer encoder有多少层，层的含义就是block。encoder中自注意力机制+前馈神经网络这两块是一个block，也就是一层。
 
-![33.png](data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg width='1px' height='1px' viewBox='0 0 1 1' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Ctitle%3E%3C/title%3E%3Cg stroke='none' stroke-width='1' fill='none' fill-rule='evenodd' fill-opacity='0'%3E%3Cg transform='translate(-249.000000, -126.000000)' fill='%23FFFFFF'%3E%3Crect x='249' y='126' width='1' height='1'%3E%3C/rect%3E%3C/g%3E%3C/g%3E%3C/svg%3E)
+![[Image 25.webp|33.png]]
 
 解码器的实现比编码器更复杂，因为它包含三个子模块，需要处理更多的交互。
 
@@ -182,7 +176,7 @@ init主要是传入两个参数，一个是encoder\_layer，表示TransformerEnc
 
 在init参数中，第一个是d\_model，表示transformer模型特征大小，默认512。第二个参数是nhead，是Transformer decoder的多头自注意力机制的头数。第三个参数是dimension feed forward，表示decoder中FFN前馈神经网络的维度。
 
-![34.png](data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg width='1px' height='1px' viewBox='0 0 1 1' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Ctitle%3E%3C/title%3E%3Cg stroke='none' stroke-width='1' fill='none' fill-rule='evenodd' fill-opacity='0'%3E%3Cg transform='translate(-249.000000, -126.000000)' fill='%23FFFFFF'%3E%3Crect x='249' y='126' width='1' height='1'%3E%3C/rect%3E%3C/g%3E%3C/g%3E%3C/svg%3E)
+![[Image 26.webp|34.png]]
 
 init参数中，decoder和encoder不同的地方，就是需要实例化两个Multihead attention。
 
@@ -200,11 +194,11 @@ init参数中，decoder和encoder不同的地方，就是需要实例化两个Mu
 
 3\. 把第二个模块的输出输送到FFN前馈神经网络，再次进行残差网络和归一化的norm，得到decoder的输出；
 
-![35.png](data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg width='1px' height='1px' viewBox='0 0 1 1' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Ctitle%3E%3C/title%3E%3Cg stroke='none' stroke-width='1' fill='none' fill-rule='evenodd' fill-opacity='0'%3E%3Cg transform='translate(-249.000000, -126.000000)' fill='%23FFFFFF'%3E%3Crect x='249' y='126' width='1' height='1'%3E%3C/rect%3E%3C/g%3E%3C/g%3E%3C/svg%3E)
+![[Image 27.webp|35.png]]
 
 可以看下\_sa\_block和\_mha\_block各自的调用，它们都是调用的是Multihead attention，只不过它们的query、key、value是不一样的。
 
-![24.png](data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg width='1px' height='1px' viewBox='0 0 1 1' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Ctitle%3E%3C/title%3E%3Cg stroke='none' stroke-width='1' fill='none' fill-rule='evenodd' fill-opacity='0'%3E%3Cg transform='translate(-249.000000, -126.000000)' fill='%23FFFFFF'%3E%3Crect x='249' y='126' width='1' height='1'%3E%3C/rect%3E%3C/g%3E%3C/g%3E%3C/svg%3E) ![36.png](data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg width='1px' height='1px' viewBox='0 0 1 1' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Ctitle%3E%3C/title%3E%3Cg stroke='none' stroke-width='1' fill='none' fill-rule='evenodd' fill-opacity='0'%3E%3Cg transform='translate(-249.000000, -126.000000)' fill='%23FFFFFF'%3E%3Crect x='249' y='126' width='1' height='1'%3E%3C/rect%3E%3C/g%3E%3C/g%3E%3C/svg%3E)
+![[Image 28.webp|24.png]] ![[Image 29.webp|36.png]]
 
 self attention中query、key、value都是目标序列，自身对自身的求相关性的计算。但在交叉注意力机制中，query是decoder的一个输出，key和value是encoder的输出（始终是memory）。
 
@@ -212,7 +206,7 @@ self attention中query、key、value都是目标序列，自身对自身的求�
 
 最后看下注意力机制的核心计算，PyTorch的实际实现更加复杂和优化，但核心思想可以用论文版本来理解：
 
-![28.png](data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg width='1px' height='1px' viewBox='0 0 1 1' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Ctitle%3E%3C/title%3E%3Cg stroke='none' stroke-width='1' fill='none' fill-rule='evenodd' fill-opacity='0'%3E%3Cg transform='translate(-249.000000, -126.000000)' fill='%23FFFFFF'%3E%3Crect x='249' y='126' width='1' height='1'%3E%3C/rect%3E%3C/g%3E%3C/g%3E%3C/svg%3E)
+![[Image 30.webp|28.png]]
 
 **直观理解** ，attention函数就是将一个query和一个由key和value形成的一对元素，建立一个连接，最终得到一个输出。比如：我们去百度搜索一个词条，这个词条就是query，然后百度的数据库里有很多词条信息，每个信息自身都有个key，value就是该词条的具体内容。我们通过这个query，百度就会给我们返回一个搜索结果。这个结果就可以理解为一个注意力机制--基于query和key+value计算出来的一个上下文。
 
@@ -230,7 +224,7 @@ self attention中query、key、value都是目标序列，自身对自身的求�
 
 **代码实现** ：attention代码如下，输入由query、 key 和 value 构成。
 
-![37.png](data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg width='1px' height='1px' viewBox='0 0 1 1' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Ctitle%3E%3C/title%3E%3Cg stroke='none' stroke-width='1' fill='none' fill-rule='evenodd' fill-opacity='0'%3E%3Cg transform='translate(-249.000000, -126.000000)' fill='%23FFFFFF'%3E%3Crect x='249' y='126' width='1' height='1'%3E%3C/rect%3E%3C/g%3E%3C/g%3E%3C/svg%3E)
+![[Image 31.webp|37.png]]
 
 首先我会把这个q跟k的转置进行一个矩阵相乘，那这样的话就能得到一个一✖️t的向量，把这个向量做一个mask。这里的mask就是把等于0的位置，填充一个非常非常小的一个数，负无穷的数，因为负无穷的数经过Softmax这个归一化之后，它就会变成0的概率，目的是希望那些不重要的位置上的概率赋为0。这里的mask，这里只有一个mask，所以你可以理解为那它这里是一个自注意力机制的一个实现，如果有两个mask，那就是交叉注意力机制的实现。
 
@@ -258,7 +252,7 @@ https://www.bilibili.com/video/BV1o44y1Y7cp/
 
 https://nlp.seas.harvard.edu/2018/04/03/attention.html
 
-![图片](data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg width='1px' height='1px' viewBox='0 0 1 1' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Ctitle%3E%3C/title%3E%3Cg stroke='none' stroke-width='1' fill='none' fill-rule='evenodd' fill-opacity='0'%3E%3Cg transform='translate(-249.000000, -126.000000)' fill='%23FFFFFF'%3E%3Crect x='249' y='126' width='1' height='1'%3E%3C/rect%3E%3C/g%3E%3C/g%3E%3C/svg%3E)
+![[Image 32.webp|图片]]
 
 **一起“ **点** **赞”** **三连** ↓**
 

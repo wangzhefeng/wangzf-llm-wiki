@@ -63,8 +63,8 @@ $$\mathcal{L}_{DPO} = -E[\log \sigma(\beta \log \frac{\pi_\theta(y_w|x)}{\pi_{re
 
 - [[强化学习专题来源]]
 - [[2026-04-06-Direct Preference Optimization (DPO)]]
-- [[raw/web/reinforcement-learning/2026-04-06-人人都能看懂的DPO数学原理]]
-- [[raw/web/reinforcement-learning/2026-04-06-面试问了DPO算法，答得稀烂~]]
+- [[2026-04-06-人人都能看懂的DPO数学原理]]
+- [[2026-04-06-面试问了DPO算法，答得稀烂~]]
 - `2026-04-06-deep-learning-pytorch-huggingfacetrainingscriptsdporun_dpo.py`
 
 ## 相关概念

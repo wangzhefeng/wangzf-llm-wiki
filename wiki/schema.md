@@ -36,6 +36,16 @@ status: linked
 - `wiki/comparisons/`：对比分析页（当前可按需补齐）
 - `wiki/queries/`：可复用问答页（当前可按需补齐）
 
+当前正式重编译范围：
+- `raw/web/**`
+- `raw/repos/repo-*.md`
+- `raw/notes/**`
+
+范围说明：
+- `raw/repos/` 的正式编译对象是 `repo-*.md` 仓库入口卡。
+- `raw/repos/**` 下嵌套镜像仓库中的 `README.md`、`AGENTS.md`、`CONTRIBUTING.md` 等文件默认只作为背景证据，不逐文件下沉为 `wiki/sources/`。
+- `raw/notes/**` 是标准编译对象，不再视作边缘历史材料；目录型笔记默认由目录入口页或原始 Markdown 承接。
+
 共享层约束：
 - `shared` 根目录只放执行页；三主题目录只放定义与导航页。
 - `知识库工作台` 是 shared 层统一调度入口。
@@ -113,8 +123,9 @@ sources:
 - 不再单独维护”知识库Schema设计”页面；规则统一在本页维护。
 - 健康检查统一入口使用 `python3 .env/health/wiki_check.py` 或 `python3 .env/run_tool.py health check`。
 - lint 基线除目录、字段和相对链接外，还应检查旧主题命名残留。
+- 标准执行顺序固定为：基线盘点 -> 修断链 -> 重编译 sources -> 刷新 indexes/concepts -> 更新流程文档 -> 复验与日志收尾。
 
-**特别说明**：`wiki/concepts` 层有专独立规则文档 [[CONCEPTS-RULES.md]]，规定了阶段设计、粗细粒度划分、交叉链接维护等规则。当本 schema 与 CONCEPTS-RULES.md 冲突时，CONCEPTS-RULES.md 优先。
+**特别说明**：`wiki/concepts` 层另有概念层规则文档 `outputs/diagnostics/CONCEPTS-RULES.md`，规定了阶段设计、粗细粒度划分、交叉链接维护等规则。当本 schema 与该文档冲突时，以概念层规则文档为准。
 
 ## 质量约束
 
@@ -123,6 +134,7 @@ sources:
 - 页面超过约 200 行时考虑拆分。
 - 新增稳定页面后，必须补到至少一个主题索引入口。
 - 新信息与旧信息冲突时并存记录，标注时间与来源。
+- `health` 中的 warning 允许作为边界项保留，但必须在唯一主报告中写明类型、原因和后续策略；真实 wikilink 错误不允许长期悬置。
 
 ## 会话启动
 

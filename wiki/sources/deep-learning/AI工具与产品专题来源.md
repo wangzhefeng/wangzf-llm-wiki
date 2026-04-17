@@ -23,8 +23,8 @@ status: summarized
 
 | 文件名 | 核心内容 | 状态 |
 |--------|----------|------|
-| [[2026-04-06-YouMind---AI-创作智能体]] | YouMind AI 创作平台 | 待摘要 |
-| [[2026-04-06-2025年的年终总结--MkSaaS---Make-Your-AI-SaaS-Product-in-a-Weekend]] | AI SaaS 产品快速开发 | 待摘要 |
+| YouMind AI 创作智能体 | YouMind AI 创作平台 | 待摘要 |
+| MkSaaS 周末构建 AI SaaS 产品 | AI SaaS 产品快速开发 | 待摘要 |
 
 ### RAG 与知识库
 
@@ -43,17 +43,17 @@ status: summarized
 
 | 文件名 | 核心内容 | 状态 |
 |--------|----------|------|
-| [[2026-04-06-人工智能文本转图像模型 Stable Diffusion 入门教程]] | Stable Diffusion 入门 | 待摘要 |
+| Stable Diffusion 入门教程 | Stable Diffusion 入门 | 待摘要 |
 | [[2026-04-06-Using-ChatGPT-to-build-Synthetic-Datasets]] | ChatGPT 构建合成数据 | 待摘要 |
-| [[2026-04-06-SmolVLM - small yet mighty Vision Language Model]] | SmolVLM 小型多模态模型 | 待摘要 |
+| [[2026-04-06-SmolVLM-small-yet-mighty-Vision-Language-Model|SmolVLM]] | SmolVLM 小型多模态模型 | 待摘要 |
 
 ## 关键概念
 
 - [[RAG检索增强生成]]
-- [[LLM 评估]]
-- [[AI 创作]]
-- [[Stable Diffusion]]
-- [[多模态模型]]
+- [[大语言模型评估|LLM 评估]]
+- AI 创作
+- Stable Diffusion
+- 多模态模型
 
 ## 相关链接
 

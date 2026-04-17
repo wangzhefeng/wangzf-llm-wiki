@@ -58,9 +58,9 @@ status: summarized
 - [[Word2Vec]]
 - [[Embedding]]
 - [[Self-Attention]]
-- [[预训练模型]]
-- [[神经机器翻译]]
-- [[spaCy]]
+- 预训练模型
+- 神经机器翻译
+- spaCy
 
 ## 相关链接
 

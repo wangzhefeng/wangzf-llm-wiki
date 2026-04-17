@@ -40,8 +40,8 @@ sources:
 
 ## 概念链接
 
-[[Rubin-Causal-Model]] | [[Yule-Simpson Paradox]] | [[Ignorability]] | [[Causal-Diagram]] | [[Fisher Randomization Test]]
+[[Rubin-Causal-Model]] | Yule-Simpson Paradox | [[Rubin-Causal-Model|Ignorability]] | [[Causal-Diagram]] | Fisher Randomization Test
 
 ## 原文位置
 
-[[raw/notes/causal-inference/2023-07-09-statistics-causal-inference/index.md]]
+`raw/notes/causal-inference/2023-07-09-statistics-causal-inference/index.md`

@@ -27,4 +27,4 @@ status: inbox
 ## 连到哪些概念
 
 - [[词嵌入与Word2Vec]]（核心概念）
-- [[spaCy]]（框架集成）
+- spaCy（框架集成）

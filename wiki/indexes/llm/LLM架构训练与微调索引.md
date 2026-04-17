@@ -27,46 +27,46 @@ status: linked
 ## 架构与原理
 
 ### 核心架构
-- [[The Big LLM Architecture Comparison]] — DeepSeek-V3 到 Gemma 4 架构对比
-- [[Understanding and Coding the KV Cache in LLMs from Scratch]] — KV Cache 实现
-- [[为什么主流 LLM 都用 RoPE？]] — 旋转位置编码分析
+- [[2026-04-06-The-Big-LLM-Architecture-Comparison|The Big LLM Architecture Comparison]] — DeepSeek-V3 到 Gemma 4 架构对比
+- [[2026-04-06-Understanding-and-Coding-the-KV-Cache-in-LLMs-from-Scratch|Understanding and Coding the KV Cache in LLMs from Scratch]] — KV Cache 实现
+- [[2026-04-06-为什么主流LLM都用RoPE？|为什么主流 LLM 都用 RoPE？]] — 旋转位置编码分析
 
 ### 从零构建
-- [[tiny-llm-zh]] — 从零实现中文小参数量 LLM
-- [[Understanding Multimodal LLMs]] — 多模态 LLM 技术
+- [[2026-04-06-wdndevtiny-llm-zh-从零实现一个小参数量中文大语言模型。|tiny-llm-zh]] — 从零实现中文小参数量 LLM
+- [[2026-04-06-Understanding-Multimodal-LLMs|Understanding Multimodal LLMs]] — 多模态 LLM 技术
 
 ## 训练与微调
 
 ### 参数高效微调
-- [[Guide to fine-tuning LLMs using PEFT and LoRa]]
-- [[Making LLMs even more accessible with bitsandbytes, 4-bit quantization and QLoRA]]
+- [[2026-04-06-Guide-to-fine-tuning-LLMs-using-PEFT-and-LoRa-techniques|Guide to fine-tuning LLMs using PEFT and LoRa]]
+- [[2026-04-06-Making-LLMs-even-more-accessible-with-bitsandbytes,-4-bit-quantization-and-QLoRA|Making LLMs even more accessible with bitsandbytes, 4-bit quantization and QLoRA]]
 - [[2025-07-05-llm-finetuning]]
 
 ### 分布式训练
-- [[Training extremely large neural networks across thousands of GPUs]]
-- [["real-world" models with DDP]]
+- [[2026-04-06-Training extremely large neural networks across thousands of GPUs|Training extremely large neural networks across thousands of GPUs]]
+- [[2026-04-06-Training-“real-world”-models-with-DDP|"real-world" models with DDP]]
 
 ## 对齐与后训练
 
 ### RLHF 与替代方案
-- [[LLM Training: RLHF and Its Alternatives]] — Sebastian Raschka 教程
-- [[RLHF and alternatives: ORPO]] — ORPO 方法
-- [[GRPO_From_Scratch_Multi_GPU]] — GRPO 多卡实现
+- [[2026-04-06-LLM-Training-RLHF-and-Its-Alternatives|LLM Training: RLHF and Its Alternatives]] — Sebastian Raschka 教程
+- [[ORPO|RLHF and alternatives: ORPO]] — ORPO 方法
+- [[2026-04-06-theLMbookGRPO_From_Scratch_Multi_GPU_DataParallel_Qwen_2_5_1_5B_Instruct.ipynb at main|GRPO_From_Scratch_Multi_GPU]] — GRPO 多卡实现
 
 ### 推理能力
-- [[How LLMs learn to reason]] — 后训练策略分析
-- [[Why We Think]] — test-time compute 综述
+- [[2026-04-06-How-LLMs-learn-to-reason-A-deep-dive-into-post-training-strategies|How LLMs learn to reason]] — 后训练策略分析
+- [[2026-04-06-Why We Think|Why We Think]] — test-time compute 综述
 
 ## 评估与部署
 
-- [[Understanding the 4 Main Approaches to LLM Evaluation]]
-- [[Evaluate LLMs and RAG]]
-- [[Structured LLM outputs]]
+- [[2026-04-06-Understanding-the-4-Main-Approaches-to-LLM-Evaluation-(From-Scratch)|Understanding the 4 Main Approaches to LLM Evaluation]]
+- [[2026-04-06-Evaluate-LLMs-and-RAG-a-practical-example-using-Langchain-and-Hugging-Face|Evaluate LLMs and RAG]]
+- [[2026-04-06-Structured-LLM-outputs|Structured LLM outputs]]
 
 ## 关键概念
 
 - [[Transformer架构]]
-- [[RoPE]]
+- [[RoPE旋转位置编码]]
 - [[KV Cache]]
 - [[RLHF]]
 - [[DPO直接偏好优化]]

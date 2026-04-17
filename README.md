@@ -6,7 +6,8 @@
 
 - 主链路：`raw -> wiki -> outputs`
 - 核心任务：`ingest / query / lint / backfill`
-- 主要来源：网页、论文、仓库、数据集、本地历史文档
+- 标准原始资料：`raw/web/**`、`raw/repos/repo-*.md`、`raw/notes/**`，以及按需纳入的 `paper / dataset / image`
+- `raw/repos/**` 下的镜像仓库文档默认只作背景证据，不逐文件下沉为来源层
 
 ## 结构总览
 
@@ -30,7 +31,12 @@
    - 问答/研究：[知识库问答与研究工作流](wiki/indexes/shared/知识库问答与研究工作流.md)
    - 输出回流：[知识库输出回流工作流](wiki/indexes/shared/知识库输出回流工作流.md)
    - 维护：[知识库维护检查索引](wiki/indexes/shared/知识库维护检查索引.md)
-3. 将高价值结果写入 `outputs/`，并补回对应索引入口
+3. 当前标准执行顺序：`基线盘点 -> 修断链 -> 重编译 sources -> 刷新 indexes/concepts -> 更新流程文档 -> 复验与日志收尾`
+4. 健康检查统一入口：
+   - `python3 .env/health/wiki_check.py --checks lint`
+   - `python3 .env/health/wiki_check.py --checks health`
+   - `python3 .env/run_tool.py health check`
+5. 将高价值结果写入 `outputs/`，并补回对应索引入口
 
 ## 主题入口
 
@@ -57,3 +63,9 @@
 - [知识库操作记录索引](wiki/indexes/shared/知识库操作记录索引.md)
 - [最新健康检查报告](outputs/answers/知识库-健康检查-最新.md)
 - [提示词模板入口](prompts/README.md)
+
+## 当前基线
+
+- `2026-04-17` 实测：`lint = 0 errors / 0 warnings`
+- `2026-04-17` 实测：`health = 0 errors / 50 warnings`
+- 当前 warning 主要是少量低入口来源卡与长尾孤页，不再属于真实坏链阻塞项；说明见[最新健康检查报告](outputs/answers/知识库-健康检查-最新.md)

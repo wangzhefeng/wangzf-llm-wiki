@@ -35,10 +35,9 @@ status: linked
 
 ## 核心材料
 
-- [[2026-04-06-datawhalechinaeasy-vibe 💻 vibe coding 2026  Your first modern programming course for beginners to master step by step]]
-- [[raw/web/vibe-coding/2026-04-06-GitHub---datawhalechinaeasy-vibe-💻-vibe-coding-2026--Your-first-modern-programmi]]
+- [[2026-04-06-首次Vibe Coding开课了！首月最丰富组队学习来了🥳（多达18个课程）|Vibe Coding 课程入口]]
 - [[Vibe-Coding来源清单]]
-- [[2026-04-06-从零搓出一个Claude Code，一篇超详细的总结！]]
+- [[2026-04-09-vibe-coding-claude-code从入门到精通-v2-0-0|Claude Code 深度教程]]
 
 ## 子主题结构（本地资料）
 
@@ -52,7 +51,7 @@ status: linked
 
 ## 新增核心概念（2026-04 批次）
 
-- [[Vibe Coding]]
+- [[Vibe-Coding|Vibe Coding]]
 
 ### Harness 工程层
 

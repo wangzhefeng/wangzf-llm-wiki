@@ -37,7 +37,7 @@ status: linked
 | [[Word2Vec]] | 向量化深化 | 上下文预测、自监督学习 | Skip-gram、CBOW、负采样 | 基础词向量学习、扩展方向研究 |
 | 上下文词向量 | 深度学习时代 | 动态向量、Transformer | BERT、ELMo、GPT | NLP 各项下游任务 |
 | [[Embedding]] | 神经网络基础 | 参数化的离散-连续映射 | 神经网络嵌入层 | 神经 NLP 的基础 |
-| [[自注意力机制]] | Transformer 时代 | 词间长距离依赖建模 | Multi-head Attention | 现代预训练和推理 |
+| [[2022-07-15-dl-attention|自注意力机制]] | Transformer 时代 | 词间长距离依赖建模 | Multi-head Attention | 现代预训练和推理 |
 | [[词嵌入与Word2Vec]] | 词向量核心 | Word2Vec 原理与实现 | Skip-gram、CBOW | 词向量训练实践 |
 
 ## 发展演进路线
@@ -76,7 +76,7 @@ status: linked
 
 3. **神经语言模型的演进**
    - 从 Word2Vec 到 BERT 的演进
-   - [[自注意力机制]]：Transformer 如何改进语言理解
+   - [[2022-07-15-dl-attention|自注意力机制]]：Transformer 如何改进语言理解
 
 ### 高级路径：系统应用与理论深化
 1. **预训练模型的设计与选择**
@@ -112,7 +112,7 @@ status: linked
 ### Transformer 与预训练（2 张）
 | 资源 | 来源卡 | 重点 |
 |-----|--------|------|
-| 自注意力机制 | [[自注意力机制]]（外链至深度学习索引） | Multi-head Attention、位置编码 |
+| 自注意力机制 | [[2022-07-15-dl-attention|自注意力机制]]（外链至深度学习来源卡） | Multi-head Attention、位置编码 |
 | Transformer 基础 | （外链至深度学习或 LLM 索引） | Self-Attention、编码器-解码器结构 |
 
 ### 应用工具与框架（3 张）

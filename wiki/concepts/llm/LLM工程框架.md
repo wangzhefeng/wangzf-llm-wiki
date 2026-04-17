@@ -29,4 +29,4 @@ LLM 工程框架用于组织模型调用、工具编排、检索链路、评估�
 
 - [[2024-05-15-langchain-usage]]
 - [[2024-06-15-hf-transformers]]
-- [[2024-09-24-gradio]]
+- [[2024-08-15-llm-app-llama318b]]

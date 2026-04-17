@@ -96,9 +96,8 @@ Thought: 现在我可以用这个结果...
 ## 相关来源
 
 - [[大语言模型专题来源]]
-- [[2026-04-06-从零搓出一个Claude Code，一篇超详细的总结！]]
-- [[raw/web/vibe-coding/2026-04-06-GitHub---datawhalechinahandy-multi-agent-This-is-a-multi-agent-tutorial-based-on]]
-- [[raw/web/vibe-coding/2026-04-06-Agents]] — AI Agent 完整教材
+- [[VibeCoding与Agent专题来源]]
+- [[2026-04-05-vercel-agent-browser]]
 - [[2026-04-06-Agents Companion]] — Agent 配套教材
 
 ## 相关概念
