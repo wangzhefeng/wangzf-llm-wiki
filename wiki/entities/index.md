@@ -5,7 +5,7 @@ topics:
   - entities
   - llm-wiki
 related_concepts:
-  - 知识库Schema设计
+  - schema
 status: linked
 ---
 

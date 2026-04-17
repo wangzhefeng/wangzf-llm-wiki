@@ -11,9 +11,9 @@ related_concepts:
 status: linked
 ---
 
-# 知识库健康检查（最新）
+# LLM Wiki 审查报告
 
-> 本文件是健康检查唯一主报告。过程日志见：[[知识库-健康检查-日志]]。
+> 本文件是最新 lint / health 审查主报告唯一出口。过程日志统一追加到 [[log]]。
 
 ## 本次检查结果（2026-04-17）
 
@@ -43,7 +43,7 @@ status: linked
 
 ### 2. 剩余真实 wikilink 错误清零
 
-- `machine-learning` 旧索引页中的占位链接、历史英文别名和非 canonical 入口已回收。
+- `machine-learning` 旧索引页中的占位链接、历史英文别名和 non-canonical 入口已回收。
 - `nlp` 主题旧任务索引中的 `nlp-tasks`、`nlp-kg`、`nlp-libs` 等占位链接已收敛为现有稳定页或普通文本。
 - 若干 `operations-research`、`reinforcement-learning`、`statistics-theory`、`timeseries-analysis`、`vibe-coding` 长尾坏链也已同步处理。
 
@@ -55,7 +55,7 @@ status: linked
 
 ### 4. 控制文件与 shared 工作流页更新
 
-- `README.md`、`wiki/index.md`、`wiki/schema.md` 已同步到当前执行顺序与输入边界。
+- `README.md`、`wiki/index.md`、`schema.md` 已同步到当前执行顺序与输入边界。
 - `知识库工作台`、`知识库来源与专题摄取索引`、`知识库问答与研究工作流`、`知识库输出回流工作流`、`知识库维护检查索引` 已统一到当前唯一可信工具链：
   - `python3 .env/health/wiki_check.py`
   - `python3 .env/run_tool.py health check`

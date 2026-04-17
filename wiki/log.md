@@ -12,11 +12,23 @@ status: linked
 
 # Wiki 操作日志
 
-## 日志格式说明
+## 统一日志约定
 
 - 按时间顺序记录 wiki 操作，保持 append-only。
 - 格式：`## [YYYY-MM-DD] action | subject`
-- 动作类型：`ingest`（摄取）、`update`（更新）、`query`（查询）、`lint`（检查）、`backfill`（回流）、`archive`（归档）
+- 动作类型：`ingest`（摄取）、`update`（更新）、`query`（查询）、`lint`（检查）、`backfill`（回流）、`archive`（归档）、`task`（任务）
+- ingest / query / lint / backfill / task 的统一时间线都收口到本文件。
+- 最新 lint / health 主报告统一收口到 [[log_lint]]。
+- 历史上 `outputs/logs/*.md` 与 `outputs/answers/知识库-健康检查-最新.md` 的路径，仅在旧记录中作为历史事实保留，不再代表当前规范。
+
+## [2026-04-18] update | 日志 / 审查 / 入口体系重构
+
+- 新建根 `schema.md`，作为唯一规则入口。
+- 新建 `wiki/log_lint.md`，作为最新 lint / health 审查主报告唯一出口。
+- 删除 `wiki/schema.md`、`wiki/glossary.md`、`outputs/logs/` 与旧 `outputs/answers/知识库-健康检查-最新.md`。
+- 重写根 `README.md` 为 GitHub 项目介绍，并将知识库内部入口统一收口到 `schema.md` 与 `wiki/index.md`。
+- 更新 shared 工作流页、LLM-Wiki 运维入口与 prompts，使操作日志统一追加到 `wiki/log.md`。
+- 原 `outputs/logs/知识库-健康检查-日志.md` 中关于健康检查日志唯一出口、检查前后动作统一追加、主报告与过程日志双落点的约定，已并入当前文件与 `schema.md`。
 
 ## [2026-04-15] ingest | Statistics-Theory 知识库编译完成
 

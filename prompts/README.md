@@ -81,7 +81,7 @@
 用于补时间导航记录。
 
 - `logging/operation-log.md`
-  操作记录模板。适合为 `ingest / query / lint / backfill` 落一条可回看的时间记录。
+  操作记录模板。适合为 `ingest / query / lint / backfill` 追加一条可回看的时间记录到 `wiki/log.md`。
 
 ## 使用导航
 

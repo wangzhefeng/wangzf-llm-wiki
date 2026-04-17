@@ -75,5 +75,5 @@ status: linked
 ```
 个人知识库诞生设想 → 知识库构建执行指引 → 知识库建设方法
 → Karpathy-LLM-Obsidian知识库工作流 → LLM-Wiki-持久化知识库模式
-→ schema → 知识库工作台
+→ schema → log_lint → 知识库工作台
 ```
