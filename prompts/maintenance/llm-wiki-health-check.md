@@ -45,7 +45,7 @@
 - [[知识库维护检查索引]]
 - [[知识库健康检查清单]]
 - [[README]]
-- [[raw/README]]
+- [[schema]]
 - [[wiki/index]]
 - [[schema]]
 
