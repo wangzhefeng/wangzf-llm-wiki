@@ -19,7 +19,7 @@ status: linked
 
 - [[purpose]]：定义目标、范围与演进方向
 - [[schema]]：定义结构、字段、命名、流程与质量约束
-- [[index]]：当前统一导航入口
+- [[wiki/index]]：当前统一导航入口
 - [[log]]：记录操作时间线（ingest/query/lint/backfill）
 
 ## 执行入口

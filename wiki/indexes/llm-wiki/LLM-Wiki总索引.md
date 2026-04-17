@@ -28,7 +28,7 @@ status: linked
 |---|---|
 | [[purpose]] | 目标、关键问题、范围、演进方向 |
 | [[schema]] | 结构、字段、命名、流程、质量约束（**唯一规则源**） |
-| [[index]] | Wiki 统一导航入口 |
+| [[wiki/index]] | Wiki 统一导航入口 |
 | [[log]] | append-only 操作时间线 |
 
 ### 目录约定

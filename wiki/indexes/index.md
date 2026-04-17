@@ -39,5 +39,5 @@ status: linked
 
 ## 关联入口
 
-- 总入口：[[index]]
+- 总入口：[[wiki/indexes/index]]
 - 规则约束：[[schema]]

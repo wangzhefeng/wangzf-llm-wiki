@@ -142,6 +142,6 @@ sources:
 
 1. [[purpose]]
 2. [[schema]]
-3. [[index]]
+3. [[wiki/index]]
 4. [[log]]（最近 20~30 行）
 5. 任务相关主题总索引（`wiki/indexes/*/`）
