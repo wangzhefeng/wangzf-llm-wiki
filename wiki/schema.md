@@ -14,7 +14,7 @@ status: linked
 
 # Wiki 规则 Schema
 
-## 结构
+## 目录结构约定
 
 当前仓库采用 `raw -> wiki -> outputs` 的三层链路，其中 `raw/` 承载“原始层”（外部原件 + 最小元数据），`wiki/` 承载结构化知识层。
 
@@ -25,7 +25,6 @@ status: linked
   - `datasets/`：数据集快照/摘录
   - `images/`：来源型图像（与某一来源强绑定）
   - `notes/`：本地笔记与历史文档
-  - `codex_threads/`：线程沉淀
   - `raw/assets/`：通用附件与非来源型素材（见 `raw/assets/README.md`）
 - `wiki/sources/`：来源摘要卡（讲材料内容与价值）
 - `wiki/indexes/`：主题索引、阅读地图、工作台

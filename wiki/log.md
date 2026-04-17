@@ -234,7 +234,7 @@ status: linked
 - Added `tools/fix_broken_source_path_by_filename.py`：修复 `source_path` 指向不存在 raw 路径的问题（按文件名唯一匹配）。
 - Added `tools/create_missing_source_cards_for_raw.py`：为缺失来源卡的 raw/web 等条目生成最小来源卡入口。
 - Added `tools/backfill_raw_notess_index_links.py`：为 `raw/notes/**/_index.md` 补 wiki 入口链接。
-- 更新 [[../raw/codex_threads/README.md]]、[[../outputs/README.md]]、[[../prompts/README.md]]、[[../README.md]]：补齐图谱入口链接，减少“散点”。
+- 更新线程整理入口页、[[../outputs/README.md]]、[[../prompts/README.md]]、[[../README.md]]：补齐图谱入口链接，减少“散点”。
 - Updated `tools/wiki_health_check.py`：支持校验 `raw/...` 形式的路径式 wikilink。
 
 ## [2026-04-11] 检查 | 知识库全面健康检查与修复
@@ -448,7 +448,7 @@ status: linked
 
 - Fixed 19 broken wikilinks caused by Vibe Coding link naming inconsistencies (spaces vs hyphens)
 - Updated `wiki/index.md`, `wiki/indexes/llm/*.md`, `wiki/indexes/vibe-coding/*.md`, and 10 `wiki/sources/knowledge-base/*.md` files
-- Renamed `raw/codex-threads/` to `raw/codex_threads/` to match schema naming conventions
+- Renamed thread summary directory to match schema naming conventions
 - Removed empty `raw/pdf/` directory
 - Added missing frontmatter to `raw/web/vibe-coding/2026-04-11-Create a CLI Codex can use.md`
 - Verified with `tools/wiki_health_check.py`: broken wikilinks now 0, lint passes clean

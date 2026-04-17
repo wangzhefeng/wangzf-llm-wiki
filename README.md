@@ -6,7 +6,7 @@
 
 - 主链路：`raw -> wiki -> outputs`
 - 核心任务：`ingest / query / lint / backfill`
-- 标准原始资料：`raw/web/**`、`raw/repos/repo-*.md`、`raw/notes/**`，以及按需纳入的 `paper / dataset / image`
+- 标准原始资料：`raw/web/**`、`raw/repos/repo-*.md`、`raw/notes/**`，以及按需纳入的 `papers / datasets / images`
 - `raw/repos/**` 下的镜像仓库文档默认只作背景证据，不逐文件下沉为来源层
 
 ## 结构总览
