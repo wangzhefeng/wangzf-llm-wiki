@@ -1611,3 +1611,26 @@ GLOSSARY.md 定义了知识库各主题的规范英文名称。发现 raw/ 层�
 
 - `power-market-trading` 主题从“主轴综合来源 + 工具入口”进一步深化为“规则、方法、工具”三段式可学习结构
 - 用户现在可以沿 `机制页 -> 电力交易优化建模 -> 风光储测算/长文主轴` 的路径继续深入
+
+## [2026-04-17] ingest/backfill | raw/repos 五仓库专题编译
+
+### 背景
+`raw/repos/` 下新增或整理了 5 个代码仓库：`control-algorithm-proj`、`dowhy`、`ele-trading`、`rlproj`、`storage_mpc_project`。这些材料如果只停留在 raw 层，会成为暗资产，因此本轮按主题归属编译进现有知识库。
+
+### 执行内容
+
+- 为 5 个仓库分别新增 repo 来源卡，并按主题落入 `control-algorithms`、`causal-inference`、`power-market-trading`、`reinforcement-learning`
+- 更新 4 个主题的总索引、来源清单、阅读地图，补入 repo 工程入口
+- 为控制算法新增桥接页 `现代控制方法`
+- 为强化学习新增桥接页 `多臂老虎机与累积懊悔`
+- 在 `DoWhy-Framework`、`电力交易优化建模`、`风光储测算`、`马尔可夫决策过程MDP` 等页面补工程入口链接
+- 新增 `outputs/syntheses/2026-04-17-repo-专题编译综述.md`
+- 新增 `outputs/logs/2026-04-17-repo-仓库编译-动作记录.md`
+
+### 结果
+
+- 知识库开始稳定吸收 repo 材料，而不是只吸收文章和笔记
+- `control-algorithms` 从经典控制扩展到现代控制与工程模板
+- `causal-inference` 从 DoWhy 概念介绍扩展到官方源码入口
+- `power-market-trading` 从文档主轴扩展到研究原型代码与储能控制模板
+- `reinforcement-learning` 补上了 bandit / regret 的本地代码实践入口

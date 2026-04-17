@@ -3,7 +3,7 @@ created_at: 2026-04-11
 topics:
 - reinforcement-learning
 - shared
-status: inbox
+status: linked
 ---
 # wiki/concepts/reinforcement-learning
 
@@ -13,3 +13,4 @@ status: inbox
 
 - [[wiki/concepts/reinforcement-learning/PPO近端策略优化]]
 - [[wiki/concepts/reinforcement-learning/GRPO群体相对策略优化]]
+- [[wiki/concepts/reinforcement-learning/多臂老虎机与累积懊悔]]

@@ -219,6 +219,27 @@ refute = model.refute_estimate(identified_estimand)
 
 ## 限制与注意事项
 
+## 官方仓库结构（工程入口）
+
+本知识库现已补充 [[2026-04-17-dowhy-官方仓库入口]] 作为 DoWhy 的官方工程入口。结合仓库可以把 DoWhy 理解为三层结构：
+
+1. **源码层**：`dowhy/`
+   - 因果效应识别与估计
+   - `gcm/` 图形因果模型
+   - `causal_refuters/` 反驳与敏感性分析
+2. **文档与案例层**：`docs/source/`
+   - 用户指南
+   - example notebooks
+   - causal tasks 文档分层
+3. **验证层**：`tests/`
+   - 识别器、估计器、refuters、GCM 与时间序列相关测试
+
+这让 DoWhy 不再只是“一个四步骤框架”，而是一个同时具备理念、API、示例和验证体系的完整因果推断工程库。
+
+## 相关来源
+
+- [[2026-04-17-dowhy-官方仓库入口]]
+
 ### 1. 因果图的正确性
 - DoWhy 的识别步骤依赖因果图的正确性
 - 错误的图 → 错误的识别 → 错误的估计
