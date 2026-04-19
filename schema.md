@@ -38,7 +38,7 @@ status: active
   - `wiki/comparisons/`：横向比较页，适合多对象、多方案选择问题
   - `wiki/concepts/`：方法、理论、模型、工作流等概念页
   - `wiki/entities/`：人物、组织、项目等可跨主题复用的实体页
-  - `wiki/indexes`：TOOD
+  - `wiki/indexes/`：TODO
   - `wiki/queries/`：可复用问题页，适合高频问题和证据路径模板
   - `wiki/sources/`：单个来源的摘要页，回答“这份材料讲了什么、价值是什么、连到哪些概念”
   - `wiki/index.md`：知识库主页，列出所有概念、实体、索引、问题页
