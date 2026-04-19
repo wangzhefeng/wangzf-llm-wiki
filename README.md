@@ -20,14 +20,16 @@
 
 ## 仓库入口
 
-- [规则入口 `schema.md`](schema.md)
-- [Wiki 内部导航 `wiki/index.md`](wiki/index.md)
-- [操作日志 `wiki/log.md`](wiki/log.md)
-- [最新审查报告 `wiki/log_lint.md`](wiki/log_lint.md)
+- [LLM Wiki 规则入口 `schema.md`](schema.md)
+- [LLM Wiki `purpose.md`](purpose.md) # TODO
+- [LLM Wiki 内部导航 `wiki/index.md`](wiki/index.md)
+- [LLM Wiki 操作日志 `wiki/log.md`](wiki/log.md)
+- [LLM Wiki 最新审查报告 `wiki/log_lint.md`](wiki/log_lint.md)
 
 ## 使用说明
 
 - 想了解仓库规则、命名、流程与输出口，先读 `schema.md`
+- 想了解研究目标、边界与优先级，读 `purpose.md`
 - 想进入知识库内部导航与工作流，读 `wiki/index.md`
 - 想查看最近维护动作与历史时间线，读 `wiki/log.md`
 - 想查看最近一次 lint / health 结果，读 `wiki/log_lint.md`

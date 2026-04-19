@@ -17,17 +17,38 @@ status: active
 
 ## 1. 角色与单一出口
 
+- `README.md`：GitHub 项目介绍
 - `schema.md`：唯一规则入口
 - `purpose.md`：研究目标、边界与优先级
+- `wiki/index.md`：唯一统一导航入口
 - `wiki/log.md`：唯一操作日志
 - `wiki/log_lint.md`：唯一 lint / health 主报告
 
 ## 2. 模块边界
 
 - `raw/`：唯一摄取入口，只放原始资料与最小元数据
-- `raw/assets/`：通用附件和非来源型素材，不代替 `raw/` 保存原始来源
+  - `raw/assets/`：通用附件和非来源型素材，不代替 `raw/` 保存原始来源
+  - `raw/datasets`：
+  - `raw/images`：原始图片、截图、图表
+  - `raw/notes`：个人笔记
+  - `raw/papers`：论文原始材料
+  - `raw/repos`：代码仓库原始材料
+  - `raw/web`：网页原始材料
 - `wiki/`：结构化知识层，放来源卡、索引、概念、实体、对比、问题页
+  - `wiki/comparisons/`：横向比较页，适合多对象、多方案选择问题
+  - `wiki/concepts/`：方法、理论、模型、工作流等概念页
+  - `wiki/entities/`：人物、组织、项目等可跨主题复用的实体页
+  - `wiki/indexes`：TOOD
+  - `wiki/queries/`：可复用问题页，适合高频问题和证据路径模板
+  - `wiki/sources/`：单个来源的摘要页，回答“这份材料讲了什么、价值是什么、连到哪些概念”
+  - `wiki/index.md`：知识库主页，列出所有概念、实体、索引、问题页
+  - `wiki/log.md`：唯一操作日志
+  - `wiki/log_lint.md`：唯一 lint / health 主报告
 - `outputs/`：派生结果层，放 `answers / syntheses / slides / figures`
+  - `outputs/answers/`：问答结果
+  - `outputs/figures/`：图表结果
+  - `outputs/slides/`：演示结果
+  - `outputs/syntheses/`：总结结果，阶段性综述或综合判断
 - `prompts/`：提示词模板目录，不再依赖目录 README 作为入口
 
 ## 3. 原始层规范
@@ -60,13 +81,21 @@ status: active
 - 正式编译范围：`raw/web/**`、`raw/repos/repo-*.md`、`raw/notes/**`
 - `raw/repos/**` 下镜像仓库文档默认只作背景证据，不逐文件编译
 
-## 4. 页面与字段规范
+## 4. 知识层规范
+
+* TODO
+
+## 5. 派生层规范
+
+* TODO
+
+## 6. 页面字段规范
 
 ### `raw/**/*.md`
 
 ```yaml
 ---
-source_type: web | paper | repo | dataset | image | notes
+source_type: web | papers | repos | datasets | images | notes
 created_at: YYYY-MM-DD
 topics:
   - topic-a
@@ -98,16 +127,7 @@ status: linked
 - 来源卡推荐保留 `source_path`
 - `source_path` 必须是 `raw/` 相对路径；允许单值或列表
 
-## 4.1 页面职责
-
-- `wiki/sources/`：单个来源的摘要页，回答“这份材料讲了什么、价值是什么、连到哪些概念”
-- `wiki/entities/`：人物、组织、项目等可跨主题复用的实体页
-- `wiki/concepts/`：方法、理论、模型、工作流等概念页
-- `wiki/comparisons/`：横向比较页，适合多对象、多方案选择问题
-- `wiki/queries/`：可复用问题页，适合高频问题和证据路径模板
-- `outputs/syntheses/`：阶段性综述或综合判断，不在 `wiki/` 下新增 `overview/`
-
-## 5. 命名与主题规范
+## 7. 命名与主题规范
 
 - 原始网页：`YYYY-MM-DD-标题.md`
 - 仓库来源：`repo-组织名-仓库名.md`
@@ -154,7 +174,7 @@ status: linked
 - `programming-tools`
 - `others`
 
-## 6. 默认执行顺序
+## 8. 默认执行顺序
 
 1. `raw`
 2. `wiki/sources`
@@ -176,7 +196,7 @@ status: linked
 - 仅在“2+ 来源共同出现”或“单来源核心主题”时新建概念/实体页
 - 当前标准收尾顺序：`基线盘点 -> 修断链 -> 重编译 sources -> 刷新 indexes/concepts -> 更新流程文档 -> 复验与日志收尾`
 
-### 动作规则
+## 9. 动作规则
 
 - `ingest`
   - 先读 `raw`，再补 `wiki/sources`
@@ -190,8 +210,14 @@ status: linked
   - 优先发现：断链、孤页、缺入口、命名漂移、来源缺口、应独立成页但尚未成页的概念
   - 先产出建议，再按当前仓库流程修复
   - 不把“内容薄弱但已登记”误报成结构错误
+- `backfill`
+  - TODO
+- `log`
+  - TODO
+- `task`
+  - TODO
 
-## 会话启动
+## 10. 会话启动
 
 1. [[schema]]
 2. [[purpose]]
