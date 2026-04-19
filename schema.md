@@ -83,11 +83,36 @@ status: active
 
 ## 4. 知识层规范
 
-* TODO
+`wiki/` 是结构化知识层，放来源卡、索引、概念、实体、对比、问题页。
+
+- `wiki/sources/`：单个来源的摘要页，回答"这份材料讲了什么、价值是什么、连到哪些概念"。每个 topic 目录独立维护来源清单。
+- `wiki/concepts/`：方法、理论、模型、工作流等概念页，按 topic 子目录组织。
+- `wiki/entities/`：人物、组织、社区、项目等可跨主题复用的实体页，按 topic 子目录或根目录组织。
+- `wiki/indexes/`：主题总索引、阅读地图、来源清单，按 topic 子目录组织。`shared/` 子目录放跨 topic 的流程与导航页。
+- `wiki/comparisons/`：横向比较页，适合多对象、多方案选择问题。
+- `wiki/queries/`：可复用问题页，适合高频问题和证据路径模板。
+
+知识层规则：
+
+- 页面互链优先使用 `[[wikilinks]]`
+- 新增稳定页面后，必须补到至少一个主题索引入口
+- 仅在"2+ 来源共同出现"或"单来源核心主题"时新建概念/实体页
+- 原始层文件不做语义改写，修正写入 `wiki/` 层
 
 ## 5. 派生层规范
 
-* TODO
+`outputs/` 是派生结果层，放 answers / syntheses / slides / figures。
+
+- `outputs/answers/`：问答结果，针对具体问题的回答。
+- `outputs/syntheses/`：总结结果，阶段性综述或综合判断。
+- `outputs/slides/`：演示结果。
+- `outputs/figures/`：图表结果。
+
+派生层规则：
+
+- 高价值结果优先进入 `outputs/answers` 或 `outputs/syntheses`
+- 若问题会重复出现，再考虑沉淀到 `wiki/queries/` 或 `wiki/comparisons/`
+- 做完 task 后：更新相关索引、补充来源卡或概念卡（如有新知识）
 
 ## 6. 页面字段规范
 
@@ -211,11 +236,21 @@ status: linked
   - 先产出建议，再按当前仓库流程修复
   - 不把“内容薄弱但已登记”误报成结构错误
 - `backfill`
-  - TODO
+  - 检查 outputs/ 中高价值结果是否已有对应入口
+  - 优先回流：syntheses（综述）、answers（问答）中经判定有长期价值的
+  - 回流后：补入对应主题索引，在相关来源卡中补充 [[outputs/...]] 链接
+  - 不回流：一次性临时答案、明显过时内容、已被新覆盖的旧输出
 - `log`
-  - TODO
+  - ingest / query / lint / backfill / task 统一追加到 wiki/log.md
+  - 格式：## [YYYY-MM-DD] action | subject
+  - action 类型：ingest / update / query / lint / backfill / archive / task
+  - 每条记录包含：时间戳、操作类型、简要描述、关键产出
+  - 保持 append-only，不修改历史记录
 - `task`
-  - TODO
+  - 适用于：代码开发、演示构建、数据分析等任务驱动工作流
+  - 产出优先写入 outputs/ 对应子目录，再回链到 wiki/
+  - 任务完成后：更新相关索引、补充来源卡或概念卡（如有新知识）
+  - 复用 prompts/task/llm-wiki-task.md 模板
 
 ## 10. 会话启动
 

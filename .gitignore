@@ -1,5 +1,6 @@
 .agents/
 .claude/
+.hermes/
 .env/
 .obsidian/
 .ruff_cache/
@@ -9,6 +10,7 @@ raw/repos/tsproj_ml/
 raw/repos/tsproj_dl/
 raw/repos/tsproj_stat/
 raw/repos/tsproj_ltsfm/
+raw/repos/tsproj_ad/
 raw/repos/orproj/
 raw/repos/rlproj/
 raw/repos/geatpy/
