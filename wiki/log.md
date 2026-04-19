@@ -1646,3 +1646,27 @@ GLOSSARY.md 定义了知识库各主题的规范英文名称。发现 raw/ 层�
 - `causal-inference` 从 DoWhy 概念介绍扩展到官方源码入口
 - `power-market-trading` 从文档主轴扩展到研究原型代码与储能控制模板
 - `reinforcement-learning` 补上了 bandit / regret 的本地代码实践入口
+
+## [2026-04-19] ingest | 风光储测算v1/v2 与 Claude Design SysPrompt 编译
+
+### 背景
+用户在 `raw/notes/` 下新增/整理了三份文档：
+1. `raw/notes/power-market-trading/2026-04-16-风光储测算算法方案-v2.md`（新增）
+2. `raw/notes/power-market-trading/2026-04-16-风光储测算算法方案-v1.md`（从 `raw/web/` 移入并重命名）
+3. `raw/notes/vibe-coding/Claude-Design-Sys-Prompt.md`（新增）
+
+### 执行内容
+
+**power-market-trading 主题：**
+- 更新 `wiki/sources/power-market-trading/2026-04-16-风光储测算算法方案.md`（v1 来源卡）：source_path 改为 `raw/notes/`，补充 v1 版本说明与 v2 关系
+- 新增 `wiki/sources/power-market-trading/2026-04-16-风光储测算算法方案-v2.md`（v2 来源卡）：完整摘要 v2 的绿电直连业务背景、等效小时数校准、粗细两阶段搜索等核心设计
+- 更新 `wiki/concepts/power-market-trading/风光储测算.md`：补充版本信息章节，区分 v1 基础框架与 v2 扩展设计；更新参考来源链向 v1/v2 双版本
+- 更新 `wiki/indexes/power-market-trading/电力市场交易来源清单.md`：`工具与建模支线` 从 4 篇扩为 5 篇，新增 v1/v2 双条目，标注 v2 为工程落地主版本
+
+**vibe-coding 主题：**
+- 新增 `wiki/sources/vibe-coding/Claude-Design-Sys-Prompt.md`：摘要 Anthropic Claude Code Design 模式系统提示词的角色定义、工作流程、输出格式与核心约束
+- 更新 `wiki/indexes/vibe-coding/Vibe-Coding来源清单.md`：本地文档来源从 10 条增为 11 条，补充 Claude-Design-Sys-Prompt 条目
+
+### 结果
+- 风光储测算从单版本升级为 v1/v2 双版本追踪体系，v2 作为工程落地主版本
+- Vibe-Coding 主题新增 Claude Code Design 模式来源，丰富了 AI 辅助设计工具链的来源积累
