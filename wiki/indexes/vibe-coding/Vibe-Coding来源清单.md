@@ -26,6 +26,7 @@ status: linked
 - [[2026-04-09-vibe-coding-rag]]
 - [[2026-04-09-vibe-coding-skills]]
 - [[2026-04-09-vibe-coding-tools]]
+- [[Claude-Design-Sys-Prompt]] — Anthropic Claude Code Design 模式系统提示词（2026-04-19）
 
 ## Web 文章来源卡（raw/web/vibe-coding）
 
@@ -41,5 +42,5 @@ status: linked
 
 ## 说明
 
-- 本地文档来源：10 条（2026-04-09 批次）
+- 本地文档来源：11 条（2026-04-09 批次 + 2026-04-19 Claude-Design-Sys-Prompt）
 - Web 文章来源：9 条（2026-04-05/06/11 批次）
