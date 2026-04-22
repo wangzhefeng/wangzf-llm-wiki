@@ -1,0 +1,34 @@
+{
+  "simulation_horizon": 96,
+  "day_ahead_horizon": 96,
+  "intra_day_horizon": 24,
+  "real_time_horizon": 8,
+  "dt_hours": 0.25,
+  "battery": {
+    "energy_capacity_mwh": 20.0,
+    "charge_power_max_mw": 6.0,
+    "discharge_power_max_mw": 6.0,
+    "charge_efficiency": 0.95,
+    "discharge_efficiency": 0.95,
+    "soc_init": 0.55,
+    "soc_min": 0.2,
+    "soc_max": 0.9,
+    "soc_ref": 0.5
+  },
+  "market": {
+    "sell_price_discount": 0.85
+  },
+  "weights": {
+    "lambda_soc": 16.0,
+    "lambda_deg": 0.015,
+    "lambda_delta_u": 1.2,
+    "lambda_terminal": 18.0,
+    "lambda_plan_track": 0.2
+  },
+  "random_seed": 42,
+  "forecast_noise": {
+    "load_sigma": 0.6,
+    "buy_price_sigma": 0.03,
+    "pv_sigma": 0.35
+  }
+}

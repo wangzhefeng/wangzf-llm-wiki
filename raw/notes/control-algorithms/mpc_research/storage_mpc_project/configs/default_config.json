@@ -1,0 +1,25 @@
+{
+  "simulation_horizon": 96,
+  "mpc_horizon": 12,
+  "dt_hours": 0.25,
+  "battery": {
+    "energy_capacity_mwh": 20.0,
+    "power_min_mw": -8.0,
+    "power_max_mw": 8.0,
+    "soc_init": 0.55,
+    "soc_min": 0.2,
+    "soc_max": 0.9,
+    "soc_ref": 0.5
+  },
+  "weights": {
+    "lambda_soc": 20.0,
+    "lambda_u": 0.05,
+    "lambda_delta_u": 2.0,
+    "lambda_terminal": 25.0
+  },
+  "random_seed": 42,
+  "forecast_noise": {
+    "load_sigma": 0.6,
+    "price_sigma": 0.03
+  }
+}
