@@ -1698,3 +1698,57 @@ GLOSSARY.md 定义了知识库各主题的规范英文名称。发现 raw/ 层�
 - sources 层：35 张孤儿卡清理 + 26 张新卡创建 = 29 个 raw 文件与来源卡一一对应
 - indexes 层：总索引和来源清单完整反映最新状态
 - 知识库结构恢复到健康状态，断链风险消除
+
+## [2026-04-22] ingest | MPC 调研专题编译完成
+
+### 背景
+
+用户在 `raw/notes/control-algorithms/2026-04-22-mpc_research/` 下新增了大量 MPC 调研文档，包括：
+- 核心调研文档 `2026-04-22-mpc-research.md`（828 行，45KB）
+- 完整对话记录 `MPC_conversation_full_page_content.md`（47KB）
+- 阅读辅助 `MPC_阅读辅助.md`（46KB）
+- 储能 MPC 项目代码 v1~v4（4 个版本迭代）
+- 2 篇 MPC 调研论文 PDF
+
+### 执行内容
+
+**Phase 1：来源卡创建（7 张）**
+
+| 来源卡 | 对应 raw |
+|--------|---------|
+| `2026-04-22-mpc-research` | `2026-04-22-mpc-research.md` |
+| `2026-04-22-mpc-conversation` | `MPC_conversation_full_page_content.md` |
+| `2026-04-22-mpc-reading-guide` | `MPC_阅读辅助.md` |
+| `2026-04-22-storage-mpc-project-v1` | `storage_mpc_project/README.md` |
+| `2026-04-22-storage-mpc-project-v2` | `storage_mpc_project/README_v2.md` |
+| `2026-04-22-storage-mpc-project-v3` | `storage_mpc_project/README_v3.md` |
+| `2026-04-22-storage-mpc-project-v4` | `storage_mpc_project/README_v4.md` |
+
+**Phase 2：索引页更新（3 个文件）**
+
+- `控制算法来源清单.md`：新增 MPC 调研文档（主文档 + 4 个项目版本）共 7 个条目
+- `控制算法阅读地图.md`：更新学习路径，补充 MPC 调研文档入口（来源卡 + 阅读辅助）
+- `控制算法总索引.md`：概念页从 6 增至 11，来源卡从 6 增至 13
+
+**Phase 3：核心概念页创建（5 个）**
+
+| 概念页 | 核心内容 |
+|--------|---------|
+| `MPC.md` | MPC 核心定义、工作原理、与 PID/LQR 对比、工程分层、预测集成优势 |
+| `MPC算法家族.md` | 7 种 MPC 类型对比表（线性/非线性/鲁棒/随机/经济/分布式/自适应）|
+| `MPC数学原理.md` | 标准 MPC 数学表述、QP 形式、约束分类、稳定性分析、预测模型 |
+| `MPC工具库.md` | Python 工具链三层架构、6 个库对比、求解器生态、工程选型流程图 |
+| `储能MPC建模.md` | 储能 MPC 核心要素、目标函数设计、VPP 集成框架、工程参数建议 |
+
+**Phase 4：wiki/index.md 和 log.md**
+
+- `wiki/index.md`：已有"控制算法总索引"入口，无需额外更新
+- `wiki/log.md`：追加本次编译记录
+
+### 结果
+
+- **新增来源卡**：7 张（MPC 调研文档 3 张 + 储能 MPC 项目 4 个版本）
+- **新增概念页**：5 个（MPC 核心 + 算法家族 + 数学原理 + 工具库 + 储能建模）
+- **更新索引页**：3 个（来源清单 + 阅读地图 + 总索引）
+- **专题成熟度**：从"经典控制 + 现代控制方法概述"升级为"完整 MPC 知识体系"
+- **控制算法维度增长**：概念页 6→11，来源卡 6→13
