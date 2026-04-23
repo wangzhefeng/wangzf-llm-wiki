@@ -330,13 +330,13 @@ topics:
 
 > 优化模型的标准形式如下：
 >
-> `$$\text{min 或 max} \space [\text{目标函数(可以是多个)}]$$`
-> `$$\text{s.t.}\begin{align}
+> $$\text{min 或 max} \space [\text{目标函数(可以是多个)}]$$
+> $$\text{s.t.}\begin{align}
 > (主约束) \\
 > (变量类型约束)
-> \end{align}$$`
+> \end{align}$$
 >
-> 其中，“`$\text{s.t.}$`” 代表 “使服从(subject to)”。
+> 其中，“$\text{s.t.}$” 代表 “使服从(subject to)”。
 
 ### 图解法
 
@@ -462,24 +462,24 @@ topics:
 
 数学规划或者（单目标）优化模型的一般形式如下：
 
-`$$\text{min 或 max}\space f_{1}(x_{1}, \cdots, x_{n})$$`
+$$\text{min 或 max}\space f_{1}(x_{1}, \cdots, x_{n})$$
 
-`$$\text{s.t.}\space g_{i}(x_{1}, \cdots, x_{n})\begin{cases}
+$$\text{s.t.}\space g_{i}(x_{1}, \cdots, x_{n})\begin{cases}
 \leq b_{i} \\
 = b_{i} \\
 \geq b_{i}, i=1, \cdots, m
-\end{cases}$$`
+\end{cases}$$
 
-其中 `$f$`，`$g_{1}, \cdots, g_{m}$` 是关于决策变量 `$x_{1},\cdots, x_{n}$`，
-以及常数参数 `$b_{1}, \cdots, b_{m}$` 的方程，
-每一个约束都可以是 `$\leq$`、`$=$` 或者 `$\geq$` 的形式。
+其中 $f$，$g_{1}, \cdots, g_{m}$ 是关于决策变量 $x_{1},\cdots, x_{n}$，
+以及常数参数 $b_{1}, \cdots, b_{m}$ 的方程，
+每一个约束都可以是 $\leq$、$=$ 或者 $\geq$ 的形式。
 
 #### 线性规划与非线性规划
 
-> 如果上述优化模型形式中的（单一）目标函数方程 `$f$` 以及约束方程 `$g_{1}, \cdots, g_{m}$` 均为关于决策变量的线性方程，
+> 如果上述优化模型形式中的（单一）目标函数方程 $f$ 以及约束方程 $g_{1}, \cdots, g_{m}$ 均为关于决策变量的线性方程，
 则该优化模型为线性规划(linear program, LP)，其中目标函数值可以为满足约束的任意整数或分数。
 
-> 如果上述优化模型形式中的（单一）目标函数方程 `$f$` 以及约束方程 `$g_{1}, \cdots, g_{m}$` 均为关于决策变量的非线性方程，
+> 如果上述优化模型形式中的（单一）目标函数方程 $f$ 以及约束方程 $g_{1}, \cdots, g_{m}$ 均为关于决策变量的非线性方程，
 则该优化模型为非线性规划(nonlinear program, NLP)，其中目标函数值可以为满足约束的任意整数或分数。
 
 #### 离散或整数规划

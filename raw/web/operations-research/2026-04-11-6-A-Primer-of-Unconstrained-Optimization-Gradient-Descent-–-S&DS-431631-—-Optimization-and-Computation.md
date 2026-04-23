@@ -188,7 +188,7 @@ Why does this work? The gradient $\nabla f(x)$ points in the direction of steepe
 
 This condition is much more permissive than steepest descent: the negative gradient is the *best* descent direction, but the entire **half-space** of directions opposite to $\nabla f(x)$ also works. This flexibility is what allows us to use alternative descent directions (such as Newton’s direction or coordinate descent directions) that may converge faster.
 
-![](https://zhuoranyang.github.io/sds431-notes/lectures/figures/ch06-descent-direction.svg)
+![[ch06-descent-direction.svg]]
 
 Figure 6.1: Any direction forming an obtuse angle with the gradient is a descent direction. The half-space { d: ⟨, ∇ f ( x ) ⟩ < 0 } \\{d: \\langle d, \\nabla f(x) \\rangle < 0\\} contains all descent directions, including the steepest descent − -\\nabla f(x).
 
@@ -266,7 +266,7 @@ TipRemark: Sensitivity to Condition Number
 
 This is the simplest direction but **not always the fastest**. It has poor performance when the **condition number** $\frac{\lambda_{\max}(\nabla^2 f)}{\lambda_{\min}(\nabla^2 f)}$ is large. The iterates oscillate in the dimension with the large eigenvalue and make fast progress in the dimension with the small eigenvalue.
 
-![](https://zhuoranyang.github.io/sds431-notes/lectures/figures/ch05-condition-number.svg)
+![[ch05-condition-number.svg]]
 
 Figure 6.2: Effect of the condition number κ = L / μ \\kappa = L/\\mu on gradient descent convergence. When \\kappa is close to 1 (left), the contours are nearly circular and GD converges quickly along a direct path. When is large (right), the contours are elongated ellipses and GD zig-zags across the narrow valley, making slow progress toward the optimum.
 
@@ -330,11 +330,11 @@ is the **condition number** of the Hessian. When $\kappa \approx 1$ (nearly equa
 
 Figure 6.2: Zig-zag trajectory of gradient descent on a 2D quadratic with different eigenvalues. The iterate oscillates in the y-direction while progressing monotonically in x.
 
-![](https://zhuoranyang.github.io/sds431-notes/lectures/figures/gradient-descent-convergence.svg)
+![[gradient-descent-convergence.svg]]
 
 Figure 6.3: Gradient descent trajectories: smooth convex objective with O ( 1 / k ) O(1/k) convergence (left) versus strongly convex objective with linear ρ O(\\rho^k) convergence (right). The condition number κ = L μ \\kappa = L/\\mu controls the eccentricity of the contours.
 
-![](https://zhuoranyang.github.io/sds431-notes/lectures/figures/convergence-rates-comparison.svg)
+![[convergence-rates-comparison.svg]]
 
 Figure 6.4: Comparison of convergence rates encountered in first-order optimization. From slowest to fastest: O ( 1 / k ) O(1/\\sqrt{k}) for subgradient methods on nonsmooth problems, O(1/k) for GD on smooth convex functions, 2 O(1/k^2) for accelerated methods, and linear ρ O(\\rho^k) convergence for strongly convex objectives. The gap between these rates motivates the momentum and adaptive methods studied in subsequent chapters.
 
@@ -358,7 +358,7 @@ $$
 
 Combining these two observations: **GD minimizes a quadratic upper bound of $f$**. Since $f(x^{k+1}) \leq g_\alpha(x^{k+1}) \leq g_\alpha(x^k) = f(x^k)$, each step is guaranteed to decrease the objective. This is the intuition behind the descent lemma that we will prove formally in [Theorem 6.5](https://zhuoranyang.github.io/sds431-notes/lectures/06-gradient-descent.html#thm-descent-lemma).
 
-![](https://zhuoranyang.github.io/sds431-notes/lectures/figures/ch05-quadratic-upper-bound.svg)
+![[ch05-quadratic-upper-bound.svg]]
 
 Figure 6.5: Gradient descent as quadratic upper bound minimization. At the current iterate x k x^k, the quadratic surrogate g α ( ) g\_\\alpha(x) (dashed) upper-bounds the true objective f f(x) (solid). The GD step moves to the minimizer of the surrogate. With a smaller stepsize \\alpha, the surrogate is tighter (steeper parabola) and the step is more conservative.
 
@@ -661,7 +661,7 @@ $$
 
 With the descent lemma in hand, we can analyze gradient descent under three settings of increasing structure. Each added assumption yields a strictly faster convergence rate.
 
-![](https://zhuoranyang.github.io/sds431-notes/lectures/figures/ch05-three-cases.svg)
+![[ch05-three-cases.svg]]
 
 Figure 6.6: Convergence rates of gradient descent under three structural assumptions: nonconvex + smooth (finding approximate stationary points), convex + smooth (sublinear O ( 1 / K ) O(1/K) convergence to the global minimum), and strongly convex + smooth (linear convergence governed by the condition number κ \\kappa ).
 

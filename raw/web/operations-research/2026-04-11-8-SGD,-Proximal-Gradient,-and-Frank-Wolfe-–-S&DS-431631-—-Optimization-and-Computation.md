@@ -147,7 +147,7 @@ Two competing requirements on the step sizes:
 - We want the cumulative noise to be finite: $\sum_{k=1}^{\infty} (\alpha^k)^2 < \infty$.
 - We want SGD to move sufficiently far: $\sum_{k=1}^{\infty} \alpha^k = +\infty$.
 
-![](https://zhuoranyang.github.io/sds431-notes/lectures/figures/ch08-sgd-noise.svg)
+![[ch08-sgd-noise.svg]]
 
 Figure 8.1: SGD noise and convergence. Full gradient descent (green) converges smoothly to x ∗ x^\*. SGD with batch size b = 1 b = 1 (terracotta) oscillates in a noise ball proportional to σ 2 / \\sigma^2/b. Mini-batch SGD (blue) reduces noise and interpolates between the two.
 
@@ -294,7 +294,7 @@ The proximal mapping balances two competing objectives: staying close to the inp
 
 [Figure 8.2](https://zhuoranyang.github.io/sds431-notes/lectures/08-sgd-proximal-frank-wolfe.html#fig-proximal-operator) illustrates this trade-off geometrically for $h(z) = |z|$: the proximal operator finds the point that minimizes the sum of $h$ and the quadratic penalty centered at $x_k$.
 
-![](https://zhuoranyang.github.io/sds431-notes/lectures/figures/ch08-proximal-operator.svg)
+![[ch08-proximal-operator.svg]]
 
 Figure 8.2: Geometric picture of the proximal operator for h ( z ) = ∣ h(z) = |z|. The proximal step minimizes the sum of h(z) and a quadratic penalty centered at the current iterate x k x\_k, yielding the new iterate + 1 x\_{k+1}.
 
@@ -302,7 +302,7 @@ Figure 8.2: Geometric picture of the proximal operator for h ( z ) = ∣ h(z) = 
 
 With the proximal mapping in hand, the proximal gradient algorithm is simply the two-step procedure we derived above: take a gradient step on the smooth part $g$, then apply the proximal operator for the nonsmooth part $h$.
 
-![](https://zhuoranyang.github.io/sds431-notes/lectures/figures/ch08-proximal-decomposition.svg)
+![[ch08-proximal-decomposition.svg]]
 
 Figure 8.3: Proximal gradient decomposition: the composite objective f = g + h f = g + h is split into a smooth part (handled by a gradient step) and a nonsmooth part (handled by the proximal operator). Each iteration first takes a gradient step on, then applies the proximal mapping for. This splitting exploits the structure of both components simultaneously.
 
@@ -428,7 +428,7 @@ Projected gradient descent has a natural two-step interpretation: first take a g
 
 Projected gradient descent ([Corollary 8.1](https://zhuoranyang.github.io/sds431-notes/lectures/08-sgd-proximal-frank-wolfe.html#cor-projected-gd)) handles constrained optimization by projecting each iterate back onto the feasible set $\mathcal{C}$. However, for many structured constraint sets (polytopes, nuclear norm balls, spectrahedra), projection is computationally expensive. The Frank-Wolfe method avoids projection entirely by instead solving a linear minimization over $\mathcal{C}$.
 
-![](https://zhuoranyang.github.io/sds431-notes/lectures/figures/ch08-frank-wolfe.svg)
+![[ch08-frank-wolfe.svg]]
 
 Figure 8.4: Comparison of projected gradient descent (left) and Frank-Wolfe (right). PGD takes a gradient step that may leave the feasible set C \\mathcal{C}, then projects back. Frank-Wolfe linearizes the objective, minimizes the linear surrogate over to find a vertex y k y^k, then takes a convex combination step.
 

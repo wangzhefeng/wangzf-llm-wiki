@@ -34,7 +34,7 @@ This chapter builds the simplex algorithm piece by piece, from first-principles 
 - Degeneracy, cycling, and the guarantee of termination
 - Oracle complexity of the simplex method
 
-![](https://zhuoranyang.github.io/sds431-notes/lectures/figures/simplex-pivot.svg)
+![[simplex-pivot.svg]]
 
 Figure 10.1: The simplex method traverses vertices of the feasible polytope, improving the objective at each pivot step.
 
@@ -338,7 +338,7 @@ $$
 
 **Step 5 (Pivot):** Update $B \leftarrow (B \setminus \{p\}) \cup \{q\}$, $N \leftarrow (N \setminus \{q\}) \cup \{p\}$. Go to Step 1.
 
-![](https://zhuoranyang.github.io/sds431-notes/lectures/figures/simplex-flowchart.svg)
+![[simplex-flowchart.svg]]
 
 Figure 10.2: Flowchart of the simplex method. The algorithm iterates through tableau computation, optimality check, entering variable selection, ratio test, and pivoting.
 
@@ -422,11 +422,11 @@ Computing the new relative costs: $\widetilde{c} \geq 0$ (both components nonneg
 
 The simplex method found the optimal solution $x^* = (0.5, 1.5)$ with $\zeta^* = -1.5$ in two pivots, visiting BFS $e \to d \to a$.
 
-![](https://zhuoranyang.github.io/sds431-notes/lectures/figures/simplex-path.svg)
+![[simplex-path.svg]]
 
 Figure 10.3: The simplex method traces a path along edges of the feasible polytope. Starting from the origin (BFS e ), it pivots to BFS d, then to the optimal BFS a at ( 0.5, 1.5 ) (0.5, 1.5) with ζ ∗ = − \\zeta^\* = -1.5.
 
-![](https://zhuoranyang.github.io/sds431-notes/lectures/figures/simplex-tableau.svg)
+![[simplex-tableau.svg]]
 
 Figure 10.4: The simplex tableau at each iteration. The method starts with basis B = { 3, 4 } B=\\{3,4\\} (slack variables), pivots twice, and terminates at the optimal basis 1 2 B=\\{1,2\\} with x ∗ ( ) x^\* = (\\frac{1}{2}, \\frac{3}{2}) and f − f^\* = -\\frac{3}{2}. Red entries indicate negative reduced costs that trigger a pivot; green entries confirm optimality.
 

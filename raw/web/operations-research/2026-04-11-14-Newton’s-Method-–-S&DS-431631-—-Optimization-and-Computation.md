@@ -49,7 +49,7 @@ The negative gradient is the steepest descent direction under the $\ell_2$ -norm
 
 **Second-order methods** fix this by using the Hessian $\nabla^2 f(x)$ to rescale the gradient. Instead of moving uniformly in all directions, Newton’s method takes a large step along directions where the curvature is small (the function is flat) and a small step along directions where the curvature is large (the function is steep). This effectively “spherifies” the problem, removing the dependence on the condition number.
 
-![](https://zhuoranyang.github.io/sds431-notes/lectures/figures/ch21-condition-number-problem.svg)
+![[ch21-condition-number-problem.svg]]
 
 Figure 14.1: Gradient descent zigzags on ill-conditioned problems while Newton’s method takes a direct path to the optimum.
 
@@ -122,7 +122,7 @@ If $f$ is an actual quadratic function, i.e., $f(x) = \frac{1}{2}x^\top P x + q^
 
 This explains the remarkable speed of Newton’s method: near the optimum, any smooth function looks approximately quadratic, so Newton’s method behaves as if it were solving a quadratic problem — and on quadratic problems, it is exact.
 
-![](https://zhuoranyang.github.io/sds431-notes/lectures/figures/ch03-newton-step.svg)
+![[ch03-newton-step.svg]]
 
 Figure 14.2: Newton’s method jumps to the minimizer of the local quadratic approximation f ^ x ( y ) \\widehat{f}\_x(y), using curvature information via the Hessian. The Newton direction takes a single step from the current iterate to the minimizer of the quadratic model.
 
@@ -140,7 +140,7 @@ $$
 
 where $J_F(x)$ is the **Jacobian matrix** of $F$ at $x$.
 
-![](https://zhuoranyang.github.io/sds431-notes/lectures/figures/ch21-newton-raphson-tangent.svg)
+![[ch21-newton-raphson-tangent.svg]]
 
 Figure 14.3: Newton–Raphson finds the next iterate by following the tangent line to its x -intercept.
 
@@ -156,7 +156,7 @@ $$
 
 The geometric interpretation is clean: at the point $(x^k, F(x^k))$, draw the tangent line to the graph of $F$. The next iterate $x^{k+1}$ is where this tangent line crosses the $x$ -axis.
 
-![](https://zhuoranyang.github.io/sds431-notes/lectures/figures/ch03-newton-raphson-geometry.svg)
+![[ch03-newton-raphson-geometry.svg]]
 
 Figure 14.4: Newton–Raphson for root finding: at each iterate x k x^k, draw the tangent line to F ( ) F(x) and move to its -intercept. The iterates converge rapidly to the root ∗ = 3 x^\* = 3.
 
@@ -181,7 +181,7 @@ This is the **Babylonian method**, one of the oldest algorithms in mathematics. 
 
 Newton-Raphson does not always converge. Its behavior depends critically on the function and the starting point. We illustrate three possibilities.
 
-![](https://zhuoranyang.github.io/sds431-notes/lectures/figures/ch21-convergence-behaviors.svg)
+![[ch21-convergence-behaviors.svg]]
 
 Figure 14.5: Three possible behaviors of Newton–Raphson: (i) convergence to the root, (ii) cycling between two points, (iii) divergence to infinity.
 
@@ -258,7 +258,7 @@ The gradient norm $\|\nabla f(x)\|_2$ depends on the coordinate system. If you r
 
 Formally, if $\bar{f}(y) = f(Ty)$ and we run Newton’s method on $\bar{f}$, the iterates satisfy $y^{k} = T^{-1} x^k$, where $x^k$ are the Newton iterates on $f$. The trajectories are identical up to the coordinate transformation.
 
-![](https://zhuoranyang.github.io/sds431-notes/lectures/figures/ch03-affine-invariance.svg)
+![[ch03-affine-invariance.svg]]
 
 Figure 14.6: Affine invariance of Newton’s method: applying a linear change of variables transforms the iterates but preserves the convergence trajectory. Gradient descent (left) slows down on ill-conditioned problems, while Newton’s method (right) follows the same path regardless of the coordinate system.
 
@@ -288,7 +288,7 @@ The Armijo condition ensures that $f$ decreases by at least a fraction $c$ of th
 
 **How it works.** We try the step sizes $\alpha = 1, \beta, \beta^2, \beta^3, \ldots$ and accept the first one that provides sufficient decrease. Near the optimum, where the quadratic model is accurate, the full step $\alpha = 1$ is accepted, and we get pure Newton convergence.
 
-![](https://zhuoranyang.github.io/sds431-notes/lectures/figures/ch14-armijo-condition.svg)
+![[ch14-armijo-condition.svg]]
 
 Figure 14.7: The Armijo condition for backtracking line search. The step size α \\alpha is acceptable when f ( x + d ) f(x + \\alpha d) (blue) lies below the Armijo line c ∇ ⊤ f(x) + c \\alpha \\nabla f(x)^\\top d (green dashed). The shaded region marks acceptable step sizes.
 
@@ -324,7 +324,7 @@ $$
 
 i.e., the (scaled) gradient norm **squares** at every iteration — quadratic convergence.
 
-![](https://zhuoranyang.github.io/sds431-notes/lectures/figures/ch21-two-phase-convergence.svg)
+![[ch21-two-phase-convergence.svg]]
 
 Figure 14.8: Two-phase convergence of Newton’s method: Phase I with linear decrease, followed by Phase II with quadratic convergence.
 
@@ -384,7 +384,7 @@ The key tradeoff is **per-iteration cost vs. number of iterations**. Gradient de
 - For **small to moderate** $n$ (up to a few thousand), Newton’s method is often preferred because the cubic cost is affordable and convergence is fast.
 - For **large** $n$ (millions of parameters, as in deep learning), Newton’s method is impractical. This is where first-order methods (SGD, Adam) and quasi-Newton methods (L-BFGS) dominate.
 
-![](https://zhuoranyang.github.io/sds431-notes/lectures/figures/ch03-convergence-rates.svg)
+![[ch03-convergence-rates.svg]]
 
 Figure 14.9: Comparison of convergence rates on a log scale: sublinear convergence flattens, linear convergence is a straight line, and quadratic convergence (Newton) plummets as a double exponential — the number of correct digits roughly doubles each iteration.
 

@@ -43,7 +43,7 @@ Consider a **directed graph** $G = (V, \mathcal{E})$ with the following componen
 
 The goal is to push as much flow as possible from $s$ to $t$ while respecting the capacity constraints and conservation of flow at every intermediate node.
 
-![](https://zhuoranyang.github.io/sds431-notes/lectures/figures/network-flow.svg)
+![[network-flow.svg]]
 
 Figure 13.1: A transportation network with source s (left) and sink t (right). Edge labels show flow/capacity. Saturated edges are shown in terracotta.
 
@@ -98,7 +98,7 @@ $$
 \min_{C \subseteq V:\; s \in C,\; t \notin C} \; \text{Capacity}(C).
 $$
 
-![](https://zhuoranyang.github.io/sds431-notes/lectures/figures/min-cut.svg)
+![[min-cut.svg]]
 
 Figure 13.2: The same network with a minimum cut shown. The gold region contains the source side S = { s } S = \\{s\\}. Edges crossing the cut (dashed terracotta) have total capacity 3 + 4 7 3 + 4 = 7, which equals the max flow.
 
@@ -197,7 +197,7 @@ The remarkable fact is that the inequality $\geq$ is actually an **equality**. P
 
 ## 13.4 The Max-Flow Min-Cut Theorem
 
-![](https://zhuoranyang.github.io/sds431-notes/lectures/figures/ch18-max-flow-min-cut.svg)
+![[ch18-max-flow-min-cut.svg]]
 
 Figure 13.3: A network flow diagram showing a max flow with flow/capacity labels on each edge (green/gray). The dashed terracotta line indicates a minimum cut separating the source side C from the sink side ˉ \\bar{C}, with max flow equal to min cut capacity.
 
@@ -299,7 +299,7 @@ $$
 
 The LP relaxation always provides a **lower bound** (for minimization problems). The question is: when is this bound tight?
 
-![](https://zhuoranyang.github.io/sds431-notes/lectures/figures/lp-relaxation.svg)
+![[lp-relaxation.svg]]
 
 Figure 13.4: LP relaxation vs. integer program. Black dots are integer feasible points. The blue region is the LP feasible set. The LP optimum (star) may not be integer, creating a relaxation gap.
 
@@ -435,7 +435,7 @@ $$
 \text{Max flow} \;=\; \text{LP-relaxed min-cut} \;=\; \text{Min-cut capacity}.
 $$
 
-![](https://zhuoranyang.github.io/sds431-notes/lectures/figures/lp-ip-comparison.svg)
+![[lp-ip-comparison.svg]]
 
 Figure 13.5: Comparison of LP relaxation (continuous) vs. integer program for a small min-cut instance. Left: the LP solution assigns fractional z -values to nodes. Right: the IP solution assigns binary values. For this network (with TUM structure), the optimal values coincide.
 
@@ -543,7 +543,7 @@ $$
 
 Depending on the exact form of the uncertainty set $\mathcal{U}_i$, the robust LP itself might not be an LP. In the following, we focus on a special case where the uncertainty sets are **polyhedra**.
 
-![](https://zhuoranyang.github.io/sds431-notes/lectures/figures/ch19-robust-optimization.svg)
+![[ch19-robust-optimization.svg]]
 
 Figure 13.6: Nominal LP vs. Robust LP. Adding uncertainty sets around constraints shrinks the feasible region but guarantees feasibility for all parameter realizations.
 
@@ -637,7 +637,7 @@ Therefore $\widetilde{x}$ is feasible for (LP-in-LP-2), and the optimal value of
 
 Combining both directions, the two formulations have the same optimal value. $\blacksquare$
 
-![](https://zhuoranyang.github.io/sds431-notes/lectures/figures/robust-lp.svg)
+![[robust-lp.svg]]
 
 Figure 13.7: Robust LP in 2D. The dashed blue region is the nominal feasible set. The solid region is the robust feasible set — the intersection over all possible constraint realizations from the uncertainty sets. The robust optimal solution is more conservative but guaranteed feasible.
 
@@ -713,7 +713,7 @@ $$
 
 For example, if Alice plays Rock ($i=1$) and Bob plays Scissors ($j=3$), Alice receives $A_{13} = 1$ (a win), and Bob receives $-1$ (a loss).
 
-![](https://zhuoranyang.github.io/sds431-notes/lectures/figures/rps-matrix.svg)
+![[rps-matrix.svg]]
 
 Figure 13.8: Payoff matrix for Rock-Paper-Scissors. Green cells indicate Alice wins ( + 1 +1 ), red cells indicate Alice loses ( − -1 ), and gray cells are draws ( 0 ).
 
@@ -826,7 +826,7 @@ Equivalently: $\min_{y, \beta} \; \beta$ subject to $\beta \geq (Ay)_i$ for all 
 
 This is precisely **Bob’s optimization problem**: minimize the worst-case payoff to Alice, over all mixed strategies $y \in \Delta_n$.
 
-![](https://zhuoranyang.github.io/sds431-notes/lectures/figures/minimax-game.svg)
+![[minimax-game.svg]]
 
 Figure 13.9: Two-player zero-sum game: the row player (max) chooses rows x ∈ Δ m x \\in \\Delta\_m, the column player (min) chooses columns y n y \\in \\Delta\_n. The saddle point (row 3, col 3) is both the row minimum of its row and the column maximum of its column. The Minimax Theorem guarantees such an equilibrium always exists in mixed strategies.
 
@@ -914,11 +914,11 @@ $$
 
 The common value $v^*$ is the **value of the game**. In words: the order of play does not matter — Alice’s best guaranteed payoff equals Bob’s best guaranteed cost. This is a direct consequence of LP strong duality applied to the primal-dual pair (A-LP)/(B-LP).
 
-![](https://zhuoranyang.github.io/sds431-notes/lectures/figures/game-strategies.svg)
+![[game-strategies.svg]]
 
 Figure 13.10: Optimal mixed strategies for Rock-Paper-Scissors solved via LP duality. Left: Alice’s and Bob’s optimal strategy distributions (uniform 1 / 3 1/3 each). Right: the game value α ∗ = 0 \\alpha^\* = 0 and Nash equilibrium payoff structure.
 
-![](https://zhuoranyang.github.io/sds431-notes/lectures/figures/general-game.svg)
+![[general-game.svg]]
 
 Figure 13.11: Solving a general 3 × 4 3 \\times 4 zero-sum game via LP. The bar charts show Alice’s and Bob’s optimal mixed strategies, and the heatmap shows the payoff matrix A. Game value: α ∗ = β 0.80 \\alpha^\* = \\beta^\* = 0.80.
 

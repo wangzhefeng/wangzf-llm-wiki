@@ -367,7 +367,7 @@ $$
 
 **Step 4 (Pivot).** Pivot on $(p, q)$: $p$ leaves $B$, $q$ enters $B$. Go to Step 1.
 
-![](https://zhuoranyang.github.io/sds431-notes/lectures/figures/primal-vs-dual-simplex.svg)
+![[primal-vs-dual-simplex.svg]]
 
 Figure 12.1: Comparison of primal and dual simplex: the primal simplex (left) moves through primal feasible bases toward dual feasibility, while the dual simplex (right) moves through dual feasible bases toward primal feasibility. Both converge to the same optimal solution.
 

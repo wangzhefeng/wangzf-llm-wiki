@@ -66,7 +66,7 @@ The center $c$ determines where the ellipsoid is located, and the matrix $Q$ det
 
 **Example.** The Euclidean ball of radius $R$ centered at $x_0$ is the ellipsoid $B(x_0, R) = \mathcal{E}(x_0, R^2 I)$. Here $Q = R^2 I$ is a scalar multiple of the identity, so all axes have equal length $R$.
 
-![](https://zhuoranyang.github.io/sds431-notes/lectures/figures/ellipsoid-shapes.svg)
+![[ellipsoid-shapes.svg]]
 
 Figure 15.1: Ellipsoids in 2D with different shape matrices Q. Left: a ball ( = I Q = I ). Center: an axis-aligned ellipse. Right: a rotated ellipse. The eigenvectors of determine the principal axes.
 
@@ -112,7 +112,7 @@ $$
 
 where $B_2(x_0, r) = \{x : \|x - x_0\|_2 \leq r\}$. In other words, $P$ is “sandwiched” between a small ball of radius $r$ and a large ball of radius $R$. This assumption can be rigorously verified for LP; we omit the technical details.
 
-![](https://zhuoranyang.github.io/sds431-notes/lectures/figures/ch20-ellipsoid-method.svg)
+![[ch20-ellipsoid-method.svg]]
 
 Figure 15.2: The ellipsoid method: three progressively smaller ellipsoids E 0 \\mathcal{E}\_0, 1 \\mathcal{E}\_1 2 \\mathcal{E}\_2 each containing the feasible region P. Separating hyperplanes (dashed) cut each ellipsoid in half, and the volume shrinks by a factor of e − / ( n + ) e^{-1/(2n+2)} per step.
 
@@ -133,7 +133,7 @@ $$
 
 We can then discard the other half of the ellipsoid and construct a new, smaller ellipsoid covering the half-ellipsoid $\mathcal{E}(c, Q) \cap \{x : a_{i_0}^\top x \leq a_{i_0}^\top c\}$ that still contains $P$.
 
-![](https://zhuoranyang.github.io/sds431-notes/lectures/figures/ellipsoid-cut.svg)
+![[ellipsoid-cut.svg]]
 
 Figure 15.3: The ellipsoid method for feasibility. The center c is outside P, so a violated constraint provides a separating hyperplane. lies entirely in the lower half-ellipsoid. The new (green) ellipsoid covers this half and is strictly smaller.
 
@@ -178,7 +178,7 @@ where $n$ is the dimension.
 
 The update has an elegant interpretation. The new center $c^+$ shifts from $c$ in the direction $-Qg$ (which accounts for the ellipsoid’s shape) by a step proportional to $\frac{1}{n+1}$. The new shape matrix $Q^+$ is obtained by shrinking $Q$ along the cut direction $g$ while slightly expanding in the orthogonal directions. The factor $\frac{n^2}{n^2-1}$ is a mild inflation that ensures the half-ellipsoid is fully enclosed.
 
-![](https://zhuoranyang.github.io/sds431-notes/lectures/figures/mvee-update.svg)
+![[mvee-update.svg]]
 
 Figure 15.4: The MVEE update. Given a half-ellipsoid (shaded), the minimum volume enclosing ellipsoid (green dashed) is computed using the update formulas. The new center shifts away from the cut.
 
@@ -199,7 +199,7 @@ where $n$ is the dimension of $x$.
 
 This means that after $2(n+1)$ steps, the volume of the ellipsoid shrinks by at least a factor of $\frac{1}{e} \approx 0.368$. The shrinkage is guaranteed regardless of which cutting plane is used — the geometry of the MVEE update ensures a constant-factor reduction.
 
-![](https://zhuoranyang.github.io/sds431-notes/lectures/figures/volume-shrinkage.svg)
+![[volume-shrinkage.svg]]
 
 Figure 15.5: Volume shrinkage of the ellipsoid over iterations for different dimensions n. The volume decreases exponentially, with a per-step shrinkage factor of exp ⁡ ( − 1 / 2 + ) \\exp(-1/(2(n+1))). Higher dimensions lead to slower per-step shrinkage.
 
@@ -308,7 +308,7 @@ $$
 
 In both cases, we have a cutting plane through $c^k$, and the next ellipsoid $\mathcal{E}(c^{k+1}, Q^{k+1})$ is the MVEE of the relevant half. We also track the **best feasible point seen so far** as our candidate solution.
 
-![](https://zhuoranyang.github.io/sds431-notes/lectures/figures/ellipsoid-scenarios.svg)
+![[ellipsoid-scenarios.svg]]
 
 Figure 15.6: The two scenarios of the ellipsoid method for convex optimization. Left (Scenario 1): the center is feasible but not optimal — the gradient provides the cutting plane. Right (Scenario 2): the center is infeasible — the separation oracle provides the cutting plane.
 

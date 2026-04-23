@@ -57,7 +57,7 @@ The key geometric insight is this: for a fixed cost vector $c$, the **level sets
 
 This “sliding hyperplane” picture is the geometric reason why the **Fundamental Theorem of LP** (proved below) holds: for a polyhedron, the last point of contact with a sweeping hyperplane is always at a vertex (or a face that contains vertices).
 
-![](https://zhuoranyang.github.io/sds431-notes/lectures/figures/lp-four-cases.svg)
+![[lp-four-cases.svg]]
 
 Figure 9.1: The four possible cases of a linear program, illustrated in 2D. Dashed gold lines are objective contours c ⊤ x = const c^\\top x = \\text{const}; the gold arrow shows the direction of decreasing objective.
 
@@ -95,7 +95,7 @@ To build an algebraic characterization of extreme points, we need a way to deter
 
 Linear independence of constraints means the constraints impose genuinely different restrictions on the decision variable. When constraints are linearly dependent, their boundaries are parallel (or coincident), and they cannot “pin down” a unique point. When $n$ constraints are linearly independent, their boundaries intersect in exactly one point.
 
-![](https://zhuoranyang.github.io/sds431-notes/lectures/figures/constraints-dep-indep.svg)
+![[constraints-dep-indep.svg]]
 
 Figure 9.2: Left — Linearly dependent constraints (parallel boundary lines). Right — Linearly independent constraints (crossing boundary lines) with unique intersection at ( 1, ) (1,1).
 
@@ -142,7 +142,7 @@ $$
 
 yields an extreme point.
 
-![](https://zhuoranyang.github.io/sds431-notes/lectures/figures/lp-geometry.svg)
+![[lp-geometry.svg]]
 
 Figure 9.3: Geometry of a linear program: the feasible polytope (shaded), its vertices, the objective function direction, and the optimal vertex where the isoprofit line is tangent.
 
@@ -238,7 +238,7 @@ $$
 
 A polyhedron contains a line when it extends infinitely in both directions along some direction $d$. For example, a half-plane in $\mathbb{R}^2$ contains lines parallel to its boundary. This condition is the obstruction to having extreme points: if the polyhedron contains a line, no point on that line can be an extreme point.
 
-![](https://zhuoranyang.github.io/sds431-notes/lectures/figures/polyhedron-line.svg)
+![[polyhedron-line.svg]]
 
 Figure 9.4: Left — An unbounded polyhedron that contains a line (the dotted red line extends infinitely in both directions). Right — Bounded polyhedra that do not contain a line.
 
@@ -483,7 +483,7 @@ TipCanonical vs. Equational Form
 | **Advantage** | Easy to visualize the polyhedron | Easy to manipulate the linear equations |
 | **Use case** | Geometric arguments | Simplex method and algebraic proofs |
 
-![](https://zhuoranyang.github.io/sds431-notes/lectures/figures/slack-variables.svg)
+![[slack-variables.svg]]
 
 Figure 9.5: A 2D LP in canonical form (left) and its equational form interpretation (right). Slack variables measure the distance from each constraint boundary. At a vertex, the binding constraints ( s i = 0 s\_i = 0 ) identify which constraints hold with equality.
 
@@ -528,7 +528,7 @@ The set $B$ is called the **basis**, and $N = [n+m] \setminus B$ is the **non-ba
 
 The idea is simple: we select $m$ linearly independent columns of $\bar{A}$, set all other variables to zero, and solve the resulting $m \times m$ system.
 
-![](https://zhuoranyang.github.io/sds431-notes/lectures/figures/basic-solutions-block.svg)
+![[basic-solutions-block.svg]]
 
 Figure 9.6: Block structure of a basic solution. We select m columns of the augmented matrix (the basis), set the remaining variables to zero, and solve the square system.
 
@@ -572,11 +572,11 @@ We enumerate all possible bases $B \subseteq \{1,2,3,4\}$ with $|B| = 2$:
 
 The BFS are exactly the extreme points (vertices) of the feasible polytope.
 
-![](https://zhuoranyang.github.io/sds431-notes/lectures/figures/bfs-example.svg)
+![[bfs-example.svg]]
 
 Figure 9.7: BFS enumeration for the example LP. Green points are BFS (feasible basic solutions = extreme points). The red point is a basic solution that is infeasible.
 
-![](https://zhuoranyang.github.io/sds431-notes/lectures/figures/ch14-vertex-bfs.svg)
+![[ch14-vertex-bfs.svg]]
 
 Figure 9.8: The vertex–BFS correspondence. Each vertex v i v\_i of the polytope (left, geometric view) corresponds to a basic feasible solution with a specific set of basic and nonbasic variables (right, algebraic view).
 

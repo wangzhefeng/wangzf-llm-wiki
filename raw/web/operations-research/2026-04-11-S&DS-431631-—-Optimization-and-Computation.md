@@ -25,7 +25,7 @@ These interactive lecture notes cover the full arc from foundations — convex s
 
 ## Course Flow
 
-![](https://zhuoranyang.github.io/sds431-notes/lectures/figures/ch01-course-roadmap.svg)
+![[ch01-course-roadmap.svg]]
 
 Figure 1: Course roadmap showing the dependency structure across all five parts of S&DS 431/631. Click to zoom.
 

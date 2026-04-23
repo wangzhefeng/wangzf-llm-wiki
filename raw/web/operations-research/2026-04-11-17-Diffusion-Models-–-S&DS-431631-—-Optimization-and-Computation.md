@@ -55,7 +55,7 @@ TipRemark: Key References
 - Ho et al., *Denoising Diffusion Probabilistic Models* (DDPM), NeurIPS 2020
 - Song et al., *Score-Based Generative Modeling through Stochastic Differential Equations*, ICLR 2021
 
-![](https://zhuoranyang.github.io/sds431-notes/lectures/figures/diffusion-forward-reverse.svg)
+![[diffusion-forward-reverse.svg]]
 
 Figure 17.1: The diffusion model framework: the forward process gradually adds noise to data, while the learned reverse process denoises to generate new samples.
 
@@ -92,7 +92,7 @@ The noise schedule $\{\beta_t\}_{t=1}^{T}$ controls how quickly information is d
 - $\beta_t$ grows over time so that $x_T \approx \mathcal{N}(0, I_d)$ by the end.
 - In practice (DDPM): $\beta_1 = \beta_{\min} \approx 10^{-3}$, $\beta_T = \beta_{\max} \approx 0.02$, with linear interpolation between them. The number of steps $T$ is typically 1000.
 
-![](https://zhuoranyang.github.io/sds431-notes/lectures/figures/ch17-noise-schedule.svg)
+![[ch17-noise-schedule.svg]]
 
 Figure 17.2: Linear noise schedule β t \\beta\_t and cumulative signal retention α ˉ = ∏ ( 1 − i ) \\bar\\alpha\_t = \\prod(1-\\beta\_i). As grows, → 0 \\bar\\alpha\_t \\to 0 and the signal vanishes.
 
@@ -174,7 +174,7 @@ $$
 
 As $t \to T$, $\bar\alpha_t \to 0$, so $x_T \approx \mathcal{N}(0, I)$ — pure noise.
 
-![](https://zhuoranyang.github.io/sds431-notes/lectures/figures/ch17-forward-process.svg)
+![[ch17-forward-process.svg]]
 
 Figure 17.3: The forward diffusion process in 1D. A data point x 0 x\_0 is gradually corrupted: the signal coefficient α ˉ t \\sqrt{\\bar\\alpha\_t} shrinks while the noise variance 1 − 1-\\bar\\alpha\_t grows.
 
@@ -490,7 +490,7 @@ Since $x_t = \sqrt{\bar\alpha_t}\, x_0 + \sqrt{1-\bar\alpha_t}\, \varepsilon$, p
 
 [Figure 17.4](https://zhuoranyang.github.io/sds431-notes/lectures/17-diffusion-models.html#fig-training-loss-derivation) summarizes the chain of reasoning that leads from the log-likelihood objective to the simplified DDPM training loss.
 
-![](https://zhuoranyang.github.io/sds431-notes/lectures/figures/ch17-training-loss-derivation.svg)
+![[ch17-training-loss-derivation.svg]]
 
 Figure 17.4: Derivation of the DDPM training loss. Starting from the log-likelihood, we apply the ELBO decomposition, identify the tractable Gaussian posterior, reduce each KL divergence to mean matching, reparameterize via noise prediction, and arrive at the simplified loss.
 
@@ -519,7 +519,7 @@ ImportantAlgorithm: DDPM Sampling
 | 5: | **end for** |
 | 6: | **return** $x_0$ |
 
-![](https://zhuoranyang.github.io/sds431-notes/lectures/figures/ch17-score-function.svg)
+![[ch17-score-function.svg]]
 
 Figure 17.5: Score function ∇ x log ⁡ q ( t ) \\nabla\_x \\log q(x\_t) for a Gaussian mixture at different noise levels. At high noise (large ), the score field is smooth and points toward the global center. At low noise (small ), it resolves individual modes.
 
@@ -588,7 +588,7 @@ This is the problem solved by systems like Stable Diffusion and DALL-E.
 
 ### 17.8.2 Latent Diffusion Models
 
-![](https://zhuoranyang.github.io/sds431-notes/lectures/figures/ch17-latent-diffusion-architecture.svg)
+![[ch17-latent-diffusion-architecture.svg]]
 
 Figure 17.6: Latent diffusion model architecture (Rombach et al., 2022). An image is encoded into a low-dimensional latent space by a pretrained autoencoder. The diffusion process (forward noising and learned reverse denoising) operates entirely in this latent space, conditioned on auxiliary inputs such as text embeddings. The decoder maps the denoised latent back to pixel space.
 

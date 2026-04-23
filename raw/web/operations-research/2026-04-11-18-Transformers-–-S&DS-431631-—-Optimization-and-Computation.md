@@ -225,7 +225,7 @@ If the entries of $q$ and $k_i$ are independent with zero mean and unit variance
 
 The breakthrough insight of the transformer is to apply attention *within a single sequence* — the queries, keys, and values are all computed from the same input. This is **self-attention**.
 
-![](https://zhuoranyang.github.io/sds431-notes/lectures/figures/ch13-self-attention.svg)
+![[ch13-self-attention.svg]]
 
 Figure 18.1: Self-attention mechanism. The input sequence X is projected into queries Q, keys K, and values V via learned weight matrices. Attention weights are computed as s o f t m a x ( ⊤ / d k ) \\mathrm{softmax}(QK^\\top/\\sqrt{d\_k}), then applied to to produce context-aware output representations.
 
@@ -313,7 +313,7 @@ $$
 
 After softmax, the $-\infty$ entries become zero, so each token can only attend to itself and previous tokens.
 
-![](https://zhuoranyang.github.io/sds431-notes/lectures/figures/ch18-causal-masking.svg)
+![[ch18-causal-masking.svg]]
 
 Figure 18.2: Causal masking in self-attention. Left: global (encoder) attention where all tokens attend to all tokens. Right: causal (decoder) attention where each token only attends to itself and previous tokens.
 
@@ -353,7 +353,7 @@ $$
 \text{MultiHead}(X) = W_O \begin{pmatrix} \text{head}^1 \\ \vdots \\ \text{head}^H \end{pmatrix} \in \mathbb{R}^{L \times d}.
 $$
 
-![](https://zhuoranyang.github.io/sds431-notes/lectures/figures/ch18-multi-head-attention.svg)
+![[ch18-multi-head-attention.svg]]
 
 Figure 18.3: Multi-head attention: H parallel attention heads with independent projections, concatenated and mixed via W O W\_O.
 
@@ -406,7 +406,7 @@ We now assemble all components into the complete architecture.
 
 Two design variants: **Post-norm** (original) applies LayerNorm after each sub-layer. **Pre-norm** (more common now) applies LayerNorm before each sub-layer, yielding better training stability.
 
-![](https://zhuoranyang.github.io/sds431-notes/lectures/figures/ch18-transformer-decoder.svg)
+![[ch18-transformer-decoder.svg]]
 
 Figure 18.4: Transformer decoder block: masked multi-head attention followed by feed-forward network, with residual connections and layer normalization around each sub-layer.
 

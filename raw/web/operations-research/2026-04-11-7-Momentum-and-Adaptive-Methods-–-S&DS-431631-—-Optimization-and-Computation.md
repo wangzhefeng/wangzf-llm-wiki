@@ -317,7 +317,7 @@ $$
 \boxed{\textbf{Nesterov:}} \quad \begin{cases} y^{k+1} = x^k + \beta(x^k - x^{k-1}) & \text{(first extrapolate)} \\ x^{k+1} = y^{k+1} - \alpha \nabla f(y^{k+1}) & \text{(gradient at } y^{k+1}\text{)} \end{cases}
 $$
 
-![](https://zhuoranyang.github.io/sds431-notes/lectures/figures/ch07-nesterov-momentum.svg)
+![[ch07-nesterov-momentum.svg]]
 
 Figure 7.2: Nesterov’s accelerated gradient vs. heavy-ball momentum. Heavy-ball evaluates the gradient at the current point x k x^k and then adds momentum. Nesterov first extrapolates to an intermediate “lookahead” point y + 1 = β ( − ) y^{k+1} = x^k + \\beta(x^k - x^{k-1}) and then evaluates the gradient there. This seemingly small change in evaluation point is what upgrades the convergence guarantee from quadratics-only (heavy-ball) to all smooth convex functions.
 
@@ -395,7 +395,7 @@ While momentum methods reduce the dependence on the condition number from $\kapp
 
 This motivates **adaptive methods**, which use the “variance of gradient” to weight the gradient updates. We will introduce **AdaGrad**, **RMSProp**, and **Adam**. These methods are popular in training neural networks. Convergence theory for these methods is out of the scope of this course.
 
-![](https://zhuoranyang.github.io/sds431-notes/lectures/figures/ch07-uniform-vs-adaptive-stepsize.svg)
+![[ch07-uniform-vs-adaptive-stepsize.svg]]
 
 Figure 7.3: Uniform stepsize treats all directions equally, while adaptive stepsize adjusts to local curvature.
 
@@ -546,7 +546,7 @@ Adam can fail to converge even on simple convex problems. The issue is that the 
 optimizer = torch.optim.Adam(model.parameters(), lr=1e-3, betas=(0.9, 0.999))
 ```
 
-![](https://zhuoranyang.github.io/sds431-notes/lectures/figures/ch07-adam-components.svg)
+![[ch07-adam-components.svg]]
 
 Figure 7.4: Adam combines momentum (first moment) with RMSProp (second moment) for adaptive optimization.
 
@@ -601,7 +601,7 @@ WarningThe Core Problem
 
 Adam’s per-coordinate adaptive learning rate interferes with L2 regularization. The regularization penalty, which should apply uniformly to all parameters, gets non-uniformly scaled by the second moment estimate $\widehat{v}$. Frequently updated parameters receive less decay than they should, while rarely updated parameters receive more.
 
-![](https://zhuoranyang.github.io/sds431-notes/lectures/figures/ch07-adam-l2-vs-adamw.svg)
+![[ch07-adam-l2-vs-adamw.svg]]
 
 Figure 7.5: Adam with L2 regularization distorts the weight decay non-uniformly across parameters. AdamW decouples weight decay from the adaptive gradient, applying it uniformly.
 
@@ -635,7 +635,7 @@ The key difference: in AdamW, the decay $\alpha\lambda\,\theta^k_j$ is **not** d
 
 In practice, AdamW with weight decay $\lambda \approx 0.01$ is the default optimizer for training Transformers (GPT, BERT, etc.).
 
-![](https://zhuoranyang.github.io/sds431-notes/lectures/figures/ch07-optimizer-timeline.svg)
+![[ch07-optimizer-timeline.svg]]
 
 Figure 7.6: Evolution of first-order optimizers: from vanilla gradient descent to AdamW.
 
@@ -753,7 +753,7 @@ TipPractical Guidelines for Choosing an Optimizer
 
 The adaptive methods above — AdaGrad, RMSProp, Adam — adjust the learning rate *per coordinate*, using diagonal approximations to the gradient’s second-moment matrix. This works well when the important curvature information is captured by per-coordinate variance. But training deep neural networks involves optimizing over **matrix-shaped parameters** — the weight matrices $W \in \mathbb{R}^{m \times n}$ in every linear layer. Standard optimizers treat these matrices as flat vectors of $mn$ numbers, ignoring their rich structure. Recent advances have shown that exploiting the matrix geometry of parameters — through spectral norms, SVD-based updates, and Kronecker-factored preconditioners — can dramatically accelerate training while remaining firmly first-order methods (no Hessian computation required). This section develops the theory behind these modern optimizers and connects them to the steepest descent framework from [Chapter 6](https://zhuoranyang.github.io/sds431-notes/lectures/06-gradient-descent.html).
 
-![](https://zhuoranyang.github.io/sds431-notes/lectures/figures/ch23-optimizer-branches.svg)
+![[ch23-optimizer-branches.svg]]
 
 Figure 7.7: Three approaches to matrix gradient updates: GD flattens the gradient, Muon orthogonalizes via SVD, and Shampoo preconditions with Kronecker factors.
 
@@ -781,7 +781,7 @@ For **matrix** parameters $W \in \mathbb{R}^{m \times n}$, the gradient $G = \na
 
 The Frobenius norm treats the matrix as a flat vector — it is simply the $\ell_2$ norm of $\text{vec}(W)$. The spectral norm is sensitive to the singular value structure, leading to qualitatively different update directions.
 
-![](https://zhuoranyang.github.io/sds431-notes/lectures/figures/ch14-frobenius-vs-spectral.svg)
+![[ch14-frobenius-vs-spectral.svg]]
 
 Figure 7.8: Singular values of the gradient G vs. the Muon update U V ⊤ UV^\\top. Gradient descent preserves the (often skewed) singular value distribution; Muon equalizes all singular values to 1.
 
@@ -817,7 +817,7 @@ $$
 
 Equality holds when $D = -UV^\top$, since $\sigma_i(-UV^\top) = 1$ for all $i$ and the singular vectors align with those of $G$. $\blacksquare$
 
-![](https://zhuoranyang.github.io/sds431-notes/lectures/figures/ch23-muon-svd.svg)
+![[ch23-muon-svd.svg]]
 
 Figure 7.9: Muon replaces the singular values Σ \\boldsymbol{\\Sigma} of the gradient SVD with the identity I \\mathbf{I}, producing the orthogonal update U V ⊤ \\mathbf{U}\\mathbf{V}^\\top.
 
@@ -845,7 +845,7 @@ Computing the full SVD of $M \in \mathbb{R}^{m \times n}$ costs $O(\min(m,n) \cd
 
 - **Newton-Schulz iteration**: Approximate $UV^\top$ (the polar factor of $M$) by iterating $X \leftarrow \frac{3}{2}X - \frac{1}{2}X X^\top X$, starting from $X_0 = M / \|M\|_F$. This converges cubically and typically needs only 5–10 iterations of matrix multiplications — which are highly optimized on GPUs.
 
-![](https://zhuoranyang.github.io/sds431-notes/lectures/figures/ch14-muon-vs-gd.svg)
+![[ch14-muon-vs-gd.svg]]
 
 Figure 7.10: Singular value distributions of gradient vs. Muon update across training. GD updates have highly non-uniform spectra (dominated by top singular values), while Muon equalizes the spectrum to all ones.
 
@@ -891,7 +891,7 @@ $$
 
 which acts on $\text{vec}(G)$ as $L^{-1/2}\, G\, R^{-1/2}$.
 
-![](https://zhuoranyang.github.io/sds431-notes/lectures/figures/ch23-kronecker-factorization.svg)
+![[ch23-kronecker-factorization.svg]]
 
 Figure 7.11: Shampoo approximates the intractable m n × mn \\times mn preconditioner G \\mathbf{G} with a Kronecker product L ⊗ R \\mathbf{L} \\otimes \\mathbf{R}, reducing storage from O ( 2 ) O(m^2 n^2) to + O(m^2 + n^2).
 
@@ -906,7 +906,7 @@ The fourth-root version $(L^{-1/4}, R^{-1/4})$ is used in practice for numerical
 
 Shampoo captures cross-coordinate correlations at a fraction of the cost of the full preconditioner. For $m = n = 4096$: full AdaGrad needs $\sim 10^{14}$ entries; Shampoo needs $\sim 3 \times 10^7$.
 
-![](https://zhuoranyang.github.io/sds431-notes/lectures/figures/ch14-preconditioner-comparison.svg)
+![[ch14-preconditioner-comparison.svg]]
 
 Figure 7.12: The preconditioner structures. Diagonal AdaGrad uses only the diagonal; Shampoo captures left and right correlations via Kronecker factorization L ⊗ R \\mathbf{L} \\otimes \\mathbf{R}; full-matrix AdaGrad captures everything but is intractable for large dimensions.
 
@@ -927,7 +927,7 @@ The eigenvectors of $L$ and $R$ identify the “natural” coordinate system for
 
 This is the same principle behind second-order methods: adapt the coordinate system to the local geometry. SOAP does this using gradient statistics (like Adam/Shampoo) rather than the Hessian, making it practical for the large-scale non-convex problems of deep learning.
 
-![](https://zhuoranyang.github.io/sds431-notes/lectures/figures/ch23-soap-pipeline.svg)
+![[ch23-soap-pipeline.svg]]
 
 Figure 7.13: SOAP pipeline: compute Shampoo eigenbases, rotate the gradient, apply Adam in the rotated basis, then rotate back.
 
@@ -968,7 +968,7 @@ The progression tells a clear story:
 3. **Muon**: Exploit matrix structure via spectral norm — equalize singular values.
 4. **Shampoo/SOAP**: Approximate full-matrix preconditioning via Kronecker structure — capture cross-coordinate correlations without the cost of full second-order methods.
 
-![](https://zhuoranyang.github.io/sds431-notes/lectures/figures/ch14-optimizer-landscape.svg)
+![[ch14-optimizer-landscape.svg]]
 
 Figure 7.14: The optimizer design space. Moving right adds more structural information about the optimization landscape; moving up increases computational cost. The sweet spot for deep learning lies in the upper-middle region (Muon, Shampoo, SOAP).
 

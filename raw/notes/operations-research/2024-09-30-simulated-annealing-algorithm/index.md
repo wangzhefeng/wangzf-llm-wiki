@@ -65,23 +65,23 @@ topics:
 
 状态转移概率是指从一个状态转换成另一个状态的概率，模拟退火算法中一般采用Metropolis准则，具体如下：
 
-`$$f(x)=\left\lbrace\begin{array}{cll}
+$$f(x)=\left\lbrace\begin{array}{cll}
 1 & , & E(x_{new}) < E(x_{old}) \\
 exp\Big(-\frac{E(x_{new})-E(x_{old})}{T}\Big) & , & E(x_{new}) \ge E(x_{old})
-\end{array}\right.$$`
+\end{array}\right.$$
 
-其与当前温度参数 `$T$` 有关，随温度的下降而减小。
+其与当前温度参数 $T$ 有关，随温度的下降而减小。
 
 ### 冷却进度表
 
-冷却进度表是指从某一高温状态 `$T$` 向低温状态冷却时的降温函数，设 `$t$` 时刻的温度为 `$T(t)$`，
+冷却进度表是指从某一高温状态 $T$ 向低温状态冷却时的降温函数，设 $t$ 时刻的温度为 $T(t)$，
 则经典模拟退火算法的降温方式为：
 
-`$$T(t)=\frac{T_{0}}{lg(1+t)}$$`
+$$T(t)=\frac{T_{0}}{lg(1+t)}$$
 
 而快速模拟退火算法的降温方式为：
 
-`$$T(t)=\frac{T_{0}}{1+t}$$`
+$$T(t)=\frac{T_{0}}{1+t}$$
 
 其他方法不再赘述。
 
@@ -92,7 +92,7 @@ exp\Big(-\frac{E(x_{new})-E(x_{old})}{T}\Big) & , & E(x_{new}) \ge E(x_{old})
 
 1. 均匀抽样一组状态，以各状态目标值的方差为初温。
 2. 随机产生一组状态，确定两两状态间的最大目标值差，然后根据差值，利用一定的函数确定初温，
-   如： `$T_{0}=-\frac{\Delta_{max}}{Pr}$`，其中 `$Pr$` 为初始接受概率。
+   如： $T_{0}=-\frac{\Delta_{max}}{Pr}$，其中 $Pr$ 为初始接受概率。
 3. 根据经验公式给出。
 
 ### 循环终止准则
@@ -114,7 +114,7 @@ exp\Big(-\frac{E(x_{new})-E(x_{old})}{T}\Big) & , & E(x_{new}) \ge E(x_{old})
 
 问题：
 
-`$$f(x) = (x^{2} - 5x)\text{sin}(x^{2})$$`
+$$f(x) = (x^{2} - 5x)\text{sin}(x^{2})$$
 
 ```python
 import numpy as np

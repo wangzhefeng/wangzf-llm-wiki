@@ -280,11 +280,11 @@ A key geometric property of convex sets: for any two points $x, y$ in a convex s
 
 For convex functions: **every local minimum is a global minimum**. This makes convex optimization problems tractable (solvable in polynomial time), while general optimization is typically NP-hard.
 
-![](https://zhuoranyang.github.io/sds431-notes/lectures/figures/optimization-landscape.svg)
+![[optimization-landscape.svg]]
 
 Figure 1.1: Optimization landscape showing local minimum, local maximum, global minimum, and constrained optimum within a feasible region. In high-dimensional non-convex optimization, most stationary points that appear as local minima or local maxima in 1D are in fact saddle points — critical points where the Hessian has both positive and negative eigenvalues.
 
-![](https://zhuoranyang.github.io/sds431-notes/lectures/figures/ch01-convex-vs-nonconvex.svg)
+![[ch01-convex-vs-nonconvex.svg]]
 
 Figure 1.2: Left — A convex function with a unique global minimum. Right — A non-convex function with multiple local minima. In convex optimization, any local minimum is a global minimum.
 

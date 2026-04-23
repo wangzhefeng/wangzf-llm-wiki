@@ -136,7 +136,7 @@ $$
 
 where the last inequality follows from the **Cauchy–Schwarz inequality** applied to the vectors $(\sqrt{z_1} v_1, \ldots, \sqrt{z_n} v_n)$ and $(\sqrt{z_1}, \ldots, \sqrt{z_n})$. $\blacksquare$
 
-![](https://zhuoranyang.github.io/sds431-notes/lectures/figures/ch04-convex-functions-gallery.svg)
+![[ch04-convex-functions-gallery.svg]]
 
 Figure 4.1: Common convex and concave functions in 1D, illustrating the chord property. (a–c) For convex functions, the chord between any two points lies above the graph (shaded gap). (d) For concave log ⁡ x \\log x, the chord lies below — equivalently, − -\\log x is convex.
 
@@ -154,7 +154,7 @@ $$
 
 Geometrically: the tangent line (first-order Taylor approximation) at any point is a **global underestimator** of $f$.
 
-![](https://zhuoranyang.github.io/sds431-notes/lectures/figures/ch01-first-order-condition.svg)
+![[ch01-first-order-condition.svg]]
 
 Figure 4.2: First-order condition: at every point the tangent line lies below the graph of a convex function. The gap f ( y ) − \[ x + ∇ ⊤ \] f(y) - \[f(x) + \\nabla f(x)^\\top(y-x)\] is non-negative everywhere, and equals zero only at = y = x.
 
@@ -352,7 +352,7 @@ Thus $f$ is convex    $\iff$ $2Q \succeq 0$    $\iff$ $Q \succeq 0$ (all
 
 [Figure 4.3](https://zhuoranyang.github.io/sds431-notes/lectures/04-convex-functions.html#fig-convex-function-characterization) summarizes the three characterizations side by side: each gives a different lens on the same underlying property, and the choice among them depends on what information is available (function values, gradients, or Hessians).
 
-![](https://zhuoranyang.github.io/sds431-notes/lectures/figures/convex-function-characterization.svg)
+![[convex-function-characterization.svg]]
 
 Figure 4.3: Three characterizations of convex functions: first-order (tangent line below), second-order (positive semidefinite Hessian), and epigraph (convex set above the graph).
 
@@ -729,7 +729,7 @@ $$
 C_\alpha = \{x \in \text{dom}(f) : f(x) \leq \alpha\}.
 $$
 
-![](https://zhuoranyang.github.io/sds431-notes/lectures/figures/ch04-sublevel-sets.svg)
+![[ch04-sublevel-sets.svg]]
 
 Figure 4.4: Sublevel sets illustrated in one and two dimensions. (a) For f ( x ) = 1 2 f(x) = \\frac{1}{2}x^2, each sublevel set C α C\_\\alpha is a closed interval, and smaller \\alpha gives a smaller interval — the sets are nested. (b) For, + f(x\_1, x\_2) = x\_1^2 + 2x\_2^2, the sublevel sets are nested ellipses shrinking toward the minimizer ∗ x^\*.
 
@@ -749,7 +749,7 @@ TipRemark: Converse Does Not Hold
 
 The converse is **not** true: a function can have convex sublevel sets without being convex. For example, $f(x) = -e^{-x^2}$ has convex sublevel sets (intervals) but is not a convex function. The property of having convex sublevel sets is called **quasiconvexity**.
 
-![](https://zhuoranyang.github.io/sds431-notes/lectures/figures/ch04-quasiconvex.svg)
+![[ch04-quasiconvex.svg]]
 
 Figure 4.5: Convexity versus quasiconvexity. (Left) A convex function always has convex sublevel sets. (Center) The function f ( x ) = 3 1 − e 2 / f(x) = 3(1-e^{-x^2/2}) is quasiconvex — its sublevel sets are convex intervals — but it is not convex, as shown by the chord lying below the curve. (Right) A non-quasiconvex function has disconnected sublevel sets at some level α \\alpha.
 
@@ -865,7 +865,7 @@ So $x^*$ achieves the smallest possible function value — it is a global minimi
 
 The function classes we have encountered — convex, strongly convex, Lipschitz continuous, and smooth — form a hierarchy of regularity conditions. Each additional property gives optimization algorithms more structure to exploit, leading to faster convergence guarantees. The diagram below summarizes the inclusion relationships among these classes and their key implications for optimization.
 
-![](https://zhuoranyang.github.io/sds431-notes/lectures/figures/ch01-function-hierarchy.svg)
+![[ch01-function-hierarchy.svg]]
 
 Figure 4.6: Hierarchy of function classes used in optimization. Stronger regularity assumptions (inner classes) yield faster convergence rates. Lipschitz continuity and smoothness control how fast a function can change; strong convexity prevents the function from being “too flat” near its minimum.
 

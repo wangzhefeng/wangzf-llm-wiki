@@ -107,7 +107,7 @@ $$
 
 **(d)** $f_0 = x^3 - 3x$ on $\operatorname{dom}(f_0) = \mathbb{R}$. Setting $f_0'(x) = 3x^2 - 3 = 0$ gives critical points at $x = \pm 1$. The point $x_0 = 1$ is a local minimum with $f_0(1) = -2$, but $f_0(x) \to -\infty$ as $x \to -\infty$, so the local minimum is not global.
 
-![](https://zhuoranyang.github.io/sds431-notes/lectures/figures/ch05-unconstrained-examples.svg)
+![[ch05-unconstrained-examples.svg]]
 
 Figure 5.1: Four behaviors of unconstrained optimization: (a) infimum not attained, (b) unbounded below, (c) unique global minimum, (d) local minimum that is not global.
 
@@ -285,7 +285,7 @@ $$
 
 Geometrically, the negative gradient $-\nabla f_0(x^*)$ makes an obtuse angle with every feasible direction from $x^*$.
 
-![](https://zhuoranyang.github.io/sds431-notes/lectures/figures/ch05-optimality-condition.svg)
+![[ch05-optimality-condition.svg]]
 
 Figure 5.2: First-order optimality for constrained convex problems. At the optimal point x ∗ x^\* on the boundary of the feasible set Ω \\Omega, the negative gradient − ∇ f 0 ( ) -\\nabla f\_0(x^\*) points away from, so ⟨, y ⟩ ≥ \\langle \\nabla f\_0(x^\*), y - x^\* \\rangle \\geq 0 for all feasible ∈ y \\in \\Omega — no feasible descent direction exists.
 
@@ -335,7 +335,7 @@ $$
 
 This is an LP: linear objective, linear inequality constraints.
 
-![](https://zhuoranyang.github.io/sds431-notes/lectures/figures/ch05-transportation.svg)
+![[ch05-transportation.svg]]
 
 Figure 5.3: The transportation problem as a bipartite graph. Each producer P i P\_i (with supply s s\_i ) can ship to each consumer D j D\_j (with demand d d\_j ) at unit cost c c\_{ij}. The decision variables x ≥ 0 x\_{ij} \\geq 0 represent the flow on each route.
 
@@ -347,7 +347,7 @@ $$
 
 The flow conservation constraint (flow in = flow out) holds at every internal node. This is also an LP.
 
-![](https://zhuoranyang.github.io/sds431-notes/lectures/figures/ch05-max-flow.svg)
+![[ch05-max-flow.svg]]
 
 Figure 5.4: A maximum flow instance on a 4-node network. Each edge is labeled flow/capacity. The total flow from source s to sink t is 4.
 
@@ -361,7 +361,7 @@ $$
 
 This is a **QP** (quadratic objective, linear constraints). We will revisit this formulation when we discuss SOCP, where the connection between max-margin and robust classification becomes clear.
 
-![](https://zhuoranyang.github.io/sds431-notes/lectures/figures/ch05-svm-margin.svg)
+![[ch05-svm-margin.svg]]
 
 Figure 5.5: Max-margin SVM. The separating hyperplane w ⊤ x = b w^\\top x = b (solid) maximizes the margin 2 / ∥ 2/\\|w\\| between the two classes. Support vectors (large markers) lie exactly on the margin boundaries ± 1 w^\\top x = b \\pm 1 (dashed). The normal vector points toward the positive class.
 
@@ -385,13 +385,13 @@ where $P \succeq 0$ (positive semidefinite). If $P \succ 0$, the objective is st
 
 The positive semidefiniteness condition $P \succeq 0$ is what ensures convexity of the objective. When $P \succ 0$ (strictly positive definite), the problem has a unique minimizer, which is the typical situation in regularized regression and portfolio optimization.
 
-![](https://zhuoranyang.github.io/sds431-notes/lectures/figures/ch05-lp-vs-qp.svg)
+![[ch05-lp-vs-qp.svg]]
 
 Figure 5.6: LP vs QP: both have the same polyhedral feasible set A x ≤ b Ax \\leq b. Left: LP with linear contours — the optimum is always at a vertex. Right: QP with elliptical contours — the optimum can lie on a face or in the interior, not necessarily at a vertex.
 
 **Example 5.6 (Least Squares with Constraints)** The constrained least-squares problem $\min \|Ax - b\|_2^2 \;\text{s.t.}\; x \geq 0$ is a QP with $P = 2A^\top A$, $q = -2A^\top b$. Similarly, the Lasso $\min \|y - X\beta\|_2^2$ subject to $\|\beta\|_1 \leq s$ is a QP (after reformulating the $\ell_1$ -constraint using auxiliary variables).
 
-![](https://zhuoranyang.github.io/sds431-notes/lectures/figures/ch05-constrained-ls.svg)
+![[ch05-constrained-ls.svg]]
 
 Figure 5.7: Nonnegative least squares. The elliptical contours show level sets of ∥ A x − b 2 \\|Ax - b\\|^2. The unconstrained minimizer LS x\_{\\text{LS}} (terracotta) is infeasible; the constrained optimum ∗ x^\* (sage) is the point in the first quadrant closest to in objective value.
 
@@ -403,7 +403,7 @@ $$
 
 This is a QP: quadratic objective ($\Sigma \succeq 0$), linear constraints.
 
-![](https://zhuoranyang.github.io/sds431-notes/lectures/figures/ch05-portfolio-frontier.svg)
+![[ch05-portfolio-frontier.svg]]
 
 Figure 5.8: Markowitz efficient frontier. The bullet-shaped region shows all achievable (risk, return) pairs. The efficient frontier (sage, thick) traces portfolios that maximize return for each risk level. The minimum-variance portfolio (gold) is the leftmost point. For a target return r min ⁡ r\_{\\min} (dashed), the optimal portfolio minimizes risk on the frontier.
 
@@ -413,7 +413,7 @@ $$
 \min_{x_1, x_2} \; \|x_1 - x_2\|_2^2 \quad \text{s.t.} \quad A_1 x_1 \leq b_1, \quad A_2 x_2 \leq b_2.
 $$
 
-![](https://zhuoranyang.github.io/sds431-notes/lectures/figures/ch05-distance-polyhedra.svg)
+![[ch05-distance-polyhedra.svg]]
 
 Figure 5.9: Distance between two polyhedra. The closest points x 1 ∗ ∈ P x\_1^\* \\in P\_1 and 2 x\_2^\* \\in P\_2 achieve the minimum ∥ − \\|x\_1 - x\_2\\|\_2 over all pairs, giving a QP with linear constraints.
 
@@ -439,7 +439,7 @@ $$
 
 This is a QCQP with one quadratic constraint (the trust region).
 
-![](https://zhuoranyang.github.io/sds431-notes/lectures/figures/ch05-trust-region.svg)
+![[ch05-trust-region.svg]]
 
 Figure 5.10: Trust region optimization. The quadratic model m ( s ) m(s) (dashed contours) has its unconstrained minimizer outside the trust region ∥ ≤ Δ \\|s\\| \\leq \\Delta (sage circle). The trust-region solution ∗ s^\* lies on the boundary, in the direction of the unconstrained minimizer.
 
@@ -473,7 +473,7 @@ $$
 
 Since $\sup_{\|u\| \leq 1} (\bar{a}_i + P_i u)^\top x = \bar{a}_i^\top x + \|P_i^\top x\|_2$, the robust constraint becomes $\bar{a}_i^\top x + \|P_i^\top x\|_2 \leq b_i$, which is a second-order cone constraint. The robust LP is therefore an **SOCP**.
 
-![](https://zhuoranyang.github.io/sds431-notes/lectures/figures/ch05-robust-lp.svg)
+![[ch05-robust-lp.svg]]
 
 Figure 5.11: Robust LP with ellipsoidal uncertainty. Each nominal constraint (blue, solid) has an associated uncertainty set U i \\mathcal{U}\_i (gold ellipses). The robust feasible set (green, solid) is the intersection of all worst-case constraints — it shrinks inward from the nominal feasible set (blue, dashed) by the amount ∥ P ⊤ x 2 \\|P\_i^\\top x\\|\_2.
 
@@ -485,7 +485,7 @@ $$
 
 Each constraint is a second-order cone constraint, making this an SOCP.
 
-![](https://zhuoranyang.github.io/sds431-notes/lectures/figures/ch05-enclosing-circle.svg)
+![[ch05-enclosing-circle.svg]]
 
 Figure 5.12: Smallest enclosing circle. The optimal circle (sage) of radius R centered at ( c x, y ) (c\_x, c\_y) encloses all data points (blue). Three points lie exactly on the boundary — they determine the solution.
 
@@ -569,7 +569,7 @@ $$
 
 This is an LP in $(x_c, r)$!
 
-![](https://zhuoranyang.github.io/sds431-notes/lectures/figures/ch05-inscribed-circle.svg)
+![[ch05-inscribed-circle.svg]]
 
 Figure 5.13: Largest inscribed circle (Chebyshev center) in a polytope. The circle of radius r centered at x c x\_c is tangent to the nearest faces. The distance from to face i is ( a ⊤ + b ) / ∥ ≥ (a\_i^\\top x\_c + b\_i)/\\|a\_i\\| \\geq r, giving an LP in, (x\_c, r).
 

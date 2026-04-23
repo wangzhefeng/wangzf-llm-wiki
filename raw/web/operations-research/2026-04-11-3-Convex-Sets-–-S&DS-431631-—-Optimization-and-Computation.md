@@ -130,7 +130,7 @@ The optimal value captures the “best achievable cost” over the feasible set.
 3. **$x^*$ exists but is not unique.** Consider $f(x) = \cos(x)$ on $\Omega = [-4\pi, 4\pi]$. The minimum value $f^* = -1$ is attained at $x = -3\pi, -\pi, \pi, 3\pi$, giving four distinct minimizers. Non-uniqueness is common in practice, especially for symmetric or periodic objectives. In such cases, algorithms may converge to different minimizers depending on initialization.
 4. **$f^*$ exists but $x^*$ does not.** Consider $f(x) = e^{-x}$ on $\Omega = \mathbb{R}$. As $x \to +\infty$, $f(x) \to 0$, so $f^* = \inf_{x \in \mathbb{R}} e^{-x} = 0$. But there is no finite $x^*$ at which $f(x^*) = 0$ – the infimum is never attained. This pathology arises because $\Omega$ is unbounded: any minimizing sequence $x_k \to +\infty$ “escapes” the feasible set. The Weierstrass theorem (below) rules out exactly this scenario by requiring compactness.
 
-![](https://zhuoranyang.github.io/sds431-notes/lectures/figures/ch03-solution-cases.svg)
+![[ch03-solution-cases.svg]]
 
 Figure 3.1: Four scenarios for optimization problems: unique optimum (top-left), unbounded (top-right), non-unique minimizers (bottom-left), and infimum not attained (bottom-right). Stars mark optimal solutions where they exist.
 
@@ -167,7 +167,7 @@ TipRemarks on Local Minima
 3. A global minimum is also a local minimum.
 4. The definition of local minimum uses the $\ell_2$ -ball $B(\bar{x}, \varepsilon) = \{y : \|y - \bar{x}\|_2 \leq \varepsilon\}$, but we can use any $\ell_p$ -norm because of the **equivalence of $\ell_p$ -norms** in $\mathbb{R}^n$.
 
-![](https://zhuoranyang.github.io/sds431-notes/lectures/figures/ch03-local-global.svg)
+![[ch03-local-global.svg]]
 
 Figure 3.2: A function with multiple local minima (circles) and local maxima (diamonds). The global minimum is the deepest valley. In non-convex optimization, gradient-based methods may get trapped in any local minimum.
 
@@ -269,7 +269,7 @@ Closedness alone is not enough to guarantee that a minimum exists – the set $[
 
 **Definition 3.8 (Bounded, Compact Set)** A set $S$ is **bounded** if it fits inside some ball, i.e., there exists $r > 0$ such that $S \subseteq B(0, r)$. A set $S \subseteq \mathbb{R}^n$ is **compact** if it is both bounded and closed. Compactness has the following sequential characterization: if $\{a_n\}_{n \geq 1} \subseteq S$ is a sequence with a limit $a^* = \lim_{n \to \infty} a_n$, and $S$ is compact, then $a^* \in S$.
 
-![](https://zhuoranyang.github.io/sds431-notes/lectures/figures/ch03-topology-concepts.svg)
+![[ch03-topology-concepts.svg]]
 
 Figure 3.3: Left — Interior point p has an ε \\varepsilon -ball fully contained in S; boundary point q straddles inside and outside. Right — Open sets exclude their boundary (dashed), closed sets include it (solid). A set is compact if and only if it is both closed and bounded.
 
@@ -341,7 +341,7 @@ In other words, the *line segment from $x$ to $y$* is entirely contained in $C$.
 
 Convexity captures the intuitive notion of a set having “no dents” or “no holes.” If you can draw a straight line between any two points in the set without leaving it, the set is convex. This property is central to optimization because it ensures that local information (such as gradients) reliably guides us toward global solutions.
 
-![](https://zhuoranyang.github.io/sds431-notes/lectures/figures/ch03-convex-sets.svg)
+![[ch03-convex-sets.svg]]
 
 Figure 3.4: Left — Convex sets (every line segment between two points stays inside). Right — Non-convex sets (some line segments escape the boundary).
 
@@ -356,7 +356,7 @@ Figure 3.4: Left — Convex sets (every line segment between two points stays in
 7. **Affine subspace:** $\{x : Ax = b\}$, $A \in \mathbb{R}^{m \times n}$. Equality constraints define affine subspaces.
 8. **Polyhedron:** $\{x : Ax \leq b\}$. The feasible set of any linear program is a polyhedron – an intersection of finitely many halfspaces.
 
-![](https://zhuoranyang.github.io/sds431-notes/lectures/figures/ch03-convex-examples.svg)
+![[ch03-convex-examples.svg]]
 
 Figure 3.5: Common convex sets in R 2 \\mathbb{R}^2. Left — a hyperplane a ⊤ x = b a^\\top x = b divides the plane into two halfspaces. Center — the ℓ 1 \\ell\_1, \\ell\_2, and ∞ \\ell\_\\infty unit balls are all convex. Right — a polyhedron is the intersection of finitely many halfspaces.
 
@@ -475,7 +475,7 @@ $$
 
 In words: two disjoint convex sets can always be separated by a hyperplane $\{x : a^\top x = b\}$.
 
-![](https://zhuoranyang.github.io/sds431-notes/lectures/figures/ch01-separating-hyperplane.svg)
+![[ch01-separating-hyperplane.svg]]
 
 Figure 3.6: The separating hyperplane theorem: two disjoint convex sets C and D can always be separated by a hyperplane a ⊤ x = b a^\\top x = b. The normal vector points from toward, and the hyperplane passes between the two sets.
 
@@ -578,7 +578,7 @@ $$
 
 Thus $\lambda \, u + (1-\lambda) \, v$ is itself a convex combination of $x_1, \ldots, x_k$, so it belongs to $\text{CH}(x_1, \ldots, x_k)$. Hence we conclude the proof. $\blacksquare$
 
-![](https://zhuoranyang.github.io/sds431-notes/lectures/figures/ch03-convex-hull.svg)
+![[ch03-convex-hull.svg]]
 
 Figure 3.7: Convex hull of a set of points x 1, … 7 x\_1, \\ldots, x\_7. The convex hull (shaded polygon) is the smallest convex set containing all the points. Small dots show random convex combinations, all of which lie inside the hull.
 

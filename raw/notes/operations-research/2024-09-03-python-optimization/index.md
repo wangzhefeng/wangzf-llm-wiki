@@ -284,14 +284,14 @@ Tupledict 是 Python 的 `dict` 的一个子类，
 因此可以使用 `tuplelist` 的 `select` 方法选择集合的子集。在实际使用中，
 通过将元组与每个 Gurobi 变量关联起来，可以有效地创建包含匹配变量子集的表达式。
 
-下面创建一个 `$3 \times 3$` 的矩阵，里面的每个元素表示线性表达式的变量，
+下面创建一个 $3 \times 3$ 的矩阵，里面的每个元素表示线性表达式的变量，
 取其中一部分变量的操作就显得很方便了。
 
-`$$\begin{bmatrix}
+$$\begin{bmatrix}
 x_{11} & x_{12} & x_{13} \\
 x_{21} & x_{22} & x_{23} \\
 x_{31} & x_{32} & x_{33}
-\end{bmatrix}$$`
+\end{bmatrix}$$
 
 ```python
 import gurobipy as grb
@@ -313,7 +313,7 @@ print(vars)
 {(1, 1): <gurobi.Var x[1,1]>, (1, 2): <gurobi.Var x[1,2]>, (1, 3): <gurobi.Var x[1,3]>, (2, 1): <gurobi.Var x[2,1]>, (2, 2): <gurobi.Var x[2,2]>, (2, 3): <gurobi.Var x[2,3]>, (3, 1): <gurobi.Var x[3,1]>, (3, 2): <gurobi.Var x[3,2]>, (3, 3): <gurobi.Var x[3,3]>}
 ```
 
-对第 1 行求和，即 `$x_{11} + x_{12} + x_{13}$`，下面是两种计算方法：
+对第 1 行求和，即 $x_{11} + x_{12} + x_{13}$，下面是两种计算方法：
 
 ```python
 # 基于元素下标的操作，对第一行求和
@@ -816,7 +816,7 @@ for v in m.getVars():
 可以将其转化成线性规划问题，将非线性约束转换成线性约束为广义约束。
 
 **广义约束**不同于**线性约束**或**函数约束**，函数约束可以看成是连续光滑的函数表达式，
-如 `$x+y+z>0$`；而广义约束更像是一种集合操作、分段函数，如 `$h=max(x,y,z)$`，
+如 $x+y+z>0$；而广义约束更像是一种集合操作、分段函数，如 $h=max(x,y,z)$，
 函数约束给人的感觉是可微函数空间，而广义约束是不可微的。
 虽然这么说不恰当，但是广义约束的处理和平常接触到的优化模型的分析思路有很大的区别。
 
@@ -829,19 +829,19 @@ for v in m.getVars():
 
 #### 最大值
 
-`$max$` 函数用来获取集合中的最大值，如 `$z=max(x,y,3)$`，
+$max$ 函数用来获取集合中的最大值，如 $z=max(x,y,3)$，
 这类问题可以通过大 M 法转换成线性约束：
 
-`$$\text{max}\space z$$`
+$$\text{max}\space z$$
 
-`$$z = max(x,y,3) \Rightarrow s.t.\begin{cases}
+$$z = max(x,y,3) \Rightarrow s.t.\begin{cases}
 x \leq z, y \leq z, 3 \leq z \\ 
 x \leq z - M(1-u_{1}) \\
 y \leq z - M(1-u_{2}) \\
 3 \leq z - M(1-u_{3}) \\
 u_{1} + u_{2} + u_{3} \geq 1 \\
 u_{1}, u_{2}, u_{3} \in \{0, 1\}
-\end{cases}$$`
+\end{cases}$$
 
 大 M 法是数学规划中的一个建模技巧，
 通过引入一个极大的数 M，结合约束条件来实现逻辑运算功能。
@@ -910,33 +910,33 @@ print(f"z={z.X}")
 
 #### 最小值
 
-与 max 函数相对应的是 min 函数，获取集合中的最小值，以 `$z=min(x,y,3)$`，
+与 max 函数相对应的是 min 函数，获取集合中的最小值，以 $z=min(x,y,3)$，
 使用大 M 法得到对应的线性约束表达式，即：
 
-`$$\text{min} \space z$$`
+$$\text{min} \space z$$
 
-`$$z = min(x,y,3) \Rightarrow s.t.\begin{cases}
+$$z = min(x,y,3) \Rightarrow s.t.\begin{cases}
 x \geq z, y \geq z, 3 \geq z \\ 
 x \geq z - M(1-u_{1}) \\
 y \geq z - M(1-u_{2}) \\
 3 \geq z - M(1-u_{3}) \\
 u_{1} + u_{2} + u_{3} \geq 1 \\
 u_{1}, u_{2}, u_{3} \in \{0, 1\}
-\end{cases}$$`
+\end{cases}$$
 
 #### 绝对值
 
 abs 约束表示获取变量的绝对值，例如有如下规划问题：
 
-`$$\text{min}\space c|x|$$`
+$$\text{min}\space c|x|$$
 
-令 `$y = |x|$`，即 `$y \geq x, y \geq -x$`，将原问题转换成如下新问题：
+令 $y = |x|$，即 $y \geq x, y \geq -x$，将原问题转换成如下新问题：
 
-`$$\text{min} \space cy$$`
-`$$s.t. \begin{cases}
+$$\text{min} \space cy$$
+$$s.t. \begin{cases}
 y \geq x \\ 
 y \geq -x
-\end{cases}$$`
+\end{cases}$$
 
 ```python
 import gurobipy as grb
@@ -965,44 +965,44 @@ print(f"x = x.X")
 如果集合中全部变量都是 1，则结果为 1，否则为 0。判断集合中的变量是否全为 1 的实现功能，
 类似 Pandas 中的 `any` 功能。
 
-例如，如果 `$x=1$` 且 `$y=1$`，则 `$z=1$`，否则 `$z=0$`，
+例如，如果 $x=1$ 且 $y=1$，则 $z=1$，否则 $z=0$，
 可以用大 M 法结合 0-1 变量(0-1 变量指的是取值只能是 0 或 1 的变量，
 又称二值变量)实现线性化，具体如下：
 
-令 `$j=x+y-m+B$`，若 `$j>0$` 则 `$z=1$`，否则 `$z=0$`。其中变量的个数，此处 `$m=2$`，
-`$B$` 是一个很小的正数。因此，将问题转换成指示函数 `indicator` 的线性化问题。
+令 $j=x+y-m+B$，若 $j>0$ 则 $z=1$，否则 $z=0$。其中变量的个数，此处 $m=2$，
+$B$ 是一个很小的正数。因此，将问题转换成指示函数 `indicator` 的线性化问题。
 
 #### 逻辑或
 
 集合中全部变量只要有一个使 1 则结果位 1，否则为 0，即实现“不全为 0”的判断，
 如有下面的问题：
 
-`$$\text{max} \space z = x+y$$`
-`$$\text{s.t.} \space 2x+3y\leq 100\space \text{or} \space x+y\leq 50$$`
+$$\text{max} \space z = x+y$$
+$$\text{s.t.} \space 2x+3y\leq 100\space \text{or} \space x+y\leq 50$$
 
 可使用大 M 法转换成线性规划问题，具体如下：
 
-`$$\text{max} \space z = x+y$$`
-`$$\text{s.t.}\begin{cases}
+$$\text{max} \space z = x+y$$
+$$\text{s.t.}\begin{cases}
 2x+3y \leq 100 + uM \\
 2x+3y \leq 100+(1-u)M \\
 u \in \{0, 1\}
-\end{cases}$$`
+\end{cases}$$
 
 #### 指示函数
 
 如果指示变量的值为 1，则约束成立，否则约束可以被违反。
 
-例如，如果 `$x>0$`，则 `$y=1$`，否则 `$y=0$`，
+例如，如果 $x>0$，则 $y=1$，否则 $y=0$，
 `indicator` 的线性方法可以使用大 M 法实现，原理如下：
 
-`$$x>0 \rightarrow y=1 \Rightarrow 
+$$x>0 \rightarrow y=1 \Rightarrow 
 \begin{cases}
 x \leq uM \\
 uM \leq M + x + B 
-\end{cases}$$`
+\end{cases}$$
 
-其中，`$M$` 是一个很大的数，`$B$` 是一个很小的正数。
+其中，$M$ 是一个很大的数，$B$ 是一个很小的正数。
 
 在 Gurobi 中实现该功能的是函数 `addGenConstrIndicator`：
 
@@ -1019,49 +1019,49 @@ model.addConstrs((y == 1) >> (x > 0), name = "indicator")
 #### 带固定成本约束
 
 在库存问题中，通常会考虑订货的固定成本和可变成本。就是说，
-只要订货 `$x>0$` 就有一个固定成本 `$k$` 和可变成本 `$cx$`，它的成本函数是：
+只要订货 $x>0$ 就有一个固定成本 $k$ 和可变成本 $cx$，它的成本函数是：
 
-`$$z(x) = \begin{cases}
+$$z(x) = \begin{cases}
 0, x = 0 \\
 cx + k, x > 0 
-\end{cases}$$`
+\end{cases}$$
 
 这实际上是一个二选一约束，使用大 M 法即可转换成线性约束，即：
 
-`$$z(x)=cx+ky$$`
+$$z(x)=cx+ky$$
 
-`$$z(x)=\begin{cases}
+$$z(x)=\begin{cases}
 0 \\
 cx + k
 \end{cases}
 \Rightarrow\text{s.t.}\begin{cases}
 x \leq yM \\
 y = \{0, 1\}   
-\end{cases}$$`
+\end{cases}$$
 
 #### 分段线性函数
 
 在现实生活中，购买商品的数量越多就会有折扣，其单价就越低。在数学中，
 它的成本或利润函数可以表示为如下的分段线性函数：
 
-`$$z=\begin{cases}
+$$z=\begin{cases}
 2+3x, 0 \leq x \leq 2 \\ 
 20-x, 2 \leq x \leq 3 \\
 6+2x, 3 \leq x \leq 7
-\end{cases}$$`
+\end{cases}$$
 
 对于分段线性函数，可以通过引入 **SOS2 约束(a Special Order Set Constraint of Type 2)**，
 将其转换为线性规划。然而，还有一个更通用的方法，
-设有一个 `$n$` 段线性函数 `$f(x)$` 的分界点 `$b_{1} \leq \cdots \leq b_{n} \leq b_{n+1}$`，
-引入 `$w_{k}$` 将 `$x$` 和 `$f(x)$` 表示为：
+设有一个 $n$ 段线性函数 $f(x)$ 的分界点 $b_{1} \leq \cdots \leq b_{n} \leq b_{n+1}$，
+引入 $w_{k}$ 将 $x$ 和 $f(x)$ 表示为：
 
-`$$x=\sum_{k=1}^{n+1}w_{k}b_{k}$$`
-`$$f(x_{k})=\sum_{k=1}^{n+1}w_{k}f(b_{k})$$`
+$$x=\sum_{k=1}^{n+1}w_{k}b_{k}$$
+$$f(x_{k})=\sum_{k=1}^{n+1}w_{k}f(b_{k})$$
 
-`$w_{k}$` 和 `$z_{k}$` 满足以下约束：
+$w_{k}$ 和 $z_{k}$ 满足以下约束：
 
-`$$z_{1}+\cdots+z_{n} = 1, z_{k}=\{0, 1\}$$`
-`$$w_{1}+\cdots+w_{n+1}=1, w_{k}\geq 0$$`
+$$z_{1}+\cdots+z_{n} = 1, z_{k}=\{0, 1\}$$
+$$w_{1}+\cdots+w_{n+1}=1, w_{k}\geq 0$$
 
 前面已经讲了许多非线性模型线性化的方法，需要注意的是，在使用 Gurobi 的广义线性化函数时，
 不能对表达式做线性化，而需要先将表达式赋予变量，然后再对变量做线性化，例如：
@@ -1070,7 +1070,7 @@ y = \{0, 1\}
 m.addConstrs(z == grb.max_(x, y))
 ```
 
-`$$\text{s.t.} \space x = g + k$$`
+$$\text{s.t.} \space x = g + k$$
 
 是正确的，而：
 
@@ -1197,89 +1197,89 @@ $ set PATH=%PATH%;%SCIPOPTDIR%\bin
 
 > Linear Program, LP，线性规划
 
-`$$\begin{align*} 
+$$\begin{align*} 
 \text{min} \quad& c^T x \\ 
 \text{s.t.} \quad& Ax \geq b \\ 
 & x_{j} \geq 0 && \forall j \in \mathcal{N} 
-\end{align*}$$`
+\end{align*}$$
 
 #### Mixed-Integer Linear Program
 
 > Mixed-Integer Linear Program, MIP, 混合整数线性规划
 
-`$$$$`
-`$$\begin{align*}
+$$$$
+$$\begin{align*}
 \text{min} \quad& c^T x \\ 
 \text{s.t.} \quad& Ax \geq b \\ 
 &l_{j} \leq x_{j} \leq u_{j} && \forall j \in \mathcal{N} \\ 
 &x_{j} \in \mathbb{Z} && \forall j \in \mathcal{I} 
-\end{align*}$$`
+\end{align*}$$
 
 #### Mixed-Integer NonLinear Program
 
 > Mixed-Integer NonLinear Program, MINLP, 混合整数非线性规划
 
-`$$\begin{align*} 
+$$\begin{align*} 
 \text{min} \quad& f(x) \\ 
 \text{s.t.} \quad& g_{i}(x) \leq 0 && \forall i \in \mathcal{M} \\ 
 &l_{j} \leq x_{j} \leq u_{j} && \forall j \in \mathcal{N} \\ 
 &x_{j} \in \mathbb{Z} && \forall j \in \mathcal{I} 
-\end{align*}$$`
+\end{align*}$$
 
 #### Constraint Integer Program
 
 > Constraint Integer Program, CIP, 约束整数规划
 
-`$$\begin{align*} 
+$$\begin{align*} 
 \text{min} \quad& c^T x + d^T y \\ 
 \text{s.t.} \quad& C_i(x,y) = \text{true} && \forall i \in \mathcal{M} \\ 
 & x \in \mathbb{Z}^{p}, y \in \mathbb{R}^{n - p} 
-\end{align*}$$`
-`$$\text{where} \space \forall i \in\mathcal{M}, \forall x^* \in \mathbb{Z}^{p},$$`
-`$$\{ y : C_i(x^*, y) = \text{true} \} \space \text{is a polyhedron.}$$` 
+\end{align*}$$
+$$\text{where} \space \forall i \in\mathcal{M}, \forall x^* \in \mathbb{Z}^{p},$$
+$$\{ y : C_i(x^*, y) = \text{true} \} \space \text{is a polyhedron.}$$ 
 
 #### Convex MINLP 
 
 > Convex MINLP Like MINLP
 
-`$$f \space \text{and all} \space g_{i} \space\text{are convex.}$$`
+$$f \space \text{and all} \space g_{i} \space\text{are convex.}$$
 
 #### Pseudoboolean optimization
 
-`$$\begin{align*} 
+$$\begin{align*} 
 \text{min} \quad& c^T x \\ 
 \text{s.t.} \quad& \sum_{k=0}^p a_{ik} \cdot \prod_{j \in \mathcal{N}_{ik}} x_j \leq b_i && \forall i \in \mathcal{M} \\ 
 &x_{j} \in \{0,1\} && \forall j \in \mathcal{N} 
-\end{align*}$$`
+\end{align*}$$
 
 #### Satisfiability (SAT) and variants
 
-`$$\begin{align*} 
+$$\begin{align*} 
 \text{min} \quad& 0 \\ 
 \text{s.t.} \quad&\bigvee\limits_{j \in B_i} x_j \vee \bigvee\limits_{j \in \bar{B}_i} \neg x_j = \text{true} && \forall i \in \mathcal{M}\\ 
 &x_{j} \in \{\text{false},\text{true}\} && \forall j \in \mathcal{N} 
-\end{align*}$$`
+\end{align*}$$
 
 #### Multicriteria optimization
 
-`$$\begin{align*} 
+$$\begin{align*} 
 \text{min} \quad &(c_1^T x,\ldots,c_k^T x) \\ 
 \text{s.t. } \quad& Ax \geq b \\ 
 &x \in \mathbb{K}^n 
-\end{align*}$$`
+\end{align*}$$
 
-`$$\text{where} \space \mathbb{K}\space \text{is either}\space \mathbb{Z}\space \text{or} \space \mathbb{R}.$$`.
+$$\text{where} \space \mathbb{K}\space \text{is either}\space \mathbb{Z}\space \text{or} \space \mathbb{R}.$$.
 
 
 #### Mixed-Integer SemiDefinite Program
 
 > Mixed-Integer SemiDefinite Program, MISDP, 混合整数半正定规划
 
-`$$\begin{align*} 
+$$\begin{align*} 
 \text{inf} \quad \thinspace & b^T y \\ 
 \text{s.t.} \quad & \sum_{j=1}^m A_j\, y_j - A_0 \succeq 0 \\ 
 & y_j \in \mathbb{Z} && \forall\, j \in \mathcal{I} 
-\end{align*}$$`
+\end{align*}$$
 
 ### SCIP 快速使用
 
@@ -1466,15 +1466,15 @@ OR-Tools 示例：https://developers.google.com/optimization/examples?hl=zh-cn
 线性优化示例：线性优化（或线性规划）是最古老且最常用的优化领域之一，
 其中目标函数和约束可以编写为线性表达式。这是一个此类问题的简单示例。
 
-`$$min Z = 3x_{1} + x_{2}$$`
+$$min Z = 3x_{1} + x_{2}$$
 
-`$$s.t.\begin{cases}
+$$s.t.\begin{cases}
 x_{1} + x_{2} \leq 2 \\
 0 \leq x_{1} \leq 1 \\ 
 0 \leq x_{2} \leq 2
-\end{cases}$$`
+\end{cases}$$
 
-此示例中的目标函数为 `$3x_{1}+x_{2}$`。目标函数和约束条件都由线性表达式指定，这使其成为线性问题。
+此示例中的目标函数为 $3x_{1}+x_{2}$。目标函数和约束条件都由线性表达式指定，这使其成为线性问题。
 
 解决该问题的主要步骤
 
@@ -1611,7 +1611,7 @@ if __name__ == "__main__":
 $ python program.py
 ```
 
-该程序会返回 `$x_{1}$` 和 `$x_{2}$` 的值，用于最大限度地提高目标函数：
+该程序会返回 $x_{1}$ 和 $x_{2}$ 的值，用于最大限度地提高目标函数：
 
 ```
 Google OR-Tools version: 9.10.4067

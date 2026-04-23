@@ -57,7 +57,7 @@ where $f$ and $f_1, \ldots, f_m$ are convex, $A \in \mathbb{R}^{p \times n}$ wit
 2. Incorporate **inequality constraints** via a logarithmic barrier function.
 3. Combine both into the **barrier method** (interior point method).
 
-![](https://zhuoranyang.github.io/sds431-notes/lectures/figures/ch22-three-step-plan.svg)
+![[ch22-three-step-plan.svg]]
 
 Figure 16.1: Three-step plan: equality constraints via modified Newton, log barrier for inequality constraints, then the barrier method.
 
@@ -159,7 +159,7 @@ $$
 
 Comparing with Version I, both solve the same linear system with the same matrix — only the right-hand side differs. When $x$ is feasible, Version I and Version II produce the same Newton direction $d = \Delta x$.
 
-![](https://zhuoranyang.github.io/sds431-notes/lectures/figures/feasible-vs-infeasible.svg)
+![[feasible-vs-infeasible.svg]]
 
 Figure 16.2: Feasible-start Newton (blue) stays on the constraint line x 1 + 2 = 3 x\_1 + x\_2 = 3, while infeasible-start Newton (terracotta) approaches the constraint from outside and then follows it to the optimum. Elliptical contours show the objective function.
 
@@ -199,7 +199,7 @@ $$
 
 The KKT conditions for this problem include complementary slackness $\lambda_i f_i(x) = 0$ with $\lambda_i \geq 0$ and $f_i(x) \leq 0$. These conditions involve inequalities and a product-equals-zero condition that are inherently non-smooth — Newton’s method, which relies on differentiability, cannot handle them directly.
 
-![](https://zhuoranyang.github.io/sds431-notes/lectures/figures/ch22-barrier-vs-no-barrier.svg)
+![[ch22-barrier-vs-no-barrier.svg]]
 
 Figure 16.3: Without a barrier, Newton iterates can escape the feasible region. With the log barrier, a repulsive force keeps iterates strictly inside.
 
@@ -239,7 +239,7 @@ $$
 
 with $\operatorname{dom}(\phi) = \{x : f_i(x) < 0 \; \forall \, i\}$ (the strictly feasible set).
 
-![](https://zhuoranyang.github.io/sds431-notes/lectures/figures/barrier-approximation.svg)
+![[barrier-approximation.svg]]
 
 Figure 16.4: The log barrier approximation − ( 1 / t ) log ⁡ u -(1/t)\\log(-u) for several values of. As increases, the barrier more closely approximates the indicator function I = 0 I(u) = 0 for ≤ u \\leq 0 and + ∞ +\\infty > u > 0. The barrier creates a smooth wall that keeps iterates strictly in the interior of the feasible set.
 
@@ -285,11 +285,11 @@ As we vary $t > 0$, the solutions $x^*(t)$ of the barrier problem ([Equation 16.
 
 **Definition 16.6 (Central Path)** The **central path** is the set $\{x^*(t) : t > 0\}$, where $x^*(t)$ is the unique solution to the barrier problem $(P_t)$.
 
-![](https://zhuoranyang.github.io/sds431-notes/lectures/figures/central-path.svg)
+![[central-path.svg]]
 
 Figure 16.5: The central path of the interior point method: as the barrier parameter decreases, the iterates approach the optimal vertex while staying in the interior of the feasible region.
 
-![](https://zhuoranyang.github.io/sds431-notes/lectures/figures/ch22-central-path-diagram.svg)
+![[ch22-central-path-diagram.svg]]
 
 Figure 16.6: The central path traces through the interior of the feasible region from the analytic center toward the optimal vertex as t increases.
 
@@ -347,7 +347,7 @@ $$
 
 At $t = 0$, this gives $\nabla \phi(x^*(0)) = 0$, which is the **analytic center** of the polytope — the point that maximizes the product of distances to the constraint boundaries. As $t \to \infty$, $x^*(t)$ moves toward the optimal vertex, tracing a smooth arc through the interior.
 
-![](https://zhuoranyang.github.io/sds431-notes/lectures/figures/central-path.svg)
+![[central-path.svg]]
 
 Figure 16.7: The central path for a 2D LP. The path begins at the analytic center ( t ≈ 0 t \\approx 0 ) and curves toward the optimal vertex as → ∞ t \\to \\infty. Each dot represents x ∗ ( ) x^\*(t) for a particular value of.
 
@@ -383,13 +383,13 @@ Having established the central path, the duality gap bound $m/t$, and the pertur
 
 **Output**: $x$ (an $\varepsilon$ -optimal solution).
 
-![](https://zhuoranyang.github.io/sds431-notes/lectures/figures/ch22-barrier-method-flowchart.svg)
+![[ch22-barrier-method-flowchart.svg]]
 
 Figure 16.8: The barrier method flowchart: initialize, center via Newton, update x, increase t, and check stopping criterion m / ≤ ε m/t \\leq \\varepsilon.
 
 The key insight is **warm starting**: we initialize the centering step for parameter $\mu t$ using the solution $x^*(t)$ from the previous centering step. Since $\mu t$ is not too far from $t$ (provided $\mu$ is moderate), $x^*(t)$ is a good starting point, and Newton’s method converges in just a few iterations.
 
-![](https://zhuoranyang.github.io/sds431-notes/lectures/figures/ch04-barrier-warmstart.svg)
+![[ch04-barrier-warmstart.svg]]
 
 Figure 16.9: Warm starting in the barrier method. Each centering step begins from the previous solution x ∗ ( t ) x^\*(t), which is already close to μ x^\*(\\mu t). This makes each Newton solve fast — typically just a few iterations.
 
@@ -424,7 +424,7 @@ TipComplexity of the Barrier Method
 
 With careful parameter tuning (specifically $\mu = 1 + 1/\sqrt{m}$), the barrier method achieves an $\varepsilon$ -optimal solution in $O(\sqrt{m} \cdot \log(m/\varepsilon))$ Newton steps total. Each Newton step costs $O(n^3)$ for a dense problem (dominated by solving the KKT system). This polynomial-time complexity was a major theoretical breakthrough — unlike the simplex method, interior point methods have provably efficient worst-case behavior.
 
-![](https://zhuoranyang.github.io/sds431-notes/lectures/figures/ch16-barrier-convergence.svg)
+![[ch16-barrier-convergence.svg]]
 
 Figure 16.10: Convergence of the barrier method. Left: duality gap m / t m/t decreases geometrically with each outer iteration for different growth factors μ \\mu. Right: total Newton steps as a function of — too small means many outer iterations, too large means many Newton steps per centering.
 
@@ -465,7 +465,7 @@ For a deeper treatment of interior point methods, including self-concordant barr
 
 ### Second-Order Methods Comparison
 
-![](https://zhuoranyang.github.io/sds431-notes/lectures/figures/ch04-second-order-hierarchy.svg)
+![[ch04-second-order-hierarchy.svg]]
 
 Figure 16.11: The hierarchy of second-order optimization methods covered in this part of the course. Newton’s method forms the computational core; the ellipsoid method provides theoretical polynomial-time guarantees; and interior point methods combine Newton centering with barrier functions for practical polynomial-time solvers.
 

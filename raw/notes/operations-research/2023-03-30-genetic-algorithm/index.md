@@ -121,11 +121,11 @@ topics:
 
 常见的选择操作有**轮盘赌**的方式，即根据个体的适应度计算被选中的概率，公式如下：
 
-`$$P(x_j)=\frac{\text{fit}(x_j)}{\sum_{i=1}^n \text{fit}(x_i)}, j\in{1,2,\cdots,n}$$`
+$$P(x_j)=\frac{\text{fit}(x_j)}{\sum_{i=1}^n \text{fit}(x_i)}, j\in{1,2,\cdots,n}$$
 
 #### 交叉操作
 
-一般以概率阀值 `$Pc$` 控制是否进行**单点交叉**、**多点交叉**或者**其他交叉方式**生成新的交叉个体。
+一般以概率阀值 $Pc$ 控制是否进行**单点交叉**、**多点交叉**或者**其他交叉方式**生成新的交叉个体。
 交叉操作也有许多种：单点交叉、两点交叉、多点交叉等。此处仅讲解一下两点交叉。
 
 1. 首先利用选择操作从种群中选择两个父辈个体 `parent1` 和 `parent2`；
@@ -142,7 +142,7 @@ topics:
 
 #### 变异操作
 
-一般以概率阀值 `$Pm$` 控制是否对个体的部分基因执行**单点变异**或**多点变异**。
+一般以概率阀值 $Pm$ 控制是否对个体的部分基因执行**单点变异**或**多点变异**。
 
 变异操作的话，根据不同的编码方式有不同的变异操作：
 
@@ -153,7 +153,7 @@ topics:
 
 问题：
 
-`$$\text{max} \space f(x,y)=21.5+x\times\sin(4\times\pi\times x) + y \times\sin(20\times\pi\times y)$$`
+$$\text{max} \space f(x,y)=21.5+x\times\sin(4\times\pi\times x) + y \times\sin(20\times\pi\times y)$$
 
 ```python
 # -*- coding:utf-8 -*- 

@@ -50,7 +50,7 @@ ImportantThe Central Question
 
 Can we systematically produce upper bounds on $c^\top x$ over all feasible $x \in \Omega$, using only the constraint data $(A, b)$? If we can find such an upper bound that equals our candidate value $f_0$, then $f_0 = f^*$ and $x_0$ is certified optimal.
 
-![](https://zhuoranyang.github.io/sds431-notes/lectures/figures/duality-gap.svg)
+![[duality-gap.svg]]
 
 Figure 11.1: The duality gap between a lower bound (primal feasible value) and an upper bound (dual feasible value). When the gap closes, we have certified optimality.
 
@@ -382,7 +382,7 @@ NoteKey Insight
 
 The simplex method simultaneously solves both the primal and the dual! The optimal dual variables are the **simplex multipliers** $y^* = (\mathbf{A}_B^{-1})^\top c_B$, and each $y_i^*$ equals the **negative of the reduced cost** of the $i$ -th slack variable $w_i$. You never need to solve the dual LP separately — it comes for free from the primal simplex tableau.
 
-![](https://zhuoranyang.github.io/sds431-notes/lectures/figures/lp-duality-relationships.svg)
+![[lp-duality-relationships.svg]]
 
 Figure 11.2: Relationships between primal and dual linear programs: weak duality provides a bound, strong duality gives equality at optimality, and complementary slackness links the solutions.
 
@@ -505,7 +505,7 @@ $$
 
 Intuitively, $y^* = (y_1^*, \ldots, y_m^*)$ reflects how much the objective changes when we change each constraint by one unit. In economics, $y_i^*$ represents the **marginal value** of relaxing the $i$ -th constraint – if the constraint $a_i^\top x \leq b_i$ represents a resource limit, then $y_i^*$ is the price one should be willing to pay for one additional unit of that resource.
 
-![](https://zhuoranyang.github.io/sds431-notes/lectures/figures/sensitivity.svg)
+![[sensitivity.svg]]
 
 Figure 11.3: Sensitivity analysis. Perturbing the resource constraint bound b 3 b\_3 ( x 1 + 2 ≤ 3x\_1+2x\_2 \\leq b\_3 ) changes the optimal value. The slope of the tangent line at the default point 18, 36 ) (18, 36) equals the shadow price y ∗ = y\_3^\* = 1.
 
@@ -558,7 +558,7 @@ From $y_1^* = 0$: $3y_3^* = 3 \implies y_3^* = 1$. Then $y_2^* + 2(1) = 5 \impli
 
 **Step 5: Shadow prices.** $y_1^* = 0$ means the constraint $x_1 \leq 4$ is not binding (we have slack $w_1 = 2$), so relaxing it has no effect on the optimum. $y_2^* = 3$ means that increasing the bound on $x_2$ by one unit (from 6 to 7) would increase the optimal profit by approximately 3. $y_3^* = 1$ means relaxing the combined resource constraint by one unit increases profit by approximately 1.
 
-![](https://zhuoranyang.github.io/sds431-notes/lectures/figures/duality-worked-example.svg)
+![[duality-worked-example.svg]]
 
 Figure 11.4: Worked example: primal feasible region with objective contours at f = 10, 20 30 36 f = 10, 20, 30, 36. Each vertex is labeled with its objective value. The optimal vertex ( 2 6 ) (2,6) achieves ∗ f^\* = 36, which equals the dual optimal value.
 
