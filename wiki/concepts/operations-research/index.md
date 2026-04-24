@@ -1,6 +1,6 @@
 ---
 |created_at: 2026-04-11
-|updated: 2026-04-23
+updated: 2026-04-23
 |topics:
   - operations-research
   - shared
