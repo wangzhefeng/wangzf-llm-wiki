@@ -1,10 +1,10 @@
 ---
-|created_at: 2026-04-11
+created_at: 2026-04-11
 updated: 2026-04-23
-|topics:
+topics:
   - operations-research
   - shared
-status: active
+status: linked
 ---
 # wiki/concepts/operations-research
 
