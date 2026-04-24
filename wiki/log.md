@@ -1752,3 +1752,67 @@ GLOSSARY.md 定义了知识库各主题的规范英文名称。发现 raw/ 层�
 - **更新索引页**：3 个（来源清单 + 阅读地图 + 总索引）
 - **专题成熟度**：从"经典控制 + 现代控制方法概述"升级为"完整 MPC 知识体系"
 - **控制算法维度增长**：概念页 6→11，来源卡 6→13
+
+## [2026-04-23] ingest | 运筹优化算法专题知识库补录
+
+### 背景
+
+运筹优化算法专题在 2026-04-14 完成初次系统编译后，通过健康检查和来源清单审查，发现以下缺口：
+
+1. **大型历史笔记未创建来源卡**：
+   - `raw/notes/operations-research/2023-01-07-operations-research-summary/index.md`（26KB+，运筹学完整体系总览）
+   - `raw/notes/operations-research/2024-09-03-python-optimization/index.md`（70KB+，Gurobi/SCIP/CPLEX 完整实践指南）
+2. **来源清单和总索引中存在占位空描述**（原文丢失或历史遗留）
+3. **新的大型笔记未能在索引页中充分引用**
+
+### 执行内容
+
+**Phase 1：来源卡创建（2 张）**
+
+| 来源卡 | 对应 raw | 核心定位 |
+|--------|---------|---------|
+| `2023-01-07-数学优化模型总览` | `2023-01-07-operations-research-summary/index.md` | 运筹学完整体系总览（26KB+），覆盖规划论/库存论/图论/排队论/对策论/决策论 |
+| `2024-09-03-数值优化求解器-Python实践` | `2024-09-03-python-optimization/index.md` | Gurobi/SCIP/CPLEX 完整实践指南（70KB+），含 Multidict/Tuplelist/Tupledict/Callback 等高级特性 |
+
+**Phase 2：索引页更新（3 个文件）**
+
+- `运筹优化算法来源清单.md`：补充新来源卡标注，标注 2026-04-23 补录批次
+- `运筹优化算法总索引.md`：修正历史来源卡占位空描述，新增总览来源规模标注（26KB+）
+- `运筹优化算法阅读地图.md`：补充求解器实践指南到第 4 阶段工具层
+
+**Phase 3：概念页增强（2 个）**
+
+- `数学优化模型.md`：补充总览来源标注，增加求解器实践指南引用
+- `数值优化求解器.md`：增加求解器实践来源引用，完善代表来源列表
+
+### 结果
+
+- **新增来源卡**：2 张（均为大型历史笔记）
+- **更新索引页**：3 个（来源清单 + 阅读地图 + 总索引）
+- **更新概念页**：2 个（数学优化模型 + 数值优化求解器）
+- **专题成熟度**：来源层覆盖度进一步提升，大型历史笔记来源卡补充完整
+- **lint 检查**：0 errors / 0 warnings，通过
+
+## [2026-04-23] update | 运筹优化算法专题来源卡去重与清理
+
+### 执行内容
+
+**重复来源卡删除（4 个）：**
+- `2026-04-06-3.优化方法简史.md` → 保留 `2026-04-06-优化方法简史.md`（后者已 summarized）
+- `2026-04-06-CVXPY 官网.md` → 保留 `2026-04-06-CVXPY凸优化库.md`（后者已 summarized）
+- `2026-04-06-求解器如何与大模型的融合.md` → 保留 `2026-04-06-求解器与大模型融合.md`（后者已 summarized）
+- `2026-04-06-多求解器时代的工程设计 Gurobi, CPLEX, SCIP 统一调用方案.md` → 保留 `2026-04-06-多求解器工程设计.md`（后者已 summarized）
+
+**无关来源卡删除（21 个）：**
+- `Pillow.md`、`GIFT Eval.md`、`TSorchestraclieval.sh.md`、`SynodicMonthChebyKAN.md`
+- `computerhistoryAlexNet.md`、`connorfersterhandcalcs.md`、`fatedierfrp.md`、`h2oaipystacknet.md`
+- `kaz-AnovaStackNet.md`、`optunaoptuna.md`、`torch.utils.checkpoint.md`、`torchrun.md`
+- `RegressorChain.md`、`datawhalechinaeasy-vibe.md`、`datawhalechinahandy-multi-agent.md`
+- `GitHub---datawhalechinahandy-multi-agent.md`、`Learn Python, Data Viz.md`
+- `Joseph Redmon.md`、`TPT.md`、`Handy Multi Agent Tutorial.md`、`doFighterComputational-intelligence.md`
+
+### 结果
+
+- **删除来源卡**：25 个（4 重复 + 21 无关）
+- **保留来源卡**：~82 个（清理后）
+- **lint 检查**：0 errors / 0 warnings ✅
