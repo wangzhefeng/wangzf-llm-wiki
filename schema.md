@@ -20,6 +20,8 @@ status: active
 - `README.md`：GitHub 项目介绍
 - `schema.md`：唯一规则入口
 - `purpose.md`：研究目标、边界与优先级
+- `.agents/AGENTS.md`：Codex agent 协作约束
+- `.claude/CLAUDE.md`：Claude Code 专属补充配置
 - `wiki/index.md`：唯一统一导航入口
 - `wiki/log.md`：唯一操作日志
 - `wiki/log_lint.md`：唯一 lint / health 主报告
@@ -50,6 +52,8 @@ status: active
   - `outputs/slides/`：演示结果
   - `outputs/syntheses/`：总结结果，阶段性综述或综合判断
 - `prompts/`：提示词模板目录，不再依赖目录 README 作为入口
+- `.agents/`：Codex agent 配置（AGENTS.md + skills/）
+- `.claude/`：Claude Code 配置（CLAUDE.md + skills/ + settings）
 
 ## 3. 原始层规范
 
@@ -95,6 +99,8 @@ status: active
 知识层规则：
 
 - 页面互链优先使用 `[[wikilinks]]`
+- **Wikilink 适用范围**：`wiki/` 内部页面互链（概念↔概念、概念↔来源卡、索引↔任意 wiki 页）
+- **可接受**的跨层 wikilink：`[[raw/...]]` 和 `[[outputs/...]]` 在 Obsidian 中可正常解析，用于来源卡回链原始文件或索引页引用输出结果。`wiki_check.py` 对这类链接不做错误检查
 - 新增稳定页面后，必须补到至少一个主题索引入口
 - 仅在"2+ 来源共同出现"或"单来源核心主题"时新建概念/实体页
 - 原始层文件不做语义改写，修正写入 `wiki/` 层
@@ -227,6 +233,7 @@ status: linked
   - 先读 `raw`，再补 `wiki/sources`
   - 需要时补 `entities / concepts / indexes`
   - 新内容必须能从至少一个索引入口到达
+  - **入库前检查**：新增 raw 文件后，立即运行 `python3 .env/health/wiki_check.py --checks lint`，确认 frontmatter 完整、命名合规后再继续编译。如 lint 不通过，先修复再继续
 - `query`
   - 先读相关索引、来源、概念，再回答
   - 高价值结果优先进入 `outputs/answers` 或 `outputs/syntheses`

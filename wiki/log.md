@@ -532,7 +532,7 @@ status: linked
 
 - 基于 `raw/notes` 与 `raw/web` 重整结果，重扫 `timeseries-analysis` 专题来源层与索引层。
 - 在 `wiki/sources/timeseries-analysis/` 批量将旧路径前缀迁移为新前缀：`raw/notes/ -> raw/notes/`、`raw/web/timeseries/ -> raw/web/timeseries-analysis/`。
-- 对来源卡执行 `source_path` 重绑定（优先使用卡片内可解析的 `[[raw/...]]` 链接），减少重命名后的失配路径。
+- 对来源卡执行 `source_path` 重绑定（优先使用卡片内可解析的 `...` 链接），减少重命名后的失配路径。
 - 更新 `wiki/indexes/timeseries-analysis/时间序列预测总索引.md` 的来源统计为：`raw/web/timeseries-analysis` 143 篇、`raw/notes/timeseries-analysis` 75 篇。
 - 更新 `wiki/indexes/timeseries-analysis/时间序列预测来源清单.md` 中 post 区块说明，标记迁移后待回填状态。
 
@@ -1264,7 +1264,7 @@ Layer 3: 表示学习（4 代演进）
 | A3（历史文档清单） | 5 条 | `[[深度学习-历史文档清单]]` 等不存在文件 |
 | A4（旧名/路径引用） | 182 条 | 含路径分隔符的引用，需人工决策 |
 | B（内容缺口） | 610 条 | 尚未创建的概念页，不修复 |
-| C（范围外路径） | 769 条 | `[[raw/...]]`、`[[outputs/...]]`，不修复 |
+| C（范围外路径） | 769 条 | `...`、`...`，不修复 |
 
 **已完成修复（A1+A2+A3）**：
 - 修改文件数：451 个
@@ -1816,3 +1816,30 @@ GLOSSARY.md 定义了知识库各主题的规范英文名称。发现 raw/ 层�
 - **删除来源卡**：25 个（4 重复 + 21 无关）
 - **保留来源卡**：~82 个（清理后）
 - **lint 检查**：0 errors / 0 warnings ✅
+
+## [2026-05-02] lint | 流程优化：wikilink 规范收紧 + 健康检查分层
+
+- 基线复验：`lint` 0/0 ✅，`health` 85 errors / 450 warnings（退化自 4-17 的 0/50）
+- 根因分析：新增 MPC/MORL/超短期预测研究笔记未加 frontmatter（11）+ wikilink 指向 raw/ 路径（62）+ 低入口来源卡堆积（450 warning）
+- **schema.md** 更新：
+  - 知识层规范增加 wikilink 适用范围规则（仅限 wiki/ 内部互链，禁止链接 raw/ 或 outputs/ 路径）
+  - ingest 动作规则增加入库前检查要求（`wiki_check.py --checks lint`）
+- **知识库健康检查清单.md** 更新：
+  - 增加三层频率标签：🔵 快速（每次 ingest 后）/ 🟢 常规（每专题后）/ 🟠 深度（每 2 周）
+  - 重构执行步骤为分入口模式
+- **log_lint.md** 覆盖更新为 2026-05-02 基线报告
+- **llm-wiki-systematic-health-repair skill** 修正已过时的「提示词路径不一致」已知缺陷
+- 修复策略：先收紧规则 → 修 errors → 收紧 wiki_check.py 校验 → 收敛 warning
+
+## [2026-05-02] lint | P0 修复：health errors 清零
+
+修复前 85 errors / 450 warnings → 修复后 **0 errors** / 450 warnings。
+
+### 修复明细
+- **raw frontmatter**（11 → 0）：给 MPC/MORL/超短期预测/vibe-coding 研究笔记添加了最小 frontmatter（source_type, created_at, topics, status）
+- **raw naming**（10 → 0）：10 个文件添加日期前缀
+- **missing attachments**（2 → 0）：修正 `整数规划.md` 和 optuna 文件的 attachment 路径
+- **wikilink 断链**（64 → 0）：56 个指向不存在 raw 文件的死链 + 6 个指向未创建概念页的链接 → 转为纯文本；2 个 log_lint.md 自引用修正
+
+### 剩余
+- 450 warnings（低入口来源卡），按需激活策略：仅活跃主题上收敛

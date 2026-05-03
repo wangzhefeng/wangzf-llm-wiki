@@ -9,6 +9,8 @@
 - `wiki/`：结构化知识层
 - `outputs/`：问答、综述、图表、演示稿等派生结果
 - `prompts/`：可复用提示词模板
+- `.agents/AGENTS.md`：Codex agent 协作规范
+- `.claude/CLAUDE.md`：Claude Code 专属配置
 
 当前正式原始资料范围为：
 

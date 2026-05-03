@@ -64,7 +64,7 @@ OpenClaw 主要解决：
 
 ### 2.1 核心架构
 
-![OpenClaw 架构图](../images/openclaw/architecture.svg)
+!OpenClaw 架构图
 
 图示说明：OpenClaw 的核心不是模型壳子，而是 Gateway 这个入口层，它把通道、运行时、技能、记忆和工作区组织在一起。
 
@@ -115,7 +115,7 @@ OpenClaw 社区教程反复强调记忆机制，常见理解是：
 
 ### 3.1 典型部署链路
 
-![OpenClaw 工作流图](../images/openclaw/workflow.svg)
+!OpenClaw 工作流图
 
 图示说明：更稳的部署顺序是先安装、接模型、验证控制面，再接消息入口和自动化，而不是一开始就堆很多通道和能力。
 

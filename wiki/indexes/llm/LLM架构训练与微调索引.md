@@ -51,11 +51,11 @@ status: linked
 ### RLHF 与替代方案
 - [[2026-04-06-LLM-Training-RLHF-and-Its-Alternatives|LLM Training: RLHF and Its Alternatives]] — Sebastian Raschka 教程
 - [[ORPO|RLHF and alternatives: ORPO]] — ORPO 方法
-- [[2026-04-06-theLMbookGRPO_From_Scratch_Multi_GPU_DataParallel_Qwen_2_5_1_5B_Instruct.ipynb at main|GRPO_From_Scratch_Multi_GPU]] — GRPO 多卡实现
+- GRPO_From_Scratch_Multi_GPU — GRPO 多卡实现
 
 ### 推理能力
 - [[2026-04-06-How-LLMs-learn-to-reason-A-deep-dive-into-post-training-strategies|How LLMs learn to reason]] — 后训练策略分析
-- [[2026-04-06-Why We Think|Why We Think]] — test-time compute 综述
+- Why We Think — test-time compute 综述
 
 ## 评估与部署
 

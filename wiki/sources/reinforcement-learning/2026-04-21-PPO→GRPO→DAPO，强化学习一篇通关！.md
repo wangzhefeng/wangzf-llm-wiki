@@ -19,7 +19,7 @@ status: summarized
 
 ## 内容摘要
 
-source: "https://mp.weixin.qq.com/s/TOTza-CEhG7vYrBBtURldw"；title: "PPO→GRPO→DAPO，强化学习一篇通关！"；- "[[catneverfat]]"
+source: "https://mp.weixin.qq.com/s/TOTza-CEhG7vYrBBtURldw"；title: "PPO→GRPO→DAPO，强化学习一篇通关！"；- "catneverfat"
 
 ## 关键价值
 

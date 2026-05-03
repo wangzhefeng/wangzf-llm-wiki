@@ -44,10 +44,10 @@ status: summarized
 
 ## 连到哪些概念
 
-- [[Claude Code]] — Design 模式是 Claude Code 的一种能力维度
+- Claude Code — Design 模式是 Claude Code 的一种能力维度
 - [[Vibe-Coding]] — Design Agent 是 Vibe Coding 生态中的重要工具
-- [[AI辅助设计]] — Design 模式的核心应用场景
+- AI辅助设计 — Design 模式的核心应用场景
 
 ## 相关工具卡
 
-- [[claude_code.md]] — Claude Code 完整介绍
+- claude_code.md — Claude Code 完整介绍

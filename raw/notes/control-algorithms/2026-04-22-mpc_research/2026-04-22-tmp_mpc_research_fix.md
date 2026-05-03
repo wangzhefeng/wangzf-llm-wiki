@@ -1,3 +1,11 @@
+---
+source_type: notes
+created_at: 2026-04-22
+topics:
+  - control-algorithms
+status: inbox
+---
+
 # 面向虚拟电厂与电力市场交易算法工程师的MPC调研文档
 
 ## 执行摘要

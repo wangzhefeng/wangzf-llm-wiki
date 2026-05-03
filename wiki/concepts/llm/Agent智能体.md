@@ -98,7 +98,7 @@ Thought: 现在我可以用这个结果...
 - [[大语言模型专题来源]]
 - [[VibeCoding与Agent专题来源]]
 - [[2026-04-05-vercel-agent-browser]]
-- [[2026-04-06-Agents Companion]] — Agent 配套教材
+- 2026-04-06-Agents Companion — Agent 配套教材
 
 ## 相关概念
 

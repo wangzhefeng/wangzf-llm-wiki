@@ -22,7 +22,7 @@ status: summarized
 
 | 文件名 | 核心内容 | 状态 |
 |--------|----------|------|
-| [[2026-04-06-2.图解Word2vec]] | Word2Vec 图解教程 | 待摘要 |
+| 2.图解Word2vec | Word2Vec 图解教程 | 待摘要 |
 | [[2026-04-06-What are embeddings]] | Embeddings 综述 (Word2Vec 到 Transformer) | 待摘要 |
 | 2026-04-06-veekaybeewhat_are_embeddings A deep dive into embeddings starting from fundamentals | Embeddings 深度解析 | 待摘要 |
 

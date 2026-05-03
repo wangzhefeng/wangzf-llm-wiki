@@ -15,4 +15,4 @@ ORPO 是面向语言模型对齐的偏好优化方法，通过把偏好目标并
 
 ## 相关来源
 
-- [[2026-04-06-Direct Preference Optimization (DPO)]]
+- [[DPO直接偏好优化]]

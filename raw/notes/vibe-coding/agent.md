@@ -76,7 +76,7 @@ topics:
 
 ### 2.1 Agent 的基础构件
 
-![Agent 架构图](../images/agent/architecture.svg)
+!Agent 架构图
 
 图示说明：Agent 的本质不是一个会思考的 LLM，而是一个被工具、状态和停止机制包围起来的执行闭环。
 
@@ -142,7 +142,7 @@ Agent 稳定性的核心不在“会不会说”，而在“能不能被现实�
 
 ### 3.2 Workflow 还是 Agent 的决策树
 
-![Workflow 或 Agent 决策图](../images/agent/decision.svg)
+!Workflow 或 Agent 决策图
 
 图示说明：大多数系统先问“路径能否预定义”，而不是先问“要不要做多代理”。
 

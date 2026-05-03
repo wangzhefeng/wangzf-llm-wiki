@@ -61,10 +61,10 @@ $$\max E[\sum_{t=0}^{\infty} \gamma^t r_t]$$
 ## 相关来源
 
 - [[强化学习专题来源]]
-- [[2026-04-06-马尔可夫决策过程 - 动手学强化学习]]
-- [[2026-04-06-第二章 马尔可夫决策过程 (MDP)]]
-- [[2026-04-06-强化学习 david silver]]
-- [[2026-04-06-zhouboleiintroRL Intro to Reinforcement Learning (强化学习纲要）]]
+- 2026-04-06-马尔可夫决策过程 - 动手学强化学习
+- 2026-04-06-第二章 马尔可夫决策过程 (MDP)
+- 2026-04-06-强化学习 david silver
+- 2026-04-06-zhouboleiintroRL Intro to Reinforcement Learning (强化学习纲要）
 
 ## 在强化学习中的地位
 

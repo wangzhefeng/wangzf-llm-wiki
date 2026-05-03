@@ -19,7 +19,7 @@ status: summarized
 
 ## 内容摘要
 
-title: "Generative AI: A Creative New World"；- "[[Sonya Huang]]"；- "[[Pat Grady and GPT-3]]"
+title: "Generative AI: A Creative New World"；- "Sonya Huang"；- "Pat Grady and GPT-3"
 
 ## 关键价值
 

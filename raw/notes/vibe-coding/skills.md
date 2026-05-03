@@ -76,7 +76,7 @@ Skill 的核心价值有三类：
 
 ### 2.1 Skill 包结构
 
-![Skill 结构图](../images/skills/architecture.svg)
+!Skill 结构图
 
 图示说明：一个好的 Skill 不只是 `SKILL.md`，还包括脚本、模板、参考文档和评估思路，形成一个完整任务包。
 
@@ -90,7 +90,7 @@ Skill 的核心价值有三类：
 
 ### 2.2 Skill 生命周期
 
-![Skill 生命周期图](../images/skills/lifecycle.svg)
+!Skill 生命周期图
 
 图示说明：Skill 是要持续评估和迭代的资产，而不是一次性写完就结束的 prompt 封装。
 

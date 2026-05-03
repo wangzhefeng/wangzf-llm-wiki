@@ -1,3 +1,11 @@
+---
+source_type: notes
+created_at: 2026-05-01
+topics:
+  - timeseries-analysis
+status: inbox
+---
+
 # 时间序列超短期预测技术调研报告
 
 > **作者角色**：电力能源领域算法工程师  

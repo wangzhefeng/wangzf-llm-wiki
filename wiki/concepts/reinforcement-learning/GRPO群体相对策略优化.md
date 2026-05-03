@@ -61,11 +61,11 @@ normalized_rewards = (group_rewards - mean(group_rewards)) / std(group_rewards)
 ## 相关来源
 
 - [[强化学习专题来源]]
-- [[2026-04-06-DeepSeek关键RL算法GRPO，有人从头跑通了，贡献完整代码]]
-- [[2026-04-06-DeepSeek 背后的数学原理：深入探究群体相对策略优化 (GRPO)]]
-- [[2026-04-06-Implementing GRPO in TRL]]
+- 2026-04-06-DeepSeek关键RL算法GRPO，有人从头跑通了，贡献完整代码
+- 2026-04-06-DeepSeek 背后的数学原理：深入探究群体相对策略优化 (GRPO)
+- 2026-04-06-Implementing GRPO in TRL
 - `2026-04-06-theLMbookGRPO_From_Scratch_Multi_GPU_DataParallel_Qwen_2_5_1_5B_Instruct.ipynb`
-- [[2026-04-06-PPO→GRPO→DAPO，强化学习一篇通关！]]
+- 2026-04-06-PPO→GRPO→DAPO，强化学习一篇通关！
 
 ## 相关概念
 

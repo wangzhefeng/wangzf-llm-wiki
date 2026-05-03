@@ -57,7 +57,7 @@ Claude Code 是 Anthropic 推出的代理式编程工具。它运行在终端工
 
 ### 2.1 核心运行模型
 
-![Claude Code 架构图](../images/claude_code/architecture.svg)
+!Claude Code 架构图
 
 图示说明：Claude Code 的优势来自“终端、Git、技能、子代理、仓库规则”被放进同一个执行表面，而不是来自一个单点功能。
 
@@ -104,7 +104,7 @@ Claude Code 是 Anthropic 推出的代理式编程工具。它运行在终端工
 
 ### 3.2 典型开发工作流
 
-![Claude Code 工作流图](../images/claude_code/workflow.svg)
+!Claude Code 工作流图
 
 图示说明：最有效的 Claude Code 使用方式，是让任务保持短回路，先读规则、再读代码、再小步修改、再验证。
 

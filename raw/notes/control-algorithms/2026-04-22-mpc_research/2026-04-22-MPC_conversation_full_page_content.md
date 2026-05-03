@@ -1,3 +1,11 @@
+---
+source_type: notes
+created_at: 2026-04-22
+topics:
+  - control-algorithms
+status: inbox
+---
+
 # MPC 对话内容完整汇总（从 Part 1 到最后，按页面回答整理）
 
 > 说明  

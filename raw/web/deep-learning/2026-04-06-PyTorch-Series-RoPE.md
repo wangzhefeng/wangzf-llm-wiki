@@ -230,7 +230,7 @@ class RotaryPEMultiHeadAttention(MultiHeadAttention):
     """
     ## Multi-head attention with rotary positional embeddings
 
-    We override [multi-head attention from original transformer](../mha.html).
+    We override multi-head attention from original transformer.
     """
 
     def __init__(self, heads: int, d_model: int, rope_percentage: float = 0.5, dropout_prob: float = 0.0):

@@ -66,7 +66,7 @@ Function Calling 更像单次调用格式；MCP 更像一整套“能力暴露�
 
 ### 2.1 角色模型
 
-![MCP 角色图](../images/mcp/architecture.svg)
+!MCP 角色图
 
 图示说明：MCP 的本体是 Host / Client 与 Server 之间的协议层，它本身不等于任何单个工具或应用。
 
@@ -99,7 +99,7 @@ Function Calling 更像单次调用格式；MCP 更像一整套“能力暴露�
 
 ### 2.3 Transport：Stdio 与 SSE
 
-![MCP 传输决策图](../images/mcp/transport.svg)
+!MCP 传输决策图
 
 图示说明：多数新手卡点不在“理解协议”，而在“这个 Server 是本地进程还是远程服务”。
 

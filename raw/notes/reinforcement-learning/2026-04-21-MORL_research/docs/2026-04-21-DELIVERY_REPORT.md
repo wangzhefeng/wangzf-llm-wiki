@@ -1,3 +1,11 @@
+---
+source_type: notes
+created_at: 2026-04-21
+topics:
+  - reinforcement-learning
+status: inbox
+---
+
 # MORL 精细化实现：交付报告
 
 > **上下文**：在基础调研文档的基础上，对虚拟电厂 (VPP) 多目标强化学习的环境模型与数据生成做工业级细化，并用 MILP Oracle 建立性能基准。

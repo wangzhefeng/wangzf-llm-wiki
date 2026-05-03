@@ -22,4 +22,4 @@ ReAct 是把推理（Reasoning）与行动（Acting）交替组织起来的 Agen
 ## 相关来源
 
 - [[2026-04-06-Advanced-Prompt-Engineering-Techniques]]
-- [[2026-04-06-Agents Companion]]
+- 2026-04-06-Agents Companion
