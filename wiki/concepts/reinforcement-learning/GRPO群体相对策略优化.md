@@ -7,7 +7,7 @@ related_concepts:
 - 策略优化
 - 群体相对
 - 无价值模型
-status: inbox
+status: summarized
 ---
 # GRPO (Group Relative Policy Optimization)
 

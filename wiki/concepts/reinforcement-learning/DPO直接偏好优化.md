@@ -7,7 +7,7 @@ related_concepts:
 - 偏好优化
 - 奖励模型
 - 直接优化
-status: inbox
+status: summarized
 ---
 # DPO (Direct Preference Optimization)
 

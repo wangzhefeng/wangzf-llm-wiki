@@ -5,7 +5,7 @@ topics:
 related_concepts:
 - 决策过程
 - 马尔可夫性
-status: inbox
+status: summarized
 ---
 # 马尔可夫决策过程 (MDP)
 

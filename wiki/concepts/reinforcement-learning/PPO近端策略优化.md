@@ -6,7 +6,7 @@ related_concepts:
 - 策略优化
 - 优势函数
 - 裁剪
-status: inbox
+status: summarized
 ---
 # PPO (Proximal Policy Optimization)
 
