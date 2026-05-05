@@ -4,7 +4,7 @@
 
 ### 第 1 步：运行自动化检查
 ```bash
-python .env/health/wiki_check.py --output summary
+uv run scripts/tools/wiki_lint.py --output summary
 ```
 
 解读结果时注意三级严重度：

@@ -23,7 +23,7 @@
 ## 仓库入口
 
 - [LLM Wiki 规则入口 `schema.md`](schema.md)
-- [LLM Wiki `purpose.md`](purpose.md) # TODO
+- [LLM Wiki `purpose.md`](purpose.md)
 - [LLM Wiki 内部导航 `wiki/index.md`](wiki/index.md)
 - [LLM Wiki 操作日志 `wiki/log.md`](wiki/log.md)
 - [LLM Wiki 最新审查报告 `wiki/log_lint.md`](wiki/log_lint.md)

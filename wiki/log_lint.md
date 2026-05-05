@@ -35,7 +35,7 @@ status: linked
 - **schema.md**: wikilink 适用范围明确 + ingest 入库前检查
 - **知识库健康检查清单.md**: 三层频率标签（🔵快速/🟢常规/🟠深度）
 - **时间序列预测来源清单.md**: 完整索引 239 张来源卡，16 个分类维度, timeseries warning 138→1
-- **wiki_check.py**: raw/outputs 跨层 wikilink 保持静默跳过（Obsidian 可正常解析）
+- **wiki_lint.py**: raw/outputs 跨层 wikilink 保持静默跳过（Obsidian 可正常解析）
 
 ### 语义层修复
 - **power-market-trading**: 16 个名称不匹配 wikilink 修正（`-v1` 后缀 → 实际文件名）
@@ -44,7 +44,7 @@ status: linked
 
 ## 重要规则修正
 
-`[[raw/...]]` 和 `[[outputs/...]]` 跨层 wikilink **允许使用**——在 Obsidian 中可正常解析为页面链接。`wiki_check.py` 对此类链接不做错误检查（保持静默跳过），不强制转换为 Markdown 链接。
+`[[raw/...]]` 和 `[[outputs/...]]` 跨层 wikilink **允许使用**——在 Obsidian 中可正常解析为页面链接。`wiki_lint.py` 对此类链接不做错误检查（保持静默跳过），不强制转换为 Markdown 链接。
 
 ## 当前 warning 边界
 
@@ -76,6 +76,6 @@ timeseries(33/242) 和 operations-research(19/81) 源头过剩但概念稀薄。
 
 1. 给活跃主题补充概念间互链
 2. 3+ 来源 → 1 概念页的提炼节奏
-3. 每次 ingest 后跑 `wiki_check.py --checks lint`
+3. 每次 ingest 后跑 `wiki_lint.py --checks lint`
 4. 每个专题完成后跑 `--checks health`
 5. 深度语义检查每 2 周一次（`prompts/lint/llm-wiki-health-check.md`）

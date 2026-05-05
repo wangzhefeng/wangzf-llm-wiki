@@ -6,7 +6,7 @@
 
 | 层级 | 工具 | 检查内容 |
 |------|------|---------|
-| 结构层（自动化） | `python .env/health/wiki_check.py` | 10 项：wikilinks / frontmatter / naming / 附件 / 目录 / 新鲜度 / status / source_path / 旧命名 / 相对链接 |
+| 结构层（自动化） | `uv run scripts/run.py check` | 10 项：wikilinks / frontmatter / naming / 附件 / 目录 / 新鲜度 / status / source_path / 旧命名 / 相对链接 |
 | 语义层（LLM 驱动） | 本 prompt | 5 维：矛盾检测 / 过时声明 / 调研缺口 / 缺失概念 / 输出回流 |
 
 ## 执行顺序
@@ -14,7 +14,7 @@
 ### 阶段 A：结构层基线（先跑工具）
 
 ```bash
-python .env/health/wiki_check.py --output detailed
+uv run scripts/tools/wiki_lint.py --output detailed
 ```
 
 解读结果，按三级严重度处理：

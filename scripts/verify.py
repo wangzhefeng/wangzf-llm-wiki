@@ -12,7 +12,7 @@ def check_directory_structure():
     print("检查目录结构...")
     scripts_dir = Path(__file__).parent
     
-    required_dirs = ['health', 'fix', 'backfill', 'classify', 'assets', 'create', 'archive', 'compat', 'tests', 'repair_logs']
+    required_dirs = ['tools']
     missing_dirs = []
     
     for dir_name in required_dirs:
@@ -61,8 +61,8 @@ def check_key_scripts():
     scripts_dir = Path(__file__).parent
     
     key_scripts = [
-        'health/wiki_check.py',
-        'run_tool.py'
+        'tools/wiki_lint.py',
+        'run.py'
     ]
     
     missing_scripts = []
@@ -75,18 +75,6 @@ def check_key_scripts():
         return False
     else:
         print("  ✅ 关键脚本存在")
-        
-        run_tool = scripts_dir / 'run_tool.py'
-        if os.access(run_tool, os.X_OK):
-            print("  ✅ run_tool.py 可执行")
-        else:
-            print("  ⚠ run_tool.py 不可执行，尝试修复...")
-            try:
-                run_tool.chmod(0o755)
-                print("  ✅ 已修复 run_tool.py 权限")
-            except:
-                print("  ❌ 无法修复 run_tool.py 权限")
-        
         return True
 
 def check_config_files():
@@ -108,41 +96,34 @@ def check_config_files():
         print("  ✅ 配置文件存在")
         return True
 
-def test_run_tool():
-    """测试 run_tool.py 基本功能"""
-    print("测试 run_tool.py...")
+def test_run():
+    """测试 run.py 基本功能"""
+    print("测试 run.py...")
     scripts_dir = Path(__file__).parent
     
     import subprocess
     try:
         result = subprocess.run(
-            [sys.executable, str(scripts_dir / 'run_tool.py'), 'list'],
+            [sys.executable, str(scripts_dir / 'run.py'), 'list'],
             capture_output=True,
             text=True,
             cwd=scripts_dir
         )
         
         if result.returncode == 0:
-            print("  ✅ run_tool.py list 命令正常")
-            # 检查输出是否包含预期的类别
+            print("  ✅ run.py list 命令正常")
             output = result.stdout
-            expected_categories = ['HEALTH', 'FIX', 'BACKFILL', 'CLASSIFY']
-            found_categories = []
-            for cat in expected_categories:
-                if cat in output:
-                    found_categories.append(cat)
-            
-            if len(found_categories) >= 2:
-                print(f"  ✅ 找到工具类别: {found_categories}")
+            if 'wiki_lint' in output and 'backfill' in output:
+                print("  ✅ 找到预期工具")
                 return True
             else:
-                print("  ⚠ 输出中未找到预期的工具类别")
-                return True  # 仍视为成功
+                print("  ⚠ 输出中未找到预期工具名")
+                return True
         else:
-            print(f"  ❌ run_tool.py list 失败: {result.stderr}")
+            print(f"  ❌ run.py list 失败: {result.stderr}")
             return False
     except Exception as e:
-        print(f"  ❌ 运行 run_tool.py 时出错: {e}")
+        print(f"  ❌ 运行 run.py 时出错: {e}")
         return False
 
 def main():
@@ -155,7 +136,7 @@ def main():
         ("虚拟环境", check_virtual_environment),
         ("关键脚本", check_key_scripts),
         ("配置文件", check_config_files),
-        ("运行工具", test_run_tool),
+        ("运行工具", test_run),
     ]
     
     results = []
@@ -184,8 +165,8 @@ def main():
         print("✅ 所有检查通过！维护系统已正确设置。")
         print("\n下一步建议:")
         print("1. 激活虚拟环境: source .venv/bin/activate")
-        print("2. 运行健康检查: cd scripts && python run_tool.py health lint")
-        print("3. 查看完整工具列表: cd scripts && python run_tool.py list")
+        print("2. 运行健康检查: uv run scripts/run.py lint")
+        print("3. 查看工具列表: uv run scripts/run.py list")
     else:
         print("⚠ 部分检查未通过，系统可能需要进一步配置。")
         print("\n建议操作:")
