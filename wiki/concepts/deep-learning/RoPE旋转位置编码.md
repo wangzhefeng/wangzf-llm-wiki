@@ -67,4 +67,4 @@ def apply_rotary_pos_emb(q, k, cos, sin):
 - [[Transformer架构]]
 - [[位置编码]]
 - [[注意力机制]]
-- [[KV Cache]]
+- [[KV-Cache]]

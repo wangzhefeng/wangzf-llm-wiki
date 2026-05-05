@@ -1,0 +1,50 @@
+{
+  "total_errors": 10,
+  "categories": {
+    "raw_local_notes_dir": [],
+    "outputs_links": [],
+    "post_theme": [],
+    "other": [
+      [
+        "wiki/indexes/operations-research/运筹优化算法来源清单.md",
+        "[[2019-03-14-combined-heat-and-power]]"
+      ],
+      [
+        "wiki/indexes/operations-research/运筹优化算法来源清单.md",
+        "[[2024-02-26-carbon-neutrality]]"
+      ],
+      [
+        "wiki/indexes/operations-research/运筹优化算法来源清单.md",
+        "[[2024-10-16-virtual-power-plant]]"
+      ],
+      [
+        "wiki/indexes/shared/知识库来源与专题摄取索引.md",
+        "[[2020-05-06-port]]"
+      ],
+      [
+        "wiki/indexes/shared/知识库来源与专题摄取索引.md",
+        "[[2020-05-06-protocol]]"
+      ],
+      [
+        "wiki/indexes/shared/知识库来源与专题摄取索引.md",
+        "[[2022-02-27-blog-build-deploy]]"
+      ],
+      [
+        "wiki/indexes/shared/知识库来源与专题摄取索引.md",
+        "[[2022-03-14-hugo-learning]]"
+      ],
+      [
+        "wiki/indexes/shared/知识库来源与专题摄取索引.md",
+        "[[2023-02-26-latex]]"
+      ],
+      [
+        "wiki/indexes/shared/知识库来源与专题摄取索引.md",
+        "[[2023-08-26-slides]]"
+      ],
+      [
+        "wiki/indexes/shared/知识库维护检查索引.md",
+        "[[post-主题纳管排除清单]]"
+      ]
+    ]
+  }
+}

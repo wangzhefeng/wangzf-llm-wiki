@@ -1,0 +1,308 @@
+{
+  "total_candidates": 33,
+  "candidates_by_theme": {
+    "agent-dev": 2,
+    "deep-learning": 10,
+    "tools": 1,
+    "llm": 20
+  },
+  "repair_plan": [
+    {
+      "file": "2026-04-06-大模型外挂(向量)知识库.md",
+      "current_theme": "agent-dev",
+      "suggested_theme": "llm",
+      "source_path": "/Users/wangzf/wangzf-llm-wiki/wiki/sources/agent-dev/2026-04-06-大模型外挂(向量)知识库.md",
+      "target_path": "/Users/wangzf/wangzf-llm-wiki/wiki/sources/llm/2026-04-06-大模型外挂(向量)知识库.md",
+      "confidence": 34.0,
+      "action": "move"
+    },
+    {
+      "file": "2026-04-06-AlphaOPT：用大模型为优化建模构建可进化的“经验知识库”.md",
+      "current_theme": "agent-dev",
+      "suggested_theme": "llm",
+      "source_path": "/Users/wangzf/wangzf-llm-wiki/wiki/sources/agent-dev/2026-04-06-AlphaOPT：用大模型为优化建模构建可进化的“经验知识库”.md",
+      "target_path": "/Users/wangzf/wangzf-llm-wiki/wiki/sources/llm/2026-04-06-AlphaOPT：用大模型为优化建模构建可进化的“经验知识库”.md",
+      "confidence": 34.0,
+      "action": "move"
+    },
+    {
+      "file": "2026-04-06-译 Transformer 是如何工作的：600 行 Python 代码实现 self-attention 和两类 Transformer（2019）.md",
+      "current_theme": "deep-learning",
+      "suggested_theme": "llm",
+      "source_path": "/Users/wangzf/wangzf-llm-wiki/wiki/sources/deep-learning/2026-04-06-译 Transformer 是如何工作的：600 行 Python 代码实现 self-attention 和两类 Transformer（2019）.md",
+      "target_path": "/Users/wangzf/wangzf-llm-wiki/wiki/sources/llm/2026-04-06-译 Transformer 是如何工作的：600 行 Python 代码实现 self-attention 和两类 Transformer（2019）.md",
+      "confidence": 70.0,
+      "action": "move"
+    },
+    {
+      "file": "2026-04-06-Vision Transformers (ViTs) Computer Vision with Transformer Models.md",
+      "current_theme": "deep-learning",
+      "suggested_theme": "llm",
+      "source_path": "/Users/wangzf/wangzf-llm-wiki/wiki/sources/deep-learning/2026-04-06-Vision Transformers (ViTs) Computer Vision with Transformer Models.md",
+      "target_path": "/Users/wangzf/wangzf-llm-wiki/wiki/sources/llm/2026-04-06-Vision Transformers (ViTs) Computer Vision with Transformer Models.md",
+      "confidence": 34.0,
+      "action": "move"
+    },
+    {
+      "file": "2026-04-06-变分自编码器(VAE)、条件变分自编码器(CVAE)简介（文末附Torch代码）.md",
+      "current_theme": "deep-learning",
+      "suggested_theme": "programming",
+      "source_path": "/Users/wangzf/wangzf-llm-wiki/wiki/sources/deep-learning/2026-04-06-变分自编码器(VAE)、条件变分自编码器(CVAE)简介（文末附Torch代码）.md",
+      "target_path": "/Users/wangzf/wangzf-llm-wiki/wiki/sources/programming/2026-04-06-变分自编码器(VAE)、条件变分自编码器(CVAE)简介（文末附Torch代码）.md",
+      "confidence": 64.0,
+      "action": "move"
+    },
+    {
+      "file": "AI工具与产品专题来源.md",
+      "current_theme": "deep-learning",
+      "suggested_theme": "tools",
+      "source_path": "/Users/wangzf/wangzf-llm-wiki/wiki/sources/deep-learning/AI工具与产品专题来源.md",
+      "target_path": "/Users/wangzf/wangzf-llm-wiki/wiki/sources/tools/AI工具与产品专题来源.md",
+      "confidence": 26.0,
+      "action": "move"
+    },
+    {
+      "file": "2026-04-06-读懂Transformer的内核，了解大模型基石.md",
+      "current_theme": "deep-learning",
+      "suggested_theme": "llm",
+      "source_path": "/Users/wangzf/wangzf-llm-wiki/wiki/sources/deep-learning/2026-04-06-读懂Transformer的内核，了解大模型基石.md",
+      "target_path": "/Users/wangzf/wangzf-llm-wiki/wiki/sources/llm/2026-04-06-读懂Transformer的内核，了解大模型基石.md",
+      "confidence": 36.0,
+      "action": "move"
+    },
+    {
+      "file": "2026-04-06-超详细图解Self-Attention.md",
+      "current_theme": "deep-learning",
+      "suggested_theme": "llm",
+      "source_path": "/Users/wangzf/wangzf-llm-wiki/wiki/sources/deep-learning/2026-04-06-超详细图解Self-Attention.md",
+      "target_path": "/Users/wangzf/wangzf-llm-wiki/wiki/sources/llm/2026-04-06-超详细图解Self-Attention.md",
+      "confidence": 36.0,
+      "action": "move"
+    },
+    {
+      "file": "LLM架构微调与多模态扩展专题来源.md",
+      "current_theme": "deep-learning",
+      "suggested_theme": "llm",
+      "source_path": "/Users/wangzf/wangzf-llm-wiki/wiki/sources/deep-learning/LLM架构微调与多模态扩展专题来源.md",
+      "target_path": "/Users/wangzf/wangzf-llm-wiki/wiki/sources/llm/LLM架构微调与多模态扩展专题来源.md",
+      "confidence": 88.0,
+      "action": "move"
+    },
+    {
+      "file": "2026-04-06-kashifpytorch-transformer-ts Repository of Transformer based PyTorch Time Series Models.md",
+      "current_theme": "deep-learning",
+      "suggested_theme": "llm",
+      "source_path": "/Users/wangzf/wangzf-llm-wiki/wiki/sources/deep-learning/2026-04-06-kashifpytorch-transformer-ts Repository of Transformer based PyTorch Time Series Models.md",
+      "target_path": "/Users/wangzf/wangzf-llm-wiki/wiki/sources/llm/2026-04-06-kashifpytorch-transformer-ts Repository of Transformer based PyTorch Time Series Models.md",
+      "confidence": 34.0,
+      "action": "move"
+    },
+    {
+      "file": "LLM架构训练与微调专题来源.md",
+      "current_theme": "deep-learning",
+      "suggested_theme": "llm",
+      "source_path": "/Users/wangzf/wangzf-llm-wiki/wiki/sources/deep-learning/LLM架构训练与微调专题来源.md",
+      "target_path": "/Users/wangzf/wangzf-llm-wiki/wiki/sources/llm/LLM架构训练与微调专题来源.md",
+      "confidence": 36.0,
+      "action": "move"
+    },
+    {
+      "file": "深度学习工具与框架专题来源.md",
+      "current_theme": "deep-learning",
+      "suggested_theme": "tools",
+      "source_path": "/Users/wangzf/wangzf-llm-wiki/wiki/sources/deep-learning/深度学习工具与框架专题来源.md",
+      "target_path": "/Users/wangzf/wangzf-llm-wiki/wiki/sources/tools/深度学习工具与框架专题来源.md",
+      "confidence": 52.0,
+      "action": "move"
+    },
+    {
+      "file": "2026-04-06-marimo-teammarimo A reactive notebook for Python — run reproducible experiments, query with SQL, execute as a script, deploy as an app, and version with git. Stored as pure Python. All in a modern, AI-native editor.md",
+      "current_theme": "tools",
+      "suggested_theme": "operations-research",
+      "source_path": "/Users/wangzf/wangzf-llm-wiki/wiki/sources/tools/2026-04-06-marimo-teammarimo A reactive notebook for Python — run reproducible experiments, query with SQL, execute as a script, deploy as an app, and version with git. Stored as pure Python. All in a modern, AI-native editor.md",
+      "target_path": "/Users/wangzf/wangzf-llm-wiki/wiki/sources/operations-research/2026-04-06-marimo-teammarimo A reactive notebook for Python — run reproducible experiments, query with SQL, execute as a script, deploy as an app, and version with git. Stored as pure Python. All in a modern, AI-native editor.md",
+      "confidence": 24.0,
+      "action": "move"
+    },
+    {
+      "file": "2026-04-06-open-compassVLMEvalKit Open-source evaluation toolkit of large multi-modality models (LMMs), support 220+ LMMs, 80+ benchmarks.md",
+      "current_theme": "llm",
+      "suggested_theme": "computer-vision",
+      "source_path": "/Users/wangzf/wangzf-llm-wiki/wiki/sources/llm/2026-04-06-open-compassVLMEvalKit Open-source evaluation toolkit of large multi-modality models (LMMs), support 220+ LMMs, 80+ benchmarks.md",
+      "target_path": "/Users/wangzf/wangzf-llm-wiki/wiki/sources/computer-vision/2026-04-06-open-compassVLMEvalKit Open-source evaluation toolkit of large multi-modality models (LMMs), support 220+ LMMs, 80+ benchmarks.md",
+      "confidence": 24.0,
+      "action": "move"
+    },
+    {
+      "file": "2024-09-24-gradio.md",
+      "current_theme": "llm",
+      "suggested_theme": "tools",
+      "source_path": "/Users/wangzf/wangzf-llm-wiki/wiki/sources/llm/2024-09-24-gradio.md",
+      "target_path": "/Users/wangzf/wangzf-llm-wiki/wiki/sources/tools/2024-09-24-gradio.md",
+      "confidence": 28.0,
+      "action": "move"
+    },
+    {
+      "file": "2026-04-06-Agentic后训练 - SFT（监督微调）全流程详解.md",
+      "current_theme": "llm",
+      "suggested_theme": "vibe-coding",
+      "source_path": "/Users/wangzf/wangzf-llm-wiki/wiki/sources/llm/2026-04-06-Agentic后训练 - SFT（监督微调）全流程详解.md",
+      "target_path": "/Users/wangzf/wangzf-llm-wiki/wiki/sources/vibe-coding/2026-04-06-Agentic后训练 - SFT（监督微调）全流程详解.md",
+      "confidence": 66.0,
+      "action": "move"
+    },
+    {
+      "file": "2026-04-06-【时间序列预测】Are Transformers Effective for Time Series Forecasting.md",
+      "current_theme": "llm",
+      "suggested_theme": "timeseries",
+      "source_path": "/Users/wangzf/wangzf-llm-wiki/wiki/sources/llm/2026-04-06-【时间序列预测】Are Transformers Effective for Time Series Forecasting.md",
+      "target_path": "/Users/wangzf/wangzf-llm-wiki/wiki/sources/timeseries/2026-04-06-【时间序列预测】Are Transformers Effective for Time Series Forecasting.md",
+      "confidence": 84.0,
+      "action": "move"
+    },
+    {
+      "file": "2026-04-06-DC-researchTSorchestra Time Series Orchestra (TSorchestra) is a novel ensemble framework designed for zero-shot time series forecasting. It is built upon a curated collection of time series foundation models. The architecture is desig.md",
+      "current_theme": "llm",
+      "suggested_theme": "timeseries",
+      "source_path": "/Users/wangzf/wangzf-llm-wiki/wiki/sources/llm/2026-04-06-DC-researchTSorchestra Time Series Orchestra (TSorchestra) is a novel ensemble framework designed for zero-shot time series forecasting. It is built upon a curated collection of time series foundation models. The architecture is desig.md",
+      "target_path": "/Users/wangzf/wangzf-llm-wiki/wiki/sources/timeseries/2026-04-06-DC-researchTSorchestra Time Series Orchestra (TSorchestra) is a novel ensemble framework designed for zero-shot time series forecasting. It is built upon a curated collection of time series foundation models. The architecture is desig.md",
+      "confidence": 84.0,
+      "action": "move"
+    },
+    {
+      "file": "2026-04-06-SmolVLM - small yet mighty Vision Language Model.md",
+      "current_theme": "llm",
+      "suggested_theme": "computer-vision",
+      "source_path": "/Users/wangzf/wangzf-llm-wiki/wiki/sources/llm/2026-04-06-SmolVLM - small yet mighty Vision Language Model.md",
+      "target_path": "/Users/wangzf/wangzf-llm-wiki/wiki/sources/computer-vision/2026-04-06-SmolVLM - small yet mighty Vision Language Model.md",
+      "confidence": 24.0,
+      "action": "move"
+    },
+    {
+      "file": "2026-04-06-GitHub---datawhalechinahandy-multi-agent-This-is-a-multi-agent-tutorial-based-on.md",
+      "current_theme": "llm",
+      "suggested_theme": "vibe-coding",
+      "source_path": "/Users/wangzf/wangzf-llm-wiki/wiki/sources/llm/2026-04-06-GitHub---datawhalechinahandy-multi-agent-This-is-a-multi-agent-tutorial-based-on.md",
+      "target_path": "/Users/wangzf/wangzf-llm-wiki/wiki/sources/vibe-coding/2026-04-06-GitHub---datawhalechinahandy-multi-agent-This-is-a-multi-agent-tutorial-based-on.md",
+      "confidence": 134.0,
+      "action": "move"
+    },
+    {
+      "file": "2026-04-06-2026时序新思路-时间序列+多模态LLM.md",
+      "current_theme": "llm",
+      "suggested_theme": "timeseries",
+      "source_path": "/Users/wangzf/wangzf-llm-wiki/wiki/sources/llm/2026-04-06-2026时序新思路-时间序列+多模态LLM.md",
+      "target_path": "/Users/wangzf/wangzf-llm-wiki/wiki/sources/timeseries/2026-04-06-2026时序新思路-时间序列+多模态LLM.md",
+      "confidence": 44.0,
+      "action": "move"
+    },
+    {
+      "file": "2026-04-06-nanoVLMmodelsconfig.py at main.md",
+      "current_theme": "llm",
+      "suggested_theme": "computer-vision",
+      "source_path": "/Users/wangzf/wangzf-llm-wiki/wiki/sources/llm/2026-04-06-nanoVLMmodelsconfig.py at main.md",
+      "target_path": "/Users/wangzf/wangzf-llm-wiki/wiki/sources/computer-vision/2026-04-06-nanoVLMmodelsconfig.py at main.md",
+      "confidence": 24.0,
+      "action": "move"
+    },
+    {
+      "file": "2026-04-06-Google 把时间序列预测玩成了大模型——TimesFM 深度解析.md",
+      "current_theme": "llm",
+      "suggested_theme": "timeseries",
+      "source_path": "/Users/wangzf/wangzf-llm-wiki/wiki/sources/llm/2026-04-06-Google 把时间序列预测玩成了大模型——TimesFM 深度解析.md",
+      "target_path": "/Users/wangzf/wangzf-llm-wiki/wiki/sources/timeseries/2026-04-06-Google 把时间序列预测玩成了大模型——TimesFM 深度解析.md",
+      "confidence": 36.0,
+      "action": "move"
+    },
+    {
+      "file": "2026-04-06-Handy Multi Agent Tutorial.md",
+      "current_theme": "llm",
+      "suggested_theme": "vibe-coding",
+      "source_path": "/Users/wangzf/wangzf-llm-wiki/wiki/sources/llm/2026-04-06-Handy Multi Agent Tutorial.md",
+      "target_path": "/Users/wangzf/wangzf-llm-wiki/wiki/sources/vibe-coding/2026-04-06-Handy Multi Agent Tutorial.md",
+      "confidence": 48.0,
+      "action": "move"
+    },
+    {
+      "file": "2026-04-06-datawhalechinahandy-multi-agent This is a multi agent tutorial based on the CAMEL framework, aimed at understanding how to build an Agent Society from the ground up!.md",
+      "current_theme": "llm",
+      "suggested_theme": "vibe-coding",
+      "source_path": "/Users/wangzf/wangzf-llm-wiki/wiki/sources/llm/2026-04-06-datawhalechinahandy-multi-agent This is a multi agent tutorial based on the CAMEL framework, aimed at understanding how to build an Agent Society from the ground up!.md",
+      "target_path": "/Users/wangzf/wangzf-llm-wiki/wiki/sources/vibe-coding/2026-04-06-datawhalechinahandy-multi-agent This is a multi agent tutorial based on the CAMEL framework, aimed at understanding how to build an Agent Society from the ground up!.md",
+      "confidence": 150.0,
+      "action": "move"
+    },
+    {
+      "file": "2026-04-06-Agents Companion.md",
+      "current_theme": "llm",
+      "suggested_theme": "vibe-coding",
+      "source_path": "/Users/wangzf/wangzf-llm-wiki/wiki/sources/llm/2026-04-06-Agents Companion.md",
+      "target_path": "/Users/wangzf/wangzf-llm-wiki/wiki/sources/vibe-coding/2026-04-06-Agents Companion.md",
+      "confidence": 44.0,
+      "action": "move"
+    },
+    {
+      "file": "VibeCoding与Agent专题来源.md",
+      "current_theme": "llm",
+      "suggested_theme": "vibe-coding",
+      "source_path": "/Users/wangzf/wangzf-llm-wiki/wiki/sources/llm/VibeCoding与Agent专题来源.md",
+      "target_path": "/Users/wangzf/wangzf-llm-wiki/wiki/sources/vibe-coding/VibeCoding与Agent专题来源.md",
+      "confidence": 64.0,
+      "action": "move"
+    },
+    {
+      "file": "2024-05-15-langchain-usage.md",
+      "current_theme": "llm",
+      "suggested_theme": "tools",
+      "source_path": "/Users/wangzf/wangzf-llm-wiki/wiki/sources/llm/2024-05-15-langchain-usage.md",
+      "target_path": "/Users/wangzf/wangzf-llm-wiki/wiki/sources/tools/2024-05-15-langchain-usage.md",
+      "confidence": 28.0,
+      "action": "move"
+    },
+    {
+      "file": "2026-04-06-时序预测新范式：冻结大语言模型，外挂时序适配器，性能超越TimeMixer++.md",
+      "current_theme": "llm",
+      "suggested_theme": "timeseries",
+      "source_path": "/Users/wangzf/wangzf-llm-wiki/wiki/sources/llm/2026-04-06-时序预测新范式：冻结大语言模型，外挂时序适配器，性能超越TimeMixer++.md",
+      "target_path": "/Users/wangzf/wangzf-llm-wiki/wiki/sources/timeseries/2026-04-06-时序预测新范式：冻结大语言模型，外挂时序适配器，性能超越TimeMixer++.md",
+      "confidence": 52.0,
+      "action": "move"
+    },
+    {
+      "file": "2024-08-04-streamlit.md",
+      "current_theme": "llm",
+      "suggested_theme": "tools",
+      "source_path": "/Users/wangzf/wangzf-llm-wiki/wiki/sources/llm/2024-08-04-streamlit.md",
+      "target_path": "/Users/wangzf/wangzf-llm-wiki/wiki/sources/tools/2024-08-04-streamlit.md",
+      "confidence": 28.0,
+      "action": "move"
+    },
+    {
+      "file": "2026-04-06-Agentic后训练---SFT（监督微调）全流程详解.md",
+      "current_theme": "llm",
+      "suggested_theme": "vibe-coding",
+      "source_path": "/Users/wangzf/wangzf-llm-wiki/wiki/sources/llm/2026-04-06-Agentic后训练---SFT（监督微调）全流程详解.md",
+      "target_path": "/Users/wangzf/wangzf-llm-wiki/wiki/sources/vibe-coding/2026-04-06-Agentic后训练---SFT（监督微调）全流程详解.md",
+      "confidence": 66.0,
+      "action": "move"
+    },
+    {
+      "file": "2026-04-06-Handy-Multi-Agent-Tutorial.md",
+      "current_theme": "llm",
+      "suggested_theme": "vibe-coding",
+      "source_path": "/Users/wangzf/wangzf-llm-wiki/wiki/sources/llm/2026-04-06-Handy-Multi-Agent-Tutorial.md",
+      "target_path": "/Users/wangzf/wangzf-llm-wiki/wiki/sources/vibe-coding/2026-04-06-Handy-Multi-Agent-Tutorial.md",
+      "confidence": 58.0,
+      "action": "move"
+    },
+    {
+      "file": "2026-04-06-GitHub---huggingfacetext-generation-inference-Large-Language-Model-Text-Generati.md",
+      "current_theme": "llm",
+      "suggested_theme": "programming-tools",
+      "source_path": "/Users/wangzf/wangzf-llm-wiki/wiki/sources/llm/2026-04-06-GitHub---huggingfacetext-generation-inference-Large-Language-Model-Text-Generati.md",
+      "target_path": "/Users/wangzf/wangzf-llm-wiki/wiki/sources/programming-tools/2026-04-06-GitHub---huggingfacetext-generation-inference-Large-Language-Model-Text-Generati.md",
+      "confidence": 30.0,
+      "action": "move"
+    }
+  ]
+}

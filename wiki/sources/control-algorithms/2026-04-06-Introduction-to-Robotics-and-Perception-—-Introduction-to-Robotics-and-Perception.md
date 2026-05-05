@@ -39,4 +39,4 @@ status: summarized
 
 ## 相关来源
 
-- [[2026-04-06-gtbookrobotics Notebook-based book Introduction to Robotics and Perception by Frank Dellaert and Seth Hutchinson]]（配套代码仓库）
+- [[2026-04-06-gtbookrobotics-Notebook-based-book-Introduction-to-Robotics-and-Perception-by-Frank-Dellaert-and-Seth-Hutchinson]]（配套代码仓库）

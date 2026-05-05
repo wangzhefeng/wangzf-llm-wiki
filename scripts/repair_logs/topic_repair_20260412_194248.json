@@ -1,0 +1,1084 @@
+{
+  "timestamp": "20260412_194248",
+  "total_files": 1479,
+  "changed_files": 1338,
+  "unchanged_files": 141,
+  "error_files": 0,
+  "valid_topics": [
+    "agent-dev",
+    "autofix",
+    "computer-vision",
+    "control-algorithms",
+    "data-analysis",
+    "data-structure-algorithm",
+    "deep-learning",
+    "knowledge-base",
+    "llm",
+    "machine-learning",
+    "nlp",
+    "operations-research",
+    "power-market-trading",
+    "programming",
+    "programming-tools",
+    "reinforcement-learning",
+    "shared",
+    "timeseries",
+    "tools",
+    "vibe-coding"
+  ],
+  "changed_files_list": [
+    {
+      "file": "wiki/sources/index.md",
+      "original": [
+        "wiki",
+        "sources",
+        "llm-wiki"
+      ],
+      "normalized": [
+        "llm",
+        "shared"
+      ],
+      "message": "成功更新"
+    },
+    {
+      "file": "wiki/sources/agent-dev/2026-04-06-大模型外挂(向量)知识库.md",
+      "original": [
+        "知识库建设"
+      ],
+      "normalized": [
+        "agent-dev",
+        "knowledge-base"
+      ],
+      "message": "成功更新"
+    },
+    {
+      "file": "wiki/sources/agent-dev/2026-04-06-AlphaOPT：用大模型为优化建模构建可进化的“经验知识库”.md",
+      "original": [
+        "知识库建设"
+      ],
+      "normalized": [
+        "agent-dev",
+        "knowledge-base"
+      ],
+      "message": "成功更新"
+    },
+    {
+      "file": "wiki/sources/deep-learning/2026-04-06-OpenNMTOpenNMT-py Open Source Neural Machine Translation and (Large) Language Models in PyTorch.md",
+      "original": [
+        "深度学习"
+      ],
+      "normalized": [
+        "deep-learning"
+      ],
+      "message": "成功更新"
+    },
+    {
+      "file": "wiki/sources/deep-learning/2026-04-06-Accelerating PyTorch Model Training.md",
+      "original": [
+        "深度学习"
+      ],
+      "normalized": [
+        "deep-learning"
+      ],
+      "message": "成功更新"
+    },
+    {
+      "file": "wiki/sources/deep-learning/2026-04-06-xlite-devLeetCUDA 📚LeetCUDA Modern CUDA Learn Notes with PyTorch for Beginners🐑, 200+ CUDA Kernels, Tensor Cores, HGEMM, FA-2 MMA.🎉.md",
+      "original": [
+        "深度学习"
+      ],
+      "normalized": [
+        "deep-learning"
+      ],
+      "message": "成功更新"
+    },
+    {
+      "file": "wiki/sources/deep-learning/2026-04-06-译 Transformer 是如何工作的：600 行 Python 代码实现 self-attention 和两类 Transformer（2019）.md",
+      "original": [
+        "deeplearning"
+      ],
+      "normalized": [
+        "deep-learning"
+      ],
+      "message": "成功更新"
+    },
+    {
+      "file": "wiki/sources/deep-learning/2022-07-15-dl-gen-deepdream.md",
+      "original": [
+        "深度学习",
+        "local-note"
+      ],
+      "normalized": [
+        "deep-learning",
+        "shared"
+      ],
+      "message": "成功更新"
+    },
+    {
+      "file": "wiki/sources/deep-learning/2026-04-06-Welcome to ⚡ PyTorch Lightning — PyTorch Lightning 2.6.2 documentation.md",
+      "original": [
+        "深度学习"
+      ],
+      "normalized": [
+        "deep-learning"
+      ],
+      "message": "成功更新"
+    },
+    {
+      "file": "wiki/sources/deep-learning/2026-04-06-Welcome to TorchMetrics — PyTorch-Metrics 1.9.0 documentation.md",
+      "original": [
+        "深度学习"
+      ],
+      "normalized": [
+        "deep-learning"
+      ],
+      "message": "成功更新"
+    },
+    {
+      "file": "wiki/sources/deep-learning/2026-04-06-Vision Transformers (ViTs) Computer Vision with Transformer Models.md",
+      "original": [
+        "deeplearning"
+      ],
+      "normalized": [
+        "deep-learning"
+      ],
+      "message": "成功更新"
+    },
+    {
+      "file": "wiki/sources/deep-learning/2026-04-06-变分自编码器(VAE)、条件变分自编码器(CVAE)简介（文末附Torch代码）.md",
+      "original": [
+        "深度学习"
+      ],
+      "normalized": [
+        "deep-learning"
+      ],
+      "message": "成功更新"
+    },
+    {
+      "file": "wiki/sources/deep-learning/2026-04-06-examplesdistributed at main.md",
+      "original": [
+        "deeplearning"
+      ],
+      "normalized": [
+        "deep-learning"
+      ],
+      "message": "成功更新"
+    },
+    {
+      "file": "wiki/sources/deep-learning/2026-04-06-Understanding-Deep-Learning.md",
+      "original": [
+        "深度学习"
+      ],
+      "normalized": [
+        "deep-learning"
+      ],
+      "message": "成功更新"
+    },
+    {
+      "file": "wiki/sources/deep-learning/AI工具与产品专题来源.md",
+      "original": [
+        "AI 应用",
+        "AI 产品"
+      ],
+      "normalized": [
+        "deep-learning",
+        "shared"
+      ],
+      "message": "成功更新"
+    },
+    {
+      "file": "wiki/sources/deep-learning/2022-07-15-models-rnn-gru.md",
+      "original": [
+        "深度学习",
+        "local-note"
+      ],
+      "normalized": [
+        "deep-learning",
+        "shared"
+      ],
+      "message": "成功更新"
+    },
+    {
+      "file": "wiki/sources/deep-learning/2026-04-06-(35 封私信  12 条消息) 猛猿 - 知乎.md",
+      "original": [
+        "deeplearning"
+      ],
+      "normalized": [
+        "deep-learning"
+      ],
+      "message": "成功更新"
+    },
+    {
+      "file": "wiki/sources/deep-learning/2026-04-06-Quick Start — PyTorch-Metrics 1.9.0 documentation.md",
+      "original": [
+        "深度学习"
+      ],
+      "normalized": [
+        "deep-learning"
+      ],
+      "message": "成功更新"
+    },
+    {
+      "file": "wiki/sources/deep-learning/2026-04-06-Distributed Data Parallel.md",
+      "original": [
+        "深度学习"
+      ],
+      "normalized": [
+        "deep-learning"
+      ],
+      "message": "成功更新"
+    },
+    {
+      "file": "wiki/sources/deep-learning/2026-04-06-Darknet Open Source Neural Networks in C.md",
+      "original": [
+        "深度学习"
+      ],
+      "normalized": [
+        "deep-learning"
+      ],
+      "message": "成功更新"
+    },
+    {
+      "file": "wiki/sources/deep-learning/2026-04-06-HarisIqbal88PlotNeuralNet Latex code for making neural networks diagrams.md",
+      "original": [
+        "深度学习"
+      ],
+      "normalized": [
+        "deep-learning"
+      ],
+      "message": "成功更新"
+    },
+    {
+      "file": "wiki/sources/deep-learning/2026-04-06-CUDA semantics.md",
+      "original": [
+        "深度学习"
+      ],
+      "normalized": [
+        "deep-learning"
+      ],
+      "message": "成功更新"
+    },
+    {
+      "file": "wiki/sources/deep-learning/附件入口清单-deeplearning.md",
+      "original": [
+        "deeplearning",
+        "assets"
+      ],
+      "normalized": [
+        "deep-learning",
+        "shared"
+      ],
+      "message": "成功更新"
+    },
+    {
+      "file": "wiki/sources/deep-learning/2026-04-06-google-researchtuning_playbook A playbook for systematically maximizing the performance of deep learning models.md",
+      "original": [
+        "深度学习"
+      ],
+      "normalized": [
+        "deep-learning"
+      ],
+      "message": "成功更新"
+    },
+    {
+      "file": "wiki/sources/deep-learning/2022-07-15-反向传播.md",
+      "original": [
+        "深度学习",
+        "neural-network-training"
+      ],
+      "normalized": [
+        "deep-learning"
+      ],
+      "message": "成功更新"
+    },
+    {
+      "file": "wiki/sources/deep-learning/2026-04-06-Semantic Textual Similarity — Sentence Transformers  documentation.md",
+      "original": [
+        "deeplearning"
+      ],
+      "normalized": [
+        "deep-learning"
+      ],
+      "message": "成功更新"
+    },
+    {
+      "file": "wiki/sources/deep-learning/2023-03-21-激活函数.md",
+      "original": [
+        "深度学习",
+        "neural-network-components"
+      ],
+      "normalized": [
+        "deep-learning"
+      ],
+      "message": "成功更新"
+    },
+    {
+      "file": "wiki/sources/deep-learning/2026-01-29-conv1d.md",
+      "original": [
+        "深度学习",
+        "post"
+      ],
+      "normalized": [
+        "deep-learning",
+        "shared"
+      ],
+      "message": "成功更新"
+    },
+    {
+      "file": "wiki/sources/deep-learning/2026-04-06-zoogzogchexnet Implementation of the CheXNet network (PyTorch).md",
+      "original": [
+        "深度学习"
+      ],
+      "normalized": [
+        "deep-learning"
+      ],
+      "message": "成功更新"
+    },
+    {
+      "file": "wiki/sources/deep-learning/2022-07-15-gpu-hardware.md",
+      "original": [
+        "深度学习",
+        "local-note"
+      ],
+      "normalized": [
+        "deep-learning",
+        "shared"
+      ],
+      "message": "成功更新"
+    },
+    {
+      "file": "wiki/sources/deep-learning/2026-04-06-pytorch-transformer-tsautoformerhyperparameter-tuning.ipynb at main 2.md",
+      "original": [
+        "deeplearning"
+      ],
+      "normalized": [
+        "deep-learning"
+      ],
+      "message": "成功更新"
+    },
+    {
+      "file": "wiki/sources/deep-learning/2026-04-06-Google Colab 1.md",
+      "original": [
+        "深度学习"
+      ],
+      "normalized": [
+        "deep-learning"
+      ],
+      "message": "成功更新"
+    },
+    {
+      "file": "wiki/sources/deep-learning/2026-04-06-Training “real-world” models with DDP.md",
+      "original": [
+        "deeplearning"
+      ],
+      "normalized": [
+        "deep-learning"
+      ],
+      "message": "成功更新"
+    },
+    {
+      "file": "wiki/sources/deep-learning/2026-04-06-Long Short-Term Memory (LSTM).md",
+      "original": [
+        "深度学习"
+      ],
+      "normalized": [
+        "deep-learning"
+      ],
+      "message": "成功更新"
+    },
+    {
+      "file": "wiki/sources/deep-learning/2026-04-06-Debug your model (basic) — PyTorch Lightning 2.6.1 documentation.md",
+      "original": [
+        "深度学习"
+      ],
+      "normalized": [
+        "deep-learning"
+      ],
+      "message": "成功更新"
+    },
+    {
+      "file": "wiki/sources/deep-learning/2022-07-15-dl-gen-lstm-textgen.md",
+      "original": [
+        "深度学习",
+        "local-note"
+      ],
+      "normalized": [
+        "deep-learning",
+        "shared"
+      ],
+      "message": "成功更新"
+    },
+    {
+      "file": "wiki/sources/deep-learning/2026-04-06-examplesmnist_hogwild at main.md",
+      "original": [
+        "deeplearning"
+      ],
+      "normalized": [
+        "deep-learning"
+      ],
+      "message": "成功更新"
+    },
+    {
+      "file": "wiki/sources/deep-learning/2026-04-06-Transformer深入浅出.md",
+      "original": [
+        "deeplearning"
+      ],
+      "normalized": [
+        "deep-learning"
+      ],
+      "message": "成功更新"
+    },
+    {
+      "file": "wiki/sources/deep-learning/2022-12-01-dl-experience.md",
+      "original": [
+        "深度学习",
+        "local-note"
+      ],
+      "normalized": [
+        "deep-learning",
+        "shared"
+      ],
+      "message": "成功更新"
+    },
+    {
+      "file": "wiki/sources/deep-learning/2026-04-06-DataParallel.md",
+      "original": [
+        "深度学习"
+      ],
+      "normalized": [
+        "deep-learning"
+      ],
+      "message": "成功更新"
+    },
+    {
+      "file": "wiki/sources/deep-learning/2026-04-06-Training a 1 Trillion Parameter Model With PyTorch Fully Sharded Data Parallel on AWS.md",
+      "original": [
+        "深度学习"
+      ],
+      "normalized": [
+        "deep-learning"
+      ],
+      "message": "成功更新"
+    },
+    {
+      "file": "wiki/sources/deep-learning/深度学习基础教程专题来源.md",
+      "original": [
+        "深度学习",
+        "教程"
+      ],
+      "normalized": [
+        "deep-learning",
+        "tools"
+      ],
+      "message": "成功更新"
+    },
+    {
+      "file": "wiki/sources/deep-learning/2026-04-06-VeritasYinSTGCN_IJCAI-18 IJCAI'18 Spatio-Temporal Graph Convolutional Networks.md",
+      "original": [
+        "deeplearning"
+      ],
+      "normalized": [
+        "deep-learning"
+      ],
+      "message": "成功更新"
+    },
+    {
+      "file": "wiki/sources/deep-learning/2026-04-06-PyTorch Distributed Overview.md",
+      "original": [
+        "深度学习"
+      ],
+      "normalized": [
+        "deep-learning"
+      ],
+      "message": "成功更新"
+    },
+    {
+      "file": "wiki/sources/deep-learning/2026-04-06-Spatio-Temporal Graph Convolutional Networks A Deep Learning Framework for Traffic Forecasting.md",
+      "original": [
+        "deeplearning"
+      ],
+      "normalized": [
+        "deep-learning"
+      ],
+      "message": "成功更新"
+    },
+    {
+      "file": "wiki/sources/deep-learning/2023-01-21-video-pyav.md",
+      "original": [
+        "深度学习",
+        "local-note"
+      ],
+      "normalized": [
+        "deep-learning",
+        "shared"
+      ],
+      "message": "成功更新"
+    },
+    {
+      "file": "wiki/sources/deep-learning/2022-07-15-dl-gnn.md",
+      "original": [
+        "深度学习",
+        "local-note"
+      ],
+      "normalized": [
+        "deep-learning",
+        "shared"
+      ],
+      "message": "成功更新"
+    },
+    {
+      "file": "wiki/sources/deep-learning/2026-04-06-xtunerREADME_zh-CN.md at main.md",
+      "original": [
+        "reinforcementlearning"
+      ],
+      "normalized": [
+        "deep-learning",
+        "reinforcement-learning"
+      ],
+      "message": "成功更新"
+    },
+    {
+      "file": "wiki/sources/deep-learning/2026-04-11-7  Momentum and Adaptive Methods – S&DS 431631 — Optimization and Computation.md",
+      "original": [
+        "deeplearning"
+      ],
+      "normalized": [
+        "deep-learning"
+      ],
+      "message": "成功更新"
+    },
+    {
+      "file": "wiki/sources/deep-learning/2026-04-06-google-researchtuning_playbook A playbook for systematically maximizing the performance of deep learning models 1.md",
+      "original": [
+        "深度学习"
+      ],
+      "normalized": [
+        "deep-learning"
+      ],
+      "message": "成功更新"
+    },
+    {
+      "file": "wiki/sources/deep-learning/2022-07-15-损失函数.md",
+      "original": [
+        "深度学习",
+        "loss-functions"
+      ],
+      "normalized": [
+        "deep-learning"
+      ],
+      "message": "成功更新"
+    },
+    {
+      "file": "wiki/sources/deep-learning/2026-04-06-Multiprocessing best practices.md",
+      "original": [
+        "deeplearning"
+      ],
+      "normalized": [
+        "deep-learning"
+      ],
+      "message": "成功更新"
+    },
+    {
+      "file": "wiki/sources/deep-learning/2026-04-06-Autoformerexpexp_main.py at main.md",
+      "original": [
+        "deeplearning"
+      ],
+      "normalized": [
+        "deep-learning"
+      ],
+      "message": "成功更新"
+    },
+    {
+      "file": "wiki/sources/deep-learning/2026-04-06-zhouhaoyiInformer2020 The GitHub repository for the paper Informer accepted by AAAI 2021.md",
+      "original": [
+        "deeplearning"
+      ],
+      "normalized": [
+        "deep-learning"
+      ],
+      "message": "成功更新"
+    },
+    {
+      "file": "wiki/sources/deep-learning/2026-04-06-Transformers Laid Out.md",
+      "original": [
+        "deeplearning"
+      ],
+      "normalized": [
+        "deep-learning"
+      ],
+      "message": "成功更新"
+    },
+    {
+      "file": "wiki/sources/deep-learning/2026-04-06-14. 自然语言处理：预训练 — 动手学深度学习 2.0.0 documentation.md",
+      "original": [
+        "深度学习"
+      ],
+      "normalized": [
+        "deep-learning"
+      ],
+      "message": "成功更新"
+    },
+    {
+      "file": "wiki/sources/deep-learning/2022-07-15-gpu-software.md",
+      "original": [
+        "深度学习",
+        "local-note"
+      ],
+      "normalized": [
+        "deep-learning",
+        "shared"
+      ],
+      "message": "成功更新"
+    },
+    {
+      "file": "wiki/sources/deep-learning/2022-07-15-GAN.md",
+      "original": [
+        "深度学习",
+        "generative-models"
+      ],
+      "normalized": [
+        "deep-learning"
+      ],
+      "message": "成功更新"
+    },
+    {
+      "file": "wiki/sources/deep-learning/2026-04-06-Assignment1&2 - 小角龙的学习记录.md",
+      "original": [
+        "deeplearning"
+      ],
+      "normalized": [
+        "deep-learning"
+      ],
+      "message": "成功更新"
+    },
+    {
+      "file": "wiki/sources/deep-learning/2026-04-06-Neural networks and deep learning basics  大语言模型（Large Language Models）.md",
+      "original": [
+        "深度学习"
+      ],
+      "normalized": [
+        "deep-learning"
+      ],
+      "message": "成功更新"
+    },
+    {
+      "file": "wiki/sources/deep-learning/2023-03-26-model-layer.md",
+      "original": [
+        "深度学习",
+        "local-note"
+      ],
+      "normalized": [
+        "deep-learning",
+        "shared"
+      ],
+      "message": "成功更新"
+    },
+    {
+      "file": "wiki/sources/deep-learning/2026-04-06-10. 注意力机制 — 动手学深度学习 2.0.0 documentation.md",
+      "original": [
+        "深度学习"
+      ],
+      "normalized": [
+        "deep-learning"
+      ],
+      "message": "成功更新"
+    },
+    {
+      "file": "wiki/sources/deep-learning/2022-07-15-model-parameter.md",
+      "original": [
+        "深度学习",
+        "local-note"
+      ],
+      "normalized": [
+        "deep-learning",
+        "shared"
+      ],
+      "message": "成功更新"
+    },
+    {
+      "file": "wiki/sources/deep-learning/2026-04-06-PaddlePaddleVisualDL Deep Learning Visualization Toolkit（『飞桨』深度学习可视化工具 ）.md",
+      "original": [
+        "深度学习"
+      ],
+      "normalized": [
+        "deep-learning"
+      ],
+      "message": "成功更新"
+    },
+    {
+      "file": "wiki/sources/deep-learning/2026-04-06-torch.utils.checkpoint.md",
+      "original": [
+        "deeplearning"
+      ],
+      "normalized": [
+        "deep-learning"
+      ],
+      "message": "成功更新"
+    },
+    {
+      "file": "wiki/sources/deep-learning/2026-04-06-h2oaipystacknet.md",
+      "original": [
+        "deeplearning"
+      ],
+      "normalized": [
+        "deep-learning"
+      ],
+      "message": "成功更新"
+    },
+    {
+      "file": "wiki/sources/deep-learning/2026-04-06-PyTorch documentation.md",
+      "original": [
+        "深度学习"
+      ],
+      "normalized": [
+        "deep-learning"
+      ],
+      "message": "成功更新"
+    },
+    {
+      "file": "wiki/sources/deep-learning/2026-04-06-FullyShardedDataParallel.md",
+      "original": [
+        "深度学习"
+      ],
+      "normalized": [
+        "deep-learning"
+      ],
+      "message": "成功更新"
+    },
+    {
+      "file": "wiki/sources/deep-learning/2026-04-06-The Annotated Transformer.md",
+      "original": [
+        "deeplearning"
+      ],
+      "normalized": [
+        "deep-learning"
+      ],
+      "message": "成功更新"
+    },
+    {
+      "file": "wiki/sources/deep-learning/2026-04-06-深度学习调参最全指南！(附对应pdf).md",
+      "original": [
+        "深度学习"
+      ],
+      "normalized": [
+        "deep-learning"
+      ],
+      "message": "成功更新"
+    },
+    {
+      "file": "wiki/sources/deep-learning/2026-04-06-Google Colab.md",
+      "original": [
+        "深度学习"
+      ],
+      "normalized": [
+        "deep-learning"
+      ],
+      "message": "成功更新"
+    },
+    {
+      "file": "wiki/sources/deep-learning/2026-04-06-Distributed Data Parallel in PyTorch - Video Tutorials.md",
+      "original": [
+        "深度学习"
+      ],
+      "normalized": [
+        "deep-learning"
+      ],
+      "message": "成功更新"
+    },
+    {
+      "file": "wiki/sources/deep-learning/2026-04-06-【必看】历史技术文章导航.md",
+      "original": [
+        "deeplearning"
+      ],
+      "normalized": [
+        "deep-learning"
+      ],
+      "message": "成功更新"
+    },
+    {
+      "file": "wiki/sources/deep-learning/2026-04-06-读懂Transformer的内核，了解大模型基石.md",
+      "original": [
+        "deeplearning"
+      ],
+      "normalized": [
+        "deep-learning"
+      ],
+      "message": "成功更新"
+    },
+    {
+      "file": "wiki/sources/deep-learning/2022-07-12-深度学习概述.md",
+      "original": [
+        "深度学习",
+        "neural-networks"
+      ],
+      "normalized": [
+        "deep-learning"
+      ],
+      "message": "成功更新"
+    },
+    {
+      "file": "wiki/sources/deep-learning/2026-04-06-Introducing PyTorch Fully Sharded Data Parallel (FSDP) API – PyTorch.md",
+      "original": [
+        "深度学习"
+      ],
+      "normalized": [
+        "deep-learning"
+      ],
+      "message": "成功更新"
+    },
+    {
+      "file": "wiki/sources/deep-learning/2026-04-06-pytorch-transformer-tsautoformerhyperparameter-tuning.ipynb at main.md",
+      "original": [
+        "deeplearning"
+      ],
+      "normalized": [
+        "deep-learning"
+      ],
+      "message": "成功更新"
+    },
+    {
+      "file": "wiki/sources/deep-learning/2022-07-15-RNN.md",
+      "original": [
+        "深度学习",
+        "recurrent-neural-networks"
+      ],
+      "normalized": [
+        "deep-learning"
+      ],
+      "message": "成功更新"
+    },
+    {
+      "file": "wiki/sources/deep-learning/2026-04-06-ourownstoryAR-Net A simple Auto-Regressive Neural Network for time-series.md",
+      "original": [
+        "深度学习"
+      ],
+      "normalized": [
+        "deep-learning"
+      ],
+      "message": "成功更新"
+    },
+    {
+      "file": "wiki/sources/deep-learning/2025-01-19-distributed-parallel-training.md",
+      "original": [
+        "深度学习",
+        "post"
+      ],
+      "normalized": [
+        "deep-learning",
+        "shared"
+      ],
+      "message": "成功更新"
+    },
+    {
+      "file": "wiki/sources/deep-learning/2026-04-06-当代研究生应当掌握的并行训练方法（单机多卡）.md",
+      "original": [
+        "deeplearning"
+      ],
+      "normalized": [
+        "deep-learning"
+      ],
+      "message": "成功更新"
+    },
+    {
+      "file": "wiki/sources/deep-learning/index.md",
+      "original": [
+        "deeplearning",
+        "sources"
+      ],
+      "normalized": [
+        "deep-learning",
+        "shared"
+      ],
+      "message": "成功更新"
+    },
+    {
+      "file": "wiki/sources/deep-learning/2026-04-06-超详细图解Self-Attention.md",
+      "original": [
+        "deeplearning"
+      ],
+      "normalized": [
+        "deep-learning"
+      ],
+      "message": "成功更新"
+    },
+    {
+      "file": "wiki/sources/deep-learning/2026-04-06-tczhangzhipytorch-distributed A quickstart and benchmark for pytorch distributed training.md",
+      "original": [
+        "深度学习"
+      ],
+      "normalized": [
+        "deep-learning"
+      ],
+      "message": "成功更新"
+    },
+    {
+      "file": "wiki/sources/deep-learning/2026-04-06-fastnlpfastHan fastHan是基于fastNLP与pytorch实现的中文自然语言处理工具，像spacy一样调用方便。.md",
+      "original": [
+        "深度学习"
+      ],
+      "normalized": [
+        "deep-learning"
+      ],
+      "message": "成功更新"
+    },
+    {
+      "file": "wiki/sources/deep-learning/LLM架构微调与多模态扩展专题来源.md",
+      "original": [
+        "LLM 架构",
+        "模型微调",
+        "多模态"
+      ],
+      "normalized": [
+        "deep-learning",
+        "llm",
+        "shared"
+      ],
+      "message": "成功更新"
+    },
+    {
+      "file": "wiki/sources/deep-learning/2026-04-06-CUDA编程入门极简教程.md",
+      "original": [
+        "深度学习"
+      ],
+      "normalized": [
+        "deep-learning"
+      ],
+      "message": "成功更新"
+    },
+    {
+      "file": "wiki/sources/deep-learning/2026-04-06-PyTorch实用教程（第二版）.md",
+      "original": [
+        "深度学习"
+      ],
+      "normalized": [
+        "deep-learning"
+      ],
+      "message": "成功更新"
+    },
+    {
+      "file": "wiki/sources/deep-learning/2026-04-06-kashifpytorch-transformer-ts Repository of Transformer based PyTorch Time Series Models.md",
+      "original": [
+        "deeplearning"
+      ],
+      "normalized": [
+        "deep-learning"
+      ],
+      "message": "成功更新"
+    },
+    {
+      "file": "wiki/sources/deep-learning/2026-04-11-用 PyTorch DDP 把多张卡用起来.md",
+      "original": [
+        "deeplearning"
+      ],
+      "normalized": [
+        "deep-learning"
+      ],
+      "message": "成功更新"
+    },
+    {
+      "file": "wiki/sources/deep-learning/2026-04-06-Smth Smth GPU Related.md",
+      "original": [
+        "deeplearning"
+      ],
+      "normalized": [
+        "deep-learning"
+      ],
+      "message": "成功更新"
+    },
+    {
+      "file": "wiki/sources/deep-learning/2026-04-06-Multinode Training.md",
+      "original": [
+        "deeplearning"
+      ],
+      "normalized": [
+        "deep-learning"
+      ],
+      "message": "成功更新"
+    },
+    {
+      "file": "wiki/sources/deep-learning/2026-04-06-一文看懂GAN的原理.md",
+      "original": [
+        "深度学习"
+      ],
+      "normalized": [
+        "deep-learning"
+      ],
+      "message": "成功更新"
+    },
+    {
+      "file": "wiki/sources/deep-learning/2026-04-06-【CUDA】nvcc和nvidia-smi显示的版本不一致？.md",
+      "original": [
+        "深度学习"
+      ],
+      "normalized": [
+        "deep-learning"
+      ],
+      "message": "成功更新"
+    },
+    {
+      "file": "wiki/sources/deep-learning/2026-04-06-深度学习训练过程可视化（附github源码）.md",
+      "original": [
+        "深度学习"
+      ],
+      "normalized": [
+        "deep-learning"
+      ],
+      "message": "成功更新"
+    },
+    {
+      "file": "wiki/sources/deep-learning/2026-04-06-达观数据：数据不够？GAN来凑！.md",
+      "original": [
+        "深度学习"
+      ],
+      "normalized": [
+        "deep-learning"
+      ],
+      "message": "成功更新"
+    },
+    {
+      "file": "wiki/sources/deep-learning/2026-04-06-深度学习环境配置指南！（Windows、Mac、Ubuntu全讲解）.md",
+      "original": [
+        "深度学习"
+      ],
+      "normalized": [
+        "deep-learning"
+      ],
+      "message": "成功更新"
+    },
+    {
+      "file": "wiki/sources/deep-learning/2026-04-11-2  Mathematical Background – S&DS 431631 — Optimization and Computation.md",
+      "original": [
+        "deeplearning"
+      ],
+      "normalized": [
+        "deep-learning"
+      ],
+      "message": "成功更新"
+    },
+    {
+      "file": "wiki/sources/deep-learning/2022-07-15-dl-gen-vae.md",
+      "original": [
+        "深度学习",
+        "local-note"
+      ],
+      "normalized": [
+        "deep-learning",
+        "shared"
+      ],
+      "message": "成功更新"
+    },
+    {
+      "file": "wiki/sources/deep-learning/2025-01-19-pytorch-automatic-mixed-precision.md",
+      "original": [
+        "深度学习",
+        "post"
+      ],
+      "normalized": [
+        "deep-learning",
+        "shared"
+      ],
+      "message": "成功更新"
+    }
+  ],
+  "error_files_list": []
+}

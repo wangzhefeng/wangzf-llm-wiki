@@ -151,7 +151,7 @@ $Z$ 不直接影响 $Y$，只通过 $X$ 影响，可作为工具变量
 ## 参考与链接
 
 - [[Rubin-Causal-Model]] — 潜在结果框架
-- [[Back-door Criterion]] — 识别准则
+- [[Back-door-Criterion]] — 识别准则
 - [[DoWhy-Framework]] — 因果图的实现工具
 - [[工具变量]] — 图中识别工具变量的方法
 - [[断点回归设计]] — 利用因果图设计的特殊结构

@@ -72,4 +72,4 @@ normalized_rewards = (group_rewards - mean(group_rewards)) / std(group_rewards)
 - [[PPO近端策略优化]]
 - [[策略优化]]
 - [[奖励模型]]
-- [[LLM 对齐]]
+- [[LLM-对齐]]

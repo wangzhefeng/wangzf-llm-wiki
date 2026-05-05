@@ -572,8 +572,8 @@ status: linked
 - **来源卡新建 3 张**：`2026-04-06-API reference - simple-pid 2.0.0`（PID Python 工程实现）、`2026-04-06-Introduction to Robotics and Perception`（Georgia Tech CS3630 教材）、`2026-04-06-gtbookrobotics`（配套 Notebook 仓库）
 - **丢弃 1 张孤立存根来源卡**：`2026-04-06-什么是PID？讲个故事，秒懂！.md`，原始文件缺失，已删除来源卡（control-algorithms 和 shared 各一份）并清理所有索引引用
 - **清理 1 个误放概念页**：删除 `wiki/concepts/control-algorithms/System Prompts.md`（与控制算法无关的占位页）
-- **概念页新增 2 个**：[[模糊 PID]]（从占位页升级为正式页，含调整逻辑表与应用场景）、[[机器人学基础]]（新建，覆盖感知→规划→控制链路）
-- **概念页更新 1 个**：[[PID 控制]]（新增"Python 实现要点"章节，覆盖 simple-pid 库工程实践、积分饱和防护、无扰切换）
+- **概念页新增 2 个**：[[模糊-PID]]（从占位页升级为正式页，含调整逻辑表与应用场景）、[[机器人学基础]]（新建，覆盖感知→规划→控制链路）
+- **概念页更新 1 个**：[[PID-控制]]（新增"Python 实现要点"章节，覆盖 simple-pid 库工程实践、积分饱和防护、无扰切换）
 - **索引更新 3 个**：`控制算法总索引.md`（概念页 3→5，来源卡 1→4，成熟度种子期→成长期）、`控制算法阅读地图.md`（新增第 5、6 站）、`控制算法来源清单.md`（新增 Web 来源区块）
 - **状态同步**：`raw/notes/control-algorithms/2024-07-21-control-system/index.md` inbox → summarized；`raw/web/control-algorithms/` 3 篇 inbox → summarized
 

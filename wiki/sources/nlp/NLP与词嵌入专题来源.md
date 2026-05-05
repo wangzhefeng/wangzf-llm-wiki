@@ -23,7 +23,7 @@ status: summarized
 | 文件名 | 核心内容 | 状态 |
 |--------|----------|------|
 | 2.图解Word2vec | Word2Vec 图解教程 | 待摘要 |
-| [[2026-04-06-What are embeddings]] | Embeddings 综述 (Word2Vec 到 Transformer) | 待摘要 |
+| [[2026-04-06-What-are-embeddings]] | Embeddings 综述 (Word2Vec 到 Transformer) | 待摘要 |
 | 2026-04-06-veekaybeewhat_are_embeddings A deep dive into embeddings starting from fundamentals | Embeddings 深度解析 | 待摘要 |
 
 ### 注意力机制
@@ -31,13 +31,13 @@ status: summarized
 | 文件名 | 核心内容 | 状态 |
 |--------|----------|------|
 | [[raw/web/deep-learning/2026-04-06-超详细图解Self-Attention]] | Self-Attention 图解 | 待摘要 |
-| [[sources/deep-learning/2026-04-06-10. 注意力机制 — 动手学深度学习 2.0.0 documentation]] | 注意力机制教程 | 待摘要 |
+| [[sources/deep-learning/2026-04-06-10.-注意力机制-—-动手学深度学习-2.0.0-documentation]] | 注意力机制教程 | 待摘要 |
 
 ### NLP 预训练
 
 | 文件名 | 核心内容 | 状态 |
 |--------|----------|------|
-| [[sources/deep-learning/2026-04-06-14. 自然语言处理：预训练 — 动手学深度学习 2.0.0 documentation]] | NLP 预训练模型教程 | 待摘要 |
+| [[sources/deep-learning/2026-04-06-14.-自然语言处理：预训练-—-动手学深度学习-2.0.0-documentation]] | NLP 预训练模型教程 | 待摘要 |
 
 ### 工具与教程
 

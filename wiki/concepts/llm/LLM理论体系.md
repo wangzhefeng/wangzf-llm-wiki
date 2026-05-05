@@ -295,7 +295,7 @@ $$
 - [[Transformer架构]]
 - [[Self-Attention]]
 - [[RoPE旋转位置编码]]
-- [[KV Cache]]
+- [[KV-Cache]]
 - [[缩放定律]]
 - [[预训练]]
 - [[后训练]]

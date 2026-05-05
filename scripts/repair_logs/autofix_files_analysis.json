@@ -1,0 +1,1960 @@
+[
+  {
+    "file": "wiki/concepts/autofix/AI 创作.md",
+    "filename": "AI 创作.md",
+    "inferred_topic": "uncategorized",
+    "current_topics": [
+      "autofix",
+      "shared"
+    ],
+    "has_frontmatter": true,
+    "should_move": false
+  },
+  {
+    "file": "wiki/concepts/autofix/张量并行.md",
+    "filename": "张量并行.md",
+    "inferred_topic": "uncategorized",
+    "current_topics": [
+      "autofix",
+      "shared"
+    ],
+    "has_frontmatter": true,
+    "should_move": false
+  },
+  {
+    "file": "wiki/concepts/autofix/超参数优化.md",
+    "filename": "超参数优化.md",
+    "inferred_topic": "uncategorized",
+    "current_topics": [
+      "autofix",
+      "shared"
+    ],
+    "has_frontmatter": true,
+    "should_move": false
+  },
+  {
+    "file": "wiki/concepts/autofix/K-Means 聚类.md",
+    "filename": "K-Means 聚类.md",
+    "inferred_topic": "uncategorized",
+    "current_topics": [
+      "autofix",
+      "shared"
+    ],
+    "has_frontmatter": true,
+    "should_move": false
+  },
+  {
+    "file": "wiki/concepts/autofix/策略评估.md",
+    "filename": "策略评估.md",
+    "inferred_topic": "uncategorized",
+    "current_topics": [
+      "autofix",
+      "shared"
+    ],
+    "has_frontmatter": true,
+    "should_move": false
+  },
+  {
+    "file": "wiki/concepts/autofix/API 调用.md",
+    "filename": "API 调用.md",
+    "inferred_topic": "programming-tools",
+    "current_topics": [
+      "autofix",
+      "shared"
+    ],
+    "has_frontmatter": true,
+    "should_move": true
+  },
+  {
+    "file": "wiki/concepts/autofix/rag.md",
+    "filename": "rag.md",
+    "inferred_topic": "llm",
+    "current_topics": [
+      "autofix",
+      "shared"
+    ],
+    "has_frontmatter": true,
+    "should_move": true
+  },
+  {
+    "file": "wiki/concepts/autofix/Training extremely large neural networks across thousands of GPUs.md",
+    "filename": "Training extremely large neural networks across thousands of GPUs.md",
+    "inferred_topic": "deep-learning",
+    "current_topics": [
+      "autofix",
+      "shared"
+    ],
+    "has_frontmatter": true,
+    "should_move": true
+  },
+  {
+    "file": "wiki/concepts/autofix/LLM 评估.md",
+    "filename": "LLM 评估.md",
+    "inferred_topic": "llm",
+    "current_topics": [
+      "autofix",
+      "shared"
+    ],
+    "has_frontmatter": true,
+    "should_move": true
+  },
+  {
+    "file": "wiki/concepts/autofix/数据漂移.md",
+    "filename": "数据漂移.md",
+    "inferred_topic": "uncategorized",
+    "current_topics": [
+      "autofix",
+      "shared"
+    ],
+    "has_frontmatter": true,
+    "should_move": false
+  },
+  {
+    "file": "wiki/concepts/autofix/FSDP (Fully Sharded Data Parallel).md",
+    "filename": "FSDP (Fully Sharded Data Parallel).md",
+    "inferred_topic": "uncategorized",
+    "current_topics": [
+      "autofix",
+      "shared"
+    ],
+    "has_frontmatter": true,
+    "should_move": false
+  },
+  {
+    "file": "wiki/concepts/autofix/K-Means.md",
+    "filename": "K-Means.md",
+    "inferred_topic": "uncategorized",
+    "current_topics": [
+      "autofix",
+      "shared"
+    ],
+    "has_frontmatter": true,
+    "should_move": false
+  },
+  {
+    "file": "wiki/concepts/autofix/时间相关特征.md",
+    "filename": "时间相关特征.md",
+    "inferred_topic": "uncategorized",
+    "current_topics": [
+      "autofix",
+      "shared"
+    ],
+    "has_frontmatter": true,
+    "should_move": false
+  },
+  {
+    "file": "wiki/concepts/autofix/Linux 系统管理.md",
+    "filename": "Linux 系统管理.md",
+    "inferred_topic": "uncategorized",
+    "current_topics": [
+      "autofix",
+      "shared"
+    ],
+    "has_frontmatter": true,
+    "should_move": false
+  },
+  {
+    "file": "wiki/concepts/autofix/机器学习中如何处理缺失数据？.md",
+    "filename": "机器学习中如何处理缺失数据？.md",
+    "inferred_topic": "uncategorized",
+    "current_topics": [
+      "autofix",
+      "shared"
+    ],
+    "has_frontmatter": true,
+    "should_move": false
+  },
+  {
+    "file": "wiki/concepts/autofix/高斯混合模型.md",
+    "filename": "高斯混合模型.md",
+    "inferred_topic": "uncategorized",
+    "current_topics": [
+      "autofix",
+      "shared"
+    ],
+    "has_frontmatter": true,
+    "should_move": false
+  },
+  {
+    "file": "wiki/concepts/autofix/lm.md",
+    "filename": "lm.md",
+    "inferred_topic": "uncategorized",
+    "current_topics": [
+      "autofix",
+      "shared"
+    ],
+    "has_frontmatter": true,
+    "should_move": false
+  },
+  {
+    "file": "wiki/concepts/autofix/Understanding the 4 Main Approaches to LLM Evaluation.md",
+    "filename": "Understanding the 4 Main Approaches to LLM Evaluation.md",
+    "inferred_topic": "llm",
+    "current_topics": [
+      "autofix",
+      "shared"
+    ],
+    "has_frontmatter": true,
+    "should_move": true
+  },
+  {
+    "file": "wiki/concepts/autofix/SCIP.md",
+    "filename": "SCIP.md",
+    "inferred_topic": "operations-research",
+    "current_topics": [
+      "autofix",
+      "shared"
+    ],
+    "has_frontmatter": true,
+    "should_move": true
+  },
+  {
+    "file": "wiki/concepts/autofix/Making LLMs even more accessible with bitsandbytes, 4-bit quantization and QLoRA.md",
+    "filename": "Making LLMs even more accessible with bitsandbytes, 4-bit quantization and QLoRA.md",
+    "inferred_topic": "llm",
+    "current_topics": [
+      "autofix",
+      "shared"
+    ],
+    "has_frontmatter": true,
+    "should_move": true
+  },
+  {
+    "file": "wiki/concepts/autofix/Understanding and Coding the KV Cache in LLMs from Scratch.md",
+    "filename": "Understanding and Coding the KV Cache in LLMs from Scratch.md",
+    "inferred_topic": "llm",
+    "current_topics": [
+      "autofix",
+      "shared"
+    ],
+    "has_frontmatter": true,
+    "should_move": true
+  },
+  {
+    "file": "wiki/concepts/autofix/时间序列频域分析.md",
+    "filename": "时间序列频域分析.md",
+    "inferred_topic": "uncategorized",
+    "current_topics": [
+      "autofix",
+      "shared"
+    ],
+    "has_frontmatter": true,
+    "should_move": false
+  },
+  {
+    "file": "wiki/concepts/autofix/image-detection.md",
+    "filename": "image-detection.md",
+    "inferred_topic": "computer-vision",
+    "current_topics": [
+      "autofix",
+      "shared"
+    ],
+    "has_frontmatter": true,
+    "should_move": true
+  },
+  {
+    "file": "wiki/concepts/autofix/CPLEX.md",
+    "filename": "CPLEX.md",
+    "inferred_topic": "operations-research",
+    "current_topics": [
+      "autofix",
+      "shared"
+    ],
+    "has_frontmatter": true,
+    "should_move": true
+  },
+  {
+    "file": "wiki/concepts/autofix/偏好优化.md",
+    "filename": "偏好优化.md",
+    "inferred_topic": "uncategorized",
+    "current_topics": [
+      "autofix",
+      "shared"
+    ],
+    "has_frontmatter": true,
+    "should_move": false
+  },
+  {
+    "file": "wiki/concepts/autofix/FFT (快速傅里叶变换).md",
+    "filename": "FFT (快速傅里叶变换).md",
+    "inferred_topic": "uncategorized",
+    "current_topics": [
+      "autofix",
+      "shared"
+    ],
+    "has_frontmatter": true,
+    "should_move": false
+  },
+  {
+    "file": "wiki/concepts/autofix/价值迭代.md",
+    "filename": "价值迭代.md",
+    "inferred_topic": "uncategorized",
+    "current_topics": [
+      "autofix",
+      "shared"
+    ],
+    "has_frontmatter": true,
+    "should_move": false
+  },
+  {
+    "file": "wiki/concepts/autofix/nlp-kg.md",
+    "filename": "nlp-kg.md",
+    "inferred_topic": "operations-research",
+    "current_topics": [
+      "autofix",
+      "shared"
+    ],
+    "has_frontmatter": true,
+    "should_move": true
+  },
+  {
+    "file": "wiki/concepts/autofix/PPO (Proximal Policy Optimization).md",
+    "filename": "PPO (Proximal Policy Optimization).md",
+    "inferred_topic": "operations-research",
+    "current_topics": [
+      "autofix",
+      "shared"
+    ],
+    "has_frontmatter": true,
+    "should_move": true
+  },
+  {
+    "file": "wiki/concepts/autofix/零样本学习.md",
+    "filename": "零样本学习.md",
+    "inferred_topic": "uncategorized",
+    "current_topics": [
+      "autofix",
+      "shared"
+    ],
+    "has_frontmatter": true,
+    "should_move": false
+  },
+  {
+    "file": "wiki/concepts/autofix/mcp.md",
+    "filename": "mcp.md",
+    "inferred_topic": "uncategorized",
+    "current_topics": [
+      "autofix",
+      "shared"
+    ],
+    "has_frontmatter": true,
+    "should_move": false
+  },
+  {
+    "file": "wiki/concepts/autofix/ResNet.md",
+    "filename": "ResNet.md",
+    "inferred_topic": "uncategorized",
+    "current_topics": [
+      "autofix",
+      "shared"
+    ],
+    "has_frontmatter": true,
+    "should_move": false
+  },
+  {
+    "file": "wiki/concepts/autofix/多头注意力.md",
+    "filename": "多头注意力.md",
+    "inferred_topic": "uncategorized",
+    "current_topics": [
+      "autofix",
+      "shared"
+    ],
+    "has_frontmatter": true,
+    "should_move": false
+  },
+  {
+    "file": "wiki/concepts/autofix/缺失值填充.md",
+    "filename": "缺失值填充.md",
+    "inferred_topic": "uncategorized",
+    "current_topics": [
+      "autofix",
+      "shared"
+    ],
+    "has_frontmatter": true,
+    "should_move": false
+  },
+  {
+    "file": "wiki/concepts/autofix/逻辑回归.md",
+    "filename": "逻辑回归.md",
+    "inferred_topic": "uncategorized",
+    "current_topics": [
+      "autofix",
+      "shared"
+    ],
+    "has_frontmatter": true,
+    "should_move": false
+  },
+  {
+    "file": "wiki/concepts/autofix/Gurobi.md",
+    "filename": "Gurobi.md",
+    "inferred_topic": "operations-research",
+    "current_topics": [
+      "autofix",
+      "shared"
+    ],
+    "has_frontmatter": true,
+    "should_move": true
+  },
+  {
+    "file": "wiki/concepts/autofix/image-segmentation.md",
+    "filename": "image-segmentation.md",
+    "inferred_topic": "computer-vision",
+    "current_topics": [
+      "autofix",
+      "shared"
+    ],
+    "has_frontmatter": true,
+    "should_move": true
+  },
+  {
+    "file": "wiki/concepts/autofix/PyTorch.md",
+    "filename": "PyTorch.md",
+    "inferred_topic": "deep-learning",
+    "current_topics": [
+      "autofix",
+      "shared"
+    ],
+    "has_frontmatter": true,
+    "should_move": true
+  },
+  {
+    "file": "wiki/concepts/autofix/CheXNet.md",
+    "filename": "CheXNet.md",
+    "inferred_topic": "computer-vision",
+    "current_topics": [
+      "autofix",
+      "shared"
+    ],
+    "has_frontmatter": true,
+    "should_move": true
+  },
+  {
+    "file": "wiki/concepts/autofix/机器学习建模流程.md",
+    "filename": "机器学习建模流程.md",
+    "inferred_topic": "uncategorized",
+    "current_topics": [
+      "autofix",
+      "shared"
+    ],
+    "has_frontmatter": true,
+    "should_move": false
+  },
+  {
+    "file": "wiki/concepts/autofix/Structured LLM outputs.md",
+    "filename": "Structured LLM outputs.md",
+    "inferred_topic": "llm",
+    "current_topics": [
+      "autofix",
+      "shared"
+    ],
+    "has_frontmatter": true,
+    "should_move": true
+  },
+  {
+    "file": "wiki/concepts/autofix/位置编码.md",
+    "filename": "位置编码.md",
+    "inferred_topic": "uncategorized",
+    "current_topics": [
+      "autofix",
+      "shared"
+    ],
+    "has_frontmatter": true,
+    "should_move": false
+  },
+  {
+    "file": "wiki/concepts/autofix/image_processing.md",
+    "filename": "image_processing.md",
+    "inferred_topic": "computer-vision",
+    "current_topics": [
+      "autofix",
+      "shared"
+    ],
+    "has_frontmatter": true,
+    "should_move": true
+  },
+  {
+    "file": "wiki/concepts/autofix/时序数据预测有哪些好方法？.md",
+    "filename": "时序数据预测有哪些好方法？.md",
+    "inferred_topic": "uncategorized",
+    "current_topics": [
+      "autofix",
+      "shared"
+    ],
+    "has_frontmatter": true,
+    "should_move": false
+  },
+  {
+    "file": "wiki/concepts/autofix/Optuna.md",
+    "filename": "Optuna.md",
+    "inferred_topic": "uncategorized",
+    "current_topics": [
+      "autofix",
+      "shared"
+    ],
+    "has_frontmatter": true,
+    "should_move": false
+  },
+  {
+    "file": "wiki/concepts/autofix/claude_code.md",
+    "filename": "claude_code.md",
+    "inferred_topic": "llm",
+    "current_topics": [
+      "autofix",
+      "shared"
+    ],
+    "has_frontmatter": true,
+    "should_move": true
+  },
+  {
+    "file": "wiki/concepts/autofix/Understanding Multimodal LLMs.md",
+    "filename": "Understanding Multimodal LLMs.md",
+    "inferred_topic": "llm",
+    "current_topics": [
+      "autofix",
+      "shared"
+    ],
+    "has_frontmatter": true,
+    "should_move": true
+  },
+  {
+    "file": "wiki/concepts/autofix/朴素贝叶斯.md",
+    "filename": "朴素贝叶斯.md",
+    "inferred_topic": "uncategorized",
+    "current_topics": [
+      "autofix",
+      "shared"
+    ],
+    "has_frontmatter": true,
+    "should_move": false
+  },
+  {
+    "file": "wiki/concepts/autofix/模糊 PID.md",
+    "filename": "模糊 PID.md",
+    "inferred_topic": "control-algorithms",
+    "current_topics": [
+      "autofix",
+      "shared"
+    ],
+    "has_frontmatter": true,
+    "should_move": true
+  },
+  {
+    "file": "wiki/concepts/autofix/GAN 图像生成.md",
+    "filename": "GAN 图像生成.md",
+    "inferred_topic": "uncategorized",
+    "current_topics": [
+      "autofix",
+      "shared"
+    ],
+    "has_frontmatter": true,
+    "should_move": false
+  },
+  {
+    "file": "wiki/concepts/autofix/llm-models.md",
+    "filename": "llm-models.md",
+    "inferred_topic": "llm",
+    "current_topics": [
+      "autofix",
+      "shared"
+    ],
+    "has_frontmatter": true,
+    "should_move": true
+  },
+  {
+    "file": "wiki/concepts/autofix/时间序列分解.md",
+    "filename": "时间序列分解.md",
+    "inferred_topic": "uncategorized",
+    "current_topics": [
+      "autofix",
+      "shared"
+    ],
+    "has_frontmatter": true,
+    "should_move": false
+  },
+  {
+    "file": "wiki/concepts/autofix/降维.md",
+    "filename": "降维.md",
+    "inferred_topic": "uncategorized",
+    "current_topics": [
+      "autofix",
+      "shared"
+    ],
+    "has_frontmatter": true,
+    "should_move": false
+  },
+  {
+    "file": "wiki/concepts/autofix/为什么基于深度学习的时间序列预测方向很少有动态预测的方法？.md",
+    "filename": "为什么基于深度学习的时间序列预测方向很少有动态预测的方法？.md",
+    "inferred_topic": "uncategorized",
+    "current_topics": [
+      "autofix",
+      "shared"
+    ],
+    "has_frontmatter": true,
+    "should_move": false
+  },
+  {
+    "file": "wiki/concepts/autofix/多尺度建模.md",
+    "filename": "多尺度建模.md",
+    "inferred_topic": "uncategorized",
+    "current_topics": [
+      "autofix",
+      "shared"
+    ],
+    "has_frontmatter": true,
+    "should_move": false
+  },
+  {
+    "file": "wiki/concepts/autofix/How LLMs learn to reason.md",
+    "filename": "How LLMs learn to reason.md",
+    "inferred_topic": "llm",
+    "current_topics": [
+      "autofix",
+      "shared"
+    ],
+    "has_frontmatter": true,
+    "should_move": true
+  },
+  {
+    "file": "wiki/concepts/autofix/llm-arch.md",
+    "filename": "llm-arch.md",
+    "inferred_topic": "llm",
+    "current_topics": [
+      "autofix",
+      "shared"
+    ],
+    "has_frontmatter": true,
+    "should_move": true
+  },
+  {
+    "file": "wiki/concepts/autofix/偏差与方差权衡.md",
+    "filename": "偏差与方差权衡.md",
+    "inferred_topic": "uncategorized",
+    "current_topics": [
+      "autofix",
+      "shared"
+    ],
+    "has_frontmatter": true,
+    "should_move": false
+  },
+  {
+    "file": "wiki/concepts/autofix/深度学习-历史文档清单.md",
+    "filename": "深度学习-历史文档清单.md",
+    "inferred_topic": "uncategorized",
+    "current_topics": [
+      "autofix",
+      "shared"
+    ],
+    "has_frontmatter": true,
+    "should_move": false
+  },
+  {
+    "file": "wiki/concepts/autofix/Shell 编程.md",
+    "filename": "Shell 编程.md",
+    "inferred_topic": "uncategorized",
+    "current_topics": [
+      "autofix",
+      "shared"
+    ],
+    "has_frontmatter": true,
+    "should_move": false
+  },
+  {
+    "file": "wiki/concepts/autofix/CoT (Chain-of-Thought).md",
+    "filename": "CoT (Chain-of-Thought).md",
+    "inferred_topic": "uncategorized",
+    "current_topics": [
+      "autofix",
+      "shared"
+    ],
+    "has_frontmatter": true,
+    "should_move": false
+  },
+  {
+    "file": "wiki/concepts/autofix/连续特征的离散化：在什么情况下将连续的特征离散化之后可以获得更好的效果？.md",
+    "filename": "连续特征的离散化：在什么情况下将连续的特征离散化之后可以获得更好的效果？.md",
+    "inferred_topic": "uncategorized",
+    "current_topics": [
+      "autofix",
+      "shared"
+    ],
+    "has_frontmatter": true,
+    "should_move": false
+  },
+  {
+    "file": "wiki/concepts/autofix/tiny-llm-zh.md",
+    "filename": "tiny-llm-zh.md",
+    "inferred_topic": "llm",
+    "current_topics": [
+      "autofix",
+      "shared"
+    ],
+    "has_frontmatter": true,
+    "should_move": true
+  },
+  {
+    "file": "wiki/concepts/autofix/流水线并行.md",
+    "filename": "流水线并行.md",
+    "inferred_topic": "uncategorized",
+    "current_topics": [
+      "autofix",
+      "shared"
+    ],
+    "has_frontmatter": true,
+    "should_move": false
+  },
+  {
+    "file": "wiki/concepts/autofix/决策智能.md",
+    "filename": "决策智能.md",
+    "inferred_topic": "uncategorized",
+    "current_topics": [
+      "autofix",
+      "shared"
+    ],
+    "has_frontmatter": true,
+    "should_move": false
+  },
+  {
+    "file": "wiki/concepts/autofix/经验奖励.md",
+    "filename": "经验奖励.md",
+    "inferred_topic": "uncategorized",
+    "current_topics": [
+      "autofix",
+      "shared"
+    ],
+    "has_frontmatter": true,
+    "should_move": false
+  },
+  {
+    "file": "wiki/concepts/autofix/On-Policy vs Off-Policy.md",
+    "filename": "On-Policy vs Off-Policy.md",
+    "inferred_topic": "uncategorized",
+    "current_topics": [
+      "autofix",
+      "shared"
+    ],
+    "has_frontmatter": true,
+    "should_move": false
+  },
+  {
+    "file": "wiki/concepts/autofix/正则化.md",
+    "filename": "正则化.md",
+    "inferred_topic": "uncategorized",
+    "current_topics": [
+      "autofix",
+      "shared"
+    ],
+    "has_frontmatter": true,
+    "should_move": false
+  },
+  {
+    "file": "wiki/concepts/autofix/openclaw.md",
+    "filename": "openclaw.md",
+    "inferred_topic": "uncategorized",
+    "current_topics": [
+      "autofix",
+      "shared"
+    ],
+    "has_frontmatter": true,
+    "should_move": false
+  },
+  {
+    "file": "wiki/concepts/autofix/优势函数.md",
+    "filename": "优势函数.md",
+    "inferred_topic": "uncategorized",
+    "current_topics": [
+      "autofix",
+      "shared"
+    ],
+    "has_frontmatter": true,
+    "should_move": false
+  },
+  {
+    "file": "wiki/concepts/autofix/时间序列预测-历史文档清单.md",
+    "filename": "时间序列预测-历史文档清单.md",
+    "inferred_topic": "uncategorized",
+    "current_topics": [
+      "autofix",
+      "shared"
+    ],
+    "has_frontmatter": true,
+    "should_move": false
+  },
+  {
+    "file": "wiki/concepts/autofix/XGBoost.md",
+    "filename": "XGBoost.md",
+    "inferred_topic": "machine-learning",
+    "current_topics": [
+      "autofix",
+      "shared"
+    ],
+    "has_frontmatter": true,
+    "should_move": true
+  },
+  {
+    "file": "wiki/concepts/autofix/DDP (DistributedDataParallel).md",
+    "filename": "DDP (DistributedDataParallel).md",
+    "inferred_topic": "deep-learning",
+    "current_topics": [
+      "autofix",
+      "shared"
+    ],
+    "has_frontmatter": true,
+    "should_move": true
+  },
+  {
+    "file": "wiki/concepts/autofix/GRPO_From_Scratch_Multi_GPU.md",
+    "filename": "GRPO_From_Scratch_Multi_GPU.md",
+    "inferred_topic": "uncategorized",
+    "current_topics": [
+      "autofix",
+      "shared"
+    ],
+    "has_frontmatter": true,
+    "should_move": false
+  },
+  {
+    "file": "wiki/concepts/autofix/nlp-libs.md",
+    "filename": "nlp-libs.md",
+    "inferred_topic": "operations-research",
+    "current_topics": [
+      "autofix",
+      "shared"
+    ],
+    "has_frontmatter": true,
+    "should_move": true
+  },
+  {
+    "file": "wiki/concepts/autofix/Stable Diffusion.md",
+    "filename": "Stable Diffusion.md",
+    "inferred_topic": "uncategorized",
+    "current_topics": [
+      "autofix",
+      "shared"
+    ],
+    "has_frontmatter": true,
+    "should_move": false
+  },
+  {
+    "file": "wiki/concepts/autofix/others.md",
+    "filename": "others.md",
+    "inferred_topic": "uncategorized",
+    "current_topics": [
+      "autofix",
+      "shared"
+    ],
+    "has_frontmatter": true,
+    "should_move": false
+  },
+  {
+    "file": "wiki/concepts/autofix/随机森林.md",
+    "filename": "随机森林.md",
+    "inferred_topic": "uncategorized",
+    "current_topics": [
+      "autofix",
+      "shared"
+    ],
+    "has_frontmatter": true,
+    "should_move": false
+  },
+  {
+    "file": "wiki/concepts/autofix/DBSCAN.md",
+    "filename": "DBSCAN.md",
+    "inferred_topic": "uncategorized",
+    "current_topics": [
+      "autofix",
+      "shared"
+    ],
+    "has_frontmatter": true,
+    "should_move": false
+  },
+  {
+    "file": "wiki/concepts/autofix/llm-app.md",
+    "filename": "llm-app.md",
+    "inferred_topic": "llm",
+    "current_topics": [
+      "autofix",
+      "shared"
+    ],
+    "has_frontmatter": true,
+    "should_move": true
+  },
+  {
+    "file": "wiki/concepts/autofix/image-classification.md",
+    "filename": "image-classification.md",
+    "inferred_topic": "machine-learning",
+    "current_topics": [
+      "autofix",
+      "shared"
+    ],
+    "has_frontmatter": true,
+    "should_move": true
+  },
+  {
+    "file": "wiki/concepts/autofix/statistics.md",
+    "filename": "statistics.md",
+    "inferred_topic": "data-analysis",
+    "current_topics": [
+      "autofix",
+      "shared"
+    ],
+    "has_frontmatter": true,
+    "should_move": true
+  },
+  {
+    "file": "wiki/concepts/autofix/MMDetection.md",
+    "filename": "MMDetection.md",
+    "inferred_topic": "computer-vision",
+    "current_topics": [
+      "autofix",
+      "shared"
+    ],
+    "has_frontmatter": true,
+    "should_move": true
+  },
+  {
+    "file": "wiki/concepts/autofix/spaCy.md",
+    "filename": "spaCy.md",
+    "inferred_topic": "uncategorized",
+    "current_topics": [
+      "autofix",
+      "shared"
+    ],
+    "has_frontmatter": true,
+    "should_move": false
+  },
+  {
+    "file": "wiki/concepts/autofix/CLIP.md",
+    "filename": "CLIP.md",
+    "inferred_topic": "computer-vision",
+    "current_topics": [
+      "autofix",
+      "shared"
+    ],
+    "has_frontmatter": true,
+    "should_move": true
+  },
+  {
+    "file": "wiki/concepts/autofix/Evaluate LLMs and RAG.md",
+    "filename": "Evaluate LLMs and RAG.md",
+    "inferred_topic": "llm",
+    "current_topics": [
+      "autofix",
+      "shared"
+    ],
+    "has_frontmatter": true,
+    "should_move": true
+  },
+  {
+    "file": "wiki/concepts/autofix/核方法.md",
+    "filename": "核方法.md",
+    "inferred_topic": "uncategorized",
+    "current_topics": [
+      "autofix",
+      "shared"
+    ],
+    "has_frontmatter": true,
+    "should_move": false
+  },
+  {
+    "file": "wiki/concepts/autofix/KV Cache.md",
+    "filename": "KV Cache.md",
+    "inferred_topic": "uncategorized",
+    "current_topics": [
+      "autofix",
+      "shared"
+    ],
+    "has_frontmatter": true,
+    "should_move": false
+  },
+  {
+    "file": "wiki/concepts/autofix/多分类策略.md",
+    "filename": "多分类策略.md",
+    "inferred_topic": "uncategorized",
+    "current_topics": [
+      "autofix",
+      "shared"
+    ],
+    "has_frontmatter": true,
+    "should_move": false
+  },
+  {
+    "file": "wiki/concepts/autofix/Ray Tune.md",
+    "filename": "Ray Tune.md",
+    "inferred_topic": "uncategorized",
+    "current_topics": [
+      "autofix",
+      "shared"
+    ],
+    "has_frontmatter": true,
+    "should_move": false
+  },
+  {
+    "file": "wiki/concepts/autofix/知识库-健康检查-日志.md",
+    "filename": "知识库-健康检查-日志.md",
+    "inferred_topic": "uncategorized",
+    "current_topics": [
+      "autofix",
+      "shared"
+    ],
+    "has_frontmatter": true,
+    "should_move": false
+  },
+  {
+    "file": "wiki/concepts/autofix/vLLM.md",
+    "filename": "vLLM.md",
+    "inferred_topic": "llm",
+    "current_topics": [
+      "autofix",
+      "shared"
+    ],
+    "has_frontmatter": true,
+    "should_move": true
+  },
+  {
+    "file": "wiki/concepts/autofix/特征选择.md",
+    "filename": "特征选择.md",
+    "inferred_topic": "uncategorized",
+    "current_topics": [
+      "autofix",
+      "shared"
+    ],
+    "has_frontmatter": true,
+    "should_move": false
+  },
+  {
+    "file": "wiki/concepts/autofix/RoPE (Rotary Position Embedding).md",
+    "filename": "RoPE (Rotary Position Embedding).md",
+    "inferred_topic": "llm",
+    "current_topics": [
+      "autofix",
+      "shared"
+    ],
+    "has_frontmatter": true,
+    "should_move": true
+  },
+  {
+    "file": "wiki/concepts/autofix/Tips-of-Feature-engineering.md",
+    "filename": "Tips-of-Feature-engineering.md",
+    "inferred_topic": "operations-research",
+    "current_topics": [
+      "autofix",
+      "shared"
+    ],
+    "has_frontmatter": true,
+    "should_move": true
+  },
+  {
+    "file": "wiki/concepts/autofix/The Big LLM Architecture Comparison.md",
+    "filename": "The Big LLM Architecture Comparison.md",
+    "inferred_topic": "llm",
+    "current_topics": [
+      "autofix",
+      "shared"
+    ],
+    "has_frontmatter": true,
+    "should_move": true
+  },
+  {
+    "file": "wiki/concepts/autofix/运筹优化算法-历史文档清单.md",
+    "filename": "运筹优化算法-历史文档清单.md",
+    "inferred_topic": "uncategorized",
+    "current_topics": [
+      "autofix",
+      "shared"
+    ],
+    "has_frontmatter": true,
+    "should_move": false
+  },
+  {
+    "file": "wiki/concepts/autofix/nlp-speech.md",
+    "filename": "nlp-speech.md",
+    "inferred_topic": "operations-research",
+    "current_topics": [
+      "autofix",
+      "shared"
+    ],
+    "has_frontmatter": true,
+    "should_move": true
+  },
+  {
+    "file": "wiki/concepts/autofix/codex.md",
+    "filename": "codex.md",
+    "inferred_topic": "uncategorized",
+    "current_topics": [
+      "autofix",
+      "shared"
+    ],
+    "has_frontmatter": true,
+    "should_move": false
+  },
+  {
+    "file": "wiki/concepts/autofix/自动化预测.md",
+    "filename": "自动化预测.md",
+    "inferred_topic": "uncategorized",
+    "current_topics": [
+      "autofix",
+      "shared"
+    ],
+    "has_frontmatter": true,
+    "should_move": false
+  },
+  {
+    "file": "wiki/concepts/autofix/skills.md",
+    "filename": "skills.md",
+    "inferred_topic": "uncategorized",
+    "current_topics": [
+      "autofix",
+      "shared"
+    ],
+    "has_frontmatter": true,
+    "should_move": false
+  },
+  {
+    "file": "wiki/concepts/autofix/index.md",
+    "filename": "index.md",
+    "inferred_topic": "uncategorized",
+    "current_topics": [
+      "autofix",
+      "shared"
+    ],
+    "has_frontmatter": true,
+    "should_move": false
+  },
+  {
+    "file": "wiki/concepts/autofix/模型融合.md",
+    "filename": "模型融合.md",
+    "inferred_topic": "uncategorized",
+    "current_topics": [
+      "autofix",
+      "shared"
+    ],
+    "has_frontmatter": true,
+    "should_move": false
+  },
+  {
+    "file": "wiki/concepts/autofix/Q-Learning.md",
+    "filename": "Q-Learning.md",
+    "inferred_topic": "reinforcement-learning",
+    "current_topics": [
+      "autofix",
+      "shared"
+    ],
+    "has_frontmatter": true,
+    "should_move": true
+  },
+  {
+    "file": "wiki/concepts/autofix/决策树.md",
+    "filename": "决策树.md",
+    "inferred_topic": "uncategorized",
+    "current_topics": [
+      "autofix",
+      "shared"
+    ],
+    "has_frontmatter": true,
+    "should_move": false
+  },
+  {
+    "file": "wiki/concepts/autofix/特征离散化.md",
+    "filename": "特征离散化.md",
+    "inferred_topic": "uncategorized",
+    "current_topics": [
+      "autofix",
+      "shared"
+    ],
+    "has_frontmatter": true,
+    "should_move": false
+  },
+  {
+    "file": "wiki/concepts/autofix/开环与闭环.md",
+    "filename": "开环与闭环.md",
+    "inferred_topic": "uncategorized",
+    "current_topics": [
+      "autofix",
+      "shared"
+    ],
+    "has_frontmatter": true,
+    "should_move": false
+  },
+  {
+    "file": "wiki/concepts/autofix/堆叠法.md",
+    "filename": "堆叠法.md",
+    "inferred_topic": "uncategorized",
+    "current_topics": [
+      "autofix",
+      "shared"
+    ],
+    "has_frontmatter": true,
+    "should_move": false
+  },
+  {
+    "file": "wiki/concepts/autofix/在线学习.md",
+    "filename": "在线学习.md",
+    "inferred_topic": "uncategorized",
+    "current_topics": [
+      "autofix",
+      "shared"
+    ],
+    "has_frontmatter": true,
+    "should_move": false
+  },
+  {
+    "file": "wiki/concepts/autofix/知识库.md",
+    "filename": "知识库.md",
+    "inferred_topic": "uncategorized",
+    "current_topics": [
+      "autofix",
+      "shared"
+    ],
+    "has_frontmatter": true,
+    "should_move": false
+  },
+  {
+    "file": "wiki/concepts/autofix/多模态 LLM.md",
+    "filename": "多模态 LLM.md",
+    "inferred_topic": "llm",
+    "current_topics": [
+      "autofix",
+      "shared"
+    ],
+    "has_frontmatter": true,
+    "should_move": true
+  },
+  {
+    "file": "wiki/concepts/autofix/RLHF and alternatives: ORPO.md",
+    "filename": "RLHF and alternatives: ORPO.md",
+    "inferred_topic": "operations-research",
+    "current_topics": [
+      "autofix",
+      "shared"
+    ],
+    "has_frontmatter": true,
+    "should_move": true
+  },
+  {
+    "file": "wiki/concepts/autofix/第二大脑.md",
+    "filename": "第二大脑.md",
+    "inferred_topic": "uncategorized",
+    "current_topics": [
+      "autofix",
+      "shared"
+    ],
+    "has_frontmatter": true,
+    "should_move": false
+  },
+  {
+    "file": "wiki/concepts/autofix/LLM + OR.md",
+    "filename": "LLM + OR.md",
+    "inferred_topic": "llm",
+    "current_topics": [
+      "autofix",
+      "shared"
+    ],
+    "has_frontmatter": true,
+    "should_move": true
+  },
+  {
+    "file": "wiki/concepts/autofix/Actor-Critic.md",
+    "filename": "Actor-Critic.md",
+    "inferred_topic": "operations-research",
+    "current_topics": [
+      "autofix",
+      "shared"
+    ],
+    "has_frontmatter": true,
+    "should_move": true
+  },
+  {
+    "file": "wiki/concepts/autofix/广义线性模型.md",
+    "filename": "广义线性模型.md",
+    "inferred_topic": "uncategorized",
+    "current_topics": [
+      "autofix",
+      "shared"
+    ],
+    "has_frontmatter": true,
+    "should_move": false
+  },
+  {
+    "file": "wiki/concepts/autofix/缺失值处理.md",
+    "filename": "缺失值处理.md",
+    "inferred_topic": "uncategorized",
+    "current_topics": [
+      "autofix",
+      "shared"
+    ],
+    "has_frontmatter": true,
+    "should_move": false
+  },
+  {
+    "file": "wiki/concepts/autofix/ReAct.md",
+    "filename": "ReAct.md",
+    "inferred_topic": "uncategorized",
+    "current_topics": [
+      "autofix",
+      "shared"
+    ],
+    "has_frontmatter": true,
+    "should_move": false
+  },
+  {
+    "file": "wiki/concepts/autofix/医学图像分析.md",
+    "filename": "医学图像分析.md",
+    "inferred_topic": "uncategorized",
+    "current_topics": [
+      "autofix",
+      "shared"
+    ],
+    "has_frontmatter": true,
+    "should_move": false
+  },
+  {
+    "file": "wiki/concepts/autofix/数据重采样.md",
+    "filename": "数据重采样.md",
+    "inferred_topic": "uncategorized",
+    "current_topics": [
+      "autofix",
+      "shared"
+    ],
+    "has_frontmatter": true,
+    "should_move": false
+  },
+  {
+    "file": "wiki/concepts/autofix/内网穿透.md",
+    "filename": "内网穿透.md",
+    "inferred_topic": "uncategorized",
+    "current_topics": [
+      "autofix",
+      "shared"
+    ],
+    "has_frontmatter": true,
+    "should_move": false
+  },
+  {
+    "file": "wiki/concepts/autofix/缩放定律.md",
+    "filename": "缩放定律.md",
+    "inferred_topic": "uncategorized",
+    "current_topics": [
+      "autofix",
+      "shared"
+    ],
+    "has_frontmatter": true,
+    "should_move": false
+  },
+  {
+    "file": "wiki/concepts/autofix/数据质量与清洗.md",
+    "filename": "数据质量与清洗.md",
+    "inferred_topic": "uncategorized",
+    "current_topics": [
+      "autofix",
+      "shared"
+    ],
+    "has_frontmatter": true,
+    "should_move": false
+  },
+  {
+    "file": "wiki/concepts/autofix/LightGBM.md",
+    "filename": "LightGBM.md",
+    "inferred_topic": "machine-learning",
+    "current_topics": [
+      "autofix",
+      "shared"
+    ],
+    "has_frontmatter": true,
+    "should_move": true
+  },
+  {
+    "file": "wiki/concepts/autofix/电力现货市场.md",
+    "filename": "电力现货市场.md",
+    "inferred_topic": "uncategorized",
+    "current_topics": [
+      "autofix",
+      "shared"
+    ],
+    "has_frontmatter": true,
+    "should_move": false
+  },
+  {
+    "file": "wiki/concepts/autofix/GRPO (Group Relative Policy Optimization).md",
+    "filename": "GRPO (Group Relative Policy Optimization).md",
+    "inferred_topic": "operations-research",
+    "current_topics": [
+      "autofix",
+      "shared"
+    ],
+    "has_frontmatter": true,
+    "should_move": true
+  },
+  {
+    "file": "wiki/concepts/autofix/\"real-world\" models with DDP.md",
+    "filename": "\"real-world\" models with DDP.md",
+    "inferred_topic": "deep-learning",
+    "current_topics": [
+      "autofix",
+      "shared"
+    ],
+    "has_frontmatter": true,
+    "should_move": true
+  },
+  {
+    "file": "wiki/concepts/autofix/电力交易策略.md",
+    "filename": "电力交易策略.md",
+    "inferred_topic": "uncategorized",
+    "current_topics": [
+      "autofix",
+      "shared"
+    ],
+    "has_frontmatter": true,
+    "should_move": false
+  },
+  {
+    "file": "wiki/concepts/autofix/Time-related feature engineering.md",
+    "filename": "Time-related feature engineering.md",
+    "inferred_topic": "uncategorized",
+    "current_topics": [
+      "autofix",
+      "shared"
+    ],
+    "has_frontmatter": true,
+    "should_move": false
+  },
+  {
+    "file": "wiki/concepts/autofix/非线性分类.md",
+    "filename": "非线性分类.md",
+    "inferred_topic": "uncategorized",
+    "current_topics": [
+      "autofix",
+      "shared"
+    ],
+    "has_frontmatter": true,
+    "should_move": false
+  },
+  {
+    "file": "wiki/concepts/autofix/神经机器翻译.md",
+    "filename": "神经机器翻译.md",
+    "inferred_topic": "uncategorized",
+    "current_topics": [
+      "autofix",
+      "shared"
+    ],
+    "has_frontmatter": true,
+    "should_move": false
+  },
+  {
+    "file": "wiki/concepts/autofix/Guide to fine-tuning LLMs using PEFT and LoRa.md",
+    "filename": "Guide to fine-tuning LLMs using PEFT and LoRa.md",
+    "inferred_topic": "llm",
+    "current_topics": [
+      "autofix",
+      "shared"
+    ],
+    "has_frontmatter": true,
+    "should_move": true
+  },
+  {
+    "file": "wiki/concepts/autofix/LLM 对齐.md",
+    "filename": "LLM 对齐.md",
+    "inferred_topic": "llm",
+    "current_topics": [
+      "autofix",
+      "shared"
+    ],
+    "has_frontmatter": true,
+    "should_move": true
+  },
+  {
+    "file": "wiki/concepts/autofix/scikit-learn-lagged-features.md",
+    "filename": "scikit-learn-lagged-features.md",
+    "inferred_topic": "uncategorized",
+    "current_topics": [
+      "autofix",
+      "shared"
+    ],
+    "has_frontmatter": true,
+    "should_move": false
+  },
+  {
+    "file": "wiki/concepts/autofix/模型监控与维护.md",
+    "filename": "模型监控与维护.md",
+    "inferred_topic": "uncategorized",
+    "current_topics": [
+      "autofix",
+      "shared"
+    ],
+    "has_frontmatter": true,
+    "should_move": false
+  },
+  {
+    "file": "wiki/concepts/autofix/远程桌面.md",
+    "filename": "远程桌面.md",
+    "inferred_topic": "uncategorized",
+    "current_topics": [
+      "autofix",
+      "shared"
+    ],
+    "has_frontmatter": true,
+    "should_move": false
+  },
+  {
+    "file": "wiki/concepts/autofix/马尔可夫奖励过程 (MRP).md",
+    "filename": "马尔可夫奖励过程 (MRP).md",
+    "inferred_topic": "uncategorized",
+    "current_topics": [
+      "autofix",
+      "shared"
+    ],
+    "has_frontmatter": true,
+    "should_move": false
+  },
+  {
+    "file": "wiki/concepts/autofix/线性回归.md",
+    "filename": "线性回归.md",
+    "inferred_topic": "uncategorized",
+    "current_topics": [
+      "autofix",
+      "shared"
+    ],
+    "has_frontmatter": true,
+    "should_move": false
+  },
+  {
+    "file": "wiki/concepts/autofix/多模态模型.md",
+    "filename": "多模态模型.md",
+    "inferred_topic": "uncategorized",
+    "current_topics": [
+      "autofix",
+      "shared"
+    ],
+    "has_frontmatter": true,
+    "should_move": false
+  },
+  {
+    "file": "wiki/concepts/autofix/多项式回归.md",
+    "filename": "多项式回归.md",
+    "inferred_topic": "uncategorized",
+    "current_topics": [
+      "autofix",
+      "shared"
+    ],
+    "has_frontmatter": true,
+    "should_move": false
+  },
+  {
+    "file": "wiki/concepts/autofix/Few-shot Learning.md",
+    "filename": "Few-shot Learning.md",
+    "inferred_topic": "uncategorized",
+    "current_topics": [
+      "autofix",
+      "shared"
+    ],
+    "has_frontmatter": true,
+    "should_move": false
+  },
+  {
+    "file": "wiki/concepts/autofix/Obsidian 工作流.md",
+    "filename": "Obsidian 工作流.md",
+    "inferred_topic": "knowledge-base",
+    "current_topics": [
+      "autofix",
+      "shared"
+    ],
+    "has_frontmatter": true,
+    "should_move": true
+  },
+  {
+    "file": "wiki/concepts/autofix/多模态视觉模型.md",
+    "filename": "多模态视觉模型.md",
+    "inferred_topic": "uncategorized",
+    "current_topics": [
+      "autofix",
+      "shared"
+    ],
+    "has_frontmatter": true,
+    "should_move": false
+  },
+  {
+    "file": "wiki/concepts/autofix/多标签分类.md",
+    "filename": "多标签分类.md",
+    "inferred_topic": "uncategorized",
+    "current_topics": [
+      "autofix",
+      "shared"
+    ],
+    "has_frontmatter": true,
+    "should_move": false
+  },
+  {
+    "file": "wiki/concepts/autofix/wikilinks.md",
+    "filename": "wikilinks.md",
+    "inferred_topic": "knowledge-base",
+    "current_topics": [
+      "autofix",
+      "shared"
+    ],
+    "has_frontmatter": true,
+    "should_move": true
+  },
+  {
+    "file": "wiki/concepts/autofix/知识库-健康检查-最新.md",
+    "filename": "知识库-健康检查-最新.md",
+    "inferred_topic": "uncategorized",
+    "current_topics": [
+      "autofix",
+      "shared"
+    ],
+    "has_frontmatter": true,
+    "should_move": false
+  },
+  {
+    "file": "wiki/concepts/autofix/cnn.md",
+    "filename": "cnn.md",
+    "inferred_topic": "deep-learning",
+    "current_topics": [
+      "autofix",
+      "shared"
+    ],
+    "has_frontmatter": true,
+    "should_move": true
+  },
+  {
+    "file": "wiki/concepts/autofix/nlp-tasks.md",
+    "filename": "nlp-tasks.md",
+    "inferred_topic": "operations-research",
+    "current_topics": [
+      "autofix",
+      "shared"
+    ],
+    "has_frontmatter": true,
+    "should_move": true
+  },
+  {
+    "file": "wiki/concepts/autofix/llm-framework.md",
+    "filename": "llm-framework.md",
+    "inferred_topic": "llm",
+    "current_topics": [
+      "autofix",
+      "shared"
+    ],
+    "has_frontmatter": true,
+    "should_move": true
+  },
+  {
+    "file": "wiki/concepts/autofix/数据合成.md",
+    "filename": "数据合成.md",
+    "inferred_topic": "uncategorized",
+    "current_topics": [
+      "autofix",
+      "shared"
+    ],
+    "has_frontmatter": true,
+    "should_move": false
+  },
+  {
+    "file": "wiki/concepts/autofix/过拟合与正则化.md",
+    "filename": "过拟合与正则化.md",
+    "inferred_topic": "uncategorized",
+    "current_topics": [
+      "autofix",
+      "shared"
+    ],
+    "has_frontmatter": true,
+    "should_move": false
+  },
+  {
+    "file": "wiki/concepts/autofix/时间序列数据特征提取的几类方法.md",
+    "filename": "时间序列数据特征提取的几类方法.md",
+    "inferred_topic": "uncategorized",
+    "current_topics": [
+      "autofix",
+      "shared"
+    ],
+    "has_frontmatter": true,
+    "should_move": false
+  },
+  {
+    "file": "wiki/concepts/autofix/CatBoost.md",
+    "filename": "CatBoost.md",
+    "inferred_topic": "uncategorized",
+    "current_topics": [
+      "autofix",
+      "shared"
+    ],
+    "has_frontmatter": true,
+    "should_move": false
+  },
+  {
+    "file": "wiki/concepts/autofix/LLM Training: RLHF and Its Alternatives.md",
+    "filename": "LLM Training: RLHF and Its Alternatives.md",
+    "inferred_topic": "llm",
+    "current_topics": [
+      "autofix",
+      "shared"
+    ],
+    "has_frontmatter": true,
+    "should_move": true
+  },
+  {
+    "file": "wiki/concepts/autofix/梯度提升树.md",
+    "filename": "梯度提升树.md",
+    "inferred_topic": "uncategorized",
+    "current_topics": [
+      "autofix",
+      "shared"
+    ],
+    "has_frontmatter": true,
+    "should_move": false
+  },
+  {
+    "file": "wiki/concepts/autofix/ORPO.md",
+    "filename": "ORPO.md",
+    "inferred_topic": "operations-research",
+    "current_topics": [
+      "autofix",
+      "shared"
+    ],
+    "has_frontmatter": true,
+    "should_move": true
+  },
+  {
+    "file": "wiki/concepts/autofix/本地知识库.md",
+    "filename": "本地知识库.md",
+    "inferred_topic": "uncategorized",
+    "current_topics": [
+      "autofix",
+      "shared"
+    ],
+    "has_frontmatter": true,
+    "should_move": false
+  },
+  {
+    "file": "wiki/concepts/autofix/分类评估指标.md",
+    "filename": "分类评估指标.md",
+    "inferred_topic": "uncategorized",
+    "current_topics": [
+      "autofix",
+      "shared"
+    ],
+    "has_frontmatter": true,
+    "should_move": false
+  },
+  {
+    "file": "wiki/concepts/autofix/System Prompts.md",
+    "filename": "System Prompts.md",
+    "inferred_topic": "control-algorithms",
+    "current_topics": [
+      "autofix",
+      "shared"
+    ],
+    "has_frontmatter": true,
+    "should_move": true
+  },
+  {
+    "file": "wiki/concepts/autofix/特征提取.md",
+    "filename": "特征提取.md",
+    "inferred_topic": "uncategorized",
+    "current_topics": [
+      "autofix",
+      "shared"
+    ],
+    "has_frontmatter": true,
+    "should_move": false
+  },
+  {
+    "file": "wiki/concepts/autofix/K 近邻.md",
+    "filename": "K 近邻.md",
+    "inferred_topic": "uncategorized",
+    "current_topics": [
+      "autofix",
+      "shared"
+    ],
+    "has_frontmatter": true,
+    "should_move": false
+  },
+  {
+    "file": "wiki/concepts/autofix/多目标跟踪 (MOT).md",
+    "filename": "多目标跟踪 (MOT).md",
+    "inferred_topic": "uncategorized",
+    "current_topics": [
+      "autofix",
+      "shared"
+    ],
+    "has_frontmatter": true,
+    "should_move": false
+  },
+  {
+    "file": "wiki/concepts/autofix/KAN (Kolmogorov-Arnold Network).md",
+    "filename": "KAN (Kolmogorov-Arnold Network).md",
+    "inferred_topic": "operations-research",
+    "current_topics": [
+      "autofix",
+      "shared"
+    ],
+    "has_frontmatter": true,
+    "should_move": true
+  },
+  {
+    "file": "wiki/concepts/autofix/为什么主流 LLM 都用 RoPE？.md",
+    "filename": "为什么主流 LLM 都用 RoPE？.md",
+    "inferred_topic": "llm",
+    "current_topics": [
+      "autofix",
+      "shared"
+    ],
+    "has_frontmatter": true,
+    "should_move": true
+  },
+  {
+    "file": "wiki/concepts/autofix/预训练模型.md",
+    "filename": "预训练模型.md",
+    "inferred_topic": "uncategorized",
+    "current_topics": [
+      "autofix",
+      "shared"
+    ],
+    "has_frontmatter": true,
+    "should_move": false
+  },
+  {
+    "file": "wiki/concepts/autofix/马尔可夫过程 (MP).md",
+    "filename": "马尔可夫过程 (MP).md",
+    "inferred_topic": "uncategorized",
+    "current_topics": [
+      "autofix",
+      "shared"
+    ],
+    "has_frontmatter": true,
+    "should_move": false
+  },
+  {
+    "file": "wiki/concepts/autofix/Why We Think.md",
+    "filename": "Why We Think.md",
+    "inferred_topic": "uncategorized",
+    "current_topics": [
+      "autofix",
+      "shared"
+    ],
+    "has_frontmatter": true,
+    "should_move": false
+  },
+  {
+    "file": "wiki/concepts/autofix/控制系统设计指标.md",
+    "filename": "控制系统设计指标.md",
+    "inferred_topic": "uncategorized",
+    "current_topics": [
+      "autofix",
+      "shared"
+    ],
+    "has_frontmatter": true,
+    "should_move": false
+  },
+  {
+    "file": "wiki/concepts/autofix/滞后特征.md",
+    "filename": "滞后特征.md",
+    "inferred_topic": "uncategorized",
+    "current_topics": [
+      "autofix",
+      "shared"
+    ],
+    "has_frontmatter": true,
+    "should_move": false
+  },
+  {
+    "file": "wiki/concepts/autofix/Self-Attention.md",
+    "filename": "Self-Attention.md",
+    "inferred_topic": "deep-learning",
+    "current_topics": [
+      "autofix",
+      "shared"
+    ],
+    "has_frontmatter": true,
+    "should_move": true
+  },
+  {
+    "file": "wiki/concepts/autofix/支持向量机.md",
+    "filename": "支持向量机.md",
+    "inferred_topic": "uncategorized",
+    "current_topics": [
+      "autofix",
+      "shared"
+    ],
+    "has_frontmatter": true,
+    "should_move": false
+  },
+  {
+    "file": "wiki/concepts/autofix/贝尔曼方程.md",
+    "filename": "贝尔曼方程.md",
+    "inferred_topic": "uncategorized",
+    "current_topics": [
+      "autofix",
+      "shared"
+    ],
+    "has_frontmatter": true,
+    "should_move": false
+  },
+  {
+    "file": "wiki/concepts/autofix/奖励模型.md",
+    "filename": "奖励模型.md",
+    "inferred_topic": "uncategorized",
+    "current_topics": [
+      "autofix",
+      "shared"
+    ],
+    "has_frontmatter": true,
+    "should_move": false
+  },
+  {
+    "file": "wiki/concepts/autofix/混合整数线性规划 (MILP).md",
+    "filename": "混合整数线性规划 (MILP).md",
+    "inferred_topic": "operations-research",
+    "current_topics": [
+      "autofix",
+      "shared"
+    ],
+    "has_frontmatter": true,
+    "should_move": true
+  },
+  {
+    "file": "wiki/concepts/autofix/tools.md",
+    "filename": "tools.md",
+    "inferred_topic": "programming-tools",
+    "current_topics": [
+      "autofix",
+      "shared"
+    ],
+    "has_frontmatter": true,
+    "should_move": true
+  },
+  {
+    "file": "wiki/concepts/autofix/长上下文.md",
+    "filename": "长上下文.md",
+    "inferred_topic": "uncategorized",
+    "current_topics": [
+      "autofix",
+      "shared"
+    ],
+    "has_frontmatter": true,
+    "should_move": false
+  },
+  {
+    "file": "wiki/concepts/autofix/向量数据库.md",
+    "filename": "向量数据库.md",
+    "inferred_topic": "uncategorized",
+    "current_topics": [
+      "autofix",
+      "shared"
+    ],
+    "has_frontmatter": true,
+    "should_move": false
+  },
+  {
+    "file": "wiki/concepts/autofix/回归评估指标.md",
+    "filename": "回归评估指标.md",
+    "inferred_topic": "uncategorized",
+    "current_topics": [
+      "autofix",
+      "shared"
+    ],
+    "has_frontmatter": true,
+    "should_move": false
+  }
+]

@@ -27,5 +27,5 @@ status: summarized
 
 ## 连到哪些概念
 
-- [[PyTorch 框架与最佳实践]]
+- [[PyTorch-框架与最佳实践]]
 - [[深度学习工程工具]]

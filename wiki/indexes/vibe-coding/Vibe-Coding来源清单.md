@@ -16,7 +16,7 @@ status: linked
 ## 工具与平台
 
 - [[2026-04-05-vercel-agent-browser]]
-- [[2026-04-06-Agentic后训练 - SFT（监督微调）全流程详解]]
+- [[2026-04-06-Agentic后训练---SFT（监督微调）全流程详解]]
 - [[2026-04-06-Blog]]
 - [[2026-04-09-vibe-coding-agent]]
 - [[2026-04-09-vibe-coding-claude-code]]
@@ -33,7 +33,7 @@ status: linked
 ## 方法与理念
 
 - [[2026-04-06-春节加餐：Anthropic首个公开的Skills构建指南来了！]]
-- [[2026-04-06-首次Vibe Coding开课了！首月最丰富组队学习来了🥳（多达18个课程）]]
+- [[2026-04-06-首次Vibe-Coding开课了！首月最丰富组队学习来了🥳（多达18个课程）]]
 - [[2026-04-09-vibe-coding-rag]]
 - [[2026-04-09-vibe-coding-skills]]
 - [[2026-04-09-vibe-coding-tools]]

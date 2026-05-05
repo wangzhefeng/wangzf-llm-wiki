@@ -27,5 +27,5 @@ status: summarized
 
 ## 连到哪些概念
 
-- [[Transformer 与自注意力]]
+- [[Transformer-与自注意力]]
 - [[大语言模型基础]]

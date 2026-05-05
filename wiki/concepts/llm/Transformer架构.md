@@ -76,4 +76,4 @@ $$\text{LayerNorm}(x + \text{Sublayer}(x))$$
 - [[RoPE旋转位置编码]]
 - [[预训练]]
 - [[注意力机制]]
-- [[KV Cache]]
+- [[KV-Cache]]

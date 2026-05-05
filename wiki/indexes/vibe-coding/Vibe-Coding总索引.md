@@ -35,7 +35,7 @@ status: linked
 
 ## 核心材料
 
-- [[2026-04-06-首次Vibe Coding开课了！首月最丰富组队学习来了🥳（多达18个课程）|Vibe Coding 课程入口]]
+- [[2026-04-06-首次Vibe-Coding开课了！首月最丰富组队学习来了🥳（多达18个课程）|Vibe Coding 课程入口]]
 - [[Vibe-Coding来源清单]]
 - [[2026-04-09-vibe-coding-claude-code从入门到精通-v2-0-0|Claude Code 深度教程]]
 

@@ -43,7 +43,7 @@ status: linked
 - [[2025-07-05-llm-finetuning]]
 
 ### 分布式训练
-- [[2026-04-06-Training extremely large neural networks across thousands of GPUs|Training extremely large neural networks across thousands of GPUs]]
+- [[2026-04-06-Training-extremely-large-neural-networks-across-thousands-of-GPUs|Training extremely large neural networks across thousands of GPUs]]
 - [[2026-04-06-Training-“real-world”-models-with-DDP|"real-world" models with DDP]]
 
 ## 对齐与后训练
@@ -67,7 +67,7 @@ status: linked
 
 - [[Transformer架构]]
 - [[RoPE旋转位置编码]]
-- [[KV Cache]]
+- [[KV-Cache]]
 - [[RLHF]]
 - [[DPO直接偏好优化]]
 - [[模型量化]]

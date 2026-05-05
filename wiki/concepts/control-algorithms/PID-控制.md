@@ -136,18 +136,18 @@ while True:
 pid.set_auto_mode(True, last_output=manual_output)
 ```
 
-**来源参考**：[[2026-04-06-API reference - simple-pid 2.0.0]]
+**来源参考**：[[2026-04-06-API-reference---simple-pid-2.0.0]]
 
 ## 代表来源
 
 - [[2024-07-21-控制算法概述-PID与模糊控制]]
-- [[2026-04-06-API reference - simple-pid 2.0.0]]（工程实现参考）
+- [[2026-04-06-API-reference---simple-pid-2.0.0]]（工程实现参考）
 
 ## 相关概念
 
 - [[控制系统基础]]
 - [[模糊控制]]
-- [[模糊 PID]]
+- [[模糊-PID]]
 
 ## 在本专题中的位置
 

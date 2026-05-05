@@ -64,8 +64,8 @@ status: linked
 ### 核心概念页
 
 - [[知识库建设方法]]：构建方法的统一归纳入口
-- [[Obsidian 工作流]]：前端工具使用规范
-- [[Obsidian Web Clipper 配置与图片本地化]]：摄取工具配置
+- [[Obsidian-工作流]]：前端工具使用规范
+- [[Obsidian-Web-Clipper-配置与图片本地化]]：摄取工具配置
 - [[LLM辅助研究]]：LLM 在知识库中的角色
 - [[wikilinks]]：内部链接规范
 

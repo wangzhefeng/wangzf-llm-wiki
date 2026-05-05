@@ -1,7 +1,7 @@
 .agents/
 .claude/
 .hermes/
-.env/
+.venv/
 .obsidian/
 .ruff_cache/
 .DS_Store
@@ -18,3 +18,4 @@ raw/repos/dowhy/
 raw/repos/control-algorithm-proj/
 raw/repos/storage_mpc_project/
 raw/repos/ele-trading/
+__pycache__/

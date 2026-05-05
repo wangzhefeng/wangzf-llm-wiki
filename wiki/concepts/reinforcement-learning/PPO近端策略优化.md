@@ -79,6 +79,6 @@ PPO 是 RLHF 的核心算法之一：
 
 - [[GRPO群体相对策略优化]]
 - [[优势函数]]
-- [[On-Policy vs Off-Policy]]
+- [[On-Policy-vs-Off-Policy]]
 - [[RLHF]]
 - [[策略优化]]

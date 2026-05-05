@@ -53,7 +53,7 @@ $$\max \sum_{t} \sum_{-c \leq j \leq c, j \neq 0} \log P(w_{t+j} | w_t)$$
 
 - [[NLP与词嵌入专题来源]]
 - 2.图解Word2vec
-- [[2026-04-06-What are embeddings]]
+- [[2026-04-06-What-are-embeddings]]
 
 ## 相关概念
 

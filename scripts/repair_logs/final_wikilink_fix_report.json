@@ -1,0 +1,28 @@
+{
+  "timestamp": "2026-04-13",
+  "total_errors_before": 10,
+  "fixed_count": 5,
+  "skipped_errors": [
+    [
+      "wiki/sources/computer-vision/index.md",
+      "wiki/sources/computer-vision/2026-04-06-PDFMathTranslatedocsREADME_zh-CN.md at main"
+    ],
+    [
+      "wiki/sources/computer-vision/index.md",
+      "wiki/sources/computer-vision/2026-04-06-nanoVLMmodelsconfig.py at main"
+    ],
+    [
+      "wiki/sources/control-algorithms/index.md",
+      "wiki/sources/control-algorithms/2026-04-06-掌握Shell编程，一篇就够了"
+    ],
+    [
+      "wiki/sources/data-structure-algorithm/index.md",
+      "wiki/sources/data-structure-algorithm/2024-04-04-greedy"
+    ],
+    [
+      "wiki/sources/control-algorithms/2026-04-06-gtbookrobotics Notebook-based book Introduction to Robotics and Perception by Frank Dellaert and Seth Hutchinson.md",
+      "raw/web/operations-research/2026-04-06-gtbookrobotics Notebook-based book Introduction to Robotics and Perception by Frank Dellaert and Seth Hutchinson"
+    ]
+  ],
+  "remaining_errors": 5
+}

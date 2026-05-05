@@ -72,5 +72,5 @@ $$\mathcal{L}_{DPO} = -E[\log \sigma(\beta \log \frac{\pi_\theta(y_w|x)}{\pi_{re
 - [[RLHF]]
 - [[偏好优化]]
 - [[奖励模型]]
-- [[LLM 对齐]]
+- [[LLM-对齐]]
 - [[ORPO]]
