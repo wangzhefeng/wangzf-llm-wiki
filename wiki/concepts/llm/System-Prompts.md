@@ -12,3 +12,11 @@ status: linked
 # System Prompts
 
 System Prompts 是在模型调用最上游注入的全局行为约束，用于规定角色、边界、安全策略与输出风格。
+
+## 相关概念
+
+- [[提示词工程]]
+- [[安全对齐]]
+- [[Agent智能体]]
+- [[Transformer架构]]
+- [[大语言模型]]
