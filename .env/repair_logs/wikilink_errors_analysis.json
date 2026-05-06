@@ -1,0 +1,92 @@
+{
+  "total_errors": 10,
+  "errors": [
+    [
+      "wiki/indexes/shared/知识库维护检查索引.md",
+      "post-主题纳管排除清单"
+    ],
+    [
+      "wiki/sources/computer-vision/2026-04-06-Darknet Open Source Neural Networks in C.md",
+      "raw/web/computer-vision/2026-04-06-Darknet Open Source Neural Networks in C.md"
+    ],
+    [
+      "wiki/sources/computer-vision/2026-04-06-Discover FiftyOne  Boost Your Multimodal Data.md",
+      "raw/web/computer-vision/2026-04-06-Discover FiftyOne  Boost Your Multimodal Data.md"
+    ],
+    [
+      "wiki/sources/computer-vision/2026-04-06-Joseph Redmon - Survival Strategies for the Robot Rebellion.md",
+      "raw/web/computer-vision/2026-04-06-Joseph Redmon - Survival Strategies for the Robot Rebellion.md"
+    ],
+    [
+      "wiki/sources/computer-vision/2026-04-06-Open Computer Vision Library.md",
+      "raw/web/computer-vision/2026-04-06-Open Computer Vision Library.md"
+    ],
+    [
+      "wiki/sources/computer-vision/2026-04-06-OpenCV OpenCV modules.md",
+      "raw/web/computer-vision/2026-04-06-OpenCV OpenCV modules.md"
+    ],
+    [
+      "wiki/sources/computer-vision/2026-04-06-Pillow.md",
+      "raw/web/operations-research/2026-04-06-Pillow"
+    ],
+    [
+      "wiki/sources/computer-vision/2026-04-06-SkalskiPvlms-zero-to-hero This series will take you on a journey from the fundamentals of NLP and Computer Vision to the cutting edge of Vision-Language Models.md",
+      "raw/web/computer-vision/2026-04-06-SkalskiPvlms-zero-to-hero This series will take you on a journey from the fundamentals of NLP and Computer Vision to the cutting edge of Vision-Language Models.md"
+    ],
+    [
+      "wiki/sources/computer-vision/2026-04-06-What is the Sliding Window Algorithm - Programmathically.md",
+      "raw/web/computer-vision/2026-04-06-What is the Sliding Window Algorithm - Programmathically.md"
+    ],
+    [
+      "wiki/sources/computer-vision/2026-04-06-YOLOv4：使用 Darknet 和 OpenCV 进行对象检测的综合指南.md",
+      "raw/web/computer-vision/2026-04-06-YOLOv4：使用 Darknet 和 OpenCV 进行对象检测的综合指南.md"
+    ]
+  ],
+  "categories": {
+    "raw_web_links": [
+      [
+        "wiki/sources/computer-vision/2026-04-06-Darknet Open Source Neural Networks in C.md",
+        "raw/web/computer-vision/2026-04-06-Darknet Open Source Neural Networks in C.md"
+      ],
+      [
+        "wiki/sources/computer-vision/2026-04-06-Discover FiftyOne  Boost Your Multimodal Data.md",
+        "raw/web/computer-vision/2026-04-06-Discover FiftyOne  Boost Your Multimodal Data.md"
+      ],
+      [
+        "wiki/sources/computer-vision/2026-04-06-Joseph Redmon - Survival Strategies for the Robot Rebellion.md",
+        "raw/web/computer-vision/2026-04-06-Joseph Redmon - Survival Strategies for the Robot Rebellion.md"
+      ],
+      [
+        "wiki/sources/computer-vision/2026-04-06-Open Computer Vision Library.md",
+        "raw/web/computer-vision/2026-04-06-Open Computer Vision Library.md"
+      ],
+      [
+        "wiki/sources/computer-vision/2026-04-06-OpenCV OpenCV modules.md",
+        "raw/web/computer-vision/2026-04-06-OpenCV OpenCV modules.md"
+      ],
+      [
+        "wiki/sources/computer-vision/2026-04-06-Pillow.md",
+        "raw/web/operations-research/2026-04-06-Pillow"
+      ],
+      [
+        "wiki/sources/computer-vision/2026-04-06-SkalskiPvlms-zero-to-hero This series will take you on a journey from the fundamentals of NLP and Computer Vision to the cutting edge of Vision-Language Models.md",
+        "raw/web/computer-vision/2026-04-06-SkalskiPvlms-zero-to-hero This series will take you on a journey from the fundamentals of NLP and Computer Vision to the cutting edge of Vision-Language Models.md"
+      ],
+      [
+        "wiki/sources/computer-vision/2026-04-06-What is the Sliding Window Algorithm - Programmathically.md",
+        "raw/web/computer-vision/2026-04-06-What is the Sliding Window Algorithm - Programmathically.md"
+      ],
+      [
+        "wiki/sources/computer-vision/2026-04-06-YOLOv4：使用 Darknet 和 OpenCV 进行对象检测的综合指南.md",
+        "raw/web/computer-vision/2026-04-06-YOLOv4：使用 Darknet 和 OpenCV 进行对象检测的综合指南.md"
+      ]
+    ],
+    "post_theme": [
+      [
+        "wiki/indexes/shared/知识库维护检查索引.md",
+        "post-主题纳管排除清单"
+      ]
+    ],
+    "other": []
+  }
+}

@@ -1,0 +1,38 @@
+---
+source_type: repo
+source_path: "raw/repos/rlproj/utils/todo/ml_examles/examples_lgb/regression/readme-20260412200431.md"
+title: "README"
+author: unknown
+created_at: 2026-04-12
+topics:
+- knowledge-base
+status: inbox
+---
+
+Regression Example
+==================
+
+Here is an example for LightGBM to run regression task.
+
+***You must follow the [installation instructions](https://lightgbm.readthedocs.io/en/latest/Installation-Guide.html)
+for the following commands to work. The `lightgbm` binary must be built and available at the root of this project.***
+
+Training
+--------
+
+Run the following command in this folder:
+
+```bash
+"../../lightgbm" config=train.conf
+```
+
+Prediction
+----------
+
+You should finish training first.
+
+Run the following command in this folder:
+
+```bash
+"../../lightgbm" config=predict.conf
+```

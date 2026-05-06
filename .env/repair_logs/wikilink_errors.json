@@ -1,0 +1,103 @@
+{
+  "errors": [
+    [
+      "wiki/indexes/operations-research/运筹优化算法总索引.md",
+      "[[outputs/answers/2026-04-05-运筹优化算法-知识空白分析]]"
+    ],
+    [
+      "wiki/indexes/operations-research/运筹优化算法来源清单.md",
+      "[[2019-03-14-combined-heat-and-power]]"
+    ],
+    [
+      "wiki/indexes/operations-research/运筹优化算法来源清单.md",
+      "[[2024-02-26-carbon-neutrality]]"
+    ],
+    [
+      "wiki/indexes/operations-research/运筹优化算法来源清单.md",
+      "[[2024-10-16-virtual-power-plant]]"
+    ],
+    [
+      "wiki/indexes/shared/llm-wiki-operations/知识库运维总索引.md",
+      "[[outputs/logs/2026-04-12-项目结构调整-工具目录迁移记录]]"
+    ],
+    [
+      "wiki/indexes/shared/llm-wiki-operations/知识库运维总索引.md",
+      "[[outputs/logs/2026-04-12-obsidian-图谱配色配置记录]]"
+    ],
+    [
+      "wiki/indexes/shared/llm-wiki-operations/知识库运维总索引.md",
+      "[[outputs/logs/2026-04-12-autofix-占位页清理记录]]"
+    ],
+    [
+      "wiki/indexes/shared/llm-wiki-operations/知识库运维总索引.md",
+      "[[outputs/logs/2026-04-12-autofix-剩余文件清理记录]]"
+    ],
+    [
+      "wiki/indexes/shared/llm-wiki-operations/知识库运维总索引.md",
+      "[[outputs/logs/2026-04-12-断链修复报告]]"
+    ],
+    [
+      "wiki/indexes/shared/llm-wiki-operations/知识库运维总索引.md",
+      "[[outputs/logs/2026-04-12-未解决断链记录]]"
+    ]
+  ],
+  "warnings": [
+    "wiki/concepts/knowledge-base/LLM辅助研究.md",
+    "wiki/sources/agent-dev/2026-04-06-AlphaOPT：用大模型为优化建模构建可进化的“经验知识库”.md",
+    "wiki/sources/agent-dev/2026-04-06-大模型外挂(向量)知识库.md",
+    "wiki/sources/computer-vision/2026-04-06-Pillow.md",
+    "wiki/sources/control-algorithms/2026-04-06-gtbookrobotics Notebook-based book Introduction to Robotics and Perception by Frank Dellaert and Seth Hutchinson.md",
+    "wiki/sources/deep-learning/2026-04-06-xtunerREADME_zh-CN.md at main.md",
+    "wiki/sources/llm/2026-04-06-Training extremely large neural networks across thousands of GPUs.md",
+    "wiki/sources/llm/2026-04-06-nanoVLMmodelsconfig.py at main.md",
+    "wiki/sources/machine-learning/2026-04-06-(35 封私信  12 条消息) 有哪些比较好的做异常值检测的方法？ - 知乎.md",
+    "wiki/sources/machine-learning/2026-04-06-Optuna A hyperparameter optimization framework — Optuna 4.8.0 documentation.md",
+    "... 其余 11 条警告省略"
+  ],
+  "categories": {
+    "path_link": [
+      [
+        "wiki/indexes/operations-research/运筹优化算法总索引.md",
+        "[[outputs/answers/2026-04-05-运筹优化算法-知识空白分析]]"
+      ],
+      [
+        "wiki/indexes/shared/llm-wiki-operations/知识库运维总索引.md",
+        "[[outputs/logs/2026-04-12-项目结构调整-工具目录迁移记录]]"
+      ],
+      [
+        "wiki/indexes/shared/llm-wiki-operations/知识库运维总索引.md",
+        "[[outputs/logs/2026-04-12-obsidian-图谱配色配置记录]]"
+      ],
+      [
+        "wiki/indexes/shared/llm-wiki-operations/知识库运维总索引.md",
+        "[[outputs/logs/2026-04-12-autofix-占位页清理记录]]"
+      ],
+      [
+        "wiki/indexes/shared/llm-wiki-operations/知识库运维总索引.md",
+        "[[outputs/logs/2026-04-12-autofix-剩余文件清理记录]]"
+      ],
+      [
+        "wiki/indexes/shared/llm-wiki-operations/知识库运维总索引.md",
+        "[[outputs/logs/2026-04-12-断链修复报告]]"
+      ],
+      [
+        "wiki/indexes/shared/llm-wiki-operations/知识库运维总索引.md",
+        "[[outputs/logs/2026-04-12-未解决断链记录]]"
+      ]
+    ],
+    "simple_link": [
+      [
+        "wiki/indexes/operations-research/运筹优化算法来源清单.md",
+        "[[2019-03-14-combined-heat-and-power]]"
+      ],
+      [
+        "wiki/indexes/operations-research/运筹优化算法来源清单.md",
+        "[[2024-02-26-carbon-neutrality]]"
+      ],
+      [
+        "wiki/indexes/operations-research/运筹优化算法来源清单.md",
+        "[[2024-10-16-virtual-power-plant]]"
+      ]
+    ]
+  }
+}

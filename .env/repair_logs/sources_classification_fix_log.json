@@ -1,0 +1,46 @@
+{
+  "moved_files": [
+    [
+      "2026-04-06-译 Transformer 是如何工作的：600 行 Python 代码实现 self-attention 和两类 Transformer（2019）.md",
+      "deep-learning",
+      "llm"
+    ],
+    [
+      "2026-04-06-Vision Transformers (ViTs) Computer Vision with Transformer Models.md",
+      "deep-learning",
+      "llm"
+    ],
+    [
+      "2026-04-06-读懂Transformer的内核，了解大模型基石.md",
+      "deep-learning",
+      "llm"
+    ],
+    [
+      "2026-04-06-【时间序列预测】Are Transformers Effective for Time Series Forecasting.md",
+      "llm",
+      "timeseries"
+    ],
+    [
+      "2026-04-06-DC-researchTSorchestra Time Series Orchestra (TSorchestra) is a novel ensemble framework designed for zero-shot time series forecasting. It is built upon a curated collection of time series foundation models. The architecture is desig.md",
+      "llm",
+      "timeseries"
+    ],
+    [
+      "2026-04-06-大模型外挂(向量)知识库.md",
+      "agent-dev",
+      "llm"
+    ],
+    [
+      "2026-04-06-AlphaOPT：用大模型为优化建模构建可进化的“经验知识库”.md",
+      "agent-dev",
+      "llm"
+    ],
+    [
+      "2026-04-06-Agentic后训练 - SFT（监督微调）全流程详解.md",
+      "llm",
+      "vibe-coding"
+    ]
+  ],
+  "failed_files": [],
+  "timestamp": 1776003728.2826095
+}

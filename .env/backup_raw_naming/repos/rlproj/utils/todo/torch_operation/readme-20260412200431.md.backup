@@ -1,0 +1,15 @@
+---
+source_type: repo
+source_path: "raw/repos/rlproj/utils/todo/torch_operation/readme-20260412200431.md"
+title: "README"
+author: unknown
+created_at: 2026-04-12
+topics:
+- knowledge-base
+status: inbox
+---
+
+# tensor 元素个数
+
+* `.numel()`
+* `.nelement()`    

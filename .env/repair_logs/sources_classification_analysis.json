@@ -1,0 +1,1009 @@
+{
+  "total_files": 1164,
+  "matching_files": 705,
+  "mismatch_files": 459,
+  "mismatches": [
+    {
+      "file": "2026-04-06-大模型外挂(向量)知识库.md",
+      "current_theme": "agent-dev",
+      "suggested_theme": "llm",
+      "scores": {
+        "llm": 22.0,
+        "vibe-coding": 8.0,
+        "knowledge-base": 34.0,
+        "tools": 34.0
+      },
+      "match": false,
+      "confidence": 34.0
+    },
+    {
+      "file": "2026-04-06-AlphaOPT：用大模型为优化建模构建可进化的“经验知识库”.md",
+      "current_theme": "agent-dev",
+      "suggested_theme": "llm",
+      "scores": {
+        "llm": 22.0,
+        "operations-research": 22.0,
+        "vibe-coding": 8.0,
+        "knowledge-base": 34.0,
+        "tools": 34.0
+      },
+      "match": false,
+      "confidence": 34.0
+    },
+    {
+      "file": "2026-04-06-译 Transformer 是如何工作的：600 行 Python 代码实现 self-attention 和两类 Transformer（2019）.md",
+      "current_theme": "deep-learning",
+      "suggested_theme": "llm",
+      "scores": {
+        "llm": 70.0,
+        "programming": 18.0
+      },
+      "match": false,
+      "confidence": 70.0
+    },
+    {
+      "file": "2026-04-06-Vision Transformers (ViTs) Computer Vision with Transformer Models.md",
+      "current_theme": "deep-learning",
+      "suggested_theme": "llm",
+      "scores": {
+        "llm": 34.0,
+        "computer-vision": 14.0
+      },
+      "match": false,
+      "confidence": 34.0
+    },
+    {
+      "file": "2026-04-06-变分自编码器(VAE)、条件变分自编码器(CVAE)简介（文末附Torch代码）.md",
+      "current_theme": "deep-learning",
+      "suggested_theme": "programming",
+      "scores": {
+        "deep-learning": 18.0,
+        "programming": 64.0
+      },
+      "match": false,
+      "confidence": 64.0
+    },
+    {
+      "file": "2026-04-06-examplesdistributed at main.md",
+      "current_theme": "deep-learning",
+      "suggested_theme": null,
+      "scores": {},
+      "match": false,
+      "confidence": 0
+    },
+    {
+      "file": "AI工具与产品专题来源.md",
+      "current_theme": "deep-learning",
+      "suggested_theme": "tools",
+      "scores": {
+        "llm": 12.0,
+        "vibe-coding": 4.0,
+        "knowledge-base": 12.0,
+        "tools": 26.0
+      },
+      "match": false,
+      "confidence": 26.0
+    },
+    {
+      "file": "2026-04-06-(35 封私信  12 条消息) 猛猿 - 知乎.md",
+      "current_theme": "deep-learning",
+      "suggested_theme": null,
+      "scores": {},
+      "match": false,
+      "confidence": 0
+    },
+    {
+      "file": "附件入口清单-deeplearning.md",
+      "current_theme": "deep-learning",
+      "suggested_theme": null,
+      "scores": {},
+      "match": false,
+      "confidence": 0
+    },
+    {
+      "file": "2026-04-06-Semantic Textual Similarity — Sentence Transformers  documentation.md",
+      "current_theme": "deep-learning",
+      "suggested_theme": "llm",
+      "scores": {
+        "llm": 18.0
+      },
+      "match": false,
+      "confidence": 18.0
+    },
+    {
+      "file": "2026-04-06-pytorch-transformer-tsautoformerhyperparameter-tuning.ipynb at main 2.md",
+      "current_theme": "deep-learning",
+      "suggested_theme": "llm",
+      "scores": {
+        "llm": 18.0
+      },
+      "match": false,
+      "confidence": 18.0
+    },
+    {
+      "file": "2026-04-06-Training “real-world” models with DDP.md",
+      "current_theme": "deep-learning",
+      "suggested_theme": null,
+      "scores": {},
+      "match": false,
+      "confidence": 0
+    },
+    {
+      "file": "2026-04-06-examplesmnist_hogwild at main.md",
+      "current_theme": "deep-learning",
+      "suggested_theme": null,
+      "scores": {},
+      "match": false,
+      "confidence": 0
+    },
+    {
+      "file": "2026-04-06-Transformer深入浅出.md",
+      "current_theme": "deep-learning",
+      "suggested_theme": "llm",
+      "scores": {
+        "llm": 18.0
+      },
+      "match": false,
+      "confidence": 18.0
+    },
+    {
+      "file": "2026-04-06-VeritasYinSTGCN_IJCAI-18 IJCAI'18 Spatio-Temporal Graph Convolutional Networks.md",
+      "current_theme": "deep-learning",
+      "suggested_theme": "data-structure-algorithm",
+      "scores": {
+        "data-structure-algorithm": 18.0
+      },
+      "match": false,
+      "confidence": 18.0
+    },
+    {
+      "file": "2026-04-06-Spatio-Temporal Graph Convolutional Networks A Deep Learning Framework for Traffic Forecasting.md",
+      "current_theme": "deep-learning",
+      "suggested_theme": "timeseries",
+      "scores": {
+        "timeseries": 18.0,
+        "data-structure-algorithm": 18.0,
+        "tools": 18.0
+      },
+      "match": false,
+      "confidence": 18.0
+    },
+    {
+      "file": "2026-04-06-xtunerREADME_zh-CN.md at main.md",
+      "current_theme": "deep-learning",
+      "suggested_theme": null,
+      "scores": {},
+      "match": false,
+      "confidence": 0
+    },
+    {
+      "file": "2026-04-11-7  Momentum and Adaptive Methods – S&DS 431631 — Optimization and Computation.md",
+      "current_theme": "deep-learning",
+      "suggested_theme": "operations-research",
+      "scores": {
+        "operations-research": 18.0
+      },
+      "match": false,
+      "confidence": 18.0
+    },
+    {
+      "file": "2026-04-06-Multiprocessing best practices.md",
+      "current_theme": "deep-learning",
+      "suggested_theme": null,
+      "scores": {},
+      "match": false,
+      "confidence": 0
+    },
+    {
+      "file": "2026-04-06-Autoformerexpexp_main.py at main.md",
+      "current_theme": "deep-learning",
+      "suggested_theme": null,
+      "scores": {},
+      "match": false,
+      "confidence": 0
+    },
+    {
+      "file": "2026-04-06-zhouhaoyiInformer2020 The GitHub repository for the paper Informer accepted by AAAI 2021.md",
+      "current_theme": "deep-learning",
+      "suggested_theme": "programming-tools",
+      "scores": {
+        "programming-tools": 18.0
+      },
+      "match": false,
+      "confidence": 18.0
+    },
+    {
+      "file": "2026-04-06-Transformers Laid Out.md",
+      "current_theme": "deep-learning",
+      "suggested_theme": "llm",
+      "scores": {
+        "llm": 18.0
+      },
+      "match": false,
+      "confidence": 18.0
+    },
+    {
+      "file": "2026-04-06-Assignment1&2 - 小角龙的学习记录.md",
+      "current_theme": "deep-learning",
+      "suggested_theme": null,
+      "scores": {},
+      "match": false,
+      "confidence": 0
+    },
+    {
+      "file": "2026-04-06-torch.utils.checkpoint.md",
+      "current_theme": "deep-learning",
+      "suggested_theme": null,
+      "scores": {},
+      "match": false,
+      "confidence": 0
+    },
+    {
+      "file": "2026-04-06-h2oaipystacknet.md",
+      "current_theme": "deep-learning",
+      "suggested_theme": null,
+      "scores": {},
+      "match": false,
+      "confidence": 0
+    },
+    {
+      "file": "2026-04-06-The Annotated Transformer.md",
+      "current_theme": "deep-learning",
+      "suggested_theme": "llm",
+      "scores": {
+        "llm": 18.0
+      },
+      "match": false,
+      "confidence": 18.0
+    },
+    {
+      "file": "2026-04-06-【必看】历史技术文章导航.md",
+      "current_theme": "deep-learning",
+      "suggested_theme": null,
+      "scores": {},
+      "match": false,
+      "confidence": 0
+    },
+    {
+      "file": "2026-04-06-读懂Transformer的内核，了解大模型基石.md",
+      "current_theme": "deep-learning",
+      "suggested_theme": "llm",
+      "scores": {
+        "llm": 36.0
+      },
+      "match": false,
+      "confidence": 36.0
+    },
+    {
+      "file": "2026-04-06-pytorch-transformer-tsautoformerhyperparameter-tuning.ipynb at main.md",
+      "current_theme": "deep-learning",
+      "suggested_theme": "llm",
+      "scores": {
+        "llm": 18.0
+      },
+      "match": false,
+      "confidence": 18.0
+    },
+    {
+      "file": "2026-04-06-当代研究生应当掌握的并行训练方法（单机多卡）.md",
+      "current_theme": "deep-learning",
+      "suggested_theme": null,
+      "scores": {},
+      "match": false,
+      "confidence": 0
+    },
+    {
+      "file": "2026-04-06-超详细图解Self-Attention.md",
+      "current_theme": "deep-learning",
+      "suggested_theme": "llm",
+      "scores": {
+        "llm": 36.0
+      },
+      "match": false,
+      "confidence": 36.0
+    },
+    {
+      "file": "LLM架构微调与多模态扩展专题来源.md",
+      "current_theme": "deep-learning",
+      "suggested_theme": "llm",
+      "scores": {
+        "llm": 88.0,
+        "deep-learning": 6.0,
+        "computer-vision": 8.0,
+        "operations-research": 4.0,
+        "vibe-coding": 52.0,
+        "tools": 16.0,
+        "agent-dev": 8.0
+      },
+      "match": false,
+      "confidence": 88.0
+    },
+    {
+      "file": "2026-04-06-kashifpytorch-transformer-ts Repository of Transformer based PyTorch Time Series Models.md",
+      "current_theme": "deep-learning",
+      "suggested_theme": "llm",
+      "scores": {
+        "llm": 34.0,
+        "timeseries": 14.0
+      },
+      "match": false,
+      "confidence": 34.0
+    },
+    {
+      "file": "2026-04-11-用 PyTorch DDP 把多张卡用起来.md",
+      "current_theme": "deep-learning",
+      "suggested_theme": null,
+      "scores": {},
+      "match": false,
+      "confidence": 0
+    },
+    {
+      "file": "2026-04-06-Smth Smth GPU Related.md",
+      "current_theme": "deep-learning",
+      "suggested_theme": null,
+      "scores": {},
+      "match": false,
+      "confidence": 0
+    },
+    {
+      "file": "2026-04-06-Multinode Training.md",
+      "current_theme": "deep-learning",
+      "suggested_theme": null,
+      "scores": {},
+      "match": false,
+      "confidence": 0
+    },
+    {
+      "file": "2026-04-11-2  Mathematical Background – S&DS 431631 — Optimization and Computation.md",
+      "current_theme": "deep-learning",
+      "suggested_theme": "operations-research",
+      "scores": {
+        "operations-research": 18.0
+      },
+      "match": false,
+      "confidence": 18.0
+    },
+    {
+      "file": "2026-04-06-Optional Data Parallelism.md",
+      "current_theme": "deep-learning",
+      "suggested_theme": null,
+      "scores": {},
+      "match": false,
+      "confidence": 0
+    },
+    {
+      "file": "LLM架构训练与微调专题来源.md",
+      "current_theme": "deep-learning",
+      "suggested_theme": "llm",
+      "scores": {
+        "llm": 36.0,
+        "deep-learning": 6.0,
+        "machine-learning": 4.0,
+        "reinforcement-learning": 4.0,
+        "control-algorithms": 4.0,
+        "programming": 4.0
+      },
+      "match": false,
+      "confidence": 36.0
+    },
+    {
+      "file": "2026-04-06-huggingfacetext-generation-inference Large Language Model Text Generation Inference.md",
+      "current_theme": "deep-learning",
+      "suggested_theme": null,
+      "scores": {},
+      "match": false,
+      "confidence": 0
+    },
+    {
+      "file": "2026-04-11-18  Transformers – S&DS 431631 — Optimization and Computation.md",
+      "current_theme": "deep-learning",
+      "suggested_theme": "llm",
+      "scores": {
+        "llm": 18.0,
+        "operations-research": 18.0
+      },
+      "match": false,
+      "confidence": 18.0
+    },
+    {
+      "file": "2026-04-06-visionreferences at v0.10.0.md",
+      "current_theme": "deep-learning",
+      "suggested_theme": null,
+      "scores": {},
+      "match": false,
+      "confidence": 0
+    },
+    {
+      "file": "深度学习工具与框架专题来源.md",
+      "current_theme": "deep-learning",
+      "suggested_theme": "tools",
+      "scores": {
+        "llm": 8.0,
+        "deep-learning": 39.0,
+        "operations-research": 12.0,
+        "tools": 52.0
+      },
+      "match": false,
+      "confidence": 52.0
+    },
+    {
+      "file": "2026-04-06-torchrun (Elastic Launch).md",
+      "current_theme": "deep-learning",
+      "suggested_theme": null,
+      "scores": {},
+      "match": false,
+      "confidence": 0
+    },
+    {
+      "file": "2026-04-06-pytorch-transformer-tsautoformerhyperparameter-tuning.ipynb at main 1.md",
+      "current_theme": "deep-learning",
+      "suggested_theme": "llm",
+      "scores": {
+        "llm": 18.0
+      },
+      "match": false,
+      "confidence": 18.0
+    },
+    {
+      "file": "2026-04-06-Welcome to fastai.md",
+      "current_theme": "deep-learning",
+      "suggested_theme": null,
+      "scores": {},
+      "match": false,
+      "confidence": 0
+    },
+    {
+      "file": "2026-04-06-Tensor Attributes.md",
+      "current_theme": "deep-learning",
+      "suggested_theme": null,
+      "scores": {},
+      "match": false,
+      "confidence": 0
+    },
+    {
+      "file": "2026-04-06-nn4nlp-conceptsconcepts.md at master.md",
+      "current_theme": "deep-learning",
+      "suggested_theme": null,
+      "scores": {},
+      "match": false,
+      "confidence": 0
+    },
+    {
+      "file": "2026-04-06-explosionspaCy 💫 Industrial-strength Natural Language Processing (NLP) in Python.md",
+      "current_theme": "deep-learning",
+      "suggested_theme": "nlp",
+      "scores": {
+        "nlp": 14.0
+      },
+      "match": false,
+      "confidence": 14.0
+    },
+    {
+      "file": "2026-04-06-marimo-teammarimo A reactive notebook for Python — run reproducible experiments, query with SQL, execute as a script, deploy as an app, and version with git. Stored as pure Python. All in a modern, AI-native editor.md",
+      "current_theme": "tools",
+      "suggested_theme": "operations-research",
+      "scores": {
+        "operations-research": 24.0,
+        "data-structure-algorithm": 8.0,
+        "tools": 24.0,
+        "programming-tools": 22.0
+      },
+      "match": false,
+      "confidence": 24.0
+    },
+    {
+      "file": "2026-04-06-open-compassVLMEvalKit Open-source evaluation toolkit of large multi-modality models (LMMs), support 220+ LMMs, 80+ benchmarks.md",
+      "current_theme": "llm",
+      "suggested_theme": "computer-vision",
+      "scores": {
+        "computer-vision": 24.0,
+        "tools": 22.0
+      },
+      "match": false,
+      "confidence": 24.0
+    },
+    {
+      "file": "2024-09-24-gradio.md",
+      "current_theme": "llm",
+      "suggested_theme": "tools",
+      "scores": {
+        "llm": 18.0,
+        "tools": 28.0
+      },
+      "match": false,
+      "confidence": 28.0
+    },
+    {
+      "file": "2026-04-06-Agentic后训练 - SFT（监督微调）全流程详解.md",
+      "current_theme": "llm",
+      "suggested_theme": "vibe-coding",
+      "scores": {
+        "llm": 18.0,
+        "vibe-coding": 66.0
+      },
+      "match": false,
+      "confidence": 66.0
+    },
+    {
+      "file": "2026-04-06-春节加餐：Anthropic首个公开的Skills构建指南来了！.md",
+      "current_theme": "llm",
+      "suggested_theme": null,
+      "scores": {},
+      "match": false,
+      "confidence": 0
+    },
+    {
+      "file": "2026-04-06-【时间序列预测】Are Transformers Effective for Time Series Forecasting.md",
+      "current_theme": "llm",
+      "suggested_theme": "timeseries",
+      "scores": {
+        "llm": 51.0,
+        "timeseries": 84.0
+      },
+      "match": false,
+      "confidence": 84.0
+    },
+    {
+      "file": "2026-04-06-Paper page - Spectrum Targeted Training on Signal to Noise Ratio.md",
+      "current_theme": "llm",
+      "suggested_theme": null,
+      "scores": {},
+      "match": false,
+      "confidence": 0
+    },
+    {
+      "file": "2026-04-06-基于Transform的机器翻译系统.md",
+      "current_theme": "llm",
+      "suggested_theme": "nlp",
+      "scores": {
+        "nlp": 18.0
+      },
+      "match": false,
+      "confidence": 18.0
+    },
+    {
+      "file": "2026-04-06-DC-researchTSorchestra Time Series Orchestra (TSorchestra) is a novel ensemble framework designed for zero-shot time series forecasting. It is built upon a curated collection of time series foundation models. The architecture is desig.md",
+      "current_theme": "llm",
+      "suggested_theme": "timeseries",
+      "scores": {
+        "llm": 18.0,
+        "timeseries": 84.0,
+        "machine-learning": 22.0,
+        "tools": 22.0
+      },
+      "match": false,
+      "confidence": 84.0
+    },
+    {
+      "file": "2026-04-06-jimgoocaffe-oxford102 Caffe CNNs for the Oxford 102 flower dataset.md",
+      "current_theme": "llm",
+      "suggested_theme": "deep-learning",
+      "scores": {
+        "deep-learning": 18.0
+      },
+      "match": false,
+      "confidence": 18.0
+    },
+    {
+      "file": "2026-04-06-语义分割别无脑用Argmax！港中文新算法：三行代码，推理速度提升10倍.md",
+      "current_theme": "llm",
+      "suggested_theme": "data-structure-algorithm",
+      "scores": {
+        "data-structure-algorithm": 18.0,
+        "programming": 18.0
+      },
+      "match": false,
+      "confidence": 18.0
+    },
+    {
+      "file": "2026-04-06-SmolVLM - small yet mighty Vision Language Model.md",
+      "current_theme": "llm",
+      "suggested_theme": "computer-vision",
+      "scores": {
+        "computer-vision": 24.0
+      },
+      "match": false,
+      "confidence": 24.0
+    },
+    {
+      "file": "2026-04-06-ChineseNMTdata_loader.py at master.md",
+      "current_theme": "llm",
+      "suggested_theme": null,
+      "scores": {},
+      "match": false,
+      "confidence": 0
+    },
+    {
+      "file": "2026-04-06-GitHub---datawhalechinahandy-multi-agent-This-is-a-multi-agent-tutorial-based-on.md",
+      "current_theme": "llm",
+      "suggested_theme": "vibe-coding",
+      "scores": {
+        "llm": 18.0,
+        "vibe-coding": 134.0,
+        "tools": 8.0,
+        "programming-tools": 30.0,
+        "agent-dev": 34.0
+      },
+      "match": false,
+      "confidence": 134.0
+    },
+    {
+      "file": "2026-04-06-spaCy Usage Documentation.md",
+      "current_theme": "llm",
+      "suggested_theme": null,
+      "scores": {},
+      "match": false,
+      "confidence": 0
+    },
+    {
+      "file": "2026-04-06-Quickstart - Distilabel Docs.md",
+      "current_theme": "llm",
+      "suggested_theme": null,
+      "scores": {},
+      "match": false,
+      "confidence": 0
+    },
+    {
+      "file": "2026-04-06-2026时序新思路-时间序列+多模态LLM.md",
+      "current_theme": "llm",
+      "suggested_theme": "timeseries",
+      "scores": {
+        "llm": 18.0,
+        "timeseries": 44.0
+      },
+      "match": false,
+      "confidence": 44.0
+    },
+    {
+      "file": "2026-04-06-nanoVLMmodelsconfig.py at main.md",
+      "current_theme": "llm",
+      "suggested_theme": "computer-vision",
+      "scores": {
+        "computer-vision": 24.0
+      },
+      "match": false,
+      "confidence": 24.0
+    },
+    {
+      "file": "2026-04-06-ymoslemOpenNMT-Tutorial Neural Machine Translation (NMT) tutorial. Data preprocessing, model training, evaluation, and deployment.md",
+      "current_theme": "llm",
+      "suggested_theme": null,
+      "scores": {},
+      "match": false,
+      "confidence": 0
+    },
+    {
+      "file": "2026-04-06-Google 把时间序列预测玩成了大模型——TimesFM 深度解析.md",
+      "current_theme": "llm",
+      "suggested_theme": "timeseries",
+      "scores": {
+        "llm": 27.0,
+        "timeseries": 36.0
+      },
+      "match": false,
+      "confidence": 36.0
+    },
+    {
+      "file": "2026-04-06-Handy Multi Agent Tutorial.md",
+      "current_theme": "llm",
+      "suggested_theme": "vibe-coding",
+      "scores": {
+        "llm": 18.0,
+        "vibe-coding": 48.0,
+        "agent-dev": 4.0
+      },
+      "match": false,
+      "confidence": 48.0
+    },
+    {
+      "file": "2026-04-11-1949年的一篇神文至今含金量仍在上升（LLM）.md",
+      "current_theme": "llm",
+      "suggested_theme": null,
+      "scores": {},
+      "match": false,
+      "confidence": 0
+    },
+    {
+      "file": "2026-04-06-nathan-barrytiny-diffusion A character-level language diffusion model trained on Tiny Shakespeare.md",
+      "current_theme": "llm",
+      "suggested_theme": null,
+      "scores": {},
+      "match": false,
+      "confidence": 0
+    },
+    {
+      "file": "2026-04-06-spaCy Usage Documentation 2.md",
+      "current_theme": "llm",
+      "suggested_theme": null,
+      "scores": {},
+      "match": false,
+      "confidence": 0
+    },
+    {
+      "file": "2026-04-11-重磅！Anthropic官方Harness发布了！.md",
+      "current_theme": "llm",
+      "suggested_theme": null,
+      "scores": {},
+      "match": false,
+      "confidence": 0
+    },
+    {
+      "file": "2026-04-06-jimgoocaffe-oxford102 Caffe CNNs for the Oxford 102 flower dataset 1.md",
+      "current_theme": "llm",
+      "suggested_theme": "deep-learning",
+      "scores": {
+        "deep-learning": 18.0
+      },
+      "match": false,
+      "confidence": 18.0
+    },
+    {
+      "file": "2026-04-06-codelionadaptive-classifier A flexible, adaptive classification system for dynamic text classification.md",
+      "current_theme": "llm",
+      "suggested_theme": "programming",
+      "scores": {
+        "programming": 18.0
+      },
+      "match": false,
+      "confidence": 18.0
+    },
+    {
+      "file": "2026-04-06-The Ultra-Scale Playbook - a Hugging Face Space by nanotron.md",
+      "current_theme": "llm",
+      "suggested_theme": null,
+      "scores": {},
+      "match": false,
+      "confidence": 0
+    },
+    {
+      "file": "2026-04-06-datawhalechinahandy-multi-agent This is a multi agent tutorial based on the CAMEL framework, aimed at understanding how to build an Agent Society from the ground up!.md",
+      "current_theme": "llm",
+      "suggested_theme": "vibe-coding",
+      "scores": {
+        "llm": 18.0,
+        "vibe-coding": 150.0,
+        "tools": 22.0,
+        "agent-dev": 26.0
+      },
+      "match": false,
+      "confidence": 150.0
+    },
+    {
+      "file": "2026-04-06-【科研】常用的实验结果评价指标（1） —— R2(R-square)是什么？.md",
+      "current_theme": "llm",
+      "suggested_theme": null,
+      "scores": {},
+      "match": false,
+      "confidence": 0
+    },
+    {
+      "file": "2026-04-06-Measuring Massive Multitask Language Understanding.md",
+      "current_theme": "llm",
+      "suggested_theme": null,
+      "scores": {},
+      "match": false,
+      "confidence": 0
+    },
+    {
+      "file": "2026-04-06-shiyu-coderKronos Kronos A Foundation Model for the Language of Financial Markets.md",
+      "current_theme": "llm",
+      "suggested_theme": "programming",
+      "scores": {
+        "programming": 18.0
+      },
+      "match": false,
+      "confidence": 18.0
+    },
+    {
+      "file": "2026-04-06-Agents Companion.md",
+      "current_theme": "llm",
+      "suggested_theme": "vibe-coding",
+      "scores": {
+        "llm": 18.0,
+        "vibe-coding": 44.0
+      },
+      "match": false,
+      "confidence": 44.0
+    },
+    {
+      "file": "VibeCoding与Agent专题来源.md",
+      "current_theme": "llm",
+      "suggested_theme": "vibe-coding",
+      "scores": {
+        "vibe-coding": 64.0,
+        "tools": 28.0,
+        "programming": 52.0
+      },
+      "match": false,
+      "confidence": 64.0
+    },
+    {
+      "file": "2026-04-06-fastnlpfastHan fastHan是基于fastNLP与pytorch实现的中文自然语言处理工具，像spacy一样调用方便。.md",
+      "current_theme": "llm",
+      "suggested_theme": "nlp",
+      "scores": {
+        "nlp": 18.0,
+        "tools": 18.0
+      },
+      "match": false,
+      "confidence": 18.0
+    },
+    {
+      "file": "2026-04-06-huggingfaceopen-r1 Fully open reproduction of DeepSeek-R1.md",
+      "current_theme": "llm",
+      "suggested_theme": null,
+      "scores": {},
+      "match": false,
+      "confidence": 0
+    },
+    {
+      "file": "2026-04-06-可重复代码和模型方法 - AAAMLP 中译版.md",
+      "current_theme": "llm",
+      "suggested_theme": "programming",
+      "scores": {
+        "programming": 18.0
+      },
+      "match": false,
+      "confidence": 18.0
+    },
+    {
+      "file": "2024-05-15-langchain-usage.md",
+      "current_theme": "llm",
+      "suggested_theme": "tools",
+      "scores": {
+        "llm": 18.0,
+        "tools": 28.0
+      },
+      "match": false,
+      "confidence": 28.0
+    },
+    {
+      "file": "2026-04-06-时序预测新范式：冻结大语言模型，外挂时序适配器，性能超越TimeMixer++.md",
+      "current_theme": "llm",
+      "suggested_theme": "timeseries",
+      "scores": {
+        "llm": 27.0,
+        "timeseries": 52.0
+      },
+      "match": false,
+      "confidence": 52.0
+    },
+    {
+      "file": "2026-04-06-第二章：使用spaCy进行大规模数据分析 · 使用spaCy做进阶自然语言处理.md",
+      "current_theme": "llm",
+      "suggested_theme": "nlp",
+      "scores": {
+        "nlp": 18.0,
+        "data-analysis": 18.0
+      },
+      "match": false,
+      "confidence": 18.0
+    },
+    {
+      "file": "2024-08-04-streamlit.md",
+      "current_theme": "llm",
+      "suggested_theme": "tools",
+      "scores": {
+        "llm": 18.0,
+        "tools": 28.0
+      },
+      "match": false,
+      "confidence": 28.0
+    },
+    {
+      "file": "2026-04-11-AI 发展太快跟不上？一张四象限图帮你做减法.md",
+      "current_theme": "llm",
+      "suggested_theme": null,
+      "scores": {},
+      "match": false,
+      "confidence": 0
+    },
+    {
+      "file": "2026-04-06-hendryckstest Measuring Massive Multitask Language Understanding.md",
+      "current_theme": "llm",
+      "suggested_theme": "programming-tools",
+      "scores": {
+        "programming-tools": 18.0
+      },
+      "match": false,
+      "confidence": 18.0
+    },
+    {
+      "file": "2026-04-06-Agentic后训练---SFT（监督微调）全流程详解.md",
+      "current_theme": "llm",
+      "suggested_theme": "vibe-coding",
+      "scores": {
+        "llm": 18.0,
+        "vibe-coding": 66.0
+      },
+      "match": false,
+      "confidence": 66.0
+    },
+    {
+      "file": "2026-04-06-Training extremely large neural networks across thousands of GPUs.md",
+      "current_theme": "llm",
+      "suggested_theme": "deep-learning",
+      "scores": {
+        "deep-learning": 18.0
+      },
+      "match": false,
+      "confidence": 18.0
+    },
+    {
+      "file": "2026-04-06-Open Source Data Labeling.md",
+      "current_theme": "llm",
+      "suggested_theme": null,
+      "scores": {},
+      "match": false,
+      "confidence": 0
+    },
+    {
+      "file": "2026-04-06-Handy-Multi-Agent-Tutorial.md",
+      "current_theme": "llm",
+      "suggested_theme": "vibe-coding",
+      "scores": {
+        "llm": 18.0,
+        "vibe-coding": 58.0,
+        "agent-dev": 14.0
+      },
+      "match": false,
+      "confidence": 58.0
+    },
+    {
+      "file": "2026-04-06-reasoning-from-scratchch0301_main-chapter-codech03_main.ipynb at main.md",
+      "current_theme": "llm",
+      "suggested_theme": "vibe-coding",
+      "scores": {
+        "vibe-coding": 18.0,
+        "programming": 18.0
+      },
+      "match": false,
+      "confidence": 18.0
+    },
+    {
+      "file": "2026-04-06-GitHub---huggingfacetext-generation-inference-Large-Language-Model-Text-Generati.md",
+      "current_theme": "llm",
+      "suggested_theme": "programming-tools",
+      "scores": {
+        "llm": 18.0,
+        "programming-tools": 30.0
+      },
+      "match": false,
+      "confidence": 30.0
+    },
+    {
+      "file": "2026-04-06-DeepSeek-R1 and FP8 Mixed-Precision Training.md",
+      "current_theme": "llm",
+      "suggested_theme": null,
+      "scores": {},
+      "match": false,
+      "confidence": 0
+    },
+    {
+      "file": "2026-04-06-宅码.md",
+      "current_theme": "llm",
+      "suggested_theme": null,
+      "scores": {},
+      "match": false,
+      "confidence": 0
+    }
+  ],
+  "mismatch_by_theme": {
+    "agent-dev": 2,
+    "deep-learning": 47,
+    "tools": 1,
+    "llm": 59,
+    "timeseries": 26,
+    "operations-research": 10,
+    "control-algorithms": 3,
+    "shared": 180,
+    "programming-tools": 7,
+    "computer-vision": 22,
+    "knowledge-base": 7,
+    "data-analysis": 15,
+    "nlp": 23,
+    "machine-learning": 48,
+    "vibe-coding": 1,
+    "reinforcement-learning": 8
+  }
+}
