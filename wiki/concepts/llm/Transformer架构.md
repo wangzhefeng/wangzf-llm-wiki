@@ -73,6 +73,7 @@ $$\text{LayerNorm}(x + \text{Sublayer}(x))$$
 
 ## 相关概念
 
+- [[RoPE]]
 - [[RoPE旋转位置编码]]
 - [[预训练]]
 - [[注意力机制]]

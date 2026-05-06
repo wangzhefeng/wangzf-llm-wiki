@@ -1,19 +1,19 @@
 #!/usr/bin/env python3
 """
-Wiki 统一检查工具 - 整合了 wiki_lint.py 和 wiki_health_check.py 的功能
+Wiki 结构健康检查工具（LLM Wiki Lint）
 
 提供完整的知识库健康检查，包括：
-1. 目录结构与字段格式检查（原 wiki_lint.py）
-2. 链接网络与完整性检查（原 wiki_health_check.py）
+1. 目录结构与字段格式检查（lint）
+2. 链接网络与完整性检查（health）
 
 用法:
-  python wiki_check.py [--root PATH] [--checks CHECKS] [--output {summary,detailed}]
+  python wiki_lint.py [--root PATH] [--checks CHECKS] [--output {summary,detailed}]
   
 示例:
-  python wiki_check.py                       # 运行所有检查
-  python wiki_check.py --checks lint         # 只运行 lint 检查
-  python wiki_check.py --checks health       # 只运行 health 检查
-  python wiki_check.py --output detailed     # 详细输出
+  python wiki_lint.py                       # 运行所有检查
+  python wiki_lint.py --checks lint         # 只运行 lint 检查
+  python wiki_lint.py --checks health       # 只运行 health 检查
+  python wiki_lint.py --output detailed     # 详细输出
 """
 
 from __future__ import annotations

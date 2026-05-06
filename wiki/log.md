@@ -211,15 +211,15 @@ status: linked
 
 ## [2026-04-11] 更新 | 健康检查修复（raw frontmatter + sources 索引）
 
-- Added `tools/backfill_sources_dir_indexes.py`：为 `wiki/sources/*/README.md` 自动补齐目录内来源卡 wikilinks（解决“孤页仅统计 wikilinks”导致的误报）。
+- Added `tools/backfill_sources.py`：为 `wiki/sources/*/README.md` 自动补齐目录内来源卡 wikilinks（解决“孤页仅统计 wikilinks”导致的误报）。
 - Improved `tools/wiki_health_check.py`：支持路径式 wikilink 解析，并修复文件名含点号时的后缀截断问题。
-- Added `tools/backfill_raw_frontmatter.py`：批量为 `raw/notes/**/index.md` 补齐最小字段 `source_type/created_at/topics`。
+- Added `tools/backfill_frontmatter.py`：批量为 `raw/notes/**/index.md` 补齐最小字段 `source_type/created_at/topics`。
 - Re-ran `tools/wiki_lint.py` + `tools/wiki_health_check.py`：broken/orphan/raw-frontmatter 归零。
 
 ## [2026-04-11] 更新 | raw/assets 附件分类修复
 
-- Added `tools/fix_missing_attachments_refs.py`：将缺失的附件引用降级为外链或占位，避免断图。
-- Added `tools/migrate_uncategorized_attachments.py`：将被引用的 `raw/assets/attachments/uncategorized/*` 迁移到主题目录并批量改链。
+- Added `tools/fix_attachments.py`：将缺失的附件引用降级为外链或占位，避免断图。
+- Added `tools/migrate_attachments.py`：将被引用的 `raw/assets/attachments/uncategorized/*` 迁移到主题目录并批量改链。
 - Enhanced `tools/wiki_health_check.py`：新增 `missing attachments` 检测，确保 `raw/assets/attachments/*` 引用可追溯。
 - 记录：[[../outputs/logs/2026-04-11-raw-assets-分类修复-动作记录.md]]
 
@@ -1823,13 +1823,13 @@ GLOSSARY.md 定义了知识库各主题的规范英文名称。发现 raw/ 层�
 - 根因分析：新增 MPC/MORL/超短期预测研究笔记未加 frontmatter（11）+ wikilink 指向 raw/ 路径（62）+ 低入口来源卡堆积（450 warning）
 - **schema.md** 更新：
   - 知识层规范增加 wikilink 适用范围规则（仅限 wiki/ 内部互链，禁止链接 raw/ 或 outputs/ 路径）
-  - ingest 动作规则增加入库前检查要求（`wiki_check.py --checks lint`）
+  - ingest 动作规则增加入库前检查要求（`wiki_lint.py --checks lint`）
 - **知识库健康检查清单.md** 更新：
   - 增加三层频率标签：🔵 快速（每次 ingest 后）/ 🟢 常规（每专题后）/ 🟠 深度（每 2 周）
   - 重构执行步骤为分入口模式
 - **log_lint.md** 覆盖更新为 2026-05-02 基线报告
 - **llm-wiki-systematic-health-repair skill** 修正已过时的「提示词路径不一致」已知缺陷
-- 修复策略：先收紧规则 → 修 errors → 收紧 wiki_check.py 校验 → 收敛 warning
+- 修复策略：先收紧规则 → 修 errors → 收紧 wiki_lint.py 校验 → 收敛 warning
 
 ## [2026-05-02] lint | P0 修复：health errors 清零
 

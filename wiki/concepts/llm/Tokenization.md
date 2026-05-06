@@ -12,3 +12,11 @@ status: linked
 # Tokenization
 
 Tokenization 是把原始文本切分为模型可处理 token 序列的过程，直接影响词表规模、上下文利用率和推理成本。
+
+## 相关概念
+
+- [[大语言模型基础]]
+- [[Embedding]]
+- [[Tokenization]]
+- [[Transformer架构]]
+- [[大语言模型]]

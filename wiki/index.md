@@ -34,9 +34,9 @@ status: linked
    - task(任务执行)：[[知识库任务与输出工作流索引]]
 3. 当前标准顺序：`基线盘点 -> 修断链 -> 重编译 sources -> 刷新 indexes/concepts -> 更新流程文档 -> 复验与日志收尾`
 4. 健康检查统一入口：
-   - `python3 .env/health/wiki_check.py --checks lint`
-   - `python3 .env/health/wiki_check.py --checks health`
-   - `python3 .env/run_tool.py health check`
+   - `uv run scripts/run.py lint`
+   - `uv run scripts/run.py health`
+   - `uv run scripts/run.py check`
 
 ## Prompt 入口
 
