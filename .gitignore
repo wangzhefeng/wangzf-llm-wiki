@@ -1,8 +1,10 @@
+__pycache__/
 .agents/
 .claude/
+.deepseek/
 .hermes/
-.venv/
 .obsidian/
+.venv/
 .ruff_cache/
 .DS_Store
 raw/repos/Time-Series-Library/
@@ -18,4 +20,3 @@ raw/repos/dowhy/
 raw/repos/control-algorithm-proj/
 raw/repos/storage_mpc_project/
 raw/repos/ele-trading/
-__pycache__/
