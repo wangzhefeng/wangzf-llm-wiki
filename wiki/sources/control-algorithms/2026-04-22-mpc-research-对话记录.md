@@ -11,7 +11,6 @@ related_concepts:
   - MPC
   - 虚拟电厂
   - 储能调度
-  - 电力市场
 ---
 
 # MPC_conversation_full_page_content

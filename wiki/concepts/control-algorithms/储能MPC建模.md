@@ -227,4 +227,4 @@ for k in range(current_time, end_time):
 ## 来源
 
 - [[2026-04-22-mpc-research]] — 储能 MPC 建模与 VPP 集成
-- [[2026-04-22-storage-mpc-project-v1]] 至 v4 — 工程模板迭代
+- storage_mpc_project v1~v4 工程模板已移出知识库，转入 ele-trading-research

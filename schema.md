@@ -182,7 +182,6 @@ status: linked
 - `nlp`
 - `feature-engineering`
 - `control-algorithms`
-- `power-market-trading`
 - `reinforcement-learning`
 - `vibe-coding`
 

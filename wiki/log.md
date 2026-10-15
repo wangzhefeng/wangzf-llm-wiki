@@ -1843,3 +1843,32 @@ GLOSSARY.md 定义了知识库各主题的规范英文名称。发现 raw/ 层�
 
 ### 剩余
 - 450 warnings（低入口来源卡），按需激活策略：仅活跃主题上收敛
+
+## [2026-08-29] remove | 电力市场交易主题整体移出知识库
+
+### 背景
+电力交易研究方向整体迁移到独立仓库 `~/ele-trading-research/`，llm-wiki 中"电力市场交易"主题内容按要求全部清除。
+
+### raw 层移出（→ ~/ele-trading-research/inbox/）
+- `raw/repos/ele-trading/`（含 docs/2026-04-17-电力市场交易调研文档.md、README、LOG）
+- `raw/web/timeseries-analysis/2026-04-06-AI已经开始为能源交易员提供七个月的逐小时预测.md`
+- `raw/notes/control-algorithms/2026-04-22-mpc_research/`（MPC 调研 + storage_mpc_project v1~v4 + PDF）
+- 注：`raw/web/power-market-trading/`、`raw/notes/power-market-trading/` 在本次操作前已被移出（git status 显示 D 状态）
+
+### wiki 层删除
+- `wiki/concepts/power-market-trading/`（12 页：现货市场/中长期/辅助服务/LMP/差价合约/结算/虚拟电厂/算电协同/风光储测算/优化建模/index）
+- `wiki/indexes/power-market-trading/`（4 页：总索引/来源清单/阅读地图/时序预测应用索引）
+- `wiki/sources/power-market-trading/`（11 张来源卡）
+- `wiki/sources/timeseries-analysis/电力市场与时序预测应用专题来源.md`
+- `wiki/sources/control-algorithms/2026-04-17-storage-mpc-project-仓库入口.md` 及 v1~v4 来源卡（5 张）
+- `outputs/syntheses/2026-04-16-power-market-trading-专题综述.md`
+
+### wiki 层清理
+- `wiki/index.md` / `wiki/sources/index.md` / `wiki/concepts/index.md` / `indexes/shared/知识库工作台.md`：删除电力市场交易入口行
+- `schema.md`：主题列表删除 `power-market-trading`
+- 控制算法主题：总索引、阅读地图（删第 8 站 storage_mpc 模板站、第 10 站电力市场集成站，原第 9 站顺位改为第 8 站）、来源清单；MPC.md / 现代控制方法.md / MPC算法家族.md 中指向已删主题的链接转纯文本或删除
+- 时间序列预测来源清单：删除电力市场专题来源入口
+
+### 保留说明
+- `wiki/concepts/control-algorithms/储能MPC建模.md` 及 MPC 系列概念页保留（属控制算法主题的方法内容，文中"电力市场/虚拟电厂"仅为应用场景描述，不构成指向已删主题的断链）
+- `wiki/log.md`、`wiki/log_lint.md` 为历史记录，按 append-only 原则不改写

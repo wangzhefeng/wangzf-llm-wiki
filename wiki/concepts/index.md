@@ -47,7 +47,6 @@ status: linked
 - [[wiki/concepts/nlp/index]]
 - [[wiki/concepts/feature-engineering/index]]
 - [[wiki/concepts/control-algorithms/index]]
-- [[wiki/concepts/power-market-trading/index]]
 - [[wiki/concepts/vibe-coding/index]]
 - [[wiki/concepts/llm-wiki/index]]
 
