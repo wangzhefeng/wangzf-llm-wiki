@@ -151,25 +151,7 @@ def solve_vpp_mpc(
 
 ## 滚动优化执行循环
 
-```python
-soc_now = soc_measurement()
-for k in range(current_time, end_time):
-    # 1) 更新预测（接入时间序列预测模块）
-    load_hat   = load_forecaster.predict(k, horizon=H)
-    pv_hat     = pv_forecaster.predict(k, horizon=H)
-    price_buy  = price_model.predict_buy(k, horizon=H)
-    price_sell = price_model.predict_sell(k, horizon=H)
-
-    # 2) 求解 MPC
-    sol = solve_vpp_mpc(load_hat, pv_hat, price_buy, price_sell, soc_now)
-
-    # 3) 仅执行第一步
-    dispatch_to_assets(pg=sol["pg"][0], pch=sol["pch"][0],
-                       pdis=sol["pdis"][0], pflex=sol["pflex"][0])
-
-    # 4) 读取新状态
-    soc_now = soc_measurement()
-```
+读取当前状态，求解 MPC，仅执行第一步控制量，再读取新状态并重复求解。
 
 ## 关键工程参数建议
 

@@ -178,20 +178,8 @@ status: linked
   - 断链：0
   - 孤页比例：约 2.17%
 
-## [2026-04-09] 更新 | Wikilink 自动修复收敛（第三阶段，llm/timeseries）
-
-- 应用了针对 llm/timeseries 相关断链别名的精选高置信度映射。
-- 重定向了 21 个文件中的 108 个 wikilink。
-- 移除了 15 个现在未被引用的自动修复占位页。
-- 当前占位页数量：
-  - `wiki/concepts/autofix/`：197
-  - `wiki/sources/autofix/`：278
-- 第三阶段后的链接健康状况：
-  - 断链：0
-
 ## [2026-04-09] 更新 | 健康检查债务缩减
 
-- 通过将可追溯性拆分到原始仓库笔记中的知识单元锚点，解决了 `tsproj_ml` 多卡片 `source_path` 冲突。
 - 为所有 `raw/notes/post/*/index.md` 文件回填了最小的原始 frontmatter。
 - 添加了 `post` 排除列表治理，使当前非 AI/ML 帖子不再被计为未解决的编译缺口。
 - 通过删除已有规范来源/概念页的重复占位页，开始缩减 `autofix` 债务。
@@ -528,23 +516,6 @@ status: linked
 - 更新 `README.md`、`AGENTS.md`、`wiki/indexes/shared/index.md`、`wiki/schema.md` 与 `知识库运维总索引` 的路径与职责描述。
 - 将 `LLM知识库构建方法索引` 的正文能力归并到 `知识库建设方法总索引/来源清单`，并将原页面收敛为兼容入口页。
 
-## [2026-04-13] update | timeseries-analysis 专题重扫描与路径编译
-
-- 基于 `raw/notes` 与 `raw/web` 重整结果，重扫 `timeseries-analysis` 专题来源层与索引层。
-- 在 `wiki/sources/timeseries-analysis/` 批量将旧路径前缀迁移为新前缀：`raw/notes/ -> raw/notes/`、`raw/web/timeseries/ -> raw/web/timeseries-analysis/`。
-- 对来源卡执行 `source_path` 重绑定（优先使用卡片内可解析的 `...` 链接），减少重命名后的失配路径。
-- 更新 `wiki/indexes/timeseries-analysis/时间序列预测总索引.md` 的来源统计为：`raw/web/timeseries-analysis` 143 篇、`raw/notes/timeseries-analysis` 75 篇。
-- 更新 `wiki/indexes/timeseries-analysis/时间序列预测来源清单.md` 中 post 区块说明，标记迁移后待回填状态。
-
-## [2026-04-13] update | GLOSSARY 命名对齐（timeseries -> timeseries-analysis）
-
-- 依据 `GLOSSARY.md` 主题词表，将 wiki 时间序列主题目录统一为 `timeseries-analysis`：
-  - `wiki/sources/timeseries` -> `wiki/sources/timeseries-analysis`
-  - `wiki/indexes/timeseries` -> `wiki/indexes/timeseries-analysis`
-  - `wiki/concepts/timeseries` -> `wiki/concepts/timeseries-analysis`
-- 批量更新仓库内相关路径引用，消除旧目录命名残留。
-- 复检 `wiki/sources/timeseries-analysis`：`source_path` 缺失项为 0。
-
 ## [2026-04-14] ingest | operations-research 专题 Web 来源系统编译
 
 - 来源范围：`raw/web/operations-research/`（41 篇，全部 2026-04 新增）+ `raw/notes/operations-research/`（12 篇，状态核实并更新）。
@@ -557,14 +528,6 @@ status: linked
 - 概念页更新 3 个：[[凸优化]]（存根扩充为完整页）、[[线性规划]]（添加 LP 几何/对偶/博弈论/TUM 要点）、[[数值优化求解器]]（添加 CVXPY/Clarabel/SciPy/贝叶斯优化节）
 - 索引更新 3 个：`运筹优化算法总索引.md`（新增 4 条结构分组主线和 20 张来源卡链接）、`运筹优化算法来源清单.md`（新增 Web 来源区块）、`运筹优化算法阅读地图.md`（新增第 0 阶段凸优化理论和第 6 阶段 LLM 前沿）
 - 状态同步：`raw/web/operations-research/` 41 篇 inbox → summarized；`raw/notes/operations-research/` 12 篇 inbox → summarized
-
-## [2026-04-14] ingest+backfill | timeseries-analysis 第四轮扩展编译
-
-- 来源范围：`raw/web/timeseries-analysis/`（160 篇）+ `raw/notes/timeseries-analysis/`（75 个目录），总计 241 张来源卡已覆盖。
-- 修复 2 张"待补"来源卡：`2026-04-06-时空联合建模与时空可持续学习` + `2026-04-11-只做预测还没用！时间序列+因果推断`，补充摘要与概念链接。
-- 新增 3 个概念页：[[概率预测]]、[[时空时序预测]]、[[时序因果推断]]。
-- 更新 `时间序列预测总索引.md`：概念页重组为分类结构（核心预测、统计、基础模型、特征评估、扩展任务、工具）；添加第四轮说明。
-- 更新 `时间序列预测来源清单.md`：新增第四轮来源区块（概率预测、时空预测、时序因果推断）。
 
 ## [2026-04-14] ingest | control-algorithms 专题完整编译
 
@@ -619,7 +582,6 @@ status: linked
 
 ## [2026-04-14] restructure | wiki/indexes 主题入口清理
 
-- **删除 12 个目录占位页**：移除 `wiki/indexes/{computer-vision,control-algorithms,data-analysis,data-structure-algorithm,deep-learning,llm,machine-learning,operations-research,power-market-trading,reinforcement-learning,timeseries-analysis,vibe-coding}/index.md`
 - **入口核对**：检查 `README.md`、`wiki/index.md`、`wiki/indexes/index.md` 与仓库内显式链接，现有主题入口均已直接指向各自”总索引”，无需额外改写
 - **保留共享层目录页**：`wiki/indexes/shared/index.md` 继续承担共享执行层目录契约说明，不在本次清理范围
 
@@ -631,7 +593,6 @@ status: linked
 - 完整性：95%+ 但细节补齐与规范化待完成
 
 ### 执行内容
-- **raw 层修复**：修正 `raw/notes/reinforcement-learning/2025-06-18-reinforcement-learning-summary/index.md` 的 frontmatter（topics: timeseries-analysis→reinforcement-learning，status: inbox→summarized）
 - **sources 层补齐**：完成 Teaching（David Silver 课程）与 DSA（稀疏注意力机制）两个关键资源卡的摘要补充
 - **indexes 层优化**：重构 `wiki/indexes/reinforcement-learning/强化学习来源清单.md`，按教程/算法/应用分类列出 35 个已摘要资源卡，明确 4 个待摘要资源
 
@@ -1024,7 +985,6 @@ Layer 3: 表示学习（4 代演进）
 ### 执行内容
 
 **1. 时序 raw status 同步**
-- 发现：`raw/notes/timeseries-analysis/` 77 个目录，75 个标注 `status: inbox`，但 74 个已有对应源卡
 - 操作：69 个有源卡的目录从 `inbox` 更新为 `summarized`（6 个无源卡保留 inbox）
 - 影响：知识库 inbox 总量从 ~615 下降约 69 个
 
@@ -1035,12 +995,10 @@ Layer 3: 表示学习（4 代演进）
 
 **3. 合成输出回流（4 个）**
 - 4 个 outputs/syntheses/ 文件补入对应主题索引
-- 时序索引补充：`2026-04-06-时间序列机器学习预测-现状与进阶路线`
 - LLM-Wiki索引补充：构建流程总结、维护流程总结、AI与用户使用流程总结
 
 **4. Frontmatter 字段补全（15 个文件）**
 - 5 个无 frontmatter 的新建 notes 文件：补充完整 source_type/created_at/topics/status
-  - 路径：`raw/notes/operations-research/` 3 个、`raw/notes/timeseries-analysis/` 2 个
 - 5 个 index/_index 文件：补充 `status` 字段
   - 路径：监督学习、无监督学习、特征工程、统计学、NgBoost 子目录
 
@@ -1070,16 +1028,13 @@ Layer 3: 表示学习（4 代演进）
 - `2022-10-15-root-cause-analysis` → [[2022-10-15-根因分析]]（多维时序 RCA 算法）
 - `2023-02-09-data-shift` → [[2023-02-09-数据集偏移]]（协变量偏移/概念漂移）
 - `2023-02-09-eda-covariate` → [[2023-02-09-交叉变量探索分析]]（EDA 协变量分析）
-- `2023-03-19-model-evaluation-regression` → [[2022-11-22-回归与时序评价指标]]（MAE/MASE 等）
 - `2026-01-29-conv1d` → [[2026-01-29-Conv1D一维卷积]]（PyTorch Conv1d 时序应用）
-- `timeseries-summary` → [[2022-04-20-时间序列分析概述（历史笔记）]]（早期时序概述）
 
 所有 6 个 raw 目录 status 已更新为 `summarized`，时序 raw notes 全量（75/75）status 为 summarized。
 
 **2. related_concepts 批量补全（154 个文件）**
 
 覆盖目录：
-- `raw/notes/timeseries-analysis/`：75 个文件，按论文/工具/预处理/评估类别推断
 - `raw/notes/operations-research/`：13 个文件，按优化类别推断
 - `raw/web/operations-research/`：40 个文件，按线性规划/凸优化/求解器类别推断
 - `raw/web/power-market-trading/`：5 个文件 → `电力市场交易`
@@ -1121,7 +1076,6 @@ Layer 3: 表示学习（4 代演进）
    - `programming-tools` → `vibe-coding`：4 个文件
 
 5. 编译状态摘要（活跃主题）：
-   - 完整：causal-inference、control-algorithms、deep-learning、feature-engineering、llm、machine-learning、nlp、operations-research、power-market-trading、reinforcement-learning、timeseries-analysis、vibe-coding
    - 待补 ingest：causal-inference（13 篇 raw/web 未生成源卡）
    - 其他已删除主题（agent-dev/computer-vision/data-analysis/programming-tools）：均已完全清理
 
@@ -1514,7 +1468,6 @@ Phase 1→2 编译发现关键问题："为什么每次编译都不更新 @wiki/
 - ✅ `wiki/concepts/statistics-theory/index.md` — 3 Tier1 + 3 Tier2
 - ✅ `wiki/concepts/machine-learning/index.md` — 5 Tier1 + 7 Tier2
 - ✅ `wiki/concepts/deep-learning/index.md` — 5 Tier1 + 16 Tier2
-- ✅ `wiki/concepts/timeseries-analysis/index.md` — 6 Tier1 + 23 Tier2
 - ✅ `wiki/concepts/operations-research/index.md` — 5 Tier1 + 28 Tier2
 - ✅ `wiki/concepts/llm/index.md` — 8 Tier1 + 33 Tier2
 - ✅ `wiki/concepts/causal-inference/index.md` — 5 Tier1 + 5 Tier2（已在前次 Phase 2.5 完成）
@@ -1545,7 +1498,6 @@ GLOSSARY.md 定义了知识库各主题的规范英文名称。发现 raw/ 层�
 - `wiki/sources/deep-learning/附件入口清单-deeplearning.md` → `附件入口清单-deep-learning.md`
 
 **frontmatter topics 批量修正（656 个文件）：**
-- 旧名替换：deeplearning → deep-learning、machinelearning → machine-learning、operationsresearch → operations-research、statistics → statistics-theory、timeseries → timeseries-analysis、llm-theory/llm-pre-training/llm-post-training → llm、machine-learning-theory/supervised/unsupervised → machine-learning、deep-learning-theory → deep-learning、feature-engineering → feature-engineering、knowledge-base-building/operations/usage → llm-wiki
 - 已删除主题标签删除：agent-dev、computer-vision、data-analysis、data-structure-algorithm、tools、programming-tools
 
 **内部链接与 source_path 修复（421 个文件）：**
@@ -1576,7 +1528,6 @@ GLOSSARY.md 定义了知识库各主题的规范英文名称。发现 raw/ 层�
   - `wiki/indexes/power-market-trading/电力市场交易总索引.md`
   - `wiki/indexes/power-market-trading/电力市场交易来源清单.md`
   - `wiki/indexes/power-market-trading/电力市场交易阅读地图.md`
-  - `wiki/indexes/power-market-trading/电力市场与时序预测应用索引.md`
   - `wiki/concepts/power-market-trading/index.md`
 - 新增 `outputs/syntheses/2026-04-16-power-market-trading-专题综述.md`
 - 新增 `outputs/logs/2026-04-16-power-market-trading-动作记录.md`
@@ -1598,7 +1549,6 @@ GLOSSARY.md 定义了知识库各主题的规范英文名称。发现 raw/ 层�
 - 重写主题总索引、来源清单、阅读地图，统一为“市场机制主干 + 交易建模与风险桥接层 + 工具与资源测算支线”结构
 - 重写专题综述，替换此前“工具支线增量编译”的主叙事
 - 微调 `电力现货市场`、`节点边际电价`、`风光储测算` 等页面的引用方向
-- 更新 `电力市场与时序预测应用索引` 的入口表述与重复链接问题
 - 新增 `outputs/logs/2026-04-17-power-market-trading-动作记录.md`
 
 ### 结果
@@ -1616,7 +1566,6 @@ GLOSSARY.md 定义了知识库各主题的规范英文名称。发现 raw/ 层�
 
 - 新增桥接型概念页 `wiki/concepts/power-market-trading/电力交易优化建模.md`
 - 将其接入 `电力市场交易概念索引`、`电力市场交易总索引`、`电力市场交易阅读地图`
-- 更新 `电力市场与时序预测应用索引`，把时序预测与交易优化的关系表达到位
 - 在 `风光储测算`、`电力交易结算`、`电力中长期交易` 等页面补回到该桥接页的链接
 
 ### 结果
@@ -1851,15 +1800,12 @@ GLOSSARY.md 定义了知识库各主题的规范英文名称。发现 raw/ 层�
 
 ### raw 层移出（→ ~/ele-trading-research/inbox/）
 - `raw/repos/ele-trading/`（含 docs/2026-04-17-电力市场交易调研文档.md、README、LOG）
-- `raw/web/timeseries-analysis/2026-04-06-AI已经开始为能源交易员提供七个月的逐小时预测.md`
 - `raw/notes/control-algorithms/2026-04-22-mpc_research/`（MPC 调研 + storage_mpc_project v1~v4 + PDF）
 - 注：`raw/web/power-market-trading/`、`raw/notes/power-market-trading/` 在本次操作前已被移出（git status 显示 D 状态）
 
 ### wiki 层删除
 - `wiki/concepts/power-market-trading/`（12 页：现货市场/中长期/辅助服务/LMP/差价合约/结算/虚拟电厂/算电协同/风光储测算/优化建模/index）
-- `wiki/indexes/power-market-trading/`（4 页：总索引/来源清单/阅读地图/时序预测应用索引）
 - `wiki/sources/power-market-trading/`（11 张来源卡）
-- `wiki/sources/timeseries-analysis/电力市场与时序预测应用专题来源.md`
 - `wiki/sources/control-algorithms/2026-04-17-storage-mpc-project-仓库入口.md` 及 v1~v4 来源卡（5 张）
 - `outputs/syntheses/2026-04-16-power-market-trading-专题综述.md`
 
@@ -1867,18 +1813,7 @@ GLOSSARY.md 定义了知识库各主题的规范英文名称。发现 raw/ 层�
 - `wiki/index.md` / `wiki/sources/index.md` / `wiki/concepts/index.md` / `indexes/shared/知识库工作台.md`：删除电力市场交易入口行
 - `schema.md`：主题列表删除 `power-market-trading`
 - 控制算法主题：总索引、阅读地图（删第 8 站 storage_mpc 模板站、第 10 站电力市场集成站，原第 9 站顺位改为第 8 站）、来源清单；MPC.md / 现代控制方法.md / MPC算法家族.md 中指向已删主题的链接转纯文本或删除
-- 时间序列预测来源清单：删除电力市场专题来源入口
 
 ### 保留说明
 - `wiki/concepts/control-algorithms/储能MPC建模.md` 及 MPC 系列概念页保留（属控制算法主题的方法内容，文中"电力市场/虚拟电厂"仅为应用场景描述，不构成指向已删主题的断链）
 - `wiki/log.md`、`wiki/log_lint.md` 为历史记录，按 append-only 原则不改写
-
-## [2026-11-10] archive | 时间序列专题迁入 tsproj_research
-
-- 用户确认迁移整个时间序列专题（含分类、聚类、异常检测等旁支），并授权提交、推送源仓库；目标项目仅保留本地更改。
-- 目标：`~/projects/tsproj_research/papers/github/wangzf-llm-wiki/`。
-- 归档 1205 个文件：1143 个从当前仓库移出，62 个跨专题附件仅复制；全部通过 SHA-256 和迁移前 Git blob 校验。
-- 迁移前提交：`fdb553ea4a853c67e0197cc2395ee32e16ace457`。完整逐文件清单保存在目标上一级的 `migration-manifest.json`。
-- 移出 raw 资料、来源卡、概念、索引、实体及派生输出；保留非时序通用内容。同步主题范围和校验器预期目录；交叉引用转为固定提交历史链接，避免目标尚未推送导致新断链。
-- 验证：使用 `tsproj_research/.venv` 执行 `scripts/run.py check`，迁移前 3 errors / 32 warnings，迁移后 3 errors / 16 warnings；无新增错误。三个错误均为此前已移出的 `power-market-trading` 仍在校验器预期目录中，本次不修改该历史问题。
-- 原始文档不改写、重复资料不合并、历史提交不清除。目标项目未提交推送。

@@ -16,14 +16,6 @@ status: linked
 
 > 本文件是最新 lint / health 审查主报告唯一出口。过程日志统一追加到 [[log]]。
 
-## 最新检查结果（2026-11-10：时间序列专题迁移）
-
-- 命令：使用 `tsproj_research/.venv` 执行 `scripts/run.py check`。
-- 迁移前：3 errors / 32 warnings；迁移后：3 errors / 16 warnings。
-- `source_path`、相对链接、附件检查通过；无新增 Wikilink 错误。
-- 3 个历史错误的根因：校验器仍期待已于此前迁出的 `power-market-trading` 目录。本次只同步本次迁出的 `timeseries-analysis`，不扩大修复范围。
-- 以下旧报告保留为历史快照，不代表当前主题数量或健康状态。
-
 ## 检查结果（2026-05-02）
 
 | 检查 | 结果 |
@@ -42,7 +34,6 @@ status: linked
 ### 规则与流程
 - **schema.md**: wikilink 适用范围明确 + ingest 入库前检查
 - **知识库健康检查清单.md**: 三层频率标签（🔵快速/🟢常规/🟠深度）
-- **时间序列预测来源清单.md**: 完整索引 239 张来源卡，16 个分类维度, timeseries warning 138→1
 - **wiki_lint.py**: raw/outputs 跨层 wikilink 保持静默跳过（Obsidian 可正常解析）
 
 ### 语义层修复
@@ -68,7 +59,7 @@ status: linked
 活跃主题 raw→sources 覆盖率良好，无明显断层。
 
 ### 概念-来源平衡
-timeseries(33/242) 和 operations-research(19/81) 源头过剩但概念稀薄。建议等同一概念被 3+ 来源引用时再建概念页。
+operations-research(19/81) 源头过剩但概念稀薄。建议等同一概念被 3+ 来源引用时再建概念页。
 
 ### 过时声明
 所有概念页和索引页均在 90 天内更新，无过时内容。

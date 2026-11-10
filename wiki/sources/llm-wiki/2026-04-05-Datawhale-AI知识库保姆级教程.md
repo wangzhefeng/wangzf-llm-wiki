@@ -44,4 +44,3 @@ status: summarized
 
 - [[2026-04-05-LLM-Wiki-持久化知识库模式]]
 - [[2026-04-05-Karpathy-第二大脑-LLM-Wiki新范式]]
-- [2026-04-05-scikit-learn-滞后特征预测示例](https://github.com/wangzhefeng/wangzf-llm-wiki/blob/fdb553ea4a853c67e0197cc2395ee32e16ace457/wiki/sources/timeseries-analysis/2026-04-05-scikit-learn-%E6%BB%9E%E5%90%8E%E7%89%B9%E5%BE%81%E9%A2%84%E6%B5%8B%E7%A4%BA%E4%BE%8B.md)

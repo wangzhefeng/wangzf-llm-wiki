@@ -186,7 +186,6 @@ status: linked
 
 常见旧别名：
 
-- `timeseries` -> `timeseries-analysis`
 - `statistics` -> `statistics-theory`
 - `operationsresearch` -> `operations-research`
 - `machinelearning` -> `machine-learning`
@@ -265,3 +264,7 @@ status: linked
 4. [[log]]（最近 20~30 行）
 5. [[log_lint]]
 6. 任务相关主题总索引（`wiki/indexes/*/`）
+
+## 用户授权的归档例外
+
+用户明确授权跨仓库迁移与清理时，可在完整原文已备份并通过校验后，拆分原始资料中的指定章节，并删去日志中的指定内容；这不授权修改 Git 历史。无此授权时仍遵循原始层不做语义改写、日志 append-only 的默认规则。

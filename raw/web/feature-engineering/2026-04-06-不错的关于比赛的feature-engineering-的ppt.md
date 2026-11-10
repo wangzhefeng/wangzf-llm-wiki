@@ -396,7 +396,6 @@ kaggle的常见magic feature的产生方式，这里需要人工思考和头脑�
 
 ![[raw/assets/attachments/machinelearning/v2-668981c6234e71c921526e01df35c0ec_1440w.jpg]]
 
-趋势编码，简单说就是根据 [时间序列](https://zhida.zhihu.com/search?content_id=107072087&content_type=Article&match_order=1&q=%E6%97%B6%E9%97%B4%E5%BA%8F%E5%88%97&zhida_source=entity) 来计算某段时间的一些统计值，比如对总支出进行编码，例如：在上周支出，在上个月支出，在去年支出。这个也是比较常见的方法。
 
 ![[raw/assets/attachments/machinelearning/v2-d08f2641a7f573167d8fc18051bf722a_1440w.jpg]]
 

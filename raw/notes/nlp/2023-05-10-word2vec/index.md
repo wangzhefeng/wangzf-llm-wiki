@@ -11,8 +11,7 @@ source_type: notes
 created_at: 2023-05-10
 status: inbox
 topics:
-  - timeseries-analysis
-  - 时间序列分析
+  - deep-learning
 ---
 
 

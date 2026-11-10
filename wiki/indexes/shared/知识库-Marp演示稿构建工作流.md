@@ -5,7 +5,6 @@ topics:
   - Marp
   - 演示稿
 related_concepts:
-  - 知识库-时间序列模型开发工作流
   - 知识库任务与输出工作流索引
 status: linked
 ---
@@ -134,9 +133,7 @@ marp --pdf --allow-local-files --browser chrome \
 
 ## 已跑通的样例
 
-- [2026-04-05-scikit-learn-滞后特征预测示例](https://github.com/wangzhefeng/wangzf-llm-wiki/blob/fdb553ea4a853c67e0197cc2395ee32e16ace457/wiki/sources/timeseries-analysis/2026-04-05-scikit-learn-%E6%BB%9E%E5%90%8E%E7%89%B9%E5%BE%81%E9%A2%84%E6%B5%8B%E7%A4%BA%E4%BE%8B.md)
 
 ## 后续动作
 
 - 返回任务入口 → [[知识库任务与输出工作流索引]]
-- 如果演示稿基于开发结果 → 先看 [知识库-时间序列模型开发工作流](https://github.com/wangzhefeng/wangzf-llm-wiki/blob/fdb553ea4a853c67e0197cc2395ee32e16ace457/wiki/indexes/shared/%E7%9F%A5%E8%AF%86%E5%BA%93-%E6%97%B6%E9%97%B4%E5%BA%8F%E5%88%97%E6%A8%A1%E5%9E%8B%E5%BC%80%E5%8F%91%E5%B7%A5%E4%BD%9C%E6%B5%81.md)

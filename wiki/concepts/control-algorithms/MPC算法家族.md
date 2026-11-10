@@ -108,8 +108,6 @@ $$\min \sum_t (\pi_t^{sell} P_t^{sell} - \pi_t^{buy} P_t^{buy} - C_{deg}(P_t^{ch
 "功率平衡 + SOC + 线性约束 + 价格信号"
     → 线性/经济 MPC（CVXPY + OSQP）
 
-"报价偏差、风光/负荷预测误差"
-    → 场景化随机 MPC 或 tube-based 鲁棒 MPC
 
 "跨多站点、多边缘控制器协同"
     → 分布式 MPC（ADMM）

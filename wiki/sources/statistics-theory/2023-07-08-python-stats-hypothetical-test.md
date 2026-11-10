@@ -38,7 +38,6 @@ status: linked
     - 正态性检验（Shapiro-Wilk、D'Agostino's K2、Anderson-Darling）
     - 相关性检验（Pearson、Spearman、Kendall、Chi-square）
     - 参数检验与非参数检验
-    - 时间序列平稳性检验、Q-Q 图
 
 ## 价值是什么
 

@@ -38,7 +38,6 @@ status: linked
 ## 已登记方向
 
 - LLM 推理框架对比：vLLM / TGI / Triton / TensorRT-LLM（待展开）
-- 时间序列基础模型对比：Chronos / TimesFM / Moirai / Timer（待展开）
 - MILP 求解器对比：Gurobi / CPLEX / SCIP（待展开）
 
 ## 关联入口

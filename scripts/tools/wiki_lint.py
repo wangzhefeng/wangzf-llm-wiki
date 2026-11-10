@@ -79,11 +79,9 @@ ORPHAN_EXCLUDE_DIR_PREFIXES = {
 RAW_NAMING_ALLOWLIST = {
     "raw/codex_threads/线程总结模板.md",
     "raw/codex_threads/README.md",
-    "raw/local-notes/时间序列预测-历史文档清单.md",
     "raw/local-notes/深度学习-历史文档清单.md",
     "raw/local-notes/知识库建设方法-历史文档清单.md",
     "raw/local-notes/运筹优化算法-历史文档清单.md",
-    "raw/repos/repo-wangzhefeng-tsproj-ml.md",
     "raw/notes/vibe-coding/agent.md",
     "raw/notes/vibe-coding/claude_code.md",
     "raw/notes/vibe-coding/codex.md",

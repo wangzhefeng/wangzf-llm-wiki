@@ -232,7 +232,6 @@ refute = model.refute_estimate(identified_estimand)
    - example notebooks
    - causal tasks 文档分层
 3. **验证层**：`tests/`
-   - 识别器、估计器、refuters、GCM 与时间序列相关测试
 
 这让 DoWhy 不再只是“一个四步骤框架”，而是一个同时具备理念、API、示例和验证体系的完整因果推断工程库。
 

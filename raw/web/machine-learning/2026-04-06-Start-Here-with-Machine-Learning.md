@@ -314,7 +314,6 @@ You can get familiar with Python for machine learning in 3 steps.
 		- [Profiling Python Code](https://machinelearningmastery.com/profiling-python-code/)
 		- [Static Analyzers in Python](https://machinelearningmastery.com/static-analyzers-in-python/)
 - **Step 3**: Learn what you can do in Python ecosystem.
-	- [A Guide to Obtaining Time Series Datasets in Python](https://machinelearningmastery.com/a-guide-to-obtaining-time-series-datasets-in-python/)
 		- [Data Visualization in Python with matplotlib, Seaborn, and Bokeh](https://machinelearningmastery.com/data-visualization-in-python-with-matplotlib-seaborn-and-bokeh/)
 		- [Web Frameworks for Your Python Projects](https://machinelearningmastery.com/web-frameworks-for-your-python-projects/)
 
@@ -329,7 +328,6 @@ You can see all [Python posts here](https://machinelearningmastery.com/category/
 #### Libraries
 
 - [Multiprocessing in Python](https://machinelearningmastery.com/multiprocessing-in-python/)
-- [A Guide to Obtaining Time Series Datasets in Python](https://machinelearningmastery.com/a-guide-to-obtaining-time-series-datasets-in-python/)
 - [Web Frameworks for Your Python Projects](https://machinelearningmastery.com/web-frameworks-for-your-python-projects/)
 
 ## Understand Machine Learning Algorithms
@@ -517,40 +515,6 @@ You can see all of the [Code Algorithms from Scratch posts here](https://machine
 
 - [How to Code the Backpropagation Algorithm From Scratch](https://machinelearningmastery.com/implement-backpropagation-algorithm-scratch-python/)
 - [How To Code The Decision Tree Algorithm From Scratch](https://machinelearningmastery.com/implement-decision-tree-algorithm-scratch-python/)
-
-## Introduction to Time Series Forecasting (Python)
-
-Time series forecasting is an important topic in business applications.
-
-Many datasets contain a time component, but the topic of time series is rarely covered in much depth from a machine learning perspective.
-
-Here’s how to get started with Time Series Forecasting:
-
-- **Step 1**: Discover Time Series Forecasting.
-	- [What Is Time Series Forecasting?](https://machinelearningmastery.com/time-series-forecasting/)
-- **Step 2**: Discover Time Series as Supervised Learning.
-	- [Time Series Forecasting as Supervised Learning](https://machinelearningmastery.com/time-series-forecasting-supervised-learning/)
-- **Step 3**: Discover how to get good at delivering results with Time Series Forecasting.
-	- [Time Series Forecasting With Python Mini-Course](https://machinelearningmastery.com/time-series-forecasting-python-mini-course/)
-		- [Time Series Forecasting With Python](https://machinelearningmastery.com/introduction-to-time-series-forecasting-with-python/) (***my book***)
-
-You can see all [Time Series Forecasting posts here](https://machinelearningmastery.com/category/time-series/). Below is a selection of some of the most popular tutorials.
-
-#### Data Preparation Tutorials
-
-- [7 Time Series Datasets for Machine Learning](https://machinelearningmastery.com/time-series-datasets-for-machine-learning/)
-- [How to Load and Explore Time Series Data in Python](https://machinelearningmastery.com/load-explore-time-series-data-python/)
-- [How to Normalize and Standardize Time Series Data in Python](https://machinelearningmastery.com/normalize-standardize-time-series-data-python/)
-- [Basic Feature Engineering With Time Series Data in Python](https://machinelearningmastery.com/basic-feature-engineering-time-series-data-python/)
-- [How To Backtest Machine Learning Models for Time Series Forecasting](https://machinelearningmastery.com/backtest-machine-learning-models-time-series-forecasting/)
-
-#### Forecasting Tutorials
-
-- [How to Make Baseline Predictions for Time Series Forecasting with Python](https://machinelearningmastery.com/persistence-time-series-forecasting-with-python/)
-- [How to Check if Time Series Data is Stationary with Python](https://machinelearningmastery.com/time-series-data-stationary-python/)
-- [How to Create an ARIMA Model for Time Series Forecasting with Python](https://machinelearningmastery.com/arima-for-time-series-forecasting-with-python/)
-- [How to Grid Search ARIMA Model Hyperparameters with Python](https://machinelearningmastery.com/grid-search-arima-hyperparameters-with-python/)
-- [How to Work Through a Time Series Forecast Project](https://machinelearningmastery.com/work-time-series-forecast-project/)
 
 ## Data Preparation for Machine Learning (Python)
 
@@ -751,7 +715,6 @@ You can see all [deep learning posts here](https://machinelearningmastery.com/ca
 
 #### Recurrent Neural Networks
 
-- [Time Series Prediction with LSTM Recurrent Neural Networks in Python with Keras](https://machinelearningmastery.com/time-series-prediction-lstm-recurrent-neural-networks-python-keras/)
 - [Understanding Stateful LSTM Recurrent Neural Networks in Python with Keras](https://machinelearningmastery.com/understanding-stateful-lstm-recurrent-neural-networks-python-keras/)
 - [Text Generation With LSTM Recurrent Neural Networks in Python with Keras](https://machinelearningmastery.com/text-generation-lstm-recurrent-neural-networks-python-keras/)
 
@@ -794,7 +757,6 @@ You can see all [PyTorch deep learning posts here](https://machinelearningmaster
 #### Advanced Networks
 
 - [Building a Convolutional Neural Network in PyTorch](https://machinelearningmastery.com/building-a-convolutional-neural-network-in-pytorch/)
-- [LSTM for Time Series Prediction in PyTorch](https://machinelearningmastery.com/lstm-for-time-series-prediction-in-pytorch/)
 - [Text Generation with LSTM in PyTorch](https://machinelearningmastery.com/text-generation-with-lstm-in-pytorch/)
 
 ## Machine Learning in OpenCV
@@ -931,7 +893,6 @@ Long Short-Term Memory (LSTM) Recurrent Neural Networks are designed for sequenc
 Here’s how to get started with LSTMs in Python:
 
 - **Step 1**: Discover the promise of LSTMs.
-	- [The Promise of Recurrent Neural Networks for Time Series Forecasting](https://machinelearningmastery.com/promise-recurrent-neural-networks-time-series-forecasting/)
 - **Step 2**: Discover where LSTMs are useful.
 	- [Making Predictions with Sequences](https://machinelearningmastery.com/sequence-prediction/)
 		- [A Gentle Introduction to Long Short-Term Memory Networks by the Experts](https://machinelearningmastery.com/gentle-introduction-long-short-term-memory-networks-experts/)
@@ -968,13 +929,6 @@ You can see all [LSTM posts here](https://machinelearningmastery.com/category/ls
 - [CNN Long Short-Term Memory Networks](https://machinelearningmastery.com/cnn-long-short-term-memory-networks/)
 - [Diagnose Overfitting and Underfitting of LSTM Models](https://machinelearningmastery.com/diagnose-overfitting-underfitting-lstm-models/)
 - [How to Make Predictions with Long Short-Term Memory Models](https://machinelearningmastery.com/make-predictions-long-short-term-memory-models-keras/)
-
-#### LSTM for Time Series
-
-- [On the Suitability of LSTMs for Time Series Forecasting](https://machinelearningmastery.com/suitability-long-short-term-memory-networks-time-series-forecasting/)
-- [Time Series Forecasting with the Long Short-Term Memory Network](https://machinelearningmastery.com/time-series-forecasting-long-short-term-memory-network-python/)
-- [Multi-step Time Series Forecasting with Long Short-Term Memory Networks](https://machinelearningmastery.com/multi-step-time-series-forecasting-long-short-term-memory-networks-python/)
-- [Multivariate Time Series Forecasting with LSTMs in Keras](https://machinelearningmastery.com/multivariate-time-series-forecasting-lstms-keras/)
 
 ## Deep Learning for Natural Language Processing (NLP)
 
@@ -1095,65 +1049,6 @@ You can see all [deep learning for Computer Vision posts here](https://machinele
 - [A Gentle Introduction to Object Recognition](https://machinelearningmastery.com/object-recognition-with-deep-learning/)
 - [How to Perform Object Detection with Mask R-CNN](https://machinelearningmastery.com/how-to-perform-object-detection-in-photographs-with-mask-r-cnn-in-keras/)
 - [How to Perform Object Detection With YOLOv3 in Keras](https://machinelearningmastery.com/how-to-perform-object-detection-with-yolov3-in-keras/)
-
-## Deep Learning for Time Series Forecasting
-
-Deep learning neural networks are able to automatically learn arbitrary complex mappings from inputs to outputs and support multiple inputs and outputs.
-
-Methods such as MLPs, CNNs, and LSTMs offer a lot of promise for time series forecasting.
-
-Here’s how to get started with deep learning for time series forecasting:
-
-- **Step 1**: Discover the promise (and limitations) of deep learning for time series.
-	- [The Promise of Recurrent Neural Networks for Time Series Forecasting](https://machinelearningmastery.com/promise-recurrent-neural-networks-time-series-forecasting/)
-		- [On the Suitability of Long Short-Term Memory Networks for Time Series Forecasting](https://machinelearningmastery.com/suitability-long-short-term-memory-networks-time-series-forecasting/)
-		- [Results From Comparing Classical and Machine Learning Methods for Time Series Forecasting](https://machinelearningmastery.com/findings-comparing-classical-and-machine-learning-methods-for-time-series-forecasting/)
-- **Step 2**: Discover how to develop robust baseline and defensible forecasting models.
-	- [Taxonomy of Time Series Forecasting Problems](https://machinelearningmastery.com/taxonomy-of-time-series-forecasting-problems/)
-		- [How to Develop a Skillful Machine Learning Time Series Forecasting Model](https://machinelearningmastery.com/how-to-develop-a-skilful-time-series-forecasting-model/)
-- **Step 3**: Discover how to build deep learning models for time series forecasting.
-	- [How to Get Started with Deep Learning for Time Series Forecasting (7-Day Mini-Course)](https://machinelearningmastery.com/how-to-get-started-with-deep-learning-for-time-series-forecasting-7-day-mini-course/)
-		- [Deep Learning for Time Series Forecasting](https://machinelearningmastery.com/deep-learning-for-time-series-forecasting/) (***my book***)
-
-You can see all [deep learning for time series forecasting posts here](https://machinelearningmastery.com/category/deep-learning-time-series/). Below is a selection of some of the most popular tutorials.
-
-#### Forecast Trends and Seasonality (univariate)
-
-- [Grid Search SARIMA Models for Time Series Forecasting](https://machinelearningmastery.com/how-to-grid-search-sarima-model-hyperparameters-for-time-series-forecasting-in-python/)
-- [Grid Search Exponential Smoothing for Time Series Forecasting](https://machinelearningmastery.com/how-to-grid-search-triple-exponential-smoothing-for-time-series-forecasting-in-python/)
-- [Develop Deep Learning Models for Univariate Forecasting](https://machinelearningmastery.com/how-to-develop-deep-learning-models-for-univariate-time-series-forecasting/)
-
-#### Human Activity Recognition (multivariate classification)
-
-- [How to Model Human Activity From Smartphone Data](https://machinelearningmastery.com/how-to-model-human-activity-from-smartphone-data/)
-- [How to Develop CNN Models for Human Activity Recognition](https://machinelearningmastery.com/cnn-models-for-human-activity-recognition-time-series-classification/)
-- [How to Develop RNN Models for Human Activity Recognition](https://machinelearningmastery.com/how-to-develop-rnn-models-for-human-activity-recognition-time-series-classification/)
-
-#### Forecast Electricity Usage (multivariate, multi-step)
-
-- [How to Load and Explore Household Electricity Usage Data](https://machinelearningmastery.com/how-to-load-and-explore-household-electricity-usage-data/)
-- [Multi-step Time Series Forecasting with Machine Learning](https://machinelearningmastery.com/multi-step-time-series-forecasting-with-machine-learning-models-for-household-electricity-consumption/)
-- [How to Develop CNNs for Multi-Step Time Series Forecasting](https://machinelearningmastery.com/how-to-develop-convolutional-neural-networks-for-multi-step-time-series-forecasting/)
-
-#### Models Types
-
-- [How to Develop MLPs for Time Series Forecasting](https://machinelearningmastery.com/how-to-develop-multilayer-perceptron-models-for-time-series-forecasting/)
-- [How to Develop CNNs for Time Series Forecasting](https://machinelearningmastery.com/how-to-develop-convolutional-neural-network-models-for-time-series-forecasting/)
-- [How to Develop LSTMs for Time Series Forecasting](https://machinelearningmastery.com/how-to-develop-lstm-models-for-time-series-forecasting/)
-
-#### Time Series Case Studies
-
-- [Indoor Movement Time Series Classification](https://machinelearningmastery.com/indoor-movement-time-series-classification-with-machine-learning-algorithms/)
-- [Probabilistic Forecasting Model to Predict Air Pollution Days](https://machinelearningmastery.com/how-to-develop-a-probabilistic-forecasting-model-to-predict-air-pollution-days/)
-- [Predict Room Occupancy Based on Environmental Factors](https://machinelearningmastery.com/how-to-predict-room-occupancy-based-on-environmental-factors/)
-- [Predict Whether Eyes are Open or Closed Using Brain Waves](https://machinelearningmastery.com/how-to-predict-whether-eyes-are-open-or-closed-using-brain-waves/)
-
-#### Forecast Air Pollution (multivariate, multi-step)
-
-- [Load, Visualize, and Explore a Air Pollution Forecasting](https://machinelearningmastery.com/how-to-load-visualize-and-explore-a-complex-multivariate-multistep-time-series-forecasting-dataset/)
-- [Develop Baseline Forecasts for Air Pollution Forecasting](https://machinelearningmastery.com/how-to-develop-baseline-forecasts-for-multi-site-multivariate-air-pollution-time-series-forecasting/)
-- [Develop Autoregressive Models for Air Pollution Forecasting](https://machinelearningmastery.com/how-to-develop-autoregressive-forecasting-models-for-multi-step-air-pollution-time-series-forecasting/)
-- [Develop Machine Learning Models for Air Pollution Forecasting](https://machinelearningmastery.com/how-to-develop-machine-learning-models-for-multivariate-multi-step-air-pollution-time-series-forecasting/)
 
 ## Generative Adversarial Networks (GANs)
 
