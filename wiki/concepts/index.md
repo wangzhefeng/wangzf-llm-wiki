@@ -39,7 +39,7 @@ status: linked
 - [[wiki/concepts/llm/index]]
 - [[wiki/concepts/deep-learning/index]]
 - [[wiki/concepts/machine-learning/index]]
-- [[wiki/concepts/timeseries-analysis/index]]
+- [wiki/concepts/timeseries-analysis/index](https://github.com/wangzhefeng/wangzf-llm-wiki/blob/fdb553ea4a853c67e0197cc2395ee32e16ace457/wiki/concepts/timeseries-analysis/index.md)
 - [[wiki/concepts/operations-research/index]]
 - [[wiki/concepts/reinforcement-learning/index]]
 - [[wiki/concepts/statistics-theory/index]]

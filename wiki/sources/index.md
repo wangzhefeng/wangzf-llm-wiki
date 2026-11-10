@@ -40,7 +40,7 @@ status: linked
 - [[大语言模型来源清单]]
 - [[深度学习来源清单]]
 - [[机器学习来源清单]]
-- [[时间序列预测来源清单]]
+- [时间序列预测来源清单](https://github.com/wangzhefeng/wangzf-llm-wiki/blob/fdb553ea4a853c67e0197cc2395ee32e16ace457/wiki/indexes/timeseries-analysis/%E6%97%B6%E9%97%B4%E5%BA%8F%E5%88%97%E9%A2%84%E6%B5%8B%E6%9D%A5%E6%BA%90%E6%B8%85%E5%8D%95.md)
 - [[运筹优化算法来源清单]]
 - [[强化学习来源清单]]
 - [[统计学理论来源清单]]

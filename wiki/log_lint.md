@@ -16,6 +16,14 @@ status: linked
 
 > 本文件是最新 lint / health 审查主报告唯一出口。过程日志统一追加到 [[log]]。
 
+## 最新检查结果（2026-11-10：时间序列专题迁移）
+
+- 命令：使用 `tsproj_research/.venv` 执行 `scripts/run.py check`。
+- 迁移前：3 errors / 32 warnings；迁移后：3 errors / 16 warnings。
+- `source_path`、相对链接、附件检查通过；无新增 Wikilink 错误。
+- 3 个历史错误的根因：校验器仍期待已于此前迁出的 `power-market-trading` 目录。本次只同步本次迁出的 `timeseries-analysis`，不扩大修复范围。
+- 以下旧报告保留为历史快照，不代表当前主题数量或健康状态。
+
 ## 检查结果（2026-05-02）
 
 | 检查 | 结果 |

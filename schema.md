@@ -173,7 +173,6 @@ status: linked
 
 - `llm`
 - `llm-wiki`
-- `timeseries-analysis`
 - `operations-research`
 - `machine-learning`
 - `deep-learning`

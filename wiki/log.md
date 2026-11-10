@@ -1872,3 +1872,13 @@ GLOSSARY.md 定义了知识库各主题的规范英文名称。发现 raw/ 层�
 ### 保留说明
 - `wiki/concepts/control-algorithms/储能MPC建模.md` 及 MPC 系列概念页保留（属控制算法主题的方法内容，文中"电力市场/虚拟电厂"仅为应用场景描述，不构成指向已删主题的断链）
 - `wiki/log.md`、`wiki/log_lint.md` 为历史记录，按 append-only 原则不改写
+
+## [2026-11-10] archive | 时间序列专题迁入 tsproj_research
+
+- 用户确认迁移整个时间序列专题（含分类、聚类、异常检测等旁支），并授权提交、推送源仓库；目标项目仅保留本地更改。
+- 目标：`~/projects/tsproj_research/papers/github/wangzf-llm-wiki/`。
+- 归档 1205 个文件：1143 个从当前仓库移出，62 个跨专题附件仅复制；全部通过 SHA-256 和迁移前 Git blob 校验。
+- 迁移前提交：`fdb553ea4a853c67e0197cc2395ee32e16ace457`。完整逐文件清单保存在目标上一级的 `migration-manifest.json`。
+- 移出 raw 资料、来源卡、概念、索引、实体及派生输出；保留非时序通用内容。同步主题范围和校验器预期目录；交叉引用转为固定提交历史链接，避免目标尚未推送导致新断链。
+- 验证：使用 `tsproj_research/.venv` 执行 `scripts/run.py check`，迁移前 3 errors / 32 warnings，迁移后 3 errors / 16 warnings；无新增错误。三个错误均为此前已移出的 `power-market-trading` 仍在校验器预期目录中，本次不修改该历史问题。
+- 原始文档不改写、重复资料不合并、历史提交不清除。目标项目未提交推送。

@@ -50,7 +50,6 @@ EXPECTED_SOURCES = {
     "power-market-trading",
     "reinforcement-learning",
     "statistics-theory",
-    "timeseries-analysis",
     "vibe-coding",
 }
 EXPECTED_CONCEPTS = set(EXPECTED_SOURCES)

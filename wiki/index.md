@@ -103,7 +103,7 @@ status: linked
 ## 主题入口
 
 - [[大语言模型总索引]]
-- [[时间序列预测总索引]]
+- [时间序列预测总索引](https://github.com/wangzhefeng/wangzf-llm-wiki/blob/fdb553ea4a853c67e0197cc2395ee32e16ace457/wiki/indexes/timeseries-analysis/%E6%97%B6%E9%97%B4%E5%BA%8F%E5%88%97%E9%A2%84%E6%B5%8B%E6%80%BB%E7%B4%A2%E5%BC%95.md)
 - [[运筹优化算法总索引]]
 - [[机器学习总索引]]
 - [[统计学理论总索引]]

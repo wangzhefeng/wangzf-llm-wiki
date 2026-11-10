@@ -18,7 +18,8 @@ status: active
 ## 研究对象
 
 - 主域：AI/ML 研究与工程
-- 当前重点：`llm`、`timeseries-analysis`、`operations-research`、`machine-learning`
+- 当前重点：`llm`、`operations-research`、`machine-learning`
+- 时间序列专题（含分类、聚类、异常检测）已迁往 `~/projects/tsproj_research/papers/github/wangzf-llm-wiki/`；本仓库不再维护其原文与知识页。跨主题引用指向迁移前固定提交，以保留可访问的历史证据。
 - 可纳入内容：与主域强相关的工程实践、工具链、数据分析方法
 - 不追求百科式覆盖，只保留对当前任务可用、可复用、可演进的内容
 
